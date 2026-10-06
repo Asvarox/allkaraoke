@@ -1,0 +1,519 @@
+#ARTIST:Disney’s The Hunchback of Notre Dame
+#TITLE:Heaven’s Light / Hellfire
+#CREATOR:REL
+#BPM:300
+#YEAR:1996
+#VIDEO:v=wYleCKxV_WA
+#GENRE:Soundtrack
+#LANGUAGE:English
+#GAP:7050
+#ALLKARAOKE_ID:disneys-the-hunchback-of-notre-dame-heavens-light-hellfire
+#ALLKARAOKE_SID:6491
+#ALLKARAOKE_LASTUPDATE:2026-10-06T04:08:48.440Z
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=77104
+#ALLKARAOKE_REALBPM:90
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=17055
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:324
+#MP3:Disney’s The Hunchback of Notre Dame - Heaven’s Light / Hellfire.mp3
+: 20 3 9 So 
+: 24 2 9 ma
+: 28 2 12 ny 
+: 31 4 12 times 
+: 37 3 7 out 
+: 43 6 7 here
+- 49
+: 62 7 7 I’ve 
+: 71 4 7 watched 
+: 78 3 10 a 
+: 84 2 10 hap
+: 88 2 9 py 
+: 91 7 9 pair
+- 98
+: 111 4 2 Of 
+: 117 2 2 love
+: 120 3 9 rs 
+: 126 3 9 walk
+: 131 3 7 ing 
+: 138 3 7 in 
+: 144 3 9 the 
+: 149 11 0 night
+- 160 191
+- 191
+: 211 3 -2 They 
+: 216 4 -2 had 
+: 222 2 0 a 
+: 225 3 0 kind 
+: 229 4 5 of 
+: 236 6 5 glow 
+: 248 4 4 a
+: 254 5 2 round 
+: 263 10 0 them
+- 273 283
+- 283
+: 303 4 -1 It 
+: 310 2 -1 al
+: 315 3 0 most 
+: 320 4 0 looked 
+: 327 4 5 like 
+: 336 9 5 hea
+: 347 13 4 ven’s 
+: 363 21 2 light
+- 384 403
+- 403
+: 423 4 9 I 
+: 428 3 9 knew 
+: 433 3 12 I’d 
+: 438 2 12 nev
+: 442 2 7 er 
+: 446 7 7 know
+- 453
+: 469 6 7 That 
+: 478 3 7 warm 
+: 485 4 10 and 
+: 493 2 10 lov
+: 497 2 9 ing 
+: 502 8 9 glow
+- 510
+: 524 2 2 Though 
+: 527 2 2 I 
+: 531 3 9 might 
+: 535 4 9 wish 
+: 543 4 7 with 
+: 550 3 7 all 
+: 555 6 4 my 
+: 568 29 9 might
+- 597 600
+- 600
+: 620 3 5 No 
+: 625 3 5 face 
+: 630 4 7 as 
+: 636 2 7 hid
+: 640 2 9 e
+: 644 6 9 ous 
+: 653 4 5 as 
+: 659 8 5 my 
+: 671 33 12 face
+- 704
+: 717 5 10 Was 
+: 724 5 10 ev
+: 731 3 12 er 
+: 735 5 12 meant 
+: 744 7 17 for 
+* 754 8 17 hea
+* 765 12 16 ven’s 
+* 780 33 14 light
+- 813
+: 822 5 5 But 
+: 829 2 9 sud
+: 833 2 10 den
+: 836 8 10 ly 
+: 848 2 9 an 
+: 852 4 9 an
+: 857 9 12 gel 
+: 873 4 12 has 
+: 880 9 12 smiled 
+: 893 2 5 at 
+: 897 10 5 me
+- 907
+: 924 2 4 And 
+: 928 3 5 kissed 
+: 933 3 7 my 
+: 937 6 7 cheek
+- 943
+: 947 1 5 With
+: 951 4 5 out 
+: 958 2 9 a 
+: 962 5 9 trace 
+: 970 3 7 of 
+: 975 18 7 fright
+- 993 1029
+- 1029
+: 1049 3 9 I 
+: 1053 4 9 dare 
+: 1059 2 12 to 
+: 1063 7 12 dream 
+: 1072 2 7 that 
+: 1076 12 7 she
+- 1088
+: 1098 2 7 Might 
+: 1102 3 7 e
+: 1106 3 10 ven 
+: 1111 6 10 care 
+: 1121 2 9 for 
+: 1125 12 9 me
+- 1137
+: 1144 2 4 And 
+: 1148 3 4 as 
+: 1153 3 9 I 
+: 1158 8 9 ring 
+: 1169 3 7 these 
+: 1175 8 7 bells 
+: 1187 2 5 to
+: 1191 32 4 night
+- 1223
+: 1241 7 2 My 
+: 1250 4 2 cold 
+: 1257 5 4 dark 
+: 1265 3 4 to
+: 1270 6 5 wer 
+: 1279 8 5 seems 
+: 1290 14 14 so 
+: 1306 38 12 bright
+- 1344
+: 1361 4 10 I 
+: 1368 5 10 swear 
+: 1376 4 12 it 
+: 1383 4 12 must 
+: 1392 5 17 be 
+* 1400 13 17 hea
+* 1415 14 16 ven’s 
+* 1431 79 17 light
+- 1510 2686
+- 2686
+: 2706 3 -1 You 
+: 2712 4 -1 know 
+: 2718 2 3 I 
+: 2722 3 3 am 
+: 2727 3 2 a 
+: 2733 4 2 right
+: 2738 3 0 eous 
+: 2744 8 0 man
+- 2752
+: 2772 3 -2 Of 
+: 2776 3 5 my 
+: 2781 3 5 vir
+: 2786 3 5 tue 
+: 2792 7 5 I 
+: 2800 3 3 am 
+: 2806 5 -2 just
+: 2814 4 0 ly 
+: 2822 17 2 proud
+- 2839 2914
+- 2914
+: 2934 3 2 You 
+: 2939 4 2 know 
+: 2946 2 7 I’m 
+: 2950 3 7 so 
+: 2956 4 6 much 
+: 2963 3 6 pure
+: 2969 3 4 r 
+: 2976 6 4 than
+- 2982
+: 2991 2 2 The 
+: 2995 3 2 com
+: 2999 4 9 mon, 
+: 3006 3 9 vul
+: 3013 3 9 gar, 
+: 3021 4 9 weak,
+- 3025
+* 3032 3 7 Li
+* 3037 3 2 cen
+* 3043 4 4 tious 
+* 3050 28 6 crowd
+- 3078
+: 3098 5 5 Then 
+: 3105 4 7 tell 
+: 3112 11 7 me, 
+: 3126 3 7 Mar
+: 3131 5 9 i
+: 3137 9 10 a
+- 3146
+: 3156 3 7 Why 
+: 3163 3 12 I 
+: 3170 4 12 see 
+: 3177 4 10 her 
+: 3183 4 10 danc
+: 3190 2 9 ing 
+: 3195 8 9 there
+- 3203
+: 3212 4 7 Why 
+: 3219 4 12 her 
+: 3227 3 12 smold’
+: 3234 3 10 ring 
+: 3240 6 10 eyes 
+: 3250 4 9 still 
+: 3257 6 9 scorch 
+: 3267 4 7 my 
+: 3275 20 9 soul
+- 3295 3306
+- 3306
+: 3326 7 2 I 
+: 3336 4 7 feel 
+: 3343 8 7 her, 
+: 3358 3 7 I 
+: 3365 4 9 see 
+: 3372 5 10 her
+- 3377
+: 3386 2 7 The 
+: 3391 4 14 sun 
+: 3399 3 12 caught 
+: 3405 5 12 in her 
+: 3416 4 10 ra
+: 3423 3 9 ven 
+: 3429 8 9 hair
+- 3437
+: 3446 2 12 Is 
+: 3451 6 12 blaz
+: 3460 3 10 ing 
+: 3466 3 10 in 
+: 3471 3 9 me 
+: 3477 5 9 out 
+: 3485 2 7 of 
+: 3489 4 7 all 
+: 3498 2 9 con
+: 3503 26 9 trol
+- 3529 3560
+- 3560
+: 3580 6 10 Like 
+: 3591 6 14 fi
+: 3602 7 12 re
+- 3609
+* 3624 7 9 Hell
+* 3635 5 12 fi
+* 3646 8 10 re
+- 3654
+: 3669 6 7 This 
+: 3681 6 12 fi
+: 3692 6 9 re 
+: 3705 6 5 in 
+: 3717 5 9 my 
+: 3728 15 7 skin
+- 3743
+: 3762 6 5 This 
+: 3772 5 9 burn
+: 3783 9 7 ing
+- 3792
+: 3807 6 4 De
+: 3819 7 7 si
+: 3832 10 5 re
+- 3842
+: 3855 7 2 Is 
+: 3864 9 5 turn
+: 3875 9 4 ing 
+: 3887 19 0 me 
+: 3910 16 4 to 
+: 3930 22 2 sin
+- 3952 3979
+- 3979
+: 3999 2 2 It’s 
+: 4003 2 4 not 
+: 4007 2 5 my 
+: 4011 4 9 fault
+- 4015 4016
+- 4016
+: 4036 2 1 I’m 
+: 4041 2 3 not 
+: 4046 2 4 to 
+: 4050 5 -4 blame
+- 4055
+: 4075 2 2 It 
+: 4080 2 4 is 
+: 4084 2 5 the 
+: 4089 2 9 gyp
+: 4094 2 7 sy 
+: 4099 2 7 girl
+- 4101
+: 4103 2 10 The 
+: 4108 3 10 witch 
+: 4113 3 9 who 
+: 4118 2 9 sent 
+: 4123 2 12 this 
+: 4128 11 12 flame
+- 4139
+: 4154 2 5 It’s 
+: 4157 2 7 not 
+: 4161 2 8 my 
+: 4166 5 12 fault
+- 4171
+: 4191 2 6 If 
+: 4196 2 7 in 
+: 4200 2 8 God’s 
+: 4205 6 0 plan
+- 4211
+* 4229 3 1 He 
+* 4234 2 3 made 
+* 4239 2 4 the 
+* 4244 3 8 de
+* 4249 3 6 vil 
+* 4255 2 6 so 
+* 4261 2 4 much
+- 4263
+* 4267 3 8 Stron
+* 4274 4 7 ger 
+* 4281 7 7 than 
+* 4291 2 5 a 
+* 4294 28 12 man
+- 4322 4328
+- 4328
+: 4348 4 5 Pro
+: 4355 5 5 tect 
+: 4363 11 5 me, 
+: 4377 3 5 Mar
+: 4383 7 7 i
+: 4392 6 9 a
+- 4398
+: 4406 3 5 Don’t 
+: 4412 3 5 let 
+: 4418 3 10 this 
+: 4423 3 10 sir
+: 4429 3 9 en 
+: 4435 3 9 cast 
+: 4441 3 7 her 
+: 4448 9 7 spell
+- 4457
+: 4465 2 5 Don’t 
+: 4469 2 5 let 
+: 4473 3 12 her 
+: 4478 3 12 fi
+: 4483 4 12 re 
+: 4489 5 12 sear 
+: 4497 3 10 my 
+: 4503 4 5 flesh 
+: 4510 2 7 and 
+: 4515 28 9 bone
+- 4543 4546
+- 4546
+: 4566 2 9 Des
+: 4570 7 9 troy 
+: 4580 6 9 Es
+: 4588 3 9 mer
+: 4593 3 10 el
+: 4600 8 12 da
+- 4608
+: 4615 4 12 And 
+: 4622 4 12 let 
+: 4629 4 5 her 
+: 4635 4 5 taste 
+: 4643 3 12 the 
+: 4649 3 12 fi
+: 4654 2 12 res 
+: 4659 3 5 of 
+: 4663 7 5 hell
+- 4670
+: 4677 2 12 Or 
+: 4682 3 12 else 
+: 4688 2 10 let 
+: 4693 3 10 her 
+: 4698 3 9 be 
+: 4704 7 9 mine 
+: 4714 3 7 and 
+: 4720 6 7 mine 
+: 4729 3 5 al
+: 4734 31 9 one
+- 4765 4810
+- 4810
+F 4830 1 6 Min
+F 4833 2 6 i
+F 4836 1 6 ster 
+F 4839 2 6 Frol
+F 4843 3 6 lo, 
+F 4851 2 6 the 
+F 4856 3 6 gyp
+F 4861 3 6 sy 
+F 4866 1 6 has 
+F 4869 2 6 esc
+F 4872 4 6 aped
+- 4876
+F 4882 14 6 What?
+- 4896
+F 4900 2 6 No 
+F 4904 2 6 long
+F 4907 2 6 er 
+F 4910 2 6 in 
+F 4913 2 6 the 
+F 4916 2 6 ca
+F 4919 2 6 the
+F 4922 4 6 dral. 
+F 4930 5 6 She’s 
+F 4937 7 6 gone
+- 4944
+F 4957 4 6 But 
+F 4965 9 6 how? 
+F 5015 1 6 Ne
+F 5018 2 6 ver 
+F 5021 3 6 mind. 
+F 5032 3 6 Get 
+F 5037 4 6 out, 
+F 5043 3 6 you 
+F 5048 2 6 id
+F 5051 1 6 i
+F 5053 4 6 ot
+- 5057
+F 5065 4 6 I’ll 
+F 5072 4 6 find 
+F 5078 8 6 her. 
+F 5093 2 6 I’ll 
+F 5098 3 6 find 
+F 5102 3 6 her 
+F 5107 2 6 if 
+F 5110 2 6 I 
+F 5114 1 6 have 
+F 5117 2 6 to
+- 5119
+F 5121 1 6 Burn 
+F 5124 3 6 down 
+F 5129 3 6 all 
+F 5133 3 6 of 
+F 5138 3 6 Par
+F 5142 5 6 is
+- 5147 5159
+- 5159
+: 5179 8 5 Hell
+: 5193 7 9 fi
+: 5204 9 7 re
+- 5213
+* 5226 5 4 Dark 
+* 5236 7 7 fi
+* 5246 10 5 re
+- 5256
+: 5268 5 5 Now 
+: 5278 5 9 gyp
+: 5287 6 7 sy, 
+: 5298 7 4 it’s 
+: 5311 6 7 your 
+: 5323 16 5 turn
+- 5339
+: 5356 6 5 Choose 
+: 5367 9 9 me 
+: 5378 11 7 or
+- 5389
+: 5401 6 4 Your 
+: 5411 7 7 py
+: 5421 9 5 re
+- 5430
+: 5442 8 5 Be 
+: 5453 8 9 mine 
+: 5465 8 7 or 
+* 5478 10 12 you 
+* 5490 11 9 will 
+* 5506 43 14 burn
+- 5549 5565
+- 5565
+: 5585 10 2 God 
+: 5598 7 2 have 
+: 5607 9 2 mer
+: 5618 8 2 cy 
+: 5629 17 2 on 
+: 5648 19 2 her
+- 5667 5683
+- 5683
+: 5703 8 2 God 
+: 5714 7 2 have 
+: 5723 8 2 mer
+: 5734 6 2 cy 
+: 5744 16 2 on 
+: 5763 13 2 me
+- 5776 5804
+- 5804
+: 5824 4 2 But 
+: 5830 7 2 she 
+: 5840 7 2 will 
+: 5851 6 2 be 
+: 5862 15 9 mine
+- 5877
+: 5884 15 2 Or 
+: 5908 37 9 she 
+: 5951 39 9 will 
+* 6004 200 14 burn!
+E

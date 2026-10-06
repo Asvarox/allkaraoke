@@ -69,15 +69,16 @@ jobs:
           shard: '${{ matrix.shardIndex }}'
           shardTotal: '${{ matrix.shardTotal }}'
           grepInvert: '@visual'
+  # Both suites' blob reports are merged into one HTML report by upload-e2e-test-results.yml
   e2e-tests-add-summary:
     runs-on: ubuntu-latest
     if: always() # needs to run on success too, to clean up a stale failure comment from a previous run
-    needs: e2e-tests-run
+    needs: ['e2e-tests-run', 'visual-regression-tests-run']
     permissions:
       pull-requests: write # allows commenting on a PR
     steps:
       - name: Write job summary
-        if: needs.e2e-tests-run.result == 'failure'
+        if: contains(needs.*.result, 'failure')
         uses: actions/github-script@v8
         with:
           script: |
@@ -85,6 +86,8 @@ jobs:
             # E2E tests reports
             | Name          | Result |
             | ----------------------- | - |
+            | **E2E tests**: | ${{ needs.e2e-tests-run.result }} |
+            | **Visual regression tests**: | ${{ needs.visual-regression-tests-run.result }} |
             | **URL**: | 	https://${{ github.run_id }}.allkaraoke-party-tests-results.pages.dev |
             `
             ).write();
@@ -96,6 +99,7 @@ jobs:
         uses: actions/github-script@v8
         env:
           E2E_RESULT: ${{ needs.e2e-tests-run.result }}
+          VISUAL_RESULT: ${{ needs.visual-regression-tests-run.result }}
         with:
           script: |
             const { owner, repo } = context.repo;
@@ -110,20 +114,26 @@ jobs:
             });
             const existing = comments.find((comment) => comment.body?.includes(marker));
 
-            if (process.env.E2E_RESULT === 'success') {
+            const results = {
+              'E2E tests': process.env.E2E_RESULT,
+              'Visual regression tests': process.env.VISUAL_RESULT,
+            };
+            const failedSuites = Object.keys(results).filter((suite) => results[suite] === 'failure');
+
+            if (Object.values(results).every((result) => result === 'success')) {
               if (existing) {
                 await github.rest.issues.deleteComment({ owner, repo, comment_id: existing.id });
               }
               return;
             }
 
-            if (process.env.E2E_RESULT !== 'failure') {
+            if (failedSuites.length === 0) {
               return; // skipped/cancelled: leave any existing comment as-is, nothing new to report
             }
 
             const reportUrl = `https://${context.runId}.allkaraoke-party-tests-results.pages.dev`;
             const runUrl = `https://github.com/${owner}/${repo}/actions/runs/${context.runId}`;
-            const body = `## ❌ E2E tests failed\n\n- [Test report](${reportUrl})\n- [Workflow run](${runUrl})\n\n${marker}`;
+            const body = `## ❌ ${failedSuites.join(' and ')} failed\n\n- [Test report](${reportUrl})\n- [Workflow run](${runUrl})\n\n${marker}`;
 
             if (existing) {
               await github.rest.issues.deleteComment({ owner, repo, comment_id: existing.id });
@@ -204,6 +214,7 @@ jobs:
           shard: '${{ matrix.shardIndex }}'
           shardTotal: '${{ matrix.shardTotal }}'
           grep: '@visual'
+          artifactSuffix: '-visual' # e2e-tests-run uploads the same config/project/shard names
           updateSnapshots: 'true'
           # Not all of playwright.config.ts's testDir: tests/storybook holds the storybook-screenshots-run job's snapshots
           snapshotDir: 'tests/visual-regression'
@@ -415,7 +426,22 @@ jobs:
             }
 
             const deployUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
-            const content = [`[Deployment](${deployUrl})`, ...includedSubjects.map((subject) => `- ${subject}`)].join('\n');
+            // PostHog rejects annotation content longer than 8192 chars - keep as many subjects as fit
+            const maxContentLength = 8192;
+            const lines = [`[Deployment](${deployUrl})`];
+            let contentLength = lines[0].length;
+            for (const [index, subject] of includedSubjects.entries()) {
+              const line = `- ${subject}`;
+              const remaining = includedSubjects.length - index - 1;
+              const overflowLineLength = remaining > 0 ? `\n- …and ${remaining} more`.length : 0;
+              if (contentLength + 1 + line.length + overflowLineLength > maxContentLength) {
+                lines.push(`- …and ${includedSubjects.length - index} more`);
+                break;
+              }
+              lines.push(line);
+              contentLength += 1 + line.length;
+            }
+            const content = lines.join('\n');
             const response = await fetch('https://eu.posthog.com/api/projects/281/annotations/', {
               method: 'POST',
               headers: {
