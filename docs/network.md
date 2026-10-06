@@ -23,10 +23,62 @@ The actual WebSocket connection is provided by a swappable adapter. Both the cli
 | Adapter       | Client               | Server               | When used                                                           |
 | ------------- | -------------------- | -------------------- | ------------------------------------------------------------------- |
 | **PartyKit**  | `PartyKitClient.ts`  | `PartyKitServer.ts`  | Default; room IDs starting with `k` (Cloudflare Workers / PartyKit) |
+| **Realtime**  | `realtime-client.ts` | `realtime-server.ts` | Room IDs starting with `r`; Cloudflare Realtime SFU data channels   |
 | **WebSocket** | `WebSocketClient.ts` | `WebSocketServer.ts` | Room IDs starting with `w`; direct WebSocket server                 |
 | **PeerJS**    | `PeerJSClient.ts`    | `PeerJSServer.ts`    | Legacy peer-to-peer WebRTC                                          |
 
-The client selects an adapter based on the room ID prefix in `NetworkClient.connect()`. The server side uses whichever transport is registered for the active session.
+The client selects an adapter based on the room ID prefix in `NetworkClient.connect()`. The game picks
+the transport when it first starts its server in a session and keeps it for as long as the game code
+lives (`NetworkServer.latchTransport`), so a flag answer that arrives later never strands phones already
+holding the code. Only switching it in the Remote Microphone settings moves a running game onto another
+transport, and that changes the code.
+
+### Choosing the transport
+
+`RemoteMicConnectionTypeSetting` is the transport new game codes are made with. In production it is set
+from PostHog: the `remote_mics_realtime` flag (a percentage rollout) picks Realtime, otherwise the
+`remote_mics_connection_type` payload, otherwise PartyKit. Dev defaults to Realtime (the dev server runs
+the fake SFU); e2e defaults to PartyKit, and a spec opts into Realtime with `useRealtimeRemoteMics`.
+
+### Realtime
+
+The Realtime transport shares online mode's Realtime layer — `SfuRoomConnection` and friends in
+`src/modules/network/realtime/`, and `createRealtimeSignaling` plus the `RoomDirectory` Durable Object
+in `worker/realtime/` (see `online-mode.md`) — but mounts its own copy: signaling under
+`/remote-mic-signaling/` and its own `RemoteMicDirectory`, so its rooms never mix with online ones. Both
+run on the same Realtime app and credentials (`REMOTE_MIC_REALTIME` vs `ONLINE_REALTIME`). The game
+code (`r` plus four letters) is the directory room; the game hosts it and publishes a broadcast channel
+plus `REMOTE_MIC_SLOT_COUNT` slot channels, and each phone replies on its own slot. Frames are msgpack.
+Differences from an online room:
+
+- The game is always the host: a remote-mic room never promotes a phone or elects one when the host
+  leaves.
+- A phone's first frame is `rt-hello` with its id. The SFU only tells the game which slot a frame came
+  in on, so the game checks the id against the directory (host-only `room/:code/slot` lookup) before
+  binding the slot, holding that slot's frames until then; a mismatch gets `rt-close` `not-authorized`.
+- The game broadcasts `rt-hb` every 2s. A reloaded game just stops publishing, so a phone treats 10s of
+  silence as a closed connection and reconnects. `rt-close` closes a phone on purpose (`player-removed`,
+  or `host-closed` as the game unloads, so phones reconnect without waiting out the silence).
+- Memberships survive reloads on both sides (secrets in `localStorage`). The game hands a slot back
+  after 10 minutes of silence from its phone, so a long party does not run out of slots.
+
+## Analytics
+
+Both transports report the same events, with `transport` (the code's lead letter) and `transportName`:
+
+| Event                                       | Side  | When                                                 |
+| ------------------------------------------- | ----- | ---------------------------------------------------- |
+| `remote_mic_connection_successful`          | phone | connected (also after a reconnect)                   |
+| `remote_mic_connection_error`               | phone | the first connection attempt failed, with `reason`   |
+| `remote_mic_connection_lost`                | phone | an established connection dropped, with `reason`     |
+| `remote_mic_song_ping`                      | phone | once per song sung on the phone                      |
+| `remote_mic_server_connected`               | game  | the game's transport came up (`transport` is a name) |
+| `remote_mic_server_connection_error`/`lost` | game  | the game's transport failed / dropped                |
+
+`remote_mic_song_ping` summarises every ping of the song (`samples`, `timeouts`, `min`, `max`, `avg`,
+`median`, `p95`, `jitter`, in ms; the latency figures are null when every ping of the song timed out). The game brackets each song with `songStarted` / `songEnded` client
+calls, and only a phone the game monitored during the song reports. Online mode reports the same summary
+per singer per song as `onlineSongPing`.
 
 Both sides implement a common interface (`Client/Transport/interface.ts`, `Server/Transport/interface.ts`) so `NetworkClient` and `NetworkServer` are transport-agnostic.
 

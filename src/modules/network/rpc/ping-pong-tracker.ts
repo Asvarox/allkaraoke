@@ -7,6 +7,8 @@ export interface PingPongTrackerOptions {
   onMeasurement?: (latencyMs: number) => void;
   /** Maximum time to wait for a pong before giving up on it and re-arming the loop. */
   maxWaitMs?: number;
+  /** Called when a ping is given up on after `maxWaitMs`. */
+  onTimeout?: () => void;
 }
 
 /** Round-trip latency loop shared by the remote-mic and online clients: send a ping, measure the
@@ -60,6 +62,7 @@ export class PingPongTracker {
   private handleMissingPong = (): void => {
     this.watchdog = null;
     this.pingStartedAt = 0;
+    this.options.onTimeout?.();
     this.timeout = setTimeout(this.ping, this.intervalMs);
   };
 

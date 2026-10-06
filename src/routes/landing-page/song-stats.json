@@ -1,8 +1,8 @@
 {
   "artists": [
     "Lady Gaga",
-    "Green Day",
     "Taylor Swift",
+    "Green Day",
     "Linkin Park",
     "Britney Spears",
     "Kylie Minogue",
@@ -19,14 +19,14 @@
     "Rihanna",
     "Fall Out Boy",
     "My Chemical Romance",
+    "Nightwish",
     "Bee Gees",
     "Billie Eilish",
     "Elton John",
     "Ghost",
-    "Nightwish",
+    "Muse",
     "Disturbed",
     "Madonna",
-    "Muse",
     "ABBA",
     "Foo Fighters",
     "Bruno Mars",
@@ -190,10 +190,11 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 6481,
-  "generatedAt": "2026-10-05T03:21:55.171Z",
+  "songs": 6500,
+  "generatedAt": "2026-10-06T04:09:28.433Z",
   "additionsPerDay": {
-    "2026-10-05": 13,
+    "2026-10-06": 19,
+    "2026-10-04": 13,
     "2026-10-02": 12,
     "2026-10-01": 13,
     "2026-09-29": 2,
@@ -233,82 +234,196 @@
   },
   "recentlyAdded": [
     {
+      "artist": "Clarice Falcão feat. Silva",
+      "title": "Eu Me Lembro",
+      "video": "olbbAuQUZd4",
+      "addedAt": "2026-10-06T04:08:49.261Z"
+    },
+    {
+      "artist": "Provinz",
+      "title": "Zimmer",
+      "video": "LclJmHqHPvw",
+      "addedAt": "2026-10-06T04:08:49.253Z"
+    },
+    {
+      "artist": "Elastinen",
+      "title": "Anna soida",
+      "video": "o00nQ85Eeh0",
+      "addedAt": "2026-10-06T04:08:49.251Z"
+    },
+    {
+      "artist": "Lady Gaga",
+      "title": "Swine",
+      "video": "uGExj2Oq8IQ",
+      "addedAt": "2026-10-06T04:08:49.246Z"
+    },
+    {
+      "artist": "Aitana",
+      "title": "6 DE FEBRERO",
+      "video": "7csX6CfgMoo",
+      "addedAt": "2026-10-06T04:08:49.242Z"
+    },
+    {
+      "artist": "ASCA",
+      "title": "Resister",
+      "video": "RPZwWt6_unE",
+      "addedAt": "2026-10-06T04:08:49.043Z"
+    },
+    {
+      "artist": "Die Toten Hosen",
+      "title": "Unter den Wolken",
+      "video": "PwzDFFH3CMk",
+      "addedAt": "2026-10-06T04:08:49.042Z"
+    },
+    {
+      "artist": "Alice In Chains",
+      "title": "Them Bones",
+      "video": "zTuD8k3JvxQ",
+      "addedAt": "2026-10-06T04:08:49.040Z"
+    },
+    {
+      "artist": "Muse",
+      "title": "Plug In Baby",
+      "video": "dbB-mICjkQM",
+      "addedAt": "2026-10-06T04:08:49.039Z"
+    },
+    {
+      "artist": "Robyn with Kleerup",
+      "title": "With Every Heartbeat",
+      "video": "-ojHWQrm4UM",
+      "addedAt": "2026-10-06T04:08:48.848Z"
+    },
+    {
+      "artist": "Disney’s The Hunchback of Notre Dame",
+      "title": "Heaven’s Light / Hellfire",
+      "video": "wYleCKxV_WA",
+      "addedAt": "2026-10-06T04:08:48.440Z"
+    },
+    {
+      "artist": "Kanako Itou",
+      "title": "Sky Clad no Kansokusha",
+      "video": "k2LDC0sTsEQ",
+      "addedAt": "2026-10-06T04:08:48.437Z"
+    },
+    {
+      "artist": "Los Autenticos Decadentes",
+      "title": "Cómo me voy a olvidar",
+      "video": "oRWriCU-71M",
+      "addedAt": "2026-10-06T04:08:48.241Z"
+    },
+    {
+      "artist": "Nightwish",
+      "title": "Sleeping Sun",
+      "video": "UGfKMV5AbMI",
+      "addedAt": "2026-10-06T04:08:48.237Z"
+    },
+    {
+      "artist": "Taylor Swift",
+      "title": "Hits Different",
+      "video": "_f4yoKJL7IQ",
+      "addedAt": "2026-10-06T04:08:48.234Z"
+    },
+    {
+      "artist": "Talk Talk",
+      "title": "Life’s What You Make It",
+      "video": "l3VqAsMXE7o",
+      "addedAt": "2026-10-06T04:08:48.034Z"
+    },
+    {
+      "artist": "Tiësto y Karol G",
+      "title": "Don't be shy",
+      "video": "3wjM9lC_Pv4",
+      "addedAt": "2026-10-06T04:08:47.842Z"
+    },
+    {
+      "artist": "Donna Lewis",
+      "title": "I Love You Always Forever",
+      "video": "SqdWTeXWvOg",
+      "addedAt": "2026-10-06T04:08:47.124Z"
+    },
+    {
+      "artist": "Twenty One Pilots",
+      "title": "Heavydirtysoul",
+      "video": "r_9Kf0D5BTs",
+      "addedAt": "2026-10-06T04:08:47.115Z"
+    },
+    {
       "artist": "Ado",
       "title": "KIRA",
       "video": "qpcz3-iDUP8",
-      "addedAt": "2026-10-05T03:21:28.750Z"
+      "addedAt": "2026-10-04T20:53:15.551Z"
     },
     {
       "artist": "Train",
       "title": "Angel In Blue Jeans",
       "video": "qr6Fd8gsED8",
-      "addedAt": "2026-10-05T03:21:28.576Z"
+      "addedAt": "2026-10-04T20:52:52.593Z"
     },
     {
       "artist": "José José",
       "title": "Lo dudo",
       "video": "CpBvjrkRKN4",
-      "addedAt": "2026-10-05T03:21:28.574Z"
+      "addedAt": "2026-10-04T20:52:26.633Z"
     },
     {
       "artist": "Barricada",
       "title": "Oveja negra",
       "video": "wt1M---Z7ec",
-      "addedAt": "2026-10-05T03:21:28.571Z"
+      "addedAt": "2026-10-04T20:52:08.980Z"
     },
     {
       "artist": "Die Atzen mit Nena",
       "title": "Strobo Pop",
       "video": "aWRbWwJ5qEc",
-      "addedAt": "2026-10-05T03:21:28.403Z"
+      "addedAt": "2026-10-04T20:51:29.538Z"
     },
     {
       "artist": "Jovanotti",
       "title": "Bella",
       "video": "O2RccC7UCnY",
-      "addedAt": "2026-10-05T03:21:28.401Z"
+      "addedAt": "2026-10-04T20:51:08.215Z"
     },
     {
       "artist": "Edd00chan tricker",
       "title": "Cancion de los NIGHMARE _GREAT ESCAPE_ (Cancion y Letra) Edd00chan w_ Tricker _ FNAFHS",
       "video": "YD6BDSg-R3M",
-      "addedAt": "2026-10-05T03:21:28.228Z"
+      "addedAt": "2026-10-04T20:50:45.630Z"
     },
     {
       "artist": "Jeff Buckley",
       "title": "Grace",
       "video": "A3adFWKE9JE",
-      "addedAt": "2026-10-05T03:21:28.049Z"
+      "addedAt": "2026-10-04T20:50:18.963Z"
     },
     {
       "artist": "Peter Fox",
       "title": "Alles neu",
       "video": "qdtLCfEcPL4",
-      "addedAt": "2026-10-05T03:21:28.046Z"
+      "addedAt": "2026-10-04T20:49:13.832Z"
     },
     {
       "artist": "Marina and the Diamonds",
       "title": "Buy The Stars",
       "video": "-ubL2QU3Qi8",
-      "addedAt": "2026-10-05T03:21:28.041Z"
+      "addedAt": "2026-10-04T20:48:59.891Z"
     },
     {
       "artist": "Revolverheld feat. Marta Jandová",
       "title": "Halt dich an mir fest",
       "video": "wCcJuN47UcY",
-      "addedAt": "2026-10-05T03:21:27.870Z"
+      "addedAt": "2026-10-04T20:48:42.503Z"
     },
     {
       "artist": "Joel Corry feat. MNEK",
       "title": "Head & Heart",
       "video": "CRuOOxF-ENQ",
-      "addedAt": "2026-10-05T03:21:27.136Z"
+      "addedAt": "2026-10-04T20:48:23.252Z"
     },
     {
       "artist": "BoA",
       "title": "Energetic (Radio Edit)",
       "video": "qE05Bv1e_fo",
-      "addedAt": "2026-10-05T03:21:27.129Z"
+      "addedAt": "2026-10-04T20:47:59.238Z"
     },
     {
       "artist": "Renaud & Axelle Red",
@@ -405,120 +520,6 @@
       "title": "You Make My Dreams",
       "video": "49BQKU5wflk",
       "addedAt": "2026-10-01T21:07:51.749Z"
-    },
-    {
-      "artist": "Hairspray (Movie)",
-      "title": "You Can’t Stop The Beat",
-      "video": "H2KQGAiVec0",
-      "addedAt": "2026-10-01T21:07:40.242Z"
-    },
-    {
-      "artist": "Taylor Swift",
-      "title": "Bejeweled",
-      "video": "b7QlX3yR2xs",
-      "addedAt": "2026-10-01T21:07:24.633Z"
-    },
-    {
-      "artist": "Alex & Sierra",
-      "title": "Little Do You Know",
-      "video": "4bzIpYiPUUo",
-      "addedAt": "2026-10-01T21:07:08.167Z"
-    },
-    {
-      "artist": "Hannah Montana",
-      "title": "You’ll Always Find Your Way Back Home",
-      "video": "ddPXRIH0-RY",
-      "addedAt": "2026-10-01T21:06:57.579Z"
-    },
-    {
-      "artist": "Rhapsody",
-      "title": "Holy Thunderforce",
-      "video": "RYzYo-XJfUI",
-      "addedAt": "2026-10-01T21:06:31.044Z"
-    },
-    {
-      "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Troy)",
-      "title": "Dangerous",
-      "video": "zJhJ5E1hK2A",
-      "addedAt": "2026-10-01T21:05:58.887Z"
-    },
-    {
-      "artist": "Bacilos",
-      "title": "Tabaco y Chanel",
-      "video": "6JqnbsQpljU",
-      "addedAt": "2026-10-01T21:05:46.602Z"
-    },
-    {
-      "artist": "Lizzy McAlpine",
-      "title": "Ceilings",
-      "video": "2bpMSpFTdzM",
-      "addedAt": "2026-10-01T21:05:10.329Z"
-    },
-    {
-      "artist": "Chappell Roan",
-      "title": "The Subway",
-      "video": "woLfAvD5iXI",
-      "addedAt": "2026-10-01T21:04:57.678Z"
-    },
-    {
-      "artist": "Ravyn Lenae",
-      "title": "Love Me Not",
-      "video": "cswfR85D7jM",
-      "addedAt": "2026-09-29T20:55:09.245Z"
-    },
-    {
-      "artist": "Poets of the Fall",
-      "title": "Carnival Of Rust",
-      "video": "MKk1u5RMTn4",
-      "addedAt": "2026-09-29T20:54:38.207Z"
-    },
-    {
-      "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Cast of EPIC)",
-      "title": "Survive",
-      "video": "6GpuV9iyQYU",
-      "addedAt": "2026-09-24T19:38:31.151Z"
-    },
-    {
-      "artist": "Momoiro Clover Z",
-      "title": "Nippon Egao Hyakkei",
-      "video": "ymP81hBZni4",
-      "addedAt": "2026-09-24T19:38:15.235Z"
-    },
-    {
-      "artist": "The Wanted",
-      "title": "Glad You Came",
-      "video": "2ggzxInyzVE",
-      "addedAt": "2026-09-24T19:37:49.082Z"
-    },
-    {
-      "artist": "Junior Caldera feat. Sophie Ellis-Bextor",
-      "title": "Can’t Fight This Feeling",
-      "video": "xTqhdtE2XaI",
-      "addedAt": "2026-09-24T19:37:31.110Z"
-    },
-    {
-      "artist": "Bersuit Vergarabat",
-      "title": "El viejo de arriba",
-      "video": "K3RIqyhzVZs",
-      "addedAt": "2026-09-24T19:36:47.870Z"
-    },
-    {
-      "artist": "Wise Guys",
-      "title": "Das Sägewerk Bad Segeberg",
-      "video": "jVkN2WNOnuc",
-      "addedAt": "2026-09-24T19:36:06.768Z"
-    },
-    {
-      "artist": "Nightwish",
-      "title": "Escapist",
-      "video": "eKuCFk1j_Io",
-      "addedAt": "2026-09-24T18:23:50.194Z"
-    },
-    {
-      "artist": "ROSALÍA",
-      "title": "La perla",
-      "video": "GkTWxDB21cA",
-      "addedAt": "2026-09-24T18:23:30.575Z"
     }
   ]
 }

@@ -1,0 +1,311 @@
+#ARTIST:Nightwish
+#TITLE:Sleeping Sun
+#CREATOR:Canni
+#BPM:220,8
+#YEAR:1998
+#VIDEO:v=UGfKMV5AbMI
+#GENRE:Metal
+#LANGUAGE:English
+#GAP:23960,978260869564
+#ALLKARAOKE_ID:nightwish-sleeping-sun
+#ALLKARAOKE_SID:6488
+#ALLKARAOKE_LASTUPDATE:2026-10-06T04:08:48.237Z
+#ALLKARAOKE_ARTISTORIGIN:FI
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
+#ALLKARAOKE_REALBPM:110
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=348
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:242
+#MP3:Nightwish - Sleeping Sun.mp3
+: 15 2 5 The 
+: 19 10 5 sun 
+: 31 4 5 is 
+: 39 6 7 slee
+: 47 6 7 ping 
+: 55 7 5 qui
+: 63 3 4 et
+: 67 12 5 ly
+- 79
+: 87 6 5 Once 
+: 95 3 5 u
+: 99 10 7 pon 
+: 111 2 7 a 
+: 115 11 5 cen
+: 127 5 4 tu
+: 133 14 5 ry
+- 147
+: 151 4 5 Wist
+: 157 4 5 ful 
+: 163 5 7 o
+: 169 6 7 ceans 
+: 177 12 5 calm 
+: 191 6 4 and 
+: 199 8 5 red
+- 207
+: 209 5 5 Ar
+: 215 6 5 dent 
+: 223 5 5 ca
+: 229 5 9 res
+: 235 4 9 ses 
+: 243 8 7 laid 
+: 255 4 5 to 
+: 261 10 2 rest
+- 271
+: 279 6 5 For 
+: 287 6 5 my 
+: 295 6 7 dreams 
+: 303 6 7 I 
+: 311 6 5 hold 
+: 319 6 4 my 
+: 327 6 5 life
+- 333
+: 335 6 5 For 
+: 343 3 5 wi
+: 347 4 5 shes 
+: 359 6 9 I 
+: 367 3 9 be
+: 371 10 7 hold 
+: 383 6 5 my 
+: 391 8 2 night
+- 399
+: 401 4 2 The 
+: 407 8 2 truth 
+: 423 6 5 at 
+: 431 2 5 the 
+: 435 6 4 end 
+: 443 6 2 of 
+: 451 12 -2 time
+- 463
+: 471 6 -2 Lo
+: 479 6 -2 sing 
+: 487 8 0 faith 
+: 499 10 2 makes 
+: 511 4 0 a 
+: 519 44 2 crime
+- 563
+: 575 6 -3 I 
+* 583 10 2 wish 
+: 595 10 4 for 
+: 607 4 5 this 
+: 615 10 5 night
+: 627 11 7 time
+- 638
+: 639 6 9 To 
+* 647 10 14 last 
+: 659 10 14 for 
+: 671 6 12 a 
+* 679 10 9 life
+* 691 8 5 time
+- 699
+: 703 3 7 The
+: 707 2 9 ~ 
+: 711 10 10 dark
+: 723 10 9 ness 
+: 735 7 7 a
+: 743 10 5 round 
+: 755 8 2 me
+- 763
+: 767 3 9 Sho
+: 771 2 7 ~res 
+: 775 8 5 of 
+: 787 2 2 a 
+: 791 7 2 so
+: 799 6 5 lar 
+* 807 24 9 sea
+- 831
+: 839 10 2 Oh 
+: 851 10 4 how 
+: 863 6 5 I 
+: 871 10 5 wish 
+: 885 8 7 to 
+: 895 6 9 go
+- 901
+: 903 10 14 Down 
+: 915 10 14 with 
+: 927 8 12 the 
+: 939 20 7 sun
+- 959
+: 967 10 12 Slee
+: 979 12 9 ping
+- 991
+: 999 10 7 Wee
+: 1011 12 4 ping
+- 1023
+* 1031 6 0 With 
+* 1039 24 2 you
+- 1063 1064
+- 1064
+: 1079 3 5 Sor
+: 1083 6 5 row 
+: 1091 6 7 has 
+: 1103 2 7 a 
+: 1107 7 5 hu
+: 1115 6 4 man 
+: 1123 12 5 heart
+- 1135
+: 1143 6 5 From 
+: 1151 6 5 my 
+: 1159 6 7 god 
+: 1167 4 7 it 
+: 1175 4 5 will 
+: 1183 3 4 de
+: 1187 10 5 part
+- 1197
+: 1199 6 5 I’d 
+: 1207 6 5 sail 
+: 1215 2 5 be
+: 1219 10 7 fore 
+: 1231 2 7 a 
+: 1235 6 5 thou
+: 1243 6 4 sand 
+: 1251 14 5 moons
+- 1265
+: 1271 3 5 Ne
+: 1275 6 5 ver 
+* 1283 11 9 fin
+* 1295 6 9 ding 
+: 1303 6 7 where 
+: 1311 2 5 to 
+: 1315 10 2 go
+- 1325
+: 1327 6 5 Two 
+: 1335 3 5 hun
+: 1339 6 5 dred 
+: 1347 6 7 twen
+: 1355 2 7 ty-
+: 1359 6 7 two 
+: 1367 2 5 days 
+: 1373 4 4 of 
+: 1379 8 5 light
+- 1387
+: 1391 6 5 Will 
+: 1399 6 5 be 
+: 1407 3 5 de
+: 1411 7 9 si
+: 1419 6 9 red 
+: 1427 10 7 by 
+: 1439 2 5 a 
+: 1443 10 2 night
+- 1453
+: 1459 2 2 A 
+: 1463 3 2 mo
+: 1467 6 2 ment 
+: 1479 6 5 for 
+: 1487 2 5 the 
+: 1491 7 4 po
+: 1499 4 2 et’s 
+: 1507 10 -2 play
+- 1517
+: 1523 4 -2 Un
+: 1529 4 -2 til 
+: 1535 4 -2 there’s 
+: 1543 3 0 no
+: 1547 10 2 thing
+- 1557
+: 1559 4 2 Left 
+: 1567 4 0 to 
+: 1575 48 2 say
+- 1623
+: 1631 6 -3 I 
+: 1639 10 2 wish 
+: 1651 10 4 for 
+: 1663 6 5 this 
+: 1671 10 5 night
+: 1683 10 7 time
+- 1693
+: 1695 6 9 To 
+: 1703 10 14 last 
+: 1715 10 14 for 
+: 1727 6 12 a 
+: 1735 12 9 life
+: 1749 6 5 time
+- 1755
+: 1759 3 7 The
+: 1763 2 9 ~ 
+: 1767 10 10 dark
+: 1779 8 9 ness 
+: 1791 7 7 a
+: 1799 10 5 round 
+: 1811 8 2 me
+- 1819
+: 1823 3 9 Sho
+: 1827 2 7 ~res 
+: 1831 8 5 of 
+: 1843 2 2 a 
+: 1847 7 2 so
+: 1855 6 5 lar 
+: 1863 24 9 sea
+- 1887
+: 1897 8 2 Oh 
+: 1909 8 4 how 
+: 1919 6 5 I 
+: 1927 10 5 wish 
+: 1941 8 7 to 
+: 1951 6 9 go
+- 1957
+: 1959 10 14 Down 
+: 1971 10 14 with 
+: 1983 6 12 the 
+: 1993 24 7 sun
+- 2017
+: 2023 10 12 Slee
+: 2035 14 9 ping
+- 2049
+: 2055 10 7 Wee
+: 2067 14 4 ping
+- 2081
+: 2087 6 0 With 
+: 2095 26 2 you
+- 2121 2576
+- 2576
+: 2591 6 0 I 
+: 2599 10 5 wish 
+: 2611 10 7 for 
+: 2623 6 8 this 
+: 2631 8 8 night
+: 2641 10 10 time
+- 2651
+: 2653 8 12 To 
+* 2663 10 17 last 
+: 2675 10 17 for 
+: 2687 6 15 a 
+: 2695 12 12 life
+: 2709 6 8 time
+- 2715
+: 2719 3 10 The
+: 2723 2 12 ~ 
+: 2727 10 13 dark
+: 2739 10 12 ness 
+: 2751 7 10 a
+: 2759 10 8 round 
+: 2771 11 5 me
+- 2782
+: 2783 3 12 Sho
+: 2787 2 10 ~res 
+: 2791 8 8 of 
+: 2803 2 5 a 
+: 2807 7 5 so
+: 2815 6 8 lar 
+: 2823 24 12 sea
+- 2847
+: 2855 10 5 Oh 
+: 2867 10 7 how 
+: 2879 4 8 I 
+: 2887 10 8 wish 
+: 2899 8 10 to 
+: 2911 6 12 go
+- 2917
+* 2919 10 17 Down 
+* 2931 10 17 with 
+: 2943 8 15 the 
+: 2957 18 10 sun
+- 2975
+: 2983 10 15 Slee
+: 2995 14 12 ping
+- 3009
+: 3015 10 10 Wee
+: 3027 14 7 ping
+- 3041
+: 3047 6 3 With 
+: 3055 48 5 you
+E

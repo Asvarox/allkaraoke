@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 
-import { initTestMode, mockSongs } from './helpers';
+import { initTestMode, mockSongs, REMOTE_MIC_TRANSPORTS } from './helpers';
 import initialise from './page-objects/initialise';
 import { RemoteMicPages } from './page-objects/remote-mic/initialise-remote-mic';
 import {
@@ -43,158 +43,168 @@ const song2 = {
 // showing up afterwards — these assertions are started before the reconnect is triggered.
 const RECONNECT_ALERT_TIMEOUT = 25_000;
 
-test('Remote mic should connect, be selectable and control the game', async ({ browser, page, browserName }) => {
-  let remoteMic1: RemoteMicPages;
-  let remoteMic2: RemoteMicPages;
+for (const { transport, setUp, codeLead } of REMOTE_MIC_TRANSPORTS) {
+  test(`Remote mic should connect, be selectable and control the game (${transport})`, async ({
+    browser,
+    page,
+    context,
+    browserName,
+  }) => {
+    let remoteMic1: RemoteMicPages;
+    let remoteMic2: RemoteMicPages;
 
-  test.fixme(browserName === 'firefox', 'Test fails super often on FF');
-  test.slow();
+    test.fixme(browserName === 'firefox', 'Test fails super often on FF');
+    test.slow();
+    await setUp({ page, context });
 
-  await test.step('Go to select Smartphones setup', async () => {
-    await page.goto('/?e2e-test');
-    await pages.landingPage.enterTheGame();
-    await pages.mainMenuPage.goToInputSelectionPage();
-    await pages.inputSelectionPage.selectSmartphones();
+    await test.step('Go to select Smartphones setup', async () => {
+      await page.goto('/?e2e-test');
+      await pages.landingPage.enterTheGame();
+      await pages.mainMenuPage.goToInputSelectionPage();
+      await pages.inputSelectionPage.selectSmartphones();
+      // The game code's lead letter is what tells a phone which transport to connect with
+      await expect(page.getByTestId('game-code')).toHaveText(new RegExp(`^${codeLead}`, 'i'));
+    });
+
+    await test.step('Connect remoteMics - after entering players names, they should be visible properly in inputs', async () => {
+      remoteMic1 = await openAndConnectRemoteMicWithCode(page, browser, player1.name);
+      remoteMic2 = await openAndConnectRemoteMicDirectly(page, browser, player2.name);
+      await pages.smartphonesConnectionPage.expectPlayerNameToBe(player1.num, player1.name);
+      await pages.smartphonesConnectionPage.expectPlayerNameToBe(player2.num, player2.name);
+    });
+
+    await test.step('Navigate to main menu by phone', async () => {
+      await pages.smartphonesConnectionPage.navigateToSaveButtonWithKeyboard(remoteMic1._page);
+      await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
+      await expect(pages.mainMenuPage.singSongButton).toBeVisible();
+    });
+
+    await test.step('Check if the remote mics reconnect automatically', async () => {
+      await page.waitForTimeout(500);
+      await page.reload();
+      await remoteMic1.remoteMicMainPage.expectPlayerToBeConnected();
+      await remoteMic2.remoteMicMainPage.expectPlayerToBeConnected();
+
+      await Promise.race([
+        pages.smartphonesConnectionPage.expectConnectedAlertToBeShownForPlayer(player1.name),
+        pages.smartphonesConnectionPage.expectConnectedAlertToBeShownForPlayer(player2.name),
+      ]);
+      await remoteMic1.remoteMicChangeMicColorPage.goBackToMainMenu();
+      await remoteMic2.remoteMicChangeMicColorPage.goBackToMainMenu();
+    });
+
+    await test.step('Navigate to song list by phone', async () => {
+      // The main menu mirrors its controls to the remote mic, so tap "Sing a song" directly instead of
+      // arrow-navigating + Enter.
+      await remoteMic1.remoteMicMainPage.mirroredControl('sing-a-song').click();
+      // The exclude-languages screen also mirrors its controls to the remote mic, so tap "Continue"
+      // directly instead of arrow-navigating + Enter.
+      await remoteMic1.remoteMicMainPage.mirroredControl('close-exclude-languages').click();
+    });
+
+    await test.step('Search song remotely and navigate', async () => {
+      await remoteMic1.remoteMicMainPage.searchTheSong(song2.title);
+      await expect(await pages.songListPage.getSongElement(song1ID)).not.toBeVisible();
+      await expect(await pages.songListPage.getSongElement(song2.ID)).toBeVisible();
+
+      await pages.songListPage.focusSong(song2.ID);
+      await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
+      await pages.songPreviewPage.navigateToGoNextWithKeyboard(remoteMic2._page);
+      // In v2, pressing Enter here (via remoteMic2) would trigger play-song-button (the default-focused
+      // element when inputs are configured), which would start the game prematurely.
+      // The next step verifies mic reconnection on the settings screen, so we don't press Enter here.
+    });
+
+    await test.step('Check if the mics are reselected after they refresh', async () => {
+      // The "<name> connected" toast auto-dismisses after 5s, and the reconnect itself (wizard
+      // minimum display times + handshake) burns a good part of that. Start polling for the toast
+      // before the reconnect instead of asserting it once every other check is done — otherwise the
+      // toast is regularly gone by the time the assertion runs.
+
+      // Blue microphone
+      await remoteMic1._page.reload();
+      await expect(pages.songPreviewPage.getUnavailableStatusPlayer(player1.num)).toBeVisible();
+      // The name survives the refresh (it's persisted on the phone), which is part of what this step
+      // checks — assert it rather than typing it in again.
+      await remoteMic1.remoteMicMainPage.expectPlayerNameToBe(player1.name);
+
+      const player1ConnectedAlert = pages.songPreviewPage.expectConnectedAlertToBeShownForPlayer(
+        player1.name,
+        RECONNECT_ALERT_TIMEOUT,
+      );
+      await connectRemoteMic(remoteMic1._page);
+      await player1ConnectedAlert;
+      await remoteMic1.remoteMicMainPage.expectPlayerToBeAssigned(player1.micColor);
+      await expect(pages.songPreviewPage.getUnavailableStatusPlayer(player1.num)).not.toBeVisible();
+
+      // Red microphone
+      await remoteMic2._page.reload();
+      await expect(pages.songPreviewPage.getUnavailableStatusPlayer(player2.num)).toBeVisible();
+      await remoteMic2.remoteMicMainPage.expectPlayerNameToBe(player2.name);
+
+      const player2ConnectedAlert = pages.songPreviewPage.expectConnectedAlertToBeShownForPlayer(
+        player2.name,
+        RECONNECT_ALERT_TIMEOUT,
+      );
+      await connectRemoteMic(remoteMic2._page);
+      await player2ConnectedAlert;
+      await remoteMic2.remoteMicMainPage.expectPlayerToBeAssigned(player2.micColor);
+      await expect(pages.songPreviewPage.getUnavailableStatusPlayer(player2.num)).not.toBeVisible();
+      await pages.songPreviewPage.navigateToPlayTheSongWithKeyboard(remoteMic2._page);
+      await pages.calibration.approveDefaultCalibrationSetting();
+    });
+
+    await test.step('Expect confirmation status from players', async () => {
+      await remoteMic1.remoteMicMainPage.pressReadyOnRemoteMic();
+      await pages.songPreviewPage.expectPlayerConfirmationStatusToBe(player1.name);
+      await remoteMic2.remoteMicMainPage.pressReadyOnRemoteMic();
+      await pages.songPreviewPage.expectPlayerConfirmationStatusToBe(player2.name);
+    });
+
+    // The in-game screens (skip intro, pause menu) mirror their controls to the remote mic, so the
+    // remote has no arrow pad or Enter button to drive them with — use the regular keyboard instead.
+    // Remote-side mirror behaviour is covered by remote-mics-keyboard-mirror.spec.ts.
+    await test.step('Check if restart song is possible', async () => {
+      await expect(pages.gamePage.getSongLyricsForPlayerElement(player1.num)).toBeVisible({ timeout: 10_000 });
+      await expect(pages.gamePage.skipIntroElement).toBeVisible();
+      await pages.gamePage.goToPauseMenuByKeyboard();
+      await expect(pages.gamePage.restartButton).toBeVisible();
+      await pages.gamePage.navigateAndApproveWithKeyboard('button-restart-song');
+    });
+
+    await test.step('Play song', async () => {
+      await page.waitForTimeout(500);
+      await remoteMic1.remoteMicMainPage.pressReadyOnRemoteMic();
+      await pages.songPreviewPage.expectPlayerConfirmationStatusToBe(player1.name);
+      await remoteMic2.remoteMicMainPage.pressReadyOnRemoteMic();
+      await pages.songPreviewPage.expectPlayerConfirmationStatusToBe(player2.name);
+
+      await expect(pages.gamePage.skipIntroElement).toBeVisible();
+      await page.waitForTimeout(1500);
+      // Skip intro is mirrored to the remote, so the remote has no generic Enter button any more.
+      await page.keyboard.press('Enter');
+    });
+
+    test.fixme(browserName === 'firefox', 'Remote mics dont get any microphone input on FF :(');
+
+    await test.step('Check if players names are displayed in results', async () => {
+      await expect(pages.postGameResultsPage.skipScoreElement).toBeVisible({ timeout: 15_000 });
+      await pages.postGameResultsPage.waitForPlayersScoreToBeGreaterThan(100);
+      await pages.postGameResultsPage.expectPlayerNameToBeDisplayed(player1.num, player1.name);
+      await pages.postGameResultsPage.expectPlayerNameToBeDisplayed(player2.num, player2.name);
+    });
+
+    // The post-game screens mirror their controls to the remote too, so step through them with the
+    // regular keyboard (each screen's default-focused button is the one we want).
+    await test.step('Go to select new song', async () => {
+      await expect(pages.postGameResultsPage.skipScoreElement).toBeVisible();
+      await page.keyboard.press('Enter');
+      await expect(pages.postGameResultsPage.nextButton).toBeVisible();
+      await page.keyboard.press('Enter');
+      await pages.postGameHighScoresPage.dismissLeaderboardPrompt();
+      await expect(pages.postGameHighScoresPage.selectSongButton).toBeVisible();
+      await page.keyboard.press('Enter');
+      await expect(await pages.songListPage.getSongElement(song2.ID)).toBeVisible();
+    });
   });
-
-  await test.step('Connect remoteMics - after entering players names, they should be visible properly in inputs', async () => {
-    remoteMic1 = await openAndConnectRemoteMicWithCode(page, browser, player1.name);
-    remoteMic2 = await openAndConnectRemoteMicDirectly(page, browser, player2.name);
-    await pages.smartphonesConnectionPage.expectPlayerNameToBe(player1.num, player1.name);
-    await pages.smartphonesConnectionPage.expectPlayerNameToBe(player2.num, player2.name);
-  });
-
-  await test.step('Navigate to main menu by phone', async () => {
-    await pages.smartphonesConnectionPage.navigateToSaveButtonWithKeyboard(remoteMic1._page);
-    await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
-    await expect(pages.mainMenuPage.singSongButton).toBeVisible();
-  });
-
-  await test.step('Check if the remote mics reconnect automatically', async () => {
-    await page.waitForTimeout(500);
-    await page.reload();
-    await remoteMic1.remoteMicMainPage.expectPlayerToBeConnected();
-    await remoteMic2.remoteMicMainPage.expectPlayerToBeConnected();
-
-    await Promise.race([
-      pages.smartphonesConnectionPage.expectConnectedAlertToBeShownForPlayer(player1.name),
-      pages.smartphonesConnectionPage.expectConnectedAlertToBeShownForPlayer(player2.name),
-    ]);
-    await remoteMic1.remoteMicChangeMicColorPage.goBackToMainMenu();
-    await remoteMic2.remoteMicChangeMicColorPage.goBackToMainMenu();
-  });
-
-  await test.step('Navigate to song list by phone', async () => {
-    // The main menu mirrors its controls to the remote mic, so tap "Sing a song" directly instead of
-    // arrow-navigating + Enter.
-    await remoteMic1.remoteMicMainPage.mirroredControl('sing-a-song').click();
-    // The exclude-languages screen also mirrors its controls to the remote mic, so tap "Continue"
-    // directly instead of arrow-navigating + Enter.
-    await remoteMic1.remoteMicMainPage.mirroredControl('close-exclude-languages').click();
-  });
-
-  await test.step('Search song remotely and navigate', async () => {
-    await remoteMic1.remoteMicMainPage.searchTheSong(song2.title);
-    await expect(await pages.songListPage.getSongElement(song1ID)).not.toBeVisible();
-    await expect(await pages.songListPage.getSongElement(song2.ID)).toBeVisible();
-
-    await pages.songListPage.focusSong(song2.ID);
-    await remoteMic1.remoteMicMainPage.pressEnterOnRemoteMic();
-    await pages.songPreviewPage.navigateToGoNextWithKeyboard(remoteMic2._page);
-    // In v2, pressing Enter here (via remoteMic2) would trigger play-song-button (the default-focused
-    // element when inputs are configured), which would start the game prematurely.
-    // The next step verifies mic reconnection on the settings screen, so we don't press Enter here.
-  });
-
-  await test.step('Check if the mics are reselected after they refresh', async () => {
-    // The "<name> connected" toast auto-dismisses after 5s, and the reconnect itself (wizard
-    // minimum display times + handshake) burns a good part of that. Start polling for the toast
-    // before the reconnect instead of asserting it once every other check is done — otherwise the
-    // toast is regularly gone by the time the assertion runs.
-
-    // Blue microphone
-    await remoteMic1._page.reload();
-    await expect(pages.songPreviewPage.getUnavailableStatusPlayer(player1.num)).toBeVisible();
-    // The name survives the refresh (it's persisted on the phone), which is part of what this step
-    // checks — assert it rather than typing it in again.
-    await remoteMic1.remoteMicMainPage.expectPlayerNameToBe(player1.name);
-
-    const player1ConnectedAlert = pages.songPreviewPage.expectConnectedAlertToBeShownForPlayer(
-      player1.name,
-      RECONNECT_ALERT_TIMEOUT,
-    );
-    await connectRemoteMic(remoteMic1._page);
-    await player1ConnectedAlert;
-    await remoteMic1.remoteMicMainPage.expectPlayerToBeAssigned(player1.micColor);
-    await expect(pages.songPreviewPage.getUnavailableStatusPlayer(player1.num)).not.toBeVisible();
-
-    // Red microphone
-    await remoteMic2._page.reload();
-    await expect(pages.songPreviewPage.getUnavailableStatusPlayer(player2.num)).toBeVisible();
-    await remoteMic2.remoteMicMainPage.expectPlayerNameToBe(player2.name);
-
-    const player2ConnectedAlert = pages.songPreviewPage.expectConnectedAlertToBeShownForPlayer(
-      player2.name,
-      RECONNECT_ALERT_TIMEOUT,
-    );
-    await connectRemoteMic(remoteMic2._page);
-    await player2ConnectedAlert;
-    await remoteMic2.remoteMicMainPage.expectPlayerToBeAssigned(player2.micColor);
-    await expect(pages.songPreviewPage.getUnavailableStatusPlayer(player2.num)).not.toBeVisible();
-    await pages.songPreviewPage.navigateToPlayTheSongWithKeyboard(remoteMic2._page);
-    await pages.calibration.approveDefaultCalibrationSetting();
-  });
-
-  await test.step('Expect confirmation status from players', async () => {
-    await remoteMic1.remoteMicMainPage.pressReadyOnRemoteMic();
-    await pages.songPreviewPage.expectPlayerConfirmationStatusToBe(player1.name);
-    await remoteMic2.remoteMicMainPage.pressReadyOnRemoteMic();
-    await pages.songPreviewPage.expectPlayerConfirmationStatusToBe(player2.name);
-  });
-
-  // The in-game screens (skip intro, pause menu) mirror their controls to the remote mic, so the
-  // remote has no arrow pad or Enter button to drive them with — use the regular keyboard instead.
-  // Remote-side mirror behaviour is covered by remote-mics-keyboard-mirror.spec.ts.
-  await test.step('Check if restart song is possible', async () => {
-    await expect(pages.gamePage.getSongLyricsForPlayerElement(player1.num)).toBeVisible({ timeout: 10_000 });
-    await expect(pages.gamePage.skipIntroElement).toBeVisible();
-    await pages.gamePage.goToPauseMenuByKeyboard();
-    await expect(pages.gamePage.restartButton).toBeVisible();
-    await pages.gamePage.navigateAndApproveWithKeyboard('button-restart-song');
-  });
-
-  await test.step('Play song', async () => {
-    await page.waitForTimeout(500);
-    await remoteMic1.remoteMicMainPage.pressReadyOnRemoteMic();
-    await pages.songPreviewPage.expectPlayerConfirmationStatusToBe(player1.name);
-    await remoteMic2.remoteMicMainPage.pressReadyOnRemoteMic();
-    await pages.songPreviewPage.expectPlayerConfirmationStatusToBe(player2.name);
-
-    await expect(pages.gamePage.skipIntroElement).toBeVisible();
-    await page.waitForTimeout(1500);
-    // Skip intro is mirrored to the remote, so the remote has no generic Enter button any more.
-    await page.keyboard.press('Enter');
-  });
-
-  test.fixme(browserName === 'firefox', 'Remote mics dont get any microphone input on FF :(');
-
-  await test.step('Check if players names are displayed in results', async () => {
-    await expect(pages.postGameResultsPage.skipScoreElement).toBeVisible({ timeout: 15_000 });
-    await pages.postGameResultsPage.waitForPlayersScoreToBeGreaterThan(100);
-    await pages.postGameResultsPage.expectPlayerNameToBeDisplayed(player1.num, player1.name);
-    await pages.postGameResultsPage.expectPlayerNameToBeDisplayed(player2.num, player2.name);
-  });
-
-  // The post-game screens mirror their controls to the remote too, so step through them with the
-  // regular keyboard (each screen's default-focused button is the one we want).
-  await test.step('Go to select new song', async () => {
-    await expect(pages.postGameResultsPage.skipScoreElement).toBeVisible();
-    await page.keyboard.press('Enter');
-    await expect(pages.postGameResultsPage.nextButton).toBeVisible();
-    await page.keyboard.press('Enter');
-    await pages.postGameHighScoresPage.dismissLeaderboardPrompt();
-    await expect(pages.postGameHighScoresPage.selectSongButton).toBeVisible();
-    await page.keyboard.press('Enter');
-    await expect(await pages.songListPage.getSongElement(song2.ID)).toBeVisible();
-  });
-});
+}
