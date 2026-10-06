@@ -104,9 +104,11 @@ export default function SongPreviewLayout({ expanded, title, artist, thumbnail, 
             {artist}
           </div>
         )}
+        {/* Wider than a phone it's no box at all — and no clip either: spatial navigation clamps a
+            control to any ancestor that clips, which a `contents` box would do to nothing */}
         <ScrollableColumn
-          className={scrolls ? SCROLL_CLASS : 'contents'}
-          contentClassName={scrolls ? SCROLL_CONTENT_CLASS : 'contents'}
+          className={scrolls ? SCROLL_CLASS : 'contents overflow-visible'}
+          contentClassName={scrolls ? SCROLL_CONTENT_CLASS : 'contents overflow-visible'}
           arrows={scrolls}>
           <div className={expanded ? 'min-w-0 [grid-area:video]' : 'contents'}>{thumbnail}</div>
           <SlotsContext value={slots}>{expanded && footer}</SlotsContext>
