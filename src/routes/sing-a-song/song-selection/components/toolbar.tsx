@@ -2,7 +2,7 @@ import { Dispatch, ReactNode, SetStateAction, useState } from 'react';
 
 import { Button } from '~/modules/elements/akui/button';
 import { Icon } from '~/modules/elements/akui/icon';
-import useBreakpoint from '~/modules/hooks/use-breakpoint';
+import useBreakpoint, { usePhoneOrientation } from '~/modules/hooks/use-breakpoint';
 import { RegisterFunc } from '~/modules/hooks/use-keyboard-nav';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import { useSetlist } from '~/modules/songs/hooks/use-setlist';
@@ -24,7 +24,7 @@ interface ToolbarProps {
   onPlaylistSelected?: () => void;
   /** True while keyboard nav is active inside the toolbar — suppresses hotkeys that would interfere. */
   toolbarNavActive?: boolean;
-  /** The second row's song groups navigation; on mobile search and random move next to it */
+  /** The second row's song groups navigation; under md search and random move next to it */
   groupsNavigation: ReactNode;
   groupsNavRegister?: RegisterFunc;
 }
@@ -44,12 +44,15 @@ export default function Toolbar({
   groupsNavRegister,
 }: ToolbarProps) {
   const breakpoint = useBreakpoint();
-  // Screens smaller than md (768px) use the mobile layout
-  const mobile = breakpoint === 'xs' || breakpoint === 'sm';
+  // Under md (768px) search and random move to the row below, and the controls take the song groups' size
+  const compact = breakpoint === 'xs' || breakpoint === 'sm';
+  const size = compact ? 'mini' : 'small';
+  // A phone held upright picks the playlist from a sheet rather than a row of tabs
+  const playlistSheet = usePhoneOrientation() === 'portrait';
   // Search collapses to an icon only when the song list shows 1 card per row (< 640px)
   const collapseSearch = breakpoint === 'xs';
   // Labelled only where the keyboard help shows (lg+), as the app toolbar's help button needs the room there
-  const showRandomLabel = !mobile && breakpoint !== 'md';
+  const showRandomLabel = breakpoint === 'lg' || breakpoint === 'xl' || breakpoint === '2xl';
   const navigate = useSmoothNavigate();
   const { isEditable } = useSetlist();
   const [languagesOpen, setLanguagesOpen] = useState(false);
@@ -64,9 +67,10 @@ export default function Toolbar({
         filters={filters}
         setFilters={setFilters}
         keyboardControl={keyboardControl}
-        keyboardNavRegister={mobile ? groupsNavRegister : keyboardNavRegister}
+        keyboardNavRegister={compact ? groupsNavRegister : keyboardNavRegister}
         toolbarNavActive={toolbarNavActive}
         collapseSearch={collapseSearch}
+        size={size}
         onExpandedChange={setSearchExpanded}
       />
 
@@ -74,12 +78,12 @@ export default function Toolbar({
       {!searchExpanded && (
         <>
           <Button
-            size={{ xs: 'mini', sm: 'small' }}
+            size={size}
             type="button"
             aria-label="Random song"
             data-test="random-song-button"
             className="shrink-0 animate-none"
-            {...(mobile ? groupsNavRegister : keyboardNavRegister)?.('random-song-button', onRandom, 'Random song')}
+            {...(compact ? groupsNavRegister : keyboardNavRegister)?.('random-song-button', onRandom, 'Random song')}
             leftIcon={<Icon icon="ic:baseline-casino" />}
             fullWidth={false}
             onClick={onRandom}>
@@ -94,20 +98,21 @@ export default function Toolbar({
 
   return (
     <>
-      <div className="mr-25 flex items-center gap-2 min-[1760px]:mr-0 lg:max-[1760px]:mr-41">
-        {!mobile && searchAndRandom}
+      <div className="mr-28 flex items-center gap-2 max-md:mr-23 min-[1760px]:mr-0 lg:max-[1760px]:mr-41">
+        {!compact && searchAndRandom}
 
         <PlaylistSelector
           playlists={playlists}
           selectedPlaylist={selectedPlaylist}
           setSelectedPlaylist={setSelectedPlaylist}
-          mobile={mobile}
+          mobile={playlistSheet}
+          size={size}
           keyboardNavRegister={keyboardNavRegister}
           onPlaylistSelected={onPlaylistSelected}
         />
 
         <Button
-          size={{ xs: 'mini', sm: 'small' }}
+          size={size}
           type="button"
           aria-label="Song settings"
           data-test="song-settings-button"
@@ -119,7 +124,7 @@ export default function Toolbar({
         />
       </div>
       <div className="flex items-center gap-2">
-        {mobile && searchAndRandom}
+        {compact && searchAndRandom}
         {!searchExpanded && <div className="min-w-0 flex-1">{groupsNavigation}</div>}
       </div>
       {languagesOpen && (

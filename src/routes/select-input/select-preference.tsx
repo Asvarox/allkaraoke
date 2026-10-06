@@ -1,6 +1,5 @@
 import { ValuesType } from 'utility-types';
 
-import { Badge } from '~/modules/elements/akui/badge';
 import { Icon } from '~/modules/elements/akui/icon';
 import { Menu } from '~/modules/elements/akui/menu';
 import { MenuButton } from '~/modules/elements/menu';
@@ -55,7 +54,6 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
             <strong>QR code</strong> that will open Remote Mic website - no need to download an app!
           </>
         }
-        recommended
         numOfPlayers="1-4"
       />
       <InputOptionButton
@@ -143,14 +141,12 @@ const InputOptionButton = ({
   name,
   description,
   numOfPlayers,
-  recommended,
   ...props
 }: {
   icon: React.ReactNode;
   name: React.ReactNode;
   description: React.ReactNode;
   numOfPlayers: string;
-  recommended?: boolean;
 }) => {
   return (
     <Menu.Button
@@ -164,7 +160,6 @@ const InputOptionButton = ({
           {description}
         </span>
       </div>
-      {recommended && <Badge className="right-8">Recommended</Badge>}
       <div className="text-md flex w-24 flex-grow items-center justify-end gap-1 self-end pb-1 text-right max-lg:text-sm">
         <Icon icon="ic:baseline-people-alt" className="!text-md !max-lg:text-sm" />
         <strong>{numOfPlayers}</strong>

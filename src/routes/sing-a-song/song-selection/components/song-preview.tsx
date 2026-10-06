@@ -205,7 +205,15 @@ export default function SongPreviewComponent({
                   'text-active hidden shrink-0 cursor-pointer items-center',
                   redesign ? 'flex' : 'sm:flex',
                 )}>
-                <Icon icon="ic:baseline-arrow-back" className={redesign ? 'text-2xl' : 'text-xl md:text-2xl'} />
+                <Icon
+                  icon="ic:baseline-arrow-back"
+                  // A step up from the title beside it, which is a size down on a phone
+                  className={
+                    redesign
+                      ? 'text-xl md:portrait:text-2xl max-lg:landscape:text-lg lg:landscape:text-2xl'
+                      : 'text-xl md:text-2xl'
+                  }
+                />
               </button>
               <SongCard.SongTitle
                 className={

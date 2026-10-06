@@ -92,19 +92,23 @@ export default function SongSettings({ songPreview, onPlay, keyboardControl, onE
         <div className={cn(SongPreviewLayout.area.panels, 'flex min-h-0 flex-col gap-2')}>
           {isPhone && (
             // Held sideways the tabs are the top of the screen's right edge, just clear of the app's toolbar there
-            <Selector value={panel} onChange={(value) => setPanel(value as Panel)} className="max-lg:landscape:mr-27">
+            <Selector
+              value={panel}
+              onChange={(value) => setPanel(value as Panel)}
+              className="max-md:landscape:mr-22 md:max-lg:landscape:mr-27">
               <Selector.Item
                 value="leaderboard"
                 size="mini"
-                // Shrinks with the other tab, its label truncated, rather than pushing it out of view
-                className="h-11 min-w-0 flex-1"
+                // Shrinks with the other tab, its label truncated, rather than pushing it out of view.
+                // Held sideways it sits beside the app toolbar, so it takes those buttons' height
+                className="h-11 min-w-0 flex-1 max-md:landscape:h-10 md:max-lg:landscape:h-[50px]"
                 data-test="song-preview-panel-leaderboard">
                 <span className="min-w-0 truncate">{online?.chatView ? 'Chat' : 'Leaderboard'}</span>
               </Selector.Item>
               <Selector.Item
                 value="players"
                 size="mini"
-                className="h-11 min-w-0 flex-1"
+                className="h-11 min-w-0 flex-1 max-md:landscape:h-10 md:max-lg:landscape:h-[50px]"
                 data-test="song-preview-panel-players">
                 <span className="min-w-0 truncate">Players</span>
               </Selector.Item>

@@ -65,8 +65,7 @@ const EXPANDED_GRID = [
 ].join(' ');
 
 /** The title and artist; held upright, just clear of the app's toolbar in the corner beside them */
-const INFO_CLASS =
-  'flex min-w-0 flex-col gap-1 self-start [grid-area:info] portrait:pr-22 sm:portrait:pr-27 md:portrait:pr-25';
+const INFO_CLASS = 'flex min-w-0 flex-col gap-1 self-start [grid-area:info] portrait:pr-22 md:portrait:pr-25';
 
 /** The column a phone scrolls. The margin and padding pair leaves a focused switcher room to grow
  * without being clipped by the scrollport. */
