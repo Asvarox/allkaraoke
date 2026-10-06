@@ -38,7 +38,11 @@ export const ONLINE_ROOM_TTL_MS = 30 * 60 * 1_000;
 export const ONLINE_IDLE_AFTER_MS = 30 * 1_000;
 
 /** How long a singer can report buffering before the room auto-pauses for everyone. */
-export const ONLINE_BUFFERING_PAUSE_MS = 1_000;
+export const ONLINE_BUFFERING_PAUSE_MS = 3_500;
+
+/** Buffering this soon after a client seeks its own video is caused by the seek, so it is only
+ * reported to the room once it outlasts this window — otherwise every resume could re-pause the room. */
+export const ONLINE_SEEK_SETTLE_MS = 5_500;
 
 /** How long the room waits for everyone to confirm readiness before starting the song anyway —
  * the same autostart the local game gives its remote mics. */
@@ -53,7 +57,7 @@ export const ONLINE_START_LEAD_MS = 2_000;
 export const ONLINE_RESUME_COUNTDOWN_MS = 3_000;
 
 /** Clients seek when their playback drifts further than this from the room's expected position. */
-export const ONLINE_DRIFT_THRESHOLD_MS = 500;
+export const ONLINE_DRIFT_THRESHOLD_MS = 2_000;
 
 /** Leaderboard broadcasts are coalesced so subscribers get at most one update per this interval. */
 export const ONLINE_LEADERBOARD_PUBLISH_MS = 500;

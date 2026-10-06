@@ -16,6 +16,7 @@ import { OnlinePlaybackStatus, OnlineRoomState, WireDetailedScore } from '~/modu
 import { getOwnScoreTimeline } from '~/modules/online/score-timeline';
 import Player, { PlayerRef } from '~/routes/game/singing/player';
 import LayoutGame from '~/routes/layout-game';
+import { useSeekSettle } from '~/routes/online/hooks/use-seek-settle';
 import LeaderboardOverlay from '~/routes/online/singing/leaderboard-overlay';
 import PauseOverlay from '~/routes/online/singing/pause-overlay';
 import ReadinessOverlay from '~/routes/online/singing/readiness-overlay';
@@ -110,6 +111,10 @@ function OnlineSinging({ roomState, song }: Props) {
   const anchorServerTimeMs = roomState.playbackAnchor?.serverTimeMs ?? null;
   const anchorVideoTimeMs = roomState.playbackAnchor?.videoTimeMs ?? null;
   const appliedAnchor = useRef<number | null>(null);
+  const seekSettle = useSeekSettle(
+    (status) => OnlineClient.send.playback.reportStatus(status),
+    () => videoStatusRef.current === VideoState.BUFFERING,
+  );
 
   // Authoritative play/pause: follow the server's playback anchor
   useEffect(() => {
@@ -130,6 +135,7 @@ function OnlineSinging({ roomState, song }: Props) {
       const positionMs = anchorVideoTimeMs + Math.max(0, Date.now() - localStartAt);
       // Resumes (or a late anchor) need a seek; the initial start is already at videoGap
       if (anchorVideoTimeMs > 0 || positionMs > ONLINE_DRIFT_THRESHOLD_MS) {
+        seekSettle.markSeek();
         player.current?.seekTo((videoGapMs + positionMs) / 1_000);
       }
       player.current?.play();
@@ -140,7 +146,7 @@ function OnlineSinging({ roomState, song }: Props) {
       return () => clearTimeout(timeout);
     }
     startPlaying();
-  }, [anchorServerTimeMs, anchorVideoTimeMs, isPaused, hasFinished, videoGapMs]);
+  }, [anchorServerTimeMs, anchorVideoTimeMs, isPaused, hasFinished, videoGapMs, seekSettle]);
 
   // Drift correction: seek when local playback strays from the room's expected position
   const driftSeekTrackedRef = useRef(false);
@@ -156,6 +162,8 @@ function OnlineSinging({ roomState, song }: Props) {
         }
         return;
       }
+      // Right after a seek the video lags behind while it loads — correcting that would seek in a loop
+      if (seekSettle.isSettling()) return;
       const currentMs = await player.current.getCurrentTime();
       const expectedMs = videoGapMs + anchorVideoTimeMs + (OnlineClient.serverNow() - anchorServerTimeMs);
       // Never seek into the last stretch of the video — seeking past the end suppresses the
@@ -168,11 +176,21 @@ function OnlineSinging({ roomState, song }: Props) {
           driftSeekTrackedRef.current = true;
           trackOnlineDriftSeek(song.id, drift);
         }
+        seekSettle.markSeek();
         player.current.seekTo(expectedMs / 1_000);
       }
     }, 2_000);
     return () => clearInterval(interval);
-  }, [anchorServerTimeMs, anchorVideoTimeMs, isPaused, hasFinished, videoGapMs, roomState.roomCode, song.id]);
+  }, [
+    anchorServerTimeMs,
+    anchorVideoTimeMs,
+    isPaused,
+    hasFinished,
+    videoGapMs,
+    roomState.roomCode,
+    song.id,
+    seekSettle,
+  ]);
 
   // Publish score snapshots — the locally computed score is authoritative
   useEffect(() => {
@@ -189,7 +207,7 @@ function OnlineSinging({ roomState, song }: Props) {
     // Latched, not derived: a pause mid-song must not throw the still back over the video
     if (state === VideoState.PLAYING) setVideoStarted(true);
     if (hasFinished) return;
-    OnlineClient.send.playback.reportStatus(mapVideoState(state));
+    seekSettle.reportStatus(mapVideoState(state));
 
     // A manual pause (clicking the video, media keys) pauses the whole room, just like
     // opening the pause menu does in local play. Room-commanded pauses are excluded —
