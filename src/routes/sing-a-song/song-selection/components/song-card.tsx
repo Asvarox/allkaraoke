@@ -12,7 +12,6 @@ import { cn } from '~/utils/cn';
 interface SongCardContextValue {
   song: SongPreview;
   isPopular: boolean;
-  forceFlag: boolean;
 }
 
 const SongCardContext = createContext<SongCardContextValue | null>(null);
@@ -73,9 +72,9 @@ function Badges({ className, ...props }: ComponentProps<'div'>) {
   return <div className={`mt-auto flex items-center gap-1 overflow-hidden ${className ?? ''}`} {...props} />;
 }
 
-function BadgeFlag({ className, ...props }: Omit<ComponentProps<typeof SongFlag>, 'song' | 'forceFlag'>) {
-  const { song, forceFlag } = useSongCardContext();
-  return <SongFlag song={song} forceFlag={forceFlag} chip className={className} {...props} />;
+function BadgeFlag({ className, ...props }: Omit<ComponentProps<typeof SongFlag>, 'song'>) {
+  const { song } = useSongCardContext();
+  return <SongFlag song={song} chip className={className} {...props} />;
 }
 
 function BadgeDuet({ className, ...props }: ComponentProps<typeof Chip>) {
@@ -107,7 +106,6 @@ function BadgeStats({
 interface SongCardProps extends ComponentProps<'div'> {
   song: SongPreview;
   isPopular: boolean;
-  forceFlag?: boolean;
   /** When true, the card takes the keyboard-focus treatment: the active colour, scaled up.
    *
    * A border and an outward glow rather than a fill, because the card's interior is not the card's
@@ -117,17 +115,9 @@ interface SongCardProps extends ComponentProps<'div'> {
   focused?: boolean;
 }
 
-function SongCardRoot({
-  song,
-  isPopular,
-  forceFlag = false,
-  focused = false,
-  children,
-  className,
-  ...props
-}: SongCardProps) {
+function SongCardRoot({ song, isPopular, focused = false, children, className, ...props }: SongCardProps) {
   return (
-    <SongCardContext.Provider value={{ song, isPopular, forceFlag }}>
+    <SongCardContext.Provider value={{ song, isPopular }}>
       <Box
         className={cn(
           'relative box-border flex h-full w-full flex-col items-stretch justify-normal overflow-hidden rounded-2xl p-1.5 transition-all duration-300',

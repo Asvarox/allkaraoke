@@ -16,12 +16,7 @@ const indicatorBase =
 export const indicatorCompact =
   'h-6 min-w-6 box-border text-xs flex items-center justify-center uppercase rounded px-1.5 shrink-0 font-semibold';
 
-export const TopContainer = (props: {
-  song: SongPreview;
-  isPopular: boolean;
-  video?: ReactNode;
-  forceFlag?: boolean;
-}) => {
+export const TopContainer = (props: { song: SongPreview; isPopular: boolean; video?: ReactNode }) => {
   return (
     <div className="absolute top-2 left-0 z-10 box-border flex w-full items-center justify-end gap-2 px-2">
       {props.song.tracksCount > 1 && (
@@ -31,11 +26,7 @@ export const TopContainer = (props: {
         </div>
       )}
       <SongCardStatsIndicator song={props.song} isPopular={props.isPopular} focused={!!props.video} />
-      <SongFlag
-        song={props.song}
-        forceFlag={props.forceFlag}
-        className="h-8 w-auto rounded-lg object-cover opacity-95"
-      />
+      <SongFlag song={props.song} className="h-8 w-auto rounded-lg object-cover opacity-95" />
     </div>
   );
 };

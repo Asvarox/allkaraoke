@@ -56,11 +56,13 @@ export default function PlaylistSelector({
         <Button
           size={{ xs: 'mini', sm: 'small' }}
           type="button"
-          className="ml-auto flex-1 animate-none justify-between"
+          className="ml-auto min-w-0 flex-1 animate-none justify-between"
           data-test="playlist-picker-trigger"
           {...keyboardNavRegister?.('playlist-trigger', () => setPlaylistSheetOpen(true), 'Playlists')}
           onClick={() => setPlaylistSheetOpen(true)}>
-          <span>{playlists.find((p) => p.name === selectedPlaylist)?.display ?? selectedPlaylist ?? 'All'}</span>
+          <span className="truncate">
+            {playlists.find((p) => p.name === selectedPlaylist)?.display ?? selectedPlaylist ?? 'All'}
+          </span>
           <Icon icon="ic:baseline-expand-more" size={5} />
         </Button>
         <PlaylistBottomSheet

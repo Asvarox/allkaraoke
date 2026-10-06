@@ -3,6 +3,9 @@ import { PropsWithChildren } from 'react';
 import { createPortal } from 'react-dom';
 
 import { Backdrop } from '~/modules/elements/akui/backdrop';
+import { Button } from '~/modules/elements/akui/button';
+import { Icon } from '~/modules/elements/akui/icon';
+
 interface Props extends PropsWithChildren {
   open: boolean;
   onClose?: () => void;
@@ -44,9 +47,26 @@ export default function Modal({ children, open, onClose, withPortal = false, lev
             transition={{ duration: 0.3 }}
             onClick={onClose}
             className={`fixed left-0 h-screen w-screen overflow-auto ${layer.content}`}>
-            <div className="flex min-h-full items-center justify-center">
-              <div onClick={(e) => e.stopPropagation()}>{children}</div>
+            {/* On a phone the dialog takes the whole screen, its own surface stretched edge to edge */}
+            <div className="phone:h-full phone:items-stretch flex min-h-full items-center justify-center">
+              <div
+                className="phone:flex phone:size-full phone:flex-col phone:*:min-h-0 phone:*:w-full phone:*:max-w-none! phone:*:flex-1 phone:*:overflow-y-auto phone:*:rounded-none! phone:*:border-0 phone:*:max-h-none!"
+                onClick={(e) => e.stopPropagation()}>
+                {children}
+              </div>
             </div>
+            {onClose && (
+              <Button
+                size="mini"
+                type="button"
+                aria-label="Close"
+                data-test="modal-close"
+                className="phone:flex absolute top-2 right-2 hidden animate-none"
+                leftIcon={<Icon icon="ic:baseline-close" />}
+                fullWidth={false}
+                onClick={onClose}
+              />
+            )}
           </motion.div>
         </>
       )}

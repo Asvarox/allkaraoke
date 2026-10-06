@@ -127,7 +127,7 @@ function SelectPreference({ onPreferenceSelected, previouslySelected, onBack, sk
         }
         numOfPlayers="1-4"
       />
-      <hr />
+      <hr className="mt-auto" />
       <MenuButton
         {...register('skip', () => onPreferenceSelected('skip'), undefined, previouslySelected === 'skip', {
           control: { type: 'button', label: skipText || 'Skip' },

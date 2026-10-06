@@ -1,9 +1,12 @@
-import { Dispatch, SetStateAction, useState } from 'react';
+import { Dispatch, ReactNode, SetStateAction, useState } from 'react';
 
 import { Button } from '~/modules/elements/akui/button';
 import { Icon } from '~/modules/elements/akui/icon';
 import useBreakpoint from '~/modules/hooks/use-breakpoint';
 import { RegisterFunc } from '~/modules/hooks/use-keyboard-nav';
+import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
+import { useSetlist } from '~/modules/songs/hooks/use-setlist';
+import ExcludeLanguagesView from '~/routes/exclude-languages/exclude-languages-view';
 import PlaylistSelector from '~/routes/sing-a-song/song-selection/components/toolbar/playlist-selector';
 import SearchBar from '~/routes/sing-a-song/song-selection/components/toolbar/search-bar';
 import { PlaylistEntry } from '~/routes/sing-a-song/song-selection/hooks/use-playlists';
@@ -21,6 +24,9 @@ interface ToolbarProps {
   onPlaylistSelected?: () => void;
   /** True while keyboard nav is active inside the toolbar — suppresses hotkeys that would interfere. */
   toolbarNavActive?: boolean;
+  /** The second row's song groups navigation; on mobile search and random move next to it */
+  groupsNavigation: ReactNode;
+  groupsNavRegister?: RegisterFunc;
 }
 
 export default function Toolbar({
@@ -34,24 +40,31 @@ export default function Toolbar({
   keyboardNavRegister,
   onPlaylistSelected,
   toolbarNavActive = false,
+  groupsNavigation,
+  groupsNavRegister,
 }: ToolbarProps) {
   const breakpoint = useBreakpoint();
   // Screens smaller than md (768px) use the mobile layout
   const mobile = breakpoint === 'xs' || breakpoint === 'sm';
   // Search collapses to an icon only when the song list shows 1 card per row (< 640px)
   const collapseSearch = breakpoint === 'xs';
+  // Labelled only where the keyboard help shows (lg+), as the app toolbar's help button needs the room there
+  const showRandomLabel = !mobile && breakpoint !== 'md';
+  const navigate = useSmoothNavigate();
+  const { isEditable } = useSetlist();
+  const [languagesOpen, setLanguagesOpen] = useState(false);
 
   // Set synchronously by SearchBar (via useLayoutEffect) when it enters/exits xs-expanded mode,
-  // so the random button and playlists are hidden in the same paint frame.
+  // so the random button and song groups are hidden in the same paint frame.
   const [searchExpanded, setSearchExpanded] = useState(false);
 
-  return (
-    <div className="mr-25 flex items-center gap-2 min-[1760px]:mr-0 md:max-[1760px]:mr-41">
+  const searchAndRandom = (
+    <>
       <SearchBar
         filters={filters}
         setFilters={setFilters}
         keyboardControl={keyboardControl}
-        keyboardNavRegister={keyboardNavRegister}
+        keyboardNavRegister={mobile ? groupsNavRegister : keyboardNavRegister}
         toolbarNavActive={toolbarNavActive}
         collapseSearch={collapseSearch}
         onExpandedChange={setSearchExpanded}
@@ -66,25 +79,58 @@ export default function Toolbar({
             aria-label="Random song"
             data-test="random-song-button"
             className="shrink-0 animate-none"
-            {...keyboardNavRegister?.('random-song-button', onRandom, 'Random song')}
+            {...(mobile ? groupsNavRegister : keyboardNavRegister)?.('random-song-button', onRandom, 'Random song')}
             leftIcon={<Icon icon="ic:baseline-casino" />}
             fullWidth={false}
             onClick={onRandom}>
-            {!mobile ? 'Random' : undefined}
+            {showRandomLabel ? 'Random' : undefined}
           </Button>
 
           <div className="h-6 w-px shrink-0 bg-white/20" aria-hidden="true" />
-
-          <PlaylistSelector
-            playlists={playlists}
-            selectedPlaylist={selectedPlaylist}
-            setSelectedPlaylist={setSelectedPlaylist}
-            mobile={mobile}
-            keyboardNavRegister={keyboardNavRegister}
-            onPlaylistSelected={onPlaylistSelected}
-          />
         </>
       )}
-    </div>
+    </>
+  );
+
+  return (
+    <>
+      <div className="mr-25 flex items-center gap-2 min-[1760px]:mr-0 lg:max-[1760px]:mr-41">
+        {!mobile && searchAndRandom}
+
+        <PlaylistSelector
+          playlists={playlists}
+          selectedPlaylist={selectedPlaylist}
+          setSelectedPlaylist={setSelectedPlaylist}
+          mobile={mobile}
+          keyboardNavRegister={keyboardNavRegister}
+          onPlaylistSelected={onPlaylistSelected}
+        />
+
+        <Button
+          size={{ xs: 'mini', sm: 'small' }}
+          type="button"
+          aria-label="Song settings"
+          data-test="song-settings-button"
+          className="shrink-0 animate-none"
+          {...keyboardNavRegister?.('song-settings-button', () => setLanguagesOpen(true), 'Song settings')}
+          leftIcon={<Icon icon="ic:baseline-settings" />}
+          fullWidth={false}
+          onClick={() => setLanguagesOpen(true)}
+        />
+      </div>
+      <div className="flex items-center gap-2">
+        {mobile && searchAndRandom}
+        {!searchExpanded && <div className="min-w-0 flex-1">{groupsNavigation}</div>}
+      </div>
+      {languagesOpen && (
+        <ExcludeLanguagesView
+          variant="modal"
+          closeText="Continue to Song Selection"
+          onClose={() => setLanguagesOpen(false)}
+          inSongSelection
+          onEditSongs={isEditable ? () => navigate('edit/list/') : undefined}
+        />
+      )}
+    </>
   );
 }

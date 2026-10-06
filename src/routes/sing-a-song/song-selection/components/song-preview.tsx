@@ -2,20 +2,17 @@ import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } fr
 
 import { SingSetup, SongPreview } from '~/interfaces';
 import { Backdrop } from '~/modules/elements/akui/backdrop';
-import { Button } from '~/modules/elements/akui/button';
 import { Icon } from '~/modules/elements/akui/icon';
 import { dialogSurface } from '~/modules/elements/akui/surfaces';
+import { useBackground } from '~/modules/elements/background-context';
 import SongPreviewLayout from '~/modules/elements/song-preview-layout';
 import SongPreviewLayoutLegacy from '~/modules/elements/song-preview-layout-legacy';
 import VideoPlayer, { VideoPlayerRef, VideoState } from '~/modules/elements/video-player/index';
 import useDebounce from '~/modules/hooks/use-debounce';
-import { isEurovisionSong } from '~/modules/songs/utils/special-songs-theme-checks';
-import { FeatureFlags } from '~/modules/utils/feature-flags';
 import { SongCard } from '~/routes/sing-a-song/song-selection/components/song-card';
 import SongSettings from '~/routes/sing-a-song/song-selection/components/song-settings/index';
 import SongSettingsLegacy from '~/routes/sing-a-song/song-selection/components/song-settings/legacy/song-settings';
 import useSongPreviewRedesign from '~/routes/sing-a-song/song-selection/hooks/use-song-preview-redesign';
-import { useSpecialTheme } from '~/routes/sing-a-song/song-selection/hooks/use-special-theme';
 import { cn } from '~/utils/cn';
 
 interface Props {
@@ -28,7 +25,6 @@ interface Props {
   width: number;
   height: number;
   isPopular: boolean;
-  forceFlag: boolean;
   onExpand: () => void;
 }
 
@@ -44,14 +40,13 @@ export default function SongPreviewComponent({
   onExitKeyboardControl,
   onPlay,
   isPopular,
-  forceFlag,
   onExpand,
 }: Props) {
   const [showVideo, setShowVideo] = useState(false);
   const player = useRef<VideoPlayerRef | null>(null);
   const thumbnailRef = useRef<HTMLDivElement | null>(null);
   const thumbnailSize = useRef<{ w: number; h: number } | null>(null);
-  useSpecialTheme(songPreview, FeatureFlags.Eurovision, isEurovisionSong, 'eurovision');
+  useBackground(true, 'regular');
   // The `song_preview_redesign` experiment's test arm; control is the preview before it, in the legacy files
   const redesign = useSongPreviewRedesign();
   const Layout = redesign ? SongPreviewLayout : SongPreviewLayoutLegacy;
@@ -124,17 +119,8 @@ export default function SongPreviewComponent({
     [videoId, previewStart, previewEnd],
   );
 
-  // Pointer and touch only — off the keyboard navigation, which has Backspace for this
-  const backButton = redesign ? (
-    <Button
-      // The app toolbar's size, so the two corners match
-      size={{ xs: 'mini', sm: 'small' }}
-      leftIcon={<Icon icon="ic:baseline-arrow-back" />}
-      onClick={onExitKeyboardControl}
-      aria-label="Back to the song list"
-      data-test="song-preview-back"
-    />
-  ) : (
+  // The legacy layout's way back on a phone. Pointer and touch only — the keyboard has Backspace
+  const backButton = (
     <button
       onClick={onExitKeyboardControl}
       className="text-active flex items-center gap-1.5 transition-colors hover:opacity-80">
@@ -178,7 +164,6 @@ export default function SongPreviewComponent({
       <SongCard
         song={songPreview}
         isPopular={isPopular}
-        forceFlag={forceFlag}
         data-show-video={showVideo}
         data-expanded={expanded || undefined}
         data-song={songPreview.id}
@@ -195,7 +180,7 @@ export default function SongPreviewComponent({
             : expanded
               ? cn(
                   dialogSurface,
-                  'z-expanded fixed inset-0 overflow-y-auto rounded-none p-3 transition-none md:portrait:p-5 max-lg:landscape:py-2',
+                  'z-expanded fixed inset-0 overflow-y-auto rounded-none p-3 transition-none max-md:portrait:pt-2 md:portrait:p-5 max-lg:landscape:py-2',
                   'lg:landscape:top-16 lg:landscape:bottom-16 lg:landscape:mx-auto lg:landscape:h-auto lg:landscape:w-[min(94vw,110rem)] lg:landscape:rounded-2xl lg:landscape:px-6 lg:landscape:pt-6',
                   'lg:landscape:pb-6',
                 )
@@ -212,13 +197,13 @@ export default function SongPreviewComponent({
           back={backButton}
           title={
             <div className="flex min-w-0 items-center gap-2">
-              {/* The dialog's own way back, beside its title — on smaller layouts it sits over the video */}
+              {/* The dialog's own way back, beside its title */}
               <button
                 onClick={onExitKeyboardControl}
                 aria-label="Back to the song list"
                 className={cn(
                   'text-active hidden shrink-0 cursor-pointer items-center',
-                  redesign ? 'portrait:flex lg:landscape:flex' : 'sm:flex',
+                  redesign ? 'flex' : 'sm:flex',
                 )}>
                 <Icon icon="ic:baseline-arrow-back" className={redesign ? 'text-2xl' : 'text-xl md:text-2xl'} />
               </button>

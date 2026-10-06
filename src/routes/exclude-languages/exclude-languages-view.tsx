@@ -28,11 +28,15 @@ interface Props {
   variant?: 'page' | 'modal';
   /** Modal only: leaving without committing a selection (Backspace, backdrop). Defaults to `onClose`. */
   onCancel?: () => void;
+  /** Opened from the song selection: drops the first-run hints (where to change it, the song count) */
+  inSongSelection?: boolean;
+  /** Adds an "Edit song list" button */
+  onEditSongs?: () => void;
 }
 
 const MIN_SONGS_COUNT = isE2E() ? 0 : 20;
 
-function ExcludeLanguagesView({ onClose, closeText, variant = 'page', onCancel }: Props) {
+function ExcludeLanguagesView({ onClose, closeText, variant = 'page', onCancel, inSongSelection, onEditSongs }: Props) {
   const isModal = variant === 'modal';
   const dismiss = onCancel ?? onClose;
   const { register } = useKeyboardNav({
@@ -134,9 +138,11 @@ function ExcludeLanguagesView({ onClose, closeText, variant = 'page', onCancel }
 
   const footer = (
     <>
-      <Menu.HelpText>
-        You can always update the selection in <strong>Manage Songs</strong> menu
-      </Menu.HelpText>
+      {!inSongSelection && (
+        <Menu.HelpText>
+          You can always update the selection in <strong>Manage Songs</strong> menu
+        </Menu.HelpText>
+      )}
       <NextButtonContainer>
         <NavButton
           name="close-exclude-languages"
@@ -146,13 +152,20 @@ function ExcludeLanguagesView({ onClose, closeText, variant = 'page', onCancel }
           onClick={onClose}>
           {closeText}
         </NavButton>
-        <Menu.HelpText className="text-right">
-          The list will contain{' '}
-          <strong>
-            <CountUp duration={1} preserveValue end={songCount + otherSongCount} />
-          </strong>{' '}
-          songs
-        </Menu.HelpText>
+        {onEditSongs && (
+          <NavButton name="edit-songs" size="small" onClick={onEditSongs}>
+            Edit song list
+          </NavButton>
+        )}
+        {!inSongSelection && (
+          <Menu.HelpText className="text-right">
+            The list will contain{' '}
+            <strong>
+              <CountUp duration={1} preserveValue end={songCount + otherSongCount} />
+            </strong>{' '}
+            songs
+          </Menu.HelpText>
+        )}
         {areAllLanguagesExcluded && (
           <Menu.HelpText data-test="all-languages-excluded-warning">
             <strong>

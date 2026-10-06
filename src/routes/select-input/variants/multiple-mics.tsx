@@ -21,7 +21,7 @@ function MultipleMics(props: Props) {
       <MenuButton {...register('different-mics-button', () => props.changePreference('different-mics'))}>
         Multiple different microphones
       </MenuButton>
-      <hr />
+      <hr className="mt-auto" />
       <MenuButton {...register('back-button', props.onBack)}>Change Input Type</MenuButton>
     </>
   );
