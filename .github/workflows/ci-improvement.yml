@@ -426,7 +426,22 @@ jobs:
             }
 
             const deployUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
-            const content = [`[Deployment](${deployUrl})`, ...includedSubjects.map((subject) => `- ${subject}`)].join('\n');
+            // PostHog rejects annotation content longer than 8192 chars - keep as many subjects as fit
+            const maxContentLength = 8192;
+            const lines = [`[Deployment](${deployUrl})`];
+            let contentLength = lines[0].length;
+            for (const [index, subject] of includedSubjects.entries()) {
+              const line = `- ${subject}`;
+              const remaining = includedSubjects.length - index - 1;
+              const overflowLineLength = remaining > 0 ? `\n- …and ${remaining} more`.length : 0;
+              if (contentLength + 1 + line.length + overflowLineLength > maxContentLength) {
+                lines.push(`- …and ${includedSubjects.length - index} more`);
+                break;
+              }
+              lines.push(line);
+              contentLength += 1 + line.length;
+            }
+            const content = lines.join('\n');
             const response = await fetch('https://eu.posthog.com/api/projects/281/annotations/', {
               method: 'POST',
               headers: {
