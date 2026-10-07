@@ -190,10 +190,12 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 6500,
-  "generatedAt": "2026-10-06T04:09:28.433Z",
+  "songs": 6506,
+  "generatedAt": "2026-10-07T03:36:48.545Z",
   "additionsPerDay": {
-    "2026-10-06": 19,
+    "2026-10-07": 6,
+    "2026-10-06": 6,
+    "2026-10-05": 13,
     "2026-10-04": 13,
     "2026-10-02": 12,
     "2026-10-01": 13,
@@ -229,123 +231,158 @@
     "2026-08-11": 5,
     "2026-08-10": 21,
     "2026-08-09": 17,
-    "2026-08-08": 12,
-    "2026-08-07": 1
+    "2026-08-08": 12
   },
   "recentlyAdded": [
+    {
+      "artist": "SawanoHiroyuki[nZk] mizuki",
+      "title": "Avid",
+      "video": "vMdlbE-MzF8",
+      "addedAt": "2026-10-07T03:36:16.097Z"
+    },
+    {
+      "artist": "EPIC: The Musical (Ayron Alexander, Cast of EPIC)",
+      "title": "Hold Them Down",
+      "video": "kk_kZhxImDw",
+      "addedAt": "2026-10-07T03:36:15.895Z"
+    },
+    {
+      "artist": "Grimes feat. Hana",
+      "title": "We Appreciate Power",
+      "video": "gYG_4vJ4qNA",
+      "addedAt": "2026-10-07T03:36:15.694Z"
+    },
+    {
+      "artist": "Trailerpark",
+      "title": "Bleib in der Schule",
+      "video": "tywkWRsjGbY",
+      "addedAt": "2026-10-07T03:36:15.690Z"
+    },
+    {
+      "artist": "Mark Forster",
+      "title": "Chöre",
+      "video": "Cy58BTi-vCQ",
+      "addedAt": "2026-10-07T03:36:14.936Z"
+    },
+    {
+      "artist": "Melendi",
+      "title": "Un violinista en tu tejado",
+      "video": "6EEYSbjkdlM",
+      "addedAt": "2026-10-07T03:36:14.927Z"
+    },
     {
       "artist": "Clarice Falcão feat. Silva",
       "title": "Eu Me Lembro",
       "video": "olbbAuQUZd4",
-      "addedAt": "2026-10-06T04:08:49.261Z"
+      "addedAt": "2026-10-06T03:42:40.903Z"
     },
     {
       "artist": "Provinz",
       "title": "Zimmer",
       "video": "LclJmHqHPvw",
-      "addedAt": "2026-10-06T04:08:49.253Z"
+      "addedAt": "2026-10-06T03:42:24.087Z"
     },
     {
       "artist": "Elastinen",
       "title": "Anna soida",
       "video": "o00nQ85Eeh0",
-      "addedAt": "2026-10-06T04:08:49.251Z"
+      "addedAt": "2026-10-06T03:41:56.807Z"
     },
     {
       "artist": "Lady Gaga",
       "title": "Swine",
       "video": "uGExj2Oq8IQ",
-      "addedAt": "2026-10-06T04:08:49.246Z"
+      "addedAt": "2026-10-06T03:41:39.552Z"
     },
     {
       "artist": "Aitana",
       "title": "6 DE FEBRERO",
       "video": "7csX6CfgMoo",
-      "addedAt": "2026-10-06T04:08:49.242Z"
+      "addedAt": "2026-10-06T03:41:18.819Z"
     },
     {
       "artist": "ASCA",
       "title": "Resister",
       "video": "RPZwWt6_unE",
-      "addedAt": "2026-10-06T04:08:49.043Z"
+      "addedAt": "2026-10-06T03:40:18.433Z"
     },
     {
       "artist": "Die Toten Hosen",
       "title": "Unter den Wolken",
       "video": "PwzDFFH3CMk",
-      "addedAt": "2026-10-06T04:08:49.042Z"
+      "addedAt": "2026-10-05T15:18:39.946Z"
     },
     {
       "artist": "Alice In Chains",
       "title": "Them Bones",
       "video": "zTuD8k3JvxQ",
-      "addedAt": "2026-10-06T04:08:49.040Z"
+      "addedAt": "2026-10-05T15:18:18.942Z"
     },
     {
       "artist": "Muse",
       "title": "Plug In Baby",
       "video": "dbB-mICjkQM",
-      "addedAt": "2026-10-06T04:08:49.039Z"
+      "addedAt": "2026-10-05T15:17:17.922Z"
     },
     {
       "artist": "Robyn with Kleerup",
       "title": "With Every Heartbeat",
       "video": "-ojHWQrm4UM",
-      "addedAt": "2026-10-06T04:08:48.848Z"
+      "addedAt": "2026-10-05T15:16:46.592Z"
     },
     {
       "artist": "Disney’s The Hunchback of Notre Dame",
       "title": "Heaven’s Light / Hellfire",
       "video": "wYleCKxV_WA",
-      "addedAt": "2026-10-06T04:08:48.440Z"
+      "addedAt": "2026-10-05T15:16:19.220Z"
     },
     {
       "artist": "Kanako Itou",
       "title": "Sky Clad no Kansokusha",
       "video": "k2LDC0sTsEQ",
-      "addedAt": "2026-10-06T04:08:48.437Z"
+      "addedAt": "2026-10-05T15:14:29.278Z"
     },
     {
       "artist": "Los Autenticos Decadentes",
       "title": "Cómo me voy a olvidar",
       "video": "oRWriCU-71M",
-      "addedAt": "2026-10-06T04:08:48.241Z"
+      "addedAt": "2026-10-05T15:13:57.361Z"
     },
     {
       "artist": "Nightwish",
       "title": "Sleeping Sun",
       "video": "UGfKMV5AbMI",
-      "addedAt": "2026-10-06T04:08:48.237Z"
+      "addedAt": "2026-10-05T15:12:59.289Z"
     },
     {
       "artist": "Taylor Swift",
       "title": "Hits Different",
       "video": "_f4yoKJL7IQ",
-      "addedAt": "2026-10-06T04:08:48.234Z"
+      "addedAt": "2026-10-05T15:12:46.479Z"
     },
     {
       "artist": "Talk Talk",
       "title": "Life’s What You Make It",
       "video": "l3VqAsMXE7o",
-      "addedAt": "2026-10-06T04:08:48.034Z"
+      "addedAt": "2026-10-05T15:11:59.041Z"
     },
     {
       "artist": "Tiësto y Karol G",
       "title": "Don't be shy",
       "video": "3wjM9lC_Pv4",
-      "addedAt": "2026-10-06T04:08:47.842Z"
+      "addedAt": "2026-10-05T15:11:28.398Z"
     },
     {
       "artist": "Donna Lewis",
       "title": "I Love You Always Forever",
       "video": "SqdWTeXWvOg",
-      "addedAt": "2026-10-06T04:08:47.124Z"
+      "addedAt": "2026-10-05T15:10:37.675Z"
     },
     {
       "artist": "Twenty One Pilots",
       "title": "Heavydirtysoul",
       "video": "r_9Kf0D5BTs",
-      "addedAt": "2026-10-06T04:08:47.115Z"
+      "addedAt": "2026-10-05T15:10:21.705Z"
     },
     {
       "artist": "Ado",
@@ -484,42 +521,6 @@
       "title": "Ode To The Mets",
       "video": "BjC0KUxiMhc",
       "addedAt": "2026-10-02T21:52:34.671Z"
-    },
-    {
-      "artist": "Imagine Dragons",
-      "title": "Nice To Meet You",
-      "video": "NeUfmyu5t8Q",
-      "addedAt": "2026-10-02T21:52:18.039Z"
-    },
-    {
-      "artist": "Disney’s High School Musical 2 (Troy & Gabriella)",
-      "title": "You Are The Music In Me",
-      "video": "XRWp6kOvJJs",
-      "addedAt": "2026-10-02T21:51:56.249Z"
-    },
-    {
-      "artist": "Disney’s Tangled (Grace Potter)",
-      "title": "Something That I Want",
-      "video": "gwcvjzWNqxA",
-      "addedAt": "2026-10-01T21:09:10.937Z"
-    },
-    {
-      "artist": "2NE1",
-      "title": "Fire",
-      "video": "I3tuZF1qizQ",
-      "addedAt": "2026-10-01T21:08:36.554Z"
-    },
-    {
-      "artist": "Disney’s Tarzan",
-      "title": "Menneskesøn",
-      "video": "XfKNyLwTjzU",
-      "addedAt": "2026-10-01T21:08:12.939Z"
-    },
-    {
-      "artist": "Daryl Hall & John Oates",
-      "title": "You Make My Dreams",
-      "video": "49BQKU5wflk",
-      "addedAt": "2026-10-01T21:07:51.749Z"
     }
   ]
 }
