@@ -21,6 +21,7 @@ import PlayersManager from '~/modules/players/players-manager';
 import storage from '~/modules/utils/storage';
 import { getStoredOnlineName } from '~/routes/online/hooks/use-online-name';
 import useOnlineSong from '~/routes/online/hooks/use-online-song';
+import { useParticipantConnectionToasts } from '~/routes/online/hooks/use-participant-connection-toasts';
 import useSongUpload from '~/routes/online/hooks/use-song-upload';
 import Lobby from '~/routes/online/lobby/lobby';
 import { ONLINE_CREATED_ROOM_KEY, ONLINE_SETUP_DONE_KEY } from '~/routes/online/online';
@@ -88,6 +89,7 @@ function OnlineRoom({ roomCode }: Props) {
   // monitoring as it mounts, while a singer joining through an invite link ran the setup wizard
   // inside the room and would stay on whatever input they had when the room first mounted.
   useMicMonitoring(`${status}:${roomState?.phase ?? 'none'}`);
+  useParticipantConnectionToasts(roomState, OnlineClient.getParticipantId());
 
   const selfPlayerNumber = roomState?.participants.find(
     (participant) => participant.id === OnlineClient.getParticipantId(),

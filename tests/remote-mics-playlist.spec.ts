@@ -51,6 +51,8 @@ const songs = {
 } as const;
 
 test('Adding and removing song from the remote mic playlist on desktop app works', async ({ page, browser }) => {
+  // Drives three pages (desktop + two phones) through many steps - regularly brushes the default timeout
+  test.slow();
   const playerName = 'Player1';
   const player2Name = 'Player2';
   const remoteMicsPlaylistName = 'remote-mics';
@@ -141,7 +143,8 @@ test('Adding and removing song from the remote mic playlist on desktop app works
   });
 
   await test.step('Once the device is disconnected, its favourite songs should disappear from remoteMic playlist', async () => {
-    await remoteMic._page.reload();
+    // Only the disconnect matters - waiting for full `load` has hung on CI
+    await remoteMic._page.reload({ waitUntil: 'domcontentloaded' });
     await remoteMic._page.close();
     await expect(await pages.songListPage.getSongElement(songs.english1.ID)).not.toBeVisible();
     await expect(await pages.songListPage.getSongElement(songs.spanish.ID)).not.toBeVisible();
@@ -150,7 +153,8 @@ test('Adding and removing song from the remote mic playlist on desktop app works
   });
 
   await test.step('When last player is disconnected, the remoteMics playlist should no longer be visible', async () => {
-    await remoteMic2._page.reload();
+    // Only the disconnect matters - waiting for full `load` has hung on CI
+    await remoteMic2._page.reload({ waitUntil: 'domcontentloaded' });
     await expect(pages.songListPage.getPlaylistElement(remoteMicsPlaylistName)).not.toBeVisible();
   });
 
