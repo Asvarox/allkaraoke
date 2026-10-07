@@ -150,7 +150,6 @@ function ExpandedTemplate({ volume, isPopular }: StoryArgs) {
         width={320}
         height={200}
         isPopular={isPopular}
-        forceFlag={false}
         onExpand={() => {}}
       />
     </div>
@@ -187,7 +186,6 @@ function CollapsedTemplate({ volume, isPopular }: StoryArgs) {
           width={CARD_W}
           height={CARD_H}
           isPopular={isPopular}
-          forceFlag={false}
           onExpand={() => {}}
         />
       </div>
@@ -230,7 +228,6 @@ function DuetTemplate({ volume, isPopular }: StoryArgs) {
         width={320}
         height={200}
         isPopular={isPopular}
-        forceFlag={false}
         onExpand={() => {}}
       />
     </div>

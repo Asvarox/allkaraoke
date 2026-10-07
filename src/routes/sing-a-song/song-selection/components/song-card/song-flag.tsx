@@ -21,24 +21,16 @@ const langNameToCode = (() => {
 
 interface Props {
   song: Pick<SongPreview, 'language' | 'artistOrigin'>;
-  forceFlag?: boolean;
   chip?: boolean;
 }
-export default function SongFlag({
-  song,
-  forceFlag,
-  chip,
-  ...props
-}: Props & Omit<ComponentProps<typeof Flag>, 'isocode'>) {
+export default function SongFlag({ song, chip, ...props }: Props & Omit<ComponentProps<typeof Flag>, 'isocode'>) {
   const lang = song.language[0];
 
   // Use artist origin as the flag when the language matches the origin country,
   // otherwise fall back to the language-based flag.
-  const isLangArtistOrigin =
-    !!song.artistOrigin && (langMap[song.artistOrigin.toLowerCase()]?.includes(lang) ?? forceFlag);
+  const isLangArtistOrigin = !!song.artistOrigin && !!langMap[song.artistOrigin.toLowerCase()]?.includes(lang);
 
-  const isocode =
-    forceFlag && song.artistOrigin ? song.artistOrigin : isLangArtistOrigin ? song.artistOrigin! : undefined;
+  const isocode = isLangArtistOrigin ? song.artistOrigin! : undefined;
 
   const langCode = (langNameToCode[lang] ?? lang.slice(0, 2)).toUpperCase();
 

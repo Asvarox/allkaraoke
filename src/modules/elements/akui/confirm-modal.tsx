@@ -165,7 +165,7 @@ function ConfirmModalRoot({
       {/* A confirmation is always the thing on top: it's routinely opened from inside another modal (the
           online pause menu ends the game this way), and at the base layer that modal's content would
           cover this one's backdrop. */}
-      <Modal onClose={cancel} open={isOpen} withPortal level="nested">
+      <Modal onClose={cancel} open={isOpen} withPortal level="nested" fullScreenOnPhone={false}>
         {isOpen && (
           <ConfirmModalContext value={{ register, confirm, cancel }}>
             {/* The same surface the screens underneath are made of (the lobby card, the pause menu),

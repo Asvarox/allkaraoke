@@ -12,8 +12,10 @@ interface PlaylistSelectorProps {
   playlists: PlaylistEntry[];
   selectedPlaylist: string | null;
   setSelectedPlaylist: (name: string) => void;
-  /** True when screen is smaller than md (768px) — uses bottom-sheet instead of tab row */
+  /** True on a phone held upright — uses bottom-sheet instead of tab row */
   mobile: boolean;
+  /** The toolbar's control size */
+  size: 'mini' | 'small';
   keyboardNavRegister?: RegisterFunc;
   onPlaylistSelected?: () => void;
 }
@@ -23,6 +25,7 @@ export default function PlaylistSelector({
   selectedPlaylist,
   setSelectedPlaylist,
   mobile,
+  size,
   keyboardNavRegister,
   onPlaylistSelected,
 }: PlaylistSelectorProps) {
@@ -54,13 +57,15 @@ export default function PlaylistSelector({
     return (
       <>
         <Button
-          size={{ xs: 'mini', sm: 'small' }}
+          size={size}
           type="button"
-          className="ml-auto flex-1 animate-none justify-between"
+          className="ml-auto min-w-0 flex-1 animate-none justify-between"
           data-test="playlist-picker-trigger"
           {...keyboardNavRegister?.('playlist-trigger', () => setPlaylistSheetOpen(true), 'Playlists')}
           onClick={() => setPlaylistSheetOpen(true)}>
-          <span>{playlists.find((p) => p.name === selectedPlaylist)?.display ?? selectedPlaylist ?? 'All'}</span>
+          <span className="truncate">
+            {playlists.find((p) => p.name === selectedPlaylist)?.display ?? selectedPlaylist ?? 'All'}
+          </span>
           <Icon icon="ic:baseline-expand-more" size={5} />
         </Button>
         <PlaylistBottomSheet
@@ -98,7 +103,7 @@ export default function PlaylistSelector({
             <Selector.Item
               key={playlist.name}
               value={playlist.name}
-              size="small"
+              size={size}
               className="shrink-0 animate-none px-3"
               data-test={`playlist-${playlist.name}`}
               {...playlistNavProps}>

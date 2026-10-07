@@ -19,7 +19,6 @@ const newPlaylist = 'New';
 const _xmasPlaylist = 'Christmas';
 const xmasSong = 'e2e-christmas-english-1995';
 
-const eurovisionPlaylist = 'Eurovision';
 const eurovisionSong = 'e2e-new-english-1995';
 
 const _halloweenPlaylist = 'Halloween';
@@ -126,7 +125,7 @@ test.skip('Filters - PlayLists', async ({ page }) => {
   });
 });
 
-test('Filters - PlayLists (Eurovision)', async ({ page }) => {
+test('Filters - PlayLists (toolbar)', async ({ page }) => {
   // Make sure the new song mock is actually considered new
   const fakeNow = new Date('2023-01-16T10:35:39.918Z').valueOf();
 
@@ -164,15 +163,6 @@ test('Filters - PlayLists (Eurovision)', async ({ page }) => {
     await expect(await pages.songListPage.getSongElement(xmasSong)).toBeVisible();
     await expect(await pages.songListPage.getSongElement(polOldDuetSong)).toBeVisible();
     await pages.songListPage.focusSong(polSong);
-  });
-
-  await test.step('Going to Eurovision-playlist and check songs visibility', async () => {
-    // In v2 playlists live in the top toolbar; keyboard arrow-based navigation no longer selects playlists.
-    await pages.songListPage.goToPlaylist(eurovisionPlaylist);
-    await pages.songListPage.expectPlaylistToBeSelected(eurovisionPlaylist);
-    await expect(await pages.songListPage.getSongElement(polOldDuetSong)).not.toBeVisible();
-    await expect(await pages.songListPage.getSongElement(polEngSong)).not.toBeVisible();
-    await expect(await pages.songListPage.getSongElement(eurovisionSong)).toBeVisible();
   });
 
   await test.step('Going to polish-playlist and check songs visibility', async () => {

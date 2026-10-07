@@ -64,7 +64,9 @@ function DifferentMics(props: Props) {
         ))}
         <hr />
       </UserMediaEnabled>
-      <MenuButton {...register('back-button', props.onBack)}>Change Input Type</MenuButton>
+      <MenuButton className="mt-auto" {...register('back-button', props.onBack)}>
+        Change Input Type
+      </MenuButton>
       <MenuButton {...register('save-button', props.onSave)}>{props.closeButtonText}</MenuButton>
     </>
   );

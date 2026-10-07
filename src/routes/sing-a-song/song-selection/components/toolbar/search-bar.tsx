@@ -30,6 +30,8 @@ interface SearchBarProps {
   toolbarNavActive?: boolean;
   /** True when screen is xs (<640px) and search collapses to an icon */
   collapseSearch: boolean;
+  /** The toolbar's control size: `mini` beside the song groups on a phone held upright */
+  size: 'mini' | 'small';
   /** Called synchronously (via useLayoutEffect) when xs-expanded state changes, so Toolbar
    *  can show/hide the random button and playlists in the same paint frame. */
   onExpandedChange?: (expanded: boolean) => void;
@@ -42,8 +44,10 @@ export default function SearchBar({
   keyboardNavRegister,
   toolbarNavActive = false,
   collapseSearch,
+  size,
   onExpandedChange,
 }: SearchBarProps) {
+  const iconSize = size === 'mini' ? 5 : 6;
   const searchInput = useRef<ComponentRef<typeof Input>>(null);
   const [isFocused, setIsFocused] = useState(false);
   const [mobileSearchVisible, setMobileSearchVisible] = useState(false);
@@ -130,9 +134,9 @@ export default function SearchBar({
             transition={{ duration: 0.15 }}>
             <Input
               ref={searchInput}
-              size={{ xs: 'mini', sm: 'small' }}
+              size={size}
               focused={false}
-              label={<Icon icon="ic:baseline-search" size={{ xs: 5, sm: 6 }} />}
+              label={<Icon icon="ic:baseline-search" size={iconSize} />}
               value={filters.search ?? ''}
               onChange={(val) => setSearch(val)}
               onFocus={() => setIsFocused(true)}
@@ -156,11 +160,11 @@ export default function SearchBar({
             exit={{ opacity: 0, x: 8 }}
             transition={{ duration: 0.15 }}>
             <Button
-              size={{ xs: 'mini', sm: 'small' }}
+              size={size}
               type="button"
               aria-label="Search songs"
               className="shrink-0 animate-none"
-              leftIcon={<Icon icon="ic:baseline-search" size={{ xs: 5, sm: 6 }} />}
+              leftIcon={<Icon icon="ic:baseline-search" size={iconSize} />}
               {...keyboardNavRegister?.('search', () => setMobileSearchVisible(true), 'Search')}
             />
           </motion.div>
@@ -175,6 +179,7 @@ export default function SearchBar({
     <div {...searchNavProps}>
       <Input
         ref={searchInput}
+        size={size}
         focused={searchNavProps?.focused ?? false}
         label={<Icon icon="ic:baseline-search" size={5} />}
         value={filters.search ?? ''}

@@ -10,9 +10,6 @@ import useRemoteMicServerStatus from '~/modules/remote-mic/hooks/use-remote-mic-
 import { useLanguageList } from '~/modules/songs/hooks/use-language-list';
 import useRemoteMicSongList from '~/modules/songs/hooks/use-remote-mic-song-list';
 import { useSetlist } from '~/modules/songs/hooks/use-setlist';
-import { FeatureFlags } from '~/modules/utils/feature-flags';
-import useFeatureFlag from '~/modules/utils/use-feature-flag';
-import { eurovisionPlaylist } from '~/routes/sing-a-song/song-selection/hooks/use-playlists-eurovision';
 import { SongGroup } from '~/routes/sing-a-song/song-selection/hooks/use-song-list';
 import { AppliedFilters } from '~/routes/sing-a-song/song-selection/hooks/use-song-list-filter';
 
@@ -44,7 +41,6 @@ export const usePlaylists = (
   extraLanguage: string | null,
 ): PlaylistEntry[] => {
   const { isSetlistInPlace } = useSetlist();
-  const isSpecialThemeEnabled = useFeatureFlag(FeatureFlags.Eurovision);
   const songLanguages = useLanguageList(songs);
   const remoteSongList = useRemoteMicSongList();
   const { connected } = useRemoteMicServerStatus();
@@ -86,7 +82,6 @@ export const usePlaylists = (
     const playlists: Array<PlaylistEntry | null> = [
       !isSetlistInPlace ? selection : null, // makes "all" playlist the first one if a setlist is loaded
       all,
-      !isSetlistInPlace && isSpecialThemeEnabled ? eurovisionPlaylist : null,
       // {
       //   name: 'Halloween',
       //   display: (
@@ -156,14 +151,5 @@ export const usePlaylists = (
     ];
 
     return playlists.filter((playlist): playlist is PlaylistEntry => playlist !== null);
-  }, [
-    songLanguages,
-    isLoading,
-    recommended,
-    remoteSongList,
-    connected.length,
-    isSetlistInPlace,
-    isSpecialThemeEnabled,
-    extraLanguage,
-  ]);
+  }, [songLanguages, isLoading, recommended, remoteSongList, connected.length, isSetlistInPlace, extraLanguage]);
 };

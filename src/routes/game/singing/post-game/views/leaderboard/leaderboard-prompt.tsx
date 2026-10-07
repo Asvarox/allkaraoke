@@ -48,7 +48,7 @@ function LeaderboardPrompt({ leaderboard }: Props) {
   });
 
   return (
-    <Modal open={isModalOpen} onClose={declineFromModal} withPortal level="nested">
+    <Modal open={isModalOpen} onClose={declineFromModal} withPortal level="nested" fullScreenOnPhone={false}>
       <Menu spacing="tight" modal data-test="leaderboard-prompt">
         <Menu.Header>{title}</Menu.Header>
         <Menu.HelpText>

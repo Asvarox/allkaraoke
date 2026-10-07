@@ -76,3 +76,17 @@ const subscribeOrientation = (callback: () => void) => {
 export function useOrientation(): Orientation {
   return useSyncExternalStore(subscribeOrientation, getOrientation, getOrientation);
 }
+
+/**
+ * On a phone, which way up it's held — narrower than `md` upright, narrower than `lg` sideways (the CSS
+ * `phone:` variant). `null` on anything wider.
+ */
+export function usePhoneOrientation(): Orientation | null {
+  const breakpoint = useBreakpoint();
+  const orientation = useOrientation();
+  const narrow =
+    orientation === 'portrait'
+      ? breakpoint === 'xs' || breakpoint === 'sm'
+      : breakpoint === 'xs' || breakpoint === 'sm' || breakpoint === 'md';
+  return narrow ? orientation : null;
+}

@@ -51,6 +51,7 @@ export class RemoteMicSongLanguagesPagePO {
   }
 
   public async goBackToSongList() {
-    await this.page.click('body', { position: { x: 0, y: 0 } });
+    // The modal fills a phone's screen, so there's no backdrop to click past it
+    await this.page.getByTestId('close-language-filter').click();
   }
 }

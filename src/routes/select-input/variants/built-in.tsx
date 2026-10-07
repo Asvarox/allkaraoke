@@ -202,8 +202,13 @@ function BuiltIn({ onSetupComplete, ...props }: Props) {
           {setup}
         </UserMediaEnabled>
       </div>
-      {!props.onlineSetup && <MenuButton {...register('back-button', props.onBack)}>Change Input Type</MenuButton>}
+      {!props.onlineSetup && (
+        <MenuButton className="mt-auto" {...register('back-button', props.onBack)}>
+          Change Input Type
+        </MenuButton>
+      )}
       <MenuButton
+        className={props.onlineSetup ? 'mt-auto' : undefined}
         {...register('save-button', props.onSave, undefined, true, {
           disabled: !selectedMic,
         })}

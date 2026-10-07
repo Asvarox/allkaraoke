@@ -61,7 +61,9 @@ function RemoteMics(props: Props) {
         <Menu.HelpText>You will be able to connect phones later.</Menu.HelpText>
       </div>
       <MicCheck />
-      <MenuButton {...register('back-button', props.onBack)}>Change Input Type</MenuButton>
+      <MenuButton className="mt-auto" {...register('back-button', props.onBack)}>
+        Change Input Type
+      </MenuButton>
       <MenuButton {...register('save-button', onContinue, undefined, true)}>{props.closeButtonText}</MenuButton>
     </>
   );
