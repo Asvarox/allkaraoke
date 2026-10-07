@@ -1,0 +1,209 @@
+#ARTIST:SawanoHiroyuki[nZk] mizuki
+#TITLE:Avid
+#CREATOR:Currymalker
+#BPM:312,68
+#YEAR:2021
+#PREVIEWSTART:39,5
+#VIDEO:v=vMdlbE-MzF8
+#GENRE:Anime
+#LANGUAGE:Japanese
+#GAP:11435,580273762313
+#ALLKARAOKE_ID:sawanohiroyukinzk-mizuki-avid
+#ALLKARAOKE_SID:6507
+#ALLKARAOKE_LASTUPDATE:2026-10-07T03:36:16.097Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_CREATORURL:Currymalker
+#ALLKARAOKE_REALBPM:156
+#ALLKARAOKE_PREVIEWEND:89
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:89
+#MP3:SawanoHiroyuki[nZk] mizuki - Avid (TV).mp3
+#COVER:SawanoHiroyuki[nZk] mizuki - Avid (TV) [CO].jpg
+#MEDLEYSTARTBEAT:480
+#MEDLEYENDBEAT:1011
+: 21 2 2 Ka
+: 25 2 7 yo
+: 29 2 9 ~
+: 33 6 9 wai 
+: 41 5 9 hi
+: 49 2 7 ka
+: 53 1 9 ~
+: 56 1 9 ri 
+: 59 4 7 ga 
+: 65 2 4 yu
+: 69 2 6 ~
+: 73 5 7 bi
+: 81 2 4 sasu
+: 85 18 6 ~ 
+: 109 3 2 sa
+: 114 12 2 ki
+- 126 128
+- 128
+: 149 2 2 Si
+: 153 2 7 lent
+: 157 2 9 ~ 
+: 161 2 7 haze
+: 165 2 9 ~ 
+: 169 5 9 kasu
+: 178 2 7 mi
+: 182 2 9 ~ 
+* 186 4 7 gachi 
+: 193 2 4 ni
+: 197 2 6 ~ 
+: 201 7 7 to
+: 210 2 7 raeru
+: 214 15 9 ~
+- 229
+: 237 2 7 Ka
+: 241 17 7 ge
+- 258
+: 269 3 4 Chi
+: 274 3 9 ri
+: 279 21 11 ~
+: 302 2 12 ji
+: 306 3 7 ri
+: 311 20 9 ~ 
+: 333 3 7 ni 
+: 338 24 7 kizamu
+- 362
+: 373 2 4 Hon
+: 377 2 6 ~
+: 381 2 4 tou 
+: 385 5 4 no 
+: 394 4 6 se
+: 402 3 0 kai
+: 407 15 2 ~
+- 422
+: 430 2 -1 De 
+: 434 3 0 wara
+: 439 20 2 ~
+: 462 2 -5 eru 
+* 467 13 -5 ka?
+- 480
+: 501 3 12 Don't
+: 506 5 14 ~ 
+: 513 9 11 you 
+* 526 3 14 get 
+: 531 2 7 there
+: 535 16 9 ~?
+- 551
+: 559 2 7 It 
+: 563 2 4 calls
+: 567 16 6 ~
+- 583
+: 591 2 4 It 
+: 595 2 6 calls
+: 599 21 7 ~
+- 620
+* 627 2 2 A
+* 631 3 14 oi
+: 636 3 11 da 
+: 643 4 11 so
+: 650 5 14 ra 
+: 659 2 7 ga
+: 663 15 9 ~
+- 678
+: 687 3 7 Iro 
+: 692 2 4 wo
+: 696 15 6 ~
+- 711
+: 718 3 4 Ka
+* 723 5 7 eru 
+: 730 2 9 ka
+: 734 2 9 ra
+: 738 8 11 ~
+- 746
+: 755 1 2 My 
+: 758 3 14 na
+: 763 4 11 ked 
+* 771 2 12 heart
+* 775 2 14 ~ 
+: 779 4 14 can 
+: 787 2 7 hear
+: 791 15 9 ~
+- 806
+* 815 3 7 Ech
+: 820 2 4 oes
+: 824 17 6 ~
+- 841
+: 847 2 4 Ech
+: 851 3 6 oes
+: 856 20 7 ~
+- 876
+: 884 1 2 Shi
+: 887 4 4 razu 
+: 893 4 4 mo
+: 900 5 4 to
+: 907 5 6 me
+: 916 2 6 ta
+: 920 16 7 ~
+- 936
+: 943 2 6 A
+: 947 2 4 vid
+: 951 22 6 ~
+: 976 3 4 i
+: 981 51 4 ty
+- 1032 1041
+- 1041
+* 1062 10 4 Whis
+: 1075 3 7 per
+: 1080 18 9 ~ 
+: 1104 3 11 your 
+: 1109 24 7 name 
+: 1136 3 6 a
+: 1141 22 7 gain
+- 1163 1166
+- 1166
+: 1187 2 4 Then 
+: 1191 9 4 re
+: 1204 2 7 start
+: 1208 20 9 ~ 
+* 1231 4 11 it 
+: 1237 2 6 right
+: 1241 21 7 ~ 
+: 1265 2 6 a
+: 1269 10 7 way
+- 1279
+: 1289 2 9 Oh
+: 1293 6 11 ~ 
+* 1301 4 9 my 
+: 1312 2 4 bit
+: 1316 9 4 ter 
+: 1328 3 4 col
+: 1333 4 4 or
+- 1337
+: 1344 3 6 Ar
+: 1349 7 6 dor 
+: 1360 3 6 wan
+: 1365 5 6 der
+- 1370
+* 1376 3 7 Got
+: 1381 6 7 ta 
+: 1393 2 7 feel 
+: 1397 4 7 it
+- 1401
+: 1408 3 6 Un
+: 1413 7 6 der
+: 1424 3 4 cov
+: 1429 5 4 er
+- 1434
+: 1440 3 4 Yu
+: 1445 7 4 ku
+: 1456 3 4 e 
+: 1461 5 4 mo
+- 1466
+: 1473 2 6 Shi
+: 1477 7 6 ra
+: 1488 3 6 na
+: 1493 4 6 i
+- 1497
+* 1504 3 7 A
+: 1509 7 7 no 
+: 1521 2 7 hi 
+: 1525 5 7 no
+- 1530
+: 1536 3 6 Gu
+: 1541 6 6 n
+* 1552 3 4 jo
+: 1557 8 4 u
+E
