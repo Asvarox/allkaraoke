@@ -57,6 +57,33 @@ describe('useSeekSettle', () => {
     expect(report).toHaveBeenCalledWith('buffering');
   });
 
+  it('restarts a pending buffering report when another seek begins', () => {
+    const { result } = setup();
+    result.current.markSeek();
+    buffering = true;
+    result.current.reportStatus('buffering');
+
+    vi.advanceTimersByTime(2_000);
+    result.current.markSeek();
+    vi.advanceTimersByTime(ONLINE_SEEK_SETTLE_MS - 1);
+    expect(report).not.toHaveBeenCalled();
+
+    vi.advanceTimersByTime(1);
+    expect(report).toHaveBeenCalledWith('buffering');
+  });
+
+  it('does not report on a later seek once the pending report was resolved', () => {
+    const { result } = setup();
+    result.current.markSeek();
+    result.current.reportStatus('buffering');
+    result.current.reportStatus('playing');
+
+    result.current.markSeek();
+    vi.advanceTimersByTime(ONLINE_SEEK_SETTLE_MS);
+
+    expect(report.mock.calls).toEqual([['playing']]);
+  });
+
   it('is settling only within the window after a seek', () => {
     const { result } = setup();
     expect(result.current.isSettling()).toBe(false);

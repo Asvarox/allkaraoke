@@ -16,22 +16,30 @@ export function useSeekSettle(report: (status: OnlinePlaybackStatus) => void, is
     let lastSeekAt = 0;
     let settleTimer: ReturnType<typeof setTimeout> | undefined;
     const isSettling = () => Date.now() - lastSeekAt < ONLINE_SEEK_SETTLE_MS;
+    // Report the buffering only if it outlasts the settle window, i.e. it's a genuine stall
+    const deferBufferingReport = () => {
+      clearTimeout(settleTimer);
+      settleTimer = setTimeout(
+        () => {
+          settleTimer = undefined;
+          if (callbacks.current.isStillBuffering()) callbacks.current.report('buffering');
+        },
+        ONLINE_SEEK_SETTLE_MS - (Date.now() - lastSeekAt),
+      );
+    };
 
     return {
       markSeek: () => {
         lastSeekAt = Date.now();
+        // A new seek restarts the window for a report still waiting on the previous one
+        if (settleTimer !== undefined) deferBufferingReport();
       },
       isSettling,
       reportStatus: (status: OnlinePlaybackStatus) => {
         clearTimeout(settleTimer);
+        settleTimer = undefined;
         if (status === 'buffering' && isSettling()) {
-          // Report it only if it outlasts the settle window, i.e. it's a genuine stall
-          settleTimer = setTimeout(
-            () => {
-              if (callbacks.current.isStillBuffering()) callbacks.current.report('buffering');
-            },
-            ONLINE_SEEK_SETTLE_MS - (Date.now() - lastSeekAt),
-          );
+          deferBufferingReport();
         } else {
           callbacks.current.report(status);
         }
