@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { SongPreview } from '~/interfaces';
 import events from '~/modules/game-events/game-events';
 import { useEventEffect } from '~/modules/game-events/hooks';
-import { SongStats, fetchSongStats, getSongKey, storeSongStats } from '~/modules/songs/stats/common';
+import { SongStats, fetchSongStats, getAllStats, getSongKey, storeSongStats } from '~/modules/songs/stats/common';
 
 export const useSongStats = (song: Pick<SongPreview, 'artist' | 'title'>) => {
   const [stats, setStats] = useState<SongStats | null>(null);
@@ -52,4 +52,29 @@ export const useEditScore = (song: Pick<SongPreview, 'artist' | 'title'>) => {
     await storeSongStats(song, newData);
     events.songScoreUpdated.dispatch(storageKey, newData, newName.trim());
   };
+};
+
+const MIN_SUNG_SONGS = 5;
+
+/** IDs of the songs the player has sung, or an empty list until they've sung at least `MIN_SUNG_SONGS` of them */
+export const useSungSongs = () => {
+  const [sungSongs, setSungSongs] = useState<string[]>([]);
+
+  const loadSungSongs = async () => {
+    const stats = await getAllStats().catch((error: unknown) => {
+      console.error(error);
+      return {} as Record<string, SongStats>;
+    });
+    const songIds = Object.keys(stats).filter((key) => (stats[key]?.scores?.length ?? 0) > 0);
+    setSungSongs(songIds.length >= MIN_SUNG_SONGS ? songIds : []);
+  };
+
+  useEffect(() => {
+    loadSungSongs();
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- load once, then refresh on stored stats
+  }, []);
+
+  useEventEffect(events.songStatStored, loadSungSongs);
+
+  return sungSongs;
 };

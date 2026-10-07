@@ -1,7 +1,8 @@
 import localForage from 'localforage';
 
 import events from '~/modules/game-events/game-events';
-import { getSongKey, SongStats, storeSongStats } from '~/modules/songs/stats/common';
+import { getSongKey, SongStats, storeSongStats, storeSongStatsByKey } from '~/modules/songs/stats/common';
+import isE2E from '~/modules/utils/is-e2-e';
 
 events.songEnded.subscribe(async (song, setup, scores, progress) => {
   if (scores.every((score) => score.score === 0)) {
@@ -24,3 +25,11 @@ events.songEnded.subscribe(async (song, setup, scores, progress) => {
   await storeSongStats(song, currentState);
   events.songStatStored.dispatch(getSongKey(song), currentState);
 });
+
+// Lets e2e tests seed play history (keyed by song id) instead of singing songs
+if (isE2E()) {
+  globalThis.__storeSongStats = async (songId, stats) => {
+    await storeSongStatsByKey(songId, stats);
+    events.songStatStored.dispatch(songId, stats);
+  };
+}

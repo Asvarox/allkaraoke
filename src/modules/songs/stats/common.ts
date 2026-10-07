@@ -41,9 +41,12 @@ export const fetchSongStats = async (song: Pick<SongPreview, 'artist' | 'title'>
   return (await (await getStorage())?.getItem<SongStats>(storageKey)) || { plays: 0, scores: [] };
 };
 
-export const storeSongStats = async (song: Pick<SongPreview, 'artist' | 'title'>, stats: SongStats) => {
-  await (await getStorage())?.setItem<SongStats>(getSongKey(song), stats);
+export const storeSongStatsByKey = async (storageKey: string, stats: SongStats) => {
+  await (await getStorage())?.setItem<SongStats>(storageKey, stats);
 };
+
+export const storeSongStats = async (song: Pick<SongPreview, 'artist' | 'title'>, stats: SongStats) =>
+  storeSongStatsByKey(getSongKey(song), stats);
 
 export const getAllStats = async () => {
   const keys = (await (await getStorage())?.keys()) ?? [];
