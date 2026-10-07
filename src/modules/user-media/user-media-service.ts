@@ -1,6 +1,12 @@
 import Listener from '~/modules/utils/listener';
 
-type accessStatus = 'uninitialised' | 'requested' | 'accepted' | 'declined';
+// 'blocked-by-system' - the site is allowed, but the OS denies the browser app itself the mic
+// (e.g. Chrome without the Android microphone permission), so the site prompt reappears on every request
+type accessStatus = 'uninitialised' | 'requested' | 'accepted' | 'declined' | 'blocked-by-system';
+
+const isBlockedBySystem = (e: unknown) =>
+  e instanceof Error && e.name === 'NotAllowedError' && e.message.toLowerCase().includes('by system');
+
 class UserMediaService extends Listener<[accessStatus]> {
   private status: accessStatus = 'uninitialised';
 
@@ -18,7 +24,7 @@ class UserMediaService extends Listener<[accessStatus]> {
 
       return result;
     } catch (e) {
-      this.setStatus('declined');
+      this.setStatus(isBlockedBySystem(e) ? 'blocked-by-system' : 'declined');
       throw e;
     }
   };

@@ -130,7 +130,9 @@ export default function ConnectionWizard({ roomId, connectionStatus, connectionE
     const timer = setTimeout(() => {
       userMediaService
         .getUserMedia({ audio: true })
-        .then(() => {
+        .then((stream) => {
+          // Only probing the permission - monitoring requests its own stream later
+          stream.getTracks().forEach((track) => track.stop());
           cachedInitialStep = 1;
           goToStep(1);
         }) // already granted → skip mic step
