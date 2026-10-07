@@ -1,3 +1,4 @@
+import posthog from 'posthog-js';
 import { ComponentRef, FormEventHandler, useEffect, useRef, useState } from 'react';
 
 import { Icon } from '~/modules/elements/akui/icon';
@@ -7,6 +8,8 @@ import { Input } from '~/modules/elements/input';
 import Loader from '~/modules/elements/loader';
 import { MenuButton } from '~/modules/elements/menu';
 import Modal from '~/modules/elements/modal';
+import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
+import { isOnlineRoomCode } from '~/modules/online/client/room-code';
 import { transportErrorReason } from '~/modules/remote-mic/network/client/network-client';
 import { GAME_CODE_LENGTH } from '~/modules/remote-mic/network/server/network-server';
 import ConfirmWifiModal from '~/routes/remote-mic/components/confrim-wifi-modal';
@@ -42,8 +45,20 @@ export default function StepEnterCode({
   // RemoteMicClient.connect() actually being called, so a manual Enter/click can otherwise race
   // the auto-connect effect while both still see connectionStatus as 'uninitialised'
   const submittedCodeRef = useRef<string | null>(null);
+  const navigate = useSmoothNavigate();
 
   const disabled = isAutoTyping || (connectionStatus !== 'uninitialised' && connectionStatus !== 'error');
+
+  // An online room code (digit-led) can never be a remote-mic game — take it to its online room
+  // instead of failing to connect with "Game with this code not found"
+  const submitCode = (code: string, source: 'auto-connect' | 'submit') => {
+    if (isOnlineRoomCode(code)) {
+      posthog.capture('remote_mic_join_redirected_to_online', { transport: code.trim().charAt(0), source });
+      navigate('online/', { room: code.trim().toLowerCase() });
+      return;
+    }
+    onConnect(code);
+  };
 
   // Reveal a preloaded game code one character at a time, as if it were being typed
   useEffect(() => {
@@ -80,7 +95,7 @@ export default function StepEnterCode({
       submittedCodeRef.current !== customRoomId
     ) {
       submittedCodeRef.current = customRoomId;
-      onConnect(customRoomId);
+      submitCode(customRoomId, 'auto-connect');
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [customRoomId, isAutoTyping, autoConnect]);
@@ -103,7 +118,7 @@ export default function StepEnterCode({
     }
     if (submittedCodeRef.current === customRoomId) return;
     submittedCodeRef.current = customRoomId;
-    onConnect(customRoomId);
+    submitCode(customRoomId, 'submit');
   };
 
   const shouldShowError = connectionStatus === 'error' && !errorReset;
