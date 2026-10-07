@@ -11,6 +11,17 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.event.workflow_run.conclusion == 'failure' }}
     steps:
+      - name: Annotate with triggering workflow run
+        env:
+          RUN_URL: ${{ github.event.workflow_run.html_url }}
+          RUN_NAME: ${{ github.event.workflow_run.display_title }}
+          RUN_CONCLUSION: ${{ github.event.workflow_run.conclusion }}
+        run: |
+          if [ -n "$RUN_URL" ]; then
+            echo "::notice title=Triggered by workflow run::$RUN_NAME ($RUN_CONCLUSION): $RUN_URL"
+          else
+            echo "::notice title=Triggered manually::No triggering workflow run (event: ${{ github.event_name }})"
+          fi
       - name: Download blob reports from GitHub Actions Artifacts
         id: download_artifact
         uses: actions/download-artifact@v4
