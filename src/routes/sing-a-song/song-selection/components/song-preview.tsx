@@ -29,6 +29,8 @@ interface Props {
 }
 
 const PREVIEW_LENGTH = 30;
+// After the preview loops this many times, the whole song plays (still looped)
+const PREVIEW_PLAYS_BEFORE_FULL_SONG = 2;
 
 export default function SongPreviewComponent({
   songPreview,
@@ -82,6 +84,9 @@ export default function SongPreviewComponent({
     [songPreview.video, start, end, songPreviewVolume],
   );
   const [videoId, previewStart, previewEnd, volume] = useDebounce(undebounced, 350);
+  const fullSongStart = songPreview.videoGap ?? 0;
+  // Lives here, not in the player, so expanding or collapsing the preview doesn't reset it
+  const previewPlays = useRef(0);
 
   // Hide immediately whenever the selected song changes; the PLAYING event in
   // onVideoStateChange will reveal the video once the new one has actually loaded.
@@ -97,6 +102,7 @@ export default function SongPreviewComponent({
     if (thumbnailSize.current) {
       player.current?.setSize(thumbnailSize.current.w, thumbnailSize.current.h);
     }
+    previewPlays.current = 0;
     player.current?.loadVideoById({
       videoId: videoId,
       startSeconds: previewStart,
@@ -110,13 +116,18 @@ export default function SongPreviewComponent({
       if (state === VideoState.ENDED) {
         // Reload (rather than seekTo) so the endSeconds bound is re-established — a bare seek
         // doesn't reliably re-arm it, and the preview would play past `previewEnd` on the next loop.
-        player.current?.loadVideoById({ videoId, startSeconds: previewStart, endSeconds: previewEnd });
+        previewPlays.current++;
+        if (previewPlays.current >= PREVIEW_PLAYS_BEFORE_FULL_SONG) {
+          player.current?.loadVideoById({ videoId, startSeconds: fullSongStart });
+        } else {
+          player.current?.loadVideoById({ videoId, startSeconds: previewStart, endSeconds: previewEnd });
+        }
         player.current?.playVideo();
       } else if (state === VideoState.PLAYING) {
         setShowVideo(true);
       }
     },
-    [videoId, previewStart, previewEnd],
+    [videoId, previewStart, previewEnd, fullSongStart],
   );
 
   // The legacy layout's way back on a phone. Pointer and touch only — the keyboard has Backspace

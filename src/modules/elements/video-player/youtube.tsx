@@ -35,7 +35,7 @@ interface Props {
 export interface LoadVideByIdOpts {
   videoId: string;
   startSeconds: number;
-  endSeconds: number;
+  endSeconds?: number;
 }
 
 export interface VideoPlayerRef {
