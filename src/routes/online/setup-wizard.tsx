@@ -1,4 +1,5 @@
 import { AnimatePresence, motion } from 'motion/react';
+import posthog from 'posthog-js';
 import { useRef, useState } from 'react';
 
 import { MAX_NAME_LENGTH } from '~/consts';
@@ -9,9 +10,11 @@ import { Input } from '~/modules/elements/input';
 import MenuWithLogo from '~/modules/elements/menu-with-logo';
 import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
 import useMicMonitoring from '~/modules/hooks/use-mic-monitoring';
+import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import { checkRoomExists } from '~/modules/online/client/online-client';
 import { generateOnlineRoomCode } from '~/modules/online/client/room-code';
 import { ONLINE_ROOM_CODE_LENGTH } from '~/modules/online/protocol/consts';
+import { isRemoteMicGameCode } from '~/modules/remote-mic/network/game-code';
 import { CalibrationIntro } from '~/routes/game/singing/calibration-intro';
 import useOnlineName from '~/routes/online/hooks/use-online-name';
 import BuiltIn from '~/routes/select-input/variants/built-in';
@@ -163,12 +166,19 @@ function CodeStep({
   } | null>(null);
 
   const { register } = useKeyboardNav({ onBackspace: onBack });
+  const navigate = useSmoothNavigate();
 
   const submit = async () => {
     if (checking) return;
     const roomCode = code.trim().toLowerCase();
     if (roomCode.length < ONLINE_ROOM_CODE_LENGTH) {
       inputRef.current?.triggerValidationError('Enter the room code');
+      return;
+    }
+    // A game code for the phone mic, typed here by mistake — no online room can have it
+    if (isRemoteMicGameCode(roomCode)) {
+      posthog.capture('online_join_redirected_to_remote_mic', { transport: roomCode.charAt(0) });
+      navigate('remote-mic/', { room: roomCode });
       return;
     }
     setChecking(true);
