@@ -52,31 +52,34 @@ export class SongListPagePO {
   }
 
   public async focusSong(songID: string) {
-    const currentlyFocused = await this.songPreviewElement.getAttribute('data-song');
-    if (currentlyFocused !== songID) {
-      await this.ensureSongIsScrolledTo(songID);
-      const song = await this.getSongElement(songID, false);
-      // force:true bypasses the song-preview overlay when showVideo=true intercepts pointer events.
-      await song.click({ force: true });
-    }
+    await this.ensureSongIsScrolledTo(songID);
+    const song = await this.getSongElement(songID, false);
+    await expect(async () => {
+      if ((await this.songPreviewElement.getAttribute('data-song')) !== songID) {
+        // Dispatched straight to the card - a real click can land on the overlay of the currently
+        // previewed (bigger, overlapping) song and expand that one instead
+        await song.dispatchEvent('click');
+      }
+      await expect(this.songPreviewElement).toHaveAttribute('data-song', songID, { timeout: 1000 });
+    }).toPass({ timeout: 10_000 });
   }
 
   public async openPreviewForSong(songID: string) {
-    // If the game settings are already visible (e.g. focusSong triggered expansion), skip clicking.
-    if (await this.page.getByTestId('game-mode-setting').isVisible()) return;
-    await this.ensureSongIsScrolledTo(songID);
+    const gameModeSetting = this.page.getByTestId('game-mode-setting');
+    const isExpandedOnSong = async () =>
+      (await gameModeSetting.isVisible()) && (await this.songPreviewElement.getAttribute('data-song')) === songID;
+
+    // Already expanded on this song (e.g. focusSong triggered expansion)
+    if (await isExpandedOnSong()) return;
+    await this.focusSong(songID);
     const song = await this.getSongElement(songID, false);
-    // force:true bypasses Playwright's "element intercepts pointer events" check when the
-    // song-preview overlay is visible (showVideo=true). The click triggers expansion directly
-    // or focuses the song so Enter can expand it.
-    await song.click({ force: true });
-    // Wait briefly for any React state update from the click, then check if settings are visible.
-    await this.page.waitForTimeout(100);
-    // If the preview isn't expanded yet (e.g. the song wasn't focused before the click),
-    // press Enter via keyboard navigation to expand it.
-    if (!(await this.page.getByTestId('game-mode-setting').isVisible())) {
-      await this.page.keyboard.press('Enter');
-    }
+    // Clicking the focused card expands it (with instant song preview, focusing alone already does).
+    // Not Enter - after a search, keyboard focus stays in the search input
+    await expect(async () => {
+      if (!(await gameModeSetting.isVisible())) await song.dispatchEvent('click');
+      await expect(gameModeSetting).toBeVisible({ timeout: 1000 });
+    }).toPass({ timeout: 10_000 });
+    await this.expectSelectedSongToBe(songID);
   }
 
   public getUnverifiedSongSearchResult(songTitle: string) {
