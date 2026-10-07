@@ -3,6 +3,7 @@ import { type CSSProperties, PropsWithChildren, useContext, useState } from 'rea
 import { Button } from '~/modules/elements/akui/button';
 import { Icon } from '~/modules/elements/akui/icon';
 import { Tooltip } from '~/modules/elements/tooltip';
+import useBreakpoint from '~/modules/hooks/use-breakpoint';
 import { useRemoteMicsAvailable } from '~/modules/remote-mic/no-remote-mics';
 import FullscreenButton from '~/modules/toolbar/fullscreen';
 import QRCodeModal from '~/modules/toolbar/qr-code-modal';
@@ -22,6 +23,9 @@ function Toolbar({ children }: PropsWithChildren) {
   const [isHelpVisible, setIsHelpVisible] = useSettingValue(KeyboardHelpVisibilitySetting);
   const { hasContent } = useContext(KeyboardHelpContext);
   const remoteMicsAvailable = useRemoteMicsAvailable();
+  // Under md the song list's controls are a size down, so these match them
+  const breakpoint = useBreakpoint();
+  const size = breakpoint === 'xs' || breakpoint === 'sm' ? 'mini' : 'small';
 
   const closeModal = () => setIsModalOpen(false);
 
@@ -35,7 +39,7 @@ function Toolbar({ children }: PropsWithChildren) {
         {hasContent && (
           <Tooltip title="Toggle help" place="bottom-end">
             <Button
-              size={{ xs: 'mini', sm: 'small' }}
+              size={size}
               type="button"
               // Only where the help itself shows
               className="hidden lg:flex"
@@ -46,11 +50,11 @@ function Toolbar({ children }: PropsWithChildren) {
             />
           </Tooltip>
         )}
-        <FullscreenButton size={{ xs: 'mini', sm: 'small' }} />
+        <FullscreenButton size={size} />
         {remoteMicsAvailable && (
           <Tooltip title="Connect phone" place="bottom-end">
             <Button
-              size={{ xs: 'mini', sm: 'small' }}
+              size={size}
               type="button"
               aria-label="Connect phone"
               onClick={() => setIsModalOpen((current) => !current)}

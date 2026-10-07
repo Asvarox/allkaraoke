@@ -31,10 +31,9 @@ export const ButtonBase = twx(Box)((props) => {
 
   return [
     `typography ${interactiveSurface} pointer-events-auto relative cursor-pointer flex-row! justify-center gap-2 border-0 px-3 font-bold uppercase duration-300`,
-    !isE2E() && props['data-focused'] && !props['data-subtle-focus']
-      ? 'bg-active! text-shadow-legible scale-[1.025]'
-      : '',
-    !isE2E() && props['data-focused'] ? 'scale-[1.025]' : '',
+    !isE2E() && props['data-focused'] && !props['data-subtle-focus'] ? 'bg-active! text-shadow-legible' : '',
+    // Not on a phone, where controls run edge to edge of a full-screen surface and the grown one would be clipped
+    !isE2E() && props['data-focused'] ? 'phone:scale-100 scale-[1.025]' : '',
     !isE2E() && props['data-focused'] && props['data-subtle-focus'] ? interactiveFocus : '',
     // Nothing that can't be acted on lights up under the pointer: a hover highlight on a dead
     // control promises a press that will never happen.

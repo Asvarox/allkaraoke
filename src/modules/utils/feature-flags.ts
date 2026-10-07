@@ -1,6 +1,5 @@
 // https://eu.posthog.com/project/281/feature_flags?tab=overview
 export const FeatureFlags = {
-  Eurovision: 'eurovision',
   RemoteMicConnectionType: 'remote_mics_connection_type',
   // Percentage rollout of the Cloudflare Realtime transport for remote mics; decides new game codes only
   RemoteMicsRealtime: 'remote_mics_realtime',

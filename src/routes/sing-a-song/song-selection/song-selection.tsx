@@ -121,7 +121,6 @@ export default function SongSelection({ onSongSelected, preselectedSong, onSongF
   );
 
   const loading = isLoading || unverifiedSongsLoading || !groupedSongList || !width;
-  const forceFlag = selectedPlaylist === 'Eurovision';
 
   const container = useRef<HTMLDivElement>(null);
 
@@ -292,13 +291,16 @@ export default function SongSelection({ onSongSelected, preselectedSong, onSongF
               keyboardNavRegister={row1Register}
               onPlaylistSelected={onPlaylistSelectedInToolbar}
               toolbarNavActive={toolbarFocusMode}
-            />
-            <SongGroupsNavigation
-              groupedSongList={navGroups}
-              visibleGroups={visibleGroups}
-              keyboardNavRegister={row2Register}
-              focusedSong={focusedSong}
-              onScrollToGroup={scrollToGroup}
+              groupsNavRegister={row2Register}
+              groupsNavigation={
+                <SongGroupsNavigation
+                  groupedSongList={navGroups}
+                  visibleGroups={visibleGroups}
+                  keyboardNavRegister={row2Register}
+                  focusedSong={focusedSong}
+                  onScrollToGroup={scrollToGroup}
+                />
+              }
             />
           </div>
         </div>
@@ -358,7 +360,6 @@ export default function SongSelection({ onSongSelected, preselectedSong, onSongF
                     data-focused={!showFilters && keyboardControl && isFocused}
                     data-test={`song-${getSongIdWithNew(songItem, group)}`}
                     data-group={group.name}
-                    forceFlag={forceFlag}
                   />
                 );
               }}
@@ -374,7 +375,6 @@ export default function SongSelection({ onSongSelected, preselectedSong, onSongF
               }
               context={{
                 songPreviewProps: {
-                  forceFlag,
                   isPopular: !!songPreviewInGroup?.isPopular,
                   keyboardControl: !keyboardControl,
                   onPlay: onSongSelected,

@@ -132,11 +132,11 @@ export default function GameSettings({
         document.body,
       )}
       <KeyboardNavContext value={register}>
-        {/* Scrolls only on a phone held sideways (see `area.settings`). The margin and padding pair
-            leaves a focused switcher room to grow without being clipped by the scrollport. */}
+        {/* Scrolls only on the widest layout when short of height (a phone scrolls the whole column). The margin and
+            padding pair leaves a focused switcher room to grow without being clipped by the scrollport. */}
         <ScrollableColumn
           className={cn(SongPreviewLayout.area.settings, '-mx-2')}
-          contentClassName="gap-3 px-2 py-1 *:shrink-0 max-lg:landscape:gap-2 lg:landscape:min-h-auto lg:landscape:overflow-visible">
+          contentClassName="gap-3 px-2 py-1 *:shrink-0 max-lg:landscape:gap-2 lg:landscape:min-h-auto lg:landscape:overflow-visible phone:overflow-visible">
           <NavSwitcher
             name="difficulty-setting"
             label="Difficulty"
@@ -181,50 +181,52 @@ export default function GameSettings({
               );
             })}
         </ScrollableColumn>
-        <div className={cn(SongPreviewLayout.area.actions, 'flex gap-3 max-lg:landscape:gap-2')}>
-          {!online && (
-            <NavButton
-              name="select-inputs-button"
-              size="small"
-              remoteLabel="Setup mics"
-              remoteIcon="settings"
-              // The gear the remote shows for it too
-              leftIcon={compact ? <Icon icon="ic:baseline-settings" /> : undefined}
-              // Play's height wherever the two share a row: a centre higher or lower than Play's
-              // makes the other one the nearest control on that side for the arrow keys
-              className={cn(
-                SongPreviewLayout.area.mics,
-                'md:portrait:h-16 max-lg:landscape:h-11 max-lg:landscape:min-w-11 lg:landscape:h-16',
-                'shrink-0 md:portrait:w-56',
-              )}
-              onClick={() => {
-                setPlayAfterSetup(false);
-                setShowModal(true);
-              }}>
-              {compact ? null : 'Setup mics'}
-            </NavButton>
-          )}
-          <NavButton
-            name="play-song-button"
-            size="large"
-            className={cn(
-              SongPreviewLayout.area.play,
-              'h-[50px] flex-1 text-lg md:portrait:h-16 md:portrait:text-xl max-lg:landscape:h-11 lg:landscape:h-16 lg:landscape:text-xl',
+        <SongPreviewLayout.Slot name="actions">
+          <div className={cn(SongPreviewLayout.area.actions, 'flex gap-3 max-lg:landscape:gap-2')}>
+            {!online && (
+              <NavButton
+                name="select-inputs-button"
+                size="small"
+                remoteLabel="Setup mics"
+                remoteIcon="settings"
+                // The gear the remote shows for it too
+                leftIcon={compact ? <Icon icon="ic:baseline-settings" /> : undefined}
+                // Play's height wherever the two share a row: a centre higher or lower than Play's
+                // makes the other one the nearest control on that side for the arrow keys
+                className={cn(
+                  SongPreviewLayout.area.mics,
+                  'md:portrait:h-16 max-lg:landscape:h-11 max-lg:landscape:min-w-11 lg:landscape:h-16',
+                  'shrink-0 md:portrait:w-56',
+                )}
+                onClick={() => {
+                  setPlayAfterSetup(false);
+                  setShowModal(true);
+                }}>
+                {compact ? null : 'Setup mics'}
+              </NavButton>
             )}
-            remoteIcon="play"
-            isDefault
-            // Before the mics are set up it leads there first — Play is what anyone reaches for
-            onClick={
-              canPlay
-                ? handlePlay
-                : () => {
-                    setPlayAfterSetup(true);
-                    setShowModal(true);
-                  }
-            }>
-            Play
-          </NavButton>
-        </div>
+            <NavButton
+              name="play-song-button"
+              size="large"
+              className={cn(
+                SongPreviewLayout.area.play,
+                'h-[50px] flex-1 text-lg md:portrait:h-16 md:portrait:text-xl max-lg:landscape:h-11 lg:landscape:h-16 lg:landscape:text-xl',
+              )}
+              remoteIcon="play"
+              isDefault
+              // Before the mics are set up it leads there first — Play is what anyone reaches for
+              onClick={
+                canPlay
+                  ? handlePlay
+                  : () => {
+                      setPlayAfterSetup(true);
+                      setShowModal(true);
+                    }
+              }>
+              Play
+            </NavButton>
+          </div>
+        </SongPreviewLayout.Slot>
         {/* Remote-only: the on-screen back button is pointer-only (keyboards have Backspace), so the
             phone would otherwise have no way out of this screen once mirrored. */}
         <NavRemoteControl

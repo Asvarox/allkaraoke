@@ -1,6 +1,6 @@
 import { expect, Page } from '@playwright/test';
 
-import { mockSongs } from '../helpers';
+import { mockRandom, mockSongs } from '../helpers';
 import initialise from '../page-objects/initialise';
 import { joinOnlineRoom } from '../steps/join-online-room';
 import { newPlayerPage } from '../steps/new-player-page';
@@ -21,6 +21,9 @@ const roomCodeMasks = (targetPage: Page) => [
 // Desktop only for now — online mode isn't yet visually pinned on the narrower viewports.
 visual('Online mode', ['desktop'], async ({ page, context, browser, viewport, makeScreenshot }) => {
   await mockSongs({ page, context });
+  // The room code is randomly generated, and a wider one wraps away from its label - mock Math.random
+  // so the host's lobby lays out the same on every run
+  await mockRandom({ page, context });
   const pages = initialise(page, context, browser);
 
   await page.goto('/online/?e2e-test');

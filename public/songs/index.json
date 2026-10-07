@@ -5384,7 +5384,7 @@
     "gap": 11555.358974358975,
     "year": "2025",
     "artistOrigin": "ES",
-    "lastUpdate": "2026-10-06T04:08:49.242Z",
+    "lastUpdate": "2026-10-06T03:41:18.819Z",
     "genre": "Pop",
     "realBpm": 117,
     "previewStart": 40,
@@ -7630,7 +7630,7 @@
     "gap": 2857.220216606498,
     "year": "1992",
     "artistOrigin": "US",
-    "lastUpdate": "2026-10-06T04:08:49.040Z",
+    "lastUpdate": "2026-10-05T15:18:18.942Z",
     "realBpm": 82,
     "previewStart": 63,
     "previewEnd": 90,
@@ -13308,7 +13308,7 @@
     "gap": 19107.745100741435,
     "year": "2019",
     "artistOrigin": "JP",
-    "lastUpdate": "2026-10-06T04:08:49.043Z",
+    "lastUpdate": "2026-10-06T03:40:18.433Z",
     "genre": "J-Pop",
     "realBpm": 183,
     "previewStart": 45,
@@ -37366,7 +37366,7 @@
     "bpm": 381.36,
     "gap": 526.6771554436754,
     "year": "2013",
-    "lastUpdate": "2026-10-06T04:08:49.261Z",
+    "lastUpdate": "2026-10-06T03:42:40.903Z",
     "genre": "Alternative, Indie",
     "realBpm": 96,
     "volume": 1,
@@ -46783,7 +46783,7 @@
     "gap": 22481.428571428572,
     "year": "2017",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-10-06T04:08:49.042Z",
+    "lastUpdate": "2026-10-05T15:18:39.946Z",
     "realBpm": 141,
     "volume": 1,
     "author": "Phi",
@@ -49680,7 +49680,7 @@
     "bpm": 300,
     "gap": 7050,
     "year": "1996",
-    "lastUpdate": "2026-10-06T04:08:48.440Z",
+    "lastUpdate": "2026-10-05T15:16:19.220Z",
     "genre": "Soundtrack",
     "realBpm": 90,
     "volume": 1,
@@ -51706,7 +51706,7 @@
     "gap": 587.4638379942141,
     "year": "1996",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-10-06T04:08:47.124Z",
+    "lastUpdate": "2026-10-05T15:10:37.675Z",
     "genre": "Pop",
     "realBpm": 56,
     "volume": 1,
@@ -55184,7 +55184,7 @@
     "gap": 3108.2727272727275,
     "year": "2006",
     "artistOrigin": "FI",
-    "lastUpdate": "2026-10-06T04:08:49.251Z",
+    "lastUpdate": "2026-10-06T03:41:56.807Z",
     "genre": "Rap",
     "realBpm": 100,
     "volume": 1,
@@ -58363,6 +58363,33 @@
     "shortId": 6140,
     "tracksCount": 1,
     "search": "epicthemusicalannaleacaseythechallenge",
+    "local": false
+  },
+  {
+    "id": "epic-the-musical-ayron-alexander-cast-of-epic-hold-them-down",
+    "title": "Hold Them Down",
+    "artist": "EPIC: The Musical (Ayron Alexander, Cast of EPIC)",
+    "video": "kk_kZhxImDw",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 3007.5,
+    "year": "2024",
+    "lastUpdate": "2026-10-07T03:36:15.895Z",
+    "genre": "Musical",
+    "realBpm": 70,
+    "volume": 1,
+    "author": "b888arb",
+    "duration": 185,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6506,
+    "tracksCount": 1,
+    "search": "epicthemusicalayronalexandercastofepicholdthemdown",
     "local": false
   },
   {
@@ -72730,6 +72757,34 @@
     "local": false
   },
   {
+    "id": "grimes-feat-hana-we-appreciate-power",
+    "title": "We Appreciate Power",
+    "artist": "Grimes feat. Hana",
+    "video": "gYG_4vJ4qNA",
+    "language": [
+      "English"
+    ],
+    "bpm": 216.18,
+    "gap": 16458.587288370803,
+    "year": "2018",
+    "lastUpdate": "2026-10-07T03:36:15.694Z",
+    "genre": "Nu Metal",
+    "realBpm": 105,
+    "volume": 1,
+    "author": "lukmuk",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=25999",
+    "duration": 343,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6505,
+    "tracksCount": 1,
+    "search": "grimesfeathanaweappreciatepower",
+    "local": false
+  },
+  {
     "id": "grimes-oblivion",
     "title": "Oblivion",
     "artist": "Grimes",
@@ -85782,7 +85837,7 @@
     "gap": 5641.481481481482,
     "year": "2025",
     "artistOrigin": "US",
-    "lastUpdate": "2026-06-24T04:46:58.300Z",
+    "lastUpdate": "2026-10-06T20:37:19.209Z",
     "edition": "ESC 2025",
     "realBpm": 81,
     "volume": 1,
@@ -91223,7 +91278,7 @@
     "gap": 25462.68549545237,
     "year": "2009",
     "artistOrigin": "JP",
-    "lastUpdate": "2026-10-06T04:08:48.437Z",
+    "lastUpdate": "2026-10-05T15:14:29.278Z",
     "genre": "Video Game",
     "realBpm": 167,
     "previewStart": 60,
@@ -101170,7 +101225,7 @@
     "gap": 6804.061865333541,
     "year": "2013",
     "artistOrigin": "US",
-    "lastUpdate": "2026-10-06T04:08:49.246Z",
+    "lastUpdate": "2026-10-06T03:41:39.552Z",
     "genre": "Pop",
     "realBpm": 128,
     "volume": 1,
@@ -107509,7 +107564,7 @@
     "gap": 16727.560010985995,
     "year": "1997",
     "artistOrigin": "AR",
-    "lastUpdate": "2026-10-06T04:08:48.241Z",
+    "lastUpdate": "2026-10-05T15:13:57.361Z",
     "genre": "Rock",
     "realBpm": 291.28,
     "volume": 1,
@@ -114448,6 +114503,34 @@
     "local": false
   },
   {
+    "id": "mark-forster-choere",
+    "title": "Chöre",
+    "artist": "Mark Forster",
+    "video": "Cy58BTi-vCQ",
+    "language": [
+      "German"
+    ],
+    "bpm": 260,
+    "gap": 15919.23076923077,
+    "year": "2016",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-10-07T03:36:14.936Z",
+    "genre": "Pop",
+    "realBpm": 130,
+    "volume": 0.54,
+    "author": "lucahip2000",
+    "duration": 216,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6503,
+    "tracksCount": 1,
+    "search": "markforsterchoere",
+    "local": false
+  },
+  {
     "id": "mark-forster-feat-sido-au-revoir",
     "title": "Au revoir",
     "artist": "Mark Forster feat. Sido",
@@ -117343,6 +117426,35 @@
     "shortId": 2915,
     "tracksCount": 1,
     "search": "melendibarbiedeextrarradio",
+    "local": false
+  },
+  {
+    "id": "melendi-un-violinista-en-tu-tejado",
+    "title": "Un violinista en tu tejado",
+    "artist": "Melendi",
+    "video": "6EEYSbjkdlM",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 163.00007063336395,
+    "gap": 14137.7305,
+    "year": "2008",
+    "artistOrigin": "ES",
+    "lastUpdate": "2026-10-07T03:36:14.927Z",
+    "realBpm": 156,
+    "previewEnd": 10,
+    "volume": 1,
+    "author": "LUKA",
+    "sourceUrl": "https://www.youtube.com/watch?v=6EEYSbjkdlM",
+    "duration": 242,
+    "tracks": [
+      {
+        "start": 11
+      }
+    ],
+    "shortId": 6502,
+    "tracksCount": 1,
+    "search": "melendiunviolinistaentutejado",
     "local": false
   },
   {
@@ -123802,7 +123914,7 @@
     "gap": 32397.170435741864,
     "year": "2001",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-10-06T04:08:49.039Z",
+    "lastUpdate": "2026-10-05T15:17:17.922Z",
     "realBpm": 136,
     "volume": 1,
     "author": "bexx",
@@ -129038,7 +129150,7 @@
     "gap": 23960.978260869564,
     "year": "1998",
     "artistOrigin": "FI",
-    "lastUpdate": "2026-10-06T04:08:48.237Z",
+    "lastUpdate": "2026-10-05T15:12:59.289Z",
     "genre": "Metal",
     "realBpm": 110,
     "volume": 1,
@@ -140401,7 +140513,7 @@
     "gap": 13758.370495021736,
     "year": "2021",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-10-06T04:08:49.253Z",
+    "lastUpdate": "2026-10-06T03:42:24.087Z",
     "genre": "Indie",
     "realBpm": 107,
     "volume": 1,
@@ -147617,7 +147729,7 @@
     "bpm": 242.03,
     "gap": 30178.387389992975,
     "year": "2007",
-    "lastUpdate": "2026-10-06T04:08:48.848Z",
+    "lastUpdate": "2026-10-05T15:16:46.592Z",
     "realBpm": 88,
     "volume": 1,
     "author": "daggeg",
@@ -151375,6 +151487,37 @@
     "shortId": 5154,
     "tracksCount": 1,
     "search": "sawanohiroyukiparagon",
+    "local": false
+  },
+  {
+    "id": "sawanohiroyukinzk-mizuki-avid",
+    "title": "Avid",
+    "artist": "SawanoHiroyuki[nZk] mizuki",
+    "video": "vMdlbE-MzF8",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 312.68,
+    "gap": 11435.580273762313,
+    "year": "2021",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-10-07T03:36:16.097Z",
+    "genre": "Anime",
+    "realBpm": 156,
+    "previewStart": 39.5,
+    "previewEnd": 89,
+    "volume": 1,
+    "author": "Currymalker",
+    "authorUrl": "Currymalker",
+    "duration": 89,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6507,
+    "tracksCount": 1,
+    "search": "sawanohiroyukinzkmizukiavid",
     "local": false
   },
   {
@@ -165502,7 +165645,7 @@
     "gap": 39700.27486732889,
     "year": "1985",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-10-06T04:08:48.034Z",
+    "lastUpdate": "2026-10-05T15:11:59.041Z",
     "genre": "Synth-Pop, New Wave, Dance-Pop, New Pop",
     "realBpm": 92,
     "volume": 1,
@@ -166860,7 +167003,7 @@
     "gap": 4059.7413206262763,
     "year": "2022",
     "artistOrigin": "US",
-    "lastUpdate": "2026-10-06T04:08:48.234Z",
+    "lastUpdate": "2026-10-05T15:12:46.479Z",
     "genre": "Pop",
     "realBpm": 106,
     "volume": 1,
@@ -178154,7 +178297,7 @@
     "bpm": 240.35999999999999,
     "gap": 404.27994705493006,
     "year": "2021",
-    "lastUpdate": "2026-10-06T04:08:47.842Z",
+    "lastUpdate": "2026-10-05T15:11:28.398Z",
     "genre": "Dance",
     "realBpm": 120,
     "volume": 1,
@@ -180867,6 +181010,35 @@
     "local": false
   },
   {
+    "id": "trailerpark-bleib-in-der-schule",
+    "title": "Bleib in der Schule",
+    "artist": "Trailerpark",
+    "video": "tywkWRsjGbY",
+    "language": [
+      "German"
+    ],
+    "bpm": 281.17,
+    "gap": 7326.378347618878,
+    "year": "2014",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-10-07T03:36:15.690Z",
+    "genre": "Rap",
+    "realBpm": 140,
+    "volume": 1,
+    "author": "Hannoveraner",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=25088",
+    "duration": 287,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6504,
+    "tracksCount": 1,
+    "search": "trailerparkbleibinderschule",
+    "local": false
+  },
+  {
     "id": "train-angel-in-blue-jeans",
     "title": "Angel In Blue Jeans",
     "artist": "Train",
@@ -181423,7 +181595,7 @@
     "gap": 18619.23076923077,
     "year": "2016",
     "artistOrigin": "US",
-    "lastUpdate": "2026-10-06T04:08:47.115Z",
+    "lastUpdate": "2026-10-05T15:10:21.705Z",
     "realBpm": 130,
     "volume": 1,
     "author": "DoubleDee73",
