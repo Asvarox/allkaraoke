@@ -8,6 +8,8 @@ export async function connectRemoteMic(remoteMicPage: Page, name?: string, close
   const connectButton = remoteMicPage.getByTestId('connect-button');
   const connectionStatus = remoteMicPage.getByTestId('connection-status');
 
+  const nameConfirmButton = remoteMicPage.getByTestId('confirm-name-button');
+
   const isConnected = async () => /\d+ms/i.test((await connectionStatus.textContent().catch(() => '')) ?? '');
 
   // The wizard submits a prefilled/auto-typed game code on its own, so on most paths the Connect
@@ -18,7 +20,8 @@ export async function connectRemoteMic(remoteMicPage: Page, name?: string, close
   // assert on right afterwards.
   try {
     await expect(async () => {
-      if (await isConnected()) return;
+      // A phone without a remembered name stops at the name step and only connects once it's confirmed
+      if ((await isConnected()) || (await nameConfirmButton.isVisible())) return;
       if (await connectButton.isEnabled({ timeout: 200 }).catch(() => false)) {
         await connectButton.click();
         return;
@@ -36,7 +39,6 @@ export async function connectRemoteMic(remoteMicPage: Page, name?: string, close
     return stored !== null && stored !== '' && stored !== '""';
   });
   if (!hasStoredName) {
-    const nameConfirmButton = remoteMicPage.getByTestId('confirm-name-button');
     await nameConfirmButton.waitFor({ state: 'visible', timeout: 20_000 });
     if (name !== undefined) {
       await remoteMicPage.getByTestId('player-name-input').fill(name);
@@ -48,13 +50,17 @@ export async function connectRemoteMic(remoteMicPage: Page, name?: string, close
 
   if (closeMicSelectionMenu) {
     const closeButton = remoteMicPage.getByTestId('close-menu');
+    const wizardFinished = remoteMicPage
+      .getByTestId('remote-keyboard')
+      .or(remoteMicPage.getByTestId('no-permissions-message'))
+      .first();
 
-    try {
-      await closeButton.waitFor({ state: 'visible', timeout: 2_000 });
-      await closeButton.click();
-    } catch {
-      // The connect flow does not always open the player-change sheet.
-    }
+    // The wizard may open the "Choose your color" sheet (when no player is assigned yet) well after
+    // the status shows connected - wait for the wizard to finish, closing the sheet whenever it shows up
+    await expect(async () => {
+      if (await closeButton.isVisible()) await closeButton.click();
+      await expect(wizardFinished).toBeVisible({ timeout: 500 });
+    }).toPass({ timeout: 14_000 });
   }
 }
 export async function openRemoteMic(page: Page, context: BrowserContext, browser: Browser, autoConnect = true) {

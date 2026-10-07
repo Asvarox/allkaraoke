@@ -78,6 +78,8 @@ test('Should allow changing microphone input lag', async ({ browser, page }) => 
 });
 
 test('Should properly manage mics', async ({ browser, page }) => {
+  // Drives three pages (desktop + two phones) and reconnects one - regularly brushes the default timeout
+  test.slow();
   const player2Name = 'Player 2';
   const blueMic = 'blue';
   const redMic = 'red';
