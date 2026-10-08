@@ -29,4 +29,7 @@ const routePaths = {
   EDIT_SETLISTS: 'edit/setlists',
 } as const;
 
+/** The song list, opened with the given song focused. */
+export const songSelectionPath = (songId: string) => `${routePaths.GAME}/?song=${encodeURIComponent(songId)}`;
+
 export default routePaths;

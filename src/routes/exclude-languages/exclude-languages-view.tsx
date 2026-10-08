@@ -10,12 +10,10 @@ import MenuWithLogo from '~/modules/elements/menu-with-logo';
 import Modal from '~/modules/elements/modal';
 import { NavButton, NavCheckbox } from '~/modules/elements/nav-controls';
 import useKeyboardNav, { KeyboardNavContext } from '~/modules/hooks/use-keyboard-nav';
-import { useLanguageList } from '~/modules/songs/hooks/use-language-list';
-import useSongIndex from '~/modules/songs/hooks/use-song-index';
-import isE2E from '~/modules/utils/is-e2-e';
-import languageNameToIsoCode from '~/modules/utils/language-name-to-iso-code';
 import { ExcludedLanguagesSetting, useSettingValue } from '~/routes/settings/settings-state';
 import { twx } from '~/utils/twx';
+
+import { getDefaultExcludedLanguages, useSelectableLanguages } from './default-excluded-languages';
 
 interface Props {
   onClose: () => void;
@@ -34,8 +32,6 @@ interface Props {
   onEditSongs?: () => void;
 }
 
-const MIN_SONGS_COUNT = isE2E() ? 0 : 20;
-
 function ExcludeLanguagesView({ onClose, closeText, variant = 'page', onCancel, inSongSelection, onEditSongs }: Props) {
   const isModal = variant === 'modal';
   const dismiss = onCancel ?? onClose;
@@ -48,12 +44,7 @@ function ExcludeLanguagesView({ onClose, closeText, variant = 'page', onCancel, 
   });
 
   const [excludedLanguages, setExcludedLanguages] = useSettingValue(ExcludedLanguagesSetting);
-  const { data, isLoading } = useSongIndex();
-  const availableLanguages = useLanguageList(data);
-  const languageList = useMemo(
-    () => availableLanguages.filter(({ name, count }) => languageNameToIsoCode(name) && count >= MIN_SONGS_COUNT),
-    [availableLanguages],
-  );
+  const { availableLanguages, languageList, isLoading } = useSelectableLanguages();
   const otherSongCount = useMemo(
     () =>
       availableLanguages
@@ -73,16 +64,8 @@ function ExcludeLanguagesView({ onClose, closeText, variant = 'page', onCancel, 
   };
 
   useEffect(() => {
-    if (excludedLanguages === null && navigator?.languages) {
-      const languageNames = new Intl.DisplayNames(['en'], { type: 'language' });
-      const preferredLanguages = navigator?.languages
-        .map((lang) => languageNames.of(lang)?.toLowerCase())
-        .filter(Boolean) as string[];
-
-      const toExclude = languageList
-        .map((lang) => lang.name)
-        .filter((lang) => !preferredLanguages.some((preferred) => preferred.includes(lang.toLowerCase())))
-        .filter((lang) => lang !== 'English'); // Always have English selected as default
+    if (excludedLanguages === null) {
+      const toExclude = getDefaultExcludedLanguages(languageList);
 
       if (toExclude.length) {
         setExcludedLanguages(toExclude);

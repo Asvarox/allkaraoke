@@ -7,7 +7,9 @@ import { useEffect, useState } from 'react';
 import { Menu } from '~/modules/elements/akui/menu';
 import Box from '~/modules/elements/akui/primitives/box';
 import Typography from '~/modules/elements/akui/primitives/typography';
+import SmoothLink from '~/modules/elements/smooth-link';
 import isE2E from '~/modules/utils/is-e2-e';
+import { songSelectionPath } from '~/routes/route-paths';
 import { cn } from '~/utils/cn';
 
 import songStats from './song-stats.json';
@@ -86,13 +88,17 @@ const tileVariants = {
  */
 function RecentlyAddedSongs({ className }: { className?: string }) {
   const [page, setPage] = useState(0);
+  // Held while a song is hovered or focused, so the tile doesn't swap out from under a click or Enter
+  const [hovered, setHovered] = useState(false);
+  const [focused, setFocused] = useState(false);
+  const paused = hovered || focused;
 
   useEffect(() => {
-    if (isE2E() || pages.length < 2) return;
+    if (isE2E() || pages.length < 2 || paused) return;
 
     const interval = setInterval(() => setPage((current) => (current + 1) % pages.length), PAGE_DURATION_MS);
     return () => clearInterval(interval);
-  }, []);
+  }, [paused]);
 
   if (pages.length === 0) return null;
 
@@ -130,41 +136,46 @@ function RecentlyAddedSongs({ className }: { className?: string }) {
           animate="animate"
           exit="exit">
           {pages[page].map((song) => (
-            <motion.div
-              key={`${song.artist}-${song.title}`}
-              variants={tileVariants}
-              transition={{ duration: 0.25 }}
-              className="relative flex h-full min-w-0 items-stretch overflow-hidden rounded-lg bg-black/40 p-2"
-              data-test="recently-added-song">
-              {/* The same YouTube still the song cards use, so a song looks like itself on both
-                  screens. `alt=""` — the title and artist are right beside it.
+            <SmoothLink key={song.id} to={songSelectionPath(song.id)} asChild>
+              <motion.a
+                variants={tileVariants}
+                transition={{ duration: 0.25 }}
+                className="relative flex h-full min-w-0 items-stretch overflow-hidden rounded-lg bg-black/40 p-2 text-inherit no-underline transition-colors hover:bg-black/60"
+                onMouseEnter={() => setHovered(true)}
+                onMouseLeave={() => setHovered(false)}
+                onFocus={() => setFocused(true)}
+                onBlur={() => setFocused(false)}
+                data-test="recently-added-song">
+                {/* The same YouTube still the song cards use, so a song looks like itself on both
+                    screens. `alt=""` — the title and artist are right beside it.
 
-                  Kept at 16:9 and as tall as the row allows, which only works because the row's
-                  height is fixed above: a still sized from its own height inside a row sized by its
-                  contents has nothing to resolve against. Wide enough at that ratio to crowd the
-                  text, so the text is laid over its trailing edge rather than beside it — the way
-                  the rest of the app puts copy over video instead of shrinking the picture. */}
-              <img
-                src={`https://i3.ytimg.com/vi/${song.video}/hqdefault.jpg`}
-                alt=""
-                loading="lazy"
-                style={{ maskImage: OVERLAP_FADE }}
-                className={`-mr-6 aspect-video h-full w-auto shrink-0 rounded-md border-1 border-black bg-[#2b2b2b] object-cover ${WIDE_TEXT_COLUMN}`}
-              />
-              {/* The overlap is the still's own `-mr-6`, not a pull on this column: hiding the
-                  still has to take the overlap with it, or the text starts outside the tile's
-                  padding. `text-shadow-legible` is what carries the first letter or two that still
-                  land on the picture. */}
-              <div className="text-shadow-legible relative z-10 flex min-w-0 flex-col justify-center">
-                <Typography className="text-md truncate leading-tight font-bold">{song.title}</Typography>
-                <Typography className="truncate text-sm leading-snug opacity-75">{song.artist}</Typography>
-                {/* Truncated rather than wrapped: a second line here and not on the tile beside it
-                    would make the row's height change with whichever page is up. */}
-                <Typography className="text-active truncate text-xs leading-snug">
-                  added {dayjs(song.addedAt).fromNow()}
-                </Typography>
-              </div>
-            </motion.div>
+                    Kept at 16:9 and as tall as the row allows, which only works because the row's
+                    height is fixed above: a still sized from its own height inside a row sized by its
+                    contents has nothing to resolve against. Wide enough at that ratio to crowd the
+                    text, so the text is laid over its trailing edge rather than beside it — the way
+                    the rest of the app puts copy over video instead of shrinking the picture. */}
+                <img
+                  src={`https://i3.ytimg.com/vi/${song.video}/hqdefault.jpg`}
+                  alt=""
+                  loading="lazy"
+                  style={{ maskImage: OVERLAP_FADE }}
+                  className={`-mr-6 aspect-video h-full w-auto shrink-0 rounded-md border-1 border-black bg-[#2b2b2b] object-cover ${WIDE_TEXT_COLUMN}`}
+                />
+                {/* The overlap is the still's own `-mr-6`, not a pull on this column: hiding the
+                    still has to take the overlap with it, or the text starts outside the tile's
+                    padding. `text-shadow-legible` is what carries the first letter or two that still
+                    land on the picture. */}
+                <div className="text-shadow-legible relative z-10 flex min-w-0 flex-col justify-center">
+                  <Typography className="text-md truncate leading-tight font-bold">{song.title}</Typography>
+                  <Typography className="truncate text-sm leading-snug opacity-75">{song.artist}</Typography>
+                  {/* Truncated rather than wrapped: a second line here and not on the tile beside it
+                      would make the row's height change with whichever page is up. */}
+                  <Typography className="text-active truncate text-xs leading-snug">
+                    added {dayjs(song.addedAt).fromNow()}
+                  </Typography>
+                </div>
+              </motion.a>
+            </SmoothLink>
           ))}
         </motion.div>
       </AnimatePresence>
