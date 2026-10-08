@@ -30,6 +30,12 @@ jobs:
             run: pnpm build-storybook
           - name: Knip
             run: pnpm knip
+      - name: Upload Storybook build
+        uses: actions/upload-artifact@v4
+        with:
+          name: storybook-static # deployed by deploy-storybook / deploy-storybook-branch
+          path: storybook-static
+          retention-days: 1
   e2e-tests-run:
     strategy:
       fail-fast: false
@@ -515,3 +521,51 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           # One worker per PR, redeployed on every push. cleanup-pr-worker.yml deletes it when the PR closes
           command: deploy --name=allkaraoke-party-pr-${{ github.event.pull_request.number }}
+
+  deploy-storybook:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    needs: ['quick-checks']
+    environment:
+      name: storybook
+      url: https://storybook.allkaraoke.party/
+    steps:
+      - uses: actions/checkout@v5
+      - name: Setup Node
+        uses: './.github/templates/setup-node'
+      - name: Download Storybook build
+        uses: actions/download-artifact@v5
+        with:
+          name: storybook-static
+          path: storybook-static
+      - name: Upload to Cloudflare
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy --config=wrangler.storybook.jsonc
+
+  deploy-storybook-branch:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    needs: ['quick-checks']
+    environment:
+      name: storybook-prs
+      url: ${{ steps.deploy-storybook.outputs.deployment-url }}
+    steps:
+      - uses: actions/checkout@v5
+      - name: Setup Node
+        uses: './.github/templates/setup-node'
+      - name: Download Storybook build
+        uses: actions/download-artifact@v5
+        with:
+          name: storybook-static
+          path: storybook-static
+      - name: Upload to Cloudflare
+        id: deploy-storybook
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          # One worker per PR, redeployed on every push. cleanup-pr-worker.yml deletes it when the PR closes
+          command: deploy --config=wrangler.storybook.jsonc --name=allkaraoke-storybook-pr-${{ github.event.pull_request.number }}

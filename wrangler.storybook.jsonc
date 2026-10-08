@@ -1,0 +1,10 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	// Assets-only worker serving the static Storybook build (`pnpm build-storybook`), deployed from CI.
+	// The storybook.allkaraoke.party custom domain is assigned in the Cloudflare dashboard, not here
+	"name": "allkaraoke-storybook",
+	"compatibility_date": "2026-05-27",
+	"assets": {
+		"directory": "./storybook-static",
+	},
+}
