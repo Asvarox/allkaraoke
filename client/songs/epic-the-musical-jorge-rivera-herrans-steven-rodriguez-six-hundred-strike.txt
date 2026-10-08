@@ -1,0 +1,413 @@
+#ARTIST:EPIC: The Musical (Jorge Rivera-Herrans, Steven Rodriguez)
+#TITLE:Six Hundred Strike
+#CREATOR:Andore
+#BPM:400
+#YEAR:2024
+#VIDEO:v=zov6NXIAuow
+#GENRE:Musical
+#LANGUAGE:English
+#GAP:22687,5
+#ALLKARAOKE_ID:epic-the-musical-jorge-rivera-herrans-steven-rodriguez-six-hundred-strike
+#ALLKARAOKE_SID:6528
+#ALLKARAOKE_LASTUPDATE:2026-10-08T03:50:38.173Z
+#ALLKARAOKE_REALBPM:79
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:212
+#MP3:EPIC: The Musical (Jorge Rivera-Herrans, Steven Rodriguez) - Six Hundred Strike.mp3
+#COVER:EPIC: The Musical (Jorge Rivera-Herrans, Steven Rodriguez) - Six Hundred Strike [CO].jpg
+#BACKGROUND:EPIC: The Musical (Jorge Rivera-Herrans, Steven Rodriguez) - Six Hundred Strike [BG].jpg
+F 27 3 -9 Six 
+F 37 11 -10 hun
+F 53 6 -10 dred 
+F 60 3 -10 men, 
+F 65 6 -9 six 
+F 76 9 -10 hun
+F 91 6 -10 dred
+- 97
+F 103 6 -9 Six 
+F 113 9 -10 hun
+F 128 4 -10 dred 
+F 136 4 -12 men, 
+F 142 6 -9 six 
+F 151 9 -10 hun
+F 165 4 -10 dred
+- 169
+F 179 3 -9 Six 
+F 188 10 -10 hun
+F 203 4 -10 dred 
+F 211 4 -10 men, 
+F 217 4 -9 six 
+F 226 11 -10 hun
+F 241 4 -10 dred
+- 245
+F 254 5 -9 Six 
+F 264 7 -10 hun
+F 277 5 -10 dred 
+F 287 4 -10 men, 
+F 295 3 -9 six 
+F 302 8 -10 hun
+F 316 4 -10 dred
+- 320
+R 330 3 5 I 
+R 335 1 7 don’t 
+R 340 4 5 think 
+R 349 4 3 you 
+R 360 7 2 seem 
+R 372 1 0 to 
+R 378 3 2 get 
+R 384 1 0 it,
+- 385
+R 406 4 7 I 
+R 415 5 5 can’t 
+R 426 2 3 af
+R 435 4 5 ford 
+R 443 1 3 to 
+R 448 6 7 die,
+- 454
+R 459 2 5 Cause 
+R 463 4 7 I 
+R 472 4 10 will 
+R 480 1 8 get 
+R 487 3 6 back 
+R 495 1 4 to 
+R 500 2 1 my 
+R 510 4 3 son,
+- 514
+R 535 2 -3 And 
+R 539 4 2 I 
+R 548 3 3 will 
+R 554 3 5 get 
+R 562 3 5 back 
+R 570 2 2 to 
+R 575 6 8 my 
+: 584 3 12 Wife
+: 588 9 11 ~
+: 598 8 10 ~
+: 607 1 9 ~
+: 609 1 8 ~
+: 611 1 7 ~
+: 613 1 6 ~
+- 614 872
+- 872
+: 899 4 7 For 
+: 905 3 7 e
+: 910 3 5 ve
+: 915 3 6 ry 
+: 922 7 -5 com
+: 933 18 3 rade!
+- 951
+: 965 2 6 E
+: 968 3 7 ~
+: 972 1 7 ve
+: 974 3 7 ry 
+: 980 3 7 one 
+: 987 2 5 of 
+: 994 6 3 my 
+: 1007 30 -2 friends!
+- 1037
+: 1054 4 5 Al
+: 1060 2 7 ~
+: 1063 4 7 most 
+: 1069 8 8 all
+: 1078 4 7 ~ 
+: 1084 1 7 of 
+: 1087 7 7 whom
+: 1095 3 5 ~ 
+: 1102 5 5 were 
+: 1112 4 4 slaugh
+: 1117 5 3 tered 
+: 1126 5 3 by 
+: 1135 3 9 your
+: 1139 7 10 ~ 
+: 1149 13 10 hand!
+- 1162
+R 1187 8 2 Six
+R 1200 6 3 hun
+R 1211 5 4 dred 
+* 1223 46 12 Strike!
+* 1270 3 11 ~
+* 1274 10 10 ~
+- 1284
+F 1308 7 -9 Six
+F 1318 9 -8 hun
+F 1333 5 -10 dred 
+F 1342 1 -12 men
+- 1343
+F 1347 5 -9 Six
+F 1356 5 -9 hun
+F 1371 4 -9 dred
+- 1375
+F 1384 5 -9 Six
+F 1393 5 -9 hun
+F 1408 4 -9 dred 
+F 1417 3 -12 men
+- 1420
+F 1425 3 -9 Six
+F 1432 5 -9 hun
+F 1446 3 -9 dred 
+F 1450 3 -9 Six
+F 1464 6 -9 hun
+F 1479 2 -9 dred
+- 1481
+F 1493 3 -9 Six
+F 1506 5 -9 hun
+F 1516 5 -9 dred 
+F 1526 5 -12 men
+- 1531 1687
+- 1687
+F 1714 4 -12 You 
+F 1721 5 -12 i
+F 1727 2 -12 di
+F 1730 6 -12 ot
+- 1736 1758
+- 1758
+R 1785 5 -12 Can’t 
+R 1796 4 -8 you 
+: 1809 4 -5 see?
+: 1814 1 -6 ~
+: 1816 11 -5 ~
+- 1827
+: 1852 6 3 You 
+: 1865 6 2 sealed 
+: 1875 4 0 your 
+: 1887 9 -5 fate
+- 1896 1908
+- 1908
+: 1935 4 -10 Just 
+: 1945 1 -10 to 
+: 1951 3 -12 beat 
+: 1963 7 -12 me.
+- 1970 1978
+- 1978
+: 2005 12 -4 You 
+: 2020 8 -5 re
+: 2029 5 -4 ~
+: 2035 9 -4 leased 
+: 2050 9 -4 my 
+: 2066 19 -5 storm
+- 2085
+: 2094 2 -5 When 
+: 2100 3 -6 you 
+: 2105 3 -5 o
+: 2110 3 -7 pened 
+: 2116 4 -5 that 
+: 2126 12 -5 bag
+- 2138
+: 2163 11 7 Blocked 
+: 2180 11 3 your 
+: 2196 3 3 one
+: 2200 1 4 ~
+: 2202 7 5 ~ 
+: 2211 11 3 way 
+: 2224 16 -2 home
+- 2240
+F 2254 2 -5 Now, 
+F 2259 2 -5 you’ll 
+F 2266 3 -5 ne
+F 2271 2 -5 ver 
+F 2276 3 -5 get 
+F 2286 5 -5 back!
+- 2291 2393
+- 2393
+F 2420 2 -4 You’re 
+F 2425 2 -9 go
+F 2428 4 -9 ing 
+F 2434 1 -9 to 
+F 2438 5 -9 call 
+F 2445 3 -10 off 
+F 2453 2 -10 that 
+F 2462 9 -9 storm
+- 2471 2548
+- 2548
+F 2575 3 -12 Or 
+F 2587 6 -12 what?
+- 2593
+F 2612 2 -10 You 
+F 2618 3 -10 can’t 
+F 2626 6 -10 kill 
+F 2637 5 -10 me!
+- 2642 2708
+- 2708
+F 2735 2 -6 E
+F 2739 8 -6 xact
+F 2751 6 -8 ly
+- 2757 2876
+- 2876
+F 2903 5 -12 Wait
+- 2908 2914
+- 2914
+F 2941 7 -3 Wait
+- 2948
+F 2967 36 9 Ah!
+- 3003 3020
+- 3020
+F 3047 8 0 UGH!
+- 3055 3058
+- 3058
+R 3085 6 8 How 
+R 3093 3 8 Does 
+R 3097 1 8 it 
+R 3105 5 8 Feel 
+R 3113 1 7 to 
+R 3117 5 5 be 
+R 3124 6 7 Help
+R 3133 7 5 less?
+- 3140
+R 3165 7 7 How 
+R 3173 3 7 does 
+R 3178 2 8 it 
+R 3185 6 8 Feel 
+R 3193 1 7 to 
+R 3197 4 5 know 
+: 3205 1 6 Pain?
+: 3207 5 7 ~
+: 3213 1 6 ~
+: 3215 2 5 ~
+- 3217 3219
+- 3219
+R 3246 3 8 I 
+R 3254 4 7 watched 
+R 3261 2 8 my 
+R 3268 4 8 friends 
+R 3277 5 7 die 
+R 3287 1 6 in 
+R 3290 3 5 Hor
+R 3294 6 5 ror!
+- 3300
+R 3325 6 8 Cry
+R 3332 3 8 ing 
+R 3337 4 7 as 
+R 3343 7 7 they 
+R 3353 4 6 were 
+R 3358 3 5 all 
+R 3367 8 5 slain
+- 3375 3378
+- 3378
+R 3405 4 8 I 
+R 3412 4 7 heard 
+R 3419 3 7 their 
+R 3427 5 8 Fi
+R 3436 5 8 nal 
+R 3444 8 7 Mo
+R 3453 7 7 ments!
+- 3460
+R 3485 7 3 Cal
+R 3494 3 5 ling 
+R 3500 2 3 their 
+R 3506 5 10 Cap
+: 3515 2 4 tain 
+R 3519 2 4 in 
+R 3526 8 5 vain
+- 3534 3536
+- 3536
+R 3563 7 10 Look 
+R 3573 4 8 what 
+R 3581 2 8 you 
+R 3586 6 5 turned 
+R 3597 5 5 me 
+R 3605 1 3 In 
+R 3609 5 3 to!
+- 3614 3616
+- 3616
+R 3643 8 8 Look 
+R 3656 5 7 what 
+R 3665 6 7 we’ve 
+R 3677 3 3 Be
+R 3684 6 2 come!
+- 3690
+F 3702 5 -4 E
+F 3708 8 -5 nough
+- 3716
+R 3726 5 8 All 
+R 3734 1 8 of 
+R 3739 1 8 the 
+R 3745 6 8 pain 
+R 3754 1 7 that 
+R 3757 3 8 i’ve 
+R 3765 6 7 been 
+R 3774 13 3 through
+- 3787
+R 3805 6 3 Ha
+R 3814 2 3 ven’t 
+R 3819 2 4 I 
+R 3827 4 3 Suf
+R 3835 4 3 fered 
+R 3840 3 3 e
+R 3844 3 3 nough?
+- 3847
+* 3852 13 8 Stop
+* 3866 12 7 ~
+- 3878
+R 3886 5 8 You 
+R 3894 2 8 did
+R 3897 2 8 n’t 
+R 3906 5 8 stop 
+R 3915 2 7 when 
+R 3918 3 7 I 
+R 3926 5 7 begged 
+R 3936 6 4 you
+- 3942
+R 3964 6 7 Told 
+R 3973 3 7 me 
+R 3977 1 8 to 
+R 3983 7 8 close 
+R 3998 5 7 my 
+R 4005 11 7 heart
+- 4016
+F 4025 6 -12 You
+- 4031
+R 4046 3 8 You 
+R 4053 4 8 said 
+R 4060 4 8 the 
+R 4067 4 7 world
+R 4072 5 8 ~ 
+R 4080 4 8 was 
+R 4089 4 5 dark!
+- 4093
+: 4097 8 4 Mon
+: 4106 16 3 ster!
+- 4122
+R 4126 4 3 Did
+R 4131 3 3 n’t 
+R 4138 3 8 you 
+R 4146 7 8 say 
+R 4156 5 0 that 
+R 4166 5 -2 Ruth
+R 4174 6 -2 less
+R 4186 7 -2 ness 
+R 4198 4 -2 is 
+* 4207 7 10 Mer
+* 4216 5 8 cy 
+R 4227 1 5 U
+R 4229 5 5 pon 
+R 4236 2 2 our
+- 4238
+F 4242 4 2 Al
+F 4247 10 2 right!
+- 4257 4296
+- 4296
+F 4323 12 -7 Please
+- 4335 4518
+- 4518
+F 4545 3 -12 Af
+F 4553 2 -12 ter 
+F 4557 3 -11 eve
+F 4564 3 -11 ry
+F 4571 4 -9 thing 
+F 4579 6 -10 you’ve 
+F 4590 7 -11 done
+- 4597 4632
+- 4632
+F 4659 5 -7 How 
+F 4667 4 -8 will 
+F 4674 3 -11 you 
+F 4684 5 -12 sleep 
+F 4693 3 -4 at 
+F 4703 5 -11 night?
+- 4708 4771
+- 4771
+F 4798 2 -7 Next 
+F 4805 1 -7 to 
+F 4808 5 -7 my 
+F 4817 5 -7 wife.
+E

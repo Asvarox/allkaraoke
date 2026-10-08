@@ -1,0 +1,510 @@
+#ARTIST:Taylor Swift
+#TITLE:the last great american dynasty
+#CREATOR:princetongirl98
+#BPM:296,34
+#YEAR:2020
+#VIDEO:v=2s5xdY6MCeI
+#GENRE:Folklore
+#LANGUAGE:English
+#GAP:12357,649321725046
+#ALLKARAOKE_ID:taylor-swift-the-last-great-american-dynasty
+#ALLKARAOKE_SID:6508
+#ALLKARAOKE_LASTUPDATE:2026-10-08T03:50:37.144Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:148
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=2s5xdY6MCeI
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:232
+#MP3:Taylor Swift - the last great american dynasty.mp3
+: 20 1 11 Re
+: 23 6 6 bekah 
+: 32 1 7 rode 
+: 36 4 2 up
+- 40
+: 43 2 2 On 
+: 47 1 2 the 
+: 51 1 6 af
+: 55 1 9 ter
+: 59 4 6 noon 
+: 66 10 7 train
+- 76
+: 90 1 11 It 
+: 94 1 0 was 
+: 98 1 9 sun
+: 102 9 11 ny
+- 111
+: 131 1 2 Her 
+: 136 4 11 salt
+: 143 4 11 box 
+: 150 5 9 house 
+: 157 1 9 on 
+: 161 1 7 the 
+: 164 4 9 coast
+- 168
+: 171 2 9 Took 
+: 175 1 7 her 
+: 179 3 9 mind 
+: 184 1 9 off 
+: 188 14 11 St. 
+: 207 12 7 Louis
+- 219 258
+- 258
+: 278 2 7 Bill 
+: 282 1 7 was 
+: 287 1 7 the 
+: 291 5 0 heir
+- 296
+: 299 1 2 To 
+: 303 1 2 the 
+: 306 1 9 Stand
+: 310 1 9 ard 
+: 314 1 6 Oil 
+: 320 13 7 name 
+: 350 2 2 and 
+: 354 2 9 mon
+: 359 8 11 ey
+- 367
+: 383 1 7 And 
+: 387 1 7 the 
+: 390 5 11 town 
+: 398 1 2 said,
+- 399
+: 402 5 11 “How 
+: 411 1 9 did 
+: 416 1 2 a 
+: 420 2 9 mid
+: 424 2 9 dle-
+: 429 5 9 class 
+: 436 1 4 di
+: 440 3 9 vor
+: 446 14 11 cée 
+: 463 2 11 do 
+: 468 7 7 it?”
+- 475 511
+- 511
+: 531 1 11 The 
+: 535 1 9 wed
+: 538 1 11 ding 
+: 542 1 11 was 
+: 546 5 9 charm
+: 554 2 7 ing,
+- 556
+: 559 2 9 If 
+: 563 1 7 a 
+: 567 1 11 little 
+: 574 8 9 gauche
+- 582
+: 595 1 9 There’s 
+: 600 1 9 only 
+: 604 1 4 so 
+: 608 9 9 far 
+: 622 6 7 new 
+: 631 1 9 money 
+: 635 10 9 goes
+- 645
+: 659 1 11 They 
+: 663 1 7 picked 
+: 667 1 7 out 
+: 671 1 7 a 
+: 675 5 0 home
+- 680
+: 682 1 2 And 
+: 686 1 2 called 
+: 691 1 2 it 
+: 695 1 2 “Hol
+: 699 4 6 i
+: 705 11 6 day 
+: 719 12 7 House”
+- 731 766
+- 766
+: 786 1 4 Their 
+: 791 6 9 parties 
+: 800 1 11 were 
+: 803 7 9 taste
+: 812 2 6 ful, 
+: 816 2 9 if 
+: 820 2 7 a 
+: 825 2 11 little 
+: 830 8 9 loud
+- 838
+: 851 1 6 The 
+: 855 1 9 doc
+: 857 1 9 tor 
+: 863 2 11 had 
+: 867 5 7 told 
+: 875 4 7 him 
+: 882 2 7 to 
+: 887 2 9 settle 
+: 891 9 9 down
+- 900
+: 916 1 2 It 
+: 920 1 7 must 
+: 923 1 7 have 
+: 927 1 7 been 
+: 930 4 11 her 
+: 937 6 2 fault
+- 943
+: 947 2 2 His 
+: 951 5 6 heart 
+: 961 1 6 ga
+: 964 7 6 ~
+: 975 2 4 ~ve 
+: 979 7 4 out
+- 986 988
+- 988
+: 1008 2 7 And 
+: 1012 3 7 they 
+: 1019 8 9 said
+- 1027
+: 1039 4 9 “There 
+: 1046 4 9 goes 
+: 1060 1 7 the 
+: 1064 3 7 last 
+: 1070 2 9 great 
+: 1075 3 9 Amer
+: 1081 2 9 ic
+: 1085 4 9 an 
+: 1091 2 9 dyn
+: 1096 6 7 asty”
+- 1102 1148
+- 1148
+: 1168 4 9 “Who 
+: 1175 4 9 knows 
+: 1182 2 9 if 
+: 1187 1 2 she 
+: 1192 1 7 nev
+: 1195 2 9 er 
+: 1200 3 9 showed 
+: 1206 1 2 up,
+- 1207
+: 1208 1 9 What 
+: 1211 3 9 could’ve 
+: 1216 9 9 been”
+- 1225 1275
+- 1275
+: 1295 6 9 “There 
+: 1303 9 9 goes 
+: 1315 1 2 the 
+: 1319 3 7 mad
+: 1325 1 2 dest 
+: 1328 1 9 wo
+: 1332 1 11 man
+- 1333
+: 1336 1 11 This 
+: 1340 1 9 town 
+: 1342 2 9 has 
+: 1346 3 9 ever 
+: 1352 10 7 seen”
+- 1362 1386
+- 1386
+: 1406 1 11 “She 
+: 1409 1 7 had 
+: 1413 1 9 a 
+: 1415 1 11 mar
+: 1419 10 2 velous 
+: 1431 12 9 time
+- 1443
+: 1447 2 7 Ru
+: 1452 2 9 in
+: 1456 2 9 in’ 
+: 1460 2 9 every
+: 1464 11 9 thing”
+- 1475 1537
+- 1537
+: 1557 1 2 Re
+: 1560 4 2 bekah 
+: 1567 2 7 gave 
+: 1572 4 2 up
+- 1576
+: 1579 2 2 On 
+: 1584 1 2 the 
+: 1588 1 2 Rhode 
+: 1592 2 9 Is
+: 1598 3 6 land 
+: 1604 8 7 set, 
+: 1630 2 2 for
+: 1634 2 2 e
+: 1639 11 11 ver
+- 1650 1660
+- 1660
+: 1680 2 9 Flew 
+: 1685 4 9 in 
+: 1691 2 9 all 
+: 1696 1 7 her 
+: 1700 4 9 Bitch 
+: 1707 5 9 Pack 
+: 1715 6 9 friends 
+: 1723 1 4 from 
+: 1727 1 9 the 
+: 1732 10 9 city
+- 1742 1771
+- 1771
+: 1791 3 7 Filled 
+: 1797 1 2 the 
+: 1801 5 9 pool 
+: 1808 2 11 with 
+: 1813 4 9 cham
+: 1819 2 2 pagne
+- 1821
+: 1824 1 4 And 
+: 1827 6 9 swam 
+: 1836 1 11 with 
+: 1840 1 11 the 
+: 1844 4 9 big 
+: 1851 3 7 names
+- 1854
+: 1857 1 2 And 
+: 1861 3 9 blew 
+: 1867 2 11 through 
+: 1871 2 4 the 
+: 1876 1 4 money
+- 1877
+: 1880 3 11 On 
+: 1885 2 4 the 
+: 1890 6 11 boys 
+: 1900 1 2 and 
+: 1904 1 0 the 
+: 1908 4 9 bal
+: 1915 9 11 let
+- 1924
+: 1942 1 9 And 
+: 1946 1 9 los
+: 1950 1 11 in’ 
+: 1954 4 11 on 
+: 1961 3 11 card 
+: 1967 6 9 game 
+: 1976 5 9 bets 
+: 1985 2 7 with 
+: 1988 12 11 Dalí
+- 2000 2011
+- 2011
+: 2031 3 7 And 
+: 2037 3 7 they 
+: 2043 8 9 said
+- 2051
+: 2064 5 9 “There 
+: 2071 8 9 goes 
+: 2083 2 7 the 
+: 2088 1 7 last 
+: 2092 5 9 great 
+: 2099 4 9 Amer
+: 2105 4 9 ic
+: 2112 3 9 an 
+: 2116 2 9 dyn
+: 2121 10 7 asty”
+- 2131 2173
+- 2173
+: 2193 5 9 “Who 
+: 2200 3 9 knows 
+: 2207 3 9 if 
+: 2212 2 7 she 
+: 2217 1 7 nev
+: 2221 1 9 er 
+: 2225 2 9 showed 
+: 2230 3 11 up, 
+: 2235 1 9 could’ve
+- 2236
+: 2237 1 11 What 
+: 2244 8 9 been”
+- 2252 2300
+- 2300
+: 2320 4 9 “There 
+: 2327 8 9 goes 
+: 2339 1 2 the 
+: 2343 1 7 most 
+: 2347 2 7 shame
+: 2351 1 7 less 
+: 2355 1 9 wo
+: 2358 1 9 man
+- 2359
+: 2362 1 6 This 
+: 2366 1 9 town 
+: 2370 1 9 has 
+: 2372 6 9 ever 
+: 2380 6 7 seen”
+- 2386 2410
+- 2410
+: 2430 1 7 “She 
+: 2434 1 7 had 
+: 2437 1 9 a 
+: 2441 3 11 mar
+: 2447 7 9 velous 
+: 2456 13 9 time 
+: 2472 1 7 ru
+: 2476 1 7 in
+: 2480 3 9 in’ 
+: 2486 5 7 every
+: 2493 6 9 thing”
+- 2499 2557
+- 2557
+: 2577 5 9 They 
+: 2585 4 9 say 
+: 2592 2 9 she 
+: 2597 1 6 was 
+: 2600 1 4 seen 
+: 2604 1 4 on 
+: 2608 1 4 oc
+: 2612 1 4 ca
+: 2616 9 11 sion
+- 2625
+: 2630 3 9 Pa
+: 2636 2 7 cing 
+: 2640 2 7 the 
+: 2644 5 7 rocks,
+- 2649
+: 2652 7 2 Star
+: 2662 1 2 ing 
+: 2666 1 7 out 
+: 2670 1 6 at 
+: 2674 1 6 the 
+: 2678 4 7 mid
+: 2685 4 9 night 
+: 2692 7 7 sea
+- 2699
+: 2704 5 9 And 
+: 2712 8 9 in 
+: 2724 2 11 a 
+: 2729 2 7 feud 
+: 2733 1 7 with 
+: 2737 1 7 her 
+: 2741 4 9 neigh
+: 2748 8 11 bor
+- 2756
+: 2760 2 11 She 
+: 2765 1 7 stole 
+: 2769 2 7 his 
+: 2773 4 0 dog 
+: 2781 8 2 and 
+: 2792 5 6 dyed 
+: 2800 1 6 it 
+: 2805 4 2 key 
+: 2812 5 7 lime 
+: 2820 7 7 green
+- 2827
+: 2832 5 9 Fif
+: 2840 9 9 ty 
+: 2855 2 11 years 
+: 2860 2 4 is 
+: 2865 1 9 a 
+: 2869 6 9 long 
+: 2877 7 11 time
+- 2884
+: 2889 2 7 Hol
+: 2894 1 7 i
+: 2897 2 7 day 
+: 2902 4 2 House 
+: 2909 8 2 sat 
+: 2920 3 7 quiet
+: 2926 4 6 ly 
+: 2934 4 7 on 
+: 2941 4 7 that 
+: 2948 7 7 beach
+- 2955
+: 2959 8 9 Free 
+: 2970 9 9 of 
+: 2983 2 11 wo
+: 2988 2 4 men 
+: 2993 1 7 with 
+: 2997 5 9 mad
+: 3005 6 11 ness,
+- 3011
+: 3015 1 7 Their 
+: 3018 1 7 men 
+: 3023 1 2 and 
+: 3025 3 7 bad 
+: 3030 13 2 habits
+- 3043
+: 3046 1 6 And 
+: 3050 1 6 then 
+: 3054 1 6 it 
+: 3058 1 7 was 
+: 3062 4 7 bought 
+: 3068 6 7 by 
+: 3077 7 7 me
+- 3084 3198
+- 3198
+: 3218 4 9 Who 
+: 3225 4 9 knows 
+: 3232 3 2 if 
+: 3238 1 7 I 
+: 3241 1 7 nev
+: 3245 1 9 er 
+: 3249 3 9 showed 
+: 3254 1 9 up
+- 3255
+: 3258 2 9 What 
+: 3263 2 9 could’ve 
+: 3268 8 9 been
+- 3276 3325
+- 3325
+: 3345 4 9 There 
+: 3352 5 9 goes 
+: 3366 2 7 the 
+: 3370 2 7 loudest 
+: 3376 2 2 wo
+: 3381 1 9 man
+- 3382
+: 3384 1 9 This 
+: 3389 1 9 town 
+: 3393 1 9 has 
+: 3395 8 9 ever 
+: 3405 5 7 seen
+- 3410 3434
+- 3434
+: 3454 1 11 I 
+: 3457 2 11 had 
+: 3462 1 9 a 
+: 3466 2 11 mar
+: 3470 7 9 velous 
+: 3480 14 9 time
+- 3494
+: 3497 1 7 Ru
+: 3501 1 7 in
+: 3505 4 9 in’ 
+: 3511 11 9 everything
+- 3522 3563
+- 3563
+: 3583 1 7 I 
+: 3587 1 7 had 
+: 3591 1 9 a 
+: 3595 4 11 mar
+: 3602 3 7 velous 
+: 3608 10 7 ti
+: 3621 14 9 ~
+: 3638 30 7 ~me 
+: 3691 1 7 ru
+: 3694 1 9 in
+: 3698 2 9 in’ 
+: 3703 5 9 every
+: 3710 6 9 thing
+- 3716
+: 3720 1 7 A 
+: 3724 1 11 mar
+: 3728 5 9 velous 
+: 3736 33 9 ti
+: 3771 1 9 ~
+: 3775 17 7 ~me 
+: 3816 2 7 ru
+: 3821 2 2 in
+: 3826 3 9 in’ 
+: 3831 1 9 every
+: 3835 8 9 thing
+- 3843
+: 3847 1 7 A 
+: 3851 3 11 mar
+: 3856 7 9 velous 
+: 3867 22 9 ti
+: 3891 2 9 ~
+: 3896 5 2 ~
+: 3904 20 7 ~me
+- 3924 3948
+- 3948
+: 3968 1 7 I 
+: 3972 1 7 had 
+: 3975 2 9 a 
+: 3978 2 11 mar
+: 3984 12 9 velous 
+: 4000 29 9 ti
+: 4032 2 9 ~
+: 4036 15 7 ~me
+E

@@ -1,0 +1,300 @@
+#ARTIST:Nightwish
+#TITLE:Angels Fall First
+#CREATOR:ImaginaryLight
+#BPM:240,29999999999998
+#YEAR:1997
+#VIDEO:v=psX6JDOms3c
+#LANGUAGE:English
+#GAP:35750
+#ALLKARAOKE_ID:nightwish-angels-fall-first
+#ALLKARAOKE_SID:6517
+#ALLKARAOKE_LASTUPDATE:2026-10-08T03:50:37.747Z
+#ALLKARAOKE_ARTISTORIGIN:FI
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=23955
+#ALLKARAOKE_REALBPM:94
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=10971
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:337
+#MP3:Nightwish - Angels Fall First.mp3
+: 16 3 11 An 
+: 20 10 11 an
+: 32 6 11 gel 
+: 40 10 11 face 
+: 52 10 9 smiles 
+: 64 3 7 to 
+: 68 10 11 me
+- 78
+: 88 3 11 Un
+: 92 6 11 der 
+: 100 3 11 a 
+: 104 3 9 head
+: 108 6 9 line 
+: 116 3 9 of 
+: 120 6 7 tra
+: 128 3 6 ge
+: 132 10 7 dy
+- 142
+: 148 3 11 That 
+: 152 14 11 smile 
+: 168 6 11 used 
+: 176 3 11 to 
+: 180 10 9 give 
+: 192 6 7 me 
+* 200 11 11 wa
+* 212 11 9 ~
+* 224 7 7 ~
+* 232 22 6 rmth
+- 254 256
+- 256
+: 272 3 11 Fare
+: 276 14 11 well - 
+: 304 3 11 no 
+: 308 10 9 words 
+: 320 3 7 to 
+: 324 10 11 say
+- 334
+: 344 3 11 Be
+: 348 6 11 side 
+: 356 3 11 the 
+: 360 10 9 cross 
+: 372 6 7 on 
+: 380 6 6 your 
+: 388 8 7 grave
+- 396
+: 400 3 11 And 
+: 404 10 11 those 
+: 416 6 11 for
+: 424 6 11 e
+: 432 3 11 ver 
+: 436 10 9 burn
+: 448 6 7 ing 
+* 456 11 11 ca
+* 468 11 9 ~
+* 480 6 7 ~
+* 488 22 6 ndles
+- 510 760
+- 760
+: 776 14 11 Need
+: 792 3 9 ed 
+: 796 6 7 else
+: 804 18 4 where
+- 822
+: 832 3 7 To 
+: 836 3 7 re
+: 840 6 6 mind 
+: 848 3 6 us 
+: 852 10 7 of 
+: 864 6 9 the 
+: 872 6 12 short
+: 880 3 12 ness 
+: 884 6 14 of 
+: 892 10 12 your 
+: 904 4 11 time
+- 908
+: 912 3 11 Tears 
+: 916 10 9 laid 
+: 928 6 7 for 
+: 936 22 4 them
+- 958 968
+- 968
+: 984 6 7 Tears 
+: 992 6 9 of 
+: 1000 10 12 love, 
+: 1012 10 14 tears 
+: 1024 6 12 of 
+: 1032 22 9 fear
+- 1054
+: 1064 3 16 Bu
+: 1068 6 16 ry 
+: 1076 3 14 my 
+: 1080 14 12 dreams, 
+: 1096 3 14 dig 
+: 1100 6 14 up 
+: 1108 3 12 my 
+: 1112 6 11 sor
+: 1120 6 12 rows
+- 1126
+: 1128 10 12 Oh 
+: 1140 11 11 Lo
+: 1152 6 12 rd 
+: 1160 14 9 why
+- 1174
+: 1184 3 16 The
+: 1188 3 14 ~ 
+: 1192 10 16 an
+: 1204 10 14 gels 
+: 1216 6 12 fall 
+: 1224 30 11 first
+- 1254 1256
+- 1256
+: 1272 6 11 Not 
+: 1280 3 11 re
+: 1284 10 11 lieved 
+: 1296 3 11 by 
+: 1300 10 9 thoughts 
+: 1312 6 7 of 
+* 1320 11 11 Sha
+* 1332 10 9 ~
+* 1344 6 7 ngri-
+* 1352 22 6 La
+- 1374 1384
+- 1384
+: 1400 6 11 Nor 
+: 1408 3 11 en
+: 1412 10 11 lighten
+: 1424 3 11 ed 
+: 1428 10 9 by 
+: 1440 6 7 the 
+: 1448 10 11 les
+: 1460 10 12 sons 
+: 1472 6 14 of 
+: 1480 22 9 Christ
+- 1502 1504
+- 1504
+: 1520 3 11 I’ll 
+: 1524 10 11 nev
+: 1536 6 11 er 
+: 1544 6 11 un
+: 1552 3 11 der
+: 1556 10 9 stand 
+: 1568 6 7 the 
+: 1576 6 11 mean
+: 1584 3 11 ing 
+: 1588 10 9 of 
+: 1600 6 7 the 
+: 1608 22 6 right
+- 1630 1640
+- 1640
+: 1656 14 11 Ig
+: 1672 6 11 nor
+: 1680 6 11 ance 
+: 1688 6 9 lead 
+: 1696 6 7 me 
+: 1704 10 11 in
+: 1716 10 12 to 
+: 1728 6 14 the 
+* 1736 30 9 light
+- 1766 2004
+- 2004
+: 2020 15 11 Need
+: 2036 3 9 ed 
+: 2040 6 7 else
+: 2048 18 4 where
+- 2066
+: 2076 3 7 To 
+: 2080 3 7 re
+: 2084 6 6 mind 
+: 2092 5 6 us 
+: 2098 7 7 of 
+: 2106 7 9 the 
+: 2114 7 12 short
+: 2122 5 12 ness 
+: 2128 6 14 of 
+: 2136 10 12 your 
+: 2148 4 11 time
+- 2152
+: 2156 5 11 Tears 
+: 2162 7 9 laid 
+: 2170 7 7 for 
+: 2178 26 4 them
+- 2204 2208
+- 2208
+: 2224 12 7 Tears 
+: 2238 6 9 of 
+: 2246 9 12 love, 
+: 2256 11 14 tears 
+: 2268 7 12 of 
+: 2276 22 9 fear
+- 2298
+: 2308 3 16 Bu
+: 2312 5 16 ry 
+: 2318 3 14 my 
+: 2322 14 12 dreams,
+- 2336
+: 2338 3 14 Dig 
+: 2342 7 14 up 
+: 2350 5 12 my 
+: 2356 5 11 sor
+: 2362 8 12 rows
+- 2370
+: 2372 9 12 Oh 
+: 2382 11 11 Lo
+: 2394 6 12 rd 
+: 2402 14 9 why
+- 2416
+: 2428 3 16 The
+: 2432 3 14 ~ 
+: 2436 9 16 an
+: 2446 10 14 gels 
+: 2458 6 12 fall 
+: 2466 30 11 first
+- 2496 3102
+- 3102
+: 3118 17 -3 Sing 
+: 3136 29 -3 me a 
+* 3166 42 4 song
+- 3208
+: 3216 5 4 Of 
+: 3222 9 4 your 
+: 3232 3 4 be
+: 3236 3 2 au
+: 3240 32 2 ty
+- 3272
+: 3280 7 4 Of 
+: 3288 7 5 your 
+: 3296 7 4 king
+* 3304 54 -3 dom
+- 3358 3360
+- 3360
+: 3376 5 -3 Let 
+: 3382 5 -3 the 
+: 3388 13 -3 melo
+* 3402 36 4 dies 
+: 3440 5 4 of 
+: 3446 9 4 your 
+* 3456 27 4 ha
+* 3484 1 5 ~
+* 3486 1 4 ~
+* 3488 14 2 rps
+- 3502
+: 3510 3 2 Ca
+: 3514 7 2 ress 
+: 3522 11 2 those 
+: 3534 7 4 whom 
+: 3542 5 5 we 
+: 3548 9 4 still 
+* 3558 56 -3 need
+- 3614
+: 3630 7 -3 Yes
+: 3638 13 -3 ter
+: 3652 26 4 day 
+: 3692 3 4 we 
+: 3696 13 4 shook 
+* 3710 27 7 ha
+* 3738 1 8 ~
+* 3740 1 7 ~
+* 3742 30 5 nds
+- 3772 3776
+- 3776
+* 3792 5 11 M
+* 3798 5 9 y 
+* 3804 23 11 frie
+* 3828 44 12 nd
+- 3872
+: 3884 17 12 To 
+: 3902 23 12 day 
+: 3926 5 12 a 
+: 3932 3 12 moon
+: 3936 3 11 be
+: 3940 18 11 am 
+: 3964 7 11 light
+: 3972 15 11 ens 
+: 3988 7 11 my 
+: 3996 9 11 pa
+: 4006 32 9 th
+- 4038
+: 4046 7 14 M
+: 4054 6 12 y 
+: 4064 13 14 guar
+* 4078 48 16 dian
+E
