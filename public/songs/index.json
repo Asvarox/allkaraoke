@@ -4078,6 +4078,35 @@
     "local": false
   },
   {
+    "id": "ado-value",
+    "title": "Value",
+    "artist": "Ado",
+    "video": "5iAQF_q6FSk",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 319.94,
+    "gap": 6241.440395074076,
+    "year": "2024",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-10-08T03:50:38.025Z",
+    "genre": "Jpop",
+    "realBpm": 160,
+    "volume": 1,
+    "author": "subkei",
+    "sourceUrl": "https://ultrastar-es.org/en/",
+    "duration": 193,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6525,
+    "tracksCount": 1,
+    "search": "adovalue",
+    "local": false
+  },
+  {
     "id": "ado-vivarium",
     "title": "Vivarium",
     "artist": "Ado",
@@ -13419,6 +13448,34 @@
     "shortId": 349,
     "tracksCount": 1,
     "search": "ashleesimpsonautobiography",
+    "local": false
+  },
+  {
+    "id": "ashlee-simpson-pieces-of-me",
+    "title": "Pieces Of Me",
+    "artist": "Ashlee Simpson",
+    "video": "WJCsyLUCSXI",
+    "language": [
+      "English"
+    ],
+    "bpm": 348,
+    "gap": 4138.620689655172,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-08T03:50:37.734Z",
+    "genre": "Rock",
+    "realBpm": 87,
+    "volume": 1,
+    "author": "Canni",
+    "duration": 192,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6513,
+    "tracksCount": 1,
+    "search": "ashleesimpsonpiecesofme",
     "local": false
   },
   {
@@ -22922,6 +22979,62 @@
     "shortId": 577,
     "tracksCount": 1,
     "search": "bizarrapshakirabzrpmusicsessionsvol53",
+    "local": false
+  },
+  {
+    "id": "bjoerk-hyperballad",
+    "title": "Hyperballad",
+    "artist": "Björk",
+    "video": "5xgdyUy9rqY",
+    "language": [
+      "English"
+    ],
+    "bpm": 269.79999999999995,
+    "gap": 30390,
+    "year": "1995",
+    "artistOrigin": "IS",
+    "lastUpdate": "2026-10-08T03:50:37.723Z",
+    "videoGap": 4,
+    "realBpm": 135,
+    "volume": 1,
+    "author": "SUBKEI",
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6510,
+    "tracksCount": 1,
+    "search": "bjoerkhyperballad",
+    "local": false
+  },
+  {
+    "id": "bjoerk-joga",
+    "title": "Jóga",
+    "artist": "Björk",
+    "video": "loB0kmz_0MM",
+    "language": [
+      "English",
+      "Icelandic"
+    ],
+    "bpm": 388.31,
+    "gap": 14305.64780716438,
+    "year": "1997",
+    "artistOrigin": "IS",
+    "lastUpdate": "2026-10-08T03:50:37.725Z",
+    "genre": "Alternative",
+    "realBpm": 144,
+    "volume": 1,
+    "author": "Senortruco",
+    "duration": 194,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6511,
+    "tracksCount": 1,
+    "search": "bjoerkjoga",
     "local": false
   },
   {
@@ -39920,6 +40033,33 @@
     "local": false
   },
   {
+    "id": "crowded-house-four-seasons-in-one-day",
+    "title": "Four Seasons In One Day",
+    "artist": "Crowded House",
+    "video": "si3dBlNdifE",
+    "language": [
+      "English"
+    ],
+    "bpm": 360.94,
+    "gap": 9056.604310965811,
+    "year": "1991",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-10-08T03:50:38.019Z",
+    "genre": "Pop",
+    "realBpm": 90,
+    "volume": 70,
+    "duration": 176,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6523,
+    "tracksCount": 1,
+    "search": "crowdedhousefourseasonsinoneday",
+    "local": false
+  },
+  {
     "id": "crowded-house-something-so-strong",
     "title": "Something So Strong",
     "artist": "Crowded House",
@@ -46772,6 +46912,35 @@
     "local": false
   },
   {
+    "id": "die-toten-hosen-tage-wie-diese",
+    "title": "Tage wie diese",
+    "artist": "Die Toten Hosen",
+    "video": "j09hpp3AxIE",
+    "language": [
+      "German"
+    ],
+    "bpm": 292,
+    "gap": 8963.972602739726,
+    "year": "2012",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-10-08T03:50:37.745Z",
+    "genre": "General Punk",
+    "realBpm": 97,
+    "volume": 0.54,
+    "author": "Fepo",
+    "sourceUrl": "https://youtu.be/j09hpp3AxIE",
+    "duration": 272,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6516,
+    "tracksCount": 1,
+    "search": "dietotenhosentagewiediese",
+    "local": false
+  },
+  {
     "id": "die-toten-hosen-unter-den-wolken",
     "title": "Unter den Wolken",
     "artist": "Die Toten Hosen",
@@ -47584,6 +47753,33 @@
     "shortId": 6391,
     "tracksCount": 1,
     "search": "disneyscamprock2cantbackdown",
+    "local": false
+  },
+  {
+    "id": "disneys-camp-rock-2-demi-lovato-joe-jonas-wouldnt-change-a-thing",
+    "title": "Wouldn’t Change A Thing",
+    "artist": "Disney’s Camp Rock 2 (Demi Lovato & Joe Jonas)",
+    "video": "62llzl7iKkE",
+    "language": [
+      "English"
+    ],
+    "bpm": 343.96,
+    "gap": 10526.97639260379,
+    "year": "2010",
+    "lastUpdate": "2026-10-08T03:50:37.885Z",
+    "genre": "Soundtrack",
+    "realBpm": 86,
+    "volume": 1,
+    "author": "Victorin",
+    "duration": 209,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6522,
+    "tracksCount": 1,
+    "search": "disneyscamprock2demilovatojoejonaswouldntchangeathing",
     "local": false
   },
   {
@@ -58376,7 +58572,7 @@
     "bpm": 400,
     "gap": 3007.5,
     "year": "2024",
-    "lastUpdate": "2026-10-07T03:36:15.895Z",
+    "lastUpdate": "2026-10-06T20:37:03.732Z",
     "genre": "Musical",
     "realBpm": 70,
     "volume": 1,
@@ -58806,6 +59002,33 @@
     "shortId": 6210,
     "tracksCount": 1,
     "search": "epicthemusicaljorgeriveraherransstevenrodriguezruthlessness",
+    "local": false
+  },
+  {
+    "id": "epic-the-musical-jorge-rivera-herrans-steven-rodriguez-six-hundred-strike",
+    "title": "Six Hundred Strike",
+    "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Steven Rodriguez)",
+    "video": "zov6NXIAuow",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 22687.5,
+    "year": "2024",
+    "lastUpdate": "2026-10-08T03:50:38.173Z",
+    "genre": "Musical",
+    "realBpm": 79,
+    "volume": 1,
+    "author": "Andore",
+    "duration": 212,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6528,
+    "tracksCount": 1,
+    "search": "epicthemusicaljorgeriveraherransstevenrodriguezsixhundredstrike",
     "local": false
   },
   {
@@ -59898,6 +60121,36 @@
     "shortId": 1549,
     "tracksCount": 1,
     "search": "evanescencecallmewhenyouresober",
+    "local": false
+  },
+  {
+    "id": "evanescence-going-under",
+    "title": "Going Under",
+    "artist": "Evanescence",
+    "video": "O7TGG150UOo",
+    "language": [
+      "English"
+    ],
+    "bpm": 350.36,
+    "gap": 0.9247631008106509,
+    "year": "2003",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-08T03:50:37.882Z",
+    "genre": "Nu Metal",
+    "realBpm": 175,
+    "previewStart": 77,
+    "previewEnd": 136,
+    "volume": 1,
+    "author": "IC",
+    "duration": 222,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6521,
+    "tracksCount": 1,
+    "search": "evanescencegoingunder",
     "local": false
   },
   {
@@ -72767,7 +73020,7 @@
     "bpm": 216.18,
     "gap": 16458.587288370803,
     "year": "2018",
-    "lastUpdate": "2026-10-07T03:36:15.694Z",
+    "lastUpdate": "2026-10-06T20:36:47.901Z",
     "genre": "Nu Metal",
     "realBpm": 105,
     "volume": 1,
@@ -80939,6 +81192,35 @@
     "local": false
   },
   {
+    "id": "iosys-alice-sweet",
+    "title": "Alice Sweet",
+    "artist": "IOSYS",
+    "video": "06XWmfmwEYM",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 255.9,
+    "gap": 14534.516998827667,
+    "year": "2007",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-10-08T03:50:37.881Z",
+    "realBpm": 128,
+    "previewStart": 60,
+    "previewEnd": 100,
+    "volume": 1,
+    "author": "memo",
+    "duration": 291,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6520,
+    "tracksCount": 1,
+    "search": "iosysalicesweet",
+    "local": false
+  },
+  {
     "id": "iosys-cirnos-perfect-math-class",
     "title": "Cirno’s Perfect Math Class",
     "artist": "IOSYS",
@@ -87727,6 +88009,33 @@
     "shortId": 2176,
     "tracksCount": 1,
     "search": "jonasbrotherssos",
+    "local": false
+  },
+  {
+    "id": "jonas-brothers-tonight",
+    "title": "Tonight",
+    "artist": "Jonas Brothers",
+    "video": "rWVLqL7G7-8",
+    "language": [
+      "English"
+    ],
+    "bpm": 312,
+    "gap": 15380.384615384615,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-08T03:50:37.736Z",
+    "realBpm": 78,
+    "volume": 1,
+    "author": "b888arb",
+    "duration": 211,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6514,
+    "tracksCount": 1,
+    "search": "jonasbrotherstonight",
     "local": false
   },
   {
@@ -106509,6 +106818,33 @@
     "local": false
   },
   {
+    "id": "little-mix-love-me-like-you",
+    "title": "Love Me Like You",
+    "artist": "Little Mix",
+    "video": "1WpoKRnoPRU",
+    "language": [
+      "English"
+    ],
+    "bpm": 212.12,
+    "gap": 13659.994342824817,
+    "year": "2015",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-10-08T03:50:38.022Z",
+    "realBpm": 106,
+    "volume": 1,
+    "author": "Sing-Girl",
+    "duration": 224,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6524,
+    "tracksCount": 1,
+    "search": "littlemixlovemelikeyou",
+    "local": false
+  },
+  {
     "id": "little-mix-shout-out-to-my-ex",
     "title": "Shout Out To My Ex",
     "artist": "Little Mix",
@@ -114514,7 +114850,7 @@
     "gap": 15919.23076923077,
     "year": "2016",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-10-07T03:36:14.936Z",
+    "lastUpdate": "2026-10-06T20:36:15.573Z",
     "genre": "Pop",
     "realBpm": 130,
     "volume": 0.54,
@@ -117440,7 +117776,7 @@
     "gap": 14137.7305,
     "year": "2008",
     "artistOrigin": "ES",
-    "lastUpdate": "2026-10-07T03:36:14.927Z",
+    "lastUpdate": "2026-10-06T20:36:04.086Z",
     "realBpm": 156,
     "previewEnd": 10,
     "volume": 1,
@@ -127810,6 +128146,35 @@
     "local": false
   },
   {
+    "id": "nick-kamen-i-promised-myself",
+    "title": "I Promised Myself",
+    "artist": "Nick Kamen",
+    "video": "xpq5kSxw0ns",
+    "language": [
+      "English"
+    ],
+    "bpm": 256.25,
+    "gap": 10084.878048780487,
+    "year": "1990",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-10-08T03:50:37.151Z",
+    "genre": "Synth-Pop",
+    "realBpm": 200,
+    "volume": 1,
+    "author": "snake84",
+    "sourceUrl": "Nick Kamen",
+    "duration": 235,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6509,
+    "tracksCount": 1,
+    "search": "nickkamenipromisedmyself",
+    "local": false
+  },
+  {
     "id": "nickelback-far-away",
     "title": "Far Away",
     "artist": "Nickelback",
@@ -128665,6 +129030,35 @@
     "shortId": 5940,
     "tracksCount": 1,
     "search": "nightwishamaranth",
+    "local": false
+  },
+  {
+    "id": "nightwish-angels-fall-first",
+    "title": "Angels Fall First",
+    "artist": "Nightwish",
+    "video": "psX6JDOms3c",
+    "language": [
+      "English"
+    ],
+    "bpm": 240.29999999999998,
+    "gap": 35750,
+    "year": "1997",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-10-08T03:50:37.747Z",
+    "realBpm": 94,
+    "volume": 1,
+    "author": "ImaginaryLight",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=23955",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=10971",
+    "duration": 337,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6517,
+    "tracksCount": 1,
+    "search": "nightwishangelsfallfirst",
     "local": false
   },
   {
@@ -151501,7 +151895,7 @@
     "gap": 11435.580273762313,
     "year": "2021",
     "artistOrigin": "JP",
-    "lastUpdate": "2026-10-07T03:36:16.097Z",
+    "lastUpdate": "2026-10-06T20:37:36.041Z",
     "genre": "Anime",
     "realBpm": 156,
     "previewStart": 39.5,
@@ -159718,6 +160112,37 @@
     "local": false
   },
   {
+    "id": "sou-nero",
+    "title": "Nero",
+    "artist": "Sou",
+    "video": "ToeO0rWl-xY",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 372.16,
+    "gap": 35.421324161651,
+    "year": "2023",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-10-08T03:50:38.032Z",
+    "genre": "Anime",
+    "realBpm": 93,
+    "previewStart": 56,
+    "previewEnd": 76,
+    "volume": 0.95,
+    "author": "Currymalker",
+    "sourceUrl": "https://www.youtube.com/watch?v=j5B0TF3d9Fc",
+    "duration": 100,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6527,
+    "tracksCount": 1,
+    "search": "sounero",
+    "local": false
+  },
+  {
     "id": "soul-asylum-runaway-train",
     "title": "Runaway Train",
     "artist": "Soul Asylum",
@@ -162916,6 +163341,35 @@
     "shortId": 4922,
     "tracksCount": 1,
     "search": "survivesaidtheprophetmukanjyo",
+    "local": false
+  },
+  {
+    "id": "survive-said-the-prophet-paradox",
+    "title": "Paradox",
+    "artist": "Survive Said the Prophet",
+    "video": "nkTj2Hk6nEc",
+    "language": [
+      "English"
+    ],
+    "bpm": 396,
+    "gap": 158.151515151515,
+    "year": "2023",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-10-08T03:50:37.748Z",
+    "genre": "J-rock",
+    "realBpm": 102,
+    "volume": 1,
+    "author": "wolf359",
+    "duration": 101,
+    "tracks": [
+      {
+        "name": "Paradox",
+        "start": 26
+      }
+    ],
+    "shortId": 6518,
+    "tracksCount": 1,
+    "search": "survivesaidtheprophetparadox",
     "local": false
   },
   {
@@ -167172,6 +167626,35 @@
     "local": false
   },
   {
+    "id": "taylor-swift-long-live-taylors-version",
+    "title": "Long Live (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "video": "F5TMU6916U8",
+    "language": [
+      "English"
+    ],
+    "bpm": 407.92,
+    "gap": 16047.15826632673,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-08T03:50:37.730Z",
+    "genre": "Pop",
+    "realBpm": 102,
+    "volume": 1,
+    "author": "GiantCrab",
+    "sourceUrl": "https://www.youtube.com/watch?v=F5TMU6916U8&list=RDF5TMU6916U8&start_radio=1",
+    "duration": 320,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6512,
+    "tracksCount": 1,
+    "search": "taylorswiftlonglivetaylorsversion",
+    "local": false
+  },
+  {
     "id": "taylor-swift-look-what-you-made-me-do",
     "title": "Look What You Made Me Do",
     "artist": "Taylor Swift",
@@ -167548,6 +168031,35 @@
     "shortId": 5858,
     "tracksCount": 1,
     "search": "taylorswiftthefateofophelia",
+    "local": false
+  },
+  {
+    "id": "taylor-swift-the-last-great-american-dynasty",
+    "title": "the last great american dynasty",
+    "artist": "Taylor Swift",
+    "video": "2s5xdY6MCeI",
+    "language": [
+      "English"
+    ],
+    "bpm": 296.34,
+    "gap": 12357.649321725046,
+    "year": "2020",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-08T03:50:37.144Z",
+    "genre": "Folklore",
+    "realBpm": 148,
+    "volume": 1,
+    "author": "princetongirl98",
+    "sourceUrl": "https://www.youtube.com/watch?v=2s5xdY6MCeI",
+    "duration": 232,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6508,
+    "tracksCount": 1,
+    "search": "taylorswiftthelastgreatamericandynasty",
     "local": false
   },
   {
@@ -177497,6 +178009,33 @@
     "local": false
   },
   {
+    "id": "they-might-be-giants-birdhouse-in-your-soul",
+    "title": "Birdhouse In Your Soul",
+    "artist": "They Might Be Giants",
+    "video": "NhjSzjoU7OQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 399.9,
+    "gap": 5357.246811702926,
+    "year": "1989",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-08T03:50:37.740Z",
+    "realBpm": 100,
+    "volume": 1,
+    "author": "choosie",
+    "duration": 201,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6515,
+    "tracksCount": 1,
+    "search": "theymightbegiantsbirdhouseinyoursoul",
+    "local": false
+  },
+  {
     "id": "they-might-be-giants-doctor-worm",
     "title": "Doctor Worm",
     "artist": "They Might Be Giants",
@@ -180743,6 +181282,36 @@
     "local": false
   },
   {
+    "id": "tove-lo-talking-body",
+    "title": "Talking Body",
+    "artist": "Tove Lo",
+    "video": "AzRyxGBGiAE",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 8227.5,
+    "year": "2014",
+    "artistOrigin": "SE",
+    "lastUpdate": "2026-10-08T03:50:38.029Z",
+    "realBpm": 120,
+    "previewStart": 15,
+    "previewEnd": 227,
+    "volume": 1,
+    "author": "QuantenspringerXXX",
+    "sourceUrl": "https://www.youtube.com/watch?v=AzRyxGBGiAE&list=RDAzRyxGBGiAE&start_radio=1",
+    "duration": 237,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6526,
+    "tracksCount": 1,
+    "search": "tovelotalkingbody",
+    "local": false
+  },
+  {
     "id": "toy-box-best-friend",
     "title": "Best Friend",
     "artist": "Toy-Box",
@@ -181021,7 +181590,7 @@
     "gap": 7326.378347618878,
     "year": "2014",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-10-07T03:36:15.690Z",
+    "lastUpdate": "2026-10-06T20:36:29.383Z",
     "genre": "Rap",
     "realBpm": 140,
     "volume": 1,
@@ -185209,6 +185778,34 @@
     "shortId": 5175,
     "tracksCount": 1,
     "search": "villagepeoplemachoman",
+    "local": false
+  },
+  {
+    "id": "ville-valo-agents-paratiisi",
+    "title": "Paratiisi",
+    "artist": "Ville Valo & Agents",
+    "video": "kU1KMwq6Yko",
+    "language": [
+      "Finnish"
+    ],
+    "bpm": 362.2,
+    "gap": 9706.073992269465,
+    "year": "2007",
+    "lastUpdate": "2026-10-08T03:50:37.750Z",
+    "realBpm": 92,
+    "volume": 1,
+    "author": "karmidi",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=95",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=8428",
+    "duration": 177,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6519,
+    "tracksCount": 1,
+    "search": "villevaloagentsparatiisi",
     "local": false
   },
   {

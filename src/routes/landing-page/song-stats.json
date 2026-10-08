@@ -15,11 +15,11 @@
     "Girls Aloud",
     "One Direction",
     "Imagine Dragons",
+    "Nightwish",
     "Nirvana",
     "Rihanna",
     "Fall Out Boy",
     "My Chemical Romance",
-    "Nightwish",
     "Bee Gees",
     "Billie Eilish",
     "Elton John",
@@ -65,6 +65,7 @@
     "Glee Cast",
     "High School Musical",
     "Jennifer Lopez",
+    "Jonas Brothers",
     "Mariah Carey",
     "No Doubt",
     "Rise Against",
@@ -74,7 +75,6 @@
     "Ava Max",
     "Dua Lipa",
     "Gwen Stefani",
-    "Jonas Brothers",
     "Kool & The Gang",
     "KoRn",
     "Oasis",
@@ -106,6 +106,7 @@
     "Iron Maiden",
     "Jason Derulo",
     "Justin Bieber",
+    "Little Mix",
     "Lorde",
     "★N Sync",
     "Nickelback",
@@ -125,6 +126,7 @@
     "Bryan Adams",
     "Chris Brown",
     "Creed",
+    "Crowded House",
     "Earth, Wind & Fire",
     "Eminem",
     "Faith No More",
@@ -132,7 +134,6 @@
     "Goo Goo Dolls",
     "Johnny Cash",
     "Jonathan Coulton",
-    "Little Mix",
     "Nicki Minaj",
     "P!nk",
     "Shakira",
@@ -146,7 +147,6 @@
     "Black Sabbath",
     "Blind Guardian",
     "Cheryl Cole",
-    "Crowded House",
     "Daft Punk",
     "Delta Goodrem",
     "Duran Duran"
@@ -190,11 +190,11 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 6506,
-  "generatedAt": "2026-10-07T03:36:48.545Z",
+  "songs": 6527,
+  "generatedAt": "2026-10-08T03:51:17.252Z",
   "additionsPerDay": {
-    "2026-10-07": 6,
-    "2026-10-06": 6,
+    "2026-10-08": 21,
+    "2026-10-06": 12,
     "2026-10-05": 13,
     "2026-10-04": 13,
     "2026-10-02": 12,
@@ -230,45 +230,170 @@
     "2026-08-12": 5,
     "2026-08-11": 5,
     "2026-08-10": 21,
-    "2026-08-09": 17,
-    "2026-08-08": 12
+    "2026-08-09": 17
   },
   "recentlyAdded": [
+    {
+      "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Steven Rodriguez)",
+      "title": "Six Hundred Strike",
+      "video": "zov6NXIAuow",
+      "addedAt": "2026-10-08T03:50:38.173Z"
+    },
+    {
+      "artist": "Sou",
+      "title": "Nero",
+      "video": "ToeO0rWl-xY",
+      "addedAt": "2026-10-08T03:50:38.032Z"
+    },
+    {
+      "artist": "Tove Lo",
+      "title": "Talking Body",
+      "video": "AzRyxGBGiAE",
+      "addedAt": "2026-10-08T03:50:38.029Z"
+    },
+    {
+      "artist": "Ado",
+      "title": "Value",
+      "video": "5iAQF_q6FSk",
+      "addedAt": "2026-10-08T03:50:38.025Z"
+    },
+    {
+      "artist": "Little Mix",
+      "title": "Love Me Like You",
+      "video": "1WpoKRnoPRU",
+      "addedAt": "2026-10-08T03:50:38.022Z"
+    },
+    {
+      "artist": "Crowded House",
+      "title": "Four Seasons In One Day",
+      "video": "si3dBlNdifE",
+      "addedAt": "2026-10-08T03:50:38.019Z"
+    },
+    {
+      "artist": "Disney’s Camp Rock 2 (Demi Lovato & Joe Jonas)",
+      "title": "Wouldn’t Change A Thing",
+      "video": "62llzl7iKkE",
+      "addedAt": "2026-10-08T03:50:37.885Z"
+    },
+    {
+      "artist": "Evanescence",
+      "title": "Going Under",
+      "video": "O7TGG150UOo",
+      "addedAt": "2026-10-08T03:50:37.882Z"
+    },
+    {
+      "artist": "IOSYS",
+      "title": "Alice Sweet",
+      "video": "06XWmfmwEYM",
+      "addedAt": "2026-10-08T03:50:37.881Z"
+    },
+    {
+      "artist": "Ville Valo & Agents",
+      "title": "Paratiisi",
+      "video": "kU1KMwq6Yko",
+      "addedAt": "2026-10-08T03:50:37.750Z"
+    },
+    {
+      "artist": "Survive Said the Prophet",
+      "title": "Paradox",
+      "video": "nkTj2Hk6nEc",
+      "addedAt": "2026-10-08T03:50:37.748Z"
+    },
+    {
+      "artist": "Nightwish",
+      "title": "Angels Fall First",
+      "video": "psX6JDOms3c",
+      "addedAt": "2026-10-08T03:50:37.747Z"
+    },
+    {
+      "artist": "Die Toten Hosen",
+      "title": "Tage wie diese",
+      "video": "j09hpp3AxIE",
+      "addedAt": "2026-10-08T03:50:37.745Z"
+    },
+    {
+      "artist": "They Might Be Giants",
+      "title": "Birdhouse In Your Soul",
+      "video": "NhjSzjoU7OQ",
+      "addedAt": "2026-10-08T03:50:37.740Z"
+    },
+    {
+      "artist": "Jonas Brothers",
+      "title": "Tonight",
+      "video": "rWVLqL7G7-8",
+      "addedAt": "2026-10-08T03:50:37.736Z"
+    },
+    {
+      "artist": "Ashlee Simpson",
+      "title": "Pieces Of Me",
+      "video": "WJCsyLUCSXI",
+      "addedAt": "2026-10-08T03:50:37.734Z"
+    },
+    {
+      "artist": "Taylor Swift",
+      "title": "Long Live (Taylor's Version)",
+      "video": "F5TMU6916U8",
+      "addedAt": "2026-10-08T03:50:37.730Z"
+    },
+    {
+      "artist": "Björk",
+      "title": "Jóga",
+      "video": "loB0kmz_0MM",
+      "addedAt": "2026-10-08T03:50:37.725Z"
+    },
+    {
+      "artist": "Björk",
+      "title": "Hyperballad",
+      "video": "5xgdyUy9rqY",
+      "addedAt": "2026-10-08T03:50:37.723Z"
+    },
+    {
+      "artist": "Nick Kamen",
+      "title": "I Promised Myself",
+      "video": "xpq5kSxw0ns",
+      "addedAt": "2026-10-08T03:50:37.151Z"
+    },
+    {
+      "artist": "Taylor Swift",
+      "title": "the last great american dynasty",
+      "video": "2s5xdY6MCeI",
+      "addedAt": "2026-10-08T03:50:37.144Z"
+    },
     {
       "artist": "SawanoHiroyuki[nZk] mizuki",
       "title": "Avid",
       "video": "vMdlbE-MzF8",
-      "addedAt": "2026-10-07T03:36:16.097Z"
+      "addedAt": "2026-10-06T20:37:36.041Z"
     },
     {
       "artist": "EPIC: The Musical (Ayron Alexander, Cast of EPIC)",
       "title": "Hold Them Down",
       "video": "kk_kZhxImDw",
-      "addedAt": "2026-10-07T03:36:15.895Z"
+      "addedAt": "2026-10-06T20:37:03.732Z"
     },
     {
       "artist": "Grimes feat. Hana",
       "title": "We Appreciate Power",
       "video": "gYG_4vJ4qNA",
-      "addedAt": "2026-10-07T03:36:15.694Z"
+      "addedAt": "2026-10-06T20:36:47.901Z"
     },
     {
       "artist": "Trailerpark",
       "title": "Bleib in der Schule",
       "video": "tywkWRsjGbY",
-      "addedAt": "2026-10-07T03:36:15.690Z"
+      "addedAt": "2026-10-06T20:36:29.383Z"
     },
     {
       "artist": "Mark Forster",
       "title": "Chöre",
       "video": "Cy58BTi-vCQ",
-      "addedAt": "2026-10-07T03:36:14.936Z"
+      "addedAt": "2026-10-06T20:36:15.573Z"
     },
     {
       "artist": "Melendi",
       "title": "Un violinista en tu tejado",
       "video": "6EEYSbjkdlM",
-      "addedAt": "2026-10-07T03:36:14.927Z"
+      "addedAt": "2026-10-06T20:36:04.086Z"
     },
     {
       "artist": "Clarice Falcão feat. Silva",
@@ -395,132 +520,6 @@
       "title": "Angel In Blue Jeans",
       "video": "qr6Fd8gsED8",
       "addedAt": "2026-10-04T20:52:52.593Z"
-    },
-    {
-      "artist": "José José",
-      "title": "Lo dudo",
-      "video": "CpBvjrkRKN4",
-      "addedAt": "2026-10-04T20:52:26.633Z"
-    },
-    {
-      "artist": "Barricada",
-      "title": "Oveja negra",
-      "video": "wt1M---Z7ec",
-      "addedAt": "2026-10-04T20:52:08.980Z"
-    },
-    {
-      "artist": "Die Atzen mit Nena",
-      "title": "Strobo Pop",
-      "video": "aWRbWwJ5qEc",
-      "addedAt": "2026-10-04T20:51:29.538Z"
-    },
-    {
-      "artist": "Jovanotti",
-      "title": "Bella",
-      "video": "O2RccC7UCnY",
-      "addedAt": "2026-10-04T20:51:08.215Z"
-    },
-    {
-      "artist": "Edd00chan tricker",
-      "title": "Cancion de los NIGHMARE _GREAT ESCAPE_ (Cancion y Letra) Edd00chan w_ Tricker _ FNAFHS",
-      "video": "YD6BDSg-R3M",
-      "addedAt": "2026-10-04T20:50:45.630Z"
-    },
-    {
-      "artist": "Jeff Buckley",
-      "title": "Grace",
-      "video": "A3adFWKE9JE",
-      "addedAt": "2026-10-04T20:50:18.963Z"
-    },
-    {
-      "artist": "Peter Fox",
-      "title": "Alles neu",
-      "video": "qdtLCfEcPL4",
-      "addedAt": "2026-10-04T20:49:13.832Z"
-    },
-    {
-      "artist": "Marina and the Diamonds",
-      "title": "Buy The Stars",
-      "video": "-ubL2QU3Qi8",
-      "addedAt": "2026-10-04T20:48:59.891Z"
-    },
-    {
-      "artist": "Revolverheld feat. Marta Jandová",
-      "title": "Halt dich an mir fest",
-      "video": "wCcJuN47UcY",
-      "addedAt": "2026-10-04T20:48:42.503Z"
-    },
-    {
-      "artist": "Joel Corry feat. MNEK",
-      "title": "Head & Heart",
-      "video": "CRuOOxF-ENQ",
-      "addedAt": "2026-10-04T20:48:23.252Z"
-    },
-    {
-      "artist": "BoA",
-      "title": "Energetic (Radio Edit)",
-      "video": "qE05Bv1e_fo",
-      "addedAt": "2026-10-04T20:47:59.238Z"
-    },
-    {
-      "artist": "Renaud & Axelle Red",
-      "title": "Manhattan-Kaboul",
-      "video": "0qeV8PDBH8E",
-      "addedAt": "2026-10-02T21:55:55.225Z"
-    },
-    {
-      "artist": "M83",
-      "title": "Midnight City",
-      "video": "dX3k_QDnzHE",
-      "addedAt": "2026-10-02T21:55:29.344Z"
-    },
-    {
-      "artist": "Unheilig",
-      "title": "Zeit zu gehen",
-      "video": "DGrPaVZH4mE",
-      "addedAt": "2026-10-02T21:55:16.644Z"
-    },
-    {
-      "artist": "Shakira",
-      "title": "¿Dónde están los ladrones?",
-      "video": "uO_sNVBAd0k",
-      "addedAt": "2026-10-02T21:54:56.301Z"
-    },
-    {
-      "artist": "Clair Obscur: Expedition 33 (Lorien Testard)",
-      "title": "Lumière",
-      "video": "LpNVf8sczqU",
-      "addedAt": "2026-10-02T21:54:24.373Z"
-    },
-    {
-      "artist": "Carly Rae Jepsen",
-      "title": "Cry",
-      "video": "prrUs44Jvfs",
-      "addedAt": "2026-10-02T21:54:04.228Z"
-    },
-    {
-      "artist": "Mitski",
-      "title": "Your Best American Girl",
-      "video": "u_hDHm9MD0I",
-      "addedAt": "2026-10-02T21:53:30.952Z"
-    },
-    {
-      "artist": "Rixton",
-      "title": "Me and my broken heart",
-      "video": "7JJfJgyHYwU",
-      "addedAt": "2026-10-02T21:53:04.937Z"
-    },
-    {
-      "artist": "KoRn",
-      "title": "Coming Undone",
-      "video": "CSJXle3LP_Q",
-      "addedAt": "2026-10-02T21:52:47.128Z"
-    },
-    {
-      "artist": "The Strokes",
-      "title": "Ode To The Mets",
-      "video": "BjC0KUxiMhc",
-      "addedAt": "2026-10-02T21:52:34.671Z"
     }
   ]
 }
