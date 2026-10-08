@@ -30,6 +30,12 @@ jobs:
             run: pnpm build-storybook
           - name: Knip
             run: pnpm knip
+      - name: Upload Storybook build
+        uses: actions/upload-artifact@v4
+        with:
+          name: storybook-static # deployed by deploy-storybook / deploy-storybook-branch
+          path: storybook-static
+          retention-days: 1
   e2e-tests-run:
     strategy:
       fail-fast: false
@@ -144,13 +150,16 @@ jobs:
     container:
       image: docker://mcr.microsoft.com/playwright:v1.63.0-jammy
     runs-on: ubuntu-latest
+    env:
+      # The HTML report is published next to the Playwright one by upload-e2e-test-results.yml
+      VITEST_REPORTERS: --reporter=default --reporter=html --outputFile.html=vitest-report/index.html
     steps:
       - uses: actions/checkout@v5
       - name: Setup Node
         uses: './.github/templates/setup-node'
       - name: Run browser tests
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
-        run: pnpm test:browser --run
+        run: pnpm test:browser --run $VITEST_REPORTERS
       - name: Reset snapshot baseline to target branch
         if: github.ref != 'refs/heads/master'
         uses: './.github/templates/reset-snapshot-baseline'
@@ -159,7 +168,7 @@ jobs:
           snapshotSuffix: '-ci.png' # per the browser project's resolveScreenshotPath in vite.config.mts
       - name: Run browser tests and update snapshots
         if: github.ref != 'refs/heads/master'
-        run: pnpm test:browser --run --update
+        run: pnpm test:browser --run --update $VITEST_REPORTERS
       - name: Upload changed snapshots
         if: github.ref != 'refs/heads/master'
         uses: './.github/templates/upload-changed-snapshots'
@@ -174,6 +183,11 @@ jobs:
           path: |
             .vitest-attachments
             **/__screenshots__
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: test-results-vitest-browser
+          path: vitest-report
 
   visual-regression-tests-run:
     if: github.ref != 'refs/heads/master'
@@ -507,3 +521,51 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           # One worker per PR, redeployed on every push. cleanup-pr-worker.yml deletes it when the PR closes
           command: deploy --name=allkaraoke-party-pr-${{ github.event.pull_request.number }}
+
+  deploy-storybook:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    needs: ['quick-checks']
+    environment:
+      name: storybook
+      url: https://storybook.allkaraoke.party/
+    steps:
+      - uses: actions/checkout@v5
+      - name: Setup Node
+        uses: './.github/templates/setup-node'
+      - name: Download Storybook build
+        uses: actions/download-artifact@v5
+        with:
+          name: storybook-static
+          path: storybook-static
+      - name: Upload to Cloudflare
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy --config=wrangler.storybook.jsonc
+
+  deploy-storybook-branch:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    needs: ['quick-checks']
+    environment:
+      name: storybook-prs
+      url: ${{ steps.deploy-storybook.outputs.deployment-url }}
+    steps:
+      - uses: actions/checkout@v5
+      - name: Setup Node
+        uses: './.github/templates/setup-node'
+      - name: Download Storybook build
+        uses: actions/download-artifact@v5
+        with:
+          name: storybook-static
+          path: storybook-static
+      - name: Upload to Cloudflare
+        id: deploy-storybook
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          # One worker per PR, redeployed on every push. cleanup-pr-worker.yml deletes it when the PR closes
+          command: deploy --config=wrangler.storybook.jsonc --name=allkaraoke-storybook-pr-${{ github.event.pull_request.number }}

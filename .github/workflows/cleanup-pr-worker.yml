@@ -1,4 +1,4 @@
-name: Delete PR preview worker
+name: Delete PR preview workers
 
 on:
   pull_request:
@@ -14,12 +14,16 @@ concurrency:
 jobs:
   delete-worker:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        worker: ['allkaraoke-party', 'allkaraoke-storybook'] # the app and its Storybook, see ci-improvement.yml
     steps:
       - name: Delete worker
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          WORKER_NAME: allkaraoke-party-pr-${{ github.event.pull_request.number }}
+          WORKER_NAME: ${{ matrix.worker }}-pr-${{ github.event.pull_request.number }}
         # `force` also removes the worker's Durable Object namespaces. Error 10007 (worker not found)
         # means the PR was never deployed or was already cleaned up, which is fine
         run: |

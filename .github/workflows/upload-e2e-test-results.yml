@@ -31,27 +31,52 @@ jobs:
           pattern: test-results-blob-playwright.*
           merge-multiple: true
           run-id: ${{ github.event.workflow_run.id }}
+      - name: Download Vitest browser tests report from GitHub Actions Artifacts
+        id: download_vitest_artifact
+        uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          path: vitest-report
+          pattern: test-results-vitest-browser
+          merge-multiple: true
+          run-id: ${{ github.event.workflow_run.id }}
       - name: Check if there are any reports to merge
         id: reports_check
         run: |
           ls -A ${{ steps.download_artifact.outputs.download-path }}
           if [ -z "$(ls -A ${{ steps.download_artifact.outputs.download-path }})" ]; then
-            echo "reports=false" >> $GITHUB_OUTPUT
+            echo "playwright=false" >> $GITHUB_OUTPUT
           else
+            echo "playwright=true" >> $GITHUB_OUTPUT
+            echo "reports=true" >> $GITHUB_OUTPUT
+          fi
+          if [ -z "$(ls -A ${{ steps.download_vitest_artifact.outputs.download-path }})" ]; then
+            echo "vitest=false" >> $GITHUB_OUTPUT
+          else
+            echo "vitest=true" >> $GITHUB_OUTPUT
             echo "reports=true" >> $GITHUB_OUTPUT
           fi
 
       - uses: actions/upload-artifact@v4
-        if: steps.reports_check.outputs.reports == 'true'
+        if: steps.reports_check.outputs.playwright == 'true'
         with:
           name: test-results-blob-report
           path: ./all-blob-reports
       - name: Merge into HTML Report
-        if: steps.reports_check.outputs.reports == 'true'
+        if: steps.reports_check.outputs.playwright == 'true'
         run: npx playwright merge-reports --reporter html ./all-blob-reports
       - name: Copy resources # for some reason, the resources are not copied automatically
-        if: steps.reports_check.outputs.reports == 'true'
+        if: steps.reports_check.outputs.playwright == 'true'
         run: cp -r ./all-blob-reports/resources ./playwright-report/resources
+      # Vitest blobs can't be merged by Playwright, so its own HTML report is deployed under /vitest
+      - name: Add Vitest browser tests report
+        if: steps.reports_check.outputs.vitest == 'true'
+        run: |
+          mkdir -p ./playwright-report
+          cp -r ./vitest-report ./playwright-report/vitest
+          if [ ! -f ./playwright-report/index.html ]; then
+            echo '<meta http-equiv="refresh" content="0; url=vitest/">' > ./playwright-report/index.html
+          fi
       - uses: actions/upload-artifact@v4
         if: steps.reports_check.outputs.reports == 'true'
         with:
@@ -91,6 +116,8 @@ jobs:
         env:
           DEPLOYMENT_URL: ${{ steps.deploy-report.outputs.deployment-url }}
           DEPLOYMENT_ALIAS_URL: ${{ steps.deploy-report.outputs.deployment-alias-url }}
+          HAS_PLAYWRIGHT_REPORT: ${{ steps.reports_check.outputs.playwright }}
+          HAS_VITEST_REPORT: ${{ steps.reports_check.outputs.vitest }}
         with:
           script: |
             core.summary.addRaw(`
@@ -99,5 +126,7 @@ jobs:
             | ----------------------- | - |
             | **Preview URL**:        | ${process.env.DEPLOYMENT_URL} |
             | **Branch Preview URL**: | ${process.env.DEPLOYMENT_ALIAS_URL} |
+            | **Playwright report**:  | ${process.env.HAS_PLAYWRIGHT_REPORT === 'true' ? process.env.DEPLOYMENT_URL : '-'} |
+            | **Vitest browser report**: | ${process.env.HAS_VITEST_REPORT === 'true' ? `${process.env.DEPLOYMENT_URL}/vitest/` : '-'} |
             `
             ).write();
