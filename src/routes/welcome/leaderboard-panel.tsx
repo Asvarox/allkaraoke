@@ -1,8 +1,10 @@
 import useSWR from 'swr';
 
+import SmoothLink from '~/modules/elements/smooth-link';
 import { fetchBoard, LEADERBOARD_URL } from '~/modules/leaderboard/client';
 import LeaderboardRow from '~/modules/leaderboard/leaderboard-row';
 import ScoreboardPanel from '~/modules/scoreboard/scoreboard-panel';
+import { songSelectionPath } from '~/routes/route-paths';
 
 /**
  * The global board, read straight from the cached `GET /leaderboard` projection. Deliberately
@@ -30,7 +32,15 @@ function LeaderboardPanel({ className, listClassName }: { className?: string; li
       emptyMessage="No results yet"
       data-test="leaderboard-panel">
       {data?.entries.map((entry, index) => (
-        <LeaderboardRow key={`${entry.songId}-${entry.name}-${index}`} entry={entry} position={index + 1} />
+        // Each row opens the song list on its song. The row's own fill is translucent, so the
+        // link's hover fill shows through it
+        <SmoothLink
+          key={`${entry.songId}-${entry.name}-${index}`}
+          to={songSelectionPath(entry.songId)}
+          className="block rounded-xl text-inherit no-underline transition-colors hover:bg-white/10"
+          data-test="leaderboard-song-link">
+          <LeaderboardRow entry={entry} position={index + 1} />
+        </SmoothLink>
       ))}
     </ScoreboardPanel>
   );

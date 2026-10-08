@@ -29,7 +29,7 @@ const songStats = {
   /** Songs added per day over the last {@link ADDITIONS_HISTORY_DAYS} days, keyed `YYYY-MM-DD`. */
   additionsPerDay: {} as Record<string, number>,
   /** The {@link RECENTLY_ADDED_COUNT} newest songs, newest first. `video` is the YouTube id the cover comes from. */
-  recentlyAdded: [] as Array<{ artist: string; title: string; video: string; addedAt: string }>,
+  recentlyAdded: [] as Array<{ id: string; artist: string; title: string; video: string; addedAt: string }>,
 };
 
 const index: SongPreview[] = require('../public/songs/index.json');
@@ -77,7 +77,7 @@ const additions = songsByAddition.map((song) => {
 
 songStats.recentlyAdded = additions
   .slice(0, RECENTLY_ADDED_COUNT)
-  .map(({ song: { artist, title, video }, addedAt }) => ({ artist, title, video, addedAt }));
+  .map(({ song: { id, artist, title, video }, addedAt }) => ({ id, artist, title, video, addedAt }));
 
 const historyStart = Date.now() - ADDITIONS_HISTORY_DAYS * 24 * 60 * 60 * 1000;
 additions.forEach(({ addedAt }) => {
