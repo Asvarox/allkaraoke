@@ -88,8 +88,10 @@ const tileVariants = {
  */
 function RecentlyAddedSongs({ className }: { className?: string }) {
   const [page, setPage] = useState(0);
-  // Held while the pointer is on a song, so the tile doesn't swap out from under a click
-  const [paused, setPaused] = useState(false);
+  // Held while a song is hovered or focused, so the tile doesn't swap out from under a click or Enter
+  const [hovered, setHovered] = useState(false);
+  const [focused, setFocused] = useState(false);
+  const paused = hovered || focused;
 
   useEffect(() => {
     if (isE2E() || pages.length < 2 || paused) return;
@@ -139,8 +141,10 @@ function RecentlyAddedSongs({ className }: { className?: string }) {
                 variants={tileVariants}
                 transition={{ duration: 0.25 }}
                 className="relative flex h-full min-w-0 items-stretch overflow-hidden rounded-lg bg-black/40 p-2 text-inherit no-underline transition-colors hover:bg-black/60"
-                onMouseEnter={() => setPaused(true)}
-                onMouseLeave={() => setPaused(false)}
+                onMouseEnter={() => setHovered(true)}
+                onMouseLeave={() => setHovered(false)}
+                onFocus={() => setFocused(true)}
+                onBlur={() => setFocused(false)}
                 data-test="recently-added-song">
                 {/* The same YouTube still the song cards use, so a song looks like itself on both
                     screens. `alt=""` — the title and artist are right beside it.

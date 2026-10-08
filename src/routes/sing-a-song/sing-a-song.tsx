@@ -1,5 +1,6 @@
 import { ComponentProps, useEffect, useState } from 'react';
 
+import PageLoader from '~/modules/elements/page-loader';
 import {
   getDefaultExcludedLanguages,
   useSelectableLanguages,
@@ -37,7 +38,7 @@ function ApplyDefaultExcludedLanguages() {
     if (!isLoading) setExcludedLanguages(getDefaultExcludedLanguages(languageList));
   }, [isLoading, languageList, setExcludedLanguages]);
 
-  return null;
+  return <PageLoader />;
 }
 
 export default SingASong;
