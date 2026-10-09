@@ -1,5 +1,5 @@
 import { cloudflare } from '@cloudflare/vite-plugin';
-import { cloudflareTest } from '@cloudflare/vitest-pool-workers';
+import { cloudflareTest } from '@cloudflare/vitest-plugin';
 import { playwright } from '@vitest/browser-playwright';
 import babel from '@rolldown/plugin-babel';
 import basicSsl from '@vitejs/plugin-basic-ssl';

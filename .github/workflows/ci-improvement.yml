@@ -181,7 +181,7 @@ jobs:
         with:
           name: browser-tests-attachments
           path: |
-            .vitest-attachments
+            .vitest/attachments
             **/__screenshots__
       - uses: actions/upload-artifact@v4
         if: failure()
