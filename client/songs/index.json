@@ -4089,7 +4089,7 @@
     "gap": 6241.440395074076,
     "year": "2024",
     "artistOrigin": "JP",
-    "lastUpdate": "2026-10-08T03:50:38.025Z",
+    "lastUpdate": "2026-10-07T20:57:46.836Z",
     "genre": "Jpop",
     "realBpm": 160,
     "volume": 1,
@@ -13462,7 +13462,7 @@
     "gap": 4138.620689655172,
     "year": "2004",
     "artistOrigin": "US",
-    "lastUpdate": "2026-10-08T03:50:37.734Z",
+    "lastUpdate": "2026-10-07T13:12:52.583Z",
     "genre": "Rock",
     "realBpm": 87,
     "volume": 1,
@@ -22993,7 +22993,7 @@
     "gap": 30390,
     "year": "1995",
     "artistOrigin": "IS",
-    "lastUpdate": "2026-10-08T03:50:37.723Z",
+    "lastUpdate": "2026-10-07T13:11:52.524Z",
     "videoGap": 4,
     "realBpm": 135,
     "volume": 1,
@@ -23021,7 +23021,7 @@
     "gap": 14305.64780716438,
     "year": "1997",
     "artistOrigin": "IS",
-    "lastUpdate": "2026-10-08T03:50:37.725Z",
+    "lastUpdate": "2026-10-07T13:12:12.970Z",
     "genre": "Alternative",
     "realBpm": 144,
     "volume": 1,
@@ -33698,6 +33698,33 @@
     "local": false
   },
   {
+    "id": "cascada-evacuate-the-dancefloor",
+    "title": "Evacuate The Dancefloor",
+    "artist": "Cascada",
+    "video": "-uDixD4tXXU",
+    "language": [
+      "English"
+    ],
+    "bpm": 254.05,
+    "gap": 7026.260578626255,
+    "year": "2009",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-10-09T03:55:52.682Z",
+    "realBpm": 127,
+    "volume": 1,
+    "author": "IC",
+    "duration": 212,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6547,
+    "tracksCount": 1,
+    "search": "cascadaevacuatethedancefloor",
+    "local": false
+  },
+  {
     "id": "cascada-everytime-we-touch",
     "title": "Everytime We Touch",
     "artist": "Cascada",
@@ -40044,7 +40071,7 @@
     "gap": 9056.604310965811,
     "year": "1991",
     "artistOrigin": "AU",
-    "lastUpdate": "2026-10-08T03:50:38.019Z",
+    "lastUpdate": "2026-10-07T20:57:19.628Z",
     "genre": "Pop",
     "realBpm": 90,
     "volume": 70,
@@ -46912,6 +46939,34 @@
     "local": false
   },
   {
+    "id": "die-toten-hosen-strom",
+    "title": "Strom",
+    "artist": "Die Toten Hosen",
+    "video": "oX0w21HMkxU",
+    "language": [
+      "German"
+    ],
+    "bpm": 360.3,
+    "gap": 20820.83263946711,
+    "year": "2008",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-10-09T03:55:52.185Z",
+    "genre": "Punk Rock",
+    "realBpm": 180,
+    "volume": 1,
+    "author": "IC",
+    "duration": 191,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6538,
+    "tracksCount": 1,
+    "search": "dietotenhosenstrom",
+    "local": false
+  },
+  {
     "id": "die-toten-hosen-tage-wie-diese",
     "title": "Tage wie diese",
     "artist": "Die Toten Hosen",
@@ -46923,7 +46978,7 @@
     "gap": 8963.972602739726,
     "year": "2012",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-10-08T03:50:37.745Z",
+    "lastUpdate": "2026-10-07T20:54:32.871Z",
     "genre": "General Punk",
     "realBpm": 97,
     "volume": 0.54,
@@ -47766,7 +47821,7 @@
     "bpm": 343.96,
     "gap": 10526.97639260379,
     "year": "2010",
-    "lastUpdate": "2026-10-08T03:50:37.885Z",
+    "lastUpdate": "2026-10-07T20:57:03.389Z",
     "genre": "Soundtrack",
     "realBpm": 86,
     "volume": 1,
@@ -49194,6 +49249,33 @@
     "shortId": 1279,
     "tracksCount": 2,
     "search": "disneyslavalava",
+    "local": false
+  },
+  {
+    "id": "disneys-lemonade-mouth-breakthrough",
+    "title": "Breakthrough",
+    "artist": "Disney’s Lemonade Mouth",
+    "video": "2NdbvVsOBEk",
+    "language": [
+      "English"
+    ],
+    "bpm": 223.8,
+    "gap": 17514.638069705095,
+    "year": "2011",
+    "lastUpdate": "2026-10-09T03:55:52.025Z",
+    "genre": "Soundtrack",
+    "realBpm": 112,
+    "volume": 1,
+    "author": "vicktoben",
+    "duration": 238,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6535,
+    "tracksCount": 1,
+    "search": "disneyslemonademouthbreakthrough",
     "local": false
   },
   {
@@ -59015,7 +59097,7 @@
     "bpm": 400,
     "gap": 22687.5,
     "year": "2024",
-    "lastUpdate": "2026-10-08T03:50:38.173Z",
+    "lastUpdate": "2026-10-07T20:58:34.564Z",
     "genre": "Musical",
     "realBpm": 79,
     "volume": 1,
@@ -60135,7 +60217,7 @@
     "gap": 0.9247631008106509,
     "year": "2003",
     "artistOrigin": "US",
-    "lastUpdate": "2026-10-08T03:50:37.882Z",
+    "lastUpdate": "2026-10-07T20:56:18.870Z",
     "genre": "Nu Metal",
     "realBpm": 175,
     "previewStart": 77,
@@ -62088,6 +62170,33 @@
     "local": false
   },
   {
+    "id": "faouzia-tears-of-gold",
+    "title": "Tears Of Gold",
+    "artist": "Faouzia",
+    "video": "XszK-TDzMnQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 299.9,
+    "gap": 11750,
+    "year": "2019",
+    "artistOrigin": "CA",
+    "lastUpdate": "2026-10-09T03:55:52.187Z",
+    "realBpm": 150,
+    "volume": 1,
+    "author": "Fenyesyes",
+    "duration": 176,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6539,
+    "tracksCount": 1,
+    "search": "faouziatearsofgold",
+    "local": false
+  },
+  {
     "id": "far-east-movement-feat-the-cataracs-dev-like-a-g6",
     "title": "Like A G6",
     "artist": "Far East Movement feat. The Cataracs & DEV",
@@ -63721,6 +63830,34 @@
     "shortId": 1628,
     "tracksCount": 1,
     "search": "fleetwoodmacsecondhandnews",
+    "local": false
+  },
+  {
+    "id": "fleetwood-mac-silver-springs-live",
+    "title": "Silver Springs (Live)",
+    "artist": "Fleetwood Mac",
+    "video": "eDwi-8n054s",
+    "language": [
+      "English"
+    ],
+    "bpm": 333.07,
+    "gap": 25989.217281652505,
+    "year": "1997",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-10-09T03:55:50.908Z",
+    "genre": "Classic Rock",
+    "realBpm": 82,
+    "volume": 1,
+    "author": "scudder",
+    "duration": 334,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6529,
+    "tracksCount": 1,
+    "search": "fleetwoodmacsilverspringslive",
     "local": false
   },
   {
@@ -75414,6 +75551,34 @@
     "local": false
   },
   {
+    "id": "happoradio-che-guevara",
+    "title": "Che Guevara",
+    "artist": "Happoradio",
+    "video": "Rdqzp03D-3Y",
+    "language": [
+      "Finnish"
+    ],
+    "bpm": 279.8,
+    "gap": 12512.415296640458,
+    "year": "2008",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-10-09T03:55:51.859Z",
+    "genre": "Rock",
+    "realBpm": 139,
+    "volume": 1,
+    "author": "dwadww",
+    "duration": 214,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6533,
+    "tracksCount": 1,
+    "search": "happoradiocheguevara",
+    "local": false
+  },
+  {
     "id": "harpo-moviestar",
     "title": "Moviestar",
     "artist": "Harpo",
@@ -81203,7 +81368,7 @@
     "gap": 14534.516998827667,
     "year": "2007",
     "artistOrigin": "JP",
-    "lastUpdate": "2026-10-08T03:50:37.881Z",
+    "lastUpdate": "2026-10-07T20:55:47.619Z",
     "realBpm": 128,
     "previewStart": 60,
     "previewEnd": 100,
@@ -84312,6 +84477,34 @@
     "local": false
   },
   {
+    "id": "jean-jacques-goldman-comme-toi",
+    "title": "Comme toi",
+    "artist": "Jean-Jacques Goldman",
+    "video": "ySZBnMukO8g",
+    "language": [
+      "French"
+    ],
+    "bpm": 358.38,
+    "gap": 23266.479658463082,
+    "year": "1983",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-10-09T03:55:52.502Z",
+    "genre": "Pop",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "Coolz",
+    "duration": 261,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6543,
+    "tracksCount": 1,
+    "search": "jeanjacquesgoldmancommetoi",
+    "local": false
+  },
+  {
     "id": "jean-jacques-goldman-quand-tu-danses",
     "title": "Quand tu danses",
     "artist": "Jean-Jacques Goldman",
@@ -86406,6 +86599,33 @@
     "local": false
   },
   {
+    "id": "joe-dassin-les-champs-elysees",
+    "title": "Les Champs-Élysées",
+    "artist": "Joe Dassin",
+    "video": "1JhYYUWOBBs",
+    "language": [
+      "French"
+    ],
+    "bpm": 225.2,
+    "gap": 7390.88809946714,
+    "year": "1969",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-10-09T03:55:52.343Z",
+    "realBpm": 112,
+    "volume": 1,
+    "author": "Pinky007",
+    "sourceUrl": "https://www.youtube.com/watch?v=1JhYYUWOBBs",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6541,
+    "tracksCount": 1,
+    "search": "joedassinleschampselysees",
+    "local": false
+  },
+  {
     "id": "joel-corry-feat-mnek-head-heart",
     "title": "Head & Heart",
     "artist": "Joel Corry feat. MNEK",
@@ -88023,7 +88243,7 @@
     "gap": 15380.384615384615,
     "year": "2008",
     "artistOrigin": "US",
-    "lastUpdate": "2026-10-08T03:50:37.736Z",
+    "lastUpdate": "2026-10-07T13:13:26.546Z",
     "realBpm": 78,
     "volume": 1,
     "author": "b888arb",
@@ -88455,7 +88675,7 @@
     "bpm": 383.05,
     "gap": 9439.856154549014,
     "year": "2017",
-    "lastUpdate": "2026-08-25T20:25:40.667Z",
+    "lastUpdate": "2026-10-08T20:51:27.070Z",
     "realBpm": 383.05,
     "previewStart": 37.5,
     "previewEnd": 85,
@@ -94961,6 +95181,35 @@
     "shortId": 2362,
     "tracksCount": 1,
     "search": "kenyagracestrangers",
+    "local": false
+  },
+  {
+    "id": "kerli-army-of-love",
+    "title": "Army Of Love",
+    "artist": "Kerli",
+    "video": "C70ti5uGKsQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 248,
+    "gap": 971.7741935483871,
+    "year": "2010",
+    "artistOrigin": "EE",
+    "lastUpdate": "2026-10-09T03:55:51.688Z",
+    "genre": "Pop",
+    "realBpm": 124,
+    "volume": 1,
+    "author": "JURAZZZ123",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=12056",
+    "duration": 211,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6532,
+    "tracksCount": 1,
+    "search": "kerliarmyoflove",
     "local": false
   },
   {
@@ -102705,6 +102954,35 @@
     "local": false
   },
   {
+    "id": "laufey-too-little-too-late",
+    "title": "Too Little Too Late",
+    "artist": "Laufey",
+    "video": "s75Ak1itmLM",
+    "language": [
+      "English"
+    ],
+    "bpm": 338,
+    "gap": 0,
+    "year": "2025",
+    "artistOrigin": "IS",
+    "lastUpdate": "2026-10-09T03:55:52.181Z",
+    "genre": "Jazz",
+    "realBpm": 155,
+    "volume": 1,
+    "author": "LuMM04",
+    "sourceUrl": "youtube.com/watch?v=s75Ak1itmLM&time_continue=0&source_ve_path=NzY3NTg&embeds_referring_euri=https%3A%2F%2Fusdb.animux.de%2F",
+    "duration": 233,
+    "tracks": [
+      {
+        "start": 0
+      }
+    ],
+    "shortId": 6536,
+    "tracksCount": 1,
+    "search": "laufeytoolittletoolate",
+    "local": false
+  },
+  {
     "id": "laura-pausini-en-cambio-no",
     "title": "En cambio no",
     "artist": "Laura Pausini",
@@ -103525,6 +103803,35 @@
     "shortId": 2539,
     "tracksCount": 1,
     "search": "leodancomoteextranomiamor",
+    "local": false
+  },
+  {
+    "id": "leo-dan-mary-es-mi-amor",
+    "title": "Mary es mi amor",
+    "artist": "Leo Dan",
+    "video": "9wJ0hVIuym8",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 206.26,
+    "gap": 18787.86754581596,
+    "year": "1971",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-10-09T03:55:52.501Z",
+    "genre": "Balada",
+    "realBpm": 103,
+    "volume": 1,
+    "author": "JaVar61",
+    "sourceUrl": "https://www.youtube.com/watch?v=8UYfw_BWsNE",
+    "duration": 195,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6542,
+    "tracksCount": 1,
+    "search": "leodanmaryesmiamor",
     "local": false
   },
   {
@@ -106829,7 +107136,7 @@
     "gap": 13659.994342824817,
     "year": "2015",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-10-08T03:50:38.022Z",
+    "lastUpdate": "2026-10-07T20:57:33.963Z",
     "realBpm": 106,
     "volume": 1,
     "author": "Sing-Girl",
@@ -111044,6 +111351,34 @@
     "shortId": 2718,
     "tracksCount": 1,
     "search": "madonnasecret",
+    "local": false
+  },
+  {
+    "id": "madonna-sorry",
+    "title": "Sorry",
+    "artist": "Madonna",
+    "video": "rdccTOcX7o4",
+    "language": [
+      "English"
+    ],
+    "bpm": 266,
+    "gap": 49684.96240601504,
+    "year": "2005",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-09T03:55:52.684Z",
+    "genre": "Pop",
+    "realBpm": 133,
+    "volume": 1,
+    "author": "Canni",
+    "duration": 287,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6548,
+    "tracksCount": 1,
+    "search": "madonnasorry",
     "local": false
   },
   {
@@ -119713,6 +120048,35 @@
     "local": false
   },
   {
+    "id": "michael-jackson-in-the-closet",
+    "title": "In the Closet",
+    "artist": "Michael Jackson",
+    "video": "4qLY0vbrT8Q",
+    "language": [
+      "English"
+    ],
+    "bpm": 228,
+    "gap": 5793.1578947368425,
+    "year": "1992",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-09T03:55:52.679Z",
+    "genre": "Dance-Pop, New Jazz Swing",
+    "realBpm": 110,
+    "volume": 1,
+    "author": "DoubleDee commissioned by BC FOX",
+    "duration": 367,
+    "tracks": [
+      {
+        "name": "In the Closet - Michael Jackson",
+        "start": 15
+      }
+    ],
+    "shortId": 6546,
+    "tracksCount": 1,
+    "search": "michaeljacksoninthecloset",
+    "local": false
+  },
+  {
     "id": "michael-jackson-leave-me-alone",
     "title": "Leave me alone",
     "artist": "Michael Jackson",
@@ -122531,6 +122895,33 @@
     "shortId": 5365,
     "tracksCount": 1,
     "search": "mobyfeatgwenstefanisouthside",
+    "local": false
+  },
+  {
+    "id": "moby-natural-blues",
+    "title": "Natural Blues",
+    "artist": "Moby",
+    "video": "z3YMxM1_S48",
+    "language": [
+      "English"
+    ],
+    "bpm": 216,
+    "gap": 44.44444444444446,
+    "year": "1999",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-09T03:55:50.914Z",
+    "realBpm": 108,
+    "volume": 1,
+    "author": "Lypss",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=19037",
+    "tracks": [
+      {
+        "start": 8
+      }
+    ],
+    "shortId": 6530,
+    "tracksCount": 1,
+    "search": "mobynaturalblues",
     "local": false
   },
   {
@@ -128157,7 +128548,7 @@
     "gap": 10084.878048780487,
     "year": "1990",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-10-08T03:50:37.151Z",
+    "lastUpdate": "2026-10-07T20:55:58.053Z",
     "genre": "Synth-Pop",
     "realBpm": 200,
     "volume": 1,
@@ -129044,7 +129435,7 @@
     "gap": 35750,
     "year": "1997",
     "artistOrigin": "FI",
-    "lastUpdate": "2026-10-08T03:50:37.747Z",
+    "lastUpdate": "2026-10-07T20:55:00.895Z",
     "realBpm": 94,
     "volume": 1,
     "author": "ImaginaryLight",
@@ -136950,6 +137341,33 @@
     "shortId": 3409,
     "tracksCount": 1,
     "search": "paulogonzoseitedecor",
+    "local": false
+  },
+  {
+    "id": "paulo-londra-adan-y-eva",
+    "title": "Adán y Eva",
+    "artist": "Paulo Londra",
+    "video": "aSjflT_J0Xo",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 343.91,
+    "gap": 4760.830566136489,
+    "year": "2018",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-10-09T03:55:52.677Z",
+    "realBpm": 162,
+    "volume": 1,
+    "author": "bar_ney_",
+    "duration": 261,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6545,
+    "tracksCount": 1,
+    "search": "paulolondraadanyeva",
     "local": false
   },
   {
@@ -160123,7 +160541,7 @@
     "gap": 35.421324161651,
     "year": "2023",
     "artistOrigin": "JP",
-    "lastUpdate": "2026-10-08T03:50:38.032Z",
+    "lastUpdate": "2026-10-07T20:58:18.080Z",
     "genre": "Anime",
     "realBpm": 93,
     "previewStart": 56,
@@ -163355,7 +163773,7 @@
     "gap": 158.151515151515,
     "year": "2023",
     "artistOrigin": "JP",
-    "lastUpdate": "2026-10-08T03:50:37.748Z",
+    "lastUpdate": "2026-10-07T20:55:12.913Z",
     "genre": "J-rock",
     "realBpm": 102,
     "volume": 1,
@@ -164967,6 +165385,35 @@
     "shortId": 4161,
     "tracksCount": 1,
     "search": "taiocruzfeatfloridahangover",
+    "local": false
+  },
+  {
+    "id": "taio-cruz-feat-kylie-minogue-higher",
+    "title": "Higher",
+    "artist": "Taio Cruz feat. Kylie Minogue",
+    "video": "KRBS5WZMdik",
+    "language": [
+      "English"
+    ],
+    "bpm": 256.1,
+    "gap": 5924.295197188599,
+    "year": "2010",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-10-09T03:55:51.861Z",
+    "genre": "R&B",
+    "realBpm": 128,
+    "volume": 1,
+    "author": "snake84",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=11031",
+    "duration": 184,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6534,
+    "tracksCount": 1,
+    "search": "taiocruzfeatkylieminoguehigher",
     "local": false
   },
   {
@@ -166741,6 +167188,34 @@
     "local": false
   },
   {
+    "id": "tatu-nas-ne-dogonjat",
+    "title": "Nas ne dogonjat",
+    "artist": "t.A.T.u.",
+    "video": "G335DVVsB3M",
+    "language": [
+      "Russian"
+    ],
+    "bpm": 260,
+    "gap": 20269.23076923077,
+    "year": "2001",
+    "artistOrigin": "RU",
+    "lastUpdate": "2026-10-09T03:55:52.343Z",
+    "realBpm": 130,
+    "volume": 1,
+    "author": "Leroidukitch",
+    "sourceUrl": "https://www.youtube.com/watch?v=G335DVVsB3M",
+    "duration": 236,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6540,
+    "tracksCount": 1,
+    "search": "tatunasnedogonjat",
+    "local": false
+  },
+  {
     "id": "tautumeitas-bur-man-laimi",
     "title": "Bur Man Laimi",
     "artist": "Tautumeitas",
@@ -167475,6 +167950,34 @@
     "local": false
   },
   {
+    "id": "taylor-swift-how-you-get-the-girl-taylors-version",
+    "title": "How You Get The Girl (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "video": "rnwD7veCoFQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 240.05,
+    "gap": 27.669235575921675,
+    "year": "2014",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-09T03:55:52.184Z",
+    "genre": "Pop",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "amro98",
+    "duration": 253,
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 6537,
+    "tracksCount": 1,
+    "search": "taylorswifthowyougetthegirltaylorsversion",
+    "local": false
+  },
+  {
     "id": "taylor-swift-how-you-get-the-girl",
     "title": "How You Get The Girl",
     "artist": "Taylor Swift",
@@ -167637,7 +168140,7 @@
     "gap": 16047.15826632673,
     "year": "2010",
     "artistOrigin": "US",
-    "lastUpdate": "2026-10-08T03:50:37.730Z",
+    "lastUpdate": "2026-10-07T13:12:37.019Z",
     "genre": "Pop",
     "realBpm": 102,
     "volume": 1,
@@ -168045,7 +168548,7 @@
     "gap": 12357.649321725046,
     "year": "2020",
     "artistOrigin": "US",
-    "lastUpdate": "2026-10-08T03:50:37.144Z",
+    "lastUpdate": "2026-10-06T20:37:50.477Z",
     "genre": "Folklore",
     "realBpm": 148,
     "volume": 1,
@@ -176532,6 +177035,34 @@
     "local": false
   },
   {
+    "id": "the-struts-body-talks",
+    "title": "Body Talks",
+    "artist": "The Struts",
+    "video": "Hc3XIbUuTMc",
+    "language": [
+      "English"
+    ],
+    "bpm": 370.69,
+    "gap": 98.37303407159618,
+    "year": "2018",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-10-09T03:55:52.503Z",
+    "genre": "Rock",
+    "realBpm": 93,
+    "volume": 1,
+    "author": "Phoenix",
+    "duration": 181,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6544,
+    "tracksCount": 1,
+    "search": "thestrutsbodytalks",
+    "local": false
+  },
+  {
     "id": "the-supremes-stop-in-the-name-of-love",
     "title": "Stop! In The Name Of Love",
     "artist": "The Supremes",
@@ -178020,7 +178551,7 @@
     "gap": 5357.246811702926,
     "year": "1989",
     "artistOrigin": "US",
-    "lastUpdate": "2026-10-08T03:50:37.740Z",
+    "lastUpdate": "2026-10-07T20:54:22.545Z",
     "realBpm": 100,
     "volume": 1,
     "author": "choosie",
@@ -181293,7 +181824,7 @@
     "gap": 8227.5,
     "year": "2014",
     "artistOrigin": "SE",
-    "lastUpdate": "2026-10-08T03:50:38.029Z",
+    "lastUpdate": "2026-10-07T20:58:03.500Z",
     "realBpm": 120,
     "previewStart": 15,
     "previewEnd": 227,
@@ -185791,7 +186322,7 @@
     "bpm": 362.2,
     "gap": 9706.073992269465,
     "year": "2007",
-    "lastUpdate": "2026-10-08T03:50:37.750Z",
+    "lastUpdate": "2026-10-07T20:55:31.801Z",
     "realBpm": 92,
     "volume": 1,
     "author": "karmidi",
@@ -186624,6 +187155,35 @@
     "shortId": 4672,
     "tracksCount": 1,
     "search": "wangyibobuwang",
+    "local": false
+  },
+  {
+    "id": "warcry-la-vida-en-un-beso",
+    "title": "La vida en un beso",
+    "artist": "WarCry",
+    "video": "jxwspq1lDyA",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 239.07,
+    "gap": 31737.10992596311,
+    "year": "2008",
+    "artistOrigin": "ES",
+    "lastUpdate": "2026-10-09T03:55:51.525Z",
+    "genre": "Power Metal",
+    "realBpm": 178,
+    "volume": 1,
+    "author": "Paisano87",
+    "sourceUrl": "https://www.youtube.com/watch?v=jxwspq1lDyA",
+    "duration": 263,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6531,
+    "tracksCount": 1,
+    "search": "warcrylavidaenunbeso",
     "local": false
   },
   {

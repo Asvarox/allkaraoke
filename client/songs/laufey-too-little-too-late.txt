@@ -1,0 +1,383 @@
+#ARTIST:Laufey
+#TITLE:Too Little Too Late
+#CREATOR:LuMM04
+#BPM:338
+#YEAR:2025
+#VIDEO:v=s75Ak1itmLM
+#GENRE:Jazz
+#LANGUAGE:English
+#GAP:0
+#ALLKARAOKE_ID:laufey-too-little-too-late
+#ALLKARAOKE_SID:6536
+#ALLKARAOKE_LASTUPDATE:2026-10-09T03:55:52.181Z
+#ALLKARAOKE_ARTISTORIGIN:IS
+#ALLKARAOKE_REALBPM:155
+#ALLKARAOKE_SOURCEURL:youtube.com/watch?v=s75Ak1itmLM&time_continue=0&source_ve_path=NzY3NTg&embeds_referring_euri=https%3A%2F%2Fusdb.animux.de%2F
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:233
+#MP3:Laufey - Too Little Too Late.mp3
+#COVER:Laufey - Too Little Too Late [CO].jpg
+#BACKGROUND:Laufey - Too Little Too Late [BG].jpg
+: 0 7 -2 The 
+: 8 10 2 whole 
+: 19 8 2 town 
+: 28 4 2 is 
+: 33 11 2 tal
+: 45 7 0 king 
+: 53 6 -2 bout
+- 59
+: 60 12 2 How 
+: 73 12 2 you’ve 
+: 86 13 2 fal
+: 100 5 0 len 
+: 106 7 -2 in 
+: 114 44 0 love
+- 158 192
+- 192
+: 215 7 -2 I 
+: 223 11 2 read 
+: 235 5 2 in 
+: 241 7 2 the 
+: 249 9 2 pa
+: 259 9 0 pers 
+: 269 7 -2 he’s
+- 276
+: 277 14 2 Some
+: 292 6 2 one 
+: 299 5 2 that 
+: 305 12 2 girls 
+: 318 6 0 dream 
+: 325 7 -2 a
+: 333 36 0 bout
+- 369 387
+- 387
+: 410 11 2 Some 
+: 422 8 3 kind 
+: 431 6 5 of 
+: 438 11 5 ru
+: 450 12 -2 ler
+- 462
+: 463 5 -2 On 
+: 469 8 2 top 
+: 478 6 3 of 
+: 485 4 5 a 
+: 490 12 5 king
+: 503 19 3 dom
+- 522
+: 523 6 2 I’m 
+: 530 8 3 just 
+: 539 5 5 a 
+: 545 13 5 jes
+: 559 16 3 ter
+- 575
+: 576 9 0 I’ll 
+: 586 5 2 ne
+: 592 7 3 ver 
+: 600 10 3 be 
+: 611 20 2 him
+- 631
+: 632 9 0 Last 
+: 642 7 2 night 
+: 650 5 3 you 
+: 656 19 3 called 
+: 676 5 2 to 
+: 682 35 2 me
+- 717
+: 739 9 -2 It 
+: 749 6 0 al
+: 756 20 2 most 
+: 777 24 2 killed 
+: 802 44 0 me
+- 846
+: 847 23 -2 To 
+: 871 22 2 hear 
+: 897 24 2 you 
+: 922 24 2 scream 
+: 947 6 0 my 
+: 954 22 -2 name
+- 976
+: 977 3 0 Your 
+: 981 23 2 smile 
+: 1005 24 2 still 
+: 1030 23 2 kills 
+: 1054 6 0 the 
+: 1061 20 -2 same
+- 1081
+: 1082 6 0 I 
+: 1089 19 2 al
+: 1109 27 2 most 
+: 1137 19 2 turned 
+: 1157 7 0 a
+: 1165 18 -2 round
+- 1183
+: 1184 6 3 You 
+: 1191 24 3 chased 
+: 1217 24 3 me 
+: 1242 16 3 to 
+: 1259 7 2 the 
+: 1267 17 2 ground
+- 1284
+: 1285 7 5 You 
+: 1293 20 5 asked 
+: 1317 24 5 me 
+: 1343 17 5 how 
+: 1361 8 3 I’ve 
+: 1370 15 2 been
+- 1385
+: 1386 9 5 But 
+: 1396 17 5 how 
+: 1417 27 5 do 
+: 1445 16 5 I 
+: 1462 9 3 be
+: 1472 16 2 gin
+- 1488
+: 1489 7 5 To 
+: 1497 21 5 tell 
+: 1519 19 5 you 
+: 1539 5 5 I 
+: 1545 18 5 should 
+: 1564 6 3 have 
+: 1571 18 2 chased
+- 1589
+: 1590 3 0 You 
+: 1594 3 2 ~
+: 1598 4 3 ~
+: 1603 18 3 cross 
+: 1622 15 3 eve
+: 1638 8 5 ry 
+: 1647 17 3 sin
+: 1665 7 2 gle 
+: 1673 17 0 state
+- 1690
+: 1691 7 2 I 
+: 1699 22 2 lay 
+: 1722 17 2 down 
+: 1740 8 3 my 
+: 1749 16 2 sword 
+: 1766 7 0 for 
+: 1774 18 -2 fate
+- 1792
+: 1793 9 0 ’Cause 
+: 1803 14 2 it’s 
+: 1818 7 0 too 
+: 1826 6 2 lit
+: 1833 19 3 tle, 
+: 1853 15 3 way 
+: 1869 18 2 too 
+: 1888 65 2 late
+- 1953 1982
+- 1982
+: 2005 7 2 I 
+: 2013 7 2 didn’t 
+: 2021 15 2 need 
+: 2037 7 0 the 
+: 2045 5 -2 re
+: 2051 10 2 min
+: 2062 6 2 der 
+: 2069 7 2 of
+- 2076
+: 2077 12 2 Things 
+: 2090 5 0 I’ve 
+: 2096 8 -2 done 
+: 2105 52 0 wrong
+- 2157 2171
+- 2171
+: 2194 7 -2 Of 
+: 2202 11 2 pro
+: 2214 6 2 mi
+: 2221 7 2 ses 
+: 2229 11 2 bro
+: 2241 6 0 ken
+- 2247
+: 2248 5 -2 Fra
+: 2254 9 2 gi
+: 2264 12 2 lity 
+: 2277 14 5 hid
+: 2292 5 2 den 
+: 2298 15 0 in 
+: 2314 50 0 song
+- 2364
+: 2381 11 2 Guess 
+: 2393 7 3 that 
+: 2401 3 5 we’re 
+: 2405 12 5 soul
+: 2418 16 -2 mates
+- 2434
+: 2435 7 2 In 
+: 2443 3 3 di
+: 2447 9 5 fferent 
+: 2457 10 5 life
+: 2468 17 3 times
+- 2485
+: 2486 7 2 What 
+: 2494 5 3 if 
+: 2500 6 5 you 
+: 2507 11 5 leave 
+: 2519 15 3 him
+- 2534
+: 2535 7 0 Throw 
+: 2543 6 2 me 
+: 2550 6 3 a 
+: 2557 11 3 life
+: 2569 11 2 line
+- 2580
+: 2581 3 0 I 
+: 2585 9 0 know 
+: 2595 6 2 that 
+: 2602 18 2 you’re 
+: 2621 11 3 hap
+: 2633 44 2 py
+- 2677
+: 2688 8 -2 But 
+: 2697 6 0 it 
+: 2704 20 2 just 
+: 2725 31 2 killed 
+: 2758 18 0 me
+- 2776
+: 2789 23 -2 To 
+: 2813 22 2 hear 
+: 2838 23 2 you 
+: 2862 19 2 scream 
+: 2882 8 0 my 
+: 2891 19 -2 name
+- 2910
+: 2911 3 0 A 
+: 2915 20 2 clear 
+: 2939 19 2 fu
+: 2959 9 3 cking 
+: 2969 8 2 x
+: 2978 13 0 ~
+: 2992 19 -2 ray
+- 3011
+: 3012 6 0 Of 
+: 3019 17 2 if 
+: 3042 21 2 I’d 
+: 3064 19 2 stuck 
+: 3084 8 0 a
+: 3093 18 -2 round
+- 3111
+: 3112 4 0 I 
+: 3117 17 3 swear 
+: 3135 7 2 to 
+: 3143 15 3 god 
+: 3159 10 5 I 
+: 3170 15 3 al
+: 3186 7 2 most 
+: 3194 17 2 drowned
+- 3211
+: 3212 7 5 You 
+: 3220 22 5 asked 
+: 3243 24 5 me 
+: 3268 17 5 how 
+: 3286 9 3 I’ve 
+: 3296 17 2 been
+- 3313
+: 3314 6 5 But 
+: 3321 17 5 how 
+: 3345 24 5 could 
+: 3370 19 5 I 
+: 3390 7 3 be
+: 3398 14 2 gin
+- 3412
+: 3414 9 7 To 
+: 3424 22 7 tell 
+: 3447 15 7 you 
+: 3463 6 7 I 
+: 3470 19 7 should 
+: 3490 7 5 have 
+: 3498 20 3 cha-sed 
+: 3519 6 2 you
+- 3525
+: 3526 12 3 I 
+: 3539 9 2 should 
+: 3549 17 3 be 
+: 3567 7 5 who 
+: 3575 16 6 you’re 
+: 3592 8 5 en
+: 3601 15 3 gaged 
+: 3617 7 2 to
+- 3624
+: 3625 25 2 Lost 
+: 3651 16 2 my 
+: 3668 6 3 ~
+: 3675 17 2 fight 
+: 3693 7 0 with 
+: 3701 16 -2 fate
+- 3717
+: 3718 6 0 A 
+: 3725 16 2 tug
+: 3742 9 0 of
+: 3752 14 2 war 
+: 3769 7 3 of 
+: 3777 15 2 leave 
+: 3793 4 0 and 
+: 3798 17 -2 stay
+- 3815
+: 3816 7 0 I 
+: 3824 17 2 give 
+: 3846 18 2 in, 
+: 3865 8 3 I 
+: 3874 14 2 ab
+: 3889 6 0 di
+: 3896 16 -2 cate
+- 3912
+: 3913 7 0 I 
+: 3921 14 2 lay 
+: 3936 7 0 my 
+: 3944 13 2 sword 
+: 3958 9 3 down 
+: 3968 4 3 a
+: 3973 4 0 ny
+: 3978 22 0 way
+- 4000
+: 4005 6 -2 I’ll 
+: 4012 23 2 see 
+: 4036 19 2 you 
+: 4056 6 3 at 
+: 4063 16 2 hea
+: 4080 6 0 ven’s 
+: 4087 14 -2 gate
+- 4101
+: 4102 9 0 ’Cause 
+: 4112 13 2 it’s 
+: 4126 7 0 too 
+: 4134 4 2 lit
+: 4139 11 3 tle, 
+: 4151 21 3 way 
+: 4173 14 2 too 
+: 4188 62 2 late
+- 4250 4485
+- 4485
+: 4508 10 0 I’ll 
+: 4519 11 3 toast 
+: 4531 6 2 out
+: 4538 20 3 side 
+: 4559 8 5 your 
+: 4568 7 3 wed
+: 4576 12 2 ding 
+: 4589 48 2 day
+- 4637 4852
+- 4852
+: 4875 13 3 Whis
+: 4889 7 2 per 
+: 4897 18 3 vows 
+: 4916 13 5 I’ll 
+: 4930 8 3 ne
+: 4939 6 2 ver 
+: 4946 4 2 say 
+: 4951 4 0 ~
+: 4956 11 -2 ~
+: 4968 4 0 ~
+: 4973 6 2 ~
+: 4980 7 2 to 
+: 4988 57 2 you
+- 5045
+: 5047 14 0 ’Cause 
+: 5062 10 3 it’s 
+: 5073 7 2 too 
+: 5081 4 3 lit
+: 5086 19 5 tle, 
+: 5106 12 3 all 
+: 5119 25 2 too 
+: 5145 61 2 late
+E
