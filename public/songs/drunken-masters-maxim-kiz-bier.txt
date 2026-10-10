@@ -1,0 +1,350 @@
+#ARTIST:Drunken Masters & Maxim K.I.Z
+#TITLE:Bier
+#CREATOR:johfindo
+#BPM:280,02
+#YEAR:2020
+#VIDEO:v=pI3laNZOVBY
+#GENRE:Rap
+#LANGUAGE:German
+#GAP:33,621169916434496
+#ALLKARAOKE_ID:drunken-masters-maxim-kiz-bier
+#ALLKARAOKE_SID:6585
+#ALLKARAOKE_LASTUPDATE:2026-10-10T21:26:01.966Z
+#ALLKARAOKE_REALBPM:140
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:135
+#MP3:Drunken Masters & Maxim K.I.Z - Bier.mp3
+: 13 2 -6 Kein 
+: 17 2 -6 Ca
+: 21 2 -6 cha
+: 25 17 -6 ca, 
+: 45 2 -7 kein 
+: 49 2 -8 Ro
+: 53 2 -8 sé
+- 55 57
+- 57
+: 76 2 -6 Kein 
+: 80 2 -6 Cham
+: 84 2 -6 pag
+: 88 17 -6 ner, 
+: 108 2 -7 kein 
+: 112 2 -7 Mo
+: 116 2 -7 et
+- 118
+: 136 2 -6 Der 
+: 141 5 -5 Bar
+: 149 2 -5 kee
+: 153 6 -5 per 
+: 165 2 -6 ist 
+: 169 2 -6 ein 
+: 173 2 -6 Al
+: 177 2 -6 che
+: 181 2 -6 mist,
+- 183
+: 193 1 -6 Er 
+: 197 3 -5 mixt 
+: 205 3 -4 und 
+: 213 2 -6 schüt
+: 217 2 -6 telt 
+: 221 3 -6 das 
+: 229 6 -6 Alk
+: 237 3 -5 ge
+: 241 12 -6 misch
+- 253
+: 257 2 -6 Du 
+: 261 2 -6 war
+: 265 2 -6 test 
+: 269 3 -7 zwölf 
+: 277 2 -6 Jah
+: 281 2 -6 re 
+: 285 2 -6 bis 
+: 289 2 -6 du 
+: 293 6 -6 Whis
+: 301 2 -4 key 
+: 305 2 -6 hast
+- 307
+: 317 2 -5 Bier 
+: 325 3 -5 kommt 
+: 333 2 -6 in 
+: 337 1 -4 Se
+: 341 1 -6 kun
+: 345 1 -5 den
+: 349 1 -6 schnel
+: 353 1 -7 le 
+: 357 3 -4 frisch 
+: 365 2 -4 ge
+: 369 3 -4 zapft
+- 372
+: 385 2 -6 Ich 
+: 389 2 -6 will 
+: 393 2 -6 dein 
+: 397 2 -5 Mar
+: 401 2 -4 ga
+: 405 2 -6 ri
+: 409 2 -6 ta 
+: 413 2 -4 nicht, 
+: 417 2 -4 ich 
+: 421 2 -6 will 
+: 425 2 -5 dein 
+: 429 2 -6 Cai
+: 433 2 -4 pi
+: 437 2 -6 rin
+: 441 2 -6 ha 
+: 445 2 -5 nicht
+- 447
+: 449 2 -4 Ich 
+: 453 2 -2 ge
+: 457 2 -4 he 
+: 461 2 -1 in 
+: 465 2 -5 die 
+: 469 2 -1 Kü
+: 473 2 -3 che 
+: 477 2 0 und 
+: 481 2 0 ich 
+: 485 2 0 tau
+: 489 2 0 fe 
+: 493 2 0 mei
+: 497 2 0 ne 
+: 501 2 0 Kin
+: 505 2 0 der 
+: 509 3 0 mit
+- 512
+F 516 3 0 Bier, 
+F 524 2 0 Bier, 
+F 532 2 0 Bier, 
+F 540 2 0 Bier, 
+F 565 12 0 Bi-Bi-Bi-Bier, 
+F 581 1 0 Bier
+- 582 590
+- 590
+: 609 4 1 Gie
+: 617 1 1 ße 
+: 621 1 1 mei
+: 625 2 1 ne 
+: 629 2 1 Blu
+: 633 2 1 men 
+: 637 2 1 mit
+- 639
+F 645 3 0 Bier, 
+F 652 2 0 Bier, 
+F 660 2 0 Bier, 
+F 668 2 0 Bier, 
+F 693 12 0 Bi-Bi-Bi-Bier, 
+F 708 2 0 Bier
+- 710 720
+- 720
+: 739 3 1 B-B-B-Brauch 
+: 745 1 0 kein 
+: 749 1 1 deut
+: 753 1 1 schen 
+: 757 1 1 Pass, 
+: 761 1 1 ich 
+: 765 1 0 hab’n
+- 766
+F 769 1 0 Bier, 
+F 773 2 0 Bier, 
+F 781 1 0 Bier, 
+F 789 1 0 Bier, 
+F 820 12 0 Bi-Bi-Bi-Bier, 
+F 837 2 0 Bier
+- 839 850
+- 850
+: 869 1 2 Ma
+: 872 1 1 che 
+: 877 1 1 Wa
+: 881 1 1 ter
+: 885 1 1 boar
+: 889 1 1 ding 
+: 894 1 1 mit
+- 895
+F 901 3 0 Bier, 
+F 908 1 0 Bier, 
+F 916 2 0 Bier, 
+F 923 2 0 Bier, 
+F 931 29 0 Bi-Bi-Bi-Bier, 
+F 965 1 0 Bier
+- 966 978
+- 978
+: 997 2 1 Ich 
+: 1001 2 1 hoff 
+: 1005 2 2 auf 
+: 1009 2 2 dem 
+: 1013 2 2 Mars 
+: 1017 2 0 fin
+: 1021 2 0 den 
+: 1025 2 0 sie
+- 1027
+: 1033 2 -6 Ich 
+: 1037 2 -9 sa
+: 1041 2 -6 ge 
+: 1045 18 -6 »Non« 
+: 1065 2 -10 zu 
+: 1069 2 -8 E
+: 1073 2 -8 vi
+: 1077 3 -8 an
+- 1080
+: 1097 2 -7 Ich 
+: 1101 2 -6 sa
+: 1105 2 -8 ge 
+: 1109 18 -6 »Nee« 
+: 1129 2 -12 zu 
+: 1133 2 -6 Per
+: 1137 2 -6 ri
+: 1141 3 -6 er
+- 1144
+: 1160 1 -5 Flüs
+: 1165 1 -5 si
+: 1169 1 -8 ges 
+: 1173 11 -6 Gold 
+: 1189 1 -7 in 
+: 1193 2 -7 mein 
+: 1197 2 -8 Be
+: 1201 2 -7 cher 
+: 1205 3 -6 drin
+- 1208
+: 1213 1 -6 Wäh
+: 1217 1 -7 rend 
+: 1221 5 -5 du 
+: 1229 5 -7 das 
+: 1237 2 -6 Zeug 
+: 1241 2 -8 aus 
+: 1245 2 -7 der 
+: 1249 2 -6 Toi
+: 1253 2 -6 let
+: 1257 2 -6 te 
+: 1265 7 -7 trinkst
+- 1272
+: 1285 2 -6 Vol
+: 1289 2 -6 vic 
+: 1293 2 -5 muss 
+: 1297 2 -4 erst 
+: 1301 2 -6 durch 
+: 1305 2 -5 tau
+: 1309 2 -5 send 
+: 1313 2 -6 Ge
+: 1317 6 -8 steins
+: 1325 2 -9 schich
+: 1329 2 -9 ten
+- 1331
+: 1341 2 -5 Bier 
+: 1345 2 -5 macht 
+: 1349 2 -5 »Plopp« 
+: 1357 2 -6 und 
+: 1361 2 -6 ich 
+: 1365 2 -6 kann 
+: 1369 2 -6 es 
+: 1373 2 -6 in 
+: 1377 2 -6 mich 
+: 1381 6 -8 rein
+: 1389 2 -10 kip
+: 1393 2 -10 pen
+- 1395
+: 1410 2 -6 Ich 
+: 1414 2 -6 will 
+: 1418 2 -6 dein 
+: 1422 2 -5 Mar
+: 1426 2 -4 ga
+: 1430 2 -6 ri
+: 1434 2 -6 ta 
+: 1438 2 -4 nicht, 
+: 1442 2 -4 ich 
+: 1446 2 -6 will 
+: 1450 2 -5 dein 
+: 1454 2 -6 Cai
+: 1458 2 -4 pi
+: 1462 2 -6 rin
+: 1466 2 -6 ha 
+: 1470 2 -5 nicht
+- 1472
+: 1474 2 -4 Ich 
+: 1478 2 -2 ge
+: 1482 2 -4 he 
+: 1486 2 -1 in 
+: 1490 2 -5 die 
+: 1494 2 -1 Kü
+: 1498 2 -3 che 
+: 1502 2 0 und 
+: 1506 2 0 ich 
+: 1510 2 0 tau
+: 1514 2 0 fe 
+: 1518 2 0 mei
+: 1522 2 0 ne 
+: 1526 2 0 Kin
+: 1530 2 0 der 
+: 1534 3 0 mit
+- 1537
+F 1541 3 0 Bier, 
+F 1549 2 0 Bier, 
+F 1557 2 0 Bier, 
+F 1565 2 0 Bier, 
+F 1590 12 0 Bi-Bi-Bi-Bier, 
+F 1606 1 0 Bier
+- 1607 1615
+- 1615
+: 1634 4 1 Gie
+: 1642 1 1 ße 
+: 1646 1 1 mei
+: 1650 2 1 ne 
+: 1654 2 1 Blu
+: 1658 2 1 men 
+: 1662 2 1 mit
+- 1664
+F 1670 3 0 Bier, 
+F 1677 2 0 Bier, 
+F 1685 2 0 Bier, 
+F 1693 2 0 Bier, 
+F 1718 12 0 Bi-Bi-Bi-Bier, 
+F 1733 2 0 Bier
+- 1735 1745
+- 1745
+: 1764 3 1 B-B-B-Brauch 
+: 1770 1 0 kein 
+: 1774 1 1 deut
+: 1778 1 1 schen 
+: 1782 1 1 Pass, 
+: 1786 1 1 ich 
+: 1790 1 0 hab’n
+- 1791
+F 1794 1 0 Bier, 
+F 1798 2 0 Bier, 
+F 1806 1 0 Bier, 
+F 1814 1 0 Bier, 
+F 1845 12 0 Bi-Bi-Bi-Bier, 
+F 1862 2 0 Bier
+- 1864 1875
+- 1875
+: 1894 1 2 Ma
+: 1897 1 1 che 
+: 1902 1 1 Wa
+: 1906 1 1 ter
+: 1910 1 1 boar
+: 1914 1 1 ding 
+: 1919 1 1 mit
+- 1920
+F 1926 3 0 Bier, 
+F 1933 1 0 Bier, 
+F 1941 2 0 Bier, 
+F 1948 2 0 Bier, 
+F 1956 29 0 Bi-Bi-Bi-Bier, 
+F 1990 1 0 Bier
+- 1991 2003
+- 2003
+: 2022 2 1 Ich 
+: 2026 2 1 hoff 
+: 2030 2 2 auf 
+: 2034 2 2 dem 
+: 2038 2 2 Mars 
+: 2042 2 0 fin
+: 2046 2 0 den 
+: 2050 2 0 sie
+- 2052
+F 2057 4 0 Bier, 
+F 2063 2 0 Bier, 
+F 2069 3 0 Bier, 
+F 2078 4 0 Bier, 
+F 2085 4 0 Bier, 
+F 2093 5 0 Bier, 
+F 2101 5 0 Bier, 
+F 2110 4 0 Bier, 
+F 2118 4 0 Bier
+E

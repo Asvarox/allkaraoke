@@ -1,0 +1,487 @@
+#ARTIST:Vivziepop
+#TITLE:Mastermind
+#CREATOR:Vivziepop
+#BPM:390
+#YEAR:2024
+#PREVIEWSTART:73
+#VIDEO:v=TJavG4RiE5M
+#GENRE:Musical
+#LANGUAGE:English
+#GAP:2740
+#ALLKARAOKE_ID:vivziepop-mastermind
+#ALLKARAOKE_SID:6564
+#ALLKARAOKE_LASTUPDATE:2026-10-10T21:25:50.739Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=192264
+#ALLKARAOKE_REALBPM:83
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=30057
+#ALLKARAOKE_PREVIEWEND:105
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:211
+#MP3:Helluva Boss - Mastermind.mp3
+#COVER:Helluva Boss - Mastermind [CO].jpg
+#BACKGROUND:Helluva Boss - Mastermind [BG].jpg
+: 26 2 0 I 
+: 31 3 2 came 
+: 37 9 3 down 
+: 50 3 2 just 
+: 56 3 0 as 
+: 62 8 10 soon 
+: 76 3 0 as 
+: 81 3 2 I 
+: 88 7 3 heard 
+: 100 3 3 of 
+: 106 2 7 the 
+: 113 7 7 imp
+- 120
+: 126 2 10 Stood 
+: 131 3 7 ac
+: 138 13 8 cused 
+: 155 3 7 of 
+: 160 3 5 a 
+: 167 3 3 de
+: 172 2 2 vi
+: 176 5 0 lish 
+: 191 24 10 crime
+- 215
+: 230 3 10 Could 
+: 237 3 3 it 
+: 243 9 5 be 
+: 256 3 3 that 
+: 263 3 2 a 
+: 269 10 0 worm 
+: 282 3 10 such 
+: 288 3 0 as 
+: 294 9 3 this 
+: 306 3 0 half 
+: 313 3 10 a 
+: 319 10 10 brain
+- 329
+: 334 3 10 Could 
+: 340 3 8 con
+: 347 9 10 coct 
+: 359 3 10 such 
+: 366 3 10 a 
+: 373 11 0 plot 
+: 387 6 10 so 
+: 396 2 10 sub
+: 401 23 2 lime?
+- 424
+: 440 3 2 Does 
+: 446 2 2 this 
+: 452 16 3 fool 
+: 471 3 5 de
+: 477 15 7 serve 
+: 498 2 8 the 
+: 503 30 7 flame?
+- 533
+: 541 3 10 Or 
+: 549 3 7 is 
+: 555 8 5 some
+: 567 6 7 one 
+: 579 17 8 else 
+: 600 3 5 to 
+: 605 56 10 blame?
+- 661
+: 669 3 10 Like 
+: 674 3 3 who, 
+: 679 3 2 you 
+: 685 3 2 ask?
+- 688
+: 714 3 3 Some 
+: 722 4 3 kind 
+: 730 4 3 of 
+: 740 3 5 mas
+: 749 4 3 ter
+: 757 10 3 mind
+- 767
+: 778 2 7 A 
+: 784 6 3 mind 
+: 793 4 5 be
+: 800 9 5 hind 
+: 813 3 7 the 
+: 818 40 8 plan!
+- 858
+: 865 4 10 Some 
+: 875 5 3 vil
+: 881 1 5 lain’s 
+: 889 9 5 grand 
+: 903 3 5 de
+: 910 14 3 sign
+- 924
+: 932 3 3 To 
+: 938 6 3 use 
+: 948 3 7 the 
+: 954 10 3 book
+- 964
+: 967 3 7 To 
+: 974 6 10 breach 
+: 984 3 3 the 
+: 991 7 5 world 
+: 1005 3 3 of 
+: 1011 22 0 man!
+- 1033
+: 1043 3 7 Could 
+: 1048 3 5 he 
+: 1054 12 8 be 
+: 1080 3 7 roa
+: 1086 3 8 ming 
+: 1092 7 10 free?
+- 1099
+: 1102 4 10 Sche
+: 1111 5 7 ming 
+: 1120 5 10 more 
+: 1130 6 0 mas
+: 1140 6 10 ter
+: 1149 4 0 min
+: 1159 4 0 de
+: 1169 20 3 ry?
+- 1189
+: 1194 3 2 Will 
+: 1200 3 0 he 
+: 1208 20 7 rest?
+- 1228
+: 1240 3 7 Who 
+: 1248 5 2 knows 
+: 1256 5 2 what 
+: 1265 4 2 he 
+: 1274 5 2 may 
+: 1284 16 2 un
+: 1306 13 2 leash
+- 1319
+: 1330 12 3 Next, 
+: 1347 4 2 do 
+: 1355 3 0 you 
+: 1363 6 10 exe
+: 1373 3 0 cute 
+: 1380 4 2 this 
+: 1387 8 3 lit
+: 1398 3 3 tle 
+: 1404 3 7 wretch?
+- 1407
+: 1408 10 7 Pat 
+: 1429 3 5 your
+: 1439 9 8 self 
+: 1452 3 7 on 
+: 1459 6 5 the 
+: 1469 9 0 back, 
+: 1481 4 2 close 
+: 1488 3 0 the 
+: 1494 15 10 case
+- 1509
+: 1527 3 3 Let 
+: 1534 4 3 this 
+: 1543 9 3 imp 
+: 1555 4 3 take 
+: 1563 3 2 the 
+: 1569 9 0 blame, 
+: 1581 3 10 take 
+: 1589 3 0 the 
+: 1595 9 3 fame
+- 1604
+: 1607 3 3 Let 
+: 1614 3 8 his 
+: 1620 10 10 name 
+: 1634 4 10 light 
+: 1643 6 8 a 
+: 1652 11 10 fire 
+: 1666 3 7 in 
+: 1673 9 0 the 
+: 1685 4 10 hearts 
+: 1693 4 10 of 
+: 1700 9 2 his 
+: 1711 12 2 race!
+- 1723
+: 1737 3 0 Why 
+: 1745 3 10 it’s 
+: 1752 15 0 more 
+: 1770 3 8 than 
+: 1777 6 7 I 
+: 1787 6 7 can 
+: 1800 24 3 bear
+- 1824
+: 1838 3 5 I 
+: 1844 3 7 must 
+: 1850 3 7 make 
+: 1857 9 5 all 
+: 1869 5 7 of 
+: 1879 13 8 Hell 
+: 1896 3 7 a
+: 1906 44 10 ware!
+- 1950 1971
+- 1971
+: 1997 3 5 Fuck 
+: 2002 6 3 it!
+- 2008
+: 2013 4 8 I 
+: 2022 6 3 am 
+: 2031 6 5 the 
+: 2041 7 3 mas
+: 2051 3 5 ter
+: 2057 11 3 mind, 
+: 2077 3 3 the 
+: 2083 5 3 hand 
+: 2091 4 5 that 
+: 2098 9 5 holds 
+: 2110 3 7 the 
+: 2116 43 8 strings!
+- 2159
+: 2164 4 3 No 
+: 2174 5 3 sim
+: 2184 5 5 ple 
+: 2194 5 7 imp 
+: 2203 3 5 of 
+: 2209 11 3 mine 
+: 2232 2 3 could 
+: 2238 4 3 mas
+: 2246 4 8 ter 
+: 2253 6 5 the 
+: 2263 4 7 di
+: 2270 5 7 sas
+: 2279 7 5 ter
+- 2286
+: 2292 4 0 Oh 
+: 2302 3 3 it 
+: 2311 21 7 stings!
+- 2332
+: 2342 3 5 That 
+: 2348 2 3 you 
+: 2353 11 8 thought
+- 2364
+: 2379 3 7 You 
+: 2385 3 7 had 
+: 2391 6 7 caught 
+: 2401 5 10 the 
+: 2410 5 7 sche
+: 2420 6 10 mer 
+: 2430 5 7 of 
+: 2439 5 10 the 
+: 2449 6 0 schemes 
+: 2459 6 10 I 
+: 2469 17 3 wrought!
+- 2486
+: 2495 3 0 I 
+: 2502 31 7 confess!
+- 2533
+: 2539 3 5 It 
+: 2544 3 7 was 
+: 2550 7 3 me 
+: 2560 6 3 and 
+: 2569 6 2 I 
+: 2578 5 10 have 
+: 2587 13 3 no 
+: 2605 13 2 re
+: 2625 35 0 grets!
+- 2660
+: 2672 6 10 I 
+: 2684 6 0 have 
+: 2696 6 8 re
+: 2704 34 10 grets
+- 2738
+: 2746 3 0 Why 
+: 2753 3 10 am 
+: 2759 3 10 I 
+: 2765 5 10 throw
+: 2772 3 8 ing 
+: 2779 3 7 my 
+: 2785 6 8 free
+: 2794 11 7 dom 
+: 2809 27 0 away
+- 2836
+: 2840 5 10 For 
+: 2849 5 10 this 
+: 2860 10 7 idi
+: 2875 25 8 ot?
+- 2900
+F 2902 7 0 (What 
+F 2912 7 0 have 
+F 2922 5 0 you 
+F 2932 4 0 done?)
+- 2936
+: 2938 2 10 I 
+: 2943 3 0 would 
+: 2950 3 0 rather 
+: 2956 3 0 be 
+: 2964 22 2 dead
+- 2986
+: 2992 3 3 I 
+: 2998 3 7 can’t 
+: 3004 6 7 live 
+: 3013 9 3 life 
+: 3026 8 5 with
+: 3038 13 5 out 
+: 3054 10 10 you 
+: 3068 6 7 by 
+: 3078 5 5 my 
+: 3088 44 5 side
+- 3132
+: 3137 3 0 So 
+: 3143 2 0 if 
+: 3148 3 0 it 
+: 3154 4 0 keeps 
+: 3162 3 3 you 
+: 3168 3 5 a
+: 3175 6 5 live!
+- 3181
+F 3185 2 0 (What 
+F 3191 3 0 are 
+F 3196 3 0 you 
+F 3203 3 0 do
+F 3209 3 0 ing? 
+F 3214 3 0 I 
+F 3220 3 0 don’t 
+F 3225 2 0 de
+F 3231 3 0 serve 
+F 3238 15 0 this!)
+- 3253
+: 3260 4 7 I 
+: 3269 6 7 am 
+: 3278 6 5 the 
+: 3288 5 5 mas
+: 3296 3 0 ter
+: 3302 15 3 mind, 
+: 3325 3 3 the 
+: 3331 3 3 mas
+: 3338 3 5 ter 
+: 3344 6 5 of 
+: 3353 4 7 my 
+: 3362 44 7 fate!
+- 3406
+: 3415 5 5 Sure 
+: 3424 5 7 as 
+: 3433 5 5 the 
+: 3443 6 5 stars 
+: 3453 3 8 have 
+: 3459 15 3 shined
+- 3474
+: 3478 3 3 I’ll 
+: 3484 5 3 give 
+: 3492 3 5 my 
+: 3499 7 5 life 
+: 3509 6 7 to 
+: 3518 6 10 clean 
+: 3527 5 10 your 
+: 3535 9 10 slate!
+- 3544
+: 3552 3 3 You’re 
+: 3558 2 5 my 
+: 3563 15 7 light
+- 3578
+: 3588 3 0 You’re 
+: 3593 2 7 my 
+: 3599 17 8 heart
+- 3616
+: 3629 5 8 And 
+: 3640 8 8 Only 
+: 3651 6 8 death 
+: 3660 6 7 can 
+: 3668 5 8 rend 
+: 3677 10 10 our 
+: 3689 5 10 love 
+: 3698 145 10 apart!
+- 3843
+F 3861 31 0 Well, 
+F 3898 3 0 isn’t 
+F 3905 3 0 that 
+F 3911 3 0 a
+F 3918 3 0 do
+F 3924 5 0 ra
+F 3932 7 0 ble?
+- 3939
+F 3944 3 0 We 
+F 3951 3 0 have 
+F 3958 4 0 been 
+F 3965 4 0 be
+F 3973 3 0 trayed 
+F 3979 2 0 by 
+F 3985 2 0 one 
+F 3991 4 0 of 
+F 3998 3 0 our 
+F 4005 8 0 own. 
+F 4017 2 0 A 
+F 4023 4 0 Goe
+F 4031 3 0 tic 
+F 4038 3 0 de
+F 4043 11 0 mon.
+- 4054
+F 4076 3 0 Your 
+F 4083 3 0 hu
+F 4090 4 0 bris 
+F 4099 5 0 has 
+F 4107 3 0 got
+F 4113 3 0 ten 
+F 4120 3 0 the 
+F 4127 3 0 bet
+F 4133 3 0 ter 
+F 4139 3 0 of 
+F 4146 9 0 you, 
+F 4157 8 0 Prince 
+F 4168 40 0 Stolas.
+- 4208 4209
+- 4209
+: 4235 4 3 I 
+: 4243 17 3 am 
+: 4264 3 10 the 
+: 4271 9 7 mas
+: 4282 3 10 ter
+: 4290 29 3 mind, 
+: 4323 6 10 and 
+: 4333 19 10 here 
+: 4354 9 5 I 
+: 4366 11 3 am 
+: 4380 3 10 the 
+: 4386 10 3 law
+- 4396
+F 4400 8 0 (He 
+F 4411 9 0 is 
+F 4424 4 0 the 
+F 4431 22 0 law)
+- 4453
+: 4457 8 3 I’ve 
+: 4469 19 3 ruled 
+: 4493 3 7 the 
+: 4499 6 3 end
+: 4509 4 8 less 
+: 4517 22 3 dark
+- 4539
+: 4546 3 10 Since 
+: 4552 21 3 long 
+: 4576 9 10 be
+: 4588 8 3 fore 
+: 4599 7 10 the 
+: 4609 6 5 gol
+: 4618 6 7 den 
+: 4627 7 0 an
+: 4638 6 7 gel’s 
+: 4648 36 3 fall
+- 4684
+: 4696 3 8 So 
+: 4701 3 10 you 
+: 4707 19 10 see
+- 4726
+: 4743 3 5 Next 
+: 4750 3 2 to 
+: 4757 9 2 me, 
+: 4770 7 2 your 
+: 4782 9 7 mas
+: 4794 8 10 ter 
+: 4805 11 7 plans 
+: 4819 10 2 all 
+: 4832 8 0 look 
+: 4844 7 10 so 
+: 4857 33 2 small
+- 4890
+: 4896 3 3 Little 
+: 4903 28 3 mice
+- 4931
+: 4946 3 0 When 
+: 4953 3 2 you 
+: 4959 9 2 break 
+: 4972 7 2 my 
+: 4983 24 10 rules
+- 5007
+: 5010 3 10 You 
+: 5016 34 3 pay 
+: 5060 39 2 the 
+: 5111 201 0 price!
+E
