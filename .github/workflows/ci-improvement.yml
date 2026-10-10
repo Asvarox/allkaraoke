@@ -79,7 +79,7 @@ jobs:
   e2e-tests-add-summary:
     runs-on: ubuntu-latest
     if: always() # needs to run on success too, to clean up a stale failure comment from a previous run
-    needs: ['e2e-tests-run', 'visual-regression-tests-run']
+    needs: ['e2e-tests-run', 'visual-regression-tests-run', 'browser-tests-run']
     permissions:
       pull-requests: write # allows commenting on a PR
     steps:
@@ -94,6 +94,7 @@ jobs:
             | ----------------------- | - |
             | **E2E tests**: | ${{ needs.e2e-tests-run.result }} |
             | **Visual regression tests**: | ${{ needs.visual-regression-tests-run.result }} |
+            | **Browser tests**: | ${{ needs.browser-tests-run.result }} |
             | **URL**: | 	https://${{ github.run_id }}.allkaraoke-party-tests-results.pages.dev |
             `
             ).write();
@@ -106,6 +107,7 @@ jobs:
         env:
           E2E_RESULT: ${{ needs.e2e-tests-run.result }}
           VISUAL_RESULT: ${{ needs.visual-regression-tests-run.result }}
+          BROWSER_RESULT: ${{ needs.browser-tests-run.result }}
         with:
           script: |
             const { owner, repo } = context.repo;
@@ -123,6 +125,7 @@ jobs:
             const results = {
               'E2E tests': process.env.E2E_RESULT,
               'Visual regression tests': process.env.VISUAL_RESULT,
+              'Browser tests': process.env.BROWSER_RESULT,
             };
             const failedSuites = Object.keys(results).filter((suite) => results[suite] === 'failure');
 
@@ -139,7 +142,7 @@ jobs:
 
             const reportUrl = `https://${context.runId}.allkaraoke-party-tests-results.pages.dev`;
             const runUrl = `https://github.com/${owner}/${repo}/actions/runs/${context.runId}`;
-            const body = `## ❌ ${failedSuites.join(' and ')} failed\n\n- [Test report](${reportUrl})\n- [Workflow run](${runUrl})\n\n${marker}`;
+            const body = `## ❌ ${failedSuites.join(', ')} failed\n\n- [Test report](${reportUrl})\n- [Workflow run](${runUrl})\n\n${marker}`;
 
             if (existing) {
               await github.rest.issues.deleteComment({ owner, repo, comment_id: existing.id });
