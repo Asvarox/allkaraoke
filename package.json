@@ -99,7 +99,7 @@
     ]
   },
   "devDependencies": {
-    "@cloudflare/vite-plugin": "1.55.0",
+    "@cloudflare/vite-plugin": "1.63.0",
     "@cloudflare/vitest-plugin": "^1.4.0",
     "@cloudflare/workers-types": "^5.20260917.1",
     "@emotion/babel-plugin": "^11.13.5",
@@ -128,7 +128,7 @@
     "@types/tinycolor2": "^1.4.6",
     "@types/use-persisted-state": "^0.3.5",
     "@vitejs/plugin-basic-ssl": "^2.3.0",
-    "@vitejs/plugin-react": "^6.1.1",
+    "@vitejs/plugin-react": "^6.1.2",
     "@vitest/browser-playwright": "5.0.3",
     "@vitest/ui": "5.0.3",
     "@welldone-software/why-did-you-render": "^10.0.1",
@@ -160,7 +160,7 @@
     "tsx": "^4.23.15",
     "typescript": "^7.0.2",
     "utility-types": "^3.11.0",
-    "vite": "^8.3.0",
+    "vite": "^8.3.3",
     "vitest": "^5.0.3",
     "vitest-browser-react": "^2.3.0",
     "werift": "^0.24.4",
