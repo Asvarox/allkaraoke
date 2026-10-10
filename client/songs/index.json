@@ -1669,6 +1669,33 @@
     "local": false
   },
   {
+    "id": "a-ha-foot-of-the-mountain",
+    "title": "Foot Of The Mountain",
+    "artist": "a-ha",
+    "video": "m36SBHLmYXc",
+    "language": [
+      "English"
+    ],
+    "bpm": 260,
+    "gap": 13789.23076923077,
+    "year": "2009",
+    "artistOrigin": "NO",
+    "lastUpdate": "2026-10-10T21:25:50.931Z",
+    "realBpm": 75,
+    "volume": 1,
+    "author": "JamesBond007",
+    "duration": 217,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6568,
+    "tracksCount": 1,
+    "search": "ahafootofthemountain",
+    "local": false
+  },
+  {
     "id": "a-ha-shadowside",
     "title": "Shadowside",
     "artist": "A-ha",
@@ -2133,6 +2160,35 @@
     "shortId": 54,
     "tracksCount": 1,
     "search": "abbagimmegimmegimmeamanaftermidnight",
+    "local": false
+  },
+  {
+    "id": "abba-happy-new-year",
+    "title": "Happy New Year",
+    "artist": "ABBA",
+    "video": "3Uo0JAUWijM",
+    "language": [
+      "English"
+    ],
+    "bpm": 297.15,
+    "gap": 17260.40888440182,
+    "year": "1980",
+    "artistOrigin": "SE",
+    "lastUpdate": "2026-10-10T21:25:48.952Z",
+    "genre": "Pop",
+    "realBpm": 66,
+    "volume": 1,
+    "author": "tigger_75",
+    "authorUrl": "https://usdb.animux.de/index.php?link=gettxt&id=5304",
+    "duration": 269,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6553,
+    "tracksCount": 1,
+    "search": "abbahappynewyear",
     "local": false
   },
   {
@@ -2943,6 +2999,34 @@
     "shortId": 5561,
     "tracksCount": 1,
     "search": "aceofbasedontturnaround",
+    "local": false
+  },
+  {
+    "id": "ace-of-base-happy-nation",
+    "title": "Happy Nation",
+    "artist": "Ace of Base",
+    "video": "HWjCStB6k4o",
+    "language": [
+      "English"
+    ],
+    "bpm": 384.4,
+    "gap": 12105.431841831425,
+    "year": "1993",
+    "artistOrigin": "SE",
+    "lastUpdate": "2026-10-10T21:25:52.541Z",
+    "genre": "Pop",
+    "realBpm": 96,
+    "volume": 0.54,
+    "author": "Leroidukitch",
+    "duration": 212,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6570,
+    "tracksCount": 1,
+    "search": "aceofbasehappynation",
     "local": false
   },
   {
@@ -19466,6 +19550,33 @@
     "local": false
   },
   {
+    "id": "becky-g-shower",
+    "title": "Shower",
+    "artist": "Becky G",
+    "video": "50-_oTkmF5I",
+    "language": [
+      "English"
+    ],
+    "bpm": 319.88,
+    "gap": 21435.255720895337,
+    "year": "2014",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-10T21:25:52.544Z",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "amro98",
+    "duration": 220,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6571,
+    "tracksCount": 1,
+    "search": "beckygshower",
+    "local": false
+  },
+  {
     "id": "bee-gees-alone",
     "title": "Alone",
     "artist": "Bee Gees",
@@ -21778,6 +21889,33 @@
     "shortId": 6290,
     "tracksCount": 1,
     "search": "bilderbuchbungalow",
+    "local": false
+  },
+  {
+    "id": "bilderbuch-maschin",
+    "title": "Maschin",
+    "artist": "Bilderbuch",
+    "video": "9Ocyk0OgyWY",
+    "language": [
+      "German"
+    ],
+    "bpm": 400,
+    "gap": 9407.5,
+    "year": "2013",
+    "artistOrigin": "AT",
+    "lastUpdate": "2026-10-10T21:25:50.553Z",
+    "realBpm": 180,
+    "volume": 1,
+    "author": "schlackmeister",
+    "duration": 209,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6561,
+    "tracksCount": 1,
+    "search": "bilderbuchmaschin",
     "local": false
   },
   {
@@ -33709,7 +33847,7 @@
     "gap": 7026.260578626255,
     "year": "2009",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-10-09T03:55:52.682Z",
+    "lastUpdate": "2026-10-08T20:53:28.818Z",
     "realBpm": 127,
     "volume": 1,
     "author": "IC",
@@ -34755,6 +34893,34 @@
     "local": false
   },
   {
+    "id": "charles-aznavour-la-boheme",
+    "title": "La Bohème",
+    "artist": "Charles Aznavour",
+    "video": "fVfnEyLOkrM",
+    "language": [
+      "French"
+    ],
+    "bpm": 268.30000000000007,
+    "gap": 15462.537313432837,
+    "year": "1965",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-10-10T21:25:50.559Z",
+    "genre": "Chanson",
+    "realBpm": 117,
+    "volume": 1,
+    "author": "dude76",
+    "duration": 245,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6563,
+    "tracksCount": 1,
+    "search": "charlesaznavourlaboheme",
+    "local": false
+  },
+  {
     "id": "charli-xcx-apple",
     "title": "Apple",
     "artist": "Charli XCX",
@@ -34807,6 +34973,33 @@
     "shortId": 913,
     "tracksCount": 1,
     "search": "charlixcxboomclap",
+    "local": false
+  },
+  {
+    "id": "charli-xcx-official",
+    "title": "Official",
+    "artist": "Charli XCX",
+    "video": "W8gIH2fZhNk",
+    "language": [
+      "English"
+    ],
+    "bpm": 386,
+    "gap": 4269.637305699482,
+    "year": "2019",
+    "lastUpdate": "2026-10-10T21:25:54.733Z",
+    "genre": "Pop",
+    "realBpm": 192,
+    "volume": 1,
+    "author": "testguy1245",
+    "duration": 185,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6576,
+    "tracksCount": 1,
+    "search": "charlixcxofficial",
     "local": false
   },
   {
@@ -46827,6 +47020,33 @@
     "local": false
   },
   {
+    "id": "die-toten-hosen-altes-fieber",
+    "title": "Altes Fieber",
+    "artist": "Die Toten Hosen",
+    "video": "CQYypFMTQcE",
+    "language": [
+      "German"
+    ],
+    "bpm": 260,
+    "gap": 10889.23076923077,
+    "year": "2012",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-10-10T21:25:50.547Z",
+    "realBpm": 130,
+    "volume": 1,
+    "author": "RES",
+    "duration": 219,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6559,
+    "tracksCount": 1,
+    "search": "dietotenhosenaltesfieber",
+    "local": false
+  },
+  {
     "id": "die-toten-hosen-heute-hier-morgen-dort",
     "title": "Heute hier, morgen dort",
     "artist": "Die Toten Hosen",
@@ -46950,7 +47170,7 @@
     "gap": 20820.83263946711,
     "year": "2008",
     "artistOrigin": "DE",
-    "lastUpdate": "2026-10-09T03:55:52.185Z",
+    "lastUpdate": "2026-10-08T20:48:57.426Z",
     "genre": "Punk Rock",
     "realBpm": 180,
     "volume": 1,
@@ -47835,6 +48055,33 @@
     "shortId": 6522,
     "tracksCount": 1,
     "search": "disneyscamprock2demilovatojoejonaswouldntchangeathing",
+    "local": false
+  },
+  {
+    "id": "disneys-camp-rock-2-this-is-our-song",
+    "title": "This Is Our Song",
+    "artist": "Disney’s Camp Rock 2",
+    "video": "1dM2t5DFh4M",
+    "language": [
+      "English"
+    ],
+    "bpm": 260,
+    "gap": 6339.2307692307695,
+    "year": "2010",
+    "lastUpdate": "2026-10-10T21:25:50.932Z",
+    "genre": "Soundtrack",
+    "realBpm": 64,
+    "volume": 1,
+    "author": "savik1993",
+    "duration": 218,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6569,
+    "tracksCount": 1,
+    "search": "disneyscamprock2thisisoursong",
     "local": false
   },
   {
@@ -49081,6 +49328,36 @@
     "local": false
   },
   {
+    "id": "disneys-high-school-musical-the-musical-the-series-joshua-bassett-sofia-wylie-maybe-this-time",
+    "title": "Maybe This Time",
+    "artist": "Disney’s High School Musical: The Musical: The Series (Joshua Bassett, Sofia Wylie)",
+    "video": "C_izzGow1lw",
+    "language": [
+      "English"
+    ],
+    "bpm": 392,
+    "gap": 12015.102040816326,
+    "year": "2023",
+    "lastUpdate": "2026-10-10T21:25:57.129Z",
+    "genre": "Soundtrack",
+    "realBpm": 98,
+    "volume": 1,
+    "author": "DoubleDee, commissioned by UrGamingTechie",
+    "duration": 141,
+    "tracks": [
+      {
+        "start": 26
+      },
+      {
+        "start": 279
+      }
+    ],
+    "shortId": 6584,
+    "tracksCount": 2,
+    "search": "disneyshighschoolmusicalthemusicaltheseriesjoshuabassettsofiawyliemaybethistime",
+    "local": false
+  },
+  {
     "id": "disneys-high-school-musical-were-all-in-this-together",
     "title": "We’re All In This Together",
     "artist": "Disney’s High School Musical",
@@ -49262,7 +49539,7 @@
     "bpm": 223.8,
     "gap": 17514.638069705095,
     "year": "2011",
-    "lastUpdate": "2026-10-09T03:55:52.025Z",
+    "lastUpdate": "2026-10-08T20:48:04.461Z",
     "genre": "Soundtrack",
     "realBpm": 112,
     "volume": 1,
@@ -52852,6 +53129,33 @@
     "local": false
   },
   {
+    "id": "drunken-masters-maxim-kiz-bier",
+    "title": "Bier",
+    "artist": "Drunken Masters & Maxim K.I.Z",
+    "video": "pI3laNZOVBY",
+    "language": [
+      "German"
+    ],
+    "bpm": 280.02,
+    "gap": 33.621169916434496,
+    "year": "2020",
+    "lastUpdate": "2026-10-10T21:26:01.966Z",
+    "genre": "Rap",
+    "realBpm": 140,
+    "volume": 1,
+    "author": "johfindo",
+    "duration": 135,
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 6585,
+    "tracksCount": 1,
+    "search": "drunkenmastersmaximkizbier",
+    "local": false
+  },
+  {
     "id": "dschinghis-khan-dschinghis-khan",
     "title": "Dschinghis Khan",
     "artist": "Dschinghis Khan",
@@ -54077,6 +54381,36 @@
     "local": false
   },
   {
+    "id": "echt-junimond",
+    "title": "Junimond",
+    "artist": "Echt",
+    "video": "h9FR08QFqOw",
+    "language": [
+      "German"
+    ],
+    "bpm": 333,
+    "gap": 47599.00900900901,
+    "year": "2000",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-10-10T21:25:54.354Z",
+    "genre": "Rock",
+    "realBpm": 83,
+    "volume": 1,
+    "author": "Canni",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=728",
+    "duration": 305,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6572,
+    "tracksCount": 1,
+    "search": "echtjunimond",
+    "local": false
+  },
+  {
     "id": "ed-sheeran-and-elton-john-merry-christmas",
     "title": "Merry Christmas",
     "artist": "Ed Sheeran and Elton John",
@@ -55270,6 +55604,34 @@
     "shortId": 1444,
     "tracksCount": 1,
     "search": "eiraoiignite",
+    "local": false
+  },
+  {
+    "id": "eisblume-leben-ist-schoen",
+    "title": "Leben ist schön",
+    "artist": "Eisblume",
+    "video": "Om7IQKQvsYU",
+    "language": [
+      "German"
+    ],
+    "bpm": 300,
+    "gap": 3330,
+    "year": "2009",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-10-10T21:25:54.539Z",
+    "genre": "Pop",
+    "realBpm": 100,
+    "volume": 1,
+    "author": "Raser",
+    "duration": 189,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6574,
+    "tracksCount": 1,
+    "search": "eisblumelebenistschoen",
     "local": false
   },
   {
@@ -62181,7 +62543,7 @@
     "gap": 11750,
     "year": "2019",
     "artistOrigin": "CA",
-    "lastUpdate": "2026-10-09T03:55:52.187Z",
+    "lastUpdate": "2026-10-08T20:49:18.174Z",
     "realBpm": 150,
     "volume": 1,
     "author": "Fenyesyes",
@@ -63772,6 +64134,37 @@
     "local": false
   },
   {
+    "id": "fleetwood-mac-rhiannon",
+    "title": "Rhiannon",
+    "artist": "Fleetwood Mac",
+    "video": "0xGPi-Al3zQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 259.2299999999998,
+    "gap": 14260.097605963954,
+    "year": "1976",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-10T21:25:54.731Z",
+    "genre": "Rock, Soft Rock, Blues Rock",
+    "realBpm": 129,
+    "volume": 1,
+    "author": "sledge",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=67506",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=16762",
+    "duration": 253,
+    "tracks": [
+      {
+        "name": "Rhiannon",
+        "start": 17
+      }
+    ],
+    "shortId": 6575,
+    "tracksCount": 1,
+    "search": "fleetwoodmacrhiannon",
+    "local": false
+  },
+  {
     "id": "fleetwood-mac-say-you-love-me",
     "title": "Say You Love Me",
     "artist": "Fleetwood Mac",
@@ -63844,7 +64237,7 @@
     "gap": 25989.217281652505,
     "year": "1997",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-10-09T03:55:50.908Z",
+    "lastUpdate": "2026-10-08T20:45:40.466Z",
     "genre": "Classic Rock",
     "realBpm": 82,
     "volume": 1,
@@ -73175,6 +73568,34 @@
     "local": false
   },
   {
+    "id": "grimes-flesh-without-blood",
+    "title": "Flesh Without Blood",
+    "artist": "Grimes",
+    "video": "Tv9YoYCKNoE",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 30650,
+    "year": "2015",
+    "artistOrigin": "CA",
+    "lastUpdate": "2026-10-10T21:25:48.958Z",
+    "realBpm": 156,
+    "volume": 1,
+    "author": "REL",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=20481",
+    "duration": 412,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6556,
+    "tracksCount": 1,
+    "search": "grimesfleshwithoutblood",
+    "local": false
+  },
+  {
     "id": "grimes-oblivion",
     "title": "Oblivion",
     "artist": "Grimes",
@@ -75145,6 +75566,33 @@
     "local": false
   },
   {
+    "id": "halsey-you-should-be-sad",
+    "title": "You Should Be Sad",
+    "artist": "Halsey",
+    "video": "8nBFqZppIF0",
+    "language": [
+      "English"
+    ],
+    "bpm": 326.53,
+    "gap": 22489.37310507457,
+    "year": "2020",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-10T21:25:48.955Z",
+    "realBpm": 112,
+    "volume": 1,
+    "author": "demondawg",
+    "duration": 219,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6555,
+    "tracksCount": 1,
+    "search": "halseyyoushouldbesad",
+    "local": false
+  },
+  {
     "id": "hamilton-alexander-hamilton",
     "title": "Alexander Hamilton",
     "artist": "Hamilton",
@@ -75562,7 +76010,7 @@
     "gap": 12512.415296640458,
     "year": "2008",
     "artistOrigin": "FI",
-    "lastUpdate": "2026-10-09T03:55:51.859Z",
+    "lastUpdate": "2026-10-08T20:47:35.403Z",
     "genre": "Rock",
     "realBpm": 139,
     "volume": 1,
@@ -76409,6 +76857,35 @@
     "shortId": 1885,
     "tracksCount": 1,
     "search": "helenefischeratemlosdurchdienacht",
+    "local": false
+  },
+  {
+    "id": "helge-schneider-es-gibt-reis-baby",
+    "title": "Es gibt Reis Baby",
+    "artist": "Helge Schneider",
+    "video": "AainIbNwIcY",
+    "language": [
+      "German"
+    ],
+    "bpm": 359.44,
+    "gap": 1798.4420209214334,
+    "year": "1993",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-10-10T21:25:56.751Z",
+    "realBpm": 88,
+    "volume": 1,
+    "author": "bohning",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=334",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=26090",
+    "duration": 247,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6581,
+    "tracksCount": 1,
+    "search": "helgeschneideresgibtreisbaby",
     "local": false
   },
   {
@@ -79956,6 +80433,34 @@
     "local": false
   },
   {
+    "id": "imagine-dragons-lonely",
+    "title": "Lonely",
+    "artist": "Imagine Dragons",
+    "video": "yUbTU1ojKho",
+    "language": [
+      "English"
+    ],
+    "bpm": 392,
+    "gap": 6.0204081632653015,
+    "year": "2021",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-10T21:25:50.930Z",
+    "realBpm": 98,
+    "volume": 1,
+    "author": "DoubleDee",
+    "sourceUrl": "https://www.youtube.com/watch?v=yUbTU1ojKho",
+    "duration": 160,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6567,
+    "tracksCount": 1,
+    "search": "imaginedragonslonely",
+    "local": false
+  },
+  {
     "id": "imagine-dragons-natural",
     "title": "Natural",
     "artist": "Imagine Dragons",
@@ -82721,6 +83226,35 @@
     "local": false
   },
   {
+    "id": "james-blake-trying-times",
+    "title": "Trying Times",
+    "artist": "James Blake",
+    "video": "bkrAwMnoX5M",
+    "language": [
+      "English"
+    ],
+    "bpm": 275,
+    "gap": 11.818181818181756,
+    "year": "2026",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-10-10T21:25:50.740Z",
+    "genre": "Pop",
+    "realBpm": 69,
+    "volume": 1,
+    "author": "yarn6270",
+    "sourceUrl": "https://www.youtube.com/watch?v=bkrAwMnoX5M",
+    "duration": 293,
+    "tracks": [
+      {
+        "start": -7
+      }
+    ],
+    "shortId": 6565,
+    "tracksCount": 1,
+    "search": "jamesblaketryingtimes",
+    "local": false
+  },
+  {
     "id": "james-blunt-bonfire-heart",
     "title": "Bonfire Heart",
     "artist": "James Blunt",
@@ -84187,6 +84721,34 @@
     "local": false
   },
   {
+    "id": "jay-chou-qing-hua-ci",
+    "title": "Qing Hua Ci",
+    "artist": "Jay Chou",
+    "video": "Z8Mqw0b9ADs",
+    "language": [
+      "Chinese"
+    ],
+    "bpm": 215.9,
+    "gap": 21287.32746641964,
+    "year": "2007",
+    "artistOrigin": "TW",
+    "lastUpdate": "2026-10-10T21:25:50.551Z",
+    "genre": "C-Pop",
+    "realBpm": 108,
+    "volume": 1,
+    "author": "britneyblisswilliams",
+    "duration": 244,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6560,
+    "tracksCount": 1,
+    "search": "jaychouqinghuaci",
+    "local": false
+  },
+  {
     "id": "jay-chou-yilu-xiang-bei",
     "title": "Yīlù xiàng běi",
     "artist": "Jay Chou",
@@ -84488,7 +85050,7 @@
     "gap": 23266.479658463082,
     "year": "1983",
     "artistOrigin": "FR",
-    "lastUpdate": "2026-10-09T03:55:52.502Z",
+    "lastUpdate": "2026-10-08T20:51:14.276Z",
     "genre": "Pop",
     "realBpm": 120,
     "volume": 1,
@@ -86610,7 +87172,7 @@
     "gap": 7390.88809946714,
     "year": "1969",
     "artistOrigin": "FR",
-    "lastUpdate": "2026-10-09T03:55:52.343Z",
+    "lastUpdate": "2026-10-08T20:50:01.951Z",
     "realBpm": 112,
     "volume": 1,
     "author": "Pinky007",
@@ -94164,6 +94726,34 @@
     "local": false
   },
   {
+    "id": "keha-cannibal",
+    "title": "Cannibal",
+    "artist": "Ke$ha",
+    "video": "48wHhW_dTMo",
+    "language": [
+      "English"
+    ],
+    "bpm": 260.02,
+    "gap": 3079.3062072148296,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-10T21:25:50.557Z",
+    "genre": "Dance Pop",
+    "realBpm": 130,
+    "volume": 1,
+    "author": "klops_007",
+    "duration": 195,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6562,
+    "tracksCount": 1,
+    "search": "kehacannibal",
+    "local": false
+  },
+  {
     "id": "keha-feat-3oh3-blah-blah-blah",
     "title": "Blah Blah Blah",
     "artist": "Ke$ha feat. 3OH!3",
@@ -95195,7 +95785,7 @@
     "gap": 971.7741935483871,
     "year": "2010",
     "artistOrigin": "EE",
-    "lastUpdate": "2026-10-09T03:55:51.688Z",
+    "lastUpdate": "2026-10-08T20:47:17.113Z",
     "genre": "Pop",
     "realBpm": 124,
     "volume": 1,
@@ -99243,6 +99833,38 @@
     "local": false
   },
   {
+    "id": "kz-hachioji-p-feat-miku-hatsune-weekender-girl",
+    "title": "Weekender Girl",
+    "artist": "kz & Hachioji-P feat. Miku Hatsune",
+    "video": "8uBuTAu9BuA",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 264,
+    "gap": 15797.272727272728,
+    "year": "2012",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-10-10T21:25:48.950Z",
+    "genre": "Electro Pop",
+    "realBpm": 132,
+    "previewStart": 14,
+    "previewEnd": 204,
+    "volume": 1,
+    "author": "Currymalker",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=currymalker",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=kz%20&%20Hachioji-P%20feat.%20Miku%20Hatsune&sid=dccb3a481c1514225b4174426028556b",
+    "duration": 214,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6552,
+    "tracksCount": 1,
+    "search": "kzhachiojipfeatmikuhatsuneweekendergirl",
+    "local": false
+  },
+  {
     "id": "la-barra-tempestad",
     "title": "Tempestad",
     "artist": "La Barra",
@@ -102722,6 +103344,36 @@
     "local": false
   },
   {
+    "id": "las-pelotas-como-el-viento",
+    "title": "Como el viento",
+    "artist": "Las Pelotas",
+    "video": "79tqv8lTQxA",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 400,
+    "gap": 11498.5,
+    "year": "2012",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-10-10T21:25:56.565Z",
+    "genre": "Rock",
+    "realBpm": 400,
+    "volume": 1,
+    "author": "karakara",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=karakara",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Las%20Pelotas&cancion=Como%20el%20viento",
+    "duration": 264,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6578,
+    "tracksCount": 1,
+    "search": "laspelotascomoelviento",
+    "local": false
+  },
+  {
     "id": "las-pelotas-sera",
     "title": "Será",
     "artist": "Las Pelotas",
@@ -102965,7 +103617,7 @@
     "gap": 0,
     "year": "2025",
     "artistOrigin": "IS",
-    "lastUpdate": "2026-10-09T03:55:52.181Z",
+    "lastUpdate": "2026-10-08T20:48:30.127Z",
     "genre": "Jazz",
     "realBpm": 155,
     "volume": 1,
@@ -103095,6 +103747,34 @@
     "shortId": 2520,
     "tracksCount": 1,
     "search": "lauvfeatbtswho",
+    "local": false
+  },
+  {
+    "id": "lauv-i-like-me-better",
+    "title": "I Like Me Better",
+    "artist": "Lauv",
+    "video": "BcqxLCWn-CE",
+    "language": [
+      "English"
+    ],
+    "bpm": 391.91,
+    "gap": 7434.873567911,
+    "year": "2017",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-10T21:25:56.932Z",
+    "genre": "Pop",
+    "realBpm": 92,
+    "volume": 1,
+    "author": "makholl",
+    "duration": 206,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6583,
+    "tracksCount": 1,
+    "search": "lauvilikemebetter",
     "local": false
   },
   {
@@ -103817,7 +104497,7 @@
     "gap": 18787.86754581596,
     "year": "1971",
     "artistOrigin": "AR",
-    "lastUpdate": "2026-10-09T03:55:52.501Z",
+    "lastUpdate": "2026-10-08T20:50:45.353Z",
     "genre": "Balada",
     "realBpm": 103,
     "volume": 1,
@@ -111365,7 +112045,7 @@
     "gap": 49684.96240601504,
     "year": "2005",
     "artistOrigin": "US",
-    "lastUpdate": "2026-10-09T03:55:52.684Z",
+    "lastUpdate": "2026-10-08T20:53:41.185Z",
     "genre": "Pop",
     "realBpm": 133,
     "volume": 1,
@@ -112334,6 +113014,34 @@
     "shortId": 2747,
     "tracksCount": 1,
     "search": "mammamiamovieihaveadream",
+    "local": false
+  },
+  {
+    "id": "mamma-mia-movie-take-a-chance-on-me",
+    "title": "Take A Chance On Me",
+    "artist": "Mamma Mia! (Movie)",
+    "video": "nLkmfL6IVQs",
+    "language": [
+      "English"
+    ],
+    "bpm": 192.00000000000045,
+    "gap": 10505,
+    "year": "2008",
+    "lastUpdate": "2026-10-10T21:25:56.752Z",
+    "genre": "Soundtrack",
+    "realBpm": 107,
+    "volume": 1,
+    "author": "RES",
+    "duration": 163,
+    "tracks": [
+      {
+        "name": "Take a Chance on Me",
+        "start": 13
+      }
+    ],
+    "shortId": 6582,
+    "tracksCount": 1,
+    "search": "mammamiamovietakeachanceonme",
     "local": false
   },
   {
@@ -115254,6 +115962,34 @@
     "shortId": 2839,
     "tracksCount": 1,
     "search": "markforsterxleadreiuhrnachts",
+    "local": false
+  },
+  {
+    "id": "mark-medlock-mamacita",
+    "title": "Mamacita",
+    "artist": "Mark Medlock",
+    "video": "P0yXdBdAb0A",
+    "language": [
+      "English"
+    ],
+    "bpm": 254,
+    "gap": 4246.062992125984,
+    "year": "2009",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-10-10T21:26:02.155Z",
+    "genre": "Pop",
+    "realBpm": 127,
+    "volume": 1,
+    "author": "Fepo",
+    "duration": 216,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6586,
+    "tracksCount": 1,
+    "search": "markmedlockmamacita",
     "local": false
   },
   {
@@ -120059,7 +120795,7 @@
     "gap": 5793.1578947368425,
     "year": "1992",
     "artistOrigin": "US",
-    "lastUpdate": "2026-10-09T03:55:52.679Z",
+    "lastUpdate": "2026-10-08T20:53:11.883Z",
     "genre": "Dance-Pop, New Jazz Swing",
     "realBpm": 110,
     "volume": 1,
@@ -122909,7 +123645,7 @@
     "gap": 44.44444444444446,
     "year": "1999",
     "artistOrigin": "US",
-    "lastUpdate": "2026-10-09T03:55:50.914Z",
+    "lastUpdate": "2026-10-08T20:45:52.955Z",
     "realBpm": 108,
     "volume": 1,
     "author": "Lypss",
@@ -130072,6 +130808,36 @@
     "shortId": 3222,
     "tracksCount": 1,
     "search": "nightwishwishmaster",
+    "local": false
+  },
+  {
+    "id": "nightwish-yours-is-an-empty-hope",
+    "title": "Yours Is an Empty Hope",
+    "artist": "Nightwish",
+    "video": "Ejs0sIt3bA8",
+    "language": [
+      "English"
+    ],
+    "bpm": 368,
+    "gap": 67350.97826086957,
+    "year": "2015",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-10-10T21:25:48.953Z",
+    "genre": "Symphonic Metal",
+    "realBpm": 184,
+    "volume": 1,
+    "author": "Dorime",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=205556",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=32192",
+    "duration": 340,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6554,
+    "tracksCount": 1,
+    "search": "nightwishyoursisanemptyhope",
     "local": false
   },
   {
@@ -137355,7 +138121,7 @@
     "gap": 4760.830566136489,
     "year": "2018",
     "artistOrigin": "AR",
-    "lastUpdate": "2026-10-09T03:55:52.677Z",
+    "lastUpdate": "2026-10-08T20:52:10.618Z",
     "realBpm": 162,
     "volume": 1,
     "author": "bar_ney_",
@@ -143727,6 +144493,32 @@
     "local": false
   },
   {
+    "id": "rammstein-asche-zu-asche",
+    "title": "Asche zu Asche",
+    "artist": "Rammstein",
+    "video": "CA8F3yuc67A",
+    "language": [
+      "German"
+    ],
+    "bpm": 220,
+    "gap": 33577.27272727273,
+    "year": "1995",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-10-10T21:25:48.139Z",
+    "realBpm": 170,
+    "volume": 1,
+    "author": "purgatorio",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6549,
+    "tracksCount": 1,
+    "search": "rammsteinaschezuasche",
+    "local": false
+  },
+  {
     "id": "rammstein-deutschland",
     "title": "Deutschland",
     "artist": "Rammstein",
@@ -148392,6 +149184,35 @@
     "local": false
   },
   {
+    "id": "robbie-williams-tripping",
+    "title": "Tripping",
+    "artist": "Robbie Williams",
+    "video": "g52Uh9wmqZg",
+    "language": [
+      "English"
+    ],
+    "bpm": 236.02,
+    "gap": 7523.137022286247,
+    "year": "2005",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-10-10T21:25:56.748Z",
+    "genre": "Pop",
+    "realBpm": 118,
+    "volume": 70,
+    "author": "tripping",
+    "sourceUrl": "https://youtu.be/g52Uh9wmqZg?si=yZdVzr143zOJqv6B",
+    "duration": 247,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6580,
+    "tracksCount": 1,
+    "search": "robbiewilliamstripping",
+    "local": false
+  },
+  {
     "id": "robert-chojnacki-niecierpliwi",
     "title": "Niecierpliwi",
     "artist": "Robert Chojnacki",
@@ -151802,6 +152623,36 @@
     "local": false
   },
   {
+    "id": "santana-ft-the-product-gb-maria-maria",
+    "title": "María María",
+    "artist": "Santana ft. The Product G&B",
+    "video": "nPLV7lGbmT4",
+    "language": [
+      "English"
+    ],
+    "bpm": 392.08,
+    "gap": 16972.3050397878,
+    "year": "1999",
+    "lastUpdate": "2026-10-10T21:25:54.357Z",
+    "realBpm": 97,
+    "previewStart": 17,
+    "previewEnd": 66,
+    "volume": 1,
+    "author": "Santana",
+    "sourceUrl": "https://www.youtube.com/watch?v=nPLV7lGbmT4",
+    "duration": 261,
+    "tracks": [
+      {
+        "name": "maria maria",
+        "start": 26
+      }
+    ],
+    "shortId": 6573,
+    "tracksCount": 1,
+    "search": "santanafttheproductgbmariamaria",
+    "local": false
+  },
+  {
     "id": "santana-mana-corazon-espinado",
     "title": "Corazón espinado",
     "artist": "Santana & Maná",
@@ -152817,6 +153668,34 @@
     "shortId": 3815,
     "tracksCount": 1,
     "search": "scorpionsrockyoulikeahurricane",
+    "local": false
+  },
+  {
+    "id": "scorpions-send-me-an-angel",
+    "title": "Send Me An Angel",
+    "artist": "Scorpions",
+    "video": "1UUYjd2rjsE",
+    "language": [
+      "English"
+    ],
+    "bpm": 215.6,
+    "gap": 34835.97402597403,
+    "year": "1990",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-10-10T21:25:48.947Z",
+    "genre": "Hard Rock",
+    "realBpm": 107,
+    "volume": 1,
+    "author": "IC",
+    "duration": 269,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6551,
+    "tracksCount": 1,
+    "search": "scorpionssendmeanangel",
     "local": false
   },
   {
@@ -163465,6 +164344,34 @@
     "local": false
   },
   {
+    "id": "super-junior-m-super-girl-chinese-version",
+    "title": "Super Girl (Chinese Version)",
+    "artist": "Super Junior M",
+    "video": "pit7RS4mPI0",
+    "language": [
+      "Chinese"
+    ],
+    "bpm": 250,
+    "gap": 19340,
+    "year": "2009",
+    "artistOrigin": "KR",
+    "lastUpdate": "2026-10-10T21:25:48.961Z",
+    "genre": "C-Pop",
+    "realBpm": 125,
+    "volume": 1,
+    "author": "lop",
+    "duration": 226,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6557,
+    "tracksCount": 1,
+    "search": "superjuniormsupergirlchineseversion",
+    "local": false
+  },
+  {
     "id": "super-junior-mr-simple",
     "title": "Mr. Simple",
     "artist": "Super Junior",
@@ -165399,7 +166306,7 @@
     "gap": 5924.295197188599,
     "year": "2010",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-10-09T03:55:51.861Z",
+    "lastUpdate": "2026-10-08T20:47:46.835Z",
     "genre": "R&B",
     "realBpm": 128,
     "volume": 1,
@@ -167199,7 +168106,7 @@
     "gap": 20269.23076923077,
     "year": "2001",
     "artistOrigin": "RU",
-    "lastUpdate": "2026-10-09T03:55:52.343Z",
+    "lastUpdate": "2026-10-08T20:49:37.624Z",
     "realBpm": 130,
     "volume": 1,
     "author": "Leroidukitch",
@@ -167961,7 +168868,7 @@
     "gap": 27.669235575921675,
     "year": "2014",
     "artistOrigin": "US",
-    "lastUpdate": "2026-10-09T03:55:52.184Z",
+    "lastUpdate": "2026-10-08T20:48:44.627Z",
     "genre": "Pop",
     "realBpm": 120,
     "volume": 1,
@@ -170094,6 +171001,34 @@
     "shortId": 6068,
     "tracksCount": 1,
     "search": "thebandperryifidieyoung",
+    "local": false
+  },
+  {
+    "id": "the-barden-bellas-just-the-way-you-are-just-a-dream-pool-mashup",
+    "title": "Just The Way You Are & Just A Dream (Pool Mashup)",
+    "artist": "The Barden Bellas",
+    "video": "12Q90oDfylk",
+    "language": [
+      "English"
+    ],
+    "bpm": 219.9,
+    "gap": 33096.80763983629,
+    "year": "2012",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-10T21:25:49.149Z",
+    "genre": "Musical",
+    "realBpm": 110,
+    "volume": 1,
+    "author": "EmilySavereux",
+    "duration": 112,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6558,
+    "tracksCount": 1,
+    "search": "thebardenbellasjustthewayyouarejustadreampoolmashup",
     "local": false
   },
   {
@@ -177046,7 +177981,7 @@
     "gap": 98.37303407159618,
     "year": "2018",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-10-09T03:55:52.503Z",
+    "lastUpdate": "2026-10-08T20:51:56.414Z",
     "genre": "Rock",
     "realBpm": 93,
     "volume": 1,
@@ -178396,6 +179331,35 @@
     "shortId": 4452,
     "tracksCount": 1,
     "search": "thewhowontgetfooledagain",
+    "local": false
+  },
+  {
+    "id": "the-wiseguys-ooh-la-la",
+    "title": "Ooh La La",
+    "artist": "The Wiseguys",
+    "video": "qveBnFXSCuw",
+    "language": [
+      "English"
+    ],
+    "bpm": 248.46,
+    "gap": 14633.677855590437,
+    "year": "1999",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-10-10T21:25:48.150Z",
+    "genre": "Pop",
+    "realBpm": 200,
+    "volume": 1,
+    "author": "bohning, Fepo",
+    "sourceUrl": "The Wiseguys",
+    "duration": 218,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6550,
+    "tracksCount": 1,
+    "search": "thewiseguysoohlala",
     "local": false
   },
   {
@@ -181490,6 +182454,33 @@
     "shortId": 4529,
     "tracksCount": 1,
     "search": "toolvicarious",
+    "local": false
+  },
+  {
+    "id": "toploader-dancing-in-the-moonlight",
+    "title": "Dancing In The Moonlight",
+    "artist": "Toploader",
+    "video": "qfxrQFMvP8o",
+    "language": [
+      "English"
+    ],
+    "bpm": 239.08,
+    "gap": 13826.15191567676,
+    "year": "2000",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-10-10T21:25:54.912Z",
+    "realBpm": 119,
+    "volume": 1,
+    "author": "choosie",
+    "duration": 226,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6577,
+    "tracksCount": 1,
+    "search": "toploaderdancinginthemoonlight",
     "local": false
   },
   {
@@ -186517,6 +187508,38 @@
     "local": false
   },
   {
+    "id": "vivziepop-mastermind",
+    "title": "Mastermind",
+    "artist": "Vivziepop",
+    "video": "TJavG4RiE5M",
+    "language": [
+      "English"
+    ],
+    "bpm": 390,
+    "gap": 2740,
+    "year": "2024",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-10T21:25:50.739Z",
+    "genre": "Musical",
+    "realBpm": 83,
+    "previewStart": 73,
+    "previewEnd": 105,
+    "volume": 1,
+    "author": "Vivziepop",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=192264",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=30057",
+    "duration": 211,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6564,
+    "tracksCount": 1,
+    "search": "vivziepopmastermind",
+    "local": false
+  },
+  {
     "id": "volbeat-16-dollars",
     "title": "16 Dollars",
     "artist": "Volbeat",
@@ -187169,7 +188192,7 @@
     "gap": 31737.10992596311,
     "year": "2008",
     "artistOrigin": "ES",
-    "lastUpdate": "2026-10-09T03:55:51.525Z",
+    "lastUpdate": "2026-10-08T20:46:10.514Z",
     "genre": "Power Metal",
     "realBpm": 178,
     "volume": 1,
@@ -189024,6 +190047,35 @@
     "shortId": 4711,
     "tracksCount": 2,
     "search": "wickedforgood",
+    "local": false
+  },
+  {
+    "id": "wicked-musical-defying-gravity",
+    "title": "Defying Gravity",
+    "artist": "Wicked (Musical)",
+    "video": "l0Bs_eaXaCo",
+    "language": [
+      "English"
+    ],
+    "bpm": 316.12,
+    "gap": 12.946982158673904,
+    "year": "2003",
+    "lastUpdate": "2026-10-10T21:25:56.567Z",
+    "genre": "Musical",
+    "realBpm": 88,
+    "volume": 1,
+    "author": "crimmins",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=9750",
+    "duration": 352,
+    "tracks": [
+      {
+        "name": "Defying Gravity",
+        "start": 9
+      }
+    ],
+    "shortId": 6579,
+    "tracksCount": 1,
+    "search": "wickedmusicaldefyinggravity",
     "local": false
   },
   {
@@ -191033,6 +192085,36 @@
     "shortId": 5095,
     "tracksCount": 1,
     "search": "yoomiiiakissisallimiss",
+    "local": false
+  },
+  {
+    "id": "yorushika-haru-full-version",
+    "title": "Haru (Full version)",
+    "artist": "Yorushika",
+    "video": "CkvWJNt77mU",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 204,
+    "gap": 9230.588235294117,
+    "year": "2024",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-10-10T21:25:50.928Z",
+    "realBpm": 102,
+    "previewStart": 50,
+    "previewEnd": 90,
+    "volume": 0.75,
+    "author": "DeinAlptraum, HansiMcKlaus",
+    "duration": 277,
+    "tracks": [
+      {
+        "name": "Haru (Full version)",
+        "start": 14
+      }
+    ],
+    "shortId": 6566,
+    "tracksCount": 1,
+    "search": "yorushikaharufullversion",
     "local": false
   },
   {

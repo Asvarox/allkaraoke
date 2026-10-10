@@ -1,0 +1,268 @@
+#ARTIST:Las Pelotas
+#TITLE:Como el viento
+#CREATOR:karakara
+#BPM:400
+#YEAR:2012
+#VIDEO:v=79tqv8lTQxA
+#GENRE:Rock
+#LANGUAGE:Spanish
+#GAP:11498,5
+#ALLKARAOKE_ID:las-pelotas-como-el-viento
+#ALLKARAOKE_SID:6578
+#ALLKARAOKE_LASTUPDATE:2026-10-10T21:25:56.565Z
+#ALLKARAOKE_ARTISTORIGIN:AR
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/es/canciones?creador=karakara
+#ALLKARAOKE_REALBPM:400
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?artista=Las%20Pelotas&cancion=Como%20el%20viento
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:264
+#MP3:Las Pelotas - Como el viento.mp3
+#COVER:Las Pelotas - Como el viento.jpg
+#MEDLEYSTARTBEAT:652
+#MEDLEYENDBEAT:1899
+: 27 6 9 Si 
+: 41 2 8 qui
+: 48 5 6 sie
+: 55 2 4 ra 
+: 63 6 6 ser 
+: 97 2 1 co
+: 102 4 -1 mo el 
+: 108 5 -1 vien
+: 122 7 1 to
+- 129 163
+- 163
+: 190 1 6 des
+: 192 2 9 ~
+: 203 5 8 ga
+: 212 4 6 rran
+: 224 2 4 do 
+: 231 5 6 to
+: 238 4 4 do 
+: 252 4 1 al 
+: 263 3 -1 pa
+: 271 7 1 sar
+- 278 339
+- 339
+: 366 1 1 no 
+: 373 4 1 lle
+: 380 5 1 ga
+: 388 12 4 rí
+: 401 3 4 an 
+: 422 1 1 los 
+: 427 2 1 men
+: 434 4 1 sa
+: 442 4 -1 jes
+- 446 502
+- 502
+: 529 3 1 tal 
+: 537 4 2 vez 
+: 550 3 1 de
+: 556 6 4 ba
+: 566 5 4 mos 
+: 590 2 2 ha
+: 598 4 1 blar
+- 602 652
+- 652
+: 679 5 9 Ha
+: 692 2 8 ce 
+: 700 3 6 cuán
+: 713 1 4 to 
+* 720 6 6 que 
+* 747 4 1 no 
+* 754 4 -1 re
+* 759 5 -1 í
+: 766 5 1 as
+- 771 813
+- 813
+: 840 5 9 cuán
+: 855 4 8 to 
+: 862 4 6 de e
+: 874 3 4 se 
+: 881 4 6 néc
+: 892 3 4 tar 
+: 910 3 1 pue
+: 915 4 -1 de ha
+: 921 7 1 ber
+- 928 989
+- 989
+: 1016 2 1 Las 
+: 1024 2 2 co
+: 1031 2 1 sas 
+: 1038 10 4 sue
+: 1049 5 4 len 
+: 1072 2 1 di
+: 1076 1 1 bu
+: 1083 4 1 jar
+: 1094 5 -1 se
+- 1099 1153
+- 1153
+: 1180 2 1 qui
+: 1187 5 2 zás 
+: 1200 2 1 es 
+: 1208 3 4 lo 
+: 1216 10 4 que hay 
+: 1241 2 2 que ha
+: 1249 12 1 cer
+: 1262 10 4 ~
+- 1272 1336
+- 1336
+* 1363 3 -3 Flo
+* 1370 7 9 tan
+* 1384 4 8 do 
+: 1397 5 6 por 
+: 1404 2 4 el 
+: 1407 10 4 ai
+: 1420 4 1 re
+- 1424 1498
+- 1498
+: 1525 2 -3 las 
+: 1533 4 9 co
+: 1541 5 8 pas 
+: 1553 5 6 no 
+: 1566 3 4 se 
+: 1571 7 4 ven
+- 1578 1661
+- 1661
+: 1688 2 2 las 
+: 1696 4 4 ho
+: 1702 4 2 ras 
+: 1715 8 4 que 
+: 1727 3 2 no 
+: 1737 5 1 pa
+: 1748 4 -1 san 
+: 1757 7 2 más
+- 1764 1824
+- 1824
+: 1851 2 2 los 
+: 1859 5 4 dí
+: 1865 5 2 as 
+: 1877 6 4 que es
+: 1890 2 2 tán 
+: 1899 5 1 por 
+: 1912 5 -1 lle
+: 1919 7 2 gar
+- 1926 2115
+- 2115
+* 2142 5 9 A
+* 2153 5 8 ni
+* 2163 5 6 mar
+* 2177 4 4 se a 
+* 2185 3 6 ver 
+* 2206 1 1 lo 
+* 2211 2 1 que 
+* 2217 1 -1 te 
+: 2222 4 -1 pa
+: 2233 3 1 sa
+- 2236 2279
+- 2279
+: 2306 7 9 sa
+: 2316 7 8 bia
+: 2328 4 6 men
+: 2340 2 4 te 
+: 2347 5 6 pue
+: 2355 3 4 des 
+: 2369 3 1 a
+: 2378 3 -1 pren
+: 2388 6 1 der
+- 2394 2454
+- 2454
+: 2481 2 -6 El 
+: 2489 2 1 que 
+: 2495 2 1 no es
+: 2503 4 4 tá 
+: 2529 2 -6 en 
+: 2536 1 1 nin
+: 2543 2 1 gún 
+: 2550 4 1 la
+: 2557 5 -1 do
+- 2562 2617
+- 2617
+: 2644 2 1 que es 
+: 2652 5 2 lo 
+: 2665 2 1 que 
+: 2673 3 2 pue
+: 2677 4 4 ~
+: 2683 4 4 de 
+: 2706 1 2 per
+: 2713 12 1 der
+: 2726 11 4 ~
+- 2737 2801
+- 2801
+: 2828 3 -3 Flo
+: 2835 1 6 tan
+: 2837 6 9 ~
+: 2848 6 8 do 
+: 2863 4 6 por 
+: 2869 1 4 el 
+: 2872 8 4 ai
+: 2881 2 1 ~
+: 2885 5 1 re
+- 2890 2962
+- 2962
+: 2989 2 -3 las 
+: 2997 4 9 co
+: 3005 5 8 pas 
+: 3018 6 6 no 
+: 3031 2 4 se 
+: 3036 8 4 ven
+- 3044 3126
+- 3126
+: 3153 2 2 las 
+: 3161 5 4 ho
+: 3168 3 2 ras 
+: 3181 7 4 que 
+: 3193 2 2 no 
+: 3201 4 1 pa
+: 3213 4 -1 san 
+: 3223 5 2 más
+- 3228 3288
+- 3288
+: 3315 2 2 los 
+: 3322 6 4 dí
+: 3329 4 2 as 
+: 3343 4 4 que es
+: 3355 2 2 tán 
+: 3363 5 1 por 
+: 3376 4 -1 lle
+: 3383 8 2 gar
+- 3391 4266
+- 4266
+: 4293 2 -3 Flo
+: 4299 1 4 tan
+: 4301 5 9 ~
+: 4313 5 8 do 
+: 4325 4 6 por 
+: 4332 2 4 el 
+: 4336 5 4 ai
+: 4342 4 1 ~
+: 4349 5 1 re
+- 4354 4426
+- 4426
+: 4453 2 -3 las 
+: 4462 4 9 co
+: 4469 5 8 pas 
+: 4483 4 6 no 
+: 4495 2 4 se 
+: 4501 7 4 ven
+- 4508 4590
+- 4590
+: 4617 2 2 las 
+: 4625 5 4 ho
+: 4632 3 2 ras 
+: 4645 7 4 que 
+: 4658 2 2 no 
+: 4665 4 1 pa
+: 4676 3 -1 san 
+: 4685 7 2 más
+- 4692 4753
+- 4753
+: 4780 2 2 los 
+: 4788 4 4 dí
+: 4793 1 2 ~
+: 4795 4 2 as 
+: 4807 5 4 que es
+: 4820 2 2 tán 
+: 4828 5 1 por 
+: 4841 4 -1 lle
+: 4848 7 2 gar
+E
