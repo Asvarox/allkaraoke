@@ -12,7 +12,7 @@ image: https://developers.cloudflare.com/dev-products-preview.png
 
 # Write your first test
 
-This guide will instruct you through getting started with the `@cloudflare/vitest-pool-workers` package. For more complex examples of testing using `@cloudflare/vitest-pool-workers`, refer to [Recipes](https://developers.cloudflare.com/workers/testing/vitest-integration/recipes/).
+This guide will instruct you through getting started with the `@cloudflare/vitest-plugin` package. For more complex examples of testing using `@cloudflare/vitest-plugin`, refer to [Recipes](https://developers.cloudflare.com/workers/testing/vitest-integration/recipes/).
 
 ## Prerequisites
 
@@ -20,27 +20,27 @@ First, make sure that:
 
 - Your [compatibility date](https://developers.cloudflare.com/workers/configuration/compatibility-dates/) is set to `2022-10-31` or later.
 - Your Worker using the ES modules format (if not, refer to the [migrate to the ES modules format](https://developers.cloudflare.com/workers/reference/migrate-to-module-workers/) guide).
-- Vitest and `@cloudflare/vitest-pool-workers` are installed in your project as dev dependencies  
+- Vitest and `@cloudflare/vitest-plugin` are installed in your project as dev dependencies  
   npm yarn pnpm bun
 
 ```
-npm i -D vitest@^4.1.0 @cloudflare/vitest-pool-workers
+npm i -D vitest@^5.0.0 @cloudflare/vitest-plugin
 ```
 
 ```
-yarn add -D vitest@^4.1.0 @cloudflare/vitest-pool-workers
+yarn add -D vitest@^5.0.0 @cloudflare/vitest-plugin
 ```
 
 ```
-pnpm add -D vitest@^4.1.0 @cloudflare/vitest-pool-workers
+pnpm add -D vitest@^5.0.0 @cloudflare/vitest-plugin
 ```
 
 ```
-bun add -d vitest@^4.1.0 @cloudflare/vitest-pool-workers
+bun add -d vitest@^5.0.0 @cloudflare/vitest-plugin
 ```
 
 Note  
-The `@cloudflare/vitest-pool-workers` package requires Vitest 4.1 or later.
+The `@cloudflare/vitest-plugin` package supports Vitest 4.1 and 5.
 
 ## Define Vitest configuration
 
@@ -52,7 +52,7 @@ vitest.config.ts
 
 ```
 
-import { cloudflareTest } from "@cloudflare/vitest-pool-workers";
+import { cloudflareTest } from "@cloudflare/vitest-plugin";
 
 import { defineConfig } from "vitest/config";
 
@@ -115,7 +115,7 @@ If you are not using Typescript, you can skip this section.
 
 First make sure you have run [wrangler types](https://developers.cloudflare.com/workers/wrangler/commands/), which generates [types for the Cloudflare Workers runtime](https://developers.cloudflare.com/workers/languages/typescript/) and an `Env` type based on your Worker's bindings.
 
-Then add a `tsconfig.json` in your tests folder and add `"@cloudflare/vitest-pool-workers"` to your types array to define types for `cloudflare:test`. You should also add the output of `wrangler types` to the `include` array so that the types for the Cloudflare Workers runtime are available.
+Then add a `tsconfig.json` in your tests folder and add `"@cloudflare/vitest-plugin/types"` to your types array to define types for `cloudflare:test`. You should also add the output of `wrangler types` to the `include` array so that the types for the Cloudflare Workers runtime are available.
 
 Example test/tsconfig.json
 
@@ -133,7 +133,7 @@ test/tsconfig.json
 
     "types": [
 
-      "@cloudflare/vitest-pool-workers/types", // provides `cloudflare:test` and `cloudflare:workers` types
+      "@cloudflare/vitest-plugin/types", // provides `cloudflare:test` and `cloudflare:workers` types
 
     ],
 
@@ -385,7 +385,7 @@ When using `exports.default.fetch()` for integration tests, your Worker code run
 
 ## Related resources
 
-- For more complex examples of testing using `@cloudflare/vitest-pool-workers`, refer to [Recipes](https://developers.cloudflare.com/workers/testing/vitest-integration/recipes/).
+- For more complex examples of testing using `@cloudflare/vitest-plugin`, refer to [Recipes](https://developers.cloudflare.com/workers/testing/vitest-integration/recipes/).
 - [Configuration API reference](https://developers.cloudflare.com/workers/testing/vitest-integration/configuration/)
 - [Test APIs reference](https://developers.cloudflare.com/workers/testing/vitest-integration/test-apis/)
 
