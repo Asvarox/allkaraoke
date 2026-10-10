@@ -303,7 +303,12 @@ function CalibrationStep({ onDone }: { onDone: () => void }) {
   return showIntro ? (
     <CalibrationIntro onContinue={() => setShowIntro(false)} />
   ) : (
-    <Calibration onSave={onDone} onClose={() => setShowIntro(true)} saveLabel="Looks good, enter the room" />
+    <Calibration
+      source="online"
+      onSave={onDone}
+      onClose={() => setShowIntro(true)}
+      saveLabel="Looks good, enter the room"
+    />
   );
 }
 

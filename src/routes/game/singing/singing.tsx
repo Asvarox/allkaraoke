@@ -104,7 +104,7 @@ function Singing({ songPreview, singSetup, returnToSongSelection, restartSong }:
                   {showCalibrationIntro ? (
                     <CalibrationIntro onContinue={() => setShowCalibrationIntro(false)} />
                   ) : (
-                    <Calibration onSave={() => setIsCalibrated(true)} />
+                    <Calibration source="song" onSave={() => setIsCalibrated(true)} />
                   )}
                 </Menu>
               )}
