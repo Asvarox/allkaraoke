@@ -6,13 +6,10 @@ import { Icon } from '~/modules/elements/akui/icon';
 import { dialogSurface } from '~/modules/elements/akui/surfaces';
 import { useBackground } from '~/modules/elements/background-context';
 import SongPreviewLayout from '~/modules/elements/song-preview-layout';
-import SongPreviewLayoutLegacy from '~/modules/elements/song-preview-layout-legacy';
 import VideoPlayer, { VideoPlayerRef, VideoState } from '~/modules/elements/video-player/index';
 import useDebounce from '~/modules/hooks/use-debounce';
 import { SongCard } from '~/routes/sing-a-song/song-selection/components/song-card';
 import SongSettings from '~/routes/sing-a-song/song-selection/components/song-settings/index';
-import SongSettingsLegacy from '~/routes/sing-a-song/song-selection/components/song-settings/legacy/song-settings';
-import useSongPreviewRedesign from '~/routes/sing-a-song/song-selection/hooks/use-song-preview-redesign';
 import { cn } from '~/utils/cn';
 
 interface Props {
@@ -49,10 +46,6 @@ export default function SongPreviewComponent({
   const thumbnailRef = useRef<HTMLDivElement | null>(null);
   const thumbnailSize = useRef<{ w: number; h: number } | null>(null);
   useBackground(true, 'regular');
-  // The `song_preview_redesign` experiment's test arm; control is the preview before it, in the legacy files
-  const redesign = useSongPreviewRedesign();
-  const Layout = redesign ? SongPreviewLayout : SongPreviewLayoutLegacy;
-  const Settings = redesign ? SongSettings : SongSettingsLegacy;
 
   const expanded = keyboardControl;
 
@@ -130,16 +123,6 @@ export default function SongPreviewComponent({
     [videoId, previewStart, previewEnd, fullSongStart],
   );
 
-  // The legacy layout's way back on a phone. Pointer and touch only — the keyboard has Backspace
-  const backButton = (
-    <button
-      onClick={onExitKeyboardControl}
-      className="text-active flex items-center gap-1.5 transition-colors hover:opacity-80">
-      <Icon icon="ic:baseline-arrow-back" className="text-lg" />
-      <span className="text-lg font-bold">Sing a song</span>
-    </button>
-  );
-
   const animationDurationSec =
     60 /
     (songPreview.realBpm && songPreview.realBpm > 40
@@ -186,63 +169,41 @@ export default function SongPreviewComponent({
           // Expanded it fills a phone or tablet, and on the widest layout is a large dialog, clear of the
           // app's toolbar above it, the same gap below (the keyboard help may overlap it). Its opening is the view transition's: the
           // card's own transitions would start it from the collapsed card's offset in the list, far below.
-          expanded && !redesign
-            ? `${dialogSurface} z-expanded fixed inset-0 overflow-y-auto rounded-none p-3 transition-none sm:top-1/2 sm:right-auto sm:bottom-auto sm:left-1/2 sm:h-auto sm:min-h-[72vh] sm:w-[min(90vw,72rem)] sm:-translate-x-1/2 sm:-translate-y-1/2 sm:overflow-hidden sm:rounded-2xl sm:p-4`
-            : expanded
-              ? cn(
-                  dialogSurface,
-                  'z-expanded fixed inset-0 overflow-y-auto rounded-none p-3 transition-none max-md:portrait:pt-2 md:portrait:p-5 max-lg:landscape:py-2',
-                  'lg:landscape:top-16 lg:landscape:bottom-16 lg:landscape:mx-auto lg:landscape:h-auto lg:landscape:w-[min(94vw,110rem)] lg:landscape:rounded-2xl lg:landscape:px-6 lg:landscape:pt-6',
-                  'lg:landscape:pb-6',
-                )
-              : `absolute z-3 bg-slate-800 transition-opacity ${
-                  showVideo ? 'opacity-100 duration-300' : 'pointer-events-none opacity-0 duration-0'
-                }`
+          expanded
+            ? cn(
+                dialogSurface,
+                'z-expanded fixed inset-0 overflow-y-auto rounded-none p-3 transition-none max-md:portrait:pt-2 md:portrait:p-5 max-lg:landscape:py-2',
+                'lg:landscape:top-16 lg:landscape:bottom-16 lg:landscape:mx-auto lg:landscape:h-auto lg:landscape:w-[min(94vw,110rem)] lg:landscape:rounded-2xl lg:landscape:px-6 lg:landscape:pt-6',
+                'lg:landscape:pb-6',
+              )
+            : `absolute z-3 bg-slate-800 transition-opacity ${
+                showVideo ? 'opacity-100 duration-300' : 'pointer-events-none opacity-0 duration-0'
+              }`
         }
         style={expanded ? {} : { width, height, top, left }}>
         {/* Click-capture overlay — collapsed only */}
         {!expanded && <div className="absolute inset-0 z-10 cursor-pointer" onClick={onExpand} />}
 
-        <Layout
+        <SongPreviewLayout
           expanded={expanded}
-          back={backButton}
           title={
             <div className="flex min-w-0 items-center gap-2">
               {/* The dialog's own way back, beside its title */}
               <button
                 onClick={onExitKeyboardControl}
                 aria-label="Back to the song list"
-                className={cn(
-                  'text-active hidden shrink-0 cursor-pointer items-center',
-                  redesign ? 'flex' : 'sm:flex',
-                )}>
+                className="text-active flex shrink-0 cursor-pointer items-center">
                 <Icon
                   icon="ic:baseline-arrow-back"
                   // A step up from the title beside it, which is a size down on a phone
-                  className={
-                    redesign
-                      ? 'text-xl md:portrait:text-2xl max-lg:landscape:text-lg lg:landscape:text-2xl'
-                      : 'text-xl md:text-2xl'
-                  }
+                  className="text-xl md:portrait:text-2xl max-lg:landscape:text-lg lg:landscape:text-2xl"
                 />
               </button>
-              <SongCard.SongTitle
-                className={
-                  redesign
-                    ? 'typography max-lg:landscape:text-md line-clamp-2 min-w-0 flex-1 whitespace-normal! [view-transition-name:song-preview-title] md:portrait:text-xl max-lg:landscape:line-clamp-1 lg:landscape:text-xl'
-                    : 'typography min-w-0 flex-1 truncate text-xl! [view-transition-name:song-preview-title] sm:text-3xl!'
-                }
-              />
+              <SongCard.SongTitle className="typography max-lg:landscape:text-md line-clamp-2 min-w-0 flex-1 whitespace-normal! [view-transition-name:song-preview-title] md:portrait:text-xl max-lg:landscape:line-clamp-1 lg:landscape:text-xl" />
             </div>
           }
           artist={
-            <SongCard.Artist
-              className={
-                redesign
-                  ? 'typography md:portrait:text-md! lg:landscape:text-md! text-sm! [view-transition-name:song-preview-artist]'
-                  : 'typography text-md truncate [view-transition-name:song-preview-artist] sm:text-xl'
-              }
-            />
+            <SongCard.Artist className="typography md:portrait:text-md! lg:landscape:text-md! text-sm! [view-transition-name:song-preview-artist]" />
           }
           thumbnail={
             <SongCard.Thumbnail
@@ -250,7 +211,7 @@ export default function SongPreviewComponent({
               className={cn(
                 'w-full [view-transition-name:song-preview-thumbnail]',
                 // Opened on the widest layout, as tall as its row, which gives way when the settings need the room
-                expanded && redesign && 'lg:landscape:h-full lg:landscape:w-auto lg:landscape:max-w-full',
+                expanded && 'lg:landscape:h-full lg:landscape:w-auto lg:landscape:max-w-full',
               )}>
               <div className={showVideo ? 'opacity-100 transition-opacity duration-500' : 'opacity-0'}>
                 <VideoPlayer
@@ -277,7 +238,7 @@ export default function SongPreviewComponent({
             </SongCard.Footer>
           }
           footer={
-            <Settings
+            <SongSettings
               songPreview={songPreview}
               onPlay={onPlay}
               keyboardControl={keyboardControl}

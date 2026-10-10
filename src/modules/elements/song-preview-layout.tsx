@@ -10,8 +10,6 @@ interface Props {
    * list, which only lays out the thumbnail and its footer.
    */
   expanded: boolean;
-  /** Not drawn: the title carries the way back. Kept so both preview layouts take the same props */
-  back?: ReactNode;
   title: ReactNode;
   artist: ReactNode;
   /**
