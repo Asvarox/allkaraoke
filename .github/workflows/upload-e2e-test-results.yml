@@ -63,7 +63,10 @@ jobs:
           path: ./all-blob-reports
       - name: Merge into HTML Report
         if: steps.reports_check.outputs.playwright == 'true'
-        run: npx playwright merge-reports --reporter html ./all-blob-reports
+        # The e2e and Storybook suites use different testDirs, so a common one is forced for the merge
+        run: |
+          echo "export default { testDir: 'tests' };" > merge.config.mjs
+          npx playwright merge-reports -c merge.config.mjs --reporter html ./all-blob-reports
       - name: Copy resources # for some reason, the resources are not copied automatically
         if: steps.reports_check.outputs.playwright == 'true'
         run: cp -r ./all-blob-reports/resources ./playwright-report/resources
