@@ -3,30 +3,11 @@ import fs from 'fs';
 import dotenv from 'dotenv';
 
 import currentSongs from '../public/songs/index.json';
+import { requestPostHog } from './utils.cjs';
 
 dotenv.config({ path: '.env.local' });
 
-const API_URL = 'https://eu.posthog.com';
-const PROJECT_ID = '281';
-
 const TOP_SONGS_COUNT = 500;
-
-const makeRequest = async (url: string, options: RequestInit = {}) => {
-  const response = await fetch(`${API_URL}${url}`, {
-    ...options,
-    headers: {
-      'Content-Type': 'application/json',
-      ...options.headers,
-      Authorization: `Bearer ${process.env.VITE_APP_POSTHOG_KEY}`,
-    },
-  });
-
-  if (!response.ok) {
-    throw new Error(`Request failed with status ${response.status}`);
-  }
-
-  return response.json();
-};
 
 interface Response {
   // ["songId", "played", "sessions", "users"]
@@ -34,7 +15,7 @@ interface Response {
 }
 
 (async () => {
-  const response: Response = await makeRequest(`/api/projects/${PROJECT_ID}/query`, {
+  const response: Response = await requestPostHog('query', {
     method: 'POST',
     body: JSON.stringify({
       query: {
