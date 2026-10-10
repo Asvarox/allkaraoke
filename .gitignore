@@ -155,7 +155,7 @@ ds-bundle/
 # Vitest browser mode failure screenshots
 __screenshots__/
 # Vitest browser mode screenshot diffs
-/.vitest-attachments/
+/.vitest/
 /vitest-report/
 # Locally rendered browser test references - only the `-ci` ones rendered in the CI container are committed
 /__snapshots__/**/*-darwin.png

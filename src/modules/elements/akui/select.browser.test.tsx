@@ -27,7 +27,7 @@ test('should filter options by search and commit with Enter', async () => {
   await expect.element(listbox).not.toHaveTextContent('Poland');
 
   await userEvent.keyboard('{Enter}');
-  await expect.element(screen.getByTestId('committed-value')).toHaveTextContent(/^de$/);
+  await expect.element(screen.getByTestId('committed-value')).toHaveTextContent('de');
   await expect.element(input).toHaveValue('Germany');
   await expect.element(listbox).not.toBeInTheDocument();
 });
@@ -46,7 +46,7 @@ test('should select with the arrow keys', async () => {
 
   await userEvent.keyboard('{ArrowDown}');
   await userEvent.keyboard('{Enter}');
-  await expect.element(screen.getByTestId('committed-value')).toHaveTextContent(/^pl$/);
+  await expect.element(screen.getByTestId('committed-value')).toHaveTextContent('pl');
 });
 
 test('should revert the search on Escape and keep the committed value', async () => {
@@ -63,7 +63,7 @@ test('should revert the search on Escape and keep the committed value', async ()
   await userEvent.keyboard('{Escape}');
   await expect.element(listbox).not.toBeInTheDocument();
   await expect.element(input).toHaveValue('United Kingdom');
-  await expect.element(screen.getByTestId('committed-value')).toHaveTextContent(/^gb$/);
+  await expect.element(screen.getByTestId('committed-value')).toHaveTextContent('gb');
 });
 
 test('should commit an option on click', async () => {
@@ -72,7 +72,7 @@ test('should commit an option on click', async () => {
   await screen.getByRole('combobox').click();
   await screen.getByRole('option', { name: 'Poland' }).click();
 
-  await expect.element(screen.getByTestId('committed-value')).toHaveTextContent(/^pl$/);
+  await expect.element(screen.getByTestId('committed-value')).toHaveTextContent('pl');
 });
 
 test('should keep the first option reachable when the list overflows', async () => {

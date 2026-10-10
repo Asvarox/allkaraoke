@@ -20,7 +20,7 @@ description: Use when Codex updates, fixes, or adds unit tests in this project. 
 
 For tests that exercise Cloudflare Workers, Pages Functions, KV storage, or other Cloudflare runtime bindings:
 
-- Prefer `@cloudflare/vitest-pool-workers` over hand-written mocks for Cloudflare bindings.
+- Prefer `@cloudflare/vitest-plugin` over hand-written mocks for Cloudflare bindings.
 - Import runtime bindings from `cloudflare:workers`, for example `env.SHARED_SONGS_KV`.
 - Use `cloudflare:test` helpers when needed, such as `reset()` for storage cleanup between tests.
 - Keep Cloudflare tests in the Vitest project configured with the Cloudflare worker-pool plugin.

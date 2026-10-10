@@ -304,7 +304,7 @@ so specs that are not about the leaderboard call
 `pages.postGameHighScoresPage.dismissLeaderboardPrompt()` to decline it on the high-scores step.
 
 - `worker/leaderboard-do.test.ts`, `worker/leaderboard.test.ts` — Durable Object and route
-  behaviour, under `@cloudflare/vitest-pool-workers`. These live in the `functions` vitest project;
+  behaviour, under `@cloudflare/vitest-plugin`. These live in the `functions` vitest project;
   `vite.config.mts` includes `worker/**/*.test.ts` there.
 - `src/stories/post-game-scoreboards.stories.tsx` — the high-scores step in Storybook, with both
   scoreboards. The scores on that screen come from `GameState` and `PlayersManager` rather than from
