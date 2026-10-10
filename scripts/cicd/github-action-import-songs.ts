@@ -127,13 +127,12 @@ type ImportedSongSummary = {
         promotedSongs.add(song.id);
 
         const songFilePath = `./public/songs/${song.id}.txt`;
-        if (fs.existsSync(songFilePath)) {
-          const oldSong = convertTxtToSong(fs.readFileSync(songFilePath, 'utf-8'));
-          // keep old last update time if the song exists
-          // song.lastUpdate = oldSong.lastUpdate ?? song.lastUpdate;
+        const oldSong = fs.existsSync(songFilePath)
+          ? convertTxtToSong(fs.readFileSync(songFilePath, 'utf-8'))
+          : undefined;
+        if (oldSong) {
           song.artistOrigin = song.artistOrigin ?? oldSong.artistOrigin;
           song.shortId = oldSong.shortId;
-          rememberSongStatus(song.id, 'UPDATED');
         } else {
           addedSongs.push(song.id);
           song.shortId = ++maxId;
@@ -151,7 +150,19 @@ type ImportedSongSummary = {
           } catch (error) {
             const errorMessage = error instanceof Error ? error.message : String(error);
             console.warn(`Could not fetch duration for ${song.id}: ${errorMessage}`);
+            song.duration = song.duration ?? oldSong?.duration;
           }
+        }
+
+        if (oldSong) {
+          // Leave the file untouched if the only change would be the last update date
+          const oldSongTxt = convertSongToTxt(oldSong);
+          if (convertSongToTxt({ ...song, lastUpdate: oldSong.lastUpdate }) === oldSongTxt) {
+            rememberSongStatus(song.id, 'SKIPPED');
+            console.log(`Song ${song.id} has no changes besides last update, skipping`);
+            continue;
+          }
+          rememberSongStatus(song.id, 'UPDATED');
         }
 
         fs.writeFileSync(songFilePath, convertSongToTxt(song));
