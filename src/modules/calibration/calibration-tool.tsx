@@ -7,7 +7,11 @@ import isE2E from '~/modules/utils/is-e2-e';
 import { useVideoPlayer } from '~/routes/game/singing/hooks/use-video-player';
 import { cn } from '~/utils/cn';
 
-export const CalibrationTool = () => {
+type Props = {
+  onStart?: () => void;
+};
+
+export const CalibrationTool = ({ onStart }: Props) => {
   // The circle shrinks from full size to nothing every 250ms of video time, so a screenshot can catch it
   // at any size (or mid-remount). In E2E it's pinned to its full-size first frame instead.
   const frozen = isE2E();
@@ -25,8 +29,9 @@ export const CalibrationTool = () => {
   useEffect(() => {
     if (currentStatus === VideoState.PLAYING) {
       playerRef.current?.setPlaybackSpeed(0.25);
+      onStart?.();
     }
-  }, [currentStatus]);
+  }, [currentStatus, onStart]);
 
   return (
     // Pinned to the player's height: the YouTube embed is an empty placeholder div until its API

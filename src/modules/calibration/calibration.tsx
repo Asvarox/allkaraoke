@@ -1,4 +1,5 @@
-import { useRef } from 'react';
+import posthog from 'posthog-js';
+import { useRef, useState } from 'react';
 
 import { CalibrationTool } from '~/modules/calibration/calibration-tool';
 import { Menu } from '~/modules/elements/akui/menu';
@@ -13,6 +14,8 @@ type Props = {
   onClose?: () => void;
   /** What confirming actually leads to — the online wizard enters a room rather than starting a song. */
   saveLabel?: string;
+  /** Where the calibration was opened from, reported with the `calibrationSaved` event. */
+  source: 'song' | 'online' | 'settings';
 };
 
 // The three hint lines are rendered both by the screen itself and by `CalibrationLayoutReserve`
@@ -63,9 +66,22 @@ export const CalibrationLayoutReserve = () => (
   </div>
 );
 
-export const Calibration = ({ onClose, onSave, saveLabel = 'Looks good, play the song' }: Props) => {
+export const Calibration = ({ onClose, onSave, source, saveLabel = 'Looks good, play the song' }: Props) => {
   const inputLagRef = useRef<HTMLInputElement | null>(null);
   const [inputLag] = useSettingValue(InputLagSetting);
+  const [initialInputLag] = useState(inputLag);
+  const startedRef = useRef(false);
+
+  const save = () => {
+    posthog.capture('calibrationSaved', {
+      source,
+      started: startedRef.current,
+      changed: inputLag !== initialInputLag,
+      inputLag,
+      initialInputLag,
+    });
+    onSave();
+  };
 
   const { register } = useKeyboardNav({
     onBackspace: onClose,
@@ -76,7 +92,7 @@ export const Calibration = ({ onClose, onSave, saveLabel = 'Looks good, play the
     <KeyboardNavContext value={register}>
       <Menu.Header>Sync video with sound</Menu.Header>
       <CircleSyncHint />
-      <CalibrationTool />
+      <CalibrationTool onStart={() => (startedRef.current = true)} />
       <ClickBeforeHint />
       <InputLag
         ref={inputLagRef}
@@ -86,7 +102,7 @@ export const Calibration = ({ onClose, onSave, saveLabel = 'Looks good, play the
       />
       <ClickAfterHint />
       <Menu.Divider />
-      <NavButton name="save" onClick={onSave}>
+      <NavButton name="save" onClick={save}>
         {saveLabel}
       </NavButton>
     </KeyboardNavContext>

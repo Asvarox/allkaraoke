@@ -6,7 +6,7 @@ export const CalibrationSettings = () => {
   const navigate = useSmoothNavigate();
   return (
     <MenuWithLogo>
-      <Calibration onSave={() => navigate('settings/')} />
+      <Calibration source="settings" onSave={() => navigate('settings/')} />
     </MenuWithLogo>
   );
 };
