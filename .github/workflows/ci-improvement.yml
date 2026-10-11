@@ -154,8 +154,8 @@ jobs:
       image: docker://mcr.microsoft.com/playwright:v1.63.0-jammy
     runs-on: ubuntu-latest
     env:
-      # The HTML report is published next to the Playwright one by upload-e2e-test-results.yml
-      VITEST_REPORTERS: --reporter=default --reporter=html --outputFile.html=vitest-report/index.html
+      # The HTML report (written to .vitest) is published next to the Playwright one by upload-e2e-test-results.yml
+      VITEST_REPORTERS: --reporter=default --reporter=html
     steps:
       - uses: actions/checkout@v5
       - name: Setup Node
@@ -183,6 +183,7 @@ jobs:
         if: failure()
         with:
           name: browser-tests-attachments
+          include-hidden-files: true
           path: |
             .vitest/attachments
             **/__screenshots__
@@ -190,7 +191,8 @@ jobs:
         if: failure()
         with:
           name: test-results-vitest-browser
-          path: vitest-report
+          include-hidden-files: true # Vitest 5's HTML reporter writes to .vitest, ignoring --outputFile
+          path: .vitest
 
   visual-regression-tests-run:
     if: github.ref != 'refs/heads/master'
