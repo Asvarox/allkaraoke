@@ -14,6 +14,7 @@ import useViewportSize from '~/modules/hooks/use-viewport-size';
 import PlayersManager from '~/modules/players/players-manager';
 import useSong from '~/modules/songs/hooks/use-song';
 import { CalibrationIntro } from '~/routes/game/singing/calibration-intro';
+import useCalibrationBeforeFirstSong from '~/routes/game/singing/use-calibration-before-first-song';
 import WaitForReadiness from '~/routes/game/singing/wait-for-readiness';
 import LayoutGame from '~/routes/layout-game';
 import { IsCalibratedSetting, useSettingValue } from '~/routes/settings/settings-state';
@@ -47,17 +48,14 @@ function Singing({ songPreview, singSetup, returnToSongSelection, restartSong }:
 
   useBackground(!isTransitionTimeout);
 
-  const showCalibration = !isCalibrated;
+  const calibrationGate = useCalibrationBeforeFirstSong(isCalibrated);
+  const showCalibration = calibrationGate === 'show';
+  const readyToSing = calibrationGate === 'hide';
   useEffect(() => {
-    if (
-      !showCalibration &&
-      isOverlayVisible &&
-      song.data &&
-      (isTransitionTimeout || playerState !== VideoState.UNSTARTED)
-    ) {
+    if (readyToSing && isOverlayVisible && song.data && (isTransitionTimeout || playerState !== VideoState.UNSTARTED)) {
       setIsOverlayVisible(false);
     }
-  }, [song.data, isTransitionTimeout, playerState, isOverlayVisible, showCalibration]);
+  }, [song.data, isTransitionTimeout, playerState, isOverlayVisible, readyToSing]);
 
   if (isEnded && song.data) {
     return (
@@ -109,7 +107,7 @@ function Singing({ songPreview, singSetup, returnToSongSelection, restartSong }:
                 </Menu>
               )}
             </Modal>
-            {!showCalibration && (
+            {readyToSing && (
               <WaitForReadiness
                 onFinish={() => {
                   setIsTransitionTimeout(true);
@@ -118,7 +116,7 @@ function Singing({ songPreview, singSetup, returnToSongSelection, restartSong }:
               />
             )}
           </div>
-          {song.data && !showCalibration && (
+          {song.data && readyToSing && (
             <Player
               pauseMenu
               ref={player}
