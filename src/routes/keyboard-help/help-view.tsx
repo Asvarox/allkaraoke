@@ -48,16 +48,17 @@ export default function KeyboardHelpView({ help }: Props) {
             </UseKeyboardIndicator>
             {helps.map(([type, label]) => {
               const { view: Component, defaultLabel } = KeyhelpComponent[type as keyof RegularHelpEntry];
+              const text = label ?? defaultLabel;
               return (
-                <Section key={type}>
+                <Section key={type} style={{ viewTransitionName: sectionTransitionName(type, text) }}>
                   <SectionKeys>
                     <Component />
                   </SectionKeys>
-                  <SectionHelp>{label ?? defaultLabel}</SectionHelp>
+                  <SectionHelp>{text}</SectionHelp>
                 </Section>
               );
             })}
-            <Section>
+            <Section className="[view-transition-name:help-view-toggle]">
               <SectionKeys>{ShiftLetter('h')()}</SectionKeys>
               <SectionHelp>Toggle this help</SectionHelp>
             </Section>
@@ -67,6 +68,14 @@ export default function KeyboardHelpView({ help }: Props) {
     </>
   );
 }
+
+// A name per key + label, so an entry present (unchanged) on both views stays put during a view
+// transition, while one that appears, disappears or changes its label fades in/out as a whole.
+const sectionTransitionName = (type: string, label: string) => {
+  let hash = 0;
+  for (const char of label) hash = (Math.imul(hash, 31) + char.charCodeAt(0)) | 0;
+  return `help-view-${type}-${(hash >>> 0).toString(36)}`;
+};
 
 const HorizontalVerticalBase = ({ vertical = false, horizontal = false }) => (
   <>
