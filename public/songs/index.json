@@ -10986,6 +10986,34 @@
     "local": false
   },
   {
+    "id": "annie-lennox-why",
+    "title": "Why",
+    "artist": "Annie Lennox",
+    "video": "HG7I4oniOyA",
+    "language": [
+      "English"
+    ],
+    "bpm": 364,
+    "gap": 21130.98901098901,
+    "year": "1992",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-10-12T03:36:48.210Z",
+    "genre": "Soul",
+    "realBpm": 88,
+    "volume": 1,
+    "author": "Angs",
+    "duration": 293,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6593,
+    "tracksCount": 1,
+    "search": "annielennoxwhy",
+    "local": false
+  },
+  {
     "id": "annie-rojas-mis-suenos-se-hacen-realidad-doraemon",
     "title": "Mis sueños se hacen realidad, Doraemon",
     "artist": "Annie Rojas",
@@ -15097,6 +15125,37 @@
     "shortId": 383,
     "tracksCount": 1,
     "search": "avantasialostinspace",
+    "local": false
+  },
+  {
+    "id": "avatar-bloody-angel",
+    "title": "Bloody Angel",
+    "artist": "Avatar",
+    "video": "h71NBBbOjmw",
+    "language": [
+      "English"
+    ],
+    "bpm": 183,
+    "gap": 93316.39344262295,
+    "year": "2014",
+    "artistOrigin": "SE",
+    "lastUpdate": "2026-10-12T03:36:49.169Z",
+    "genre": "Nu Metal",
+    "videoGap": 13,
+    "realBpm": 183,
+    "previewStart": 60,
+    "volume": 1,
+    "author": "Avatar",
+    "duration": 379,
+    "tracks": [
+      {
+        "name": "Bloody Angel",
+        "start": 12
+      }
+    ],
+    "shortId": 6601,
+    "tracksCount": 1,
+    "search": "avatarbloodyangel",
     "local": false
   },
   {
@@ -20796,6 +20855,34 @@
     "shortId": 6275,
     "tracksCount": 1,
     "search": "bensonboonenightslikethese",
+    "local": false
+  },
+  {
+    "id": "benson-boone-sorry-im-here-for-someone-else",
+    "title": "Sorry I’m Here For Someone Else",
+    "artist": "Benson Boone",
+    "video": "O7Dt2L_rAhI",
+    "language": [
+      "English"
+    ],
+    "bpm": 297,
+    "gap": -6.0606060606060055,
+    "year": "2025",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-12T03:36:46.903Z",
+    "realBpm": 150,
+    "volume": 1,
+    "author": "DS",
+    "sourceUrl": "https://www.youtube.com/watch?v=O7Dt2L_rAhI",
+    "duration": 157,
+    "tracks": [
+      {
+        "start": 12
+      }
+    ],
+    "shortId": 6587,
+    "tracksCount": 1,
+    "search": "bensonboonesorryimhereforsomeoneelse",
     "local": false
   },
   {
@@ -47300,6 +47387,35 @@
     "local": false
   },
   {
+    "id": "digimon-digimon-3",
+    "title": "Digimon 3",
+    "artist": "Digimon",
+    "video": "TnIAnO0e_34",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 267.94,
+    "gap": 1887.3117115772186,
+    "year": "2001",
+    "artistOrigin": "ES",
+    "lastUpdate": "2026-10-12T03:36:48.393Z",
+    "realBpm": 133,
+    "volume": 1,
+    "author": "ASL",
+    "sourceUrl": "https://www.youtube.com/watch?v=TnIAnO0e_34",
+    "duration": 90,
+    "tracks": [
+      {
+        "name": "Digimon Tamers Castellano",
+        "start": 18
+      }
+    ],
+    "shortId": 6596,
+    "tracksCount": 1,
+    "search": "digimondigimon3",
+    "local": false
+  },
+  {
     "id": "digimon-leb-deinen-traum",
     "title": "Leb deinen Traum",
     "artist": "Digimon",
@@ -48082,6 +48198,33 @@
     "shortId": 6569,
     "tracksCount": 1,
     "search": "disneyscamprock2thisisoursong",
+    "local": false
+  },
+  {
+    "id": "disneys-camp-rock-demi-lovato-joe-jonas-this-is-me",
+    "title": "This Is Me",
+    "artist": "Disney’s Camp Rock (Demi Lovato & Joe Jonas)",
+    "video": "fD6DoCTnTaY",
+    "language": [
+      "English"
+    ],
+    "bpm": 272.76,
+    "gap": 4410.118785745711,
+    "year": "2008",
+    "lastUpdate": "2026-10-12T03:36:49.819Z",
+    "genre": "Soundtrack",
+    "realBpm": 91,
+    "volume": 1,
+    "author": "Phen1x",
+    "duration": 190,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6606,
+    "tracksCount": 1,
+    "search": "disneyscamprockdemilovatojoejonasthisisme",
     "local": false
   },
   {
@@ -59114,6 +59257,36 @@
     "shortId": 6158,
     "tracksCount": 1,
     "search": "epicthemusicaljorgeriveraherransbarbarawanguiloveinparadise",
+    "local": false
+  },
+  {
+    "id": "epic-the-musical-jorge-rivera-herrans-cast-of-epic-odysseus",
+    "title": "Odysseus",
+    "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Cast of EPIC)",
+    "video": "vi3JeyQgHqk",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 2667.5,
+    "year": "2024",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-12T03:36:48.991Z",
+    "genre": "Musical",
+    "realBpm": 130,
+    "previewStart": 104,
+    "previewEnd": 131,
+    "volume": 1,
+    "author": "Andore",
+    "duration": 332,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6599,
+    "tracksCount": 1,
+    "search": "epicthemusicaljorgeriveraherranscastofepicodysseus",
     "local": false
   },
   {
@@ -76889,6 +77062,34 @@
     "local": false
   },
   {
+    "id": "hello-sleepwalkers-goya-no-machiawase",
+    "title": "Goya no Machiawase",
+    "artist": "Hello Sleepwalkers",
+    "video": "gWCnKoEgfP0",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 377.28,
+    "gap": 9716.043256997455,
+    "year": "2014",
+    "lastUpdate": "2026-10-12T03:36:47.668Z",
+    "realBpm": 189,
+    "previewStart": 39,
+    "previewEnd": 61,
+    "volume": 1,
+    "author": "@b888arb",
+    "duration": 91,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6589,
+    "tracksCount": 1,
+    "search": "hellosleepwalkersgoyanomachiawase",
+    "local": false
+  },
+  {
     "id": "hellogoodbye-here-in-your-arms",
     "title": "Here (In Your Arms)",
     "artist": "Hellogoodbye",
@@ -80963,6 +81164,36 @@
     "shortId": 2006,
     "tracksCount": 1,
     "search": "inadeterbandneuemaennerbrauchtdasland",
+    "local": false
+  },
+  {
+    "id": "incubus-wish-you-were-here",
+    "title": "Wish You Were Here",
+    "artist": "Incubus",
+    "video": "8295rOMvtQI",
+    "language": [
+      "English"
+    ],
+    "bpm": 340.02,
+    "gap": 9965.353802717487,
+    "year": "2001",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-12T03:36:48.031Z",
+    "genre": "Alternative",
+    "realBpm": 170,
+    "previewStart": 68,
+    "previewEnd": 98,
+    "volume": 1,
+    "author": "Gollum",
+    "duration": 213,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6592,
+    "tracksCount": 1,
+    "search": "incubuswishyouwerehere",
     "local": false
   },
   {
@@ -88794,6 +89025,34 @@
     "local": false
   },
   {
+    "id": "jonas-brothers-sucker",
+    "title": "Sucker",
+    "artist": "Jonas Brothers",
+    "video": "CnAmeh0-E-U",
+    "language": [
+      "English"
+    ],
+    "bpm": 276,
+    "gap": 2941.7391304347825,
+    "year": "2019",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-12T03:36:48.391Z",
+    "genre": "Pop",
+    "realBpm": 138,
+    "volume": 1,
+    "author": "DoubleDee73",
+    "duration": 200,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6595,
+    "tracksCount": 1,
+    "search": "jonasbrotherssucker",
+    "local": false
+  },
+  {
     "id": "jonas-brothers-tonight",
     "title": "Tonight",
     "artist": "Jonas Brothers",
@@ -94970,6 +95229,32 @@
     "shortId": 6415,
     "tracksCount": 1,
     "search": "keinasudaveil",
+    "local": false
+  },
+  {
+    "id": "kelis-milkshake",
+    "title": "Milkshake",
+    "artist": "Kelis",
+    "video": "6AwXKJoKJz4",
+    "language": [
+      "English"
+    ],
+    "bpm": 226,
+    "gap": 8284.424778761062,
+    "year": "2003",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-12T03:36:47.851Z",
+    "realBpm": 113,
+    "volume": 1,
+    "author": "justjack",
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6591,
+    "tracksCount": 1,
+    "search": "kelismilkshake",
     "local": false
   },
   {
@@ -108249,6 +108534,34 @@
     "shortId": 2628,
     "tracksCount": 1,
     "search": "loitumaievaspolka",
+    "local": false
+  },
+  {
+    "id": "lola-young-messy",
+    "title": "Messy",
+    "artist": "Lola Young",
+    "video": "k-k2_Liofy8",
+    "language": [
+      "English"
+    ],
+    "bpm": 222.41,
+    "gap": 18938.354840160064,
+    "year": "2024",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-10-12T03:36:48.994Z",
+    "genre": "Pop",
+    "realBpm": 111,
+    "volume": 1,
+    "author": "rote_rose",
+    "duration": 285,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6600,
+    "tracksCount": 1,
+    "search": "lolayoungmessy",
     "local": false
   },
   {
@@ -135042,6 +135355,34 @@
     "local": false
   },
   {
+    "id": "onerepublic-nobody",
+    "title": "Nobody",
+    "artist": "OneRepublic",
+    "video": "ztROkFCJSeE",
+    "language": [
+      "English"
+    ],
+    "bpm": 280,
+    "gap": 1142.1428571428573,
+    "year": "2024",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-12T03:36:49.172Z",
+    "realBpm": 140,
+    "volume": 1,
+    "author": "GaryCXJk",
+    "sourceUrl": "https://www.youtube.com/watch?v=ztROkFCJSeE&t=1s",
+    "duration": 154,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6602,
+    "tracksCount": 1,
+    "search": "onerepublicnobody",
+    "local": false
+  },
+  {
     "id": "onerepublic-secrets",
     "title": "Secrets",
     "artist": "OneRepublic",
@@ -156212,6 +156553,35 @@
     "local": false
   },
   {
+    "id": "shakira-el-cata-loca",
+    "title": "Loca",
+    "artist": "Shakira & El Cata",
+    "video": "XAhTt60W7qo",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 224,
+    "gap": 14327.535714285714,
+    "year": "2010",
+    "lastUpdate": "2026-10-12T03:36:49.646Z",
+    "genre": "Pop",
+    "realBpm": 112,
+    "volume": 1,
+    "author": "Klafhor",
+    "authorUrl": "https://ultrastar-es.org/fr/canciones?creador=klafhor",
+    "sourceUrl": "https://www.youtube.com/watch?v=XAhTt60W7qo",
+    "duration": 162,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6604,
+    "tracksCount": 1,
+    "search": "shakiraelcataloca",
+    "local": false
+  },
+  {
     "id": "shakira-feat-burna-boy-dai-dai",
     "title": "Dai Dai",
     "artist": "Shakira feat. Burna Boy",
@@ -159418,6 +159788,38 @@
     "shortId": 3976,
     "tracksCount": 1,
     "search": "sistarshakeit",
+    "local": false
+  },
+  {
+    "id": "six-the-musical-cast-six",
+    "title": "SIX",
+    "artist": "SIX the Musical Cast",
+    "video": "wTvRNwslYxA",
+    "language": [
+      "English"
+    ],
+    "bpm": 270,
+    "gap": 13910,
+    "year": "2018",
+    "lastUpdate": "2026-10-12T03:36:46.915Z",
+    "genre": "Musical",
+    "realBpm": 135,
+    "volume": 1,
+    "author": "ziqiangao",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=209767",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=31402",
+    "duration": 241,
+    "tracks": [
+      {
+        "start": 18
+      },
+      {
+        "start": 834
+      }
+    ],
+    "shortId": 6588,
+    "tracksCount": 2,
+    "search": "sixthemusicalcastsix",
     "local": false
   },
   {
@@ -163847,6 +164249,33 @@
     "local": false
   },
   {
+    "id": "sts-fuerstenfeld",
+    "title": "Fürstenfeld",
+    "artist": "STS",
+    "video": "FpRmP0XUVcA",
+    "language": [
+      "German"
+    ],
+    "bpm": 236.3,
+    "gap": 204.34193821413453,
+    "year": "1983",
+    "artistOrigin": "AT",
+    "lastUpdate": "2026-10-12T03:36:47.847Z",
+    "genre": "Austropop",
+    "realBpm": 87,
+    "volume": 1,
+    "author": "Geee68",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6590,
+    "tracksCount": 1,
+    "search": "stsfuerstenfeld",
+    "local": false
+  },
+  {
     "id": "sts-grossvater",
     "title": "Großvater",
     "artist": "STS",
@@ -164425,6 +164854,36 @@
     "shortId": 5241,
     "tracksCount": 1,
     "search": "supermariobroswonderpiranhaplantsonparade",
+    "local": false
+  },
+  {
+    "id": "supercombo-rogerio",
+    "title": "Rogério",
+    "artist": "Supercombo",
+    "video": "FIxRcbDMO30",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 308.53,
+    "gap": 8979.029591935954,
+    "year": "2016",
+    "artistOrigin": "BR",
+    "lastUpdate": "2026-10-12T03:36:49.175Z",
+    "realBpm": 77,
+    "previewStart": 10010,
+    "previewEnd": 10020,
+    "volume": 70,
+    "author": "Rodrigo Tavares",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=31404",
+    "duration": 234,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6603,
+    "tracksCount": 1,
+    "search": "supercomborogerio",
     "local": false
   },
   {
@@ -169470,6 +169929,35 @@
     "shortId": 6508,
     "tracksCount": 1,
     "search": "taylorswiftthelastgreatamericandynasty",
+    "local": false
+  },
+  {
+    "id": "taylor-swift-the-story-of-us",
+    "title": "The Story Of Us",
+    "artist": "Taylor Swift",
+    "video": "nN6VR92V70M",
+    "language": [
+      "English"
+    ],
+    "bpm": 280.30000000000007,
+    "gap": 16962.14285714286,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-12T03:36:49.816Z",
+    "genre": "Pop",
+    "realBpm": 140,
+    "volume": 1,
+    "author": "GiantCrab",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=12902",
+    "duration": 267,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6605,
+    "tracksCount": 1,
+    "search": "taylorswiftthestoryofus",
     "local": false
   },
   {
@@ -175655,6 +176143,35 @@
     "local": false
   },
   {
+    "id": "the-oral-cigarettes-kyouran-hey-kids",
+    "title": "Kyouran Hey Kids!!",
+    "artist": "THE ORAL CIGARETTES",
+    "video": "aZenmeRytEM",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 284,
+    "gap": 19256.478873239437,
+    "year": "2015",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-10-12T03:36:48.212Z",
+    "realBpm": 142,
+    "previewStart": 45,
+    "previewEnd": 59,
+    "volume": 1,
+    "author": "@b888arb",
+    "duration": 90,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6594,
+    "tracksCount": 1,
+    "search": "theoralcigaretteskyouranheykids",
+    "local": false
+  },
+  {
     "id": "the-phantom-of-the-opera-the-phantom-of-the-opera",
     "title": "The Phantom Of The Opera",
     "artist": "The Phantom of the Opera",
@@ -180699,6 +181216,33 @@
     "local": false
   },
   {
+    "id": "tinchy-stryder-feat-taio-cruz-take-me-back",
+    "title": "Take Me Back",
+    "artist": "Tinchy Stryder feat. Taio Cruz",
+    "video": "Pi0h8ltBYQc",
+    "language": [
+      "English"
+    ],
+    "bpm": 250,
+    "gap": -10,
+    "year": "2009",
+    "lastUpdate": "2026-10-12T03:36:48.401Z",
+    "realBpm": 125,
+    "volume": 1,
+    "author": "snake84",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=6633",
+    "duration": 225,
+    "tracks": [
+      {
+        "start": 12
+      }
+    ],
+    "shortId": 6598,
+    "tracksCount": 1,
+    "search": "tinchystryderfeattaiocruztakemeback",
+    "local": false
+  },
+  {
     "id": "tini-cupido",
     "title": "Cupido",
     "artist": "TINI",
@@ -183730,6 +184274,35 @@
     "shortId": 4561,
     "tracksCount": 1,
     "search": "twentyonepilotshouseofgold",
+    "local": false
+  },
+  {
+    "id": "twenty-one-pilots-next-semester",
+    "title": "Next Semester",
+    "artist": "Twenty One Pilots",
+    "video": "a5i-KdUQ47o",
+    "language": [
+      "English"
+    ],
+    "bpm": 350.78,
+    "gap": 17806.477564285306,
+    "year": "2024",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-12T03:36:48.395Z",
+    "realBpm": 175,
+    "volume": 1,
+    "author": "blackcat6",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=179304",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=29658",
+    "duration": 249,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6597,
+    "tracksCount": 1,
+    "search": "twentyonepilotsnextsemester",
     "local": false
   },
   {

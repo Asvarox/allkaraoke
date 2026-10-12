@@ -54,6 +54,7 @@
     "Radiohead",
     "Slipknot",
     "Breaking Benjamin",
+    "Jonas Brothers",
     "Marilyn Manson",
     "Marina and the Diamonds",
     "Olivia Rodrigo",
@@ -65,7 +66,6 @@
     "Glee Cast",
     "High School Musical",
     "Jennifer Lopez",
-    "Jonas Brothers",
     "Mariah Carey",
     "No Doubt",
     "Rise Against",
@@ -136,20 +136,20 @@
     "Johnny Cash",
     "Jonathan Coulton",
     "Nicki Minaj",
+    "OneRepublic",
     "P!nk",
     "Robbie Williams",
     "Shakira",
     "Shania Twain",
     "Shinedown",
     "The Offspring",
+    "Twenty One Pilots",
     "Wham!",
     "ZZ Top",
     "3 Doors Down",
     "a-ha",
     "Ace of Base",
-    "Aerosmith",
-    "Black Sabbath",
-    "Blind Guardian"
+    "Aerosmith"
   ],
   "languages": [
     "Armenian",
@@ -190,9 +190,10 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 6585,
-  "generatedAt": "2026-10-10T21:26:53.422Z",
+  "songs": 6605,
+  "generatedAt": "2026-10-12T03:37:44.837Z",
   "additionsPerDay": {
+    "2026-10-12": 20,
     "2026-10-10": 38,
     "2026-10-08": 20,
     "2026-10-07": 20,
@@ -228,10 +229,149 @@
     "2026-08-24": 15,
     "2026-08-23": 30,
     "2026-08-15": 10,
-    "2026-08-13": 2,
-    "2026-08-12": 5
+    "2026-08-13": 2
   },
   "recentlyAdded": [
+    {
+      "id": "disneys-camp-rock-demi-lovato-joe-jonas-this-is-me",
+      "artist": "Disney’s Camp Rock (Demi Lovato & Joe Jonas)",
+      "title": "This Is Me",
+      "video": "fD6DoCTnTaY",
+      "addedAt": "2026-10-12T03:36:49.819Z"
+    },
+    {
+      "id": "taylor-swift-the-story-of-us",
+      "artist": "Taylor Swift",
+      "title": "The Story Of Us",
+      "video": "nN6VR92V70M",
+      "addedAt": "2026-10-12T03:36:49.816Z"
+    },
+    {
+      "id": "shakira-el-cata-loca",
+      "artist": "Shakira & El Cata",
+      "title": "Loca",
+      "video": "XAhTt60W7qo",
+      "addedAt": "2026-10-12T03:36:49.646Z"
+    },
+    {
+      "id": "supercombo-rogerio",
+      "artist": "Supercombo",
+      "title": "Rogério",
+      "video": "FIxRcbDMO30",
+      "addedAt": "2026-10-12T03:36:49.175Z"
+    },
+    {
+      "id": "onerepublic-nobody",
+      "artist": "OneRepublic",
+      "title": "Nobody",
+      "video": "ztROkFCJSeE",
+      "addedAt": "2026-10-12T03:36:49.172Z"
+    },
+    {
+      "id": "avatar-bloody-angel",
+      "artist": "Avatar",
+      "title": "Bloody Angel",
+      "video": "h71NBBbOjmw",
+      "addedAt": "2026-10-12T03:36:49.169Z"
+    },
+    {
+      "id": "lola-young-messy",
+      "artist": "Lola Young",
+      "title": "Messy",
+      "video": "k-k2_Liofy8",
+      "addedAt": "2026-10-12T03:36:48.994Z"
+    },
+    {
+      "id": "epic-the-musical-jorge-rivera-herrans-cast-of-epic-odysseus",
+      "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Cast of EPIC)",
+      "title": "Odysseus",
+      "video": "vi3JeyQgHqk",
+      "addedAt": "2026-10-12T03:36:48.991Z"
+    },
+    {
+      "id": "tinchy-stryder-feat-taio-cruz-take-me-back",
+      "artist": "Tinchy Stryder feat. Taio Cruz",
+      "title": "Take Me Back",
+      "video": "Pi0h8ltBYQc",
+      "addedAt": "2026-10-12T03:36:48.401Z"
+    },
+    {
+      "id": "twenty-one-pilots-next-semester",
+      "artist": "Twenty One Pilots",
+      "title": "Next Semester",
+      "video": "a5i-KdUQ47o",
+      "addedAt": "2026-10-12T03:36:48.395Z"
+    },
+    {
+      "id": "digimon-digimon-3",
+      "artist": "Digimon",
+      "title": "Digimon 3",
+      "video": "TnIAnO0e_34",
+      "addedAt": "2026-10-12T03:36:48.393Z"
+    },
+    {
+      "id": "jonas-brothers-sucker",
+      "artist": "Jonas Brothers",
+      "title": "Sucker",
+      "video": "CnAmeh0-E-U",
+      "addedAt": "2026-10-12T03:36:48.391Z"
+    },
+    {
+      "id": "the-oral-cigarettes-kyouran-hey-kids",
+      "artist": "THE ORAL CIGARETTES",
+      "title": "Kyouran Hey Kids!!",
+      "video": "aZenmeRytEM",
+      "addedAt": "2026-10-12T03:36:48.212Z"
+    },
+    {
+      "id": "annie-lennox-why",
+      "artist": "Annie Lennox",
+      "title": "Why",
+      "video": "HG7I4oniOyA",
+      "addedAt": "2026-10-12T03:36:48.210Z"
+    },
+    {
+      "id": "incubus-wish-you-were-here",
+      "artist": "Incubus",
+      "title": "Wish You Were Here",
+      "video": "8295rOMvtQI",
+      "addedAt": "2026-10-12T03:36:48.031Z"
+    },
+    {
+      "id": "kelis-milkshake",
+      "artist": "Kelis",
+      "title": "Milkshake",
+      "video": "6AwXKJoKJz4",
+      "addedAt": "2026-10-12T03:36:47.851Z"
+    },
+    {
+      "id": "sts-fuerstenfeld",
+      "artist": "STS",
+      "title": "Fürstenfeld",
+      "video": "FpRmP0XUVcA",
+      "addedAt": "2026-10-12T03:36:47.847Z"
+    },
+    {
+      "id": "hello-sleepwalkers-goya-no-machiawase",
+      "artist": "Hello Sleepwalkers",
+      "title": "Goya no Machiawase",
+      "video": "gWCnKoEgfP0",
+      "addedAt": "2026-10-12T03:36:47.668Z"
+    },
+    {
+      "id": "six-the-musical-cast-six",
+      "artist": "SIX the Musical Cast",
+      "title": "SIX",
+      "video": "wTvRNwslYxA",
+      "addedAt": "2026-10-12T03:36:46.915Z"
+    },
+    {
+      "id": "benson-boone-sorry-im-here-for-someone-else",
+      "artist": "Benson Boone",
+      "title": "Sorry I’m Here For Someone Else",
+      "video": "O7Dt2L_rAhI",
+      "addedAt": "2026-10-12T03:36:46.903Z"
+    },
     {
       "id": "mark-medlock-mamacita",
       "artist": "Mark Medlock",
@@ -427,146 +567,6 @@
       "title": "Altes Fieber",
       "video": "CQYypFMTQcE",
       "addedAt": "2026-10-10T21:25:50.547Z"
-    },
-    {
-      "id": "the-barden-bellas-just-the-way-you-are-just-a-dream-pool-mashup",
-      "artist": "The Barden Bellas",
-      "title": "Just The Way You Are & Just A Dream (Pool Mashup)",
-      "video": "12Q90oDfylk",
-      "addedAt": "2026-10-10T21:25:49.149Z"
-    },
-    {
-      "id": "super-junior-m-super-girl-chinese-version",
-      "artist": "Super Junior M",
-      "title": "Super Girl (Chinese Version)",
-      "video": "pit7RS4mPI0",
-      "addedAt": "2026-10-10T21:25:48.961Z"
-    },
-    {
-      "id": "grimes-flesh-without-blood",
-      "artist": "Grimes",
-      "title": "Flesh Without Blood",
-      "video": "Tv9YoYCKNoE",
-      "addedAt": "2026-10-10T21:25:48.958Z"
-    },
-    {
-      "id": "halsey-you-should-be-sad",
-      "artist": "Halsey",
-      "title": "You Should Be Sad",
-      "video": "8nBFqZppIF0",
-      "addedAt": "2026-10-10T21:25:48.955Z"
-    },
-    {
-      "id": "nightwish-yours-is-an-empty-hope",
-      "artist": "Nightwish",
-      "title": "Yours Is an Empty Hope",
-      "video": "Ejs0sIt3bA8",
-      "addedAt": "2026-10-10T21:25:48.953Z"
-    },
-    {
-      "id": "abba-happy-new-year",
-      "artist": "ABBA",
-      "title": "Happy New Year",
-      "video": "3Uo0JAUWijM",
-      "addedAt": "2026-10-10T21:25:48.952Z"
-    },
-    {
-      "id": "kz-hachioji-p-feat-miku-hatsune-weekender-girl",
-      "artist": "kz & Hachioji-P feat. Miku Hatsune",
-      "title": "Weekender Girl",
-      "video": "8uBuTAu9BuA",
-      "addedAt": "2026-10-10T21:25:48.950Z"
-    },
-    {
-      "id": "scorpions-send-me-an-angel",
-      "artist": "Scorpions",
-      "title": "Send Me An Angel",
-      "video": "1UUYjd2rjsE",
-      "addedAt": "2026-10-10T21:25:48.947Z"
-    },
-    {
-      "id": "the-wiseguys-ooh-la-la",
-      "artist": "The Wiseguys",
-      "title": "Ooh La La",
-      "video": "qveBnFXSCuw",
-      "addedAt": "2026-10-10T21:25:48.150Z"
-    },
-    {
-      "id": "rammstein-asche-zu-asche",
-      "artist": "Rammstein",
-      "title": "Asche zu Asche",
-      "video": "CA8F3yuc67A",
-      "addedAt": "2026-10-10T21:25:48.139Z"
-    },
-    {
-      "id": "madonna-sorry",
-      "artist": "Madonna",
-      "title": "Sorry",
-      "video": "rdccTOcX7o4",
-      "addedAt": "2026-10-08T20:53:41.185Z"
-    },
-    {
-      "id": "cascada-evacuate-the-dancefloor",
-      "artist": "Cascada",
-      "title": "Evacuate The Dancefloor",
-      "video": "-uDixD4tXXU",
-      "addedAt": "2026-10-08T20:53:28.818Z"
-    },
-    {
-      "id": "michael-jackson-in-the-closet",
-      "artist": "Michael Jackson",
-      "title": "In the Closet",
-      "video": "4qLY0vbrT8Q",
-      "addedAt": "2026-10-08T20:53:11.883Z"
-    },
-    {
-      "id": "paulo-londra-adan-y-eva",
-      "artist": "Paulo Londra",
-      "title": "Adán y Eva",
-      "video": "aSjflT_J0Xo",
-      "addedAt": "2026-10-08T20:52:10.618Z"
-    },
-    {
-      "id": "the-struts-body-talks",
-      "artist": "The Struts",
-      "title": "Body Talks",
-      "video": "Hc3XIbUuTMc",
-      "addedAt": "2026-10-08T20:51:56.414Z"
-    },
-    {
-      "id": "jean-jacques-goldman-comme-toi",
-      "artist": "Jean-Jacques Goldman",
-      "title": "Comme toi",
-      "video": "ySZBnMukO8g",
-      "addedAt": "2026-10-08T20:51:14.276Z"
-    },
-    {
-      "id": "leo-dan-mary-es-mi-amor",
-      "artist": "Leo Dan",
-      "title": "Mary es mi amor",
-      "video": "9wJ0hVIuym8",
-      "addedAt": "2026-10-08T20:50:45.353Z"
-    },
-    {
-      "id": "joe-dassin-les-champs-elysees",
-      "artist": "Joe Dassin",
-      "title": "Les Champs-Élysées",
-      "video": "1JhYYUWOBBs",
-      "addedAt": "2026-10-08T20:50:01.951Z"
-    },
-    {
-      "id": "tatu-nas-ne-dogonjat",
-      "artist": "t.A.T.u.",
-      "title": "Nas ne dogonjat",
-      "video": "G335DVVsB3M",
-      "addedAt": "2026-10-08T20:49:37.624Z"
-    },
-    {
-      "id": "faouzia-tears-of-gold",
-      "artist": "Faouzia",
-      "title": "Tears Of Gold",
-      "video": "XszK-TDzMnQ",
-      "addedAt": "2026-10-08T20:49:18.174Z"
     }
   ]
 }

@@ -1,0 +1,632 @@
+#ARTIST:Kelis
+#TITLE:Milkshake
+#CREATOR:justjack
+#BPM:226
+#YEAR:2003
+#VIDEO:v=6AwXKJoKJz4
+#LANGUAGE:English
+#GAP:8284,424778761062
+#ALLKARAOKE_ID:kelis-milkshake
+#ALLKARAOKE_SID:6591
+#ALLKARAOKE_LASTUPDATE:2026-10-12T03:36:47.851Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:113
+#ALLKARAOKE_VOLUME:1
+#MP3:Kelis - Milkshake.mp3
+R 15 3 2 My 
+R 19 2 6 milk
+R 23 2 5 shake 
+R 27 3 4 brings
+- 30
+R 31 1 3 All 
+R 33 1 3 the 
+R 35 3 2 boys 
+R 39 1 2 to 
+R 41 1 2 the 
+R 44 4 2 yard
+- 48
+R 49 1 2 And 
+R 51 3 2 they’re 
+R 55 1 2 like
+R 57 1 6 ~
+- 58
+R 63 2 0 It’s 
+R 67 1 0 bet
+R 69 1 0 ter 
+R 71 3 0 than 
+R 75 7 0 yours
+- 82
+R 83 3 0 Damn 
+R 87 1 0 right
+R 89 1 0 ~
+- 90
+R 95 2 0 It’s 
+R 99 1 0 bet
+R 101 1 0 ter 
+R 103 3 0 than 
+R 108 2 0 yours
+- 110
+R 111 1 0 I 
+R 113 1 0 can 
+R 115 2 0 teach 
+R 119 1 0 you
+R 121 1 0 ~
+- 122
+R 127 1 0 But 
+R 129 1 0 I 
+R 131 2 0 have 
+R 135 2 0 to 
+R 139 3 0 charge
+- 142
+R 143 3 0 My 
+R 147 2 0 milk
+R 151 2 0 shake 
+R 155 3 0 brings
+- 158
+R 159 1 0 All 
+R 161 1 0 the 
+R 163 3 0 boys 
+R 167 1 0 to 
+R 169 1 0 the 
+R 171 6 0 yard
+- 177
+R 178 1 0 And 
+R 180 2 0 they’re 
+R 183 1 0 like
+R 185 1 0 ~
+- 186
+R 192 2 0 It’s 
+R 195 1 0 bet
+R 197 1 0 ter 
+R 199 3 0 than 
+R 203 7 0 yours
+- 210
+R 211 3 0 Damn 
+R 215 1 0 right
+R 217 1 0 ~
+- 218
+R 224 2 0 It’s 
+R 228 1 0 bet
+R 230 1 0 ter 
+R 232 2 0 than 
+R 236 2 0 yours
+- 238
+R 239 1 0 I 
+R 241 1 0 can 
+R 243 2 0 teach 
+R 247 1 0 you
+R 249 1 0 ~
+- 250
+: 263 3 2 I 
+: 267 4 4 know 
+: 272 2 6 you 
+: 276 3 8 want 
+: 280 2 8 it
+- 282 289
+- 289
+: 304 1 6 The 
+: 308 5 8 thing 
+: 316 5 6 that 
+: 324 4 11 makes 
+: 332 5 9 me
+- 337 349
+- 349
+: 364 2 4 What 
+: 368 1 6 the 
+* 372 6 8 guys 
+: 380 5 6 go 
+: 387 5 11 cra
+: 395 5 9 zy
+- 400
+* 404 3 8 For
+* 408 2 6 ~
+- 410 433
+- 433
+: 448 3 4 They 
+: 452 2 6 lose 
+: 456 2 8 their 
+: 460 6 1 minds
+- 466
+: 480 3 4 The 
+: 484 3 6 way 
+: 488 2 8 I 
+* 492 6 1 wind
+- 498
+R 511 3 0 I 
+R 515 3 0 think 
+R 520 3 0 it’s 
+R 524 5 0 time
+- 529
+: 532 3 2 La 
+: 536 3 2 la 
+: 544 3 2 la 
+: 548 3 1 la 
+* 556 6 1 la
+- 562 565
+- 565
+: 580 3 1 Warm 
+: 584 3 2 it 
+: 588 4 1 up
+- 592
+: 596 3 2 La 
+: 600 3 2 la 
+: 608 3 2 la 
+: 612 3 1 la 
+* 620 6 1 la
+- 626
+: 640 2 2 The 
+: 644 3 1 boys 
+: 648 3 2 are 
+: 652 3 4 wait
+: 656 3 1 ing
+- 659
+: 660 3 2 La 
+: 664 3 2 la 
+: 672 3 2 la 
+: 676 3 1 la 
+* 684 6 1 la
+- 690 693
+- 693
+: 708 3 1 Warm 
+: 712 3 2 it 
+: 716 4 1 up
+- 720
+: 724 3 2 La 
+: 728 3 2 la 
+: 736 3 2 la 
+: 740 3 1 la 
+* 748 6 1 la
+- 754 769
+- 769
+R 784 3 0 My 
+R 788 2 0 milk
+R 792 2 0 shake 
+R 796 3 0 brings
+- 799
+R 800 1 0 All 
+R 802 1 0 the 
+R 804 3 0 boys 
+R 808 1 0 to 
+R 810 1 0 the 
+R 812 5 0 yard
+- 817
+R 818 1 0 And 
+R 820 3 0 they’re 
+R 824 1 0 like
+R 826 1 0 ~
+- 827
+R 832 2 0 It’s 
+R 836 1 0 bet
+R 838 1 0 ter 
+R 840 3 0 than 
+R 844 6 0 yours
+- 850
+R 852 3 0 Damn 
+R 856 1 0 right
+R 858 1 0 ~
+- 859
+R 864 2 0 It’s 
+R 868 1 0 bet
+R 870 1 0 ter 
+R 872 3 0 than 
+R 876 3 0 yours
+- 879
+R 880 1 0 I 
+R 882 1 0 can 
+R 884 2 0 teach 
+R 888 1 0 you
+R 890 1 0 ~
+- 891
+R 896 1 0 But 
+R 898 1 0 I 
+R 900 2 0 have 
+R 904 2 0 to 
+R 908 3 0 charge
+- 911
+R 912 3 0 My 
+R 916 2 0 milk
+R 920 2 0 shake 
+R 924 3 0 brings
+- 927
+R 928 1 0 All 
+R 930 1 0 the 
+R 932 3 0 boys 
+R 936 1 0 to 
+R 938 1 0 the 
+R 940 5 0 yard
+- 945
+R 946 1 0 And 
+R 948 3 0 they’re 
+R 952 1 0 like
+R 954 1 0 ~
+- 955
+R 960 2 0 It’s 
+R 964 1 0 bet
+R 966 1 0 ter 
+R 968 3 0 than 
+R 972 6 0 yours
+- 978
+R 980 3 0 Damn 
+R 984 1 0 right
+R 986 1 0 ~
+- 987
+R 992 2 0 It’s 
+R 996 1 0 bet
+R 998 1 0 ter 
+R 1000 3 0 than 
+R 1004 3 0 yours
+- 1007
+R 1008 1 0 I 
+R 1010 1 0 can 
+R 1012 2 0 teach 
+R 1016 1 0 you
+R 1018 1 0 ~
+- 1019
+: 1028 2 6 I 
+: 1032 1 2 can 
+: 1034 5 4 see 
+: 1040 2 6 you 
+: 1044 3 8 on 
+: 1048 3 8 it
+- 1051 1057
+- 1057
+: 1072 3 6 You 
+: 1076 5 8 want 
+: 1084 3 6 me 
+: 1088 2 6 to 
+* 1092 5 11 teach 
+: 1100 6 9 the
+- 1106 1121
+- 1121
+: 1136 2 6 Tech
+: 1140 5 8 niques 
+: 1148 5 6 that 
+* 1156 5 11 freaks 
+: 1164 6 9 these
+- 1170
+* 1172 3 8 Boys
+* 1176 4 6 ~
+- 1180 1201
+- 1201
+: 1216 3 4 It 
+: 1220 3 6 can’t 
+: 1224 3 8 be 
+* 1228 7 1 bought
+- 1235
+: 1244 2 6 Just 
+: 1248 2 4 know 
+: 1252 3 6 thieves 
+: 1256 3 8 get 
+* 1260 6 1 caught
+- 1266
+R 1280 3 0 Watch 
+R 1284 3 0 if 
+R 1288 2 0 you’re 
+R 1292 5 0 smart
+- 1297
+: 1300 3 2 La 
+: 1304 4 2 la 
+: 1312 3 2 la 
+: 1316 3 1 la 
+* 1324 7 1 la
+- 1331 1333
+- 1333
+: 1348 3 1 Warm 
+: 1352 4 2 it 
+: 1357 5 1 up
+- 1362
+: 1364 3 2 La 
+: 1368 4 2 la 
+: 1376 3 2 la 
+: 1380 4 1 la 
+* 1388 7 1 la
+- 1395
+: 1408 3 2 The 
+: 1412 3 1 boys 
+: 1416 3 2 are 
+: 1420 3 4 wait
+: 1424 4 1 ing
+- 1428
+: 1429 3 2 La 
+: 1433 3 2 la 
+: 1441 3 2 la 
+: 1445 3 1 la 
+* 1453 6 1 la
+- 1459 1462
+- 1462
+: 1477 2 1 Warm 
+: 1480 3 2 it 
+: 1484 5 1 up
+- 1489
+: 1493 3 2 La 
+: 1497 3 2 la 
+: 1505 3 2 la 
+: 1509 3 1 la 
+* 1517 6 1 la
+- 1523 1538
+- 1538
+R 1553 3 0 My 
+R 1557 2 0 milk
+R 1561 2 0 shake 
+R 1565 3 0 brings
+- 1568
+R 1569 1 0 All 
+R 1571 1 0 the 
+R 1573 3 0 boys 
+R 1577 1 0 to 
+R 1579 1 0 the 
+R 1581 5 0 yard
+- 1586
+R 1587 1 0 And 
+R 1589 2 0 they’re 
+R 1592 1 0 like
+R 1594 1 0 ~
+- 1595
+R 1600 3 0 It’s 
+R 1605 1 0 bet
+R 1607 1 0 ter 
+R 1609 2 0 than 
+R 1613 6 0 yours
+- 1619
+R 1621 3 0 Damn 
+R 1625 1 0 right
+R 1627 1 0 ~
+- 1628
+R 1632 3 0 It’s 
+R 1637 1 0 bet
+R 1639 1 0 ter 
+R 1641 3 0 than 
+R 1645 3 0 yours
+- 1648
+R 1649 1 0 I 
+R 1651 1 0 can 
+R 1653 1 0 teach 
+R 1656 1 0 you
+R 1658 1 0 ~
+- 1659
+R 1664 1 0 But 
+R 1666 1 0 I 
+R 1668 3 0 have 
+R 1672 3 0 to 
+R 1677 3 0 charge
+- 1680
+R 1681 3 0 My 
+R 1685 2 0 milk
+R 1689 3 0 shake 
+R 1693 3 0 brings
+- 1696
+R 1697 1 0 All 
+R 1699 1 0 the 
+R 1701 3 0 boys 
+R 1705 1 0 to 
+R 1707 1 0 the 
+R 1709 5 0 yard
+- 1714
+R 1715 1 0 And 
+R 1717 3 0 they’re 
+R 1721 1 0 like
+R 1723 1 0 ~
+- 1724
+R 1728 3 0 It’s 
+R 1733 1 0 bet
+R 1735 1 0 ter 
+R 1737 3 0 than 
+R 1741 6 0 yours
+- 1747
+R 1749 3 0 Damn 
+R 1753 1 0 right
+R 1755 1 0 ~
+- 1756
+R 1761 2 0 It’s 
+R 1765 1 0 bet
+R 1767 1 0 ter 
+R 1769 3 0 than 
+R 1773 3 0 yours
+- 1776
+R 1777 1 0 I 
+R 1779 1 0 can 
+R 1781 2 0 teach 
+R 1784 1 0 you
+R 1786 2 0 ~
+- 1788
+R 1792 1 0 But 
+R 1794 1 0 I 
+R 1796 3 0 have 
+R 1801 1 0 to 
+R 1805 6 0 charge
+- 1811
+: 1817 3 -1 Oh 
+: 1821 2 -1 once 
+: 1825 3 -1 you 
+: 1829 3 -1 get 
+: 1833 3 -2 in
+: 1837 4 -2 volved
+- 1841
+: 1849 1 0 Ev’
+: 1851 1 2 ry
+: 1853 3 2 one 
+: 1857 3 2 will 
+: 1861 2 4 look 
+: 1865 2 4 this 
+: 1869 3 4 way, 
+* 1873 1 2 so
+* 1875 2 -2 ~
+- 1877
+: 1881 3 -1 You 
+: 1885 2 -1 must 
+: 1889 2 -1 main
+: 1893 3 -1 tain 
+: 1897 2 -2 your 
+: 1901 6 -2 charm
+- 1907
+: 1913 2 2 Same 
+: 1917 3 2 time 
+: 1921 3 2 main
+: 1925 2 4 tain 
+: 1929 3 4 your 
+: 1933 2 4 ha
+* 1937 1 2 lo
+* 1939 1 -2 ~
+- 1940
+: 1945 3 6 Just 
+: 1949 2 4 get 
+: 1953 3 6 the 
+: 1957 1 7 per
+: 1959 1 9 ~
+: 1961 1 6 fect 
+: 1963 1 4 blend
+: 1965 6 4 ~
+- 1971
+: 1977 2 2 Plus 
+: 1981 2 2 what 
+: 1985 2 -1 you 
+: 1989 3 2 have 
+: 1993 2 -1 with
+* 1997 4 4 in
+* 2002 1 2 ~
+- 2003
+R 2009 3 0 Then 
+R 2013 2 0 next 
+R 2017 2 0 his 
+R 2021 3 0 eyes 
+R 2025 2 0 are 
+R 2029 5 0 squint
+- 2034
+R 2041 3 0 Then 
+R 2045 3 0 he’s 
+R 2049 1 0 picked 
+R 2051 3 0 up 
+R 2057 2 0 your 
+R 2061 4 0 scent
+- 2065
+: 2069 3 2 La 
+: 2073 3 2 la 
+: 2081 3 2 la 
+: 2085 3 1 la 
+* 2093 6 1 la
+- 2099 2102
+- 2102
+: 2117 3 1 Warm 
+: 2121 3 2 it 
+: 2125 5 1 up
+- 2130
+: 2133 3 2 La 
+: 2137 4 2 la 
+: 2145 3 2 la 
+: 2149 3 1 la 
+* 2157 7 1 la
+- 2164
+: 2177 3 2 The 
+: 2181 3 1 boys 
+: 2185 3 2 are 
+: 2189 3 4 wait
+: 2193 3 1 ing
+- 2196
+: 2197 3 2 La 
+: 2201 4 2 la 
+: 2209 3 2 la 
+: 2213 3 1 la 
+* 2221 6 1 la
+- 2227 2230
+- 2230
+: 2245 3 1 Warm 
+: 2249 3 2 it 
+: 2253 4 1 up
+- 2257
+: 2261 3 2 La 
+: 2265 4 2 la 
+: 2273 3 2 la 
+: 2277 4 1 la 
+* 2285 7 1 la
+- 2292 2306
+- 2306
+R 2321 3 0 My 
+R 2325 2 0 milk
+R 2329 2 0 shake 
+R 2333 3 0 brings
+- 2336
+R 2337 1 0 All 
+R 2339 1 0 the 
+R 2341 3 0 boys 
+R 2345 1 0 to 
+R 2347 1 0 the 
+R 2349 5 0 yard
+- 2354
+R 2355 1 0 And 
+R 2357 3 0 they’re 
+R 2361 1 0 like
+R 2363 1 0 ~
+- 2364
+R 2369 3 0 It’s 
+R 2373 1 0 bet
+R 2375 1 0 ter 
+R 2377 3 0 than 
+R 2381 7 0 yours
+- 2388
+R 2389 3 0 Damn 
+R 2393 1 0 right
+R 2395 1 0 ~
+- 2396
+R 2401 3 0 It’s 
+R 2405 1 0 bet
+R 2407 1 0 ter 
+R 2409 3 0 than 
+R 2413 3 0 yours
+- 2416
+R 2417 1 0 I 
+R 2419 1 0 can 
+R 2421 2 0 teach 
+R 2425 1 0 you
+R 2427 1 0 ~
+- 2428
+R 2433 1 0 But 
+R 2435 1 0 I 
+R 2437 2 0 have 
+R 2441 2 0 to 
+R 2445 3 0 charge
+- 2448
+R 2449 3 0 My 
+R 2453 2 0 milk
+R 2457 2 0 shake 
+R 2461 3 0 brings
+- 2464
+R 2465 1 0 All 
+R 2467 1 0 the 
+R 2469 3 0 boys 
+R 2473 1 0 to 
+R 2475 1 0 the 
+R 2477 5 0 yard
+- 2482
+R 2483 1 0 And 
+R 2485 3 0 they’re 
+R 2489 1 0 like
+R 2491 1 0 ~
+- 2492
+R 2497 3 0 It’s 
+R 2501 1 0 bet
+R 2503 1 0 ter 
+R 2505 3 0 than 
+R 2509 7 0 yours
+- 2516
+R 2517 3 0 Damn 
+R 2521 1 0 right
+R 2523 1 0 ~
+- 2524
+R 2529 3 0 It’s 
+R 2533 1 0 bet
+R 2535 1 0 ter 
+R 2537 3 0 than 
+R 2541 3 0 yours
+- 2544
+R 2545 1 0 I 
+R 2547 1 0 can 
+R 2549 2 0 teach 
+R 2553 1 0 you
+R 2555 1 0 ~
+- 2556
+R 2561 1 0 But 
+R 2563 1 0 I 
+R 2565 2 0 have 
+R 2569 2 0 to 
+R 2573 7 0 charge
+E

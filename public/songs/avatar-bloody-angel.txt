@@ -1,0 +1,435 @@
+#ARTIST:Avatar
+#TITLE:Bloody Angel
+#CREATOR:Avatar
+#BPM:183
+#YEAR:2014
+#PREVIEWSTART:60
+#VIDEO:v=h71NBBbOjmw
+#VIDEOGAP:13
+#GENRE:Nu Metal
+#LANGUAGE:English
+#GAP:93316,39344262295
+#ALLKARAOKE_ID:avatar-bloody-angel
+#ALLKARAOKE_SID:6601
+#ALLKARAOKE_LASTUPDATE:2026-10-12T03:36:49.169Z
+#ALLKARAOKE_ARTISTORIGIN:SE
+#ALLKARAOKE_REALBPM:183
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:379
+#P1:Bloody Angel
+#COVER: 
+#MP3: 
+#BACKGROUND: 
+#RELATIVE: No
+#USDB:686
+: 12 4 -6 How 
+: 16 2 -6 can 
+: 18 2 -8 I 
+: 20 9 -6 sleep
+- 29 38
+- 38
+: 50 3 -8 When 
+: 53 1 -6 e
+: 54 3 -6 very
+: 57 3 -6 one 
+: 60 3 -6 else 
+: 63 3 -4 turns 
+: 66 1 -3 to 
+: 67 8 -2 dust,
+- 75
+: 75 4 -6 how 
+: 79 1 -6 can 
+: 80 3 -8 I 
+: 83 5 -6 breathe?
+- 88 99
+- 99
+: 111 2 -6 When 
+: 113 2 -6 my 
+: 115 4 -6 mouth 
+: 120 2 -5 is 
+: 122 2 -4 filled 
+: 125 3 -5 with 
+: 128 3 -6 their 
+: 131 4 -2 a
+: 135 3 -5 shes
+- 138
+: 140 2 -8 A
+: 142 1 -6 no
+: 143 2 -6 ther 
+: 146 3 -6 day 
+: 150 5 -6 lost
+- 155 168
+- 168
+: 180 3 -6 try
+: 183 2 -6 ing 
+: 187 2 -6 to 
+: 189 3 -5 e
+: 192 2 -4 xit 
+: 194 2 -1 the 
+: 196 5 -3 pro
+: 201 5 -6 gram
+- 206
+: 204 4 -6 I've 
+: 208 2 -6 seen 
+: 210 2 -8 e
+: 212 5 -6 nough
+- 217
+: 224 4 -5 To 
+: 228 11 0 feed 
+F 240 2 -4 A 
+F 242 3 -4 PSY
+F 245 3 -4 CHO
+F 248 7 -4 SIS 
+F 257 3 -4 FOR 
+F 260 2 -4 A 
+F 262 4 -4 LIFE
+F 266 42 -4 TIME
+- 308 325
+- 325
+F 337 2 -6 BLOO
+F 339 2 -6 DY 
+F 341 4 -6 AN
+F 345 11 -6 GEL!
+- 356 386
+- 386
+: 398 3 -5 When 
+: 401 1 -6 did 
+: 402 2 -8 it 
+: 406 7 -6 start?
+- 413 423
+- 423
+: 435 3 -6 This 
+: 438 3 -6 force 
+: 441 2 -6 is 
+: 443 4 -5 too 
+: 447 3 -4 strong 
+: 450 2 -1 to 
+: 452 2 -3 re
+: 454 4 -6 sist
+- 458
+: 463 2 -5 Where 
+: 465 2 -6 is 
+: 467 2 -8 too 
+: 469 7 -6 far?
+- 476 486
+- 486
+: 498 3 -6 All 
+: 501 2 -7 I 
+: 503 3 -6 did 
+: 506 4 -6 was 
+: 510 5 -6 try 
+: 515 2 -6 to 
+: 517 4 -4 save 
+: 522 4 -6 them
+- 526
+: 527 2 -5 Haun
+: 529 2 -6 ted 
+: 532 2 -8 by 
+: 534 12 -6 screams
+- 546 555
+- 555
+: 567 4 -6 Chas
+: 571 2 -6 ing 
+: 573 2 -6 me 
+: 575 3 -6 back 
+: 578 2 -4 to 
+: 580 3 -3 my 
+: 583 3 -2 child
+: 586 5 -5 hood,
+- 591
+: 591 4 -5 I 
+: 595 2 -6 can 
+: 597 2 -6 not 
+: 599 9 -6 flee
+- 608
+: 613 3 -5 I've 
+: 616 3 -3 got 
+F 626 4 -7 TOR
+F 630 4 -7 MEN
+F 634 6 -7 TORS 
+F 642 2 -7 FOR 
+F 644 2 -7 A 
+F 646 6 -5 LIFE
+F 652 19 -5 TIME
+- 671
+: 677 9 2 Come, 
+: 686 5 2 bloo
+: 691 5 1 dy 
+: 696 7 -1 an
+: 703 6 -6 gel
+- 709
+: 712 8 4 Break 
+: 720 4 4 off 
+: 724 3 2 your 
+: 727 12 1 chains,
+- 739
+: 735 8 1 and 
+: 743 7 2 look 
+: 751 4 2 what 
+: 755 3 1 I've 
+: 759 7 -1 found 
+: 767 4 -1 in 
+: 771 4 1 the 
+: 775 25 -2 dirt
+- 800
+: 807 8 2 Pale 
+: 815 4 2 bat
+: 819 5 1 tered 
+: 824 8 -1 bo
+: 832 5 -6 dy,
+- 837
+: 838 1 -6 It 
+: 839 8 4 seems 
+: 847 5 4 she 
+: 852 4 2 was 
+: 856 7 1 strug
+: 863 9 1 gling
+- 872
+: 873 7 2 Some
+: 880 4 2 thing 
+: 884 4 1 is 
+: 888 8 -1 wrong 
+: 896 5 -1 with 
+: 901 3 1 this 
+: 904 19 -2 world
+- 923
+F 931 60 2 YEAAAAAAAH
+- 991
+F 997 2 -6 Bloo
+F 999 2 -6 dy 
+F 1001 4 -6 an
+F 1005 17 -6 gel!
+- 1022 1045
+- 1045
+: 1057 4 -6 All 
+: 1061 2 -6 that 
+: 1063 2 -8 I 
+: 1065 16 -6 know
+- 1081
+: 1092 6 -8 I'm 
+: 1098 1 -6 wil
+: 1099 5 -6 ling 
+: 1104 3 -6 to 
+: 1107 3 -6 give 
+: 1110 3 -4 it 
+: 1113 1 -3 a
+: 1114 5 -2 way
+- 1119
+: 1120 3 -6 All 
+: 1123 2 -6 that 
+: 1125 3 -8 I 
+: 1128 10 -6 love
+- 1138 1145
+- 1145
+: 1157 3 -6 Dis
+: 1160 2 -6 appea
+: 1162 4 -6 red 
+: 1166 2 -5 like 
+: 1168 2 -4 sand 
+: 1170 3 -5 in 
+: 1173 3 -6 the 
+: 1176 4 -2 o
+: 1180 3 -5 cean
+- 1183
+: 1184 3 -8 Re
+: 1187 3 -6 mem
+: 1190 2 -6 ber 
+: 1192 3 -8 the 
+: 1195 12 -6 lives
+- 1207 1213
+- 1213
+: 1225 3 -6 Lost 
+: 1229 2 -6 wi
+: 1231 1 -6 thin 
+: 1233 2 -5 wi
+: 1235 2 -4 the
+: 1237 5 -3 ring 
+: 1242 5 -3 pa
+: 1247 4 -6 ges,
+- 1251
+: 1250 3 -6 try
+: 1253 3 -6 ing 
+: 1256 2 -8 to 
+: 1258 9 -6 hide
+- 1267
+: 1268 4 -8 But 
+: 1272 2 -6 I 
+: 1274 8 -6 see
+- 1282
+F 1291 2 -4 TRA
+F 1293 3 -4 GE
+F 1296 6 -4 DIES 
+F 1302 3 -4 THROUGH 
+F 1305 2 -4 A 
+F 1307 4 -4 LIFE
+F 1311 37 -4 TIME
+- 1348 1370
+- 1370
+F 1382 3 -5 BLOO
+F 1385 3 -5 DY 
+F 1388 3 -5 AN
+F 1391 17 -5 GEL!
+- 1408 1439
+- 1439
+: 1451 9 2 Come, 
+: 1460 5 2 bloo
+: 1465 5 1 dy 
+: 1470 7 -1 an
+: 1477 6 -6 gel
+- 1483
+: 1483 8 4 Break 
+: 1491 4 4 off 
+: 1495 3 2 your 
+: 1498 12 1 chains,
+- 1510
+: 1506 8 1 and 
+: 1514 8 2 look 
+: 1522 4 2 what 
+: 1526 5 1 I 
+: 1531 9 -1 found 
+: 1540 4 -1 in 
+: 1544 4 1 the 
+: 1548 20 -2 dirt
+- 1568
+: 1580 7 2 Pale
+: 1587 5 2 bat
+: 1592 4 1 tered 
+: 1597 7 -1 bo
+: 1604 4 -6 dy,
+- 1608
+: 1609 2 -6 It 
+: 1611 8 4 seems 
+: 1619 5 4 she 
+: 1624 4 2 was 
+: 1628 7 1 strug 
+: 1635 7 1 gling
+- 1642
+: 1642 10 2 Some
+: 1652 5 2 thing 
+: 1657 3 1 is 
+: 1660 9 -1 wrong 
+: 1669 5 -1 with 
+: 1674 3 1 this 
+: 1677 19 -2 world
+- 1696
+: 1708 8 -1 Fierce 
+: 1716 4 -1 bloo
+: 1720 4 -3 dy 
+: 1724 8 -5 an
+: 1732 4 -10 gel
+- 1736
+: 1736 5 -10 The 
+: 1741 7 -3 blood 
+: 1748 4 -3 is 
+: 1752 5 -5 on 
+: 1757 7 -6 your 
+: 1764 8 -3 hands,
+- 1772
+: 1774 6 -1 Why 
+: 1780 5 -1 did 
+: 1785 5 -3 you 
+: 1790 6 -5 come 
+: 1796 5 -5 to 
+: 1801 5 -3 this 
+: 1806 25 -6 world?
+- 1831
+: 1837 4 2 E
+: 1841 4 2 very
+: 1845 4 2 bo
+: 1849 5 2 dy 
+: 1854 8 2 turns 
+: 1862 9 4 to 
+: 1871 89 1 dust
+- 1960
+: 1968 4 2 E
+: 1972 4 2 very
+: 1976 4 2 bo
+: 1980 5 2 dy 
+: 1985 8 2 turns 
+: 1993 9 4 to 
+: 2002 89 1 dust
+- 2091
+: 2091 4 -6 The 
+: 2095 8 -6 blood 
+: 2103 8 -6 is 
+: 2111 8 -6 on 
+: 2119 8 -6 your 
+: 2127 16 -5 han
+: 2143 12 -8 ds
+- 2155
+: 2155 4 -6 The 
+: 2159 8 -6 blood 
+: 2167 8 -6 is 
+: 2175 8 -6 on 
+: 2183 8 -6 your 
+: 2191 16 -5 hands
+- 2207
+: 2216 7 6 The 
+: 2223 10 6 blood 
+: 2233 8 6 is 
+: 2241 7 6 on 
+: 2248 7 6 your 
+: 2255 16 7 han
+: 2271 6 4 ds
+- 2277
+F 2285 5 -6 THE 
+F 2290 8 -6 BLOOD 
+F 2298 8 -6 IS 
+F 2306 7 -6 ON 
+F 2313 7 -6 YOUR 
+F 2320 35 -6 HANDS
+- 2355
+: 2352 9 2 Come, 
+: 2361 5 2 bloo
+: 2366 5 1 dy 
+: 2371 7 -1 an
+: 2378 6 -6 gel
+- 2384
+: 2386 8 4 Break 
+: 2394 5 4 off 
+: 2399 3 2 your 
+: 2402 12 1 chains,
+- 2414
+: 2411 8 1 and 
+: 2419 7 2 look 
+: 2426 5 2 what 
+: 2431 4 1 I 
+: 2435 9 -1 found 
+: 2444 4 -1 in 
+: 2448 4 1 the 
+: 2452 21 -2 dirt
+- 2473
+: 2484 8 2 Pale 
+: 2492 4 2 bat
+: 2496 4 1 tered 
+: 2500 8 -1 bo
+: 2508 5 -6 dy,
+- 2513
+: 2515 2 -6 It 
+: 2517 6 4 seems 
+: 2523 5 4 she 
+: 2528 4 2 was 
+: 2532 11 1 strug
+: 2543 9 1 gling
+- 2552
+: 2550 8 2 Some
+: 2558 5 2 thing 
+: 2563 4 1 is 
+: 2567 8 -1 wrong 
+: 2575 5 -1 with 
+: 2580 5 1 this 
+: 2585 24 -2 world
+- 2609
+F 2614 49 4 YEAAAAAAAH
+- 2663
+F 2674 3 -5 BLOO
+F 2677 4 -5 DY 
+F 2681 3 -5 AN
+F 2684 12 -5 GEL!
+- 2696 2727
+- 2727
+F 2739 3 -5 BLOO
+F 2742 3 -5 DY 
+F 2745 3 -5 AN
+F 2748 64 -5 GEL!
+E
