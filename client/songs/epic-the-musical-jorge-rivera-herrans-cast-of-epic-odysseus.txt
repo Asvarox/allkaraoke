@@ -1,0 +1,704 @@
+#ARTIST:EPIC: The Musical (Jorge Rivera-Herrans, Cast of EPIC)
+#TITLE:Odysseus
+#CREATOR:Andore
+#BPM:400
+#YEAR:2024
+#PREVIEWSTART:104
+#VIDEO:v=vi3JeyQgHqk
+#GENRE:Musical
+#LANGUAGE:English
+#GAP:2667,5
+#ALLKARAOKE_ID:epic-the-musical-jorge-rivera-herrans-cast-of-epic-odysseus
+#ALLKARAOKE_SID:6599
+#ALLKARAOKE_LASTUPDATE:2026-10-12T03:36:48.991Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:130
+#ALLKARAOKE_PREVIEWEND:131
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:332
+#MP3:EPIC: The Musical (Jorge Rivera-Herrans, Cast of EPIC) - Odysseus.mp3
+#COVER:EPIC: The Musical (Jorge Rivera-Herrans, Cast of EPIC) - Odysseus [CO].jpg
+#BACKGROUND:EPIC: The Musical (Jorge Rivera-Herrans, Cast of EPIC) - Odysseus [BG].jpg
+: 27 4 -10 For 
+: 37 10 2 twen
+: 49 10 2 ty 
+: 60 9 0 years 
+: 70 6 0 I’ve 
+: 82 4 -3 suf
+: 91 10 -3 fered 
+: 102 4 -5 eve
+: 109 10 -7 ry 
+: 123 12 -10 pu
+: 136 2 -10 nish
+: 142 10 -10 ment 
+: 154 7 -9 and 
+: 166 7 -10 pain
+- 173
+: 187 7 -10 From 
+: 198 7 -10 the 
+: 208 6 2 wrath 
+: 219 4 2 of 
+: 230 8 0 gods 
+: 242 2 0 and 
+: 248 9 -3 mon
+: 262 5 -3 sters
+- 267
+: 272 2 -5 To
+: 275 1 -6 ~
+: 277 1 -5 ~
+: 279 1 -4 ~
+: 281 1 -5 ~ 
+: 283 1 -7 the 
+: 292 9 -10 screams 
+: 304 1 -10 of 
+: 311 6 -10 com
+: 320 6 -9 rades 
+: 333 10 -10 slain
+- 343
+: 358 6 2 I 
+: 369 5 2 come 
+: 379 7 2 back 
+: 390 5 2 and 
+: 400 7 2 find 
+: 411 6 2 my 
+: 421 10 3 pa
+: 433 3 2 lace 
+: 443 5 2 des
+: 454 3 2 e
+: 461 12 3 crat
+: 475 3 2 ed, 
+: 486 3 2 sacked 
+: 496 3 0 like 
+: 506 8 2 Troy
+- 514
+: 529 6 2 Worst 
+: 541 1 2 of 
+: 545 7 2 all,
+- 552
+: 561 5 2 I 
+: 572 6 2 hear 
+: 582 5 2 you 
+: 592 9 3 dare 
+: 604 2 2 to 
+: 612 4 2 touch 
+: 625 6 2 my 
+: 636 5 6 wife 
+: 647 2 2 and 
+: 654 4 2 hurt 
+: 664 8 2 my
+- 672
+: 678 39 9 Boy!
+- 717 732
+- 732
+F 759 5 -12 I
+- 764 766
+- 766
+F 793 3 -12 Have 
+F 799 9 -12 had
+- 808 812
+- 812
+F 839 3 -12 E
+F 843 7 -12 nough
+- 850 1457
+- 1457
+: 1484 3 -6 In
+: 1488 4 -5 ~ 
+: 1495 3 -3 the 
+: 1502 2 -2 heat 
+: 1507 1 -3 of 
+: 1514 4 0 bat
+: 1523 9 -2 tle 
+: 1535 4 -3 at
+- 1539
+: 1546 2 -5 The 
+: 1551 12 0 edge 
+: 1567 1 -2 of 
+: 1572 3 -3 the 
+: 1577 6 -5 un
+: 1585 18 -10 known
+- 1603
+: 1625 6 -5 Some
+: 1634 7 -3 where 
+: 1644 3 -2 in 
+: 1650 1 -3 the 
+: 1657 7 0 sha
+: 1668 6 -2 dows
+- 1674
+: 1678 4 -3 Lurks 
+: 1687 4 -5 an 
+: 1693 4 0 a
+: 1701 6 -2 gile, 
+: 1715 3 -3 dead
+: 1719 5 -5 ly 
+: 1728 12 -10 foe
+- 1740
+: 1767 7 -5 We 
+: 1777 3 -3 have 
+: 1785 2 -1 the 
+: 1790 3 -3 ad
+: 1798 4 -3 van
+: 1807 6 -2 tage.
+- 1813
+: 1826 5 -3 We’ve 
+: 1835 2 -5 the 
+: 1840 2 -1 num
+: 1843 4 0 ~
+: 1849 5 -2 bers 
+: 1856 6 -3 and 
+: 1865 1 -5 the 
+: 1870 3 -5 might
+: 1874 1 -4 ~
+: 1876 2 -3 ~
+- 1878
+F 1883 4 -3 No!
+- 1887
+R 1911 4 -5 You 
+R 1918 4 -3 don’t 
+R 1927 3 -2 un
+R 1932 1 -3 der
+R 1940 5 0 stand 
+R 1949 1 -2 it
+- 1950
+R 1964 3 -3 This 
+R 1971 4 -5 man 
+: 1980 8 3 plans 
+: 1994 3 2 for 
+: 1999 3 2 eve
+: 2005 3 0 ry 
+: 2013 21 2 fight
+- 2034 2322
+- 2322
+R 2349 4 -2 Where 
+R 2357 2 -3 is 
+R 2364 3 -5 he?
+- 2367
+R 2383 5 3 Where 
+R 2391 3 2 is 
+R 2399 1 0 HE?!
+- 2400
+R 2404 3 6 Keep 
+R 2412 2 2 your 
+R 2416 3 2 head 
+R 2425 4 2 down
+- 2429
+R 2433 3 2 He’s 
+R 2439 4 0 ai
+R 2446 1 0 ming 
+R 2452 2 0 for 
+R 2456 1 0 the 
+R 2461 4 3 tor
+R 2470 5 2 ches
+- 2475
+R 2492 2 -2 Our 
+R 2497 2 -3 wea
+R 2503 4 -5 pons,
+- 2507
+R 2526 3 7 They’re 
+R 2532 2 7 mis
+R 2538 3 5 sing!
+- 2541
+R 2545 3 0 He’s 
+R 2551 5 0 u
+R 2559 2 -3 sing 
+R 2564 1 -2 the 
+R 2568 5 0 dark
+R 2577 2 -3 ness 
+R 2582 1 -2 to 
+R 2586 4 0 hide 
+R 2594 3 -3 his 
+R 2599 1 -3 ap
+R 2604 3 -3 proa
+R 2611 5 -5 ches
+- 2616
+R 2626 5 -5 We’re 
+R 2632 2 -6 emp
+R 2635 2 -5 ty 
+R 2640 4 -5 han
+R 2646 1 -5 ded
+- 2647
+R 2658 1 -4 Up 
+R 2662 1 -3 a
+R 2666 2 -3 gainst 
+R 2672 1 -3 an 
+R 2675 3 -3 ar
+R 2682 4 -6 cher
+- 2686
+: 2698 4 -2 Our 
+R 2704 1 -2 on
+R 2706 1 -2 ly 
+R 2711 4 -2 chance 
+R 2719 1 -4 is 
+R 2724 1 -4 to 
+R 2729 3 0 strike 
+R 2735 3 0 him 
+R 2739 1 0 in 
+R 2742 2 0 the 
+R 2747 3 0 dark
+R 2754 3 -3 ness
+- 2757
+R 2763 4 2 We 
+R 2770 3 2 know 
+R 2775 3 2 these 
+R 2782 8 2 halls
+- 2790
+R 2794 4 2 The 
+R 2800 3 2 odds 
+R 2806 2 0 can 
+R 2811 3 -2 be 
+R 2817 3 0 til
+R 2826 3 -3 ted!
+- 2829
+F 2833 1 -8 You 
+F 2836 2 -8 don’t 
+F 2840 2 -10 think 
+F 2845 2 -12 I 
+F 2849 2 -12 know 
+F 2854 3 -12 my 
+F 2859 2 -12 own 
+F 2866 3 -12 pa
+F 2871 2 -12 lace?
+- 2873
+F 2879 2 -11 I 
+F 2887 4 -6 BUILT 
+F 2894 2 -6 IT!
+- 2896 3162
+- 3162
+: 3189 2 6 Old
+: 3192 6 7 ~ 
+: 3204 6 2 king, 
+: 3216 6 0 our 
+: 3226 2 2 lea
+: 3229 7 3 ~
+: 3239 6 2 der
+: 3246 2 0 ~ 
+: 3253 3 0 is 
+: 3261 7 2 dead
+- 3268
+: 3283 4 0 You’ve 
+: 3290 1 2 de
+: 3296 4 3 stroyed 
+: 3304 1 2 the 
+: 3309 5 0 ser
+: 3318 7 -2 pent’s 
+: 3332 7 -4 head
+- 3339
+: 3358 3 0 Now 
+: 3363 2 2 the 
+: 3367 3 3 rest 
+: 3376 3 2 of 
+: 3381 4 0 us 
+: 3390 8 -2 are 
+: 3403 6 -3 no 
+: 3412 5 -5 lon
+: 3421 6 -3 ger 
+: 3429 1 -2 a 
+: 3435 21 2 threat
+- 3456
+: 3476 7 7 Old 
+: 3489 5 2 king, 
+: 3501 5 0 for
+: 3511 1 2 give
+: 3513 7 3 ~ 
+: 3523 7 2 us 
+: 3537 2 0 in
+: 3544 9 2 stead
+- 3553
+: 3568 3 0 So 
+: 3574 2 2 that 
+: 3581 5 3 no 
+: 3589 2 2 more 
+: 3595 6 0 blood 
+: 3603 7 -2 is 
+: 3616 9 -5 shed
+- 3625
+: 3638 4 0 Let’s 
+: 3647 3 2 have 
+: 3652 4 3 o
+: 3660 3 2 pen 
+: 3665 5 0 arms 
+: 3675 1 2 in
+: 3677 6 3 ~
+: 3684 6 2 ~
+: 3695 10 2 stead
+- 3705 3712
+- 3712
+F 3739 5 -12 No.
+- 3744 4052
+- 4052
+F 4079 7 -12 Damn,
+- 4086
+R 4104 2 -12 He’s 
+R 4109 1 -12 more 
+R 4115 3 -12 cun
+R 4120 4 -10 ning 
+R 4126 3 -10 than 
+R 4130 6 -10 I 
+R 4138 2 -12 as
+R 4145 12 -10 sumed
+- 4157
+: 4177 5 -10 While 
+: 4186 2 -10 we 
+: 4191 2 -5 were 
+: 4199 4 -3 bu
+: 4208 4 -2 sy 
+: 4217 3 -3 plot
+: 4226 4 -5 ting,
+- 4230
+R 4234 3 -10 He 
+R 4239 6 -10 hid 
+R 4248 5 -10 our 
+R 4256 2 -7 wea
+R 4262 4 -9 pons 
+R 4269 2 -9 in
+R 4274 6 -10 side 
+R 4283 1 -12 this 
+R 4289 11 -10 room
+- 4300
+R 4309 1 2 I 
+R 4315 5 2 find 
+R 4323 1 2 it 
+R 4328 4 2 hard 
+R 4336 1 -5 to 
+R 4340 4 -5 be
+R 4345 5 -5 lieve 
+R 4353 1 -5 that 
+R 4357 1 -5 the 
+R 4363 5 2 shar
+R 4371 2 -5 pest 
+R 4376 1 -5 of 
+R 4381 5 -5 kings
+- 4386
+R 4390 1 -5 Left 
+R 4394 3 -5 his 
+R 4400 5 2 ar
+R 4407 3 -5 mo
+R 4412 4 -4 ry 
+R 4419 3 -5 un
+R 4425 3 2 locked
+- 4428
+F 4443 4 -12 So 
+F 4451 3 -10 what?
+- 4454
+R 4470 4 -12 Now 
+R 4479 2 -11 that 
+R 4487 5 -10 we 
+R 4496 2 -10 have 
+R 4500 9 -10 armed 
+R 4511 3 -12 our
+R 4519 6 -12 selves
+- 4525
+R 4532 2 -9 Let’s 
+R 4541 2 -9 make 
+R 4549 1 -11 the 
+R 4555 3 -5 bas
+R 4564 3 -12 tard 
+R 4571 5 -12 rot
+- 4576
+F 4589 1 3 Be
+F 4593 4 8 hind 
+F 4602 4 7 you!
+- 4606 4942
+- 4942
+: 4969 4 2 Throw 
+: 4976 2 3 down 
+: 4981 2 5 those 
+: 4987 3 2 wea
+: 4993 5 0 pons
+- 4998 4999
+- 4999
+: 5026 1 -5 And 
+: 5029 3 -2 I’ll 
+: 5034 1 0 en
+: 5041 3 2 sure 
+: 5047 3 3 you’ll 
+: 5052 1 5 be 
+: 5059 11 2 spared
+- 5070 5071
+- 5071
+: 5098 2 -2 Af
+: 5104 2 0 ter 
+: 5111 3 2 see
+: 5115 2 2 ing 
+: 5119 1 2 what 
+: 5123 1 2 the 
+: 5128 5 2 king 
+: 5136 6 2 will 
+: 5146 4 2 do 
+: 5154 3 0 to 
+: 5159 5 0 us
+- 5164
+: 5181 4 -2 We 
+: 5187 3 -3 woul
+: 5192 3 -5 dn’t 
+: 5200 7 -9 dare
+- 5207 5215
+- 5215
+: 5242 2 6 I 
+: 5249 6 7 don’t 
+: 5260 3 5 want 
+: 5265 2 2 to 
+: 5271 4 2 hurt 
+: 5281 4 0 you
+- 5285
+R 5300 1 -2 But 
+: 5307 3 -2 trust 
+: 5314 3 0 me, 
+: 5319 5 2 I’ve 
+: 5330 3 3 come 
+: 5337 2 5 pre
+: 5343 4 2 pared
+: 5348 5 2 ~
+- 5353
+F 5359 3 2 Ha!
+- 5362
+R 5376 4 -2 Your 
+R 5384 3 -2 ve
+R 5389 3 0 ry 
+R 5396 3 2 pre
+R 5402 2 2 sence 
+R 5407 3 2 has 
+R 5414 5 2 doomed 
+R 5421 1 3 the 
+R 5427 3 2 king, 
+R 5435 3 -2 young 
+R 5445 2 -3 prince
+- 5447
+F 5467 3 -12 We 
+F 5472 2 -12 don’t 
+F 5478 2 -12 fight 
+F 5487 4 -12 fair
+- 5491 5492
+- 5492
+F 5519 4 8 Stop!
+- 5523
+: 5537 3 7 Bro
+: 5543 7 7 thers, 
+: 5555 5 7 we 
+: 5564 3 5 got 
+: 5573 3 7 com
+: 5581 2 5 pa
+: 5586 5 1 ny,
+- 5591
+: 5595 3 0 And 
+: 5601 4 -2 he’s 
+: 5608 4 0 made 
+: 5614 2 -2 a 
+: 5620 5 0 grave 
+: 5627 4 -2 mis
+: 5636 10 1 take
+: 5647 11 2 ~
+- 5658
+: 5678 4 7 Left 
+: 5687 3 7 the 
+: 5691 1 6 weap
+: 5693 3 5 ~
+: 5700 5 5 ons 
+: 5710 3 5 room 
+: 5714 7 2 un
+: 5727 5 0 locked,
+- 5732
+: 5746 1 -6 And 
+: 5749 3 2 now
+: 5753 7 3 ~ 
+: 5762 5 3 they’re 
+: 5768 6 2 ours 
+: 5777 1 1 to 
+: 5782 11 2 take
+: 5794 1 1 ~
+: 5796 1 0 ~
+- 5797
+: 5822 3 7 Bro
+: 5827 7 7 thers, 
+: 5840 6 7 come 
+: 5848 1 7 and 
+: 5852 6 10 arm 
+: 5861 4 7 your
+: 5870 8 7 selves
+- 5878
+: 5883 2 2 There’s 
+: 5887 1 -2 a 
+: 5892 4 0 chance 
+: 5900 4 -2 for 
+: 5905 4 0 us 
+: 5912 1 2 to 
+: 5916 2 2 win
+: 5919 4 1 ~
+: 5924 11 2 ~
+- 5935 5936
+- 5936
+: 5963 1 3 We 
+R 5972 2 2 can 
+R 5981 2 3 still
+R 5984 3 2 ~ 
+R 5988 1 2 de
+R 5995 3 3 feat 
+R 6003 3 2 the 
+R 6012 2 4 king
+R 6015 1 2 ~ 
+R 6019 1 2 if 
+R 6025 6 3 we 
+R 6035 6 6 all 
+R 6043 1 6 at
+R 6048 2 6 tack 
+R 6056 2 7 the 
+R 6062 6 9 prince!
+- 6068 6146
+- 6146
+R 6173 4 7 Cap
+R 6183 3 2 ture 
+R 6192 3 2 him, 
+R 6198 2 1 he’s
+R 6201 3 0 ~ 
+R 6206 3 -2 our 
+R 6214 4 0 grea
+R 6220 3 2 test 
+R 6231 7 2 chance!
+- 6238
+R 6263 2 -2 Get 
+R 6268 3 -3 off 
+R 6276 5 -5 me!
+- 6281
+R 6295 5 7 Get 
+R 6301 5 7 off 
+R 6311 1 5 me!
+- 6312
+: 6316 2 7 Fight 
+: 6324 5 2 ’til 
+: 6331 1 2 the 
+: 6336 5 2 prince 
+: 6345 3 2 can 
+: 6354 2 8 bare
+: 6357 5 9 ~
+: 6364 2 9 ly 
+: 6373 1 8 stand
+: 6375 5 9 ~
+: 6381 1 8 ~
+: 6383 6 7 ~
+- 6389 6431
+- 6431
+: 6458 2 7 Make 
+: 6466 3 2 the 
+: 6475 3 2 king 
+: 6482 3 0 o
+: 6488 1 1 bey
+: 6490 1 0 ~
+: 6492 1 -1 ~
+: 6494 1 -2 ~ 
+: 6497 8 0 our 
+: 6510 3 2 com
+: 6514 10 2 mand
+: 6525 1 1 ~
+- 6526 6574
+- 6574
+R 6601 1 -1 If 
+R 6608 3 -4 he 
+R 6617 2 -3 won’t 
+R 6627 2 -5 I’ll 
+R 6635 2 -7 break 
+R 6643 1 -5 the 
+R 6648 2 -5 kid’s 
+R 6657 1 -9 hands
+R 6659 2 -10 ~
+R 6662 2 -11 ~
+R 6665 1 -12 ~
+- 6666 6683
+- 6683
+F 6710 2 -4 Got 
+F 6717 3 -2 him!
+- 6720 6800
+- 6800
+F 6827 3 -6 Mer..
+- 6830 6847
+- 6847
+F 6874 3 -4 Mer...
+- 6877
+F 6887 4 -12 Mer
+F 6896 4 -12 cy?
+- 6900 6931
+- 6931
+F 6958 6 -4 MER
+F 6968 5 -6 CY?!
+- 6973 7012
+- 7012
+F 7039 3 -12 My 
+F 7046 4 -12 mer
+F 7052 3 -12 cy 
+F 7058 3 -12 has 
+F 7064 5 -12 long 
+F 7075 4 -12 since 
+F 7083 11 -12 drowned
+- 7094
+F 7110 1 -12 It 
+F 7118 8 -12 died 
+F 7132 1 -12 to 
+F 7137 4 -12 bring 
+F 7145 3 -12 me 
+F 7150 9 -12 home
+- 7159
+F 7179 3 -12 And 
+F 7183 3 -12 as 
+F 7190 7 -12 long 
+F 7201 3 -12 as 
+F 7208 5 -12 you’re 
+F 7217 1 -12 a
+F 7221 9 -12 round
+- 7230
+F 7244 3 -12 My 
+F 7252 4 -12 fa
+F 7257 1 -12 mi
+F 7259 3 -12 ly’s 
+F 7267 3 -12 fate 
+F 7275 3 -11 is 
+F 7281 2 -11 left 
+F 7289 6 -10 un
+F 7296 9 -10 known
+- 7305
+F 7324 3 -12 You 
+F 7333 4 -12 plot
+F 7338 3 -12 ted 
+F 7345 1 -12 to 
+F 7353 4 -12 kill 
+F 7360 2 -12 my 
+F 7368 10 -12 son...
+- 7378
+F 7395 1 -12 You 
+F 7403 8 -12 planned 
+F 7415 2 -12 to 
+F 7422 5 -12 RAPE 
+F 7431 4 -12 MY 
+F 7440 6 -12 WIFE!
+- 7446
+F 7456 6 -12 ALL 
+F 7464 3 -12 OF 
+F 7469 7 -12 YOU
+- 7476
+F 7487 3 -12 ARE 
+F 7493 4 -12 Go
+F 7498 2 -12 ing 
+F 7504 1 -12 TO
+- 7505
+R 7511 10 -12 DIE!!
+- 7521 7637
+- 7637
+F 7664 2 -12 You 
+F 7672 3 -12 filled 
+F 7678 3 -12 my 
+F 7684 4 -12 heart 
+F 7690 2 -12 with 
+F 7696 3 -12 hate
+- 7699
+F 7724 4 -12 All 
+F 7729 2 -12 of 
+F 7732 5 -12 you
+- 7737
+F 7752 3 -12 Who’ve 
+F 7758 5 -12 done 
+F 7764 4 -12 me 
+F 7771 9 -12 wrong
+- 7780
+G 7795 5 7 THIS 
+G 7808 2 0 WILL 
+G 7813 3 0 BE 
+G 7818 3 0 YOUR 
+G 7831 7 0 FATE!!!
+E

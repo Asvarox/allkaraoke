@@ -1,0 +1,480 @@
+#ARTIST:Benson Boone
+#TITLE:Sorry I’m Here For Someone Else
+#CREATOR:DS
+#BPM:297
+#YEAR:2025
+#VIDEO:v=O7Dt2L_rAhI
+#LANGUAGE:English
+#GAP:-6,0606060606060055
+#ALLKARAOKE_ID:benson-boone-sorry-im-here-for-someone-else
+#ALLKARAOKE_SID:6587
+#ALLKARAOKE_LASTUPDATE:2026-10-12T03:36:46.903Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:150
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=O7Dt2L_rAhI
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:157
+#MP3:Benson Boone - Sorry I’m Here For Someone Else.mp3
+#COVER:Benson Boone - Sorry I’m Here For Someone Else [CO].jpg
+#BACKGROUND:Benson Boone - Sorry I’m Here For Someone Else [BG].jpg
+: 12 2 -5 I’m 
+: 17 4 2 sor
+: 22 2 4 ry 
+: 25 2 6 I’m 
+: 28 10 1 here 
+: 41 2 -1 for 
+: 46 9 1 some
+: 57 3 -1 one 
+: 62 6 2 e
+: 69 4 -1 ~lse
+- 73
+: 86 2 -1 But 
+: 89 2 1 it’s 
+: 94 9 1 good 
+: 105 2 -1 to 
+: 110 9 1 see 
+: 120 2 -1 your 
+: 126 10 -3 face
+- 136
+: 142 2 -1 And 
+: 145 3 2 I 
+: 149 2 4 real
+: 152 2 4 ly 
+: 158 6 1 hope 
+: 169 2 -1 you’re 
+: 174 9 1 do
+: 184 3 -1 ing 
+: 191 6 2 we
+: 198 7 -1 ~ll
+- 205
+: 218 2 1 I 
+: 223 8 1 hope 
+: 234 2 -1 you’re 
+: 238 9 1 do
+: 248 4 -1 ing 
+: 254 7 2 well
+- 261 272
+- 272
+F 292 2 0 Here 
+F 295 2 0 we 
+F 298 2 0 go!
+- 300 301
+- 301
+F 321 5 0 One, 
+F 337 5 0 two, 
+F 353 5 0 one, 
+F 360 3 0 two, 
+F 368 1 0 three
+- 369
+: 372 2 6 She 
+: 375 2 6 was 
+: 381 6 6 run
+: 388 3 4 ning 
+: 392 2 4 late 
+: 396 2 4 for 
+: 400 2 4 din
+: 403 2 2 ner 
+: 408 7 2 south 
+: 417 6 1 side 
+: 424 2 1 of 
+: 428 3 -3 town
+- 431
+: 437 3 6 Left 
+: 443 2 6 the 
+: 448 3 6 phone 
+: 452 2 4 a 
+: 455 3 4 lit
+: 459 2 4 tle 
+: 464 2 4 bit
+: 467 2 2 ter, 
+: 472 2 2 but 
+: 475 2 2 it’s 
+: 479 6 1 cool 
+: 487 2 2 for 
+: 491 3 -3 now
+- 494
+: 500 4 6 Far 
+: 507 2 6 from 
+: 512 2 6 per
+: 515 2 5 fect 
+: 519 2 4 for 
+: 523 2 4 each 
+: 527 2 4 o
+: 530 2 4 ther, 
+: 535 2 2 but 
+: 539 3 2 we’re 
+: 543 3 1 wor
+: 547 3 1 king 
+: 551 3 2 it 
+: 555 3 -3 out, 
+: 562 2 -3 I 
+: 565 3 2 sup
+: 571 8 -1 po
+: 580 3 -3 ~se
+- 583
+F 594 2 0 (I 
+F 597 2 0 sup
+F 602 12 0 pose)
+- 614
+: 626 3 6 Now 
+: 630 2 6 I’m 
+: 635 6 6 wai
+: 642 2 4 ting 
+: 646 2 4 at 
+: 650 2 4 the 
+: 654 3 4 din
+: 658 2 2 er 
+: 662 3 2 loo
+: 666 2 2 king 
+: 670 7 1 trau
+: 678 3 1 ma
+: 682 4 -3 tized
+- 686
+: 690 5 6 ’Cause 
+: 698 2 6 you 
+: 701 3 6 walk 
+: 706 2 6 up 
+: 709 2 4 to 
+: 713 2 4 the 
+: 717 4 4 ta
+: 722 2 2 ble 
+: 725 3 2 with 
+: 729 3 2 an 
+: 734 2 1 or
+: 737 2 1 der 
+: 740 2 1 of 
+: 745 6 -3 fries
+- 751
+: 754 2 6 And 
+: 757 2 6 I 
+: 761 9 6 know 
+: 773 5 4 ya, 
+: 784 2 4 yes 
+: 789 2 4 I 
+: 793 7 4 know 
+: 804 4 2 ya
+- 808
+: 817 2 4 Used 
+: 821 2 4 to 
+: 825 8 4 love 
+: 836 2 4 you
+: 842 4 -1 ~
+- 846 852
+- 852
+: 872 2 1 And 
+: 876 3 2 I 
+: 884 6 4 sai
+: 892 3 2 ~d
+- 895
+* 903 2 0 I’m 
+* 908 4 2 sor
+* 913 2 4 ry 
+* 916 2 6 I’m 
+* 921 9 1 here 
+* 932 2 -1 for 
+* 937 9 1 some
+* 948 2 -1 one 
+* 952 8 2 e
+* 962 4 -1 ~lse
+- 966
+: 980 2 0 It’s 
+: 985 9 1 good 
+: 996 2 0 to 
+: 1000 9 1 see 
+: 1012 2 -1 your 
+: 1016 12 -3 face
+- 1028
+: 1033 2 -3 And 
+: 1036 3 2 I 
+: 1041 2 4 real
+: 1044 2 2 ly 
+: 1049 6 1 hope 
+: 1060 2 -1 you’re 
+: 1065 9 1 do
+: 1075 4 -1 ing 
+: 1082 9 2 we
+: 1093 4 -1 ~ll
+- 1097
+* 1108 2 2 I 
+* 1113 9 9 hope 
+* 1125 2 9 you’re 
+* 1131 2 9 do
+* 1135 2 11 ~
+* 1141 2 6 ing 
+* 1146 8 6 well
+- 1154
+: 1160 2 2 I’m 
+: 1165 3 2 sor
+: 1169 2 4 ry 
+: 1172 2 4 I’m 
+: 1176 9 9 here 
+: 1188 2 7 for 
+: 1193 10 6 some
+: 1205 2 4 one 
+: 1209 7 7 e
+: 1221 2 2 ~lse
+- 1223
+: 1237 4 7 I 
+: 1242 7 7 wish 
+: 1254 2 6 that 
+: 1258 8 4 I 
+: 1269 2 2 could 
+: 1274 8 6 stay
+- 1282
+: 1293 3 2 Talk 
+: 1298 2 4 at 
+: 1301 2 2 the 
+: 1306 9 1 bar 
+: 1317 3 -1 all 
+: 1322 9 1 by 
+: 1332 2 -1 our
+: 1339 5 2 se
+: 1346 4 -1 ~lves
+- 1350
+: 1362 2 1 But 
+: 1365 2 4 I’m 
+: 1370 8 1 here 
+: 1382 2 -2 for 
+: 1386 7 1 some
+: 1399 2 -1 one 
+: 1404 4 2 else
+- 1408
+F 1409 2 0 (Come 
+F 1412 2 0 on, 
+F 1417 2 0 what 
+F 1420 2 0 hap
+F 1423 2 0 pens 
+F 1426 5 0 next, 
+F 1433 2 0 Ben
+F 1436 2 0 ny? 
+F 1439 5 0 Yeah, 
+F 1446 1 0 come 
+F 1448 5 0 on)
+- 1453
+: 1457 5 4 When 
+: 1464 3 6 she 
+: 1469 2 6 fi
+: 1472 2 6 nal
+: 1475 2 4 ly 
+: 1478 4 4 walks 
+: 1485 4 4 in
+: 1494 2 2 to 
+: 1497 2 2 the 
+: 1501 5 1 res
+: 1510 2 2 tau
+: 1513 5 -3 rant
+- 1518
+: 1522 4 4 Hate 
+: 1529 2 6 to 
+: 1533 3 6 say 
+: 1537 2 4 it, 
+: 1541 3 4 but 
+: 1545 2 4 I 
+: 1548 4 4 knew 
+: 1553 3 2 it 
+: 1557 3 2 I 
+: 1561 2 2 was 
+: 1565 3 1 al
+: 1569 2 1 rea
+: 1572 2 1 dy 
+: 1576 3 -3 gone
+- 1579
+: 1585 4 6 Oh 
+: 1593 6 6 Ben
+: 1600 3 4 ny, 
+: 1605 4 4 don’t 
+: 1613 3 4 do 
+: 1617 2 2 it
+- 1619
+: 1624 3 2 You’re 
+: 1628 3 1 brea
+: 1632 3 1 king 
+: 1636 2 2 her 
+: 1640 2 -3 heart
+- 1642
+: 1656 3 6 Be
+: 1660 2 4 ~n
+: 1663 3 4 ny 
+: 1668 5 4 don’t 
+: 1676 3 4 do 
+: 1680 3 2 it, 
+: 1688 3 6 Be
+: 1692 2 4 ~n
+: 1696 2 4 ny 
+: 1700 5 4 don’t 
+: 1708 3 4 do 
+: 1712 2 2 it
+- 1714
+* 1719 3 2 But 
+* 1724 30 6 I 
+* 1755 13 9 need 
+* 1772 7 1 to
+* 1780 2 0 ~
+* 1783 4 -1 ~ 
+* 1788 32 -1 go
+- 1820 1826
+- 1826
+* 1846 2 6 It’s 
+* 1850 2 3 no
+* 1853 6 4 ~
+* 1860 19 6 ~t 
+* 1882 20 9 per
+* 1906 3 6 so
+* 1911 14 9 na
+* 1931 20 11 ~l
+- 1951
+: 1956 4 2 When 
+: 1961 2 2 I 
+: 1968 11 4 say
+- 1979
+: 1989 2 0 I’m 
+: 1992 4 2 sor
+: 1997 3 4 ry 
+: 2002 2 6 I’m 
+: 2007 9 1 here 
+: 2018 2 1 for 
+: 2021 7 1 so
+: 2029 3 -1 ~me
+: 2033 3 -1 one 
+: 2037 8 2 e
+: 2046 3 -1 ~lse
+- 2049
+: 2064 2 -1 It’s 
+: 2069 9 1 good 
+: 2081 2 -1 to 
+: 2085 8 1 see 
+: 2094 2 -1 your 
+: 2099 14 -3 face
+- 2113
+: 2116 2 -2 And 
+: 2119 3 1 I 
+: 2124 2 4 real
+: 2127 2 2 ly 
+: 2132 4 2 ho
+: 2137 3 1 ~pe 
+: 2143 2 -1 you’re 
+: 2148 9 1 do
+: 2158 3 -1 ing 
+: 2163 10 2 we
+: 2175 5 -1 ~ll
+- 2180
+: 2190 2 8 I 
+: 2195 8 9 hope 
+: 2206 3 9 you’re 
+: 2211 3 9 do
+: 2216 3 11 ~
+: 2222 3 6 ing 
+: 2226 9 6 well
+- 2235
+: 2242 2 1 I’m 
+: 2247 4 2 sor
+: 2252 2 4 ry 
+: 2255 2 6 I’m 
+: 2260 9 9 here 
+: 2271 2 7 for 
+: 2276 9 6 some
+: 2286 2 4 one 
+: 2290 7 7 e
+: 2298 2 5 ~lse
+- 2300
+: 2310 2 7 I 
+: 2313 3 7 know 
+: 2317 3 7 you 
+: 2321 10 7 wish 
+: 2334 3 6 that 
+: 2338 8 4 I 
+: 2348 2 2 could 
+: 2353 9 6 stay
+: 2365 4 2 ~
+- 2369
+: 2372 4 2 Talk 
+: 2377 3 4 at 
+: 2381 2 0 the 
+: 2385 10 1 bar 
+: 2397 2 -1 all 
+: 2401 9 1 by 
+: 2411 2 -1 our
+: 2416 6 2 sel
+: 2424 5 -1 ~lves
+- 2429
+: 2440 2 0 But 
+: 2443 2 6 I’m 
+: 2448 8 6 here 
+: 2460 2 6 for 
+: 2464 12 4 some
+: 2477 2 2 one 
+: 2482 26 2 else
+- 2508 2564
+- 2564
+: 2584 2 0 I’m 
+: 2587 3 0 still 
+: 2591 4 0 in 
+: 2596 7 2 love 
+: 2604 2 4 with 
+: 2610 16 6 you
+- 2626
+* 2646 2 0 I’m 
+* 2651 3 0 go
+* 2655 3 2 ing 
+* 2659 3 7 out
+* 2663 3 6 ta 
+* 2667 2 4 my 
+* 2671 13 2 mi
+* 2685 15 -1 ~nd
+- 2700
+F 2718 2 0 I-
+F 2722 2 0 I-
+F 2726 2 2 I-
+: 2730 2 0 I 
+: 2734 6 9 coul
+: 2742 2 9 dn’t 
+: 2746 2 9 take 
+: 2750 2 9 it 
+: 2754 2 9 a
+: 2757 2 6 ny
+: 2761 7 6 more
+- 2768
+: 2777 3 0 I 
+: 2781 3 2 was 
+: 2786 3 2 al
+: 2790 2 4 rea
+: 2793 2 2 dy 
+: 2797 6 7 run
+: 2804 3 7 ning 
+: 2809 3 7 for 
+: 2813 2 7 the 
+: 2816 3 7 kit
+: 2820 4 7 chen 
+: 2825 7 6 doors
+- 2832
+: 2841 2 2 You 
+: 2844 3 2 were 
+: 2848 3 0 al
+: 2852 3 4 ways 
+: 2856 2 2 the 
+: 2861 6 7 one 
+: 2868 2 7 I 
+: 2873 3 7 shoul
+: 2877 2 7 d’ve 
+: 2881 3 7 wai
+: 2885 2 7 ted 
+: 2889 6 6 for
+- 2895
+* 2903 3 0 I 
+* 2908 4 4 can’t 
+* 2913 2 6 lose 
+* 2917 2 6 you 
+* 2920 2 6 a
+* 2924 6 6 gain, 
+* 2932 2 6 not 
+* 2936 2 0 a
+* 2939 6 6 gain, 
+* 2947 2 6 not 
+* 2951 2 0 a
+* 2954 7 6 gain, 
+* 2964 2 6 not 
+* 2967 2 0 a
+* 2970 6 6 gai
+* 2977 9 4 ~
+* 2987 9 2 ~n
+E
