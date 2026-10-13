@@ -1,5 +1,6 @@
-import { ComponentProps, ReactNode } from 'react';
+import { ComponentProps, ReactNode, useState } from 'react';
 
+import { Calibration } from '~/modules/calibration/calibration';
 import ConfirmModal from '~/modules/elements/akui/confirm-modal';
 import { Menu } from '~/modules/elements/akui/menu';
 import { MenuButton } from '~/modules/elements/menu';
@@ -11,7 +12,7 @@ import { formatScore } from '~/modules/online/format-score';
 import { OnlineParticipant, OnlinePauseState } from '~/modules/online/protocol/types';
 import ParticipantSlot from '~/routes/online/components/participant-slot';
 import CountdownOverlay from '~/routes/online/singing/countdown-overlay';
-import { InGameInputLag, InGameMicSwitcher } from '~/routes/settings/in-game-audio-settings';
+import { InGameMicSwitcher } from '~/routes/settings/in-game-audio-settings';
 
 interface Props {
   pause: OnlinePauseState;
@@ -30,7 +31,7 @@ interface PauseButtonProps extends Omit<ComponentProps<typeof MenuButton>, 'onCl
 }
 
 /** A pause-menu button that registers from its own render, so it keeps its visual place in the
- * keyboard navigation order — same reason the settings rows do, see `in-game-audio-settings.tsx`. */
+ * keyboard navigation order — same reason the mic switcher does, see `in-game-audio-settings.tsx`. */
 function PauseButton({ name, onClick, isDefault = false, children, ...props }: PauseButtonProps) {
   const register = useRegister();
 
@@ -49,7 +50,8 @@ function PauseOverlay({ pause, resumeCountdownEndsAt, onResume, isHost, hostId, 
   // The confirmations opened from here (end game, kicking a singer) pause this on their own.
   // Disabled while the resume countdown is up: the menu below isn't rendered then, so Enter/Escape/
   // arrows must not act on its (unmounted) registrations.
-  const { register } = useKeyboardNav({ enabled: resumeCountdownEndsAt === null });
+  const [isCalibrationOpen, setIsCalibrationOpen] = useState(false);
+  const { register } = useKeyboardNav({ enabled: resumeCountdownEndsAt === null && !isCalibrationOpen });
 
   if (resumeCountdownEndsAt !== null) {
     return <CountdownOverlay endsAtServerTime={resumeCountdownEndsAt} label="Resuming in" />;
@@ -60,6 +62,21 @@ function PauseOverlay({ pause, resumeCountdownEndsAt, onResume, isHost, hostId, 
   };
 
   const connected = participants.filter((participant) => participant.connected);
+
+  if (isCalibrationOpen) {
+    return (
+      <Modal open>
+        <Menu modal>
+          <Calibration
+            source="pause"
+            onSave={() => setIsCalibrationOpen(false)}
+            onClose={() => setIsCalibrationOpen(false)}
+            saveLabel="Back to pause menu"
+          />
+        </Menu>
+      </Modal>
+    );
+  }
 
   return (
     <Modal open>
@@ -88,9 +105,11 @@ function PauseOverlay({ pause, resumeCountdownEndsAt, onResume, isHost, hostId, 
             ))}
           </div>
           <Menu.Divider />
-          {/* Mic selection + input lag, adjustable mid-game like in the local pause menu */}
+          {/* Mic selection + calibration, adjustable mid-game like in the local pause menu */}
           <InGameMicSwitcher />
-          <InGameInputLag />
+          <PauseButton name="calibration" onClick={() => setIsCalibrationOpen(true)} size="small">
+            Sync video with sound
+          </PauseButton>
           <Menu.Divider />
           <PauseButton name="online-resume-button" onClick={onResume} isDefault>
             Resume song
