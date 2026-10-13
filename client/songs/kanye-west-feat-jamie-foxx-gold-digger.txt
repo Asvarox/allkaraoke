@@ -1,0 +1,863 @@
+#ARTIST:Kanye West feat. Jamie Foxx
+#TITLE:Gold Digger
+#CREATOR:Sam003pa
+#BPM:369,14
+#YEAR:2005
+#VIDEO:v=6vwNcNOTVzY
+#GENRE:Hip-Hop, Rap
+#LANGUAGE:English
+#GAP:4934,125264127431
+#ALLKARAOKE_ID:kanye-west-feat-jamie-foxx-gold-digger
+#ALLKARAOKE_SID:6626
+#ALLKARAOKE_LASTUPDATE:2026-10-13T04:50:26.011Z
+#ALLKARAOKE_REALBPM:92
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:222
+#MP3:Kanye West feat. Jamie Foxx - Gold Digger.mp3
+#COVER:Kanye West feat. Jamie Foxx - Gold Digger [CO].jpg
+#BACKGROUND:Kanye West feat. Jamie Foxx - Gold Digger [BG].jpg
+: 25 6 28 She 
+: 33 7 33 take 
+: 41 4 30 my 
+: 46 6 33 mo
+: 53 7 25 ney 
+: 79 4 30 when 
+: 90 5 33 I’m 
+: 96 3 30 in 
+* 100 10 33 need
+* 111 8 28 ~
+- 119
+: 135 10 32 Yea 
+: 147 6 30 she’s 
+: 154 1 25 a 
+* 156 8 28 tri
+: 165 8 30 flin’ 
+: 193 8 28 friend 
+: 204 7 26 in
+: 212 8 30 deed
+- 220 224
+- 224
+: 249 4 33 Oh 
+: 254 4 25 she’s 
+: 260 1 26 a 
+: 262 6 25 gold 
+: 269 3 35 dig
+: 273 3 35 ger 
+* 303 11 25 way 
+: 315 2 30 over 
+* 318 11 30 town
+- 329
+: 351 5 35 That 
+: 358 8 32 digs 
+: 369 3 33 on 
+: 373 3 33 me
+- 376 417
+- 417
+R 442 3 25 Now 
+R 446 1 24 I 
+R 448 4 18 ain’t 
+R 454 3 20 say
+R 458 3 20 in’ 
+R 462 2 20 she 
+R 466 3 19 a 
+R 470 8 19 gold 
+R 479 3 14 dig
+R 483 3 13 ger
+- 486
+R 506 2 31 But 
+R 509 2 17 she 
+R 514 3 20 ain’t 
+R 518 3 20 mes
+R 522 3 20 sin’ 
+R 526 3 20 wit 
+R 530 3 19 no 
+R 534 12 19 broke 
+R 547 4 19 broke
+- 551
+R 570 5 31 Now 
+R 576 1 31 I 
+R 578 3 18 ain’t 
+R 582 3 20 say
+R 586 3 20 in’ 
+R 590 2 20 she 
+R 594 3 19 a 
+R 598 8 19 gold 
+R 607 3 14 dig
+R 611 4 13 ger
+- 615
+R 633 3 30 But 
+R 637 2 18 she 
+R 642 4 21 ain’t 
+R 647 2 20 mes
+R 650 3 20 sin’ 
+R 654 3 20 wit 
+R 658 3 19 no 
+R 662 7 20 broke 
+R 674 20 20 broke
+- 694
+R 700 6 25 Get 
+R 708 6 24 down 
+R 715 5 16 girl, 
+R 721 5 18 go 
+R 727 9 13 ’head 
+R 737 3 10 get 
+R 741 13 10 down
+- 754
+R 765 4 22 Get 
+R 770 7 17 down 
+R 778 6 16 girl, 
+R 785 4 19 go 
+R 790 8 12 ’head 
+R 799 5 20 get 
+R 805 6 21 down
+- 811
+R 828 6 20 Get 
+R 835 6 16 down 
+R 842 6 16 girl, 
+R 849 4 18 go 
+R 854 6 14 ’head 
+R 861 3 16 get 
+R 865 5 11 down
+- 870
+R 894 3 10 Get 
+R 898 3 10 down 
+R 906 3 10 girl, 
+R 912 3 9 go 
+R 918 7 13 ’head
+- 925
+R 945 3 24 Cu
+R 949 3 24 tie 
+R 953 2 24 the 
+R 958 5 24 bomb, 
+R 967 1 23 met 
+R 969 1 22 her 
+R 973 2 20 at 
+R 978 2 20 a 
+R 982 2 24 beau
+R 985 2 24 ty 
+R 989 2 24 sa
+R 992 6 24 lon
+- 998
+R 1002 3 24 With 
+R 1006 1 24 a 
+R 1009 4 24 ba
+R 1014 3 24 by 
+R 1020 2 24 Lou
+R 1023 3 24 is 
+R 1027 3 25 Vuit
+R 1031 6 25 ton 
+R 1039 1 19 un
+R 1041 3 21 der 
+R 1045 2 24 her 
+R 1049 2 23 un
+R 1052 4 23 der
+R 1057 7 17 arm
+- 1064
+R 1065 4 18 She 
+R 1070 2 16 said 
+R 1077 3 24 I 
+R 1081 3 24 can 
+R 1085 4 18 tell 
+R 1090 1 16 you 
+R 1092 3 15 ROC, 
+R 1098 4 14 I 
+R 1104 3 14 can 
+R 1108 4 15 tell 
+R 1113 3 29 by 
+R 1117 1 24 ya 
+R 1122 4 19 charm
+- 1126
+R 1133 2 21 Far 
+R 1136 2 24 as 
+R 1139 3 20 girls 
+R 1144 5 25 you 
+R 1150 2 24 got 
+R 1153 3 16 a 
+R 1157 4 14 flock
+- 1161
+R 1166 2 15 I 
+R 1169 2 15 can 
+R 1172 3 14 tell 
+R 1178 1 14 by 
+R 1180 2 14 ya 
+R 1186 6 14 charm 
+R 1193 3 18 and 
+R 1197 2 18 ya 
+R 1200 5 18 arm
+- 1205
+R 1209 3 18 But 
+R 1213 2 17 I’m 
+R 1216 4 24 look
+R 1221 4 14 in’ 
+R 1226 3 17 for 
+R 1230 2 17 the 
+R 1233 4 18 one
+- 1237
+R 1241 3 25 Have 
+R 1245 3 19 you 
+R 1250 4 24 seen 
+R 1257 1 24 her?
+- 1258
+R 1264 3 21 My 
+R 1268 4 18 psy
+R 1273 4 15 chic 
+R 1278 4 19 told 
+R 1283 3 22 me 
+R 1288 3 22 she 
+R 1292 4 23 have 
+R 1297 1 25 a 
+R 1299 1 25 ass 
+R 1301 2 19 like 
+R 1310 2 18 Se
+R 1315 2 23 re
+R 1320 4 20 na
+- 1324
+R 1328 8 17 Tri
+R 1337 8 22 na, 
+R 1346 4 19 Jen
+R 1351 3 20 ni
+R 1355 5 17 fer 
+R 1362 6 18 Lo
+R 1369 7 16 pez, 
+R 1378 10 17 four 
+R 1389 3 22 kids
+- 1392
+R 1394 2 18 An 
+R 1397 1 18 I 
+R 1399 2 20 got
+R 1402 4 21 ta 
+R 1407 6 20 take 
+R 1416 2 21 all 
+R 1419 3 22 they 
+R 1423 5 22 bad 
+R 1431 9 24 ass 
+R 1441 1 24 to 
+R 1443 1 26 show
+R 1445 1 26 biz
+- 1446
+R 1453 8 26 Ok, 
+R 1462 10 20 get 
+R 1473 4 20 yo’ 
+R 1478 6 15 kids 
+R 1489 3 15 but 
+R 1493 3 18 then 
+R 1497 3 20 they 
+R 1501 3 20 got 
+R 1505 4 21 their 
+R 1510 7 14 friends
+- 1517
+R 1519 1 17 I 
+R 1521 1 24 pul
+R 1523 1 24 led 
+R 1528 5 21 up 
+R 1535 2 21 in 
+R 1538 3 21 the 
+R 1542 7 15 Benz, 
+R 1553 3 10 they 
+R 1560 4 17 all 
+R 1565 7 20 got 
+R 1577 1 21 a 
+R 1579 1 14 pen
+- 1580
+R 1585 4 15 We 
+R 1593 3 19 all 
+R 1597 3 21 went 
+R 1601 2 21 to 
+R 1604 7 16 Den 
+R 1619 2 16 and 
+R 1622 3 21 then 
+R 1627 1 21 I 
+R 1629 4 21 had 
+R 1634 3 21 to 
+R 1638 6 15 pay
+- 1644
+R 1646 2 24 If 
+R 1649 8 32 you 
+R 1658 1 24 fuck
+R 1660 1 24 in’ 
+R 1662 2 22 with 
+R 1665 4 21 this 
+R 1670 6 19 girl 
+R 1677 3 19 then 
+R 1681 3 19 you 
+R 1685 3 21 bet
+R 1689 3 21 ta’ 
+R 1693 3 16 be 
+R 1697 6 19 payed
+- 1703
+R 1704 4 18 You 
+R 1709 5 21 know 
+R 1715 5 22 why?
+- 1720
+R 1722 2 25 It 
+R 1737 6 20 take 
+R 1745 5 21 too 
+R 1753 6 19 much 
+R 1761 2 16 to 
+R 1765 7 21 touch 
+R 1774 2 17 her
+- 1776
+R 1782 5 21 From 
+R 1789 4 20 what 
+R 1794 1 21 I 
+R 1796 4 21 heard 
+R 1801 3 23 she 
+R 1805 5 19 got 
+R 1811 1 16 a 
+R 1813 3 20 ba
+R 1817 3 20 by 
+R 1821 1 19 by 
+R 1825 4 20 Bus
+R 1830 6 20 ta
+- 1836
+R 1842 3 18 My 
+R 1846 6 21 best 
+R 1853 6 22 friend 
+R 1860 4 20 say 
+R 1865 3 21 she 
+R 1870 2 21 use 
+R 1873 1 18 to 
+R 1875 2 24 fuck 
+R 1885 3 18 wit 
+R 1891 2 20 Ush
+R 1894 2 20 er
+- 1896
+R 1898 3 16 I 
+R 1909 6 23 don’t 
+R 1916 4 24 care 
+R 1921 3 12 what 
+R 1925 5 20 none 
+R 1931 1 18 of 
+R 1933 4 15 ya’ll 
+R 1946 1 10 say 
+R 1948 1 24 I 
+R 1950 7 20 still 
+R 1958 5 20 love 
+R 1965 3 17 her
+- 1968
+R 1969 6 20 Now 
+R 1976 4 13 I 
+R 1982 4 21 ain’t 
+R 1987 3 21 say
+R 1991 4 21 in’ 
+R 1996 3 21 she 
+R 2000 3 20 a 
+R 2004 8 20 gold 
+R 2013 3 15 dig
+R 2017 4 15 ger
+- 2021
+R 2039 3 15 But 
+R 2043 3 20 she 
+R 2047 4 21 ain’t 
+R 2052 3 21 mes
+R 2056 3 21 sin’ 
+R 2060 3 20 wit 
+R 2064 3 19 no 
+R 2068 7 20 broke 
+R 2081 4 19 broke
+- 2085
+R 2086 5 32 Now 
+R 2095 2 15 I 
+R 2104 10 18 ain’t 
+R 2115 3 21 say
+R 2119 4 21 in’ 
+R 2124 3 21 she 
+R 2128 3 20 a 
+R 2132 7 20 gold 
+R 2140 4 15 dig
+R 2145 14 18 ger
+- 2159
+R 2165 6 32 But 
+R 2172 2 20 she 
+R 2175 4 23 ain’t 
+R 2180 2 22 mes
+R 2183 4 22 sin’ 
+R 2188 3 21 wit 
+R 2192 3 20 no 
+R 2196 7 21 broke 
+R 2208 5 21 broke
+- 2213
+R 2218 5 15 Uh 
+R 2234 6 15 Get 
+R 2241 7 18 down 
+R 2249 5 15 girl, 
+R 2255 4 17 go 
+R 2260 4 13 ’head
+R 2268 3 16 get 
+R 2272 4 11 down
+- 2276
+R 2297 9 10 Get 
+R 2307 4 16 down 
+R 2312 6 16 girl, 
+R 2319 4 19 go 
+R 2324 7 13 ’head 
+R 2332 3 18 get 
+R 2336 5 20 down
+- 2341
+R 2362 6 17 Get 
+R 2369 6 15 down 
+R 2376 6 15 girl, 
+R 2383 4 18 go 
+R 2388 7 13 ’head 
+R 2396 2 16 get 
+R 2399 5 10 down
+- 2404
+R 2426 5 12 Get 
+R 2432 6 14 down 
+R 2440 5 16 girl, 
+R 2447 4 17 go 
+R 2452 7 19 ’head
+- 2459
+R 2482 6 31 Eigh
+R 2489 10 31 teen 
+R 2501 9 21 years, 
+R 2517 3 20 Eigh
+R 2521 4 20 teen 
+R 2529 7 21 years
+- 2536
+R 2537 4 20 She 
+R 2542 5 19 got 
+R 2549 3 20 one 
+R 2553 2 24 of 
+R 2556 3 20 yo’ 
+R 2560 7 21 kids, 
+R 2568 3 19 got 
+R 2572 3 21 you 
+R 2576 3 20 for 
+R 2581 4 20 eigh
+R 2586 4 20 teen 
+R 2593 7 22 years
+- 2600
+R 2602 1 24 I 
+R 2604 3 21 know 
+R 2608 7 20 some
+R 2616 3 24 body 
+R 2620 3 20 pay
+R 2624 3 20 in’ 
+R 2628 4 19 child 
+R 2633 2 19 sup
+R 2636 3 20 port 
+R 2640 4 18 for 
+R 2647 2 22 one 
+R 2650 1 20 of 
+R 2652 3 17 his 
+R 2656 7 18 kids
+- 2663
+R 2664 3 27 His 
+R 2668 3 20 ba
+R 2672 3 20 by 
+R 2676 3 20 mom
+R 2680 4 20 ma’s 
+R 2685 5 19 car 
+R 2691 1 22 and 
+R 2693 6 19 crib 
+R 2704 3 24 is 
+R 2708 3 17 big
+R 2712 2 19 ger 
+R 2715 3 20 than 
+R 2719 4 23 his
+- 2723
+R 2734 1 22 You 
+R 2736 4 20 will 
+R 2741 4 18 see 
+R 2746 3 18 him 
+R 2750 5 19 on 
+R 2756 5 17 T
+R 2762 6 17 V 
+R 2774 5 18 Any 
+R 2780 3 18 Gi
+R 2784 3 19 ven 
+R 2788 5 19 Sun
+R 2794 6 15 day
+- 2800
+R 2804 3 19 Win 
+R 2808 2 20 the 
+R 2811 2 23 Su
+R 2814 1 20 per
+R 2816 3 19 bowl 
+R 2825 2 17 and 
+R 2828 8 18 drive 
+R 2838 4 18 off 
+R 2845 2 19 in 
+R 2849 2 18 a 
+R 2852 2 19 Hyun
+R 2855 4 17 dai
+- 2859
+R 2860 3 23 She 
+R 2864 1 23 was 
+R 2866 6 21 spose’ 
+R 2873 2 20 to 
+R 2876 2 19 buy 
+R 2879 2 19 ya 
+R 2883 4 18 shor
+R 2888 4 18 ty 
+R 2893 5 19 Ty
+R 2899 7 15 co 
+R 2907 1 14 wi
+R 2909 2 12 th 
+R 2912 1 16 ya 
+R 2916 2 13 mo
+R 2919 3 11 ney
+- 2922
+R 2928 3 20 She 
+R 2932 4 22 went 
+R 2937 2 20 to 
+R 2940 2 19 the 
+R 2943 2 19 doc
+R 2946 2 19 tor 
+R 2952 3 18 got 
+R 2956 4 17 ly
+R 2961 5 16 po 
+R 2971 3 15 with 
+R 2975 2 16 ya 
+R 2979 3 13 mo
+R 2983 3 12 ney
+- 2986
+R 2991 5 32 She 
+R 2997 2 23 walk
+R 3000 1 23 in’ 
+R 3002 2 21 a
+R 3005 2 21 round 
+R 3008 2 21 look
+R 3011 3 19 in’ 
+R 3015 4 18 like 
+R 3021 6 20 Miche
+R 3028 6 15 al 
+R 3035 4 15 with 
+R 3040 1 16 ya 
+R 3044 2 14 mo
+R 3047 3 12 ney
+- 3050
+R 3055 8 20 Should 
+R 3064 1 17 of 
+R 3066 1 17 got 
+R 3068 3 17 that 
+R 3073 6 19 in
+R 3080 4 16 sured 
+R 3085 5 17 Gei
+R 3091 6 14 co 
+R 3099 3 14 for 
+R 3104 1 15 ya 
+R 3107 2 16 mo
+R 3110 2 14 ney
+- 3112 3116
+- 3116
+R 3141 9 11 If 
+R 3151 3 10 you 
+R 3156 4 22 ain’t 
+R 3161 3 21 no 
+R 3167 8 23 punk 
+R 3180 3 21 hol
+R 3184 3 21 la, 
+R 3188 4 24 “We 
+R 3193 6 24 want 
+R 3200 6 25 pre
+R 3207 7 22 nup”
+- 3214
+R 3219 4 20 “We 
+R 3224 6 23 want 
+R 3231 5 24 pre
+R 3237 8 20 nup!”, 
+R 3248 11 18 yeah
+- 3259
+R 3264 2 17 It’s 
+R 3267 3 23 some
+R 3271 3 22 thing 
+R 3275 4 18 that 
+R 3280 3 15 you 
+R 3284 6 19 need 
+R 3291 3 14 to 
+R 3295 4 16 have
+- 3299
+R 3300 6 15 ’Cause 
+R 3307 3 21 when 
+R 3311 4 18 she 
+R 3316 6 19 leave 
+R 3323 5 24 yo’ 
+R 3329 1 20 ass 
+R 3334 5 22 she 
+R 3340 6 16 gone 
+R 3347 7 16 leave 
+R 3355 4 12 with 
+R 3360 10 14 half
+- 3370
+R 3381 5 19 Eigh
+R 3387 5 19 teen 
+R 3396 8 20 years, 
+R 3411 4 20 Eigh
+R 3416 5 20 teen 
+R 3423 9 21 years
+- 3432
+R 3433 2 19 And 
+R 3437 2 19 on 
+R 3440 2 24 her 
+R 3444 1 21 eigh
+R 3446 3 21 teenth 
+R 3455 4 21 birth
+R 3460 4 21 day, 
+R 3465 1 24 he 
+R 3467 7 20 found 
+R 3477 2 20 out 
+R 3481 2 22 it 
+R 3484 2 25 was
+R 3487 3 25 n’t 
+R 3491 6 23 his
+- 3497
+R 3498 5 25 Now 
+R 3512 4 16 I 
+R 3518 4 20 ain’t 
+R 3523 3 21 say
+R 3527 3 21 in’ 
+R 3531 3 21 she 
+R 3535 2 18 a 
+R 3539 7 19 gold 
+R 3547 3 13 dig
+R 3551 5 14 ger
+- 3556
+R 3573 4 17 But 
+R 3578 3 21 she 
+R 3582 4 22 ain’t 
+R 3587 2 21 mes
+R 3590 3 21 sin’ 
+R 3594 3 21 wit 
+R 3598 3 20 no 
+R 3602 12 21 broke 
+R 3615 8 19 broke
+- 3623
+R 3627 5 17 Now 
+R 3635 1 24 I 
+R 3640 9 22 ain’t 
+R 3650 3 22 say
+R 3654 3 22 in’ 
+R 3658 4 22 she 
+R 3663 2 21 a 
+R 3666 7 20 gold 
+R 3674 4 18 dig
+R 3679 4 19 ger
+- 3683
+R 3691 14 20 But 
+R 3706 3 20 she 
+R 3710 4 22 ain’t 
+R 3715 2 22 mes
+R 3718 3 21 sin’ 
+R 3722 3 21 wit 
+R 3726 3 21 no 
+R 3730 7 21 broke 
+R 3742 1 16 broke
+R 3744 18 19 ~
+- 3762
+R 3767 7 17 Get 
+R 3775 7 17 down 
+R 3783 6 16 girl, 
+R 3790 4 17 go 
+R 3795 6 14 ’head 
+R 3802 3 17 get 
+R 3806 6 12 down
+- 3812 3813
+- 3813
+R 3838 4 16 Get 
+R 3843 2 16 down 
+R 3846 6 16 girl, 
+R 3853 4 19 go 
+R 3858 6 13 ’head 
+R 3865 4 19 get 
+R 3870 11 19 down
+- 3881
+R 3896 5 17 Get 
+R 3902 7 17 down 
+R 3910 6 17 girl, 
+R 3917 4 18 go 
+R 3922 7 15 ’head 
+R 3930 3 18 get 
+R 3934 10 11 down
+- 3944
+R 3945 6 14 Get 
+R 3966 7 14 down 
+R 3974 7 14 girl, 
+R 3982 2 16 go 
+R 3985 5 15 ’head
+- 3990
+R 3991 3 12 Now 
+R 3995 1 14 I 
+R 4011 5 20 ain’t 
+R 4017 3 22 say
+R 4021 4 22 in’ 
+R 4026 3 23 you 
+R 4031 2 17 a 
+R 4034 6 17 gold 
+R 4042 3 18 dig
+R 4046 3 19 ger, 
+R 4050 3 17 you 
+R 4054 7 16 got 
+R 4062 7 13 needs
+- 4069
+R 4070 2 18 You 
+R 4073 5 20 don’t 
+R 4079 2 22 want 
+R 4082 1 22 ya 
+R 4084 1 20 dude 
+R 4086 1 20 to 
+R 4096 8 17 smoke 
+R 4105 4 18 but 
+R 4110 2 17 he 
+R 4113 3 17 can’t 
+R 4118 3 16 buy 
+R 4122 2 17 weed
+- 4124
+R 4133 3 18 You 
+R 4137 4 20 go 
+R 4144 2 20 out 
+R 4147 3 20 to 
+R 4152 3 19 eat 
+R 4156 1 20 and 
+R 4158 3 18 he 
+R 4162 6 18 can’t 
+R 4169 6 17 pay, 
+R 4176 5 16 ya’ll 
+R 4182 7 17 can’t 
+R 4191 7 14 leave
+- 4198
+R 4205 3 18 There’s 
+R 4209 3 22 dish
+R 4213 3 22 es 
+R 4219 2 22 in 
+R 4222 2 20 the 
+R 4225 4 18 back, 
+R 4230 1 20 he 
+R 4234 1 19 got
+R 4236 2 18 ta 
+R 4241 5 17 roll 
+R 4247 1 16 up 
+R 4249 1 18 his 
+R 4252 11 15 sleeves
+- 4263
+R 4265 5 17 But 
+R 4280 4 15 while 
+R 4285 4 13 ya’ll 
+R 4290 5 19 wash
+R 4296 5 19 in’ 
+R 4302 8 24 watch 
+R 4311 4 24 him
+- 4315
+R 4322 3 26 He 
+R 4326 2 25 gone 
+R 4330 3 23 make 
+R 4334 1 19 it 
+R 4336 2 23 in
+R 4339 2 22 to 
+R 4343 2 17 a 
+R 4346 7 21 Benz 
+R 4356 2 20 out 
+R 4360 1 24 of 
+R 4362 2 20 that 
+R 4366 4 24 Dat
+R 4371 5 21 sun
+- 4376
+R 4385 4 25 He 
+R 4390 3 20 got 
+R 4394 3 19 that 
+R 4399 2 14 am
+R 4402 3 20 bi
+R 4406 8 22 tion 
+R 4415 5 16 ba
+R 4421 5 16 by 
+R 4433 5 22 look 
+R 4439 2 17 at 
+R 4442 3 12 his 
+R 4450 5 15 eyes
+- 4455
+R 4460 4 18 This 
+R 4465 4 24 week 
+R 4470 2 21 he 
+R 4473 3 21 mop
+R 4477 3 19 pin’ 
+R 4481 9 20 floors, 
+R 4492 5 22 next 
+R 4498 3 23 week 
+R 4502 2 20 it’s 
+R 4505 4 16 the 
+R 4510 10 19 fries
+- 4520
+R 4524 11 20 So, 
+R 4542 7 25 stick 
+R 4550 3 17 by 
+R 4554 2 13 his 
+R 4557 11 13 side
+- 4568
+R 4574 1 20 I 
+R 4576 3 24 know 
+R 4580 2 24 this 
+R 4585 6 20 dude’s 
+R 4593 5 17 bal
+R 4599 5 17 lin’ 
+R 4605 3 16 and 
+R 4610 3 15 yea 
+R 4615 5 19 that’s 
+R 4621 10 12 nice
+- 4631
+R 4638 2 17 And 
+R 4641 3 22 they 
+R 4645 3 23 gon’ 
+R 4649 3 19 keep 
+R 4653 5 17 cal
+R 4659 5 18 lin’ 
+R 4665 2 19 and 
+R 4669 7 16 try
+R 4677 6 16 in’
+- 4683
+R 4684 3 15 But 
+R 4688 3 19 you 
+R 4692 8 18 stay 
+R 4701 7 18 right, 
+R 4709 6 15 girl
+- 4715
+R 4716 2 16 But 
+R 4721 2 16 when 
+R 4724 3 18 he 
+R 4729 4 19 get 
+R 4736 4 16 on 
+R 4741 2 16 he 
+R 4744 3 17 leave 
+R 4748 2 15 yo’ 
+R 4751 2 24 ass 
+R 4757 6 17 for 
+R 4764 1 24 a 
+R 4766 6 16 white 
+R 4773 9 13 girl
+- 4782
+R 4793 3 16 Get 
+R 4797 7 16 down 
+R 4805 7 14 girl, 
+R 4813 4 16 go 
+R 4818 6 12 ’head 
+R 4825 3 14 get 
+R 4829 16 9 down
+- 4845
+R 4856 4 18 Get 
+R 4861 7 18 down 
+R 4869 7 17 girl, 
+R 4877 3 19 go 
+R 4881 6 13 ’head 
+R 4888 3 16 get 
+R 4892 27 15 down
+- 4919
+R 4920 3 17 Get 
+R 4924 8 17 down 
+R 4933 6 15 girl, 
+R 4940 4 18 go 
+R 4945 6 13 ’head 
+R 4952 3 16 get 
+R 4956 11 9 down
+- 4967
+R 4968 19 15 Get 
+R 4988 7 15 down 
+R 4996 6 14 girl, 
+R 5004 3 14 go 
+R 5008 6 14 ’head
+- 5014
+R 5032 2 20 Let 
+R 5035 1 17 me 
+R 5037 1 20 hear 
+R 5039 3 20 that 
+R 5043 5 20 back
+E

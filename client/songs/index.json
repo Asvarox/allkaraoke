@@ -9846,6 +9846,35 @@
     "local": false
   },
   {
+    "id": "amy-winehouse-fuck-me-pumps",
+    "title": "Fuck Me Pumps",
+    "artist": "Amy Winehouse",
+    "video": "iVaqQe3V498",
+    "language": [
+      "English"
+    ],
+    "bpm": 297,
+    "gap": 8039.898989898989,
+    "year": "2004",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-10-13T04:50:25.489Z",
+    "realBpm": 103,
+    "previewStart": 3,
+    "previewEnd": 26,
+    "volume": 1,
+    "author": "JURAZZZ123",
+    "duration": 208,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6619,
+    "tracksCount": 1,
+    "search": "amywinehousefuckmepumps",
+    "local": false
+  },
+  {
     "id": "amy-winehouse-love-is-a-losing-game",
     "title": "Love Is A Losing Game",
     "artist": "Amy Winehouse",
@@ -17790,6 +17819,36 @@
     "local": false
   },
   {
+    "id": "bad-omens-nowhere-to-go",
+    "title": "Nowhere To Go",
+    "artist": "Bad Omens",
+    "video": "4a8CogWA3-Y",
+    "language": [
+      "English"
+    ],
+    "bpm": 521.4,
+    "gap": 10393.095512082853,
+    "year": "2022",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-13T04:50:24.019Z",
+    "genre": "Metal",
+    "realBpm": 174,
+    "volume": 1,
+    "author": "extraaa",
+    "authorUrl": "badomensofficial.com",
+    "sourceUrl": "https://www.youtube.com/watch?v=4a8CogWA3-Y&list=RD4a8CogWA3-Y&start_radio=1",
+    "duration": 249,
+    "tracks": [
+      {
+        "start": 35
+      }
+    ],
+    "shortId": 6614,
+    "tracksCount": 1,
+    "search": "badomensnowheretogo",
+    "local": false
+  },
+  {
     "id": "bad-omens-the-grey",
     "title": "The Grey",
     "artist": "Bad Omens",
@@ -20855,6 +20914,34 @@
     "shortId": 6275,
     "tracksCount": 1,
     "search": "bensonboonenightslikethese",
+    "local": false
+  },
+  {
+    "id": "benson-boone-slow-it-down",
+    "title": "Slow It Down",
+    "artist": "Benson Boone",
+    "video": "f4Y3b7un4LE",
+    "language": [
+      "English"
+    ],
+    "bpm": 385.33,
+    "gap": 7997.880517997561,
+    "year": "2024",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-13T04:50:25.800Z",
+    "realBpm": 181,
+    "volume": 1,
+    "author": "UltraSinger",
+    "sourceUrl": "https://www.youtube.com/watch?v=f4Y3b7un4LE&t=1s",
+    "duration": 184,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6622,
+    "tracksCount": 1,
+    "search": "bensonbooneslowitdown",
     "local": false
   },
   {
@@ -24850,6 +24937,33 @@
     "shortId": 628,
     "tracksCount": 1,
     "search": "blondiethetideishigh",
+    "local": false
+  },
+  {
+    "id": "bloodhound-gang-along-comes-mary",
+    "title": "Along Comes Mary",
+    "artist": "Bloodhound Gang",
+    "video": "0RaLEVmuM4o",
+    "language": [
+      "English"
+    ],
+    "bpm": 311.42,
+    "gap": 48278.504270759746,
+    "year": "1998",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-13T04:50:26.009Z",
+    "realBpm": 155,
+    "volume": 1,
+    "author": "MasterChristian",
+    "duration": 261,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6625,
+    "tracksCount": 1,
+    "search": "bloodhoundgangalongcomesmary",
     "local": false
   },
   {
@@ -43723,6 +43837,33 @@
     "local": false
   },
   {
+    "id": "david-guetta-kim-petras-when-we-were-young-the-logical-song",
+    "title": "When We Were Young (The Logical Song)",
+    "artist": "David Guetta & Kim Petras",
+    "video": "YBGtzfK5Bak",
+    "language": [
+      "English"
+    ],
+    "bpm": 280,
+    "gap": 1.4285714285714448,
+    "year": "2024",
+    "lastUpdate": "2026-10-13T04:50:23.748Z",
+    "genre": "EDM",
+    "realBpm": 140,
+    "volume": 1,
+    "author": "b888arb",
+    "duration": 165,
+    "tracks": [
+      {
+        "start": 8
+      }
+    ],
+    "shortId": 6612,
+    "tracksCount": 1,
+    "search": "davidguettakimpetraswhenwewereyoungthelogicalsong",
+    "local": false
+  },
+  {
     "id": "david-guetta-onerepublic-i-dont-wanna-wait",
     "title": "I Don’t Wanna Wait",
     "artist": "David Guetta & OneRepublic",
@@ -50114,6 +50255,37 @@
     "shortId": 1288,
     "tracksCount": 1,
     "search": "disneyspocahontasedytagorniakkolorowywiatr",
+    "local": false
+  },
+  {
+    "id": "disneys-sleeping-beauty-once-upon-a-dream",
+    "title": "Once Upon A Dream",
+    "artist": "Disney’s Sleeping Beauty",
+    "video": "TXbHShUnwxY",
+    "language": [
+      "English"
+    ],
+    "bpm": 328.7,
+    "gap": 5826.0450258594465,
+    "year": "1959",
+    "lastUpdate": "2026-10-13T04:50:23.883Z",
+    "genre": "Soundtrack",
+    "realBpm": 164.35,
+    "volume": 1,
+    "author": "leaby",
+    "sourceUrl": "https://www.youtube.com/watch?v=TXbHShUnwxY",
+    "duration": 158,
+    "tracks": [
+      {
+        "start": 1297
+      },
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6613,
+    "tracksCount": 2,
+    "search": "disneyssleepingbeautyonceuponadream",
     "local": false
   },
   {
@@ -59206,6 +59378,33 @@
     "local": false
   },
   {
+    "id": "epic-the-musical-jorge-rivera-herrans-armando-julian-storm",
+    "title": "Storm",
+    "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Armando Julian)",
+    "video": "2JFLwhARquw",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 22387.5,
+    "year": "2024",
+    "lastUpdate": "2026-10-13T04:50:24.160Z",
+    "genre": "Musical",
+    "realBpm": 165,
+    "volume": 1,
+    "author": "Andore",
+    "duration": 164,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6617,
+    "tracksCount": 1,
+    "search": "epicthemusicaljorgeriveraherransarmandojulianstorm",
+    "local": false
+  },
+  {
     "id": "epic-the-musical-jorge-rivera-herrans-armando-julian-talya-sindel-puppeteer",
     "title": "Puppeteer",
     "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Armando Julian, Talya Sindel)",
@@ -59592,6 +59791,35 @@
     "shortId": 6172,
     "tracksCount": 1,
     "search": "epicthemusicaljorgeriveraherransmonster",
+    "local": false
+  },
+  {
+    "id": "epic-the-musical-jorge-rivera-herrans-steven-dookie-open-arms",
+    "title": "Open Arms",
+    "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Steven Dookie)",
+    "video": "OiaNekenThU",
+    "language": [
+      "English"
+    ],
+    "bpm": 350,
+    "gap": 8164.285714285714,
+    "year": "2024",
+    "lastUpdate": "2026-10-13T04:50:25.492Z",
+    "genre": "Musical",
+    "realBpm": 99,
+    "volume": 1,
+    "author": "b888arb",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=31855",
+    "duration": 222,
+    "tracks": [
+      {
+        "name": "Open Arms",
+        "start": 23
+      }
+    ],
+    "shortId": 6620,
+    "tracksCount": 1,
+    "search": "epicthemusicaljorgeriveraherransstevendookieopenarms",
     "local": false
   },
   {
@@ -82744,6 +82972,33 @@
     "local": false
   },
   {
+    "id": "ivete-sangalo-sorte-grande-rock-in-rio",
+    "title": "Sorte grande (Rock in Rio)",
+    "artist": "Ivete Sangalo",
+    "video": "qhf4r0HdenY",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 300,
+    "gap": 36560,
+    "year": "2003",
+    "artistOrigin": "BR",
+    "lastUpdate": "2026-10-13T04:50:23.621Z",
+    "realBpm": 142,
+    "volume": 1,
+    "author": "b888arb",
+    "duration": 273,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6611,
+    "tracksCount": 1,
+    "search": "ivetesangalosortegranderockinrio",
+    "local": false
+  },
+  {
     "id": "izumi-kobayashi-dancing-star",
     "title": "Dancing Star",
     "artist": "Izumi Kobayashi",
@@ -92768,6 +93023,33 @@
     "shortId": 2275,
     "tracksCount": 2,
     "search": "kanyewestfeatdweleflashinglights",
+    "local": false
+  },
+  {
+    "id": "kanye-west-feat-jamie-foxx-gold-digger",
+    "title": "Gold Digger",
+    "artist": "Kanye West feat. Jamie Foxx",
+    "video": "6vwNcNOTVzY",
+    "language": [
+      "English"
+    ],
+    "bpm": 369.14,
+    "gap": 4934.125264127431,
+    "year": "2005",
+    "lastUpdate": "2026-10-13T04:50:26.011Z",
+    "genre": "Hip-Hop, Rap",
+    "realBpm": 92,
+    "volume": 1,
+    "author": "Sam003pa",
+    "duration": 222,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6626,
+    "tracksCount": 1,
+    "search": "kanyewestfeatjamiefoxxgolddigger",
     "local": false
   },
   {
@@ -106059,6 +106341,34 @@
     "local": false
   },
   {
+    "id": "lindemann-praise-abort",
+    "title": "Praise Abort",
+    "artist": "Lindemann",
+    "video": "QWE_M0CX9So",
+    "language": [
+      "English"
+    ],
+    "bpm": 240.06,
+    "gap": 15.093726568357908,
+    "year": "2015",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-10-13T04:50:25.656Z",
+    "genre": "Rock",
+    "realBpm": 140,
+    "volume": 1,
+    "author": "Fepo",
+    "duration": 314,
+    "tracks": [
+      {
+        "start": 6
+      }
+    ],
+    "shortId": 6621,
+    "tracksCount": 1,
+    "search": "lindemannpraiseabort",
+    "local": false
+  },
+  {
     "id": "lindsey-stirling-feat-becky-g-christmas-cmon",
     "title": "Christmas C’mon",
     "artist": "Lindsey Stirling feat. Becky G",
@@ -116275,6 +116585,33 @@
     "shortId": 2839,
     "tracksCount": 1,
     "search": "markforsterxleadreiuhrnachts",
+    "local": false
+  },
+  {
+    "id": "mark-medlock-dieter-bohlen-you-can-get-it",
+    "title": "You Can Get It",
+    "artist": "Mark Medlock & Dieter Bohlen",
+    "video": "HHKRTIqmn6Y",
+    "language": [
+      "English"
+    ],
+    "bpm": 280,
+    "gap": 16102.142857142857,
+    "year": "2007",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-10-13T04:50:23.028Z",
+    "realBpm": 122,
+    "volume": 1,
+    "author": "IC",
+    "duration": 213,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6607,
+    "tracksCount": 1,
+    "search": "markmedlockdieterbohlenyoucangetit",
     "local": false
   },
   {
@@ -131032,6 +131369,35 @@
     "local": false
   },
   {
+    "id": "nightwish-the-kinslayer",
+    "title": "The Kinslayer",
+    "artist": "Nightwish",
+    "video": "tbMIHckT5No",
+    "language": [
+      "English"
+    ],
+    "bpm": 355.2,
+    "gap": 40726.48648648649,
+    "year": "2000",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-10-13T04:50:23.614Z",
+    "realBpm": 174,
+    "volume": 1,
+    "author": "Canni",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=349",
+    "duration": 239,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6610,
+    "tracksCount": 1,
+    "search": "nightwishthekinslayer",
+    "local": false
+  },
+  {
     "id": "nightwish-wanderlust",
     "title": "Wanderlust",
     "artist": "Nightwish",
@@ -137439,6 +137805,33 @@
     "shortId": 3380,
     "tracksCount": 1,
     "search": "paramorebrickbyboringbrick",
+    "local": false
+  },
+  {
+    "id": "paramore-careful",
+    "title": "Careful",
+    "artist": "Paramore",
+    "video": "JZ7_UnqtYmw",
+    "language": [
+      "English"
+    ],
+    "bpm": 329.89999999999986,
+    "gap": 23150.69687784177,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-13T04:50:26.007Z",
+    "realBpm": 165,
+    "volume": 1,
+    "author": "bober0610",
+    "duration": 224,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6624,
+    "tracksCount": 1,
+    "search": "paramorecareful",
     "local": false
   },
   {
@@ -144363,6 +144756,36 @@
     "local": false
   },
   {
+    "id": "radiohead-paranoid-android",
+    "title": "Paranoid Android",
+    "artist": "Radiohead",
+    "video": "fHiGbolFFGw",
+    "language": [
+      "English"
+    ],
+    "bpm": 328,
+    "gap": 19823.90243902439,
+    "year": "1997",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-10-13T04:50:24.021Z",
+    "realBpm": 164,
+    "previewStart": 245,
+    "previewEnd": 383,
+    "volume": 1,
+    "author": "vm",
+    "sourceUrl": "https://www.youtube.com/watch?v=fHiGbolFFGw",
+    "duration": 393,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6615,
+    "tracksCount": 1,
+    "search": "radioheadparanoidandroid",
+    "local": false
+  },
+  {
     "id": "radiohead-pyramid-song",
     "title": "Pyramid Song",
     "artist": "Radiohead",
@@ -148773,6 +149196,33 @@
     "local": false
   },
   {
+    "id": "rio-roma-mi-persona-favorita",
+    "title": "Mi persona favorita",
+    "artist": "Río Roma",
+    "video": "AJKzOgv5YNU",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 304,
+    "gap": 28243.157894736843,
+    "year": "2014",
+    "artistOrigin": "MX",
+    "lastUpdate": "2026-10-13T04:50:24.024Z",
+    "realBpm": 152,
+    "volume": 1,
+    "author": "Pantero",
+    "duration": 242,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6616,
+    "tracksCount": 1,
+    "search": "rioromamipersonafavorita",
+    "local": false
+  },
+  {
     "id": "rise-against-but-tonight-we-dance",
     "title": "But Tonight We Dance",
     "artist": "Rise Against",
@@ -152258,6 +152708,35 @@
     "shortId": 6200,
     "tracksCount": 1,
     "search": "saintmotelcoldcoldman",
+    "local": false
+  },
+  {
+    "id": "saint-motel-my-type",
+    "title": "My Type",
+    "artist": "Saint Motel",
+    "video": "IyVPyKrx0Xo",
+    "language": [
+      "English"
+    ],
+    "bpm": 235.88,
+    "gap": 32012.5334916059,
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-13T04:50:23.612Z",
+    "genre": "Pop",
+    "realBpm": 118,
+    "volume": 1,
+    "author": "gun8",
+    "sourceUrl": "https://www.youtube.com/watch?v=IyVPyKrx0Xo",
+    "duration": 210,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6609,
+    "tracksCount": 1,
+    "search": "saintmotelmytype",
     "local": false
   },
   {
@@ -181948,6 +182427,61 @@
     "local": false
   },
   {
+    "id": "tokio-hotel-spring-nicht",
+    "title": "Spring nicht",
+    "artist": "Tokio Hotel",
+    "video": "qC8u8XYd13M",
+    "language": [
+      "German"
+    ],
+    "bpm": 326,
+    "gap": 25967.730061349692,
+    "year": "2007",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-10-13T04:50:25.486Z",
+    "realBpm": 55,
+    "volume": 1,
+    "author": "Su-Metal",
+    "duration": 257,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6618,
+    "tracksCount": 1,
+    "search": "tokiohotelspringnicht",
+    "local": false
+  },
+  {
+    "id": "tokio-hotel-uebers-ende-der-welt",
+    "title": "Übers Ende der Welt",
+    "artist": "Tokio Hotel",
+    "video": "eJ2zsclf93Q",
+    "language": [
+      "German"
+    ],
+    "bpm": 280,
+    "gap": 32582.14285714286,
+    "year": "2007",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-10-13T04:50:23.608Z",
+    "realBpm": 140,
+    "volume": 1,
+    "author": "bohning",
+    "sourceUrl": "https://www.youtube.com/watch?v=eJ2zsclf93Q",
+    "duration": 237,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6608,
+    "tracksCount": 1,
+    "search": "tokiohoteluebersendederwelt",
+    "local": false
+  },
+  {
     "id": "tom-dice-me-and-my-guitar",
     "title": "Me And My Guitar",
     "artist": "Tom Dice",
@@ -187901,6 +188435,34 @@
     "shortId": 6519,
     "tracksCount": 1,
     "search": "villevaloagentsparatiisi",
+    "local": false
+  },
+  {
+    "id": "ville-valo-natalia-avelon-summer-wine",
+    "title": "Summer Wine",
+    "artist": "Ville Valo & Natalia Avelon",
+    "video": "ONdsLfVZMso",
+    "language": [
+      "English"
+    ],
+    "bpm": 284,
+    "gap": 8056.478873239436,
+    "year": "2006",
+    "lastUpdate": "2026-10-13T04:50:25.802Z",
+    "realBpm": 142,
+    "volume": 1,
+    "author": "a224",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=3",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=241",
+    "duration": 235,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6623,
+    "tracksCount": 1,
+    "search": "villevalonataliaavelonsummerwine",
     "local": false
   },
   {

@@ -1,0 +1,243 @@
+#ARTIST:Nightwish
+#TITLE:The Kinslayer
+#CREATOR:Canni
+#BPM:355,2
+#YEAR:2000
+#VIDEO:v=tbMIHckT5No
+#LANGUAGE:English
+#GAP:40726,48648648649
+#ALLKARAOKE_ID:nightwish-the-kinslayer
+#ALLKARAOKE_SID:6610
+#ALLKARAOKE_LASTUPDATE:2026-10-13T04:50:23.614Z
+#ALLKARAOKE_ARTISTORIGIN:FI
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=2
+#ALLKARAOKE_REALBPM:174
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=349
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:239
+#MP3:Nightwish - The Kinslayer.mp3
+: 24 8 8 For 
+: 40 12 8 whom 
+: 56 8 8 the 
+: 72 7 8 gun 
+: 80 7 9 tolls
+- 87
+: 88 8 8 For 
+: 104 8 8 whom 
+: 120 8 8 the 
+: 136 7 3 prey 
+: 144 7 3 weeps
+- 151
+: 152 8 8 Bow 
+: 168 12 8 be
+: 184 12 8 fore 
+: 200 7 8 a 
+: 208 7 9 war
+- 215
+: 216 8 8 Call 
+: 232 8 8 it 
+: 248 7 8 re
+: 256 4 8 li
+: 264 8 7 gion
+- 272
+: 280 8 13 Some 
+: 296 12 13 wounds 
+: 312 8 13 nev
+: 328 7 13 er 
+: 336 7 14 heal
+- 343
+: 344 8 13 Some 
+: 360 8 13 tears 
+: 376 7 16 nev
+: 384 7 16 er 
+: 392 8 15 will
+- 400
+: 408 8 13 Dry 
+: 424 8 13 for 
+: 440 8 13 the 
+: 456 7 13 un
+: 464 7 14 kind
+- 471
+: 472 8 13 Cry 
+: 488 8 13 for 
+: 504 7 13 man
+: 512 16 13 kind
+- 528
+: 536 12 8 E
+: 552 8 8 ven 
+: 568 8 8 the 
+: 584 7 8 dead 
+: 592 7 9 cry
+- 599
+: 600 8 8 Their 
+: 616 7 8 on
+: 624 7 8 ly 
+: 632 3 8 c
+: 636 6 3 om
+: 648 6 3 fort
+- 654
+: 664 7 8 Kill 
+: 672 7 8 your 
+: 680 12 8 friend, 
+: 696 7 8 I 
+: 704 10 8 don’t 
+: 716 8 9 care
+- 724
+: 728 7 8 Or
+: 736 7 8 chid 
+: 744 12 8 kids, 
+: 760 7 8 blind
+: 768 5 8 ed 
+: 774 10 7 stare
+- 784
+: 794 10 13 Need 
+: 810 8 13 to 
+: 826 10 13 un
+: 842 3 13 der
+: 846 8 14 stand
+- 854
+: 856 10 13 No 
+: 872 10 13 need 
+: 888 6 16 to 
+: 896 6 16 for
+: 904 10 15 give
+- 914
+: 920 12 13 No 
+: 936 14 13 truth 
+: 952 10 13 no 
+: 968 17 13 sense 
+: 986 8 14 left 
+: 1000 6 13 to 
+: 1010 5 13 be 
+: 1016 5 13 fol
+: 1022 5 13 lo
+: 1028 6 13 wed
+- 1034 2440
+- 2440
+: 2464 7 13 Fac
+: 2472 10 13 ing 
+: 2484 7 13 this 
+: 2492 10 11 un
+: 2504 3 9 bear
+: 2508 10 9 able
+- 2518
+: 2520 10 8 Fear 
+: 2548 7 6 like 
+: 2556 8 3 meet
+: 2566 5 8 ing 
+: 2572 3 8 an 
+: 2576 5 6 old 
+: 2582 30 8 friend
+- 2612 2700
+- 2700
+: 2724 3 13 In 
+: 2728 3 13 this 
+: 2732 7 13 world 
+: 2740 3 13 of 
+: 2744 3 13 a 
+: 2748 7 11 mil
+: 2756 6 11 lion
+- 2762
+: 2764 6 9 Re
+: 2772 7 9 li
+: 2780 10 8 gions 
+: 2804 7 6 every
+: 2812 6 3 one 
+: 2820 5 8 prays 
+: 2826 1 8 the 
+: 2828 10 6 same 
+: 2844 38 8 way
+- 2882 3220
+- 3220
+: 3244 5 13 Fa
+: 3250 1 13 th
+: 3252 3 13 er 
+: 3256 14 11 help 
+: 3272 10 9 me, 
+: 3300 11 9 save 
+: 3312 5 8 me 
+: 3318 5 6 a 
+: 3324 11 3 place 
+: 3336 7 8 by 
+: 3344 3 8 your 
+: 3348 3 6 s
+: 3352 52 8 ide
+- 3404 3592
+- 3592
+: 3616 7 16 Drunk 
+: 3624 7 16 with 
+: 3632 3 16 the 
+: 3636 7 16 blood 
+: 3644 5 16 of 
+: 3650 1 18 you
+: 3652 2 16 r 
+: 3656 3 16 vic
+: 3660 9 15 tims
+- 3669
+: 3670 4 15 I 
+: 3676 8 15 do 
+: 3688 16 16 feel 
+: 3708 10 15 your 
+: 3726 1 11 pity
+: 3728 7 13 wanting 
+: 3736 12 13 pain
+- 3748
+: 3752 7 11 Lust 
+: 3760 3 8 for 
+: 3764 13 8 fame, 
+: 3778 6 8 a 
+: 3786 8 6 deadly 
+: 3798 44 8 game
+- 3842 3972
+- 3972
+: 3996 15 8 Curs
+: 4012 10 8 ing, 
+: 4026 12 8 God, 
+: 4042 7 8 wh
+: 4050 6 9 y
+- 4056
+: 4058 10 8 Fal
+: 4074 8 8 ling 
+: 4086 5 8 for 
+: 4092 12 8 every 
+: 4106 8 3 lie
+- 4114
+: 4122 10 8 Sur
+: 4138 10 8 viv
+: 4154 10 8 ors’ 
+: 4170 18 8 guilt
+- 4188
+: 4190 6 9 In 
+: 4202 10 8 us 
+: 4218 3 8 for
+: 4222 3 8 ev
+: 4226 6 8 er
+: 4234 8 7 more
+- 4242
+: 4250 10 13 Five
+: 4266 10 13 teen 
+: 4282 10 13 can
+: 4298 7 13 dles
+- 4305
+: 4306 6 14 Re
+: 4314 12 13 dee
+: 4330 10 13 mers 
+: 4346 7 16 of 
+: 4354 6 16 this 
+: 4364 8 15 world
+- 4372
+: 4378 10 13 Dwell 
+: 4394 10 13 in 
+: 4410 3 13 hy
+: 4414 3 13 po
+: 4418 3 14 cri
+: 4422 10 13 sy
+- 4432
+: 4438 10 13 How 
+: 4458 7 13 were 
+: 4466 7 13 we 
+: 4474 3 13 sup
+: 4478 7 13 posed 
+: 4486 3 13 to 
+: 4490 8 13 know
+E

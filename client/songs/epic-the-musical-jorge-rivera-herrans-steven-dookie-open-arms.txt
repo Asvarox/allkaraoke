@@ -1,0 +1,607 @@
+#ARTIST:EPIC: The Musical (Jorge Rivera-Herrans, Steven Dookie)
+#TITLE:Open Arms
+#CREATOR:b888arb
+#BPM:350
+#YEAR:2024
+#VIDEO:v=OiaNekenThU
+#GENRE:Musical
+#LANGUAGE:English
+#GAP:8164,285714285714
+#ALLKARAOKE_ID:epic-the-musical-jorge-rivera-herrans-steven-dookie-open-arms
+#ALLKARAOKE_SID:6620
+#ALLKARAOKE_LASTUPDATE:2026-10-13T04:50:25.492Z
+#ALLKARAOKE_REALBPM:99
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=gettxt&id=31855
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:222
+#P1:Open Arms
+#MP3:EPIC: The Musical (Jorge Rivera-Herrans, Steven Dookie) - Open Arms.mp3
+#COVER:EPIC: The Musical (Jorge Rivera-Herrans, Steven Dookie) - Open Arms [CO].jpg
+#BACKGROUND:EPIC: The Musical (Jorge Rivera-Herrans, Steven Dookie) - Open Arms [BG].jpg
+: 23 1 -3 You
+: 28 2 -1 can 
+: 31 3 -1 re
+: 35 3 -1 lax 
+: 43 3 -3 my 
+: 50 8 -8 friend
+- 58 67
+- 67
+: 90 3 -4 Huh?
+- 93
+: 116 1 -8 I 
+: 119 1 -8 can 
+: 124 3 4 tell 
+: 128 5 2 you’re 
+: 136 5 1 get
+: 142 5 1 ting 
+: 150 9 -1 ner
+: 160 4 -1 vou
+: 165 2 -1 ~s
+- 167
+: 174 1 -8 So 
+: 179 4 2 do 
+: 185 3 2 your
+: 193 4 1 self 
+: 200 1 -1 a 
+: 207 8 -1 ser
+: 216 5 -1 vice
+- 221 222
+- 222
+: 245 2 -3 And 
+: 248 2 -3 try 
+: 253 1 -3 re
+: 257 3 -3 lax 
+: 267 2 -3 my 
+: 275 5 -1 friend
+- 280
+F 284 3 -3 I’m 
+F 288 13 -3 fine 
+F 303 4 -3 Po
+F 308 3 -7 li
+F 312 18 -8 tes
+- 330
+: 339 1 -8 Think 
+: 344 2 -8 of 
+: 351 1 4 all 
+: 353 4 2 that 
+: 359 8 1 we 
+: 368 2 -1 have 
+: 374 9 -1 been 
+: 385 4 -3 through
+- 389
+: 393 1 -3 We’ll 
+: 399 2 2 sur
+: 403 1 2 vi
+: 405 4 4 ~ve 
+: 410 2 2 what 
+: 415 6 1 we 
+: 426 2 -1 get 
+: 433 5 -1 in
+: 442 13 -1 to
+- 455
+: 473 1 4 I 
+: 476 2 4 know 
+: 479 2 4 that 
+: 482 2 4 you’re 
+: 486 4 4 tired 
+: 492 3 1 of 
+: 496 2 1 the 
+: 499 7 1 war 
+: 508 2 -1 and 
+: 512 3 -1 blood
+: 519 4 -3 shed
+- 523
+: 527 2 1 Tell 
+: 530 6 4 me 
+: 537 2 4 is 
+: 541 1 4 this 
+: 545 3 1 how 
+: 549 2 1 we’re 
+: 553 2 1 sup
+: 557 3 1 posed 
+: 565 2 -1 to 
+: 568 8 1 live?
+- 576
+: 586 1 1 Look 
+: 589 1 4 at 
+: 592 1 4 how 
+: 595 1 4 you 
+: 600 2 4 grip 
+: 606 1 1 your 
+: 612 2 1 swo
+: 615 4 -1 ~rd 
+: 620 1 -1 e
+: 622 1 0 nou
+: 624 1 -1 ~gh 
+: 631 2 -3 said
+- 633
+: 641 2 1 Why 
+: 646 3 2 should 
+: 650 1 2 we 
+: 656 3 2 take 
+: 661 3 2 when 
+: 666 4 1 we 
+: 673 2 2 could 
+: 681 11 4 give?
+- 692
+: 696 2 4 You 
+: 700 1 4 could 
+: 703 4 4 show 
+: 708 1 4 a 
+: 711 4 6 per
+: 718 2 4 son 
+: 722 4 1 that 
+: 728 2 -1 you 
+: 733 2 -1 trust 
+: 739 4 -3 them
+- 743
+: 753 2 -3 When 
+: 756 2 -3 you 
+: 764 3 2 stop 
+: 771 4 2 and 
+: 777 4 2 low
+: 782 2 1 er 
+: 787 4 -1 your 
+: 795 10 -1 guard
+- 805
+: 810 1 2 Here 
+: 812 2 4 we 
+: 815 3 4 have 
+: 823 4 6 chance 
+: 830 1 4 for 
+: 833 5 1 some 
+: 840 1 0 ad
+: 842 2 1 ju
+: 845 2 -1 ~st
+: 851 5 -3 ment
+- 856
+: 865 3 -1 Give 
+: 869 1 -1 it 
+: 871 1 -1 a 
+: 877 4 -1 try 
+: 883 3 1 it’s 
+: 889 5 2 not 
+: 897 2 4 that 
+: 904 8 9 hard 
+: 917 1 -3 I’m 
+: 919 4 -3 tel
+: 924 4 -1 ing 
+: 930 3 -3 you
+- 933
+: 940 2 8 This 
+: 947 4 8 life 
+: 953 3 8 is 
+: 957 5 8 a
+: 963 7 9 ma
+: 976 8 1 zing 
+: 988 4 -1 when 
+: 995 2 -1 you 
+: 1002 5 -1 greet 
+: 1009 4 -1 it 
+: 1015 2 -3 with 
+: 1019 4 -1 o
+: 1027 4 4 pen 
+: 1032 1 2 a
+: 1034 10 1 ~rms
+- 1044
+: 1054 2 8 What
+: 1057 6 8 e
+: 1064 2 6 ver 
+: 1067 4 8 we 
+: 1076 10 9 face
+- 1086
+: 1090 4 -1 We’ll 
+: 1095 2 -1 be 
+: 1100 6 -1 fine 
+: 1108 4 -1 if 
+: 1113 3 -3 we’re 
+: 1118 5 -1 lea
+: 1124 4 -3 ding 
+: 1131 7 -1 from 
+: 1141 3 1 the 
+: 1146 11 1 heart
+- 1157
+: 1163 6 11 No 
+: 1171 2 11 mat 
+: 1174 6 11 ter 
+: 1181 2 8 the 
+: 1187 11 6 place 
+: 1202 2 4 we 
+: 1207 3 1 can 
+: 1211 5 -1 light 
+: 1219 2 -1 up 
+: 1226 2 -3 the 
+: 1232 4 -1 world 
+: 1237 4 1 here’s 
+: 1244 5 4 how 
+: 1250 3 1 to 
+: 1258 8 -3 start
+- 1266
+: 1275 3 -1 Greet 
+: 1282 1 -1 the 
+: 1284 7 -1 world 
+: 1293 2 -1 with 
+: 1299 3 -1 o
+: 1306 3 -3 pen 
+: 1310 7 -3 arms
+- 1317
+: 1321 2 -1 Greet 
+: 1325 1 -1 the 
+: 1327 6 -1 world 
+: 1335 3 1 with 
+: 1342 4 -1 o
+: 1349 3 -3 pen 
+: 1353 13 -3 arms
+- 1366 1383
+- 1383
+F 1406 3 -1 Stay 
+F 1410 6 -1 back
+- 1416 1464
+- 1464
+: 1487 3 -8 My 
+: 1496 9 -6 friend
+- 1505
+: 1515 2 -6 Greet 
+: 1521 2 -4 the 
+: 1524 1 -4 wo
+: 1526 3 -3 ~rld 
+: 1531 2 -1 with 
+: 1536 3 -3 o
+: 1542 3 -4 pen 
+: 1546 13 -6 arms
+- 1559 1571
+- 1571
+: 1594 1 -4 We
+: 1596 1 -1 ~’re 
+: 1598 1 -1 on
+: 1600 5 -1 ly 
+: 1607 2 -1 here 
+: 1615 2 -3 for 
+: 1622 6 -8 food
+- 1628 1661
+- 1661
+: 1684 3 -8 Six 
+: 1691 3 4 hun
+: 1697 3 2 dred 
+: 1705 4 1 frie
+: 1710 2 -1 ~nds 
+: 1713 3 -1 are 
+: 1719 8 -1 wai
+: 1730 5 -3 ting
+- 1735
+: 1742 2 -8 For 
+: 1746 4 4 us 
+: 1752 1 1 to 
+: 1758 3 1 show 
+: 1763 2 1 ou
+: 1766 4 -1 ~r 
+: 1774 7 -1 fa
+: 1782 10 -3 ces
+- 1792 1793
+- 1793
+: 1816 3 -3 Stay 
+: 1821 3 0 back 
+: 1827 3 -1 I’m 
+: 1831 5 -1 war
+: 1837 3 -3 ni
+: 1841 1 -4 ~ng 
+: 1846 6 -8 you
+- 1852 1884
+- 1884
+: 1907 3 -7 If 
+: 1915 6 4 we 
+: 1922 4 2 don’t 
+: 1929 4 2 get 
+: 1936 3 -1 back 
+: 1944 5 -1 safe
+: 1954 6 -3 ly
+- 1960
+: 1964 3 -8 My 
+: 1971 4 4 men 
+: 1977 4 2 will 
+: 1984 6 1 turn 
+: 1992 3 -1 this 
+: 1998 9 -1 place 
+: 2010 5 -3 in
+: 2018 4 1 to 
+: 2025 10 -1 bla
+: 2037 9 -3 zes
+- 2046 2072
+- 2072
+F 2095 11 5 See?
+- 2106
+: 2117 2 8 This 
+: 2122 4 8 life 
+: 2129 2 8 is 
+: 2133 3 8 a
+: 2139 6 9 ma
+: 2150 10 1 zing
+- 2160
+: 2164 3 -1 When 
+: 2169 4 -1 you 
+: 2178 5 -1 greet 
+: 2184 4 -1 it 
+: 2192 1 -3 with 
+: 2196 4 4 o
+: 2203 5 4 pen 
+: 2209 10 1 arms
+- 2219
+: 2229 3 8 What
+: 2233 5 8 e
+: 2240 2 6 ver 
+: 2243 4 8 we 
+: 2251 6 9 fa
+: 2258 2 5 ~ce
+- 2260
+: 2266 3 -1 We’ll 
+: 2272 1 -1 be 
+: 2276 1 1 fi
+: 2278 4 -1 ~ne 
+: 2284 2 -1 if 
+: 2289 3 -3 we’re 
+: 2293 5 -1 lea
+: 2299 4 -3 ding 
+: 2308 5 -1 from 
+: 2314 4 4 the 
+: 2322 7 1 heart
+- 2329
+: 2340 5 11 No 
+: 2347 2 11 mat
+: 2350 2 11 te
+: 2353 1 10 ~r 
+: 2357 2 8 the 
+: 2363 8 6 place
+- 2371
+: 2375 1 4 So 
+: 2379 3 4 we 
+: 2384 2 1 can 
+: 2388 6 -1 light 
+: 2395 3 -1 up 
+: 2402 2 -3 the 
+: 2406 5 -1 world
+- 2411
+: 2413 4 1 Here’s 
+: 2420 4 4 how 
+: 2425 3 1 to 
+: 2435 7 -3 start
+- 2442
+: 2452 3 -1 Greet 
+: 2458 1 -1 the 
+: 2460 6 -1 world 
+: 2469 3 -1 with 
+: 2476 3 -1 o
+: 2482 3 -3 pen 
+: 2486 8 -3 arms
+- 2494
+: 2497 2 -1 Greet 
+: 2501 2 -1 the 
+: 2504 4 -1 world 
+: 2511 4 1 with 
+: 2517 4 -1 o
+: 2524 3 -3 pen 
+: 2528 15 -3 arms
+- 2543
+: 2552 2 1 My 
+: 2560 7 2 friend
+- 2567
+: 2584 3 -1 I 
+: 2588 3 -1 wish 
+: 2593 2 1 that 
+: 2598 3 2 I 
+: 2605 3 9 could 
+: 2612 7 8 say 
+: 2623 1 6 that 
+: 2626 8 4 I 
+: 2636 2 6 a
+: 2639 12 4 gree
+- 2651
+: 2665 2 -4 But 
+: 2669 2 1 look 
+: 2675 3 1 at 
+: 2679 1 1 the 
+: 2682 7 1 way 
+: 2693 2 1 this 
+: 2697 4 2 fruit 
+: 2703 4 -1 is 
+: 2709 5 -3 glow
+: 2715 5 -4 ing 
+: 2722 1 -6 and
+- 2723
+: 2728 2 -1 Filled 
+: 2731 4 -3 with 
+: 2738 2 -4 glow
+: 2741 3 -6 ing 
+: 2748 4 -3 see
+: 2753 5 -4 ~
+: 2759 7 -3 ~ds
+- 2766
+: 2780 1 2 It 
+: 2784 2 2 took 
+: 2790 2 2 me 
+: 2793 3 2 a 
+: 2797 6 2 while 
+: 2804 1 2 to 
+: 2808 6 2 no
+: 2815 3 2 tice
+- 2818
+: 2822 2 6 Just 
+: 2829 3 9 what 
+: 2836 8 8 kind 
+: 2847 2 4 of 
+: 2850 4 4 fruit 
+: 2857 3 4 they
+: 2863 4 6 ~ 
+: 2868 4 4 eat
+- 2872
+: 2882 1 -3 It’s 
+: 2888 1 -1 a 
+: 2892 1 1 lo
+: 2894 3 1 ~
+: 2898 4 -1 tus
+- 2902
+: 2910 2 -3 It 
+: 2915 2 -1 con
+: 2920 3 1 tro
+: 2924 2 -1 ~ls 
+: 2927 5 -1 your 
+: 2934 8 -3 mind 
+: 2943 5 -4 and 
+: 2951 3 -1 ne
+: 2955 4 -3 ver 
+: 2960 4 -4 lets 
+: 2970 1 -6 you 
+: 2978 9 -3 free
+- 2987
+: 3004 1 -1 That’s 
+: 3009 5 -1 what 
+: 3016 3 -1 we’d 
+: 3022 2 -1 get 
+: 3029 3 -1 with 
+: 3036 7 -1 o
+: 3046 7 -3 pen 
+: 3056 8 -8 arms
+- 3064 3080
+- 3080
+: 3103 6 2 Lo
+: 3114 2 2 tus 
+: 3117 6 2 ea
+: 3124 9 -1 ter’s
+- 3133
+: 3143 1 -1 I’d 
+: 3148 2 -1 like 
+: 3153 2 1 to 
+: 3157 6 2 show
+: 3165 5 8 my 
+: 3173 5 8 friend 
+: 3179 3 6 that 
+: 3186 5 4 kind
+: 3192 1 4 ness 
+: 3197 1 6 is 
+: 3205 10 4 brave
+- 3215
+: 3224 1 -3 Could 
+: 3227 1 -1 you 
+: 3231 3 1 tell 
+: 3236 2 1 me 
+: 3241 5 1 where 
+: 3248 7 1 there’s 
+: 3258 3 1 o
+: 3262 3 -1 ther 
+: 3269 5 -3 foods 
+: 3280 2 -3 to 
+: 3284 5 -1 eat
+- 3289 3313
+- 3313
+: 3336 1 6 A 
+: 3341 5 6 cave
+- 3346
+: 3368 1 -1 You’re 
+: 3373 4 -1 say
+: 3378 6 1 ing 
+: 3385 6 2 there’s 
+: 3392 1 9 a 
+: 3396 6 8 cave 
+: 3403 4 6 where 
+: 3408 4 5 we 
+: 3418 4 6 could 
+: 3428 10 4 feast?
+- 3438
+: 3451 1 -1 And 
+: 3455 1 -1 where 
+: 3457 4 1 do 
+: 3462 4 1 we 
+: 3469 5 1 sail 
+: 3476 1 1 to 
+: 3480 7 1 find 
+: 3488 2 -1 this 
+: 3495 4 -3 food 
+: 3502 4 -4 filled 
+: 3512 12 -1 cave?
+- 3524 3572
+- 3572
+F 3595 5 2 Thank 
+F 3602 5 2 you!
+- 3607 3669
+- 3669
+: 3692 4 8 This 
+: 3697 5 8 life 
+: 3704 2 6 is 
+: 3708 6 8 a
+: 3715 8 9 ma
+: 3726 9 1 zing
+- 3735
+: 3739 4 -1 When 
+: 3746 4 -1 you 
+: 3755 6 -1 greet 
+: 3762 3 -1 it 
+: 3769 2 -3 with 
+: 3774 4 -1 o
+: 3781 5 4 pen 
+: 3788 13 1 arms
+- 3801
+: 3810 1 8 I 
+: 3815 2 8 see
+: 3818 1 7 ~ 
+: 3820 3 6 in 
+: 3825 4 8 your 
+: 3834 9 9 face
+- 3843
+: 3847 2 1 There 
+: 3850 4 -1 is 
+: 3858 4 -1 so 
+: 3864 5 -1 much 
+: 3873 6 -1 guilt 
+: 3885 2 -3 in
+: 3892 6 -1 side 
+: 3900 4 4 your 
+: 3908 9 1 heart
+- 3917
+: 3930 2 11 So 
+: 3933 5 11 why 
+: 3939 3 9 not 
+: 3945 2 8 re
+: 3952 8 6 place 
+: 3967 2 4 it 
+: 3974 2 1 and 
+: 3978 6 -1 light 
+: 3985 3 -1 up 
+: 3992 3 -3 the 
+: 3997 4 -1 world
+- 4001
+: 4003 4 1 Here’s 
+: 4011 5 4 how 
+: 4017 3 1 to 
+: 4026 9 -3 start
+- 4035
+: 4044 3 -1 Greet 
+: 4052 1 -1 the 
+: 4055 5 -1 world 
+: 4063 3 -1 with 
+: 4070 3 -1 o
+: 4075 5 -3 pen 
+: 4081 7 -8 arms
+- 4088
+: 4092 2 -1 Greet 
+: 4096 1 -1 the 
+: 4098 7 -1 world 
+: 4106 3 1 with 
+: 4112 3 -1 o
+: 4118 5 -3 pen 
+: 4125 15 -8 arms
+- 4140
+: 4163 2 -1 Greet 
+: 4168 2 -1 the 
+: 4171 5 -1 world 
+: 4178 5 -1 with 
+: 4187 7 -1 o
+: 4198 7 -3 pen 
+: 4210 11 -8 arms
+- 4221 4237
+- 4237
+: 4260 1 -3 You 
+: 4264 1 -1 can 
+: 4266 3 -1 re
+: 4270 4 -1 lax 
+: 4280 5 -3 my 
+: 4289 5 -8 friend
+E
