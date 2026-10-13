@@ -12,7 +12,7 @@ export class Calibration {
   toolbar = new Toolbar(this.page, this.context, this.browser);
 
   public async expectInputLagToBe(value: string) {
-    await expect(this.page.getByTestId('input-lag-value')).toHaveAttribute('data-value', value);
+    await expect(this.page.getByTestId('input-lag')).toHaveAttribute('data-value', value);
   }
 
   public get continueButton() {

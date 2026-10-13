@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
+import { Calibration } from '~/modules/calibration/calibration';
 import { Menu } from '~/modules/elements/akui/menu';
 import Modal from '~/modules/elements/modal';
 import { NavButton } from '~/modules/elements/nav-controls';
@@ -9,8 +10,6 @@ import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import SongsService from '~/modules/songs/songs-service';
 import RateSong from '~/routes/game/singing/game-overlay/components/rate-song';
 import SelectInputModal from '~/routes/select-input/select-input-modal';
-import { InGameInputLag } from '~/routes/settings/in-game-audio-settings';
-import { InputLagSetting, useSettingValue } from '~/routes/settings/settings-state';
 
 interface Props {
   onResume: () => void;
@@ -28,12 +27,12 @@ const PauseMenuContent = ({ onResume, onExit, onRestart }: Omit<Props, 'open'>) 
   }, [menuRef]);
 
   const [isInputModalOpen, setIsInputModalOpen] = useState(false);
-  const [inputLag] = useSettingValue(InputLagSetting);
+  const [isCalibrationOpen, setIsCalibrationOpen] = useState(false);
 
   const [rateSongOpen, setRateSongOpen] = useState(false);
 
   const { register } = useKeyboardNav({
-    enabled: !isInputModalOpen,
+    enabled: !isInputModalOpen && !isCalibrationOpen,
     // Shared hook: the pause list and the rate-song view render into it one at a time, so the header
     // tracks whichever is showing.
     title: rateSongOpen ? 'Rate the song' : 'Pause menu',
@@ -63,7 +62,17 @@ const PauseMenuContent = ({ onResume, onExit, onRestart }: Omit<Props, 'open'>) 
 
   return (
     <>
-      {!rateSongOpen && (
+      {isCalibrationOpen && (
+        <Menu modal>
+          <Calibration
+            source="pause"
+            onSave={() => setIsCalibrationOpen(false)}
+            onClose={() => setIsCalibrationOpen(false)}
+            saveLabel="Back to pause menu"
+          />
+        </Menu>
+      )}
+      {!rateSongOpen && !isCalibrationOpen && (
         <KeyboardNavContext value={register}>
           <Menu modal>
             {/* Resume starts playback again, so it reads as "play" rather than a generic back arrow. */}
@@ -80,8 +89,9 @@ const PauseMenuContent = ({ onResume, onExit, onRestart }: Omit<Props, 'open'>) 
               Microphones settings
             </NavButton>
             <hr />
-            {}
-            <InGameInputLag value={inputLag} />
+            <NavButton name="calibration" remoteIcon={null} size="small" onClick={() => setIsCalibrationOpen(true)}>
+              Sync video with sound
+            </NavButton>
             {/* Hidden from the phone: it opens the full song editor, which is a desktop/TV-only
                 surface the remote can't drive. */}
             <NavButton

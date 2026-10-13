@@ -83,7 +83,7 @@ export class GamePagePO {
       | 'button-restart-song'
       | 'button-exit-song'
       | 'input-settings'
-      | 'input-lag'
+      | 'calibration'
       | 'edit-song',
     remoteMic?: Page,
   ) {

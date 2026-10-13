@@ -166,6 +166,17 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
     await pages.gamePage.goToPauseMenu(); // another pause-menu opening method
   });
 
+  await test.step('Calibration opened from the pause menu changes the input lag and goes back to the menu', async () => {
+    await page.getByTestId('calibration').click();
+    await pages.calibration.expectInputLagToBe('0');
+    await page.getByRole('button', { name: '→' }).click();
+    await pages.calibration.expectInputLagToBe('50');
+    await page.getByRole('button', { name: '←' }).click();
+    await pages.calibration.expectInputLagToBe('0');
+    await pages.calibration.clickToSaveCalibration();
+    await expect(pages.gamePage.resumeSongButton).toBeVisible();
+  });
+
   // test.step - Get current players scores
   const currentP1score: null | string = await pages.gamePage.getCurrentPlayerScore(player1.number);
   const currentP2score: null | string = await pages.gamePage.getCurrentPlayerScore(player2.number);
