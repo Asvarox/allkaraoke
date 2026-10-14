@@ -166,7 +166,7 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
     await pages.gamePage.goToPauseMenu(); // another pause-menu opening method
   });
 
-  await test.step('Calibration opened from the pause menu changes the input lag and goes back to the menu', async () => {
+  await test.step('Calibration opened over the pause menu changes the input lag and closes on save', async () => {
     await page.getByTestId('calibration').click();
     await pages.calibration.expectInputLagToBe('0');
     await page.getByRole('button', { name: '→' }).click();
@@ -174,6 +174,7 @@ test('Sing a song', async ({ page, browserName }, testInfo) => {
     await page.getByRole('button', { name: '←' }).click();
     await pages.calibration.expectInputLagToBe('0');
     await pages.calibration.clickToSaveCalibration();
+    await expect(page.getByTestId('input-lag')).not.toBeVisible();
     await expect(pages.gamePage.resumeSongButton).toBeVisible();
   });
 

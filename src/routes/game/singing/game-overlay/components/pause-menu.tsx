@@ -62,17 +62,7 @@ const PauseMenuContent = ({ onResume, onExit, onRestart }: Omit<Props, 'open'>) 
 
   return (
     <>
-      {isCalibrationOpen && (
-        <Menu modal>
-          <Calibration
-            source="pause"
-            onSave={() => setIsCalibrationOpen(false)}
-            onClose={() => setIsCalibrationOpen(false)}
-            saveLabel="Back to pause menu"
-          />
-        </Menu>
-      )}
-      {!rateSongOpen && !isCalibrationOpen && (
+      {!rateSongOpen && (
         <KeyboardNavContext value={register}>
           <Menu modal>
             {/* Resume starts playback again, so it reads as "play" rather than a generic back arrow. */}
@@ -107,6 +97,18 @@ const PauseMenuContent = ({ onResume, onExit, onRestart }: Omit<Props, 'open'>) 
             closeButtonText={'Back to Pause Menu'}
             open={isInputModalOpen}
           />
+          <Modal open={isCalibrationOpen} onClose={() => setIsCalibrationOpen(false)} withPortal level="nested">
+            {isCalibrationOpen && (
+              <Menu modal>
+                <Calibration
+                  source="pause"
+                  onSave={() => setIsCalibrationOpen(false)}
+                  onClose={() => setIsCalibrationOpen(false)}
+                  saveLabel="Back to pause menu"
+                />
+              </Menu>
+            )}
+          </Modal>
         </KeyboardNavContext>
       )}
       {rateSongOpen && (
