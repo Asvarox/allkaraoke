@@ -1,5 +1,4 @@
 import { AnimatePresence, motion } from 'motion/react';
-import posthog from 'posthog-js';
 import { useRef, useState } from 'react';
 
 import { MAX_NAME_LENGTH } from '~/consts';
@@ -10,12 +9,10 @@ import { Input } from '~/modules/elements/input';
 import MenuWithLogo from '~/modules/elements/menu-with-logo';
 import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
 import useMicMonitoring from '~/modules/hooks/use-mic-monitoring';
-import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
-import { checkRoomExists } from '~/modules/online/client/online-client';
 import { generateOnlineRoomCode } from '~/modules/online/client/room-code';
 import { ONLINE_ROOM_CODE_LENGTH } from '~/modules/online/protocol/consts';
-import { isRemoteMicGameCode } from '~/modules/remote-mic/network/game-code';
 import { CalibrationIntro } from '~/routes/game/singing/calibration-intro';
+import useJoinRoomCode from '~/routes/online/hooks/use-join-room-code';
 import useOnlineName from '~/routes/online/hooks/use-online-name';
 import BuiltIn from '~/routes/select-input/variants/built-in';
 import { IsCalibratedSetting, MicSetupPreferenceSetting, useSettingValue } from '~/routes/settings/settings-state';
@@ -40,6 +37,8 @@ interface Props {
   mode: 'create' | 'join';
   /** Room code when arriving via an invite link — prefills the code step. */
   joinRoomCode?: string | null;
+  /** The code was already verified before the wizard opened — its step shows as done from the start. */
+  codeConfirmed?: boolean;
   onComplete: (roomCode: string, options: { create: boolean }) => void;
   onBack: () => void;
 }
@@ -49,7 +48,7 @@ interface Props {
  * room code (join only) → name (skipped when remembered) → microphone → calibration (skipped when
  * already calibrated). Calibrating here rather than in the lobby means readying up is a single click.
  */
-function OnlineSetupWizard({ mode, joinRoomCode = null, onComplete, onBack }: Props) {
+function OnlineSetupWizard({ mode, joinRoomCode = null, codeConfirmed = false, onComplete, onBack }: Props) {
   const { name: storedName, hasStoredName, setName: persistName } = useOnlineName();
   const [isCalibrated, setIsCalibrated] = useSettingValue(IsCalibratedSetting);
 
@@ -64,7 +63,9 @@ function OnlineSetupWizard({ mode, joinRoomCode = null, onComplete, onBack }: Pr
     return steps;
   });
 
-  const [step, setStep] = useState<Step>(stepOrder[0]);
+  // A code confirmed upfront is never revisited — backing out of the step after it leaves the wizard
+  const firstStepIndex = mode === 'join' && codeConfirmed ? 1 : 0;
+  const [step, setStep] = useState<Step>(stepOrder[firstStepIndex]);
   // The room decision from the code step, applied once the whole wizard finishes. A room being
   // opened gets its code only then.
   const roomTarget = useRef<{ roomCode: string; create: boolean }>({
@@ -83,8 +84,9 @@ function OnlineSetupWizard({ mode, joinRoomCode = null, onComplete, onBack }: Pr
   };
 
   const goToPreviousStep = () => {
-    const previous = stepOrder[stepOrder.indexOf(step) - 1];
-    if (previous === undefined) {
+    const previousIndex = stepOrder.indexOf(step) - 1;
+    const previous = stepOrder[previousIndex];
+    if (previous === undefined || previousIndex < firstStepIndex) {
       onBack();
     } else {
       setStep(previous);
@@ -148,7 +150,7 @@ function OnlineSetupWizard({ mode, joinRoomCode = null, onComplete, onBack }: Pr
   );
 }
 
-/** Room code entry — verified against the server before moving on, so a typo is caught here. */
+/** Room code entry for an invite link — the code arrives prefilled, to confirm or correct. */
 function CodeStep({
   initialCode,
   onConfirm,
@@ -158,39 +160,8 @@ function CodeStep({
   onConfirm: (roomCode: string) => void;
   onBack: () => void;
 }) {
-  const [code, setCode] = useState(initialCode);
-  const [checking, setChecking] = useState(false);
-  const inputRef = useRef<{
-    element: HTMLInputElement | null;
-    triggerValidationError: (message: string) => void;
-  } | null>(null);
-
+  const { code, setCode, checking, submit, inputRef } = useJoinRoomCode(initialCode, onConfirm);
   const { register } = useKeyboardNav({ onBackspace: onBack });
-  const navigate = useSmoothNavigate();
-
-  const submit = async () => {
-    if (checking) return;
-    const roomCode = code.trim().toLowerCase();
-    if (roomCode.length < ONLINE_ROOM_CODE_LENGTH) {
-      inputRef.current?.triggerValidationError('Enter the room code');
-      return;
-    }
-    // A game code for the phone mic, typed here by mistake — no online room can have it
-    if (isRemoteMicGameCode(roomCode)) {
-      posthog.capture('online_join_redirected_to_remote_mic', { transport: roomCode.charAt(0) });
-      navigate('remote-mic/', { room: roomCode });
-      return;
-    }
-    setChecking(true);
-    // The code says which backend to ask — this browser's own flag has no say in a room it joins.
-    const exists = await checkRoomExists(roomCode);
-    setChecking(false);
-    if (!exists) {
-      inputRef.current?.triggerValidationError('This room does not exist');
-      return;
-    }
-    onConfirm(roomCode);
-  };
 
   return (
     <>

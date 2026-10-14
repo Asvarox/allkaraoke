@@ -2,13 +2,16 @@ import { useState } from 'react';
 import { Helmet } from 'react-helmet';
 
 import { Menu } from '~/modules/elements/akui/menu';
+import { Input } from '~/modules/elements/input';
 import MenuWithLogo from '~/modules/elements/menu-with-logo';
 import NoPrerender from '~/modules/elements/no-prerender';
 import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
 import useQueryParam from '~/modules/hooks/use-query-param';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
+import { ONLINE_ROOM_CODE_LENGTH } from '~/modules/online/protocol/consts';
 import { NoRemoteMics } from '~/modules/remote-mic/no-remote-mics';
 import storage from '~/modules/utils/storage';
+import useJoinRoomCode from '~/routes/online/hooks/use-join-room-code';
 import OnlineRoom from '~/routes/online/online-room';
 import OnlineSetupWizard from '~/routes/online/setup-wizard';
 
@@ -17,17 +20,20 @@ export const ONLINE_SETUP_DONE_KEY = 'ONLINE_SETUP_DONE';
 /** Holds the room code this session explicitly opened (created). */
 export const ONLINE_CREATED_ROOM_KEY = 'ONLINE_CREATED_ROOM';
 
-/** The landing screen behind "Sing Online": pick a direction, nothing else. Entering a room code
- * belongs to the join flow itself, so this screen stays down to three choices. */
+/** The landing screen behind "Sing Online": open a new room, or type a code and join one. The code
+ * is verified here, so the join wizard starts at the name step. */
 function CreateOrJoin() {
   const navigate = useSmoothNavigate();
   const [mode, setMode] = useState<'create' | 'join' | null>(null);
   const { register } = useKeyboardNav({ enabled: mode === null, onBackspace: () => navigate('menu/') });
+  const { code, setCode, checking, submit, inputRef } = useJoinRoomCode('', () => setMode('join'));
 
   if (mode !== null) {
     return (
       <OnlineSetupWizard
         mode={mode}
+        joinRoomCode={mode === 'join' ? code.trim().toLowerCase() : null}
+        codeConfirmed
         onBack={() => setMode(null)}
         onComplete={(roomCode, { create }) => {
           storage.session.setItem(ONLINE_SETUP_DONE_KEY, '1');
@@ -49,12 +55,27 @@ function CreateOrJoin() {
       <Menu.Button {...register('create-room-button', () => setMode('create'))} data-test="create-room-button">
         Open a new room
       </Menu.Button>
-      <Menu.Button
-        {...register('join-existing-room', () => setMode('join'))}
-        data-test="join-existing-room-button"
-        size="small">
-        Join an existing room
-      </Menu.Button>
+      <Input
+        {...register('online-room-code', () => undefined)}
+        className="[&_input]:text-center [&_input]:tracking-[0.5rem] [&_input]:uppercase"
+        label="Room code"
+        value={code}
+        onChange={setCode}
+        onKeyDown={(event) => {
+          if (event.key === 'Enter') void submit();
+        }}
+        maxLength={ONLINE_ROOM_CODE_LENGTH}
+        placeholder="_____"
+        autoCapitalize="characters"
+        autoComplete="off"
+        ref={inputRef}
+        data-test="join-room-code-input"
+        adornment={
+          <Input.Button onClick={() => void submit()} disabled={checking} data-test="join-room-button">
+            {checking ? 'Checking…' : 'Join existing room'}
+          </Input.Button>
+        }
+      />
       <Menu.Divider />
       <Menu.Button {...register('back-button', () => navigate('menu/'))} size="small" data-test="back-button">
         Back to main menu
