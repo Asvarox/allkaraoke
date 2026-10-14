@@ -15,7 +15,7 @@ type Props = {
   /** What confirming actually leads to — the online wizard enters a room rather than starting a song. */
   saveLabel?: string;
   /** Where the calibration was opened from, reported with the `calibrationSaved` event. */
-  source: 'song' | 'online' | 'settings';
+  source: 'song' | 'online' | 'settings' | 'pause';
 };
 
 // The three hint lines are rendered both by the screen itself and by `CalibrationLayoutReserve`
@@ -67,7 +67,6 @@ export const CalibrationLayoutReserve = () => (
 );
 
 export const Calibration = ({ onClose, onSave, source, saveLabel = 'Looks good, play the song' }: Props) => {
-  const inputLagRef = useRef<HTMLInputElement | null>(null);
   const [inputLag] = useSettingValue(InputLagSetting);
   const [initialInputLag] = useState(inputLag);
   const startedRef = useRef(false);
@@ -95,8 +94,8 @@ export const Calibration = ({ onClose, onSave, source, saveLabel = 'Looks good, 
       <CalibrationTool onStart={() => (startedRef.current = true)} />
       <ClickBeforeHint />
       <InputLag
-        ref={inputLagRef}
-        {...register('input-lag', () => inputLagRef.current?.focus(), 'Input lag', false, {
+        // The ← / → hotkeys do the stepping; focusing the field would swallow them
+        {...register('input-lag', () => undefined, 'Input lag', false, {
           control: { type: 'input-lag', label: 'Input lag', value: inputLag },
         })}
       />

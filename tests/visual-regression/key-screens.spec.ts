@@ -152,7 +152,7 @@ visual(
 );
 
 // The in-game screens mirror to the remote too, and each has a distinctly shaped layout worth
-// pinning: a single action (skip intro), a plain menu with a numeric stepper in it (pause menu),
+// pinning: a single action (skip intro), a plain menu (pause menu),
 // a checkbox list (rate song) and the post-game buttons. They share one test because the expensive
 // part is getting into a song at all - picking inputs, pairing a real remote mic over WS and
 // starting playback - while each screen after that is one keypress away.
@@ -197,10 +197,10 @@ visual(
 
     await makeScreenshot('skip-intro-keyboard', { page: remoteMic._page, extraMasks: remoteMasks });
 
-    // Pause menu: the only mirrored screen carrying a non-tappable control - the input-lag stepper.
+    // Pause menu: a plain list of mirrored actions, the calibration screen one tap away.
     await pages.gamePage.goToPauseMenuByKeyboard();
     await expect(remoteMic.remoteMicMainPage.mirroredControl('button-resume-song')).toBeVisible();
-    await expect(remoteMic.remoteMicMainPage.mirroredControl('input-lag')).toBeVisible();
+    await expect(remoteMic.remoteMicMainPage.mirroredControl('calibration')).toBeVisible();
 
     await makeScreenshot('pause-menu-keyboard', { page: remoteMic._page, extraMasks: remoteMasks });
 

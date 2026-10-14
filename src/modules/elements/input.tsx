@@ -66,6 +66,8 @@ interface Props extends Omit<
   onChange: (value: string) => void;
   disabled?: boolean;
   adornment?: ReactNode;
+  /** Like `adornment`, but at the field's leading edge, before the value. */
+  startAdornment?: ReactNode;
   info?: ReactNode;
   size?: ResponsiveValue<InputSize>;
   ref?: React.Ref<InputRef>;
@@ -80,6 +82,7 @@ export const Input = ({
   readOnly,
   className,
   adornment,
+  startAdornment,
   info,
   ref,
   size = 'small',
@@ -135,7 +138,13 @@ export const Input = ({
         onClick={() => {
           if (!inert) inputRef.current?.focus();
         }}>
-        <Label htmlFor={inputId}>{label}</Label>
+        {/* An empty label would still take a gap, pushing a leading control off the field's edge */}
+        {(label || !startAdornment) && <Label htmlFor={inputId}>{label}</Label>}
+        {startAdornment && (
+          <InputSizeContext.Provider value={resolvedSize}>
+            <Adornment>{startAdornment}</Adornment>
+          </InputSizeContext.Provider>
+        )}
         <StyledInput
           id={inputId}
           value={value}

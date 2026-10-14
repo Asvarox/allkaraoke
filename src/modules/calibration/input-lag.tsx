@@ -1,31 +1,42 @@
 import { ComponentProps } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 
-import { Menu } from '~/modules/elements/akui/menu';
+import { Input } from '~/modules/elements/input';
 import { InputLagSetting, useSettingValue } from '~/routes/settings/settings-state';
 
-interface Props extends ComponentProps<typeof Menu.ButtonGroup> {
+interface Props extends Omit<Partial<ComponentProps<typeof Input>>, 'focused'> {
   focused: boolean;
 }
 
-const InputLag = ({ onClick, focused, ...restProps }: Props) => {
+/** The input-lag stepper: the value with its ← and → nudges held inside the field. */
+const InputLag = ({ focused, ...restProps }: Props) => {
   const [inputLag, setInputLag] = useSettingValue(InputLagSetting);
 
   useHotkeys('left', () => setInputLag(inputLag - 50), { enabled: focused }, [inputLag]);
   useHotkeys('right', () => setInputLag(inputLag + 50), { enabled: focused }, [inputLag]);
 
   return (
-    <Menu.ButtonGroup {...restProps}>
-      <Menu.Button onClick={() => setInputLag(inputLag - 50)} className="aspect-square" size="small" focused={focused}>
-        ←
-      </Menu.Button>
-      <Menu.Button readOnly className="flex-1" data-test="input-lag-value" data-value={inputLag} size="small">
-        {inputLag} ms
-      </Menu.Button>
-      <Menu.Button onClick={() => setInputLag(inputLag + 50)} className="aspect-square" size="small" focused={focused}>
-        →
-      </Menu.Button>
-    </Menu.ButtonGroup>
+    <Input
+      label=""
+      aria-label="Input lag"
+      value={`${inputLag} ms`}
+      onChange={() => undefined}
+      readOnly
+      className="[&_input]:text-center"
+      data-value={inputLag}
+      {...restProps}
+      focused={focused}
+      startAdornment={
+        <Input.Button onClick={() => setInputLag(inputLag - 50)} className="mr-0 -ml-1 aspect-square">
+          ←
+        </Input.Button>
+      }
+      adornment={
+        <Input.Button onClick={() => setInputLag(inputLag + 50)} className="aspect-square">
+          →
+        </Input.Button>
+      }
+    />
   );
 };
 

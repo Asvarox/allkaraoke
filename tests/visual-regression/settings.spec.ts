@@ -13,6 +13,6 @@ visual('Settings', async ({ page, makeScreenshot }) => {
   await page.getByTestId('back-button').click();
 
   await page.getByTestId('calibration-settings').click();
-  await expect(page.getByTestId('input-lag-value')).toBeVisible();
+  await expect(page.getByTestId('input-lag')).toBeVisible();
   await makeScreenshot('calibration');
 });
