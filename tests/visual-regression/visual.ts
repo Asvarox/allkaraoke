@@ -36,6 +36,8 @@ const slugify = (title: string) => title.toLowerCase().replace(/[^a-z0-9]+/g, '-
 
 const HIDDEN_ATTRIBUTE = 'data-visual-hidden';
 
+const FLAGS_LOAD_TIMEOUT_MS = 15_000;
+
 /**
  * Volatile regions every screen shares. Kept as selectors rather than locators so the rule also
  * covers nodes that appear *after* the capture starts - the YouTube player, for one, swaps its own
@@ -162,6 +164,20 @@ export function visual(title: string, viewportsOrFn: ViewportName[] | VisualTest
               if (element.scrollTop !== 0) element.scrollTop = 0;
             });
           });
+
+          // Flags load from flagcdn.com, so a slow CDN would otherwise bake blank circles into the baseline
+          await targetPage
+            .waitForFunction(
+              () =>
+                [...document.querySelectorAll<HTMLImageElement>('img[data-isocode]')].every(
+                  (img) => img.complete && img.naturalWidth > 0,
+                ),
+              undefined,
+              { timeout: FLAGS_LOAD_TIMEOUT_MS },
+            )
+            .catch(() => {
+              throw new Error(`Flag images did not load within ${FLAGS_LOAD_TIMEOUT_MS}ms, not capturing ${fileName}`);
+            });
 
           // `extraMasks` are the caller-supplied volatile regions, e.g. the remote mic's live ping
           // counter; HIDDEN_SELECTORS covers the ones every screen shares.
