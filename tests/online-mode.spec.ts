@@ -195,10 +195,11 @@ test('Online mode: full game flow', async ({ page, context, browser }) => {
     await expect(page.getByTestId('online-pause-overlay')).toContainText(guestName);
     await expect(guestPage.getByTestId('online-pause-overlay')).toBeVisible();
 
-    // calibration opens in place of the pause menu and saving goes back to it
+    // calibration opens over the pause menu and saving closes it
     await guestPage.getByTestId('calibration').click();
     await expect(guestPage.getByTestId('input-lag')).toBeVisible();
     await guestPage.getByTestId('save').click();
+    await expect(guestPage.getByTestId('input-lag')).not.toBeVisible();
     await expect(guestPage.getByTestId('online-pause-overlay')).toBeVisible();
 
     // the host (not the pauser) resumes

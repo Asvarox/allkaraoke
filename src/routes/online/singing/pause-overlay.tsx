@@ -63,21 +63,6 @@ function PauseOverlay({ pause, resumeCountdownEndsAt, onResume, isHost, hostId, 
 
   const connected = participants.filter((participant) => participant.connected);
 
-  if (isCalibrationOpen) {
-    return (
-      <Modal open>
-        <Menu modal>
-          <Calibration
-            source="pause"
-            onSave={() => setIsCalibrationOpen(false)}
-            onClose={() => setIsCalibrationOpen(false)}
-            saveLabel="Back to pause menu"
-          />
-        </Menu>
-      </Modal>
-    );
-  }
-
   return (
     <Modal open>
       <KeyboardNavContext value={register}>
@@ -131,6 +116,18 @@ function PauseOverlay({ pause, resumeCountdownEndsAt, onResume, isHost, hostId, 
           )}
         </Menu>
       </KeyboardNavContext>
+      <Modal open={isCalibrationOpen} onClose={() => setIsCalibrationOpen(false)} withPortal level="nested">
+        {isCalibrationOpen && (
+          <Menu modal>
+            <Calibration
+              source="pause"
+              onSave={() => setIsCalibrationOpen(false)}
+              onClose={() => setIsCalibrationOpen(false)}
+              saveLabel="Back to pause menu"
+            />
+          </Menu>
+        )}
+      </Modal>
     </Modal>
   );
 }

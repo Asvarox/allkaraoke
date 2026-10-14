@@ -36,7 +36,7 @@ const slugify = (title: string) => title.toLowerCase().replace(/[^a-z0-9]+/g, '-
 
 const HIDDEN_ATTRIBUTE = 'data-visual-hidden';
 
-const FLAGS_LOAD_TIMEOUT_MS = 15_000;
+const FLAGS_LOAD_TIMEOUT_MS = 5_000;
 
 /**
  * Volatile regions every screen shares. Kept as selectors rather than locators so the rule also
@@ -162,6 +162,11 @@ export function visual(title: string, viewportsOrFn: ViewportName[] | VisualTest
             // whatever offset that race happened to land on.
             document.querySelectorAll('*').forEach((element) => {
               if (element.scrollTop !== 0) element.scrollTop = 0;
+            });
+
+            // Lazy flags below the fold never start loading, so the flag wait below would sit out its timeout
+            document.querySelectorAll<HTMLImageElement>('img[data-isocode][loading="lazy"]').forEach((img) => {
+              img.loading = 'eager';
             });
           });
 
