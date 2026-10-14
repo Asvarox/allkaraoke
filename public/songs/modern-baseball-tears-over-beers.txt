@@ -1,0 +1,389 @@
+#ARTIST:Modern Baseball
+#TITLE:Tears Over Beers
+#CREATOR:strumd
+#BPM:637,8
+#YEAR:2012
+#PREVIEWSTART:70
+#VIDEO:v=U8Q-uCV7TWw
+#GENRE:Emo
+#LANGUAGE:English,
+#GAP:-196,8852304797743
+#ALLKARAOKE_ID:modern-baseball-tears-over-beers
+#ALLKARAOKE_SID:6632
+#ALLKARAOKE_LASTUPDATE:2026-10-14T02:57:52.748Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://www.youtube.com/@strumdeet
+#ALLKARAOKE_REALBPM:180
+#ALLKARAOKE_SOURCEURL:rb3 converted thingamajig
+#ALLKARAOKE_PREVIEWEND:90
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:170
+#VERSION:1.1.0
+#AUDIO:Modern Baseball - Tears Over Beers.mp3
+#COVER:Modern Baseball - Tears Over Beers [CO].jpg
+#COMMENT:Created with Nautilus
+: 21 3 -2 When 
+: 31 14 1 I 
+: 61 3 1 was 
+: 71 9 1 just 
+: 100 2 3 a 
+: 110 18 5 boy 
+: 188 6 8 we'll 
+: 201 13 6 call 
+: 216 2 5 it 
+: 227 4 6 fif
+: 240 13 5 teen 
+: 255 2 5 or
+: 275 19 5 so
+- 294
+: 331 2 -2 I 
+: 343 17 1 found 
+: 372 3 1 my
+: 383 21 8 self 
+: 411 3 6 an
+: 416 21 5 noyed 
+: 479 6 1 by 
+: 487 3 1 a 
+: 498 10 3 syn
+: 512 11 5 drome 
+: 526 2 1 of 
+: 536 7 3 sorts 
+: 551 13 5 in 
+: 566 13 3 my 
+: 586 26 1 bones
+- 612
+: 644 4 1 That 
+: 654 14 1 girl 
+: 682 4 1 who's 
+: 693 7 1 next 
+: 721 4 3 to 
+: 730 16 5 me 
+: 798 3 1 she 
+: 808 11 8 found 
+: 823 6 6 her
+: 837 10 5 self 
+: 856 2 5 bored
+: 876 3 6 to 
+: 886 7 6 tears
+- 893 910
+- 910
+: 953 4 1 She 
+: 964 2 3 re
+: 969 5 3 al
+: 977 11 5 ized 
+: 993 2 1 if 
+: 1002 10 3 she 
+: 1017 12 5 want
+: 1031 2 1 ed 
+: 1042 8 3 con
+: 1056 4 5 ver
+: 1070 2 5 sa
+: 1088 14 5 tion 
+: 1107 4 1 she's 
+: 1118 2 3 out 
+: 1122 2 5 of 
+: 1132 7 5 luck 
+: 1146 3 1 for 
+: 1157 15 5 three 
+: 1176 14 3 more 
+: 1196 24 1 years
+- 1220 1822
+- 1822
+: 1865 4 8 When 
+: 1873 5 10 I
+: 1894 11 1 moved 
+: 1923 8 1 a
+: 1933 15 1 way 
+: 1962 5 3 from 
+: 1972 23 5 home 
+: 2050 7 8 one 
+: 2064 11 6 hun
+: 2079 5 5 dred 
+: 2088 13 6 mi
+: 2103 11 5 les 
+: 2119 10 6 or 
+: 2137 21 5 so
+- 2158
+: 2194 9 1 I 
+: 2205 17 1 knew 
+: 2233 2 1 a 
+: 2244 2 5 change
+: 2272 2 6 had 
+: 2282 28 5 grown 
+: 2331 3 1 in
+: 2340 7 1 side 
+: 2350 6 1 my 
+: 2359 8 3 awk
+: 2375 9 5 ward
+: 2388 6 1 ly 
+: 2398 9 3 long 
+: 2413 11 5 limbs 
+: 2428 12 3 and 
+: 2448 32 1 bones
+- 2480
+: 2505 4 1 That 
+: 2515 20 1 girl 
+: 2544 3 1 who's 
+: 2554 9 1 next 
+: 2583 7 3 to 
+: 2593 19 5 me 
+: 2659 3 1 she's 
+: 2671 8 8 friend
+: 2686 10 6 ly 
+: 2698 4 5 and 
+: 2708 8 6 thought
+: 2724 10 5 ful 
+: 2737 4 1 and 
+: 2749 10 3 quite 
+: 2761 9 5 aw
+: 2777 3 3 fully 
+: 2788 7 6 pret
+: 2797 14 5 ty
+- 2811
+: 2817 2 1 But 
+: 2825 17 1 all 
+: 2855 5 1 she 
+: 2865 21 8 has 
+: 2893 2 6 to 
+: 2904 14 5 say
+: 2970 2 1 is 
+: 2975 4 1 a 
+: 2983 6 3 meat
+: 2996 6 5 head
+: 3009 6 5 themed 
+: 3022 5 5 mon
+: 3030 3 3 o
+: 3036 9 1 logue 
+: 3050 7 1 on 
+: 3064 10 3 why 
+: 3078 9 5 Brad 
+: 3092 6 5 ran 
+: 3100 5 3 a
+: 3107 11 1 way
+- 3118
+: 3120 3 1 She 
+: 3129 14 1 said 
+: 3150 13 8 All 
+: 3165 7 6 I 
+: 3179 5 5 can 
+: 3187 8 6 hope 
+: 3208 11 1 for 
+: 3221 3 1 is 
+: 3228 2 1 for 
+: 3236 9 3 me 
+: 3248 2 5 to 
+: 3257 7 5 get 
+: 3278 7 3 bet
+: 3287 5 3 ter 
+: 3299 8 1 'cause 
+: 3320 13 8 all 
+: 3336 8 6 I 
+: 3348 2 5 can 
+: 3358 4 6 take
+: 3376 3 3 is 
+: 3386 8 1 no 
+: 3399 28 1 more
+- 3427 3432
+- 3432
+: 3475 10 1 I'll 
+: 3490 6 8 win 
+: 3498 5 8 him 
+: 3512 11 10 back 
+: 3527 3 8 a
+: 3534 18 8 gain 
+: 3555 3 6 we'll 
+: 3562 5 5 be 
+: 3575 5 8 lov
+: 3584 6 6 ers 
+: 3598 2 5 best
+: 3613 14 5 friends
+- 3627
+: 3634 5 3 He 
+: 3642 7 1 won't 
+: 3662 6 3 need 
+: 3676 8 5 no 
+: 3688 4 1 oth
+: 3695 2 1 er 
+: 3704 4 3 wom
+: 3710 3 5 an 
+: 3719 7 5 like 
+: 3732 6 1 he 
+: 3746 5 3 did 
+: 3759 7 5 way 
+: 3774 7 3 back 
+: 3789 6 1 when 
+: 3801 4 1 he 
+: 3810 6 1 was 
+: 3821 3 3 with 
+: 3831 20 1 me
+- 3851 3958
+- 3958
+: 4001 8 1 He 
+: 4016 11 3 need
+: 4030 3 1 ed 
+: 4044 3 6 more
+: 4073 5 6 than 
+: 4086 20 5 me
+- 4106 4114
+- 4114
+: 4157 4 1 I'm 
+: 4171 7 3 friend
+: 4185 11 5 ly 
+: 4199 5 1 and 
+: 4214 7 3 thought
+: 4228 11 5 ful 
+: 4241 4 1 and 
+: 4254 13 3 quite 
+: 4270 7 5 aw
+: 4285 4 1 fully 
+: 4298 5 3 pret
+: 4306 5 1 ty 
+: 4327 2 1 but 
+: 4341 7 1 he 
+: 4356 11 3 need
+: 4370 4 1 ed 
+: 4384 3 3 more
+: 4413 4 3 than 
+: 4427 17 1 me
+- 4444 4524
+- 4524
+: 4567 5 1 When 
+: 4575 10 1 I 
+: 4596 9 1 felt 
+: 4625 4 1 that 
+: 4639 14 1 I 
+: 4667 4 3 should 
+: 4681 18 5 leave 
+: 4768 6 8 we'll 
+: 4782 11 6 call 
+: 4796 3 5 it 
+: 4809 4 6 mid
+: 4822 13 5 night 
+: 4838 18 3 or 
+: 4866 20 1 so
+- 4886
+: 4922 5 1 I 
+: 4936 16 1 found 
+: 4964 4 1 my
+: 4978 22 8 self 
+: 5007 5 6 an
+: 5015 19 5 noyed 
+: 5078 6 1 by 
+: 5087 4 1 a 
+: 5099 16 3 syn
+: 5120 11 5 drome 
+: 5134 2 1 of 
+: 5143 10 3 sorts 
+: 5163 4 5 in 
+: 5171 7 3 her 
+: 5185 23 1 bones
+- 5208 5219
+- 5219
+: 5262 7 1 That 
+: 5277 15 1 girl 
+: 5306 5 3 who's 
+: 5319 9 1 next 
+: 5347 2 3 to 
+: 5355 18 5 me 
+: 5433 4 1 she 
+: 5447 9 8 don't 
+: 5461 5 6 know 
+: 5469 10 5 her 
+: 5482 2 5 worth
+: 5504 8 5 in 
+: 5517 2 5 this
+: 5545 36 5 town
+- 5581
+: 5588 3 3 'Cause 
+: 5596 6 1 her 
+: 5611 10 3 face 
+: 5630 8 5 starts 
+: 5643 2 3 to 
+: 5652 17 1 shine 
+: 5674 3 1 when 
+: 5681 7 1 that 
+: 5702 6 3 meat
+: 5715 6 5 head 
+: 5730 3 1 be
+: 5737 3 5 hind
+: 5757 11 5 me 
+: 5771 4 1 is 
+: 5785 5 3 grin
+: 5792 4 5 ning 
+: 5798 9 5 as 
+: 5814 4 1 he's 
+: 5827 4 5 check
+: 5836 9 5 ing 
+: 5850 11 6 her 
+: 5864 36 5 out
+- 5900
+: 5925 3 1 I 
+: 5936 12 1 said 
+: 5958 13 8 All 
+: 5973 7 6 I 
+: 5986 4 5 can 
+: 5994 4 6 hope
+: 6015 11 1 for 
+: 6028 2 1 is 
+: 6037 4 1 for 
+: 6043 11 3 you 
+: 6057 2 5 to 
+: 6066 7 5 get 
+: 6086 6 3 bet
+: 6096 4 3 ter 
+: 6108 6 1 'cause 
+: 6128 13 8 all 
+: 6143 8 6 I 
+: 6155 2 5 can 
+: 6164 2 6 take
+: 6184 2 8 is 
+: 6192 10 8 no 
+: 6206 4 8 more
+- 6210 6232
+- 6232
+: 6275 4 1 So 
+: 6283 10 1 I'll 
+: 6298 8 8 hide 
+: 6312 5 8 where 
+: 6319 7 10 I 
+: 6336 18 8 can 
+: 6356 5 6 a
+: 6364 5 5 way 
+: 6376 4 5 from 
+: 6383 5 8 you 
+: 6393 5 6 and 
+: 6405 5 5 your 
+: 6421 11 5 friends
+- 6432
+: 6440 5 3 Leak
+: 6449 5 1 ing 
+: 6460 3 1 tears
+: 6482 9 5 o
+: 6496 2 1 ver 
+: 6505 3 1 beers
+: 6525 7 5 once 
+: 6539 4 3 a
+: 6547 18 1 gain
+- 6565 6566
+- 6566
+: 6609 4 3 Leak
+: 6618 5 1 ing 
+: 6630 5 3 tears
+: 6652 10 5 o
+: 6665 4 1 ver 
+: 6675 2 6 beers
+: 6696 6 6 once 
+: 6707 3 5 a
+: 6717 22 5 gain
+- 6739
+: 6765 9 1 You're 
+: 6779 4 3 leak
+: 6787 5 1 ing 
+: 6802 2 1 tears
+: 6824 9 5 o
+: 6837 3 1 ver 
+: 6846 3 1 beers
+: 6867 4 5 once 
+: 6878 4 3 a
+: 6887 50 1 gain
+E

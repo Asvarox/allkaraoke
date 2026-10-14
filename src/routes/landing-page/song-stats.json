@@ -89,6 +89,7 @@
     "Destiny’s Child",
     "Good Charlotte",
     "Guns N’ Roses",
+    "Jason Derulo",
     "Melanie Martinez",
     "Pink Floyd",
     "Serj Tankian",
@@ -105,7 +106,6 @@
     "Hamilton",
     "HIM",
     "Iron Maiden",
-    "Jason Derulo",
     "Justin Bieber",
     "Little Mix",
     "Lorde",
@@ -190,9 +190,10 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 6625,
-  "generatedAt": "2026-10-13T04:51:15.731Z",
+  "songs": 6635,
+  "generatedAt": "2026-10-14T02:58:36.575Z",
   "additionsPerDay": {
+    "2026-10-14": 10,
     "2026-10-13": 20,
     "2026-10-12": 20,
     "2026-10-10": 38,
@@ -232,6 +233,76 @@
     "2026-08-15": 10
   },
   "recentlyAdded": [
+    {
+      "id": "tennis-runner",
+      "artist": "Tennis",
+      "title": "Runner",
+      "video": "Z6kNQEzQJpA",
+      "addedAt": "2026-10-14T02:57:52.892Z"
+    },
+    {
+      "id": "disneys-hercule-jamais-je-navouerai",
+      "artist": "Disney’s Hercule",
+      "title": "Jamais je n’avouerai",
+      "video": "neO2uOzPNT8",
+      "addedAt": "2026-10-14T02:57:52.761Z"
+    },
+    {
+      "id": "jason-derulo-it-girl",
+      "artist": "Jason Derulo",
+      "title": "It Girl",
+      "video": "4oGUHRXT-wA",
+      "addedAt": "2026-10-14T02:57:52.758Z"
+    },
+    {
+      "id": "super-junior-bonamana",
+      "artist": "Super Junior",
+      "title": "Bonamana",
+      "video": "tSOSxwEWFA4",
+      "addedAt": "2026-10-14T02:57:52.751Z"
+    },
+    {
+      "id": "modern-baseball-tears-over-beers",
+      "artist": "Modern Baseball",
+      "title": "Tears Over Beers",
+      "video": "U8Q-uCV7TWw",
+      "addedAt": "2026-10-14T02:57:52.748Z"
+    },
+    {
+      "id": "neil-young-southern-man",
+      "artist": "Neil Young",
+      "title": "Southern Man",
+      "video": "m5FCcDEA6mY",
+      "addedAt": "2026-10-14T02:57:52.746Z"
+    },
+    {
+      "id": "2pac-changes",
+      "artist": "2Pac",
+      "title": "Changes",
+      "video": "eXvBjCO19QY",
+      "addedAt": "2026-10-14T02:57:52.617Z"
+    },
+    {
+      "id": "ingrid-michaelson-the-way-i-am",
+      "artist": "Ingrid Michaelson",
+      "title": "The Way I Am",
+      "video": "owNv81KIvAQ",
+      "addedAt": "2026-10-14T02:57:52.444Z"
+    },
+    {
+      "id": "centimillimental-bokura-dake-no-shudaika",
+      "artist": "Centimillimental",
+      "title": "Bokura dake no shudaika",
+      "video": "GWkLAGlEcxg",
+      "addedAt": "2026-10-14T02:57:52.442Z"
+    },
+    {
+      "id": "kpop-demon-hunters-saja-boys-seu-astro",
+      "artist": "KPop Demon Hunters (Saja Boys)",
+      "title": "Seu Astro",
+      "video": "pdhCJ3v-7mU",
+      "addedAt": "2026-10-14T02:57:51.861Z"
+    },
     {
       "id": "kanye-west-feat-jamie-foxx-gold-digger",
       "artist": "Kanye West feat. Jamie Foxx",
@@ -497,76 +568,6 @@
       "title": "Goya no Machiawase",
       "video": "gWCnKoEgfP0",
       "addedAt": "2026-10-12T03:36:47.668Z"
-    },
-    {
-      "id": "six-the-musical-cast-six",
-      "artist": "SIX the Musical Cast",
-      "title": "SIX",
-      "video": "wTvRNwslYxA",
-      "addedAt": "2026-10-12T03:36:46.915Z"
-    },
-    {
-      "id": "benson-boone-sorry-im-here-for-someone-else",
-      "artist": "Benson Boone",
-      "title": "Sorry I’m Here For Someone Else",
-      "video": "O7Dt2L_rAhI",
-      "addedAt": "2026-10-12T03:36:46.903Z"
-    },
-    {
-      "id": "mark-medlock-mamacita",
-      "artist": "Mark Medlock",
-      "title": "Mamacita",
-      "video": "P0yXdBdAb0A",
-      "addedAt": "2026-10-10T21:26:02.155Z"
-    },
-    {
-      "id": "drunken-masters-maxim-kiz-bier",
-      "artist": "Drunken Masters & Maxim K.I.Z",
-      "title": "Bier",
-      "video": "pI3laNZOVBY",
-      "addedAt": "2026-10-10T21:26:01.966Z"
-    },
-    {
-      "id": "disneys-high-school-musical-the-musical-the-series-joshua-bassett-sofia-wylie-maybe-this-time",
-      "artist": "Disney’s High School Musical: The Musical: The Series (Joshua Bassett, Sofia Wylie)",
-      "title": "Maybe This Time",
-      "video": "C_izzGow1lw",
-      "addedAt": "2026-10-10T21:25:57.129Z"
-    },
-    {
-      "id": "lauv-i-like-me-better",
-      "artist": "Lauv",
-      "title": "I Like Me Better",
-      "video": "BcqxLCWn-CE",
-      "addedAt": "2026-10-10T21:25:56.932Z"
-    },
-    {
-      "id": "mamma-mia-movie-take-a-chance-on-me",
-      "artist": "Mamma Mia! (Movie)",
-      "title": "Take A Chance On Me",
-      "video": "nLkmfL6IVQs",
-      "addedAt": "2026-10-10T21:25:56.752Z"
-    },
-    {
-      "id": "helge-schneider-es-gibt-reis-baby",
-      "artist": "Helge Schneider",
-      "title": "Es gibt Reis Baby",
-      "video": "AainIbNwIcY",
-      "addedAt": "2026-10-10T21:25:56.751Z"
-    },
-    {
-      "id": "robbie-williams-tripping",
-      "artist": "Robbie Williams",
-      "title": "Tripping",
-      "video": "g52Uh9wmqZg",
-      "addedAt": "2026-10-10T21:25:56.748Z"
-    },
-    {
-      "id": "wicked-musical-defying-gravity",
-      "artist": "Wicked (Musical)",
-      "title": "Defying Gravity",
-      "video": "l0Bs_eaXaCo",
-      "addedAt": "2026-10-10T21:25:56.567Z"
     }
   ]
 }

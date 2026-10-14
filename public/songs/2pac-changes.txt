@@ -1,0 +1,995 @@
+#ARTIST:2Pac
+#TITLE:Changes
+#CREATOR:katana-0815, mancer
+#BPM:384,85
+#YEAR:1998
+#PREVIEWSTART:16
+#VIDEO:v=eXvBjCO19QY
+#GENRE:Hip-Hop
+#LANGUAGE:English
+#GAP:15286,618162920618
+#ALLKARAOKE_ID:2pac-changes
+#ALLKARAOKE_SID:6630
+#ALLKARAOKE_LASTUPDATE:2026-10-14T02:57:52.617Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:111
+#ALLKARAOKE_PREVIEWEND:235
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:271
+#MP3:2Pac - Changes.mp3
+#COVER:2Pac - Changes [CO].jpg
+#BACKGROUND:2Pac - Changes [BG].jpg
+F 26 4 0 Come 
+F 31 4 0 on, 
+F 36 4 0 come 
+F 41 1 0 on
+- 42
+R 44 2 0 I 
+R 47 4 0 see 
+R 52 4 0 no 
+R 57 6 0 chan
+R 64 6 0 ges
+- 70
+R 74 3 0 Wake 
+R 78 3 0 up 
+R 82 3 0 in 
+R 86 2 0 the 
+R 89 3 0 mor
+R 93 2 0 ning 
+R 96 2 0 and 
+R 99 1 0 I 
+R 101 7 0 ask 
+R 109 2 0 my
+R 112 8 0 self
+- 120
+R 126 3 0 Is 
+R 130 5 0 life 
+R 136 6 0 worth 
+R 143 2 0 li
+R 146 1 0 ving? 
+R 148 4 0 Should 
+R 153 2 0 I 
+R 156 7 0 blast 
+R 164 3 0 my
+R 168 8 0 self
+- 176
+R 183 2 0 I’m 
+R 186 3 0 tired 
+R 190 1 0 of 
+R 193 3 0 be
+R 197 2 0 ing 
+R 200 4 0 poor 
+R 205 1 0 and, 
+R 207 1 0 e
+R 209 3 0 ven 
+R 213 5 0 worse, 
+R 219 4 0 I’m 
+R 224 3 0 black
+- 227
+R 231 1 0 My 
+R 233 4 0 sto
+R 238 2 0 mach 
+R 241 2 0 hurts
+- 243
+R 247 3 0 So 
+R 251 3 0 I’m 
+R 255 3 0 loo
+R 259 1 0 king 
+R 262 4 0 for 
+R 267 2 0 a 
+R 270 5 0 purse 
+R 276 2 0 to 
+R 281 9 0 snatch
+- 290
+R 299 4 0 Cops 
+R 304 2 0 give 
+R 307 2 0 a 
+R 310 4 0 damn 
+R 315 2 0 a
+R 318 2 0 bout 
+R 321 2 0 a 
+R 324 7 0 ne
+R 335 6 0 gro
+- 341
+R 346 2 0 Pull 
+R 349 2 0 the 
+R 352 2 0 trig
+R 355 2 0 ger, 
+R 358 3 0 kill 
+R 362 2 0 a 
+R 365 2 0 nig
+R 368 2 0 ga, 
+R 372 3 0 he’s 
+R 376 3 0 a 
+R 380 5 0 he
+R 390 6 0 ro
+- 396
+R 401 2 0 “Give 
+R 404 2 0 the 
+R 408 4 0 crack 
+R 414 2 0 to 
+R 417 3 0 the 
+R 421 4 0 kids
+- 425
+R 429 2 0 Who 
+R 432 2 0 the 
+G 435 10 0 hell 
+G 446 7 0 cares?
+- 453
+R 457 5 0 One 
+R 463 5 0 less 
+R 469 3 0 hun
+R 473 2 0 gry 
+R 476 7 0 mouth 
+R 484 3 0 on 
+R 488 2 0 the 
+G 491 7 0 wel
+G 500 8 0 fare”
+- 508
+R 519 4 0 First 
+R 524 3 0 ship 
+R 528 3 0 ’em 
+R 532 4 0 dope 
+R 537 1 0 ’n 
+R 539 2 0 let 
+R 542 2 0 ’em 
+R 545 4 0 deal 
+R 550 2 0 to 
+R 553 4 0 bro
+R 558 3 0 thers
+- 561
+R 567 3 0 Give 
+R 571 3 0 ’em 
+R 575 4 0 guns, 
+R 580 5 0 step 
+R 587 4 0 back, 
+R 595 4 0 watch 
+R 600 1 0 ’em 
+R 602 3 0 kill 
+R 606 3 0 each 
+R 610 3 0 o
+R 614 1 0 ther
+- 615
+R 626 2 0 “It’s 
+R 629 3 0 time 
+R 633 2 0 to 
+R 636 6 0 fight 
+R 643 2 0 back”
+- 645
+R 649 4 0 That’s 
+R 654 2 0 what 
+R 657 4 0 Hu
+R 662 2 0 ey 
+R 665 8 0 said
+- 673
+R 677 4 0 Two 
+R 682 9 0 shots 
+R 692 2 0 in 
+R 695 2 0 the 
+R 698 4 0 dark
+- 702
+R 706 4 0 Now 
+R 711 4 0 Hu
+R 716 5 0 ey’s 
+R 724 5 0 dead
+- 729
+R 735 2 0 I 
+R 738 2 0 got 
+R 741 5 0 love 
+R 747 2 0 for 
+R 750 3 0 my 
+R 754 3 0 bro
+R 758 2 0 ther
+- 760
+R 765 2 0 But 
+R 768 2 0 we 
+R 771 3 0 can 
+R 775 2 0 ne
+R 778 2 0 ver 
+R 781 4 0 go 
+R 786 5 0 no
+R 792 3 0 where
+- 795
+R 799 2 0 Un
+R 802 3 0 less 
+R 806 1 0 we 
+R 808 7 0 share 
+R 816 2 0 with 
+R 819 4 0 each 
+R 825 3 0 o
+R 829 2 0 ther
+- 831
+R 841 2 0 We 
+R 844 4 0 gotta 
+R 849 5 0 start 
+R 855 4 0 ma
+R 860 3 0 king 
+R 864 8 0 chan
+R 873 8 0 ges
+- 881
+R 886 2 0 Learn 
+R 889 1 0 to 
+R 891 4 0 see 
+R 896 3 0 me 
+R 900 2 0 as 
+R 903 1 0 a 
+R 905 3 0 bro
+R 909 1 0 ther 
+R 911 1 0 in
+R 913 3 0 stead 
+R 917 1 0 of 
+R 919 6 0 two 
+R 926 6 0 dis
+R 933 4 0 tant 
+R 938 8 0 stran
+R 947 6 0 gers
+- 953
+R 958 3 0 And 
+R 962 4 0 that’s 
+R 968 3 0 how 
+R 972 2 0 it’s 
+R 975 2 0 sup
+R 978 4 0 posed 
+R 983 2 0 to 
+R 986 3 0 be
+- 989
+R 993 2 0 How 
+R 996 2 0 can 
+R 999 3 0 the 
+R 1003 4 0 de
+R 1008 1 0 vil 
+R 1010 3 0 take 
+R 1014 2 0 a 
+R 1017 3 0 bro
+R 1021 1 0 ther 
+R 1023 4 0 if 
+R 1028 3 0 he’s 
+R 1032 5 0 close 
+R 1038 3 0 to 
+R 1042 4 0 me?
+- 1046
+R 1069 3 0 I’d 
+R 1073 2 0 love 
+R 1076 2 0 to 
+R 1079 3 0 go 
+R 1084 5 0 back 
+R 1090 3 0 to 
+R 1094 3 0 when 
+R 1098 2 0 we 
+R 1101 6 0 played 
+R 1108 1 0 as 
+R 1110 5 0 kids
+- 1115
+R 1119 2 0 But 
+R 1122 4 0 thi
+R 1127 2 0 ~ngs 
+R 1130 11 0 change
+- 1141
+R 1147 1 0 And 
+R 1149 4 0 that’s 
+R 1154 2 0 the 
+R 1157 2 0 way 
+R 1160 2 0 it 
+R 1163 6 0 is
+- 1169
+F 1192 3 0 Come 
+F 1196 3 0 on
+- 1199
+F 1220 3 0 Come 
+F 1224 4 0 on
+- 1228
+: 1235 7 -7 That’s 
+: 1243 6 -5 just 
+: 1250 3 -4 the 
+: 1254 5 -2 way 
+: 1261 3 -1 it 
+: 1265 9 -1 i
+: 1275 5 -2 ~s
+- 1280 1321
+- 1321
+: 1347 6 -1 Things 
+: 1354 3 0 will 
+: 1358 3 0 ne
+: 1362 4 0 ver 
+: 1367 4 0 be 
+: 1372 2 1 the 
+* 1376 15 2 sa
+* 1392 7 1 ~
+* 1400 14 -1 ~me
+- 1414 1430
+- 1430
+: 1456 7 -1 That’s 
+: 1464 6 -1 just 
+: 1471 2 -1 the 
+: 1474 6 0 way 
+: 1482 3 -1 it 
+: 1486 9 0 i
+: 1496 9 -1 ~
+: 1506 11 -3 ~
+: 1518 10 -5 ~s
+- 1528
+: 1544 5 -3 Oh 
+: 1551 14 -5 yeah
+: 1567 6 -3 ~
+: 1574 8 -5 ~
+- 1582 1653
+- 1653
+: 1679 7 -4 That’s 
+: 1687 6 -4 just 
+: 1694 2 -1 the 
+: 1698 5 -2 way 
+: 1705 2 -1 it 
+: 1709 9 -1 i
+: 1719 5 -3 ~s
+- 1724 1762
+- 1762
+: 1788 8 -1 Things 
+: 1797 2 -1 will 
+: 1800 3 -1 ne
+: 1804 3 0 ver 
+: 1809 3 1 be 
+: 1815 2 4 the 
+: 1819 13 2 sa
+: 1833 8 1 ~
+: 1842 12 -1 ~me
+- 1854 1874
+- 1874
+: 1900 7 -1 That’s 
+: 1908 6 -1 just 
+: 1915 3 -1 the 
+: 1919 5 -1 way 
+: 1926 4 -1 it 
+: 1931 9 -1 i
+: 1941 4 -5 ~s
+- 1945 2013
+- 2013
+R 2039 1 0 I 
+R 2041 6 0 see 
+R 2048 3 0 no 
+R 2052 8 0 chan
+R 2061 5 0 ges
+- 2066
+R 2071 2 0 All 
+R 2074 1 0 I 
+R 2076 4 0 see 
+R 2081 3 0 is 
+R 2085 3 0 ra
+R 2089 6 0 cist 
+R 2096 3 0 fa
+R 2100 3 0 ces
+- 2103
+R 2113 3 0 Mis
+R 2117 5 0 placed 
+R 2123 7 0 hate 
+R 2131 4 0 makes 
+R 2136 3 0 dis
+R 2140 6 0 grace 
+R 2147 2 0 to 
+R 2150 4 0 ra
+R 2155 5 0 ces
+- 2160
+R 2165 2 0 We 
+R 2168 4 0 un
+R 2173 1 0 der
+- 2174
+R 2178 2 0 I 
+R 2181 2 0 won
+R 2184 3 0 der 
+R 2188 2 0 what 
+R 2191 2 0 it 
+R 2194 7 0 takes 
+R 2202 3 0 to 
+R 2206 5 0 make 
+R 2212 5 0 this
+- 2217
+R 2223 3 0 One 
+R 2227 2 0 bet
+R 2230 3 0 ter 
+R 2234 6 0 place 
+R 2241 5 0 let’s 
+R 2247 3 0 e
+R 2251 5 0 rase 
+R 2257 3 0 the 
+R 2261 9 0 was
+R 2271 4 0 ted
+- 2275
+R 2285 3 0 Take 
+R 2289 2 0 the 
+R 2292 3 0 e
+R 2296 2 0 vil 
+R 2299 2 0 out 
+R 2302 3 0 the 
+R 2306 3 0 peo
+R 2310 1 0 ple, 
+R 2312 4 0 they’ll 
+R 2317 2 0 be 
+G 2320 4 0 ac
+G 2325 3 0 ting 
+G 2329 4 0 right
+- 2333
+R 2337 3 0 ’Cause 
+R 2341 6 0 both 
+G 2348 5 0 black 
+G 2354 2 0 and 
+G 2357 3 0 white
+- 2360
+R 2364 2 0 Are 
+R 2368 4 0 smo
+R 2373 3 0 kin’ 
+G 2377 4 0 crack 
+G 2382 2 0 to
+G 2385 5 0 night
+- 2390
+R 2396 3 0 And 
+R 2400 3 0 the 
+R 2404 2 0 on
+R 2407 2 0 ly 
+R 2410 3 0 time 
+R 2414 1 0 we 
+R 2416 4 0 chill 
+R 2421 3 0 is 
+R 2425 2 0 when 
+R 2428 2 0 we 
+G 2431 5 0 kill 
+G 2437 4 0 each 
+G 2442 2 0 o
+G 2445 1 0 ther
+- 2446
+R 2448 2 0 It 
+R 2451 5 0 takes 
+R 2457 6 0 skill 
+R 2464 3 0 to 
+R 2468 2 0 be 
+R 2471 6 0 real, 
+R 2478 4 0 time 
+R 2483 1 0 to 
+G 2485 6 0 heal 
+G 2492 4 0 each 
+G 2497 3 0 o
+G 2501 1 0 ther
+- 2502
+R 2507 3 0 And 
+R 2511 2 0 al
+R 2514 2 0 though 
+R 2517 1 0 it 
+R 2519 8 0 seems 
+R 2528 4 0 hea
+R 2533 2 0 ven 
+R 2536 5 0 sent
+- 2541
+R 2546 2 0 We 
+R 2549 5 0 ain’t 
+R 2555 6 0 ready
+- 2561
+R 2567 1 0 To 
+R 2569 4 0 see 
+R 2574 1 0 a 
+R 2576 7 0 black 
+R 2584 5 0 pre
+R 2590 2 0 si
+R 2593 7 0 dent
+- 2600
+R 2615 2 0 It 
+R 2618 3 0 ain’t 
+R 2622 1 0 a 
+R 2624 3 0 se
+R 2628 2 0 cret, 
+R 2631 2 0 do
+R 2634 1 0 ~n’t 
+R 2636 1 0 con
+R 2638 5 0 ceal 
+R 2644 3 0 the 
+G 2648 6 0 fact
+- 2654
+R 2659 2 0 The 
+R 2662 2 0 pe
+R 2665 2 0 ni
+R 2668 2 0 ten
+R 2671 5 0 ciary’s 
+G 2677 5 0 packed
+- 2682
+R 2686 2 0 And 
+R 2689 2 0 i
+R 2692 1 0 ~t’s 
+R 2694 7 0 filled 
+R 2702 3 0 with 
+G 2706 8 0 blacks
+- 2714
+R 2727 1 0 But 
+R 2729 5 0 some 
+R 2735 6 0 things 
+R 2742 5 0 will 
+R 2748 10 0 never 
+R 2759 7 0 change
+- 2766
+R 2771 2 0 Try 
+R 2774 1 0 to 
+R 2776 4 0 show 
+R 2781 2 0 a
+R 2784 5 0 nother 
+R 2790 3 0 way
+- 2793
+R 2798 3 0 But 
+R 2802 1 0 you 
+R 2804 7 0 stayin’ 
+R 2812 1 0 in 
+R 2814 4 0 the 
+R 2819 7 0 dope 
+R 2828 6 0 game
+- 2834
+R 2841 5 0 Now 
+R 2847 2 0 tell 
+R 2850 1 0 me, 
+R 2852 4 0 what’s 
+R 2857 1 0 a 
+R 2859 6 0 mother 
+R 2866 3 0 to 
+R 2870 3 0 do?
+- 2873
+R 2882 4 0 Being 
+G 2887 6 0 real 
+R 2894 1 0 do
+R 2896 1 0 ~n’t 
+G 2898 2 0 ap
+G 2901 6 0 peal 
+R 2908 3 0 to 
+R 2912 2 0 the 
+G 2915 3 0 bro
+G 2919 2 0 ther 
+G 2922 3 0 in 
+G 2926 4 0 you
+- 2930
+R 2947 2 0 You 
+R 2950 4 0 gotta 
+R 2955 4 0 o
+R 2960 3 0 pe
+R 2964 3 0 rate 
+R 2968 1 0 the 
+G 2970 10 0 easy 
+G 2982 3 0 way
+- 2985
+F 2989 1 0 “I 
+F 2991 3 0 made 
+F 2995 2 0 a 
+F 2998 7 0 G 
+F 3006 3 0 to
+F 3010 2 0 day”
+- 3012
+R 3021 2 0 But 
+R 3024 2 0 you 
+R 3027 3 0 made 
+R 3031 2 0 it 
+R 3034 2 0 in 
+R 3037 1 0 a 
+G 3039 5 0 slea
+G 3045 4 0 zy 
+G 3050 4 0 way
+- 3054
+R 3061 2 0 Sel
+R 3064 3 0 ling 
+R 3068 6 0 crack 
+R 3075 1 0 to 
+R 3077 4 0 the 
+R 3082 6 0 kids
+- 3088
+F 3092 3 0 “I 
+F 3096 6 0 gotta 
+F 3103 6 0 get 
+F 3110 6 0 paid”, 
+R 3117 3 0 well 
+R 3121 4 0 hey
+- 3125
+R 3142 1 0 Well 
+R 3144 4 0 that’s 
+R 3149 1 0 the 
+R 3151 4 0 way 
+R 3156 1 0 it 
+R 3158 9 0 is
+- 3167
+F 3186 4 0 Come 
+F 3191 10 0 on
+- 3201
+F 3214 5 0 Come 
+F 3220 6 0 on
+- 3226
+: 3230 8 -1 That’s 
+: 3239 6 -5 just 
+: 3246 2 -5 the 
+: 3249 5 -2 way 
+: 3256 3 -1 it 
+: 3260 10 -1 i
+: 3271 4 -1 ~s
+- 3275 3316
+- 3316
+: 3342 7 -1 Things 
+: 3350 3 -1 will 
+: 3354 3 -1 ne
+: 3358 3 -1 ver 
+: 3362 4 0 be 
+: 3367 2 2 the 
+: 3371 15 2 sa
+: 3387 8 2 ~
+: 3396 13 -1 ~me
+- 3409 3425
+- 3425
+: 3451 7 -1 That’s 
+: 3459 6 -1 just 
+: 3467 2 -1 the 
+: 3470 6 0 way 
+: 3477 4 -1 it 
+: 3482 8 0 i
+: 3491 10 -1 ~
+: 3502 11 -3 ~
+: 3514 7 -5 ~s
+- 3521
+: 3535 9 -3 Oh 
+: 3546 11 -5 yeah
+: 3558 8 -3 ~
+: 3567 16 -5 ~
+- 3583 3650
+- 3650
+: 3676 4 -4 That’s 
+: 3682 6 -4 just 
+: 3689 2 -1 the 
+: 3693 8 -2 way 
+: 3702 3 -1 it 
+: 3706 10 -1 i
+: 3717 7 -3 ~s
+- 3724 3760
+- 3760
+: 3786 5 -1 Things 
+: 3793 2 -1 will 
+: 3796 3 -1 ne
+: 3800 5 0 ver 
+: 3806 4 1 be 
+: 3811 2 4 the 
+: 3815 15 2 sa
+: 3831 8 1 ~
+: 3840 10 2 ~me
+- 3850 3870
+- 3870
+: 3896 6 -1 That’s 
+: 3904 4 -1 just 
+: 3910 2 -1 the 
+: 3914 6 -1 way 
+: 3921 3 -1 it 
+: 3925 8 -1 i
+: 3934 11 -5 ~
+: 3946 8 -5 ~
+: 3955 9 -6 ~s
+- 3964
+: 3979 10 -3 Oh 
+: 3990 14 -5 yeah
+: 4005 20 -7 ~
+- 4025
+R 4034 3 0 We 
+R 4038 3 0 got
+R 4042 2 0 ta 
+R 4045 3 0 make 
+R 4049 2 0 a 
+R 4052 10 0 change
+- 4062 4082
+- 4082
+R 4108 3 0 It’s 
+R 4112 5 0 time 
+R 4118 2 0 for 
+R 4121 4 0 us 
+R 4126 3 0 as 
+R 4130 2 0 a 
+R 4133 5 0 peo
+R 4139 3 0 ple 
+R 4143 2 0 to 
+R 4146 6 0 start 
+R 4153 3 0 ma
+R 4157 2 0 king 
+R 4160 5 0 some 
+R 4166 7 0 chan
+R 4174 7 0 ges
+- 4181
+R 4191 4 0 Let’s 
+R 4196 7 0 change 
+R 4204 3 0 the 
+R 4208 3 0 way 
+R 4212 3 0 we 
+R 4218 8 0 eat
+- 4226
+R 4234 6 0 Let’s 
+R 4241 7 0 change 
+R 4249 2 0 the 
+R 4252 4 0 way 
+R 4257 5 0 we 
+R 4264 9 0 live
+- 4273
+R 4279 2 0 And 
+R 4282 4 0 let’s 
+R 4287 7 0 change 
+R 4295 2 0 the 
+R 4298 2 0 way 
+R 4301 3 0 we 
+R 4306 8 0 treat 
+R 4315 2 0 each 
+R 4318 3 0 o
+R 4322 1 0 ther
+- 4323
+R 4336 2 0 You 
+R 4339 4 0 see 
+R 4344 2 0 the 
+R 4347 6 0 old 
+R 4354 5 0 way 
+R 4360 7 0 wasn’t 
+R 4368 6 0 wor
+R 4375 1 0 king 
+R 4377 5 0 so 
+R 4383 4 0 it’s 
+R 4388 6 0 on 
+R 4395 5 0 us
+- 4400
+R 4404 2 0 To 
+R 4407 2 0 do 
+R 4410 2 0 what 
+R 4413 3 0 we 
+R 4417 2 0 got
+R 4420 2 0 ta 
+R 4423 4 0 do
+- 4427
+R 4439 2 0 To 
+R 4442 3 0 sur
+R 4447 6 0 vive
+- 4453
+R 4470 2 0 And 
+R 4474 4 0 still 
+R 4479 1 0 I 
+R 4481 4 0 see 
+R 4486 4 0 no 
+R 4491 9 0 chan
+R 4501 3 0 ges
+- 4504
+R 4511 1 0 Can 
+R 4513 2 0 a 
+R 4516 4 0 bro
+R 4521 1 0 ther 
+R 4523 3 0 get 
+R 4527 1 0 a 
+G 4529 3 0 lit
+G 4533 3 0 tle 
+G 4537 7 0 peace?
+- 4544
+R 4549 2 0 It’s 
+R 4552 4 0 war 
+R 4557 2 0 on 
+R 4560 2 0 the 
+G 4563 6 0 streets
+- 4569
+R 4573 2 0 And 
+R 4576 2 0 a 
+R 4580 4 0 war 
+R 4585 3 0 in 
+R 4589 2 0 the 
+G 4592 3 0 Mid
+G 4596 3 0 dle 
+G 4603 5 0 East
+- 4608
+R 4612 1 0 In
+R 4614 2 0 stead 
+R 4617 1 0 a 
+R 4619 5 0 war 
+R 4625 6 0 on 
+G 4633 6 0 po
+G 4640 2 0 ver
+G 4643 6 0 ty
+- 4649
+R 4653 2 0 They 
+R 4656 2 0 got 
+R 4659 2 0 a 
+R 4662 3 0 war 
+R 4666 4 0 on 
+R 4671 7 0 drugs 
+R 4679 1 0 so 
+R 4681 4 0 the 
+R 4686 2 0 po
+R 4689 5 0 lice 
+R 4695 4 0 can 
+G 4700 5 0 bo
+G 4706 2 0 ther 
+G 4709 6 0 me
+- 4715
+R 4721 3 0 And 
+R 4725 2 0 I 
+R 4728 1 0 ain’t 
+R 4730 3 0 ne
+R 4734 2 0 ver 
+R 4737 3 0 did 
+R 4741 2 0 a 
+R 4744 7 0 crime 
+R 4752 1 0 I 
+R 4754 3 0 ain’t 
+R 4758 6 0 have 
+R 4765 2 0 to 
+R 4768 5 0 do
+- 4773
+R 4777 2 0 But 
+R 4780 4 0 now 
+R 4785 1 0 I’m 
+R 4787 5 0 back 
+R 4793 3 0 with 
+R 4797 3 0 the 
+R 4801 6 0 facts, 
+R 4808 1 0 gi
+R 4810 1 0 ving 
+R 4812 2 0 it 
+R 4815 5 0 back 
+R 4821 2 0 to 
+R 4824 4 0 you
+- 4828
+R 4841 6 0 Don’t 
+R 4848 2 0 let 
+R 4851 2 0 them 
+R 4854 6 0 jack 
+R 4862 4 0 you 
+R 4868 5 0 up
+- 4873
+R 4877 4 0 Back 
+R 4882 3 0 you 
+R 4886 5 0 up
+- 4891
+R 4897 5 0 Crack 
+R 4903 4 0 you 
+R 4908 2 0 up
+- 4910
+R 4914 3 0 And 
+R 4918 4 0 pimp-
+R 4923 7 0 smack 
+R 4931 4 0 you 
+R 4936 3 0 up
+- 4939
+R 4951 1 0 You 
+R 4953 3 0 got
+R 4957 2 0 ta 
+R 4960 3 0 learn 
+R 4964 2 0 to 
+R 4967 4 0 hold 
+R 4972 4 0 your 
+R 4977 5 0 own, 
+R 4983 3 0 they 
+R 4987 2 0 get
+- 4989
+R 4993 4 0 Jea
+R 4998 3 0 lous 
+R 5002 1 0 when 
+R 5004 2 0 they 
+R 5007 3 0 see 
+R 5011 2 0 you 
+R 5014 3 0 with 
+R 5018 3 0 your 
+R 5022 4 0 mo
+R 5027 3 0 bile 
+R 5032 9 0 phone
+- 5041
+R 5053 3 0 But 
+R 5057 1 0 tell 
+R 5059 3 0 the 
+R 5063 4 0 cops 
+R 5068 1 0 they 
+R 5070 5 0 can’t 
+R 5078 9 0 touch 
+R 5088 5 0 this
+- 5093
+R 5097 1 0 I 
+R 5099 5 0 don’t 
+R 5105 6 0 trust 
+R 5112 4 0 this, 
+R 5117 3 0 when 
+R 5121 3 0 they 
+R 5125 3 0 try 
+R 5129 2 0 to 
+R 5132 5 0 rush, 
+R 5138 4 0 I 
+R 5144 8 0 bust 
+R 5154 7 0 this
+- 5161
+R 5169 2 0 That’s 
+R 5172 1 0 the 
+R 5174 6 0 sound 
+R 5181 1 0 of 
+R 5183 3 0 my 
+G 5187 7 0 tool
+- 5194
+R 5198 2 0 You 
+R 5201 4 0 say 
+R 5206 2 0 it 
+R 5210 4 0 ain’t 
+G 5215 7 0 cool
+- 5222
+R 5227 2 0 My 
+R 5230 5 0 mama 
+R 5236 6 0 didn’t 
+R 5243 10 0 raise 
+R 5254 7 0 no 
+G 5263 8 0 fool
+- 5271
+R 5278 2 0 And 
+R 5281 3 0 as 
+R 5285 6 0 long 
+R 5292 3 0 as 
+R 5296 2 0 I 
+R 5299 8 0 stay 
+R 5308 7 0 black, 
+R 5316 2 0 I 
+R 5319 2 0 got
+R 5322 2 0 ta 
+R 5325 8 0 stay 
+R 5336 7 0 strapped
+- 5343
+R 5348 3 0 And 
+R 5352 2 0 I 
+R 5355 2 0 ne
+R 5358 2 0 ver 
+R 5361 3 0 get 
+R 5365 1 0 to 
+R 5367 9 0 lay 
+R 5379 6 0 back
+- 5385
+R 5389 3 0 ’Cause 
+R 5393 1 0 I 
+R 5395 2 0 al
+R 5398 3 0 ways 
+R 5402 4 0 got 
+R 5407 1 0 to 
+R 5409 3 0 wor
+R 5413 2 0 ry 
+R 5416 3 0 ’bout 
+R 5420 2 0 the 
+R 5424 7 0 pay 
+R 5433 6 0 back
+- 5439
+R 5444 6 0 Some 
+R 5451 5 0 buck 
+R 5458 3 0 that 
+R 5462 1 0 I 
+R 5464 6 0 roughed 
+R 5471 5 0 up 
+R 5479 9 0 way 
+R 5489 7 0 back
+- 5496
+R 5500 3 0 Co
+R 5504 3 0 min’ 
+R 5508 5 0 back 
+R 5515 2 0 af
+R 5518 2 0 ter 
+R 5521 5 0 all 
+R 5527 5 0 these 
+R 5534 10 0 years
+- 5544
+R 5548 3 0 “Rat
+R 5552 2 0 a
+R 5555 5 0 tat
+R 5562 5 0 tat 
+R 5569 5 0 tat 
+R 5576 3 0 tat”
+- 5579
+R 5583 3 0 That’s 
+R 5587 1 0 the 
+R 5589 3 0 way 
+R 5593 3 0 it 
+R 5597 6 0 is
+- 5603 5644
+- 5644
+: 5670 6 -1 That’s 
+: 5678 6 -5 just 
+: 5685 2 -5 the 
+: 5688 5 -2 way 
+: 5695 3 -1 it 
+: 5700 9 -1 i
+: 5710 4 -1 ~s
+- 5714 5754
+- 5754
+: 5780 6 -1 Things 
+: 5788 3 -1 will 
+: 5792 2 -1 ne
+: 5795 4 0 ver 
+: 5800 4 1 be 
+: 5805 3 4 the 
+* 5809 15 2 sa
+* 5825 8 1 ~
+* 5834 12 -1 ~me
+E

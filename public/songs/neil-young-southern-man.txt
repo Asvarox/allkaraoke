@@ -1,0 +1,220 @@
+#ARTIST:Neil Young
+#TITLE:Southern Man
+#CREATOR:uweotto
+#BPM:328,20000000000005
+#YEAR:1970
+#PREVIEWSTART:13
+#VIDEO:v=m5FCcDEA6mY
+#GENRE:Folk Rock
+#LANGUAGE:English
+#GAP:12503,90243902439
+#ALLKARAOKE_ID:neil-young-southern-man
+#ALLKARAOKE_SID:6631
+#ALLKARAOKE_LASTUPDATE:2026-10-14T02:57:52.746Z
+#ALLKARAOKE_ARTISTORIGIN:CA
+#ALLKARAOKE_REALBPM:162
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=m5FCcDEA6mY
+#ALLKARAOKE_PREVIEWEND:49
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:332
+#MP3:Neil Young - Southern Man.mp3
+: 22 7 13 South
+: 30 3 14 ern 
+: 34 16 14 man 
+: 58 3 13 bet
+: 62 8 11 ter 
+: 82 8 13 keep 
+: 94 8 14 your 
+: 110 15 13 he
+: 126 7 11 ad
+: 134 4 9 ~
+- 138
+: 150 8 13 Don’t 
+: 162 8 14 for
+: 174 12 14 get 
+: 190 7 13 what 
+: 198 8 11 your 
+: 218 8 13 good 
+: 230 8 14 book 
+: 242 15 14 sa
+: 258 3 13 i
+: 262 12 11 d
+- 274
+: 294 7 14 South
+: 302 3 14 ern 
+: 306 20 14 change 
+: 330 3 13 gon
+: 334 8 11 na 
+: 354 8 13 come 
+: 370 8 14 at 
+: 382 11 13 la
+: 394 7 11 s
+: 402 8 9 t
+- 410
+: 422 8 13 Now 
+: 434 8 14 your 
+: 450 11 14 cros
+: 462 8 13 ses 
+: 474 8 11 are 
+: 490 8 13 burn
+: 502 8 14 ing 
+: 514 15 14 fa
+: 530 7 13 s
+: 538 4 11 t
+- 542
+: 546 7 13 South
+: 554 8 14 ern 
+: 566 24 14 man
+- 590 808
+- 808
+: 830 8 18 I 
+: 842 8 16 saw 
+: 854 11 14 cot
+: 866 11 13 ton 
+: 878 8 11 and 
+: 898 8 14 I 
+: 910 8 16 see 
+: 922 24 16 black
+- 946
+: 962 8 18 Tall 
+: 978 8 16 white 
+: 990 11 14 man
+: 1002 11 13 sions 
+: 1014 8 11 and 
+: 1034 3 13 lit
+: 1038 4 14 tle 
+: 1046 3 14 sh
+: 1050 7 16 ac
+: 1058 4 11 ks
+- 1062 1088
+- 1088
+: 1110 3 18 South
+: 1114 4 16 ern 
+: 1122 3 16 m
+: 1126 8 14 an 
+: 1142 7 13 will 
+: 1150 8 11 you 
+: 1170 8 14 pay 
+: 1182 4 16 them 
+: 1194 24 16 back?
+- 1218
+: 1238 8 18 I 
+: 1250 7 16 hear 
+: 1258 12 14 scream
+: 1274 7 13 in’ 
+: 1282 8 6 and 
+: 1302 8 18 bull
+: 1314 8 16 whips 
+: 1326 8 14 crac
+: 1338 20 13 king
+- 1358
+: 1366 7 18 Ho
+: 1374 7 16 w 
+: 1382 7 14 lo
+: 1390 8 13 ng? 
+: 1434 11 18 Ho
+: 1446 11 16 w 
+: 1458 11 14 lo
+: 1470 12 13 ng?
+- 1482 3844
+- 3844
+: 3866 3 13 South
+: 3870 4 14 ern 
+: 3878 16 14 man 
+: 3898 3 13 bet
+: 3902 8 11 ter 
+: 3918 8 13 keep 
+: 3934 8 14 your 
+: 3946 15 13 he
+: 3962 7 11 a
+: 3970 4 9 d
+- 3974
+: 3986 8 13 Don’t 
+: 4002 8 14 for
+: 4014 12 14 get 
+: 4030 7 13 what 
+: 4038 8 11 your 
+: 4054 8 13 good 
+: 4066 8 14 book 
+: 4078 15 14 sa
+: 4094 7 13 i
+: 4102 12 11 d
+- 4114
+: 4130 3 14 South
+: 4134 4 14 ern 
+: 4142 20 14 change 
+: 4166 3 13 gon
+: 4170 4 11 na 
+: 4186 8 13 come 
+: 4202 7 14 at 
+: 4210 12 13 la
+: 4226 7 11 s
+: 4234 8 9 t
+- 4242
+: 4254 8 13 Now 
+: 4266 8 14 your 
+: 4278 12 14 cros
+: 4294 8 13 ses 
+: 4306 8 11 are 
+: 4322 8 13 bur
+: 4334 8 14 ning 
+: 4346 15 14 fa
+: 4362 3 13 s
+: 4366 4 11 t
+- 4370
+: 4378 7 13 South
+: 4386 7 14 ern 
+: 4394 24 14 man
+- 4418 4636
+- 4636
+: 4658 8 18 Lily 
+: 4674 8 16 Belle 
+: 4686 7 14 your 
+: 4694 11 13 hair 
+: 4706 8 11 is 
+: 4722 8 14 gol
+: 4734 8 16 den 
+: 4746 24 16 brown
+- 4770
+: 4782 7 18 I’ve 
+: 4790 7 16 seen 
+: 4798 8 14 your 
+: 4810 11 13 black 
+: 4822 7 11 man
+: 4830 8 13 ~ 
+: 4858 3 14 com
+: 4862 3 16 ing 
+: 4866 16 11 round
+- 4882 4900
+- 4900
+: 4922 8 18 Swear 
+: 4934 4 16 by 
+: 4942 7 16 God 
+: 4950 4 14 I’m 
+: 4958 3 13 gon
+: 4962 8 11 na 
+: 4990 3 14 cut 
+: 4994 4 16 him 
+: 5002 24 16 down
+- 5026 5032
+- 5032
+: 5054 7 18 I 
+: 5062 7 16 hear 
+: 5070 8 14 screa
+: 5086 8 13 min’ 
+: 5098 8 6 and 
+: 5114 8 18 bull
+: 5126 8 16 whips 
+: 5138 8 14 crac
+: 5150 20 13 king
+- 5170 5180
+- 5180
+: 5202 7 18 Ho
+: 5210 3 16 w 
+: 5214 7 14 lo
+: 5222 8 13 ng? 
+: 5238 11 18 Ho
+: 5250 11 16 w 
+: 5262 11 14 lo
+: 5274 16 13 ng?
+E
