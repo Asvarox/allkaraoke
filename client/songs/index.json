@@ -381,6 +381,36 @@
     "local": false
   },
   {
+    "id": "2pac-changes",
+    "title": "Changes",
+    "artist": "2Pac",
+    "video": "eXvBjCO19QY",
+    "language": [
+      "English"
+    ],
+    "bpm": 384.85,
+    "gap": 15286.618162920618,
+    "year": "1998",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-14T02:57:52.617Z",
+    "genre": "Hip-Hop",
+    "realBpm": 111,
+    "previewStart": 16,
+    "previewEnd": 235,
+    "volume": 1,
+    "author": "katana-0815, mancer",
+    "duration": 271,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6630,
+    "tracksCount": 1,
+    "search": "2pacchanges",
+    "local": false
+  },
+  {
     "id": "2pac-feat-dr-dre-roger-troutman-california-love",
     "title": "California Love",
     "artist": "2Pac feat. Dr. Dre & Roger Troutman",
@@ -34746,6 +34776,37 @@
     "local": false
   },
   {
+    "id": "centimillimental-bokura-dake-no-shudaika",
+    "title": "Bokura dake no shudaika",
+    "artist": "Centimillimental",
+    "video": "GWkLAGlEcxg",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 348,
+    "gap": 4600.620689655172,
+    "year": "2020",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-10-14T02:57:52.442Z",
+    "genre": "J-rock",
+    "realBpm": 182,
+    "volume": 1,
+    "author": "wolf359",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=wolf359",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Centimillimental&cancion=Bokura%20dake%20no%20shudaika",
+    "duration": 330,
+    "tracks": [
+      {
+        "name": "Bokura Dake no Shudaika",
+        "start": 23
+      }
+    ],
+    "shortId": 6628,
+    "tracksCount": 1,
+    "search": "centimillimentalbokuradakenoshudaika",
+    "local": false
+  },
+  {
     "id": "centimillimental-kizuato",
     "title": "Kizuato",
     "artist": "Centimillimental",
@@ -49220,6 +49281,33 @@
     "shortId": 1263,
     "tracksCount": 1,
     "search": "disneysgummibaerenbandetheme",
+    "local": false
+  },
+  {
+    "id": "disneys-hercule-jamais-je-navouerai",
+    "title": "Jamais je n’avouerai",
+    "artist": "Disney’s Hercule",
+    "video": "neO2uOzPNT8",
+    "language": [
+      "French"
+    ],
+    "bpm": 254,
+    "gap": 11526.062992125984,
+    "year": "1997",
+    "lastUpdate": "2026-10-14T02:57:52.761Z",
+    "genre": "Soundtrack",
+    "realBpm": 121,
+    "volume": 1,
+    "author": "m310u",
+    "duration": 136,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6635,
+    "tracksCount": 1,
+    "search": "disneysherculejamaisjenavouerai",
     "local": false
   },
   {
@@ -81694,6 +81782,33 @@
     "local": false
   },
   {
+    "id": "ingrid-michaelson-the-way-i-am",
+    "title": "The Way I Am",
+    "artist": "Ingrid Michaelson",
+    "video": "owNv81KIvAQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 15850,
+    "year": "2007",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-14T02:57:52.444Z",
+    "realBpm": 67,
+    "volume": 1,
+    "author": "Foin",
+    "duration": 137,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6629,
+    "tracksCount": 1,
+    "search": "ingridmichaelsonthewayiam",
+    "local": false
+  },
+  {
     "id": "inna-club-rocker",
     "title": "Club Rocker",
     "artist": "Inna",
@@ -84842,6 +84957,34 @@
     "shortId": 2073,
     "tracksCount": 1,
     "search": "jasonderuloinmyhead",
+    "local": false
+  },
+  {
+    "id": "jason-derulo-it-girl",
+    "title": "It Girl",
+    "artist": "Jason Derulo",
+    "video": "4oGUHRXT-wA",
+    "language": [
+      "English"
+    ],
+    "bpm": 368.04,
+    "gap": 19921.089012063905,
+    "year": "2011",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-14T02:57:52.758Z",
+    "genre": "R&B",
+    "realBpm": 95,
+    "volume": 1,
+    "author": "reck0ning",
+    "duration": 214,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6634,
+    "tracksCount": 1,
+    "search": "jasonderuloitgirl",
     "local": false
   },
   {
@@ -98620,6 +98763,34 @@
     "shortId": 6325,
     "tracksCount": 1,
     "search": "kpopdemonhunterssajaboysmeupequenoguarana",
+    "local": false
+  },
+  {
+    "id": "kpop-demon-hunters-saja-boys-seu-astro",
+    "title": "Seu Astro",
+    "artist": "KPop Demon Hunters (Saja Boys)",
+    "video": "pdhCJ3v-7mU",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 360,
+    "gap": 2210,
+    "year": "2025",
+    "lastUpdate": "2026-10-14T02:57:51.861Z",
+    "genre": "Soundtrack, K-Pop",
+    "realBpm": 3,
+    "volume": 1,
+    "author": "MylordWaliza",
+    "sourceUrl": "https://youtu.be/pdhCJ3v-7mU?si=2mFsbk3ej1n4ctu5",
+    "duration": 205,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6627,
+    "tracksCount": 1,
+    "search": "kpopdemonhunterssajaboysseuastro",
     "local": false
   },
   {
@@ -124342,6 +124513,38 @@
     "local": false
   },
   {
+    "id": "modern-baseball-tears-over-beers",
+    "title": "Tears Over Beers",
+    "artist": "Modern Baseball",
+    "video": "U8Q-uCV7TWw",
+    "language": [
+      "English,"
+    ],
+    "bpm": 637.8,
+    "gap": -196.8852304797743,
+    "year": "2012",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-14T02:57:52.748Z",
+    "genre": "Emo",
+    "realBpm": 180,
+    "previewStart": 70,
+    "previewEnd": 90,
+    "volume": 1,
+    "author": "strumd",
+    "authorUrl": "https://www.youtube.com/@strumdeet",
+    "sourceUrl": "rb3 converted thingamajig",
+    "duration": 170,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6632,
+    "tracksCount": 1,
+    "search": "modernbaseballtearsoverbeers",
+    "local": false
+  },
+  {
     "id": "modern-baseball-your-graduation",
     "title": "Your Graduation",
     "artist": "Modern Baseball",
@@ -128695,6 +128898,37 @@
     "shortId": 6052,
     "tracksCount": 1,
     "search": "neilyoungoldman",
+    "local": false
+  },
+  {
+    "id": "neil-young-southern-man",
+    "title": "Southern Man",
+    "artist": "Neil Young",
+    "video": "m5FCcDEA6mY",
+    "language": [
+      "English"
+    ],
+    "bpm": 328.20000000000005,
+    "gap": 12503.90243902439,
+    "year": "1970",
+    "artistOrigin": "CA",
+    "lastUpdate": "2026-10-14T02:57:52.746Z",
+    "genre": "Folk Rock",
+    "realBpm": 162,
+    "previewStart": 13,
+    "previewEnd": 49,
+    "volume": 1,
+    "author": "uweotto",
+    "sourceUrl": "https://www.youtube.com/watch?v=m5FCcDEA6mY",
+    "duration": 332,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6631,
+    "tracksCount": 1,
+    "search": "neilyoungsouthernman",
     "local": false
   },
   {
@@ -165252,6 +165486,33 @@
     "local": false
   },
   {
+    "id": "super-junior-bonamana",
+    "title": "Bonamana",
+    "artist": "Super Junior",
+    "video": "tSOSxwEWFA4",
+    "language": [
+      "Korean"
+    ],
+    "bpm": 250,
+    "gap": 37980,
+    "year": "2010",
+    "artistOrigin": "KR",
+    "lastUpdate": "2026-10-14T02:57:52.751Z",
+    "realBpm": 125,
+    "volume": 1,
+    "author": "b888arb",
+    "duration": 279,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6633,
+    "tracksCount": 1,
+    "search": "superjuniorbonamana",
+    "local": false
+  },
+  {
     "id": "super-junior-m-super-girl-chinese-version",
     "title": "Super Girl (Chinese Version)",
     "artist": "Super Junior M",
@@ -171152,6 +171413,34 @@
     "shortId": 4235,
     "tracksCount": 1,
     "search": "tenaciousdtribute",
+    "local": false
+  },
+  {
+    "id": "tennis-runner",
+    "title": "Runner",
+    "artist": "Tennis",
+    "video": "Z6kNQEzQJpA",
+    "language": [
+      "English"
+    ],
+    "bpm": 314.42,
+    "gap": 6038.155333630177,
+    "year": "2020",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-14T02:57:52.892Z",
+    "genre": "Pop",
+    "realBpm": 157,
+    "volume": 1,
+    "author": "rote_rose",
+    "duration": 217,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6636,
+    "tracksCount": 1,
+    "search": "tennisrunner",
     "local": false
   },
   {
