@@ -962,6 +962,38 @@
     "local": false
   },
   {
+    "id": "31-minutos-mi-muneca-me-hablo",
+    "title": "Mi muñeca me habló",
+    "artist": "31 Minutos",
+    "video": "EN0DBGQDi2M",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 395.56,
+    "gap": 9189.05602184245,
+    "year": "2003",
+    "artistOrigin": "CL",
+    "lastUpdate": "2026-10-15T02:37:33.213Z",
+    "genre": "Infantil",
+    "realBpm": 98,
+    "previewStart": 9,
+    "previewEnd": 20,
+    "volume": 1,
+    "author": "Coppo",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=coppo",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=31%20Minutos",
+    "duration": 126,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6656,
+    "tracksCount": 1,
+    "search": "31minutosmimunecamehablo",
+    "local": false
+  },
+  {
     "id": "3oh3-dont-trust-me",
     "title": "Don’t Trust Me",
     "artist": "3OH!3",
@@ -2341,6 +2373,35 @@
     "local": false
   },
   {
+    "id": "abba-no-hay-a-quien-culpar",
+    "title": "No hay a quien culpar",
+    "artist": "ABBA",
+    "video": "6qmzmD4POMk",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 250.4,
+    "gap": 20611.629392971245,
+    "year": "1981",
+    "artistOrigin": "SE",
+    "lastUpdate": "2026-10-15T02:37:33.421Z",
+    "genre": "Pop",
+    "realBpm": 126,
+    "volume": 1,
+    "author": "bohning",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=26626",
+    "duration": 193,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6661,
+    "tracksCount": 1,
+    "search": "abbanohayaquienculpar",
+    "local": false
+  },
+  {
     "id": "abba-one-of-us",
     "title": "One Of Us",
     "artist": "ABBA",
@@ -2519,6 +2580,35 @@
     "shortId": 64,
     "tracksCount": 1,
     "search": "abbathankyouforthemusic",
+    "local": false
+  },
+  {
+    "id": "abba-the-name-of-the-game",
+    "title": "The Name Of The Game",
+    "artist": "ABBA",
+    "video": "wmcLIxznv7U",
+    "language": [
+      "English"
+    ],
+    "bpm": 305.45,
+    "gap": 12817.842527418563,
+    "year": "1977",
+    "artistOrigin": "SE",
+    "lastUpdate": "2026-10-15T02:37:33.019Z",
+    "genre": "Pop",
+    "realBpm": 77,
+    "volume": 1,
+    "author": "ears",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=4986",
+    "duration": 293,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6650,
+    "tracksCount": 1,
+    "search": "abbathenameofthegame",
     "local": false
   },
   {
@@ -7292,6 +7382,38 @@
     "shortId": 6451,
     "tracksCount": 1,
     "search": "alexsierralittledoyouknow",
+    "local": false
+  },
+  {
+    "id": "alex-ubago-sigo-aqui",
+    "title": "Sigo Aquí",
+    "artist": "Álex Ubago",
+    "video": "IA0uSub1xy4",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 368.2799999999999,
+    "gap": 19169.82138967545,
+    "year": "2002",
+    "artistOrigin": "ES",
+    "lastUpdate": "2026-10-15T02:37:33.423Z",
+    "genre": "Pop",
+    "realBpm": 111,
+    "previewStart": 75,
+    "previewEnd": 105,
+    "volume": 1,
+    "author": "Cualquiera98",
+    "authorUrl": "Cualquiera98",
+    "sourceUrl": "https://www.youtube.com/watch?v=IA0uSub1xy4",
+    "duration": 225,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6662,
+    "tracksCount": 1,
+    "search": "alexubagosigoaqui",
     "local": false
   },
   {
@@ -21717,6 +21839,36 @@
     "local": false
   },
   {
+    "id": "bic-runga-sway",
+    "title": "Sway",
+    "artist": "Bic Runga",
+    "video": "MUJNf4JPq3I",
+    "language": [
+      "English"
+    ],
+    "bpm": 384,
+    "gap": 10864.375,
+    "year": "1997",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-10-15T02:37:32.413Z",
+    "edition": "SingStar Pop",
+    "genre": "Pop",
+    "realBpm": 200,
+    "volume": 1,
+    "author": "IC",
+    "sourceUrl": "Bic Runga",
+    "duration": 263,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6642,
+    "tracksCount": 1,
+    "search": "bicrungasway",
+    "local": false
+  },
+  {
     "id": "big-bang-fantastic-baby",
     "title": "Fantastic Baby",
     "artist": "Big Bang",
@@ -29462,6 +29614,33 @@
     "shortId": 758,
     "tracksCount": 1,
     "search": "brotherhoodofmansaveyourkissesforme",
+    "local": false
+  },
+  {
+    "id": "brown-eyed-girls-abracadabra",
+    "title": "Abracadabra",
+    "artist": "Brown Eyed Girls",
+    "video": "ofwFr8o8p0Y",
+    "language": [
+      "Korean"
+    ],
+    "bpm": 256,
+    "gap": 47203.90625,
+    "year": "2009",
+    "artistOrigin": "KR",
+    "lastUpdate": "2026-10-15T02:37:32.419Z",
+    "realBpm": 128,
+    "volume": 1,
+    "author": "b888arb",
+    "duration": 260,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6644,
+    "tracksCount": 1,
+    "search": "browneyedgirlsabracadabra",
     "local": false
   },
   {
@@ -52419,6 +52598,33 @@
     "local": false
   },
   {
+    "id": "dolly-parton-hard-candy-christmas",
+    "title": "Hard Candy Christmas",
+    "artist": "Dolly Parton",
+    "video": "gcPY3RIvtCw",
+    "language": [
+      "English"
+    ],
+    "bpm": 306.8,
+    "gap": 16522.164276401563,
+    "year": "1982",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-15T02:37:33.763Z",
+    "realBpm": 100,
+    "volume": 1,
+    "author": "znxineohp",
+    "duration": 251,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6663,
+    "tracksCount": 1,
+    "search": "dollypartonhardcandychristmas",
+    "local": false
+  },
+  {
     "id": "dolly-parton-i-will-always-love-you",
     "title": "I Will Always Love You",
     "artist": "Dolly Parton",
@@ -59354,6 +59560,35 @@
     "local": false
   },
   {
+    "id": "enya-only-time",
+    "title": "Only Time",
+    "artist": "Enya",
+    "video": "7wfYIMyS_dI",
+    "language": [
+      "English"
+    ],
+    "bpm": 252.15,
+    "gap": 10758.697204045211,
+    "year": "2000",
+    "artistOrigin": "IE",
+    "lastUpdate": "2026-10-15T02:37:32.820Z",
+    "genre": "New Age",
+    "realBpm": 83,
+    "volume": 1,
+    "author": "mustangfred",
+    "sourceUrl": "https://www.youtube.com/watch?v=7wfYIMyS_dI",
+    "duration": 216,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6648,
+    "tracksCount": 1,
+    "search": "enyaonlytime",
+    "local": false
+  },
+  {
     "id": "enya-orinoco-flow-sail-away",
     "title": "Orinoco Flow (Sail Away)",
     "artist": "Enya",
@@ -59544,6 +59779,34 @@
     "shortId": 6158,
     "tracksCount": 1,
     "search": "epicthemusicaljorgeriveraherransbarbarawanguiloveinparadise",
+    "local": false
+  },
+  {
+    "id": "epic-the-musical-jorge-rivera-herrans-cast-of-epic-different-beast",
+    "title": "Different Beast",
+    "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Cast of EPIC)",
+    "video": "6sDviM1VPa0",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 3237.5,
+    "year": "2024",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-15T02:37:32.416Z",
+    "genre": "Musical",
+    "realBpm": 172,
+    "volume": 1,
+    "author": "Andore",
+    "duration": 212,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6643,
+    "tracksCount": 1,
+    "search": "epicthemusicaljorgeriveraherranscastofepicdifferentbeast",
     "local": false
   },
   {
@@ -60160,6 +60423,33 @@
     "shortId": 6386,
     "tracksCount": 1,
     "search": "epicthemusicaljorgeriveraherranswandaherranstheunderworld",
+    "local": false
+  },
+  {
+    "id": "epic-the-musical-miguel-veloso-ayron-alexander-legendary",
+    "title": "Legendary",
+    "artist": "EPIC: The Musical (Miguel Veloso, Ayron Alexander)",
+    "video": "nxDH6Dbyhi4",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 15307.5,
+    "year": "2024",
+    "lastUpdate": "2026-10-15T02:37:33.218Z",
+    "genre": "Musical",
+    "realBpm": 95,
+    "volume": 1,
+    "author": "b888arb",
+    "duration": 232,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6659,
+    "tracksCount": 1,
+    "search": "epicthemusicalmiguelvelosoayronalexanderlegendary",
     "local": false
   },
   {
@@ -65298,6 +65588,34 @@
     "local": false
   },
   {
+    "id": "flyleaf-again",
+    "title": "Again",
+    "artist": "Flyleaf",
+    "video": "KbdCeWoEH1U",
+    "language": [
+      "English"
+    ],
+    "bpm": 312.32,
+    "gap": 20421.41905737705,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-15T02:37:31.632Z",
+    "genre": "Rock",
+    "realBpm": 156,
+    "volume": 1,
+    "author": "alexalba",
+    "duration": 193,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6637,
+    "tracksCount": 1,
+    "search": "flyleafagain",
+    "local": false
+  },
+  {
     "id": "flyleaf-fully-alive",
     "title": "Fully Alive",
     "artist": "Flyleaf",
@@ -69882,6 +70200,35 @@
     "shortId": 5970,
     "tracksCount": 1,
     "search": "gildasemehaperdidouncorazon",
+    "local": false
+  },
+  {
+    "id": "gims-bella",
+    "title": "Bella",
+    "artist": "Gims",
+    "video": "rMltoD1jCGI",
+    "language": [
+      "French"
+    ],
+    "bpm": 309.03,
+    "gap": 53517.68148723425,
+    "year": "2013",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-10-15T02:37:33.023Z",
+    "realBpm": 103,
+    "volume": 1,
+    "author": "bibialice",
+    "sourceUrl": "https://www.youtube.com/watch?v=rMltoD1jCGI",
+    "duration": 283,
+    "tracks": [
+      {
+        "name": "Bella",
+        "start": 21
+      }
+    ],
+    "shortId": 6651,
+    "tracksCount": 1,
+    "search": "gimsbella",
     "local": false
   },
   {
@@ -106456,6 +106803,35 @@
     "local": false
   },
   {
+    "id": "limp-bizkit-my-way",
+    "title": "My Way",
+    "artist": "Limp Bizkit",
+    "video": "Dn8vzTsnPps",
+    "language": [
+      "English"
+    ],
+    "bpm": 393.17,
+    "gap": 35508.062670091815,
+    "year": "2000",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-15T02:37:33.420Z",
+    "genre": "Nu Metal",
+    "realBpm": 97,
+    "volume": 1,
+    "author": "Gollum",
+    "sourceUrl": "https://www.youtube.com/watch?v=Dn8vzTsnPps",
+    "duration": 294,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6660,
+    "tracksCount": 1,
+    "search": "limpbizkitmyway",
+    "local": false
+  },
+  {
     "id": "limp-bizkit-nookie",
     "title": "Nookie",
     "artist": "Limp Bizkit",
@@ -109554,6 +109930,33 @@
     "shortId": 2642,
     "tracksCount": 1,
     "search": "loreentattoo",
+    "local": false
+  },
+  {
+    "id": "lorie-je-serai-ta-meilleure-amie",
+    "title": "Je serai (ta meilleure amie)",
+    "artist": "Lorie",
+    "video": "pOMmS27LY1g",
+    "language": [
+      "French"
+    ],
+    "bpm": 216,
+    "gap": 13027.777777777777,
+    "year": "2001",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-10-15T02:37:31.642Z",
+    "realBpm": 107,
+    "volume": 1,
+    "author": "thoun",
+    "duration": 210,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6639,
+    "tracksCount": 1,
+    "search": "loriejeseraitameilleureamie",
     "local": false
   },
   {
@@ -113033,6 +113436,34 @@
     "shortId": 2724,
     "tracksCount": 1,
     "search": "magicaffairomeniii",
+    "local": false
+  },
+  {
+    "id": "magic-box-if-you-original",
+    "title": "If You (Original)",
+    "artist": "Magic Box",
+    "video": "XVlPh3SNmaM",
+    "language": [
+      "English"
+    ],
+    "bpm": 259.81,
+    "gap": 14673.513529117432,
+    "year": "2003",
+    "artistOrigin": "IT",
+    "lastUpdate": "2026-10-15T02:37:32.599Z",
+    "genre": "Pop",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "b888arb",
+    "duration": 232,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6645,
+    "tracksCount": 1,
+    "search": "magicboxifyouoriginal",
     "local": false
   },
   {
@@ -126781,6 +127212,33 @@
     "local": false
   },
   {
+    "id": "my-chemical-romance-give-em-hell-kid",
+    "title": "Give ’Em Hell, Kid",
+    "artist": "My Chemical Romance",
+    "video": "7xdi-QDMdW0",
+    "language": [
+      "English"
+    ],
+    "bpm": 365.71,
+    "gap": 13745.613464220283,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-15T02:37:32.819Z",
+    "realBpm": 183,
+    "volume": 1,
+    "author": "synonomy",
+    "duration": 139,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6647,
+    "tracksCount": 1,
+    "search": "mychemicalromancegiveemhellkid",
+    "local": false
+  },
+  {
     "id": "my-chemical-romance-heaven-help-us",
     "title": "Heaven Help Us",
     "artist": "My Chemical Romance",
@@ -132755,6 +133213,37 @@
     "local": false
   },
   {
+    "id": "nmixx-crescendo",
+    "title": "Crescendo",
+    "artist": "NMIXX",
+    "video": "-SEKt_0pdHM",
+    "language": [
+      "Korean",
+      "English"
+    ],
+    "bpm": 324,
+    "gap": 14501.481481481482,
+    "year": "2026",
+    "artistOrigin": "KR",
+    "lastUpdate": "2026-10-15T02:37:33.027Z",
+    "genre": "K-Pop",
+    "realBpm": 108,
+    "volume": 1,
+    "author": "Frostyy",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=217860",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=32340",
+    "duration": 166,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6653,
+    "tracksCount": 1,
+    "search": "nmixxcrescendo",
+    "local": false
+  },
+  {
     "id": "nmixx-sonar-breaker",
     "title": "Soñar (Breaker)",
     "artist": "NMIXX",
@@ -133690,6 +134179,37 @@
     "local": false
   },
   {
+    "id": "o-zone-de-ce-plang-chitarele",
+    "title": "De ce plang chitarele",
+    "artist": "O-Zone",
+    "video": "dFYHz6fMAT4",
+    "language": [
+      "Romanian"
+    ],
+    "bpm": 260,
+    "gap": 9029.23076923077,
+    "year": "2004",
+    "artistOrigin": "MD",
+    "lastUpdate": "2026-10-15T02:37:31.639Z",
+    "realBpm": 130,
+    "previewStart": 83,
+    "previewEnd": 99,
+    "volume": 1,
+    "author": "Leroidukitch",
+    "authorUrl": "https://usdb.animux.de/?link=profil&id=105252",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=22491",
+    "duration": 264,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6638,
+    "tracksCount": 1,
+    "search": "ozonedeceplangchitarele",
+    "local": false
+  },
+  {
     "id": "o-zone-dragostea-din-tei",
     "title": "Dragostea Din Tei",
     "artist": "O-Zone",
@@ -134142,23 +134662,26 @@
     "id": "official-hige-dandism-cry-baby",
     "title": "Cry Baby",
     "artist": "Official HIGE DANdism",
-    "video": "By_JYrhx-WY",
+    "video": "O1bhZgkC4Gw",
     "language": [
       "Japanese"
     ],
     "bpm": 400,
-    "gap": 372.5,
+    "gap": 8330.5,
     "year": "2021",
     "artistOrigin": "JP",
-    "lastUpdate": "2024-06-29T00:10:25.683Z",
+    "lastUpdate": "2026-10-14T06:48:22.534Z",
     "genre": "J-pop",
-    "realBpm": 100,
-    "volume": 0.5,
-    "manualVolume": 0.75,
+    "realBpm": 200,
+    "previewEnd": 10,
+    "volume": 0.93,
     "author": "wolf359",
-    "duration": 101,
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=wolf359",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Official%20HIGE%20DANdism&cancion=Cry%20Baby",
+    "duration": 241,
     "tracks": [
       {
+        "name": "Cry Baby",
         "start": 27
       }
     ],
@@ -145863,6 +146386,33 @@
     "local": false
   },
   {
+    "id": "rammstein-radio",
+    "title": "Radio",
+    "artist": "Rammstein",
+    "video": "LR__DRBbnZw",
+    "language": [
+      "German"
+    ],
+    "bpm": 264.02,
+    "gap": 47927.35020074237,
+    "year": "2019",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-10-15T02:37:32.817Z",
+    "realBpm": 132,
+    "volume": 1,
+    "author": "BlodsveptKrigare",
+    "duration": 291,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6646,
+    "tracksCount": 1,
+    "search": "rammsteinradio",
+    "local": false
+  },
+  {
     "id": "rammstein-rosenrot",
     "title": "Rosenrot",
     "artist": "Rammstein",
@@ -146180,6 +146730,35 @@
     "shortId": 3593,
     "tracksCount": 1,
     "search": "rasmussenhigherground",
+    "local": false
+  },
+  {
+    "id": "rata-blanca-la-leyenda-del-hada-y-el-mago",
+    "title": "La leyenda del hada y el mago",
+    "artist": "Rata blanca",
+    "video": "51cZsDsVOqc",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 303.4,
+    "gap": 6517.206328279499,
+    "year": "1990",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-10-15T02:37:33.017Z",
+    "genre": "Power Metal",
+    "realBpm": 150,
+    "volume": 1,
+    "author": "Luka",
+    "sourceUrl": "https://www.youtube.com/watch?v=51cZsDsVOqc&list=RD51cZsDsVOqc&start_radio=1",
+    "duration": 320,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6649,
+    "tracksCount": 1,
+    "search": "ratablancalaleyendadelhadayelmago",
     "local": false
   },
   {
@@ -152974,6 +153553,34 @@
     "local": false
   },
   {
+    "id": "sakanaction-kaijuu",
+    "title": "Kaijuu",
+    "artist": "Sakanaction",
+    "video": "xY_sRDAWQyg",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 359.96,
+    "gap": 709.888876541838,
+    "year": "2025",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-10-15T02:37:32.222Z",
+    "genre": "Jpop",
+    "realBpm": 90,
+    "volume": 1,
+    "author": "Subkei",
+    "duration": 91,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6640,
+    "tracksCount": 1,
+    "search": "sakanactionkaijuu",
+    "local": false
+  },
+  {
     "id": "sakura-card-captor-yo-te-atrapo-tu-me-atrapas",
     "title": "Yo te atrapo, tú me atrapas",
     "artist": "Sakura Card Captor",
@@ -159687,6 +160294,34 @@
     "local": false
   },
   {
+    "id": "sienna-spiro-great-expectation",
+    "title": "Great Expectation",
+    "artist": "Sienna Spiro",
+    "video": "B452TVVco2Q",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 12100,
+    "year": "2026",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-10-15T02:37:33.764Z",
+    "genre": "Pop, Soul",
+    "realBpm": 75,
+    "volume": 1,
+    "author": "DoubleDee",
+    "duration": 173,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6664,
+    "tracksCount": 1,
+    "search": "siennaspirogreatexpectation",
+    "local": false
+  },
+  {
     "id": "silene-smutna-princezna-znam-jednu-starou-zahradu",
     "title": "Znám jednu starou zahradu",
     "artist": "Šíleně smutná princezna",
@@ -163134,6 +163769,33 @@
     "shortId": 4045,
     "tracksCount": 1,
     "search": "spiderbaitblackbetty",
+    "local": false
+  },
+  {
+    "id": "spiller-feat-sophie-ellis-bextor-groovejet-if-this-aint-love",
+    "title": "Groovejet (If This Ain’t Love)",
+    "artist": "Spiller feat. Sophie Ellis-Bextor",
+    "video": "FI3gn4APNXc",
+    "language": [
+      "English"
+    ],
+    "bpm": 245.97,
+    "gap": 26284.27125259178,
+    "year": "2000",
+    "lastUpdate": "2026-10-15T02:37:33.029Z",
+    "genre": "Disco",
+    "realBpm": 123,
+    "volume": 1,
+    "author": "RetroGirl",
+    "duration": 230,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6654,
+    "tracksCount": 1,
+    "search": "spillerfeatsophieellisbextorgroovejetifthisaintlove",
     "local": false
   },
   {
@@ -170111,6 +170773,34 @@
     "shortId": 6328,
     "tracksCount": 1,
     "search": "taylorswifthowyougetthegirl",
+    "local": false
+  },
+  {
+    "id": "taylor-swift-i-did-something-bad",
+    "title": "I Did Something Bad",
+    "artist": "Taylor Swift",
+    "video": "xYLxUJ9v6KU",
+    "language": [
+      "English"
+    ],
+    "bpm": 332.04,
+    "gap": 4986.143838091796,
+    "year": "2017",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-15T02:37:33.026Z",
+    "genre": "Pop",
+    "realBpm": 83,
+    "volume": 1,
+    "author": "amro98",
+    "duration": 239,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6652,
+    "tracksCount": 1,
+    "search": "taylorswiftididsomethingbad",
     "local": false
   },
   {
@@ -179633,6 +180323,33 @@
     "shortId": 5593,
     "tracksCount": 1,
     "search": "theveronicashookmeup",
+    "local": false
+  },
+  {
+    "id": "the-veronicas-untouched",
+    "title": "Untouched",
+    "artist": "The Veronicas",
+    "video": "uKqriTRYInY",
+    "language": [
+      "English"
+    ],
+    "bpm": 354,
+    "gap": 32773.05084745763,
+    "year": "2007",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-10-15T02:37:33.215Z",
+    "realBpm": 176,
+    "volume": 1,
+    "author": "bohning",
+    "duration": 224,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6657,
+    "tracksCount": 1,
+    "search": "theveronicasuntouched",
     "local": false
   },
   {
@@ -189458,6 +190175,34 @@
     "local": false
   },
   {
+    "id": "walk-the-moon-anna-sun",
+    "title": "Anna Sun",
+    "artist": "Walk The Moon",
+    "video": "qDVW81bXo0s",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 10977.5,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-15T02:37:33.217Z",
+    "realBpm": 140,
+    "volume": 1,
+    "author": "stobb3w",
+    "sourceUrl": "https://www.youtube.com/watch?v=qDVW81bXo0s",
+    "duration": 325,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6658,
+    "tracksCount": 1,
+    "search": "walkthemoonannasun",
+    "local": false
+  },
+  {
     "id": "walk-the-moon-shut-up-dance",
     "title": "Shut Up + Dance",
     "artist": "Walk The Moon",
@@ -191980,6 +192725,36 @@
     "local": false
   },
   {
+    "id": "william-i-got-it-from-my-mama",
+    "title": "I Got It From My Mama",
+    "artist": "will.i.am",
+    "video": "XomQLhjCYYk",
+    "language": [
+      "English"
+    ],
+    "bpm": 238,
+    "gap": 371.59663865546236,
+    "year": "2007",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-15T02:37:32.409Z",
+    "edition": "SingStar Hottest Hits",
+    "genre": "Hip-Hop",
+    "realBpm": 200,
+    "volume": 1,
+    "author": "IC",
+    "sourceUrl": "will.i.am",
+    "duration": 238,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6641,
+    "tracksCount": 1,
+    "search": "williamigotitfrommymama",
+    "local": false
+  },
+  {
     "id": "william-thatpower",
     "title": "#thatPOWER",
     "artist": "will.i.am",
@@ -193277,6 +194052,36 @@
     "shortId": 4757,
     "tracksCount": 1,
     "search": "yoasobiidol",
+    "local": false
+  },
+  {
+    "id": "yoasobi-monster",
+    "title": "Monster",
+    "artist": "YOASOBI",
+    "video": "Eoe5IZHbarQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 339.77,
+    "gap": 1404.6072343055594,
+    "year": "2021",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-10-15T02:37:33.212Z",
+    "realBpm": 170,
+    "volume": 1,
+    "author": "Nacroma",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=165251",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=25025",
+    "duration": 209,
+    "tracks": [
+      {
+        "name": "Monster (「怪物」English Ver.)",
+        "start": 23
+      }
+    ],
+    "shortId": 6655,
+    "tracksCount": 1,
+    "search": "yoasobimonster",
     "local": false
   },
   {

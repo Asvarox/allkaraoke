@@ -1,0 +1,382 @@
+#ARTIST:Rammstein
+#TITLE:Radio
+#CREATOR:BlodsveptKrigare
+#BPM:264,02
+#YEAR:2019
+#VIDEO:v=LR__DRBbnZw
+#LANGUAGE:German
+#GAP:47927,35020074237
+#ALLKARAOKE_ID:rammstein-radio
+#ALLKARAOKE_SID:6646
+#ALLKARAOKE_LASTUPDATE:2026-10-15T02:37:32.817Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:132
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:291
+#MP3:Rammstein - Radio.mp3
+F 18 3 -7 Wir 
+F 22 3 -7 durf
+F 26 3 -7 ten 
+F 30 7 -7 nicht 
+F 38 7 -7 da
+F 46 7 -4 zu
+F 54 3 -4 ge
+F 58 6 -4 hö
+F 65 9 -4 ren
+- 74
+F 82 3 -1 Nichts 
+F 86 3 -1 se
+F 90 3 -1 hen, 
+F 94 7 -1 re
+F 102 7 -1 den 
+F 110 7 3 o
+F 118 3 0 der 
+F 122 7 3 hö
+F 130 8 0 ren
+- 138
+F 146 3 1 Doch 
+F 150 3 10 je
+F 154 3 2 de 
+F 158 7 6 Nacht 
+F 166 7 -1 für 
+F 174 7 8 ein, 
+F 182 7 -2 zwei 
+F 190 7 6 Stun
+F 198 8 -5 den
+- 206
+F 214 3 3 Bin 
+F 218 3 3 ich 
+F 222 3 3 die
+F 226 8 3 ser 
+F 238 7 3 Welt 
+F 246 3 0 ent
+F 250 7 3 schwun
+F 258 8 0 den
+- 266
+F 278 3 -7 Je
+F 282 3 -7 de 
+F 286 7 -7 Nacht 
+F 294 7 -7 ein 
+F 302 3 -4 biss
+F 306 7 -4 chen 
+F 314 12 -4 froh
+- 326
+F 338 3 0 Mein 
+F 342 3 0 Ohr 
+F 346 3 0 ganz 
+F 350 7 0 nah 
+F 358 4 0 am 
+F 366 7 8 Welt
+F 374 7 8 emp
+F 382 7 8 fän
+F 390 8 7 ger
+- 398 412
+- 412
+: 430 15 3 Ra
+: 446 15 0 di
+: 462 12 -5 o, 
+: 486 4 -5 mein 
+: 494 3 3 Ra
+: 498 3 3 di
+: 502 8 0 o
+- 510 532
+- 532
+: 550 7 3 Ich 
+: 558 7 3 lass’ 
+: 566 7 2 mich 
+: 574 7 2 in 
+: 582 7 2 den 
+: 590 7 3 Ä
+: 598 3 2 ther 
+: 602 7 3 sau
+: 610 6 2 gen
+- 616
+: 622 7 3 Mei
+: 630 7 3 ne 
+: 638 7 3 Oh
+: 646 7 3 ren 
+: 654 7 3 wer
+: 662 3 5 den 
+: 666 7 5 Au
+: 674 6 3 gen
+- 680
+: 686 15 3 Ra
+: 702 15 0 di
+: 718 12 -5 o, 
+: 742 4 -5 mein 
+: 750 3 3 Ra
+: 754 3 3 di
+: 758 8 0 o
+- 766 788
+- 788
+: 806 7 3 So 
+: 814 7 3 hö
+: 822 3 2 re 
+: 826 7 2 ich, 
+: 834 11 2 was 
+: 846 3 3 ich 
+: 850 7 3 nicht 
+: 858 12 3 seh’
+- 870
+: 878 3 3 Stil
+: 882 4 3 le 
+: 890 7 3 heim
+: 898 8 3 lich 
+: 910 7 3 fer
+: 918 6 5 nes 
+: 926 12 3 Weh
+- 938 1056
+- 1056
+F 1074 3 -7 Wir 
+F 1078 3 -7 durf
+F 1082 3 -7 ten 
+F 1086 7 -7 nicht 
+F 1094 7 -7 da
+F 1102 7 -4 zu
+F 1110 3 -4 ge
+F 1114 7 -4 hö
+F 1122 8 -4 ren
+- 1130
+F 1138 3 0 Nichts 
+F 1142 3 0 se
+F 1146 3 0 hen, 
+F 1150 7 3 re
+F 1158 7 0 den 
+F 1166 5 10 o
+F 1172 4 5 der 
+F 1178 7 9 stö
+F 1186 8 4 ren
+- 1194
+F 1198 7 12 Je
+F 1206 3 5 nes 
+F 1210 7 12 Lied
+F 1218 8 0 gut 
+F 1230 7 7 war 
+F 1238 3 4 ver
+F 1242 7 7 bo
+F 1250 8 -3 ten
+- 1258
+F 1270 3 3 So 
+F 1274 3 3 ge
+F 1278 7 3 fähr
+F 1286 7 3 lich 
+F 1294 7 3 frem
+F 1302 3 0 de 
+F 1306 7 3 No
+F 1314 8 0 ten
+- 1322
+F 1330 3 -7 Doch 
+F 1334 3 -7 je
+F 1338 3 -7 de 
+F 1342 7 -7 Nacht 
+F 1350 7 -7 ein 
+F 1358 3 -4 we
+F 1362 4 -4 nig 
+F 1370 12 -4 froh
+- 1382
+F 1394 3 0 Mein 
+F 1398 3 0 Ohr 
+F 1402 3 0 ganz 
+F 1406 7 0 nah 
+F 1414 4 0 am 
+F 1422 7 8 Welt
+F 1430 7 8 emp
+F 1438 7 8 fän
+F 1446 8 7 ger
+- 1454 1468
+- 1468
+: 1486 15 3 Ra
+: 1502 15 0 di
+: 1518 12 -5 o, 
+: 1542 4 -5 mein 
+: 1550 3 3 Ra
+: 1554 3 3 di
+: 1558 8 0 o
+- 1566 1588
+- 1588
+: 1606 7 3 Ich 
+: 1614 7 3 lass’ 
+: 1622 7 2 mich 
+: 1630 7 2 in 
+: 1638 7 2 den 
+: 1646 7 3 Ä
+: 1654 3 2 ther 
+: 1658 7 3 sau
+: 1666 8 2 gen
+- 1674
+: 1678 7 3 Mei
+: 1686 7 3 ne 
+: 1694 7 3 Oh
+: 1702 7 3 ren 
+: 1710 7 3 wer
+: 1718 3 5 den 
+: 1722 7 5 Au
+: 1730 8 3 gen
+- 1738
+: 1742 15 3 Ra
+: 1758 15 0 di
+: 1774 12 -5 o, 
+: 1798 4 -5 mein 
+: 1806 3 3 Ra
+: 1810 3 3 di
+: 1814 8 0 o
+- 1822 1844
+- 1844
+: 1862 7 3 So 
+: 1870 7 3 hö
+: 1878 3 2 re 
+: 1882 7 2 ich, 
+: 1890 11 2 was 
+: 1902 3 3 ich 
+: 1906 7 3 nicht 
+: 1914 12 3 seh’
+- 1926
+: 1934 3 3 Stil
+: 1938 4 3 le 
+: 1946 7 3 heim
+: 1954 8 3 lich 
+: 1966 7 3 fer
+: 1974 6 5 nes 
+: 1982 12 3 Weh
+- 1994 2492
+- 2492
+F 2510 7 0 Je
+F 2518 3 0 de 
+F 2522 12 -4 Nacht 
+F 2538 3 -3 ich 
+F 2542 7 1 heim
+F 2550 6 -3 lich 
+F 2558 10 1 stieg
+- 2568
+F 2574 7 6 Auf 
+F 2582 7 5 den 
+F 2590 3 6 Rü
+F 2594 8 2 cken 
+F 2606 7 12 der 
+F 2614 3 8 Mu
+F 2618 12 9 sik
+- 2630
+F 2638 7 12 Leg 
+F 2646 7 4 die 
+F 2654 7 11 Oh
+F 2662 6 3 ren 
+F 2670 7 10 an 
+F 2678 6 4 die 
+F 2686 3 11 Schwin
+F 2690 8 4 gen
+- 2698
+F 2702 11 11 Lei
+F 2714 2 4 se 
+F 2718 7 11 in 
+F 2726 7 15 die 
+F 2734 7 15 Hän
+F 2742 6 10 de 
+F 2750 3 10 sin
+F 2754 4 10 gen
+- 2758
+F 2766 7 4 Je
+F 2774 2 -4 de 
+F 2778 8 -1 Nacht 
+F 2790 7 1 und 
+F 2798 3 3 wie
+F 2802 7 0 der 
+F 2810 8 2 flieg’
+- 2818
+F 2822 6 4 Ich 
+F 2830 7 6 ein
+F 2838 3 0 fach 
+F 2842 10 2 fort 
+F 2854 6 5 mit 
+F 2862 6 3 der 
+F 2870 3 2 Mu
+F 2874 12 3 sik
+- 2886
+F 2894 7 0 Schwe
+F 2902 2 -7 be 
+F 2906 10 -4 so 
+F 2918 6 0 durch 
+F 2926 3 1 al
+F 2930 4 -2 le 
+F 2938 7 0 Räu
+F 2946 4 0 me
+- 2950
+F 2958 7 3 Kei
+F 2966 2 0 ne 
+F 2970 7 3 Gren
+F 2978 8 2 zen, 
+F 2990 7 3 kei
+F 2998 2 0 ne 
+F 3002 7 3 Zäu
+F 3010 8 0 ne
+- 3018 3324
+- 3324
+: 3342 15 3 Ra
+: 3358 15 0 di
+: 3374 12 0 o, 
+: 3406 3 3 Ra
+: 3410 3 3 di
+: 3414 12 0 o
+- 3426 3452
+- 3452
+: 3470 15 3 Ra
+: 3486 15 0 di
+: 3502 12 0 o, 
+: 3534 3 3 Ra
+: 3538 3 3 di
+: 3542 12 0 o
+- 3554 3580
+- 3580
+* 3598 23 3 Ra
+* 3622 7 0 di
+* 3630 16 0 o, 
+: 3654 6 5 mein 
+: 3662 3 3 Ra
+: 3666 3 3 di
+: 3670 8 0 o
+- 3678 3700
+- 3700
+: 3718 7 3 Ich 
+: 3726 7 3 lass’ 
+: 3734 7 2 mich 
+: 3742 7 2 in 
+: 3750 7 2 den 
+: 3758 7 3 Ä
+: 3766 3 2 ther 
+: 3770 7 3 sau
+: 3778 8 5 gen
+- 3786
+: 3790 7 3 Mei
+: 3798 7 3 ne 
+: 3806 7 3 Oh
+: 3814 7 3 ren 
+: 3822 7 3 wer
+: 3830 3 5 den 
+: 3834 7 5 Au
+: 3842 8 3 gen
+- 3850
+* 3854 15 3 Ra
+* 3870 15 0 di
+* 3886 12 -5 o, 
+: 3910 6 2 mein 
+: 3918 3 3 Ra
+: 3922 3 3 di
+: 3926 8 0 o
+- 3934 3956
+- 3956
+: 3974 7 3 So 
+: 3982 7 3 hö
+: 3990 3 2 re 
+: 3994 7 2 ich, 
+: 4002 11 2 was 
+: 4014 3 3 ich 
+: 4018 7 3 nicht 
+: 4026 12 3 seh’
+- 4038
+: 4046 3 3 Stil
+: 4050 4 3 le 
+: 4058 7 3 heim
+: 4066 8 3 lich 
+: 4078 7 5 fer
+: 4086 6 3 nes 
+: 4094 16 3 Weh
+E
