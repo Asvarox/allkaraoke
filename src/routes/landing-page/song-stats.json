@@ -16,17 +16,17 @@
     "Imagine Dragons",
     "Nightwish",
     "One Direction",
+    "My Chemical Romance",
     "Nirvana",
     "Rihanna",
     "Fall Out Boy",
-    "My Chemical Romance",
+    "ABBA",
     "Bee Gees",
     "Billie Eilish",
     "Elton John",
     "Ghost",
     "Madonna",
     "Muse",
-    "ABBA",
     "Disturbed",
     "Foo Fighters",
     "Bruno Mars",
@@ -190,9 +190,10 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 6635,
-  "generatedAt": "2026-10-14T02:58:36.575Z",
+  "songs": 6663,
+  "generatedAt": "2026-10-15T02:38:34.035Z",
   "additionsPerDay": {
+    "2026-10-15": 28,
     "2026-10-14": 10,
     "2026-10-13": 20,
     "2026-10-12": 20,
@@ -229,10 +230,205 @@
     "2026-08-26": 2,
     "2026-08-25": 10,
     "2026-08-24": 15,
-    "2026-08-23": 30,
-    "2026-08-15": 10
+    "2026-08-23": 30
   },
   "recentlyAdded": [
+    {
+      "id": "sienna-spiro-great-expectation",
+      "artist": "Sienna Spiro",
+      "title": "Great Expectation",
+      "video": "B452TVVco2Q",
+      "addedAt": "2026-10-15T02:37:33.764Z"
+    },
+    {
+      "id": "dolly-parton-hard-candy-christmas",
+      "artist": "Dolly Parton",
+      "title": "Hard Candy Christmas",
+      "video": "gcPY3RIvtCw",
+      "addedAt": "2026-10-15T02:37:33.763Z"
+    },
+    {
+      "id": "alex-ubago-sigo-aqui",
+      "artist": "Álex Ubago",
+      "title": "Sigo Aquí",
+      "video": "IA0uSub1xy4",
+      "addedAt": "2026-10-15T02:37:33.423Z"
+    },
+    {
+      "id": "abba-no-hay-a-quien-culpar",
+      "artist": "ABBA",
+      "title": "No hay a quien culpar",
+      "video": "6qmzmD4POMk",
+      "addedAt": "2026-10-15T02:37:33.421Z"
+    },
+    {
+      "id": "limp-bizkit-my-way",
+      "artist": "Limp Bizkit",
+      "title": "My Way",
+      "video": "Dn8vzTsnPps",
+      "addedAt": "2026-10-15T02:37:33.420Z"
+    },
+    {
+      "id": "epic-the-musical-miguel-veloso-ayron-alexander-legendary",
+      "artist": "EPIC: The Musical (Miguel Veloso, Ayron Alexander)",
+      "title": "Legendary",
+      "video": "nxDH6Dbyhi4",
+      "addedAt": "2026-10-15T02:37:33.218Z"
+    },
+    {
+      "id": "walk-the-moon-anna-sun",
+      "artist": "Walk The Moon",
+      "title": "Anna Sun",
+      "video": "qDVW81bXo0s",
+      "addedAt": "2026-10-15T02:37:33.217Z"
+    },
+    {
+      "id": "the-veronicas-untouched",
+      "artist": "The Veronicas",
+      "title": "Untouched",
+      "video": "uKqriTRYInY",
+      "addedAt": "2026-10-15T02:37:33.215Z"
+    },
+    {
+      "id": "31-minutos-mi-muneca-me-hablo",
+      "artist": "31 Minutos",
+      "title": "Mi muñeca me habló",
+      "video": "EN0DBGQDi2M",
+      "addedAt": "2026-10-15T02:37:33.213Z"
+    },
+    {
+      "id": "yoasobi-monster",
+      "artist": "YOASOBI",
+      "title": "Monster",
+      "video": "Eoe5IZHbarQ",
+      "addedAt": "2026-10-15T02:37:33.212Z"
+    },
+    {
+      "id": "spiller-feat-sophie-ellis-bextor-groovejet-if-this-aint-love",
+      "artist": "Spiller feat. Sophie Ellis-Bextor",
+      "title": "Groovejet (If This Ain’t Love)",
+      "video": "FI3gn4APNXc",
+      "addedAt": "2026-10-15T02:37:33.029Z"
+    },
+    {
+      "id": "nmixx-crescendo",
+      "artist": "NMIXX",
+      "title": "Crescendo",
+      "video": "-SEKt_0pdHM",
+      "addedAt": "2026-10-15T02:37:33.027Z"
+    },
+    {
+      "id": "taylor-swift-i-did-something-bad",
+      "artist": "Taylor Swift",
+      "title": "I Did Something Bad",
+      "video": "xYLxUJ9v6KU",
+      "addedAt": "2026-10-15T02:37:33.026Z"
+    },
+    {
+      "id": "gims-bella",
+      "artist": "Gims",
+      "title": "Bella",
+      "video": "rMltoD1jCGI",
+      "addedAt": "2026-10-15T02:37:33.023Z"
+    },
+    {
+      "id": "abba-the-name-of-the-game",
+      "artist": "ABBA",
+      "title": "The Name Of The Game",
+      "video": "wmcLIxznv7U",
+      "addedAt": "2026-10-15T02:37:33.019Z"
+    },
+    {
+      "id": "rata-blanca-la-leyenda-del-hada-y-el-mago",
+      "artist": "Rata blanca",
+      "title": "La leyenda del hada y el mago",
+      "video": "51cZsDsVOqc",
+      "addedAt": "2026-10-15T02:37:33.017Z"
+    },
+    {
+      "id": "enya-only-time",
+      "artist": "Enya",
+      "title": "Only Time",
+      "video": "7wfYIMyS_dI",
+      "addedAt": "2026-10-15T02:37:32.820Z"
+    },
+    {
+      "id": "my-chemical-romance-give-em-hell-kid",
+      "artist": "My Chemical Romance",
+      "title": "Give ’Em Hell, Kid",
+      "video": "7xdi-QDMdW0",
+      "addedAt": "2026-10-15T02:37:32.819Z"
+    },
+    {
+      "id": "rammstein-radio",
+      "artist": "Rammstein",
+      "title": "Radio",
+      "video": "LR__DRBbnZw",
+      "addedAt": "2026-10-15T02:37:32.817Z"
+    },
+    {
+      "id": "magic-box-if-you-original",
+      "artist": "Magic Box",
+      "title": "If You (Original)",
+      "video": "XVlPh3SNmaM",
+      "addedAt": "2026-10-15T02:37:32.599Z"
+    },
+    {
+      "id": "brown-eyed-girls-abracadabra",
+      "artist": "Brown Eyed Girls",
+      "title": "Abracadabra",
+      "video": "ofwFr8o8p0Y",
+      "addedAt": "2026-10-15T02:37:32.419Z"
+    },
+    {
+      "id": "epic-the-musical-jorge-rivera-herrans-cast-of-epic-different-beast",
+      "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Cast of EPIC)",
+      "title": "Different Beast",
+      "video": "6sDviM1VPa0",
+      "addedAt": "2026-10-15T02:37:32.416Z"
+    },
+    {
+      "id": "bic-runga-sway",
+      "artist": "Bic Runga",
+      "title": "Sway",
+      "video": "MUJNf4JPq3I",
+      "addedAt": "2026-10-15T02:37:32.413Z"
+    },
+    {
+      "id": "william-i-got-it-from-my-mama",
+      "artist": "will.i.am",
+      "title": "I Got It From My Mama",
+      "video": "XomQLhjCYYk",
+      "addedAt": "2026-10-15T02:37:32.409Z"
+    },
+    {
+      "id": "sakanaction-kaijuu",
+      "artist": "Sakanaction",
+      "title": "Kaijuu",
+      "video": "xY_sRDAWQyg",
+      "addedAt": "2026-10-15T02:37:32.222Z"
+    },
+    {
+      "id": "lorie-je-serai-ta-meilleure-amie",
+      "artist": "Lorie",
+      "title": "Je serai (ta meilleure amie)",
+      "video": "pOMmS27LY1g",
+      "addedAt": "2026-10-15T02:37:31.642Z"
+    },
+    {
+      "id": "o-zone-de-ce-plang-chitarele",
+      "artist": "O-Zone",
+      "title": "De ce plang chitarele",
+      "video": "dFYHz6fMAT4",
+      "addedAt": "2026-10-15T02:37:31.639Z"
+    },
+    {
+      "id": "flyleaf-again",
+      "artist": "Flyleaf",
+      "title": "Again",
+      "video": "KbdCeWoEH1U",
+      "addedAt": "2026-10-15T02:37:31.632Z"
+    },
     {
       "id": "tennis-runner",
       "artist": "Tennis",
@@ -372,202 +568,6 @@
       "title": "Storm",
       "video": "2JFLwhARquw",
       "addedAt": "2026-10-13T04:50:24.160Z"
-    },
-    {
-      "id": "rio-roma-mi-persona-favorita",
-      "artist": "Río Roma",
-      "title": "Mi persona favorita",
-      "video": "AJKzOgv5YNU",
-      "addedAt": "2026-10-13T04:50:24.024Z"
-    },
-    {
-      "id": "radiohead-paranoid-android",
-      "artist": "Radiohead",
-      "title": "Paranoid Android",
-      "video": "fHiGbolFFGw",
-      "addedAt": "2026-10-13T04:50:24.021Z"
-    },
-    {
-      "id": "bad-omens-nowhere-to-go",
-      "artist": "Bad Omens",
-      "title": "Nowhere To Go",
-      "video": "4a8CogWA3-Y",
-      "addedAt": "2026-10-13T04:50:24.019Z"
-    },
-    {
-      "id": "disneys-sleeping-beauty-once-upon-a-dream",
-      "artist": "Disney’s Sleeping Beauty",
-      "title": "Once Upon A Dream",
-      "video": "TXbHShUnwxY",
-      "addedAt": "2026-10-13T04:50:23.883Z"
-    },
-    {
-      "id": "david-guetta-kim-petras-when-we-were-young-the-logical-song",
-      "artist": "David Guetta & Kim Petras",
-      "title": "When We Were Young (The Logical Song)",
-      "video": "YBGtzfK5Bak",
-      "addedAt": "2026-10-13T04:50:23.748Z"
-    },
-    {
-      "id": "ivete-sangalo-sorte-grande-rock-in-rio",
-      "artist": "Ivete Sangalo",
-      "title": "Sorte grande (Rock in Rio)",
-      "video": "qhf4r0HdenY",
-      "addedAt": "2026-10-13T04:50:23.621Z"
-    },
-    {
-      "id": "nightwish-the-kinslayer",
-      "artist": "Nightwish",
-      "title": "The Kinslayer",
-      "video": "tbMIHckT5No",
-      "addedAt": "2026-10-13T04:50:23.614Z"
-    },
-    {
-      "id": "saint-motel-my-type",
-      "artist": "Saint Motel",
-      "title": "My Type",
-      "video": "IyVPyKrx0Xo",
-      "addedAt": "2026-10-13T04:50:23.612Z"
-    },
-    {
-      "id": "tokio-hotel-uebers-ende-der-welt",
-      "artist": "Tokio Hotel",
-      "title": "Übers Ende der Welt",
-      "video": "eJ2zsclf93Q",
-      "addedAt": "2026-10-13T04:50:23.608Z"
-    },
-    {
-      "id": "mark-medlock-dieter-bohlen-you-can-get-it",
-      "artist": "Mark Medlock & Dieter Bohlen",
-      "title": "You Can Get It",
-      "video": "HHKRTIqmn6Y",
-      "addedAt": "2026-10-13T04:50:23.028Z"
-    },
-    {
-      "id": "disneys-camp-rock-demi-lovato-joe-jonas-this-is-me",
-      "artist": "Disney’s Camp Rock (Demi Lovato & Joe Jonas)",
-      "title": "This Is Me",
-      "video": "fD6DoCTnTaY",
-      "addedAt": "2026-10-12T03:36:49.819Z"
-    },
-    {
-      "id": "taylor-swift-the-story-of-us",
-      "artist": "Taylor Swift",
-      "title": "The Story Of Us",
-      "video": "nN6VR92V70M",
-      "addedAt": "2026-10-12T03:36:49.816Z"
-    },
-    {
-      "id": "shakira-el-cata-loca",
-      "artist": "Shakira & El Cata",
-      "title": "Loca",
-      "video": "XAhTt60W7qo",
-      "addedAt": "2026-10-12T03:36:49.646Z"
-    },
-    {
-      "id": "supercombo-rogerio",
-      "artist": "Supercombo",
-      "title": "Rogério",
-      "video": "FIxRcbDMO30",
-      "addedAt": "2026-10-12T03:36:49.175Z"
-    },
-    {
-      "id": "onerepublic-nobody",
-      "artist": "OneRepublic",
-      "title": "Nobody",
-      "video": "ztROkFCJSeE",
-      "addedAt": "2026-10-12T03:36:49.172Z"
-    },
-    {
-      "id": "avatar-bloody-angel",
-      "artist": "Avatar",
-      "title": "Bloody Angel",
-      "video": "h71NBBbOjmw",
-      "addedAt": "2026-10-12T03:36:49.169Z"
-    },
-    {
-      "id": "lola-young-messy",
-      "artist": "Lola Young",
-      "title": "Messy",
-      "video": "k-k2_Liofy8",
-      "addedAt": "2026-10-12T03:36:48.994Z"
-    },
-    {
-      "id": "epic-the-musical-jorge-rivera-herrans-cast-of-epic-odysseus",
-      "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Cast of EPIC)",
-      "title": "Odysseus",
-      "video": "vi3JeyQgHqk",
-      "addedAt": "2026-10-12T03:36:48.991Z"
-    },
-    {
-      "id": "tinchy-stryder-feat-taio-cruz-take-me-back",
-      "artist": "Tinchy Stryder feat. Taio Cruz",
-      "title": "Take Me Back",
-      "video": "Pi0h8ltBYQc",
-      "addedAt": "2026-10-12T03:36:48.401Z"
-    },
-    {
-      "id": "twenty-one-pilots-next-semester",
-      "artist": "Twenty One Pilots",
-      "title": "Next Semester",
-      "video": "a5i-KdUQ47o",
-      "addedAt": "2026-10-12T03:36:48.395Z"
-    },
-    {
-      "id": "digimon-digimon-3",
-      "artist": "Digimon",
-      "title": "Digimon 3",
-      "video": "TnIAnO0e_34",
-      "addedAt": "2026-10-12T03:36:48.393Z"
-    },
-    {
-      "id": "jonas-brothers-sucker",
-      "artist": "Jonas Brothers",
-      "title": "Sucker",
-      "video": "CnAmeh0-E-U",
-      "addedAt": "2026-10-12T03:36:48.391Z"
-    },
-    {
-      "id": "the-oral-cigarettes-kyouran-hey-kids",
-      "artist": "THE ORAL CIGARETTES",
-      "title": "Kyouran Hey Kids!!",
-      "video": "aZenmeRytEM",
-      "addedAt": "2026-10-12T03:36:48.212Z"
-    },
-    {
-      "id": "annie-lennox-why",
-      "artist": "Annie Lennox",
-      "title": "Why",
-      "video": "HG7I4oniOyA",
-      "addedAt": "2026-10-12T03:36:48.210Z"
-    },
-    {
-      "id": "incubus-wish-you-were-here",
-      "artist": "Incubus",
-      "title": "Wish You Were Here",
-      "video": "8295rOMvtQI",
-      "addedAt": "2026-10-12T03:36:48.031Z"
-    },
-    {
-      "id": "kelis-milkshake",
-      "artist": "Kelis",
-      "title": "Milkshake",
-      "video": "6AwXKJoKJz4",
-      "addedAt": "2026-10-12T03:36:47.851Z"
-    },
-    {
-      "id": "sts-fuerstenfeld",
-      "artist": "STS",
-      "title": "Fürstenfeld",
-      "video": "FpRmP0XUVcA",
-      "addedAt": "2026-10-12T03:36:47.847Z"
-    },
-    {
-      "id": "hello-sleepwalkers-goya-no-machiawase",
-      "artist": "Hello Sleepwalkers",
-      "title": "Goya no Machiawase",
-      "video": "gWCnKoEgfP0",
-      "addedAt": "2026-10-12T03:36:47.668Z"
     }
   ]
 }

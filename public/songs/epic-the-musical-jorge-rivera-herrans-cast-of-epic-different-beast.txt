@@ -1,0 +1,620 @@
+#ARTIST:EPIC: The Musical (Jorge Rivera-Herrans, Cast of EPIC)
+#TITLE:Different Beast
+#CREATOR:Andore
+#BPM:400
+#YEAR:2024
+#VIDEO:v=6sDviM1VPa0
+#GENRE:Musical
+#LANGUAGE:English
+#GAP:3237,5
+#ALLKARAOKE_ID:epic-the-musical-jorge-rivera-herrans-cast-of-epic-different-beast
+#ALLKARAOKE_SID:6643
+#ALLKARAOKE_LASTUPDATE:2026-10-15T02:37:32.416Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:172
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:212
+#MP3:EPIC: The Musical (Jorge Rivera-Herrans, Cast of EPIC) - Different Beast.mp3
+#COVER:EPIC: The Musical (Jorge Rivera-Herrans, Cast of EPIC) - Different Beast [CO].jpg
+#BACKGROUND:EPIC: The Musical (Jorge Rivera-Herrans, Cast of EPIC) - Different Beast [BG].jpg
+R 27 2 6 Let’s 
+R 37 1 6 cut 
+R 43 1 4 the 
+R 49 3 1 cha
+R 54 4 4 rade, 
+R 63 2 1 you 
+R 66 3 -1 are 
+R 74 3 1 no 
+R 81 2 -1 wife 
+R 88 1 -5 of 
+R 92 3 -6 mine
+- 95 148
+- 148
+R 175 2 6 You’ve 
+R 179 1 6 been 
+R 187 4 9 try
+R 192 1 9 in’ 
+R 196 1 6 to 
+R 200 3 6 take 
+R 208 2 6 my 
+R 217 3 6 life 
+R 225 1 5 this 
+R 231 2 5 whole 
+R 240 7 6 time
+- 247 302
+- 302
+R 329 1 -10 I 
+R 334 5 -3 know 
+R 343 2 -5 un
+R 346 2 -6 der
+R 351 2 -5 wa
+R 355 2 -4 ~
+R 359 2 -6 ter, 
+R 363 1 -9 there 
+R 365 1 -9 are 
+R 372 3 -6 packs 
+R 380 1 -9 of 
+R 384 2 -12 you 
+R 392 4 -6 hi
+R 398 4 -6 ding
+- 402 436
+- 436
+R 463 4 -5 Yeah, 
+R 468 3 -3 I 
+R 473 3 -3 know 
+R 477 1 -4 e
+R 484 1 -4 xact
+R 490 1 -7 ly 
+R 493 1 -9 what 
+R 498 2 -9 you 
+R 502 4 -10 are, 
+R 514 1 -11 a 
+R 522 4 -10 si
+R 528 2 -11 ren
+- 530 595
+- 595
+: 622 5 1 My 
+: 632 2 6 real 
+: 638 4 1 wife 
+: 646 5 1 knows 
+: 654 2 1 I’m 
+: 660 2 1 not 
+: 670 3 -1 scared 
+: 678 1 -1 of 
+: 682 3 -1 the 
+: 689 7 2 wa
+: 698 6 1 ter
+- 704 743
+- 743
+: 770 1 1 And 
+: 774 2 1 my 
+: 781 3 6 real 
+: 788 2 1 wife 
+: 795 5 1 knows 
+: 804 1 1 I 
+: 811 1 1 don’t 
+: 819 4 6 have 
+: 828 4 1 a 
+* 837 5 6 daugh
+* 846 7 9 ter
+- 853 887
+- 887
+R 914 1 0 But 
+: 922 2 1 while 
+: 929 3 6 you 
+: 935 2 1 were 
+: 941 3 6 so 
+: 948 4 5 fo
+: 954 3 1 cused 
+: 962 1 5 on 
+: 968 3 2 tur
+: 975 2 -1 ning 
+: 979 1 2 my 
+: 987 2 1 men 
+: 991 2 -1 in
+: 996 2 -3 to 
+R 1005 6 -1 snacks
+- 1011 1040
+- 1040
+R 1067 1 -8 You 
+R 1069 3 -3 did
+R 1073 1 -2 n’t 
+R 1077 5 0 no
+R 1083 3 -3 tice 
+R 1088 1 -3 that 
+R 1092 1 -3 your 
+R 1097 5 -3 friends 
+R 1107 2 -6 got 
+R 1117 5 -10 snatched
+- 1122
+R 1135 2 -4 What?!
+- 1137 1140
+- 1140
+: 1167 8 -6 We 
+: 1177 6 -4 are 
+: 1184 1 -3 a 
+: 1190 3 -1 dif
+: 1197 1 -3 fe
+: 1199 4 -3 rent 
+: 1208 6 -4 beast 
+: 1223 6 -6 now
+- 1229
+: 1241 8 -6 We 
+: 1253 2 -4 are 
+: 1259 1 -3 the 
+: 1264 5 -1 ones 
+: 1273 5 -3 who 
+: 1283 6 -4 feast 
+: 1296 7 -6 now
+- 1303
+: 1315 5 -6 No 
+: 1325 4 -4 more 
+: 1334 2 -3 of 
+: 1340 1 -1 us 
+: 1348 3 -3 de
+: 1357 5 -4 ceased
+- 1362
+R 1367 2 -8 ’Cause 
+: 1372 4 1 we 
+: 1381 3 -1 won’t 
+: 1391 2 -3 take 
+: 1399 4 -4 more 
+: 1408 4 -1 suf
+: 1417 5 -3 fe
+: 1427 6 -4 ring 
+: 1437 4 -8 from 
+: 1446 2 -8 you
+- 1448
+R 1465 6 -6 We 
+R 1474 6 -4 are 
+R 1483 2 -3 the 
+R 1487 5 -1 man–
+R 1496 4 -3 made 
+R 1507 5 -3 mon
+R 1520 6 -6 sters
+- 1526
+R 1541 4 -6 We 
+R 1548 5 -4 are 
+R 1557 2 -6 the 
+R 1562 5 -4 ones 
+R 1571 5 -6 who 
+R 1582 5 -4 con
+R 1593 8 -6 quer
+- 1601
+R 1613 4 -6 You 
+R 1621 6 -6 are 
+R 1631 1 -7 a 
+R 1636 5 -5 threat 
+R 1645 6 -3 no 
+R 1655 5 -4 lon
+R 1664 2 -6 ger
+- 1666
+R 1670 5 1 We 
+R 1678 4 -1 won’t 
+R 1688 2 -3 take 
+R 1697 3 -4 more 
+R 1706 4 -4 suf
+R 1715 4 -3 fe
+R 1724 4 -4 ring 
+R 1733 4 -8 from 
+R 1743 6 -6 you
+- 1749
+: 1762 3 1 We’ve 
+: 1771 8 1 been 
+: 1780 4 -1 a
+: 1788 2 1 way 
+: 1796 4 -1 from 
+: 1804 7 -3 home 
+: 1817 6 -6 for
+- 1823
+R 1835 1 2 A
+: 1837 3 2 bout 
+: 1847 7 2 twelve 
+: 1860 8 2 years 
+: 1870 3 1 or 
+: 1878 10 -1 so
+- 1888
+: 1911 4 -1 First, 
+: 1919 4 -3 we 
+: 1929 9 -1 slayed 
+: 1943 1 -1 in 
+: 1947 4 -3 our 
+: 1953 3 -4 own 
+: 1961 7 -8 war
+- 1968
+R 1979 1 -3 And 
+R 1984 4 -3 now, 
+: 1993 6 -3 we’re 
+: 2002 6 -4 here 
+: 2011 2 -4 with 
+: 2016 4 -3 more 
+: 2026 10 1 foes
+- 2036
+R 2053 4 1 While 
+: 2059 4 1 on 
+: 2068 8 1 the 
+: 2077 4 1 run 
+: 2087 4 1 from 
+: 2094 2 -2 Po
+: 2102 4 -3 sei
+: 2110 4 -6 don
+- 2114
+R 2125 1 -5 We 
+R 2134 4 2 found 
+R 2143 2 1 a 
+R 2151 2 7 ship 
+R 2158 1 7 with 
+R 2165 3 3 no 
+R 2175 5 -1 crew
+- 2180
+: 2194 5 -1 I 
+: 2205 5 -1 rea
+: 2212 6 -1 lized 
+: 2222 4 -3 near
+: 2232 5 -1 by, 
+: 2241 2 -4 there 
+: 2244 1 -6 were 
+R 2251 5 -1 si
+R 2259 4 -3 rens
+- 2263
+: 2274 4 -1 Sing
+: 2279 4 -2 ing 
+: 2289 6 -1 sai
+: 2296 4 -3 lors 
+: 2306 5 -4 to 
+: 2315 3 -3 their 
+: 2325 3 -1 dooms
+: 2329 10 1 ~
+- 2339
+: 2358 3 6 We 
+: 2367 5 8 filled 
+: 2375 3 9 our 
+: 2381 4 8 ears 
+: 2389 3 6 with 
+: 2398 7 6 bees
+: 2411 4 1 wax
+- 2415
+R 2426 1 1 That’s 
+: 2433 4 6 how 
+: 2440 4 8 we 
+: 2449 4 9 re
+: 2455 2 8 sist 
+: 2463 2 6 your 
+: 2474 8 6 song
+: 2483 2 4 ~
+- 2485
+: 2506 3 6 You 
+: 2515 4 6 pre
+: 2525 3 6 ten
+: 2533 4 4 ded 
+R 2540 1 2 to 
+: 2547 3 1 be 
+: 2556 4 -1 my 
+: 2565 5 1 wife
+- 2570
+: 2575 2 -1 So 
+: 2579 3 1 I 
+: 2589 2 -1 just 
+: 2598 3 1 played 
+: 2607 4 2 a
+: 2612 2 1 long
+: 2615 1 2 ~
+: 2617 15 1 ~
+- 2632
+: 2654 4 6 I 
+: 2663 4 8 read 
+: 2672 3 9 your 
+: 2677 4 8 lips 
+: 2686 3 6 and 
+: 2697 5 6 phra
+: 2708 2 1 ses
+: 2711 1 2 ~
+: 2713 1 1 ~
+- 2714
+: 2729 4 6 Scan
+: 2737 4 8 ning 
+: 2746 4 9 for 
+: 2751 4 8 in
+: 2761 2 6 for
+: 2769 5 6 ma
+: 2779 3 1 tion
+- 2782
+: 2790 2 1 Si
+: 2793 3 -1 rens 
+: 2798 3 -3 know 
+: 2803 1 -2 a
+: 2810 3 1 bout 
+: 2817 2 -3 eve
+: 2821 2 -1 ry 
+: 2827 4 1 route 
+: 2836 2 -3 and 
+: 2842 3 -1 ho
+: 2846 3 1 ri
+: 2850 3 -1 zon
+- 2853
+: 2864 3 1 Now 
+: 2872 2 -3 I 
+: 2877 2 -1 know 
+: 2882 3 1 how 
+: 2891 1 -3 to 
+: 2895 1 -3 get 
+: 2902 2 6 back 
+: 2909 1 6 to 
+: 2914 2 1 my 
+: 2919 5 1 is
+: 2928 4 -6 land
+- 2932
+R 2952 6 -6 We 
+R 2965 1 -4 are 
+R 2971 1 -7 a 
+R 2978 3 -5 dif
+R 2982 1 -5 fe
+R 2984 3 -7 rent 
+R 2995 3 -8 beast 
+R 3007 3 -6 now
+- 3010
+R 3026 2 -6 We 
+R 3035 2 -5 are 
+R 3041 1 -5 the 
+R 3049 4 -6 ones 
+R 3061 2 -8 who 
+R 3070 4 -9 feast 
+R 3083 5 -11 now
+- 3088
+R 3101 4 -6 No 
+R 3107 2 -6 more
+R 3110 5 -4 ~ 
+R 3117 3 -4 of 
+R 3124 3 -6 us 
+R 3134 4 -8 de
+R 3139 3 -8 ceased
+R 3143 2 -9 ~
+- 3145
+R 3149 2 -4 ’Cause 
+R 3159 3 -4 we 
+R 3166 3 -6 won’t 
+R 3175 3 -8 take 
+R 3183 3 -9 more 
+R 3194 4 -6 suf
+R 3203 6 -8 fe
+R 3212 2 -8 ring 
+R 3221 6 -8 from 
+R 3232 4 -10 you
+- 3236
+R 3248 6 -8 We 
+R 3258 4 -6 are 
+R 3267 3 -6 the 
+R 3272 4 -6 man–
+R 3281 4 -5 made 
+R 3293 5 -4 mon
+R 3303 3 -4 sters
+- 3306
+R 3325 4 -6 We 
+R 3335 4 -4 are 
+R 3342 1 -3 the 
+R 3347 5 -12 ones 
+R 3359 2 -12 who 
+R 3366 8 -12 con
+R 3379 4 -12 quer
+- 3383
+R 3399 3 -6 You 
+R 3408 4 -4 are 
+R 3416 1 -4 a 
+R 3421 3 -12 threat 
+R 3432 4 -12 no 
+R 3441 3 -4 lon
+R 3450 1 -6 ger
+- 3451
+R 3455 2 -11 We 
+R 3463 4 -12 won’t 
+R 3472 3 -12 take 
+R 3481 3 -12 more 
+R 3490 4 -12 suf
+R 3501 3 -3 fe
+R 3509 3 -3 ring 
+R 3519 3 -4 from 
+R 3528 2 -6 you
+- 3530
+F 3534 9 -6 Spare 
+F 3547 5 -7 us
+- 3552 3564
+- 3564
+F 3591 7 -2 Oh, 
+F 3609 5 0 spare 
+F 3616 3 0 us, 
+F 3629 11 0 please
+- 3640
+F 3645 3 0 Why?!
+- 3648
+R 3659 1 -6 So 
+R 3661 3 -6 you 
+R 3667 2 1 can 
+: 3673 2 1 kill 
+: 3678 1 1 the 
+: 3682 4 1 next 
+: 3691 2 1 group 
+: 3694 1 0 of 
+: 3700 4 1 sai
+: 3705 3 1 lors 
+: 3710 1 1 in 
+: 3714 1 1 this 
+: 3720 2 0 part 
+: 3723 1 1 of 
+: 3728 1 1 the 
+: 3734 2 4 sea?
+- 3736
+R 3754 5 -2 Nah, 
+R 3767 2 -2 you 
+R 3770 4 -4 woul
+R 3775 1 -4 dn’t 
+R 3778 1 -4 have 
+R 3786 4 -4 spared 
+R 3792 2 -5 me
+R 3795 3 -4 ~
+- 3798
+R 3807 1 -11 I 
+R 3813 5 -5 made 
+: 3822 1 -6 a 
+: 3825 3 -6 mis
+: 3832 3 -6 take 
+: 3839 2 -11 like 
+: 3847 2 -11 this, 
+: 3855 1 -10 it 
+: 3858 3 -11 al
+: 3862 2 -11 most 
+R 3871 1 -6 cost 
+: 3877 3 -11 my 
+: 3883 4 -6 life
+- 3887
+R 3892 1 -9 I 
+: 3897 3 -6 can’t 
+: 3906 2 -4 take 
+: 3914 3 -7 more 
+: 3921 3 -7 risks 
+: 3928 1 -6 of 
+: 3934 3 -7 not 
+: 3943 2 -1 see
+: 3946 1 -1 ing 
+: 3952 2 -3 my 
+: 3959 3 1 wife
+- 3962
+R 3980 1 6 Cut 
+R 3984 4 7 off 
+R 3992 2 6 their 
+R 3999 6 3 tails! 
+R 4012 1 0 We’re 
+R 4018 2 2 en
+R 4021 2 0 ding 
+R 4027 2 -3 this 
+R 4035 5 0 now
+- 4040
+R 4054 3 -3 Throw 
+R 4059 1 -3 their 
+R 4063 1 -5 bo
+R 4065 3 -5 dies 
+R 4074 1 -7 back 
+R 4080 1 -11 in 
+R 4082 1 -11 the 
+R 4086 4 -12 wa
+R 4091 2 -12 ter
+- 4093
+R 4102 1 -12 Let 
+R 4108 1 -12 them 
+R 4112 4 -12 drown
+- 4116
+F 4130 7 -6 NO!
+- 4137
+R 4141 7 -6 He 
+R 4152 6 -6 is 
+R 4161 1 -6 a 
+R 4166 5 -6 dif
+R 4172 2 -6 fe
+R 4177 2 -6 rent 
+R 4185 6 -6 beast 
+R 4199 6 -6 now
+- 4205
+R 4219 4 -6 He 
+R 4228 2 -4 is 
+R 4235 1 -4 the 
+R 4242 3 -4 one 
+R 4249 2 -5 who 
+R 4259 5 -5 feasts 
+R 4275 5 -6 now
+- 4280
+R 4293 5 -6 No 
+R 4302 4 -6 more 
+R 4311 1 -6 of 
+R 4315 5 -6 us 
+R 4326 4 -6 de
+R 4335 4 -5 ceased
+- 4339
+R 4343 3 -6 ’Cause 
+R 4349 5 -6 he 
+R 4357 6 -6 won’t 
+R 4366 5 -6 take 
+R 4375 4 -6 more 
+R 4385 4 -6 suf
+R 4394 5 -6 fe
+R 4402 4 -7 ring 
+R 4413 4 -8 from 
+R 4420 5 -10 you
+- 4425
+R 4443 2 -9 He 
+R 4453 1 -4 is 
+R 4460 2 -3 the 
+R 4466 3 -1 man–
+R 4474 2 -3 made 
+R 4482 5 -4 mon
+R 4496 1 -6 ster
+- 4497
+R 4515 5 -6 He 
+R 4527 1 -4 is 
+R 4533 1 -4 the 
+R 4538 3 -5 one 
+R 4549 4 -5 who 
+R 4558 5 -5 con
+R 4568 5 -5 quers
+- 4573
+R 4589 4 -4 You 
+R 4601 4 -4 are 
+R 4608 1 -4 a 
+R 4613 4 -4 threat 
+R 4623 3 -4 no 
+R 4631 4 -4 lon
+R 4641 2 -4 ger
+- 4643
+R 4648 3 1 He 
+R 4656 4 -7 won’t 
+R 4665 2 -1 take 
+R 4673 3 -4 more 
+R 4684 2 -4 suf
+R 4691 4 -3 fe-
+- 4695
+: 4703 4 6 Kill 
+: 4711 4 6 them 
+: 4722 43 6 all
+- 4765 4828
+- 4828
+: 4855 5 6 Kill 
+: 4862 4 6 them 
+: 4868 2 7 all
+: 4871 25 8 ~
+: 4897 3 9 ~
+: 4901 7 8 ~
+: 4909 1 7 ~
+: 4911 18 6 ~
+: 4932 4 5 ~
+: 4937 1 4 ~
+: 4939 4 3 ~
+: 4944 4 1 ~
+: 4950 1 1 ~
+: 4952 1 2 ~
+: 4954 1 3 ~
+: 4956 1 2 ~
+: 4958 1 1 ~
+: 4960 3 -1 ~
+- 4963 4980
+- 4980
+: 5007 3 9 Kill 
+: 5012 2 8 them 
+: 5017 5 8 all
+: 5023 34 9 ~
+: 5058 1 8 ~
+: 5060 1 7 ~
+: 5062 1 6 ~
+: 5064 10 8 ~
+: 5075 2 9 ~
+: 5078 3 8 ~
+: 5082 21 6 ~
+- 5103 5125
+- 5125
+: 5152 3 5 Kill 
+: 5156 2 7 ’em 
+: 5160 15 6 all
+- 5175 5266
+- 5266
+R 5293 1 -6 O
+R 5299 2 -4 dys
+R 5305 3 -6 se
+R 5313 1 -6 us
+E

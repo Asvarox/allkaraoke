@@ -1,0 +1,687 @@
+#ARTIST:The Veronicas
+#TITLE:Untouched
+#CREATOR:bohning
+#BPM:354
+#YEAR:2007
+#VIDEO:v=uKqriTRYInY
+#LANGUAGE:English
+#GAP:32773,05084745763
+#ALLKARAOKE_ID:the-veronicas-untouched
+#ALLKARAOKE_SID:6657
+#ALLKARAOKE_LASTUPDATE:2026-10-15T02:37:33.215Z
+#ALLKARAOKE_ARTISTORIGIN:AU
+#ALLKARAOKE_REALBPM:176
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:224
+#MP3:The Veronicas - Untouched.mp3
+#COVER:The Veronicas - Untouched [CO].jpg
+#BACKGROUND:The Veronicas - Untouched [BG].jpg
+R 24 2 9 I 
+R 28 6 9 go, 
+R 36 6 9 “Ooh 
+R 44 6 9 ooh”
+- 50
+R 52 6 9 You 
+R 60 6 9 go, 
+R 68 6 9 “Ah 
+R 76 6 9 ah”
+- 82
+: 92 2 23 La 
+: 96 2 23 la 
+: 100 2 23 la 
+: 104 4 25 la
+- 108
+: 116 2 23 Ah 
+: 120 2 23 la 
+: 124 2 23 la 
+: 128 4 25 la
+- 132
+R 140 2 9 I 
+R 144 2 9 can’t 
+R 148 6 9 la 
+R 156 6 9 la 
+R 164 6 9 la 
+R 172 2 9 la 
+R 176 6 9 la 
+R 184 6 9 la
+- 190
+R 192 2 9 I 
+R 196 2 9 wan
+R 200 2 9 na, 
+R 204 2 9 wan
+R 208 2 9 na, 
+R 212 2 9 wan
+R 216 2 9 na
+- 218
+R 220 6 9 Get, 
+R 228 6 9 get, 
+R 236 6 9 get
+- 242
+R 244 2 9 What 
+R 248 2 9 I 
+R 252 6 9 want 
+R 260 6 9 don’t 
+R 268 6 9 stop
+- 274
+R 276 2 9 Gim
+R 280 2 9 me, 
+R 284 2 9 gim
+R 288 2 9 me, 
+R 292 2 9 gim
+R 296 2 9 me
+- 298
+R 300 2 9 What 
+R 304 2 9 you 
+G 308 6 9 got, 
+R 316 6 9 got
+- 322
+R 324 2 9 ’Cause 
+R 328 2 9 I 
+R 332 6 9 can’t 
+R 340 6 9 wait, 
+R 348 6 9 wait, 
+R 356 6 9 wait
+- 362
+R 364 2 9 A
+R 368 4 9 ny 
+R 376 2 9 more, 
+R 380 6 9 more, 
+R 388 6 9 more, 
+R 396 6 9 more
+- 402
+R 408 2 9 Don’t 
+R 412 2 9 e
+R 416 2 9 ven 
+R 420 2 9 talk 
+R 424 2 9 a
+R 428 2 9 bout
+- 430
+R 432 2 9 The 
+R 436 6 9 con
+R 444 2 9 se
+G 448 6 9 quence
+- 454
+R 456 2 9 ’Cause 
+R 460 2 9 right 
+R 464 2 9 now
+- 466
+R 468 2 9 You’re 
+R 472 2 9 the 
+R 476 2 9 on
+R 480 2 9 ly 
+R 484 2 9 thing
+- 486
+R 488 2 9 That’s 
+R 492 2 9 ma
+R 496 2 9 king 
+R 500 2 9 a
+R 504 2 9 ny 
+R 508 2 9 sense 
+R 512 2 9 to 
+R 516 2 9 me
+- 518
+R 520 2 9 And 
+R 524 2 9 I 
+R 528 2 9 don’t 
+R 532 2 9 give 
+R 536 2 9 a 
+G 540 4 9 damn
+- 544
+R 546 2 9 What 
+R 550 2 9 they 
+R 554 4 9 say
+- 558
+R 560 2 9 Or 
+R 564 2 9 what 
+R 568 2 9 they 
+R 572 6 9 think, 
+R 580 2 9 think
+- 582
+R 584 2 9 ’Cause 
+R 588 2 9 you’re 
+R 592 2 9 the 
+R 596 2 9 on
+R 600 2 9 ly 
+R 604 2 9 one
+- 606
+R 608 2 9 Who’s 
+R 612 2 9 on 
+R 616 2 9 my 
+G 620 2 9 mind
+- 622
+R 624 2 9 I’ll 
+R 628 2 9 ne
+R 632 2 9 ver 
+R 636 2 9 e
+R 640 2 9 ver
+- 642
+R 644 2 9 Let 
+R 648 2 9 you 
+R 652 6 9 leave 
+R 660 2 9 me
+- 662
+R 664 2 9 I’ll 
+R 668 2 9 try 
+R 672 2 9 to 
+R 676 6 9 stop
+- 682
+R 684 2 9 Time 
+R 688 2 9 for
+R 692 2 9 e
+R 696 2 9 ver
+- 698
+R 700 2 9 Ne
+R 704 2 9 ver 
+R 708 2 9 wan
+R 712 2 9 na 
+R 716 2 9 hear
+- 718
+R 720 2 9 You 
+R 724 2 9 say 
+R 728 2 9 good
+R 732 8 9 bye, 
+R 756 8 9 bye
+- 764
+: 788 8 33 I 
+: 804 10 33 feel 
+: 816 10 32 so 
+: 828 6 33 un
+: 836 6 33 touched
+- 842
+: 844 6 32 And 
+: 852 8 33 I 
+: 868 10 33 want 
+: 880 10 32 you 
+: 892 6 33 so 
+: 900 6 33 much
+- 906
+: 908 6 32 That 
+: 916 8 35 I 
+: 932 10 35 just 
+* 944 10 35 can’t 
+: 956 6 37 re
+: 964 6 37 sist 
+: 972 6 35 you
+- 978
+: 984 2 32 It’s 
+: 988 2 32 not 
+: 992 2 33 e
+: 996 6 33 nough 
+: 1004 2 33 to 
+: 1008 6 33 say
+- 1014
+: 1016 2 33 That 
+: 1020 6 35 I 
+: 1028 6 35 miss 
+: 1036 6 33 you
+- 1042
+: 1044 8 33 I 
+: 1060 10 33 feel 
+: 1072 10 32 so 
+: 1084 6 33 un
+: 1092 6 33 touched 
+: 1100 6 32 right 
+: 1108 8 33 now
+- 1116
+: 1124 10 33 Need 
+: 1136 10 32 you 
+: 1148 6 33 so 
+: 1156 6 33 much 
+: 1164 6 32 some
+: 1172 8 35 how
+- 1180
+: 1188 10 35 I 
+: 1200 10 35 can’t 
+: 1212 6 37 for
+: 1220 6 37 get 
+: 1228 8 35 you
+- 1236
+: 1240 2 33 I’ve 
+: 1244 6 40 gone 
+: 1252 3 40 cra
+: 1256 2 37 zy
+- 1258
+: 1260 2 37 From 
+: 1264 2 37 the 
+: 1268 2 37 mo
+: 1272 2 35 ment 
+: 1276 2 35 I 
+: 1280 6 35 met 
+: 1288 12 33 you
+- 1300 1420
+- 1420
+: 1444 8 33 Un
+: 1460 8 33 touched 
+: 1476 8 33 un
+- 1484
+: 1502 2 21 And 
+: 1506 2 23 I 
+: 1510 2 23 need 
+: 1514 2 23 you 
+: 1518 2 21 so 
+: 1522 10 21 much
+- 1532
+R 1556 6 9 See 
+R 1564 6 9 you, 
+R 1572 6 9 breathe 
+R 1580 2 9 you
+- 1582
+R 1584 2 9 I 
+R 1588 6 9 want 
+R 1596 6 9 to 
+R 1604 6 9 be 
+R 1612 6 9 you
+- 1618
+: 1628 2 23 Ah 
+: 1632 2 23 la 
+: 1636 2 23 la 
+: 1640 4 25 la
+- 1644
+: 1652 2 23 Ah 
+: 1656 2 23 la 
+: 1660 2 23 la 
+: 1664 4 25 la
+- 1668
+R 1676 2 9 You 
+R 1680 2 9 can 
+R 1684 6 9 take, 
+R 1692 6 9 take
+- 1698
+R 1700 2 9 T-
+R 1704 2 9 t-
+R 1708 6 9 take, 
+R 1716 6 9 take 
+R 1724 6 9 time, 
+G 1732 6 9 time
+- 1738
+R 1744 2 9 To 
+R 1748 6 9 live, 
+R 1756 6 9 live
+- 1762
+R 1768 2 9 The 
+R 1772 2 9 way 
+R 1776 2 9 you 
+R 1780 2 9 got
+R 1784 2 9 ta
+- 1786
+R 1788 2 9 Got
+R 1792 2 9 ta 
+R 1796 2 9 live 
+R 1800 2 9 your 
+R 1804 6 9 life
+- 1810
+R 1812 2 9 Gim
+R 1816 2 9 me, 
+R 1820 2 9 gim
+R 1824 2 9 me, 
+R 1828 2 9 gim
+R 1832 2 9 me
+- 1834
+R 1836 2 9 All 
+R 1840 2 9 of 
+R 1844 6 9 you, 
+R 1852 6 9 you
+- 1858
+R 1860 2 9 Don’t 
+R 1864 2 9 be 
+R 1868 2 9 scared
+- 1870
+R 1872 2 9 I’ll 
+R 1876 2 9 see 
+R 1880 2 9 you 
+R 1884 2 9 through
+- 1886
+R 1888 2 9 The 
+R 1892 2 9 lone
+R 1896 2 9 ly 
+R 1900 2 9 nights
+- 1902
+R 1904 2 9 Of 
+R 1908 2 9 wan
+R 1912 2 9 ting 
+G 1916 6 9 more, 
+R 1924 6 9 more, 
+R 1932 6 9 more
+- 1938
+R 1944 2 9 Don’t 
+R 1948 2 9 e
+R 1952 2 9 ven 
+R 1956 2 9 think 
+R 1960 2 9 a
+R 1964 2 9 bout
+- 1966
+R 1968 2 9 What’s 
+R 1972 2 9 right 
+R 1976 2 9 or 
+R 1980 2 9 wrong 
+R 1984 2 9 or
+- 1986
+R 1988 2 9 Wrong 
+R 1992 2 9 or 
+R 1996 2 9 right
+- 1998
+R 2000 2 9 ’Cause 
+R 2004 2 9 in 
+R 2008 2 9 the 
+R 2012 2 9 end
+- 2014
+R 2016 2 9 It’s 
+R 2020 2 9 on
+R 2024 2 9 ly 
+R 2028 2 9 you 
+R 2032 2 9 and 
+R 2036 2 9 me
+- 2038
+R 2040 2 9 And 
+R 2044 2 9 no 
+R 2048 2 9 one 
+R 2052 2 9 else
+- 2054
+R 2056 2 9 Is 
+R 2060 2 9 gon
+R 2064 2 9 na 
+R 2068 2 9 be 
+R 2072 2 9 a
+R 2076 2 9 round
+- 2078
+R 2080 2 9 To 
+R 2084 2 9 an
+R 2088 2 9 swer 
+R 2092 2 9 all 
+R 2096 2 9 the
+- 2098
+R 2100 2 9 Ques
+R 2104 2 9 tions 
+R 2108 2 9 left 
+R 2112 2 9 be
+R 2116 2 9 hind
+- 2118
+R 2120 2 9 And 
+R 2124 2 9 you 
+R 2128 2 9 and 
+R 2132 2 9 I 
+R 2136 2 9 are 
+R 2140 2 9 meant 
+R 2144 2 9 to 
+R 2148 2 9 be
+- 2150
+R 2152 2 9 So 
+R 2156 2 9 e
+R 2160 2 9 ven 
+R 2164 2 9 if 
+R 2168 2 9 the 
+R 2172 2 9 world
+- 2174
+R 2176 2 9 Falls 
+R 2180 2 9 down 
+R 2184 2 9 to
+R 2188 2 9 day
+- 2190
+R 2192 2 9 You’ve 
+R 2196 2 9 still 
+R 2200 2 9 got 
+R 2204 2 9 me
+- 2206
+R 2208 2 9 To 
+R 2212 2 9 hold 
+R 2216 2 9 you 
+R 2220 6 9 up, 
+R 2228 6 9 up
+- 2234
+R 2240 2 9 And 
+R 2244 2 9 I 
+R 2248 2 9 will 
+R 2252 2 9 ne
+R 2256 2 9 ver 
+R 2260 2 9 let 
+R 2264 2 9 you 
+R 2268 16 9 down
+- 2284 2300
+- 2300
+: 2324 8 33 I 
+: 2340 10 33 feel 
+: 2352 10 32 so 
+: 2364 6 33 un
+: 2372 6 33 touched
+- 2378
+: 2380 6 32 And 
+: 2388 8 33 I 
+: 2404 10 33 want 
+: 2416 10 32 you 
+: 2428 6 33 so 
+: 2436 6 33 much
+- 2442
+: 2444 6 32 That 
+: 2452 8 35 I 
+: 2468 10 35 just 
+: 2480 10 35 can’t 
+: 2492 6 37 re
+: 2500 6 37 sist 
+: 2508 6 35 you
+- 2514
+: 2520 2 32 It’s 
+: 2524 2 32 not 
+: 2528 2 33 e
+: 2532 6 33 nough 
+: 2540 2 33 to 
+: 2544 6 33 say
+- 2550
+: 2552 2 33 That 
+: 2556 6 35 I 
+: 2564 6 35 miss 
+: 2572 6 33 you
+- 2578
+: 2580 8 33 I 
+: 2596 10 33 feel 
+: 2608 10 32 so 
+: 2620 6 33 un
+: 2628 6 33 touched 
+: 2636 6 32 right 
+: 2644 8 33 now
+- 2652
+: 2660 10 33 Need 
+: 2672 10 32 you 
+: 2684 6 33 so 
+: 2692 6 33 much 
+: 2700 6 32 some
+: 2708 8 35 how
+- 2716
+: 2724 10 35 I 
+: 2736 10 35 can’t 
+: 2748 6 37 for
+: 2756 6 37 get 
+: 2764 8 35 you
+- 2772
+: 2776 2 33 I’ve 
+: 2780 6 40 gone 
+: 2788 3 40 cra
+: 2792 2 37 zy
+- 2794
+: 2796 2 37 From 
+: 2800 2 37 the 
+: 2804 2 37 mo
+: 2808 2 35 ment 
+: 2812 2 35 I 
+: 2816 6 35 met 
+: 2824 12 33 you
+- 2836
+: 2852 8 33 Un
+: 2868 8 33 touched 
+: 2884 8 33 un
+- 2892
+* 2916 8 33 Un
+: 2932 8 33 touched
+- 2940 2956
+- 2956
+: 2980 8 33 Un
+: 2996 8 33 touched 
+: 3012 8 33 un
+- 3020
+: 3036 2 23 Ah 
+: 3040 2 23 la 
+: 3044 2 23 la 
+: 3048 4 25 la
+- 3052
+: 3060 2 23 Ah 
+: 3064 2 23 la 
+: 3068 2 23 la 
+: 3072 4 25 la
+- 3076 3084
+- 3084
+: 3108 8 33 Un
+: 3124 8 33 touched 
+: 3140 8 33 un
+- 3148
+: 3164 2 23 Ah 
+: 3168 2 23 la 
+: 3172 2 23 la 
+* 3176 4 25 la
+- 3180
+: 3188 2 23 Ah 
+: 3192 2 23 la 
+: 3196 2 23 la 
+: 3200 4 25 la
+- 3204
+: 3220 8 33 I 
+: 3236 10 33 feel 
+: 3248 10 32 so 
+: 3260 6 33 un
+: 3268 6 33 touched
+- 3274
+: 3276 6 32 And 
+: 3284 8 33 I 
+: 3300 10 33 want 
+: 3312 10 32 you 
+: 3324 6 33 so 
+: 3332 6 33 much
+- 3338
+: 3340 6 32 That 
+: 3348 8 35 I 
+: 3364 10 35 just 
+: 3376 10 35 can’t 
+: 3388 6 37 re
+: 3396 6 37 sist 
+: 3404 6 35 you
+- 3410
+: 3416 2 32 It’s 
+: 3420 2 32 not 
+: 3424 2 33 e
+: 3428 6 33 nough 
+: 3436 2 33 to 
+: 3440 6 33 say
+- 3446
+: 3448 2 33 That 
+: 3452 6 35 I 
+: 3460 6 35 miss 
+: 3468 6 33 you
+- 3474
+: 3476 8 33 I 
+: 3492 10 33 feel 
+: 3504 10 32 so 
+: 3516 6 33 un
+: 3524 6 33 touched 
+: 3532 6 32 right 
+: 3540 8 33 now
+- 3548
+: 3556 10 33 Need 
+: 3568 10 32 you 
+: 3580 6 33 so 
+: 3588 6 33 much 
+: 3596 6 32 some
+: 3604 8 35 how
+- 3612
+: 3620 10 35 I 
+: 3632 10 35 can’t 
+: 3644 6 37 for
+: 3652 6 37 get 
+: 3660 8 35 you
+- 3668
+: 3672 2 33 I’ve 
+: 3676 6 40 gone 
+: 3684 3 40 cra
+: 3688 2 37 zy
+- 3690
+: 3692 2 37 From 
+: 3696 2 37 the 
+: 3700 2 37 mo
+: 3704 2 35 ment 
+: 3708 2 35 I 
+: 3712 6 35 met 
+: 3720 8 33 you
+- 3728
+: 3732 8 33 I 
+: 3748 10 33 feel 
+: 3760 10 32 so 
+: 3772 6 33 un
+: 3780 6 33 touched
+- 3786
+: 3788 6 32 And 
+: 3796 8 33 I 
+: 3812 10 33 want 
+: 3824 10 32 you 
+: 3836 6 33 so 
+: 3844 6 33 much
+- 3850
+: 3852 6 32 That 
+: 3860 8 35 I 
+: 3876 10 35 just 
+: 3888 10 35 can’t 
+: 3900 6 37 re
+: 3908 6 37 sist 
+: 3916 6 35 you
+- 3922
+: 3928 2 32 It’s 
+: 3932 2 32 not 
+: 3936 2 33 e
+: 3940 6 33 nough 
+: 3948 2 33 to 
+: 3952 6 33 say
+- 3958
+: 3960 2 33 That 
+: 3964 6 35 I 
+* 3972 6 35 miss 
+: 3980 6 33 you
+- 3986
+: 3988 8 33 I 
+: 4004 10 33 feel 
+: 4016 10 32 so 
+: 4028 6 33 un
+: 4036 6 33 touched 
+: 4044 6 32 right 
+: 4052 8 33 now
+- 4060
+: 4068 10 33 Need 
+: 4080 10 32 you 
+: 4092 6 33 so 
+: 4100 6 33 much 
+: 4108 6 32 some
+: 4116 8 35 how
+- 4124
+: 4132 10 35 I 
+: 4144 10 35 can’t 
+: 4156 6 37 for
+: 4164 6 37 get 
+: 4172 8 35 you
+- 4180
+: 4184 2 33 I’ve 
+: 4188 6 40 gone 
+: 4196 3 40 cra
+: 4200 2 37 zy
+- 4202
+: 4204 2 37 From 
+: 4208 2 37 the 
+: 4212 2 37 mo
+: 4216 2 35 ment 
+: 4220 2 35 I 
+: 4224 6 35 met 
+: 4232 10 33 you
+- 4242 4252
+- 4252
+: 4276 8 33 Un
+: 4292 8 33 touched
+- 4300 4316
+- 4316
+: 4340 8 33 Un
+: 4356 8 33 touched 
+: 4372 8 33 un
+E
