@@ -1,7 +1,9 @@
 import { ComponentProps, ReactNode } from 'react';
+import tinycolor from 'tinycolor2';
 
 import Box from '~/modules/elements/akui/primitives/box';
 import { VolumeIndicator as VolumeBar } from '~/modules/elements/volume-indicator';
+import styles from '~/modules/game-engine/drawing/styles';
 import { PlayerNumber } from '~/modules/players/player-number';
 import usePermissions from '~/routes/remote-mic/hooks/use-permissions';
 import PlayerChange from '~/routes/remote-mic/panels/microphone/player-change';
@@ -30,28 +32,34 @@ interface ShellProps extends Omit<ComponentProps<typeof Box>, 'children' | 'volu
  */
 export function MicPillShell({ playerNumber, volume, isMicOn, action, className, ...props }: ShellProps) {
   const joined = playerNumber !== null;
+  // Opaque player colour under the translucent `Box`, so its tint and inner shade show over that
+  // colour rather than over whatever page background sits behind the pill.
+  const colors = joined ? styles.colors.players[playerNumber] : undefined;
+  const backgroundColor = colors ? tinycolor.mix(colors.text, colors.stroke, 50).toRgbString() : undefined;
 
   return (
-    <Box
-      {...props}
-      className={`relative h-14 w-full flex-row! items-center overflow-hidden border px-2 py-2 text-lg transition-colors ${
-        joined ? 'text-default border-white' : 'border-gray-600 text-gray-500'
-      } ${className ?? ''}`}
-      data-is-mic-on={isMicOn}
-      data-player-number={`${playerNumber ?? 'none'}`}
-      data-test="indicator">
-      {/* Only while the mic is live: a bar frozen at whatever level it last saw would read as sound
-          still coming in. */}
-      {joined && isMicOn && (
-        <VolumeBar
-          playerNumber={playerNumber}
-          volume={volume}
-          transitionMs={SAMPLE_INTERVAL_MS}
-          className="z-0 rounded-xl"
-        />
-      )}
-      {action}
-    </Box>
+    <div className="w-full rounded-xl transition-colors" style={{ backgroundColor }}>
+      <Box
+        {...props}
+        className={`relative h-14 w-full flex-row! items-center overflow-hidden border px-2 py-2 text-lg transition-colors ${
+          joined ? 'text-default border-white' : 'border-gray-600 text-gray-500'
+        } ${className ?? ''}`}
+        data-is-mic-on={isMicOn}
+        data-player-number={`${playerNumber ?? 'none'}`}
+        data-test="indicator">
+        {/* Only while the mic is live: a bar frozen at whatever level it last saw would read as sound
+            still coming in. */}
+        {joined && isMicOn && (
+          <VolumeBar
+            playerNumber={playerNumber}
+            volume={volume}
+            transitionMs={SAMPLE_INTERVAL_MS}
+            className="z-0 rounded-xl"
+          />
+        )}
+        {action}
+      </Box>
+    </div>
   );
 }
 
