@@ -52,7 +52,9 @@ function CurrentLyricsLine(props: {
         }}>
         {props.section ? (
           <>
-            <span className="relative h-0">
+            {/* A zero-width space gives the anchor the lyrics' own box, so the headstart stays centered on the text */}
+            <span className="relative inline-block w-0">
+              &#8203;
               <Headstart color={props.playerColor} percent={props.headstartPercent} />
             </span>
             <span>
