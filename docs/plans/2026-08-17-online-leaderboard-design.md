@@ -217,7 +217,7 @@ decisions. `LeaderboardSharingSetting` (localStorage) holds one of:
 - `'never'` — the player closed the prompt, by any means. Nothing opens by itself again; the
   high-scores step keeps a one-line offer that reopens the prompt.
 
-Accepting *arms* the score rather than sending it on the spot: the player lands on the same panel
+Accepting _arms_ the score rather than sending it on the spot: the player lands on the same panel
 every later song will show them, and there is one send path instead of two. Sending happens on the
 way out rather than on arrival, which keeps the wait off the path of a player who just wanted to see
 their score.
@@ -270,8 +270,8 @@ It reuses `Autocomplete`'s filtering, arrow-key handling and `scrollIntoView` in
 
 Stated plainly so nothing here reads as security:
 
-- Any client can POST an arbitrary score up to 3.5M. The notes hash is *integrity, not
-  authenticity* — it stops someone editing the score field of a captured request, but anyone reading
+- Any client can POST an arbitrary score up to 3.5M. The notes hash is _integrity, not
+  authenticity_ — it stops someone editing the score field of a captured request, but anyone reading
   the bundle can compute a valid hash for a fully fabricated record.
 - `clientId` is a localStorage string the client generates, so rotating it defeats the per-client
   rate limit in one line of console.

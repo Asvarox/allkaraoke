@@ -48,7 +48,7 @@ describe('remote-mic signaling', () => {
   });
 
   it('only serves Realtime game codes', async () => {
-    // An online room code belongs to the other directory; PartyKit codes never reach one
+    // An online room code belongs to the other directory; old non-`r` codes never reach one
     expect((await createChannels(envWith(game), '2abcd', [{ name: 'room' }])).status).toBe(400);
     expect((await createChannels(envWith(game), 'kabcd', [{ name: 'room' }])).status).toBe(400);
   });

@@ -4,7 +4,7 @@ This document describes the networking layer that connects phone microphones to 
 
 ## Overview
 
-The network layer lives in `src/modules/remote-mic/network/`. It is split into a **client** side (the phone) and a **server** side (the game host, running in the host browser tab). Messages flow over a WebSocket-like transport and are dispatched through a typed RPC system.
+The network layer lives in `src/modules/remote-mic/network/`. It is split into a **client** side (the phone) and a **server** side (the game host, running in the host browser tab). Messages flow over a transport and are dispatched through a typed RPC system.
 
 ```
 Phone (browser)                        Host (browser)
@@ -16,29 +16,11 @@ NetworkClient                          NetworkServer
   └─ ClientHandlers
 ```
 
-## Transport Adapters
+## Transport
 
-The actual WebSocket connection is provided by a swappable adapter. Both the client and server have matching adapter pairs:
-
-| Adapter       | Client               | Server               | When used                                                           |
-| ------------- | -------------------- | -------------------- | ------------------------------------------------------------------- |
-| **PartyKit**  | `PartyKitClient.ts`  | `PartyKitServer.ts`  | Default; room IDs starting with `k` (Cloudflare Workers / PartyKit) |
-| **Realtime**  | `realtime-client.ts` | `realtime-server.ts` | Room IDs starting with `r`; Cloudflare Realtime SFU data channels   |
-| **WebSocket** | `WebSocketClient.ts` | `WebSocketServer.ts` | Room IDs starting with `w`; direct WebSocket server                 |
-| **PeerJS**    | `PeerJSClient.ts`    | `PeerJSServer.ts`    | Legacy peer-to-peer WebRTC                                          |
-
-The client selects an adapter based on the room ID prefix in `NetworkClient.connect()`. The game picks
-the transport when it first starts its server in a session and keeps it for as long as the game code
-lives (`NetworkServer.latchTransport`), so a flag answer that arrives later never strands phones already
-holding the code. Only switching it in the Remote Microphone settings moves a running game onto another
-transport, and that changes the code.
-
-### Choosing the transport
-
-`RemoteMicConnectionTypeSetting` is the transport new game codes are made with. In production it is set
-from PostHog: the `remote_mics_realtime` flag (a percentage rollout) picks Realtime, otherwise the
-`remote_mics_connection_type` payload, otherwise PartyKit. Dev defaults to Realtime (the dev server runs
-the fake SFU); e2e defaults to PartyKit, and a spec opts into Realtime with `useRealtimeRemoteMics`.
+The connection is provided by a transport adapter behind `ClientTransport` / `ServerTransport`. The only
+one is **Realtime** (`realtime-client.ts` / `realtime-server.ts`): Cloudflare Realtime SFU data
+channels. Every game code starts with `r`.
 
 ### Realtime
 
@@ -64,7 +46,7 @@ Differences from an online room:
 
 ## Analytics
 
-Both transports report the same events, with `transport` (the code's lead letter) and `transportName`:
+Events carry `transport` (the code's lead letter) and `transportName`:
 
 | Event                                       | Side  | When                                                 |
 | ------------------------------------------- | ----- | ---------------------------------------------------- |

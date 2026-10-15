@@ -1,6 +1,6 @@
 ---
 name: using-storybook
-description: 'Conventions for this project''s Storybook — how stories are filed under Foundations / Components / Game, and the rule that any change to the design language must be reflected in the using-tailwind skill. Use when adding or changing a story, or when changing a design token.'
+description: "Conventions for this project's Storybook — how stories are filed under Foundations / Components / Game, and the rule that any change to the design language must be reflected in the using-tailwind skill. Use when adding or changing a story, or when changing a design token."
 ---
 
 # Storybook

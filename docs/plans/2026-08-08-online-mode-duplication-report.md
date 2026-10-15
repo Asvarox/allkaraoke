@@ -14,7 +14,7 @@ Things the branch already did well (do **not** undo these): `MicCheckSlotShell`,
 (`RpcSenderInterface`, `RpcClientTransport`, `AnySubscriptionChannels`, generic
 `ClientSubscriptionManager`), `WizardChecklist` promotion to `akui`, and the
 `cameraEnabled`/`skipIntroEnabled`/`onSkipIntro` parameterization of the local singing components.
-Several findings below are about *finishing* those extractions rather than starting new ones.
+Several findings below are about _finishing_ those extractions rather than starting new ones.
 
 ---
 
@@ -25,12 +25,12 @@ Several findings below are about *finishing* those extractions rather than start
 `MicCheckSlotShell` was extracted correctly, but every caller re-implements the same wiring around
 it: stats lookup, vote resolution, local-vs-remote volume selection, and the badge/action cluster.
 
-| File | Lines | What it renders |
-|---|---|---|
-| `src/routes/online/lobby/participant-list.tsx` | 29–101 | lobby singer rows + free slots |
-| `src/routes/online/lobby/song-players-panel.tsx` | 23–40 | same rows inside the song browser |
-| `src/routes/online/singing/pause-overlay.tsx` | 63–101 | same rows, `size="compact"` |
-| `src/routes/online/singing/readiness-overlay.tsx` | 84–112 | same rows + ready tick |
+| File                                              | Lines  | What it renders                   |
+| ------------------------------------------------- | ------ | --------------------------------- |
+| `src/routes/online/lobby/participant-list.tsx`    | 29–101 | lobby singer rows + free slots    |
+| `src/routes/online/lobby/song-players-panel.tsx`  | 23–40  | same rows inside the song browser |
+| `src/routes/online/singing/pause-overlay.tsx`     | 63–101 | same rows, `size="compact"`       |
+| `src/routes/online/singing/readiness-overlay.tsx` | 84–112 | same rows + ready tick            |
 
 Literally repeated fragments:
 
@@ -58,11 +58,11 @@ interface Props {
   selfId: string;
   hostId: string | null;
   size?: 'regular' | 'compact';
-  showVote?: boolean;          // lobby + song browser
+  showVote?: boolean; // lobby + song browser
   showPing?: boolean;
-  onKick?: (p: OnlineParticipant) => void;   // host-only, rendered by the shell
-  onEdit?: () => void;                        // own row only
-  children?: ReactNode;                       // screen-specific extras (score, ready tick)
+  onKick?: (p: OnlineParticipant) => void; // host-only, rendered by the shell
+  onEdit?: () => void; // own row only
+  children?: ReactNode; // screen-specific extras (score, ready tick)
 }
 ```
 
@@ -99,7 +99,7 @@ Both repeat the non-obvious fallbacks:
 
 **They have already drifted**: the lobby version sends `artistOrigin`, `song-transfer.ts` does not.
 `LobbySongHeader` passes `artistOrigin` to `<SongFlag>` (`lobby-song-header.tsx:110`), so after the
-host *confirms* a song the flag rendering can change versus while they were *hovering* it.
+host _confirms_ a song the flag rendering can change versus while they were _hovering_ it.
 
 **Recommendation.** One function in `src/modules/online/client/song-preview.ts`:
 
@@ -295,7 +295,9 @@ re-renders carry an extra state hop and the cached-value path is unused.
 ```ts
 export const createSubscriptionHook =
   <TChannels extends AnySubscriptionChannels>(manager: ClientSubscriptionManager<TChannels>) =>
-  <C extends keyof TChannels>(channel: C) => { /* useSyncExternalStore */ };
+  <C extends keyof TChannels>(channel: C) => {
+    /* useSyncExternalStore */
+  };
 ```
 
 `useSubscription` (remote mic) and `useOnlineSubscription` (online) both become one line. The five
@@ -304,11 +306,11 @@ worth keeping for readability, they just stop containing logic.
 
 ### 2.8 Ping/pong latency loop and reconnect loop implemented twice on the client, twice on the server
 
-| Concern | Online | Remote mic |
-|---|---|---|
-| ping → pong → latency → re-arm after 2 s | `online-client.ts:183-204` | `network-client.ts:200-218` |
-| reconnect with a fixed delay | `online-client.ts:152-158` (1.5 s) | `network-client.ts:187-192, 260-266` (1.5 s / 2 s) |
-| server replies `pong` to `ping` | `partykit/online-room.ts:119-120` | `network-server.ts:90-91` |
+| Concern                                  | Online                             | Remote mic                                         |
+| ---------------------------------------- | ---------------------------------- | -------------------------------------------------- |
+| ping → pong → latency → re-arm after 2 s | `online-client.ts:183-204`         | `network-client.ts:200-218`                        |
+| reconnect with a fixed delay             | `online-client.ts:152-158` (1.5 s) | `network-client.ts:187-192, 260-266` (1.5 s / 2 s) |
+| server replies `pong` to `ping`          | `partykit/online-room.ts:119-120`  | `network-server.ts:90-91`                          |
 
 **Recommendation.** A `PingPongTracker` class in `src/modules/remote-mic/network/rpc/` (or, better,
 a new neutral `src/modules/network/` — see 2.9) exposing `start(send)`, `handlePong()`,
@@ -445,11 +447,11 @@ Two spots use invisible copies of real content to hold a height — the copies m
 when the real content changes:
 
 - `src/routes/select-input/variants/built-in.tsx` — the string
-  *"Please allow access to the microphone so the default one can be selected."* appears at `:50`
+  _"Please allow access to the microphone so the default one can be selected."_ appears at `:50`
   (inside `StartingUpReserve`) and again at `:147` (the actual `UserMediaEnabled` fallback).
 - `src/routes/game/singing/calibration-intro.tsx:18-38` — an invisible reproduction of
   `modules/calibration/calibration.tsx`'s hint lines and its `150px`/`50px` spacers, with a comment
-  that says *"Mirrors modules/calibration/calibration.tsx; keep the two in step."*
+  that says _"Mirrors modules/calibration/calibration.tsx; keep the two in step."_
 
 The second is the more fragile of the two: it hardcodes pixel heights from another file.
 
