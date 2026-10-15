@@ -179,6 +179,8 @@ function CodeStep({
         placeholder="_____"
         autoCapitalize="characters"
         autoComplete="off"
+        // Locked while the room is being checked, so the code that passes is the one that is joined
+        readOnly={checking}
         ref={inputRef}
         data-test="join-room-code-input"
       />
