@@ -136,12 +136,6 @@ const config: PlaywrightTestConfig = {
       timeout: 30_000,
       reuseExistingServer: true,
     },
-    // {
-    //   command: 'pnpm peerjs',
-    //   port: 3001,
-    //   timeout: 60_000 * 3,
-    //   reuseExistingServer: true,
-    // },
   ].filter(Boolean) as PlaywrightTestConfig['webServer'],
 };
 

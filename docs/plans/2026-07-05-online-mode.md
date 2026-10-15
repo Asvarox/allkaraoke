@@ -5,6 +5,7 @@
 Build a separate online mode driven by a standalone PartyKit room, reusing song browsing, singing, scoring, and post-game presentation where practical. Party mode and remote-mic networking stay separate.
 
 Key decisions locked:
+
 - Online v1 supports up to 6 singers.
 - Each participant uses their local browser microphone.
 - The host's selected song is always transferred as a serialized chart (via `convertSongToTxt`), regardless of whether it is a built-in, shared, or local song. Clients reconstruct the song from the transferred chart and load the referenced YouTube media themselves. No song audio/video is uploaded.
@@ -19,6 +20,7 @@ Key decisions locked:
 The existing remote-mic networking already connects to a **separate** PartyKit deployment (`VITE_APP_PARTYKIT_URL`, e.g. `wss://allkaraoke-partykit.asvarox.partykit.dev`) that is **not** part of this repo's Cloudflare Worker. This repo's [worker/index.ts](/Users/olek/karaoke-test/worker/index.ts) is a Pages-style function router with no Durable Objects, and [wrangler.jsonc](/Users/olek/karaoke-test/wrangler.jsonc) has no DO bindings. **Do not** add the room server there.
 
 Instead, create a new standalone PartyKit project the same way as the [PartyKit quickstart](https://docs.partykit.io/quickstart/):
+
 - Add `partykit.json` with a `main` entry pointing at the online room server (e.g. `partykit/online-room.ts`) and a party name (e.g. `online`).
 - Implement the room as a PartyKit `Server` (`onConnect`, `onMessage`, `onClose`, `onAlarm` for TTL cleanup) using PartyKit room storage for persistence.
 - Deploy separately (its own `partykit deploy`); expose its URL via a new env var (e.g. `VITE_APP_ONLINE_PARTYKIT_URL`) so it can be a different instance from the remote-mic one.
@@ -30,6 +32,7 @@ This keeps online mode fully decoupled from the remote-mic PartyKit server and f
 Reuse the **generic** RPC machinery in [src/modules/remote-mic/network/rpc/**](/Users/olek/karaoke-test/src/modules/remote-mic/network/rpc) — `defineQuery`/`defineMutation` ([define.ts](/Users/olek/karaoke-test/src/modules/remote-mic/network/rpc/define.ts)), `RpcServer` ([rpc-server.ts](/Users/olek/karaoke-test/src/modules/remote-mic/network/rpc/rpc-server.ts)), `RpcClient`, and the wire message shapes in [types.ts](/Users/olek/karaoke-test/src/modules/remote-mic/network/rpc/types.ts). The **events/API exposed through RPC must be separate** from remote-mic's.
 
 The RPC core is nearly generic but currently coupled to remote-mic in a few spots; decouple these so both features can share it while exposing different APIs:
+
 - [types.ts](/Users/olek/karaoke-test/src/modules/remote-mic/network/rpc/types.ts) imports `SubscriptionChannels` from remote-mic's [client/subscriptions.ts](/Users/olek/karaoke-test/src/modules/remote-mic/network/client/subscriptions.ts). Parameterize the channel/publish types (generic over a `SubscriptionChannels` map) instead of hard-importing the remote-mic one.
 - [rpc-server.ts](/Users/olek/karaoke-test/src/modules/remote-mic/network/rpc/rpc-server.ts) imports remote-mic `NetworkMessages` and `SenderInterface`. Make the RPC core generic over the message/sender types (or move the shared transport/RPC primitives into a neutral location), leaving remote-mic and online to supply their own message unions.
 - `ClientSubscriptionManager`/`subscriptionManager` is a remote-mic singleton; online gets its own instance/channels.
@@ -48,6 +51,7 @@ Add `src/modules/online/**` for the online room protocol: typed message/channel 
 ## Non-invasive singing integration
 
 Avoid a large refactor of the `GameState`/`PlayersManager` singletons and the global event bus. Instead:
+
 - Online singing runs the **existing single-player local game path unchanged**, with the transferred song as one local singer (`playerNumber: 0`, merged track). The online layer only starts/stops that local game from authoritative room commands.
 - Overlay a live leaderboard rendered from room score snapshots (published via the online subscription channel); it is presentational and does not touch `GameState`.
 - Keep local party mode behavior unchanged. The only shared-primitive change required is centralizing the player-number type/config and expanding colors (below) — needed so the 6-player leaderboard/result display can render, not to re-architect the game loop.

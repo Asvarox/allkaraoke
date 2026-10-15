@@ -9,13 +9,9 @@ import { PingSampler } from '~/modules/network/rpc/ping-stats';
 import { createRpcProxy } from '~/modules/network/rpc/rpc-client';
 import { ExtractContract } from '~/modules/network/rpc/types';
 import { ClientTransport } from '~/modules/remote-mic/network/client/transport/interface';
-import { PartyKitClientTransport } from '~/modules/remote-mic/network/client/transport/party-kit-client';
 import { RealtimeClientTransport } from '~/modules/remote-mic/network/client/transport/realtime-client';
-import { WebSocketClientTransport } from '~/modules/remote-mic/network/client/transport/web-socket-client';
 import { NetworkMessages } from '~/modules/remote-mic/network/messages';
-import { REMOTE_MIC_ROOM_CODE_LEAD } from '~/modules/remote-mic/network/realtime-protocol';
 import { serverHandlers } from '~/modules/remote-mic/network/server/server-handlers';
-import { ServerTransport } from '~/modules/remote-mic/network/server/transport/interface';
 import Listener from '~/modules/utils/listener';
 import { roundTo } from '~/modules/utils/round-to';
 import storage from '~/modules/utils/storage';
@@ -30,21 +26,6 @@ export type transportCloseReason = string;
 export type transportErrorReason = string;
 
 export type ServerRpc = ExtractContract<typeof serverHandlers>;
-
-/** Which transport a game code was made for, read off its lead letter (see `GAME_CODE_TRANSPORT_PREFIX`).
- * Anything unknown is PartyKit, the transport every older code was made for. */
-const transportNameOf = (roomId: string): ServerTransport['name'] => {
-  const lead = roomId.charAt(0);
-  if (lead === 'w') return 'WebSockets';
-  if (lead === REMOTE_MIC_ROOM_CODE_LEAD) return 'Realtime';
-  return 'PartyKit';
-};
-
-const createTransport = (name: ServerTransport['name']): ClientTransport => {
-  if (name === 'WebSockets') return new WebSocketClientTransport();
-  if (name === 'Realtime') return new RealtimeClientTransport();
-  return new PartyKitClientTransport();
-};
 
 export class NetworkClient extends Listener<[NetworkMessages]> {
   private transport: ClientTransport | undefined;
@@ -165,7 +146,7 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
       this.pingPong.stop();
       this.transport.close();
     }
-    this.transport = createTransport(transportNameOf(lcRoomId));
+    this.transport = new RealtimeClientTransport();
 
     if (this.clientId === null) this.setClientId(v4());
     this.roomId = lcRoomId;
@@ -241,9 +222,9 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
   private sangThisSong = false;
 
   private transportProperties = () => ({
-    // The game code's lead letter, kept as-is so events from before `transportName` stay comparable
+    // Kept although Realtime is the only transport, so events stay comparable with older ones
     transport: this.roomId?.charAt(0),
-    transportName: this.roomId ? transportNameOf(this.roomId) : null,
+    transportName: 'Realtime',
   });
 
   private reportSongPing = () => {
@@ -314,7 +295,7 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
       events.karaokeConnectionStatusChange.dispatch('reconnecting');
       // An attempt still being set up is left to finish: a Realtime join takes a couple of seconds,
       // and starting over every tick would never let one complete
-      const settingUp = this.transport instanceof RealtimeClientTransport && this.transport.isConnected();
+      const settingUp = this.transport?.isConnected();
       if (!settingUp) this.connect(roomId, this.currentName, false);
       setTimeout(() => this.reconnect(roomId), 2000);
     }
