@@ -3,6 +3,7 @@ import YouTube from 'react-youtube';
 import { ValuesType } from 'utility-types';
 
 import { seconds } from '~/interfaces';
+import { getMasterGain } from '~/modules/audio/master-volume';
 import { VideoState } from '~/modules/elements/video-player/video-state';
 import usePlayerVolume from '~/modules/hooks/use-player-volume';
 import useUnstuckYouTubePlayer from '~/modules/hooks/use-unstuck-you-tube-player';
@@ -75,7 +76,7 @@ export default function YoutubeVideoPlayer({
     setSize: (w, h) => player.current?.getInternalPlayer()!.setSize(w, h),
     seekTo: (timeSec: seconds) => player.current?.getInternalPlayer()!.seekTo(timeSec, true),
     setPlaybackSpeed: (speed: number) => player.current?.getInternalPlayer()!.setPlaybackRate(Number(speed)),
-    setVolume: (newVolume: number) => player.current?.getInternalPlayer()!.setVolume(newVolume),
+    setVolume: (newVolume: number) => player.current?.getInternalPlayer()!.setVolume(newVolume * getMasterGain()),
     getCurrentTime: () => player.current?.getInternalPlayer?.()?.getCurrentTime?.() ?? Promise.resolve(0),
     loadVideoById: (opts) => player.current?.getInternalPlayer()!.loadVideoById(opts),
     playVideo: () => {
@@ -109,7 +110,12 @@ export default function YoutubeVideoPlayer({
           modestbranding: 1,
         },
       }}
-      onReady={() => onReady?.()}
+      onReady={(e) => {
+        // A (re)mounted player starts at full volume, so a lowered master level is applied right away
+        const gain = getMasterGain();
+        if (gain < 1) e.target.setVolume(Math.round((volume ?? 1) * gain * 100));
+        onReady?.();
+      }}
       onPlaybackRateChange={(e) => {
         console.log('onPlaybackRateChange', e.data);
       }}

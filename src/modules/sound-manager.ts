@@ -12,6 +12,7 @@ import halloweenWaitForReadinessSound from '~/assets/halloween/scary-music-box-f
 import menuBackSound from '~/assets/menu_back.mp3';
 import menuEnterSound from '~/assets/menu_enter.mp3';
 import menuNavigateSound from '~/assets/menu_navigate.mp3';
+import { getMasterGain, subscribeToMasterGain } from '~/modules/audio/master-volume';
 import { backgroundTheme } from '~/modules/elements/layout-with-background';
 import { BackgroundThemeSetting } from '~/routes/settings/settings-state';
 
@@ -28,15 +29,21 @@ class Sound {
     if (global.Audio) {
       this.sound = new Audio(options.src);
       this.sound.preload = options.preload ? 'auto' : 'none';
-      this.sound.volume = options.volume ?? 1;
+      this.sound.volume = this.getVolume();
       this.sound.loop = options.loop ?? false;
+      subscribeToMasterGain(() => {
+        if (this.sound) this.sound.volume = this.getVolume();
+      });
     }
   }
+
+  private getVolume = () => (this.options.volume ?? 1) * getMasterGain();
 
   public play = async (parallel = true) => {
     try {
       if (parallel && this.playing()) {
         const clonedNode = this.sound?.cloneNode(true) as HTMLAudioElement;
+        clonedNode.volume = this.getVolume();
         await clonedNode.play();
         clonedNode.remove();
       } else {
