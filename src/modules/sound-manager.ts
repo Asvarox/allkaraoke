@@ -18,6 +18,8 @@ import { BackgroundThemeSetting } from '~/routes/settings/settings-state';
 
 class Sound {
   private sound: HTMLAudioElement | null = null;
+  // Parallel copies still playing, kept so a master volume change reaches them too
+  private clones = new Set<HTMLAudioElement>();
   constructor(
     private options: {
       src: string;
@@ -33,6 +35,7 @@ class Sound {
       this.sound.loop = options.loop ?? false;
       subscribeToMasterGain(() => {
         if (this.sound) this.sound.volume = this.getVolume();
+        this.clones.forEach((clone) => (clone.volume = this.getVolume()));
       });
     }
   }
@@ -44,8 +47,12 @@ class Sound {
       if (parallel && this.playing()) {
         const clonedNode = this.sound?.cloneNode(true) as HTMLAudioElement;
         clonedNode.volume = this.getVolume();
-        await clonedNode.play();
-        clonedNode.remove();
+        this.clones.add(clonedNode);
+        clonedNode.addEventListener('ended', () => this.clones.delete(clonedNode), { once: true });
+        await clonedNode.play().catch((error) => {
+          this.clones.delete(clonedNode);
+          throw error;
+        });
       } else {
         if (this.sound) {
           this.sound.currentTime = 0;

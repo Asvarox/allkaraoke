@@ -7,9 +7,6 @@ import { Icon } from '~/modules/elements/akui/icon';
 import { Tooltip } from '~/modules/elements/tooltip';
 import { MasterMutedSetting, MasterVolumeSetting, useSettingValue } from '~/routes/settings/settings-state';
 
-// A second click inside this window is a double click (mute) rather than two separate opens
-const DOUBLE_CLICK_MS = 250;
-
 interface Props {
   size?: ComponentProps<typeof Button>['size'];
 }
@@ -19,7 +16,6 @@ function VolumeMixer({ size = 'small' }: Props) {
   const [muted] = useSettingValue(MasterMutedSetting);
   const [isOpen, setIsOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
-  const clickTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useHotkeys('shift+m', toggleMasterMute);
 
@@ -29,7 +25,12 @@ function VolumeMixer({ size = 'small' }: Props) {
     const onPointerDown = (event: PointerEvent) => {
       if (!containerRef.current?.contains(event.target as Node)) setIsOpen(false);
     };
-    const onKeyDown = (event: KeyboardEvent) => event.key === 'Escape' && setIsOpen(false);
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key !== 'Escape') return;
+      setIsOpen(false);
+      // The focused slider is about to unmount - hand focus back so Tab continues from the toolbar
+      containerRef.current?.querySelector('button')?.focus();
+    };
     document.addEventListener('pointerdown', onPointerDown);
     document.addEventListener('keydown', onKeyDown);
 
@@ -39,20 +40,8 @@ function VolumeMixer({ size = 'small' }: Props) {
     };
   }, [isOpen]);
 
-  useEffect(() => () => clearTimeout(clickTimeout.current ?? undefined), []);
-
-  const handleClick = () => {
-    if (clickTimeout.current) {
-      clearTimeout(clickTimeout.current);
-      clickTimeout.current = null;
-      toggleMasterMute();
-      return;
-    }
-    clickTimeout.current = setTimeout(() => {
-      clickTimeout.current = null;
-      setIsOpen((current) => !current);
-    }, DOUBLE_CLICK_MS);
-  };
+  // A double click fires click, click, dblclick: the two clicks cancel out (open/close), the dblclick mutes
+  const handleClick = () => setIsOpen((current) => !current);
 
   const icon =
     muted || volume === 0
@@ -70,8 +59,10 @@ function VolumeMixer({ size = 'small' }: Props) {
           aria-label="Volume"
           aria-expanded={isOpen}
           data-test="toggle-volume-mixer"
+          className="touch-manipulation"
           data-muted={muted}
           onClick={handleClick}
+          onDoubleClick={toggleMasterMute}
           leftIcon={<Icon icon={icon} />}
         />
       </Tooltip>
