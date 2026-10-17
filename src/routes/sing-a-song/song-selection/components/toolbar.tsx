@@ -98,7 +98,7 @@ export default function Toolbar({
 
   return (
     <>
-      <div className="mr-28 flex items-center gap-2 max-md:mr-23 min-[1760px]:mr-0 lg:max-[1760px]:mr-41">
+      <div className="mr-41.5 flex items-center gap-2 max-md:mr-34 min-[1760px]:mr-0 lg:max-[1760px]:mr-55">
         {!compact && searchAndRandom}
 
         <PlaylistSelector
