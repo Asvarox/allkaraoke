@@ -1,0 +1,289 @@
+#ARTIST:Wallows feat. Clairo
+#TITLE:Are You Bored Yet?
+#CREATOR:mitchdog
+#BPM:240
+#YEAR:2019
+#PREVIEWSTART:69
+#VIDEO:v=wIgmyE5Juzw
+#LANGUAGE:English
+#GAP:43430
+#ALLKARAOKE_ID:wallows-feat-clairo-are-you-bored-yet
+#ALLKARAOKE_SID:6669
+#ALLKARAOKE_LASTUPDATE:2026-10-17T02:25:43.095Z
+#ALLKARAOKE_REALBPM:120
+#ALLKARAOKE_PREVIEWEND:95
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:207
+#MP3:Wallows feat. Clairo - Are You Bored Yet?.mp3
+: 16 6 9 What’s 
+: 24 10 8 wrong?
+- 34
+: 44 4 8 You’ve 
+: 50 4 8 been 
+: 56 8 8 asking 
+: 66 3 8 but 
+: 70 1 8 I 
+: 72 5 8 don’t 
+: 78 4 8 have 
+: 86 2 8 an 
+: 90 5 8 ans
+: 96 6 7 wer
+- 102
+: 110 8 9 How 
+: 120 10 8 come?
+- 130
+: 140 4 8 I’m 
+: 146 3 8 still 
+: 150 4 8 thin
+: 156 3 8 king, 
+: 160 3 8 let’s 
+: 164 3 8 pre
+: 168 3 8 tend 
+: 172 2 8 to 
+: 176 3 9 fall 
+: 180 1 9 a
+: 182 8 8 sleep 
+: 192 8 8 now
+- 200
+: 206 6 8 When 
+: 214 6 8 we 
+: 224 3 8 get 
+: 228 6 9 old, 
+: 236 3 8 will 
+: 240 3 8 we 
+: 244 8 8 regret 
+: 254 8 9 this?
+- 262
+: 270 7 8 Too 
+: 278 7 8 young 
+: 286 2 8 to 
+: 290 8 8 think 
+: 300 6 8 about 
+: 308 3 8 all 
+: 312 6 8 that 
+: 320 3 8 sh
+: 324 4 7 it
+- 328
+: 340 2 8 And 
+: 344 6 8 stallin’ 
+: 352 6 8 only 
+: 360 6 8 goes 
+* 368 4 8 so 
+* 374 8 8 far 
+: 384 3 8 when 
+: 388 3 8 you’ve 
+: 392 4 8 got 
+: 398 2 8 a 
+* 402 4 8 head 
+* 408 10 8 start
+- 418
+: 428 2 8 ’Cause 
+: 432 2 8 we 
+: 436 2 8 could 
+: 440 4 8 stay 
+: 446 2 9 at 
+: 450 3 8 home 
+: 454 1 8 and 
+: 456 6 8 watch 
+: 464 6 7 the 
+: 472 4 7 sun
+: 480 6 6 set
+- 486
+: 492 2 8 But 
+: 498 1 8 I 
+: 500 4 8 can’t 
+: 506 2 8 help 
+: 510 2 8 from 
+: 514 4 8 asking,
+- 518
+* 520 4 8 Are 
+* 528 2 9 you 
+* 534 3 9 bo
+* 538 4 9 red 
+* 544 6 10 yet?
+- 550
+: 556 2 8 And 
+: 560 3 8 if 
+: 564 3 8 you’re 
+: 568 6 9 feeling 
+: 576 3 8 lone
+: 580 2 7 ly 
+: 584 4 8 you 
+: 590 6 8 should 
+: 598 6 8 tell 
+: 606 8 7 me
+- 614
+: 620 6 8 Before 
+: 628 2 8 this 
+: 632 2 8 ends 
+: 636 2 8 up 
+: 640 2 8 as 
+: 644 3 8 a
+: 648 5 9 no
+: 654 4 8 ther 
+: 662 7 8 mem
+: 670 8 9 ory
+- 678
+: 684 3 8 Will 
+: 688 2 8 you 
+: 692 4 8 tell 
+: 698 2 8 the 
+: 702 12 8 truth 
+: 716 2 8 so 
+: 720 2 8 I 
+: 724 4 8 don’t 
+: 730 4 8 have 
+: 736 4 8 to 
+: 742 24 9 lie?
+- 766 794
+- 794
+: 810 6 8 Will 
+: 818 2 8 you 
+: 822 2 8 tell 
+: 826 2 8 the 
+: 830 10 8 truth 
+: 842 3 8 so 
+: 846 1 8 I 
+: 848 4 8 don’t 
+: 854 5 8 have 
+: 860 8 9 to 
+: 872 20 9 lie?
+- 892 934
+- 934
+: 950 5 8 Feels 
+: 956 3 8 like 
+: 960 2 8 I’ve 
+: 964 6 8 known 
+: 972 4 8 you 
+: 978 6 8 my 
+: 986 7 9 whole 
+: 994 9 8 life
+- 1003
+: 1004 2 8 I 
+: 1008 2 8 can 
+: 1012 6 8 see 
+: 1020 6 8 right 
+: 1028 6 8 through 
+: 1036 6 8 your 
+: 1044 10 8 lies
+- 1054 1062
+- 1062
+: 1078 2 8 I 
+: 1082 5 10 don’t 
+: 1088 3 10 know 
+: 1092 6 8 where 
+: 1100 4 8 we’re 
+: 1106 9 8 going
+- 1115
+: 1116 2 8 But 
+: 1120 2 8 I’d 
+: 1124 6 8 like 
+: 1132 4 8 to 
+: 1140 4 8 be 
+: 1148 6 8 by 
+: 1158 5 8 your
+: 1164 4 9 ~ 
+: 1170 14 8 side
+- 1184
+: 1196 2 8 If 
+: 1200 1 8 you 
+: 1202 6 8 could 
+: 1210 1 8 tell 
+: 1212 4 8 me 
+: 1220 6 11 how 
+: 1228 4 10 you’re 
+: 1234 10 9 feeling
+- 1244
+: 1252 7 9 May
+: 1260 4 8 be 
+: 1266 2 8 we’d 
+: 1270 4 8 get 
+: 1276 6 8 through 
+: 1284 2 8 this 
+: 1288 3 8 un
+: 1292 3 9 de
+: 1296 9 8 fea
+: 1306 12 7 ted
+- 1318 1320
+- 1320
+: 1336 6 8 Holding 
+: 1344 17 8 on
+: 1362 8 8 ~ 
+: 1372 2 8 for 
+: 1376 1 8 so 
+: 1378 27 9 long
+: 1406 10 8 ~
+- 1416 1436
+- 1436
+: 1452 3 8 ’Cause 
+: 1456 1 8 we 
+: 1458 3 8 could 
+: 1462 4 9 stay 
+: 1468 3 9 at 
+: 1472 3 8 home 
+: 1476 2 8 and 
+: 1480 6 8 watch 
+: 1488 4 7 the 
+: 1494 6 7 sun
+: 1502 8 6 set
+- 1510
+: 1516 2 8 But 
+: 1520 2 8 I 
+: 1524 2 8 can’t 
+: 1528 3 8 help 
+: 1532 3 8 from 
+: 1536 6 8 asking, 
+* 1544 6 8 Are 
+* 1552 6 9 you 
+* 1560 3 10 bo
+* 1564 3 11 red 
+* 1568 6 8 yet?
+- 1574
+: 1580 2 8 And 
+: 1584 2 8 if 
+: 1588 3 8 you’re 
+: 1592 6 8 feeling 
+: 1600 3 8 lone
+: 1604 2 7 ly 
+: 1608 4 8 you 
+: 1614 6 8 should 
+: 1622 8 7 tell 
+: 1632 6 7 me
+- 1638
+: 1642 3 8 Be
+: 1646 4 8 fore 
+: 1652 2 8 this 
+: 1656 3 8 ends 
+: 1660 2 8 up 
+: 1664 3 8 as 
+: 1668 3 8 a
+: 1672 14 9 nother 
+* 1688 5 10 mem
+* 1694 6 11 ory
+- 1700
+: 1710 2 8 Will 
+: 1714 2 8 you 
+: 1718 2 8 tell 
+: 1722 2 8 the 
+: 1726 12 9 truth 
+: 1740 2 8 so 
+: 1744 2 8 I 
+: 1748 2 8 don’t 
+: 1752 6 8 have 
+: 1760 6 9 to 
+: 1768 20 8 lie?
+- 1788 1818
+- 1818
+: 1834 2 8 Will 
+: 1838 2 8 you 
+: 1842 2 8 tell 
+: 1846 4 8 the 
+: 1852 14 9 truth 
+: 1868 2 8 so 
+: 1872 2 8 I 
+: 1876 2 8 don’t 
+: 1880 4 8 have 
+: 1886 6 8 to 
+: 1894 22 8 lie?
+: 2100 10 0 ~
+E
