@@ -5,8 +5,8 @@
     "Green Day",
     "Linkin Park",
     "Britney Spears",
-    "Kylie Minogue",
     "Michael Jackson",
+    "Kylie Minogue",
     "Ariana Grande",
     "Queen",
     "Take That",
@@ -16,11 +16,11 @@
     "Imagine Dragons",
     "Nightwish",
     "One Direction",
+    "ABBA",
     "My Chemical Romance",
     "Nirvana",
     "Rihanna",
     "Fall Out Boy",
-    "ABBA",
     "Bee Gees",
     "Billie Eilish",
     "Elton John",
@@ -52,6 +52,7 @@
     "Bad Religion",
     "George Michael",
     "INXS",
+    "Red Hot Chili Peppers",
     "Slipknot",
     "Breaking Benjamin",
     "Jonas Brothers",
@@ -59,7 +60,6 @@
     "Marina and the Diamonds",
     "Olivia Rodrigo",
     "Panic! at the Disco",
-    "Red Hot Chili Peppers",
     "A★Teens",
     "Bring Me The Horizon",
     "Coldplay",
@@ -121,6 +121,7 @@
     "The Killers",
     "UB40",
     "Weezer",
+    "3 Doors Down",
     "Avicii",
     "Billy Talent",
     "blink-182",
@@ -146,7 +147,6 @@
     "Twenty One Pilots",
     "Wham!",
     "ZZ Top",
-    "3 Doors Down",
     "a-ha",
     "Ace of Base",
     "Aerosmith"
@@ -190,9 +190,10 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 6663,
-  "generatedAt": "2026-10-15T02:38:34.035Z",
+  "songs": 6682,
+  "generatedAt": "2026-10-17T02:26:19.747Z",
   "additionsPerDay": {
+    "2026-10-17": 19,
     "2026-10-15": 28,
     "2026-10-14": 10,
     "2026-10-13": 20,
@@ -233,6 +234,139 @@
     "2026-08-23": 30
   },
   "recentlyAdded": [
+    {
+      "id": "3-doors-down-loser",
+      "artist": "3 Doors Down",
+      "title": "Loser",
+      "video": "2Ui_Q4qBDJY",
+      "addedAt": "2026-10-17T02:25:45.342Z"
+    },
+    {
+      "id": "blind-melon-no-rain",
+      "artist": "Blind Melon",
+      "title": "No Rain",
+      "video": "3qVPNONdF58",
+      "addedAt": "2026-10-17T02:25:45.191Z"
+    },
+    {
+      "id": "alan-jackson-feat-jimmy-buffett-its-five-oclock-somewhere",
+      "artist": "Alan Jackson feat. Jimmy Buffett",
+      "title": "It’s Five O’Clock Somewhere",
+      "video": "BPCjC543llU",
+      "addedAt": "2026-10-17T02:25:45.041Z"
+    },
+    {
+      "id": "sistar-give-it-to-me",
+      "artist": "Sistar",
+      "title": "Give It To Me",
+      "video": "p6XLNsJ9YrA",
+      "addedAt": "2026-10-17T02:25:44.885Z"
+    },
+    {
+      "id": "kda-ft-madison-beer-and-kim-petras-villain",
+      "artist": "KDA ft. Madison Beer and Kim Petras",
+      "title": "VILLAIN",
+      "video": "xoWxv2yZXLQ",
+      "addedAt": "2026-10-17T02:25:44.729Z"
+    },
+    {
+      "id": "89ers-kingston-town",
+      "artist": "89ers",
+      "title": "Kingston Town",
+      "video": "eJ8UFST26AU",
+      "addedAt": "2026-10-17T02:25:43.431Z"
+    },
+    {
+      "id": "mana-oye-mi-amor",
+      "artist": "Maná",
+      "title": "Oye mi amor",
+      "video": "h0p8yTqj8i4",
+      "addedAt": "2026-10-17T02:25:43.431Z"
+    },
+    {
+      "id": "red-hot-chili-peppers-the-adventures-of-rain-dance-maggie",
+      "artist": "Red Hot Chili Peppers",
+      "title": "The Adventures Of Rain Dance Maggie",
+      "video": "RtBbinpK5XI",
+      "addedAt": "2026-10-17T02:25:43.428Z"
+    },
+    {
+      "id": "abba-ring-ring",
+      "artist": "ABBA",
+      "title": "Ring Ring",
+      "video": "TL0EoXdpOqg",
+      "addedAt": "2026-10-17T02:25:43.426Z"
+    },
+    {
+      "id": "michael-jackson-chicago",
+      "artist": "Michael Jackson",
+      "title": "Chicago",
+      "video": "Y_8mUx4VOmo",
+      "addedAt": "2026-10-17T02:25:43.424Z"
+    },
+    {
+      "id": "radwimps-nandemonaiya-movie-ver",
+      "artist": "RADWIMPS",
+      "title": "Nandemonaiya (movie ver.)",
+      "video": "-UyWReDZ22Q",
+      "addedAt": "2026-10-17T02:25:43.421Z"
+    },
+    {
+      "id": "carpenters-top-of-the-world",
+      "artist": "Carpenters",
+      "title": "Top Of The World",
+      "video": "Dyl4x-CtpTY",
+      "addedAt": "2026-10-17T02:25:43.246Z"
+    },
+    {
+      "id": "soundgarden-blow-up-the-outside-world",
+      "artist": "Soundgarden",
+      "title": "Blow Up The Outside World",
+      "video": "sC2GjXMk7i4",
+      "addedAt": "2026-10-17T02:25:43.245Z"
+    },
+    {
+      "id": "bryan-ferry-dont-stop-the-dance",
+      "artist": "Bryan Ferry",
+      "title": "Don’t Stop The Dance",
+      "video": "XjhTHQhJLxs",
+      "addedAt": "2026-10-17T02:25:43.243Z"
+    },
+    {
+      "id": "wallows-feat-clairo-are-you-bored-yet",
+      "artist": "Wallows feat. Clairo",
+      "title": "Are You Bored Yet?",
+      "video": "wIgmyE5Juzw",
+      "addedAt": "2026-10-17T02:25:43.095Z"
+    },
+    {
+      "id": "abba-summer-night-city",
+      "artist": "ABBA",
+      "title": "Summer Night City",
+      "video": "TGwwyNkMWJ0",
+      "addedAt": "2026-10-17T02:25:43.094Z"
+    },
+    {
+      "id": "menowin-froehlich-dont-believe",
+      "artist": "Menowin Fröhlich",
+      "title": "Don’t Believe",
+      "video": "GkPfz1_sdFw",
+      "addedAt": "2026-10-17T02:25:42.941Z"
+    },
+    {
+      "id": "epic-the-musical-jorge-rivera-herrans-steven-rodriguez-get-in-the-water",
+      "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Steven Rodriguez)",
+      "title": "Get In The Water",
+      "video": "HoEjFMwsQ5M",
+      "addedAt": "2026-10-17T02:25:41.605Z"
+    },
+    {
+      "id": "magtens-korridorer-nordhavn-station",
+      "artist": "Magtens Korridorer",
+      "title": "Nordhavn station",
+      "video": "SvX0OcmJKqQ",
+      "addedAt": "2026-10-17T02:25:40.947Z"
+    },
     {
       "id": "sienna-spiro-great-expectation",
       "artist": "Sienna Spiro",
@@ -435,139 +569,6 @@
       "title": "Runner",
       "video": "Z6kNQEzQJpA",
       "addedAt": "2026-10-14T02:57:52.892Z"
-    },
-    {
-      "id": "disneys-hercule-jamais-je-navouerai",
-      "artist": "Disney’s Hercule",
-      "title": "Jamais je n’avouerai",
-      "video": "neO2uOzPNT8",
-      "addedAt": "2026-10-14T02:57:52.761Z"
-    },
-    {
-      "id": "jason-derulo-it-girl",
-      "artist": "Jason Derulo",
-      "title": "It Girl",
-      "video": "4oGUHRXT-wA",
-      "addedAt": "2026-10-14T02:57:52.758Z"
-    },
-    {
-      "id": "super-junior-bonamana",
-      "artist": "Super Junior",
-      "title": "Bonamana",
-      "video": "tSOSxwEWFA4",
-      "addedAt": "2026-10-14T02:57:52.751Z"
-    },
-    {
-      "id": "modern-baseball-tears-over-beers",
-      "artist": "Modern Baseball",
-      "title": "Tears Over Beers",
-      "video": "U8Q-uCV7TWw",
-      "addedAt": "2026-10-14T02:57:52.748Z"
-    },
-    {
-      "id": "neil-young-southern-man",
-      "artist": "Neil Young",
-      "title": "Southern Man",
-      "video": "m5FCcDEA6mY",
-      "addedAt": "2026-10-14T02:57:52.746Z"
-    },
-    {
-      "id": "2pac-changes",
-      "artist": "2Pac",
-      "title": "Changes",
-      "video": "eXvBjCO19QY",
-      "addedAt": "2026-10-14T02:57:52.617Z"
-    },
-    {
-      "id": "ingrid-michaelson-the-way-i-am",
-      "artist": "Ingrid Michaelson",
-      "title": "The Way I Am",
-      "video": "owNv81KIvAQ",
-      "addedAt": "2026-10-14T02:57:52.444Z"
-    },
-    {
-      "id": "centimillimental-bokura-dake-no-shudaika",
-      "artist": "Centimillimental",
-      "title": "Bokura dake no shudaika",
-      "video": "GWkLAGlEcxg",
-      "addedAt": "2026-10-14T02:57:52.442Z"
-    },
-    {
-      "id": "kpop-demon-hunters-saja-boys-seu-astro",
-      "artist": "KPop Demon Hunters (Saja Boys)",
-      "title": "Seu Astro",
-      "video": "pdhCJ3v-7mU",
-      "addedAt": "2026-10-14T02:57:51.861Z"
-    },
-    {
-      "id": "kanye-west-feat-jamie-foxx-gold-digger",
-      "artist": "Kanye West feat. Jamie Foxx",
-      "title": "Gold Digger",
-      "video": "6vwNcNOTVzY",
-      "addedAt": "2026-10-13T04:50:26.011Z"
-    },
-    {
-      "id": "bloodhound-gang-along-comes-mary",
-      "artist": "Bloodhound Gang",
-      "title": "Along Comes Mary",
-      "video": "0RaLEVmuM4o",
-      "addedAt": "2026-10-13T04:50:26.009Z"
-    },
-    {
-      "id": "paramore-careful",
-      "artist": "Paramore",
-      "title": "Careful",
-      "video": "JZ7_UnqtYmw",
-      "addedAt": "2026-10-13T04:50:26.007Z"
-    },
-    {
-      "id": "ville-valo-natalia-avelon-summer-wine",
-      "artist": "Ville Valo & Natalia Avelon",
-      "title": "Summer Wine",
-      "video": "ONdsLfVZMso",
-      "addedAt": "2026-10-13T04:50:25.802Z"
-    },
-    {
-      "id": "benson-boone-slow-it-down",
-      "artist": "Benson Boone",
-      "title": "Slow It Down",
-      "video": "f4Y3b7un4LE",
-      "addedAt": "2026-10-13T04:50:25.800Z"
-    },
-    {
-      "id": "lindemann-praise-abort",
-      "artist": "Lindemann",
-      "title": "Praise Abort",
-      "video": "QWE_M0CX9So",
-      "addedAt": "2026-10-13T04:50:25.656Z"
-    },
-    {
-      "id": "epic-the-musical-jorge-rivera-herrans-steven-dookie-open-arms",
-      "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Steven Dookie)",
-      "title": "Open Arms",
-      "video": "OiaNekenThU",
-      "addedAt": "2026-10-13T04:50:25.492Z"
-    },
-    {
-      "id": "amy-winehouse-fuck-me-pumps",
-      "artist": "Amy Winehouse",
-      "title": "Fuck Me Pumps",
-      "video": "iVaqQe3V498",
-      "addedAt": "2026-10-13T04:50:25.489Z"
-    },
-    {
-      "id": "tokio-hotel-spring-nicht",
-      "artist": "Tokio Hotel",
-      "title": "Spring nicht",
-      "video": "qC8u8XYd13M",
-      "addedAt": "2026-10-13T04:50:25.486Z"
-    },
-    {
-      "id": "epic-the-musical-jorge-rivera-herrans-armando-julian-storm",
-      "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Armando Julian)",
-      "title": "Storm",
-      "video": "2JFLwhARquw",
-      "addedAt": "2026-10-13T04:50:24.160Z"
     }
   ]
 }

@@ -1,0 +1,346 @@
+#ARTIST:EPIC: The Musical (Jorge Rivera-Herrans, Steven Rodriguez)
+#TITLE:Get In The Water
+#CREATOR:Andore
+#BPM:400
+#YEAR:2024
+#VIDEO:v=HoEjFMwsQ5M
+#GENRE:Musical
+#LANGUAGE:English
+#GAP:59117,5
+#ALLKARAOKE_ID:epic-the-musical-jorge-rivera-herrans-steven-rodriguez-get-in-the-water
+#ALLKARAOKE_SID:6666
+#ALLKARAOKE_LASTUPDATE:2026-10-17T02:25:41.605Z
+#ALLKARAOKE_REALBPM:127
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:260
+#MP3:EPIC: The Musical (Jorge Rivera-Herrans, Steven Rodriguez) - Get In The Water.mp3
+#COVER:EPIC: The Musical (Jorge Rivera-Herrans, Steven Rodriguez) - Get In The Water [CO].jpg
+#BACKGROUND:EPIC: The Musical (Jorge Rivera-Herrans, Steven Rodriguez) - Get In The Water [BG].jpg
+#START:48.925
+R 27 6 -11 There 
+R 36 3 -11 u 
+R 42 5 -11 are 
+R 80 5 -7 cow
+R 86 3 -7 ard!
+- 89 330
+- 330
+: 357 5 -10 I’ve 
+: 370 7 -7 been 
+: 381 4 -7 wai
+: 386 1 -6 ~
+: 388 4 -5 ~
+: 394 5 -3 ting 
+: 415 4 -10 for 
+: 423 3 -7 this 
+: 432 6 -5 mo
+: 439 5 -3 ment
+- 444
+: 467 3 -10 For 
+: 472 1 -8 the 
+: 479 11 -5 per
+: 495 2 -3 fect 
+: 502 1 -4 time
+: 504 3 -3 ~
+: 508 6 -5 ~ 
+: 520 1 -7 to 
+: 527 1 -6 strike
+: 529 5 -7 ~
+- 534 540
+- 540
+: 567 1 -11 When 
+: 571 5 -7 your 
+: 580 7 -5 home’s 
+: 592 5 -3 so 
+: 604 5 -3 close 
+: 616 3 -5 and 
+: 621 4 -3 you’ve 
+: 629 5 2 reached 
+: 641 7 -3 your 
+: 653 6 -3 coast
+- 659
+: 684 3 5 That’s 
+: 693 6 4 when 
+: 702 4 2 our 
+: 710 5 -3 paths 
+: 723 6 -5 col
+: 730 10 -3 lide
+- 740
+: 761 1 0 I’ve
+: 763 1 1 ~
+: 765 8 2 ~ 
+: 777 2 4 got 
+: 780 4 5 a 
+: 785 7 4 re
+: 797 8 2 pu
+: 810 6 2 ta
+: 824 5 -3 tion
+- 829 835
+- 835
+: 862 1 0 I’ve
+: 864 1 1 ~
+: 866 7 2 ~ 
+: 877 3 4 got 
+: 881 1 5 a 
+: 886 2 5 name
+: 889 1 6 ~
+: 891 7 7 ~ 
+: 903 2 5 to 
+: 907 1 4 up
+: 913 5 2 hold
+: 919 5 2 ~
+- 924
+: 929 2 2 So 
+: 933 1 4 I 
+: 939 4 5 can’t 
+: 950 7 5 go 
+: 962 6 5 let
+: 969 3 4 ting 
+: 976 4 2 you 
+: 983 7 4 walk
+: 991 3 3 ~
+- 994
+: 1000 6 0 Or 
+: 1009 6 2 else 
+: 1026 4 -3 the 
+: 1034 8 0 world 
+: 1052 3 -3 for
+: 1059 4 -3 gets 
+: 1070 4 -5 I’m 
+: 1083 2 -3 cold
+: 1086 1 -3 ~
+: 1088 1 -2 ~
+: 1090 2 -3 ~
+- 1092
+R 1107 2 0 Now 
+R 1114 2 0 get 
+R 1119 2 0 in 
+R 1123 2 0 the 
+R 1128 5 0 wa
+R 1135 2 0 ter
+- 1137 1186
+- 1186
+R 1213 2 0 Get 
+R 1221 1 -7 in 
+R 1223 2 -7 the 
+R 1227 5 -7 wa
+R 1235 1 -7 ter
+- 1236 1289
+- 1289
+: 1316 9 -10 Or 
+: 1328 8 -7 I’ll 
+: 1342 7 -5 raise 
+: 1355 6 -3 the 
+: 1367 7 -5 tide 
+: 1381 8 -7 so 
+: 1393 11 -10 high, 
+: 1418 9 -10 all 
+: 1430 8 -7 of 
+: 1443 5 -5 I
+: 1455 6 -3 tha
+: 1467 10 -5 ca 
+: 1480 8 -7 will 
+R 1494 11 -10 die
+- 1505
+R 1518 3 0 Get 
+R 1525 2 0 in 
+R 1530 2 0 the 
+R 1533 4 0 wa
+R 1539 3 0 ter
+- 1542
+R 1568 3 -7 Wait...
+- 1571 1592
+- 1592
+R 1619 3 0 Get 
+R 1624 2 0 in 
+R 1627 1 0 the 
+R 1633 5 -1 wa
+R 1640 2 0 ter
+- 1642
+R 1669 3 -6 Stop 
+R 1677 2 -6 this, 
+R 1695 21 -8 please!
+- 1716
+: 1722 6 -10 I’ll 
+: 1733 6 -7 make 
+: 1746 6 -5 ti
+: 1754 3 -3 dal 
+: 1760 6 -5 waves 
+: 1773 6 -5 so 
+: 1784 2 -7 pro
+: 1792 10 -10 found
+- 1802
+: 1822 5 -10 Both 
+: 1834 10 -7 your 
+: 1847 4 -5 wife 
+: 1856 2 -3 and 
+: 1861 4 -5 your 
+: 1873 4 -5 son 
+: 1881 3 -7 will
+: 1885 3 -8 ~ 
+: 1893 7 -8 drown
+- 1900
+R 1904 10 0 No!
+- 1914
+: 1922 3 7 Get 
+* 1927 2 9 in 
+* 1930 3 9 the 
+* 1935 6 9 wa
+* 1942 3 7 ter
+- 1945 1995
+- 1995
+: 2022 3 7 Get 
+: 2027 2 9 in 
+: 2031 3 9 the 
+: 2036 6 9 wa
+: 2043 3 7 ter
+- 2046 2098
+- 2098
+: 2125 9 2 Don’t 
+: 2136 6 5 mis
+: 2149 6 7 take 
+: 2162 1 8 my
+: 2164 3 9 ~ 
+: 2174 6 7 threats 
+: 2187 3 5 for 
+: 2193 9 2 bluff
+- 2202
+: 2226 9 2 You 
+: 2239 4 5 have 
+: 2249 7 7 lived 
+: 2263 1 8 more
+: 2265 6 9 ~ 
+: 2275 6 7 than 
+: 2284 3 5 e
+: 2288 4 4 ~
+: 2295 5 5 nough
+: 2301 5 4 ~
+- 2306
+: 2326 3 7 Get 
+: 2334 1 9 in 
+: 2336 1 9 the 
+: 2339 6 9 wa
+: 2347 4 7 ter
+- 2351 2400
+- 2400
+: 2427 3 7 Get 
+: 2434 1 9 in 
+: 2436 1 9 the 
+: 2438 7 9 wa
+: 2447 4 7 ter
+- 2451 2495
+- 2495
+: 2522 1 -3 I’ll 
+: 2529 4 2 take 
+: 2538 9 5 your 
+: 2553 8 7 son 
+: 2566 6 9 and 
+: 2579 4 7 gouge 
+: 2588 4 5 his
+: 2593 4 2 ~ 
+: 2600 9 2 eyes
+- 2609
+: 2624 4 -3 That 
+: 2630 8 2 is, 
+: 2641 7 5 un
+: 2654 6 7 less 
+: 2668 6 9 you 
+: 2680 8 7 choose 
+: 2694 2 5 to 
+: 2701 13 4 die
+- 2714
+: 2730 3 7 Get 
+: 2737 1 9 in 
+: 2739 1 9 the 
+: 2742 7 9 wa
+: 2750 2 7 ter
+- 2752
+: 2756 15 12 A
+: 2772 4 12 ren’t 
+: 2781 21 7 you 
+: 2807 6 7 tired,
+: 2814 4 4 ~ 
+: 2823 2 5 Po
+: 2832 5 7 sei
+: 2839 6 9 don? 
+: 2847 3 10 It’s
+- 2850
+: 2857 7 9 Been 
+: 2869 7 7 ten 
+: 2881 5 5 years,
+: 2887 4 4 ~ 
+: 2894 8 4 how 
+: 2907 5 7 long 
+: 2916 6 5 will 
+: 2924 3 4 this 
+: 2932 11 0 go?
+- 2943
+: 2958 21 12 We’re 
+: 2983 18 7 both 
+: 3008 7 7 hur
+: 3017 4 4 ting 
+: 3026 2 5 from 
+: 3033 6 7 los
+: 3043 4 9 ses
+- 3047
+: 3051 5 10 So 
+: 3060 9 9 why 
+: 3072 7 7 not 
+: 3087 3 5 leave
+: 3091 4 4 ~ 
+: 3098 5 4 this 
+: 3110 2 5 here
+: 3113 1 6 ~
+: 3115 10 7 ~ 
+: 3126 3 5 and 
+: 3136 4 4 just 
+: 3148 9 0 go 
+: 3165 6 2 home?
+- 3171 3229
+- 3229
+R 3256 1 2 I 
+R 3265 3 2 can’t.
+- 3268 3334
+- 3334
+: 3361 25 2 May
+: 3389 21 -3 be 
+: 3412 6 4 you 
+: 3421 6 5 could 
+: 3430 7 4 learn 
+: 3442 5 2 to 
+: 3453 7 0 for
+: 3464 4 0 give
+: 3469 38 2 ~
+- 3507 3514
+- 3514
+R 3541 3 -7 No.
+- 3544 3588
+- 3588
+: 3615 5 2 Ruth
+: 3627 5 -3 less
+: 3640 6 -3 ness 
+: 3654 11 -3 IS...
+- 3665 3689
+- 3689
+: 3716 5 4 ...MER
+: 3726 5 5 CY 
+: 3733 4 7 UP
+: 3742 7 5 ON....
+: 3750 15 4 ~
+- 3765 3799
+- 3799
+: 3826 7 7 ...OUR
+: 3838 4 7 SELVES!
+: 3843 1 8 ~
+: 3845 15 9 ~
+- 3860 3917
+- 3917
+R 3944 30 10 DIE!
+- 3974 4585
+- 4585
+F 4612 3 2 You 
+F 4617 3 2 can 
+F 4622 2 2 re
+F 4625 6 2 lax, 
+F 4635 3 2 my 
+F 4646 7 2 friend
+E
