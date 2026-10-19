@@ -302,6 +302,8 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
   };
 
   public disconnect = () => {
+    // The game cannot see a phone leave, only notice it went quiet; this tells it straight away
+    this.transport?.sendEvent({ t: 'unregister' } as NetworkMessages);
     this.transport?.close();
   };
 }

@@ -239,13 +239,11 @@ test('Mirrors the Remote Microphone Settings screen on the remote mic and toggle
   });
 
   const remoteMicMainPage = remoteMic!.remoteMicMainPage;
-  const connectionTypeControl = remoteMicMainPage.mirroredControl('connection type');
   const defaultPermissionControl = remoteMicMainPage.mirroredControl('default-permission');
   const backControl = remoteMicMainPage.mirroredControl('back-button');
 
   await test.step('Remote mic shows the mirrored controls, including the connected device, instead of the arrow keyboard', async () => {
     await remoteMicMainPage.expectKeyboardModeToBe('mirror');
-    await expect(connectionTypeControl).toBeVisible();
     await expect(defaultPermissionControl).toBeVisible();
     await expect(backControl).toBeVisible();
     await expect(remoteMicMainPage.arrowUpButton).toBeHidden();

@@ -38,6 +38,14 @@ const ROUND_TRIP_POLL_MS = 5_000;
  * joined would keep a slot until the room expires, and a long party would run out of them. */
 const SILENT_PEER_RELEASE_MS = 10 * 60 * 1_000;
 
+/** A bound phone silent for this long counts as gone, like a closed socket. The game pings every
+ * phone each second and phones answer straight away, so this is several missed round trips. */
+const PEER_GONE_MS = 4_000;
+const PEER_GONE_CHECK_MS = 1_000;
+
+/** At most one `rt-close` per slot this often, for a phone talking on a slot the game no longer binds. */
+const UNBOUND_SLOT_CLOSE_MS = 2_000;
+
 type DataCallback = (data: NetworkMessages) => void;
 
 interface PendingHello {
@@ -61,6 +69,7 @@ export class RealtimeServerTransport extends Listener<[NetworkMessages, SenderIn
   private lastHeardAt = new Map<string, number>();
   /** Slots whose `rt-hello` is being checked with the directory, holding what arrives meanwhile. */
   private pendingHellos = new Map<number, PendingHello>();
+  private unboundSlotClosedAt = new Map<number, number>();
   // Keyed by peer rather than by sender object: a reconnecting phone gets a new sender, and
   // whoever subscribed through the old one must keep receiving its frames
   private dataCallbacks = new Map<string, Set<DataCallback>>();
@@ -111,6 +120,7 @@ export class RealtimeServerTransport extends Listener<[NetworkMessages, SenderIn
       setInterval(() => void connection.keepalive(), DIRECTORY_KEEPALIVE_MS),
       setInterval(this.measureRoundTrip, ROUND_TRIP_POLL_MS),
       setInterval(this.releaseSilentPeers, SILENT_PEER_RELEASE_MS / 10),
+      setInterval(this.dropGonePeers, PEER_GONE_CHECK_MS),
     ];
     this.measureRoundTrip();
     onConnect();
@@ -169,7 +179,10 @@ export class RealtimeServerTransport extends Listener<[NetworkMessages, SenderIn
 
   private deliver = (frame: RealtimeFrame, slot: number) => {
     const peer = this.peerBySlot.get(slot);
-    if (!peer) return;
+    if (!peer) {
+      this.closeUnboundSlot(slot);
+      return;
+    }
     this.lastHeardAt.set(peer, Date.now());
     if (isRealtimeControlMessage(frame)) return;
 
@@ -204,6 +217,27 @@ export class RealtimeServerTransport extends Listener<[NetworkMessages, SenderIn
     this.lastHeardAt.delete(peer);
   };
 
+  /** A phone the game dropped (or never bound, e.g. after the game reloaded) is still talking: tell
+   * it to reconnect, otherwise it would keep sending into a slot nobody reads. */
+  private closeUnboundSlot = (slot: number) => {
+    const now = Date.now();
+    if (now - (this.unboundSlotClosedAt.get(slot) ?? 0) < UNBOUND_SLOT_CLOSE_MS) return;
+    this.unboundSlotClosedAt.set(slot, now);
+    this.connection?.sendToSlot(slot, { t: 'rt-close', reason: 'connection-lost' });
+  };
+
+  /** The SFU does not say when a phone goes away, so silence does. The phone's directory slot is kept
+   * (see `releaseSilentPeers`), so a phone that was only reloading comes back to it. */
+  private dropGonePeers = () => {
+    const now = Date.now();
+    this.slotByPeer.forEach((slot, peer) => {
+      if (now - (this.lastHeardAt.get(peer) ?? now) < PEER_GONE_MS) return;
+      this.unbindSlot(slot);
+      this.connection?.sendToSlot(slot, { t: 'rt-close', reason: 'connection-lost' });
+      this.onUpdate({ t: 'unregister' } as NetworkMessages, this.senderFor(peer));
+    });
+  };
+
   private releaseSilentPeers = () => {
     const now = Date.now();
     this.lastHeardAt.forEach((heardAt, peer) => {
@@ -229,6 +263,7 @@ export class RealtimeServerTransport extends Listener<[NetworkMessages, SenderIn
     this.peerBySlot.clear();
     this.lastHeardAt.clear();
     this.pendingHellos.clear();
+    this.unboundSlotClosedAt.clear();
   };
 
   public getCurrentPing = () => this.latency;
