@@ -7,6 +7,7 @@ import useBreakpoint from '~/modules/hooks/use-breakpoint';
 import { useRemoteMicsAvailable } from '~/modules/remote-mic/no-remote-mics';
 import FullscreenButton from '~/modules/toolbar/fullscreen';
 import QRCodeModal from '~/modules/toolbar/qr-code-modal';
+import VolumeMixer from '~/modules/toolbar/volume-mixer';
 import { KeyboardHelpContext } from '~/routes/keyboard-help/keyboard-help-context';
 import { KeyboardHelpVisibilitySetting, useSettingValue } from '~/routes/settings/settings-state';
 
@@ -36,6 +37,7 @@ function Toolbar({ children }: PropsWithChildren) {
         className="text-default z-toolbar fixed top-0 right-0 m-0 flex cursor-pointer items-center gap-1 pt-2 pr-2"
         style={toolbarStyle}>
         {children}
+        <VolumeMixer size={size} />
         {hasContent && (
           <Tooltip title="Toggle help" place="bottom-end">
             <Button

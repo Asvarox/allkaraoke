@@ -1,0 +1,300 @@
+#ARTIST:Nightwish
+#TITLE:Dark Chest Of Wonders
+#CREATOR:ultrastarsongs
+#BPM:285,05
+#YEAR:2004
+#VIDEO:v=5_5e8bW2cOY
+#LANGUAGE:English
+#GAP:3,776530433257335
+#ALLKARAOKE_ID:nightwish-dark-chest-of-wonders
+#ALLKARAOKE_SID:6690
+#ALLKARAOKE_LASTUPDATE:2026-10-19T02:39:10.135Z
+#ALLKARAOKE_ARTISTORIGIN:FI
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=1314
+#ALLKARAOKE_REALBPM:189
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=3850
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:269
+#MP3:Nightwish - Dark Chest Of Wonders.mp3
+F 10 8 26 Once 
+F 32 2 26 I 
+F 35 2 26 had 
+F 38 2 26 a 
+F 41 5 26 dream
+- 46
+F 52 3 26 And 
+F 58 2 26 this 
+F 62 2 26 is 
+F 66 4 26 it
+- 70 1122
+- 1122
+: 1141 5 19 Pa 
+: 1153 5 18 Pa
+- 1158 1170
+- 1170
+: 1189 6 19 Once 
+: 1201 6 19 there 
+: 1213 6 18 was
+- 1219
+: 1237 5 19 A 
+: 1249 5 19 child’s 
+: 1261 6 18 dream
+- 1267
+: 1285 3 4 One 
+: 1291 4 4 night 
+: 1297 2 2 the 
+: 1301 4 7 clock 
+: 1309 3 4 struck 
+: 1315 4 2 twelve
+- 1319
+: 1321 2 0 The 
+: 1327 4 9 win
+: 1333 2 9 dow 
+: 1337 5 9 o
+: 1345 3 7 pen 
+* 1351 23 7 wide
+- 1374
+: 1381 4 19 Once 
+: 1393 6 19 there 
+: 1405 4 18 was
+- 1409 1410
+- 1410
+: 1429 5 19 A 
+: 1441 6 19 child’s 
+: 1453 6 18 heart
+- 1459
+: 1477 4 4 The 
+: 1483 3 4 age 
+: 1489 2 2 I 
+: 1493 6 7 learned 
+: 1501 2 4 to 
+: 1507 4 2 fly
+- 1511
+: 1513 3 0 And 
+: 1519 3 12 took 
+: 1525 2 12 a 
+: 1529 5 12 step 
+: 1537 4 14 out
+* 1545 26 14 side
+- 1571 1842
+- 1842
+: 1861 4 19 Once 
+: 1873 5 19 I 
+: 1885 5 18 knew
+- 1890 1891
+- 1891
+: 1910 5 19 All 
+: 1922 5 19 the 
+: 1933 6 18 tales
+- 1939
+: 1957 3 4 It’s 
+: 1963 3 4 time 
+: 1969 2 2 to 
+: 1973 6 7 turn 
+: 1981 3 4 back 
+: 1987 4 2 time
+- 1991
+: 1993 3 0 Fol
+: 1999 5 9 low 
+: 2005 2 9 the 
+: 2009 5 9 pale 
+: 2017 10 7 moon
+: 2029 16 7 light
+- 2045
+: 2053 5 19 Once 
+: 2065 6 19 I 
+: 2077 4 18 wished
+- 2081 2082
+- 2082
+: 2101 6 19 For 
+: 2113 4 19 this 
+: 2125 5 18 night
+- 2130
+: 2149 3 4 Faith 
+: 2155 4 4 brought 
+: 2161 2 2 me 
+: 2165 6 7 here
+- 2171
+: 2173 3 4 It’s 
+: 2179 4 2 time 
+: 2185 2 0 to 
+: 2191 3 12 cut 
+: 2197 2 12 the 
+: 2201 6 12 rope 
+: 2209 2 14 and
+- 2211
+: 2215 7 14 Fly 
+: 2225 6 11 to 
+: 2233 3 7 a 
+: 2239 21 9 dream
+- 2260
+: 2263 4 12 Far 
+: 2269 2 11 a
+: 2273 3 9 cross 
+: 2281 2 7 the 
+: 2287 15 4 sea
+- 2302
+: 2311 4 7 All 
+: 2317 2 6 the 
+: 2321 6 4 bur
+: 2329 3 7 dens 
+: 2335 13 5 gone
+- 2348
+: 2353 3 6 O
+: 2359 4 12 pen 
+: 2365 2 12 the 
+: 2369 4 12 chest 
+: 2377 8 11 once 
+: 2389 13 12 more
+- 2402
+* 2408 6 12 Dark 
+: 2417 4 11 chest 
+: 2425 4 7 of 
+: 2431 8 11 won
+: 2443 6 9 ders
+- 2449
+: 2456 6 12 Seen 
+: 2465 5 11 through 
+: 2473 3 7 the 
+: 2479 14 9 eyes
+- 2493
+: 2503 4 14 Of 
+* 2509 2 16 the 
+: 2513 4 14 one 
+: 2521 3 9 with 
+: 2527 19 12 pure 
+: 2551 15 11 heart
+- 2566
+: 2575 20 12 Once 
+: 2600 6 12 so 
+: 2609 6 14 long 
+: 2617 3 16 a
+* 2623 39 14 go
+- 2662 3267
+- 3267
+: 3286 7 3 The 
+: 3296 20 2 one 
+: 3319 9 6 in 
+: 3331 10 7 the 
+: 3343 17 12 Big 
+: 3365 13 11 Blue
+- 3378
+: 3379 6 12 Is 
+: 3391 13 11 what 
+: 3409 4 11 the 
+: 3415 10 9 wo
+: 3427 8 11 rld 
+: 3439 17 9 stole 
+: 3463 9 7 from 
+: 3475 10 6 me
+- 3485
+: 3499 7 4 This 
+: 3512 9 6 night 
+: 3524 7 7 will 
+: 3536 16 12 bring 
+: 3560 11 14 hi
+: 3572 6 12 m 
+: 3583 17 16 back 
+* 3608 10 18 to
+: 3620 8 16 ~ 
+: 3632 17 16 me
+: 3651 3 14 ~
+: 3655 22 12 ~
+- 3677 4068
+- 4068
+: 4087 6 13 Fly 
+: 4097 5 12 to 
+: 4105 2 8 a 
+: 4111 19 10 dream
+- 4130
+* 4135 4 13 Far 
+: 4141 2 12 a
+: 4145 4 10 cross 
+: 4153 2 8 the 
+: 4159 16 5 sea
+- 4175
+: 4184 4 8 All 
+: 4190 2 7 the 
+: 4193 7 5 bur
+: 4202 3 8 dens 
+: 4208 13 6 gone
+- 4221
+: 4226 3 7 O
+: 4232 3 13 pen 
+: 4237 2 13 the 
+: 4241 4 13 chest 
+: 4249 8 12 once 
+* 4262 11 13 more
+- 4273
+: 4280 6 13 Dark 
+: 4289 4 12 chest 
+: 4297 4 8 of 
+: 4303 9 12 won
+: 4315 6 10 ders
+- 4321
+: 4329 6 13 Seen 
+: 4337 6 12 through 
+: 4345 2 8 the 
+: 4351 13 10 eyes
+- 4364
+: 4375 4 15 Of 
+: 4381 2 17 the 
+: 4385 5 15 one 
+: 4393 3 10 with 
+* 4399 20 13 pure 
+: 4423 17 12 heart
+- 4440
+: 4447 19 13 Once 
+: 4472 7 13 so 
+: 4481 6 15 long 
+: 4489 3 17 a
+: 4496 22 15 go
+- 4518
+: 4519 6 13 Fly 
+: 4529 6 12 to 
+: 4537 3 8 a 
+: 4543 21 10 dream
+- 4564
+: 4567 4 13 Far 
+: 4573 2 12 a
+: 4577 4 10 cross 
+: 4585 2 8 the 
+: 4592 14 5 sea
+- 4606
+: 4616 3 8 All 
+: 4621 2 7 the 
+: 4625 6 5 bur
+: 4633 3 8 dens 
+: 4639 11 6 gone
+- 4650
+: 4657 4 7 O
+: 4663 4 13 pen 
+: 4669 2 13 the 
+: 4673 4 13 chest 
+: 4681 8 12 once 
+: 4693 15 13 more
+- 4708
+* 4712 6 13 Dark 
+: 4721 4 12 chest 
+: 4729 3 8 of 
+: 4735 8 12 won
+: 4747 6 10 ders
+- 4753
+: 4760 6 13 Seen 
+: 4769 5 12 through 
+: 4777 3 8 the 
+: 4784 13 10 eyes
+- 4797
+: 4807 4 15 Of 
+* 4813 2 17 the 
+: 4817 5 15 one 
+: 4825 3 10 with 
+: 4831 20 13 pure 
+: 4855 16 12 heart
+- 4871
+: 4880 18 13 Once 
+: 4904 7 13 so 
+: 4913 5 15 long 
+: 4921 3 17 be
+* 4928 40 15 fore
+E

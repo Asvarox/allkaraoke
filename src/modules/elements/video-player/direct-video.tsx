@@ -1,5 +1,6 @@
 import { ComponentProps, useEffect, useImperativeHandle, useMemo, useRef, useState } from 'react';
 
+import { subscribeToMasterGain } from '~/modules/audio/master-volume';
 import { VideoState } from '~/modules/elements/video-player/video-state';
 import sleep from '~/modules/utils/sleep';
 
@@ -98,6 +99,14 @@ export default function DirectVideoPlayer({
     onReady?.();
     // eslint-disable-next-line react-hooks/exhaustive-deps -- once per mount, as with the YouTube player
   }, []);
+
+  useEffect(
+    () =>
+      subscribeToMasterGain((gain) => {
+        if (player.current) player.current.volume = gain;
+      }),
+    [],
+  );
 
   useEffect(() => {
     playerApi.setSize(width, height);

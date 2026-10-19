@@ -62,6 +62,10 @@ export const ExcludedLanguagesSetting = new Setting<string[] | null>('EXCLUDED_L
 export const MobilePhoneModeSetting = new Setting<boolean | null>('MOBILE_PHONE_MODE_KEY', null);
 export const KeyboardHelpVisibilitySetting = new Setting<boolean>('keyboard-help-visibility', true);
 
+/** Site-wide output level (0-1) and mute, applied on top of every effect, music track and video. */
+export const MasterVolumeSetting = new Setting<number>('master-volume', 1);
+export const MasterMutedSetting = new Setting<boolean>('master-muted', false);
+
 const initialInputLag = posthog.getFeatureFlagPayload?.(FeatureFlags.InitialInputLag);
 export const InputLagSetting = new Setting<milliseconds>(
   'INPUT_LAG_V2',

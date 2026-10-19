@@ -15,10 +15,6 @@ export class OnlineSetupPagePO {
     return this.page.getByTestId('create-room-button');
   }
 
-  public get joinExistingRoomButton() {
-    return this.page.getByTestId('join-existing-room-button');
-  }
-
   public get roomCodeInput() {
     return this.page.getByTestId('join-room-code-input');
   }
@@ -35,7 +31,7 @@ export class OnlineSetupPagePO {
     return this.page.getByTestId('online-join-rejected');
   }
 
-  /** Lands on the online mode entry screen, offering create/join. */
+  /** Lands on the online mode entry screen: open a room, or enter a code to join one. */
   public async goto() {
     await this.page.goto('/online/?e2e-test');
   }
@@ -72,7 +68,6 @@ export class OnlineSetupPagePO {
   }
 
   public async joinRoomByCode(roomCode: string) {
-    await this.joinExistingRoomButton.click();
     await this.roomCodeInput.fill(roomCode);
     await this.submitRoomCode();
   }

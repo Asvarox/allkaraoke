@@ -30,11 +30,6 @@ visual('Online mode', ['desktop'], async ({ page, context, browser, viewport, ma
   await expect(pages.onlineSetupPage.createRoomButton).toBeVisible();
   await makeScreenshot('choose-create-or-join');
 
-  await pages.onlineSetupPage.joinExistingRoomButton.click();
-  await expect(pages.onlineSetupPage.roomCodeInput).toBeVisible();
-  await makeScreenshot('enter-room-code');
-
-  await pages.onlineSetupPage.goBack();
   await pages.onlineSetupPage.createRoomButton.click();
   await expect(page.getByTestId('online-name-input')).toBeVisible();
   await makeScreenshot('enter-name');

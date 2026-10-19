@@ -67,11 +67,11 @@ test('Online mode: full game flow', async ({ page, context, browser }) => {
     await page.goto('/?e2e-test');
     await pages.landingPage.enterTheGame();
     await page.getByTestId('online').click();
-    // the landing screen offers exactly three choices — entering a code belongs to the join flow
+    // the landing screen opens a room, or joins one by the code typed right there
     await expect(pages.onlineSetupPage.createRoomButton).toBeVisible();
-    await expect(pages.onlineSetupPage.joinExistingRoomButton).toBeVisible();
+    await expect(pages.onlineSetupPage.roomCodeInput).toBeVisible();
+    await expect(pages.onlineSetupPage.joinRoomButton).toBeVisible();
     await expect(pages.onlineSetupPage.backButton).toBeVisible();
-    await expect(pages.onlineSetupPage.roomCodeInput).not.toBeVisible();
   });
 
   await test.step('Host opens a room via the name → mic → calibration wizard', async () => {
@@ -404,7 +404,7 @@ test('Online mode: join by code, host disconnect promotes the next-joined singer
     await expect(guestPage.getByText('This room does not exist')).toBeVisible();
   });
 
-  await test.step('Guest joins by entering the room code in the wizard', async () => {
+  await test.step('Guest joins by entering the room code on the online mode screen', async () => {
     await guestPages.onlineSetupPage.roomCodeInput.fill(roomCode);
     await guestPages.onlineSetupPage.submitRoomCode();
     await guestPages.onlineSetupPage.completeNameMicAndCalibrationSteps(guestName);

@@ -12,11 +12,14 @@ import halloweenWaitForReadinessSound from '~/assets/halloween/scary-music-box-f
 import menuBackSound from '~/assets/menu_back.mp3';
 import menuEnterSound from '~/assets/menu_enter.mp3';
 import menuNavigateSound from '~/assets/menu_navigate.mp3';
+import { getMasterGain, subscribeToMasterGain } from '~/modules/audio/master-volume';
 import { backgroundTheme } from '~/modules/elements/layout-with-background';
 import { BackgroundThemeSetting } from '~/routes/settings/settings-state';
 
 class Sound {
   private sound: HTMLAudioElement | null = null;
+  // Parallel copies still playing, kept so a master volume change reaches them too
+  private clones = new Set<HTMLAudioElement>();
   constructor(
     private options: {
       src: string;
@@ -28,17 +31,28 @@ class Sound {
     if (global.Audio) {
       this.sound = new Audio(options.src);
       this.sound.preload = options.preload ? 'auto' : 'none';
-      this.sound.volume = options.volume ?? 1;
+      this.sound.volume = this.getVolume();
       this.sound.loop = options.loop ?? false;
+      subscribeToMasterGain(() => {
+        if (this.sound) this.sound.volume = this.getVolume();
+        this.clones.forEach((clone) => (clone.volume = this.getVolume()));
+      });
     }
   }
+
+  private getVolume = () => (this.options.volume ?? 1) * getMasterGain();
 
   public play = async (parallel = true) => {
     try {
       if (parallel && this.playing()) {
         const clonedNode = this.sound?.cloneNode(true) as HTMLAudioElement;
-        await clonedNode.play();
-        clonedNode.remove();
+        clonedNode.volume = this.getVolume();
+        this.clones.add(clonedNode);
+        clonedNode.addEventListener('ended', () => this.clones.delete(clonedNode), { once: true });
+        await clonedNode.play().catch((error) => {
+          this.clones.delete(clonedNode);
+          throw error;
+        });
       } else {
         if (this.sound) {
           this.sound.currentTime = 0;
