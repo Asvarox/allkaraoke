@@ -501,7 +501,8 @@ jobs:
 
   deploy-branch:
     runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request'
+    # Fork PRs get no secrets, a maintainer deploys their preview with fork-preview.yml
+    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
     environment:
       name: prs
       url: ${{ steps.deploy-report.outputs.deployment-url }}
@@ -552,7 +553,8 @@ jobs:
 
   deploy-storybook-branch:
     runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request'
+    # Fork PRs get no secrets, a maintainer deploys their preview with fork-preview.yml
+    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
     needs: ['quick-checks']
     environment:
       name: storybook-prs

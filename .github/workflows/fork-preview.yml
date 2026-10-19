@@ -1,0 +1,95 @@
+name: Fork PR preview
+
+# Fork PRs get no secrets in CI/CD, so a maintainer deploys their preview by hand: review the PR
+# (wrangler.jsonc included), then run this with its number and the commit reviewed. The PR's code is
+# built without secrets; only the build output reaches the job holding the Cloudflare token.
+on:
+  workflow_dispatch:
+    inputs:
+      pr:
+        description: PR number
+        required: true
+        type: number
+      sha:
+        description: Commit you reviewed (the run fails if the PR has moved on since)
+        required: true
+        type: string
+
+permissions: {}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: refs/pull/${{ inputs.pr }}/head
+          persist-credentials: false
+      - name: Check the PR is at the reviewed commit
+        env:
+          SHA: ${{ inputs.sha }}
+        run: test "$(git rev-parse HEAD)" = "$(git rev-parse --verify "$SHA^{commit}")"
+      - name: Setup Node
+        uses: './.github/templates/setup-node'
+      - run: npx playwright install chromium
+        timeout-minutes: 3
+      - name: Build app
+        # Same build as deploy-branch in ci-improvement.yml, see there
+        run: CLOUDFLARE_ENV=pr pnpm build
+      - name: Build Storybook
+        run: pnpm build-storybook
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fork-preview
+          # Hidden files such as .dev.vars are left out by default
+          path: |
+            build
+            storybook-static
+          retention-days: 1
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write # preview comment
+    environment:
+      name: prs
+      url: ${{ steps.deploy-app.outputs.deployment-url }}
+    steps:
+      # master's code, for wrangler and wrangler.storybook.jsonc
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+      - name: Setup Node
+        uses: './.github/templates/setup-node'
+      - uses: actions/download-artifact@v5
+        with:
+          name: fork-preview
+      - name: Upload app to Cloudflare
+        id: deploy-app
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          # Same worker names as in-repo previews, so cleanup-pr-worker.yml deletes them
+          command: deploy --config=build/allkaraoke_party/wrangler.json --name=allkaraoke-party-pr-${{ inputs.pr }}
+      - name: Upload Storybook to Cloudflare
+        id: deploy-storybook
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy --config=wrangler.storybook.jsonc --name=allkaraoke-storybook-pr-${{ inputs.pr }}
+      - name: Comment the preview links
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ inputs.pr }}
+          SHA: ${{ inputs.sha }}
+          APP_URL: ${{ steps.deploy-app.outputs.deployment-url }}
+          STORYBOOK_URL: ${{ steps.deploy-storybook.outputs.deployment-url }}
+        run: |
+          gh pr comment "$PR" --repo "$GITHUB_REPOSITORY" \
+            --body "Preview of ${SHA:0:7}: [app]($APP_URL) · [Storybook]($STORYBOOK_URL)"
