@@ -19401,6 +19401,33 @@
     "local": false
   },
   {
+    "id": "basshunter-feat-dj-mental-theos-bazzheadz-now-youre-gone",
+    "title": "Now You’re Gone",
+    "artist": "Basshunter feat. DJ Mental Theo’s Bazzheadz",
+    "video": "vnuhOxHUHfE",
+    "language": [
+      "English"
+    ],
+    "bpm": 296,
+    "gap": 2926.4864864864867,
+    "year": "2007",
+    "lastUpdate": "2026-10-19T02:39:09.958Z",
+    "realBpm": 150,
+    "volume": 1,
+    "author": "IC",
+    "sourceUrl": "https://www.youtube.com/watch?v=IgFwiCApH7E",
+    "duration": 169,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6686,
+    "tracksCount": 1,
+    "search": "basshunterfeatdjmentaltheosbazzheadznowyouregone",
+    "local": false
+  },
+  {
     "id": "bastille-good-grief",
     "title": "Good Grief",
     "artist": "Bastille",
@@ -74686,6 +74713,34 @@
     "local": false
   },
   {
+    "id": "grimes-kill-v-maim",
+    "title": "Kill V. Maim",
+    "artist": "Grimes",
+    "video": "c2EJMd7ZN7w",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 24800,
+    "year": "2015",
+    "artistOrigin": "CA",
+    "lastUpdate": "2026-10-19T02:39:10.130Z",
+    "realBpm": 134,
+    "volume": 1,
+    "author": "REL",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=20480",
+    "duration": 278,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6687,
+    "tracksCount": 1,
+    "search": "grimeskillvmaim",
+    "local": false
+  },
+  {
     "id": "grimes-oblivion",
     "title": "Oblivion",
     "artist": "Grimes",
@@ -86297,6 +86352,34 @@
     "local": false
   },
   {
+    "id": "jean-jacques-goldman-je-marche-seul",
+    "title": "Je marche seul",
+    "artist": "Jean-Jacques Goldman",
+    "video": "5AS0wPLnAhY",
+    "language": [
+      "French"
+    ],
+    "bpm": 267.59,
+    "gap": 27721.993684367877,
+    "year": "1985",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-10-19T02:39:10.144Z",
+    "genre": "Pop",
+    "realBpm": 133,
+    "volume": 1,
+    "author": "Coolz",
+    "duration": 235,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6692,
+    "tracksCount": 1,
+    "search": "jeanjacquesgoldmanjemarcheseul",
+    "local": false
+  },
+  {
     "id": "jean-jacques-goldman-quand-tu-danses",
     "title": "Quand tu danses",
     "artist": "Jean-Jacques Goldman",
@@ -91170,6 +91253,33 @@
     "shortId": 2201,
     "tracksCount": 1,
     "search": "joydivisionlovewilltearusapart",
+    "local": false
+  },
+  {
+    "id": "jp-saxe-feat-julia-michaels-if-the-world-was-ending",
+    "title": "If The World Was Ending",
+    "artist": "JP Saxe feat. Julia Michaels",
+    "video": "1jO2wSpAoxA",
+    "language": [
+      "English"
+    ],
+    "bpm": 299.65,
+    "gap": 26378.831970632404,
+    "year": "2019",
+    "lastUpdate": "2026-10-19T02:39:09.400Z",
+    "realBpm": 75,
+    "volume": 1,
+    "author": "lava",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=26113",
+    "duration": 239,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6684,
+    "tracksCount": 1,
+    "search": "jpsaxefeatjuliamichaelsiftheworldwasending",
     "local": false
   },
   {
@@ -113248,6 +113358,34 @@
     "local": false
   },
   {
+    "id": "madonna-ill-remember",
+    "title": "I’ll Remember",
+    "artist": "Madonna",
+    "video": "R0cfZczo4yk",
+    "language": [
+      "English"
+    ],
+    "bpm": 336,
+    "gap": 12467.857142857143,
+    "year": "1994",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-19T02:39:10.132Z",
+    "genre": "Pop",
+    "realBpm": 77,
+    "volume": 1,
+    "author": "Coppolatte",
+    "duration": 248,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6688,
+    "tracksCount": 1,
+    "search": "madonnaillremember",
+    "local": false
+  },
+  {
     "id": "madonna-jump",
     "title": "Jump",
     "artist": "Madonna",
@@ -131981,6 +132119,35 @@
     "local": false
   },
   {
+    "id": "nightwish-dark-chest-of-wonders",
+    "title": "Dark Chest Of Wonders",
+    "artist": "Nightwish",
+    "video": "5_5e8bW2cOY",
+    "language": [
+      "English"
+    ],
+    "bpm": 285.05,
+    "gap": 3.776530433257335,
+    "year": "2004",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-10-19T02:39:10.135Z",
+    "realBpm": 189,
+    "volume": 1,
+    "author": "ultrastarsongs",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=1314",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=3850",
+    "duration": 269,
+    "tracks": [
+      {
+        "start": 10
+      }
+    ],
+    "shortId": 6690,
+    "tracksCount": 1,
+    "search": "nightwishdarkchestofwonders",
+    "local": false
+  },
+  {
     "id": "nightwish-dead-gardens",
     "title": "Dead Gardens",
     "artist": "Nightwish",
@@ -132479,6 +132646,39 @@
     "shortId": 6610,
     "tracksCount": 1,
     "search": "nightwishthekinslayer",
+    "local": false
+  },
+  {
+    "id": "nightwish-the-phantom-of-the-opera",
+    "title": "The Phantom Of The Opera",
+    "artist": "Nightwish",
+    "video": "n1G5WiMoRjw",
+    "language": [
+      "English"
+    ],
+    "bpm": 263.8,
+    "gap": 24936.497346474604,
+    "year": "2002",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-10-19T02:39:10.140Z",
+    "genre": "Symphonic Metal",
+    "realBpm": 136,
+    "volume": 1,
+    "author": "Mooballs2",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=58357",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=14866",
+    "duration": 249,
+    "tracks": [
+      {
+        "start": 721
+      },
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6691,
+    "tracksCount": 2,
+    "search": "nightwishthephantomoftheopera",
     "local": false
   },
   {
@@ -142634,6 +142834,34 @@
     "shortId": 3483,
     "tracksCount": 1,
     "search": "pnkletsgetthispartystarted",
+    "local": false
+  },
+  {
+    "id": "pnk-raise-your-glass",
+    "title": "Raise Your Glass",
+    "artist": "P!nk",
+    "video": "XjVNlG5cZyQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 244,
+    "gap": 6996.393442622951,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-19T02:39:09.956Z",
+    "genre": "Rock",
+    "realBpm": 122,
+    "volume": 1,
+    "author": "michas17j",
+    "duration": 203,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6685,
+    "tracksCount": 1,
+    "search": "pnkraiseyourglass",
     "local": false
   },
   {
@@ -163520,6 +163748,34 @@
     "local": false
   },
   {
+    "id": "sombr-12-to-12",
+    "title": "12 to 12",
+    "artist": "sombr",
+    "video": "cZgUiR31m-Y",
+    "language": [
+      "English"
+    ],
+    "bpm": 248,
+    "gap": 20031.774193548386,
+    "year": "2025",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-19T02:39:10.134Z",
+    "genre": "Indie, Alternative",
+    "realBpm": 124,
+    "volume": 1,
+    "author": "Dragon33",
+    "duration": 243,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6689,
+    "tracksCount": 1,
+    "search": "sombr12to12",
+    "local": false
+  },
+  {
     "id": "sombr-back-to-friends",
     "title": "back to friends",
     "artist": "sombr",
@@ -170816,6 +171072,35 @@
     "shortId": 4194,
     "tracksCount": 1,
     "search": "taylorswiftcardigan",
+    "local": false
+  },
+  {
+    "id": "taylor-swift-champagne-problems",
+    "title": "champagne problems",
+    "artist": "Taylor Swift",
+    "video": "wMpqCRF7TKg",
+    "language": [
+      "English"
+    ],
+    "bpm": 342,
+    "gap": 22521.22807017544,
+    "year": "2020",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-19T02:39:10.146Z",
+    "genre": "Folk Pop",
+    "realBpm": 171,
+    "volume": 1,
+    "author": "hugamuga",
+    "sourceUrl": "https://www.youtube.com/watch?v=wMpqCRF7TKg",
+    "duration": 248,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6693,
+    "tracksCount": 1,
+    "search": "taylorswiftchampagneproblems",
     "local": false
   },
   {

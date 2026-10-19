@@ -1,7 +1,7 @@
 {
   "artists": [
-    "Lady Gaga",
     "Taylor Swift",
+    "Lady Gaga",
     "Green Day",
     "Linkin Park",
     "Britney Spears",
@@ -11,21 +11,21 @@
     "Queen",
     "Take That",
     "The Beatles",
+    "Nightwish",
     "System of a Down",
     "Girls Aloud",
     "Imagine Dragons",
-    "Nightwish",
     "One Direction",
     "ABBA",
     "My Chemical Romance",
     "Nirvana",
     "Rihanna",
     "Fall Out Boy",
+    "Madonna",
     "Bee Gees",
     "Billie Eilish",
     "Elton John",
     "Ghost",
-    "Madonna",
     "Muse",
     "Disturbed",
     "Foo Fighters",
@@ -112,6 +112,7 @@
     "★N Sync",
     "Nickelback",
     "Phil Collins",
+    "P!nk",
     "Sabrina Carpenter",
     "Sean Paul",
     "Selena Gomez",
@@ -138,7 +139,6 @@
     "Jonathan Coulton",
     "Nicki Minaj",
     "OneRepublic",
-    "P!nk",
     "Robbie Williams",
     "Shakira",
     "Shania Twain",
@@ -190,9 +190,10 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 6682,
-  "generatedAt": "2026-10-17T02:26:19.747Z",
+  "songs": 6692,
+  "generatedAt": "2026-10-19T02:39:36.584Z",
   "additionsPerDay": {
+    "2026-10-19": 10,
     "2026-10-17": 19,
     "2026-10-15": 28,
     "2026-10-14": 10,
@@ -234,6 +235,76 @@
     "2026-08-23": 30
   },
   "recentlyAdded": [
+    {
+      "id": "taylor-swift-champagne-problems",
+      "artist": "Taylor Swift",
+      "title": "champagne problems",
+      "video": "wMpqCRF7TKg",
+      "addedAt": "2026-10-19T02:39:10.146Z"
+    },
+    {
+      "id": "jean-jacques-goldman-je-marche-seul",
+      "artist": "Jean-Jacques Goldman",
+      "title": "Je marche seul",
+      "video": "5AS0wPLnAhY",
+      "addedAt": "2026-10-19T02:39:10.144Z"
+    },
+    {
+      "id": "nightwish-the-phantom-of-the-opera",
+      "artist": "Nightwish",
+      "title": "The Phantom Of The Opera",
+      "video": "n1G5WiMoRjw",
+      "addedAt": "2026-10-19T02:39:10.140Z"
+    },
+    {
+      "id": "nightwish-dark-chest-of-wonders",
+      "artist": "Nightwish",
+      "title": "Dark Chest Of Wonders",
+      "video": "5_5e8bW2cOY",
+      "addedAt": "2026-10-19T02:39:10.135Z"
+    },
+    {
+      "id": "sombr-12-to-12",
+      "artist": "sombr",
+      "title": "12 to 12",
+      "video": "cZgUiR31m-Y",
+      "addedAt": "2026-10-19T02:39:10.134Z"
+    },
+    {
+      "id": "madonna-ill-remember",
+      "artist": "Madonna",
+      "title": "I’ll Remember",
+      "video": "R0cfZczo4yk",
+      "addedAt": "2026-10-19T02:39:10.132Z"
+    },
+    {
+      "id": "grimes-kill-v-maim",
+      "artist": "Grimes",
+      "title": "Kill V. Maim",
+      "video": "c2EJMd7ZN7w",
+      "addedAt": "2026-10-19T02:39:10.130Z"
+    },
+    {
+      "id": "basshunter-feat-dj-mental-theos-bazzheadz-now-youre-gone",
+      "artist": "Basshunter feat. DJ Mental Theo’s Bazzheadz",
+      "title": "Now You’re Gone",
+      "video": "vnuhOxHUHfE",
+      "addedAt": "2026-10-19T02:39:09.958Z"
+    },
+    {
+      "id": "pnk-raise-your-glass",
+      "artist": "P!nk",
+      "title": "Raise Your Glass",
+      "video": "XjVNlG5cZyQ",
+      "addedAt": "2026-10-19T02:39:09.956Z"
+    },
+    {
+      "id": "jp-saxe-feat-julia-michaels-if-the-world-was-ending",
+      "artist": "JP Saxe feat. Julia Michaels",
+      "title": "If The World Was Ending",
+      "video": "1jO2wSpAoxA",
+      "addedAt": "2026-10-19T02:39:09.400Z"
+    },
     {
       "id": "3-doors-down-loser",
       "artist": "3 Doors Down",
@@ -499,76 +570,6 @@
       "title": "Radio",
       "video": "LR__DRBbnZw",
       "addedAt": "2026-10-15T02:37:32.817Z"
-    },
-    {
-      "id": "magic-box-if-you-original",
-      "artist": "Magic Box",
-      "title": "If You (Original)",
-      "video": "XVlPh3SNmaM",
-      "addedAt": "2026-10-15T02:37:32.599Z"
-    },
-    {
-      "id": "brown-eyed-girls-abracadabra",
-      "artist": "Brown Eyed Girls",
-      "title": "Abracadabra",
-      "video": "ofwFr8o8p0Y",
-      "addedAt": "2026-10-15T02:37:32.419Z"
-    },
-    {
-      "id": "epic-the-musical-jorge-rivera-herrans-cast-of-epic-different-beast",
-      "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Cast of EPIC)",
-      "title": "Different Beast",
-      "video": "6sDviM1VPa0",
-      "addedAt": "2026-10-15T02:37:32.416Z"
-    },
-    {
-      "id": "bic-runga-sway",
-      "artist": "Bic Runga",
-      "title": "Sway",
-      "video": "MUJNf4JPq3I",
-      "addedAt": "2026-10-15T02:37:32.413Z"
-    },
-    {
-      "id": "william-i-got-it-from-my-mama",
-      "artist": "will.i.am",
-      "title": "I Got It From My Mama",
-      "video": "XomQLhjCYYk",
-      "addedAt": "2026-10-15T02:37:32.409Z"
-    },
-    {
-      "id": "sakanaction-kaijuu",
-      "artist": "Sakanaction",
-      "title": "Kaijuu",
-      "video": "xY_sRDAWQyg",
-      "addedAt": "2026-10-15T02:37:32.222Z"
-    },
-    {
-      "id": "lorie-je-serai-ta-meilleure-amie",
-      "artist": "Lorie",
-      "title": "Je serai (ta meilleure amie)",
-      "video": "pOMmS27LY1g",
-      "addedAt": "2026-10-15T02:37:31.642Z"
-    },
-    {
-      "id": "o-zone-de-ce-plang-chitarele",
-      "artist": "O-Zone",
-      "title": "De ce plang chitarele",
-      "video": "dFYHz6fMAT4",
-      "addedAt": "2026-10-15T02:37:31.639Z"
-    },
-    {
-      "id": "flyleaf-again",
-      "artist": "Flyleaf",
-      "title": "Again",
-      "video": "KbdCeWoEH1U",
-      "addedAt": "2026-10-15T02:37:31.632Z"
-    },
-    {
-      "id": "tennis-runner",
-      "artist": "Tennis",
-      "title": "Runner",
-      "video": "Z6kNQEzQJpA",
-      "addedAt": "2026-10-14T02:57:52.892Z"
     }
   ]
 }
