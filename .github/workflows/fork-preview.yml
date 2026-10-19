@@ -83,13 +83,10 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: deploy --config=wrangler.storybook.jsonc --name=allkaraoke-storybook-pr-${{ inputs.pr }}
+      # Replaces the instructions from fork-preview-instructions.yml until the next push
       - name: Comment the preview links
-        env:
-          GH_TOKEN: ${{ github.token }}
-          PR: ${{ inputs.pr }}
-          SHA: ${{ inputs.sha }}
-          APP_URL: ${{ steps.deploy-app.outputs.deployment-url }}
-          STORYBOOK_URL: ${{ steps.deploy-storybook.outputs.deployment-url }}
-        run: |
-          gh pr comment "$PR" --repo "$GITHUB_REPOSITORY" \
-            --body "Preview of ${SHA:0:7}: [app]($APP_URL) · [Storybook]($STORYBOOK_URL)"
+        uses: './.github/templates/fork-preview-comment'
+        with:
+          pr: ${{ inputs.pr }}
+          body: |
+            **Preview** of ${{ inputs.sha }}: [app](${{ steps.deploy-app.outputs.deployment-url }}) · [Storybook](${{ steps.deploy-storybook.outputs.deployment-url }})
