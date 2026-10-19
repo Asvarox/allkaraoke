@@ -58,6 +58,10 @@ export default function KeyboardHelpView({ help }: Props) {
                 </Section>
               );
             })}
+            <Section className="[view-transition-name:help-view-mute]">
+              <SectionKeys>{ShiftLetter('m')()}</SectionKeys>
+              <SectionHelp>Mute / unmute</SectionHelp>
+            </Section>
             <Section className="[view-transition-name:help-view-toggle]">
               <SectionKeys>{ShiftLetter('h')()}</SectionKeys>
               <SectionHelp>Toggle this help</SectionHelp>
