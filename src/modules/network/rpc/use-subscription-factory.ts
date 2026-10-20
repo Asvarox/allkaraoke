@@ -8,8 +8,7 @@ import { AnySubscriptionChannels } from './types';
  * instead of rendering empty and catching up one state update later. Each feature (remote-mic,
  * online) creates the hook once for its own manager.
  *
- * Lives apart from the manager itself so the transport core stays React-free — the server side of
- * it is bundled into the PartyKit worker. */
+ * Lives apart from the manager itself so the transport core stays React-free. */
 export const createSubscriptionHook = <TChannels extends AnySubscriptionChannels>(
   manager: ClientSubscriptionManager<TChannels>,
 ) =>

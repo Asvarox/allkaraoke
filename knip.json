@@ -1,12 +1,6 @@
 {
   "$schema": "https://unpkg.com/knip@5/schema.json",
-  "entry": [
-    "peer-js-server.js",
-    "src/main.tsx",
-    "vite-plugin-html-prerender/src/**/*.ts",
-    "scripts/**/*.ts",
-    "tests/fake-sfu/server.mts"
-  ],
+  "entry": ["src/main.tsx", "vite-plugin-html-prerender/src/**/*.ts", "scripts/**/*.ts", "tests/fake-sfu/server.mts"],
   "project": [
     "src/**/*.{js,jsx,ts,tsx}",
     "vite-plugin-html-prerender/src/**/*.ts",
@@ -16,8 +10,6 @@
   ],
   "ignore": [
     "src/modules/game-engine/input/mic-strategies/yin.ts",
-    "src/modules/remote-mic/network/client/transport/peer-js-client.ts",
-    "src/modules/remote-mic/network/server/transport/peer-js-server.ts",
     "src/modules/songs/utils/song-fixture.ts",
     "src/modules/hooks/use-callback-debugger.ts",
     "src/modules/hooks/use-effect-debugger.ts",
@@ -26,7 +18,6 @@
     "src/modules/utils/render-test-canvas.tsx",
     "src/modules/utils/delay-promise.ts",
     "src/modules/utils/iso-code-to-country.ts",
-    "src/modules/utils/peer-js-options.ts",
     "src/modules/utils/test-utils.ts",
     "src/modules/utils/use-feature-flag.ts",
     "src/routes/sing-a-song/song-selection/hooks/use-playlists-eurovision.tsx",
@@ -70,7 +61,6 @@
     "@iconify-json/mdi",
     "vite-tsconfig-paths",
     "@mui/system",
-    "peerjs",
     "tailwindcss-motion",
     "html-minifier",
     "@cloudflare/workers-types",

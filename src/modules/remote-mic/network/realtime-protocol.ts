@@ -2,9 +2,8 @@
 import { RealtimeService } from '../../network/realtime/protocol';
 
 /**
- * A game code's lead letter names its transport (`k` PartyKit, `w` WebSockets); `r` is the Realtime
- * one. The game is always the host of its room and the phones are its members, so a remote-mic room
- * never hands the host role to anybody else.
+ * Every game code starts with `r`. The game is always the host of its room and the phones are its
+ * members, so a remote-mic room never hands the host role to anybody else.
  */
 export const REMOTE_MIC_ROOM_CODE_LEAD = 'r';
 export const REMOTE_MIC_ROOM_CODE_PATTERN = /^r[a-z]{4}$/;

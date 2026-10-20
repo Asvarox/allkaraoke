@@ -27,7 +27,7 @@ Also read `docs/plans/2026-07-05-online-mode.md` for the design intent behind on
    centralization, the RPC-core generalization (`RpcSenderInterface`, `RpcClientTransport`,
    `AnySubscriptionChannels`, generic `ClientSubscriptionManager`), `WizardChecklist` in `akui`, and
    the `cameraEnabled` / `skipIntroEnabled` / `onSkipIntro` props on the local singing components.
-   Several findings are about *finishing* these, not replacing them.
+   Several findings are about _finishing_ these, not replacing them.
 3. **Preserve every `data-test` attribute and its value.** The Playwright suite selects on them.
    If a refactor genuinely requires renaming one, update `tests/` in the same change and say so.
 4. **Keep the deliberate asymmetries** the report calls out — e.g. in finding 2.5, the remote mic
@@ -89,7 +89,7 @@ you're done.
 Owns: `src/modules/online/protocol/room-logic.ts` only (`room-logic.test.ts` is read-only for you —
 it is your safety net; if a test needs changing, that is a signal you changed behaviour, so stop and
 report).
-For 3.2, where the three reset sites currently clear *different* subsets of state, make each
+For 3.2, where the three reset sites currently clear _different_ subsets of state, make each
 difference an explicit option on the shared helper rather than silently unifying them.
 
 **Group E — subscription hooks** (finding 2.7)
@@ -145,6 +145,7 @@ decide the module move as a separate commit from the `PingPongTracker` /
 ### Wave 4 — sequential cleanup (single agent)
 
 **Group K** (findings 4.3, then 3.4)
+
 - 4.3: delete the `MAX_PLAYERS` re-export at `players-manager.ts:14` and the `ONLINE_MAX_PLAYERS`
   re-export at `online/protocol/consts.ts:3`, repointing all importers at
   `~/modules/players/player-number`.
