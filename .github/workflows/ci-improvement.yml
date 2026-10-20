@@ -120,13 +120,13 @@ jobs:
               issue_number,
               per_page: 100,
             });
-            // Every match is removed: overlapping runs or re-runs can each leave a comment behind
+            // Every match is removed: overlapping runs or re-runs can each leave a comment behind.
+            // Settled rather than awaited in turn, so one already-deleted comment (404) can't stop the rest
             const existing = comments.filter((comment) => comment.body?.includes(marker));
-            const deleteExisting = async () => {
-              for (const comment of existing) {
-                await github.rest.issues.deleteComment({ owner, repo, comment_id: comment.id });
-              }
-            };
+            const deleteExisting = () =>
+              Promise.allSettled(
+                existing.map((comment) => github.rest.issues.deleteComment({ owner, repo, comment_id: comment.id })),
+              );
 
             const results = {
               'E2E tests': process.env.E2E_RESULT,
