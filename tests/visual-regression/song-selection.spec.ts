@@ -29,6 +29,10 @@ visual('Song selection', async ({ page, context, browser, makeScreenshot }) => {
   await songListPage.openPreviewForSong(songID);
   await expect(page.getByTestId('game-mode-setting')).toBeVisible();
   // Phones open the board's tab first, the rest show it beside the players
-  await expect(page.getByTestId('song-preview-leaderboard-row').first()).toBeVisible();
+  const firstRow = page.getByTestId('song-preview-leaderboard-row').first();
+  await expect(firstRow).toBeVisible();
+  // The list's scroll fade and arrow sometimes miss the rows' final layout - a scroll event re-checks
+  // its edges, so the shot doesn't flip between the faded and unfaded list from run to run
+  await firstRow.locator('..').evaluate((list) => list.dispatchEvent(new Event('scroll')));
   await makeScreenshot('preview');
 });
