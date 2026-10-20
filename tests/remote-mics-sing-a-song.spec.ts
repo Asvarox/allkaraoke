@@ -55,7 +55,7 @@ test('Remote mic should connect, be selectable and control the game', async ({ b
     await pages.landingPage.enterTheGame();
     await pages.mainMenuPage.goToInputSelectionPage();
     await pages.inputSelectionPage.selectSmartphones();
-    await expect(page.getByTestId('game-code')).toHaveText(/^r/i);
+    await expect(page.getByTestId('game-code')).toHaveText(/^[a-z]{5}$/i);
   });
 
   await test.step('Connect remoteMics - after entering players names, they should be visible properly in inputs', async () => {

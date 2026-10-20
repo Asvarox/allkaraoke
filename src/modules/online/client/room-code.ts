@@ -10,5 +10,5 @@ export const generateOnlineRoomCode = (): string => {
 };
 
 /** Whether a typed code is an online room code — its lead digit tells it apart from a remote-mic
- * game code, which always starts with its transport letter. */
+ * game code, which is letters only. */
 export const isOnlineRoomCode = (code: string): boolean => P2P_ROOM_CODE_PATTERN.test(code.trim().toLowerCase());

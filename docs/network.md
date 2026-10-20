@@ -20,7 +20,7 @@ NetworkClient                          NetworkServer
 
 The connection is provided by a transport adapter behind `ClientTransport` / `ServerTransport`. The only
 one is **Realtime** (`realtime-client.ts` / `realtime-server.ts`): Cloudflare Realtime SFU data
-channels. Every game code starts with `r`.
+channels. Game codes are letters only, so they never clash with digit-led online room codes.
 
 ### Realtime
 

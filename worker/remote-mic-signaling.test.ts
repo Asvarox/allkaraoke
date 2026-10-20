@@ -47,10 +47,11 @@ describe('remote-mic signaling', () => {
     expect((await createChannels(envWith(game), 'rabcd', [{ name: 'slot-16' }])).status).toBe(403);
   });
 
-  it('only serves Realtime game codes', async () => {
-    // An online room code belongs to the other directory; old non-`r` codes never reach one
+  it('only serves remote-mic game codes', async () => {
+    // An online room code belongs to the other directory; game codes are letters only
     expect((await createChannels(envWith(game), '2abcd', [{ name: 'room' }])).status).toBe(400);
-    expect((await createChannels(envWith(game), 'kabcd', [{ name: 'room' }])).status).toBe(400);
+    expect((await createChannels(envWith(game), 'ab3cd', [{ name: 'room' }])).status).toBe(400);
+    expect((await createChannels(envWith(game), 'abcdef', [{ name: 'room' }])).status).toBe(400);
   });
 
   it('leaves online mode’s paths alone', async () => {
