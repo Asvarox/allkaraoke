@@ -14,9 +14,7 @@ test('Should draw a proper note when it is shorter than minimum', async () => {
   drawPlayerNote(ctx, 50, 10, 30, 0, true, playerNote);
   drawPlayerNote(ctx, 120, 10, 50, 0, true, playerNote);
 
-  await expect
-    .element(locator)
-    .toMatchScreenshot('short-note', { comparatorOptions: { allowedMismatchedPixelRatio: 0.005 } });
+  await expect.element(locator).toMatchScreenshot('short-note');
 });
 
 test('Should draw multiple notes', async () => {
@@ -28,7 +26,5 @@ test('Should draw multiple notes', async () => {
   drawPlayerNote(ctx, 10, 10, 130, 0, true, playerNote);
   drawPlayerNote(ctx, 20, 80, 130, 1, true, playerNote);
 
-  await expect
-    .element(locator)
-    .toMatchScreenshot('multiple-notes', { comparatorOptions: { allowedMismatchedPixelRatio: 0.005 } });
+  await expect.element(locator).toMatchScreenshot('multiple-notes');
 });

@@ -26,5 +26,8 @@ visual('Edit song', async ({ page, context, makeScreenshot }) => {
 
   await page.getByTestId('next-button').click();
   await expect(page.getByTestId('song-metadata')).toBeVisible();
-  await makeScreenshot('metadata');
+  // The final volume is synced from the embedded YouTube player, real remote content (hidden too)
+  await makeScreenshot('metadata', {
+    extraMasks: [page.getByText(/^Final Song Volume/), page.getByTestId('volume')],
+  });
 });

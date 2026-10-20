@@ -2,10 +2,9 @@
 
 name: reset-snapshot-baseline
 description: >-
-  Resets the git index's screenshot references under snapshotDir to the PR's target branch and removes
-  them from the working tree, so that a following snapshot-updating test run (Playwright `-u`, Vitest
-  browser mode `--update`) re-renders every one of them from scratch and upload-changed-snapshots
-  reports the full diff against the target branch.
+  Resets the committed screenshot references under snapshotDir to the PR's target branch, so that a
+  following snapshot-updating test run (Playwright `-u`, Vitest browser mode `--update`) and
+  upload-changed-snapshots always report the full diff against the target branch.
 
 inputs:
   snapshotDir:
@@ -60,12 +59,9 @@ runs:
       # - without this, resetting+not-regenerating those other variants would
       # silently revert any legitimate update to them.
       #
-      # Only the index is restored from the target branch - the working tree
-      # is left without references, so the test run writes a fresh render of
-      # every screenshot instead of keeping the old one whenever the new render
-      # is within the comparator's tolerance (which would hide small changes).
-      # Files the PR added (absent from the target branch) read as new, even
-      # if an earlier run on this branch already auto-committed them.
+      # Files the PR added (absent from the target branch) stay gone until
+      # Playwright re-renders them, so they always read as new - even if an
+      # earlier run on this branch already auto-committed them.
       #
       # The checkout's expected "no match" case (target branch has no
       # qualifying files here) is tolerated; any other failure - bad pathspec,
@@ -94,12 +90,12 @@ runs:
           fi
         fi
 
-        # One `git restore` call per pattern, not one call with all patterns:
-        # unlike `git rm --ignore-unmatch`, restore fails (and restores
+        # One `git checkout` call per pattern, not one call with all patterns:
+        # unlike `git rm --ignore-unmatch`, checkout fails (and restores
         # nothing at all, not even the patterns that did match) if *any*
         # pathspec given to it matches zero files.
         for pattern in "${PATTERNS[@]}"; do
-          if ! CHECKOUT_ERR=$(git restore --source="origin/$VISUAL_DIFF_BASE_REF" --staged -- "$pattern" 2>&1); then
+          if ! CHECKOUT_ERR=$(git checkout "origin/$VISUAL_DIFF_BASE_REF" -- "$pattern" 2>&1); then
             if [[ "$CHECKOUT_ERR" != *"did not match any file"* ]]; then
               echo "$CHECKOUT_ERR" >&2
               exit 1

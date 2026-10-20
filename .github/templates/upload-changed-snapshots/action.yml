@@ -33,8 +33,7 @@ runs:
       # Same file selection as reset-snapshot-baseline (a "*-snapshots" or "__snapshots__" directory
       # segment and the given suffix). Only the worktree column of `git status` counts: the reset
       # left the index holding the target branch's files, so that column is exactly "the fresh
-      # render differs from the target branch" - modified (M) or not there at all (??). Deleted (D)
-      # means this job (or shard) didn't render that screenshot, so it's left out.
+      # render differs from the target branch" - modified (M) or not there at all (??).
       run: |
         git config --global --add safe.directory "$GITHUB_WORKSPACE"
         SNAPSHOT_DIR='${{ inputs.snapshotDir }}'
