@@ -181,7 +181,11 @@ visual(
     await remoteMic._page.evaluate(() => document.exitFullscreen?.().catch(() => {}));
     await remoteMic._page.setViewportSize(viewport);
 
-    const remoteMasks = [remoteMic.remoteMicMainPage.connectionStatusElement];
+    // Same as above: the ping counter, and the "Connect phone" button sized to the per-run game code
+    const remoteMasks = [
+      remoteMic.remoteMicMainPage.connectionStatusElement,
+      remoteMic._page.getByLabel('Connect phone'),
+    ];
 
     // A song with a long intro, so the skip-intro prompt (and its mirrored control) actually appears.
     await pages.smartphonesConnectionPage.goToMainMenu();
