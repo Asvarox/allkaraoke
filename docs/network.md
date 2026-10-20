@@ -46,7 +46,7 @@ Differences from an online room:
 
 ## Analytics
 
-Events carry `transport` (the code's lead letter) and `transportName`:
+Events carry `transport` (always `r`, the lead letter every game code had while it named the transport) and `transportName`:
 
 | Event                                       | Side  | When                                                 |
 | ------------------------------------------- | ----- | ---------------------------------------------------- |

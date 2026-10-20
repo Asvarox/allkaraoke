@@ -4,7 +4,11 @@ afterEach(async () => {
   await MicInput.stopMonitoring();
 });
 
-const median = (values: number[]) => [...values].sort((a, b) => a - b)[Math.floor(values.length / 2)];
+const median = (values: number[]) => {
+  const sorted = [...values].sort((a, b) => a - b);
+  const middle = Math.floor(sorted.length / 2);
+  return sorted.length % 2 ? sorted[middle] : (sorted[middle - 1] + sorted[middle]) / 2;
+};
 
 // The browser project feeds tests/fixtures/test-440hz.wav as the fake microphone
 test('Mic input should properly return frequencies', async () => {
