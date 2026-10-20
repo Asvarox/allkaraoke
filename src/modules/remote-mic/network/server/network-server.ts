@@ -5,6 +5,7 @@ import { RpcServer } from '~/modules/network/rpc/rpc-server';
 import { ServerSubscriptionRegistry } from '~/modules/network/rpc/server-subscription-registry';
 import { ChannelName, SubscriptionChannels } from '~/modules/remote-mic/network/client/subscriptions';
 import { NetworkMessages } from '~/modules/remote-mic/network/messages';
+import { REMOTE_MIC_ROOM_CODE_PATTERN } from '~/modules/remote-mic/network/realtime-protocol';
 import { ServerTransport } from '~/modules/remote-mic/network/server/transport/interface';
 import { RealtimeServerTransport } from '~/modules/remote-mic/network/server/transport/realtime-server';
 import RemoteMicManager from '~/modules/remote-mic/remote-mic-manager';
@@ -20,10 +21,13 @@ export const storeGameCode = (gameCode: string) => {
   storage.session.setItem(GAME_CODE_KEY, gameCode);
 };
 
-// Codes stored before they dropped their fixed `r` lead are one letter short — keep them working
+// Codes stored before they dropped their fixed `r` lead are one letter short — keep them working.
+// Anything else that isn't a valid code is dropped, so the server generates a fresh one
 const readStoredGameCode = () => {
-  const code = storage.session.getItem(GAME_CODE_KEY);
-  return code?.length === GAME_CODE_LENGTH - 1 ? `r${code}` : code;
+  const stored: unknown = storage.session.getItem(GAME_CODE_KEY);
+  if (typeof stored !== 'string') return null;
+  const code = stored.length === GAME_CODE_LENGTH - 1 ? `r${stored}` : stored;
+  return REMOTE_MIC_ROOM_CODE_PATTERN.test(code) ? code : null;
 };
 
 export class NetworkServer {

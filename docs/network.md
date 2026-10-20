@@ -29,7 +29,7 @@ The Realtime transport shares online mode's Realtime layer — `SfuRoomConnectio
 in `worker/realtime/` (see `online-mode.md`) — but mounts its own copy: signaling under
 `/remote-mic-signaling/` and its own `RemoteMicDirectory`, so its rooms never mix with online ones. Both
 run on the same Realtime app and credentials (`REMOTE_MIC_REALTIME` vs `ONLINE_REALTIME`). The game
-code (`r` plus four letters) is the directory room; the game hosts it and publishes a broadcast channel
+code (five letters) is the directory room; the game hosts it and publishes a broadcast channel
 plus `REMOTE_MIC_SLOT_COUNT` slot channels, and each phone replies on its own slot. Frames are msgpack.
 Differences from an online room:
 

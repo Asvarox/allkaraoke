@@ -10,7 +10,8 @@ import { useEventListenerSelector } from '~/modules/game-events/hooks';
 import useBackgroundMusic from '~/modules/hooks/use-background-music';
 import useKeyboardNav, { KeyboardNavContext } from '~/modules/hooks/use-keyboard-nav';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
-import { GAME_CODE_LENGTH, storeGameCode } from '~/modules/remote-mic/network/server/network-server';
+import { isRemoteMicGameCode } from '~/modules/remote-mic/network/game-code';
+import { storeGameCode } from '~/modules/remote-mic/network/server/network-server';
 import RemoteMicManager from '~/modules/remote-mic/remote-mic-manager';
 import { nextValue } from '~/modules/utils/indexes';
 import { useDevicePing } from '~/routes/select-input/hooks/use-device-ping';
@@ -41,8 +42,8 @@ function RemoteMicSettings() {
         onClick={() => {
           const code = prompt('Code');
 
-          if (code?.length === GAME_CODE_LENGTH) {
-            storeGameCode(code);
+          if (code && isRemoteMicGameCode(code)) {
+            storeGameCode(code.trim().toLowerCase());
 
             global.location.reload();
           }
