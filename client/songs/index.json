@@ -38236,6 +38236,34 @@
     "local": false
   },
   {
+    "id": "cigarettes-after-sex-apocalypse",
+    "title": "Apocalypse",
+    "artist": "Cigarettes After Sex",
+    "video": "-mnH9-SX2Tg",
+    "language": [
+      "English"
+    ],
+    "bpm": 349.11,
+    "gap": 35491.77279367534,
+    "year": "2017",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-21T02:45:13.946Z",
+    "genre": "Dream Pop",
+    "realBpm": 94,
+    "volume": 1,
+    "author": "mfonte",
+    "duration": 315,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6695,
+    "tracksCount": 1,
+    "search": "cigarettesaftersexapocalypse",
+    "local": false
+  },
+  {
     "id": "cinema-staff-great-escape-tv-size-ver",
     "title": "Great Escape - TV Size Ver.",
     "artist": "cinema staff",
@@ -122033,6 +122061,33 @@
     "shortId": 2948,
     "tracksCount": 1,
     "search": "michaelbubleitsbeginningtolookalotlikechristmas",
+    "local": false
+  },
+  {
+    "id": "michael-buble-sway",
+    "title": "Sway",
+    "artist": "Michael Bublé",
+    "video": "xeMOO5EudYs",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 13500,
+    "year": "2003",
+    "artistOrigin": "CA",
+    "lastUpdate": "2026-10-21T02:45:13.941Z",
+    "realBpm": 126,
+    "volume": 1,
+    "author": "REL",
+    "duration": 189,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6694,
+    "tracksCount": 1,
+    "search": "michaelbublesway",
     "local": false
   },
   {
