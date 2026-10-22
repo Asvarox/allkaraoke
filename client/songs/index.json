@@ -351,6 +351,34 @@
     "local": false
   },
   {
+    "id": "2ne1-i-love-you",
+    "title": "I Love You",
+    "artist": "2NE1",
+    "video": "LUrUPzLm5SI",
+    "language": [
+      "Korean"
+    ],
+    "bpm": 250,
+    "gap": 3030,
+    "year": "2012",
+    "artistOrigin": "KR",
+    "lastUpdate": "2026-10-22T02:50:40.969Z",
+    "genre": "K-Pop",
+    "realBpm": 124,
+    "volume": 1,
+    "author": "lop",
+    "duration": 249,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6699,
+    "tracksCount": 1,
+    "search": "2ne1iloveyou",
+    "local": false
+  },
+  {
     "id": "2ne1-lonely",
     "title": "Lonely",
     "artist": "2NE1",
@@ -926,6 +954,35 @@
     "shortId": 18,
     "tracksCount": 1,
     "search": "31minutoseldinosaurioanacleto",
+    "local": false
+  },
+  {
+    "id": "31-minutos-feat-tulio-trivino-y-sus-amigos-yo-nunca-vi-television-y-luego-si-pero-despues-no",
+    "title": "Yo nunca vi televisión (y luego sí, pero después no)",
+    "artist": "31 Minutos feat. Tulio Triviño y Sus Amigos",
+    "video": "wfNUme4wRzE",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 329.84,
+    "gap": -47.38297356293964,
+    "year": "2003",
+    "lastUpdate": "2026-10-22T02:50:41.238Z",
+    "genre": "Kids",
+    "realBpm": 127,
+    "previewEnd": 10,
+    "volume": 70,
+    "author": "Coppo",
+    "authorUrl": "31 minutos",
+    "duration": 155,
+    "tracks": [
+      {
+        "start": 5
+      }
+    ],
+    "shortId": 6703,
+    "tracksCount": 1,
+    "search": "31minutosfeattuliotrivinoysusamigosyonuncavitelevisionyluegosiperodespuesno",
     "local": false
   },
   {
@@ -17026,6 +17083,33 @@
     "shortId": 430,
     "tracksCount": 1,
     "search": "ayumihamasakirule",
+    "local": false
+  },
+  {
+    "id": "azumi-waki-marika-kouno-machico-ayaka-ohashi-chise-kimura-hitomi-ueda-saori-oonishi-make-debut",
+    "title": "Make Debut!",
+    "artist": "Azumi Waki, Marika Kouno, Machico, Ayaka Ohashi, Chise Kimura, Hitomi Ueda, Saori Oonishi",
+    "video": "_6rP_HS0ox4",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 360.04,
+    "gap": 4934.1110987668035,
+    "year": "2018",
+    "lastUpdate": "2026-10-22T02:50:43.794Z",
+    "genre": "Anime",
+    "realBpm": 179,
+    "volume": 1,
+    "author": "Cygames",
+    "duration": 101,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6708,
+    "tracksCount": 1,
+    "search": "azumiwakimarikakounomachicoayakaohashichisekimurahitomiuedasaorioonishimakedebut",
     "local": false
   },
   {
@@ -35616,6 +35700,37 @@
     "local": false
   },
   {
+    "id": "charles-eddie-would-i-lie-to-you",
+    "title": "Would I Lie To You?",
+    "artist": "Charles & Eddie",
+    "video": "G_UXvcr22rM",
+    "language": [
+      "English"
+    ],
+    "bpm": 202.24,
+    "gap": 6715.7990506329115,
+    "year": "1992",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-22T02:50:43.652Z",
+    "genre": "Pop",
+    "realBpm": 101,
+    "volume": 1,
+    "author": "uweotto",
+    "duration": 239,
+    "tracks": [
+      {
+        "start": 13
+      },
+      {
+        "start": 335
+      }
+    ],
+    "shortId": 6704,
+    "tracksCount": 2,
+    "search": "charleseddiewouldilietoyou",
+    "local": false
+  },
+  {
     "id": "charli-xcx-apple",
     "title": "Apple",
     "artist": "Charli XCX",
@@ -38205,6 +38320,34 @@
     "shortId": 973,
     "tracksCount": 1,
     "search": "chumbawambatubthumping",
+    "local": false
+  },
+  {
+    "id": "chvrches-the-mother-we-share",
+    "title": "The Mother We Share",
+    "artist": "CHVRCHES",
+    "video": "_mTRvJ9fugM",
+    "language": [
+      "English"
+    ],
+    "bpm": 347.8,
+    "gap": 1648.0506037952848,
+    "year": "2012",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-10-22T02:50:39.105Z",
+    "genre": "Synth-Pop",
+    "realBpm": 174,
+    "volume": 1,
+    "author": "Wannseesprinter",
+    "duration": 196,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6696,
+    "tracksCount": 1,
+    "search": "chvrchesthemotherweshare",
     "local": false
   },
   {
@@ -50838,6 +50981,33 @@
     "local": false
   },
   {
+    "id": "disneys-starstruck-sterling-knight-brandon-mychal-smith-drew-ryan-scott-hero",
+    "title": "Hero",
+    "artist": "Disney’s StarStruck (Sterling Knight, Brandon Mychal Smith, Drew Ryan Scott)",
+    "video": "W04b-jzy0xs",
+    "language": [
+      "English"
+    ],
+    "bpm": 371.6,
+    "gap": 6530.850376749193,
+    "year": "2010",
+    "lastUpdate": "2026-10-22T02:50:40.627Z",
+    "genre": "Soundtrack",
+    "realBpm": 93,
+    "volume": 1,
+    "author": "savik1993",
+    "duration": 232,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6698,
+    "tracksCount": 1,
+    "search": "disneysstarstrucksterlingknightbrandonmychalsmithdrewryanscotthero",
+    "local": false
+  },
+  {
     "id": "disneys-tangled-grace-potter-something-that-i-want",
     "title": "Something That I Want",
     "artist": "Disney’s Tangled (Grace Potter)",
@@ -56469,6 +56639,35 @@
     "local": false
   },
   {
+    "id": "egotrippi-matkustaja",
+    "title": "Matkustaja",
+    "artist": "Egotrippi",
+    "video": "iynZZ_-nq3w",
+    "language": [
+      "Finnish"
+    ],
+    "bpm": 260,
+    "gap": 21742.23076923077,
+    "year": "2003",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-10-22T02:50:45.454Z",
+    "realBpm": 130,
+    "volume": 1,
+    "author": "TeLiXj",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=telixj",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Egotrippi",
+    "duration": 243,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6710,
+    "tracksCount": 1,
+    "search": "egotrippimatkustaja",
+    "local": false
+  },
+  {
     "id": "eir-aoi-ignite",
     "title": "IGNITE",
     "artist": "Eir Aoi",
@@ -59551,6 +59750,33 @@
     "local": false
   },
   {
+    "id": "enhypen-no-doubt",
+    "title": "No Doubt",
+    "artist": "ENHYPEN",
+    "video": "rDolt3jJRsM",
+    "language": [
+      "Korean"
+    ],
+    "bpm": 257.1,
+    "gap": 14267.168028004668,
+    "year": "2024",
+    "artistOrigin": "KR",
+    "lastUpdate": "2026-10-22T02:50:45.874Z",
+    "realBpm": 130,
+    "volume": 1,
+    "author": "b888arb",
+    "duration": 185,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6714,
+    "tracksCount": 1,
+    "search": "enhypennodoubt",
+    "local": false
+  },
+  {
     "id": "enrique-iglesias-bailamos",
     "title": "Bailamos",
     "artist": "Enrique Iglesias",
@@ -61917,6 +62143,34 @@
     "shortId": 5794,
     "tracksCount": 1,
     "search": "evitaantoniobanderasmadonnahighflyingadored",
+    "local": false
+  },
+  {
+    "id": "evita-madonna-dont-cry-for-me-argentina",
+    "title": "Don’t Cry For Me Argentina",
+    "artist": "Evita (Madonna)",
+    "video": "KD_1Z8iUDho",
+    "language": [
+      "English"
+    ],
+    "bpm": 331.8,
+    "gap": 52235.42495479204,
+    "year": "1996",
+    "lastUpdate": "2026-10-22T02:50:45.579Z",
+    "genre": "Soundtrack",
+    "realBpm": 76,
+    "volume": 1,
+    "author": "Canni",
+    "duration": 331,
+    "tracks": [
+      {
+        "name": "Don't Cry For Me Argentina",
+        "start": 22
+      }
+    ],
+    "shortId": 6713,
+    "tracksCount": 1,
+    "search": "evitamadonnadontcryformeargentina",
     "local": false
   },
   {
@@ -71571,6 +71825,35 @@
     "shortId": 1754,
     "tracksCount": 1,
     "search": "gjonstearstoutlunivers",
+    "local": false
+  },
+  {
+    "id": "glass-animals-heat-waves",
+    "title": "Heat Waves",
+    "artist": "Glass Animals",
+    "video": "mRD0-GxqHVo",
+    "language": [
+      "English"
+    ],
+    "bpm": 323.46,
+    "gap": 2929.781116675941,
+    "year": "2020",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-10-22T02:50:40.623Z",
+    "genre": "Indie Rock",
+    "realBpm": 81,
+    "volume": 1,
+    "author": "Tracks",
+    "sourceUrl": "https://www.youtube.com/watch?v=mRD0-GxqHVo",
+    "duration": 236,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6697,
+    "tracksCount": 1,
+    "search": "glassanimalsheatwaves",
     "local": false
   },
   {
@@ -93009,6 +93292,34 @@
     "local": false
   },
   {
+    "id": "justin-bieber-sorry",
+    "title": "Sorry",
+    "artist": "Justin Bieber",
+    "video": "fRh_vgS2dFE",
+    "language": [
+      "English"
+    ],
+    "bpm": 399.56,
+    "gap": 12566.385023525878,
+    "year": "2015",
+    "artistOrigin": "CA",
+    "lastUpdate": "2026-10-22T02:50:41.106Z",
+    "genre": "Dance pop",
+    "realBpm": 100,
+    "volume": 1,
+    "author": "amro98",
+    "duration": 206,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6701,
+    "tracksCount": 1,
+    "search": "justinbiebersorry",
+    "local": false
+  },
+  {
     "id": "justin-bieber-what-do-you-mean",
     "title": "What Do You Mean?",
     "artist": "Justin Bieber",
@@ -107366,6 +107677,35 @@
     "local": false
   },
   {
+    "id": "linked-horizon-akatsuki-no-chinkonka",
+    "title": "Akatsuki no Chinkonka",
+    "artist": "Linked Horizon",
+    "video": "3JWKoVCkT1w",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 273.42,
+    "gap": 1525.508229098091,
+    "year": "2018",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-10-22T02:50:43.791Z",
+    "realBpm": 137,
+    "previewStart": 23,
+    "previewEnd": 34,
+    "volume": 1,
+    "author": "asdFer",
+    "duration": 91,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6706,
+    "tracksCount": 1,
+    "search": "linkedhorizonakatsukinochinkonka",
+    "local": false
+  },
+  {
     "id": "linked-horizon-shinzou-wo-sasageyou",
     "title": "Shinzou wo sasageyou!",
     "artist": "Linked Horizon",
@@ -107392,6 +107732,33 @@
     "shortId": 2573,
     "tracksCount": 1,
     "search": "linkedhorizonshinzouwosasageyou",
+    "local": false
+  },
+  {
+    "id": "linked-horizon-shoukei-to-shikabane-no-michi",
+    "title": "Shoukei to Shikabane no Michi",
+    "artist": "Linked Horizon",
+    "video": "0dK7JgKivQM",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 356.8,
+    "gap": -27.928251121076187,
+    "year": "2019",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-10-22T02:50:45.577Z",
+    "realBpm": 178,
+    "volume": 1,
+    "author": "Linked Horizon",
+    "duration": 90,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6711,
+    "tracksCount": 1,
+    "search": "linkedhorizonshoukeitoshikabanenomichi",
     "local": false
   },
   {
@@ -119996,6 +120363,33 @@
     "shortId": 5138,
     "tracksCount": 1,
     "search": "megadethsymphonyofdestruction",
+    "local": false
+  },
+  {
+    "id": "meghan-trainor-dear-future-husband",
+    "title": "Dear Future Husband",
+    "artist": "Meghan Trainor",
+    "video": "ShlW5plD_40",
+    "language": [
+      "English"
+    ],
+    "bpm": 317.98,
+    "gap": 16019.37165859488,
+    "year": "2014",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-22T02:50:43.790Z",
+    "realBpm": 81,
+    "volume": 1,
+    "author": "amro98",
+    "duration": 201,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6705,
+    "tracksCount": 1,
+    "search": "meghantrainordearfuturehusband",
     "local": false
   },
   {
@@ -135577,6 +135971,32 @@
     "shortId": 3283,
     "tracksCount": 1,
     "search": "olafhenningcowboyundindianer",
+    "local": false
+  },
+  {
+    "id": "oliver-tree-robin-schulz-miss-you",
+    "title": "Miss You",
+    "artist": "Oliver Tree & Robin Schulz",
+    "video": "EipgOEBtyag",
+    "language": [
+      "English"
+    ],
+    "bpm": 289.92,
+    "gap": 13066.970198675497,
+    "year": "2022",
+    "lastUpdate": "2026-10-22T02:50:40.970Z",
+    "realBpm": 145,
+    "volume": 1,
+    "author": "b888arb",
+    "duration": 207,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6700,
+    "tracksCount": 1,
+    "search": "olivertreerobinschulzmissyou",
     "local": false
   },
   {
@@ -161905,6 +162325,38 @@
     "local": false
   },
   {
+    "id": "six-the-musical-cast-ex-wives",
+    "title": "Ex Wives",
+    "artist": "SIX the Musical Cast",
+    "video": "AgEJK6Vk8Ro",
+    "language": [
+      "English"
+    ],
+    "bpm": 274,
+    "gap": 5114.598540145986,
+    "year": "2018",
+    "lastUpdate": "2026-10-22T02:50:44.191Z",
+    "genre": "Musical",
+    "realBpm": 136,
+    "volume": 1,
+    "author": "ziqiangao",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=209767",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=31401",
+    "duration": 352,
+    "tracks": [
+      {
+        "start": 18
+      },
+      {
+        "start": 246
+      }
+    ],
+    "shortId": 6709,
+    "tracksCount": 2,
+    "search": "sixthemusicalcastexwives",
+    "local": false
+  },
+  {
     "id": "six-the-musical-cast-six",
     "title": "SIX",
     "artist": "SIX the Musical Cast",
@@ -171509,6 +171961,35 @@
     "shortId": 4203,
     "tracksCount": 1,
     "search": "taylorswiftgorgeous",
+    "local": false
+  },
+  {
+    "id": "taylor-swift-haunted",
+    "title": "Haunted",
+    "artist": "Taylor Swift",
+    "video": "uy7fbKWm5WY",
+    "language": [
+      "English"
+    ],
+    "bpm": 327.84,
+    "gap": 24413.41142020498,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-22T02:50:45.578Z",
+    "genre": "Country",
+    "realBpm": 162,
+    "volume": 1,
+    "author": "GiantCrab",
+    "sourceUrl": "https://www.youtube.com/watch?v=uy7fbKWm5WY",
+    "duration": 246,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6712,
+    "tracksCount": 1,
+    "search": "taylorswifthaunted",
     "local": false
   },
   {
@@ -183118,6 +183599,34 @@
     "local": false
   },
   {
+    "id": "thrice-deadbolt",
+    "title": "Deadbolt",
+    "artist": "Thrice",
+    "video": "eDFT8ARPhMQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 14487.5,
+    "year": "2002",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-22T02:50:41.107Z",
+    "realBpm": 135,
+    "volume": 1,
+    "author": "Agony96",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=23359",
+    "duration": 181,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6702,
+    "tracksCount": 1,
+    "search": "thricedeadbolt",
+    "local": false
+  },
+  {
     "id": "thundercats-thundercats",
     "title": "Thundercats",
     "artist": "Thundercats",
@@ -188570,6 +189079,34 @@
     "shortId": 4604,
     "tracksCount": 1,
     "search": "usheraliciakeysmyboo",
+    "local": false
+  },
+  {
+    "id": "usher-burn",
+    "title": "Burn",
+    "artist": "Usher",
+    "video": "t5XNWFw5HVw",
+    "language": [
+      "English"
+    ],
+    "bpm": 600,
+    "gap": 500,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-22T02:50:43.793Z",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "Schnuppy",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=13115",
+    "duration": 268,
+    "tracks": [
+      {
+        "start": 40
+      }
+    ],
+    "shortId": 6707,
+    "tracksCount": 1,
+    "search": "usherburn",
     "local": false
   },
   {
