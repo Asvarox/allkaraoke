@@ -26,7 +26,7 @@ describe('isOnlineRoomCode', () => {
     expect(isOnlineRoomCode(' 9wxyz ')).toBe(true);
   });
 
-  it('rejects remote-mic game codes, which lead with a transport letter', () => {
+  it('rejects remote-mic game codes, which are letters only', () => {
     expect(isOnlineRoomCode('kabcd')).toBe(false);
     expect(isOnlineRoomCode('rabcd')).toBe(false);
     expect(isOnlineRoomCode('WABCD')).toBe(false);

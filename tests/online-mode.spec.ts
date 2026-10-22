@@ -400,7 +400,7 @@ test('Online mode: join by code, host disconnect promotes the next-joined singer
 
   await test.step('Joining a room code that does not exist is rejected upfront', async () => {
     await guestPages.onlineSetupPage.goto();
-    await guestPages.onlineSetupPage.joinRoomByCode('zzzzz');
+    await guestPages.onlineSetupPage.joinRoomByCode('9zzzz');
     await expect(guestPage.getByText('This room does not exist')).toBeVisible();
   });
 

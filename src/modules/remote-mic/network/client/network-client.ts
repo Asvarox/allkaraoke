@@ -222,8 +222,9 @@ export class NetworkClient extends Listener<[NetworkMessages]> {
   private sangThisSong = false;
 
   private transportProperties = () => ({
-    // Kept although Realtime is the only transport, so events stay comparable with older ones
-    transport: this.roomId?.charAt(0),
+    // Kept although Realtime is the only transport, so events stay comparable with older ones (when
+    // every game code started with the transport letter `r`)
+    transport: 'r',
     transportName: 'Realtime',
   });
 

@@ -25,7 +25,7 @@ export default function useJoinRoomCode(initialCode: string, onConfirm: (roomCod
     }
     // A game code for the phone mic, typed here by mistake — no online room can have it
     if (isRemoteMicGameCode(roomCode)) {
-      posthog.capture('online_join_redirected_to_remote_mic', { transport: roomCode.charAt(0) });
+      posthog.capture('online_join_redirected_to_remote_mic', { transport: 'r' });
       navigate('remote-mic/', { room: roomCode });
       return;
     }

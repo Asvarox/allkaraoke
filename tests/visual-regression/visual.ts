@@ -50,6 +50,8 @@ const HIDDEN_SELECTORS = [
   // Video playback is never at the same frame twice, and the native controls count the elapsed
   // time out loud on top of it.
   'video',
+  // Native audio controls redraw the buffered range as the file loads.
+  'audio',
   // Only the bar inside the meter, not the element it fills: the bar redraws continuously from the
   // (fake) audio input via direct DOM mutation (so animation-disabling does nothing), while the box
   // around it - the remote mic's pill, a singer's row - is static and part of the screen's design.
@@ -188,10 +190,9 @@ export function visual(title: string, viewportsOrFn: ViewportName[] | VisualTest
           await withElementsHidden(targetPage, extraMasks, async () => {
             await expect(locator ?? targetPage).toHaveScreenshot(fileName, {
               ...(locator ? {} : { fullPage: true }),
-              // Covers antialiasing around text and a pixel of async layout drift, and nothing
-              // larger. The old budget was twenty times this, to absorb the jitter of a painted mask
-              // box that no longer exists.
-              maxDiffPixelRatio: 0.005,
+              // Run-to-run noise on a stable screen stays under 0.007% (antialiasing around text), so
+              // anything above 0.01% is a real change - small enough to catch an icon swap.
+              maxDiffPixelRatio: 0.0001,
             });
           });
         };

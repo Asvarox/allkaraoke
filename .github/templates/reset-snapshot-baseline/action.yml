@@ -2,9 +2,11 @@
 
 name: reset-snapshot-baseline
 description: >-
-  Resets the committed screenshot references under snapshotDir to the PR's target branch, so that a
-  following snapshot-updating test run (Playwright `-u`, Vitest browser mode `--update`) and
-  upload-changed-snapshots always report the full diff against the target branch.
+  Resets the git index's screenshot references under snapshotDir to the PR's target branch, so that
+  upload-changed-snapshots always reports the full diff against the target branch. The working tree
+  keeps the PR branch's own references: a following snapshot-updating test run (Playwright `-u`,
+  Vitest browser mode `--update`) compares against those, so a screenshot the PR already updated is
+  only rewritten when it changes again - not re-rendered (with fresh sub-threshold noise) every run.
 
 inputs:
   snapshotDir:
@@ -59,9 +61,9 @@ runs:
       # - without this, resetting+not-regenerating those other variants would
       # silently revert any legitimate update to them.
       #
-      # Files the PR added (absent from the target branch) stay gone until
-      # Playwright re-renders them, so they always read as new - even if an
-      # earlier run on this branch already auto-committed them.
+      # Only the index is touched. Files the PR added (absent from the target
+      # branch) are untracked against it, so they always read as new - even if
+      # an earlier run on this branch already auto-committed them.
       #
       # The checkout's expected "no match" case (target branch has no
       # qualifying files here) is tolerated; any other failure - bad pathspec,
@@ -82,20 +84,12 @@ runs:
 
         git rm -r --cached --ignore-unmatch -- "${PATTERNS[@]}"
 
-        if [ -d "$SNAPSHOT_DIR" ]; then
-          if [ "$IS_SNAPSHOT_ROOT" = 1 ]; then
-            find "$SNAPSHOT_DIR" -type f -name "*$SNAPSHOT_SUFFIX" -exec rm -f {} +
-          else
-            find "$SNAPSHOT_DIR" -type f -name "*$SNAPSHOT_SUFFIX" \( -path '*-snapshots/*' -o -path '*__snapshots__/*' \) -exec rm -f {} +
-          fi
-        fi
-
-        # One `git checkout` call per pattern, not one call with all patterns:
-        # unlike `git rm --ignore-unmatch`, checkout fails (and restores
+        # One `git restore` call per pattern, not one call with all patterns:
+        # unlike `git rm --ignore-unmatch`, restore fails (and restores
         # nothing at all, not even the patterns that did match) if *any*
         # pathspec given to it matches zero files.
         for pattern in "${PATTERNS[@]}"; do
-          if ! CHECKOUT_ERR=$(git checkout "origin/$VISUAL_DIFF_BASE_REF" -- "$pattern" 2>&1); then
+          if ! CHECKOUT_ERR=$(git restore --source="origin/$VISUAL_DIFF_BASE_REF" --staged -- "$pattern" 2>&1); then
             if [[ "$CHECKOUT_ERR" != *"did not match any file"* ]]; then
               echo "$CHECKOUT_ERR" >&2
               exit 1

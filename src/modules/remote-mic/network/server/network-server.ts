@@ -5,7 +5,7 @@ import { RpcServer } from '~/modules/network/rpc/rpc-server';
 import { ServerSubscriptionRegistry } from '~/modules/network/rpc/server-subscription-registry';
 import { ChannelName, SubscriptionChannels } from '~/modules/remote-mic/network/client/subscriptions';
 import { NetworkMessages } from '~/modules/remote-mic/network/messages';
-import { REMOTE_MIC_ROOM_CODE_LEAD } from '~/modules/remote-mic/network/realtime-protocol';
+import { REMOTE_MIC_ROOM_CODE_PATTERN } from '~/modules/remote-mic/network/realtime-protocol';
 import { ServerTransport } from '~/modules/remote-mic/network/server/transport/interface';
 import { RealtimeServerTransport } from '~/modules/remote-mic/network/server/transport/realtime-server';
 import RemoteMicManager from '~/modules/remote-mic/remote-mic-manager';
@@ -21,8 +21,17 @@ export const storeGameCode = (gameCode: string) => {
   storage.session.setItem(GAME_CODE_KEY, gameCode);
 };
 
+// Codes stored before they dropped their fixed `r` lead are one letter short — keep them working.
+// Anything else that isn't a valid code is dropped, so the server generates a fresh one
+const readStoredGameCode = () => {
+  const stored: unknown = storage.session.getItem(GAME_CODE_KEY);
+  if (typeof stored !== 'string') return null;
+  const code = stored.length === GAME_CODE_LENGTH - 1 ? `r${stored}` : stored;
+  return REMOTE_MIC_ROOM_CODE_PATTERN.test(code) ? code : null;
+};
+
 export class NetworkServer {
-  private gameCode = storage.session.getItem(GAME_CODE_KEY)!;
+  private gameCode = readStoredGameCode()!;
   private started = false;
   /** Whether the current transport ever came up — tells a lost connection from a failed one. */
   private connected = false;
@@ -42,9 +51,7 @@ export class NetworkServer {
 
   public constructor() {
     if (!this.gameCode) {
-      // One character short of GAME_CODE_LENGTH: `getGameCode()` prepends REMOTE_MIC_ROOM_CODE_LEAD,
-      // and that prefix has to fit within the length remote mics type in.
-      this.gameCode = generateRoomCode(GAME_CODE_LENGTH - 1);
+      this.gameCode = generateRoomCode(GAME_CODE_LENGTH);
     }
 
     global?.addEventListener?.('beforeunload', () => {
@@ -115,7 +122,7 @@ export class NetworkServer {
 
         if (reason === 'room-taken') {
           // Another game holds this code in the directory — a fresh code is the only way out
-          this.gameCode = generateRoomCode(GAME_CODE_LENGTH - 1);
+          this.gameCode = generateRoomCode(GAME_CODE_LENGTH);
           storeGameCode(this.gameCode);
         }
 
@@ -171,5 +178,5 @@ export class NetworkServer {
     }
   };
 
-  public getGameCode = (): string => REMOTE_MIC_ROOM_CODE_LEAD + this.gameCode;
+  public getGameCode = (): string => this.gameCode;
 }
