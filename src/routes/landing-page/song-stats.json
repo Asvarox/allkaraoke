@@ -90,6 +90,7 @@
     "Good Charlotte",
     "Guns N’ Roses",
     "Jason Derulo",
+    "Justin Bieber",
     "Melanie Martinez",
     "Pink Floyd",
     "Serj Tankian",
@@ -106,7 +107,6 @@
     "Hamilton",
     "HIM",
     "Iron Maiden",
-    "Justin Bieber",
     "Little Mix",
     "Lorde",
     "★N Sync",
@@ -190,9 +190,10 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 6694,
-  "generatedAt": "2026-10-21T02:45:29.175Z",
+  "songs": 6713,
+  "generatedAt": "2026-10-22T02:51:11.546Z",
   "additionsPerDay": {
+    "2026-10-22": 19,
     "2026-10-21": 2,
     "2026-10-19": 10,
     "2026-10-17": 19,
@@ -236,6 +237,139 @@
     "2026-08-23": 30
   },
   "recentlyAdded": [
+    {
+      "id": "enhypen-no-doubt",
+      "artist": "ENHYPEN",
+      "title": "No Doubt",
+      "video": "rDolt3jJRsM",
+      "addedAt": "2026-10-22T02:50:45.874Z"
+    },
+    {
+      "id": "evita-madonna-dont-cry-for-me-argentina",
+      "artist": "Evita (Madonna)",
+      "title": "Don’t Cry For Me Argentina",
+      "video": "KD_1Z8iUDho",
+      "addedAt": "2026-10-22T02:50:45.579Z"
+    },
+    {
+      "id": "taylor-swift-haunted",
+      "artist": "Taylor Swift",
+      "title": "Haunted",
+      "video": "uy7fbKWm5WY",
+      "addedAt": "2026-10-22T02:50:45.578Z"
+    },
+    {
+      "id": "linked-horizon-shoukei-to-shikabane-no-michi",
+      "artist": "Linked Horizon",
+      "title": "Shoukei to Shikabane no Michi",
+      "video": "0dK7JgKivQM",
+      "addedAt": "2026-10-22T02:50:45.577Z"
+    },
+    {
+      "id": "egotrippi-matkustaja",
+      "artist": "Egotrippi",
+      "title": "Matkustaja",
+      "video": "iynZZ_-nq3w",
+      "addedAt": "2026-10-22T02:50:45.454Z"
+    },
+    {
+      "id": "six-the-musical-cast-ex-wives",
+      "artist": "SIX the Musical Cast",
+      "title": "Ex Wives",
+      "video": "AgEJK6Vk8Ro",
+      "addedAt": "2026-10-22T02:50:44.191Z"
+    },
+    {
+      "id": "azumi-waki-marika-kouno-machico-ayaka-ohashi-chise-kimura-hitomi-ueda-saori-oonishi-make-debut",
+      "artist": "Azumi Waki, Marika Kouno, Machico, Ayaka Ohashi, Chise Kimura, Hitomi Ueda, Saori Oonishi",
+      "title": "Make Debut!",
+      "video": "_6rP_HS0ox4",
+      "addedAt": "2026-10-22T02:50:43.794Z"
+    },
+    {
+      "id": "usher-burn",
+      "artist": "Usher",
+      "title": "Burn",
+      "video": "t5XNWFw5HVw",
+      "addedAt": "2026-10-22T02:50:43.793Z"
+    },
+    {
+      "id": "linked-horizon-akatsuki-no-chinkonka",
+      "artist": "Linked Horizon",
+      "title": "Akatsuki no Chinkonka",
+      "video": "3JWKoVCkT1w",
+      "addedAt": "2026-10-22T02:50:43.791Z"
+    },
+    {
+      "id": "meghan-trainor-dear-future-husband",
+      "artist": "Meghan Trainor",
+      "title": "Dear Future Husband",
+      "video": "ShlW5plD_40",
+      "addedAt": "2026-10-22T02:50:43.790Z"
+    },
+    {
+      "id": "charles-eddie-would-i-lie-to-you",
+      "artist": "Charles & Eddie",
+      "title": "Would I Lie To You?",
+      "video": "G_UXvcr22rM",
+      "addedAt": "2026-10-22T02:50:43.652Z"
+    },
+    {
+      "id": "31-minutos-feat-tulio-trivino-y-sus-amigos-yo-nunca-vi-television-y-luego-si-pero-despues-no",
+      "artist": "31 Minutos feat. Tulio Triviño y Sus Amigos",
+      "title": "Yo nunca vi televisión (y luego sí, pero después no)",
+      "video": "wfNUme4wRzE",
+      "addedAt": "2026-10-22T02:50:41.238Z"
+    },
+    {
+      "id": "thrice-deadbolt",
+      "artist": "Thrice",
+      "title": "Deadbolt",
+      "video": "eDFT8ARPhMQ",
+      "addedAt": "2026-10-22T02:50:41.107Z"
+    },
+    {
+      "id": "justin-bieber-sorry",
+      "artist": "Justin Bieber",
+      "title": "Sorry",
+      "video": "fRh_vgS2dFE",
+      "addedAt": "2026-10-22T02:50:41.106Z"
+    },
+    {
+      "id": "oliver-tree-robin-schulz-miss-you",
+      "artist": "Oliver Tree & Robin Schulz",
+      "title": "Miss You",
+      "video": "EipgOEBtyag",
+      "addedAt": "2026-10-22T02:50:40.970Z"
+    },
+    {
+      "id": "2ne1-i-love-you",
+      "artist": "2NE1",
+      "title": "I Love You",
+      "video": "LUrUPzLm5SI",
+      "addedAt": "2026-10-22T02:50:40.969Z"
+    },
+    {
+      "id": "disneys-starstruck-sterling-knight-brandon-mychal-smith-drew-ryan-scott-hero",
+      "artist": "Disney’s StarStruck (Sterling Knight, Brandon Mychal Smith, Drew Ryan Scott)",
+      "title": "Hero",
+      "video": "W04b-jzy0xs",
+      "addedAt": "2026-10-22T02:50:40.627Z"
+    },
+    {
+      "id": "glass-animals-heat-waves",
+      "artist": "Glass Animals",
+      "title": "Heat Waves",
+      "video": "mRD0-GxqHVo",
+      "addedAt": "2026-10-22T02:50:40.623Z"
+    },
+    {
+      "id": "chvrches-the-mother-we-share",
+      "artist": "CHVRCHES",
+      "title": "The Mother We Share",
+      "video": "_mTRvJ9fugM",
+      "addedAt": "2026-10-22T02:50:39.105Z"
+    },
     {
       "id": "cigarettes-after-sex-apocalypse",
       "artist": "Cigarettes After Sex",
@@ -438,139 +572,6 @@
       "title": "Don’t Believe",
       "video": "GkPfz1_sdFw",
       "addedAt": "2026-10-17T02:25:42.941Z"
-    },
-    {
-      "id": "epic-the-musical-jorge-rivera-herrans-steven-rodriguez-get-in-the-water",
-      "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Steven Rodriguez)",
-      "title": "Get In The Water",
-      "video": "HoEjFMwsQ5M",
-      "addedAt": "2026-10-17T02:25:41.605Z"
-    },
-    {
-      "id": "magtens-korridorer-nordhavn-station",
-      "artist": "Magtens Korridorer",
-      "title": "Nordhavn station",
-      "video": "SvX0OcmJKqQ",
-      "addedAt": "2026-10-17T02:25:40.947Z"
-    },
-    {
-      "id": "sienna-spiro-great-expectation",
-      "artist": "Sienna Spiro",
-      "title": "Great Expectation",
-      "video": "B452TVVco2Q",
-      "addedAt": "2026-10-15T02:37:33.764Z"
-    },
-    {
-      "id": "dolly-parton-hard-candy-christmas",
-      "artist": "Dolly Parton",
-      "title": "Hard Candy Christmas",
-      "video": "gcPY3RIvtCw",
-      "addedAt": "2026-10-15T02:37:33.763Z"
-    },
-    {
-      "id": "alex-ubago-sigo-aqui",
-      "artist": "Álex Ubago",
-      "title": "Sigo Aquí",
-      "video": "IA0uSub1xy4",
-      "addedAt": "2026-10-15T02:37:33.423Z"
-    },
-    {
-      "id": "abba-no-hay-a-quien-culpar",
-      "artist": "ABBA",
-      "title": "No hay a quien culpar",
-      "video": "6qmzmD4POMk",
-      "addedAt": "2026-10-15T02:37:33.421Z"
-    },
-    {
-      "id": "limp-bizkit-my-way",
-      "artist": "Limp Bizkit",
-      "title": "My Way",
-      "video": "Dn8vzTsnPps",
-      "addedAt": "2026-10-15T02:37:33.420Z"
-    },
-    {
-      "id": "epic-the-musical-miguel-veloso-ayron-alexander-legendary",
-      "artist": "EPIC: The Musical (Miguel Veloso, Ayron Alexander)",
-      "title": "Legendary",
-      "video": "nxDH6Dbyhi4",
-      "addedAt": "2026-10-15T02:37:33.218Z"
-    },
-    {
-      "id": "walk-the-moon-anna-sun",
-      "artist": "Walk The Moon",
-      "title": "Anna Sun",
-      "video": "qDVW81bXo0s",
-      "addedAt": "2026-10-15T02:37:33.217Z"
-    },
-    {
-      "id": "the-veronicas-untouched",
-      "artist": "The Veronicas",
-      "title": "Untouched",
-      "video": "uKqriTRYInY",
-      "addedAt": "2026-10-15T02:37:33.215Z"
-    },
-    {
-      "id": "31-minutos-mi-muneca-me-hablo",
-      "artist": "31 Minutos",
-      "title": "Mi muñeca me habló",
-      "video": "EN0DBGQDi2M",
-      "addedAt": "2026-10-15T02:37:33.213Z"
-    },
-    {
-      "id": "yoasobi-monster",
-      "artist": "YOASOBI",
-      "title": "Monster",
-      "video": "Eoe5IZHbarQ",
-      "addedAt": "2026-10-15T02:37:33.212Z"
-    },
-    {
-      "id": "spiller-feat-sophie-ellis-bextor-groovejet-if-this-aint-love",
-      "artist": "Spiller feat. Sophie Ellis-Bextor",
-      "title": "Groovejet (If This Ain’t Love)",
-      "video": "FI3gn4APNXc",
-      "addedAt": "2026-10-15T02:37:33.029Z"
-    },
-    {
-      "id": "nmixx-crescendo",
-      "artist": "NMIXX",
-      "title": "Crescendo",
-      "video": "-SEKt_0pdHM",
-      "addedAt": "2026-10-15T02:37:33.027Z"
-    },
-    {
-      "id": "taylor-swift-i-did-something-bad",
-      "artist": "Taylor Swift",
-      "title": "I Did Something Bad",
-      "video": "xYLxUJ9v6KU",
-      "addedAt": "2026-10-15T02:37:33.026Z"
-    },
-    {
-      "id": "gims-bella",
-      "artist": "Gims",
-      "title": "Bella",
-      "video": "rMltoD1jCGI",
-      "addedAt": "2026-10-15T02:37:33.023Z"
-    },
-    {
-      "id": "abba-the-name-of-the-game",
-      "artist": "ABBA",
-      "title": "The Name Of The Game",
-      "video": "wmcLIxznv7U",
-      "addedAt": "2026-10-15T02:37:33.019Z"
-    },
-    {
-      "id": "rata-blanca-la-leyenda-del-hada-y-el-mago",
-      "artist": "Rata blanca",
-      "title": "La leyenda del hada y el mago",
-      "video": "51cZsDsVOqc",
-      "addedAt": "2026-10-15T02:37:33.017Z"
-    },
-    {
-      "id": "enya-only-time",
-      "artist": "Enya",
-      "title": "Only Time",
-      "video": "7wfYIMyS_dI",
-      "addedAt": "2026-10-15T02:37:32.820Z"
     }
   ]
 }
