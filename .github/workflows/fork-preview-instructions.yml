@@ -14,6 +14,8 @@ jobs:
   comment:
     if: github.event.pull_request.head.repo.full_name != github.repository
     runs-on: ubuntu-latest
+    # Shared with fork-preview.yml's comment job, so two runs never replace the comment at once
+    concurrency: fork-preview-comment-${{ github.event.pull_request.number }}
     permissions:
       contents: read
       pull-requests: write
@@ -27,10 +29,10 @@ jobs:
           body: |
             **Preview not deployed** - fork PRs get no secrets in CI.
 
-            Maintainers: review the changes (including `wrangler.jsonc`, `vite.config.mts` and `package.json`), then deploy ${{ github.event.pull_request.head.sha }} with
+            Maintainers: review the changes, wait for CI/CD to build them, then deploy ${{ github.event.pull_request.head.sha }} with
 
             ```bash
-            gh workflow run fork-preview.yml -f pr=${{ github.event.pull_request.number }} -f sha=${{ github.event.pull_request.head.sha }}
+            gh workflow run fork-preview.yml -R ${{ github.repository }} -f pr=${{ github.event.pull_request.number }} -f sha=${{ github.event.pull_request.head.sha }}
             ```
 
             or from [Actions > Fork PR preview](${{ github.server_url }}/${{ github.repository }}/actions/workflows/fork-preview.yml).

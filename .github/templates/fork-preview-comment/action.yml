@@ -3,7 +3,8 @@
 name: fork-preview-comment
 description: >-
   Posts the fork preview comment on a PR, deleting the previous one first so the PR keeps at most one
-  and the latest is always at the bottom. Needs `pull-requests: write`.
+  and the latest is always at the bottom. Needs `pull-requests: write`, and callers should share the
+  `fork-preview-comment-<pr>` concurrency group so two runs never replace it at once.
 
 inputs:
   pr:
@@ -26,7 +27,7 @@ runs:
         gh api --paginate "repos/$GITHUB_REPOSITORY/issues/$PR/comments" \
           --jq ".[] | select(.user.login == \"github-actions[bot]\" and (.body | startswith(\"$marker\"))) | .id" |
           while read -r id; do
-            gh api -X DELETE "repos/$GITHUB_REPOSITORY/issues/comments/$id"
+            gh api -X DELETE "repos/$GITHUB_REPOSITORY/issues/comments/$id" || true # already deleted
           done
         gh pr comment "$PR" --repo "$GITHUB_REPOSITORY" --body "$marker
         $BODY"
