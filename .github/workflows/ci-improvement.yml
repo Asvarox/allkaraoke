@@ -120,7 +120,13 @@ jobs:
               issue_number,
               per_page: 100,
             });
-            const existing = comments.find((comment) => comment.body?.includes(marker));
+            // Every match is removed: overlapping runs or re-runs can each leave a comment behind.
+            // Settled rather than awaited in turn, so one already-deleted comment (404) can't stop the rest
+            const existing = comments.filter((comment) => comment.body?.includes(marker));
+            const deleteExisting = () =>
+              Promise.allSettled(
+                existing.map((comment) => github.rest.issues.deleteComment({ owner, repo, comment_id: comment.id })),
+              );
 
             const results = {
               'E2E tests': process.env.E2E_RESULT,
@@ -130,9 +136,7 @@ jobs:
             const failedSuites = Object.keys(results).filter((suite) => results[suite] === 'failure');
 
             if (Object.values(results).every((result) => result === 'success')) {
-              if (existing) {
-                await github.rest.issues.deleteComment({ owner, repo, comment_id: existing.id });
-              }
+              await deleteExisting();
               return;
             }
 
@@ -144,9 +148,7 @@ jobs:
             const runUrl = `https://github.com/${owner}/${repo}/actions/runs/${context.runId}`;
             const body = `## ❌ ${failedSuites.join(', ')} failed\n\n- [Test report](${reportUrl})\n- [Workflow run](${runUrl})\n\n${marker}`;
 
-            if (existing) {
-              await github.rest.issues.deleteComment({ owner, repo, comment_id: existing.id });
-            }
+            await deleteExisting();
             await github.rest.issues.createComment({ owner, repo, issue_number, body });
 
   browser-tests-run:

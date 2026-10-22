@@ -30,7 +30,7 @@ Prefer `src/modules/elements/akui/` over raw HTML plus classes:
   `active` sets the accent colour. Applies the `typography` utility, so text takes `text-default`
   and nested `<strong>` takes `text-active`.
 - **`Box`** (`primitives/box`) — the default card surface: `flex flex-col items-center
-  justify-center rounded-xl bg-black/40` plus an inset shadow. Override via `className`; reach past
+justify-center rounded-xl bg-black/40` plus an inset shadow. Override via `className`; reach past
   it only when those defaults are actively wrong.
 - **`Button` / `Menu` / `Menu.Button` / `Menu.Header`** — every control and menu screen.
 - **`Chip`, `Badge`, `Kbd`, `Select`, `Selector`, `Checkbox`, `Skeleton`, `BottomSheet`,
@@ -43,14 +43,14 @@ A raw `<button>` is almost always wrong: it gets none of the interactive afforda
 
 Semantic tokens only — never a raw Tailwind palette shade for these jobs.
 
-| token | meaning |
-| --- | --- |
-| `text-default` | body text. What `typography` applies |
-| `text-active` | **focus**, headings, emphasis. Orange |
-| `text-inactive` | present but not current — the lyric line not being sung |
-| `danger` / `warning` / `success` / `info` | the four status roles |
+| token                                     | meaning                                                 |
+| ----------------------------------------- | ------------------------------------------------------- |
+| `text-default`                            | body text. What `typography` applies                    |
+| `text-active`                             | **focus**, headings, emphasis. Orange                   |
+| `text-inactive`                           | present but not current — the lyric line not being sung |
+| `danger` / `warning` / `success` / `info` | the four status roles                                   |
 
-`warning` is amber, not orange, because orange already means *focused*. Don't reintroduce an orange
+`warning` is amber, not orange, because orange already means _focused_. Don't reintroduce an orange
 warning.
 
 Status appears as `text-*`, `bg-*`, `border-*` and `fill-*`. For a panel, use `statusSurface[role]`
@@ -74,8 +74,8 @@ emitted Tailwind's default.
 
 ## Surfaces
 
-Translucent black for in-game surfaces (they sit *in* the scene, over the song video); opaque slate
-for dialogs (they sit *on top of* it and must stay readable).
+Translucent black for in-game surfaces (they sit _in_ the scene, over the song video); opaque slate
+for dialogs (they sit _on top of_ it and must stay readable).
 
 - `Box` → `bg-black/40`, the default card
 - `bg-black/55` → one step up: interactive things, tooltips, a picked-out row
@@ -102,7 +102,7 @@ From `akui/surfaces`, and `ButtonBase` is the reference implementation:
 Anything `fixed` or portalled takes a rung from the `zIndex` ladder in `tailwind.config.js` —
 `z-scene`, `z-hud`, `z-chrome`, `z-modal`, `z-toast` and so on. Never pick a number.
 
-Stacking *inside* a component is different: it forms its own context and competes only with
+Stacking _inside_ a component is different: it forms its own context and competes only with
 siblings, so plain `z-1`, `z-2`, `z-10` are correct there. Keep them small — a local `z-1000` reads
 like a global claim and is how this got out of hand.
 
@@ -125,7 +125,7 @@ drifts from Tailwind's, and every call adds its own listeners.
 
 Compose with `cn` (or `twx`, which uses it) — never a template string. `cn` is configured to
 understand this project's custom utilities, so a caller's class actually overrides the base instead
-of both surviving and letting the cascade decide. `` className={`${base} ${className}`} `` also
+of both surviving and letting the cascade decide. ``className={`${base} ${className}`}`` also
 renders a literal `undefined` when no className is passed.
 
 ## TWC (react-twc)

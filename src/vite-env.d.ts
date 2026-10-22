@@ -11,8 +11,6 @@ declare namespace globalThis {
   var isE2ETests: boolean | undefined;
   /** Set by `enableAutoMobileMode` in tests/helpers.ts — the e2e stand-in for the experiment. */
   var isE2EAutoMobileMode: boolean | undefined;
-  /** Set by `useRealtimeRemoteMics` in tests/helpers.ts — new game codes use the Realtime transport. */
-  var isE2ERemoteMicsRealtime: boolean | undefined;
   /** E2E-only, see src/modules/songs/stats/event-listeners.ts */
   var __storeSongStats:
     | ((songId: string, stats: import('~/modules/songs/stats/common').SongStats) => Promise<void>)

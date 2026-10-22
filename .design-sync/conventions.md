@@ -7,7 +7,7 @@ import { Button, Chip, Icon, Selector } from 'akui';
 
 <Button leftIcon={<Icon icon="ic:baseline-search" />} size="regular">
   Search
-</Button>
+</Button>;
 ```
 
 ### Styling idiom
@@ -15,6 +15,7 @@ import { Button, Chip, Icon, Selector } from 'akui';
 Components are styled with **Tailwind v4 utility classes** (CSS-first config, `@import 'tailwindcss'`), not a prop-based theme API. Compose new UI the same way — plain utility classes, not inline styles or a CSS-in-JS API.
 
 Real vocabulary from this codebase (grep `components/` and `_ds_bundle.css` for the full set):
+
 - `typography` — base text color/utility (custom `@utility` in the source stylesheet)
 - `bg-active` / `text-active` — the brand accent color (orange), used for focused/selected states
 - `subtle-focus` — a subtle inset focus ring utility
@@ -37,5 +38,5 @@ import { Chip, Icon, Menu } from 'akui';
   <Menu.Header>Up next</Menu.Header>
   <Chip variant="green">Live</Chip>
   <Icon icon="ic:baseline-check" />
-</Menu>
+</Menu>;
 ```

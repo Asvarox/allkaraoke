@@ -202,6 +202,8 @@ export default defineConfig((env) => ({
             },
             expect: {
               toMatchScreenshot: {
+                // No pixel budget (pixelmatch's default): the canvas renders identically run to run,
+                // so any differing pixel is a real change
                 // Keeps the layout the Playwright CT suite used: one shared root directory, split per test
                 // file, and `-ci` references for the Linux CI container vs. per-platform ones locally
                 resolveScreenshotPath: ({ arg, ext, root, testFileDirectory, testFileName }) =>

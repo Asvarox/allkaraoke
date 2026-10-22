@@ -5,47 +5,33 @@ import { RpcServer } from '~/modules/network/rpc/rpc-server';
 import { ServerSubscriptionRegistry } from '~/modules/network/rpc/server-subscription-registry';
 import { ChannelName, SubscriptionChannels } from '~/modules/remote-mic/network/client/subscriptions';
 import { NetworkMessages } from '~/modules/remote-mic/network/messages';
-import { REMOTE_MIC_ROOM_CODE_LEAD } from '~/modules/remote-mic/network/realtime-protocol';
+import { REMOTE_MIC_ROOM_CODE_PATTERN } from '~/modules/remote-mic/network/realtime-protocol';
 import { ServerTransport } from '~/modules/remote-mic/network/server/transport/interface';
-import { PartyKitServerTransport } from '~/modules/remote-mic/network/server/transport/party-kit-server';
 import { RealtimeServerTransport } from '~/modules/remote-mic/network/server/transport/realtime-server';
-import { WebSocketServerTransport } from '~/modules/remote-mic/network/server/transport/web-socket-server';
 import RemoteMicManager from '~/modules/remote-mic/remote-mic-manager';
 import generateRoomCode from '~/modules/utils/generate-room-code';
 import storage from '~/modules/utils/storage';
-import { RemoteMicConnectionTypeSetting } from '~/routes/settings/settings-state';
 
 import { serverHandlers } from './server-handlers';
 
 export const GAME_CODE_KEY = 'room_id_key';
-const GAME_CODE_TRANSPORT_KEY = 'room_transport_key';
 export const GAME_CODE_LENGTH = 5;
 
 export const storeGameCode = (gameCode: string) => {
   storage.session.setItem(GAME_CODE_KEY, gameCode);
 };
 
-type TransportName = ServerTransport['name'];
-
-/** The lead letter of a game code, which is how a phone knows which transport to connect with. */
-export const GAME_CODE_TRANSPORT_PREFIX: Record<TransportName, string> = {
-  WebSockets: 'w',
-  PartyKit: 'k',
-  PeerJS: 'p',
-  Realtime: REMOTE_MIC_ROOM_CODE_LEAD,
-};
-
-const createTransport = (name: TransportName): ServerTransport => {
-  if (name === 'WebSockets') return new WebSocketServerTransport();
-  if (name === 'Realtime') return new RealtimeServerTransport();
-  return new PartyKitServerTransport();
+// Codes stored before they dropped their fixed `r` lead are one letter short — keep them working.
+// Anything else that isn't a valid code is dropped, so the server generates a fresh one
+const readStoredGameCode = () => {
+  const stored: unknown = storage.session.getItem(GAME_CODE_KEY);
+  if (typeof stored !== 'string') return null;
+  const code = stored.length === GAME_CODE_LENGTH - 1 ? `r${stored}` : stored;
+  return REMOTE_MIC_ROOM_CODE_PATTERN.test(code) ? code : null;
 };
 
 export class NetworkServer {
-  private gameCode = storage.session.getItem(GAME_CODE_KEY)!;
-  /** Latched when the server first starts and kept for the session: phones already hold the code,
-   * and the code says which transport to connect with. Until then, the setting decides. */
-  private transportName: TransportName | null = storage.session.getItem(GAME_CODE_TRANSPORT_KEY);
+  private gameCode = readStoredGameCode()!;
   private started = false;
   /** Whether the current transport ever came up — tells a lost connection from a failed one. */
   private connected = false;
@@ -65,9 +51,7 @@ export class NetworkServer {
 
   public constructor() {
     if (!this.gameCode) {
-      // One character short of GAME_CODE_LENGTH: `getGameCode()` prepends the transport-type letter,
-      // and that prefix has to fit within the length remote mics type in.
-      this.gameCode = generateRoomCode(GAME_CODE_LENGTH - 1);
+      this.gameCode = generateRoomCode(GAME_CODE_LENGTH);
     }
 
     global?.addEventListener?.('beforeunload', () => {
@@ -76,28 +60,8 @@ export class NetworkServer {
     });
   }
 
-  public getTransportName = (): TransportName => this.transportName ?? RemoteMicConnectionTypeSetting.get();
-
-  private latchTransport = (name: TransportName) => {
-    this.transportName = name;
-    storage.session.setItem(GAME_CODE_TRANSPORT_KEY, name);
-  };
-
-  /** Moves the game onto another transport, which also changes its code — phones on the old one
-   * have to connect again. Only an explicit choice in the settings does this. */
-  public switchTransport = (name: TransportName) => {
-    if (name === this.getTransportName()) return;
-    const wasRunning = this.stop();
-    this.latchTransport(name);
-    if (wasRunning) this.start();
-  };
-
   public start = () => {
-    if (!this.transport) {
-      const name = this.getTransportName();
-      this.latchTransport(name);
-      this.transport = createTransport(name);
-    }
+    this.transport ??= new RealtimeServerTransport();
     if (this.started) return;
     this.started = true;
     console.log('connection started', this.getGameCode());
@@ -158,7 +122,7 @@ export class NetworkServer {
 
         if (reason === 'room-taken') {
           // Another game holds this code in the directory — a fresh code is the only way out
-          this.gameCode = generateRoomCode(GAME_CODE_LENGTH - 1);
+          this.gameCode = generateRoomCode(GAME_CODE_LENGTH);
           storeGameCode(this.gameCode);
         }
 
@@ -214,5 +178,5 @@ export class NetworkServer {
     }
   };
 
-  public getGameCode = (): string => GAME_CODE_TRANSPORT_PREFIX[this.getTransportName()] + this.gameCode;
+  public getGameCode = (): string => this.gameCode;
 }

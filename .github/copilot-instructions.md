@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Browser-based karaoke game (React 19 + TypeScript + Vite) supporting YouTube video playback, real-time pitch detection from microphones, and multiplayer via remote phone microphones using PartyKit (Cloudflare Workers).
+Browser-based karaoke game (React 19 + TypeScript + Vite) supporting YouTube video playback, real-time pitch detection from microphones, and multiplayer via remote phone microphones using Cloudflare Realtime.
 
 ## Architecture
 
@@ -20,7 +20,7 @@ Game state is NOT in React - it's in `src/modules/GameEngine/GameState/GameState
 
 ### Remote Microphones
 
-Phones connect via PartyKit (built on Cloudflare Workers). The phone detects pitch locally and sends frequency data in batches (~15/s) to reduce latency. See [docs/remote-mic.md](docs/remote-mic.md) for protocol details.
+Phones connect via Cloudflare Realtime SFU data channels. The phone detects pitch locally and sends frequency data in batches (~15/s) to reduce latency. See [docs/remote-mic.md](docs/remote-mic.md) for protocol details.
 
 ## Key Conventions
 

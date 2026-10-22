@@ -52,19 +52,28 @@ function useScrollEdges(ref: React.RefObject<HTMLElement | null>, orientation: O
     // Children arriving, leaving or resizing change what fits just as much as scrolling does — a
     // board that loads its rows a moment later would otherwise keep the mask it had while empty.
     const ro = new ResizeObserver(update);
-    // Rebuilt from scratch on every change rather than added to: a ResizeObserver holds its targets,
-    // so rows that have been swapped out would stay observed, and alive, for as long as the list is.
-    const observeAll = () => {
-      ro.disconnect();
-      ro.observe(el);
-      for (const child of el.children) ro.observe(child);
-    };
-    observeAll();
     const mo = new MutationObserver(() => {
       observeAll();
       update();
     });
-    mo.observe(el, { childList: true });
+    // A `display: contents` child (a portal slot, say) has no box, so its size never changes: watch
+    // what it holds instead, and for rows arriving in it as well as in the scroller itself
+    const observeChildren = (parent: Element) => {
+      mo.observe(parent, { childList: true });
+      for (const child of parent.children) {
+        if (getComputedStyle(child).display === 'contents') observeChildren(child);
+        else ro.observe(child);
+      }
+    };
+    // Rebuilt from scratch on every change rather than added to: a ResizeObserver holds its targets,
+    // so rows that have been swapped out would stay observed, and alive, for as long as the list is.
+    const observeAll = () => {
+      ro.disconnect();
+      mo.disconnect();
+      ro.observe(el);
+      observeChildren(el);
+    };
+    observeAll();
     return () => {
       el.removeEventListener('scroll', update);
       el.removeEventListener('transitionend', update);

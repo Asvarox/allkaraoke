@@ -112,8 +112,7 @@ for (const story of stories) {
 
     await page.evaluate(() => document.fonts.ready);
 
-    await withElementsHidden(page, [], () =>
-      expect(page).toHaveScreenshot(`${story.id}.png`, { fullPage: true, maxDiffPixelRatio: 0.005 }),
-    );
+    // No pixel budget: stories render identically run to run, so any differing pixel is a real change
+    await withElementsHidden(page, [], () => expect(page).toHaveScreenshot(`${story.id}.png`, { fullPage: true }));
   });
 }
