@@ -3230,7 +3230,7 @@ var handleOnlineSignaling = createRealtimeSignaling(ONLINE_REALTIME, (env) => en
 var REMOTE_MIC_REALTIME = {
 	basePath: "/remote-mic-signaling",
 	slotCount: 16,
-	roomCodePattern: /^r[a-z]{4}$/,
+	roomCodePattern: /^[a-z]{5}$/,
 	storageKey: "REMOTE_MIC"
 };
 //#endregion
