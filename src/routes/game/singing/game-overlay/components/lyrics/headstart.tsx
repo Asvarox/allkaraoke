@@ -2,7 +2,7 @@ import { ComponentProps, useMemo } from 'react';
 import tinycolor from 'tinycolor2';
 
 function BaseHeadstart(props: ComponentProps<'span'>) {
-  return <span {...props} className={`absolute right-24 my-2 h-8 w-40 ${props.className ?? ''}`} />;
+  return <span {...props} className={`absolute inset-y-0 right-24 my-auto h-8 w-40 ${props.className ?? ''}`} />;
 }
 
 export default function Headstart({ percent, color }: { percent: number; color: string }) {

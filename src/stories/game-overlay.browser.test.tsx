@@ -42,12 +42,12 @@ test.each([1, 2, 3, 4])('should properly draw the game with %i player(s)', async
 
   await expect
     .element(page.elementLocator(screen.container.firstElementChild!))
-    .toMatchScreenshot(`game-${playerNum}-players`, { comparatorOptions: { allowedMismatchedPixelRatio: 0.01 } });
+    .toMatchScreenshot(`game-${playerNum}-players`);
 
   // Hide the font to make comparison easier
   styles.push(addStyle('* { color: transparent !important; -webkit-text-stroke: 0 black !important; }'));
 
   await expect
     .element(screen.getByTestId('lyrics-container-player-0').first())
-    .toMatchScreenshot(`lyrics-${playerNum}-players`, { comparatorOptions: { allowedMismatchedPixelRatio: 0.03 } });
+    .toMatchScreenshot(`lyrics-${playerNum}-players`);
 });

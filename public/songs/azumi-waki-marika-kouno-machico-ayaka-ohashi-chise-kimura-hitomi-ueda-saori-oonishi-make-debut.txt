@@ -1,0 +1,251 @@
+#ARTIST:Azumi Waki, Marika Kouno, Machico, Ayaka Ohashi, Chise Kimura, Hitomi Ueda, Saori Oonishi
+#TITLE:Make Debut!
+#CREATOR:Cygames
+#BPM:360,04
+#YEAR:2018
+#VIDEO:v=_6rP_HS0ox4
+#GENRE:Anime
+#LANGUAGE:Japanese
+#GAP:4934,1110987668035
+#ALLKARAOKE_ID:azumi-waki-marika-kouno-machico-ayaka-ohashi-chise-kimura-hitomi-ueda-saori-oonishi-make-debut
+#ALLKARAOKE_SID:6708
+#ALLKARAOKE_LASTUPDATE:2026-10-22T02:50:43.794Z
+#ALLKARAOKE_REALBPM:179
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:101
+#MP3:Azumi Waki, Marika Kouno, Machico, Ayaka Ohashi, Chise Kimura, Hitomi Ueda, Saori Oonishi - Make Debut! (TV).mp3
+#COVER:Azumi Waki, Marika Kouno, Machico, Ayaka Ohashi, Chise Kimura, Hitomi Ueda, Saori Oonishi - Make Debut! (TV) [CO].jpg
+#MEDLEYSTARTBEAT:1408
+#MEDLEYENDBEAT:1968
+: 24 2 2 Hi
+: 28 2 2 bi
+: 32 2 9 ke 
+: 36 2 7 fan
+: 40 9 9 ~
+: 52 6 7 fa
+: 60 6 6 ~
+: 68 14 7 re
+- 82
+: 88 2 2 To
+: 92 2 2 do
+: 96 2 11 ke 
+: 100 2 9 go
+: 104 6 11 ~
+: 112 2 12 o
+: 116 5 11 ru 
+* 124 5 7 ma
+: 132 10 9 de
+- 142
+: 148 2 2 Ka
+: 152 2 11 ga
+: 156 2 9 ya
+: 160 2 7 ku 
+: 164 2 6 mi
+: 168 6 6 ra
+: 176 2 7 i 
+: 180 10 7 wo
+- 190
+: 196 2 7 Ki
+* 200 6 5 mi 
+: 208 6 7 to 
+: 216 5 9 mi
+: 224 1 11 ta
+: 226 4 12 ~
+: 232 6 11 i 
+: 240 2 7 ka
+: 244 47 7 ra
+- 291 528
+- 528
+: 552 2 5 Ka
+: 556 2 3 ke
+: 560 2 5 da
+: 564 8 5 shi
+: 576 5 8 ta
+* 584 12 1 ra
+- 596
+: 608 3 0 Ki
+: 616 9 1 tto
+- 625
+: 632 2 6 Ha
+: 636 2 8 ji
+: 640 2 6 ma
+: 644 5 5 ru 
+: 652 5 3 sto
+: 660 6 1 ~
+: 668 9 3 ry
+- 677
+: 688 5 8 I
+: 696 6 0 tsu
+: 704 2 3 de
+: 708 17 2 mo
+- 725
+: 732 2 5 Chi
+: 736 2 3 ka
+: 740 2 5 ku 
+: 744 6 6 ni 
+: 752 6 5 a
+: 760 5 1 ru 
+: 768 2 5 ka
+: 772 18 3 ra
+- 790
+: 808 2 5 Te 
+: 812 2 3 wo 
+: 816 2 5 no
+: 820 8 5 ba
+: 832 4 8 se
+: 840 12 1 ba
+- 852
+: 864 3 0 Mo
+: 872 8 1 tto
+- 880
+: 888 2 6 Tsu
+: 892 2 8 ka
+: 896 2 6 me
+: 900 4 5 ru 
+: 908 5 3 glo
+: 916 6 1 ~
+: 924 9 3 ry
+- 933
+: 944 6 0 I
+: 952 6 3 chi
+: 960 5 8 ban 
+: 968 2 6 me
+: 972 2 8 za
+: 976 2 6 shi
+: 980 13 5 te
+- 993
+: 1000 4 10 Next 
+: 1008 2 1 chal
+: 1012 7 1 lenge
+- 1019
+: 1024 2 -2 Ka
+: 1028 2 0 so
+: 1032 2 0 ku
+: 1036 2 1 ~ 
+: 1040 6 1 shi
+: 1048 6 0 te 
+* 1056 6 3 yu
+: 1064 33 1 kou
+- 1097 1104
+- 1104
+: 1128 6 8 Sho
+: 1136 2 6 u
+: 1140 6 5 ri 
+: 1148 5 6 no 
+: 1156 2 6 me
+: 1160 5 8 ~
+: 1168 6 1 ga
+: 1176 6 0 mi 
+: 1184 2 5 mo 
+: 1188 2 5 mu
+: 1192 10 3 chu
+: 1204 2 3 u 
+: 1208 9 5 ni
+- 1217
+: 1220 2 5 Sa
+: 1224 2 6 se
+: 1228 6 5 ru 
+* 1236 8 2 yo
+- 1244
+: 1252 2 2 Spe
+: 1256 5 7 ~
+: 1264 2 6 cial
+: 1268 6 7 ~ 
+: 1276 6 9 na 
+: 1284 2 9 a
+: 1288 6 11 shi
+: 1296 2 6 ta 
+: 1300 9 3 e 
+* 1312 6 -1 tsu
+* 1320 5 1 na
+: 1328 2 8 ga
+: 1332 2 6 ru
+: 1336 17 8 ~
+- 1353
+: 1364 5 8 Make
+: 1372 2 10 ~ 
+: 1376 2 11 de
+: 1380 2 9 but
+: 1384 31 10 ~!
+- 1415
+: 1432 2 2 Hi
+: 1436 2 2 bi
+: 1440 2 9 ke 
+: 1444 2 7 fan
+: 1448 9 9 ~
+: 1460 6 7 fa
+: 1468 6 6 ~
+: 1476 12 7 re
+- 1488
+: 1496 2 2 To
+: 1500 2 2 do
+: 1504 2 11 ke 
+: 1508 2 9 go
+: 1512 6 11 ~
+: 1520 2 12 o
+: 1524 5 11 ru 
+* 1532 5 7 ma
+: 1540 10 9 de
+- 1550
+: 1556 2 2 Ka
+: 1560 2 11 ga
+: 1564 2 9 ya
+: 1568 2 7 ku 
+: 1572 2 6 mi
+: 1576 6 6 ra
+: 1584 2 7 i 
+: 1588 10 7 wo
+- 1598
+: 1604 2 7 Ki
+: 1608 6 5 mi 
+: 1616 6 7 to 
+: 1624 5 9 mi
+: 1632 1 11 ta
+: 1634 4 12 ~
+: 1640 6 11 i 
+: 1648 2 7 ka
+: 1652 28 7 ra
+- 1680
+: 1688 2 2 Ka
+: 1692 2 2 ke
+: 1696 2 9 nu
+: 1700 2 7 ke
+: 1704 5 9 ~
+: 1712 2 9 te 
+: 1716 5 7 yu
+: 1724 6 6 ko
+: 1732 11 7 u
+- 1743
+: 1752 2 2 Ki
+: 1756 2 2 mi 
+: 1760 2 11 da
+: 1764 2 9 ke
+: 1768 6 11 ~ 
+: 1776 2 12 no 
+: 1780 5 11 mi
+* 1788 6 6 chi 
+: 1796 17 7 wo
+- 1813
+: 1820 2 4 Mo
+: 1824 2 6 ~
+: 1828 2 6 tto
+: 1832 15 7 ~
+- 1847
+: 1852 2 4 Ha
+: 1856 2 6 ya
+: 1860 2 6 ku
+: 1864 14 7 ~
+- 1878
+: 1888 5 7 I 
+* 1896 16 10 believe
+- 1912
+: 1920 2 10 Yu
+: 1924 2 10 me 
+: 1928 2 9 no
+: 1932 4 10 ~ 
+: 1940 2 10 sa
+: 1944 2 9 ki 
+* 1948 9 7 ma
+: 1960 2 6 de
+: 1964 28 7 ~
+E

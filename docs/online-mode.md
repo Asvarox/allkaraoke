@@ -59,10 +59,10 @@ Two properties of the SFU matter beyond price:
 
 The host publishes one broadcast channel and one channel per slot:
 
-| Channel  | Published by | Subscribed by            | Carries                                          |
-| -------- | ------------ | ------------------------ | ------------------------------------------------ |
-| `room`   | host         | everyone, read-only      | state pushes, heartbeats, succession snapshots    |
-| `slot-N` | host         | one client, `canReply`   | that client's RPC calls and their replies         |
+| Channel  | Published by | Subscribed by          | Carries                                        |
+| -------- | ------------ | ---------------------- | ---------------------------------------------- |
+| `room`   | host         | everyone, read-only    | state pushes, heartbeats, succession snapshots |
+| `slot-N` | host         | one client, `canReply` | that client's RPC calls and their replies      |
 
 `canReply: true` makes a subscriber's channel bidirectional, which is what turns a slot into a
 private duplex pipe. Cloudflare grants reply access to **one** subscriber per channel, and a later
@@ -129,7 +129,7 @@ to open their own slot by pointing them at a session that does not exist. The br
 secret in `localStorage` next to the participant id and for the same reason: a room outlives
 several page loads, and a singer who closes the tab and comes back is the same member.
 
-Removing *somebody else* is separate, and gated on being the current host rather than on a secret —
+Removing _somebody else_ is separate, and gated on being the current host rather than on a secret —
 `leave` carries the asking session and the directory checks it.
 
 The host applies the same rule one level up, to the `hello` a client opens its slot with. The slot
@@ -217,13 +217,13 @@ Two mitigations are in place:
   navigation still has something to restore from.
 
 A host disappearing within a couple of seconds of starting a song used to lose the round: the
-successor took over holding a *lobby*-phase snapshot, so `scoring.publishFinal` (which requires
+successor took over holding a _lobby_-phase snapshot, so `scoring.publishFinal` (which requires
 `phase === 'singing'`) dropped the score and everyone landed back in the lobby.
 
 The cause was the snapshot rate limit rather than the navigation. `broadcastSnapshot` thinned the
 stream to one every `ONLINE_SNAPSHOT_BROADCAST_MS`, which drops precisely the wrong snapshot: a
 phase change is the newest thing that has happened, so it falls inside the window and is held back
-while the *previous* phase keeps going out. Starting a song is also when every tab is at its
+while the _previous_ phase keeps going out. Starting a song is also when every tab is at its
 busiest, so it is exactly when a host is likely to vanish.
 
 The same limiter lost the room in the lobby, too. A singer who had joined, or changed colour, less
@@ -303,13 +303,13 @@ minority of networks, and losing it must not stop everyone else joining.
 
 ## Configuration
 
-| Setting                                                     | Required            | Where                                           |
-| ----------------------------------------------------------- | ------------------- | ----------------------------------------------- |
-| `REALTIME_APP_ID` / `REALTIME_APP_TOKEN`                     | production only     | `wrangler secret put`, `.dev.vars`              |
-| `REALTIME_TURN_KEY_ID` / `REALTIME_TURN_API_TOKEN`           | no (opt-in TURN)    | `wrangler secret put`, `.dev.vars`              |
-| `ONLINE_TURN_URLS` / `_USERNAME` / `_CREDENTIAL`             | no (own TURN)       | `wrangler secret put`, `.dev.vars`              |
-| `ONLINE_STUN_URLS`                                           | no                  | defaults to Cloudflare's public STUN            |
-| `VITE_APP_SIGNALING_URL`                                     | no                  | `.env`; empty means same origin                 |
+| Setting                                            | Required         | Where                                |
+| -------------------------------------------------- | ---------------- | ------------------------------------ |
+| `REALTIME_APP_ID` / `REALTIME_APP_TOKEN`           | production only  | `wrangler secret put`, `.dev.vars`   |
+| `REALTIME_TURN_KEY_ID` / `REALTIME_TURN_API_TOKEN` | no (opt-in TURN) | `wrangler secret put`, `.dev.vars`   |
+| `ONLINE_TURN_URLS` / `_USERNAME` / `_CREDENTIAL`   | no (own TURN)    | `wrangler secret put`, `.dev.vars`   |
+| `ONLINE_STUN_URLS`                                 | no               | defaults to Cloudflare's public STUN |
+| `VITE_APP_SIGNALING_URL`                           | no               | `.env`; empty means same origin      |
 
 Create the Realtime app in the Cloudflare dashboard under Realtime → SFU. Without the pair the
 Worker's SFU endpoints answer 503; locally the dev server runs the fake SFU instead (see Testing).

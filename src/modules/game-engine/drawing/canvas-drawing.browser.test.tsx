@@ -46,9 +46,7 @@ test('Should properly draw game state', async () => {
 
   await expect.poll(() => hasDrawnAnything(canvas)).toBe(true);
 
-  await expect
-    .element(locator)
-    .toMatchScreenshot('game-state', { comparatorOptions: { allowedMismatchedPixelRatio: 0.005 } });
+  await expect.element(locator).toMatchScreenshot('game-state');
 });
 
 test('should draw missed note above the target note if the distance is positive', async () => {
@@ -76,7 +74,5 @@ test('should draw missed note above the target note if the distance is positive'
   await expect.poll(() => hasDrawnAnything(canvas)).toBe(true);
 
   // Expected - red should be below, blue above the target note
-  await expect
-    .element(locator)
-    .toMatchScreenshot('missed-note-above-target-note', { comparatorOptions: { allowedMismatchedPixelRatio: 0.005 } });
+  await expect.element(locator).toMatchScreenshot('missed-note-above-target-note');
 });

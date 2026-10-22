@@ -6,7 +6,7 @@ import RemoteMicManager from '~/modules/remote-mic/remote-mic-manager';
 
 const fake = vi.hoisted(() => {
   class FakeTransport {
-    public readonly name = 'PartyKit';
+    public readonly name = 'Realtime';
     public onClose: (() => void) | undefined;
     public connect = vi.fn((_room: string, onConnect: () => void, onClose: () => void) => {
       this.onClose = onClose;
@@ -22,8 +22,8 @@ const fake = vi.hoisted(() => {
   return { FakeTransport, instances: [] as InstanceType<typeof FakeTransport>[] };
 });
 
-vi.mock('~/modules/remote-mic/network/server/transport/party-kit-server', () => ({
-  PartyKitServerTransport: class extends fake.FakeTransport {
+vi.mock('~/modules/remote-mic/network/server/transport/realtime-server', () => ({
+  RealtimeServerTransport: class extends fake.FakeTransport {
     public constructor() {
       super();
       fake.instances.push(this);

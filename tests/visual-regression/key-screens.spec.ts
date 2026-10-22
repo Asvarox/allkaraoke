@@ -98,8 +98,12 @@ visual(
     await remoteMic._page.setViewportSize(viewport);
 
     // The live ping counter in the top bar is re-measured every second. (The mic pill below it keeps
-    // its shape - only the volume bar inside it is hidden, by the shared rule.)
-    const remoteMasks = [remoteMic.remoteMicMainPage.connectionStatusElement];
+    // its shape - only the volume bar inside it is hidden, by the shared rule.) The "Connect phone"
+    // button sizes itself to the hidden per-run game code, nudging its icon by a sub-pixel each run.
+    const remoteMasks = [
+      remoteMic.remoteMicMainPage.connectionStatusElement,
+      remoteMic._page.getByLabel('Connect phone'),
+    ];
 
     // Host returns to the main menu, which publishes its own mirrored layout to the remote.
     await pages.smartphonesConnectionPage.goToMainMenu();
@@ -177,7 +181,11 @@ visual(
     await remoteMic._page.evaluate(() => document.exitFullscreen?.().catch(() => {}));
     await remoteMic._page.setViewportSize(viewport);
 
-    const remoteMasks = [remoteMic.remoteMicMainPage.connectionStatusElement];
+    // Same as above: the ping counter, and the "Connect phone" button sized to the per-run game code
+    const remoteMasks = [
+      remoteMic.remoteMicMainPage.connectionStatusElement,
+      remoteMic._page.getByLabel('Connect phone'),
+    ];
 
     // A song with a long intro, so the skip-intro prompt (and its mirrored control) actually appears.
     await pages.smartphonesConnectionPage.goToMainMenu();

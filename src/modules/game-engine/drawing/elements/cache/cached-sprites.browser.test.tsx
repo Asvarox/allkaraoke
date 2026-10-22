@@ -50,9 +50,7 @@ test('Should draw a proper sprite map', async () => {
   });
   document.body.prepend(grid);
 
-  await expect
-    .element(page.elementLocator(grid))
-    .toMatchScreenshot('proper-sprite-map', { comparatorOptions: { allowedMismatchedPixelRatio: 0.005 } });
+  await expect.element(page.elementLocator(grid)).toMatchScreenshot('proper-sprite-map');
 });
 
 test('Should return proper coordinates to draw a legit note', async () => {
@@ -63,9 +61,7 @@ test('Should return proper coordinates to draw a legit note', async () => {
   drawSprite(ctx, 'p0Hit', 'middle', 10 + start.w, 10, 40);
   drawSprite(ctx, 'p0Hit', 'end', 10 + start.w + 40, 10);
 
-  await expect
-    .element(locator)
-    .toMatchScreenshot('proper-legit-note', { comparatorOptions: { allowedMismatchedPixelRatio: 0.005 } });
+  await expect.element(locator).toMatchScreenshot('proper-legit-note');
 });
 
 test('Should return proper coordinates to draw a legit small note', async () => {
@@ -76,7 +72,5 @@ test('Should return proper coordinates to draw a legit small note', async () => 
   drawSprite(ctx, 'p0Miss', 'middle', 10 + start.w, 10, 40);
   drawSprite(ctx, 'p0Miss', 'end', 10 + start.w + 40, 10);
 
-  await expect
-    .element(locator)
-    .toMatchScreenshot('proper-legit-small-note', { comparatorOptions: { allowedMismatchedPixelRatio: 0.005 } });
+  await expect.element(locator).toMatchScreenshot('proper-legit-small-note');
 });

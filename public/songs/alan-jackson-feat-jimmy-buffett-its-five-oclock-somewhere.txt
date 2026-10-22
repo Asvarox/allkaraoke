@@ -1,0 +1,576 @@
+#ARTIST:Alan Jackson feat. Jimmy Buffett
+#TITLE:It’s Five O’Clock Somewhere
+#CREATOR:Relisch
+#BPM:300
+#YEAR:2003
+#VIDEO:v=BPCjC543llU
+#GENRE:Country
+#LANGUAGE:English
+#GAP:9550
+#ALLKARAOKE_ID:alan-jackson-feat-jimmy-buffett-its-five-oclock-somewhere
+#ALLKARAOKE_SID:6681
+#ALLKARAOKE_LASTUPDATE:2026-10-17T02:25:45.041Z
+#ALLKARAOKE_REALBPM:200
+#ALLKARAOKE_SOURCEURL:Alan Jackson feat . Jimmy Buffett
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:230
+#MP3:Alan Jackson feat. Jimmy Buffett - It’s Five O’Clock Somewhere.mp3
+#COVER:Alan Jackson feat. Jimmy Buffett - It’s Five O’Clock Somewhere [CO].jpg
+#BACKGROUND:Alan Jackson feat. Jimmy Buffett - It’s Five O’Clock Somewhere [BG].jpg
+: 20 1 -3 The 
+: 22 3 5 sun 
+: 26 8 9 is 
+: 35 13 9 hot 
+: 50 3 9 and 
+: 54 3 9 that
+: 58 4 7 ~ 
+: 64 8 7 old 
+: 74 2 7 clock
+: 78 5 6 ~ 
+: 86 5 6 is 
+: 93 6 7 mo
+: 100 2 6 vin’ 
+: 103 11 9 slow,
+- 114
+: 128 1 -3 And 
+: 132 3 4 so 
+: 137 3 2 am 
+: 141 11 6 I.
+- 152 154
+- 154
+: 174 3 -3 Work
+: 178 2 6 ~ 
+: 181 6 9 day 
+: 189 3 9 pas
+: 193 4 9 ses
+: 198 9 7 ~ 
+: 208 2 9 like
+: 211 10 7 ~ 
+: 222 3 7 mo
+: 226 7 7 las
+: 234 5 6 ses 
+: 240 5 6 in 
+: 247 3 7 win
+: 251 3 6 ter
+: 256 13 9 time,
+- 269
+: 287 2 2 But 
+: 290 3 4 it’s 
+: 294 8 2 July
+: 304 8 2 ~.
+- 312
+: 319 3 9 Get
+: 323 3 6 tin’ 
+: 327 8 9 paid 
+: 337 3 9 by 
+: 342 3 6 the 
+: 346 3 9 hou
+: 351 3 7 ~r, 
+: 361 3 -3 and 
+: 366 3 9 ol
+: 370 3 6 der 
+: 374 4 9 by 
+: 379 2 9 the 
+: 382 1 6 mi
+: 384 3 2 nute.
+- 387
+: 399 3 -3 My 
+: 404 4 6 boss 
+: 409 3 9 just 
+: 418 6 9 pushed 
+: 427 8 9 me 
+: 440 5 9 o
+: 446 2 6 ver 
+: 449 5 9 the 
+: 456 3 9 li
+: 460 4 11 mit.
+- 464
+: 469 3 2 I’d 
+: 473 2 14 like 
+: 476 3 11 to 
+: 480 4 14 call 
+: 487 6 14 him 
+: 495 5 14 some
+: 501 4 11 thin’,
+- 505
+: 514 3 -3 I 
+: 518 5 9 think 
+: 524 3 9 I’ll 
+: 531 5 9 just 
+: 537 4 9 call 
+: 543 3 7 it 
+: 547 4 6 a 
+: 552 3 7 day
+: 556 2 6 ~
+: 559 5 4 ~.
+- 564 575
+- 575
+* 595 23 14 Pour 
+* 620 2 9 me 
+* 624 3 9 some
+* 628 3 6 thin’ 
+* 633 4 9 tall 
+: 639 7 9 and 
+: 648 7 11 strong,
+- 655
+: 658 2 9 Make 
+: 662 3 9 it 
+: 667 3 6 a 
+: 671 5 9 “Hur
+: 677 6 9 ri
+: 686 8 11 cane” 
+: 696 3 9 be
+: 700 4 9 fore 
+: 705 10 9 I 
+: 717 2 9 go 
+: 721 3 9 in
+: 725 9 6 sane.
+- 734
+: 743 4 2 It’s 
+: 749 7 14 on
+: 757 5 14 ly 
+: 763 7 14 half-
+: 772 8 14 past 
+: 783 3 14 twelve
+: 788 9 11 ~ 
+: 801 4 2 but 
+: 806 4 11 I 
+: 811 9 11 don’t 
+: 821 3 6 care
+: 826 5 4 ~.
+- 831 852
+- 852
+: 872 5 6 It’s 
+: 879 7 7 five 
+: 888 3 6 o’
+: 893 7 4 clock 
+: 901 8 4 some
+: 911 14 2 where.
+- 925 1069
+- 1069
+: 1089 3 -3 Oh, 
+: 1093 4 6 this 
+: 1098 8 9 lunch 
+: 1108 13 9 break 
+: 1122 4 9 is 
+: 1127 6 9 gon
+: 1135 8 7 na 
+: 1145 4 7 take
+: 1150 5 6 ~ 
+: 1157 7 6 all 
+: 1166 3 7 af
+: 1171 3 6 ter
+: 1175 9 9 noon,
+- 1184
+* 1202 1 -3 And 
+* 1205 3 4 half 
+* 1209 3 2 the 
+* 1213 11 6 night.
+- 1224
+: 1243 3 -3 To
+: 1247 3 6 mor
+: 1251 9 9 row 
+: 1262 2 9 mor
+: 1265 4 9 nin’
+: 1271 9 7 ~, 
+: 1281 4 9 I
+: 1286 5 7 ~ 
+: 1292 6 7 know 
+: 1300 11 7 there’ll 
+: 1313 4 6 be 
+: 1318 9 7 hell 
+: 1328 3 6 to 
+: 1333 10 9 pay,
+- 1343
+: 1355 2 6 Hey, 
+: 1358 2 2 but 
+: 1362 4 4 that’s 
+: 1367 8 2 all 
+: 1377 7 2 right.
+- 1384
+: 1391 2 9 I 
+: 1394 4 6 ain’t 
+: 1400 4 9 had 
+: 1405 2 9 a 
+: 1408 5 6 day 
+: 1414 8 9 off 
+: 1424 6 7 now 
+: 1434 2 -3 in 
+: 1438 3 9 o
+: 1443 2 6 ver 
+: 1446 4 9 a 
+: 1452 2 9 year
+: 1455 2 6 ~
+: 1458 3 2 ~.
+- 1461
+: 1467 3 6 My 
+: 1472 3 -3 Ja
+: 1477 3 6 mai
+: 1481 3 9 can 
+: 1486 3 9 va
+: 1490 7 9 ca
+: 1498 3 6 tion’s 
+: 1505 3 9 gon
+: 1509 4 6 na 
+: 1515 4 6 start 
+: 1521 6 9 right 
+: 1529 8 9 here.
+- 1537
+: 1543 3 14 If 
+: 1547 4 11 the 
+: 1552 10 14 phone’s 
+: 1563 3 14 for 
+: 1568 5 14 me,
+- 1573
+: 1576 4 11 You 
+: 1581 4 -3 can 
+: 1587 3 9 tell 
+: 1591 4 9 ’em 
+: 1597 9 9 I 
+: 1609 5 9 just 
+: 1616 6 7 sailed 
+* 1623 3 6 a
+* 1627 2 7 way
+* 1630 2 6 ~
+* 1633 4 4 ~.
+- 1637 1641
+- 1641
+: 1661 5 6 And 
+: 1667 23 14 pour 
+: 1692 2 9 me 
+: 1696 3 9 some
+: 1700 3 6 thin’ 
+: 1705 4 9 tall 
+: 1711 7 9 and 
+: 1720 7 11 strong,
+- 1727
+: 1730 2 9 Make 
+: 1734 3 9 it 
+: 1739 3 6 a 
+: 1743 5 9 “Hur
+: 1749 6 9 ri
+: 1758 8 11 cane” 
+: 1768 3 9 be
+: 1772 4 9 fore 
+: 1777 10 9 I 
+: 1789 2 9 go 
+: 1793 3 9 in
+: 1797 9 6 sane.
+- 1806
+: 1815 4 2 It’s 
+: 1821 7 14 on
+: 1829 5 14 ly 
+: 1835 7 14 half-
+: 1844 8 14 past 
+: 1855 3 14 twelve
+: 1860 9 11 ~ 
+: 1873 4 2 but 
+: 1878 4 11 I 
+: 1883 9 11 don’t 
+: 1893 3 6 care
+: 1898 5 4 ~.
+- 1903 1924
+- 1924
+: 1944 5 6 It’s 
+: 1951 7 7 five 
+: 1960 3 6 o’
+: 1965 7 4 clock 
+: 1973 8 4 some
+: 1983 14 2 where.
+- 1997 2252
+- 2252
+: 2272 3 11 I 
+: 2277 3 11 could 
+: 2282 4 11 pay 
+: 2287 6 11 off 
+: 2295 5 11 my 
+: 2301 6 11 tab,
+- 2307
+: 2310 4 11 Pour 
+: 2315 4 11 my
+: 2320 4 11 self 
+: 2325 4 11 in 
+: 2330 3 11 a 
+: 2337 8 11 cab,
+- 2345
+: 2348 4 9 And 
+: 2353 4 9 be 
+: 2359 6 11 back 
+: 2367 5 9 to 
+: 2373 7 9 work 
+: 2382 4 6 be
+: 2387 7 9 fore 
+: 2396 3 6 two
+: 2400 1 4 ~
+: 2402 4 2 ~.
+- 2406
+: 2424 4 6 At 
+: 2429 4 9 a 
+: 2435 3 11 mo
+: 2439 6 11 ment 
+: 2447 5 11 like 
+: 2453 8 11 this 
+: 2463 5 2 I 
+: 2472 5 11 can’t 
+: 2480 5 11 help 
+: 2487 4 11 but 
+: 2492 4 11 won
+: 2498 5 9 der,
+- 2503
+: 2519 2 7 What 
+: 2523 5 6 would 
+* 2529 3 7 Jim
+* 2534 5 6 my 
+* 2541 3 7 Buf
+* 2546 6 6 fett 
+* 2555 16 9 do?
+- 2571
+* 2574 3 6 Fun
+* 2578 2 6 ny 
+* 2581 2 6 you 
+* 2584 1 6 should 
+* 2586 5 6 ask, 
+* 2592 2 6 A
+F 2595 4 6 lan. 
+: 2609 6 11 I’d 
+: 2616 4 9 say,
+- 2620
+: 2627 22 14 Pour 
+: 2650 3 9 me 
+: 2654 4 9 some
+: 2659 4 6 thin’ 
+: 2664 4 9 tall 
+: 2670 6 9 and 
+: 2678 7 11 strong,
+- 2685
+: 2688 3 9 Make 
+: 2693 3 9 it 
+: 2697 4 6 a 
+: 2702 4 9 “Hur
+: 2708 7 9 ri
+: 2717 8 11 cane” 
+: 2726 4 9 be
+: 2731 4 9 fore 
+: 2737 3 9 I 
+: 2741 4 9 go 
+: 2746 7 9 in
+: 2755 9 6 sane.
+- 2764
+: 2774 3 2 It’s 
+: 2779 7 14 on
+: 2787 4 14 ly 
+: 2793 7 14 half-
+: 2801 11 14 past 
+: 2813 3 14 twelve
+: 2817 9 14 ~ 
+: 2830 2 11 but 
+: 2833 6 2 I 
+: 2840 10 11 don’t 
+: 2852 4 11 care
+: 2857 7 6 ~.
+- 2864 2887
+- 2887
+: 2907 19 14 Pour 
+: 2927 3 9 me 
+: 2932 3 9 some
+: 2936 4 6 thin’ 
+: 2941 4 9 tall 
+: 2947 7 9 and 
+: 2956 7 11 strong,
+- 2963
+: 2966 3 9 Make 
+: 2970 3 9 it 
+: 2975 3 6 a 
+: 2980 4 9 “Hur
+: 2985 7 9 ri
+: 2994 8 11 cane” 
+: 3003 4 9 be
+: 3008 4 9 fore 
+: 3013 4 9 I 
+: 3018 6 9 go 
+: 3027 4 9 in
+: 3033 8 6 sane.
+- 3041
+: 3052 4 2 It’s 
+: 3057 7 14 on
+: 3065 5 14 ly 
+: 3071 7 14 half-
+: 3080 9 14 past 
+: 3090 4 14 twelve
+: 3095 8 11 ~ 
+: 3107 5 6 but 
+: 3114 4 7 I 
+: 3120 5 6 don’t 
+: 3129 11 4 care.
+- 3140
+* 3154 1 -3 He
+* 3156 1 9 ~ 
+* 3158 1 9 don’t 
+* 3160 2 9 care
+* 3163 1 6 ~
+* 3165 1 4 ~.
+- 3166 3174
+- 3174
+: 3194 2 9 I 
+: 3197 7 9 don’t 
+: 3206 2 9 care
+: 3209 2 6 ~
+: 3212 6 4 ~.
+- 3218 3238
+- 3238
+: 3258 4 6 It’s 
+: 3264 8 7 five 
+: 3273 3 6 o’
+: 3278 7 4 clock 
+: 3287 7 4 some
+: 3296 13 2 where.
+- 3309 3365
+- 3365
+F 3385 1 6 What 
+F 3387 2 6 time 
+F 3390 3 6 zone 
+F 3394 2 6 am 
+F 3397 1 6 I 
+F 3399 4 6 on? 
+F 3423 1 6 What 
+F 3425 1 6 coun
+F 3427 2 6 try 
+F 3430 1 6 am 
+F 3432 1 6 I 
+F 3434 3 6 in?
+- 3437
+F 3443 1 6 It 
+F 3445 1 6 doe
+F 3447 1 6 sn’t 
+F 3449 1 6 mat
+F 3451 1 6 ter, 
+F 3454 1 6 it’s 
+F 3456 2 6 five 
+F 3459 1 6 o’
+F 3461 4 6 clock 
+F 3466 3 6 some
+F 3470 4 6 where.
+- 3474
+F 3490 2 6 It’s 
+F 3493 4 6 always 
+F 3498 4 6 on 
+F 3503 3 6 five 
+* 3507 3 6 in 
+* 3511 1 6 Mar
+* 3513 2 6 ga
+* 3516 2 6 ri
+* 3519 1 6 ta
+* 3521 3 6 ville, 
+F 3527 2 6 come 
+F 3530 1 6 to 
+F 3532 2 6 think 
+F 3535 2 6 of 
+F 3538 2 6 it.
+- 3540
+F 3543 2 6 Yeah, 
+F 3546 1 6 I 
+F 3548 2 6 heard 
+F 3551 5 6 that.
+- 3556
+F 3575 1 6 You 
+F 3577 1 6 been 
+F 3579 3 6 there, 
+F 3583 1 6 ha
+F 3585 2 6 ven’t 
+F 3588 3 6 you?
+- 3591
+F 3603 2 6 Yes 
+F 3606 4 6 sir.
+- 3610
+F 3620 1 6 I 
+F 3622 1 6 seen 
+F 3624 3 6 your 
+F 3628 3 6 boat 
+F 3632 5 6 there.
+- 3637
+F 3645 2 6 I’ve 
+F 3648 2 6 been 
+F 3651 1 6 to 
+F 3653 1 6 Mar
+F 3655 2 6 ga
+F 3658 2 6 ri
+F 3661 1 6 ta
+F 3663 2 6 ville 
+F 3666 2 6 a 
+F 3669 2 6 few 
+F 3672 7 6 times.
+- 3679
+F 3689 1 6 All 
+F 3691 4 6 right, 
+F 3701 2 6 that’s 
+F 3704 3 6 good.
+- 3707
+F 3712 2 6 Stum
+F 3716 2 6 bled 
+F 3719 2 6 all 
+F 3722 2 6 the 
+F 3725 1 6 way 
+F 3727 3 6 back.
+- 3730
+F 3737 1 6 O
+F 3739 4 6 K. 
+F 3747 3 6 Just 
+F 3751 1 6 wan
+F 3753 1 6 na 
+F 3755 1 6 make 
+F 3757 2 6 sure 
+F 3760 1 6 you 
+F 3762 2 6 can 
+F 3765 3 6 keep 
+F 3769 1 6 it
+F 3771 1 6 ~
+- 3772
+F 3775 1 6 Be
+F 3777 2 6 tween 
+F 3780 1 6 the 
+F 3782 2 6 na
+F 3785 2 6 vi
+F 3788 2 6 ga
+F 3792 1 6 tio
+F 3794 2 6 nal 
+F 3797 2 6 bea
+F 3800 5 6 cons.
+- 3805 3807
+- 3807
+F 3827 2 6 Be
+F 3830 1 6 tween 
+F 3832 2 6 the 
+F 3835 1 6 bu
+F 3837 2 6 oys, 
+F 3841 2 6 I 
+F 3844 2 6 got 
+F 3847 3 6 it.
+- 3850
+F 3858 2 6 All 
+F 3861 4 6 right. 
+F 3871 2 6 Well, 
+F 3874 4 6 it’s 
+F 3879 2 6 five 
+F 3882 2 6 o’
+F 3885 5 6 clock. 
+F 3892 2 6 Let’s 
+F 3895 3 6 go 
+F 3899 2 6 some
+F 3903 4 6 where.
+- 3907
+F 3911 2 6 I’m 
+F 3914 2 6 rea
+F 3917 2 6 dy, 
+F 3920 2 6 crank 
+F 3923 2 6 it 
+F 3926 2 6 up.
+- 3928
+F 3939 2 6 Let’s 
+F 3942 1 6 get 
+F 3944 2 6 out 
+F 3947 1 6 of 
+F 3949 3 6 here.
+- 3952
+F 3955 3 6 I’m 
+F 3959 7 6 gone.
+E
