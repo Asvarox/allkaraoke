@@ -1,0 +1,450 @@
+#ARTIST:Scooter
+#TITLE:How Much Is The Fish?
+#CREATOR:Edi316
+#BPM:280
+#YEAR:1998
+#VIDEO:v=cbB3iGRHtqA
+#LANGUAGE:English
+#GAP:3882,1428571428573
+#ALLKARAOKE_ID:scooter-how-much-is-the-fish
+#ALLKARAOKE_SID:6732
+#ALLKARAOKE_LASTUPDATE:2026-10-23T02:48:02.086Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:140
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=cbB3iGRHtqA
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:226
+#MP3:Scooter - How Much Is The Fish?.mp3
+#COVER:Scooter - How Much Is The Fish? [CO].jpg
+#BACKGROUND:Scooter - How Much Is The Fish? [BG].jpg
+R 19 3 0 The 
+R 25 6 0 chase 
+R 49 2 0 is 
+R 55 3 0 bet
+R 59 2 0 ter 
+R 63 2 0 than 
+R 67 2 0 the 
+R 72 7 0 catch
+- 79 175
+- 175
+R 194 3 0 Trans
+R 199 3 0 for
+R 203 3 0 ming 
+R 211 2 0 the 
+R 216 5 0 tunes
+- 221 240
+- 240
+R 259 2 0 We 
+R 263 4 0 need 
+R 269 2 0 your 
+R 274 3 0 sup
+R 279 5 0 port
+- 284 303
+- 303
+R 322 3 0 If 
+R 326 4 0 you 
+R 331 3 0 got 
+R 338 2 0 the 
+R 343 4 0 breath 
+R 351 5 0 back
+- 356 379
+- 379
+R 398 3 0 It’s 
+R 403 2 0 the 
+R 407 3 0 first 
+R 415 5 0 page 
+R 430 3 0 of 
+R 434 2 0 the 
+R 439 3 0 se
+R 443 4 0 cond 
+R 451 3 0 chap
+R 458 4 0 ter
+- 462
+R 470 3 0 Hold 
+R 475 1 0 your 
+R 477 3 0 back 
+R 483 1 0 for 
+R 485 1 0 the 
+R 487 1 0 rhy
+R 489 1 0 thm 
+R 491 1 0 at
+R 493 3 0 tack
+- 496
+R 499 1 0 Co
+R 501 1 0 ming 
+R 503 3 0 down 
+R 507 1 0 on 
+R 509 1 0 the 
+R 511 2 0 floor 
+R 515 1 0 like 
+R 517 1 0 a 
+R 519 2 0 ma
+R 522 2 0 ni
+R 525 2 0 ac
+- 527
+R 534 3 0 Hold 
+R 538 2 0 your 
+R 541 3 0 back 
+R 546 2 0 for 
+R 549 1 0 the 
+R 551 1 0 rhy
+R 553 1 0 thm 
+R 555 1 0 at
+R 557 3 0 tack
+- 560
+R 563 2 0 Get 
+R 567 5 0 down 
+R 579 2 0 in 
+R 584 2 0 full 
+R 587 2 0 ef
+R 590 2 0 fect
+- 592
+R 599 3 0 Hold 
+R 603 1 0 your 
+R 605 3 0 back 
+R 611 1 0 for 
+R 613 1 0 the 
+R 615 1 0 rhy
+R 617 1 0 thm 
+R 619 1 0 at
+R 621 2 0 tack
+- 623
+R 626 1 0 Co
+R 628 2 0 ming 
+R 631 3 0 down 
+R 635 1 0 on 
+R 637 1 0 the 
+R 639 2 0 floor 
+R 643 1 0 like 
+R 645 1 0 a 
+R 647 2 0 ma
+R 650 2 0 ni
+R 653 2 0 ac
+- 655
+R 663 2 0 Hold 
+R 667 1 0 your 
+R 669 3 0 track 
+R 675 2 0 so 
+R 678 2 0 clean 
+R 681 1 0 up 
+R 683 1 0 the 
+R 685 2 0 dish
+- 687
+R 690 2 0 By 
+R 693 1 0 the 
+R 695 4 0 way
+- 699
+R 706 3 0 How 
+R 711 4 0 much 
+R 717 3 0 is 
+R 723 2 0 the 
+R 727 7 0 fish?
+- 734 863
+- 863
+R 882 3 0 How 
+R 886 4 0 much 
+R 892 3 0 is 
+R 898 2 0 the 
+R 903 7 0 fish?
+- 910 996
+- 996
+R 1015 2 0 Here 
+R 1019 2 0 we 
+R 1023 4 0 go
+- 1027
+R 1030 2 0 Here 
+R 1034 2 0 we 
+R 1039 4 0 go
+- 1043
+R 1046 2 0 Here 
+R 1050 2 0 we 
+R 1055 3 0 go 
+R 1059 2 0 a
+R 1063 6 0 gain
+- 1069 1138
+- 1138
+R 1157 30 0 Yeah
+- 1187 1364
+- 1364
+R 1383 4 0 Sun
+R 1390 4 0 shine 
+R 1395 3 0 in 
+R 1400 3 0 the 
+R 1406 10 0 air
+- 1416 1615
+- 1615
+R 1634 3 0 We’re 
+R 1639 4 0 brea
+R 1644 4 0 king 
+R 1650 2 0 the 
+R 1654 6 0 rules
+- 1660 1679
+- 1679
+R 1698 3 0 Ig
+R 1703 3 0 nore 
+R 1708 2 0 the 
+R 1714 2 0 mach
+R 1720 5 0 ine
+- 1725 1744
+- 1744
+R 1763 2 0 You 
+R 1766 3 0 won’t 
+R 1772 4 0 e
+R 1777 3 0 ver 
+R 1783 3 0 stop 
+R 1790 5 0 this
+- 1795 1823
+- 1823
+R 1842 3 0 The 
+R 1847 6 0 chase 
+R 1874 2 0 is 
+R 1879 3 0 bet
+R 1883 2 0 ter 
+R 1886 2 0 than 
+R 1890 2 0 the 
+R 1895 6 0 catch
+- 1901
+R 1911 3 0 Hold 
+R 1915 1 0 your 
+R 1918 3 0 back 
+R 1923 1 0 for 
+R 1925 1 0 the 
+R 1927 1 0 rhy
+R 1929 1 0 thm 
+R 1931 1 0 at
+R 1933 3 0 tack
+- 1936
+R 1939 1 0 Co
+R 1941 1 0 ming 
+R 1944 2 0 down 
+R 1947 1 0 on 
+R 1949 1 0 the 
+R 1951 3 0 floor 
+R 1955 1 0 like 
+R 1957 1 0 a 
+R 1959 2 0 ma
+R 1962 1 0 ni
+R 1964 2 0 ac
+- 1966
+R 1974 3 0 Hold 
+R 1979 1 0 your 
+R 1981 3 0 back 
+R 1987 1 0 for 
+R 1989 1 0 the 
+R 1991 1 0 rhy
+R 1993 1 0 thm 
+R 1995 1 0 at
+R 1997 3 0 tack
+- 2000
+R 2003 2 0 Get 
+R 2007 5 0 down 
+R 2019 2 0 in 
+R 2023 2 0 full 
+R 2026 2 0 ef
+R 2029 2 0 fect
+- 2031
+R 2039 3 0 Hold 
+R 2043 1 0 your 
+R 2045 3 0 back 
+R 2051 1 0 for 
+R 2053 1 0 the 
+R 2055 1 0 rhy
+R 2057 1 0 thm 
+R 2059 1 0 at
+R 2061 2 0 tack
+- 2063
+R 2066 1 0 Co
+R 2068 1 0 ming 
+R 2071 3 0 down 
+R 2075 1 0 on 
+R 2077 1 0 the 
+R 2079 3 0 floor 
+R 2083 1 0 like 
+R 2086 1 0 a 
+R 2088 1 0 ma
+R 2090 2 0 ni
+R 2093 2 0 ac
+- 2095
+R 2102 3 0 Hold 
+R 2107 1 0 your 
+R 2110 3 0 track 
+R 2115 1 0 so 
+R 2119 1 0 clean 
+R 2121 1 0 up 
+R 2123 1 0 the 
+R 2125 2 0 dish
+- 2127
+R 2130 2 0 By 
+R 2133 1 0 the 
+R 2135 4 0 way
+- 2139
+R 2146 3 0 How 
+R 2151 4 0 much 
+R 2157 3 0 is 
+R 2162 2 0 the 
+R 2167 7 0 fish?
+- 2174 2271
+- 2271
+R 2290 3 0 How 
+R 2295 4 0 much 
+R 2301 3 0 is 
+R 2306 2 0 the 
+R 2312 7 0 fish?
+- 2319 2372
+- 2372
+R 2391 11 0 Yee-
+R 2403 11 0 hah
+- 2414 2547
+- 2547
+R 2566 5 0 Sun
+R 2574 4 0 shine 
+R 2579 3 0 in 
+R 2585 3 0 the 
+R 2591 12 0 air
+- 2603 2776
+- 2776
+R 2795 2 0 Come 
+R 2799 3 0 on
+- 2802 2808
+- 2808
+* 2827 3 7 Na 
+* 2831 3 7 na 
+* 2835 1 5 na 
+* 2837 2 4 na 
+* 2840 6 5 na 
+* 2847 6 2 na 
+* 2855 2 2 na 
+* 2859 3 7 na 
+* 2863 3 7 na 
+* 2867 3 5 na 
+* 2871 3 4 na 
+* 2875 3 7 na 
+* 2879 3 7 na 
+* 2883 1 5 na 
+* 2885 2 4 na 
+* 2888 6 5 na 
+* 2895 6 2 na 
+* 2903 3 4 na 
+* 2907 2 0 na 
+* 2911 6 2 na
+- 2917
+R 2925 3 0 Eve
+R 2931 2 0 ry
+R 2934 4 0 bo
+R 2939 4 0 dy
+- 2943 2949
+- 2949
+: 2968 2 2 Na 
+: 2971 3 7 na 
+: 2975 3 7 na 
+: 2979 3 5 na 
+: 2983 3 4 na 
+: 2987 3 7 na 
+: 2991 2 7 na 
+: 2994 1 5 na 
+: 2996 2 4 na 
+: 2999 6 5 na 
+: 3007 6 2 na 
+: 3014 3 4 na 
+: 3019 2 0 na 
+: 3023 6 2 na
+- 3029
+R 3043 2 0 Come 
+R 3046 2 0 on
+- 3048
+* 3051 3 7 Na 
+* 3055 3 5 na 
+* 3059 3 7 na 
+* 3063 7 9 na 
+* 3071 7 9 na 
+* 3079 3 10 na 
+* 3083 3 7 na 
+* 3087 8 9 na
+- 3095
+: 3114 3 7 Na 
+: 3119 2 7 na 
+: 3122 2 5 na 
+: 3125 1 4 na 
+: 3128 6 5 na 
+: 3135 6 2 na 
+: 3143 2 2 na 
+: 3146 3 7 na 
+: 3151 3 7 na 
+: 3155 3 5 na 
+: 3159 3 4 na 
+: 3163 3 7 na 
+: 3167 3 7 na 
+: 3171 1 5 na 
+: 3173 2 4 na 
+: 3176 6 5 na 
+: 3183 6 2 na 
+: 3191 3 4 na 
+: 3195 2 0 na 
+: 3199 7 2 na
+- 3206 3208
+- 3208
+: 3227 3 7 Na 
+: 3231 3 5 na 
+: 3235 3 7 na 
+: 3239 6 9 na 
+: 3247 6 9 na 
+: 3255 3 10 na 
+: 3259 3 7 na 
+: 3263 8 9 na
+- 3271 3272
+- 3272
+: 3291 3 7 Na 
+: 3295 3 7 na 
+: 3299 1 5 na 
+: 3301 1 4 na 
+: 3303 6 5 na 
+: 3312 6 2 na 
+: 3320 2 2 na 
+: 3323 3 7 na 
+: 3327 2 7 na 
+: 3330 3 5 na 
+: 3334 3 4 na 
+: 3338 2 7 na 
+: 3341 3 7 na 
+: 3346 2 5 na 
+: 3349 1 4 na 
+: 3351 6 5 na 
+: 3360 6 2 na 
+: 3368 2 4 na 
+: 3371 2 0 na 
+: 3375 3 2 na
+- 3378
+R 3381 40 0 Yeah
+- 3421 3487
+- 3487
+R 3506 3 0 How 
+R 3510 4 0 much 
+R 3516 3 0 is 
+R 3522 2 0 the 
+R 3526 7 0 fish?
+- 3533 3663
+- 3663
+R 3682 3 0 How 
+R 3687 4 0 much 
+R 3693 3 0 is 
+R 3698 2 0 the 
+R 3703 7 0 fish?
+- 3710 3769
+- 3769
+R 3788 16 0 Yeah
+- 3804 3888
+- 3888
+R 3907 2 0 Come 
+R 3911 6 0 on, 
+R 3923 2 0 come 
+R 3927 6 0 on
+- 3933 3953
+- 3953
+R 3972 20 0 Ah
+- 3992 4000
+- 4000
+R 4019 2 0 Re
+R 4023 2 0 sur
+R 4026 3 0 rec
+R 4032 10 0 tion
+E

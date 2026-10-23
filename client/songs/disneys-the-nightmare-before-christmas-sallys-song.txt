@@ -1,0 +1,169 @@
+#ARTIST:Disney’s The Nightmare Before Christmas
+#TITLE:Sally’s Song
+#CREATOR:Chiheisen
+#BPM:223,40000000000003
+#YEAR:1993
+#VIDEO:v=8rivTGBzBMM
+#GENRE:Soundtrack
+#LANGUAGE:English
+#GAP:8345,535714285714
+#ALLKARAOKE_ID:disneys-the-nightmare-before-christmas-sallys-song
+#ALLKARAOKE_SID:6733
+#ALLKARAOKE_LASTUPDATE:2026-10-23T02:48:02.087Z
+#ALLKARAOKE_REALBPM:114
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:111
+#MP3:Disney’s The Nightmare Before Christmas - Sally’s Song.mp3
+: 15 7 4 I 
+: 23 7 7 sense 
+: 31 7 9 there’s 
+: 39 7 11 some
+: 47 7 4 thing 
+: 55 8 7 in 
+: 67 3 4 the 
+: 71 16 5 wind
+- 87
+: 95 7 5 That 
+: 103 7 9 feels 
+: 111 7 11 like 
+: 119 7 12 tra
+: 127 3 9 ge
+: 131 8 6 dy’s 
+: 143 7 3 at 
+: 151 16 4 hand
+- 167
+: 175 4 11 And 
+: 183 7 11 though 
+: 191 7 12 I’d 
+: 199 7 14 like 
+: 207 3 7 to 
+: 211 8 9 stand 
+: 223 7 11 by 
+: 231 16 9 him
+- 247
+: 255 4 9 Can’t 
+: 263 7 11 shake 
+: 271 7 12 this 
+: 279 4 12 fee
+: 287 7 9 ling 
+: 295 3 6 that 
+: 299 8 3 I 
+: 311 16 4 have
+- 327
+F 335 1 11 
+: 337 2 11 The 
+: 343 7 11 worst 
+: 351 7 12 is 
+: 359 7 14 just 
+: 367 3 7 a
+: 371 8 9 round 
+: 383 7 11 the 
+: 391 16 9 bend
+- 407
+: 415 4 9 And 
+: 423 7 11 does 
+: 431 7 12 he 
+: 439 15 12 no
+: 455 16 11 tice
+- 471
+: 479 7 6 My 
+: 487 7 7 fee
+: 495 7 9 lings 
+: 503 15 9 for 
+: 519 16 7 him?
+- 535
+: 543 4 12 And 
+: 551 7 9 will 
+: 559 7 5 he 
+: 567 16 4 see
+- 583
+: 591 7 4 How 
+: 599 7 3 much 
+: 607 7 4 he 
+: 615 7 6 means 
+: 623 7 7 to 
+: 631 16 4 me?
+- 647
+: 655 4 4 I 
+: 663 7 3 think 
+: 671 7 4 it’s 
+: 679 4 6 not 
+: 687 7 7 to 
+: 695 32 4 be
+- 727
+: 735 4 4 What 
+: 743 7 7 will 
+: 751 7 9 be
+: 759 7 11 come 
+: 767 7 4 of 
+: 775 7 7 my 
+: 783 7 4 dear 
+: 791 16 5 friend?
+- 807
+: 815 7 5 Where 
+: 823 7 9 will 
+: 831 7 11 his 
+: 839 4 12 ac
+: 847 7 9 tions 
+: 855 3 6 lead 
+: 859 8 3 us 
+: 871 16 4 then?
+- 887
+: 895 7 11 Al
+: 903 7 11 though 
+: 911 7 12 I’d 
+: 919 4 14 like 
+: 927 3 7 to 
+: 931 8 9 join 
+: 943 7 11 the 
+: 951 16 9 crowd
+- 967
+: 975 7 9 In 
+: 983 7 11 their 
+: 991 7 12 en
+: 999 3 12 thu
+: 1003 3 9 si
+: 1007 8 6 as
+: 1023 7 3 tic 
+: 1031 16 4 cloud
+- 1047
+: 1055 4 11 Try 
+: 1063 7 11 as 
+: 1071 7 12 I 
+: 1079 7 14 may 
+: 1087 7 7 it 
+: 1095 3 9 doe
+: 1099 8 11 sn’t 
+: 1111 16 9 last
+- 1127
+: 1135 7 9 And 
+: 1143 7 11 will 
+: 1151 7 12 we 
+: 1159 15 12 e
+: 1175 16 11 ver
+- 1191
+: 1199 7 6 End 
+: 1207 7 7 up 
+: 1215 7 9 to
+: 1223 15 9 ge
+: 1239 16 7 ther?
+- 1255
+: 1263 7 12 No, 
+: 1271 7 9 I 
+: 1279 7 5 think 
+: 1287 23 4 not
+- 1310
+: 1311 7 4 It’s 
+: 1319 7 3 ne
+: 1327 7 4 ver 
+: 1335 7 6 to 
+: 1343 7 7 be
+: 1351 23 4 come
+- 1374
+: 1375 7 4 For 
+: 1383 7 3 I 
+: 1391 7 4 am 
+: 1399 8 6 not 
+: 1415 7 7 the 
+: 1423 24 4 one…
+E
