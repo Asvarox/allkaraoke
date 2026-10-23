@@ -11026,6 +11026,35 @@
     "local": false
   },
   {
+    "id": "animaniacs-es-hora-de-animaniacs",
+    "title": "Es hora de Animaníacs",
+    "artist": "Animaníacs",
+    "video": "indHrJm8hl4",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 331.16,
+    "gap": 1213.5028385070664,
+    "year": "1995",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-23T02:47:58.084Z",
+    "realBpm": 331.16,
+    "volume": 1,
+    "author": "ConejoF1",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=conejof1",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Animan%C3%ADacs&cancion=Es%20hora%20de%20Animan%C3%ADacs",
+    "duration": 176,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6719,
+    "tracksCount": 1,
+    "search": "animaniacseshoradeanimaniacs",
+    "local": false
+  },
+  {
     "id": "anitta-boys-dont-cry",
     "title": "Boys Don’t Cry",
     "artist": "Anitta",
@@ -21784,6 +21813,34 @@
     "shortId": 521,
     "tracksCount": 1,
     "search": "beyoncehalo",
+    "local": false
+  },
+  {
+    "id": "beyonce-heaven",
+    "title": "Heaven",
+    "artist": "Beyoncé",
+    "video": "QyOok1myLjw",
+    "language": [
+      "English"
+    ],
+    "bpm": 221.26,
+    "gap": 12233.096809183766,
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-23T02:47:58.294Z",
+    "genre": "Pop",
+    "realBpm": 103,
+    "volume": 1,
+    "author": "amro98",
+    "duration": 236,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6720,
+    "tracksCount": 1,
+    "search": "beyonceheaven",
     "local": false
   },
   {
@@ -35953,6 +36010,35 @@
     "local": false
   },
   {
+    "id": "charlie-puth-light-switch",
+    "title": "Light Switch",
+    "artist": "Charlie Puth",
+    "video": "WFsAon_TWPQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 363.96,
+    "gap": 11770.880316518298,
+    "year": "2022",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-23T02:48:02.084Z",
+    "genre": "Pop",
+    "realBpm": 184,
+    "volume": 1,
+    "author": "Bad_Gamer39",
+    "sourceUrl": "https://www.youtube.com/watch?v=WFsAon_TWPQ",
+    "duration": 205,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6731,
+    "tracksCount": 1,
+    "search": "charlieputhlightswitch",
+    "local": false
+  },
+  {
     "id": "charlie-puth-one-call-away",
     "title": "One Call Away",
     "artist": "Charlie Puth",
@@ -48731,6 +48817,33 @@
     "local": false
   },
   {
+    "id": "disneys-aladdin-prince-ali",
+    "title": "Prince Ali",
+    "artist": "Disney’s Aladdin",
+    "video": "i9vsbVHvIss",
+    "language": [
+      "French"
+    ],
+    "bpm": 368.06,
+    "gap": 17711.14437863392,
+    "year": "1992",
+    "lastUpdate": "2026-10-23T02:47:57.184Z",
+    "genre": "Soundtrack",
+    "realBpm": 103,
+    "volume": 1,
+    "author": "Lord_Tenebro",
+    "duration": 172,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6717,
+    "tracksCount": 1,
+    "search": "disneysaladdinprinceali",
+    "local": false
+  },
+  {
     "id": "disneys-aladin-a-whole-new-world",
     "title": "A Whole New World",
     "artist": "Disney's Aladin",
@@ -51474,6 +51587,60 @@
     "shortId": 1299,
     "tracksCount": 2,
     "search": "disneysthelionkinghakunamatata",
+    "local": false
+  },
+  {
+    "id": "disneys-the-muppets-man-or-muppet",
+    "title": "Man Or Muppet",
+    "artist": "Disney’s The Muppets",
+    "video": "cRTjksM3YAs",
+    "language": [
+      "English"
+    ],
+    "bpm": 291.78,
+    "gap": 13763.23668517376,
+    "year": "2011",
+    "lastUpdate": "2026-10-23T02:48:02.371Z",
+    "genre": "Soundtrack",
+    "realBpm": 76,
+    "volume": 1,
+    "author": "nonplusultra18",
+    "duration": 179,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6734,
+    "tracksCount": 1,
+    "search": "disneysthemuppetsmanormuppet",
+    "local": false
+  },
+  {
+    "id": "disneys-the-nightmare-before-christmas-sallys-song",
+    "title": "Sally’s Song",
+    "artist": "Disney’s The Nightmare Before Christmas",
+    "video": "8rivTGBzBMM",
+    "language": [
+      "English"
+    ],
+    "bpm": 223.40000000000003,
+    "gap": 8345.535714285714,
+    "year": "1993",
+    "lastUpdate": "2026-10-23T02:48:02.087Z",
+    "genre": "Soundtrack",
+    "realBpm": 114,
+    "volume": 1,
+    "author": "Chiheisen",
+    "duration": 111,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6733,
+    "tracksCount": 1,
+    "search": "disneysthenightmarebeforechristmassallyssong",
     "local": false
   },
   {
@@ -76767,6 +76934,33 @@
     "local": false
   },
   {
+    "id": "hairspray-movie-good-morning-baltimore",
+    "title": "Good Morning Baltimore",
+    "artist": "Hairspray (Movie)",
+    "video": "QDHKFzD-dfg",
+    "language": [
+      "English"
+    ],
+    "bpm": 263.3,
+    "gap": 427.2768704899354,
+    "year": "2007",
+    "lastUpdate": "2026-10-23T02:47:58.699Z",
+    "genre": "Soundtrack",
+    "realBpm": 133,
+    "volume": 1,
+    "author": "justforfunnow",
+    "duration": 223,
+    "tracks": [
+      {
+        "start": 9
+      }
+    ],
+    "shortId": 6725,
+    "tracksCount": 1,
+    "search": "hairspraymoviegoodmorningbaltimore",
+    "local": false
+  },
+  {
     "id": "hairspray-movie-i-can-hear-the-bells",
     "title": "I Can Hear The Bells",
     "artist": "Hairspray (Movie)",
@@ -89872,6 +90066,34 @@
     "local": false
   },
   {
+    "id": "joji-test-drive",
+    "title": "TEST DRIVE",
+    "artist": "Joji",
+    "video": "PEBS2jbZce4",
+    "language": [
+      "English"
+    ],
+    "bpm": 335.92,
+    "gap": 23857.623243629434,
+    "year": "2018",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-23T02:48:00.628Z",
+    "genre": "Pop",
+    "realBpm": 75,
+    "volume": 1,
+    "author": "tyromantaYT",
+    "duration": 180,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6729,
+    "tracksCount": 1,
+    "search": "jojitestdrive",
+    "local": false
+  },
+  {
     "id": "jojo-leave-get-out",
     "title": "Leave (Get Out)",
     "artist": "JoJo",
@@ -100470,6 +100692,33 @@
     "shortId": 2423,
     "tracksCount": 1,
     "search": "kygofeatmatynoyesstay",
+    "local": false
+  },
+  {
+    "id": "kygo-feat-onerepublic-stranger-things-alan-walker-remix",
+    "title": "Stranger Things (Alan Walker Remix)",
+    "artist": "Kygo feat. OneRepublic",
+    "video": "-35jibKqbEo",
+    "language": [
+      "English"
+    ],
+    "bpm": 321,
+    "gap": 206.54205607476638,
+    "year": "2018",
+    "lastUpdate": "2026-10-23T02:48:00.385Z",
+    "realBpm": 107,
+    "volume": 1,
+    "author": "barbeque",
+    "sourceUrl": "https://www.youtube.com/watch?v=2v0Yzh125Uo",
+    "duration": 194,
+    "tracks": [
+      {
+        "start": 2
+      }
+    ],
+    "shortId": 6728,
+    "tracksCount": 1,
+    "search": "kygofeatonerepublicstrangerthingsalanwalkerremix",
     "local": false
   },
   {
@@ -111125,6 +111374,37 @@
     "local": false
   },
   {
+    "id": "los-caballeros-del-zodiaco-los-guardianes-del-universo",
+    "title": "Los guardianes del universo",
+    "artist": "Los Caballeros del Zodiaco",
+    "video": "YNsO3J6-7RI",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 199,
+    "gap": 2770.100502512563,
+    "year": "1986",
+    "lastUpdate": "2026-10-23T02:48:00.144Z",
+    "genre": "Anime",
+    "realBpm": 199,
+    "previewStart": 33.5,
+    "previewEnd": 77,
+    "volume": 1,
+    "author": "Lorchen",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=lorchen",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Los%20Caballeros%20del%20Zodiaco&cancion=Los%20guardianes%20del%20universo",
+    "duration": 77,
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 6726,
+    "tracksCount": 1,
+    "search": "loscaballerosdelzodiacolosguardianesdeluniverso",
+    "local": false
+  },
+  {
     "id": "los-cafres-bastara",
     "title": "Bastara",
     "artist": "Los cafres",
@@ -121520,6 +121800,34 @@
     "shortId": 2928,
     "tracksCount": 1,
     "search": "meskiegranieorkiestrapoczatek",
+    "local": false
+  },
+  {
+    "id": "metallica-creeping-death",
+    "title": "Creeping Death",
+    "artist": "Metallica",
+    "video": "X8OeBZQn3_w",
+    "language": [
+      "English"
+    ],
+    "bpm": 201.35,
+    "gap": 55501.53712441023,
+    "year": "1984",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-23T02:47:57.181Z",
+    "genre": "Metal",
+    "realBpm": 202,
+    "volume": 1,
+    "author": "crappy",
+    "duration": 396,
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 6716,
+    "tracksCount": 1,
+    "search": "metallicacreepingdeath",
     "local": false
   },
   {
@@ -144841,6 +145149,34 @@
     "local": false
   },
   {
+    "id": "puddle-of-mudd-psycho",
+    "title": "Psycho",
+    "artist": "Puddle Of Mudd",
+    "video": "pDdeOncpD5E",
+    "language": [
+      "English"
+    ],
+    "bpm": 252,
+    "gap": 8408.095238095239,
+    "year": "2007",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-23T02:47:58.301Z",
+    "genre": "Alternative Rock",
+    "realBpm": 128,
+    "volume": 1,
+    "author": "Silverbeam",
+    "duration": 208,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6723,
+    "tracksCount": 1,
+    "search": "puddleofmuddpsycho",
+    "local": false
+  },
+  {
     "id": "pulp-common-people",
     "title": "Common People",
     "artist": "Pulp",
@@ -147141,6 +147477,33 @@
     "local": false
   },
   {
+    "id": "rammstein-amour",
+    "title": "Amour",
+    "artist": "Rammstein",
+    "video": "bIPCVaLHZng",
+    "language": [
+      "German"
+    ],
+    "bpm": 208,
+    "gap": 17940.384615384617,
+    "year": "2004",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-10-23T02:48:00.384Z",
+    "realBpm": 104,
+    "volume": 1,
+    "author": "FaKK",
+    "duration": 291,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6727,
+    "tracksCount": 1,
+    "search": "rammsteinamour",
+    "local": false
+  },
+  {
     "id": "rammstein-asche-zu-asche",
     "title": "Asche zu Asche",
     "artist": "Rammstein",
@@ -148154,6 +148517,34 @@
     "shortId": 3598,
     "tracksCount": 1,
     "search": "redalreadyover",
+    "local": false
+  },
+  {
+    "id": "red-hot-chili-peppers-black-summer",
+    "title": "Black Summer",
+    "artist": "Red Hot Chili Peppers",
+    "video": "OS8taasZl8k",
+    "language": [
+      "English"
+    ],
+    "bpm": 397.35,
+    "gap": 8188.497546243865,
+    "year": "2022",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-23T02:48:02.558Z",
+    "genre": "Rock",
+    "realBpm": 105,
+    "volume": 1,
+    "author": "Tracks",
+    "duration": 234,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6735,
+    "tracksCount": 1,
+    "search": "redhotchilipeppersblacksummer",
     "local": false
   },
   {
@@ -156430,6 +156821,34 @@
     "shortId": 6298,
     "tracksCount": 1,
     "search": "scooterbreakitup",
+    "local": false
+  },
+  {
+    "id": "scooter-how-much-is-the-fish",
+    "title": "How Much Is The Fish?",
+    "artist": "Scooter",
+    "video": "cbB3iGRHtqA",
+    "language": [
+      "English"
+    ],
+    "bpm": 280,
+    "gap": 3882.1428571428573,
+    "year": "1998",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-10-23T02:48:02.086Z",
+    "realBpm": 140,
+    "volume": 1,
+    "author": "Edi316",
+    "sourceUrl": "https://www.youtube.com/watch?v=cbB3iGRHtqA",
+    "duration": 226,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6732,
+    "tracksCount": 1,
+    "search": "scooterhowmuchisthefish",
     "local": false
   },
   {
@@ -165460,6 +165879,36 @@
     "local": false
   },
   {
+    "id": "staind-outside",
+    "title": "Outside",
+    "artist": "Staind",
+    "video": "mVQpfoqsY8Q",
+    "language": [
+      "English"
+    ],
+    "bpm": 290.75,
+    "gap": 25049.776440240756,
+    "year": "2000",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-23T02:47:58.298Z",
+    "genre": "Rock",
+    "realBpm": 147,
+    "volume": 1,
+    "author": "IC",
+    "sourceUrl": "https://www.youtube.com/watch?v=mVQpfoqsY8Q&list=RDmVQpfoqsY8Q&start_radio=1",
+    "duration": 296,
+    "tracks": [
+      {
+        "name": "Outside",
+        "start": 19
+      }
+    ],
+    "shortId": 6722,
+    "tracksCount": 1,
+    "search": "staindoutside",
+    "local": false
+  },
+  {
     "id": "starbomb-minecraft-is-for-everyone",
     "title": "Minecraft is for EVERYONE!",
     "artist": "Starbomb",
@@ -166421,6 +166870,34 @@
     "local": false
   },
   {
+    "id": "stone-temple-pilots-trippin-on-a-hole-in-a-paper-heart",
+    "title": "Trippin’ On A Hole In A Paper Heart",
+    "artist": "Stone Temple Pilots",
+    "video": "HVPzWkdhwrw",
+    "language": [
+      "English"
+    ],
+    "bpm": 392.31,
+    "gap": 11225.888200657644,
+    "year": "1996",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-23T02:47:58.082Z",
+    "genre": "Alternative Rock",
+    "realBpm": 108,
+    "volume": 1,
+    "author": "Gollum",
+    "duration": 179,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6718,
+    "tracksCount": 1,
+    "search": "stonetemplepilotstrippinonaholeinapaperheart",
+    "local": false
+  },
+  {
     "id": "stone-temple-pilots-vasoline",
     "title": "Vasoline",
     "artist": "Stone Temple Pilots",
@@ -166979,6 +167456,35 @@
     "local": false
   },
   {
+    "id": "studio-killers-jenny",
+    "title": "Jenny",
+    "artist": "Studio Killers",
+    "video": "hyj4JFSErrw",
+    "language": [
+      "English"
+    ],
+    "bpm": 268,
+    "gap": 8092.537313432836,
+    "year": "2013",
+    "artistOrigin": "DK",
+    "lastUpdate": "2026-10-23T02:48:00.629Z",
+    "realBpm": 134,
+    "previewStart": 40,
+    "previewEnd": 53,
+    "volume": 1,
+    "author": "studio killers",
+    "duration": 231,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6730,
+    "tracksCount": 1,
+    "search": "studiokillersjenny",
+    "local": false
+  },
+  {
     "id": "styx-mr-roboto",
     "title": "Mr. Roboto",
     "artist": "Styx",
@@ -167530,6 +168036,34 @@
     "shortId": 5241,
     "tracksCount": 1,
     "search": "supermariobroswonderpiranhaplantsonparade",
+    "local": false
+  },
+  {
+    "id": "supercell-kimi-no-shiranai-monogatari",
+    "title": "Kimi no Shiranai Monogatari",
+    "artist": "supercell",
+    "video": "jpV5jeFlt_E",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 330,
+    "gap": 12490,
+    "year": "2009",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-10-23T02:47:58.499Z",
+    "genre": "Anime",
+    "realBpm": 165,
+    "volume": 1,
+    "author": "XGeneral2000",
+    "duration": 356,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6724,
+    "tracksCount": 1,
+    "search": "supercellkiminoshiranaimonogatari",
     "local": false
   },
   {
@@ -170606,6 +171140,35 @@
     "local": false
   },
   {
+    "id": "talk-talk-such-a-shame",
+    "title": "Such A Shame",
+    "artist": "Talk Talk",
+    "video": "lLdvpFIPReA",
+    "language": [
+      "English"
+    ],
+    "bpm": 228.76,
+    "gap": 12276.436439937052,
+    "year": "1984",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-10-23T02:47:58.296Z",
+    "genre": "Pop",
+    "realBpm": 112,
+    "volume": 1,
+    "author": "Talk Talk",
+    "sourceUrl": "https://www.youtube.com/watch?v=u3HeJFr01T0",
+    "duration": 249,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6721,
+    "tracksCount": 1,
+    "search": "talktalksuchashame",
+    "local": false
+  },
+  {
     "id": "talking-heads-psycho-killer",
     "title": "Psycho Killer",
     "artist": "Talking Heads",
@@ -171724,6 +172287,35 @@
     "shortId": 4196,
     "tracksCount": 1,
     "search": "taylorswiftdontblameme",
+    "local": false
+  },
+  {
+    "id": "taylor-swift-dorothea",
+    "title": "dorothea",
+    "artist": "Taylor Swift",
+    "video": "zI4DS5GmQWE",
+    "language": [
+      "English"
+    ],
+    "bpm": 355.92,
+    "gap": 7658.536749831423,
+    "year": "2020",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-23T02:47:57.173Z",
+    "genre": "Folklore",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "princetongirl98",
+    "sourceUrl": "https://www.youtube.com/watch?v=zI4DS5GmQWE",
+    "duration": 225,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6715,
+    "tracksCount": 1,
+    "search": "taylorswiftdorothea",
     "local": false
   },
   {

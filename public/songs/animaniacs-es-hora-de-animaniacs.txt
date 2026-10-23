@@ -1,0 +1,297 @@
+#ARTIST:Animaníacs
+#TITLE:Es hora de Animaníacs
+#CREATOR:ConejoF1
+#BPM:331,16
+#YEAR:1995
+#VIDEO:v=indHrJm8hl4
+#LANGUAGE:Spanish
+#GAP:1213,5028385070664
+#ALLKARAOKE_ID:animaniacs-es-hora-de-animaniacs
+#ALLKARAOKE_SID:6719
+#ALLKARAOKE_LASTUPDATE:2026-10-23T02:47:58.084Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/es/canciones?creador=conejof1
+#ALLKARAOKE_REALBPM:331,16
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?artista=Animan%C3%ADacs&cancion=Es%20hora%20de%20Animan%C3%ADacs
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:176
+#MP3:Animaníacs - Es hora de Animaníacs.mp3
+#COVER:Animaníacs - Es hora de Animaníacs.jpg
+: 22 6 3 Es 
+: 30 6 2 ho
+: 38 6 3 ra 
+: 46 10 5 de 
+: 58 2 3 A
+: 62 10 2 ni
+: 74 2 3 ma
+: 78 2 0 ní
+: 82 2 0 acs
+- 84
+: 98 2 3 es
+: 102 2 2 ta
+: 106 2 3 mos 
+: 110 10 5 lo
+: 122 2 3 cos 
+: 126 10 2 de 
+: 138 2 3 a
+: 142 2 -2 tar
+- 144
+: 166 2 0 ven 
+: 170 2 -2 y 
+: 174 2 -4 sién
+: 178 2 -4 ta
+: 182 2 0 te a ob
+: 186 2 3 ser
+: 190 2 8 var
+- 192
+: 198 2 7 mu
+: 202 2 8 cho 
+: 206 2 10 te 
+: 210 2 8 di
+: 214 2 7 ver
+: 218 2 8 ti
+: 222 4 5 rás
+- 226
+: 234 2 5 con 
+: 238 2 3 A
+: 242 6 3 ni
+: 250 2 12 ma
+: 254 14 10 ní
+: 270 4 8 acs!
+- 274
+: 294 2 7 Ven 
+: 298 2 7 con 
+: 302 2 9 los 
+: 306 2 7 Her
+: 310 2 6 ma
+: 314 2 7 nos 
+: 318 2 4 War
+: 322 1 4 ner
+- 323
+: 326 2 7 y 
+: 330 2 7 la Her
+: 334 2 9 ma
+: 338 2 7 na 
+* 342 2 6 War
+* 346 2 7 ner, 
+* 350 2 2 Dot
+- 352
+: 358 2 7 siem
+: 362 2 7 pre es
+: 366 2 9 ta
+: 370 2 7 mos 
+: 374 2 6 muy 
+: 378 2 7 a
+: 382 2 2 le
+: 386 1 2 gres
+- 387
+: 390 2 7 en
+: 394 2 7 tre al
+: 398 2 9 gu
+: 402 2 7 na 
+: 406 2 6 fil
+: 410 2 7 ma
+: 414 2 4 ción
+- 416
+: 422 2 4 Nos 
+: 426 2 2 en
+: 430 2 0 cie
+: 434 2 0 rran 
+: 438 2 4 en 
+: 442 2 7 el 
+: 446 2 12 tan
+: 450 1 12 que
+- 451
+: 454 2 11 si 
+: 458 2 12 nos 
+: 462 2 14 lo
+: 466 2 12 gran 
+: 470 2 11 a
+: 474 2 12 tra
+: 478 4 9 par
+- 482
+: 490 2 6 no 
+: 494 2 9 hay 
+: 498 2 7 quien 
+: 502 2 7 nos 
+: 506 2 7 a
+: 510 2 10 guan
+: 514 1 8 te
+- 515
+: 518 2 8 si 
+: 522 2 8 lo
+: 526 2 11 gra
+: 530 2 9 mos 
+: 534 2 9 es
+: 538 2 9 ca
+: 542 2 10 par
+- 544
+: 550 6 10 So
+: 558 10 12 mos 
+: 570 2 10 A
+: 574 10 9 ni
+: 586 2 10 ma
+: 590 2 7 ní
+: 594 2 7 acs!
+- 596
+: 612 2 10 Dot 
+: 616 2 10 es 
+: 620 6 12 be
+: 628 6 10 lla, y 
+: 636 6 9 Ya
+: 644 6 10 kko 
+: 652 4 5 no
+- 656
+: 676 2 7 Wa
+: 680 2 5 kko 
+: 684 2 3 es 
+: 688 2 3 un 
+: 692 2 7 co
+: 696 2 10 me
+: 700 5 15 lón
+- 705
+: 708 2 14 cuan
+: 712 2 15 do es
+: 716 2 17 cu
+: 720 2 15 cha el 
+: 724 2 14 sa
+: 728 2 15 xo
+: 732 6 12 fón
+- 738
+: 744 2 12 en 
+* 748 2 10 A
+* 752 6 10 ni
+* 760 2 19 ma
+* 764 14 17 ní
+* 780 4 15 acs!
+- 784
+: 804 2 2 Mi
+: 808 2 2 ra a 
+: 812 2 4 Pin
+: 816 2 2 ky 
+: 820 2 1 y a 
+: 824 2 2 Ce
+: 828 2 -1 re
+: 832 1 -1 bro
+- 833
+: 836 2 2 de
+: 840 2 2 mos
+: 844 2 4 tran
+: 848 2 2 do 
+: 852 2 1 su 
+: 856 2 2 po
+: 860 2 -3 der
+- 862
+: 868 2 2 jun
+: 872 2 2 to a 
+: 876 2 4 es
+: 880 2 2 tos 
+: 884 2 1 tres 
+: 888 2 2 pa
+: 892 2 -3 lo
+: 896 1 -3 mos
+- 897
+F 900 2 2 que 
+F 904 2 2 Tía 
+F 908 2 6 Sla
+F 912 2 2 ppy ha
+F 916 2 7 rá 
+F 920 2 7 ca
+F 924 2 7 er
+- 926
+: 940 2 -5 Bo
+: 944 2 -5 to
+: 948 2 -1 nes 
+: 952 2 2 y 
+: 956 2 7 Man
+: 960 2 7 dy,
+- 962
+: 968 2 7 a 
+: 972 2 9 Ri
+: 976 2 7 ta 
+: 980 2 6 vas 
+: 984 2 7 a 
+: 988 2 4 ver
+- 990
+: 1000 2 2 con 
+: 1004 2 4 es
+: 1008 2 2 cri
+: 1012 2 2 to
+: 1016 2 2 res 
+: 1020 2 5 lo
+: 1024 1 3 cos
+- 1025
+: 1028 2 3 no hay 
+: 1032 2 3 li
+: 1036 2 6 bre
+: 1040 2 4 tos 
+: 1044 2 4 que a
+: 1048 2 4 pren
+: 1052 2 5 der
+- 1054
+: 1060 6 5 So
+: 1068 10 7 mos 
+: 1080 2 5 A
+: 1084 10 4 ni
+: 1096 2 5 ma
+: 1100 2 2 ní
+: 1104 8 2 acs
+- 1112
+: 1124 6 5 nos 
+: 1132 6 7 pa
+: 1140 2 7 gan 
+: 1144 2 5 sin 
+: 1148 6 4 tra
+: 1156 6 5 ba
+: 1164 6 0 jar
+- 1170
+: 1184 2 0 es
+: 1188 2 2 ta
+: 1192 2 0 mos 
+: 1196 2 -2 lo
+: 1200 2 -2 cos 
+: 1204 2 2 de 
+: 1208 2 5 a
+: 1212 5 10 tar
+- 1217
+: 1220 2 9 co
+: 1224 2 10 mo 
+: 1228 2 12 na
+: 1232 2 10 die 
+: 1236 2 9 pue
+: 1240 2 10 de es
+: 1244 8 7 tar
+- 1252
+: 1260 2 7 So
+: 1264 2 7 mos 
+: 1268 2 8 a
+: 1272 2 8 ni
+: 1276 2 9 ma
+: 1280 6 5 dos!
+- 1286
+: 1292 2 7 De 
+: 1296 2 7 re
+: 1300 2 8 ma
+: 1304 2 8 te es
+: 1308 2 9 ta
+: 1312 6 5 mos!
+- 1318
+F 1324 2 7 (un 
+F 1328 2 7 chap
+F 1332 2 8 sui 
+F 1336 2 8 co
+F 1340 2 9 ma
+F 1344 2 5 mos)
+- 1346
+: 1352 2 5 ¡A
+: 1356 6 7 ni
+: 1364 6 8 ma
+: 1372 2 9 ní
+: 1376 10 14 ~
+: 1388 10 10 acs!
+- 1398
+* 1404 4 5 Es 
+* 1410 4 7 co
+* 1416 4 9 mo 
+* 1422 4 10 es
+E

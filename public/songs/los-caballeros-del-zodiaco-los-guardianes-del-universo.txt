@@ -1,0 +1,211 @@
+#ARTIST:Los Caballeros del Zodiaco
+#TITLE:Los guardianes del universo
+#CREATOR:Lorchen
+#BPM:199
+#YEAR:1986
+#PREVIEWSTART:33,5
+#VIDEO:v=YNsO3J6-7RI
+#GENRE:Anime
+#LANGUAGE:Spanish
+#GAP:2770,100502512563
+#ALLKARAOKE_ID:los-caballeros-del-zodiaco-los-guardianes-del-universo
+#ALLKARAOKE_SID:6726
+#ALLKARAOKE_LASTUPDATE:2026-10-23T02:48:00.144Z
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/es/canciones?creador=lorchen
+#ALLKARAOKE_REALBPM:199
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?artista=Los%20Caballeros%20del%20Zodiaco&cancion=Los%20guardianes%20del%20universo
+#ALLKARAOKE_PREVIEWEND:77
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:77
+#MP3:Los Caballeros del Zodiaco - Los guardianes del universo.mp3
+#COVER:Los Caballeros del Zodiaco - Los guardianes del universo.jpg
+: 13 3 14 Los 
+: 18 3 14 guar
+: 22 1 16 dia
+: 24 4 18 nes 
+: 30 3 14 del 
+: 35 8 21 u
+: 44 3 19 ni
+: 48 2 18 ver
+: 51 1 16 ~
+: 53 2 14 so
+- 55
+: 60 2 14 Al 
+: 65 1 14 tri
+: 67 2 16 un
+: 70 4 18 far 
+: 75 4 14 el 
+: 81 13 9 mal
+- 94
+: 104 4 14 Sin 
+: 110 2 14 du
+: 113 2 16 dar
+: 116 3 18 lo 
+: 121 4 14 sa
+: 127 7 21 len 
+: 136 2 23 a 
+: 139 1 21 com
+: 141 2 19 ba
+: 144 2 18 tir
+- 146
+: 150 4 14 Por 
+: 155 2 14 un 
+: 158 2 16 mun
+: 161 5 18 do i
+: 167 5 14 de
+* 173 15 21 al
+- 188
+: 196 8 21 Ca
+: 205 1 21 ba
+: 207 3 23 lle
+: 211 1 21 ros 
+: 213 2 19 del 
+: 216 2 18 Zo
+: 219 5 19 dia
+: 225 5 21 ~
+: 231 6 23 co
+- 237
+: 243 6 19 Cuan
+: 251 2 19 do 
+: 254 2 21 lan
+: 257 2 19 zan 
+: 260 2 18 su 
+: 263 1 16 a
+: 265 7 18 ta
+: 273 2 19 ~
+: 277 6 21 que
+- 283
+: 289 4 18 En
+: 297 2 18 to
+: 300 2 19 nan 
+: 303 2 18 con 
+: 306 1 16 fuer
+: 308 2 14 za 
+: 311 2 16 su 
+: 316 3 19 can
+: 320 4 23 ción
+- 324
+: 328 2 25 La 
+: 331 3 23 can
+: 335 3 21 ción 
+: 341 3 19 de 
+: 346 4 18 los 
+: 352 2 16 hé
+: 355 4 14 ro
+: 361 3 14 es
+- 364 368
+- 368
+: 381 4 14 Los 
+: 386 2 14 guar
+: 389 2 16 dia
+: 392 3 18 nes 
+: 398 3 14 del 
+* 403 8 21 u
+: 412 2 19 ni
+: 415 2 18 ver
+: 418 1 16 ~
+: 420 3 14 so
+- 423
+: 427 2 14 Al 
+: 432 2 14 tri
+: 435 2 16 un
+: 438 4 18 far 
+: 443 4 14 el 
+: 449 12 9 mal
+- 461
+: 471 4 14 Sin 
+: 478 2 14 du
+: 481 2 16 dar
+: 484 2 18 lo 
+: 489 4 14 sa
+: 494 7 21 len 
+: 503 2 23 a 
+: 506 2 21 com
+: 509 2 19 ba
+: 512 2 18 tir
+- 514
+: 518 3 14 Por 
+: 523 3 14 un 
+: 527 1 16 mun
+: 529 5 18 do i
+: 535 4 14 de
+: 540 15 21 al
+- 555
+: 564 8 21 Ca
+: 573 2 21 ba
+: 576 1 23 lle
+: 578 2 21 ros 
+: 581 2 19 del 
+: 584 2 18 Zo
+: 587 4 19 dia
+: 592 6 21 ~
+: 599 5 23 co
+- 604
+: 611 6 19 Cuan
+: 619 1 19 do 
+: 621 2 21 lan
+: 624 2 19 zan 
+: 628 2 18 su 
+: 631 1 16 a
+: 633 5 18 ta
+: 639 5 19 ~
+: 645 6 21 que
+- 651
+: 656 4 18 En
+: 664 2 18 to
+: 667 2 19 nan 
+: 670 2 18 con 
+: 673 1 16 fuer
+: 675 2 14 za 
+: 678 2 16 su 
+: 683 3 19 can
+: 687 4 23 ción
+- 691
+: 696 2 25 La 
+: 699 3 23 can
+: 703 3 21 ción 
+: 709 3 19 de 
+: 714 4 18 los 
+: 720 2 16 hé
+: 723 4 14 ro
+: 729 3 14 es
+- 732 734
+- 734
+: 747 8 21 Ca
+: 756 2 21 ba
+: 759 2 23 lle
+: 762 1 21 ros 
+: 764 2 19 del 
+: 767 2 18 Zo
+: 770 4 19 dia
+: 775 6 21 ~
+: 782 5 23 co
+- 787
+: 794 6 19 Con
+: 803 1 19 tra 
+: 805 3 21 las 
+: 809 2 19 fuer
+: 812 2 18 zas 
+: 815 1 16 de
+: 817 4 18 mo
+: 822 3 19 nia
+: 826 6 21 cas
+- 832
+: 840 5 18 Guar
+: 848 2 18 dan 
+: 851 2 19 siem
+: 854 2 18 pre 
+: 857 2 16 en 
+: 860 2 14 su 
+: 863 4 16 co
+: 868 3 19 ra
+: 873 3 23 zón
+- 876
+: 879 3 25 Co
+: 883 2 23 ra
+: 886 4 21 je 
+: 892 4 18 pa
+: 897 4 19 ra 
+: 903 4 25 ven
+* 909 24 26 cer
+E
