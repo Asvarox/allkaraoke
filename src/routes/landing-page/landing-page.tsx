@@ -33,7 +33,10 @@ const bullets = [
     Use either your SingStar/regular microphone or <strong>connect phones to sing</strong>.
   </>,
   <>
-    <strong>{songCount} songs</strong> across {languageCount} languages, updated weekly.
+    <strong>
+      <span data-test="song-count">{songCount}</span> songs
+    </strong>{' '}
+    across {languageCount} languages, updated weekly.
   </>,
   <>
     <strong>1–4 players</strong> — solo, duets or a full party.

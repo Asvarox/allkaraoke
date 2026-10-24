@@ -24,7 +24,8 @@ visual('Landing page', async ({ page, context, viewport, makeScreenshot }) => {
     await expect(page.getByTestId('leaderboard-row').and(page.locator(':visible')).first()).toBeVisible();
   }
 
-  await makeScreenshot();
+  // The catalogue size goes up with every song update, which would otherwise redo every baseline
+  await makeScreenshot(undefined, { extraMasks: [page.getByTestId('song-count')] });
 });
 
 visual('Main menu', async ({ page, context, makeScreenshot }) => {
