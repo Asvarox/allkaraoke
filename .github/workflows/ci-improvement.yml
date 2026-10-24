@@ -33,9 +33,10 @@ jobs:
       - name: Upload Storybook build
         uses: actions/upload-artifact@v4
         with:
-          name: storybook-static # deployed by deploy-storybook / deploy-storybook-branch
+          name: storybook-static # deployed by deploy-storybook / deploy-storybook-branch / fork-preview.yml
           path: storybook-static
-          retention-days: 1
+          # Fork previews are deployed by hand, after a review that can take a few days
+          retention-days: 7
   e2e-tests-run:
     strategy:
       fail-fast: false
@@ -503,7 +504,10 @@ jobs:
 
   deploy-branch:
     runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request'
+    # Fork PRs get no secrets: fork-preview-build builds theirs, a maintainer deploys it with fork-preview.yml
+    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+    permissions:
+      contents: read
     environment:
       name: prs
       url: ${{ steps.deploy-report.outputs.deployment-url }}
@@ -552,10 +556,39 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: deploy --config=wrangler.storybook.jsonc
 
+  # Fork PRs' preview build, made here so their code only ever runs without secrets and in the PR's own
+  # cache scope. fork-preview.yml deploys it once a maintainer has reviewed the PR
+  fork-preview-build:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name != github.repository
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+      - name: Setup Node
+        uses: './.github/templates/setup-node'
+      - run: npx playwright install chromium
+        timeout-minutes: 3
+      - name: Build app
+        # Same build as deploy-branch, see there
+        run: CLOUDFLARE_ENV=pr pnpm build
+        shell: bash
+      - name: Upload build
+        uses: actions/upload-artifact@v4
+        with:
+          name: fork-preview-app
+          path: build
+          retention-days: 7
+
   deploy-storybook-branch:
     runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request'
+    # Fork PRs get no secrets, a maintainer deploys their preview with fork-preview.yml
+    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
     needs: ['quick-checks']
+    permissions:
+      contents: read
     environment:
       name: storybook-prs
       url: ${{ steps.deploy-storybook.outputs.deployment-url }}
