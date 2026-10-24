@@ -1,0 +1,341 @@
+#ARTIST:KITSCHKRIEG feat. Blumengarten & Shirin David
+#TITLE:GUT GENUG
+#CREATOR:Fepo
+#BPM:241
+#YEAR:2026
+#VIDEO:v=0GnA8VYOfko
+#GENRE:Pop
+#LANGUAGE:German
+#GAP:10
+#ALLKARAOKE_ID:kitschkrieg-feat-blumengarten-shirin-david-gut-genug
+#ALLKARAOKE_SID:6742
+#ALLKARAOKE_LASTUPDATE:2026-10-24T02:46:27.029Z
+#ALLKARAOKE_REALBPM:153
+#ALLKARAOKE_SOURCEURL:https://youtu.be/0GnA8VYOfko
+#ALLKARAOKE_VOLUME:0,54
+#ALLKARAOKE_DURATION:189
+#MP3:KITSCHKRIEG feat. Blumengarten & Shirin David - GUT GENUG.mp3
+#COVER:KITSCHKRIEG feat. Blumengarten & Shirin David - GUT GENUG [CO].jpg
+#BACKGROUND:KITSCHKRIEG feat. Blumengarten & Shirin David - GUT GENUG [BG].jpg
+: 0 7 -5 Du 
+: 9 5 -3 bist 
+: 17 5 -1 gut 
+: 25 2 6 ge
+: 28 2 7 ~
+: 33 19 6 nug
+- 52
+: 59 2 -5 Ich 
+: 63 6 -5 weiß 
+: 71 5 -3 nicht, 
+: 79 5 -1 was 
+: 91 2 -5 die 
+: 95 6 -5 Welt 
+* 103 6 2 dir 
+: 111 7 -1 sagt
+- 118
+: 127 6 -5 Bleib 
+: 136 5 -3 ein
+: 143 5 -1 fach 
+: 151 5 7 nur 
+* 159 7 11 du
+* 167 7 9 ~
+: 175 3 7 ~
+: 179 7 9 ~
+: 187 7 7 ~
+: 195 3 6 ~
+: 199 11 4 ~
+- 210 223
+- 223
+: 239 2 11 Du 
+: 242 2 11 bist 
+: 245 2 12 gut 
+: 249 2 11 ge
+: 252 12 11 nu
+: 265 7 9 ~
+: 273 7 7 ~
+: 281 6 2 ~g
+- 287
+: 301 2 11 Du 
+: 305 2 11 bist 
+: 309 2 12 gut 
+: 313 2 11 ge
+: 316 12 11 nu
+* 329 7 9 ~
+* 337 7 14 ~
+: 345 6 9 ~g
+- 351
+: 364 2 11 Du 
+: 367 2 11 bist 
+: 370 2 12 gut 
+: 374 2 11 ge
+: 377 12 11 nu
+: 390 7 9 ~
+: 398 7 7 ~
+: 406 6 2 ~g
+- 412
+: 428 2 11 Du 
+: 432 2 11 bist 
+: 436 2 12 gut 
+: 440 2 11 ge
+: 443 12 11 nu
+* 456 7 9 ~
+* 464 7 14 ~
+: 472 6 9 ~g
+- 478 744
+- 744
+R 760 2 0 Ich 
+R 763 3 0 wer
+R 768 2 0 de 
+R 771 1 0 mir 
+R 773 4 0 nie 
+R 779 2 0 ge
+R 782 3 0 recht,
+- 785
+R 788 2 0 Denn 
+R 791 2 0 ich 
+R 794 4 0 bin 
+R 799 1 -3 zu 
+R 801 1 -5 mir 
+R 803 5 -6 nie 
+R 810 4 -6 ge
+R 815 3 -2 recht
+- 818
+R 823 3 0 Bab
+R 827 2 0 si 
+R 830 1 0 ver
+R 832 1 0 sus 
+R 834 5 0 Shi
+R 841 4 0 rin 
+R 847 2 0 Da
+R 850 3 0 vid, 
+R 854 3 0 das 
+R 858 3 0 nenn 
+R 862 3 0 ich 
+R 866 3 0 ein 
+R 870 3 0 Ti
+R 874 3 0 tel
+R 878 5 0 match
+- 883
+R 887 2 0 Für 
+R 890 2 0 mich 
+R 894 2 0 ist 
+R 897 2 0 das 
+R 901 3 0 Schwers
+R 906 2 0 te 
+R 909 3 0 erst 
+R 914 2 0 Fa
+R 917 2 0 mi
+R 920 2 0 li
+R 923 1 0 e 
+R 925 1 0 o
+R 927 1 0 der 
+R 929 3 0 Kar
+R 933 4 0 rie
+R 938 3 0 re
+- 941
+R 943 2 0 Ich 
+R 946 2 0 ent
+R 949 2 0 schied 
+R 953 2 0 mich 
+R 956 4 0 für 
+R 961 2 0 das 
+R 965 2 0 Zwei
+R 969 2 0 te 
+R 974 2 0 wie 
+R 978 3 0 E
+R 982 2 0 li
+R 985 3 0 sa
+R 989 2 0 beth 
+R 993 2 0 die 
+R 996 3 0 Ers
+R 1001 3 0 te
+- 1004
+R 1008 2 0 Je
+R 1012 2 0 der 
+R 1015 2 0 be
+R 1019 2 0 wer
+R 1023 2 0 tet, 
+R 1027 5 0 kaum 
+R 1035 3 0 geht 
+R 1039 4 0 ein 
+R 1044 3 0 Girl 
+R 1048 2 0 ihr’n 
+R 1055 5 0 Weg
+- 1060
+R 1064 2 0 Glaub 
+R 1068 2 0 mir, 
+R 1072 2 0 Boy, 
+R 1076 2 0 schwer 
+R 1082 4 0 wiegt 
+R 1087 2 0 das 
+R 1091 3 0 Haupt, 
+R 1099 3 0 das 
+R 1104 2 0 die 
+R 1107 2 0 Bir
+R 1110 5 0 kin 
+R 1117 5 0 trägt
+- 1122
+R 1126 3 0 Man 
+R 1131 3 0 sagt:
+- 1134
+R 1139 2 0 »Du 
+R 1142 2 0 kannst 
+R 1147 2 0 al
+R 1150 2 0 les 
+R 1154 3 0 schaf
+R 1158 2 0 fen, 
+R 1162 2 0 wenn 
+R 1165 2 0 du 
+R 1170 2 0 an 
+R 1173 2 0 dich 
+R 1178 4 0 selbst 
+R 1185 5 0 glaubst«
+- 1190
+R 1193 4 0 Stei
+R 1198 2 0 ge 
+R 1202 3 0 nach 
+R 1206 2 0 dem 
+R 1209 3 0 Heu
+R 1213 2 0 len 
+R 1217 3 0 aus 
+R 1221 3 0 dem 
+R 1225 3 0 Bett
+- 1228
+R 1230 2 0 Und 
+R 1233 2 0 dreh 
+R 1236 4 0 mein’n 
+R 1241 7 0 Swag 
+R 1251 3 0 auf 
+R 1257 6 0 wow
+- 1263
+R 1265 2 0 Nur 
+R 1269 2 0 weil 
+R 1273 2 0 Bab
+R 1276 3 0 si 
+R 1281 2 0 un
+R 1285 2 0 per
+R 1289 3 0 fekt 
+R 1293 2 0 ist, 
+R 1296 2 0 tritt 
+R 1300 3 0 Shi
+R 1304 2 0 rin 
+R 1308 3 0 per
+R 1312 3 0 fekt 
+R 1317 4 0 auf
+- 1321
+R 1324 2 0 Da
+R 1327 2 0 rum 
+R 1330 1 0 lasst 
+R 1332 2 0 uns 
+R 1336 4 0 strei
+R 1341 2 0 ten,
+- 1343
+R 1345 2 0 An 
+R 1349 2 0 uns 
+R 1352 2 0 zwei
+R 1356 2 0 feln, 
+R 1360 3 0 heu
+R 1364 2 0 te 
+R 1368 2 0 geh’n 
+R 1372 2 0 wir 
+R 1376 4 0 Crash
+R 1381 4 0 out
+- 1385
+R 1392 2 0 Für 
+R 1396 2 0 die 
+R 1399 2 0 meis
+R 1402 2 0 ten 
+R 1406 2 0 bin 
+R 1410 2 0 ich 
+R 1414 3 0 Miss 
+R 1423 5 0 Bauch 
+R 1431 2 0 Bei
+R 1434 2 0 ne 
+R 1438 3 0 Po
+- 1441
+R 1447 3 0 Doch 
+R 1451 2 0 mir 
+R 1455 3 0 selbst 
+R 1462 3 0 sag 
+R 1467 2 0 ich 
+R 1471 2 0 je
+R 1474 2 0 den 
+R 1478 4 0 Tag: 
+R 1486 6 0 »Bleib 
+R 1495 2 0 ein
+R 1498 2 0 fach 
+R 1503 3 0 du«
+- 1506
+: 1507 2 11 Bist 
+: 1510 2 11 gut 
+: 1513 2 11 ge
+: 1516 2 12 n
+: 1519 10 11 u
+: 1530 7 9 ~
+: 1538 7 7 ~
+: 1546 4 2 ~g
+- 1550
+: 1565 2 11 Du 
+: 1569 2 11 bist 
+: 1573 2 12 gut 
+: 1577 2 11 ge
+: 1580 12 11 nu
+* 1593 7 9 ~
+* 1601 7 14 ~
+: 1609 6 9 ~g
+- 1615
+: 1630 2 11 Du 
+: 1633 2 11 bist 
+: 1636 2 12 gut 
+: 1640 2 11 ge
+: 1643 12 11 nu
+: 1656 7 9 ~
+: 1664 7 7 ~
+: 1672 6 2 ~g
+- 1678
+: 1692 2 11 Du 
+: 1696 2 11 bist 
+: 1700 2 12 gut 
+: 1704 2 11 ge
+: 1707 12 11 nu
+* 1720 7 9 ~
+* 1728 7 14 ~
+: 1736 6 9 ~g
+- 1742 2499
+- 2499
+: 2515 2 11 Du 
+: 2518 2 11 bist 
+: 2521 2 12 gut 
+: 2525 2 11 ge
+: 2528 12 11 nu
+: 2541 7 9 ~
+: 2549 7 7 ~
+: 2557 6 2 ~g
+- 2563
+: 2577 2 11 Du 
+: 2581 2 11 bist 
+: 2585 2 12 gut 
+: 2589 2 11 ge
+: 2592 12 11 nu
+* 2605 7 9 ~
+* 2613 7 14 ~
+: 2621 6 9 ~g
+- 2627
+: 2641 2 11 Du 
+: 2644 2 11 bist 
+: 2647 2 12 gut 
+: 2651 2 11 ge
+: 2654 12 11 nu
+: 2667 7 9 ~
+: 2675 7 7 ~
+: 2683 6 2 ~g
+- 2689
+: 2703 2 11 Du 
+: 2707 2 11 bist 
+: 2711 2 12 gut 
+: 2715 2 11 ge
+: 2718 12 11 nu
+* 2731 7 9 ~
+* 2739 7 14 ~
+: 2747 6 9 ~g
+E

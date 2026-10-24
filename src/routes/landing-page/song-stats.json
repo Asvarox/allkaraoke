@@ -190,9 +190,10 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 6734,
-  "generatedAt": "2026-10-23T02:48:39.258Z",
+  "songs": 6743,
+  "generatedAt": "2026-10-24T02:47:06.114Z",
   "additionsPerDay": {
+    "2026-10-24": 9,
     "2026-10-23": 21,
     "2026-10-22": 19,
     "2026-10-21": 2,
@@ -233,10 +234,72 @@
     "2026-08-28": 11,
     "2026-08-27": 22,
     "2026-08-26": 2,
-    "2026-08-25": 10,
-    "2026-08-24": 15
+    "2026-08-25": 10
   },
   "recentlyAdded": [
+    {
+      "id": "snow-informer",
+      "artist": "Snow",
+      "title": "Informer",
+      "video": "TSffz_bl6zo",
+      "addedAt": "2026-10-24T02:46:27.381Z"
+    },
+    {
+      "id": "duffy-distant-dreamer",
+      "artist": "Duffy",
+      "title": "Distant Dreamer",
+      "video": "iMTbmmbn05w",
+      "addedAt": "2026-10-24T02:46:27.195Z"
+    },
+    {
+      "id": "kitschkrieg-feat-blumengarten-shirin-david-gut-genug",
+      "artist": "KITSCHKRIEG feat. Blumengarten & Shirin David",
+      "title": "GUT GENUG",
+      "video": "0GnA8VYOfko",
+      "addedAt": "2026-10-24T02:46:27.029Z"
+    },
+    {
+      "id": "pokemon-mezase-pokemon-master",
+      "artist": "Pokémon",
+      "title": "Mezase Pokémon Master",
+      "video": "F9rUW55Ps_I",
+      "addedAt": "2026-10-24T02:46:27.028Z"
+    },
+    {
+      "id": "fito-y-fitipaldis-siempre-estoy-sonando",
+      "artist": "Fito y Fitipaldis",
+      "title": "Siempre estoy soñando",
+      "video": "VURrwVIWpro",
+      "addedAt": "2026-10-24T02:46:26.863Z"
+    },
+    {
+      "id": "chris-stapleton-tennessee-whiskey",
+      "artist": "Chris Stapleton",
+      "title": "Tennessee Whiskey",
+      "video": "4zAThXFOy2c",
+      "addedAt": "2026-10-24T02:46:25.540Z"
+    },
+    {
+      "id": "taylor-swift-dancing-with-our-hands-tied",
+      "artist": "Taylor Swift",
+      "title": "Dancing With Our Hands Tied",
+      "video": "erGyUphZSt8",
+      "addedAt": "2026-10-24T02:46:25.539Z"
+    },
+    {
+      "id": "g-dragon-untitled-2014",
+      "artist": "G-DRAGON",
+      "title": "Untitled, 2014",
+      "video": "9kaCAbIXuyg",
+      "addedAt": "2026-10-24T02:46:24.925Z"
+    },
+    {
+      "id": "eisblume-eisblumen",
+      "artist": "Eisblume",
+      "title": "Eisblumen",
+      "video": "qSRohpppsnE",
+      "addedAt": "2026-10-24T02:46:24.917Z"
+    },
     {
       "id": "red-hot-chili-peppers-black-summer",
       "artist": "Red Hot Chili Peppers",
@@ -509,69 +572,6 @@
       "title": "Heat Waves",
       "video": "mRD0-GxqHVo",
       "addedAt": "2026-10-22T02:50:40.623Z"
-    },
-    {
-      "id": "chvrches-the-mother-we-share",
-      "artist": "CHVRCHES",
-      "title": "The Mother We Share",
-      "video": "_mTRvJ9fugM",
-      "addedAt": "2026-10-22T02:50:39.105Z"
-    },
-    {
-      "id": "cigarettes-after-sex-apocalypse",
-      "artist": "Cigarettes After Sex",
-      "title": "Apocalypse",
-      "video": "-mnH9-SX2Tg",
-      "addedAt": "2026-10-21T02:45:13.946Z"
-    },
-    {
-      "id": "michael-buble-sway",
-      "artist": "Michael Bublé",
-      "title": "Sway",
-      "video": "xeMOO5EudYs",
-      "addedAt": "2026-10-21T02:45:13.941Z"
-    },
-    {
-      "id": "taylor-swift-champagne-problems",
-      "artist": "Taylor Swift",
-      "title": "champagne problems",
-      "video": "wMpqCRF7TKg",
-      "addedAt": "2026-10-19T02:39:10.146Z"
-    },
-    {
-      "id": "jean-jacques-goldman-je-marche-seul",
-      "artist": "Jean-Jacques Goldman",
-      "title": "Je marche seul",
-      "video": "5AS0wPLnAhY",
-      "addedAt": "2026-10-19T02:39:10.144Z"
-    },
-    {
-      "id": "nightwish-the-phantom-of-the-opera",
-      "artist": "Nightwish",
-      "title": "The Phantom Of The Opera",
-      "video": "n1G5WiMoRjw",
-      "addedAt": "2026-10-19T02:39:10.140Z"
-    },
-    {
-      "id": "nightwish-dark-chest-of-wonders",
-      "artist": "Nightwish",
-      "title": "Dark Chest Of Wonders",
-      "video": "5_5e8bW2cOY",
-      "addedAt": "2026-10-19T02:39:10.135Z"
-    },
-    {
-      "id": "sombr-12-to-12",
-      "artist": "sombr",
-      "title": "12 to 12",
-      "video": "cZgUiR31m-Y",
-      "addedAt": "2026-10-19T02:39:10.134Z"
-    },
-    {
-      "id": "madonna-ill-remember",
-      "artist": "Madonna",
-      "title": "I’ll Remember",
-      "video": "R0cfZczo4yk",
-      "addedAt": "2026-10-19T02:39:10.132Z"
     }
   ]
 }
