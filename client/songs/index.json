@@ -37620,6 +37620,34 @@
     "local": false
   },
   {
+    "id": "chris-stapleton-tennessee-whiskey",
+    "title": "Tennessee Whiskey",
+    "artist": "Chris Stapleton",
+    "video": "4zAThXFOy2c",
+    "language": [
+      "English"
+    ],
+    "bpm": 303,
+    "gap": 21169.90099009901,
+    "year": "2015",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-24T02:46:25.540Z",
+    "genre": "Country",
+    "realBpm": 48,
+    "volume": 1,
+    "author": "Fepo",
+    "duration": 294,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6739,
+    "tracksCount": 1,
+    "search": "chrisstapletontennesseewhiskey",
+    "local": false
+  },
+  {
     "id": "christell-dubidubidu-chipi-chipi-chapa-chapa",
     "title": "Dubidubidu (Chipi Chipi Chapa Chapa)",
     "artist": "Christell",
@@ -54815,6 +54843,34 @@
     "local": false
   },
   {
+    "id": "duffy-distant-dreamer",
+    "title": "Distant Dreamer",
+    "artist": "Duffy",
+    "video": "iMTbmmbn05w",
+    "language": [
+      "English"
+    ],
+    "bpm": 380,
+    "gap": 10493.157894736842,
+    "year": "2008",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-10-24T02:46:27.195Z",
+    "genre": "Rock",
+    "realBpm": 94,
+    "volume": 1,
+    "author": "mtom",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=16927",
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6743,
+    "tracksCount": 1,
+    "search": "duffydistantdreamer",
+    "local": false
+  },
+  {
     "id": "dumdum-boys-splitter-pine",
     "title": "Splitter Pine",
     "artist": "DumDum Boys",
@@ -56861,6 +56917,36 @@
     "shortId": 1444,
     "tracksCount": 1,
     "search": "eiraoiignite",
+    "local": false
+  },
+  {
+    "id": "eisblume-eisblumen",
+    "title": "Eisblumen",
+    "artist": "Eisblume",
+    "video": "qSRohpppsnE",
+    "language": [
+      "German"
+    ],
+    "bpm": 312,
+    "gap": 12420.384615384615,
+    "year": "2009",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-10-24T02:46:24.917Z",
+    "genre": "Pop",
+    "realBpm": 78,
+    "volume": 1,
+    "author": "IC",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=411",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=7950",
+    "duration": 233,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6736,
+    "tracksCount": 1,
+    "search": "eisblumeeisblumen",
     "local": false
   },
   {
@@ -65345,6 +65431,32 @@
     "local": false
   },
   {
+    "id": "fito-y-fitipaldis-siempre-estoy-sonando",
+    "title": "Siempre estoy soñando",
+    "artist": "Fito y Fitipaldis",
+    "video": "VURrwVIWpro",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 311.2,
+    "gap": 6431.7892030848325,
+    "year": "2004",
+    "artistOrigin": "ES",
+    "lastUpdate": "2026-10-24T02:46:26.863Z",
+    "realBpm": 156,
+    "volume": 1,
+    "duration": 235,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6740,
+    "tracksCount": 1,
+    "search": "fitoyfitipaldissiempreestoysonando",
+    "local": false
+  },
+  {
     "id": "fitz-and-the-tantrums-handclap",
     "title": "HandClap",
     "artist": "Fitz and The Tantrums",
@@ -68753,6 +68865,36 @@
     "shortId": 1696,
     "tracksCount": 1,
     "search": "fxlachata",
+    "local": false
+  },
+  {
+    "id": "g-dragon-untitled-2014",
+    "title": "Untitled, 2014",
+    "artist": "G-DRAGON",
+    "video": "9kaCAbIXuyg",
+    "language": [
+      "Korean"
+    ],
+    "bpm": 200.45,
+    "gap": -91.81117485657273,
+    "year": "2017",
+    "artistOrigin": "KR",
+    "lastUpdate": "2026-10-24T02:46:24.925Z",
+    "genre": "K-Pop",
+    "realBpm": 80,
+    "volume": 1,
+    "author": "Volodia",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=volodia",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=G-DRAGON",
+    "duration": 229,
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 6737,
+    "tracksCount": 1,
+    "search": "gdragonuntitled2014",
     "local": false
   },
   {
@@ -98874,6 +99016,34 @@
     "shortId": 2388,
     "tracksCount": 1,
     "search": "kissrockandrollallnite",
+    "local": false
+  },
+  {
+    "id": "kitschkrieg-feat-blumengarten-shirin-david-gut-genug",
+    "title": "GUT GENUG",
+    "artist": "KITSCHKRIEG feat. Blumengarten & Shirin David",
+    "video": "0GnA8VYOfko",
+    "language": [
+      "German"
+    ],
+    "bpm": 241,
+    "gap": 10,
+    "year": "2026",
+    "lastUpdate": "2026-10-24T02:46:27.029Z",
+    "genre": "Pop",
+    "realBpm": 153,
+    "volume": 0.54,
+    "author": "Fepo",
+    "sourceUrl": "https://youtu.be/0GnA8VYOfko",
+    "duration": 189,
+    "tracks": [
+      {
+        "start": 0
+      }
+    ],
+    "shortId": 6742,
+    "tracksCount": 1,
+    "search": "kitschkriegfeatblumengartenshirindavidgutgenug",
     "local": false
   },
   {
@@ -143909,6 +144079,39 @@
     "local": false
   },
   {
+    "id": "pokemon-mezase-pokemon-master",
+    "title": "Mezase Pokémon Master",
+    "artist": "Pokémon",
+    "video": "F9rUW55Ps_I",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 323.3,
+    "gap": 339.27621404268484,
+    "year": "1997",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-10-24T02:46:27.028Z",
+    "edition": "Tv Size",
+    "genre": "Anime",
+    "realBpm": 120,
+    "previewEnd": 79,
+    "volume": 1,
+    "author": "Itsalltoomuch",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=189586",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=28581",
+    "duration": 89,
+    "tracks": [
+      {
+        "name": "Mezase Pokémon Master",
+        "start": 22
+      }
+    ],
+    "shortId": 6741,
+    "tracksCount": 1,
+    "search": "pokemonmezasepokemonmaster",
+    "local": false
+  },
+  {
     "id": "pokemon-opening-pl",
     "title": "Opening (PL)",
     "artist": "Pokémon",
@@ -164282,6 +164485,34 @@
     "local": false
   },
   {
+    "id": "snow-informer",
+    "title": "Informer",
+    "artist": "Snow",
+    "video": "TSffz_bl6zo",
+    "language": [
+      "English"
+    ],
+    "bpm": 392,
+    "gap": 1055.1020408163263,
+    "year": "1992",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-24T02:46:27.381Z",
+    "genre": "Hip-Hop, Reggae",
+    "realBpm": 99,
+    "volume": 1,
+    "author": "RetroGirl",
+    "duration": 246,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6744,
+    "tracksCount": 1,
+    "search": "snowinformer",
+    "local": false
+  },
+  {
     "id": "snow-patrol-chasing-cars",
     "title": "Chasing Cars",
     "artist": "Snow Patrol",
@@ -172200,6 +172431,35 @@
     "shortId": 4195,
     "tracksCount": 1,
     "search": "taylorswiftcruelsummer",
+    "local": false
+  },
+  {
+    "id": "taylor-swift-dancing-with-our-hands-tied",
+    "title": "Dancing With Our Hands Tied",
+    "artist": "Taylor Swift",
+    "video": "erGyUphZSt8",
+    "language": [
+      "English"
+    ],
+    "bpm": 323.1,
+    "gap": 11808.644382544104,
+    "year": "2017",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-24T02:46:25.539Z",
+    "genre": "Pop",
+    "realBpm": 160,
+    "volume": 1,
+    "author": "princetongirl98",
+    "sourceUrl": "https://www.youtube.com/watch?v=erGyUphZSt8",
+    "duration": 212,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6738,
+    "tracksCount": 1,
+    "search": "taylorswiftdancingwithourhandstied",
     "local": false
   },
   {

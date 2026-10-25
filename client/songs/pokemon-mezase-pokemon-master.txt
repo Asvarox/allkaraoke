@@ -1,0 +1,262 @@
+#ARTIST:Pokémon
+#TITLE:Mezase Pokémon Master
+#CREATOR:Itsalltoomuch
+#BPM:323,3
+#YEAR:1997
+#VIDEO:v=F9rUW55Ps_I
+#GENRE:Anime
+#LANGUAGE:Japanese
+#GAP:339,27621404268484
+#EDITION:Tv Size
+#ALLKARAOKE_ID:pokemon-mezase-pokemon-master
+#ALLKARAOKE_SID:6741
+#ALLKARAOKE_LASTUPDATE:2026-10-24T02:46:27.028Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=189586
+#ALLKARAOKE_REALBPM:120
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=28581
+#ALLKARAOKE_PREVIEWEND:79
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:89
+#P1:Mezase Pokémon Master
+#MP3:Pokémon - Mezase Pokémon Master.mp3
+#COVER:Pokémon - Mezase Pokémon Master [CO].jpg
+#BACKGROUND:Pokémon - Mezase Pokémon Master [BG].jpg
+F 22 1 5 Po
+F 24 1 -5 ke
+F 26 1 -1 mon 
+F 35 1 -3 Get
+F 39 1 -3 to 
+F 42 1 -3 da 
+F 45 1 -3 ze!
+- 46 120
+- 120
+: 142 1 -4 Ta
+: 144 1 -4 to
+: 147 1 -4 e 
+: 149 1 -1 hi 
+: 152 1 -4 no 
+: 155 1 -1 na
+: 157 1 -4 ka 
+: 160 1 -1 Mi
+: 163 1 -4 zu 
+: 166 1 -1 no 
+: 168 1 -4 na
+: 171 1 -4 ka
+- 172
+: 174 1 -4 Ku
+: 176 1 -1 sa 
+: 179 1 -4 no
+: 182 1 -1 na
+: 185 1 -4 ka~ 
+: 193 2 -4 Mo
+: 199 1 -1 ri 
+: 204 1 -1 no 
+: 207 1 -1 na
+: 212 18 -2 ka~
+- 230
+: 235 1 -1 Tsu
+: 237 1 -4 chi 
+: 240 1 -1 no 
+: 242 1 -4 na
+: 245 1 -1 ka 
+: 248 1 -4 Ku
+: 250 1 -1 mo 
+: 253 1 -4 no 
+: 256 1 -1 na
+: 259 1 -4 ka
+- 260
+: 261 1 -4 A
+: 263 1 -4 no 
+: 267 1 -1 ko 
+: 269 1 -4 no 
+: 272 2 -3 su
+: 276 3 1 kaa
+: 280 2 1 to 
+: 286 2 -1 no 
+: 292 1 -3 na
+: 297 5 -4 ka
+- 302
+: 318 1 -1 Na
+: 321 1 -4 ka
+: 325 1 -1 na
+: 328 1 -4 ka 
+: 331 1 -1 na
+: 333 1 -4 ka
+: 336 1 -1 na
+: 339 1 -4 ka 
+: 341 1 -1 Na
+: 344 1 -4 ka-
+- 345
+: 347 1 -1 Na
+: 350 1 -4 ka 
+: 352 1 -1 na
+: 355 1 -4 ka
+: 358 1 -1 na
+: 360 1 -4 ka 
+: 364 1 -4 tai
+: 369 1 -1 hen 
+: 374 1 -1 da 
+: 377 1 -1 ke
+: 383 14 -2 do
+- 397
+: 402 1 -4 Ka
+: 404 1 -4 na
+: 406 1 -1 ra
+: 410 3 -4 zu 
+: 416 2 3 GE
+: 421 3 1 TO 
+: 426 3 -1 da 
+: 431 7 -4 ze!
+- 438
+: 444 1 -4 Po
+: 446 1 -4 ke
+: 449 3 -1 mo
+: 454 10 -4 n 
+* 470 8 9 GE
+* 482 3 3 TO 
+: 487 2 1 da 
+: 493 73 3 ze!
+- 566
+: 578 1 1 Ma
+: 581 2 1 sa
+: 585 1 1 ra
+: 588 4 1 taun 
+: 596 7 1 ni 
+: 611 1 -3 sa
+: 614 1 -3 yo
+: 617 1 1 na
+: 619 1 1 ra 
+: 622 2 -1 bai-
+: 628 8 4 bai
+- 636 643
+- 643
+: 665 1 1 O
+: 668 1 1 re 
+: 670 4 1 wa 
+: 676 1 1 ko
+: 679 1 1 it
+: 681 1 1 su 
+: 684 9 1 to 
+: 698 1 -3 ta
+: 700 4 -3 bi ni
+: 705 1 1 de
+: 709 11 -1 ru
+- 720 724
+- 724
+: 746 1 -3 Ki
+: 751 2 -3 ta
+: 757 1 -6 e
+: 763 1 -3 ta 
+: 768 2 -1 wa
+: 773 2 1 za 
+: 779 6 -3 de 
+: 795 1 -3 ka
+: 800 1 -3 chi
+: 805 2 -1 ma
+: 811 2 4 ku
+: 817 2 1 ri
+- 819
+: 832 2 -3 Na
+: 837 1 3 ka
+: 842 2 2 ma 
+: 848 1 0 wo 
+: 853 1 -2 fu
+: 858 1 -3 ya
+: 864 1 -2 sh
+: 869 1 1 ite 
+: 875 1 -1 tsu
+: 880 1 1 gi 
+: 885 1 -1 no 
+: 891 1 -1 ma
+: 896 1 -1 chi 
+: 900 4 1 e
+- 904
+: 914 1 0 It
+: 919 1 1 su 
+: 924 3 3 mo 
+: 930 1 8 it
+: 934 1 8 su 
+: 940 1 10 de
+: 946 2 8 mo 
+: 951 1 7 u
+: 956 2 5 ma
+: 962 1 3 ku 
+: 967 2 5 yu
+: 973 1 3 ku 
+: 978 1 3 na
+: 984 1 0 n
+: 989 6 -4 te
+- 995
+: 1000 1 -4 Ho
+: 1005 9 -3 shou~ 
+: 1017 4 -1 wa
+: 1023 1 -1 do
+: 1028 1 0 ko 
+: 1033 1 2 ni 
+: 1039 4 2 mo 
+: 1046 1 0 na
+: 1051 1 -1 i 
+: 1056 1 -1 ke
+: 1061 17 -3 do
+- 1078
+: 1087 2 1 It
+: 1092 2 2 su
+: 1097 2 4 de
+: 1103 2 9 mo
+: 1108 1 9 it
+: 1113 2 11 su 
+: 1119 1 9 mo 
+: 1124 1 8 ho
+: 1129 2 6 n
+: 1135 1 4 ki 
+: 1140 2 6 de 
+: 1146 1 4 i
+: 1150 2 4 ki
+: 1156 1 1 te
+: 1161 1 -3 ru
+- 1162
+: 1168 1 -3 Ko
+: 1174 1 1 it
+: 1179 1 -1 su
+: 1184 6 -3 ta
+: 1195 6 1 chi 
+: 1206 5 -1 ga 
+: 1217 6 -3 i
+: 1227 80 9 ru
+- 1307 1378
+- 1378
+: 1400 17 9 Aa 
+: 1422 2 7 A
+: 1427 2 7 ko
+: 1432 1 7 ga
+: 1435 1 9 re 
+: 1443 24 7 no 
+: 1478 1 7 po
+: 1483 1 9 ke
+: 1488 9 9 mon 
+: 1499 1 9 ma
+: 1504 1 7 su
+: 1510 4 7 taa
+: 1515 4 9 ~ 
+: 1521 24 7 ni
+- 1545
+: 1564 1 7 Na
+: 1569 2 9 ri
+: 1574 1 7 ta
+: 1580 1 9 i 
+: 1585 15 7 na 
+: 1607 2 7 Na
+: 1612 2 7 ra
+: 1617 2 7 na
+: 1622 2 4 ku
+: 1627 16 7 cha
+- 1643
+: 1650 1 7 Ze
+: 1655 3 9 tta
+: 1660 2 7 i 
+: 1666 2 9 na
+: 1671 12 7 tte 
+* 1687 2 12 ya
+* 1693 38 11 ru!
+E
