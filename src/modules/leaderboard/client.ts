@@ -11,9 +11,9 @@ export type SubmitScoreInput = Omit<LeaderboardSubmission, 'clientId' | 'notesHa
 
 /**
  * Fire-and-forget. Failures are swallowed on purpose — there is no retry queue and no error is
- * surfaced to the player; a vanity board does not earn one.
+ * surfaced to the player; a vanity board does not earn one. Resolves to `null` when the request failed.
  */
-export async function submitScore(input: SubmitScoreInput): Promise<void> {
+export async function submitScore(input: SubmitScoreInput): Promise<Response | null> {
   try {
     const score = Math.round(input.score);
 
@@ -24,7 +24,7 @@ export async function submitScore(input: SubmitScoreInput): Promise<void> {
       notesHash: await computeNotesHash(input.notes, score),
     };
 
-    await fetch(LEADERBOARD_URL, {
+    return await fetch(LEADERBOARD_URL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/msgpack' },
       // msgpackr types the return as node's Buffer; in the browser it is a plain Uint8Array
@@ -32,6 +32,7 @@ export async function submitScore(input: SubmitScoreInput): Promise<void> {
     });
   } catch {
     // ignored on purpose
+    return null;
   }
 }
 

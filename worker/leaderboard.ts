@@ -1,9 +1,12 @@
 import { unpack } from 'msgpackr';
 
+import { MAX_POINTS } from '../src/consts';
 // Relative imports on purpose: the `~` alias is only configured for the app build
 import {
+  BACKFILL_ACCEPTED_UNTIL,
+  BACKFILL_WINDOW_MS,
   MAX_NOTES_RECORDS,
-  MAX_POINTS,
+  MAX_SUBMITTED_SCORE,
   MAX_SUBMITTED_TOLERANCE,
   MAX_SUBMISSION_BYTES,
   MAX_SUBMITTED_ID_LENGTH,
@@ -94,7 +97,7 @@ const validateSubmission = (payload: unknown): { submission: LeaderboardSubmissi
   }
 
   if (!Number.isInteger(submission.score)) return { message: 'Invalid score' };
-  if (submission.score! < QUALIFYING_SCORE || submission.score! > MAX_POINTS) {
+  if (submission.score! < QUALIFYING_SCORE || submission.score! > MAX_SUBMITTED_SCORE) {
     return { message: 'Score out of range' };
   }
 
@@ -111,6 +114,8 @@ const validateSubmission = (payload: unknown): { submission: LeaderboardSubmissi
     return { message: 'Difficulty not eligible' };
   }
 
+  if (submission.playedAt !== undefined) return validateBackfill(submission);
+
   if (!(submission.notes instanceof Uint8Array) || submission.notes.byteLength === 0) {
     return { message: 'Missing notes' };
   }
@@ -124,6 +129,28 @@ const validateSubmission = (payload: unknown): { submission: LeaderboardSubmissi
 
   if (recordCount < MIN_NOTES_RECORDS || recordCount > MAX_NOTES_RECORDS) {
     return { message: 'Implausible notes' };
+  }
+
+  return { submission: { ...submission, songLastUpdate: submission.songLastUpdate ?? null } as LeaderboardSubmission };
+};
+
+/**
+ * A run replayed from local history: no notes, and only what was refused before MAX_SUBMITTED_SCORE
+ * existed. Closes on its own at BACKFILL_ACCEPTED_UNTIL.
+ */
+const validateBackfill = (
+  submission: Partial<LeaderboardSubmission>,
+): { submission: LeaderboardSubmission } | { message: string } => {
+  const now = Date.now();
+  const playedAt = submission.playedAt!;
+
+  if (now >= BACKFILL_ACCEPTED_UNTIL) return { message: 'Backfill closed' };
+  if (!Number.isInteger(playedAt) || playedAt < now - BACKFILL_WINDOW_MS || playedAt > now) {
+    return { message: 'Invalid playedAt' };
+  }
+  if (submission.score! <= MAX_POINTS) return { message: 'Score out of range' };
+  if (!(submission.notes instanceof Uint8Array) || submission.notes.byteLength !== 0) {
+    return { message: 'Unexpected notes' };
   }
 
   return { submission: { ...submission, songLastUpdate: submission.songLastUpdate ?? null } as LeaderboardSubmission };
@@ -200,7 +227,7 @@ export const handleSongLeaderboardRead = async (request: Request, env: Leaderboa
 
   const rawScore = params.get('score');
   const score = rawScore === null ? null : Math.round(Number(rawScore));
-  if (score !== null && (!Number.isFinite(score) || score < 0 || score > MAX_POINTS)) {
+  if (score !== null && (!Number.isFinite(score) || score < 0 || score > MAX_SUBMITTED_SCORE)) {
     return error(400, 'Invalid score');
   }
 

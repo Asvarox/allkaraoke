@@ -1,5 +1,6 @@
 // oxlint-disable react-refresh/only-export-components
 import '~/modules/game-events/event-listeners';
+import '~/modules/leaderboard/backfill';
 import '~/modules/remote-mic/event-listeners';
 import '~/modules/stats/index';
 import '~/modules/utils/array-at-polyfill';

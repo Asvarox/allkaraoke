@@ -11,6 +11,20 @@ export const QUALIFYING_SCORE_RATIO = 2 / 7;
 export const QUALIFYING_SCORE = MAX_POINTS * QUALIFYING_SCORE_RATIO;
 
 /**
+ * Highest score the leaderboard stores. Some runs end above MAX_POINTS, so the cap has headroom
+ * instead of matching the scoring ceiling.
+ */
+export const MAX_SUBMITTED_SCORE = 3_999_999;
+
+/**
+ * One-time backfill of runs above MAX_POINTS that the Worker rejected before MAX_SUBMITTED_SCORE.
+ * Local history keeps no notes, so these go up without them — which is why the Worker only takes
+ * them for scores that were refused before, played within the window, and until a fixed date.
+ */
+export const BACKFILL_WINDOW_MS = 30 * 24 * 60 * 60 * 1000;
+export const BACKFILL_ACCEPTED_UNTIL = Date.UTC(2026, 11, 1);
+
+/**
  * Pitch tolerance on a sing setup: 1 = Hard, 2 = Medium, 3 = Easy, 4+ the dev-only debug widths.
  *
  * Two different limits hang off it, because the two boards rank different things:
@@ -58,5 +72,3 @@ export const MAX_NOTES_RECORDS = 200_000;
 export const MAX_SUBMITTED_NAME_LENGTH = 40;
 export const MAX_SUBMITTED_SONG_TEXT_LENGTH = 200;
 export const MAX_SUBMITTED_ID_LENGTH = 128;
-
-export { MAX_POINTS };

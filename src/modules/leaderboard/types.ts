@@ -21,6 +21,11 @@ export interface LeaderboardSubmission {
   /** sha-256 hex over the packed notes bytes concatenated with the score. */
   notesHash: string;
   notes: Uint8Array;
+  /**
+   * epoch ms of the original run. Set only by the one-time backfill of local history, which has no
+   * recorded notes — `notes` is then empty. See `BACKFILL_ACCEPTED_UNTIL`.
+   */
+  playedAt?: number;
 }
 
 /** One public row of the board. Carries no `clientId` and no row id — the response is world-readable. */
