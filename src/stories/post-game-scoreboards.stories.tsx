@@ -202,7 +202,8 @@ const Template = (args: StoryArgs) => {
         onClickSongSelection={() => undefined}
         song={song}
         highScores={[
-          { singSetupId: SING_SETUP_ID, name: 'Player #1', score: args.score, date: new Date().toISOString() },
+          // A fixed "today", so the screenshot doesn't change with the calendar
+          { singSetupId: SING_SETUP_ID, name: 'Player #1', score: args.score, date: '2026-07-21' },
           { singSetupId: 'earlier-1', name: 'Smelly Cat', score: 2_400_000, date: '2026-03-04' },
           { singSetupId: 'earlier-2', name: 'Dat Boi', score: 1_650_000, date: '2025-11-14' },
           { singSetupId: 'earlier-3', name: 'Good Guy Greg', score: 1_300_000, date: '2025-04-02' },
