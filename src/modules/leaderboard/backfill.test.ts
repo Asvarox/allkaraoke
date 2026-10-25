@@ -23,10 +23,18 @@ describe('collectBackfillCandidates', () => {
   const first = song('a');
   const second = song('b');
 
-  it('picks the best refused run per song, across players and difficulties', () => {
+  it('picks the best refused run per song and difficulty, across players', () => {
     const candidates = collectBackfillCandidates(
       stats([
-        [first, [play([MAX_POINTS + 10, 1_000_000], 2), play([MAX_POINTS + 500], 5, 1)]],
+        [
+          first,
+          [
+            play([MAX_POINTS + 10, 1_000_000], 2),
+            play([MAX_POINTS + 30, MAX_POINTS + 40], 3),
+            play([MAX_POINTS + 500], 5, 1),
+            play([MAX_POINTS + 700], 4, 3),
+          ],
+        ],
         [second, [play([MAX_POINTS + 20.4], 1)]],
       ]),
       [first, second],
@@ -34,7 +42,9 @@ describe('collectBackfillCandidates', () => {
     );
 
     expect(candidates).toEqual([
+      expect.objectContaining({ songId: 'a', score: MAX_POINTS + 40, tolerance: 2, playedAt: now - 3 * day }),
       expect.objectContaining({ songId: 'a', score: MAX_POINTS + 500, tolerance: 1, playedAt: now - 5 * day }),
+      expect.objectContaining({ songId: 'a', score: MAX_POINTS + 700, tolerance: 3 }),
       expect.objectContaining({ songId: 'b', score: MAX_POINTS + 20, tolerance: 2, mode: 'DUEL' }),
     ]);
   });

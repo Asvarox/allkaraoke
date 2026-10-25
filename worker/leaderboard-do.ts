@@ -65,7 +65,7 @@ const toBoardEntry = (row: RecordRow): BoardEntry => ({
 
 export interface SubmitResult {
   accepted: boolean;
-  /** `false` when an equal or better score for the same (client, song, name) already exists. */
+  /** `false` when an equal or better score for the same (client, song, name, difficulty) already exists. */
   reason?: 'lower-score' | 'invalid';
 }
 
@@ -107,7 +107,12 @@ export class LeaderboardBoard extends DurableObject<LeaderboardDurableObjectEnv>
         created_at       INTEGER NOT NULL
       );
     `);
-    this.sql.exec(`CREATE UNIQUE INDEX IF NOT EXISTS records_dedupe ON records (client_id, song_id, name_normalized);`);
+    // One row per difficulty, so a higher Easy run cannot replace the Medium row the global board shows.
+    // Every existing row already satisfies the wider key, so swapping the index needs no data migration
+    this.sql.exec(`DROP INDEX IF EXISTS records_dedupe;`);
+    this.sql.exec(
+      `CREATE UNIQUE INDEX IF NOT EXISTS records_dedupe_by_tolerance ON records (client_id, song_id, name_normalized, tolerance);`,
+    );
     this.sql.exec(`CREATE INDEX IF NOT EXISTS records_score ON records (score DESC);`);
     this.sql.exec(`CREATE INDEX IF NOT EXISTS records_created_at ON records (created_at);`);
     // Covers all three per-song queries — the count, the rank, and the window — in the order they
@@ -124,7 +129,7 @@ export class LeaderboardBoard extends DurableObject<LeaderboardDurableObjectEnv>
   }
 
   /**
-   * Stores one submission, keeping the higher score for a repeated (client, song, name), and
+   * Stores one submission, keeping the higher score for a repeated (client, song, name, difficulty), and
    * rebuilds the KV projection. Rate limiting is not handled here — it lives entirely in the
    * binding at the Worker edge.
    */
@@ -138,10 +143,11 @@ export class LeaderboardBoard extends DurableObject<LeaderboardDurableObjectEnv>
 
     const existing = this.sql
       .exec<{ id: string; score: number }>(
-        `SELECT id, score FROM records WHERE client_id = ? AND song_id = ? AND name_normalized = ?`,
+        `SELECT id, score FROM records WHERE client_id = ? AND song_id = ? AND name_normalized = ? AND tolerance = ?`,
         submission.clientId,
         submission.songId,
         nameNormalized,
+        submission.tolerance,
       )
       .toArray()[0];
 
@@ -211,12 +217,21 @@ export class LeaderboardBoard extends DurableObject<LeaderboardDurableObjectEnv>
    *
    * The difficulty filter is not only about rows submitted before the rule existed — the admin
    * listing still shows everything, so the board is where "Medium or harder" has to hold.
+   *
+   * Rows are kept per difficulty, but the global board ranks a player once per song — their best run
+   * on Hard or Medium — so a song sung on both does not take two places.
    */
   projection(): BoardResponse {
     const rows = this.sql
       .exec<RecordRow>(
         `SELECT id, name, country, score, artist, title, song_id, tolerance, created_at
-         FROM records WHERE created_at >= ? AND tolerance <= ? ORDER BY score DESC, created_at ASC LIMIT ?`,
+         FROM (
+           SELECT *, ROW_NUMBER() OVER (
+             PARTITION BY client_id, song_id, name_normalized ORDER BY score DESC, created_at ASC
+           ) AS song_rank
+           FROM records WHERE created_at >= ? AND tolerance <= ?
+         )
+         WHERE song_rank = 1 ORDER BY score DESC, created_at ASC LIMIT ?`,
         Date.now() - GLOBAL_BOARD_WINDOW_MS,
         MAX_GLOBAL_BOARD_TOLERANCE,
         BOARD_SIZE,
