@@ -31,8 +31,8 @@ type BackfillCandidate = Pick<
 > & { playedAt: number };
 
 /**
- * The best run per song that the Worker refused before MAX_SUBMITTED_SCORE existed. One per song
- * because the board keeps one row per (client, song, name) — a second would only lose to the first.
+ * The best run per song and difficulty that the Worker refused before MAX_SUBMITTED_SCORE existed.
+ * The board keeps one row per (client, song, name, difficulty) — a second would only lose to the first.
  */
 export function collectBackfillCandidates(
   stats: Record<string, SongStats>,
@@ -40,7 +40,7 @@ export function collectBackfillCandidates(
   now: number,
 ): BackfillCandidate[] {
   const songsByKey = new Map(songs.map((song) => [getSongKey(song), song]));
-  const bestBySong = new Map<string, BackfillCandidate>();
+  const best = new Map<string, BackfillCandidate>();
 
   for (const [key, songStats] of Object.entries(stats)) {
     const song = songsByKey.get(key);
@@ -55,9 +55,10 @@ export function collectBackfillCandidates(
       for (const { score: rawScore } of entry.scores) {
         const score = Math.round(rawScore);
         if (score <= MAX_POINTS || score > MAX_SUBMITTED_SCORE) continue;
-        if ((bestBySong.get(song.id)?.score ?? 0) >= score) continue;
+        const candidateKey = `${song.id}:${tolerance}`;
+        if ((best.get(candidateKey)?.score ?? 0) >= score) continue;
 
-        bestBySong.set(song.id, {
+        best.set(candidateKey, {
           songId: song.id,
           artist: song.artist,
           title: song.title,
@@ -71,7 +72,7 @@ export function collectBackfillCandidates(
     }
   }
 
-  return [...bestBySong.values()];
+  return [...best.values()];
 }
 
 const wait = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
