@@ -2245,6 +2245,7 @@ defaultPackr.pack;
 defaultPackr.pack;
 var { NEVER, ALWAYS, DECIMAL_ROUND, DECIMAL_FIT } = FLOAT32_OPTIONS;
 var QUALIFYING_SCORE = 1e6;
+var BACKFILL_ACCEPTED_UNTIL = Date.UTC(2026, 11, 1);
 //#endregion
 //#region src/modules/leaderboard/notes-hash.ts
 /**
@@ -2326,8 +2327,9 @@ var validateSubmission = (payload) => {
 	if (submission.country !== null && !isCountryCode(submission.country)) return { message: "Invalid country" };
 	if (submission.songLastUpdate !== null && submission.songLastUpdate !== void 0 && !isBoundedString(submission.songLastUpdate, 200)) return { message: "Invalid songLastUpdate" };
 	if (!Number.isInteger(submission.score)) return { message: "Invalid score" };
-	if (submission.score < QUALIFYING_SCORE || submission.score > 35e5) return { message: "Score out of range" };
+	if (submission.score < QUALIFYING_SCORE || submission.score > 3999999) return { message: "Score out of range" };
 	if (!Number.isInteger(submission.tolerance) || submission.tolerance < 1 || submission.tolerance > 3) return { message: "Difficulty not eligible" };
+	if (submission.playedAt !== void 0) return validateBackfill(submission);
 	if (!(submission.notes instanceof Uint8Array) || submission.notes.byteLength === 0) return { message: "Missing notes" };
 	let recordCount;
 	try {
@@ -2336,6 +2338,22 @@ var validateSubmission = (payload) => {
 		return { message: "Malformed notes" };
 	}
 	if (recordCount < 100 || recordCount > 2e5) return { message: "Implausible notes" };
+	return { submission: {
+		...submission,
+		songLastUpdate: submission.songLastUpdate ?? null
+	} };
+};
+/**
+* A run replayed from local history: no notes, and only what was refused before MAX_SUBMITTED_SCORE
+* existed. Closes on its own at BACKFILL_ACCEPTED_UNTIL.
+*/
+var validateBackfill = (submission) => {
+	const now = Date.now();
+	const playedAt = submission.playedAt;
+	if (now >= BACKFILL_ACCEPTED_UNTIL) return { message: "Backfill closed" };
+	if (!Number.isInteger(playedAt) || playedAt < now - 2592e6 || playedAt > now) return { message: "Invalid playedAt" };
+	if (submission.score <= 35e5) return { message: "Score out of range" };
+	if (!(submission.notes instanceof Uint8Array) || submission.notes.byteLength !== 0) return { message: "Unexpected notes" };
 	return { submission: {
 		...submission,
 		songLastUpdate: submission.songLastUpdate ?? null
@@ -2385,7 +2403,7 @@ var handleSongLeaderboardRead = async (request, env) => {
 	if (!Number.isInteger(tolerance) || tolerance < 1 || tolerance > 3) return error(400, "Invalid tolerance");
 	const rawScore = params.get("score");
 	const score = rawScore === null ? null : Math.round(Number(rawScore));
-	if (score !== null && (!Number.isFinite(score) || score < 0 || score > 35e5)) return error(400, "Invalid score");
+	if (score !== null && (!Number.isFinite(score) || score < 0 || score > 3999999)) return error(400, "Invalid score");
 	const result = await board.songBoard(songId, tolerance, score);
 	return new Response(JSON.stringify(result), { headers: {
 		...jsonHeaders,
@@ -2534,7 +2552,7 @@ var LeaderboardBoard = class extends DurableObject {
 			reason: "lower-score"
 		};
 		const id = existing?.id ?? crypto.randomUUID();
-		const createdAt = Date.now();
+		const createdAt = submission.playedAt ?? Date.now();
 		if (existing) {
 			this.sql.exec(`UPDATE records SET artist = ?, title = ?, song_last_update = ?, name = ?, country = ?, score = ?,
            tolerance = ?, mode = ?, track_index = ?, input_lag = ?, notes_hash = ?, created_at = ?
@@ -2543,7 +2561,7 @@ var LeaderboardBoard = class extends DurableObject {
 		} else this.sql.exec(`INSERT INTO records (id, client_id, song_id, artist, title, song_last_update, name, name_normalized,
            country, score, tolerance, mode, track_index, input_lag, notes_hash, created_at)
          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`, id, submission.clientId, submission.songId, submission.artist, submission.title, submission.songLastUpdate, name, nameNormalized, submission.country, submission.score, submission.tolerance, submission.mode, submission.trackIndex, submission.inputLag, submission.notesHash, createdAt);
-		this.sql.exec(`INSERT INTO notes (record_id, blob) VALUES (?, ?)`, id, notesBlob);
+		if (notesBlob.byteLength > 0) this.sql.exec(`INSERT INTO notes (record_id, blob) VALUES (?, ?)`, id, notesBlob);
 		await this.rebuildProjection();
 		return { accepted: true };
 	}
