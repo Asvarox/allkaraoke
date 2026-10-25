@@ -24,8 +24,11 @@ visual('Landing page', async ({ page, context, viewport, makeScreenshot }) => {
     await expect(page.getByTestId('leaderboard-row').and(page.locator(':visible')).first()).toBeVisible();
   }
 
-  // The catalogue size goes up with every song update, which would otherwise redo every baseline
-  await makeScreenshot(undefined, { extraMasks: [page.getByTestId('song-count')] });
+  // The catalogue size goes up with every song update, which would otherwise redo every baseline.
+  // Hiding keeps the number's own width, so it is also pinned - or the label after it still moves
+  const songCount = page.getByTestId('song-count');
+  await songCount.evaluate((node) => node.setAttribute('style', 'display: inline-block; width: 5ch'));
+  await makeScreenshot(undefined, { extraMasks: [songCount] });
 });
 
 visual('Main menu', async ({ page, context, makeScreenshot }) => {

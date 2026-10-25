@@ -34,11 +34,7 @@ const bullets = [
   </>,
   <>
     <strong>
-      {/* Fixed width and digit size, so the label after it stays put while the visual test hides the count */}
-      <span data-test="song-count" className="inline-block min-w-[5ch] tabular-nums">
-        {songCount}
-      </span>{' '}
-      songs
+      <span data-test="song-count">{songCount}</span> songs
     </strong>{' '}
     across {languageCount} languages, updated weekly.
   </>,
