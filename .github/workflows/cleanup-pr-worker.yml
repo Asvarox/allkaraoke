@@ -1,9 +1,12 @@
 name: Delete PR preview workers
 
 on:
-  pull_request:
+  # `_target` so fork PRs get the secrets too. Safe because this never checks out the PR's code
+  pull_request_target:
     types: [closed]
     branches: [master]
+
+permissions: {} # only the Cloudflare secrets are used
 
 # Same group as the PR's CI/CD run, so a deploy still in flight is cancelled rather than finishing
 # after the delete and bringing the worker back

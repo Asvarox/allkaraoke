@@ -1,0 +1,103 @@
+name: Fork PR preview
+
+# Fork PRs get no secrets in CI/CD, so a maintainer deploys their preview by hand: review the PR, then
+# run this with its number and the commit reviewed. Nothing from the PR runs here - CI/CD built it
+# (fork-preview-build), and only its Worker script and static files are uploaded, with master's
+# wrangler config and bindings.
+on:
+  workflow_dispatch:
+    inputs:
+      pr:
+        description: PR number
+        required: true
+        type: number
+      sha:
+        description: Full SHA of the commit you reviewed (the run fails if the PR has moved on since)
+        required: true
+        type: string
+
+permissions: {}
+
+jobs:
+  deploy:
+    # The checkout below is the dispatched branch, which must be the reviewed, trusted one
+    if: github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read # the CI/CD run's artifacts
+      contents: read
+      pull-requests: read
+    environment:
+      name: prs
+      url: ${{ steps.deploy-app.outputs.deployment-url }}
+    outputs:
+      app-url: ${{ steps.deploy-app.outputs.deployment-url }}
+      storybook-url: ${{ steps.deploy-storybook.outputs.deployment-url }}
+    steps:
+      - name: Find the CI/CD run of the reviewed commit
+        id: ci
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ inputs.pr }}
+          SHA: ${{ inputs.sha }}
+        run: |
+          [[ "$SHA" =~ ^[0-9a-f]{40}$ ]] || { echo "::error::sha must be a full commit SHA"; exit 1; }
+          head=$(gh pr view "$PR" -R "$GITHUB_REPOSITORY" --json headRefOid -q .headRefOid)
+          [ "$head" = "$SHA" ] || { echo "::error::PR #$PR is at $head, not $SHA"; exit 1; }
+          run_id=$(gh run list -R "$GITHUB_REPOSITORY" --workflow ci-improvement.yml --event pull_request \
+            --commit "$SHA" --status completed --limit 1 --json databaseId -q '.[0].databaseId')
+          [ -n "$run_id" ] || { echo "::error::No finished CI/CD run for $SHA yet"; exit 1; }
+          echo "run-id=$run_id" >> "$GITHUB_OUTPUT"
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+      - name: Setup Node
+        uses: './.github/templates/setup-node'
+      - uses: actions/download-artifact@v5
+        with:
+          name: fork-preview-app
+          path: fork-build
+          run-id: ${{ steps.ci.outputs.run-id }}
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v5
+        with:
+          name: storybook-static
+          path: storybook-static
+          run-id: ${{ steps.ci.outputs.run-id }}
+          github-token: ${{ github.token }}
+      - name: Upload app to Cloudflare
+        id: deploy-app
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          # The build's own generated config is ignored: it is the PR's to change. Same worker names as
+          # in-repo previews, so cleanup-pr-worker.yml deletes them
+          command: >-
+            deploy fork-build/allkaraoke_party/index.mjs --config=wrangler.jsonc --env=pr --no-bundle
+            --assets=fork-build/client --name=allkaraoke-party-pr-${{ inputs.pr }}
+      - name: Upload Storybook to Cloudflare
+        id: deploy-storybook
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy --config=wrangler.storybook.jsonc --name=allkaraoke-storybook-pr-${{ inputs.pr }}
+
+  # Replaces the instructions from fork-preview-instructions.yml until the next push
+  comment:
+    needs: deploy
+    runs-on: ubuntu-latest
+    concurrency: fork-preview-comment-${{ inputs.pr }}
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+      - uses: './.github/templates/fork-preview-comment'
+        with:
+          pr: ${{ inputs.pr }}
+          body: |
+            **Preview** of ${{ inputs.sha }}: [app](${{ needs.deploy.outputs.app-url }}) · [Storybook](${{ needs.deploy.outputs.storybook-url }})
