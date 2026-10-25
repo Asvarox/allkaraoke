@@ -249,7 +249,7 @@ a blob — so keeping rows forever costs little, and nothing reads the blobs yet
 
 - a body over 256 KB,
 - a body that is not msgpack, or is missing a required field,
-- a non-integer score, or one below `QUALIFYING_SCORE` or above `MAX_POINTS`,
+- a non-integer score, or one below `QUALIFYING_SCORE` or above `MAX_SUBMITTED_SCORE` (3,999,999),
 - a `tolerance` easier than `MAX_SUBMITTED_TOLERANCE` (the dev-only debug widths above Easy),
 - missing notes, malformed notes, or a record count outside the plausibility bounds,
 - a `notesHash` that does not match a server-side recomputation over `notes ++ score`,
@@ -260,6 +260,24 @@ request, but anyone reading the bundle can compute a valid hash for a fabricated
 is a localStorage string the client generates, so rotating it defeats the rate limit. A motivated
 person can fill all 50 rows and manual admin deletion is the only recourse. This is accepted for v1;
 replaying the notes blob is the real answer and is deferred.
+
+### One-time backfill
+
+Before `MAX_SUBMITTED_SCORE`, the cap was `MAX_POINTS` (3,500,000), and runs above it were
+refused. `src/modules/leaderboard/backfill.ts` sends those runs again from local play history. It
+runs once per device, behind the `leaderboard_backfill` PostHog flag, and only for players whose
+sharing decision is `'always'`. It sends the best such run per song under the stored board name,
+one request every 31 s to stay inside the rate limit. The flag is checked again before each
+request, so switching it off stops the run partway through.
+
+Local history has no notes, so a backfill submission carries `playedAt` and an empty `notes`. The
+Worker takes it only when:
+
+- the score is above `MAX_POINTS`, so the regular path would have refused it,
+- `playedAt` is within `BACKFILL_WINDOW_MS` (30 days) and not in the future,
+- it is before `BACKFILL_ACCEPTED_UNTIL`, after which this path is closed whatever the flag says.
+
+The row is dated `playedAt` rather than the time of the request, and stores no notes blob.
 
 ## Bindings
 

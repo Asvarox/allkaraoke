@@ -1,9 +1,15 @@
 import { reset, SELF } from 'cloudflare:test';
 import { env as workerEnv } from 'cloudflare:workers';
 import { pack } from 'msgpackr';
-import { afterEach, describe, expect, it } from 'vitest';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 
-import { MAX_POINTS, QUALIFYING_SCORE } from '../src/modules/leaderboard/consts';
+import { MAX_POINTS } from '../src/consts';
+import {
+  BACKFILL_ACCEPTED_UNTIL,
+  BACKFILL_WINDOW_MS,
+  MAX_SUBMITTED_SCORE,
+  QUALIFYING_SCORE,
+} from '../src/modules/leaderboard/consts';
 import { computeNotesHash } from '../src/modules/leaderboard/notes-hash';
 import { encodeNotesPayload } from '../src/modules/leaderboard/notes-payload';
 import { BoardResponse, LeaderboardSubmission, SongBoardResponse } from '../src/modules/leaderboard/types';
@@ -95,8 +101,15 @@ describe('POST /leaderboard', () => {
     expect(await response.json()).toEqual({ error: 'Score out of range' });
   });
 
-  it('rejects a score above MAX_POINTS', async () => {
-    const response = await submit(await generateSubmission({ score: MAX_POINTS + 1 }));
+  it('accepts a score at MAX_SUBMITTED_SCORE, above the scoring ceiling', async () => {
+    const response = await submit(await generateSubmission({ score: MAX_SUBMITTED_SCORE }));
+
+    expect(response.status).toBe(200);
+    expect(await response.json()).toEqual({ accepted: true });
+  });
+
+  it('rejects a score above MAX_SUBMITTED_SCORE', async () => {
+    const response = await submit(await generateSubmission({ score: MAX_SUBMITTED_SCORE + 1 }));
 
     expect(response.status).toBe(400);
     expect(await response.json()).toEqual({ error: 'Score out of range' });
@@ -237,6 +250,79 @@ describe('POST /leaderboard', () => {
   });
 });
 
+describe('POST /leaderboard backfill', () => {
+  const now = BACKFILL_ACCEPTED_UNTIL - 24 * 60 * 60 * 1000;
+  const playedAt = now - 3 * 24 * 60 * 60 * 1000;
+
+  const generateBackfill = (overrides: Partial<LeaderboardSubmission> = {}) =>
+    generateSubmission({ score: MAX_POINTS + 100_000, playedAt, ...overrides }, new Uint8Array(0));
+
+  afterEach(() => {
+    vi.useRealTimers();
+  });
+
+  const at = (time: number) => {
+    vi.useFakeTimers({ toFake: ['Date'] });
+    vi.setSystemTime(time);
+  };
+
+  it('accepts a run above MAX_POINTS without notes and dates it to when it was played', async () => {
+    at(now);
+    const response = await submit(await generateBackfill());
+
+    expect(response.status).toBe(200);
+    expect(await response.json()).toEqual({ accepted: true });
+
+    const board = await SELF.fetch('https://example.com/leaderboard');
+    expect(((await board.json()) as BoardResponse).entries).toEqual([
+      expect.objectContaining({ score: MAX_POINTS + 100_000, createdAt: playedAt }),
+    ]);
+  });
+
+  it('rejects a run the regular path would have taken', async () => {
+    at(now);
+    const response = await submit(await generateBackfill({ score: MAX_POINTS }));
+
+    expect(response.status).toBe(400);
+    expect(await response.json()).toEqual({ error: 'Score out of range' });
+  });
+
+  it('rejects a run played outside the window', async () => {
+    at(now);
+    const tooOld = await submit(await generateBackfill({ playedAt: now - BACKFILL_WINDOW_MS - 1 }));
+    const inFuture = await submit(await generateBackfill({ playedAt: now + 1 }));
+
+    expect(tooOld.status).toBe(400);
+    expect(inFuture.status).toBe(400);
+    expect(await tooOld.json()).toEqual({ error: 'Invalid playedAt' });
+  });
+
+  it('rejects a backfill that carries notes', async () => {
+    at(now);
+    const response = await submit(
+      await generateSubmission({ score: MAX_POINTS + 100_000, playedAt }, generateNotes(500)),
+    );
+
+    expect(response.status).toBe(400);
+    expect(await response.json()).toEqual({ error: 'Unexpected notes' });
+  });
+
+  it('closes at BACKFILL_ACCEPTED_UNTIL', async () => {
+    at(BACKFILL_ACCEPTED_UNTIL);
+    const response = await submit(await generateBackfill({ playedAt: BACKFILL_ACCEPTED_UNTIL - 1000 }));
+
+    expect(response.status).toBe(400);
+    expect(await response.json()).toEqual({ error: 'Backfill closed' });
+  });
+
+  it('still requires notes when the run is not a backfill', async () => {
+    const response = await submit(await generateSubmission({ score: MAX_POINTS + 100_000 }, new Uint8Array(0)));
+
+    expect(response.status).toBe(400);
+    expect(await response.json()).toEqual({ error: 'Missing notes' });
+  });
+});
+
 describe('GET /leaderboard-song', () => {
   const songBoard = (query: string) => SELF.fetch(`https://example.com/leaderboard-song?${query}`);
 
@@ -283,7 +369,7 @@ describe('GET /leaderboard-song', () => {
 
   it('rejects a missing song id and an out-of-range score', async () => {
     expect((await songBoard('tolerance=2')).status).toBe(400);
-    expect((await songBoard(`songId=song-1&tolerance=2&score=${MAX_POINTS + 1}`)).status).toBe(400);
+    expect((await songBoard(`songId=song-1&tolerance=2&score=${MAX_SUBMITTED_SCORE + 1}`)).status).toBe(400);
     expect((await songBoard('songId=song-1&tolerance=2&score=-1')).status).toBe(400);
   });
 

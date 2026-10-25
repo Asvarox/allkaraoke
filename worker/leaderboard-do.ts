@@ -150,7 +150,7 @@ export class LeaderboardBoard extends DurableObject<LeaderboardDurableObjectEnv>
     }
 
     const id = existing?.id ?? crypto.randomUUID();
-    const createdAt = Date.now();
+    const createdAt = submission.playedAt ?? Date.now();
 
     if (existing) {
       this.sql.exec(
@@ -196,7 +196,10 @@ export class LeaderboardBoard extends DurableObject<LeaderboardDurableObjectEnv>
       );
     }
 
-    this.sql.exec(`INSERT INTO notes (record_id, blob) VALUES (?, ?)`, id, notesBlob);
+    // A backfilled run has no notes to keep
+    if (notesBlob.byteLength > 0) {
+      this.sql.exec(`INSERT INTO notes (record_id, blob) VALUES (?, ?)`, id, notesBlob);
+    }
 
     await this.rebuildProjection();
 
