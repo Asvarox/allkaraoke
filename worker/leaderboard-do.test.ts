@@ -97,6 +97,45 @@ describe('LeaderboardBoard', () => {
     expect((await board.projection()).entries).toEqual([expect.objectContaining({ score: 3_000_000 })]);
   });
 
+  it('keeps a row per difficulty, so a higher Easy run leaves the Medium row on the global board', async () => {
+    const board = getBoard();
+
+    await board.submit(generateSubmission({ tolerance: 2, score: 2_000_000 }), notesBlob);
+    const easy = await board.submit(generateSubmission({ tolerance: 3, score: 3_000_000 }), notesBlob);
+
+    expect(easy).toEqual({ accepted: true });
+    expect(await board.listForAdmin()).toHaveLength(2);
+    expect((await board.projection()).entries).toEqual([expect.objectContaining({ score: 2_000_000, tolerance: 2 })]);
+    expect((await board.songBoard('song-1', 2, null)).entries).toEqual([expect.objectContaining({ score: 2_000_000 })]);
+  });
+
+  it('ranks a player once per song on the global board, with their best Hard or Medium row', async () => {
+    const board = getBoard();
+
+    await board.submit(generateSubmission({ tolerance: 1, score: 1_800_000 }), notesBlob);
+    await board.submit(generateSubmission({ tolerance: 2, score: 2_200_000 }), notesBlob);
+    await board.submit(generateSubmission({ songId: 'song-2', tolerance: 1, score: 1_100_000 }), notesBlob);
+
+    expect((await board.projection()).entries).toEqual([
+      expect.objectContaining({ songId: 'song-1', score: 2_200_000, tolerance: 2 }),
+      expect.objectContaining({ songId: 'song-2', score: 1_100_000 }),
+    ]);
+    expect((await board.songBoard('song-1', 1, null)).entries).toEqual([expect.objectContaining({ score: 1_800_000 })]);
+  });
+
+  it('replaces the per-song unique index of an older board on start', async () => {
+    const board = getBoard();
+
+    await runInDurableObject(board, (instance: LeaderboardBoard, state) => {
+      state.storage.sql.exec(`DROP INDEX records_dedupe_by_tolerance`);
+      state.storage.sql.exec(`CREATE UNIQUE INDEX records_dedupe ON records (client_id, song_id, name_normalized)`);
+      (instance as unknown as { createSchema: () => void }).createSchema();
+    });
+
+    await board.submit(generateSubmission({ tolerance: 2 }), notesBlob);
+    expect(await board.submit(generateSubmission({ tolerance: 3 }), notesBlob)).toEqual({ accepted: true });
+  });
+
   it('treats names differing only by case or whitespace as the same row', async () => {
     const board = getBoard();
 

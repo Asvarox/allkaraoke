@@ -72,7 +72,7 @@ CREATE TABLE records (
   created_at       INTEGER NOT NULL   -- epoch ms
 );
 
-CREATE UNIQUE INDEX records_dedupe ON records (client_id, song_id, name_normalized);
+CREATE UNIQUE INDEX records_dedupe_by_tolerance ON records (client_id, song_id, name_normalized, tolerance);
 CREATE INDEX records_score        ON records (score DESC);
 CREATE INDEX records_created_at   ON records (created_at);
 
@@ -215,6 +215,11 @@ difficulty, so an Easy run is only ever ranked against other Easy runs of the sa
 nothing incomparable about it. That is why Easy is stored and shown, and still kept off the main
 menu.
 
+A player keeps one row per song **per difficulty**. With one row per song, a higher Easy run
+replaced the player's Medium row and took them off the global board. The global board ranks each
+player once per song, using their best Hard or Medium row, so singing a song on both does not take
+two places.
+
 `src/modules/leaderboard/qualifies.ts` is where the client says which is which:
 `hasLeaderboard(tolerance, songBoardsEnabled)` (is there a board to reach) and
 `reachesGlobalBoard(tolerance)` (does the main menu rank it). With the per-song boards flagged off,
@@ -266,7 +271,7 @@ replaying the notes blob is the real answer and is deferred.
 Before `MAX_SUBMITTED_SCORE`, the cap was `MAX_POINTS` (3,500,000), and runs above it were
 refused. `src/modules/leaderboard/backfill.ts` sends those runs again from local play history. It
 runs once per device, behind the `leaderboard_backfill` PostHog flag, and only for players whose
-sharing decision is `'always'`. It sends the best such run per song under the stored board name,
+sharing decision is `'always'`. It sends the best such run per song and difficulty under the stored board name,
 one request every 31 s to stay inside the rate limit. The flag is checked again before each
 request, so switching it off stops the run partway through.
 
