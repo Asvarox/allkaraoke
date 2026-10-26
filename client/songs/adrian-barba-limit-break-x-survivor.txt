@@ -1,0 +1,257 @@
+#ARTIST:Adrián Barba
+#TITLE:Limit break x survivor
+#CREATOR:subkei
+#BPM:375
+#YEAR:2017
+#PREVIEWSTART:37,5
+#VIDEO:v=EXDSsMzF_QE
+#GENRE:Anime
+#LANGUAGE:Spanish
+#GAP:12657
+#ALLKARAOKE_ID:adrian-barba-limit-break-x-survivor
+#ALLKARAOKE_SID:6747
+#ALLKARAOKE_LASTUPDATE:2026-10-26T02:34:26.534Z
+#ALLKARAOKE_ARTISTORIGIN:MX
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/es/canciones?creador=subkei
+#ALLKARAOKE_REALBPM:375
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?artista=Adri%C3%A1n%20Barba&cancion=Limit%20break%20x%20survivor%20(TV)
+#ALLKARAOKE_PREVIEWEND:85
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:85
+#MP3:Adrián Barba - Limit break x survivor (TV).mp3
+#COVER:Adrián Barba - Limit break x survivor (TV).jpg
+#MEDLEYSTARTBEAT:1076
+#MEDLEYENDBEAT:1721
+: 25 7 -3 ¡Al 
+: 33 4 -1 es
+: 41 3 -3 pa
+: 49 3 -1 cio 
+: 54 3 -3 vá
+: 61 5 -1 mo
+: 68 2 -3 nos 
+: 73 6 -1 ya!
+- 79
+: 89 2 -3 Es 
+: 97 4 -1 la 
+: 104 6 -3 mo
+: 112 2 -1 da 
+: 117 4 -3 ú
+: 124 5 -1 ne
+: 132 2 -3 te 
+: 137 5 -1 ven
+- 142
+: 153 12 2 en 
+: 169 8 1 mis
+: 178 3 -3 ~ 
+: 185 8 -3 ma
+: 194 3 -6 ~
+: 201 7 -6 nos 
+: 217 3 4 de
+: 221 7 6 ~
+: 233 8 4 ja
+: 242 3 1 ~ 
+: 249 7 1 to
+: 257 4 -3 ~
+: 264 7 -3 do
+- 271
+: 281 5 -3 To
+: 289 4 -1 do el 
+: 296 4 -3 tiem
+: 305 1 -1 po 
+: 309 6 -3 quie
+: 317 5 -1 ro 
+: 324 2 -3 re
+: 329 6 -1 ír
+- 335
+: 345 4 -3 Con
+: 353 5 -1 fun
+: 360 5 -3 di
+: 368 2 -1 do 
+: 373 4 -3 nun
+: 380 5 -1 ca 
+: 389 1 -3 lu
+: 393 5 -1 cir
+- 398
+: 409 14 2 No he 
+: 425 8 1 go
+: 434 3 -3 ~
+: 441 9 -3 za
+: 451 3 -6 ~
+: 457 10 -6 do 
+: 473 11 6 su
+: 489 11 4 fi
+: 505 8 1 cien
+: 514 3 -3 ~
+: 521 8 -3 te
+- 529
+F 537 3 7 Woo
+F 545 5 7 hoo
+- 550
+: 553 4 -1 A
+: 561 6 -1 bu
+: 569 3 1 rri
+: 573 5 2 do 
+: 581 3 1 no
+: 585 12 2 ~
+- 597
+F 601 3 7 Woo
+F 609 5 7 hoo
+- 614
+: 617 3 -3 ya 
+: 625 4 -3 no 
+: 633 3 1 quie
+: 637 3 2 ro es
+: 645 3 1 tar
+: 649 7 2 ~
+- 656
+* 665 5 1 li
+* 673 5 -1 be
+* 680 2 1 re
+* 685 4 -1 mos 
+: 697 4 1 e
+: 705 4 -1 se 
+: 712 2 1 pe
+: 717 4 -1 so 
+: 728 11 2 y a 
+: 741 6 1 vo
+: 748 3 -1 ~
+: 753 14 -1 lar
+- 767 768
+- 768
+F 793 3 7 Woo
+F 801 5 7 hoo
+- 806
+: 809 4 -1 Un 
+: 817 5 -1 mun
+: 825 3 1 do 
+: 829 4 2 me
+: 837 3 1 jor
+: 841 12 2 ~
+- 853
+F 857 3 7 Woo
+F 865 5 7 hoo
+- 870
+: 873 4 -3 jun
+: 881 3 -3 tos 
+: 889 2 1 cons
+: 895 4 2 truir
+: 901 3 1 ~
+: 905 9 2 ~
+- 914
+: 921 2 2 ¡Sin 
+: 926 3 -1 te
+: 933 9 -1 mor 
+: 953 3 2 con 
+: 957 5 -1 a
+: 964 5 -1 mor 
+: 976 6 2 se
+: 984 4 4 rá
+: 989 67 6 ~!
+- 1056 1076
+- 1076
+: 1101 3 6 ¡To
+: 1105 2 6 dos 
+: 1109 2 6 los 
+: 1113 3 6 mu
+: 1117 2 -1 ~
+: 1121 4 -1 ros 
+: 1129 3 2 rom
+: 1137 3 4 pe
+: 1141 3 4 ré
+: 1145 10 6 ~!
+- 1155
+: 1165 2 6 ¡To
+: 1169 2 6 das 
+: 1173 1 6 las 
+: 1177 3 6 puer
+: 1181 2 -1 ~
+: 1185 4 -1 tas 
+: 1193 3 2 a
+: 1197 6 4 bri
+: 1205 3 4 ré
+: 1209 7 6 ~
+: 1217 3 4 ~!
+- 1220
+: 1229 2 6 Yo 
+: 1232 2 4 te 
+: 1237 2 2 guia
+: 1241 7 4 ré, 
+: 1261 2 6 u
+: 1264 2 4 na 
+: 1268 2 2 vez 
+: 1273 7 4 más
+- 1280
+: 1293 3 6 ¡Y 
+: 1297 3 4 lo im
+: 1301 2 2 po
+: 1305 6 -1 si
+: 1313 6 2 ble 
+: 1321 3 4 ven
+: 1329 6 6 ce
+: 1337 11 4 ré!
+- 1348
+: 1357 3 6 Con 
+: 1361 3 6 gran 
+: 1365 2 6 va
+: 1369 4 6 lor 
+* 1377 4 -1 su
+* 1385 3 2 pe
+* 1389 5 4 ra
+* 1397 3 4 rás
+* 1401 9 6 ~
+* 1411 2 4 ~
+- 1413
+: 1421 3 6 to
+: 1425 1 6 das 
+: 1429 2 6 tus 
+: 1433 2 6 me
+: 1437 2 6 tas 
+: 1441 2 -1 pron
+: 1445 2 -1 to 
+: 1449 2 2 lo
+: 1453 5 4 gra
+: 1461 3 4 rás
+: 1466 8 6 ~
+: 1475 2 4 ~
+- 1477
+: 1485 2 6 Y 
+: 1489 2 4 gri
+: 1493 3 2 ta
+: 1497 7 4 rás
+: 1505 2 2 ~
+- 1507
+: 1517 2 6 ¡Qué 
+: 1521 1 4 fá
+: 1525 3 2 cil 
+: 1529 9 4 es!
+- 1538
+: 1548 2 6 ¡No hay 
+: 1552 2 4 im
+: 1556 2 2 po
+: 1561 6 -1 si
+: 1569 3 2 bles 
+: 1577 6 4 pa
+: 1585 5 6 ra 
+: 1593 11 4 mí!
+- 1604
+: 1613 2 4 Jun
+: 1617 1 4 tos 
+: 1621 2 4 con 
+* 1625 9 5 Dra
+* 1637 7 4 gon 
+* 1648 5 2 Ball 
+* 1657 9 -1 Su
+* 1669 7 -3 per
+- 1676
+: 1681 3 -6 ¡Ze
+: 1689 4 -1 no
+: 1697 3 -1 -sa
+: 1704 4 2 ma 
+: 1712 3 -1 se 
+: 1717 2 4 im
+: 1720 2 5 ~
+: 1725 2 5 pre
+: 1729 2 4 sio
+: 1733 3 2 na
+: 1737 9 -1 rá!
+E
