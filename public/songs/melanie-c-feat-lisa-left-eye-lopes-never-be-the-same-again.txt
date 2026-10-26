@@ -1,0 +1,697 @@
+#ARTIST:Melanie C feat. Lisa ’Left Eye’ Lopes
+#TITLE:Never Be The Same Again
+#CREATOR:askusbloodfist
+#BPM:320,2
+#YEAR:1999
+#VIDEO:v=2nEzfa43VF8
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:15806,23985009369
+#ALLKARAOKE_ID:melanie-c-feat-lisa-left-eye-lopes-never-be-the-same-again
+#ALLKARAOKE_SID:6753
+#ALLKARAOKE_LASTUPDATE:2026-10-26T02:34:26.552Z
+#ALLKARAOKE_REALBPM:81
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:256
+#MP3:Melanie C feat. Lisa ’Left Eye’ Lopes - Never Be The Same Again.mp3
+: 21 7 6 Ooh
+: 29 8 7 ~
+: 39 8 10 ~
+- 47 48
+- 48
+* 69 7 7 Yeah
+* 77 7 5 ~
+* 85 6 3 ~
+* 93 6 3 ~
+* 101 19 2 ~
+* 121 3 0 ~
+* 125 14 -2 ~
+- 139 144
+- 144
+: 165 7 2 I 
+: 173 7 2 call 
+: 181 3 5 you 
+: 185 8 3 up 
+: 197 7 2 when
+: 205 7 0 e
+: 213 6 -2 ver 
+: 221 7 0 things 
+: 229 7 2 go 
+: 237 7 3 wro
+: 245 14 2 ~ng
+- 259 272
+- 272
+: 293 5 2 You’re 
+: 299 9 2 al
+: 309 6 5 ways 
+: 317 7 3 there
+- 324
+: 325 7 2 You 
+: 333 7 0 are 
+: 341 6 -2 my 
+* 349 7 10 shoul
+* 357 6 10 der 
+: 365 6 5 to 
+: 373 7 7 cry 
+: 381 11 5 o
+: 393 3 3 ~
+: 397 10 2 ~n
+- 407
+: 421 3 2 I 
+: 425 11 2 can’t 
+: 437 3 5 be
+: 441 11 3 lieve
+- 452
+: 453 7 2 It 
+: 461 7 0 took 
+: 469 7 -2 me 
+: 477 7 0 quite 
+: 485 7 2 so 
+: 493 7 3 lo
+: 501 12 2 ~ng
+- 513 516
+- 516
+: 537 3 -2 To 
+: 541 7 0 take 
+: 549 3 0 the 
+: 553 3 -2 for
+: 557 3 0 bid
+: 561 4 -2 den 
+: 568 9 -2 step
+- 577
+: 589 7 -2 Is 
+: 597 7 0 this 
+: 605 7 2 some
+: 613 7 3 thing 
+: 621 7 2 that 
+: 629 7 3 I 
+: 637 8 5 might 
+: 649 8 5 re
+: 661 12 7 gret?
+- 673 728
+- 728
+: 749 3 0 No
+: 753 7 -2 thing 
+: 761 6 0 ven
+: 769 6 -2 tured, 
+: 777 6 0 no
+: 785 8 2 thing 
+: 797 7 -2 gai
+: 805 10 -5 ~ned
+- 815 852
+- 852
+: 873 3 -2 A 
+: 877 3 0 lone
+: 881 7 -2 ly 
+: 889 6 0 heart 
+: 897 7 -2 that 
+: 905 6 0 can’t 
+: 913 8 -2 be 
+: 925 14 2 tamed
+- 939 980
+- 980
+: 1001 3 -2 I’m 
+: 1005 3 0 ho
+: 1009 7 -2 ping 
+: 1017 6 0 that 
+: 1025 5 -2 you 
+: 1031 6 0 feel 
+: 1041 8 2 the 
+: 1051 9 -2 sa
+: 1061 8 -5 ~me
+- 1069 1080
+- 1080
+: 1101 7 -2 This 
+: 1109 7 0 is 
+: 1117 7 2 some
+: 1125 7 3 thing 
+: 1133 6 2 that 
+: 1141 6 3 I 
+: 1149 8 5 can’t 
+: 1161 8 5 for
+: 1173 8 7 get
+- 1181
+: 1189 7 7 I 
+: 1197 7 7 thought 
+: 1205 7 7 that 
+: 1213 7 7 we 
+: 1221 7 7 would 
+: 1229 7 7 just 
+: 1237 2 9 be 
+: 1241 8 10 friends
+- 1249
+: 1261 7 7 Things 
+: 1269 7 7 will 
+: 1277 3 5 ne
+: 1281 3 5 ver 
+: 1285 3 5 be 
+: 1289 3 5 the 
+: 1293 7 5 same 
+: 1301 3 6 a
+: 1305 4 7 gain
+- 1309
+: 1317 7 7 It’s 
+: 1325 7 7 just 
+: 1333 3 7 the 
+: 1337 3 7 be
+: 1341 3 7 gin
+: 1345 3 7 ning, 
+: 1349 7 7 it’s 
+: 1357 7 7 not 
+: 1365 3 9 the 
+: 1369 8 10 end
+- 1377
+: 1389 7 7 Things 
+: 1397 7 7 will 
+: 1405 3 5 ne
+: 1409 3 5 ver 
+: 1413 3 5 be 
+: 1417 3 5 the 
+: 1421 7 5 same 
+: 1429 3 6 a
+: 1433 4 7 gain
+- 1437
+: 1445 7 7 It’s 
+: 1453 7 7 not 
+: 1461 7 7 a 
+: 1469 7 7 se
+: 1477 7 7 cret 
+: 1485 7 7 a
+: 1493 3 9 ny
+: 1497 8 10 more
+- 1505
+: 1517 7 7 Now 
+: 1525 7 7 we’ve 
+: 1533 7 5 o
+: 1541 7 5 pened 
+: 1549 7 5 up 
+: 1557 3 6 the 
+: 1561 4 7 door
+- 1565
+: 1571 9 7 Star
+: 1581 7 7 ting 
+: 1589 7 7 to
+: 1597 7 7 night 
+: 1605 7 7 and 
+: 1613 7 7 from 
+: 1621 4 2 now 
+: 1627 6 5 on
+- 1633
+: 1645 3 5 Ne
+: 1649 4 5 ver, 
+: 1661 3 5 ne
+: 1665 3 5 ver 
+: 1669 3 5 be 
+: 1673 3 5 the 
+: 1677 7 5 same 
+: 1685 3 6 a
+: 1689 4 7 gain
+- 1693 1816
+- 1816
+: 1837 7 2 Now 
+: 1845 3 5 I 
+: 1849 8 3 know 
+: 1861 6 2 that 
+: 1869 7 0 we 
+: 1877 4 -2 were 
+: 1885 7 0 close 
+: 1893 4 2 be
+: 1901 7 3 fo
+: 1909 8 2 ~re
+- 1917 1936
+- 1936
+: 1957 3 2 I’m 
+: 1961 10 2 glad 
+: 1973 4 5 I 
+: 1981 7 3 re
+: 1989 3 2 a
+: 1993 11 0 lised 
+* 2005 6 -2 I 
+* 2013 5 10 need 
+* 2021 5 10 you 
+* 2029 5 5 so 
+* 2037 7 7 much 
+* 2045 11 5 mo
+* 2057 3 3 ~
+* 2061 8 2 ~re
+- 2069
+: 2085 3 2 And 
+: 2089 9 2 I 
+: 2101 3 5 don’t 
+: 2109 6 3 care 
+: 2117 5 2 what 
+: 2125 3 0 e
+: 2129 3 -2 ~ve
+: 2133 7 -2 ry
+: 2141 6 0 one 
+: 2149 5 2 will 
+: 2157 7 3 say
+: 2165 8 2 ~
+- 2173 2184
+- 2184
+: 2205 5 0 It’s 
+: 2213 3 0 a
+: 2217 3 -2 bout 
+: 2221 3 0 you 
+: 2225 6 -2 and 
+: 2233 8 -2 me
+- 2241
+: 2253 6 -2 And 
+: 2261 6 0 we’ll 
+: 2269 7 2 ne
+: 2277 6 3 ver 
+: 2285 6 2 be 
+: 2293 4 3 the 
+* 2301 3 5 sa
+* 2305 4 2 ~me 
+* 2313 3 5 a
+* 2317 4 2 ~
+* 2325 10 7 gain
+- 2335
+: 2341 7 7 I 
+: 2349 7 7 thought 
+: 2357 7 7 that 
+: 2365 7 7 we 
+: 2373 7 7 would 
+: 2381 5 7 just 
+: 2389 3 9 be 
+: 2393 8 10 friends
+- 2401
+: 2413 7 7 Things 
+: 2421 5 7 will 
+: 2429 3 5 ne
+: 2433 3 5 ver 
+: 2437 3 5 be 
+: 2441 3 5 the 
+: 2445 7 5 same 
+: 2453 3 6 a
+: 2457 8 7 gain
+- 2465
+: 2469 7 7 It’s 
+: 2477 7 7 just 
+: 2485 3 7 the 
+: 2489 3 7 be
+: 2493 3 7 gin
+: 2497 3 7 ning, 
+: 2501 7 7 it’s 
+: 2509 4 7 not 
+: 2517 3 9 the 
+: 2521 8 10 end
+- 2529
+: 2541 7 7 Things 
+: 2549 7 7 will 
+: 2557 3 5 ne
+: 2561 3 5 ver 
+: 2565 3 5 be 
+: 2569 3 5 the 
+: 2573 5 5 same 
+: 2581 3 6 a
+: 2585 6 7 gain
+- 2591
+: 2597 7 7 It’s 
+: 2605 7 7 not 
+: 2613 7 7 a 
+: 2621 7 7 se
+: 2629 7 7 cret 
+: 2637 5 7 a
+: 2645 3 9 ny
+: 2649 10 10 more
+- 2659
+: 2669 7 7 Now 
+: 2677 7 7 we’ve 
+: 2685 7 5 o
+: 2693 7 5 pened 
+: 2701 4 5 up 
+: 2709 3 6 the 
+: 2713 6 7 door
+- 2719
+: 2725 7 7 Star
+: 2733 7 7 ting 
+: 2741 7 7 to
+: 2749 7 7 night 
+: 2757 7 7 and 
+: 2765 6 7 from 
+: 2773 2 2 now 
+: 2777 8 5 on
+- 2785
+: 2797 3 5 Ne
+: 2801 4 5 ver, 
+: 2813 3 5 ne
+: 2817 3 5 ver 
+: 2821 3 5 be 
+: 2825 3 5 the 
+: 2829 5 5 same 
+: 2837 3 6 a
+: 2841 6 7 gain
+- 2847 2920
+- 2920
+: 2941 3 5 Ne
+: 2945 3 5 ver 
+: 2949 3 5 be 
+: 2953 3 5 the 
+: 2957 5 5 same 
+: 2965 3 6 a
+: 2969 6 7 gain
+- 2975 3068
+- 3068
+G 3089 2 0 Night 
+G 3093 2 0 and 
+G 3096 5 0 day
+- 3101
+R 3108 4 0 Black 
+R 3113 4 0 beach 
+R 3119 4 0 sand 
+R 3126 1 0 to 
+R 3128 3 0 red 
+R 3134 5 0 clay
+- 3139
+R 3145 3 0 The 
+R 3149 1 0 U
+R 3151 4 0 S 
+R 3159 1 0 to 
+R 3161 2 0 U
+R 3167 4 0 K, 
+R 3177 3 0 N
+R 3181 3 0 Y
+R 3185 6 0 C 
+R 3193 1 0 to 
+R 3195 3 0 L
+R 3199 4 0 A
+- 3203
+R 3207 3 0 From 
+R 3211 3 0 side
+R 3217 3 0 walks 
+R 3223 1 0 to 
+R 3225 3 0 high
+R 3231 5 0 ways
+- 3236
+R 3240 3 0 See 
+R 3244 1 0 i
+R 3246 1 0 t’ll 
+R 3248 2 0 ne
+R 3251 3 0 ver 
+R 3256 1 0 be 
+R 3258 1 0 the 
+R 3260 5 0 same
+- 3265
+R 3270 1 0 What 
+R 3272 2 0 I’m 
+R 3276 3 0 say
+R 3280 2 0 in’
+- 3282
+R 3289 2 0 My 
+R 3292 3 0 mind 
+R 3297 4 0 frame 
+R 3304 1 0 ne
+R 3306 2 0 ver 
+R 3309 6 0 changed
+- 3315
+R 3321 1 0 Till 
+R 3323 3 0 you 
+R 3328 4 0 came 
+R 3336 1 0 re
+R 3338 1 0 ar
+R 3340 6 0 ranged
+- 3346
+R 3353 2 0 But 
+R 3357 3 0 some
+R 3361 7 0 times 
+R 3369 2 0 it 
+R 3373 5 0 seems 
+R 3385 3 0 com
+R 3389 3 0 plete
+R 3393 2 0 ly 
+R 3397 3 0 for
+R 3401 3 0 bid
+R 3405 3 0 den
+- 3408
+R 3413 3 0 To 
+R 3417 3 0 dis
+R 3421 3 0 co
+R 3425 3 0 ver 
+R 3429 3 0 those 
+R 3433 3 0 fee
+R 3437 3 0 lings
+- 3440
+R 3445 2 0 That 
+R 3449 2 0 we 
+R 3453 2 0 kept 
+R 3457 2 0 so 
+R 3461 2 0 well 
+R 3465 3 0 hid
+R 3469 2 0 den
+- 3471
+R 3481 2 0 Where 
+R 3485 3 0 there’s 
+R 3489 2 0 no 
+R 3493 3 0 com
+R 3497 2 0 pe
+R 3501 3 0 ti
+R 3506 5 0 tion
+- 3511
+R 3513 2 0 And 
+R 3517 1 0 you 
+R 3519 1 0 ren
+R 3521 1 0 der 
+R 3523 3 0 my 
+R 3529 3 0 con
+R 3533 3 0 di
+R 3537 3 0 tion
+- 3540
+R 3541 3 0 Though 
+R 3545 2 0 im
+R 3549 3 0 pro
+R 3553 1 0 ba
+R 3555 2 0 ble, 
+R 3559 1 0 it’s 
+R 3561 1 0 not 
+R 3563 1 0 im
+R 3565 3 0 pos
+R 3569 1 0 si
+R 3571 3 0 ble
+- 3574
+R 3577 1 0 For 
+R 3579 1 0 a 
+R 3581 3 0 love 
+R 3585 1 0 that 
+R 3587 1 0 could 
+R 3589 3 0 be 
+R 3593 2 0 un
+R 3597 3 0 stop
+R 3601 1 0 pa
+R 3603 2 0 ble
+- 3605
+R 3623 1 0 A 
+R 3625 3 0 fine 
+R 3629 4 0 line’s 
+R 3635 1 0 be
+R 3637 4 0 tween 
+R 3643 4 0 fate 
+R 3649 2 0 and 
+R 3653 3 0 des
+R 3658 1 0 ti
+R 3660 4 0 ny
+- 3664
+R 3673 1 0 Do 
+R 3675 1 0 you 
+R 3677 1 0 be
+R 3679 3 0 lieve 
+R 3685 1 0 in 
+R 3687 1 0 the 
+R 3691 8 0 things 
+R 3701 3 0 that 
+R 3705 3 0 were 
+R 3709 3 0 just 
+R 3713 3 0 meant 
+R 3717 2 0 to 
+R 3721 3 0 be?
+- 3724
+R 3733 3 0 When 
+R 3737 3 0 you 
+R 3745 3 0 tell 
+R 3749 3 0 me 
+R 3753 2 0 the 
+R 3757 2 0 sto
+R 3761 2 0 ries 
+R 3765 2 0 of 
+R 3769 2 0 your 
+R 3773 5 0 quest 
+R 3781 2 0 for 
+R 3785 4 0 me
+- 3789
+R 3797 3 0 Pic
+R 3801 2 0 tu
+R 3805 4 0 resque 
+R 3813 2 0 is 
+R 3817 2 0 the 
+R 3821 3 0 pic
+R 3825 2 0 ture 
+R 3829 2 0 you 
+R 3833 2 0 paint 
+R 3837 3 0 ef
+R 3841 2 0 fort
+R 3845 2 0 less
+R 3849 5 0 ly
+- 3854
+R 3857 3 0 And 
+R 3861 3 0 as 
+R 3865 3 0 our 
+R 3873 3 0 e
+R 3877 2 0 ner
+R 3881 3 0 gies 
+R 3885 5 0 mix 
+R 3897 1 0 and 
+R 3899 1 0 be
+R 3901 3 0 gin 
+R 3905 2 0 to 
+R 3909 2 0 mul
+R 3913 2 0 ti
+R 3917 4 0 ply
+- 3921
+R 3928 1 0 Eve
+R 3930 1 0 ry
+R 3933 3 0 day 
+R 3944 1 0 si
+R 3946 1 0 tu
+R 3948 3 0 a
+R 3954 3 0 tions, 
+R 3961 3 0 they 
+R 3965 3 0 start 
+R 3969 1 0 to 
+R 3973 3 0 sim
+R 3977 1 0 pli
+R 3979 5 0 fy
+- 3984
+R 3993 3 0 So 
+R 3997 5 0 things 
+R 4004 1 0 will 
+R 4006 1 0 ne
+R 4008 1 0 ver 
+R 4010 2 0 be 
+R 4013 3 0 the 
+R 4017 6 0 same 
+R 4025 2 0 be
+R 4029 6 0 tween 
+R 4037 1 0 you 
+R 4039 2 0 and 
+R 4042 8 0 I
+- 4050
+R 4057 2 0 We 
+R 4060 2 0 in
+R 4063 2 0 ter
+R 4066 5 0 twined 
+R 4073 2 0 our 
+R 4077 3 0 life 
+R 4081 2 0 for
+R 4084 3 0 ces 
+R 4089 3 0 and 
+R 4093 3 0 now 
+R 4097 3 0 we’re 
+R 4101 3 0 u
+R 4105 2 0 ni
+R 4109 8 0 fied
+- 4117
+: 4133 5 7 I 
+: 4141 7 7 thought 
+: 4149 7 7 that 
+: 4157 7 7 we 
+: 4165 7 7 would 
+: 4173 7 7 just 
+: 4181 3 9 be 
+: 4185 10 10 friends
+- 4195
+: 4205 7 7 Things 
+: 4213 7 7 will 
+: 4221 3 5 ne
+: 4225 3 5 ver 
+: 4229 3 5 be 
+: 4233 3 5 the 
+: 4237 7 5 same 
+: 4245 3 6 a
+: 4249 6 7 gain
+- 4255
+: 4261 7 7 It’s 
+: 4269 7 7 just 
+: 4277 3 7 the 
+: 4281 3 7 be
+: 4285 3 7 gin
+: 4289 3 7 ning, 
+: 4293 7 7 it’s 
+: 4301 3 7 not 
+: 4309 3 9 the 
+: 4313 10 10 end
+- 4323
+: 4333 7 7 Things 
+: 4341 5 7 will 
+: 4349 3 5 ne
+: 4353 3 5 ver 
+: 4357 3 5 be 
+: 4361 3 5 the 
+: 4365 7 5 same 
+: 4373 3 6 a
+: 4377 6 7 gain
+- 4383
+: 4389 7 7 It’s 
+: 4397 7 7 not 
+: 4405 7 7 a 
+: 4413 7 7 se
+: 4421 7 7 cret 
+: 4429 5 7 a
+: 4437 3 9 ny
+: 4441 10 10 more
+- 4451
+: 4461 7 7 Now 
+: 4469 5 7 we’ve 
+: 4477 7 5 o
+: 4485 7 5 pened 
+: 4493 7 5 up 
+: 4501 3 6 the 
+: 4505 6 7 door
+- 4511
+: 4517 7 7 Star
+: 4525 7 7 ting 
+: 4533 7 7 to
+: 4541 7 7 night 
+: 4549 7 7 and 
+: 4557 4 7 from 
+: 4565 3 2 now 
+: 4569 10 5 on
+- 4579
+: 4589 3 5 Ne
+: 4593 3 5 ver, 
+: 4605 3 5 ne
+: 4609 3 5 ver 
+: 4613 3 5 be 
+: 4617 3 5 the 
+: 4621 7 5 same 
+: 4629 3 6 a
+: 4633 6 7 gain
+- 4639 4656
+- 4656
+* 4677 7 17 Ooh
+* 4685 3 14 ~
+* 4693 11 19 ~
+* 4705 3 17 ~
+* 4709 8 14 ~
+- 4717
+: 4733 3 5 Ne
+: 4737 3 5 ver 
+: 4741 3 5 be 
+: 4745 3 5 the 
+: 4749 7 5 same 
+: 4757 3 6 a
+: 4761 6 7 gain
+- 4767 4784
+- 4784
+* 4805 14 0 A
+* 4821 8 -2 ha
+- 4829 4840
+- 4840
+: 4861 3 5 Ne
+: 4865 3 5 ver 
+: 4869 3 5 be 
+: 4873 3 5 the 
+: 4877 7 5 same 
+: 4885 3 6 a
+: 4889 6 7 gain
+E

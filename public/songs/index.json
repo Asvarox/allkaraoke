@@ -4663,6 +4663,38 @@
     "local": false
   },
   {
+    "id": "adrian-barba-limit-break-x-survivor",
+    "title": "Limit break x survivor",
+    "artist": "Adrián Barba",
+    "video": "EXDSsMzF_QE",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 375,
+    "gap": 12657,
+    "year": "2017",
+    "artistOrigin": "MX",
+    "lastUpdate": "2026-10-26T02:34:26.534Z",
+    "genre": "Anime",
+    "realBpm": 375,
+    "previewStart": 37.5,
+    "previewEnd": 85,
+    "volume": 1,
+    "author": "subkei",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=subkei",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Adri%C3%A1n%20Barba&cancion=Limit%20break%20x%20survivor%20(TV)",
+    "duration": 85,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6747,
+    "tracksCount": 1,
+    "search": "adrianbarbalimitbreakxsurvivor",
+    "local": false
+  },
+  {
     "id": "adrian-barba-ngeles-fuimos",
     "title": "ﾁngeles fuimos",
     "artist": "Adrián Barba",
@@ -26472,6 +26504,34 @@
     "local": false
   },
   {
+    "id": "bon-iver-skinny-love",
+    "title": "Skinny Love",
+    "artist": "Bon Iver",
+    "video": "95FyXUHv8hk",
+    "language": [
+      "English"
+    ],
+    "bpm": 310,
+    "gap": 32353.870967741936,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-26T02:34:19.319Z",
+    "genre": "Contemporary Folk, Country, Folk, Folk Rock, Indie Folk, Indie Rock, Rock, Baroque Pop",
+    "realBpm": 76,
+    "volume": 1,
+    "author": "yarn6270",
+    "duration": 239,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6745,
+    "tracksCount": 1,
+    "search": "boniverskinnylove",
+    "local": false
+  },
+  {
     "id": "bon-jovi-always",
     "title": "Always",
     "artist": "Bon Jovi",
@@ -36328,6 +36388,33 @@
     "local": false
   },
   {
+    "id": "cheek-liekeissae",
+    "title": "Liekeissä",
+    "artist": "Cheek",
+    "video": "pHWq0xtKz78",
+    "language": [
+      "Finnish"
+    ],
+    "bpm": 260,
+    "gap": 11599.23076923077,
+    "year": "2008",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-10-26T02:34:30.868Z",
+    "realBpm": 130,
+    "volume": 1,
+    "author": "ipriha",
+    "duration": 213,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6756,
+    "tracksCount": 1,
+    "search": "cheekliekeissae",
+    "local": false
+  },
+  {
     "id": "chenoa-cuando-tu-vas",
     "title": "Cuando tú vas",
     "artist": "Chenoa",
@@ -44003,6 +44090,38 @@
     "local": false
   },
   {
+    "id": "david-bisbal-digale",
+    "title": "Dígale",
+    "artist": "David Bisbal",
+    "video": "96UsW-gULuQ",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 280,
+    "gap": 20502.14285714286,
+    "year": "2002",
+    "artistOrigin": "ES",
+    "lastUpdate": "2026-10-26T02:34:26.539Z",
+    "genre": "Pop",
+    "realBpm": 130,
+    "previewStart": 60,
+    "previewEnd": 90,
+    "volume": 1,
+    "author": "katy17",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=9268",
+    "duration": 319,
+    "tracks": [
+      {
+        "name": "Digale",
+        "start": 19
+      }
+    ],
+    "shortId": 6749,
+    "tracksCount": 1,
+    "search": "davidbisbaldigale",
+    "local": false
+  },
+  {
     "id": "david-bowie-changes",
     "title": "Changes",
     "artist": "David Bowie",
@@ -48051,6 +48170,33 @@
     "shortId": 6559,
     "tracksCount": 1,
     "search": "dietotenhosenaltesfieber",
+    "local": false
+  },
+  {
+    "id": "die-toten-hosen-bonnie-clyde",
+    "title": "Bonnie & Clyde",
+    "artist": "Die Toten Hosen",
+    "video": "JaR4RQAE2fc",
+    "language": [
+      "German"
+    ],
+    "bpm": 334,
+    "gap": 10191.976047904192,
+    "year": "1996",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-10-26T02:34:26.536Z",
+    "realBpm": 98,
+    "volume": 1,
+    "author": "Canni",
+    "duration": 216,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6748,
+    "tracksCount": 1,
+    "search": "dietotenhosenbonnieclyde",
     "local": false
   },
   {
@@ -98246,6 +98392,34 @@
     "local": false
   },
   {
+    "id": "kids-united-on-ecrit-sur-les-murs",
+    "title": "On écrit sur les murs",
+    "artist": "Kids United",
+    "video": "VV5oVYVGfNc",
+    "language": [
+      "French"
+    ],
+    "bpm": 240,
+    "gap": 3330,
+    "year": "2015",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-10-26T02:34:21.622Z",
+    "genre": "Pop",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "mustangfred",
+    "duration": 180,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6746,
+    "tracksCount": 1,
+    "search": "kidsunitedonecritsurlesmurs",
+    "local": false
+  },
+  {
     "id": "killing-joke-love-like-blood",
     "title": "Love Like Blood",
     "artist": "Killing Joke",
@@ -121104,6 +121278,33 @@
     "local": false
   },
   {
+    "id": "melanie-c-feat-lisa-left-eye-lopes-never-be-the-same-again",
+    "title": "Never Be The Same Again",
+    "artist": "Melanie C feat. Lisa ’Left Eye’ Lopes",
+    "video": "2nEzfa43VF8",
+    "language": [
+      "English"
+    ],
+    "bpm": 320.2,
+    "gap": 15806.23985009369,
+    "year": "1999",
+    "lastUpdate": "2026-10-26T02:34:26.552Z",
+    "genre": "Pop",
+    "realBpm": 81,
+    "volume": 1,
+    "author": "askusbloodfist",
+    "duration": 256,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6753,
+    "tracksCount": 1,
+    "search": "melaniecfeatlisalefteyelopesneverbethesameagain",
+    "local": false
+  },
+  {
     "id": "melanie-martinez-alphabet-boy",
     "title": "Alphabet Boy",
     "artist": "Melanie Martinez",
@@ -128964,6 +129165,33 @@
     "shortId": 4799,
     "tracksCount": 1,
     "search": "mychemicalromancesaveyourselfillholdthemback",
+    "local": false
+  },
+  {
+    "id": "my-chemical-romance-sleep",
+    "title": "Sleep",
+    "artist": "My Chemical Romance",
+    "video": "RSAoJJzVXYY",
+    "language": [
+      "English"
+    ],
+    "bpm": 311.66,
+    "gap": 1449.2831932233846,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-26T02:34:26.546Z",
+    "realBpm": 155,
+    "volume": 1,
+    "author": "synonomy",
+    "duration": 284,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6751,
+    "tracksCount": 1,
+    "search": "mychemicalromancesleep",
     "local": false
   },
   {
@@ -147147,6 +147375,38 @@
     "local": false
   },
   {
+    "id": "radiohead-nude",
+    "title": "Nude",
+    "artist": "Radiohead",
+    "video": "BbWBRnDK_AE",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 47560,
+    "year": "2007",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-10-26T02:34:26.547Z",
+    "genre": "Alternative",
+    "realBpm": 128,
+    "previewStart": 163,
+    "previewEnd": 192,
+    "volume": 0.7,
+    "author": "drekavac",
+    "authorUrl": "https://usdb.animux.de/index.php?link=gettxt&id=19540",
+    "sourceUrl": "https://www.youtube.com/watch?v=BbWBRnDK_AE",
+    "duration": 257,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6752,
+    "tracksCount": 1,
+    "search": "radioheadnude",
+    "local": false
+  },
+  {
     "id": "radiohead-paranoid-android",
     "title": "Paranoid Android",
     "artist": "Radiohead",
@@ -158434,6 +158694,33 @@
     "local": false
   },
   {
+    "id": "selena-gomez-feat-aap-rocky-good-for-you",
+    "title": "Good For You",
+    "artist": "Selena Gomez feat. A$AP Rocky",
+    "video": "DXKHCgNFk1I",
+    "language": [
+      "English"
+    ],
+    "bpm": 355.96,
+    "gap": 10168.650410158445,
+    "year": "2015",
+    "lastUpdate": "2026-10-26T02:34:29.547Z",
+    "genre": "Pop",
+    "realBpm": 89,
+    "volume": 1,
+    "author": "amro98",
+    "duration": 226,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6755,
+    "tracksCount": 1,
+    "search": "selenagomezfeataaprockygoodforyou",
+    "local": false
+  },
+  {
     "id": "selena-gomez-feat-gucci-mane-fetish",
     "title": "Fetish",
     "artist": "Selena Gomez feat. Gucci Mane",
@@ -160841,6 +161128,34 @@
     "shortId": 3912,
     "tracksCount": 1,
     "search": "shawnmendestreatyoubetter",
+    "local": false
+  },
+  {
+    "id": "sheryl-crow-everyday-is-a-winding-road",
+    "title": "Everyday Is A Winding Road",
+    "artist": "Sheryl Crow",
+    "video": "khrx-zrG460",
+    "language": [
+      "English"
+    ],
+    "bpm": 226,
+    "gap": 25724.424778761062,
+    "year": "1996",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-26T02:34:36.228Z",
+    "genre": "Pop",
+    "realBpm": 77,
+    "volume": 1,
+    "author": "znxineohp, DoubleDee",
+    "duration": 254,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6757,
+    "tracksCount": 1,
+    "search": "sherylcroweverydayisawindingroad",
     "local": false
   },
   {
@@ -167038,6 +167353,34 @@
     "shortId": 4082,
     "tracksCount": 1,
     "search": "stonesourbother",
+    "local": false
+  },
+  {
+    "id": "stone-temple-pilots-creep",
+    "title": "Creep",
+    "artist": "Stone Temple Pilots",
+    "video": "sT1DdO3SISg",
+    "language": [
+      "English"
+    ],
+    "bpm": 395.8,
+    "gap": 10564.653865588682,
+    "year": "1992",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-26T02:34:29.542Z",
+    "genre": "Alternative Rock",
+    "realBpm": 108,
+    "volume": 1,
+    "author": "Gollum",
+    "duration": 302,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6754,
+    "tracksCount": 1,
+    "search": "stonetemplepilotscreep",
     "local": false
   },
   {
@@ -178056,6 +178399,34 @@
     "shortId": 4329,
     "tracksCount": 2,
     "search": "thegreatestshowmanamilliondreams",
+    "local": false
+  },
+  {
+    "id": "the-greatest-showman-from-now-on",
+    "title": "From Now On",
+    "artist": "The Greatest Showman",
+    "video": "vb6cGmMTAdM",
+    "language": [
+      "English"
+    ],
+    "bpm": 215.81,
+    "gap": 3726.921829386961,
+    "year": "2017",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-26T02:34:26.543Z",
+    "genre": "Soundtrack",
+    "realBpm": 106,
+    "volume": 1,
+    "author": "gabro",
+    "duration": 312,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6750,
+    "tracksCount": 1,
+    "search": "thegreatestshowmanfromnowon",
     "local": false
   },
   {

@@ -1,0 +1,142 @@
+#ARTIST:Radiohead
+#TITLE:Nude
+#CREATOR:drekavac
+#BPM:300
+#YEAR:2007
+#PREVIEWSTART:163
+#VIDEO:v=BbWBRnDK_AE
+#GENRE:Alternative
+#LANGUAGE:English
+#GAP:47560
+#ALLKARAOKE_ID:radiohead-nude
+#ALLKARAOKE_SID:6752
+#ALLKARAOKE_LASTUPDATE:2026-10-26T02:34:26.547Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://usdb.animux.de/index.php?link=gettxt&id=19540
+#ALLKARAOKE_REALBPM:128
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=BbWBRnDK_AE
+#ALLKARAOKE_PREVIEWEND:192
+#ALLKARAOKE_VOLUME:0,7
+#ALLKARAOKE_DURATION:257
+#MP3:Radiohead - Nude.mp3
+: 20 18 4 Don’t 
+: 47 23 3 get 
+: 74 3 -4 a
+: 79 11 -4 ny 
+: 130 23 6 big 
+: 160 22 4 i
+* 187 3 -4 de
+* 191 4 -6 ~
+* 197 11 -8 as
+- 208 222
+- 222
+: 242 15 6 They’re
+: 258 2 8 ~
+: 261 5 6 ~
+: 267 2 4 ~ 
+: 271 4 6 not
+: 276 10 4 ~ 
+: 316 4 1 gon
+: 323 3 -1 na 
+: 327 5 1 hap
+: 336 43 4 pen
+- 379 563
+- 563
+: 583 21 4 You 
+: 608 21 3 paint 
+: 635 6 -4 your
+: 645 5 -4 self 
+: 655 18 -4 white
+- 673 674
+- 674
+: 694 21 6 And 
+: 719 23 4 fill 
+: 747 3 -4 up 
+: 752 3 -6 with 
+: 757 19 -8 noise
+- 776 781
+- 781
+: 801 3 -4 But 
+: 806 12 6 there’ll
+: 819 3 8 ~
+: 823 4 6 ~
+: 828 3 4 ~ 
+: 836 2 6 be
+: 839 12 4 ~ 
+: 879 5 1 some
+: 887 7 -1 thing 
+: 898 4 1 miss
+: 907 26 4 ing
+- 933 1065
+- 1065
+: 1085 5 8 Now 
+: 1092 3 6 that 
+: 1096 6 4 you’ve 
+: 1104 47 4 found 
+: 1160 7 3 it, 
+: 1216 14 1 it’s 
+: 1235 5 3 gone
+: 1241 17 1 ~
+- 1258 1288
+- 1288
+: 1308 4 8 Now 
+: 1314 4 6 that 
+: 1319 5 4 you 
+: 1327 7 6 feel
+: 1335 49 4 ~
+* 1385 3 6 ~
+* 1389 3 4 ~ 
+* 1395 24 3 it, 
+: 1440 14 1 you 
+: 1460 3 3 don’t
+: 1464 16 1 ~
+- 1480 1511
+- 1511
+: 1531 3 4 You’ve 
+: 1535 5 8 gone 
+: 1541 5 6 off 
+: 1548 4 4 the 
+: 1555 56 4 rails
+- 1611 1791
+- 1791
+: 1811 4 -4 So 
+: 1817 20 4 don’t 
+: 1842 21 3 get 
+: 1870 5 -4 a
+: 1877 9 -4 ny 
+: 1928 20 6 big 
+: 1956 20 4 i
+* 1981 4 4 de
+* 1988 26 3 as
+- 2014 2021
+- 2021
+: 2041 14 6 They’re
+: 2056 2 8 ~
+: 2059 3 6 ~
+: 2063 2 4 ~ 
+: 2069 3 6 not
+: 2073 16 4 ~ 
+: 2115 3 1 gon
+: 2119 3 -1 na 
+: 2124 6 1 hap
+: 2133 33 4 pen
+- 2166 2358
+- 2358
+: 2378 18 0 You’ll 
+: 2403 22 1 go 
+: 2431 18 3 to 
+: 2454 23 -4 hell 
+: 2487 20 0 for 
+: 2516 24 1 what 
+: 2545 21 3 your
+: 2567 3 1 ~
+- 2570
+: 2574 24 3 Dir
+: 2601 19 4 ty 
+: 2625 22 4 mind 
+: 2657 25 6 is 
+: 2685 92 8 think
+: 2778 8 6 ~
+: 2787 13 4 ~
+: 2806 42 3 ing
+E

@@ -16,8 +16,8 @@
     "Girls Aloud",
     "Imagine Dragons",
     "One Direction",
-    "ABBA",
     "My Chemical Romance",
+    "ABBA",
     "Nirvana",
     "Rihanna",
     "Fall Out Boy",
@@ -40,12 +40,12 @@
     "Katy Perry",
     "Kelly Clarkson",
     "Miley Cyrus",
+    "Radiohead",
     "Avril Lavigne",
     "Backstreet Boys",
     "Jamiroquai",
     "Maroon 5",
     "Paramore",
-    "Radiohead",
     "Red Hot Chili Peppers",
     "The Black Eyed Peas",
     "The Weeknd",
@@ -143,13 +143,13 @@
     "Shakira",
     "Shania Twain",
     "Shinedown",
+    "The Greatest Showman",
     "The Offspring",
     "Twenty One Pilots",
     "Wham!",
     "ZZ Top",
     "a-ha",
-    "Ace of Base",
-    "Aerosmith"
+    "Ace of Base"
   ],
   "languages": [
     "Armenian",
@@ -190,9 +190,10 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 6743,
-  "generatedAt": "2026-10-24T02:47:06.114Z",
+  "songs": 6756,
+  "generatedAt": "2026-10-26T02:35:10.200Z",
   "additionsPerDay": {
+    "2026-10-26": 13,
     "2026-10-24": 9,
     "2026-10-23": 21,
     "2026-10-22": 19,
@@ -232,11 +233,100 @@
     "2026-08-31": 19,
     "2026-08-29": 4,
     "2026-08-28": 11,
-    "2026-08-27": 22,
-    "2026-08-26": 2,
-    "2026-08-25": 10
+    "2026-08-27": 22
   },
   "recentlyAdded": [
+    {
+      "id": "sheryl-crow-everyday-is-a-winding-road",
+      "artist": "Sheryl Crow",
+      "title": "Everyday Is A Winding Road",
+      "video": "khrx-zrG460",
+      "addedAt": "2026-10-26T02:34:36.228Z"
+    },
+    {
+      "id": "cheek-liekeissae",
+      "artist": "Cheek",
+      "title": "Liekeissä",
+      "video": "pHWq0xtKz78",
+      "addedAt": "2026-10-26T02:34:30.868Z"
+    },
+    {
+      "id": "selena-gomez-feat-aap-rocky-good-for-you",
+      "artist": "Selena Gomez feat. A$AP Rocky",
+      "title": "Good For You",
+      "video": "DXKHCgNFk1I",
+      "addedAt": "2026-10-26T02:34:29.547Z"
+    },
+    {
+      "id": "stone-temple-pilots-creep",
+      "artist": "Stone Temple Pilots",
+      "title": "Creep",
+      "video": "sT1DdO3SISg",
+      "addedAt": "2026-10-26T02:34:29.542Z"
+    },
+    {
+      "id": "melanie-c-feat-lisa-left-eye-lopes-never-be-the-same-again",
+      "artist": "Melanie C feat. Lisa ’Left Eye’ Lopes",
+      "title": "Never Be The Same Again",
+      "video": "2nEzfa43VF8",
+      "addedAt": "2026-10-26T02:34:26.552Z"
+    },
+    {
+      "id": "radiohead-nude",
+      "artist": "Radiohead",
+      "title": "Nude",
+      "video": "BbWBRnDK_AE",
+      "addedAt": "2026-10-26T02:34:26.547Z"
+    },
+    {
+      "id": "my-chemical-romance-sleep",
+      "artist": "My Chemical Romance",
+      "title": "Sleep",
+      "video": "RSAoJJzVXYY",
+      "addedAt": "2026-10-26T02:34:26.546Z"
+    },
+    {
+      "id": "the-greatest-showman-from-now-on",
+      "artist": "The Greatest Showman",
+      "title": "From Now On",
+      "video": "vb6cGmMTAdM",
+      "addedAt": "2026-10-26T02:34:26.543Z"
+    },
+    {
+      "id": "david-bisbal-digale",
+      "artist": "David Bisbal",
+      "title": "Dígale",
+      "video": "96UsW-gULuQ",
+      "addedAt": "2026-10-26T02:34:26.539Z"
+    },
+    {
+      "id": "die-toten-hosen-bonnie-clyde",
+      "artist": "Die Toten Hosen",
+      "title": "Bonnie & Clyde",
+      "video": "JaR4RQAE2fc",
+      "addedAt": "2026-10-26T02:34:26.536Z"
+    },
+    {
+      "id": "adrian-barba-limit-break-x-survivor",
+      "artist": "Adrián Barba",
+      "title": "Limit break x survivor",
+      "video": "EXDSsMzF_QE",
+      "addedAt": "2026-10-26T02:34:26.534Z"
+    },
+    {
+      "id": "kids-united-on-ecrit-sur-les-murs",
+      "artist": "Kids United",
+      "title": "On écrit sur les murs",
+      "video": "VV5oVYVGfNc",
+      "addedAt": "2026-10-26T02:34:21.622Z"
+    },
+    {
+      "id": "bon-iver-skinny-love",
+      "artist": "Bon Iver",
+      "title": "Skinny Love",
+      "video": "95FyXUHv8hk",
+      "addedAt": "2026-10-26T02:34:19.319Z"
+    },
     {
       "id": "snow-informer",
       "artist": "Snow",
@@ -481,97 +571,6 @@
       "title": "Matkustaja",
       "video": "iynZZ_-nq3w",
       "addedAt": "2026-10-22T02:50:45.454Z"
-    },
-    {
-      "id": "six-the-musical-cast-ex-wives",
-      "artist": "SIX the Musical Cast",
-      "title": "Ex Wives",
-      "video": "AgEJK6Vk8Ro",
-      "addedAt": "2026-10-22T02:50:44.191Z"
-    },
-    {
-      "id": "azumi-waki-marika-kouno-machico-ayaka-ohashi-chise-kimura-hitomi-ueda-saori-oonishi-make-debut",
-      "artist": "Azumi Waki, Marika Kouno, Machico, Ayaka Ohashi, Chise Kimura, Hitomi Ueda, Saori Oonishi",
-      "title": "Make Debut!",
-      "video": "_6rP_HS0ox4",
-      "addedAt": "2026-10-22T02:50:43.794Z"
-    },
-    {
-      "id": "usher-burn",
-      "artist": "Usher",
-      "title": "Burn",
-      "video": "t5XNWFw5HVw",
-      "addedAt": "2026-10-22T02:50:43.793Z"
-    },
-    {
-      "id": "linked-horizon-akatsuki-no-chinkonka",
-      "artist": "Linked Horizon",
-      "title": "Akatsuki no Chinkonka",
-      "video": "3JWKoVCkT1w",
-      "addedAt": "2026-10-22T02:50:43.791Z"
-    },
-    {
-      "id": "meghan-trainor-dear-future-husband",
-      "artist": "Meghan Trainor",
-      "title": "Dear Future Husband",
-      "video": "ShlW5plD_40",
-      "addedAt": "2026-10-22T02:50:43.790Z"
-    },
-    {
-      "id": "charles-eddie-would-i-lie-to-you",
-      "artist": "Charles & Eddie",
-      "title": "Would I Lie To You?",
-      "video": "G_UXvcr22rM",
-      "addedAt": "2026-10-22T02:50:43.652Z"
-    },
-    {
-      "id": "31-minutos-feat-tulio-trivino-y-sus-amigos-yo-nunca-vi-television-y-luego-si-pero-despues-no",
-      "artist": "31 Minutos feat. Tulio Triviño y Sus Amigos",
-      "title": "Yo nunca vi televisión (y luego sí, pero después no)",
-      "video": "wfNUme4wRzE",
-      "addedAt": "2026-10-22T02:50:41.238Z"
-    },
-    {
-      "id": "thrice-deadbolt",
-      "artist": "Thrice",
-      "title": "Deadbolt",
-      "video": "eDFT8ARPhMQ",
-      "addedAt": "2026-10-22T02:50:41.107Z"
-    },
-    {
-      "id": "justin-bieber-sorry",
-      "artist": "Justin Bieber",
-      "title": "Sorry",
-      "video": "fRh_vgS2dFE",
-      "addedAt": "2026-10-22T02:50:41.106Z"
-    },
-    {
-      "id": "oliver-tree-robin-schulz-miss-you",
-      "artist": "Oliver Tree & Robin Schulz",
-      "title": "Miss You",
-      "video": "EipgOEBtyag",
-      "addedAt": "2026-10-22T02:50:40.970Z"
-    },
-    {
-      "id": "2ne1-i-love-you",
-      "artist": "2NE1",
-      "title": "I Love You",
-      "video": "LUrUPzLm5SI",
-      "addedAt": "2026-10-22T02:50:40.969Z"
-    },
-    {
-      "id": "disneys-starstruck-sterling-knight-brandon-mychal-smith-drew-ryan-scott-hero",
-      "artist": "Disney’s StarStruck (Sterling Knight, Brandon Mychal Smith, Drew Ryan Scott)",
-      "title": "Hero",
-      "video": "W04b-jzy0xs",
-      "addedAt": "2026-10-22T02:50:40.627Z"
-    },
-    {
-      "id": "glass-animals-heat-waves",
-      "artist": "Glass Animals",
-      "title": "Heat Waves",
-      "video": "mRD0-GxqHVo",
-      "addedAt": "2026-10-22T02:50:40.623Z"
     }
   ]
 }
