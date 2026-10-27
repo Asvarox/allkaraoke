@@ -72,6 +72,11 @@ export interface SongBoardResponse {
 /** Board row as returned by the authenticated admin listing, with the id needed to delete it. */
 export interface AdminBoardEntry extends BoardEntry {
   id: string;
+  mode: string;
+  trackIndex: number;
+  songLastUpdate: string | null;
+  /** Score before an admin correction; null when the row was never corrected. */
+  originalScore: number | null;
 }
 
 export const BOARD_KV_KEY = 'board:v1';

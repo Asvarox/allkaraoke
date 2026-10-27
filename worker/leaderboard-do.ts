@@ -52,6 +52,13 @@ interface RecordRow {
   created_at: number;
 }
 
+interface AdminRecordRow {
+  mode: string;
+  track_index: number;
+  song_last_update: string | null;
+  original_score: number | null;
+}
+
 const toBoardEntry = (row: RecordRow): BoardEntry => ({
   name: row.name,
   country: row.country,
@@ -113,6 +120,11 @@ export class LeaderboardBoard extends DurableObject<LeaderboardDurableObjectEnv>
     this.sql.exec(
       `CREATE UNIQUE INDEX IF NOT EXISTS records_dedupe_by_tolerance ON records (client_id, song_id, name_normalized, tolerance);`,
     );
+    // Score before an admin correction, kept so a correction can be reverted
+    const columns = this.sql.exec<{ name: string }>(`PRAGMA table_info(records)`).toArray();
+    if (!columns.some(({ name }) => name === 'original_score')) {
+      this.sql.exec(`ALTER TABLE records ADD COLUMN original_score INTEGER;`);
+    }
     this.sql.exec(`CREATE INDEX IF NOT EXISTS records_score ON records (score DESC);`);
     this.sql.exec(`CREATE INDEX IF NOT EXISTS records_created_at ON records (created_at);`);
     // Covers all three per-song queries — the count, the rank, and the window — in the order they
@@ -161,7 +173,8 @@ export class LeaderboardBoard extends DurableObject<LeaderboardDurableObjectEnv>
     if (existing) {
       this.sql.exec(
         `UPDATE records SET artist = ?, title = ?, song_last_update = ?, name = ?, country = ?, score = ?,
-           tolerance = ?, mode = ?, track_index = ?, input_lag = ?, notes_hash = ?, created_at = ?
+           tolerance = ?, mode = ?, track_index = ?, input_lag = ?, notes_hash = ?, created_at = ?,
+           original_score = NULL
          WHERE id = ?`,
         submission.artist,
         submission.title,
@@ -310,12 +323,41 @@ export class LeaderboardBoard extends DurableObject<LeaderboardDurableObjectEnv>
   /** Every stored row, newest first, including ids. Authenticated admin use only. */
   listForAdmin(): AdminBoardEntry[] {
     return this.sql
-      .exec<RecordRow>(
-        `SELECT id, name, country, score, artist, title, song_id, tolerance, created_at
+      .exec<RecordRow & AdminRecordRow>(
+        `SELECT id, name, country, score, artist, title, song_id, tolerance, created_at, mode, track_index,
+           song_last_update, original_score
          FROM records ORDER BY created_at DESC`,
       )
       .toArray()
-      .map((row) => ({ id: row.id, ...toBoardEntry(row) }));
+      .map((row) => ({
+        id: row.id,
+        ...toBoardEntry(row),
+        mode: row.mode,
+        trackIndex: row.track_index,
+        songLastUpdate: row.song_last_update,
+        originalScore: row.original_score,
+      }));
+  }
+
+  /**
+   * Overwrites scores by row id, for correcting rows after a scoring bug. Unknown ids are skipped.
+   * The score from before the first correction stays in `original_score`, even across repeated corrections.
+   */
+  async updateScores(scores: Array<{ id: string; score: number }>): Promise<{ updated: number }> {
+    let updated = 0;
+    for (const { id, score } of scores) {
+      updated += this.sql
+        .exec(
+          `UPDATE records SET original_score = COALESCE(original_score, score), score = ? WHERE id = ? RETURNING id`,
+          score,
+          id,
+        )
+        .toArray().length;
+    }
+
+    await this.rebuildProjection();
+
+    return { updated };
   }
 
   async deleteRow(id: string): Promise<boolean> {
