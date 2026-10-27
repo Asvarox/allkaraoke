@@ -462,6 +462,34 @@ describe('/leaderboard-admin', () => {
     expect(((await board.json()) as BoardResponse).entries).toEqual([expect.objectContaining({ score: 1_200_000 })]);
   });
 
+  it('keeps the score from before the first correction, until a new run replaces the row', async () => {
+    const submission = await generateSubmission();
+    await submit(submission);
+    const listEntries = async () => {
+      const list = await SELF.fetch('https://example.com/leaderboard-admin', { headers: adminHeaders });
+      return ((await list.json()) as { entries: Array<{ id: string; score: number; originalScore: number | null }> })
+        .entries;
+    };
+    const [{ id, originalScore }] = await listEntries();
+    expect(originalScore).toBeNull();
+
+    for (const score of [1_200_000, 1_100_000]) {
+      await SELF.fetch('https://example.com/leaderboard-admin', {
+        method: 'PATCH',
+        headers: adminHeaders,
+        body: JSON.stringify({ scores: [{ id, score }] }),
+      });
+    }
+    expect(await listEntries()).toEqual([
+      expect.objectContaining({ score: 1_100_000, originalScore: submission.score }),
+    ]);
+
+    await submit(await generateSubmission({ score: submission.score + 1 }));
+    expect(await listEntries()).toEqual([
+      expect.objectContaining({ score: submission.score + 1, originalScore: null }),
+    ]);
+  });
+
   it('rejects a score correction outside the stored range', async () => {
     const response = await SELF.fetch('https://example.com/leaderboard-admin', {
       method: 'PATCH',

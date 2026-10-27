@@ -75,6 +75,8 @@ export interface AdminBoardEntry extends BoardEntry {
   mode: string;
   trackIndex: number;
   songLastUpdate: string | null;
+  /** Score before an admin correction; null when the row was never corrected. */
+  originalScore: number | null;
 }
 
 export const BOARD_KV_KEY = 'board:v1';
