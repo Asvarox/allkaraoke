@@ -430,6 +430,57 @@ describe('/leaderboard-admin', () => {
     expect(((await board.json()) as BoardResponse).entries).toHaveLength(1);
   });
 
+  it('lists the run setup the score was calculated from', async () => {
+    await submit(await generateSubmission({ mode: 'DUEL', trackIndex: 1 }));
+
+    const list = await SELF.fetch('https://example.com/leaderboard-admin', { headers: adminHeaders });
+    const { entries } = (await list.json()) as { entries: unknown[] };
+
+    expect(entries).toEqual([expect.objectContaining({ mode: 'DUEL', trackIndex: 1, songLastUpdate: '2026-01-01' })]);
+  });
+
+  it('corrects scores on PATCH and serves the corrected board straight away', async () => {
+    await submit(await generateSubmission());
+    const list = await SELF.fetch('https://example.com/leaderboard-admin', { headers: adminHeaders });
+    const { entries } = (await list.json()) as { entries: Array<{ id: string }> };
+
+    const response = await SELF.fetch('https://example.com/leaderboard-admin', {
+      method: 'PATCH',
+      headers: adminHeaders,
+      body: JSON.stringify({
+        scores: [
+          { id: entries[0].id, score: 1_200_000 },
+          { id: 'nope', score: 1_000_000 },
+        ],
+      }),
+    });
+
+    expect(response.status).toBe(200);
+    expect(await response.json()).toEqual({ updated: 1 });
+
+    const board = await SELF.fetch('https://example.com/leaderboard');
+    expect(((await board.json()) as BoardResponse).entries).toEqual([expect.objectContaining({ score: 1_200_000 })]);
+  });
+
+  it('rejects a score correction outside the stored range', async () => {
+    const response = await SELF.fetch('https://example.com/leaderboard-admin', {
+      method: 'PATCH',
+      headers: adminHeaders,
+      body: JSON.stringify({ scores: [{ id: 'some-id', score: MAX_SUBMITTED_SCORE + 1 }] }),
+    });
+
+    expect(response.status).toBe(400);
+  });
+
+  it('refuses an unauthenticated score correction', async () => {
+    const response = await SELF.fetch('https://example.com/leaderboard-admin', {
+      method: 'PATCH',
+      body: JSON.stringify({ scores: [] }),
+    });
+
+    expect(response.status).toBe(401);
+  });
+
   it('refuses an unauthenticated rebuild', async () => {
     const response = await SELF.fetch('https://example.com/leaderboard-admin', { method: 'POST' });
 

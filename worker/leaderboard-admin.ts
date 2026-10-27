@@ -3,14 +3,30 @@ import {
   responseHeaders,
   unauthorizedResponse,
 } from '../functions/unverified-songs-browser-admin-auth';
+import { MAX_SUBMITTED_SCORE } from '../src/modules/leaderboard/consts';
 import { boardCacheKey, getBoardStub, LeaderboardEnv } from './leaderboard';
 
 export interface LeaderboardAdminEnv extends LeaderboardEnv {
   ADMIN_PANEL_PASSWORD?: string;
 }
 
+const parseScoreUpdates = (body: unknown): Array<{ id: string; score: number }> | null => {
+  const scores = (body as { scores?: unknown } | null)?.scores;
+  if (!Array.isArray(scores)) return null;
+
+  const isValid = scores.every(
+    (entry) =>
+      typeof entry?.id === 'string' &&
+      Number.isInteger(entry?.score) &&
+      entry.score >= 0 &&
+      entry.score <= MAX_SUBMITTED_SCORE,
+  );
+
+  return isValid ? scores.map(({ id, score }) => ({ id, score })) : null;
+};
+
 /**
- * Authenticated list, delete, and a manual projection rebuild. Row ids only ever reach the admin UI
+ * Authenticated list, delete, score correction, and a manual projection rebuild. Row ids only ever reach the admin UI
  * through here — the public board never carries them.
  */
 export const handleLeaderboardAdmin = async (request: Request, env: LeaderboardAdminEnv) => {
@@ -32,6 +48,22 @@ export const handleLeaderboardAdmin = async (request: Request, env: LeaderboardA
     const result = await board.rebuild();
 
     // Same reasoning as the delete path: the point of rebuilding by hand is seeing the result now
+    await caches.default.delete(boardCacheKey(request));
+
+    return new Response(JSON.stringify(result), { headers: responseHeaders });
+  }
+
+  if (request.method === 'PATCH') {
+    const scores = parseScoreUpdates(await request.json().catch(() => null));
+
+    if (!scores) {
+      return new Response(JSON.stringify({ error: 'Expected { scores: [{ id, score }] }' }), {
+        status: 400,
+        headers: responseHeaders,
+      });
+    }
+
+    const result = await board.updateScores(scores);
     await caches.default.delete(boardCacheKey(request));
 
     return new Response(JSON.stringify(result), { headers: responseHeaders });
