@@ -2426,8 +2426,16 @@ var handleLeaderboardRead = async (request, env) => {
 };
 //#endregion
 //#region worker/leaderboard-admin.ts
+var parseScoreUpdates = (body) => {
+	const scores = body?.scores;
+	if (!Array.isArray(scores)) return null;
+	return scores.every((entry) => typeof entry?.id === "string" && Number.isInteger(entry?.score) && entry.score >= 0 && entry.score <= 3999999) ? scores.map(({ id, score }) => ({
+		id,
+		score
+	})) : null;
+};
 /**
-* Authenticated list, delete, and a manual projection rebuild. Row ids only ever reach the admin UI
+* Authenticated list, delete, score correction, and a manual projection rebuild. Row ids only ever reach the admin UI
 * through here — the public board never carries them.
 */
 var handleLeaderboardAdmin = async (request, env) => {
@@ -2440,6 +2448,16 @@ var handleLeaderboardAdmin = async (request, env) => {
 	if (request.method === "GET") return new Response(JSON.stringify({ entries: await board.listForAdmin() }), { headers: responseHeaders$3 });
 	if (request.method === "POST") {
 		const result = await board.rebuild();
+		await caches.default.delete(boardCacheKey(request));
+		return new Response(JSON.stringify(result), { headers: responseHeaders$3 });
+	}
+	if (request.method === "PATCH") {
+		const scores = parseScoreUpdates(await request.json().catch(() => null));
+		if (!scores) return new Response(JSON.stringify({ error: "Expected { scores: [{ id, score }] }" }), {
+			status: 400,
+			headers: responseHeaders$3
+		});
+		const result = await board.updateScores(scores);
 		await caches.default.delete(boardCacheKey(request));
 		return new Response(JSON.stringify(result), { headers: responseHeaders$3 });
 	}
@@ -2525,6 +2543,7 @@ var LeaderboardBoard = class extends DurableObject {
     `);
 		this.sql.exec(`DROP INDEX IF EXISTS records_dedupe;`);
 		this.sql.exec(`CREATE UNIQUE INDEX IF NOT EXISTS records_dedupe_by_tolerance ON records (client_id, song_id, name_normalized, tolerance);`);
+		if (!this.sql.exec(`PRAGMA table_info(records)`).toArray().some(({ name }) => name === "original_score")) this.sql.exec(`ALTER TABLE records ADD COLUMN original_score INTEGER;`);
 		this.sql.exec(`CREATE INDEX IF NOT EXISTS records_score ON records (score DESC);`);
 		this.sql.exec(`CREATE INDEX IF NOT EXISTS records_created_at ON records (created_at);`);
 		this.sql.exec(`CREATE INDEX IF NOT EXISTS records_song_board ON records (song_id, tolerance, score DESC, created_at ASC);`);
@@ -2556,7 +2575,8 @@ var LeaderboardBoard = class extends DurableObject {
 		const createdAt = submission.playedAt ?? Date.now();
 		if (existing) {
 			this.sql.exec(`UPDATE records SET artist = ?, title = ?, song_last_update = ?, name = ?, country = ?, score = ?,
-           tolerance = ?, mode = ?, track_index = ?, input_lag = ?, notes_hash = ?, created_at = ?
+           tolerance = ?, mode = ?, track_index = ?, input_lag = ?, notes_hash = ?, created_at = ?,
+           original_score = NULL
          WHERE id = ?`, submission.artist, submission.title, submission.songLastUpdate, name, submission.country, submission.score, submission.tolerance, submission.mode, submission.trackIndex, submission.inputLag, submission.notesHash, createdAt, id);
 			this.sql.exec(`DELETE FROM notes WHERE record_id = ?`, id);
 		} else this.sql.exec(`INSERT INTO records (id, client_id, song_id, artist, title, song_last_update, name, name_normalized,
@@ -2618,11 +2638,26 @@ var LeaderboardBoard = class extends DurableObject {
 	}
 	/** Every stored row, newest first, including ids. Authenticated admin use only. */
 	listForAdmin() {
-		return this.sql.exec(`SELECT id, name, country, score, artist, title, song_id, tolerance, created_at
+		return this.sql.exec(`SELECT id, name, country, score, artist, title, song_id, tolerance, created_at, mode, track_index,
+           song_last_update, original_score
          FROM records ORDER BY created_at DESC`).toArray().map((row) => ({
 			id: row.id,
-			...toBoardEntry(row)
+			...toBoardEntry(row),
+			mode: row.mode,
+			trackIndex: row.track_index,
+			songLastUpdate: row.song_last_update,
+			originalScore: row.original_score
 		}));
+	}
+	/**
+	* Overwrites scores by row id, for correcting rows after a scoring bug. Unknown ids are skipped.
+	* The score from before the first correction stays in `original_score`, even across repeated corrections.
+	*/
+	async updateScores(scores) {
+		let updated = 0;
+		for (const { id, score } of scores) updated += this.sql.exec(`UPDATE records SET original_score = COALESCE(original_score, score), score = ? WHERE id = ? RETURNING id`, score, id).toArray().length;
+		await this.rebuildProjection();
+		return { updated };
 	}
 	async deleteRow(id) {
 		if (this.sql.exec(`SELECT id FROM records WHERE id = ?`, id).toArray().length === 0) return false;
