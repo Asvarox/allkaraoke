@@ -118,7 +118,7 @@ export class GameStateClass {
         this.getPlayers().map((playerState) => playerState.getPlayerNotes()),
       );
     const timelineOf = (playerState: PlayerState) =>
-      calculateScoreTimeline(playerState.getPlayerNotes(), song, playerState.getTrackIndex(), range);
+      calculateScoreTimeline(playerState.getPlayerNotes(), playerState.getTrack(), range);
 
     if (this.getSingSetup()?.mode === GAME_MODE.CO_OP) {
       const timelines = this.getPlayers().map(timelineOf);

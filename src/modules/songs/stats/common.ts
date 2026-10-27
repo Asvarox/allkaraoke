@@ -29,6 +29,8 @@ export interface SongStats {
     scores: Array<{ name: string; score: number }>;
     date: string;
     progress?: number;
+    /** Set on runs scored after the merged-track fix, see `merged-track-score-fix.ts`. Missing on older runs. */
+    scoringVersion?: number;
   }>;
 }
 

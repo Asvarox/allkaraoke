@@ -81,13 +81,13 @@ export function getTrackTimelineRange(song: Song, { sections }: SongTrack): Time
 
 export function calculateScoreTimeline(
   playerNotes: PlayerNote[],
-  song: Song,
-  trackNumber: number,
+  /** The track the player is scored against (`PlayerState.getTrack`), merged or not. */
+  track: SongTrack,
   /** From {@link getTimelineRange}, computed once across every player sharing the screen. */
   { startBeat, endBeat }: TimelineRange,
   sampleCount: number = SCORE_TIMELINE_SAMPLES,
 ): ScoreTimeline {
-  const [pointsPerBeat] = calculateDetailedScoreData(playerNotes, song, trackNumber);
+  const [pointsPerBeat] = calculateDetailedScoreData(playerNotes, track);
   const scoringNotes = scoringNotesOf(playerNotes);
 
   const timeline: ScoreTimeline = [];

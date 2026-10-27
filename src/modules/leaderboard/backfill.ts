@@ -13,6 +13,7 @@ import { LeaderboardCountrySetting, LeaderboardNameSetting } from '~/modules/lea
 import { LeaderboardSharingSetting } from '~/modules/leaderboard/sharing';
 import SongsService from '~/modules/songs/songs-service';
 import { getAllStats, getSongKey, SongStats } from '~/modules/songs/stats/common';
+import { fixStoredMergedTrackScores } from '~/modules/songs/stats/merged-track-score-fix';
 import { FeatureFlags } from '~/modules/utils/feature-flags';
 import { Setting } from '~/routes/settings/settings-state';
 
@@ -87,6 +88,9 @@ async function runBackfill() {
   const name = LeaderboardNameSetting.get();
   if (BackfillDoneSetting.get() || LeaderboardSharingSetting.get() !== 'always' || !name) return;
   if (Date.now() >= BACKFILL_ACCEPTED_UNTIL) return;
+
+  // Every run above MAX_POINTS is a merged-track score from before the fix; once fixed, none are left to send
+  await fixStoredMergedTrackScores();
 
   const [stats, songs] = await Promise.all([getAllStats(), SongsService.getIndex()]);
   const candidates = collectBackfillCandidates(stats, songs, Date.now());
