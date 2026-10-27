@@ -50,6 +50,8 @@ export function collectBackfillCandidates(
     for (const entry of songStats?.scores ?? []) {
       const playedAt = new Date(entry.date).getTime();
       const { tolerance, mode } = entry.setup;
+      // A duet run the merged-track fix could not rescale (song failed to load) may still hold an inflated score
+      if (song.tracksCount > 1 && entry.scoringVersion === undefined) continue;
       if (!(playedAt >= now - BACKFILL_WINDOW_MS && playedAt <= now)) continue;
       if (tolerance < 1 || tolerance > MAX_SUBMITTED_TOLERANCE) continue;
 
