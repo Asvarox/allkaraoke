@@ -1,3 +1,6 @@
+import posthog from 'posthog-js';
+import { useEffect } from 'react';
+
 import { Menu } from '~/modules/elements/akui/menu';
 import Modal from '~/modules/elements/modal';
 import useKeyboardNav from '~/modules/hooks/use-keyboard-nav';
@@ -15,6 +18,10 @@ function ScoreAdjustmentNotice({ enabled }: Props) {
   const isOpen = enabled && pending;
 
   const dismiss = () => setPending(false);
+
+  useEffect(() => {
+    if (isOpen) posthog.capture('scoreAdjustmentNoticeShown');
+  }, [isOpen]);
 
   const { register } = useKeyboardNav({
     enabled: isOpen,
