@@ -1,7 +1,7 @@
 import { memoize } from 'es-toolkit';
 
 import { MAX_POINTS, noPointsNoteTypes } from '~/consts';
-import { DetailedScore, PlayerNote, Song } from '~/interfaces';
+import { DetailedScore, PlayerNote, SongTrack } from '~/interfaces';
 import getPlayerNoteDistance from '~/modules/game-engine/helpers/get-player-note-distance';
 import isNotesSection from '~/modules/songs/utils/is-notes-section';
 import tuple from '~/modules/utils/tuple';
@@ -86,34 +86,24 @@ export const multiplyDetailedScore = (counts: DetailedScore, multiplier: number)
 export const lerpDetailedScores = (from: DetailedScore, to: DetailedScore, progress: number): DetailedScore =>
   addDetailedScores(multiplyDetailedScore(from, 1 - progress), multiplyDetailedScore(to, progress));
 
-const countSungBeats = memoize((song: Song): DetailedScore[] => {
-  return song.tracks.map(({ sections }) => {
-    const counts: DetailedScore = {
-      freestyle: 0,
-      rap: 0,
-      rapstar: 0,
-      star: 0,
-      normal: 0,
-      perfect: 0,
-      vibrato: 0,
-    };
-    sections.filter(isNotesSection).forEach((section) => {
-      const notes = section.notes.filter((note) => !noPointsNoteTypes.includes(note.type));
+const countSungBeats = memoize(({ sections }: SongTrack): DetailedScore => {
+  const counts = emptyDetailedScore();
+  sections.filter(isNotesSection).forEach((section) => {
+    const notes = section.notes.filter((note) => !noPointsNoteTypes.includes(note.type));
 
-      notes.forEach((note) => {
-        counts[note.type] = counts[note.type] + note.length;
-        counts.perfect = counts.perfect + note.length;
-        counts.vibrato = counts.vibrato + note.length;
-      });
+    notes.forEach((note) => {
+      counts[note.type] = counts[note.type] + note.length;
+      counts.perfect = counts.perfect + note.length;
+      counts.vibrato = counts.vibrato + note.length;
     });
-
-    return counts;
   });
+
+  return counts;
 });
 
-export function calculateDetailedScoreData(playerNotes: PlayerNote[], song: Song, trackNumber: number) {
-  const beatsPerTrack = countSungBeats(song);
-
+/** `track` is the one the player is scored against (`PlayerState.getTrack`), so in merged mode
+ * the max score comes from the merged track rather than the player's original duet track. */
+export function calculateDetailedScoreData(playerNotes: PlayerNote[], track: SongTrack) {
   const counts: DetailedScore = {
     freestyle: 0,
     rap: 0,
@@ -124,12 +114,12 @@ export function calculateDetailedScoreData(playerNotes: PlayerNote[], song: Song
     vibrato: 0,
   };
 
-  if (!beatsPerTrack[trackNumber]) {
-    console.error(`No beat count for track ${trackNumber} in song`, song);
+  if (!track) {
+    console.error('No track to calculate the score against');
     return tuple([0, counts, counts]);
   }
 
-  const maxCounts = countsToBeats(countSungBeats(song)[trackNumber]);
+  const maxCounts = countsToBeats(countSungBeats(track));
 
   const pointsPerBeat = MAX_POINTS / sumDetailedScore(maxCounts);
 
@@ -147,8 +137,8 @@ export function calculateDetailedScoreData(playerNotes: PlayerNote[], song: Song
   return tuple([pointsPerBeat, countsToBeats(counts), maxCounts]);
 }
 
-export default function calculateScore(playerNotes: PlayerNote[], song: Song, trackNumber: number): number {
-  const [pointsPerBeat, counts] = calculateDetailedScoreData(playerNotes, song, trackNumber);
+export default function calculateScore(playerNotes: PlayerNote[], track: SongTrack): number {
+  const [pointsPerBeat, counts] = calculateDetailedScoreData(playerNotes, track);
 
   return sumDetailedScore(counts) * pointsPerBeat;
 }

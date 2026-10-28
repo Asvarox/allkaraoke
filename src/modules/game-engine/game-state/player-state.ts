@@ -145,9 +145,8 @@ class PlayerState {
     return isNotesSection(last) ? last : (this.getTrack().sections.at(-2) as NotesSection);
   };
 
-  public getScore = () => calculateScore(this.playerNotes, this.gameState.getSong()!, this.getTrackIndex());
-  public getDetailedScore = () =>
-    calculateDetailedScoreData(this.playerNotes, this.gameState.getSong()!, this.getTrackIndex());
+  public getScore = () => calculateScore(this.playerNotes, this.getTrack());
+  public getDetailedScore = () => calculateDetailedScoreData(this.playerNotes, this.getTrack());
 
   public getMinPitch = () => this.min;
   public getMaxPitch = () => this.max;

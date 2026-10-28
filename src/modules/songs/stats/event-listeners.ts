@@ -2,6 +2,7 @@ import localForage from 'localforage';
 
 import events from '~/modules/game-events/game-events';
 import { getSongKey, SongStats, storeSongStats, storeSongStatsByKey } from '~/modules/songs/stats/common';
+import { SCORING_VERSION } from '~/modules/songs/stats/merged-track-score-fix';
 import isE2E from '~/modules/utils/is-e2-e';
 
 events.songEnded.subscribe(async (song, setup, scores, progress) => {
@@ -10,7 +11,7 @@ events.songEnded.subscribe(async (song, setup, scores, progress) => {
   }
   let currentState = await localForage?.getItem<SongStats>(getSongKey(song));
 
-  const score = { setup, scores, date: new Date().toISOString(), progress };
+  const score = { setup, scores, date: new Date().toISOString(), progress, scoringVersion: SCORING_VERSION };
   if (currentState) {
     // there might be cases where only { plays: number } is stored
     currentState.scores = [...(currentState?.scores ?? []), score];

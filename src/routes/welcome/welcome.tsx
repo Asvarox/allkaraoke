@@ -18,6 +18,7 @@ import LeaderboardPanel from '~/routes/welcome/leaderboard-panel';
 import MenuFooter from '~/routes/welcome/menu-footer';
 import MenuTile from '~/routes/welcome/menu-tile';
 import { MenuViewTransition } from '~/routes/welcome/menu-view-transitions';
+import ScoreAdjustmentNotice from '~/routes/welcome/score-adjustment-notice';
 
 /**
  * The main menu as tiles rather than the stacked button list every other screen uses: the two ways
@@ -202,6 +203,7 @@ function Welcome() {
         <SelectInputModal open={micSetup} onClose={() => setMicSetup(false)} closeButtonText="Go to main menu" />,
         document.body,
       )}
+      <ScoreAdjustmentNotice enabled={!micSetup && !languageSelection} />
       {languageSelection && (
         <ExcludeLanguagesView
           variant="modal"

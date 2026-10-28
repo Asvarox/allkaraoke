@@ -28,7 +28,7 @@ describe('calculateScoreTimeline', () => {
 
   /** Timeline of one run, over the range that run alone would get. */
   const totalsOf = (run: PlayerNote[], sampleCount?: number) =>
-    calculateScoreTimeline(run, song, 0, getTimelineRange(song, [run]), sampleCount).map(sumDetailedScore);
+    calculateScoreTimeline(run, song.tracks[0], getTimelineRange(song, [run]), sampleCount).map(sumDetailedScore);
 
   it('starts at zero and ends on the final score', () => {
     const timeline = totalsOf(perfectRun);
@@ -88,7 +88,7 @@ describe('calculateScoreTimeline', () => {
       const timeline = totalsOf(earlyRun);
       expect(timeline.at(-2)).toBeLessThan(timeline.at(-1)!);
       expect(timeline.at(-1)).toBeCloseTo(
-        sumDetailedScore(calculateScoreTimeline(earlyRun, song, 0, { startBeat: 0, endBeat: 20 }).at(-1)!),
+        sumDetailedScore(calculateScoreTimeline(earlyRun, song.tracks[0], { startBeat: 0, endBeat: 20 }).at(-1)!),
         5,
       );
     });
@@ -124,8 +124,8 @@ describe('calculateScoreTimeline', () => {
       const range = getTimelineRange(song, [perfectRun, overrunRun]);
       const samples = 26;
 
-      const steady = calculateScoreTimeline(perfectRun, song, 0, range, samples).map(sumDetailedScore);
-      const overrun = calculateScoreTimeline(overrunRun, song, 0, range, samples).map(sumDetailedScore);
+      const steady = calculateScoreTimeline(perfectRun, song.tracks[0], range, samples).map(sumDetailedScore);
+      const overrun = calculateScoreTimeline(overrunRun, song.tracks[0], range, samples).map(sumDetailedScore);
 
       // Beat 20 of 26 is where the song's own notes stop, so the steady player is done there while
       // the overrunning one is still climbing — which is only comparable because the axis is shared.
@@ -136,8 +136,11 @@ describe('calculateScoreTimeline', () => {
     it('still ends every player on their own full total', () => {
       const range = getTimelineRange(song, [perfectRun, overrunRun]);
 
-      expect(sumDetailedScore(calculateScoreTimeline(perfectRun, song, 0, range).at(-1)!)).toBeCloseTo(MAX_POINTS, 5);
-      expect(sumDetailedScore(calculateScoreTimeline(overrunRun, song, 0, range).at(-1)!)).toBeGreaterThan(0);
+      expect(sumDetailedScore(calculateScoreTimeline(perfectRun, song.tracks[0], range).at(-1)!)).toBeCloseTo(
+        MAX_POINTS,
+        5,
+      );
+      expect(sumDetailedScore(calculateScoreTimeline(overrunRun, song.tracks[0], range).at(-1)!)).toBeGreaterThan(0);
     });
   });
 

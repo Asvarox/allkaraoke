@@ -3,6 +3,7 @@ import { SingSetup, SongPreview } from '~/interfaces';
 import { collectBackfillCandidates } from '~/modules/leaderboard/backfill';
 import { BACKFILL_WINDOW_MS, MAX_SUBMITTED_SCORE } from '~/modules/leaderboard/consts';
 import { getSongKey, SongStats } from '~/modules/songs/stats/common';
+import { SCORING_VERSION } from '~/modules/songs/stats/merged-track-score-fix';
 
 const now = Date.UTC(2026, 9, 25);
 const day = 24 * 60 * 60 * 1000;
@@ -67,6 +68,18 @@ describe('collectBackfillCandidates', () => {
     );
 
     expect(candidates).toEqual([]);
+  });
+
+  it('skips duet runs the merged-track fix has not rescaled yet', () => {
+    const duet = { ...song('duet'), tracksCount: 2 };
+
+    const candidates = collectBackfillCandidates(
+      stats([[duet, [play([MAX_POINTS + 1], 1), { ...play([MAX_POINTS + 2], 2), scoringVersion: SCORING_VERSION }]]]),
+      [duet],
+      now,
+    );
+
+    expect(candidates).toEqual([expect.objectContaining({ songId: 'duet', score: MAX_POINTS + 2 })]);
   });
 
   it('skips songs no longer in the library', () => {

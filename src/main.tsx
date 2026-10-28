@@ -20,6 +20,7 @@ import App from '~/app';
 
 import '~/index.css';
 import NoPrerender from '~/modules/elements/no-prerender';
+import { fixStoredMergedTrackScores } from '~/modules/songs/stats/merged-track-score-fix';
 import { normalizeSting } from '~/modules/songs/utils/get-song-id';
 import { isIgnoredException } from '~/modules/utils/ignored-exceptions';
 import isE2E from '~/modules/utils/is-e2-e';
@@ -77,6 +78,8 @@ const emotionCache = createCache({
 const container = document.getElementById('root');
 
 const root = createRoot(container!);
+
+fixStoredMergedTrackScores();
 
 const LazyToastContainer = lazy(() =>
   import('react-toastify').then(({ ToastContainer }) => ({ default: ToastContainer })),
