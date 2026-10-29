@@ -1,0 +1,223 @@
+#ARTIST:Yuuhei Satellite
+#TITLE:Tsuki ni Murakumo Hana ni Kaze
+#CREATOR:memo65
+#BPM:320
+#YEAR:2011
+#PREVIEWSTART:26
+#VIDEO:v=wDF4V5Xj7ho
+#LANGUAGE:Japanese
+#GAP:17,5
+#ALLKARAOKE_ID:yuuhei-satellite-tsuki-ni-murakumo-hana-ni-kaze
+#ALLKARAOKE_SID:6762
+#ALLKARAOKE_LASTUPDATE:2026-10-29T03:46:22.529Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_REALBPM:160
+#ALLKARAOKE_PREVIEWEND:48
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:101
+#COVER:Yuuhei Satellite - Tsuki ni Murakumo Hana ni Kaze (Short Ver.).jpg
+#MP3:Yuuhei Satellite - Tsuki ni Murakumo Hana ni Kaze (Short Ver.).mp3
+#MEDLEYSTARTBEAT:1312
+#MEDLEYENDBEAT:1818
+* 12 6 5 tsu
+* 20 6 7 ki 
+: 28 14 8 ni 
+: 44 6 8 wa 
+: 52 6 12 mu
+: 60 4 10 ra 
+: 66 4 8 ku
+: 72 8 7 mo
+- 80
+: 92 3 8 ha
+: 96 10 10 ~
+: 108 4 10 na 
+: 114 4 12 ni 
+: 120 3 13 wa 
+: 124 4 12 ka
+: 130 4 10 ze 
+: 136 7 8 to
+- 143
+: 148 6 7 o
+: 156 10 8 bo
+* 168 6 12 ro 
+: 176 3 10 me 
+: 180 3 8 ni 
+: 184 3 7 ka
+: 188 3 3 ku
+: 192 3 -2 re
+: 196 4 3 ta
+- 200
+: 208 3 5 sho
+: 212 3 5 u
+: 216 3 7 so
+: 220 52 5 u
+- 272 519
+- 519
+: 540 14 0 ma
+: 556 14 7 bu
+: 572 20 2 ta 
+: 596 3 0 ya
+: 600 3 2 ki 
+: 604 6 3 tsu
+: 612 3 3 i
+: 616 7 5 ta
+: 624 2 2 ~ 
+: 628 6 2 ka
+: 636 16 3 o
+- 652
+: 660 3 7 ri
+: 664 3 10 ka
+: 668 10 12 i 
+: 680 6 10 sha
+: 688 3 8 ~ 
+: 692 6 8 no 
+: 700 6 10 a
+* 708 4 15 ka
+* 714 6 14 shi 
+: 724 6 10 sa
+: 732 26 7 e
+- 758 775
+- 775
+: 796 3 5 se
+: 800 10 7 ~
+: 812 14 10 tsu
+: 828 3 3 na
+: 832 12 5 ~
+- 844
+: 848 6 11 ta
+: 856 3 12 i
+: 860 3 14 ku
+: 864 3 10 tsu 
+: 868 3 7 no 
+: 872 3 15 su
+: 876 3 10 ki
+: 880 3 7 ma 
+* 884 6 17 a
+* 892 6 15 ga
+* 900 6 14 na
+* 908 4 15 i
+- 912
+: 916 3 12 ko
+: 920 3 14 ko
+: 924 3 15 ro 
+: 928 3 14 ku
+: 932 3 12 su
+: 936 3 10 bu
+: 940 6 12 ri
+- 946
+: 952 3 14 fu
+: 956 3 15 ~
+: 960 3 14 a
+: 964 3 12 n 
+: 968 3 10 wo 
+: 972 3 12 u
+: 976 3 14 mi 
+: 980 3 7 da
+: 984 3 10 shi
+: 988 38 12 ta
+- 1026 1031
+- 1031
+: 1052 6 3 mo
+: 1064 10 5 u
+: 1076 3 5 mo
+: 1080 10 6 ku 
+: 1096 6 10 ki
+: 1104 3 8 e
+* 1108 3 6 ta 
+: 1112 2 8 ya
+: 1116 8 4 su
+: 1128 10 6 ra
+: 1140 3 6 gi 
+: 1144 10 8 ni
+- 1154
+: 1160 6 10 de
+: 1168 3 8 a
+* 1172 3 6 ~
+: 1176 3 4 tte 
+: 1180 8 3 me
+: 1192 10 5 ba
+: 1204 3 5 e
+: 1208 10 6 ta
+- 1218
+: 1224 6 6 re
+: 1232 3 5 n
+: 1236 3 6 jo
+: 1240 3 10 u 
+: 1244 4 8 yu
+: 1250 4 10 zu
+: 1256 3 11 ru 
+: 1260 4 13 ki 
+: 1266 4 11 wa 
+: 1272 3 13 na
+: 1276 30 10 i
+- 1306
+: 1324 6 5 tsu
+: 1332 6 7 ki 
+: 1340 14 8 ni 
+: 1356 6 8 wa 
+* 1364 6 12 mu
+: 1372 4 10 ra 
+: 1378 4 8 ku
+: 1384 14 7 mo
+- 1398
+: 1404 3 8 ha
+: 1408 10 10 ~
+: 1420 4 10 na 
+: 1426 4 12 ni 
+: 1432 3 13 wa 
+: 1436 4 12 ka
+: 1442 4 10 ze 
+: 1448 8 8 to
+- 1456
+: 1460 6 7 ko
+: 1468 10 8 na
+: 1480 6 12 ta 
+: 1488 3 10 yo
+: 1492 3 8 ri 
+: 1496 3 7 ka
+: 1500 3 3 na
+: 1504 3 -2 ta 
+: 1508 6 3 e
+- 1514
+: 1520 3 3 e
+: 1524 3 5 i
+: 1528 3 7 kyu
+: 1532 22 8 u
+- 1554
+: 1560 6 8 ki
+: 1568 3 7 zu
+: 1572 3 5 ke
+: 1576 3 3 nu 
+: 1580 3 0 na
+: 1584 6 3 ra
+- 1590
+: 1596 14 8 ku
+: 1612 6 8 mo 
+* 1620 6 12 tsu
+: 1628 4 10 ki 
+: 1634 4 8 nu
+: 1640 14 7 ke
+- 1654
+: 1660 14 10 ka
+: 1676 4 10 ze 
+: 1682 4 12 gi
+* 1688 3 13 ri 
+* 1692 4 12 sa
+: 1698 4 10 i
+: 1704 8 8 te
+- 1712
+: 1716 6 7 ku
+: 1724 10 8 o
+: 1736 6 12 n 
+: 1744 3 10 no 
+: 1748 3 8 ta
+: 1752 3 7 yu
+: 1756 3 3 ta
+: 1760 3 -2 i 
+: 1764 6 3 e
+- 1770
+: 1776 3 5 i
+: 1780 3 5 za
+: 1784 3 7 na
+: 1788 42 5 u
+E

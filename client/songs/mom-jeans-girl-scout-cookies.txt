@@ -1,0 +1,246 @@
+#ARTIST:Mom Jeans.
+#TITLE:Girl Scout Cookies
+#CREATOR:strumd
+#BPM:366,96
+#YEAR:2016
+#PREVIEWSTART:85
+#VIDEO:v=_fM79Aoms9I
+#GENRE:Emo
+#LANGUAGE:English
+#GAP:53152,966644865926
+#ALLKARAOKE_ID:mom-jeans-girl-scout-cookies
+#ALLKARAOKE_SID:6789
+#ALLKARAOKE_LASTUPDATE:2026-10-29T03:46:33.501Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:91
+#ALLKARAOKE_PREVIEWEND:125
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:232
+#VERSION:1.1.0
+#AUDIO:Mom Jeans. - Girl Scout Cookies.mp3
+#COMMENT:Created with Nautilus
+R 24 1 0 I 
+R 35 1 0 know 
+R 56 1 0 it's 
+R 64 1 0 not 
+R 72 1 0 ex
+R 80 1 0 act
+R 93 1 0 ly 
+R 105 1 0 what
+- 106 136
+- 136
+R 160 1 0 You're 
+R 176 1 0 look
+R 179 1 0 ing 
+R 201 1 0 for
+- 202 257
+- 257
+R 281 1 0 That 
+R 289 1 0 does
+R 293 1 0 n't 
+R 300 1 0 mean
+- 301
+R 313 1 0 That 
+R 321 1 0 you 
+R 329 1 0 can 
+R 337 1 0 dis
+R 347 1 0 re
+R 359 1 0 gard
+- 360 385
+- 385
+R 409 1 0 All 
+R 417 1 0 of 
+R 425 1 0 the 
+R 433 1 0 things
+- 434
+R 445 1 0 That 
+R 456 1 0 you 
+R 464 1 0 told 
+R 475 1 0 me 
+R 483 1 0 be
+R 488 1 0 fore
+- 489 508
+- 508
+R 532 1 0 I 
+R 536 1 0 think 
+R 544 1 0 back 
+R 552 1 0 to
+- 553
+R 566 1 0 All 
+R 570 1 0 the 
+R 578 1 0 times 
+R 586 1 0 I 
+R 594 1 0 kissed 
+R 606 1 0 your 
+R 618 1 0 hands
+- 619 641
+- 641
+R 665 1 0 How 
+R 673 1 0 I 
+R 677 1 0 can't 
+R 685 1 0 stand
+- 686
+R 703 1 0 The 
+R 707 1 0 touch 
+R 718 1 0 of 
+R 722 1 0 a
+R 726 1 0 ny 
+R 734 1 0 o
+R 742 1 0 ther 
+R 750 1 0 hands
+- 751 760
+- 760
+R 784 1 0 Tell 
+R 788 1 0 me 
+R 796 1 0 I 
+R 804 1 0 should 
+R 813 1 0 quit
+- 814 827
+- 827
+R 851 1 0 I 
+R 859 1 0 think 
+R 866 1 0 you 
+R 870 1 0 should 
+R 878 1 0 sit
+- 879
+R 890 1 0 Right 
+R 898 1 0 there 
+R 911 1 0 and 
+R 915 1 0 think 
+R 919 1 0 a
+R 927 1 0 bout
+- 928
+R 935 1 0 How 
+R 943 1 0 your 
+R 951 1 0 words 
+R 959 1 0 make 
+R 967 1 0 me 
+R 975 1 0 fe
+R 983 1 0 el
+- 984 1003
+- 1003
+R 1027 1 0 Take 
+R 1039 1 0 me 
+R 1051 1 0 back 
+R 1063 1 0 to
+- 1064
+R 1075 1 0 Wa
+R 1083 1 0 ter 
+R 1091 1 0 breaks 
+R 1099 1 0 and 
+R 1107 1 0 burn
+R 1115 1 0 ing 
+R 1123 1 0 in
+R 1131 1 0 side
+- 1132
+R 1156 1 0 Way 
+R 1166 1 0 back 
+R 1178 1 0 when 
+R 1192 1 0 we
+- 1193
+R 1204 1 0 Got 
+R 1212 1 0 high 
+R 1220 1 0 for 
+R 1228 1 0 the 
+R 1236 1 0 ve
+R 1243 1 0 ry 
+R 1251 1 0 first 
+R 1259 1 0 time
+- 1260
+R 1283 1 0 I 
+R 1296 1 0 try 
+R 1308 1 0 so 
+R 1320 1 0 hard
+- 1321
+R 1338 1 0 Not 
+R 1344 1 0 to 
+R 1348 1 0 show 
+R 1356 1 0 how 
+R 1364 1 0 much 
+R 1372 1 0 I 
+R 1380 1 0 like 
+R 1388 1 0 this
+- 1389
+R 1412 1 0 'Cause 
+R 1424 1 0 I 
+R 1436 1 0 fe
+R 1440 1 0 el
+- 1441
+R 1460 1 0 Hap
+R 1490 1 0 py 
+R 1515 1 0 a
+R 1519 1 0 gain
+- 1520 2571
+- 2571
+R 2595 1 0 So 
+R 2601 1 0 take 
+R 2611 1 0 me 
+R 2663 1 0 b
+R 2671 1 0 a
+R 2691 1 0 c
+R 2697 1 0 k
+- 2698 2703
+- 2703
+R 2727 1 0 I
+R 2735 1 0 'll 
+R 2755 1 0 wait
+- 2756 3593
+- 3593
+R 3617 1 0 I 
+R 3625 1 0 know 
+R 3633 1 0 it 
+R 3641 1 0 seems 
+R 3656 1 0 like
+- 3657
+R 3662 1 0 I'm 
+R 3674 1 0 wast
+R 3686 1 0 ing 
+R 3694 1 0 my 
+R 3707 1 0 time 
+R 3714 1 0 a
+R 3718 1 0 way
+- 3719
+R 3734 1 0 On 
+R 3738 1 0 things 
+R 3746 1 0 that 
+R 3750 1 0 still 
+R 3758 1 0 don't 
+R 3765 1 0 mat
+R 3769 1 0 ter
+- 3770
+R 3782 1 0 I 
+R 3786 1 0 don't 
+R 3794 1 0 care 
+R 3802 1 0 who 
+R 3810 1 0 can 
+R 3814 1 0 shot
+R 3823 1 0 gun 
+R 3831 1 0 fast
+R 3839 1 0 er
+- 3840
+R 3863 1 0 But 
+R 3867 1 0 when 
+R 3874 1 0 the 
+R 3878 1 0 goat 
+R 3886 1 0 runs 
+R 3894 1 0 dry
+- 3895
+R 3906 1 0 What's 
+R 3914 1 0 left 
+R 3922 1 0 be
+R 3926 1 0 hind 
+R 3938 1 0 is 
+R 3942 1 0 some
+R 3950 1 0 one
+- 3951
+R 3962 1 0 I 
+R 3975 1 0 don't 
+R 3987 1 0 mind 
+R 3999 1 0 I'm 
+R 4027 1 0 dy
+R 4039 1 0 i
+R 4051 1 0 ng
+- 4052 4067
+- 4067
+R 4091 1 0 With
+E
