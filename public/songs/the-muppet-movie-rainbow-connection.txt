@@ -1,0 +1,316 @@
+#ARTIST:The Muppet Movie
+#TITLE:Rainbow Connection
+#CREATOR:sanderson2344
+#BPM:400
+#YEAR:1979
+#VIDEO:v=pyKYusP81rY
+#GENRE:Soundtrack
+#LANGUAGE:English
+#GAP:5247,5
+#ALLKARAOKE_ID:the-muppet-movie-rainbow-connection
+#ALLKARAOKE_SID:6769
+#ALLKARAOKE_LASTUPDATE:2026-10-29T03:46:24.426Z
+#ALLKARAOKE_REALBPM:116
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:184
+#MP3:The Muppet Movie - Rainbow Connection.mp3
+#COVER:The Muppet Movie - Rainbow Connection [CO].jpg
+#BACKGROUND:The Muppet Movie - Rainbow Connection [BG].jpg
+: 27 9 -11 Why 
+: 40 5 -8 are 
+: 64 3 -3 there 
+: 71 4 -1 so 
+: 77 4 1 ma
+: 83 4 1 ny 
+: 111 18 -10 songs 
+: 133 4 -8 a
+: 139 4 -3 bout 
+: 148 8 -3 rain
+: 158 10 -1 bows
+- 168
+: 188 4 -11 And 
+: 194 4 -11 what’s 
+: 206 11 -8 on 
+: 220 10 -4 the 
+: 234 25 -3 o
+: 262 10 -8 ther 
+: 277 14 -6 side?
+- 291 333
+- 333
+: 360 9 -11 Rain
+: 371 15 -8 bows 
+: 395 4 -3 are 
+: 402 5 -1 vi
+: 409 9 1 sions, 
+: 439 3 -11 but 
+: 445 6 -10 on
+: 454 17 -8 ly 
+: 479 4 -3 il
+: 486 4 -3 lu
+: 494 9 -1 sions
+- 503
+: 522 3 -11 And 
+: 529 7 -11 rain
+: 540 11 -8 bows 
+: 555 12 -4 have 
+: 569 3 -4 no
+: 576 15 -3 thing 
+: 594 13 -8 to 
+: 609 26 -6 hide
+- 635 666
+- 666
+: 693 12 -6 So 
+: 709 8 1 we’ve 
+: 723 10 -6 been 
+: 737 9 1 told 
+: 749 12 -6 and 
+: 764 9 1 some 
+: 777 9 -6 choose 
+: 792 7 1 to 
+: 804 8 -6 be
+: 818 3 1 lieve 
+: 824 3 -6 it
+- 827 835
+- 835
+: 862 8 -4 I 
+: 874 9 -4 know 
+: 887 7 -4 they’re 
+: 897 11 -1 wrong, 
+: 914 14 -4 wait 
+: 933 6 -8 and 
+* 944 22 -4 see
+- 966 999
+- 999
+: 1026 12 -10 Some
+: 1041 12 -6 day 
+: 1055 9 -3 we’ll 
+: 1068 11 -4 find 
+: 1083 5 -3 it, 
+: 1105 5 -6 the 
+: 1113 11 -8 rain
+: 1126 10 -4 bow 
+: 1139 13 -1 con
+: 1153 6 -4 nec
+: 1164 14 -2 tion
+- 1178
+: 1190 5 -11 The 
+: 1197 5 -10 lo
+: 1203 12 -6 vers, 
+: 1229 4 -3 the 
+: 1236 5 1 drea
+: 1243 9 1 mers, 
+: 1263 8 -1 and 
+* 1277 18 -3 me
+- 1295 1416
+- 1416
+: 1443 11 -11 Who 
+: 1456 8 -8 said 
+: 1476 5 -3 that 
+: 1484 4 -1 eve
+: 1490 2 1 ry 
+: 1495 8 1 wish 
+: 1522 5 -11 would 
+: 1530 7 -10 be 
+: 1540 11 -8 heard 
+: 1554 7 -3 and 
+: 1566 6 -3 an
+: 1576 7 -1 swered
+- 1583
+: 1604 2 -11 When 
+: 1610 7 -11 wished 
+: 1623 10 -8 on 
+: 1636 10 -4 the 
+: 1650 25 -3 mor
+: 1679 10 -8 ning 
+: 1694 25 -6 star?
+- 1719 1751
+- 1751
+: 1778 5 -11 Some
+: 1787 3 -8 bo
+: 1793 9 -3 dy 
+: 1819 6 -1 thought 
+: 1827 2 1 of 
+: 1831 4 1 that 
+: 1858 5 -11 and 
+: 1865 5 -10 some
+: 1872 10 -8 one 
+: 1887 5 -3 be
+: 1894 6 -3 lieved 
+: 1904 3 -1 it
+- 1907 1917
+- 1917
+: 1944 7 -11 Look 
+: 1958 11 -8 what 
+: 1972 7 -4 it’s 
+: 1985 24 -3 done 
+: 2014 10 -8 so 
+: 2027 17 -6 far
+- 2044 2085
+- 2085
+: 2112 6 -6 What’s 
+: 2126 11 1 so 
+: 2140 9 -6 a
+: 2154 8 1 ma
+: 2168 11 -6 zing 
+: 2182 7 1 that 
+: 2195 5 -6 keeps 
+: 2208 8 1 us 
+: 2223 11 -6 star
+: 2237 9 1 gaz
+: 2251 12 -6 ing?
+- 2263
+: 2273 4 -6 And 
+: 2279 4 -4 what 
+: 2292 7 -4 do 
+: 2305 10 -4 we 
+: 2319 4 -1 think 
+: 2334 4 -4 we 
+: 2341 5 -8 might 
+: 2356 11 -4 see?
+- 2367 2418
+- 2418
+: 2445 10 -10 Some
+: 2459 10 -6 day 
+: 2472 8 -3 we’ll 
+: 2485 9 -4 find 
+: 2499 4 -3 it, 
+: 2522 4 -6 the 
+* 2528 12 -8 rain
+* 2542 11 -4 bow 
+* 2556 6 -1 con
+* 2564 7 -4 nec
+* 2577 16 -2 tion
+- 2593
+: 2605 5 -10 The 
+: 2612 5 -10 lo
+: 2619 12 -6 vers, 
+: 2645 5 -3 the 
+: 2653 4 1 drea
+: 2659 11 1 mers, 
+: 2680 11 -1 and 
+* 2693 33 -3 me
+- 2726
+: 2737 20 -1 All 
+: 2759 4 -3 of 
+: 2765 9 -1 us 
+: 2779 20 1 un
+: 2801 5 -1 der 
+: 2808 7 -3 its 
+: 2822 15 -8 spell
+- 2837
+: 2849 10 -8 We 
+: 2863 19 -6 know 
+: 2885 4 -4 that 
+: 2891 9 -3 it’s 
+: 2905 7 -8 pro
+: 2918 11 -6 ba
+: 2931 13 -3 bly 
+* 2946 40 -1 ma
+* 2989 42 0 gic
+- 3031 3045
+- 3045
+: 3072 12 -10 Have 
+: 3086 10 -7 you 
+: 3098 12 -2 been 
+: 3113 8 0 half
+: 3123 3 2 a
+: 3128 8 2 sleep 
+: 3150 4 -9 and 
+: 3156 11 -9 have 
+: 3169 10 -7 you 
+: 3183 9 -2 heard 
+: 3196 9 -2 voi
+: 3207 10 0 ces?
+- 3217
+: 3239 10 -10 I’ve 
+: 3252 11 -7 heard 
+: 3265 12 -3 them 
+: 3280 4 -3 cal
+: 3285 5 -2 ~
+: 3292 11 -2 ling 
+: 3306 12 -7 my 
+: 3320 26 -5 name
+- 3346 3377
+- 3377
+: 3404 7 -10 Is 
+: 3417 7 -7 this 
+: 3438 5 -2 the 
+: 3446 7 0 sweet 
+: 3457 15 2 sound 
+: 3482 3 -9 that 
+: 3489 10 -9 calls 
+: 3503 3 -7 the 
+: 3509 15 -2 young 
+: 3528 7 -2 sai
+: 3537 14 0 lors?
+- 3551
+: 3566 4 -10 The 
+: 3573 8 -10 voice 
+: 3585 11 -7 might 
+: 3601 10 -3 be 
+: 3613 8 -3 one 
+: 3623 15 -2 and 
+: 3640 10 -7 the 
+: 3656 24 -5 same
+- 3680 3711
+- 3711
+: 3738 12 -5 I’ve 
+: 3753 8 2 heard 
+: 3767 5 -5 it 
+: 3781 10 2 too 
+: 3795 9 -5 ma
+: 3808 8 2 ny 
+: 3822 7 -5 times 
+: 3836 8 2 to 
+: 3848 6 -5 ig
+: 3861 7 2 nore 
+: 3871 6 -5 it
+- 3877
+: 3898 3 -5 It’s 
+: 3904 11 -3 some
+: 3917 19 -3 thing 
+: 3941 3 -3 that 
+: 3946 10 0 I’m 
+: 3962 10 -3 supposed 
+: 3981 3 -5 to 
+: 3987 20 -3 be
+- 4007 4044
+- 4044
+: 4071 11 -9 Some
+: 4085 9 -5 day 
+: 4098 10 -2 we’ll 
+: 4112 11 -3 find 
+: 4127 5 -2 it, 
+: 4150 3 -5 the 
+: 4155 11 -7 rain
+: 4169 12 -3 bow 
+: 4184 7 0 con
+: 4193 6 -3 nec
+: 4205 17 -1 tion
+- 4222
+: 4233 5 -10 The 
+: 4240 6 -9 lo
+: 4248 13 -5 vers, 
+: 4273 5 -2 the 
+: 4281 6 2 drea
+: 4289 9 2 mers, 
+: 4308 11 0 and 
+* 4321 29 -2 me
+- 4350
+: 4364 20 0 La 
+: 4386 6 -2 da 
+: 4394 11 0 da 
+: 4407 20 2 de 
+: 4429 3 0 da 
+: 4434 10 -2 da 
+: 4450 15 -7 doo
+- 4465
+: 4475 13 -7 La 
+: 4490 20 -5 da 
+: 4514 4 -3 da 
+: 4520 11 -2 da 
+: 4537 13 -7 da 
+: 4552 13 -2 de 
+: 4567 25 -3 da 
+* 4598 76 2 doo
+E
