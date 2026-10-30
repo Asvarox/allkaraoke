@@ -31,21 +31,21 @@
     "Foo Fighters",
     "Metallica",
     "Miley Cyrus",
+    "Beyoncé",
     "Bruno Mars",
     "Ed Sheeran",
     "Katy Perry",
     "Lana Del Rey",
     "Westlife",
     "Adele",
-    "Beyoncé",
     "Demi Lovato",
     "Kelly Clarkson",
+    "Paramore",
     "Radiohead",
     "Avril Lavigne",
     "Backstreet Boys",
     "Jamiroquai",
     "Maroon 5",
-    "Paramore",
     "Red Hot Chili Peppers",
     "The Black Eyed Peas",
     "The Weeknd",
@@ -93,10 +93,12 @@
     "Justin Bieber",
     "Melanie Martinez",
     "Pink Floyd",
+    "Sabrina Carpenter",
     "Serj Tankian",
     "Spice Girls",
     "Tenacious D",
     "The Pussycat Dolls",
+    "Weezer",
     "Whitney Houston",
     "Bon Jovi",
     "Calvin Harris",
@@ -115,14 +117,12 @@
     "OneRepublic",
     "Phil Collins",
     "P!nk",
-    "Sabrina Carpenter",
     "Sean Paul",
     "Selena Gomez",
     "Sia",
     "Skillet",
     "The Killers",
     "UB40",
-    "Weezer",
     "3 Doors Down",
     "Avicii",
     "Billy Talent",
@@ -190,9 +190,10 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 6812,
-  "generatedAt": "2026-10-29T03:47:46.726Z",
+  "songs": 6842,
+  "generatedAt": "2026-10-30T03:49:49.981Z",
   "additionsPerDay": {
+    "2026-10-30": 30,
     "2026-10-29": 56,
     "2026-10-26": 13,
     "2026-10-24": 9,
@@ -234,6 +235,216 @@
     "2026-08-31": 19
   },
   "recentlyAdded": [
+    {
+      "id": "disneys-high-school-musical-2-work-this-out",
+      "artist": "Disney’s High School Musical 2",
+      "title": "Work This Out",
+      "video": "kl4zc0eig9k",
+      "addedAt": "2026-10-30T03:49:02.541Z"
+    },
+    {
+      "id": "weezer-falling-for-you",
+      "artist": "Weezer",
+      "title": "Falling For You",
+      "video": "hdrAsZ7ebuc",
+      "addedAt": "2026-10-30T03:49:02.540Z"
+    },
+    {
+      "id": "little-mix-feat-sean-paul-hair",
+      "artist": "Little Mix feat. Sean Paul",
+      "title": "Hair",
+      "video": "kgUpRwMeRr4",
+      "addedAt": "2026-10-30T03:49:00.979Z"
+    },
+    {
+      "id": "beyonce-hello",
+      "artist": "Beyoncé",
+      "title": "Hello",
+      "video": "60gOJYc93J8",
+      "addedAt": "2026-10-30T03:49:00.977Z"
+    },
+    {
+      "id": "david-bowie-five-years",
+      "artist": "David Bowie",
+      "title": "Five Years",
+      "video": "2ObjtVdsV3I",
+      "addedAt": "2026-10-30T03:49:00.976Z"
+    },
+    {
+      "id": "tatu-not-gonna-get-us",
+      "artist": "t.A.T.u.",
+      "title": "Not Gonna Get Us",
+      "video": "0HL-N9oOjcs",
+      "addedAt": "2026-10-30T03:49:00.974Z"
+    },
+    {
+      "id": "girls-generation-snsd-run-devil-run",
+      "artist": "Girls’ Generation (SNSD)",
+      "title": "Run Devil Run",
+      "video": "q_gfD3nvh-8",
+      "addedAt": "2026-10-30T03:49:00.822Z"
+    },
+    {
+      "id": "the-gathering-when-the-sun-hits-slowdive-cover-version",
+      "artist": "The Gathering",
+      "title": "When The Sun Hits (Slowdive Cover Version)",
+      "video": "8w2jAM9c4o8",
+      "addedAt": "2026-10-30T03:49:00.821Z"
+    },
+    {
+      "id": "rammstein-dicke-titten",
+      "artist": "Rammstein",
+      "title": "Dicke Titten",
+      "video": "thJgU9jkdU4",
+      "addedAt": "2026-10-30T03:49:00.820Z"
+    },
+    {
+      "id": "paramore-misguided-ghosts",
+      "artist": "Paramore",
+      "title": "Misguided Ghosts",
+      "video": "oGWeHPK3NC4",
+      "addedAt": "2026-10-30T03:49:00.819Z"
+    },
+    {
+      "id": "disneys-lemonade-mouth-somebody-single",
+      "artist": "Disney’s Lemonade Mouth",
+      "title": "Somebody (Single)",
+      "video": "YJ5fRzTJvS4",
+      "addedAt": "2026-10-30T03:49:00.666Z"
+    },
+    {
+      "id": "alicia-keys-if-i-aint-got-you-full-version",
+      "artist": "Alicia Keys",
+      "title": "If I Ain’t Got You (Full Version)",
+      "video": "P1pIzbHC1Z4",
+      "addedAt": "2026-10-30T03:49:00.664Z"
+    },
+    {
+      "id": "florence-the-machine-ship-to-wreck",
+      "artist": "Florence + the Machine",
+      "title": "Ship To Wreck",
+      "video": "B9v8jLBrvug",
+      "addedAt": "2026-10-30T03:49:00.663Z"
+    },
+    {
+      "id": "far-east-movement-feat-ryan-tedder-rocketeer",
+      "artist": "Far East Movement feat. Ryan Tedder",
+      "title": "Rocketeer",
+      "video": "RcmKbTR--iA",
+      "addedAt": "2026-10-30T03:49:00.406Z"
+    },
+    {
+      "id": "sabrina-carpenter-bed-chem",
+      "artist": "Sabrina Carpenter",
+      "title": "Bed Chem",
+      "video": "x8VkB8ap_FQ",
+      "addedAt": "2026-10-30T03:49:00.404Z"
+    },
+    {
+      "id": "melendi-tu-jardin-con-enanitos",
+      "artist": "Melendi",
+      "title": "Tu jardín con enanitos",
+      "video": "v3-9eDFDAFw",
+      "addedAt": "2026-10-30T03:49:00.403Z"
+    },
+    {
+      "id": "hannah-montana-2-rock-star",
+      "artist": "Hannah Montana 2",
+      "title": "Rock Star",
+      "video": "JOHAogvC6c4",
+      "addedAt": "2026-10-30T03:48:59.075Z"
+    },
+    {
+      "id": "tatu-all-about-us",
+      "artist": "t.A.T.u.",
+      "title": "All About Us",
+      "video": "6yP4Nm86yk0",
+      "addedAt": "2026-10-30T03:48:59.074Z"
+    },
+    {
+      "id": "spongebob-schwammkopf-das-lagerfeuerlied-lied",
+      "artist": "SpongeBob Schwammkopf",
+      "title": "Das Lagerfeuerlied Lied",
+      "video": "qMb6TOdUuJk",
+      "addedAt": "2026-10-30T03:48:58.839Z"
+    },
+    {
+      "id": "emma-daumas-tu-seras",
+      "artist": "Emma Daumas",
+      "title": "Tu seras",
+      "video": "ziGWg0pZc_Y",
+      "addedAt": "2026-10-30T03:48:58.683Z"
+    },
+    {
+      "id": "hayley-kiyoko-kehlani-what-i-need",
+      "artist": "Hayley Kiyoko & Kehlani",
+      "title": "What I Need",
+      "video": "YynKelHGhNc",
+      "addedAt": "2026-10-30T03:48:58.681Z"
+    },
+    {
+      "id": "florence-the-machine-spectrum",
+      "artist": "Florence + the Machine",
+      "title": "Spectrum",
+      "video": "iC-_lVzdiFE",
+      "addedAt": "2026-10-30T03:48:58.677Z"
+    },
+    {
+      "id": "faun-federkleid",
+      "artist": "FAUN",
+      "title": "Federkleid",
+      "video": "zOvsyamoEDg",
+      "addedAt": "2026-10-30T03:48:58.511Z"
+    },
+    {
+      "id": "akb48-gingham-check",
+      "artist": "AKB48",
+      "title": "Gingham Check",
+      "video": "XHdcW2axwMk",
+      "addedAt": "2026-10-30T03:48:58.510Z"
+    },
+    {
+      "id": "bebe-rexha-david-guetta-sad-girls",
+      "artist": "Bebe Rexha & David Guetta",
+      "title": "Sad Girls",
+      "video": "P8UqZ5IF-QE",
+      "addedAt": "2026-10-30T03:48:58.356Z"
+    },
+    {
+      "id": "olivia-rodrigo-robert-smith-whats-wrong-with-me",
+      "artist": "Olivia Rodrigo & Robert Smith",
+      "title": "What’s Wrong with Me",
+      "video": "oOEGRpfitAg",
+      "addedAt": "2026-10-30T03:48:57.016Z"
+    },
+    {
+      "id": "disneys-high-school-musical-the-musical-the-series-olivia-rodrigo-joshua-bassett-i-think-i-kinda-you-know",
+      "artist": "Disney’s High School Musical: The Musical: The Series (Olivia Rodrigo & Joshua Bassett)",
+      "title": "I Think I Kinda, You Know",
+      "video": "kT6UOSTdlgQ",
+      "addedAt": "2026-10-30T03:48:51.928Z"
+    },
+    {
+      "id": "taylor-swift-cornelia-street",
+      "artist": "Taylor Swift",
+      "title": "Cornelia Street",
+      "video": "VikHHWrgb4Y",
+      "addedAt": "2026-10-30T03:48:51.926Z"
+    },
+    {
+      "id": "loveshy-like-that",
+      "artist": "loveshy",
+      "title": "Like That",
+      "video": "LGM2MTmpQUc",
+      "addedAt": "2026-10-30T03:48:51.328Z"
+    },
+    {
+      "id": "dawid-podsiadlo-trojkaty-i-kwadraty",
+      "artist": "Dawid Podsiadło",
+      "title": "Trójkąty i kwadraty",
+      "video": "Wg4A_d9F7xk",
+      "addedAt": "2026-10-30T03:48:51.323Z"
+    },
     {
       "id": "la-secta-all-star-locura-automatica",
       "artist": "La Secta All Star",
@@ -359,216 +570,6 @@
       "title": "Bird Of Pray",
       "video": "OJ1x2aiL7ks",
       "addedAt": "2026-10-29T03:46:33.766Z"
-    },
-    {
-      "id": "ariana-grande-petal",
-      "artist": "Ariana Grande",
-      "title": "petal",
-      "video": "afSgBNwmZrQ",
-      "addedAt": "2026-10-29T03:46:33.765Z"
-    },
-    {
-      "id": "katy-perry-walking-on-air",
-      "artist": "Katy Perry",
-      "title": "Walking On Air",
-      "video": "t4D5egXVqSg",
-      "addedAt": "2026-10-29T03:46:33.764Z"
-    },
-    {
-      "id": "miley-cyrus-flowers-the-backyard-sessions",
-      "artist": "Miley Cyrus",
-      "title": "Flowers (The Backyard Sessions)",
-      "video": "QNv8iODCAwE",
-      "addedAt": "2026-10-29T03:46:33.761Z"
-    },
-    {
-      "id": "onerepublic-give-me-something",
-      "artist": "OneRepublic",
-      "title": "Give Me Something",
-      "video": "4eqzUNO-ONs",
-      "addedAt": "2026-10-29T03:46:33.759Z"
-    },
-    {
-      "id": "caroline-polachek-welcome-to-my-island",
-      "artist": "Caroline Polachek",
-      "title": "Welcome To My Island",
-      "video": "hxgcz_6GKX0",
-      "addedAt": "2026-10-29T03:46:33.502Z"
-    },
-    {
-      "id": "mumford-sons-timshel",
-      "artist": "Mumford & Sons",
-      "title": "Timshel",
-      "video": "gSY_HhXPyKQ",
-      "addedAt": "2026-10-29T03:46:33.501Z"
-    },
-    {
-      "id": "mom-jeans-girl-scout-cookies",
-      "artist": "Mom Jeans.",
-      "title": "Girl Scout Cookies",
-      "video": "_fM79Aoms9I",
-      "addedAt": "2026-10-29T03:46:33.501Z"
-    },
-    {
-      "id": "sophie-and-the-giants-x-purple-disco-machine-paradise",
-      "artist": "Sophie and the Giants x Purple Disco Machine",
-      "title": "Paradise",
-      "video": "Z_pqhk1DrqY",
-      "addedAt": "2026-10-29T03:46:33.332Z"
-    },
-    {
-      "id": "tv-on-the-radio-wolf-like-me",
-      "artist": "TV On The Radio",
-      "title": "Wolf Like Me",
-      "video": "70NrA13iYlw",
-      "addedAt": "2026-10-29T03:46:26.839Z"
-    },
-    {
-      "id": "sanni-jacuzzi",
-      "artist": "Sanni",
-      "title": "Jacuzzi",
-      "video": "5rTYSoibGgM",
-      "addedAt": "2026-10-29T03:46:26.669Z"
-    },
-    {
-      "id": "miley-cyrus-mothers-daughter",
-      "artist": "Miley Cyrus",
-      "title": "Mother’s Daughter",
-      "video": "7T2RonyJ_Ts",
-      "addedAt": "2026-10-29T03:46:26.667Z"
-    },
-    {
-      "id": "one-ok-rock-remake",
-      "artist": "ONE OK ROCK",
-      "title": "Re:make",
-      "video": "67m9E6uDgxs",
-      "addedAt": "2026-10-29T03:46:26.666Z"
-    },
-    {
-      "id": "exo-dont-go",
-      "artist": "EXO",
-      "title": "Don't Go",
-      "video": "V7I7HbWtstY",
-      "addedAt": "2026-10-29T03:46:26.663Z"
-    },
-    {
-      "id": "florence-the-machine-cosmic-love",
-      "artist": "Florence + the Machine",
-      "title": "Cosmic Love",
-      "video": "2EIeUlvHAiM",
-      "addedAt": "2026-10-29T03:46:26.660Z"
-    },
-    {
-      "id": "lord-huron-the-night-we-met",
-      "artist": "Lord Huron",
-      "title": "The Night We Met",
-      "video": "wGF7PswOENQ",
-      "addedAt": "2026-10-29T03:46:26.493Z"
-    },
-    {
-      "id": "the-cheetah-girls-fuego",
-      "artist": "The Cheetah Girls",
-      "title": "Fuego",
-      "video": "p3M9mP2nie0",
-      "addedAt": "2026-10-29T03:46:26.489Z"
-    },
-    {
-      "id": "roy-bianco-die-abbrunzati-boys-bella-napoli",
-      "artist": "Roy Bianco & Die Abbrunzati Boys",
-      "title": "Bella Napoli",
-      "video": "MAvVIUGSx6s",
-      "addedAt": "2026-10-29T03:46:26.487Z"
-    },
-    {
-      "id": "taylor-swift-opalite",
-      "artist": "Taylor Swift",
-      "title": "Opalite",
-      "video": "3PJC6uPIekc",
-      "addedAt": "2026-10-29T03:46:26.485Z"
-    },
-    {
-      "id": "demi-lovato-selena-gomez-one-and-the-same",
-      "artist": "Demi Lovato & Selena Gomez",
-      "title": "One And The Same",
-      "video": "CT690CyjeYw",
-      "addedAt": "2026-10-29T03:46:25.112Z"
-    },
-    {
-      "id": "sinead-oconnor-nothing-compares-2-u",
-      "artist": "Sinéad O’Connor",
-      "title": "Nothing Compares 2 U",
-      "video": "Mu2vQ9rFQ4A",
-      "addedAt": "2026-10-29T03:46:25.110Z"
-    },
-    {
-      "id": "f-r-david-words",
-      "artist": "F. R. David",
-      "title": "Words",
-      "video": "tXPwsluDBmo",
-      "addedAt": "2026-10-29T03:46:24.941Z"
-    },
-    {
-      "id": "aitana-y-sebastian-yatra-corazon-sin-vida",
-      "artist": "Aitana y Sebastián Yatra",
-      "title": "Corazón sin vida",
-      "video": "YGHEw8fKFVI",
-      "addedAt": "2026-10-29T03:46:24.774Z"
-    },
-    {
-      "id": "mana-rayando-el-sol",
-      "artist": "Maná",
-      "title": "Rayando el sol",
-      "video": "8lbsQyMhMT8",
-      "addedAt": "2026-10-29T03:46:24.767Z"
-    },
-    {
-      "id": "hilary-duff-sparks",
-      "artist": "Hilary Duff",
-      "title": "Sparks",
-      "video": "dpPXpHx9jO4",
-      "addedAt": "2026-10-29T03:46:24.765Z"
-    },
-    {
-      "id": "mgmt-little-dark-age",
-      "artist": "MGMT",
-      "title": "Little Dark Age",
-      "video": "rtL5oMyBHPs",
-      "addedAt": "2026-10-29T03:46:24.763Z"
-    },
-    {
-      "id": "9lana-propose",
-      "artist": "9Lana",
-      "title": "Propose",
-      "video": "XPLkkdMFmco",
-      "addedAt": "2026-10-29T03:46:24.593Z"
-    },
-    {
-      "id": "the-muppet-movie-rainbow-connection",
-      "artist": "The Muppet Movie",
-      "title": "Rainbow Connection",
-      "video": "pyKYusP81rY",
-      "addedAt": "2026-10-29T03:46:24.426Z"
-    },
-    {
-      "id": "hayley-williams-ego-death-at-a-bachelorette-party",
-      "artist": "Hayley Williams",
-      "title": "Ego Death at a Bachelorette Party",
-      "video": "Bw72CQYfHvY",
-      "addedAt": "2026-10-29T03:46:24.424Z"
-    },
-    {
-      "id": "olivia-dean-so-easy-to-fall-in-love",
-      "artist": "Olivia Dean",
-      "title": "So Easy (To Fall In Love)",
-      "video": "3sur4BmjQt8",
-      "addedAt": "2026-10-29T03:46:23.076Z"
-    },
-    {
-      "id": "goro-majima-24-hour-cinderella",
-      "artist": "Goro Majima",
-      "title": "24 Hour Cinderella",
-      "video": "m0QMqeQGuy0",
-      "addedAt": "2026-10-29T03:46:22.911Z"
     }
   ]
 }

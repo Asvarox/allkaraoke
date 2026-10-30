@@ -1,0 +1,309 @@
+#ARTIST:FAUN
+#TITLE:Federkleid
+#CREATOR:mustangfred
+#BPM:228,11
+#YEAR:2016
+#VIDEO:v=zOvsyamoEDg
+#GENRE:Pagan Folk
+#LANGUAGE:German
+#GAP:47021,63377317961
+#ALLKARAOKE_ID:faun-federkleid
+#ALLKARAOKE_SID:6821
+#ALLKARAOKE_LASTUPDATE:2026-10-30T03:48:58.511Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:114
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:258
+#MP3:FAUN - Federkleid.mp3
+#COVER:FAUN - Federkleid.jpg
+#MEDLEYSTARTBEAT:1024
+#MEDLEYENDBEAT:1770
+* 15 16 10 Ü
+* 32 6 7 ber 
+: 40 5 10 die 
+: 47 15 9 Hei
+: 63 7 2 de
+- 70
+: 76 2 2 Im 
+: 79 2 10 ers
+: 84 1 9 ten 
+: 87 4 7 mor
+: 92 2 5 gend
+: 96 3 7 lich
+: 103 4 9 en 
+: 111 5 10 Schein
+- 116 128
+- 128
+: 143 14 10 Zie
+: 159 6 7 hen 
+: 167 3 10 die 
+: 175 10 9 Vö
+: 190 7 2 gel
+- 197
+: 202 2 2 Wo 
+: 206 4 10 mö
+: 211 2 9 gen 
+: 215 2 7 sie 
+: 219 3 5 wohl 
+* 223 7 7 mor
+* 231 4 9 gen 
+: 239 5 7 sein
+- 244 248
+- 248
+: 263 3 2 Ich 
+: 270 13 10 fol
+: 287 6 7 ge 
+: 295 5 10 dem 
+: 302 10 9 Rau
+: 319 6 2 schen
+- 325
+: 330 2 2 Der 
+: 335 2 10 Schwin
+: 339 3 9 gen 
+: 343 2 7 in 
+: 346 1 5 das 
+: 351 6 7 stil
+: 359 3 9 le
+: 363 2 10 ~ 
+: 367 7 10 Moor
+- 374 384
+- 384
+: 399 13 10 U
+: 414 6 7 ral
+: 423 6 10 te 
+: 431 12 9 Lie
+: 446 8 2 der
+- 454
+* 462 3 10 Drin
+* 467 3 9 gen 
+: 471 1 7 aus 
+: 475 2 5 den 
+: 479 7 7 Ne
+: 487 5 9 beln 
+: 495 7 7 vor
+- 502 504
+- 504
+: 519 3 10 Komm 
+: 523 1 12 und 
+: 528 18 14 flie
+* 548 2 14 ge 
+* 552 2 12 mit 
+: 556 2 10 uns 
+: 563 14 9 fort
+- 577
+: 591 2 9 Lass 
+: 596 1 9 dem 
+: 599 2 9 Wind 
+: 603 2 9 dich 
+: 607 7 10 tra
+: 615 2 9 gen 
+: 619 2 7 weit 
+: 623 4 10 fort 
+: 629 1 9 von 
+: 631 2 10 die
+: 635 3 12 sem 
+* 639 2 14 Ort
+- 641
+: 647 3 10 Komm 
+: 651 2 12 und 
+: 656 17 14 flieg 
+: 675 2 14 so 
+: 678 3 12 hoch 
+: 683 4 10 du 
+: 691 6 9 kannst
+- 697 699
+- 699
+: 714 2 9 Lass 
+: 719 2 9 uns 
+: 725 2 9 die 
+: 728 1 9 Him
+: 731 2 9 mel 
+: 735 8 10 ja
+: 744 2 9 gen 
+: 747 3 7 im 
+: 755 5 7 Tanz
+- 760 1024
+- 1024
+: 1039 16 10 Ne
+: 1056 6 7 bel 
+: 1064 5 10 wie 
+: 1072 15 9 Sei
+: 1088 7 2 de
+- 1095
+: 1103 3 10 strei
+: 1107 2 9 fen 
+: 1112 1 7 mei
+: 1115 3 5 ne 
+: 1119 5 7 Haut 
+: 1127 6 9 so 
+* 1136 4 10 kühl
+- 1140 1152
+- 1152
+: 1167 11 10 Wei
+: 1184 7 7 ter 
+: 1192 5 10 und 
+: 1199 13 9 wei
+: 1215 7 2 ter
+- 1222
+: 1227 2 2 Wo 
+: 1231 3 10 find' 
+: 1237 1 9 ich 
+: 1239 3 7 mei
+: 1243 2 5 ner 
+: 1247 5 7 Sehn
+: 1255 3 9 sucht 
+: 1263 4 7 Ziel?
+- 1267 1272
+- 1272
+: 1287 3 2 Ich 
+: 1295 11 10 schlie
+: 1312 6 7 ße 
+: 1319 7 10 die 
+: 1327 14 9 Au
+: 1343 9 2 gen
+- 1352
+: 1359 2 10 Und 
+: 1363 2 9 mir 
+: 1367 2 7 sprie
+: 1371 2 5 ßt 
+: 1376 6 7 ein 
+: 1383 4 9 Fe
+: 1388 2 10 der
+: 1392 6 10 kleid
+- 1398 1400
+- 1400
+: 1415 5 2 Schon 
+: 1423 16 10 spür 
+: 1440 4 7 ich 
+: 1448 5 10 den 
+: 1455 12 9 Wind
+- 1467 1468
+- 1468
+: 1483 2 2 Und 
+: 1487 3 10 mach
+: 1491 3 9 e 
+: 1495 4 7 mei
+: 1500 1 5 ne 
+: 1503 7 7 Flü
+: 1511 4 7 gel
+: 1516 2 9 ~ 
+: 1520 9 7 weit
+- 1529
+: 1543 3 10 Komm 
+: 1547 2 12 und 
+: 1552 18 14 flie
+: 1572 2 14 ge 
+: 1576 2 12 mit 
+: 1580 3 10 uns 
+: 1588 14 9 fort
+- 1602
+: 1616 2 9 Lass 
+: 1621 1 9 dem 
+: 1624 2 9 Wind 
+: 1628 1 9 dich 
+: 1632 6 10 tra
+: 1640 2 9 gen 
+: 1644 2 7 weit 
+: 1648 4 10 fort 
+: 1653 1 9 von 
+: 1656 2 10 die
+: 1660 3 12 sem 
+: 1664 2 14 Ort
+- 1666
+: 1672 3 10 Komm 
+: 1676 2 12 und 
+: 1680 17 14 flieg 
+: 1699 2 14 so 
+: 1703 2 12 hoch 
+: 1707 4 10 du 
+: 1715 7 9 kannst
+- 1722 1724
+- 1724
+: 1739 2 9 Lass 
+: 1744 2 9 uns 
+: 1749 2 9 die 
+: 1752 2 9 Him
+: 1756 2 9 mel 
+: 1760 7 10 ja
+: 1768 2 9 gen 
+: 1772 2 7 im 
+* 1779 6 7 Tanz
+- 1785 2073
+- 2073
+: 2088 6 2 Die 
+: 2096 13 10 Him
+: 2112 8 7 mel 
+: 2121 5 10 in 
+: 2128 6 9 dir
+- 2134 2137
+- 2137
+: 2152 5 2 Wie 
+: 2160 7 10 kann 
+: 2168 1 10 ich 
+: 2172 3 9 sie 
+: 2176 1 7 wis
+: 2179 2 5 sen 
+: 2184 2 7 kann 
+: 2188 2 7 sie
+: 2191 3 9 ~ 
+: 2196 4 7 seh'n?
+- 2200 2201
+- 2201
+: 2216 6 2 Wir 
+* 2224 7 14 tanz
+: 2240 7 7 en 
+: 2248 5 14 im 
+: 2256 8 14 Flu
+: 2265 6 9 ~
+: 2272 6 9 ge
+- 2278
+: 2284 1 2 Wie 
+: 2288 9 10 Sterne 
+: 2300 3 9 die 
+: 2304 3 7 ih
+: 2308 3 5 rer 
+: 2313 3 5 We
+: 2317 3 7 ge
+: 2322 3 9 ~ 
+: 2330 11 7 zieh'n
+- 2341
+: 2344 3 10 Komm 
+: 2348 2 12 und 
+: 2352 19 14 flie
+: 2372 3 14 ge 
+: 2377 2 12 mit 
+: 2380 4 10 uns 
+: 2389 13 9 fort
+- 2402
+: 2417 2 9 Lass 
+: 2421 1 9 dem 
+: 2424 2 9 Wind 
+: 2428 1 9 dich 
+: 2432 5 10 tra
+: 2440 2 9 gen 
+: 2444 2 7 weit 
+: 2448 3 10 fort 
+: 2453 2 9 von 
+* 2456 2 10 die
+* 2460 3 12 sem 
+* 2464 2 14 Ort
+- 2466
+: 2472 3 10 Komm 
+: 2476 2 12 und 
+: 2480 18 14 flieg 
+: 2500 2 14 so 
+: 2503 2 12 hoch 
+: 2507 5 10 du 
+: 2516 7 9 kannst
+- 2523 2524
+- 2524
+: 2539 2 9 Lass 
+: 2544 2 9 uns 
+: 2549 2 9 die 
+: 2552 2 9 Him
+: 2556 2 9 mel 
+* 2560 7 10 ja
+* 2568 2 9 gen 
+: 2572 3 7 im 
+: 2580 5 7 Tanz
+E

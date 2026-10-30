@@ -6127,6 +6127,34 @@
     "local": false
   },
   {
+    "id": "akb48-gingham-check",
+    "title": "Gingham Check",
+    "artist": "AKB48",
+    "video": "XHdcW2axwMk",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 350.12,
+    "gap": 63904.62355763738,
+    "year": "2012",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-10-30T03:48:58.510Z",
+    "genre": "J-Pop",
+    "realBpm": 136,
+    "volume": 1,
+    "author": "mouton5000",
+    "duration": 408,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6820,
+    "tracksCount": 1,
+    "search": "akb48ginghamcheck",
+    "local": false
+  },
+  {
     "id": "akb48-heavy-rotation",
     "title": "Heavy Rotation",
     "artist": "AKB48",
@@ -8314,6 +8342,34 @@
     "shortId": 191,
     "tracksCount": 1,
     "search": "aliciakeysgirlonfire",
+    "local": false
+  },
+  {
+    "id": "alicia-keys-if-i-aint-got-you-full-version",
+    "title": "If I Ain’t Got You (Full Version)",
+    "artist": "Alicia Keys",
+    "video": "P1pIzbHC1Z4",
+    "language": [
+      "English"
+    ],
+    "bpm": 237,
+    "gap": 8037.341772151899,
+    "year": "2003",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-30T03:49:00.664Z",
+    "genre": "Contemporary R&B, Soul",
+    "realBpm": 87,
+    "volume": 1,
+    "author": "fizzypop109",
+    "duration": 229,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6832,
+    "tracksCount": 1,
+    "search": "aliciakeysifiaintgotyoufullversion",
     "local": false
   },
   {
@@ -20098,6 +20154,34 @@
     "local": false
   },
   {
+    "id": "bebe-rexha-david-guetta-sad-girls",
+    "title": "Sad Girls",
+    "artist": "Bebe Rexha & David Guetta",
+    "video": "P8UqZ5IF-QE",
+    "language": [
+      "English"
+    ],
+    "bpm": 255.98,
+    "gap": 6063.828424095633,
+    "year": "2025",
+    "lastUpdate": "2026-10-30T03:48:58.356Z",
+    "genre": "Pop",
+    "realBpm": 128,
+    "volume": 1,
+    "author": "lozboorman",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=32210",
+    "duration": 169,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6819,
+    "tracksCount": 1,
+    "search": "beberexhadavidguettasadgirls",
+    "local": false
+  },
+  {
     "id": "bebe-rexha-feat-florida-georgia-line-meant-to-be",
     "title": "Meant To Be",
     "artist": "Bebe Rexha feat. Florida Georgia Line",
@@ -21954,6 +22038,33 @@
     "shortId": 6720,
     "tracksCount": 1,
     "search": "beyonceheaven",
+    "local": false
+  },
+  {
+    "id": "beyonce-hello",
+    "title": "Hello",
+    "artist": "Beyoncé",
+    "video": "60gOJYc93J8",
+    "language": [
+      "English"
+    ],
+    "bpm": 259.96,
+    "gap": -111.60947838128948,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-30T03:49:00.977Z",
+    "realBpm": 98,
+    "volume": 1,
+    "author": "lozboorman",
+    "duration": 257,
+    "tracks": [
+      {
+        "start": 8
+      }
+    ],
+    "shortId": 6840,
+    "tracksCount": 1,
+    "search": "beyoncehello",
     "local": false
   },
   {
@@ -44342,6 +44453,33 @@
     "local": false
   },
   {
+    "id": "david-bowie-five-years",
+    "title": "Five Years",
+    "artist": "David Bowie",
+    "video": "2ObjtVdsV3I",
+    "language": [
+      "English"
+    ],
+    "bpm": 301.4,
+    "gap": 16404.64499004645,
+    "year": "1972",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-10-30T03:49:00.976Z",
+    "realBpm": 152,
+    "volume": 1,
+    "author": "choosie",
+    "duration": 284,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6839,
+    "tracksCount": 1,
+    "search": "davidbowiefiveyears",
+    "local": false
+  },
+  {
     "id": "david-bowie-heroes",
     "title": "Heroes",
     "artist": "David Bowie",
@@ -45206,6 +45344,36 @@
     "shortId": 1142,
     "tracksCount": 1,
     "search": "dawidpodsiadloptadamczykphantomliberty",
+    "local": false
+  },
+  {
+    "id": "dawid-podsiadlo-trojkaty-i-kwadraty",
+    "title": "Trójkąty i kwadraty",
+    "artist": "Dawid Podsiadło",
+    "video": "Wg4A_d9F7xk",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 250,
+    "gap": 6550,
+    "year": "2013",
+    "artistOrigin": "PL",
+    "lastUpdate": "2026-10-30T03:48:51.323Z",
+    "genre": "Pop",
+    "realBpm": 123,
+    "volume": 1,
+    "author": "mylordwaliza",
+    "sourceUrl": "https://usdb.animux.de/index.php/http...%3C/index.php?link=gettxt&id=30716",
+    "duration": 245,
+    "tracks": [
+      {
+        "name": "Dawid Podsiadło - Trójkąty i Kwadraty",
+        "start": 17
+      }
+    ],
+    "shortId": 6814,
+    "tracksCount": 1,
+    "search": "dawidpodsiadlotrojkatyikwadraty",
     "local": false
   },
   {
@@ -50589,6 +50757,33 @@
     "local": false
   },
   {
+    "id": "disneys-high-school-musical-2-work-this-out",
+    "title": "Work This Out",
+    "artist": "Disney’s High School Musical 2",
+    "video": "kl4zc0eig9k",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 8980,
+    "year": "2007",
+    "lastUpdate": "2026-10-30T03:49:02.541Z",
+    "genre": "Soundtrack",
+    "realBpm": 122,
+    "volume": 1,
+    "author": "b888arb",
+    "duration": 192,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6843,
+    "tracksCount": 1,
+    "search": "disneyshighschoolmusical2workthisout",
+    "local": false
+  },
+  {
     "id": "disneys-high-school-musical-3-high-school-musical",
     "title": "High School Musical",
     "artist": "Disney’s High School Musical 3",
@@ -50837,6 +51032,33 @@
     "local": false
   },
   {
+    "id": "disneys-high-school-musical-the-musical-the-series-olivia-rodrigo-joshua-bassett-i-think-i-kinda-you-know",
+    "title": "I Think I Kinda, You Know",
+    "artist": "Disney’s High School Musical: The Musical: The Series (Olivia Rodrigo & Joshua Bassett)",
+    "video": "kT6UOSTdlgQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 257.42,
+    "gap": 7349.400978944915,
+    "year": "2021",
+    "lastUpdate": "2026-10-30T03:48:51.928Z",
+    "genre": "Soundtrack",
+    "realBpm": 130,
+    "volume": 1,
+    "author": "seanie627",
+    "duration": 180,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6817,
+    "tracksCount": 1,
+    "search": "disneyshighschoolmusicalthemusicaltheseriesoliviarodrigojoshuabassettithinkikindayouknow",
+    "local": false
+  },
+  {
     "id": "disneys-high-school-musical-were-all-in-this-together",
     "title": "We’re All In This Together",
     "artist": "Disney’s High School Musical",
@@ -51059,6 +51281,33 @@
     "shortId": 6346,
     "tracksCount": 1,
     "search": "disneyslemonademouthmorethanaband",
+    "local": false
+  },
+  {
+    "id": "disneys-lemonade-mouth-somebody-single",
+    "title": "Somebody (Single)",
+    "artist": "Disney’s Lemonade Mouth",
+    "video": "YJ5fRzTJvS4",
+    "language": [
+      "English"
+    ],
+    "bpm": 329.2,
+    "gap": 13987.569866342648,
+    "year": "2011",
+    "lastUpdate": "2026-10-30T03:49:00.666Z",
+    "genre": "Soundtrack",
+    "realBpm": 82,
+    "volume": 1,
+    "author": "vicktoben",
+    "duration": 219,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6833,
+    "tracksCount": 1,
+    "search": "disneyslemonademouthsomebodysingle",
     "local": false
   },
   {
@@ -59957,6 +60206,33 @@
     "local": false
   },
   {
+    "id": "emma-daumas-tu-seras",
+    "title": "Tu seras",
+    "artist": "Emma Daumas",
+    "video": "ziGWg0pZc_Y",
+    "language": [
+      "French"
+    ],
+    "bpm": 293,
+    "gap": 32076.109215017066,
+    "year": "2003",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-10-30T03:48:58.683Z",
+    "realBpm": 147,
+    "volume": 1,
+    "author": "Canni",
+    "duration": 232,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6824,
+    "tracksCount": 1,
+    "search": "emmadaumastuseras",
+    "local": false
+  },
+  {
     "id": "emma-kok-voila",
     "title": "Voilà",
     "artist": "Emma Kok",
@@ -64629,6 +64905,32 @@
     "local": false
   },
   {
+    "id": "far-east-movement-feat-ryan-tedder-rocketeer",
+    "title": "Rocketeer",
+    "artist": "Far East Movement feat. Ryan Tedder",
+    "video": "RcmKbTR--iA",
+    "language": [
+      "English"
+    ],
+    "bpm": 383.9,
+    "gap": 15804.110445428498,
+    "year": "2010",
+    "lastUpdate": "2026-10-30T03:49:00.406Z",
+    "realBpm": 96,
+    "volume": 1,
+    "author": "michas17j",
+    "duration": 226,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6830,
+    "tracksCount": 1,
+    "search": "fareastmovementfeatryantedderrocketeer",
+    "local": false
+  },
+  {
     "id": "far-east-movement-feat-the-cataracs-dev-like-a-g6",
     "title": "Like A G6",
     "artist": "Far East Movement feat. The Cataracs & DEV",
@@ -64799,6 +65101,34 @@
     "shortId": 6122,
     "tracksCount": 1,
     "search": "faundiesekaltenacht",
+    "local": false
+  },
+  {
+    "id": "faun-federkleid",
+    "title": "Federkleid",
+    "artist": "FAUN",
+    "video": "zOvsyamoEDg",
+    "language": [
+      "German"
+    ],
+    "bpm": 228.11,
+    "gap": 47021.63377317961,
+    "year": "2016",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-10-30T03:48:58.511Z",
+    "genre": "Pagan Folk",
+    "realBpm": 114,
+    "volume": 1,
+    "author": "mustangfred",
+    "duration": 258,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6821,
+    "tracksCount": 1,
+    "search": "faunfederkleid",
     "local": false
   },
   {
@@ -66608,6 +66938,62 @@
     "shortId": 1636,
     "tracksCount": 1,
     "search": "florencethemachineshakeitout",
+    "local": false
+  },
+  {
+    "id": "florence-the-machine-ship-to-wreck",
+    "title": "Ship To Wreck",
+    "artist": "Florence + the Machine",
+    "video": "B9v8jLBrvug",
+    "language": [
+      "English"
+    ],
+    "bpm": 284.4000000000001,
+    "gap": 22896.478873239437,
+    "year": "2015",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-10-30T03:49:00.663Z",
+    "genre": "Alternative Rock",
+    "realBpm": 142,
+    "volume": 1,
+    "author": "Coppo",
+    "duration": 244,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6831,
+    "tracksCount": 1,
+    "search": "florencethemachineshiptowreck",
+    "local": false
+  },
+  {
+    "id": "florence-the-machine-spectrum",
+    "title": "Spectrum",
+    "artist": "Florence + the Machine",
+    "video": "iC-_lVzdiFE",
+    "language": [
+      "English"
+    ],
+    "bpm": 246,
+    "gap": 9299.390243902439,
+    "year": "2011",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-10-30T03:48:58.677Z",
+    "genre": "Alternative Rock",
+    "realBpm": 123,
+    "volume": 1,
+    "author": "Senortruco*Coppo",
+    "duration": 323,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6822,
+    "tracksCount": 1,
+    "search": "florencethemachinespectrum",
     "local": false
   },
   {
@@ -72524,6 +72910,35 @@
     "local": false
   },
   {
+    "id": "girls-generation-snsd-run-devil-run",
+    "title": "Run Devil Run",
+    "artist": "Girls’ Generation (SNSD)",
+    "video": "q_gfD3nvh-8",
+    "language": [
+      "Korean"
+    ],
+    "bpm": 260.02,
+    "gap": 11119.30620721483,
+    "year": "2010",
+    "lastUpdate": "2026-10-30T03:49:00.822Z",
+    "genre": "K-Pop",
+    "realBpm": 130,
+    "volume": 1,
+    "author": "rini",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=40593",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=10977",
+    "duration": 208,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6837,
+    "tracksCount": 1,
+    "search": "girlsgenerationsnsdrundevilrun",
+    "local": false
+  },
+  {
     "id": "girls-generation-snsd-the-boys",
     "title": "The Boys",
     "artist": "Girls’ Generation (SNSD)",
@@ -78234,6 +78649,34 @@
     "local": false
   },
   {
+    "id": "hannah-montana-2-rock-star",
+    "title": "Rock Star",
+    "artist": "Hannah Montana 2",
+    "video": "JOHAogvC6c4",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 23440,
+    "year": "2008",
+    "lastUpdate": "2026-10-30T03:48:59.075Z",
+    "genre": "Soundtrack",
+    "realBpm": 160,
+    "volume": 1,
+    "author": "jalkazar",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=7204",
+    "duration": 180,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6827,
+    "tracksCount": 1,
+    "search": "hannahmontana2rockstar",
+    "local": false
+  },
+  {
     "id": "hannah-montana-ill-always-remember-you",
     "title": "I’ll Always Remember You",
     "artist": "Hannah Montana",
@@ -78713,6 +79156,39 @@
     "shortId": 4972,
     "tracksCount": 1,
     "search": "hatsunemikuworldismine",
+    "local": false
+  },
+  {
+    "id": "hayley-kiyoko-kehlani-what-i-need",
+    "title": "What I Need",
+    "artist": "Hayley Kiyoko & Kehlani",
+    "video": "YynKelHGhNc",
+    "language": [
+      "English"
+    ],
+    "bpm": 208.29999999999998,
+    "gap": 48040.38461538462,
+    "year": "2018",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-30T03:48:58.681Z",
+    "genre": "Pop",
+    "videoGap": 33,
+    "realBpm": 104,
+    "previewStart": 61,
+    "previewEnd": 87,
+    "volume": 1,
+    "author": "Coppo",
+    "authorUrl": "https://ultrastar-es.org/fr/canciones?creador=coppo",
+    "sourceUrl": "https://ultrastar-es.org/fr/canciones?artista=Hayley%20Kiyoko%20%26%20Kehlani",
+    "duration": 330,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6823,
+    "tracksCount": 1,
+    "search": "hayleykiyokokehlaniwhatineed",
     "local": false
   },
   {
@@ -110821,6 +111297,32 @@
     "local": false
   },
   {
+    "id": "little-mix-feat-sean-paul-hair",
+    "title": "Hair",
+    "artist": "Little Mix feat. Sean Paul",
+    "video": "kgUpRwMeRr4",
+    "language": [
+      "English"
+    ],
+    "bpm": 411.18,
+    "gap": 1275.0299139063184,
+    "year": "2016",
+    "lastUpdate": "2026-10-30T03:49:00.979Z",
+    "realBpm": 154,
+    "volume": 1,
+    "author": "Sing-Girl",
+    "duration": 237,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6841,
+    "tracksCount": 1,
+    "search": "littlemixfeatseanpaulhair",
+    "local": false
+  },
+  {
     "id": "little-mix-feat-stormzy-power",
     "title": "Power",
     "artist": "Little Mix feat. Stormzy",
@@ -112984,6 +113486,35 @@
     "shortId": 2654,
     "tracksCount": 1,
     "search": "loverboyworkingfortheweekend",
+    "local": false
+  },
+  {
+    "id": "loveshy-like-that",
+    "title": "Like That",
+    "artist": "loveshy",
+    "video": "LGM2MTmpQUc",
+    "language": [
+      "English"
+    ],
+    "bpm": 381.72,
+    "gap": 12768.60452687834,
+    "year": "2025",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-10-30T03:48:51.328Z",
+    "realBpm": 117,
+    "volume": 1,
+    "author": "LoveShy",
+    "authorUrl": "https://www.youtube.com/channel/UCPYB-tvDmGGVECos-ZFLr_Q",
+    "sourceUrl": "https://youtu.be/LGM2MTmpQUc?si=nHkPTk4mnClbbvAT",
+    "duration": 147,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6815,
+    "tracksCount": 1,
+    "search": "loveshylikethat",
     "local": false
   },
   {
@@ -122331,6 +122862,36 @@
     "shortId": 2915,
     "tracksCount": 1,
     "search": "melendibarbiedeextrarradio",
+    "local": false
+  },
+  {
+    "id": "melendi-tu-jardin-con-enanitos",
+    "title": "Tu jardín con enanitos",
+    "artist": "Melendi",
+    "video": "v3-9eDFDAFw",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 341.68,
+    "gap": 31149.283306017325,
+    "year": "2012",
+    "artistOrigin": "ES",
+    "lastUpdate": "2026-10-30T03:49:00.403Z",
+    "genre": "Pop Rock",
+    "realBpm": 127,
+    "volume": 1,
+    "author": "CHELSTE",
+    "authorUrl": "https://www.instagram.com/lukboscaa.__/?hl=es",
+    "sourceUrl": "https://www.youtube.com/watch?v=v3-9eDFDAFw",
+    "duration": 258,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6828,
+    "tracksCount": 1,
+    "search": "melenditujardinconenanitos",
     "local": false
   },
   {
@@ -137924,6 +138485,33 @@
     "local": false
   },
   {
+    "id": "olivia-rodrigo-robert-smith-whats-wrong-with-me",
+    "title": "What’s Wrong with Me",
+    "artist": "Olivia Rodrigo & Robert Smith",
+    "video": "oOEGRpfitAg",
+    "language": [
+      "English"
+    ],
+    "bpm": 252,
+    "gap": 15108.095238095239,
+    "year": "2026",
+    "lastUpdate": "2026-10-30T03:48:57.016Z",
+    "genre": "Singer-songwriter, Teen pop",
+    "realBpm": 126,
+    "volume": 1,
+    "author": "DoubleDee",
+    "duration": 227,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6818,
+    "tracksCount": 1,
+    "search": "oliviarodrigorobertsmithwhatswrongwithme",
+    "local": false
+  },
+  {
     "id": "olivia-rodrigo-stupid-song",
     "title": "Stupid Song",
     "artist": "Olivia Rodrigo",
@@ -141533,6 +142121,33 @@
     "shortId": 3386,
     "tracksCount": 1,
     "search": "paramoremiserybusiness",
+    "local": false
+  },
+  {
+    "id": "paramore-misguided-ghosts",
+    "title": "Misguided Ghosts",
+    "artist": "Paramore",
+    "video": "oGWeHPK3NC4",
+    "language": [
+      "English"
+    ],
+    "bpm": 300.3,
+    "gap": -19.85014985014982,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-30T03:49:00.819Z",
+    "realBpm": 107,
+    "volume": 1,
+    "author": "lava",
+    "duration": 179,
+    "tracks": [
+      {
+        "start": 3
+      }
+    ],
+    "shortId": 6834,
+    "tracksCount": 1,
+    "search": "paramoremisguidedghosts",
     "local": false
   },
   {
@@ -149064,6 +149679,34 @@
     "local": false
   },
   {
+    "id": "rammstein-dicke-titten",
+    "title": "Dicke Titten",
+    "artist": "Rammstein",
+    "video": "thJgU9jkdU4",
+    "language": [
+      "German"
+    ],
+    "bpm": 234,
+    "gap": 48234.35897435898,
+    "year": "2022",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-10-30T03:49:00.820Z",
+    "genre": "Neue Deutsche Härte",
+    "realBpm": 117,
+    "volume": 1,
+    "author": "SchnickFitzel",
+    "duration": 347,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6835,
+    "tracksCount": 1,
+    "search": "rammsteindicketitten",
+    "local": false
+  },
+  {
     "id": "rammstein-du-hast",
     "title": "Du Hast",
     "artist": "Rammstein",
@@ -156244,6 +156887,34 @@
     "shortId": 3764,
     "tracksCount": 1,
     "search": "sabrinacarpenterbecauseilikedaboy",
+    "local": false
+  },
+  {
+    "id": "sabrina-carpenter-bed-chem",
+    "title": "Bed Chem",
+    "artist": "Sabrina Carpenter",
+    "video": "x8VkB8ap_FQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 380,
+    "gap": 9743.157894736842,
+    "year": "2025",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-30T03:49:00.404Z",
+    "genre": "Pop",
+    "realBpm": 95,
+    "volume": 1,
+    "author": "DoubleDee",
+    "duration": 172,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6829,
+    "tracksCount": 1,
+    "search": "sabrinacarpenterbedchem",
     "local": false
   },
   {
@@ -167250,6 +167921,35 @@
     "local": false
   },
   {
+    "id": "spongebob-schwammkopf-das-lagerfeuerlied-lied",
+    "title": "Das Lagerfeuerlied Lied",
+    "artist": "SpongeBob Schwammkopf",
+    "video": "qMb6TOdUuJk",
+    "language": [
+      "German"
+    ],
+    "bpm": 200.45,
+    "gap": 3417.1888251434275,
+    "year": "2003",
+    "lastUpdate": "2026-10-30T03:48:58.839Z",
+    "genre": "Comedy",
+    "realBpm": 200,
+    "previewStart": 23,
+    "previewEnd": 40,
+    "volume": 1,
+    "author": "Mircosoft93",
+    "duration": 61,
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 6825,
+    "tracksCount": 1,
+    "search": "spongebobschwammkopfdaslagerfeuerliedlied",
+    "local": false
+  },
+  {
     "id": "sportfreunde-stiller-applaus-applaus",
     "title": "Applaus, Applaus",
     "artist": "Sportfreunde Stiller",
@@ -173600,6 +174300,34 @@
     "local": false
   },
   {
+    "id": "tatu-all-about-us",
+    "title": "All About Us",
+    "artist": "t.A.T.u.",
+    "video": "6yP4Nm86yk0",
+    "language": [
+      "English"
+    ],
+    "bpm": 324,
+    "gap": 10891.481481481482,
+    "year": "2005",
+    "artistOrigin": "RU",
+    "lastUpdate": "2026-10-30T03:48:59.074Z",
+    "realBpm": 127,
+    "volume": 1,
+    "author": "IC",
+    "sourceUrl": "https://www.youtube.com/watch?v=6yP4Nm86yk0",
+    "duration": 209,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6826,
+    "tracksCount": 1,
+    "search": "tatuallaboutus",
+    "local": false
+  },
+  {
     "id": "tatu-all-the-things-she-said",
     "title": "All The Things She Said",
     "artist": "t.A.T.u.",
@@ -173659,6 +174387,34 @@
     "shortId": 6540,
     "tracksCount": 1,
     "search": "tatunasnedogonjat",
+    "local": false
+  },
+  {
+    "id": "tatu-not-gonna-get-us",
+    "title": "Not Gonna Get Us",
+    "artist": "t.A.T.u.",
+    "video": "0HL-N9oOjcs",
+    "language": [
+      "English"
+    ],
+    "bpm": 260,
+    "gap": 20959.23076923077,
+    "year": "2002",
+    "artistOrigin": "RU",
+    "lastUpdate": "2026-10-30T03:49:00.974Z",
+    "realBpm": 130,
+    "volume": 1,
+    "author": "kaim21",
+    "sourceUrl": "https://www.youtube.com/watch?v=0HL-N9oOjcs",
+    "duration": 240,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6838,
+    "tracksCount": 1,
+    "search": "tatunotgonnagetus",
     "local": false
   },
   {
@@ -174012,6 +174768,34 @@
     "shortId": 6693,
     "tracksCount": 1,
     "search": "taylorswiftchampagneproblems",
+    "local": false
+  },
+  {
+    "id": "taylor-swift-cornelia-street",
+    "title": "Cornelia Street",
+    "artist": "Taylor Swift",
+    "video": "VikHHWrgb4Y",
+    "language": [
+      "English"
+    ],
+    "bpm": 383.52,
+    "gap": 7903.103879849812,
+    "year": "2019",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-30T03:48:51.926Z",
+    "realBpm": 102,
+    "volume": 1,
+    "author": "Teostra",
+    "sourceUrl": "https://www.youtube.com/watch?v=VikHHWrgb4Y",
+    "duration": 289,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6816,
+    "tracksCount": 1,
+    "search": "taylorswiftcorneliastreet",
     "local": false
   },
   {
@@ -179691,6 +180475,34 @@
     "shortId": 5202,
     "tracksCount": 1,
     "search": "thefrayyoufoundme",
+    "local": false
+  },
+  {
+    "id": "the-gathering-when-the-sun-hits-slowdive-cover-version",
+    "title": "When The Sun Hits (Slowdive Cover Version)",
+    "artist": "The Gathering",
+    "video": "8w2jAM9c4o8",
+    "language": [
+      "English"
+    ],
+    "bpm": 204,
+    "gap": 29370.58823529412,
+    "year": "1997",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-30T03:49:00.821Z",
+    "genre": "Shoegaze",
+    "realBpm": 100,
+    "volume": 1,
+    "author": "lava",
+    "duration": 287,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6836,
+    "tracksCount": 1,
+    "search": "thegatheringwhenthesunhitsslowdivecoverversion",
     "local": false
   },
   {
@@ -194683,6 +195495,35 @@
     "shortId": 4679,
     "tracksCount": 1,
     "search": "weezerbuddyholly",
+    "local": false
+  },
+  {
+    "id": "weezer-falling-for-you",
+    "title": "Falling For You",
+    "artist": "Weezer",
+    "video": "hdrAsZ7ebuc",
+    "language": [
+      "English"
+    ],
+    "bpm": 221.81,
+    "gap": 14225.618321987287,
+    "year": "1996",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-30T03:49:02.540Z",
+    "genre": "Alternative",
+    "realBpm": 110,
+    "volume": 1,
+    "author": "rote_rose",
+    "sourceUrl": "https://www.youtube.com/watch?v=hdrAsZ7ebuc",
+    "duration": 228,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6842,
+    "tracksCount": 1,
+    "search": "weezerfallingforyou",
     "local": false
   },
   {
