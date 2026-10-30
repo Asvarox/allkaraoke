@@ -1,0 +1,327 @@
+#ARTIST:Rammstein
+#TITLE:Dicke Titten
+#CREATOR:SchnickFitzel
+#BPM:234
+#YEAR:2022
+#VIDEO:v=thJgU9jkdU4
+#GENRE:Neue Deutsche Härte
+#LANGUAGE:German
+#GAP:48234,35897435898
+#ALLKARAOKE_ID:rammstein-dicke-titten
+#ALLKARAOKE_SID:6835
+#ALLKARAOKE_LASTUPDATE:2026-10-30T03:49:00.820Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:117
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:347
+#MP3:Rammstein - Dicke Titten.mp3
+: 16 3 -1 Ich 
+: 20 3 -1 leb’ 
+: 24 3 -1 al
+: 28 3 -1 lei
+: 32 4 -1 ne 
+: 40 3 -1 schon 
+: 44 3 -1 vie
+: 48 7 -1 le 
+: 56 7 -1 Ja
+: 64 8 -1 hre
+- 72
+: 80 3 -1 Das 
+: 84 3 -1 Leb
+: 88 3 -1 en 
+: 92 6 -1 stumpf, 
+: 104 3 -1 der 
+: 108 3 -1 All
+: 112 4 -1 tag 
+: 120 12 -1 grau
+- 132
+: 144 3 -1 Ver
+: 148 3 -1 lier’ 
+: 152 3 -1 Ge
+: 156 6 -1 duld, 
+: 168 3 -1 Ver
+: 172 3 -1 stand 
+: 176 4 -1 und 
+: 184 7 -1 Haa
+: 192 8 -1 re
+- 200
+: 208 3 -1 Ich 
+: 212 3 -1 hät
+: 216 3 -1 te 
+: 220 3 -1 ger
+: 224 6 -1 ne 
+: 240 3 -1 ei
+: 244 3 -1 ne 
+: 248 16 -1 Frau
+- 264
+: 268 7 1 Und 
+: 276 7 1 die 
+: 284 7 1 Hoff
+: 292 7 1 nung 
+: 300 7 1 will 
+: 308 3 1 mir 
+: 312 7 3 schwin
+: 320 8 1 den
+- 328
+: 332 7 -1 Ei
+: 340 7 -1 ne 
+: 348 7 -1 Part
+: 356 7 -1 ner
+: 364 7 -1 in 
+: 372 3 -1 zu 
+: 376 7 1 fin
+: 384 8 -1 den
+- 392
+: 396 7 1 Die 
+: 404 7 1 mir 
+: 412 7 1 e
+: 420 7 1 ben
+: 428 3 1 bür
+: 432 7 3 tig 
+: 440 12 1 ist
+- 452
+: 460 7 2 Nein, 
+: 468 7 2 da 
+: 476 7 2 ist 
+: 484 7 4 kein 
+: 492 3 4 Glück 
+: 496 7 2 in 
+: 504 16 2 Sicht
+- 520
+: 532 7 11 Sie 
+: 540 3 11 muss 
+: 544 8 11 nicht 
+* 556 7 11 schö
+* 564 7 8 n 
+* 572 16 8 sein
+- 588
+: 596 7 8 Sie 
+: 604 3 8 muss 
+: 608 8 8 nicht 
+: 620 12 6 klug 
+: 636 7 6 sein, 
+: 644 12 18 NEIN!
+- 656
+: 660 7 11 Sie 
+: 668 3 11 muss 
+: 672 8 11 nicht 
+F 681 2 11 rrr
+: 684 7 11 rei
+: 692 4 8 ch 
+: 700 12 8 sein
+- 712
+: 716 7 8 Kein 
+: 724 3 8 Mo
+: 728 7 8 dell 
+: 736 8 8 mit 
+: 748 5 6 lang
+: 754 5 8 en 
+: 760 7 8 Schrit
+: 768 16 6 ten
+- 784
+: 796 12 -2 Doch 
+: 812 3 -2 dic
+: 816 4 -2 ken 
+: 828 8 -1 Titt’n
+- 836 944
+- 944
+: 960 3 -1 Wie 
+: 964 3 -1 ei
+: 968 3 -1 ne 
+: 972 3 -1 ste
+: 976 4 -1 tig 
+: 988 3 -1 of
+: 992 3 -1 fe
+: 996 3 -1 ne 
+: 1000 7 -1 Wun
+: 1008 8 -1 de
+- 1016
+: 1028 3 -1 Aus 
+: 1032 3 -1 der 
+: 1036 3 -1 See
+: 1040 7 -1 le 
+: 1048 11 -1 tropft 
+: 1060 3 -1 das 
+: 1064 10 -1 Blut
+- 1074 1076
+- 1076
+: 1092 3 -1 Ein
+: 1096 3 -1 zig 
+: 1100 7 -1 Trost 
+: 1108 6 -1 sind 
+: 1115 4 -1 klei
+: 1120 7 -1 ne 
+: 1128 7 1 Hun
+: 1136 8 -1 de
+- 1144
+: 1152 3 -1 Ein 
+: 1156 3 -1 fei
+: 1160 3 -1 nes 
+: 1164 3 -1 Fräu
+: 1168 8 -1 lein 
+: 1184 3 -1 wä
+: 1188 3 -1 re 
+: 1192 12 -1 gut
+- 1204
+: 1208 3 1 Ein 
+: 1212 7 1 fei
+: 1220 7 1 nes 
+: 1228 3 1 Fräu
+: 1232 8 1 lein 
+: 1244 7 1 wä
+: 1252 3 3 re 
+: 1256 8 1 toll
+- 1264
+: 1272 3 -1 Ich 
+: 1276 7 -1 bin 
+: 1284 7 -1 auch 
+: 1292 7 -1 gar 
+: 1300 7 -1 nicht 
+: 1308 3 -1 an
+: 1312 7 1 spruchs
+: 1320 12 -1 voll
+- 1332
+: 1336 3 1 Ich 
+: 1340 7 1 bin 
+: 1348 7 1 auch 
+: 1356 7 1 gar 
+: 1364 7 1 nicht 
+: 1372 7 1 wähl
+: 1380 3 3 er
+: 1384 12 1 isch
+- 1396
+: 1412 7 2 Am 
+: 1420 7 2 En
+: 1428 7 2 de 
+: 1436 7 4 der 
+* 1444 3 2 Ge
+* 1448 16 2 schicht
+- 1464
+: 1476 7 11 Muss 
+: 1484 3 11 sie 
+: 1488 8 11 nicht 
+* 1500 11 11 schö
+* 1512 3 8 n 
+* 1516 16 8 sein
+- 1532
+: 1540 7 8 Sie 
+: 1548 3 8 muss 
+: 1552 8 8 nicht 
+: 1564 7 8 klu
+: 1572 7 6 g 
+: 1580 7 6 sein, 
+: 1588 12 18 NEIN!
+- 1600
+: 1604 7 11 Sie 
+: 1612 3 11 muss 
+: 1616 8 11 nicht 
+: 1628 5 11 rei
+: 1634 6 8 ch 
+: 1644 12 8 sein
+- 1656
+: 1660 7 8 Doch 
+: 1668 3 8 um 
+: 1672 7 8 ei
+: 1680 11 8 nes 
+: 1692 7 6 möcht 
+: 1700 3 8 ich 
+: 1704 7 8 bit
+: 1712 8 6 ten
+- 1720 1724
+- 1724
+: 1740 4 -2 Dic
+: 1745 7 -2 ke 
+: 1756 8 -1 Titt’n
+- 1764 1992
+- 1992
+: 2008 3 1 Ich 
+: 2012 7 1 bin 
+: 2020 7 1 auch 
+: 2028 7 1 gar 
+: 2036 7 1 nicht 
+: 2044 3 3 an
+: 2048 7 1 spruchs
+: 2056 10 1 voll
+- 2066
+: 2072 3 1 Doch 
+: 2076 7 2 gro
+: 2084 7 2 ße 
+: 2092 7 4 Brüs
+: 2100 7 2 te 
+: 2108 7 2 wär
+: 2116 3 2 en 
+: 2120 12 2 toll
+- 2132
+: 2148 7 11 Sie 
+: 2156 3 11 muss 
+: 2160 8 11 nicht 
+* 2172 7 11 schö
+* 2180 7 8 n 
+* 2188 16 8 sein
+- 2204
+: 2212 7 8 Sie 
+: 2220 3 8 muss 
+: 2224 8 8 nicht 
+* 2236 7 8 klu
+* 2244 7 6 g 
+* 2252 16 6 sein
+- 2268
+: 2276 7 11 Sie 
+: 2284 3 11 muss 
+: 2288 7 11 nur 
+F 2296 3 11 rrr
+* 2300 7 11 rei
+* 2308 7 8 ch 
+* 2316 7 8 sein
+- 2323
+: 2324 7 8 An 
+: 2332 7 8 Fett
+: 2340 4 8 ge
+: 2345 7 8 we
+: 2353 10 8 be, 
+: 2364 6 6 bit
+: 2371 4 8 te, 
+: 2376 7 8 bit
+: 2384 10 6 te
+- 2394
+: 2396 7 11 Sie 
+: 2404 7 11 wird 
+: 2412 7 11 nichts 
+: 2420 7 11 bei 
+: 2428 7 11 mir 
+: 2436 3 8 ver
+: 2440 7 8 mis
+: 2448 7 8 sen
+- 2455
+: 2456 3 8 Sie 
+: 2460 7 8 braucht 
+: 2468 7 8 mich 
+: 2476 12 8 auch 
+: 2492 7 6 gar 
+: 2500 3 8 nicht 
+: 2504 7 8 küs
+: 2512 8 6 sen
+- 2520
+: 2524 7 11 Braucht 
+: 2532 7 11 mich 
+: 2540 7 11 nicht 
+: 2548 7 11 mit 
+* 2556 7 11 Trau
+* 2564 3 8 ben 
+* 2568 7 8 la
+* 2576 7 8 ben
+- 2583
+: 2584 3 8 Sie 
+: 2588 7 8 muss 
+: 2596 7 8 nur 
+* 2604 7 8 Rie
+* 2612 7 8 sen
+* 2620 3 6 tit
+* 2624 7 6 ten 
+: 2632 7 8 ha
+: 2640 19 6 ben
+- 2659
+: 2668 4 -2 Dic
+: 2673 7 -2 ke 
+: 2684 8 -1 Titt’n
+E

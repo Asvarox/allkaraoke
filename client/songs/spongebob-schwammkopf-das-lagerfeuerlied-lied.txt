@@ -1,0 +1,210 @@
+#ARTIST:SpongeBob Schwammkopf
+#TITLE:Das Lagerfeuerlied Lied
+#CREATOR:Mircosoft93
+#BPM:200,45
+#YEAR:2003
+#PREVIEWSTART:23
+#VIDEO:v=qMb6TOdUuJk
+#GENRE:Comedy
+#LANGUAGE:German
+#GAP:3417,1888251434275
+#ALLKARAOKE_ID:spongebob-schwammkopf-das-lagerfeuerlied-lied
+#ALLKARAOKE_SID:6825
+#ALLKARAOKE_LASTUPDATE:2026-10-30T03:48:58.839Z
+#ALLKARAOKE_REALBPM:200
+#ALLKARAOKE_PREVIEWEND:40
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:61
+#MP3:SpongeBob Schwammkopf - Das Lagerfeuerlied Lied.mp3
+R 13 2 24 Das 
+R 16 2 24 hier 
+R 19 2 24 heißt 
+R 23 2 24 das 
+R 28 1 24 La
+R 30 1 24 ger
+R 32 1 24 feu
+R 34 1 24 er
+R 36 2 24 lied 
+R 39 3 24 Lied
+- 42
+: 48 3 17 Setzt 
+: 52 2 26 euch 
+: 56 2 26 ans 
+: 60 2 26 La
+: 64 2 26 ger
+* 68 2 26 feu
+: 72 5 24 er
+- 77
+: 79 1 22 Singt 
+: 81 1 22 das 
+: 84 2 24 La
+: 88 2 22 ger
+: 92 2 22 feu
+: 96 2 19 er
+* 100 6 22 lied
+- 106
+: 111 1 17 Das 
+: 114 2 29 L- 
+: 117 1 29 A- 
+: 121 1 29 G- 
+: 125 1 29 E- 
+: 129 2 29 R- 
+: 133 2 29 F- 
+: 137 1 29 E- 
+: 141 1 27 U- 
+: 143 1 26 E- 
+: 145 1 27 R- 
+: 149 1 27 L- 
+: 152 1 27 I- 
+: 154 1 27 E- 
+: 157 2 29 D 
+: 161 6 26 Lied
+- 167
+: 173 1 17 Und 
+: 175 1 17 das 
+* 177 2 26 Lied 
+: 181 2 26 geht 
+: 185 2 26 noch 
+: 189 1 26 viel 
+: 192 2 26 schnel
+: 195 2 24 ler
+- 197
+: 201 3 22 Denn 
+: 205 3 22 erst 
+: 209 3 24 dann 
+: 213 3 22 wird 
+: 217 2 22 es 
+: 220 3 19 zum 
+* 225 5 22 Hit
+- 230
+: 233 2 17 Da
+: 236 2 17 rum 
+: 240 2 26 singt 
+: 245 4 24 es 
+: 252 2 22 doch 
+* 256 2 26 ganz 
+: 260 4 24 ein
+: 266 2 22 fach 
+: 271 7 24 mit
+- 278
+: 284 3 5 Bam 
+: 291 5 7 Bam 
+: 302 7 9 Bam
+- 309 312
+- 312
+: 325 1 26 L- 
+: 327 1 26 A- 
+: 329 1 26 G- 
+: 331 1 26 E- 
+: 333 1 26 R- 
+: 335 1 26 F- 
+: 337 1 26 E- 
+: 339 1 24 U- 
+: 341 1 22 E- 
+: 343 1 24 R- 
+: 345 1 22 L- 
+: 347 1 22 I- 
+: 349 1 19 E- 
+: 351 1 22 D
+- 352
+: 358 1 29 L- 
+: 360 1 29 A- 
+: 362 1 29 G- 
+: 364 1 29 E- 
+: 366 1 29 R- 
+: 368 1 29 F- 
+: 370 1 29 E- 
+: 372 1 27 U- 
+: 374 1 26 E- 
+: 376 1 27 R- 
+: 378 1 27 L- 
+: 380 1 27 I- 
+: 382 1 29 E- 
+: 384 1 26 D
+- 385
+: 391 1 17 Und 
+: 393 1 17 das 
+* 395 1 26 Lied 
+: 397 1 26 geht 
+: 399 1 26 noch 
+: 401 1 26 viel 
+: 403 1 26 schnel
+: 405 1 24 ler 
+: 407 1 24 denn 
+: 409 1 22 erst 
+: 411 1 24 dann 
+: 413 1 22 wird 
+: 415 1 22 es 
+: 417 1 19 zum 
+* 419 2 22 Hit.
+- 421
+: 423 1 17 Da
+: 425 1 17 rum 
+: 427 1 26 singt 
+: 430 2 24 es 
+: 434 1 22 doch 
+* 436 1 26 ganz 
+: 439 2 24 ein
+: 442 1 22 fach 
+: 445 1 26 mi
+: 447 1 24 ~t
+- 448
+: 460 1 26 L- 
+: 462 1 26 A- 
+: 464 1 26 G- 
+: 466 1 26 E- 
+: 468 1 26 R- 
+: 470 1 26 F- 
+: 472 1 26 E- 
+: 474 1 24 U- 
+: 476 1 22 E- 
+: 478 1 24 R- 
+: 480 1 22 L- 
+: 482 1 22 I- 
+: 484 1 19 E- 
+: 486 1 22 D
+- 487
+R 490 2 24 Pa
+R 493 2 24 trick!
+- 495
+F 501 3 20 Lied! 
+F 505 1 22 L- 
+F 507 1 22 A- 
+F 509 1 24 G- 
+F 511 1 24 E- 
+F 513 1 22 R- 
+F 515 1 22 F-... 
+F 517 2 26 Lied!
+- 519
+R 522 1 24 Thad
+R 524 1 26 dä
+R 526 5 22 us!
+- 531
+F 534 7 24 ...
+- 541
+R 544 2 26 Nicht 
+R 548 4 22 schlecht.
+- 552
+: 555 3 28 Und 
+: 560 1 29 da
+: 562 18 31 rum!
+- 580
+: 583 2 31 Und 
+: 586 1 31 da
+: 588 2 33 ru
+: 591 2 31 ~
+: 594 9 29 ~m!
+- 603
+: 606 2 29 Singt 
+: 610 2 29 es 
+: 613 1 33 doch 
+* 616 2 29 ein
+* 619 2 29 fach 
+: 623 1 34 mi
+: 625 1 36 ~
+: 627 27 34 ~t!
+- 654 685
+- 685
+: 698 4 36 Oh 
+: 706 12 37 Yeah!
+E
