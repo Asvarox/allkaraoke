@@ -1,0 +1,318 @@
+#ARTIST:Queen
+#TITLE:You’re My Best Friend
+#CREATOR:sgandtg
+#BPM:240
+#YEAR:1975
+#VIDEO:v=HaZpZQG2z10
+#GENRE:Rock, Pop, Twee Pop
+#LANGUAGE:English
+#GAP:16150
+#ALLKARAOKE_ID:queen-youre-my-best-friend
+#ALLKARAOKE_SID:6851
+#ALLKARAOKE_LASTUPDATE:2026-10-31T03:33:23.882Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:118
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=6053
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:188
+#MP3:Queen - You’re My Best Friend.mp3
+#START:9.0
+#END:182000
+: 16 10 2 Ooh 
+: 29 2 0 you 
+: 32 4 2 make 
+: 40 4 2 me 
+: 45 10 4 live
+- 55 62
+- 62
+: 78 2 0 What
+: 81 4 5 e
+: 86 2 5 ver 
+: 89 5 5 this 
+: 97 6 5 world 
+: 106 4 5 can 
+: 114 5 4 give 
+: 122 4 0 to 
+: 127 5 -5 me
+- 132
+: 138 5 -5 It’s 
+: 146 9 2 you, 
+: 159 2 0 you’re 
+: 162 4 2 all 
+: 167 3 0 I
+: 171 3 -3 ~ 
+: 176 15 4 see
+- 191 195
+- 195
+: 211 10 2 Ooh 
+: 225 2 0 you 
+: 228 3 2 make 
+: 235 4 2 me 
+: 240 4 4 live 
+: 248 9 7 now 
+: 260 4 9 ho
+* 265 3 12 ney
+- 268
+: 276 11 2 Ooh 
+: 289 2 0 you 
+: 292 3 2 make 
+: 300 3 -3 me 
+: 305 10 0 live
+- 315 330
+- 330
+: 346 13 0 Oh, 
+: 362 1 0 you’re 
+: 365 3 0 the 
+: 370 4 2 best 
+: 378 9 -3 friend
+- 387
+: 398 3 -3 That 
+: 403 8 0 I 
+: 412 1 0 e
+: 414 4 0 ver 
+: 419 8 2 had
+- 427
+: 435 2 2 I’ve 
+: 438 5 4 been 
+: 446 5 4 with 
+: 454 4 2 you 
+: 460 3 4 such 
+: 464 3 7 a 
+* 470 6 9 long 
+: 478 8 4 time
+- 486
+: 491 2 0 You’re 
+: 494 3 0 my 
+: 499 5 2 sun
+: 506 9 -3 shine
+- 515
+: 523 2 -5 And 
+: 526 3 -3 I 
+: 531 6 0 want 
+: 539 2 -3 you 
+: 542 4 0 to 
+: 547 5 2 know
+- 552
+: 555 2 0 That 
+: 558 3 2 my 
+: 563 5 4 fee
+: 570 5 4 lings 
+: 577 4 4 are 
+: 582 2 2 true
+: 585 5 0 ~
+- 590
+: 595 2 4 I 
+: 598 4 2 real
+: 603 2 4 ly 
+: 606 4 4 lo
+: 611 7 2 ~ve 
+: 619 16 0 you
+- 635 638
+- 638
+: 654 11 0 Oh 
+: 667 2 0 you’re 
+: 671 3 0 my 
+* 676 5 4 best 
+: 683 8 0 frie
+: 692 1 -3 ~
+: 694 5 -5 ~nd
+- 699 728
+- 728
+: 744 10 2 Ooh 
+: 756 2 0 you 
+: 760 3 2 make 
+: 768 3 2 me 
+: 773 12 4 live
+- 785
+: 793 5 4 I’ve 
+: 801 6 4 been 
+* 809 17 12 wan
+: 827 2 9 de
+: 830 4 7 ring 
+: 835 2 4 round
+- 837
+: 838 1 0 But 
+: 840 1 0 I 
+: 842 7 2 still 
+: 850 3 0 come 
+: 858 4 0 back 
+: 866 4 3 to 
+: 871 6 2 you
+: 878 9 0 ~
+- 887
+: 900 2 -1 I
+: 903 2 0 ~n 
+: 906 3 2 rain 
+: 911 6 2 or 
+: 918 3 4 shi
+: 922 3 3 ~
+: 926 3 4 ~ne
+- 929
+: 930 4 4 You’ve 
+: 937 4 2 stood 
+: 943 3 0 by 
+: 947 3 -3 me 
+: 951 2 2 gi
+: 954 3 1 ~
+: 958 5 2 ~rl
+- 963
+: 967 3 -3 I’m 
+* 971 20 4 hap
+: 992 2 5 py 
+: 995 3 4 at 
+: 999 15 2 home
+- 1014
+: 1023 2 -5 You’re 
+: 1026 4 -3 my 
+: 1032 5 4 best 
+: 1039 7 0 frie
+: 1047 2 -3 ~
+: 1050 3 -5 ~nd
+- 1053 1084
+- 1084
+: 1100 11 2 Ooh 
+: 1113 2 0 you 
+: 1116 3 2 make 
+: 1124 4 2 me 
+: 1129 10 4 live
+- 1139 1145
+- 1145
+: 1161 2 0 When
+: 1164 4 5 e
+: 1169 2 5 ver 
+: 1172 5 5 this 
+: 1180 5 5 world 
+: 1188 5 5 is 
+: 1197 7 4 cruel 
+: 1205 3 0 to 
+: 1210 4 -5 me
+- 1214
+: 1218 1 -5 I 
+: 1221 3 -5 got 
+: 1226 11 2 you
+- 1237
+: 1242 2 0 To 
+: 1246 3 2 help 
+: 1251 2 0 me 
+: 1254 3 -3 for
+: 1259 11 4 give
+- 1270 1278
+- 1278
+: 1294 10 2 Ooh 
+: 1307 2 0 you 
+: 1310 3 2 make 
+: 1318 4 2 me 
+: 1323 5 4 live 
+: 1331 10 7 now 
+: 1342 4 9 ho
+: 1347 4 12 ney
+- 1351
+: 1359 12 2 Ooh 
+: 1372 2 0 you 
+: 1375 3 2 make 
+: 1383 3 -3 me 
+: 1388 14 0 live
+- 1402 1412
+- 1412
+: 1428 12 0 Oh, 
+: 1443 2 0 you’re 
+: 1446 3 0 the 
+: 1450 5 2 first 
+: 1458 9 -3 one
+- 1467
+: 1477 3 -3 When 
+: 1482 6 0 things 
+: 1490 1 0 turn 
+: 1492 3 0 out 
+: 1497 8 2 bad
+- 1505
+: 1513 2 -5 You 
+: 1516 5 4 know 
+: 1524 6 4 I’ll 
+: 1532 4 2 ne
+: 1537 3 4 ver 
+: 1541 3 7 be 
+* 1546 5 9 lone
+: 1552 8 4 ly
+- 1560
+: 1568 1 0 You’re 
+: 1571 3 0 my 
+: 1575 9 2 on
+: 1585 5 -3 ly 
+: 1591 5 0 one
+- 1596
+: 1600 2 -3 And 
+: 1603 2 0 I 
+: 1608 1 3 lo
+: 1610 6 2 ~ve 
+: 1620 3 0 the 
+: 1624 7 2 things
+- 1631
+: 1636 4 0 I 
+: 1641 3 2 real
+: 1645 2 0 ly 
+* 1650 14 12 love
+- 1664
+: 1667 4 9 The 
+: 1672 1 4 thi
+: 1674 5 2 ~ngs 
+: 1681 4 0 that 
+: 1687 1 3 you
+: 1689 7 2 ~ 
+: 1697 13 0 do
+- 1710 1711
+- 1711
+: 1727 11 0 Oh 
+: 1740 2 0 you’re 
+: 1743 3 0 my 
+: 1749 6 4 best 
+: 1757 6 0 frie
+: 1764 1 -3 ~
+: 1766 4 -5 ~nd
+- 1770 1799
+- 1799
+* 1815 11 2 Ooh 
+: 1828 2 0 you 
+: 1831 3 2 make 
+: 1839 3 2 me 
+: 1844 13 4 live
+- 1857
+: 1860 5 0 Live, 
+: 1875 3 4 li
+: 1879 4 2 ~ve, 
+: 1892 4 4 li
+: 1897 3 2 ~ve
+- 1900 2014
+- 2014
+: 2030 7 -3 I’m 
+: 2038 6 -5 hap
+* 2046 36 7 py
+- 2082
+: 2091 2 -5 You’re 
+: 2094 4 -3 my 
+: 2099 5 4 best 
+: 2106 15 0 friend
+- 2121 2164
+- 2164
+: 2180 9 2 Oh
+- 2189 2223
+- 2223
+* 2239 10 2 Oh 
+: 2251 2 -5 you’re 
+: 2254 3 -3 my 
+: 2259 4 4 best 
+: 2268 10 0 friend
+- 2278
+: 2293 10 2 Ooh 
+: 2306 2 0 you 
+: 2309 3 2 make 
+: 2316 3 2 me 
+: 2321 11 4 live
+- 2332 2341
+- 2341
+: 2357 9 2 Ooh 
+: 2369 2 0 you’re 
+: 2372 3 2 my 
+: 2377 2 -3 best 
+: 2384 13 0 friend
+E

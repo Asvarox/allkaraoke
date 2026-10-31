@@ -1,0 +1,171 @@
+#ARTIST:SpongeBob Schwammkopf
+#TITLE:Titelsong
+#CREATOR:MasterChristian
+#BPM:253,02
+#YEAR:1999
+#PREVIEWSTART:11
+#VIDEO:v=eb2yknmGPNs
+#LANGUAGE:German
+#GAP:1162,1745316575766
+#ALLKARAOKE_ID:spongebob-schwammkopf-titelsong
+#ALLKARAOKE_SID:6847
+#ALLKARAOKE_LASTUPDATE:2026-10-31T03:33:23.156Z
+#ALLKARAOKE_REALBPM:126
+#ALLKARAOKE_PREVIEWEND:26
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:44
+#MP3:SpongeBob Schwammkopf - Titelsong [DUET].mp3
+F 17 2 0 Al
+F 20 3 0 les 
+F 24 4 0 klar 
+F 29 2 0 Kin
+F 32 3 0 der?
+- 35
+F 38 5 0 Aye 
+F 44 6 0 Aye 
+F 51 6 0 Cap
+F 58 7 0 tain!
+- 65
+F 69 3 0 Geht 
+F 73 3 0 das 
+F 77 2 0 nicht 
+F 80 5 0 lau
+F 86 5 0 ter?
+- 91
+F 92 5 0 Aye 
+F 98 6 0 Aye 
+F 105 6 0 Cap
+F 112 10 0 tain!
+- 122
+* 125 45 7 Oh!
+- 170
+: 173 2 7 Wer 
+: 176 2 7 wohnt 
+: 179 1 7 in 
+: 181 2 9 ’ner 
+: 184 1 7 An
+: 186 1 4 an
+: 188 3 0 as 
+: 192 3 4 ganz 
+: 196 1 7 tief 
+: 198 2 9 im 
+: 201 8 7 Meer?
+- 209 220
+- 220
+: 237 4 7 Saug
+: 242 2 12 stark 
+: 245 1 12 und 
+: 247 3 12 gelb 
+: 251 1 12 und 
+: 253 2 12 po
+: 256 3 12 rös, 
+: 260 1 12 und 
+: 262 2 12 zwar 
+: 265 8 0 sehr!
+- 273 283
+- 283
+: 300 1 7 Wenn 
+: 302 1 7 der 
+: 304 2 9 Sinn 
+: 307 2 7 nach 
+: 310 1 4 pa
+: 312 2 0 zi
+: 315 2 4 fi
+: 318 2 4 schen 
+: 321 2 7 Blöd
+: 324 1 9 sinn 
+: 326 3 7 euch 
+: 330 6 4 steht!
+- 336 348
+- 348
+: 365 3 10 Dann 
+: 369 3 12 schwingt 
+: 373 1 12 euch 
+: 375 2 12 an 
+: 378 2 12 Deck 
+: 381 1 12 und 
+: 383 2 12 kommt 
+: 386 2 15 ja 
+: 389 3 13 nicht 
+: 393 2 12 zu 
+: 396 7 12 spät!
+- 403
+: 418 2 4 Und 
+: 421 2 10 al
+: 424 5 10 le:
+- 429
+: 433 7 12 Sponge
+: 441 7 9 bob 
+: 449 7 7 Schwamm
+: 457 7 4 kopf!
+- 464
+: 465 8 12 Sponge
+: 474 7 9 bob 
+: 482 7 7 Schwamm
+: 490 7 4 kopf!
+- 497
+: 498 8 12 Sponge
+: 507 7 9 bob 
+: 515 7 7 Schwamm
+: 523 5 4 kopf!
+- 528
+* 531 8 7 Sponge
+* 540 10 9 bob 
+* 555 8 11 Schwamm
+* 564 22 12 kopf!
+- 586
+F 595 10 0 Ah 
+F 609 2 0 ha 
+F 613 2 0 ha 
+F 618 2 0 ha 
+F 623 2 0 ha 
+F 628 2 0 ha
+- 630
+F 634 1 0 He 
+F 636 2 0 he 
+F 639 5 0 he 
+F 646 3 0 ha 
+F 650 3 0 ha 
+F 655 3 0 ha 
+F 660 2 0 he 
+F 663 2 0 he
+- 0 191
+- 191
+: 208 7 7 Sponge
+: 216 7 5 bob 
+: 224 6 7 Schwamm
+: 231 5 5 kopf!
+- 236 255
+- 255
+: 272 7 7 Sponge
+: 280 7 5 bob 
+: 288 6 7 Schwamm
+: 295 5 5 kopf!
+- 300 320
+- 320
+: 337 7 7 Sponge
+: 345 7 5 bob 
+: 353 6 7 Schwamm
+: 360 5 5 kopf!
+- 365 384
+- 384
+: 401 7 7 Sponge
+: 409 7 5 bob 
+: 417 7 7 Schwamm
+: 426 5 5 kopf!
+- 431
+* 433 7 12 Sponge
+* 441 7 9 bob 
+* 449 7 7 Schwamm
+* 457 7 4 kopf!
+- 464
+: 465 8 12 Sponge
+: 474 7 9 bob 
+: 482 7 7 Schwamm
+: 490 7 4 kopf!
+- 497
+: 498 8 12 Sponge
+: 507 7 9 bob 
+: 515 7 7 Schwamm
+: 523 5 4 kopf!
+E
