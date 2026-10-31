@@ -9,13 +9,13 @@
     "Kylie Minogue",
     "Ariana Grande",
     "Queen",
-    "Take That",
     "Nightwish",
+    "Take That",
     "The Beatles",
     "System of a Down",
+    "One Direction",
     "Girls Aloud",
     "Imagine Dragons",
-    "One Direction",
     "My Chemical Romance",
     "ABBA",
     "Nirvana",
@@ -55,7 +55,9 @@
     "INXS",
     "Slipknot",
     "Breaking Benjamin",
+    "Glee Cast",
     "Jonas Brothers",
+    "Mariah Carey",
     "Marilyn Manson",
     "Marina and the Diamonds",
     "Olivia Rodrigo",
@@ -63,10 +65,8 @@
     "A★Teens",
     "Bring Me The Horizon",
     "Coldplay",
-    "Glee Cast",
     "High School Musical",
     "Jennifer Lopez",
-    "Mariah Carey",
     "No Doubt",
     "Rise Against",
     "Three Days Grace",
@@ -190,9 +190,10 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 6842,
-  "generatedAt": "2026-10-30T03:49:49.981Z",
+  "songs": 6855,
+  "generatedAt": "2026-10-31T03:34:29.618Z",
   "additionsPerDay": {
+    "2026-10-31": 13,
     "2026-10-30": 30,
     "2026-10-29": 56,
     "2026-10-26": 13,
@@ -231,10 +232,100 @@
     "2026-09-08": 13,
     "2026-09-07": 3,
     "2026-09-06": 19,
-    "2026-09-05": 6,
-    "2026-08-31": 19
+    "2026-09-05": 6
   },
   "recentlyAdded": [
+    {
+      "id": "lindemann-platz-eins",
+      "artist": "Lindemann",
+      "title": "Platz eins",
+      "video": "0nS9W7MdbrA",
+      "addedAt": "2026-10-31T03:33:25.319Z"
+    },
+    {
+      "id": "brandy-and-ray-j-another-day-in-paradise",
+      "artist": "Brandy and Ray J",
+      "title": "Another Day In Paradise",
+      "video": "Nz22j_pZYUw",
+      "addedAt": "2026-10-31T03:33:23.894Z"
+    },
+    {
+      "id": "dave-dobbyn-dave-dobbyn-loyal",
+      "artist": "Dave Dobbyn",
+      "title": "Dave Dobbyn - Loyal",
+      "video": "N22Bcdc07p8",
+      "addedAt": "2026-10-31T03:33:23.892Z"
+    },
+    {
+      "id": "die-toten-hosen-liebesspieler",
+      "artist": "Die Toten Hosen",
+      "title": "Liebesspieler",
+      "video": "BAon9ShZUjg",
+      "addedAt": "2026-10-31T03:33:23.888Z"
+    },
+    {
+      "id": "one-direction-irresistible",
+      "artist": "One Direction",
+      "title": "Irresistible",
+      "video": "hBWOnb2SD-U",
+      "addedAt": "2026-10-31T03:33:23.886Z"
+    },
+    {
+      "id": "queen-youre-my-best-friend",
+      "artist": "Queen",
+      "title": "You’re My Best Friend",
+      "video": "HaZpZQG2z10",
+      "addedAt": "2026-10-31T03:33:23.882Z"
+    },
+    {
+      "id": "nightwish-fantasmic",
+      "artist": "Nightwish",
+      "title": "FantasMic",
+      "video": "QMWP7I81LMA",
+      "addedAt": "2026-10-31T03:33:23.880Z"
+    },
+    {
+      "id": "het-huis-anubis-het-geheim",
+      "artist": "Het Huis Anubis",
+      "title": "Het geheim",
+      "video": "YytCiUSRBCM",
+      "addedAt": "2026-10-31T03:33:23.694Z"
+    },
+    {
+      "id": "taylor-swift-the-other-side-of-the-door",
+      "artist": "Taylor Swift",
+      "title": "The Other Side Of The Door",
+      "video": "425n1NoRtgA",
+      "addedAt": "2026-10-31T03:33:23.691Z"
+    },
+    {
+      "id": "spongebob-schwammkopf-titelsong",
+      "artist": "SpongeBob Schwammkopf",
+      "title": "Titelsong",
+      "video": "eb2yknmGPNs",
+      "addedAt": "2026-10-31T03:33:23.156Z"
+    },
+    {
+      "id": "mariah-carey-vision-of-love",
+      "artist": "Mariah Carey",
+      "title": "Vision Of Love",
+      "video": "tov22NtCMC4",
+      "addedAt": "2026-10-31T03:33:23.152Z"
+    },
+    {
+      "id": "clowns-helden-ich-liebe-dich",
+      "artist": "Clowns & Helden",
+      "title": "Ich liebe dich",
+      "video": "McZEhRabe7Y",
+      "addedAt": "2026-10-31T03:33:23.149Z"
+    },
+    {
+      "id": "glee-cast-marry-you",
+      "artist": "Glee Cast",
+      "title": "Marry You",
+      "video": "xFV3YZufQ5M",
+      "addedAt": "2026-10-31T03:33:23.138Z"
+    },
     {
       "id": "disneys-high-school-musical-2-work-this-out",
       "artist": "Disney’s High School Musical 2",
@@ -479,97 +570,6 @@
       "title": "I Want My Tears Back",
       "video": "OziWNmWI-tw",
       "addedAt": "2026-10-29T03:46:42.022Z"
-    },
-    {
-      "id": "omoinotake-moratorium",
-      "artist": "Omoinotake",
-      "title": "Moratorium",
-      "video": "C50EsUARJfc",
-      "addedAt": "2026-10-29T03:46:42.021Z"
-    },
-    {
-      "id": "coldplay-x-selena-gomez-let-somebody-go",
-      "artist": "Coldplay x Selena Gomez",
-      "title": "Let Somebody Go",
-      "video": "CWCMGIG1Y54",
-      "addedAt": "2026-10-29T03:46:41.830Z"
-    },
-    {
-      "id": "dr-dre-feat-snoop-dogg-still-dre",
-      "artist": "Dr. Dre feat. Snoop Dogg",
-      "title": "Still D.R.E.",
-      "video": "_CL6n0FJZpk",
-      "addedAt": "2026-10-29T03:46:41.665Z"
-    },
-    {
-      "id": "rachel-platten-fight-song",
-      "artist": "Rachel Platten",
-      "title": "Fight Song",
-      "video": "xo1VInw-SKc",
-      "addedAt": "2026-10-29T03:46:41.485Z"
-    },
-    {
-      "id": "yuu-takahashi-hikari-no-hahen",
-      "artist": "Yuu Takahashi",
-      "title": "Hikari no Hahen",
-      "video": "7wKO5vWzxwA",
-      "addedAt": "2026-10-29T03:46:37.932Z"
-    },
-    {
-      "id": "rita-ora-i-will-never-let-you-down",
-      "artist": "Rita Ora",
-      "title": "I Will Never Let You Down",
-      "video": "50GQjUZ4P3M",
-      "addedAt": "2026-10-29T03:46:37.749Z"
-    },
-    {
-      "id": "mark-medlock-now-or-never",
-      "artist": "Mark Medlock",
-      "title": "Now Or Never",
-      "video": "wHN8AJZsSx0",
-      "addedAt": "2026-10-29T03:46:37.744Z"
-    },
-    {
-      "id": "sugar-ray-every-morning",
-      "artist": "Sugar Ray",
-      "title": "Every Morning",
-      "video": "3cqU1pFRqYE",
-      "addedAt": "2026-10-29T03:46:37.737Z"
-    },
-    {
-      "id": "spice-girls-2-become-1",
-      "artist": "Spice Girls",
-      "title": "2 Become 1",
-      "video": "FA5jsa1lR9c",
-      "addedAt": "2026-10-29T03:46:37.735Z"
-    },
-    {
-      "id": "christina-stuermer-scherbenmeer",
-      "artist": "Christina Stürmer",
-      "title": "Scherbenmeer",
-      "video": "CC47lsztrWk",
-      "addedAt": "2026-10-29T03:46:37.548Z"
-    },
-    {
-      "id": "epic-the-musical-jorge-rivera-herrans-armando-julian-mutiny",
-      "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Armando Julian)",
-      "title": "Mutiny",
-      "video": "M0yfRRRLSvc",
-      "addedAt": "2026-10-29T03:46:33.949Z"
-    },
-    {
-      "id": "starmania-daniel-balavoine-quand-on-arrive-en-ville",
-      "artist": "Starmania (Daniel Balavoine)",
-      "title": "Quand on arrive en ville",
-      "video": "iVRVy0Ae56s",
-      "addedAt": "2026-10-29T03:46:33.767Z"
-    },
-    {
-      "id": "ziferblat-bird-of-pray",
-      "artist": "Ziferblat",
-      "title": "Bird Of Pray",
-      "video": "OJ1x2aiL7ks",
-      "addedAt": "2026-10-29T03:46:33.766Z"
     }
   ]
 }

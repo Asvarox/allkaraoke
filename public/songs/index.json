@@ -27785,6 +27785,32 @@
     "local": false
   },
   {
+    "id": "brandy-and-ray-j-another-day-in-paradise",
+    "title": "Another Day In Paradise",
+    "artist": "Brandy and Ray J",
+    "video": "Nz22j_pZYUw",
+    "language": [
+      "English"
+    ],
+    "bpm": 203.75,
+    "gap": 27892.944785276075,
+    "year": "2001",
+    "lastUpdate": "2026-10-31T03:33:23.894Z",
+    "realBpm": 102,
+    "volume": 1,
+    "author": "claudio bertozzi",
+    "duration": 275,
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 6855,
+    "tracksCount": 1,
+    "search": "brandyandrayjanotherdayinparadise",
+    "local": false
+  },
+  {
     "id": "brandy-monica-the-boy-is-mine",
     "title": "The Boy Is Mine",
     "artist": "Brandy & Monica",
@@ -39389,6 +39415,36 @@
     "local": false
   },
   {
+    "id": "clowns-helden-ich-liebe-dich",
+    "title": "Ich liebe dich",
+    "artist": "Clowns & Helden",
+    "video": "McZEhRabe7Y",
+    "language": [
+      "German"
+    ],
+    "bpm": 291.82,
+    "gap": 25.79535329997944,
+    "year": "1986",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-10-31T03:33:23.149Z",
+    "genre": "NDW",
+    "realBpm": 148,
+    "volume": 1,
+    "author": "uweotto",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=1489",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=6624",
+    "duration": 260,
+    "tracks": [
+      {
+        "start": 3
+      }
+    ],
+    "shortId": 6845,
+    "tracksCount": 1,
+    "search": "clownsheldenichliebedich",
+    "local": false
+  },
+  {
     "id": "cmx-ruoste",
     "title": "Ruoste",
     "artist": "CMX",
@@ -44216,6 +44272,33 @@
     "local": false
   },
   {
+    "id": "dave-dobbyn-dave-dobbyn-loyal",
+    "title": "Dave Dobbyn - Loyal",
+    "artist": "Dave Dobbyn",
+    "video": "N22Bcdc07p8",
+    "language": [
+      "English"
+    ],
+    "bpm": 394.32,
+    "gap": 25261.95556908095,
+    "year": "1988",
+    "artistOrigin": "NZ",
+    "lastUpdate": "2026-10-31T03:33:23.892Z",
+    "genre": "Music",
+    "realBpm": 114,
+    "volume": 70,
+    "duration": 280,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6854,
+    "tracksCount": 1,
+    "search": "davedobbyndavedobbynloyal",
+    "local": false
+  },
+  {
     "id": "dave-dobbyn-dave-dobbyn-welcome-home-official-music-video",
     "title": "Dave Dobbyn - Welcome Home (Official Music Video)",
     "artist": "Dave Dobbyn",
@@ -48666,6 +48749,34 @@
     "shortId": 6191,
     "tracksCount": 1,
     "search": "dietotenhosenkeinalkoholistauchkeineloesung",
+    "local": false
+  },
+  {
+    "id": "die-toten-hosen-liebesspieler",
+    "title": "Liebesspieler",
+    "artist": "Die Toten Hosen",
+    "video": "BAon9ShZUjg",
+    "language": [
+      "German"
+    ],
+    "bpm": 230,
+    "gap": 1171.7391304347825,
+    "year": "1984",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-10-31T03:33:23.888Z",
+    "genre": "Punkrock",
+    "realBpm": 116,
+    "volume": 1,
+    "author": "flx4972, servok",
+    "duration": 170,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6853,
+    "tracksCount": 1,
+    "search": "dietotenhosenliebesspieler",
     "local": false
   },
   {
@@ -73347,6 +73458,34 @@
     "local": false
   },
   {
+    "id": "glee-cast-marry-you",
+    "title": "Marry You",
+    "artist": "Glee Cast",
+    "video": "xFV3YZufQ5M",
+    "language": [
+      "English"
+    ],
+    "bpm": 296.4,
+    "gap": 17277.854251012144,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-31T03:33:23.138Z",
+    "genre": "Soundtrack",
+    "realBpm": 145,
+    "volume": 1,
+    "author": "Victorin",
+    "duration": 152,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6844,
+    "tracksCount": 1,
+    "search": "gleecastmarryyou",
+    "local": false
+  },
+  {
     "id": "glee-cast-perfect",
     "title": "Perfect",
     "artist": "Glee Cast",
@@ -80235,6 +80374,35 @@
     "shortId": 1898,
     "tracksCount": 1,
     "search": "heroesdelsilenciomalditoduende",
+    "local": false
+  },
+  {
+    "id": "het-huis-anubis-het-geheim",
+    "title": "Het geheim",
+    "artist": "Het Huis Anubis",
+    "video": "YytCiUSRBCM",
+    "language": [
+      "Dutch"
+    ],
+    "bpm": 234,
+    "gap": 154.35897435897436,
+    "year": "2007",
+    "artistOrigin": "BE",
+    "lastUpdate": "2026-10-31T03:33:23.694Z",
+    "realBpm": 117,
+    "previewStart": 64,
+    "previewEnd": 91,
+    "volume": 1,
+    "author": "eppo2001",
+    "duration": 208,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6849,
+    "tracksCount": 1,
+    "search": "hethuisanubishetgeheim",
     "local": false
   },
   {
@@ -109269,6 +109437,34 @@
     "local": false
   },
   {
+    "id": "lindemann-platz-eins",
+    "title": "Platz eins",
+    "artist": "Lindemann",
+    "video": "0nS9W7MdbrA",
+    "language": [
+      "German"
+    ],
+    "bpm": 239.86,
+    "gap": 45499.41632619028,
+    "year": "2019",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-10-31T03:33:25.319Z",
+    "genre": "Hard Rock",
+    "realBpm": 135,
+    "volume": 1,
+    "author": "gunultra",
+    "duration": 281,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6856,
+    "tracksCount": 1,
+    "search": "lindemannplatzeins",
+    "local": false
+  },
+  {
     "id": "lindemann-praise-abort",
     "title": "Praise Abort",
     "artist": "Lindemann",
@@ -118692,6 +118888,34 @@
     "shortId": 2804,
     "tracksCount": 1,
     "search": "mariahcareytouchmybody",
+    "local": false
+  },
+  {
+    "id": "mariah-carey-vision-of-love",
+    "title": "Vision Of Love",
+    "artist": "Mariah Carey",
+    "video": "tov22NtCMC4",
+    "language": [
+      "English"
+    ],
+    "bpm": 205.6,
+    "gap": 12378.599221789884,
+    "year": "1990",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-31T03:33:23.152Z",
+    "genre": "Soul",
+    "realBpm": 69,
+    "volume": 1,
+    "author": "lozboorman",
+    "duration": 210,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6846,
+    "tracksCount": 1,
+    "search": "mariahcareyvisionoflove",
     "local": false
   },
   {
@@ -134882,6 +135106,35 @@
     "local": false
   },
   {
+    "id": "nightwish-fantasmic",
+    "title": "FantasMic",
+    "artist": "Nightwish",
+    "video": "QMWP7I81LMA",
+    "language": [
+      "English"
+    ],
+    "bpm": 279.94,
+    "gap": 61932.288244536496,
+    "year": "2000",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-10-31T03:33:23.880Z",
+    "realBpm": 140,
+    "volume": 1,
+    "author": "Canni",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=345",
+    "duration": 498,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6850,
+    "tracksCount": 1,
+    "search": "nightwishfantasmic",
+    "local": false
+  },
+  {
     "id": "nightwish-feat-jonsu-eraemaan-viimeinen",
     "title": "Erämaan Viimeinen",
     "artist": "Nightwish feat. Jonsu",
@@ -139069,6 +139322,36 @@
     "shortId": 3305,
     "tracksCount": 1,
     "search": "onedirectioninfinity",
+    "local": false
+  },
+  {
+    "id": "one-direction-irresistible",
+    "title": "Irresistible",
+    "artist": "One Direction",
+    "video": "hBWOnb2SD-U",
+    "language": [
+      "English"
+    ],
+    "bpm": 352.24,
+    "gap": 12900.276026580337,
+    "year": "2012",
+    "artistOrigin": "UK",
+    "lastUpdate": "2026-10-31T03:33:23.886Z",
+    "genre": "Pop",
+    "realBpm": 88,
+    "previewStart": 45,
+    "previewEnd": 80,
+    "volume": 1,
+    "author": "Sing-Girl",
+    "duration": 239,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6852,
+    "tracksCount": 1,
+    "search": "onedirectionirresistible",
     "local": false
   },
   {
@@ -148381,6 +148664,35 @@
     "shortId": 3551,
     "tracksCount": 1,
     "search": "queenwhowantstoliveforever",
+    "local": false
+  },
+  {
+    "id": "queen-youre-my-best-friend",
+    "title": "You’re My Best Friend",
+    "artist": "Queen",
+    "video": "HaZpZQG2z10",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 16150,
+    "year": "1975",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-10-31T03:33:23.882Z",
+    "genre": "Rock, Pop, Twee Pop",
+    "realBpm": 118,
+    "volume": 1,
+    "author": "sgandtg",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=6053",
+    "duration": 188,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6851,
+    "tracksCount": 1,
+    "search": "queenyouremybestfriend",
     "local": false
   },
   {
@@ -167950,6 +168262,37 @@
     "local": false
   },
   {
+    "id": "spongebob-schwammkopf-titelsong",
+    "title": "Titelsong",
+    "artist": "SpongeBob Schwammkopf",
+    "video": "eb2yknmGPNs",
+    "language": [
+      "German"
+    ],
+    "bpm": 253.02,
+    "gap": 1162.1745316575766,
+    "year": "1999",
+    "lastUpdate": "2026-10-31T03:33:23.156Z",
+    "realBpm": 126,
+    "previewStart": 11,
+    "previewEnd": 26,
+    "volume": 1,
+    "author": "MasterChristian",
+    "duration": 44,
+    "tracks": [
+      {
+        "start": 17
+      },
+      {
+        "start": 208
+      }
+    ],
+    "shortId": 6847,
+    "tracksCount": 2,
+    "search": "spongebobschwammkopftitelsong",
+    "local": false
+  },
+  {
     "id": "sportfreunde-stiller-applaus-applaus",
     "title": "Applaus, Applaus",
     "artist": "Sportfreunde Stiller",
@@ -175994,6 +176337,35 @@
     "shortId": 6508,
     "tracksCount": 1,
     "search": "taylorswiftthelastgreatamericandynasty",
+    "local": false
+  },
+  {
+    "id": "taylor-swift-the-other-side-of-the-door",
+    "title": "The Other Side Of The Door",
+    "artist": "Taylor Swift",
+    "video": "425n1NoRtgA",
+    "language": [
+      "English"
+    ],
+    "bpm": 333.27,
+    "gap": 10769.811864254209,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-10-31T03:33:23.691Z",
+    "realBpm": 164,
+    "previewStart": 47,
+    "previewEnd": 75,
+    "volume": 0.77,
+    "author": "princetongirl98",
+    "duration": 238,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6848,
+    "tracksCount": 1,
+    "search": "taylorswifttheothersideofthedoor",
     "local": false
   },
   {
