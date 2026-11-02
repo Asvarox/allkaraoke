@@ -4,6 +4,18 @@ import {
   getRandomAdminUnverifiedSong,
 } from './unverified-song-processing-queue';
 import { AdminUnverifiedSong } from './unverified-songs-admin-api';
+import { markAdminSongVerified } from './verified-songs-counter';
+
+const pendingSaveIds = vi.hoisted(() => ({ value: [] as string[] }));
+
+vi.mock('./background-song-save', () => ({
+  getPendingAdminUnverifiedSongSaveIds: () => pendingSaveIds.value,
+}));
+
+beforeEach(() => {
+  localStorage.clear();
+  pendingSaveIds.value = [];
+});
 
 const makeSong = (
   overrides: Partial<AdminUnverifiedSong> & Pick<AdminUnverifiedSong, 'sharedSongId'>,
@@ -31,6 +43,23 @@ describe('getRandomAdminUnverifiedSong', () => {
       vi.spyOn(Math, 'random').mockReturnValue(randomValue);
       expect(getRandomAdminUnverifiedSong([current, other], 'current')?.sharedSongId).toBe('other');
     }
+
+    vi.restoreAllMocks();
+  });
+
+  it('excludes songs already verified today and songs still being saved', () => {
+    const verified = makeSong({ sharedSongId: 'verified' });
+    const saving = makeSong({ sharedSongId: 'saving' });
+    const other = makeSong({ sharedSongId: 'other' });
+    markAdminSongVerified('verified');
+    pendingSaveIds.value = ['saving'];
+
+    for (const randomValue of [0, 0.5, 0.999]) {
+      vi.spyOn(Math, 'random').mockReturnValue(randomValue);
+      expect(getRandomAdminUnverifiedSong([verified, saving, other])?.sharedSongId).toBe('other');
+    }
+
+    expect(getRandomAdminUnverifiedSong([verified, saving])).toBeUndefined();
 
     vi.restoreAllMocks();
   });
