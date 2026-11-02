@@ -1,0 +1,228 @@
+#ARTIST:Glee Cast (Kristen Chenoweth & Lea Michele)
+#TITLE:Maybe This Time
+#CREATOR:jforjustin
+#BPM:240
+#YEAR:2009
+#VIDEO:v=XAEcmdso-PY
+#LANGUAGE:English
+#GAP:11570
+#ALLKARAOKE_ID:glee-cast-kristen-chenoweth-lea-michele-maybe-this-time
+#ALLKARAOKE_SID:6866
+#ALLKARAOKE_LASTUPDATE:2026-11-02T03:43:54.937Z
+#ALLKARAOKE_REALBPM:92
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:189
+#MP3:Glee Cast (Kristen Chenoweth & Lea Michele) - Maybe This Time.mp3
+: 16 3 -2 May
+: 20 3 0 be 
+: 24 5 2 this 
+: 30 14 -2 time, 
+: 60 3 -2 I’ll 
+: 64 3 0 be 
+: 68 5 2 luc
+: 74 14 -2 ky
+- 88 90
+- 90
+: 106 3 -2 May
+: 110 3 0 be 
+: 114 5 2 this 
+: 120 6 -2 time 
+: 128 6 0 he’ll 
+* 136 44 2 stay
+- 180 266
+- 266
+: 282 5 3 May
+: 288 3 5 be 
+: 292 6 7 this 
+: 300 14 3 time, 
+: 328 6 3 for 
+: 336 3 5 the 
+* 340 5 7 first 
+: 346 14 3 time
+- 360
+: 370 7 3 Love 
+: 378 4 5 won’t 
+: 384 6 7 hur
+: 392 6 3 ry 
+: 400 5 5 a
+: 406 40 7 way
+- 446 540
+- 540
+: 556 2 9 He 
+: 560 5 8 will 
+: 566 9 9 hold 
+: 576 10 5 me 
+* 588 26 7 fast
+- 614
+: 630 15 7 I’ll 
+: 646 5 6 be 
+: 652 10 7 home 
+: 666 10 0 at 
+: 678 44 2 last
+- 722
+: 738 1 5 Not 
+: 740 5 4 a 
+: 746 5 5 lo
+: 752 14 -2 ser 
+: 782 3 5 a
+: 786 3 4 ny
+: 790 6 5 more
+- 796
+: 800 6 -2 Like 
+: 808 1 0 the 
+* 810 8 2 last 
+: 822 14 3 time, 
+: 842 7 5 and 
+: 850 4 7 the 
+: 862 12 -5 time 
+: 876 5 -2 be
+: 882 26 0 fore
+- 908 992
+- 992
+: 1008 2 -2 Eve
+: 1012 3 0 ry
+: 1016 5 2 bo
+: 1022 16 -2 dy 
+: 1054 6 -2 loves 
+: 1062 1 0 a 
+: 1064 6 2 win
+: 1072 14 -2 ner
+- 1086
+: 1098 5 -2 So, 
+: 1104 4 0 no
+: 1110 5 2 bo
+: 1116 5 -2 dy 
+: 1122 6 0 love 
+: 1130 44 2 me
+- 1174
+: 1190 5 3 La
+: 1196 3 5 dy 
+: 1200 6 7 Peace
+: 1208 14 3 ful, 
+: 1228 8 3 La
+: 1238 3 5 dy 
+* 1242 8 7 Hap
+* 1252 14 3 py
+- 1266
+: 1278 3 3 That’s 
+: 1282 2 5 what 
+: 1288 5 7 I 
+: 1294 10 3 long 
+: 1306 6 5 to 
+: 1314 33 7 be
+: 1348 10 9 ~
+- 1358
+: 1364 3 9 All 
+: 1368 3 8 the 
+: 1372 6 9 odds 
+: 1380 14 5 are, 
+: 1400 2 9 they’re 
+: 1404 5 8 in 
+: 1410 6 9 my 
+: 1418 7 9 fa
+: 1426 10 5 vour,
+- 1436
+: 1444 5 10 Some
+: 1450 6 9 thing’s 
+: 1458 11 10 bound 
+: 1470 3 9 to 
+* 1474 1 10 be
+* 1476 44 12 gin
+- 1520
+: 1528 4 14 It’s 
+: 1534 2 14 got
+: 1538 3 13 ta 
+: 1542 6 14 hap
+: 1550 11 10 pen, 
+F 1562 1 0 hah 
+F 1564 2 0 hah
+- 1566
+: 1570 4 14 Hap
+: 1576 4 13 pen 
+: 1582 5 14 some
+: 1588 20 10 time
+- 1608
+: 1620 1 14 May
+: 1622 3 13 be 
+: 1626 6 14 this 
+: 1634 5 10 time 
+: 1640 5 7 I’ll 
+* 1646 20 10 win
+- 1666
+: 1680 8 10 ’Cause 
+: 1702 4 -1 eve
+: 1708 3 1 ry
+: 1712 5 3 bo
+: 1718 14 -1 dy, 
+: 1740 5 -1 they 
+: 1746 3 -1 love 
+: 1750 2 1 a 
+: 1754 5 3 win
+: 1760 14 -1 ner
+- 1774
+: 1788 2 -1 So, 
+: 1792 3 1 no
+: 1796 3 3 bo
+: 1800 6 -1 dy 
+* 1808 12 8 loved 
+: 1822 42 3 me
+- 1864
+: 1866 5 4 La
+: 1872 3 6 dy 
+: 1876 6 8 Peace
+: 1884 14 4 ful, 
+* 1900 15 11 La
+* 1916 3 10 dy 
+: 1920 6 8 Hap
+: 1928 14 4 py
+- 1942
+: 1958 3 8 That’s 
+: 1962 3 8 what 
+: 1966 5 8 I 
+: 1972 6 8 long 
+: 1980 2 8 to 
+: 1986 35 8 be
+: 2022 6 10 ~
+- 2028
+: 2034 5 10 All 
+: 2040 3 9 the 
+: 2044 5 10 odds 
+: 2050 14 6 are, 
+: 2070 6 10 they’re 
+: 2078 2 10 in 
+: 2082 4 9 my 
+: 2090 7 10 fa
+: 2098 10 6 vour
+- 2108
+: 2112 5 11 Some
+: 2118 4 10 thing’s 
+: 2124 13 11 bound 
+: 2138 1 10 to 
+: 2140 3 11 give 
+: 2144 44 13 in
+- 2188
+: 2192 5 15 It’s 
+* 2198 3 15 gon
+* 2202 8 14 na 
+* 2212 7 15 hap
+* 2220 10 11 pen, 
+: 2234 5 15 hap
+* 2240 6 18 pen 
+: 2248 6 15 some
+: 2258 12 11 time
+- 2270
+: 2282 3 15 May
+: 2286 3 14 be 
+: 2290 6 15 this 
+: 2298 16 11 time
+- 2314
+: 2322 3 15 May
+: 2326 3 14 be 
+: 2330 8 15 this 
+: 2340 8 11 time
+- 2348
+: 2352 22 8 I’ll 
+* 2378 100 11 win
+- 2478
+* 2490 76 23 Win!
+E

@@ -2307,6 +2307,35 @@
     "local": false
   },
   {
+    "id": "abba-felicidad",
+    "title": "Felicidad",
+    "artist": "ABBA",
+    "video": "YihxpsmH3cQ",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 263.72,
+    "gap": 15656.186864856667,
+    "year": "1980",
+    "artistOrigin": "SE",
+    "lastUpdate": "2026-11-02T03:43:53.731Z",
+    "genre": "Pop",
+    "realBpm": 66,
+    "volume": 1,
+    "author": "ismagapi",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=25135",
+    "duration": 264,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6858,
+    "tracksCount": 1,
+    "search": "abbafelicidad",
+    "local": false
+  },
+  {
     "id": "abba-fernando",
     "title": "Fernando",
     "artist": "ABBA",
@@ -2393,6 +2422,36 @@
     "shortId": 6553,
     "tracksCount": 1,
     "search": "abbahappynewyear",
+    "local": false
+  },
+  {
+    "id": "abba-i-do-i-do-i-do-i-do-i-do",
+    "title": "I Do, I Do, I Do, I Do, I Do",
+    "artist": "ABBA",
+    "video": "SbVjQuM_2j8",
+    "language": [
+      "English"
+    ],
+    "bpm": 228,
+    "gap": 9373.157894736842,
+    "year": "1975",
+    "artistOrigin": "SE",
+    "lastUpdate": "2026-11-02T03:43:56.201Z",
+    "genre": "Pop",
+    "realBpm": 110,
+    "volume": 1,
+    "author": "IC",
+    "authorUrl": "https://usdb.animux.de/index.php?link=gettxt&id=4975",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=4975",
+    "duration": 188,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6873,
+    "tracksCount": 1,
+    "search": "abbaidoidoidoidoido",
     "local": false
   },
   {
@@ -9587,6 +9646,36 @@
     "shortId": 224,
     "tracksCount": 1,
     "search": "amaiayalfredtucancion",
+    "local": false
+  },
+  {
+    "id": "amaia-yo-invito",
+    "title": "Yo invito",
+    "artist": "Amaia",
+    "video": "1HJIJ_Chi9Q",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 306,
+    "gap": 20644.607843137255,
+    "year": "2021",
+    "artistOrigin": "ES",
+    "lastUpdate": "2026-11-02T03:43:55.299Z",
+    "genre": "Pop",
+    "realBpm": 102,
+    "previewStart": 80,
+    "previewEnd": 111,
+    "volume": 1,
+    "author": "zXz",
+    "duration": 205,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6870,
+    "tracksCount": 1,
+    "search": "amaiayoinvito",
     "local": false
   },
   {
@@ -43860,6 +43949,33 @@
     "local": false
   },
   {
+    "id": "daoko-tactic",
+    "title": "TACTIC",
+    "artist": "Daoko",
+    "video": "9rOztM5Q524",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 348.16,
+    "gap": 5800.076286764706,
+    "year": "2026",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-11-02T03:43:56.203Z",
+    "realBpm": 174,
+    "volume": 0.85,
+    "author": "subkei",
+    "duration": 118,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6875,
+    "tracksCount": 1,
+    "search": "daokotactic",
+    "local": false
+  },
+  {
     "id": "daoko-x-kenshi-yonezu-uchiage-hanabi",
     "title": "Uchiage Hanabi",
     "artist": "Daoko x Kenshi Yonezu",
@@ -51868,6 +51984,33 @@
     "shortId": 6698,
     "tracksCount": 1,
     "search": "disneysstarstrucksterlingknightbrandonmychalsmithdrewryanscotthero",
+    "local": false
+  },
+  {
+    "id": "disneys-starstruck-sterling-knight-starstruck",
+    "title": "Starstruck",
+    "artist": "Disney’s StarStruck (Sterling Knight)",
+    "video": "rOuErtbjslY",
+    "language": [
+      "English"
+    ],
+    "bpm": 348,
+    "gap": 898.6206896551723,
+    "year": "2010",
+    "lastUpdate": "2026-11-02T03:43:55.131Z",
+    "genre": "Soundtrack",
+    "realBpm": 88,
+    "volume": 1,
+    "author": "DoubleDee, commissioned by UrGamingTechie",
+    "duration": 177,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6868,
+    "tracksCount": 1,
+    "search": "disneysstarstrucksterlingknightstarstruck",
     "local": false
   },
   {
@@ -73425,6 +73568,32 @@
     "local": false
   },
   {
+    "id": "glee-cast-kristen-chenoweth-lea-michele-maybe-this-time",
+    "title": "Maybe This Time",
+    "artist": "Glee Cast (Kristen Chenoweth & Lea Michele)",
+    "video": "XAEcmdso-PY",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 11570,
+    "year": "2009",
+    "lastUpdate": "2026-11-02T03:43:54.937Z",
+    "realBpm": 92,
+    "volume": 1,
+    "author": "jforjustin",
+    "duration": 189,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6866,
+    "tracksCount": 1,
+    "search": "gleecastkristenchenowethleamichelemaybethistime",
+    "local": false
+  },
+  {
     "id": "glee-cast-lea-michele-jake-zyrus-telephone",
     "title": "Telephone",
     "artist": "Glee Cast (Lea Michele & Jake Zyrus)",
@@ -81053,6 +81222,34 @@
     "shortId": 1917,
     "tracksCount": 1,
     "search": "hilaryduffwhatdreamsaremadeof",
+    "local": false
+  },
+  {
+    "id": "hilary-duff-with-love",
+    "title": "With Love",
+    "artist": "Hilary Duff",
+    "video": "dhgLoanz1b4",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 7940,
+    "year": "2007",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-02T03:43:56.200Z",
+    "genre": "Pop",
+    "realBpm": 122,
+    "volume": 1,
+    "author": "b888arb",
+    "duration": 193,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6871,
+    "tracksCount": 1,
+    "search": "hilaryduffwithlove",
     "local": false
   },
   {
@@ -89520,6 +89717,33 @@
     "local": false
   },
   {
+    "id": "jesus-christ-superstar-movie-gethsemane-i-only-want-to-say",
+    "title": "Gethsemane (I Only Want To Say)",
+    "artist": "Jesus Christ Superstar (Movie)",
+    "video": "ndZ6B1EaJEs",
+    "language": [
+      "English"
+    ],
+    "bpm": 389.51,
+    "gap": 39888.74200919103,
+    "year": "1973",
+    "lastUpdate": "2026-11-02T03:43:56.370Z",
+    "genre": "Soundtrack, Rock",
+    "realBpm": 80,
+    "volume": 1,
+    "author": "Marty 88",
+    "duration": 387,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6877,
+    "tracksCount": 1,
+    "search": "jesuschristsuperstarmoviegethsemaneionlywanttosay",
+    "local": false
+  },
+  {
     "id": "jesus-jones-right-here-right-now",
     "title": "Right Here, Right Now",
     "artist": "Jesus Jones",
@@ -94448,6 +94672,37 @@
     "shortId": 2236,
     "tracksCount": 1,
     "search": "junkominagawasayakaoharaeternaleternity",
+    "local": false
+  },
+  {
+    "id": "junna-here",
+    "title": "Here",
+    "artist": "JUNNA",
+    "video": "SNUOYgeuwso",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 216.02,
+    "gap": 7502.8677900194425,
+    "year": "2017",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-11-02T03:43:54.766Z",
+    "genre": "Jpop",
+    "realBpm": 108,
+    "volume": 1,
+    "author": "subkei",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=subkei",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=JUNNA&cancion=Here",
+    "duration": 269,
+    "tracks": [
+      {
+        "name": "Here (TV Size)",
+        "start": 14
+      }
+    ],
+    "shortId": 6863,
+    "tracksCount": 1,
+    "search": "junnahere",
     "local": false
   },
   {
@@ -101718,6 +101973,34 @@
     "shortId": 2406,
     "tracksCount": 1,
     "search": "kraftklubfeattokiohotelfahrmitmir4x4",
+    "local": false
+  },
+  {
+    "id": "kraftklub-kein-liebeslied",
+    "title": "Kein Liebeslied",
+    "artist": "Kraftklub",
+    "video": "3V8160J2WxI",
+    "language": [
+      "German"
+    ],
+    "bpm": 332,
+    "gap": 3626.024096385542,
+    "year": "2012",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-11-02T03:43:53.736Z",
+    "genre": "Pop",
+    "realBpm": 83,
+    "volume": 1,
+    "author": "Alexeus10",
+    "duration": 209,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6860,
+    "tracksCount": 1,
+    "search": "kraftklubkeinliebeslied",
     "local": false
   },
   {
@@ -123510,6 +123793,34 @@
     "local": false
   },
   {
+    "id": "men-at-work-its-a-mistake",
+    "title": "It's a Mistake",
+    "artist": "Men At Work",
+    "video": "I0AxrOUJ62E",
+    "language": [
+      "English"
+    ],
+    "bpm": 376.83,
+    "gap": 26928.8563012499,
+    "year": "1997",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-11-02T03:43:54.767Z",
+    "genre": "Reggae Rock, Rock",
+    "realBpm": 108,
+    "volume": 1,
+    "author": "rossbr",
+    "duration": 273,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6864,
+    "tracksCount": 1,
+    "search": "menatworkitsamistake",
+    "local": false
+  },
+  {
     "id": "men-at-work-overkill",
     "title": "Overkill",
     "artist": "Men At Work",
@@ -124313,6 +124624,34 @@
     "shortId": 5813,
     "tracksCount": 1,
     "search": "mgmtelectricfeel",
+    "local": false
+  },
+  {
+    "id": "mgmt-kids",
+    "title": "Kids",
+    "artist": "MGMT",
+    "video": "fe4EK4HSPkI",
+    "language": [
+      "English"
+    ],
+    "bpm": 246,
+    "gap": 117604.39024390244,
+    "year": "2005",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-02T03:43:55.128Z",
+    "genre": "Synth-Pop, Electronic Rock, Indietronica",
+    "realBpm": 123,
+    "volume": 1,
+    "author": "snake84, IC",
+    "duration": 367,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6867,
+    "tracksCount": 1,
+    "search": "mgmtkids",
     "local": false
   },
   {
@@ -129403,6 +129742,34 @@
     "local": false
   },
   {
+    "id": "mrozu-poza-logika",
+    "title": "Poza Logiką",
+    "artist": "Mrozu",
+    "video": "Oj1_DilIbHY",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 400,
+    "gap": 38187.5,
+    "year": "2014",
+    "artistOrigin": "PL",
+    "lastUpdate": "2026-11-02T03:43:53.739Z",
+    "genre": "Pop",
+    "realBpm": 100,
+    "volume": 1,
+    "author": "MylordWaliza",
+    "duration": 243,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6861,
+    "tracksCount": 1,
+    "search": "mrozupozalogika",
+    "local": false
+  },
+  {
     "id": "mrs-green-apple-inferno",
     "title": "Inferno",
     "artist": "Mrs. GREEN APPLE",
@@ -130314,6 +130681,38 @@
     "local": false
   },
   {
+    "id": "my-chemical-romance-blood",
+    "title": "Blood",
+    "artist": "My Chemical Romance",
+    "video": "uX3Gw82f6GU",
+    "language": [
+      "English"
+    ],
+    "bpm": 242,
+    "gap": 2608.2644628099174,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-02T03:43:53.724Z",
+    "genre": "Alternative Rock",
+    "realBpm": 122,
+    "previewStart": 38,
+    "previewEnd": 86,
+    "volume": 1,
+    "author": "synonomy",
+    "authorUrl": "https://usdb.animux.de/index.php?link=detail&id=12228",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=12228",
+    "duration": 86,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6857,
+    "tracksCount": 1,
+    "search": "mychemicalromanceblood",
+    "local": false
+  },
+  {
     "id": "my-chemical-romance-bulletproof-heart",
     "title": "Bulletproof Heart",
     "artist": "My Chemical Romance",
@@ -130577,6 +130976,36 @@
     "shortId": 3097,
     "tracksCount": 1,
     "search": "mychemicalromancehelena",
+    "local": false
+  },
+  {
+    "id": "my-chemical-romance-house-of-wolves",
+    "title": "House Of Wolves",
+    "artist": "My Chemical Romance",
+    "video": "woalhgxmnDo",
+    "language": [
+      "English"
+    ],
+    "bpm": 210,
+    "gap": 16240,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-02T03:43:53.733Z",
+    "genre": "Alternative Rock",
+    "realBpm": 106,
+    "volume": 0.77,
+    "author": "synonomy",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=31207",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=10250",
+    "duration": 184,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6859,
+    "tracksCount": 1,
+    "search": "mychemicalromancehouseofwolves",
     "local": false
   },
   {
@@ -130933,6 +131362,34 @@
     "shortId": 3106,
     "tracksCount": 1,
     "search": "mychemicalromancethesharpestlives",
+    "local": false
+  },
+  {
+    "id": "my-chemical-romance-this-is-how-i-disappear",
+    "title": "This Is How I Disappear",
+    "artist": "My Chemical Romance",
+    "video": "3df8CooYnSs",
+    "language": [
+      "English"
+    ],
+    "bpm": 320.57,
+    "gap": 24187.375300246436,
+    "year": "2006",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-02T03:43:56.202Z",
+    "realBpm": 163,
+    "previewEnd": 10,
+    "volume": 1,
+    "author": "synonomy",
+    "duration": 240,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6874,
+    "tracksCount": 1,
+    "search": "mychemicalromancethisishowidisappear",
     "local": false
   },
   {
@@ -142220,6 +142677,33 @@
     "shortId": 6624,
     "tracksCount": 1,
     "search": "paramorecareful",
+    "local": false
+  },
+  {
+    "id": "paramore-caught-in-the-middle",
+    "title": "Caught In The Middle",
+    "artist": "Paramore",
+    "video": "eFOY6KJlFEg",
+    "language": [
+      "English"
+    ],
+    "bpm": 370,
+    "gap": 11581.486486486487,
+    "year": "2018",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-02T03:43:56.201Z",
+    "realBpm": 93,
+    "volume": 1,
+    "author": "Rubn4",
+    "duration": 215,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6872,
+    "tracksCount": 1,
+    "search": "paramorecaughtinthemiddle",
     "local": false
   },
   {
@@ -159423,6 +159907,34 @@
     "shortId": 6732,
     "tracksCount": 1,
     "search": "scooterhowmuchisthefish",
+    "local": false
+  },
+  {
+    "id": "scooter-rebel-yell",
+    "title": "Rebel Yell",
+    "artist": "Scooter",
+    "video": "BBQ36Y1GL1g",
+    "language": [
+      "English"
+    ],
+    "bpm": 349.5,
+    "gap": 3662.8755364806866,
+    "year": "1996",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-11-02T03:43:55.297Z",
+    "realBpm": 175,
+    "volume": 1,
+    "author": "jockel1974",
+    "sourceUrl": "https://www.youtube.com/watch?v=BBQ36Y1GL1g",
+    "duration": 222,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6869,
+    "tracksCount": 1,
+    "search": "scooterrebelyell",
     "local": false
   },
   {
@@ -177669,6 +178181,38 @@
     "local": false
   },
   {
+    "id": "the-1975-its-not-living-if-its-not-with-you",
+    "title": "It’s Not Living (If It’s Not With You)",
+    "artist": "The 1975",
+    "video": "_G0WKkjgNU4",
+    "language": [
+      "English"
+    ],
+    "bpm": 242.42,
+    "gap": 23709.982674696806,
+    "year": "2018",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-11-02T03:43:54.765Z",
+    "genre": "Rock / Alternative Pop-Rock",
+    "realBpm": 121,
+    "previewStart": 55,
+    "previewEnd": 71,
+    "volume": 1,
+    "author": "Arthur51",
+    "sourceUrl": "https://youtu.be/FzfKn-hlZwo?si=fwskjB2ZbyGQ-Xfa",
+    "duration": 254,
+    "tracks": [
+      {
+        "name": "It's Not Living (If It's Not With You)",
+        "start": 16
+      }
+    ],
+    "shortId": 6862,
+    "tracksCount": 1,
+    "search": "the1975itsnotlivingifitsnotwithyou",
+    "local": false
+  },
+  {
     "id": "the-1975-somebody-else",
     "title": "Somebody Else",
     "artist": "The 1975",
@@ -185946,6 +186490,34 @@
     "shortId": 4436,
     "tracksCount": 1,
     "search": "theweekndinthenight",
+    "local": false
+  },
+  {
+    "id": "the-weeknd-open-hearts",
+    "title": "Open Hearts",
+    "artist": "The Weeknd",
+    "video": "Bn-3ICGjz0U",
+    "language": [
+      "English"
+    ],
+    "bpm": 248.52,
+    "gap": 11373.925639787543,
+    "year": "2025",
+    "artistOrigin": "CA",
+    "lastUpdate": "2026-11-02T03:43:56.369Z",
+    "genre": "R&B",
+    "realBpm": 124,
+    "volume": 1,
+    "author": "mus31",
+    "duration": 320,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6876,
+    "tracksCount": 1,
+    "search": "theweekndopenhearts",
     "local": false
   },
   {
@@ -200191,6 +200763,35 @@
     "shortId": 4774,
     "tracksCount": 1,
     "search": "yvesfeatlilcherryloop",
+    "local": false
+  },
+  {
+    "id": "zaho-de-sagazan-la-symphonie-des-eclairs",
+    "title": "La symphonie des éclairs",
+    "artist": "Zaho de Sagazan",
+    "video": "pqo59FkF_5g",
+    "language": [
+      "French"
+    ],
+    "bpm": 388.52000000000015,
+    "gap": 4899.638069705094,
+    "year": "2023",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-11-02T03:43:54.769Z",
+    "realBpm": 101,
+    "volume": 1,
+    "author": "mustangfred",
+    "authorUrl": "https://ultrastar-es.org/fr/canciones?creador=mustangfred",
+    "sourceUrl": "https://ultrastar-es.org/fr/canciones?artista=Zaho+de+Sagazan",
+    "duration": 183,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6865,
+    "tracksCount": 1,
+    "search": "zahodesagazanlasymphoniedeseclairs",
     "local": false
   },
   {
