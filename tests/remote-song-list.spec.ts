@@ -27,11 +27,6 @@ test.beforeEach(async ({ page }) => {
   });
 });
 
-// Service worker caches index.json, which bypasses Playwright's route mock (mockSongs) and lets
-// the real, much longer production catalog leak in — breaking anything that asserts a specific
-// song is visible without an explicit scroll/search
-test.use({ serviceWorkers: 'block' });
-
 const songs = {
   polish1: {
     ID: 'e2e-skip-intro-polish',

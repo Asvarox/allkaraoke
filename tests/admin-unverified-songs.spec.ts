@@ -149,7 +149,6 @@ test.afterEach(async ({ request }) => {
   }
 });
 
-test.use({ serviceWorkers: 'block' });
 test.describe.configure({ mode: 'serial' });
 
 test('stores the admin password in session storage, lists unverified songs, and logs out', async ({ page }) => {

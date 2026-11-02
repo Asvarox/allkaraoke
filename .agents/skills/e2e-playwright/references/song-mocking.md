@@ -101,6 +101,6 @@ Key headers:
 
 | Helper                             | Purpose                                                                                                                                  |
 | ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| `initTestMode({ page, context })`  | Sets `window.isE2ETests = true` before page load so the app can skip certain UI (e.g. service worker)                                    |
+| `initTestMode({ page, context })`  | Sets `window.isE2ETests = true` before page load so the app can skip certain UI                                                          |
 | `mockRandom({ context }, value?)`  | Overrides `Math.random` with a fixed value (default `0.5`) for deterministic results                                                     |
 | `stubUserMedia({ page, context })` | Replaces `navigator.mediaDevices` with a simulator; call `window.mediaSimulator.connectMediaDevices(...)` in tests to add/remove devices |

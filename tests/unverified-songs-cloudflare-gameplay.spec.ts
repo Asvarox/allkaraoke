@@ -20,8 +20,6 @@ test.beforeEach(async ({ page, context, browser }) => {
   });
 });
 
-test.use({ serviceWorkers: 'block' });
-
 test('unverified song can transition from Song Selection to active gameplay', async ({ page, request }) => {
   test.slow();
 

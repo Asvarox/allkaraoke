@@ -5,9 +5,6 @@ import initialise from './page-objects/initialise';
 import { RemoteMicPages } from './page-objects/remote-mic/initialise-remote-mic';
 import { openAndConnectRemoteMicDirectly } from './steps/open-and-connect-remote-mic';
 
-// Service worker caches index.json which breaks playwright's request intercept (mocking of song list)
-test.use({ serviceWorkers: 'block' });
-
 const song = 'e2e-multitrack-polish-1994';
 
 let pages: ReturnType<typeof initialise>;

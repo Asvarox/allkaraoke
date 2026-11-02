@@ -16,9 +16,6 @@ test.beforeEach(async ({ page, context, browser }) => {
   await mockSongs({ page, context });
 });
 
-// Service worker caches index.json which breaks playwright's request intercept (mocking of song list)
-// Not disabling it globally so in case SW breaks the app it is caught by other tests
-test.use({ serviceWorkers: 'block' });
 // not using devices[] as it doesn't work with firefox
 test.use({ viewport: { width: 740, height: 360 }, hasTouch: true, userAgent: 'android mobile' }); // Samsung S8+
 
