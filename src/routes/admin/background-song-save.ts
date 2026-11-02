@@ -84,6 +84,8 @@ export const saveAdminUnverifiedSongInBackground = (sharedSongId: string, song: 
   return currentSave;
 };
 
+export const getPendingAdminUnverifiedSongSaveIds = () => [...pendingSaves.keys()];
+
 export const dismissFailedAdminUnverifiedSongSave = (sharedSongId: string) => {
   if (!failedSaves.delete(sharedSongId)) return;
 

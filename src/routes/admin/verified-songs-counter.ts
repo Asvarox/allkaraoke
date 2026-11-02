@@ -17,7 +17,7 @@ const listeners = new Set<() => void>();
 export const getVerificationDay = (now = new Date()) =>
   dayjs(now).subtract(DAY_RESET_HOUR, 'hour').format('YYYY-MM-DD');
 
-const readToday = (): string[] => {
+export const getAdminSongsVerifiedToday = (): string[] => {
   const stored = storage.local.getItem<VerifiedSongsDay>(STORAGE_KEY);
 
   if (!stored || stored.day !== getVerificationDay() || !Array.isArray(stored.sharedSongIds)) return [];
@@ -26,7 +26,7 @@ const readToday = (): string[] => {
 };
 
 export const markAdminSongVerified = (sharedSongId: string) => {
-  const sharedSongIds = readToday();
+  const sharedSongIds = getAdminSongsVerifiedToday();
 
   if (sharedSongIds.includes(sharedSongId)) return;
 
@@ -47,6 +47,6 @@ const subscribe = (listener: () => void) => {
   };
 };
 
-const getSnapshot = () => readToday().length;
+const getSnapshot = () => getAdminSongsVerifiedToday().length;
 
 export const useVerifiedSongsTodayCount = () => useSyncExternalStore(subscribe, getSnapshot, () => 0);

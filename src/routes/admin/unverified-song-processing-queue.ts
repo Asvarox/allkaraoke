@@ -1,4 +1,6 @@
+import { getPendingAdminUnverifiedSongSaveIds } from './background-song-save';
 import { AdminUnverifiedSong } from './unverified-songs-admin-api';
+import { getAdminSongsVerifiedToday } from './verified-songs-counter';
 
 const adminEditSongPath = 'edit/song/';
 
@@ -17,7 +19,11 @@ export const getRandomAdminUnverifiedSong = (
   songs: AdminUnverifiedSong[],
   currentSharedSongId?: string,
 ): AdminUnverifiedSong | undefined => {
-  const candidates = songs.filter((song) => song.sharedSongId !== currentSharedSongId);
+  // Verified songs stay in KV until the nightly import removes them, so skip the ones already processed.
+  const processedIds = new Set([...getAdminSongsVerifiedToday(), ...getPendingAdminUnverifiedSongSaveIds()]);
+  const candidates = songs.filter(
+    (song) => song.sharedSongId !== currentSharedSongId && !processedIds.has(song.sharedSongId),
+  );
 
   if (candidates.length === 0) return undefined;
 
