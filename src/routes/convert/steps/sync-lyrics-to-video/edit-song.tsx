@@ -6,6 +6,7 @@ import { useWindowSize } from 'react-use';
 import createPersistedState from 'use-persisted-state';
 
 import { GAME_MODE, Note, seconds, SingSetup, Song } from '~/interfaces';
+import { Icon } from '~/modules/elements/akui/icon';
 import { VideoState } from '~/modules/elements/video-player/index';
 import getCurrentBeat from '~/modules/game-engine/game-state/helpers/get-current-beat';
 import getSongBeatLength from '~/modules/songs/utils/get-song-beat-length';
@@ -21,6 +22,7 @@ import ManipulateBpm from '~/routes/convert/steps/sync-lyrics-to-video/component
 import SectionSlider from '~/routes/convert/steps/sync-lyrics-to-video/components/section-slider';
 import ShiftGap from '~/routes/convert/steps/sync-lyrics-to-video/components/shift-gap';
 import ShiftVideoGap from '~/routes/convert/steps/sync-lyrics-to-video/components/shift-video-gap';
+import getLyricsCoverage from '~/routes/convert/steps/sync-lyrics-to-video/helpers/get-lyrics-coverage';
 import useCurrentSectionIndex from '~/routes/game/singing/hooks/use-current-section-index';
 import Player, { PlayerRef } from '~/routes/game/singing/player';
 
@@ -92,6 +94,8 @@ const applyLyricChanges = (song: Song, lyricChanges: Record<number, Record<numbe
   }),
 });
 
+const LOW_LYRICS_COVERAGE_THRESHOLD = 0.5;
+
 const usePlaybackSpeed = createPersistedState<number>('edit-song-playback-speed');
 
 export default function EditSong({ song, onUpdate, visible }: Props) {
@@ -99,6 +103,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
   const player = useRef<PlayerRef | null>(null);
   const [playbackSpeed, setPlaybackSpeed] = usePlaybackSpeed(1);
   const [playerState, setPlayerState] = useState(VideoState.UNSTARTED);
+  const [videoDuration, setVideoDuration] = useState<seconds>(0);
   const { width } = useWindowSize();
   const playerWidth = Math.min(width - 16, 824);
   const playerHeight = (playerWidth / 16) * 9;
@@ -146,6 +151,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
   );
 
   const beatLength = getSongBeatLength(newSong);
+  const lyricsCoverage = getLyricsCoverage(newSong, videoDuration);
   const notesSections = useMemo(() => newSong.tracks[0].sections.filter(isNotesSection), [newSong]);
   const currentSectionIndex = useCurrentSectionIndex(notesSections, player.current, beatLength, newSong.gap);
 
@@ -275,6 +281,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
         <div style={{ width: playerWidth, height: playerHeight }}>
           <Player
             onStatusChange={setPlayerState}
+            onVideoDurationLoad={setVideoDuration}
             key={0}
             song={newSong}
             showControls
@@ -287,6 +294,12 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
             onSongEnd={() => undefined}
           />
         </div>
+        {lyricsCoverage !== null && lyricsCoverage < LOW_LYRICS_COVERAGE_THRESHOLD && (
+          <div className="text-warning mt-2 flex items-center gap-1 text-sm" data-test="low-lyrics-coverage-warning">
+            <Icon icon="ic:baseline-warning" />
+            Lyrics cover only {Math.round(lyricsCoverage * 100)}% of the video
+          </div>
+        )}
       </div>
       <div className="col-span-12 flex flex-col gap-4 sm:col-span-4">
         {player.current && (

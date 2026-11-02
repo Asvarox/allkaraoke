@@ -33,6 +33,7 @@ interface Props extends Omit<ComponentProps<'div'>, 'ref'>, RefAttributes<Player
   onCurrentTimeUpdate?: (newTime: milliseconds) => void;
   onSongEnd?: () => void;
   onStatusChange?: (status: VideoState) => void;
+  onVideoDurationLoad?: (duration: seconds) => void;
 
   effectsEnabled?: boolean;
   pauseMenu?: boolean;
@@ -54,16 +55,21 @@ export interface PlayerRef {
   getDuration?: () => seconds;
 }
 
-function usePlayerSetDuration(playerRef: RefObject<VideoPlayerRef | null>, currentStatus: VideoState) {
+function usePlayerSetDuration(
+  playerRef: RefObject<VideoPlayerRef | null>,
+  currentStatus: VideoState,
+  onVideoDurationLoad?: (duration: seconds) => void,
+) {
   const [duration, setDuration] = useState<seconds>(0);
   useEffect(() => {
     if (playerRef.current && currentStatus === VideoState.PLAYING && duration === 0) {
       playerRef.current.getDuration().then((dur: number) => {
         setDuration(dur);
         GameState.setDuration(dur);
+        onVideoDurationLoad?.(dur);
       });
     }
-  }, [duration, playerRef, currentStatus]);
+  }, [duration, playerRef, currentStatus, onVideoDurationLoad]);
 
   return duration;
 }
@@ -77,6 +83,7 @@ function Player({
   onCurrentTimeUpdate,
   onSongEnd,
   onStatusChange,
+  onVideoDurationLoad,
   effectsEnabled = true,
   singSetup,
   restartSong,
@@ -113,7 +120,7 @@ function Player({
     };
   }, [song, singSetup]);
 
-  const duration = usePlayerSetDuration(player, currentStatus);
+  const duration = usePlayerSetDuration(player, currentStatus, onVideoDurationLoad);
 
   useImperativeHandle(ref, () => ({
     seekTo: (time: seconds) => player.current!.seekTo(time),
