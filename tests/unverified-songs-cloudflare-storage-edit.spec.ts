@@ -17,8 +17,6 @@ test.beforeEach(async ({ page, context, browser }) => {
   await initTestMode({ page, context });
 });
 
-test.use({ serviceWorkers: 'block' });
-
 test('unverified song fixture is upserted, searchable, and loadable in edit route', async ({ page, request }) => {
   test.slow();
 

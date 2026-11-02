@@ -1,10 +1,7 @@
-import { expect, test } from '@playwright/test';
+import { expect } from '@playwright/test';
 
 import { initTestMode, mockSongs } from '../helpers';
 import { visual } from './visual';
-
-// Service worker caches index.json which breaks playwright's request intercept (mocking of song list)
-test.use({ serviceWorkers: 'block' });
 
 const songID = 'e2e-single-english-1995';
 

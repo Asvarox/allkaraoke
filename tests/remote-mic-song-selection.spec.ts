@@ -11,9 +11,6 @@ test.beforeEach(async ({ page, context, browser }) => {
   await mockSongs({ page, context });
 });
 
-// Service worker caches index.json which breaks playwright's request intercept (mocking of song list)
-test.use({ serviceWorkers: 'block' });
-
 const player = { name: 'E2E Test Blue' } as const;
 
 // The mocked song list, with the default language selection, groups by first letter of the artist

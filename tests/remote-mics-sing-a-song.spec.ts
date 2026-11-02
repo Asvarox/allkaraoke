@@ -16,10 +16,6 @@ test.beforeEach(async ({ page, context, browser }) => {
   await mockSongs({ page, context });
 });
 
-// Service worker caches index.json which breaks playwright's request intercept (mocking of song list)
-// Not disabling it globally so in case SW breaks the app it is caught by other tests
-test.use({ serviceWorkers: 'block' });
-
 const player1 = {
   name: 'E2E Test Blue',
   micColor: 'blue',

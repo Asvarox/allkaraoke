@@ -15,8 +15,8 @@ import { fakeSfu, hasRealtimeCredentials } from './scripts/vite-plugin-fake-sfu'
 import routePaths from './src/routes/route-paths';
 import { htmlPrerender } from './vite-plugin-html-prerender/src/index';
 
-// HTTPS is opt-in (`pnpm start:https`). Plain `http://localhost` is already a secure context, so the
-// Service Worker and getUserMedia work by default - HTTPS is only needed to reach the dev server from
+// HTTPS is opt-in (`pnpm start:https`). Plain `http://localhost` is already a secure context, so
+// getUserMedia works by default - HTTPS is only needed to reach the dev server from
 // another device on the LAN (eg. a phone used as a remote mic). See readme.md.
 const useHttps = !!process.env.HTTPS;
 const certPath = './config/crt/server.pem';
