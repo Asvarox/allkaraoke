@@ -12,11 +12,11 @@
     "Nightwish",
     "Take That",
     "The Beatles",
+    "My Chemical Romance",
     "System of a Down",
     "One Direction",
     "Girls Aloud",
     "Imagine Dragons",
-    "My Chemical Romance",
     "ABBA",
     "Nirvana",
     "Rihanna",
@@ -36,19 +36,19 @@
     "Ed Sheeran",
     "Katy Perry",
     "Lana Del Rey",
+    "Paramore",
     "Westlife",
     "Adele",
     "Demi Lovato",
     "Kelly Clarkson",
-    "Paramore",
     "Radiohead",
+    "The Weeknd",
     "Avril Lavigne",
     "Backstreet Boys",
     "Jamiroquai",
     "Maroon 5",
     "Red Hot Chili Peppers",
     "The Black Eyed Peas",
-    "The Weeknd",
     "Avenged Sevenfold",
     "Bad Religion",
     "George Michael",
@@ -108,6 +108,7 @@
     "Fleetwood Mac",
     "Groove Coverage",
     "Hamilton",
+    "Hilary Duff",
     "HIM",
     "Iron Maiden",
     "Little Mix",
@@ -136,7 +137,6 @@
     "Faith No More",
     "Genesis",
     "Goo Goo Dolls",
-    "Hilary Duff",
     "Johnny Cash",
     "Jonathan Coulton",
     "Nicki Minaj",
@@ -190,9 +190,10 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 6855,
-  "generatedAt": "2026-10-31T03:34:29.618Z",
+  "songs": 6876,
+  "generatedAt": "2026-11-02T03:44:44.769Z",
   "additionsPerDay": {
+    "2026-11-02": 21,
     "2026-10-31": 13,
     "2026-10-30": 30,
     "2026-10-29": 56,
@@ -235,6 +236,153 @@
     "2026-09-05": 6
   },
   "recentlyAdded": [
+    {
+      "id": "jesus-christ-superstar-movie-gethsemane-i-only-want-to-say",
+      "artist": "Jesus Christ Superstar (Movie)",
+      "title": "Gethsemane (I Only Want To Say)",
+      "video": "ndZ6B1EaJEs",
+      "addedAt": "2026-11-02T03:43:56.370Z"
+    },
+    {
+      "id": "the-weeknd-open-hearts",
+      "artist": "The Weeknd",
+      "title": "Open Hearts",
+      "video": "Bn-3ICGjz0U",
+      "addedAt": "2026-11-02T03:43:56.369Z"
+    },
+    {
+      "id": "daoko-tactic",
+      "artist": "Daoko",
+      "title": "TACTIC",
+      "video": "9rOztM5Q524",
+      "addedAt": "2026-11-02T03:43:56.203Z"
+    },
+    {
+      "id": "my-chemical-romance-this-is-how-i-disappear",
+      "artist": "My Chemical Romance",
+      "title": "This Is How I Disappear",
+      "video": "3df8CooYnSs",
+      "addedAt": "2026-11-02T03:43:56.202Z"
+    },
+    {
+      "id": "abba-i-do-i-do-i-do-i-do-i-do",
+      "artist": "ABBA",
+      "title": "I Do, I Do, I Do, I Do, I Do",
+      "video": "SbVjQuM_2j8",
+      "addedAt": "2026-11-02T03:43:56.201Z"
+    },
+    {
+      "id": "paramore-caught-in-the-middle",
+      "artist": "Paramore",
+      "title": "Caught In The Middle",
+      "video": "eFOY6KJlFEg",
+      "addedAt": "2026-11-02T03:43:56.201Z"
+    },
+    {
+      "id": "hilary-duff-with-love",
+      "artist": "Hilary Duff",
+      "title": "With Love",
+      "video": "dhgLoanz1b4",
+      "addedAt": "2026-11-02T03:43:56.200Z"
+    },
+    {
+      "id": "amaia-yo-invito",
+      "artist": "Amaia",
+      "title": "Yo invito",
+      "video": "1HJIJ_Chi9Q",
+      "addedAt": "2026-11-02T03:43:55.299Z"
+    },
+    {
+      "id": "scooter-rebel-yell",
+      "artist": "Scooter",
+      "title": "Rebel Yell",
+      "video": "BBQ36Y1GL1g",
+      "addedAt": "2026-11-02T03:43:55.297Z"
+    },
+    {
+      "id": "disneys-starstruck-sterling-knight-starstruck",
+      "artist": "Disney’s StarStruck (Sterling Knight)",
+      "title": "Starstruck",
+      "video": "rOuErtbjslY",
+      "addedAt": "2026-11-02T03:43:55.131Z"
+    },
+    {
+      "id": "mgmt-kids",
+      "artist": "MGMT",
+      "title": "Kids",
+      "video": "fe4EK4HSPkI",
+      "addedAt": "2026-11-02T03:43:55.128Z"
+    },
+    {
+      "id": "glee-cast-kristen-chenoweth-lea-michele-maybe-this-time",
+      "artist": "Glee Cast (Kristen Chenoweth & Lea Michele)",
+      "title": "Maybe This Time",
+      "video": "XAEcmdso-PY",
+      "addedAt": "2026-11-02T03:43:54.937Z"
+    },
+    {
+      "id": "zaho-de-sagazan-la-symphonie-des-eclairs",
+      "artist": "Zaho de Sagazan",
+      "title": "La symphonie des éclairs",
+      "video": "pqo59FkF_5g",
+      "addedAt": "2026-11-02T03:43:54.769Z"
+    },
+    {
+      "id": "men-at-work-its-a-mistake",
+      "artist": "Men At Work",
+      "title": "It's a Mistake",
+      "video": "I0AxrOUJ62E",
+      "addedAt": "2026-11-02T03:43:54.767Z"
+    },
+    {
+      "id": "junna-here",
+      "artist": "JUNNA",
+      "title": "Here",
+      "video": "SNUOYgeuwso",
+      "addedAt": "2026-11-02T03:43:54.766Z"
+    },
+    {
+      "id": "the-1975-its-not-living-if-its-not-with-you",
+      "artist": "The 1975",
+      "title": "It’s Not Living (If It’s Not With You)",
+      "video": "_G0WKkjgNU4",
+      "addedAt": "2026-11-02T03:43:54.765Z"
+    },
+    {
+      "id": "mrozu-poza-logika",
+      "artist": "Mrozu",
+      "title": "Poza Logiką",
+      "video": "Oj1_DilIbHY",
+      "addedAt": "2026-11-02T03:43:53.739Z"
+    },
+    {
+      "id": "kraftklub-kein-liebeslied",
+      "artist": "Kraftklub",
+      "title": "Kein Liebeslied",
+      "video": "3V8160J2WxI",
+      "addedAt": "2026-11-02T03:43:53.736Z"
+    },
+    {
+      "id": "my-chemical-romance-house-of-wolves",
+      "artist": "My Chemical Romance",
+      "title": "House Of Wolves",
+      "video": "woalhgxmnDo",
+      "addedAt": "2026-11-02T03:43:53.733Z"
+    },
+    {
+      "id": "abba-felicidad",
+      "artist": "ABBA",
+      "title": "Felicidad",
+      "video": "YihxpsmH3cQ",
+      "addedAt": "2026-11-02T03:43:53.731Z"
+    },
+    {
+      "id": "my-chemical-romance-blood",
+      "artist": "My Chemical Romance",
+      "title": "Blood",
+      "video": "uX3Gw82f6GU",
+      "addedAt": "2026-11-02T03:43:53.724Z"
+    },
     {
       "id": "lindemann-platz-eins",
       "artist": "Lindemann",
@@ -423,153 +571,6 @@
       "title": "Rocketeer",
       "video": "RcmKbTR--iA",
       "addedAt": "2026-10-30T03:49:00.406Z"
-    },
-    {
-      "id": "sabrina-carpenter-bed-chem",
-      "artist": "Sabrina Carpenter",
-      "title": "Bed Chem",
-      "video": "x8VkB8ap_FQ",
-      "addedAt": "2026-10-30T03:49:00.404Z"
-    },
-    {
-      "id": "melendi-tu-jardin-con-enanitos",
-      "artist": "Melendi",
-      "title": "Tu jardín con enanitos",
-      "video": "v3-9eDFDAFw",
-      "addedAt": "2026-10-30T03:49:00.403Z"
-    },
-    {
-      "id": "hannah-montana-2-rock-star",
-      "artist": "Hannah Montana 2",
-      "title": "Rock Star",
-      "video": "JOHAogvC6c4",
-      "addedAt": "2026-10-30T03:48:59.075Z"
-    },
-    {
-      "id": "tatu-all-about-us",
-      "artist": "t.A.T.u.",
-      "title": "All About Us",
-      "video": "6yP4Nm86yk0",
-      "addedAt": "2026-10-30T03:48:59.074Z"
-    },
-    {
-      "id": "spongebob-schwammkopf-das-lagerfeuerlied-lied",
-      "artist": "SpongeBob Schwammkopf",
-      "title": "Das Lagerfeuerlied Lied",
-      "video": "qMb6TOdUuJk",
-      "addedAt": "2026-10-30T03:48:58.839Z"
-    },
-    {
-      "id": "emma-daumas-tu-seras",
-      "artist": "Emma Daumas",
-      "title": "Tu seras",
-      "video": "ziGWg0pZc_Y",
-      "addedAt": "2026-10-30T03:48:58.683Z"
-    },
-    {
-      "id": "hayley-kiyoko-kehlani-what-i-need",
-      "artist": "Hayley Kiyoko & Kehlani",
-      "title": "What I Need",
-      "video": "YynKelHGhNc",
-      "addedAt": "2026-10-30T03:48:58.681Z"
-    },
-    {
-      "id": "florence-the-machine-spectrum",
-      "artist": "Florence + the Machine",
-      "title": "Spectrum",
-      "video": "iC-_lVzdiFE",
-      "addedAt": "2026-10-30T03:48:58.677Z"
-    },
-    {
-      "id": "faun-federkleid",
-      "artist": "FAUN",
-      "title": "Federkleid",
-      "video": "zOvsyamoEDg",
-      "addedAt": "2026-10-30T03:48:58.511Z"
-    },
-    {
-      "id": "akb48-gingham-check",
-      "artist": "AKB48",
-      "title": "Gingham Check",
-      "video": "XHdcW2axwMk",
-      "addedAt": "2026-10-30T03:48:58.510Z"
-    },
-    {
-      "id": "bebe-rexha-david-guetta-sad-girls",
-      "artist": "Bebe Rexha & David Guetta",
-      "title": "Sad Girls",
-      "video": "P8UqZ5IF-QE",
-      "addedAt": "2026-10-30T03:48:58.356Z"
-    },
-    {
-      "id": "olivia-rodrigo-robert-smith-whats-wrong-with-me",
-      "artist": "Olivia Rodrigo & Robert Smith",
-      "title": "What’s Wrong with Me",
-      "video": "oOEGRpfitAg",
-      "addedAt": "2026-10-30T03:48:57.016Z"
-    },
-    {
-      "id": "disneys-high-school-musical-the-musical-the-series-olivia-rodrigo-joshua-bassett-i-think-i-kinda-you-know",
-      "artist": "Disney’s High School Musical: The Musical: The Series (Olivia Rodrigo & Joshua Bassett)",
-      "title": "I Think I Kinda, You Know",
-      "video": "kT6UOSTdlgQ",
-      "addedAt": "2026-10-30T03:48:51.928Z"
-    },
-    {
-      "id": "taylor-swift-cornelia-street",
-      "artist": "Taylor Swift",
-      "title": "Cornelia Street",
-      "video": "VikHHWrgb4Y",
-      "addedAt": "2026-10-30T03:48:51.926Z"
-    },
-    {
-      "id": "loveshy-like-that",
-      "artist": "loveshy",
-      "title": "Like That",
-      "video": "LGM2MTmpQUc",
-      "addedAt": "2026-10-30T03:48:51.328Z"
-    },
-    {
-      "id": "dawid-podsiadlo-trojkaty-i-kwadraty",
-      "artist": "Dawid Podsiadło",
-      "title": "Trójkąty i kwadraty",
-      "video": "Wg4A_d9F7xk",
-      "addedAt": "2026-10-30T03:48:51.323Z"
-    },
-    {
-      "id": "la-secta-all-star-locura-automatica",
-      "artist": "La Secta All Star",
-      "title": "Locura automática",
-      "video": "FhloTzL4mh8",
-      "addedAt": "2026-10-29T03:46:45.737Z"
-    },
-    {
-      "id": "pinkpantheress-zara-larsson-stateside-zara-larsson",
-      "artist": "PinkPantheress, Zara Larsson",
-      "title": "Stateside + Zara Larsson",
-      "video": "lIxQe1R5hs0",
-      "addedAt": "2026-10-29T03:46:45.526Z"
-    },
-    {
-      "id": "mariah-carey-feat-trey-lorenz-ill-be-there-mtv-unplugged",
-      "artist": "Mariah Carey feat. Trey Lorenz",
-      "title": "I’ll Be There (MTV Unplugged)",
-      "video": "UIt3dx4an9c",
-      "addedAt": "2026-10-29T03:46:42.026Z"
-    },
-    {
-      "id": "taylor-swift-forever-always",
-      "artist": "Taylor Swift",
-      "title": "Forever & Always",
-      "video": "T-41vMWQTUA",
-      "addedAt": "2026-10-29T03:46:42.023Z"
-    },
-    {
-      "id": "nightwish-i-want-my-tears-back",
-      "artist": "Nightwish",
-      "title": "I Want My Tears Back",
-      "video": "OziWNmWI-tw",
-      "addedAt": "2026-10-29T03:46:42.022Z"
     }
   ]
 }

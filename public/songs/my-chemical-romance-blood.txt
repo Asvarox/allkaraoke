@@ -1,0 +1,254 @@
+#ARTIST:My Chemical Romance
+#TITLE:Blood
+#CREATOR:synonomy
+#BPM:242
+#YEAR:2006
+#PREVIEWSTART:38
+#VIDEO:v=uX3Gw82f6GU
+#GENRE:Alternative Rock
+#LANGUAGE:English
+#GAP:2608,2644628099174
+#ALLKARAOKE_ID:my-chemical-romance-blood
+#ALLKARAOKE_SID:6857
+#ALLKARAOKE_LASTUPDATE:2026-11-02T03:43:53.724Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://usdb.animux.de/index.php?link=detail&id=12228
+#ALLKARAOKE_REALBPM:122
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=12228
+#ALLKARAOKE_PREVIEWEND:86
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:86
+#MP3:My Chemical Romance - Blood.mp3
+* 16 4 11 Well 
+: 24 4 13 they 
+: 32 5 15 en
+* 40 3 20 cou
+: 45 1 19 rage 
+: 48 3 20 your 
+: 53 1 19 com
+: 56 3 20 plete 
+: 61 1 19 co
+: 64 3 20 o
+: 69 1 17 pe
+: 72 5 18 ra
+: 80 5 13 tion
+- 85
+: 96 2 13 Send 
+: 100 1 13 you 
+: 103 3 15 ro
+: 108 1 14 ses 
+: 112 2 15 when 
+: 116 1 14 they 
+: 119 3 15 think
+- 122
+* 124 1 21 You 
+: 127 3 20 need 
+: 132 1 18 to 
+: 135 6 16 smile!
+- 141 148
+- 148
+: 164 1 19 I 
+: 167 3 20 can’t 
+: 172 1 19 con
+: 175 3 20 trol 
+: 180 1 19 my
+: 183 2 20 self
+- 185
+: 188 1 18 Be
+: 191 3 16 cause 
+: 196 1 18 I 
+* 199 4 18 don’t 
+* 207 4 20 know 
+* 215 4 21 how!
+- 219
+* 222 2 25 And 
+: 226 1 24 they 
+: 229 3 23 love 
+: 234 1 24 me 
+: 237 3 23 for 
+: 242 1 24 it
+- 243
+* 245 3 23 Ho
+* 250 1 24 nest
+* 253 3 23 ly
+- 256
+: 258 1 24 I’ll 
+: 261 3 23 be 
+: 266 1 24 here 
+: 269 3 23 for 
+: 274 1 24 a 
+: 277 2 23 while
+- 279
+* 282 1 21 So 
+* 284 2 19 give 
+* 289 1 18 them 
+: 292 4 20 blood, 
+: 307 4 20 blood
+- 311
+: 322 3 21 Gal
+: 327 1 20 lons 
+: 330 2 20 of 
+: 335 1 18 the 
+: 338 3 18 stuff!
+- 341
+: 346 3 18 Give 
+: 351 1 20 them 
+: 354 3 21 all 
+: 359 1 20 that 
+: 362 3 21 they 
+: 367 1 22 can 
+: 370 2 21 drink
+- 372
+: 375 1 20 And 
+: 378 2 18 it 
+: 382 1 18 will 
+* 385 3 16 ne
+: 390 1 16 ver 
+: 393 2 17 be 
+: 398 1 19 e
+: 401 2 20 nough
+- 403
+: 406 1 19 So 
+: 409 2 17 give 
+: 414 1 19 them 
+: 417 5 20 blood, 
+: 433 5 23 blood
+- 438
+* 448 6 27 Bloo
+* 456 11 25 ~d!
+- 467
+: 471 3 25 Grab 
+: 476 1 24 a 
+: 479 3 23 glass 
+: 485 1 24 be
+: 488 2 23 cause
+- 490
+: 493 1 24 There’s 
+: 496 2 23 going 
+: 500 1 24 to 
+: 503 2 22 be 
+: 508 1 18 a 
+* 511 4 16 flood!
+- 515 523
+- 523
+: 539 1 18 A 
+: 542 3 20 ce
+: 547 1 19 le
+: 550 3 20 bra
+: 555 1 19 ted 
+: 558 3 20 man
+- 561
+: 563 1 19 A
+: 566 3 20 mongst 
+: 571 1 17 the 
+: 574 4 18 gur
+* 581 6 13 neys
+- 587
+: 597 2 13 They 
+: 601 1 13 can 
+: 604 2 15 fix 
+: 609 1 14 me 
+: 612 2 15 pro
+: 617 1 14 per
+- 618
+* 620 2 15 With 
+* 625 1 21 a 
+* 628 1 20 bit 
+* 632 1 18 of 
+* 635 2 16 luck!
+- 637 647
+- 647
+: 663 1 19 The 
+: 666 3 20 doc
+: 671 1 19 tors 
+: 674 3 20 and 
+: 679 1 19 the 
+: 682 3 20 nur
+: 687 1 19 ses
+- 688
+: 690 2 16 They 
+: 695 1 18 a
+: 698 4 18 dore 
+: 706 4 20 me 
+* 714 6 21 so!
+- 720
+* 722 2 25 But 
+: 726 2 24 it’s 
+: 731 4 23 real
+: 736 2 25 ly 
+: 741 3 23 quite
+- 744
+: 746 4 25 A
+: 752 3 23 lar
+: 757 5 25 ming
+- 762
+: 769 2 25 ’Cause 
+: 773 2 25 I’m 
+: 779 4 23 such 
+: 785 4 25 an
+- 789
+: 791 4 23 Aw
+: 797 4 25 ful 
+* 805 34 27 fuck!
+- 839
+F 841 2 12 Oh, 
+F 846 1 12 thank 
+F 849 3 12 you!
+- 852
+* 856 10 23 I 
+* 870 5 25 ga
+* 877 4 23 ~ve 
+* 884 11 23 you
+- 895
+: 901 5 23 Blood, 
+: 917 5 23 blood
+- 922
+: 934 3 21 Gal
+: 939 1 20 lons 
+: 942 2 20 of 
+: 947 1 18 the 
+: 950 3 18 stuff!
+- 953
+: 955 2 18 I 
+: 958 2 18 gave 
+: 963 1 20 you 
+: 966 3 21 all 
+: 971 1 20 that 
+: 974 3 21 you 
+: 979 1 22 could 
+: 982 2 21 drink
+- 984
+* 987 1 20 And 
+* 990 2 18 it 
+* 994 1 18 has 
+* 997 3 16 ne
+* 1002 1 16 ver 
+* 1005 2 17 been 
+* 1010 1 19 e
+* 1013 2 20 nough
+- 1015
+: 1018 1 19 I 
+: 1021 2 17 gave 
+: 1025 1 19 you 
+: 1028 4 20 blood, 
+* 1045 5 23 blood
+- 1050
+: 1061 22 27 Bloo
+* 1085 36 33 ~d!
+- 1121
+: 1133 6 31 I
+* 1140 5 29 ~’m 
+: 1151 6 28 the
+* 1158 5 26 ~
+- 1163
+* 1169 4 27 Kind 
+* 1175 1 26 of 
+* 1178 3 27 hu
+* 1183 1 26 man 
+* 1186 3 27 wrec
+* 1191 1 25 kage
+- 1192
+* 1194 3 27 That 
+* 1199 1 30 you 
+* 1202 5 28 love!
+E

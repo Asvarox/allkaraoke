@@ -1,0 +1,604 @@
+#ARTIST:Kraftklub
+#TITLE:Kein Liebeslied
+#CREATOR:Alexeus10
+#BPM:332
+#YEAR:2012
+#VIDEO:v=3V8160J2WxI
+#GENRE:Pop
+#LANGUAGE:German
+#GAP:3626,024096385542
+#ALLKARAOKE_ID:kraftklub-kein-liebeslied
+#ALLKARAOKE_SID:6860
+#ALLKARAOKE_LASTUPDATE:2026-11-02T03:43:53.736Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:83
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:209
+#MP3:Kraftklub - Kein Liebeslied.mp3
+F 22 2 8 Was 
+F 25 3 8 soll 
+F 29 2 10 ich 
+F 33 4 10 sa
+F 38 3 8 gen, 
+F 43 5 8 ich 
+F 58 6 10 mag 
+F 65 7 8 dich.
+- 72
+F 78 2 7 So 
+F 81 6 7 ganz 
+F 90 2 7 all
+F 93 2 7 ge
+F 96 8 7 mein.
+- 104
+F 105 2 7 Weil 
+F 108 3 7 ich 
+F 113 5 7 mag 
+F 120 3 7 wie 
+F 125 2 7 du 
+F 129 7 7 tanzt
+- 136
+F 138 2 7 Und 
+F 141 2 7 du 
+F 145 6 7 tanzt 
+F 153 4 7 ganz 
+F 159 2 7 al
+F 162 6 7 lein,
+- 168
+F 170 3 0 Und 
+F 174 2 0 ich 
+F 179 3 0 mag, 
+F 186 2 0 wie 
+F 190 2 0 du 
+F 193 2 0 dich 
+F 197 2 0 be
+F 200 5 0 wegst,
+- 205
+F 212 3 0 Mag 
+F 218 2 0 wie 
+F 221 1 0 du 
+F 224 4 0 re
+F 229 3 0 dest.
+- 232
+F 238 2 0 Ich 
+F 241 4 0 mag 
+F 248 4 0 wie 
+F 253 2 0 du 
+F 256 5 0 gehst
+- 261
+F 269 2 0 Und 
+F 273 3 0 has
+F 277 2 0 se 
+F 280 5 0 wenn 
+F 286 2 0 du 
+F 289 5 0 gehst.
+- 294
+F 302 2 0 Ich 
+F 305 3 0 hof
+F 309 2 0 fe, 
+F 312 3 0 du 
+F 316 2 0 ver
+F 319 7 0 stehst 
+F 330 4 0 mich.
+- 334
+F 342 2 0 Dass 
+F 346 2 0 ich 
+F 349 2 0 dich 
+F 353 5 0 mag 
+F 362 4 0 heißt 
+F 368 3 0 nur,
+- 371
+F 373 2 0 Dass 
+F 377 2 0 ich 
+F 381 3 0 nicht 
+F 386 5 0 weiß,
+- 391
+F 398 2 0 Wie 
+F 401 3 0 man 
+F 406 2 0 das 
+F 410 3 0 an
+F 414 2 0 ders 
+F 418 5 0 sagt.
+- 423
+F 426 3 0 Ich 
+F 430 2 0 bin 
+F 433 4 0 nicht 
+F 438 1 0 be
+F 440 4 0 son
+F 445 2 0 ders 
+F 448 5 0 gut 
+F 454 1 0 in 
+F 457 4 0 so
+F 462 4 0 was,
+- 466
+F 478 2 0 Ich 
+F 482 4 0 kann 
+F 488 3 0 das 
+F 494 4 0 nicht.
+- 498
+F 500 3 0 Ich 
+F 504 4 0 mag 
+F 509 3 0 dich 
+F 513 4 0 ein
+F 518 2 0 fach
+- 520
+F 522 2 0 Weil 
+F 526 2 0 du 
+F 529 3 0 an
+F 533 3 0 ders 
+F 538 3 0 als 
+F 543 1 0 die 
+F 545 3 0 an
+F 549 3 0 dern 
+F 556 5 0 bist.
+- 561 580
+- 580
+: 602 6 3 Es 
+: 610 6 3 ist 
+: 618 6 5 nicht 
+: 626 6 6 das, 
+: 634 4 3 wo
+: 640 4 3 nach 
+: 646 6 10 es 
+: 654 5 8 aus
+: 660 12 6 sieht.
+- 672
+: 694 8 8 Schon 
+: 706 2 8 aus 
+: 710 4 6 Prin
+: 716 6 8 zip 
+: 726 8 6 sing’ 
+: 738 4 6 ich 
+: 746 4 10 kein 
+: 754 3 8 Lie
+: 758 4 6 bes
+: 764 6 3 lied.
+- 770
+F 775 8 10 Kein 
+F 785 4 8 Lie
+F 790 5 6 bes
+F 796 7 3 lied.
+- 803 836
+- 836
+: 858 6 3 Denn 
+: 866 3 3 die
+: 870 5 5 ses 
+: 878 10 6 Lied 
+: 890 6 3 ist 
+: 902 8 10 nicht 
+: 912 6 8 gut 
+: 920 4 6 ge
+: 925 7 3 nug
+- 932
+: 934 4 8 Und 
+: 940 4 6 die 
+: 946 5 8 Gei
+: 952 2 6 gen 
+: 958 3 8 kling
+: 962 4 10 en 
+: 968 10 8 schief.
+- 978
+: 994 3 3 Die
+: 998 6 5 ses 
+: 1010 6 6 Lied 
+: 1018 4 3 ist 
+: 1024 6 3 gar 
+: 1034 4 10 kein 
+: 1042 3 8 Lie
+: 1046 5 6 bes
+: 1052 6 3 lied.
+- 1058
+F 1062 8 10 Kein 
+F 1072 4 8 Lie
+F 1077 5 6 bes
+F 1083 7 3 lied.
+- 1090 1237
+- 1237
+F 1259 2 0 Und 
+F 1263 2 0 ich 
+F 1267 4 0 mag, 
+F 1275 2 0 dass 
+F 1279 2 0 ich 
+F 1283 1 0 ü
+F 1285 2 0 ber 
+F 1288 3 0 Wit
+F 1292 2 0 ze 
+F 1296 3 0 la
+F 1300 3 0 che,
+- 1303
+F 1304 3 0 Die 
+F 1308 2 0 ich 
+F 1311 4 0 nicht 
+F 1316 2 0 ver
+F 1319 6 0 stan
+F 1326 2 0 den 
+F 1329 4 0 hab’.
+- 1333
+F 1338 2 0 Ein
+F 1341 3 0 fach, 
+F 1345 4 0 weil 
+F 1350 2 0 du 
+F 1353 3 0 da
+F 1357 2 0 mit 
+F 1361 4 0 an
+F 1366 1 0 ge
+F 1368 4 0 fang
+F 1373 1 0 en 
+F 1376 3 0 hast.
+- 1379
+F 1380 3 0 Ich 
+F 1384 4 0 könn
+F 1389 2 0 te 
+F 1393 3 0 hun
+F 1397 4 0 dert 
+F 1403 2 0 Ding
+F 1406 1 0 e 
+F 1409 5 0 auf
+F 1415 8 0 zähl’n
+- 1423
+F 1427 2 0 Die 
+F 1430 2 0 ich 
+F 1434 2 0 an 
+F 1437 2 0 dir 
+F 1440 4 0 mag,
+- 1444
+F 1446 2 0 Und 
+F 1449 3 0 hät
+F 1453 2 0 te 
+F 1457 7 0 trotz
+F 1465 2 0 dem
+- 1467
+F 1468 4 0 Noch 
+F 1473 4 0 ü
+F 1478 2 0 ber
+F 1481 5 0 haupt 
+F 1489 5 0 gar 
+F 1495 4 0 nix 
+F 1501 2 0 ge
+F 1504 6 0 sagt.
+- 1510
+F 1512 3 0 Viel 
+F 1516 2 0 zu 
+F 1519 5 0 vie
+F 1525 2 0 le 
+F 1528 4 0 Ad
+F 1533 4 0 jek
+F 1538 4 0 ti
+F 1543 1 0 ve 
+F 1545 5 0 und 
+F 1558 3 0 mie
+F 1562 2 0 se 
+F 1566 2 0 Ver
+F 1569 6 0 glei
+F 1576 4 0 che.
+- 1580
+F 1582 2 0 Ich 
+F 1585 4 0 lie
+F 1590 1 0 be 
+F 1592 4 0 Lie
+F 1597 3 0 bes
+F 1601 4 0 lie
+F 1606 1 0 der,
+- 1607
+F 1608 4 0 A
+F 1613 2 0 ber 
+F 1616 4 0 ich 
+F 1621 2 0 kann 
+F 1624 3 0 sie 
+F 1628 3 0 nicht 
+F 1632 7 0 schrei
+F 1640 2 0 ben.
+- 1642
+F 1646 2 0 Es 
+F 1649 6 0 liegt 
+F 1656 4 0 nicht 
+F 1662 2 0 am 
+F 1666 1 0 I
+F 1668 4 0 mage,
+- 1672
+F 1676 4 0 Liegt 
+F 1681 3 0 nicht 
+F 1686 2 0 an 
+F 1689 2 0 der 
+F 1692 2 0 Fri
+F 1695 6 0 sur,
+- 1701
+F 1709 2 0 Ich 
+F 1712 3 0 bin 
+F 1716 2 0 nicht 
+F 1720 3 0 Ro
+F 1724 2 0 bert 
+F 1727 6 0 Smith
+- 1733
+F 1740 3 0 Und 
+F 1744 3 0 wir 
+F 1748 3 0 sind 
+F 1752 3 0 nicht 
+F 1754 1 0 The 
+F 1756 2 0 Cure
+- 1758
+: 1759 2 3 Es 
+: 1762 6 3 ist 
+: 1770 6 5 nicht 
+: 1778 6 6 das, 
+: 1786 4 3 wo
+: 1792 4 3 nach 
+: 1798 6 10 es 
+: 1806 5 8 aus
+: 1812 12 6 sieht.
+- 1824
+: 1846 8 8 Schon 
+: 1858 2 8 aus 
+: 1862 4 6 Prin
+: 1868 6 8 zip 
+: 1878 8 6 sing’ 
+: 1890 4 6 ich 
+: 1898 4 10 kein 
+: 1906 3 8 Lie
+: 1910 4 6 bes
+: 1916 6 3 lied.
+- 1922
+F 1926 8 10 Kein 
+F 1936 4 8 Lie
+F 1941 5 6 bes
+F 1947 7 3 lied.
+- 1954 1988
+- 1988
+: 2010 6 3 Denn 
+: 2018 3 3 die
+: 2022 5 5 ses 
+: 2030 10 6 Lied 
+: 2042 6 3 ist 
+: 2054 8 10 nicht 
+: 2064 6 8 gut 
+: 2072 4 6 ge
+: 2077 7 3 nug
+- 2084
+: 2086 4 8 Und 
+: 2092 4 6 die 
+: 2098 5 8 Gei
+: 2104 2 6 gen 
+: 2110 3 8 kling
+: 2114 4 10 en 
+: 2120 10 8 schief.
+- 2130
+: 2146 3 3 Die
+: 2150 6 5 ses 
+: 2162 6 6 Lied 
+: 2170 4 3 ist 
+: 2176 6 3 gar 
+: 2186 4 10 kein 
+: 2194 3 8 Lie
+: 2198 5 6 bes
+: 2204 6 3 lied.
+- 2210
+F 2214 8 10 Kein 
+F 2224 4 8 Lie
+F 2229 5 6 bes
+F 2235 7 3 lied.
+- 2242 2270
+- 2270
+F 2292 3 0 So 
+F 2296 6 0 sitz 
+F 2304 3 0 ich 
+F 2308 4 0 hier, 
+F 2316 2 0 mit 
+F 2319 7 0 Stift 
+F 2329 3 0 und 
+F 2333 3 0 Pa
+F 2337 6 0 pier. 
+F 2345 2 0 Al
+F 2348 6 0 lei
+F 2355 3 0 ne.
+- 2358
+F 2368 5 0 Nichts 
+F 2376 3 0 funk
+F 2380 4 0 tio
+F 2385 5 0 niert.
+- 2390
+F 2392 3 0 Was 
+F 2396 2 0 ich 
+F 2400 7 0 schrei
+F 2408 3 0 be 
+F 2412 2 0 ist 
+F 2416 6 0 schei
+F 2423 4 0 ße.
+- 2427
+F 2429 2 0 Ba
+F 2432 4 0 na
+F 2437 3 0 ler, 
+F 2449 3 0 aus
+F 2453 3 0 tausch
+F 2457 3 0 ba
+F 2461 2 0 rer 
+F 2465 6 0 Müll.
+- 2471
+F 2481 3 0 Mor
+F 2485 2 0 ris
+F 2488 2 0 sey 
+F 2492 2 0 hat 
+F 2495 4 0 schon 
+F 2501 2 0 all 
+F 2504 3 0 das 
+F 2509 2 0 ge
+F 2512 6 0 sagt
+- 2518
+F 2520 3 0 Was 
+F 2525 2 0 ich 
+F 2528 6 0 sa
+F 2535 2 0 gen 
+F 2538 5 0 will.
+- 2543
+F 2544 4 0 Und 
+F 2550 1 0 er 
+F 2553 3 0 re
+F 2557 2 0 det 
+F 2562 4 0 Eng
+F 2567 4 0 lisch 
+F 2573 3 0 und 
+F 2577 5 0 kennt 
+F 2584 3 0 dich 
+F 2588 4 0 nich’ 
+F 2593 6 0 mal.
+- 2599
+F 2601 2 0 Und 
+F 2605 2 0 ist 
+F 2608 6 0 zwei’n
+F 2615 5 0 fünf
+F 2621 4 0 zig 
+F 2626 6 0 Jah
+F 2633 1 0 re,
+- 2634
+F 2636 6 0 Schluss
+F 2644 3 0 end
+F 2648 4 0 lich 
+F 2654 2 0 e
+F 2657 6 0 gal, 
+F 2664 5 0 weil
+- 2669
+F 2680 4 0 Ei
+F 2685 3 0 gent
+F 2689 4 0 lich, 
+F 2706 4 0 auch 
+F 2711 3 0 wenn 
+F 2715 2 0 es 
+F 2720 6 0 pein
+F 2727 3 0 lich 
+F 2732 3 0 ist,
+- 2735
+F 2736 3 0 Woll
+F 2740 1 0 te 
+F 2742 2 0 ich 
+F 2745 3 0 nur 
+F 2749 2 0 ein 
+F 2752 4 0 Lie
+F 2757 3 0 bes
+F 2761 3 0 lied 
+F 2768 7 0 schrei
+F 2776 2 0 ben 
+F 2779 3 0 für 
+F 2783 6 0 dich.
+- 2789 2820
+- 2820
+: 2842 6 3 Es 
+: 2850 6 3 ist 
+: 2858 6 5 nicht 
+: 2866 6 6 das, 
+: 2874 4 3 wo
+: 2880 4 3 nach 
+: 2886 6 10 es 
+: 2894 5 8 aus
+: 2900 12 6 sieht.
+- 2912
+: 2934 8 8 Schon 
+: 2946 2 8 aus 
+: 2950 4 6 Prin
+: 2956 6 8 zip 
+: 2966 8 6 sing’ 
+: 2978 4 6 ich 
+: 2986 4 10 kein 
+: 2994 3 8 Lie
+: 2998 4 6 bes
+: 3004 6 3 lied.
+- 3010
+F 3016 8 10 Kein 
+F 3026 4 8 Lie
+F 3031 5 6 bes
+F 3037 7 3 lied.
+- 3044 3076
+- 3076
+: 3098 6 3 Denn 
+: 3106 5 3 die
+: 3112 4 5 ses 
+: 3118 10 6 Lied 
+: 3130 6 3 ist 
+: 3142 8 10 nicht 
+: 3152 6 8 gut 
+: 3160 4 6 ge
+: 3165 7 3 nug
+- 3172
+: 3174 4 8 Und 
+: 3180 4 6 die 
+: 3186 5 8 Gei
+: 3192 2 6 gen 
+: 3198 3 8 kling
+: 3202 4 10 en 
+: 3208 10 8 schief.
+- 3218
+: 3234 3 3 Die
+: 3238 6 5 ses 
+: 3250 4 6 Lied 
+: 3256 4 3 ist 
+: 3264 6 3 gar 
+: 3274 4 10 kein 
+: 3282 3 8 Lie
+: 3286 5 6 bes
+: 3292 6 3 lied.
+- 3298
+F 3303 8 10 Kein 
+F 3313 4 8 Lie
+F 3318 5 6 bes
+F 3324 7 3 lied.
+- 3331 3332
+- 3332
+: 3354 4 3 Du 
+: 3360 6 3 kannst 
+: 3368 4 5 mir 
+: 3376 7 6 glau
+: 3384 4 3 ben, 
+: 3392 6 3 so
+: 3400 6 10 was 
+: 3408 6 8 wollt’ 
+: 3416 4 6 ich 
+: 3422 6 8 nie.
+- 3428
+: 3434 1 8 A
+: 3436 2 6 ber 
+: 3442 6 8 ir
+: 3449 4 10 gend
+: 3454 7 8 wie 
+: 3482 4 6 ist 
+: 3488 6 6 das 
+: 3496 6 10 ein 
+: 3504 5 8 Lie
+: 3510 7 6 bes
+: 3518 8 3 lied.
+- 3526
+F 3530 6 10 Ein 
+F 3538 4 8 Lie
+F 3543 6 6 bes
+F 3551 7 3 lied.
+- 3558 3596
+- 3596
+: 3618 4 3 Die
+: 3624 6 5 ses 
+: 3632 6 6 Lied 
+: 3640 6 3 ist 
+: 3648 6 3 zwar 
+: 3656 6 10 nicht 
+: 3664 6 8 gut 
+: 3672 3 6 ge
+: 3676 8 8 nug
+- 3684
+: 3686 4 8 Und 
+: 3692 4 6 die 
+: 3698 5 8 Gei
+: 3704 2 6 gen 
+: 3710 3 8 kling
+: 3714 4 10 en 
+: 3720 10 8 schief.
+- 3730
+: 3746 4 3 Doch 
+: 3754 3 5 es 
+: 3760 6 6 ist 
+: 3770 4 3 und 
+: 3778 4 3 bleibt 
+: 3786 4 10 ein 
+: 3794 3 8 Lie
+: 3798 5 6 bes
+: 3804 8 8 lied.
+- 3812
+F 3816 6 10 Ein 
+F 3824 4 8 Lie
+F 3829 6 6 bes
+F 3837 7 3 lied.
+E
