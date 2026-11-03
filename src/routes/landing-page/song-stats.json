@@ -29,9 +29,9 @@
     "Muse",
     "Disturbed",
     "Foo Fighters",
+    "Beyoncé",
     "Metallica",
     "Miley Cyrus",
-    "Beyoncé",
     "Bruno Mars",
     "Ed Sheeran",
     "Katy Perry",
@@ -67,6 +67,7 @@
     "Coldplay",
     "High School Musical",
     "Jennifer Lopez",
+    "KoRn",
     "No Doubt",
     "Rise Against",
     "Three Days Grace",
@@ -76,7 +77,6 @@
     "Dua Lipa",
     "Gwen Stefani",
     "Kool & The Gang",
-    "KoRn",
     "Oasis",
     "Owl City",
     "Rod Stewart",
@@ -87,6 +87,7 @@
     "Christina Aguilera",
     "Deftones",
     "Destiny’s Child",
+    "Electric Light Orchestra",
     "Good Charlotte",
     "Guns N’ Roses",
     "Jason Derulo",
@@ -103,7 +104,6 @@
     "Bon Jovi",
     "Calvin Harris",
     "Depeche Mode",
-    "Electric Light Orchestra",
     "Elvis Presley",
     "Fleetwood Mac",
     "Groove Coverage",
@@ -188,11 +188,13 @@
     "Spanish",
     "Swedish",
     "Turkish",
-    "Ukrainian"
+    "Ukrainian",
+    "en"
   ],
-  "songs": 6876,
-  "generatedAt": "2026-11-02T03:44:44.769Z",
+  "songs": 6900,
+  "generatedAt": "2026-11-03T04:49:09.311Z",
   "additionsPerDay": {
+    "2026-11-03": 24,
     "2026-11-02": 21,
     "2026-10-31": 13,
     "2026-10-30": 30,
@@ -236,6 +238,174 @@
     "2026-09-05": 6
   },
   "recentlyAdded": [
+    {
+      "id": "sara-bareilles-love-song",
+      "artist": "Sara Bareilles",
+      "title": "Love Song",
+      "video": "qi7Yh16dA0w",
+      "addedAt": "2026-11-03T04:48:30.104Z"
+    },
+    {
+      "id": "domingues-romance-de-cinema",
+      "artist": "Domingues",
+      "title": "Romance de Cinema",
+      "video": "jbF7Q2JcCqU",
+      "addedAt": "2026-11-03T04:48:29.929Z"
+    },
+    {
+      "id": "the-virgins-rich-girls",
+      "artist": "The Virgins",
+      "title": "Rich Girls",
+      "video": "kVDNcN9Dg_U",
+      "addedAt": "2026-11-03T04:48:29.785Z"
+    },
+    {
+      "id": "bastille-things-we-lost-in-the-fire",
+      "artist": "Bastille",
+      "title": "Things We Lost In The Fire",
+      "video": "MGR4U7W1dZU",
+      "addedAt": "2026-11-03T04:48:29.783Z"
+    },
+    {
+      "id": "kinky-boots-step-one",
+      "artist": "Kinky Boots",
+      "title": "Step One",
+      "video": "pi5Ji9qA4aM",
+      "addedAt": "2026-11-03T04:48:29.649Z"
+    },
+    {
+      "id": "billy-joel-vienna",
+      "artist": "Billy Joel",
+      "title": "Vienna",
+      "video": "3jL4S4X97sQ",
+      "addedAt": "2026-11-03T04:48:29.647Z"
+    },
+    {
+      "id": "judas-priest-painkiller",
+      "artist": "Judas Priest",
+      "title": "Painkiller",
+      "video": "nM__lPTWThU",
+      "addedAt": "2026-11-03T04:48:29.645Z"
+    },
+    {
+      "id": "rema-selena-gomez-calm-down",
+      "artist": "Rema & Selena Gomez",
+      "title": "Calm Down",
+      "video": "WcIcVapfqXw",
+      "addedAt": "2026-11-03T04:48:29.514Z"
+    },
+    {
+      "id": "kygo-stole-the-show",
+      "artist": "Kygo",
+      "title": "Stole the Show",
+      "video": "Vs3LXhqm5h4",
+      "addedAt": "2026-11-03T04:48:29.383Z"
+    },
+    {
+      "id": "herbert-groenemeyer-mambo",
+      "artist": "Herbert Grönemeyer",
+      "title": "Mambo",
+      "video": "40hQeVlkpRI",
+      "addedAt": "2026-11-03T04:48:29.382Z"
+    },
+    {
+      "id": "stevie-wonder-ribbon-in-the-sky",
+      "artist": "Stevie Wonder",
+      "title": "Ribbon In The Sky",
+      "video": "zH8sl8pEvaQ",
+      "addedAt": "2026-11-03T04:48:29.380Z"
+    },
+    {
+      "id": "zen-cafe-piha-ilman-sadettajaa",
+      "artist": "Zen Café",
+      "title": "Piha ilman sadettajaa",
+      "video": "Ve6Rd0G4TK0",
+      "addedAt": "2026-11-03T04:48:25.957Z"
+    },
+    {
+      "id": "beyonce-flaws-and-all",
+      "artist": "Beyoncé",
+      "title": "Flaws And All",
+      "video": "iK9Iio7WgaI",
+      "addedAt": "2026-11-03T04:48:25.954Z"
+    },
+    {
+      "id": "alain-bashung-gaby-oh-gaby-training",
+      "artist": "Alain Bashung",
+      "title": "Gaby oh Gaby training",
+      "video": "KgLsxmqlEQc",
+      "addedAt": "2026-11-03T04:48:25.952Z"
+    },
+    {
+      "id": "electric-light-orchestra-the-lights-go-down",
+      "artist": "Electric Light Orchestra",
+      "title": "The Lights Go Down",
+      "video": "SecdY6_F9aA",
+      "addedAt": "2026-11-03T04:48:25.948Z"
+    },
+    {
+      "id": "one-ok-rock-the-way-back",
+      "artist": "ONE OK ROCK",
+      "title": "The Way Back",
+      "video": "q2dFMNPA9jQ",
+      "addedAt": "2026-11-03T04:48:25.944Z"
+    },
+    {
+      "id": "aventura-obsesion",
+      "artist": "Aventura",
+      "title": "Obsesión",
+      "video": "IERkYr29iao",
+      "addedAt": "2026-11-03T04:48:25.942Z"
+    },
+    {
+      "id": "haiducii-dragostea-din-tei",
+      "artist": "Haiducii",
+      "title": "Dragostea din tei",
+      "video": "MhuTaD-B4qs",
+      "addedAt": "2026-11-03T04:48:25.804Z"
+    },
+    {
+      "id": "queens-of-the-stone-age-little-sister",
+      "artist": "Queens Of The Stone Age",
+      "title": "Little Sister",
+      "video": "hGRqnNEOpe0",
+      "addedAt": "2026-11-03T04:48:25.664Z"
+    },
+    {
+      "id": "chord-overstreet-hold-on",
+      "artist": "Chord Overstreet",
+      "title": "Hold On",
+      "video": "1r79eaANM_o",
+      "addedAt": "2026-11-03T04:48:25.534Z"
+    },
+    {
+      "id": "the-rare-occasions-notion",
+      "artist": "The Rare Occasions",
+      "title": "Notion",
+      "video": "PD1EXJScA6k",
+      "addedAt": "2026-11-03T04:48:25.082Z"
+    },
+    {
+      "id": "korn-did-my-time",
+      "artist": "KoRn",
+      "title": "Did My Time",
+      "video": "xmOOGeZE-aE",
+      "addedAt": "2026-11-03T04:48:25.081Z"
+    },
+    {
+      "id": "kelis-trick-me",
+      "artist": "Kelis",
+      "title": "Trick Me",
+      "video": "NZ6HDPUrmsM",
+      "addedAt": "2026-11-03T04:48:25.078Z"
+    },
+    {
+      "id": "apulanta-pahempi-toistaan",
+      "artist": "Apulanta",
+      "title": "Pahempi toistaan",
+      "video": "YU08gHNq_Pg",
+      "addedAt": "2026-11-03T04:48:25.070Z"
+    },
     {
       "id": "jesus-christ-superstar-movie-gethsemane-i-only-want-to-say",
       "artist": "Jesus Christ Superstar (Movie)",
@@ -403,174 +573,6 @@
       "title": "Dave Dobbyn - Loyal",
       "video": "N22Bcdc07p8",
       "addedAt": "2026-10-31T03:33:23.892Z"
-    },
-    {
-      "id": "die-toten-hosen-liebesspieler",
-      "artist": "Die Toten Hosen",
-      "title": "Liebesspieler",
-      "video": "BAon9ShZUjg",
-      "addedAt": "2026-10-31T03:33:23.888Z"
-    },
-    {
-      "id": "one-direction-irresistible",
-      "artist": "One Direction",
-      "title": "Irresistible",
-      "video": "hBWOnb2SD-U",
-      "addedAt": "2026-10-31T03:33:23.886Z"
-    },
-    {
-      "id": "queen-youre-my-best-friend",
-      "artist": "Queen",
-      "title": "You’re My Best Friend",
-      "video": "HaZpZQG2z10",
-      "addedAt": "2026-10-31T03:33:23.882Z"
-    },
-    {
-      "id": "nightwish-fantasmic",
-      "artist": "Nightwish",
-      "title": "FantasMic",
-      "video": "QMWP7I81LMA",
-      "addedAt": "2026-10-31T03:33:23.880Z"
-    },
-    {
-      "id": "het-huis-anubis-het-geheim",
-      "artist": "Het Huis Anubis",
-      "title": "Het geheim",
-      "video": "YytCiUSRBCM",
-      "addedAt": "2026-10-31T03:33:23.694Z"
-    },
-    {
-      "id": "taylor-swift-the-other-side-of-the-door",
-      "artist": "Taylor Swift",
-      "title": "The Other Side Of The Door",
-      "video": "425n1NoRtgA",
-      "addedAt": "2026-10-31T03:33:23.691Z"
-    },
-    {
-      "id": "spongebob-schwammkopf-titelsong",
-      "artist": "SpongeBob Schwammkopf",
-      "title": "Titelsong",
-      "video": "eb2yknmGPNs",
-      "addedAt": "2026-10-31T03:33:23.156Z"
-    },
-    {
-      "id": "mariah-carey-vision-of-love",
-      "artist": "Mariah Carey",
-      "title": "Vision Of Love",
-      "video": "tov22NtCMC4",
-      "addedAt": "2026-10-31T03:33:23.152Z"
-    },
-    {
-      "id": "clowns-helden-ich-liebe-dich",
-      "artist": "Clowns & Helden",
-      "title": "Ich liebe dich",
-      "video": "McZEhRabe7Y",
-      "addedAt": "2026-10-31T03:33:23.149Z"
-    },
-    {
-      "id": "glee-cast-marry-you",
-      "artist": "Glee Cast",
-      "title": "Marry You",
-      "video": "xFV3YZufQ5M",
-      "addedAt": "2026-10-31T03:33:23.138Z"
-    },
-    {
-      "id": "disneys-high-school-musical-2-work-this-out",
-      "artist": "Disney’s High School Musical 2",
-      "title": "Work This Out",
-      "video": "kl4zc0eig9k",
-      "addedAt": "2026-10-30T03:49:02.541Z"
-    },
-    {
-      "id": "weezer-falling-for-you",
-      "artist": "Weezer",
-      "title": "Falling For You",
-      "video": "hdrAsZ7ebuc",
-      "addedAt": "2026-10-30T03:49:02.540Z"
-    },
-    {
-      "id": "little-mix-feat-sean-paul-hair",
-      "artist": "Little Mix feat. Sean Paul",
-      "title": "Hair",
-      "video": "kgUpRwMeRr4",
-      "addedAt": "2026-10-30T03:49:00.979Z"
-    },
-    {
-      "id": "beyonce-hello",
-      "artist": "Beyoncé",
-      "title": "Hello",
-      "video": "60gOJYc93J8",
-      "addedAt": "2026-10-30T03:49:00.977Z"
-    },
-    {
-      "id": "david-bowie-five-years",
-      "artist": "David Bowie",
-      "title": "Five Years",
-      "video": "2ObjtVdsV3I",
-      "addedAt": "2026-10-30T03:49:00.976Z"
-    },
-    {
-      "id": "tatu-not-gonna-get-us",
-      "artist": "t.A.T.u.",
-      "title": "Not Gonna Get Us",
-      "video": "0HL-N9oOjcs",
-      "addedAt": "2026-10-30T03:49:00.974Z"
-    },
-    {
-      "id": "girls-generation-snsd-run-devil-run",
-      "artist": "Girls’ Generation (SNSD)",
-      "title": "Run Devil Run",
-      "video": "q_gfD3nvh-8",
-      "addedAt": "2026-10-30T03:49:00.822Z"
-    },
-    {
-      "id": "the-gathering-when-the-sun-hits-slowdive-cover-version",
-      "artist": "The Gathering",
-      "title": "When The Sun Hits (Slowdive Cover Version)",
-      "video": "8w2jAM9c4o8",
-      "addedAt": "2026-10-30T03:49:00.821Z"
-    },
-    {
-      "id": "rammstein-dicke-titten",
-      "artist": "Rammstein",
-      "title": "Dicke Titten",
-      "video": "thJgU9jkdU4",
-      "addedAt": "2026-10-30T03:49:00.820Z"
-    },
-    {
-      "id": "paramore-misguided-ghosts",
-      "artist": "Paramore",
-      "title": "Misguided Ghosts",
-      "video": "oGWeHPK3NC4",
-      "addedAt": "2026-10-30T03:49:00.819Z"
-    },
-    {
-      "id": "disneys-lemonade-mouth-somebody-single",
-      "artist": "Disney’s Lemonade Mouth",
-      "title": "Somebody (Single)",
-      "video": "YJ5fRzTJvS4",
-      "addedAt": "2026-10-30T03:49:00.666Z"
-    },
-    {
-      "id": "alicia-keys-if-i-aint-got-you-full-version",
-      "artist": "Alicia Keys",
-      "title": "If I Ain’t Got You (Full Version)",
-      "video": "P1pIzbHC1Z4",
-      "addedAt": "2026-10-30T03:49:00.664Z"
-    },
-    {
-      "id": "florence-the-machine-ship-to-wreck",
-      "artist": "Florence + the Machine",
-      "title": "Ship To Wreck",
-      "video": "B9v8jLBrvug",
-      "addedAt": "2026-10-30T03:49:00.663Z"
-    },
-    {
-      "id": "far-east-movement-feat-ryan-tedder-rocketeer",
-      "artist": "Far East Movement feat. Ryan Tedder",
-      "title": "Rocketeer",
-      "video": "RcmKbTR--iA",
-      "addedAt": "2026-10-30T03:49:00.406Z"
     }
   ]
 }

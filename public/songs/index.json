@@ -6631,6 +6631,34 @@
     "local": false
   },
   {
+    "id": "alain-bashung-gaby-oh-gaby-training",
+    "title": "Gaby oh Gaby training",
+    "artist": "Alain Bashung",
+    "video": "KgLsxmqlEQc",
+    "language": [
+      "French"
+    ],
+    "bpm": 383.8,
+    "gap": 15693.845752996353,
+    "year": "1980",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-11-03T04:48:25.952Z",
+    "realBpm": 383.2,
+    "volume": 1,
+    "sourceUrl": "https://www.youtube.com/watch?v=KgLsxmqlEQc",
+    "duration": 236,
+    "tracks": [
+      {
+        "name": "Alain Bashung - Gaby oh Gaby",
+        "start": 26
+      }
+    ],
+    "shortId": 6888,
+    "tracksCount": 1,
+    "search": "alainbashunggabyohgabytraining",
+    "local": false
+  },
+  {
     "id": "alain-bashung-gaby-oh-gaby",
     "title": "Gaby oh Gaby",
     "artist": "Alain Bashung",
@@ -12206,6 +12234,35 @@
     "local": false
   },
   {
+    "id": "apulanta-pahempi-toistaan",
+    "title": "Pahempi toistaan",
+    "artist": "Apulanta",
+    "video": "YU08gHNq_Pg",
+    "language": [
+      "Finnish"
+    ],
+    "bpm": 254,
+    "gap": 22276.062992125982,
+    "year": "2005",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-11-03T04:48:25.070Z",
+    "realBpm": 127,
+    "previewStart": 22,
+    "previewEnd": 252,
+    "volume": 1,
+    "author": "JussiFX",
+    "duration": 290,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6878,
+    "tracksCount": 1,
+    "search": "apulantapahempitoistaan",
+    "local": false
+  },
+  {
     "id": "apulanta-viisaus-ei-asu-meissae",
     "title": "Viisaus ei asu meissä",
     "artist": "Apulanta",
@@ -16351,6 +16408,34 @@
     "local": false
   },
   {
+    "id": "aventura-obsesion",
+    "title": "Obsesión",
+    "artist": "Aventura",
+    "video": "IERkYr29iao",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 267.2,
+    "gap": 649.5209580838323,
+    "year": "2002",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-03T04:48:25.942Z",
+    "realBpm": 134,
+    "volume": 1,
+    "author": "Diddlmaus30mg",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=3744",
+    "duration": 184,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6885,
+    "tracksCount": 1,
+    "search": "aventuraobsesion",
+    "local": false
+  },
+  {
     "id": "aventura-por-un-segundo",
     "title": "Por un segundo",
     "artist": "Aventura",
@@ -19856,6 +19941,35 @@
     "local": false
   },
   {
+    "id": "bastille-things-we-lost-in-the-fire",
+    "title": "Things We Lost In The Fire",
+    "artist": "Bastille",
+    "video": "MGR4U7W1dZU",
+    "language": [
+      "English"
+    ],
+    "bpm": 268.4,
+    "gap": 15504.038748137109,
+    "year": "2013",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-11-03T04:48:29.783Z",
+    "realBpm": 134,
+    "previewStart": 60,
+    "previewEnd": 236,
+    "volume": 1,
+    "author": "flaur",
+    "duration": 261,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6898,
+    "tracksCount": 1,
+    "search": "bastillethingswelostinthefire",
+    "local": false
+  },
+  {
     "id": "batta-chase",
     "title": "Chase",
     "artist": "Batta",
@@ -22040,6 +22154,33 @@
     "local": false
   },
   {
+    "id": "beyonce-flaws-and-all",
+    "title": "Flaws And All",
+    "artist": "Beyoncé",
+    "video": "iK9Iio7WgaI",
+    "language": [
+      "English"
+    ],
+    "bpm": 303.68,
+    "gap": 172.11801896733402,
+    "year": "2007",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-03T04:48:25.954Z",
+    "realBpm": 152,
+    "volume": 1,
+    "author": "sprock",
+    "duration": 248,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6889,
+    "tracksCount": 1,
+    "search": "beyonceflawsandall",
+    "local": false
+  },
+  {
     "id": "beyonce-grown-woman",
     "title": "Grown Woman",
     "artist": "Beyoncé",
@@ -23709,6 +23850,36 @@
     "shortId": 566,
     "tracksCount": 1,
     "search": "billyjoeluptowngirl",
+    "local": false
+  },
+  {
+    "id": "billy-joel-vienna",
+    "title": "Vienna",
+    "artist": "Billy Joel",
+    "video": "3jL4S4X97sQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 250.3,
+    "gap": 15891.222532960448,
+    "year": "1977",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-03T04:48:29.647Z",
+    "genre": "Soft Rock",
+    "realBpm": 125,
+    "previewStart": 55,
+    "previewEnd": 101,
+    "volume": 1,
+    "author": "ultrastarsongs",
+    "duration": 217,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6896,
+    "tracksCount": 1,
+    "search": "billyjoelvienna",
     "local": false
   },
   {
@@ -37625,6 +37796,33 @@
     "shortId": 940,
     "tracksCount": 1,
     "search": "chitaozinhoxororosinonimos",
+    "local": false
+  },
+  {
+    "id": "chord-overstreet-hold-on",
+    "title": "Hold On",
+    "artist": "Chord Overstreet",
+    "video": "1r79eaANM_o",
+    "language": [
+      "English"
+    ],
+    "bpm": 120.185,
+    "gap": 16218.53929358905,
+    "year": "2017",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-03T04:48:25.534Z",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "Mrs_Luu_x3",
+    "duration": 194,
+    "tracks": [
+      {
+        "start": 8
+      }
+    ],
+    "shortId": 6882,
+    "tracksCount": 1,
+    "search": "chordoverstreetholdon",
     "local": false
   },
   {
@@ -54230,6 +54428,34 @@
     "local": false
   },
   {
+    "id": "domingues-romance-de-cinema",
+    "title": "Romance de Cinema",
+    "artist": "Domingues",
+    "video": "jbF7Q2JcCqU",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 232.02,
+    "gap": 104.25601241272307,
+    "year": "2020",
+    "artistOrigin": "PT",
+    "lastUpdate": "2026-11-03T04:48:29.929Z",
+    "realBpm": 174,
+    "volume": 1,
+    "author": "Domingues",
+    "duration": 243,
+    "tracks": [
+      {
+        "name": "Romance de Cinema",
+        "start": 15
+      }
+    ],
+    "shortId": 6900,
+    "tracksCount": 1,
+    "search": "dominguesromancedecinema",
+    "local": false
+  },
+  {
     "id": "don-mclean-american-pie",
     "title": "American Pie",
     "artist": "Don McLean",
@@ -58383,6 +58609,34 @@
     "shortId": 1457,
     "tracksCount": 1,
     "search": "electriclightorchestrarocknrollisking",
+    "local": false
+  },
+  {
+    "id": "electric-light-orchestra-the-lights-go-down",
+    "title": "The Lights Go Down",
+    "artist": "Electric Light Orchestra",
+    "video": "SecdY6_F9aA",
+    "language": [
+      "English"
+    ],
+    "bpm": 396.34,
+    "gap": 14125.996366755815,
+    "year": "1981",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-11-03T04:48:25.948Z",
+    "realBpm": 99,
+    "volume": 0.6,
+    "author": "lozboorman",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=16299",
+    "duration": 215,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6887,
+    "tracksCount": 1,
+    "search": "electriclightorchestrathelightsgodown",
     "local": false
   },
   {
@@ -78246,6 +78500,33 @@
     "local": false
   },
   {
+    "id": "haiducii-dragostea-din-tei",
+    "title": "Dragostea din tei",
+    "artist": "Haiducii",
+    "video": "MhuTaD-B4qs",
+    "language": [
+      "Romanian"
+    ],
+    "bpm": 260,
+    "gap": 359.23076923076917,
+    "year": "2003",
+    "artistOrigin": "RO",
+    "lastUpdate": "2026-11-03T04:48:25.804Z",
+    "realBpm": 130,
+    "volume": 1,
+    "author": "Leroidukitch",
+    "duration": 215,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6884,
+    "tracksCount": 1,
+    "search": "haiduciidragosteadintei",
+    "local": false
+  },
+  {
     "id": "hailee-steinfeld-feat-dnce-rock-bottom",
     "title": "Rock Bottom",
     "artist": "Hailee Steinfeld feat. DNCE",
@@ -80309,6 +80590,33 @@
     "shortId": 6161,
     "tracksCount": 1,
     "search": "herbertgroenemeyermaenner",
+    "local": false
+  },
+  {
+    "id": "herbert-groenemeyer-mambo",
+    "title": "Mambo",
+    "artist": "Herbert Grönemeyer",
+    "video": "40hQeVlkpRI",
+    "language": [
+      "German"
+    ],
+    "bpm": 260.4,
+    "gap": 11580.737327188941,
+    "year": "1984",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-11-03T04:48:29.382Z",
+    "realBpm": 130,
+    "volume": 1,
+    "author": "Mamba99",
+    "duration": 166,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6892,
+    "tracksCount": 1,
+    "search": "herbertgroenemeyermambo",
     "local": false
   },
   {
@@ -94045,6 +94353,33 @@
     "local": false
   },
   {
+    "id": "judas-priest-painkiller",
+    "title": "Painkiller",
+    "artist": "Judas Priest",
+    "video": "nM__lPTWThU",
+    "language": [
+      "English"
+    ],
+    "bpm": 399,
+    "gap": 25804.962406015038,
+    "year": "1990",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-11-03T04:48:29.645Z",
+    "realBpm": 104,
+    "volume": 1,
+    "author": "Baumann",
+    "duration": 369,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6895,
+    "tracksCount": 1,
+    "search": "judaspriestpainkiller",
+    "local": false
+  },
+  {
     "id": "judas-priest-turbo-lover",
     "title": "Turbo Lover",
     "artist": "Judas Priest",
@@ -98724,6 +99059,34 @@
     "local": false
   },
   {
+    "id": "kelis-trick-me",
+    "title": "Trick Me",
+    "artist": "Kelis",
+    "video": "NZ6HDPUrmsM",
+    "language": [
+      "English"
+    ],
+    "bpm": 428.45,
+    "gap": 884.7123351616292,
+    "year": "2003",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-03T04:48:25.078Z",
+    "genre": "R&B",
+    "realBpm": 107,
+    "volume": 1,
+    "author": "thursday",
+    "duration": 205,
+    "tracks": [
+      {
+        "start": 29
+      }
+    ],
+    "shortId": 6879,
+    "tracksCount": 1,
+    "search": "kelistrickme",
+    "local": false
+  },
+  {
     "id": "kellie-pickler-red-high-heels",
     "title": "Red High Heels",
     "artist": "Kellie Pickler",
@@ -100436,6 +100799,35 @@
     "local": false
   },
   {
+    "id": "kinky-boots-step-one",
+    "title": "Step One",
+    "artist": "Kinky Boots",
+    "video": "pi5Ji9qA4aM",
+    "language": [
+      "English"
+    ],
+    "bpm": 277.77,
+    "gap": 4453.9712711955935,
+    "year": "2013",
+    "lastUpdate": "2026-11-03T04:48:29.649Z",
+    "genre": "Showtunes",
+    "realBpm": 138,
+    "volume": 1,
+    "author": "seanie627",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=26060",
+    "duration": 176,
+    "tracks": [
+      {
+        "name": "Step One",
+        "start": 19
+      }
+    ],
+    "shortId": 6897,
+    "tracksCount": 1,
+    "search": "kinkybootsstepone",
+    "local": false
+  },
+  {
     "id": "kirka-x-bomfunk-mcs-hetki-lyo-freestyler-mashup",
     "title": "Hetki lyö / Freestyler MASHUP",
     "artist": "Kirka x Bomfunk MC’s",
@@ -101369,6 +101761,34 @@
     "shortId": 6461,
     "tracksCount": 1,
     "search": "korncomingundone",
+    "local": false
+  },
+  {
+    "id": "korn-did-my-time",
+    "title": "Did My Time",
+    "artist": "KoRn",
+    "video": "xmOOGeZE-aE",
+    "language": [
+      "English"
+    ],
+    "bpm": 279,
+    "gap": 45818.49462365591,
+    "year": "2003",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-03T04:48:25.081Z",
+    "genre": "Nu Metal",
+    "realBpm": 92,
+    "volume": 1,
+    "author": "IC",
+    "duration": 241,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6880,
+    "tracksCount": 1,
+    "search": "korndidmytime",
     "local": false
   },
   {
@@ -102602,6 +103022,35 @@
     "shortId": 2424,
     "tracksCount": 1,
     "search": "kygoselenagomezitaintme",
+    "local": false
+  },
+  {
+    "id": "kygo-stole-the-show",
+    "title": "Stole the Show",
+    "artist": "Kygo",
+    "video": "Vs3LXhqm5h4",
+    "language": [
+      "en"
+    ],
+    "bpm": 397.54,
+    "gap": 1441.2345927453844,
+    "year": "2016",
+    "artistOrigin": "NO",
+    "lastUpdate": "2026-11-03T04:48:29.383Z",
+    "genre": "Dance",
+    "realBpm": 100,
+    "previewStart": 41.32,
+    "volume": 1,
+    "author": "Mrs_Luu_x3",
+    "duration": 219,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6893,
+    "tracksCount": 1,
+    "search": "kygostoletheshow",
     "local": false
   },
   {
@@ -140394,6 +140843,35 @@
     "local": false
   },
   {
+    "id": "one-ok-rock-the-way-back",
+    "title": "The Way Back",
+    "artist": "ONE OK ROCK",
+    "video": "q2dFMNPA9jQ",
+    "language": [
+      "Japanese",
+      "English"
+    ],
+    "bpm": 300.14,
+    "gap": 8870.466448990472,
+    "year": "2015",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-11-03T04:48:25.944Z",
+    "realBpm": 75,
+    "volume": 1,
+    "author": "Stalker128",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=21822",
+    "duration": 189,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6886,
+    "tracksCount": 1,
+    "search": "oneokrockthewayback",
+    "local": false
+  },
+  {
     "id": "one-piece-juntos",
     "title": "Juntos",
     "artist": "One Piece",
@@ -149208,6 +149686,34 @@
     "local": false
   },
   {
+    "id": "queens-of-the-stone-age-little-sister",
+    "title": "Little Sister",
+    "artist": "Queens Of The Stone Age",
+    "video": "hGRqnNEOpe0",
+    "language": [
+      "English"
+    ],
+    "bpm": 314,
+    "gap": 14056.815286624204,
+    "year": "2005",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-03T04:48:25.664Z",
+    "genre": "Indie",
+    "realBpm": 162,
+    "volume": 1,
+    "author": "FaKK",
+    "duration": 178,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6883,
+    "tracksCount": 1,
+    "search": "queensofthestoneagelittlesister",
+    "local": false
+  },
+  {
     "id": "queens-of-the-stone-age-no-one-knows",
     "title": "No One Knows",
     "artist": "Queens Of The Stone Age",
@@ -152276,6 +152782,33 @@
     "shortId": 3620,
     "tracksCount": 1,
     "search": "remlosingmyreligion",
+    "local": false
+  },
+  {
+    "id": "rema-selena-gomez-calm-down",
+    "title": "Calm Down",
+    "artist": "Rema & Selena Gomez",
+    "video": "WcIcVapfqXw",
+    "language": [
+      "English"
+    ],
+    "bpm": 214,
+    "gap": 8038.691588785046,
+    "year": "2022",
+    "lastUpdate": "2026-11-03T04:48:29.514Z",
+    "genre": "Afrobeats",
+    "realBpm": 107,
+    "volume": 1,
+    "author": "vicktoben",
+    "duration": 240,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6894,
+    "tracksCount": 1,
+    "search": "remaselenagomezcalmdown",
     "local": false
   },
   {
@@ -159004,6 +159537,34 @@
     "shortId": 3792,
     "tracksCount": 1,
     "search": "santianosantiano",
+    "local": false
+  },
+  {
+    "id": "sara-bareilles-love-song",
+    "title": "Love Song",
+    "artist": "Sara Bareilles",
+    "video": "qi7Yh16dA0w",
+    "language": [
+      "English"
+    ],
+    "bpm": 245.95,
+    "gap": 15744.191908924578,
+    "year": "2007",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-03T04:48:30.104Z",
+    "genre": "Pop",
+    "realBpm": 77,
+    "volume": 1,
+    "author": "IC",
+    "duration": 265,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6901,
+    "tracksCount": 1,
+    "search": "sarabareilleslovesong",
     "local": false
   },
   {
@@ -169886,6 +170447,34 @@
     "shortId": 4073,
     "tracksCount": 1,
     "search": "steviewonderparttimelover",
+    "local": false
+  },
+  {
+    "id": "stevie-wonder-ribbon-in-the-sky",
+    "title": "Ribbon In The Sky",
+    "artist": "Stevie Wonder",
+    "video": "zH8sl8pEvaQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 269.50000000000006,
+    "gap": 42076.400668399554,
+    "year": "1982",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-03T04:48:29.380Z",
+    "genre": "Ballad",
+    "realBpm": 65,
+    "volume": 1,
+    "author": "RetroGirl",
+    "duration": 223,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6891,
+    "tracksCount": 1,
+    "search": "steviewonderribboninthesky",
     "local": false
   },
   {
@@ -184240,6 +184829,33 @@
     "local": false
   },
   {
+    "id": "the-rare-occasions-notion",
+    "title": "Notion",
+    "artist": "The Rare Occasions",
+    "video": "PD1EXJScA6k",
+    "language": [
+      "English"
+    ],
+    "bpm": 320,
+    "gap": 10915.625,
+    "year": "2016",
+    "lastUpdate": "2026-11-03T04:48:25.082Z",
+    "genre": "Alternative Rock",
+    "realBpm": 160,
+    "volume": 1,
+    "author": "Subby77",
+    "duration": 196,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6881,
+    "tracksCount": 1,
+    "search": "therareoccasionsnotion",
+    "local": false
+  },
+  {
     "id": "the-rasmus-in-the-shadows",
     "title": "In The Shadows",
     "artist": "The Rasmus",
@@ -186109,6 +186725,34 @@
     "shortId": 4426,
     "tracksCount": 1,
     "search": "thevinesgetfree",
+    "local": false
+  },
+  {
+    "id": "the-virgins-rich-girls",
+    "title": "Rich Girls",
+    "artist": "The Virgins",
+    "video": "kVDNcN9Dg_U",
+    "language": [
+      "English"
+    ],
+    "bpm": 219.18,
+    "gap": 7283.446482343279,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-03T04:48:29.785Z",
+    "realBpm": 200,
+    "volume": 1,
+    "author": "mustangfred",
+    "sourceUrl": "The Virgins",
+    "duration": 184,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6899,
+    "tracksCount": 1,
+    "search": "thevirginsrichgirls",
     "local": false
   },
   {
@@ -201339,6 +201983,34 @@
     "shortId": 4791,
     "tracksCount": 1,
     "search": "zeddmarenmorrisgreythemiddle",
+    "local": false
+  },
+  {
+    "id": "zen-cafe-piha-ilman-sadettajaa",
+    "title": "Piha ilman sadettajaa",
+    "artist": "Zen Café",
+    "video": "Ve6Rd0G4TK0",
+    "language": [
+      "Finnish"
+    ],
+    "bpm": 380,
+    "gap": 9753.157894736842,
+    "year": "2001",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-11-03T04:48:25.957Z",
+    "genre": "Rock",
+    "realBpm": 95,
+    "volume": 1,
+    "author": "XxPurkkixX",
+    "duration": 253,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6890,
+    "tracksCount": 1,
+    "search": "zencafepihailmansadettajaa",
     "local": false
   },
   {
