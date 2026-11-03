@@ -1,0 +1,303 @@
+#ARTIST:Chord Overstreet
+#TITLE:Hold On
+#CREATOR:Mrs_Luu_x3
+#BPM:120,185
+#YEAR:2017
+#VIDEO:v=1r79eaANM_o
+#LANGUAGE:English
+#GAP:16218,53929358905
+#ALLKARAOKE_ID:chord-overstreet-hold-on
+#ALLKARAOKE_SID:6882
+#ALLKARAOKE_LASTUPDATE:2026-11-03T04:48:25.534Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:120
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:194
+#VERSION:1.1.0
+#MP3:Chord Overstreet - Hold On (Acoustic).mp3
+#AUDIO:Chord Overstreet - Hold On (Acoustic).mp3
+: 8 3 -7 Loving 
+: 13 1 -6 and 
+: 16 4 -8 fighting
+- 20
+: 23 7 -6 Accusing, 
+: 30 6 -8 denying
+- 36
+: 41 1 -8 I 
+: 43 3 -6 can't 
+: 47 6 -6 imagine 
+: 54 1 -8 a 
+: 56 3 -8 world 
+: 59 2 -10 with 
+: 62 1 -8 you 
+: 64 4 -6 gone
+- 68
+: 70 1 -6 The 
+: 72 3 -7 joy 
+: 76 2 -7 and 
+: 78 1 -7 the 
+: 80 5 -8 chaos, 
+: 86 1 -8 the 
+: 88 6 -6 demons 
+: 94 2 -8 we're 
+: 96 2 -8 made 
+: 99 1 -9 of
+- 100
+: 105 1 -8 I'd 
+: 107 1 -6 be 
+: 109 2 -6 so 
+: 112 3 -5 lost 
+: 116 1 -8 if 
+: 118 2 -8 you 
+: 120 2 -8 left 
+: 123 2 -10 me 
+: 126 5 -6 alone
+- 131
+: 135 1 3 You 
+: 136 3 -3 locked 
+: 140 7 -1 yourself 
+: 149 1 -1 in 
+: 150 1 -11 the 
+: 152 8 -8 bathroom
+- 160
+: 168 5 -3 Lying 
+: 174 1 -3 on 
+: 175 1 -3 the 
+: 176 3 -1 floor 
+: 180 2 -11 when 
+: 183 1 -10 I 
+: 184 3 -8 break 
+: 188 4 -6 through
+- 192
+: 192 1 -5 I 
+: 201 1 -7 pull 
+: 203 2 -6 you 
+: 205 1 -6 in 
+: 206 1 -3 to 
+: 208 4 -6 feel 
+: 212 3 -7 your 
+: 216 7 -10 heartbeat
+- 223
+: 228 2 -15 Can 
+: 230 2 -15 you 
+: 232 2 -9 hear 
+: 234 1 -6 me 
+: 236 4 -6 screaming 
+: 240 4 -5 "please 
+: 244 3 -6 don't 
+: 248 4 -8 leave 
+: 252 3 -11 me"?
+- 255 256
+- 256
+: 264 3 2 Hold 
+: 270 1 -6 on, 
+: 274 1 -1 I 
+: 275 4 -3 still 
+: 280 3 -7 want 
+: 284 1 -10 you
+- 285 320
+- 320
+: 328 4 1 Come 
+: 333 3 -7 back, 
+: 338 1 -1 I 
+: 340 4 -3 still 
+: 345 3 -8 need 
+: 349 2 -10 you
+- 351 372
+- 372
+: 380 2 -10 Let 
+: 383 1 -8 me 
+: 384 7 -6 take 
+: 391 2 -8 your 
+: 393 4 -6 hand, 
+: 397 3 -8 I'll 
+: 401 5 -6 make 
+: 406 3 -8 it 
+: 409 5 -6 right
+- 414
+: 414 1 -6 I 
+: 420 3 -6 swear 
+: 423 1 -8 to 
+: 425 4 -6 love 
+: 431 1 -6 you 
+: 436 2 -5 all 
+: 439 1 -6 my 
+: 441 3 -6 life
+- 444 449
+- 449
+: 457 3 1 Hold 
+: 462 1 -6 on, 
+: 466 1 -1 I 
+: 467 5 -3 still 
+: 473 3 -8 need 
+: 477 2 -10 you
+- 479 513
+- 513
+: 521 3 -6 Long 
+: 524 4 -8 endless 
+: 529 7 -9 highway, 
+: 536 1 -9 you're 
+: 537 6 -6 silent 
+: 543 5 -8 beside 
+: 548 1 -10 me
+- 549
+: 553 7 -6 Driving 
+: 560 1 -6 a 
+: 561 6 -6 nightmare 
+: 568 1 -8 I 
+: 569 3 -8 can't 
+: 573 3 -8 escape 
+: 577 4 -6 from
+- 581
+: 585 7 -7 Helplessly 
+: 593 5 -8 praying, 
+: 599 1 -9 the 
+: 601 4 -6 light 
+: 606 2 -8 isn't 
+: 609 4 -8 fading
+- 613
+: 617 5 -6 Hiding 
+: 623 1 -6 the 
+: 624 4 -5 shock 
+: 629 2 -8 and 
+: 631 1 -8 the 
+: 633 5 -8 chill 
+: 638 1 -10 in 
+: 639 1 -8 my 
+: 641 5 -6 bones
+- 646
+: 646 3 -6 They 
+: 649 4 -3 took 
+: 653 3 -3 you 
+: 657 4 -1 away 
+: 663 1 -11 on 
+: 664 1 -11 a 
+: 665 6 -8 table
+- 671
+: 678 3 -8 I 
+: 681 3 -5 pace 
+: 685 2 -3 back 
+: 687 1 -3 and 
+: 689 4 -1 forth 
+: 694 1 -1 as 
+: 695 2 -10 you 
+: 697 2 -8 lay 
+: 700 5 -6 still
+- 705
+: 705 8 -6 They 
+: 713 2 -7 pull 
+: 716 1 -6 you 
+: 718 1 -6 in 
+: 719 1 -3 to 
+: 721 4 -5 feel 
+: 725 3 -7 your 
+: 729 7 -10 heartbeat
+- 736
+: 741 2 -3 Can 
+: 743 2 -3 you 
+: 745 2 5 hear 
+: 747 1 6 me 
+: 749 4 7 screaming, 
+: 753 4 7 "please 
+: 757 4 5 don't 
+: 761 4 3 leave 
+: 765 5 2 me"?
+- 770
+: 770 10 2 Hold 
+: 783 1 -6 on, 
+: 787 1 -1 I 
+: 788 4 -3 still 
+: 793 3 -8 want 
+: 797 2 -10 you
+- 799 833
+- 833
+: 841 4 1 Come 
+: 845 3 -6 back, 
+: 851 1 -1 I 
+: 853 4 -3 still 
+: 857 4 -8 need 
+: 862 1 -10 you
+- 863 885
+- 885
+: 893 2 -10 Let 
+: 896 1 -8 me 
+: 897 6 -6 take 
+: 904 1 -8 your 
+: 906 5 -6 hand, 
+: 911 2 -8 I'll 
+: 913 6 -6 make 
+: 919 3 -8 it 
+: 922 4 -6 right
+- 926
+: 931 1 -6 I 
+: 932 3 -6 swear 
+: 936 1 -8 to 
+: 937 5 -6 love 
+: 944 1 -6 you 
+: 948 3 -5 all 
+: 951 2 -6 my 
+: 954 5 -6 life
+- 959 961
+- 961
+: 969 3 1 Hold 
+: 975 1 -6 on, 
+: 979 2 -1 I 
+: 981 4 -3 still 
+: 986 3 -8 need 
+: 989 3 -10 you
+- 992 1036
+- 1036
+: 1044 2 -1 don't 
+: 1046 3 -1 wanna 
+: 1050 4 1 let 
+: 1054 5 2 go
+- 1059
+: 1060 1 10 I 
+: 1072 7 1 know 
+: 1079 1 2 I'm 
+: 1080 3 0 not 
+: 1084 3 -3 that 
+: 1087 6 -3 strong
+- 1093 1098
+- 1098
+: 1106 1 -3 I 
+: 1107 2 -3 just 
+: 1110 4 -1 wanna 
+: 1114 3 1 hear 
+: 1118 5 2 you
+- 1123
+: 1131 4 1 Saying 
+: 1135 8 6 baby, 
+: 1144 3 6 let's 
+: 1148 8 2 go 
+: 1156 5 13 home
+- 1161 1168
+- 1168
+: 1176 3 9 Let's 
+: 1180 8 2 go 
+: 1188 5 2 home
+- 1193 1195
+- 1195
+: 1203 1 6 I 
+: 1204 1 6 just 
+: 1206 4 6 wanna 
+: 1210 3 6 take 
+: 1213 2 2 you 
+: 1216 5 1 home
+- 1221 1282
+- 1282
+: 1290 3 2 Hold 
+: 1295 2 -5 on, 
+: 1299 1 -2 I 
+: 1301 4 -3 still 
+: 1306 3 -7 want 
+: 1310 2 -10 you
+- 1312 1346
+- 1346
+: 1354 4 1 Come 
+: 1359 2 -6 back, 
+: 1364 1 -1 I 
+: 1365 4 -3 still 
+: 1370 3 -8 need 
+: 1374 2 -10 you
+E
