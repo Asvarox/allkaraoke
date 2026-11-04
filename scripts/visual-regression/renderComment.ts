@@ -2,13 +2,13 @@ import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 /**
- * Renders the snippet appended to the "visual changes" PR comment: a one-line
+ * Renders the snippet appended to the "visual changes" PR description section: a one-line
  * link to the hosted gallery page built by {@link ./buildDiffReport}, resolved
  * against `BASE_URL` (where the report was uploaded). Writes the markdown to
  * `comment.md` next to the report.
  *
  * The thumbnails themselves live on the gallery page, so the comment stays a
- * fixed size no matter how many snapshots changed.
+ * fixed size no matter how many snapshots changed. The comment.md name is historical.
  *
  * Kept separate from report generation because the upload URL is only known
  * after the report has been hosted.
