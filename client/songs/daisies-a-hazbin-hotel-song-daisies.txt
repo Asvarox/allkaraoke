@@ -1,0 +1,289 @@
+#ARTIST:Daisies (A Hazbin Hotel Song)
+#TITLE:Daisies
+#CREATOR:Black Gyph0n
+#BPM:375
+#YEAR:2024
+#VIDEO:v=qy9NX7iI6YQ
+#GENRE:Soundtrack
+#LANGUAGE:English
+#GAP:6900
+#ALLKARAOKE_ID:daisies-a-hazbin-hotel-song-daisies
+#ALLKARAOKE_SID:6916
+#ALLKARAOKE_LASTUPDATE:2026-11-04T04:13:31.842Z
+#ALLKARAOKE_REALBPM:100
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=qy9NX7iI6YQ&pp=ygUHZGFpc2llcw%3D%3D
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:143
+#MP3:Hazbin Hotel (Black Gryph0n & Baasik) - Daisies.mp3
+#COVER:Hazbin Hotel (Black Gryph0n & Baasik) - Daisies [CO].jpg
+#BACKGROUND:Hazbin Hotel (Black Gryph0n & Baasik) - Daisies [BG].jpg
+: 25 6 0 Hey 
+: 35 5 -3 pal, 
+: 43 4 0 hey 
+: 50 6 -3 friend, 
+: 58 5 1 hey 
+: 66 3 -3 bud
+: 70 6 -3 dy
+- 76
+: 80 6 2 Why 
+: 87 3 2 so 
+: 91 9 2 sad 
+: 102 5 2 so 
+: 109 7 2 down
+: 117 6 0 right 
+: 124 5 -5 un
+: 130 5 -5 hap
+: 138 12 -7 py?
+- 150
+: 161 7 -10 That’s 
+: 171 4 -7 not 
+: 177 4 -10 my 
+: 184 4 -7 cup 
+: 189 4 -5 of 
+: 198 19 -3 tea
+: 218 6 -4 ~
+- 224 243
+- 243
+: 268 4 -1 You 
+: 274 5 -3 know 
+: 283 4 0 that 
+: 289 5 0 this 
+: 296 3 1 could 
+: 301 5 -3 be 
+: 307 3 -4 you-
+: 312 5 -3 your 
+: 319 4 -3 last
+- 323
+: 328 5 2 Day 
+: 334 5 2 here 
+: 341 7 2 on 
+: 349 6 2 earth 
+: 357 5 0 so 
+: 365 3 -5 bud
+: 369 4 -5 dy 
+: 375 16 -7 please
+- 391
+: 403 2 -7 Won’t 
+: 407 2 -5 ya 
+: 410 3 -5 smi
+: 414 3 -3 ~
+: 418 4 -7 ~le 
+: 425 4 -5 just 
+: 433 3 -5 for 
+: 438 30 -7 me
+- 468 483
+- 483
+: 508 3 -3 My 
+: 515 4 -3 dear, 
+: 523 3 -3 my 
+: 530 4 -3 dear, 
+: 537 4 -3 no 
+: 544 6 -3 you 
+: 552 6 -3 don’t 
+: 561 8 -2 have 
+: 575 8 -2 to 
+: 587 12 -3 cry
+- 599
+: 624 2 -3 That 
+: 627 2 -3 ain’t 
+: 630 2 -3 a 
+: 633 7 -3 pret
+: 641 4 -3 ty 
+: 651 3 -3 le
+: 655 3 -3 ga
+: 660 3 -3 cy
+- 663
+: 670 7 -3 To 
+: 678 12 -2 leave 
+: 697 6 0 be
+: 706 11 -3 hind
+- 717
+: 739 4 -3 Stop 
+: 747 3 -3 and 
+: 753 8 -5 smell 
+: 762 4 -7 the 
+: 768 5 -5 ro
+: 775 6 -3 ses
+- 781
+: 785 4 -5 While 
+: 792 4 -3 you’ve 
+: 800 10 -2 got 
+: 816 5 -2 the 
+: 825 12 -3 time
+- 837
+: 845 2 -5 Pret
+: 848 4 -5 ty 
+: 856 5 -5 soon 
+: 862 2 -5 you’ll 
+: 866 2 -4 be 
+: 874 2 -3 pu
+: 877 3 -3 shin’ 
+: 881 3 -3 up
+- 884
+: 889 6 -3 Dai
+: 897 5 -3 sies 
+: 905 3 2 where 
+: 909 5 2 the 
+: 916 17 -4 sun 
+: 936 5 -5 don’t 
+: 942 5 -5 shi
+: 948 6 -7 ~ne
+- 954
+: 965 2 -5 Pret
+: 968 4 -5 ty 
+: 973 5 -5 soo
+: 979 4 -3 ~n 
+: 986 2 -5 you’ll 
+: 990 2 -4 be 
+: 996 2 -3 pu
+: 999 1 -5 shin’ 
+: 1001 3 -3 up 
+: 1010 6 -3 dai
+: 1017 4 -3 sies
+- 1021
+: 1025 5 2 Where 
+: 1032 4 2 the 
+: 1040 13 -4 sun 
+: 1055 5 -5 don’t 
+: 1065 4 -5 shi
+: 1070 8 -7 ~ne
+- 1078 1562
+- 1562
+: 1587 4 0 You 
+: 1592 5 0 know 
+: 1598 2 0 I 
+: 1601 7 0 just 
+: 1611 3 -3 got
+: 1615 3 1 ta 
+: 1621 7 -3 say 
+: 1629 2 -5 that 
+: 1632 5 -3 you
+- 1637
+: 1641 3 2 Might 
+: 1647 4 2 not 
+: 1655 3 2 have 
+: 1659 5 2 a 
+: 1669 4 2 lot 
+: 1675 3 0 of 
+: 1682 6 -4 time 
+: 1689 4 -5 to 
+: 1694 21 -5 waste
+- 1715
+: 1721 7 -10 So 
+: 1729 7 -9 lose 
+: 1737 4 -10 that 
+: 1745 10 -5 long 
+: 1759 9 -3 fa
+: 1769 19 -2 ~ce
+- 1788 1802
+- 1802
+: 1827 3 0 None 
+: 1831 3 0 of 
+: 1835 3 -3 us 
+: 1842 4 0 are 
+: 1849 3 -3 here 
+: 1854 4 1 to 
+: 1861 5 -3 stay 
+: 1869 3 -3 so 
+: 1874 3 -3 treat
+- 1877
+: 1882 3 2 E
+: 1887 1 5 ve
+: 1889 2 5 ry 
+: 1897 5 2 day 
+: 1903 3 5 like 
+: 1909 6 2 it’s 
+: 1917 6 0 a 
+: 1927 1 -3 ho
+: 1929 5 -5 li
+: 1936 3 -3 day
+: 1941 12 -6 ~
+- 1953
+: 1963 1 -7 Un
+: 1965 1 -7 til 
+: 1967 2 -5 the 
+: 1970 7 -4 day 
+: 1978 3 -7 you 
+: 1984 5 -4 slip 
+: 1993 2 -5 a
+: 1996 4 -5 way
+: 2002 22 -7 ~
+- 2024 2045
+- 2045
+: 2070 3 -3 My 
+: 2075 4 -3 dear 
+: 2083 3 -3 my 
+: 2088 4 -3 dear
+- 2092
+: 2097 4 -3 No 
+: 2105 3 -3 you 
+: 2111 4 -3 don’t 
+: 2121 10 -3 have 
+: 2135 8 -2 to 
+: 2146 17 -3 cry
+- 2163
+: 2184 2 -3 That 
+: 2187 3 -3 ain’t 
+: 2191 2 -5 a 
+: 2195 5 -3 pret
+: 2201 5 -3 ty 
+: 2210 3 -3 le
+: 2214 6 -3 ga
+: 2221 4 -3 cy
+- 2225
+: 2229 5 -3 To 
+: 2240 13 2 leave 
+: 2256 8 0 be
+: 2269 12 -3 hind
+- 2281
+: 2303 2 -3 Stop 
+: 2307 3 -3 and 
+: 2316 5 -5 smell 
+: 2322 5 -7 the 
+: 2329 3 -5 ro
+: 2335 7 -3 ses
+- 2342
+: 2346 6 -5 While 
+: 2353 4 -5 you’ve 
+: 2359 14 -5 got 
+: 2375 7 -2 the 
+: 2389 8 -3 time
+- 2397
+: 2406 1 -5 Pret
+: 2408 3 -5 ty 
+: 2414 7 -3 soon 
+: 2422 2 -5 you’ll 
+: 2425 4 -5 be 
+: 2435 2 -3 pu
+: 2439 1 -3 shin’ 
+: 2441 4 -3 up 
+: 2449 6 -3 dai
+: 2457 4 -3 sies
+- 2461
+: 2465 4 0 Where 
+: 2473 2 -5 the 
+: 2479 14 -4 sun 
+: 2496 5 -5 don’t 
+: 2504 2 -5 shi
+: 2507 11 -7 ~ne
+- 2518 2980
+- 2980
+: 3005 1 -5 Pret
+: 3007 3 -5 ty 
+: 3013 7 -3 soon 
+: 3021 2 -5 you’ll 
+: 3024 4 -5 be 
+: 3034 2 -3 pu
+: 3038 1 -3 shin’ 
+: 3040 4 -3 up 
+: 3048 6 -3 dai
+: 3056 4 -3 sies
+- 3060
+: 3064 4 0 Where 
+: 3072 2 -5 the 
+: 3078 29 -4 sun 
+: 3115 16 -5 don’t
+- 3131
+: 3135 6 -5 Shi
+: 3143 65 -7 ~ne
+E

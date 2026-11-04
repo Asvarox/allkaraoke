@@ -1,0 +1,363 @@
+#ARTIST:Rio Reiser
+#TITLE:König von Deutschland (Kurzversion)
+#CREATOR:bohning
+#BPM:337
+#YEAR:1986
+#VIDEO:v=BzGHhaMUqSQ
+#GENRE:Pop
+#LANGUAGE:German
+#GAP:62740,77151335312
+#ALLKARAOKE_ID:rio-reiser-koenig-von-deutschland-kurzversion
+#ALLKARAOKE_SID:6905
+#ALLKARAOKE_LASTUPDATE:2026-11-04T04:13:27.609Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=334
+#ALLKARAOKE_REALBPM:168
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=29393
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:159
+#MP3:Rio Reiser - König von Deutschland (Kurzversion).mp3
+#COVER:Rio Reiser - König von Deutschland (Kurzversion) [CO].jpg
+#BACKGROUND:Rio Reiser - König von Deutschland (Kurzversion) [BG].jpg
+: 22 2 13 Je
+: 25 2 13 de 
+: 28 3 13 Nacht 
+: 32 7 13 um 
+: 40 2 13 halb 
+: 44 6 13 eins
+- 50
+: 52 2 13 Wenn 
+: 56 2 13 das 
+: 60 7 13 Fern
+: 68 6 14 seh’n 
+: 76 8 13 rauscht
+- 84
+: 93 2 9 Leg’ 
+: 96 2 9 ich 
+: 99 2 9 mich 
+: 102 4 9 aufs 
+: 107 3 9 Bett
+- 110
+: 120 2 9 Und 
+: 124 4 13 mal’ 
+: 132 4 11 mir 
+: 140 4 9 aus
+- 144
+: 148 2 6 Wie 
+: 152 2 6 es 
+: 156 2 4 wä
+: 160 2 4 re, 
+: 164 2 9 wenn 
+: 168 2 9 ich 
+: 172 2 13 nicht 
+: 176 2 13 der 
+: 180 2 16 wä
+: 184 2 16 re
+- 186
+: 188 2 18 Der 
+: 192 2 16 ich 
+: 200 10 13 bin
+- 210
+: 212 2 11 Son
+: 216 2 9 dern 
+: 220 2 9 Kanz
+: 224 2 9 ler, 
+: 228 2 9 Kai
+: 232 2 9 ser, 
+: 236 2 9 Kö
+: 240 2 9 nig
+- 242
+: 244 2 9 O
+: 248 2 9 der 
+* 252 7 13 Kö
+: 260 3 11 ni
+: 264 6 11 gin
+- 270
+: 280 2 11 Ich 
+: 284 2 13 denk’ 
+: 288 2 13 mir, 
+: 292 2 13 was 
+: 296 2 13 der 
+: 300 2 13 Kohl 
+: 304 2 13 da 
+: 308 2 13 kann
+- 310
+: 312 2 13 Das 
+: 316 2 13 kann 
+: 320 5 14 ich 
+: 328 5 13 auch
+- 333
+: 336 2 11 Ich 
+: 340 2 11 würd’ 
+: 344 2 9 Vi
+: 348 7 9 val
+: 356 2 9 di 
+: 360 8 9 hör’n
+- 368
+: 375 2 9 Tag
+: 379 4 13 ein, 
+: 387 4 11 tag
+: 395 3 9 aus
+- 398
+: 406 4 6 Ich 
+: 411 6 4 käm’ 
+: 419 6 9 viel 
+: 427 5 13 rum
+- 432
+: 435 2 16 Würd’ 
+: 439 2 16 nach 
+: 443 3 18 U
+: 447 3 16 S
+: 451 3 16 A 
+: 459 6 13 rei
+: 466 3 13 sen
+- 469
+: 475 2 9 Ron
+: 479 2 9 ny 
+: 483 2 9 mal 
+: 487 2 9 wie 
+: 491 2 9 Wal
+: 495 2 9 di
+- 497
+: 499 2 9 In 
+: 503 2 9 die 
+: 507 7 13 Wa
+: 515 4 11 den 
+: 523 7 13 bei
+: 531 3 11 ße
+: 535 4 9 ~n
+- 539
+: 547 4 13 Das 
+: 555 3 13 al
+: 559 3 11 le
+: 563 4 9 ~s
+- 567
+: 583 4 13 Und 
+: 591 4 13 noch 
+: 599 3 16 viel 
+: 603 32 18 mehr
+- 635 637
+- 637
+: 659 3 16 Würd’ 
+: 663 3 16 ich 
+: 667 3 11 ma
+: 671 4 11 chen
+- 675 685
+- 685
+: 707 3 9 Wenn 
+: 711 3 11 ich 
+: 715 3 13 Kö
+: 719 4 11 nig
+- 723
+: 727 3 9 Von 
+: 731 8 9 Deutsch
+: 743 8 9 land 
+: 755 3 6 wä
+: 759 8 4 ~r’, 
+* 775 16 16 oh
+- 791
+: 803 4 13 Das 
+: 811 3 13 al
+: 815 3 11 le
+: 819 4 9 ~s
+- 823
+: 839 4 13 Und 
+: 847 4 13 noch 
+: 855 3 16 viel 
+: 859 32 18 mehr
+- 891 893
+- 893
+: 915 3 16 Würd’ 
+: 919 3 16 ich 
+: 923 3 11 ma
+: 927 4 11 chen
+- 931 941
+- 941
+: 963 3 9 Wenn 
+: 967 3 11 ich 
+: 971 3 13 Kö
+: 975 4 11 nig
+- 979
+: 983 3 9 Von 
+: 987 8 9 Deutsch
+: 999 8 9 land 
+: 1011 56 9 wär’
+- 1067 1081
+- 1081
+: 1103 2 13 Ich 
+: 1107 2 13 würd’ 
+: 1111 2 13 die 
+: 1115 2 13 Kro
+: 1119 2 13 ne 
+: 1123 2 13 täg
+: 1127 2 13 lich 
+: 1131 2 13 wech
+: 1135 2 13 seln
+- 1137
+: 1139 2 13 Wür
+: 1142 2 13 de 
+: 1146 7 13 zwei
+: 1154 7 14 mal 
+: 1164 2 13 ba
+: 1167 2 13 den
+- 1169
+: 1171 2 11 Würd’ 
+: 1175 2 9 die 
+: 1179 2 9 Lot
+: 1183 2 9 to
+: 1187 3 9 zah
+: 1191 2 9 len 
+: 1195 2 9 ei
+: 1199 2 9 ne 
+: 1203 2 9 Wo
+: 1207 2 9 che
+- 1209
+: 1211 7 13 Vor
+: 1219 7 11 her 
+: 1227 3 9 sa
+: 1231 2 9 gen
+- 1233
+: 1235 2 6 Bei 
+: 1239 2 6 der 
+: 1243 2 4 Bun
+: 1247 2 4 des
+: 1251 2 9 wehr
+- 1253
+: 1259 2 13 Gäb’ 
+: 1263 2 13 es 
+: 1267 2 16 nur 
+: 1271 2 16 noch 
+* 1275 4 18 Hit
+: 1283 3 16 pa
+: 1287 7 13 ra
+: 1295 2 13 den
+- 1297
+: 1299 2 11 Ich 
+: 1303 2 11 würd’ 
+: 1307 2 9 je
+: 1311 2 9 den 
+: 1315 2 9 Tag 
+: 1319 2 9 im 
+: 1323 6 9 Jahr
+- 1329
+: 1335 2 9 Ge
+: 1339 7 13 burts
+: 1347 4 11 tag 
+: 1355 3 13 ha
+: 1359 2 11 ben
+- 1361
+: 1367 2 11 Im 
+: 1371 7 13 Fern
+: 1379 6 13 seh’n
+- 1385
+: 1387 2 13 Gäb’ 
+: 1391 2 13 es 
+: 1395 2 13 nur 
+: 1399 2 13 noch 
+: 1403 4 13 ein 
+: 1411 3 14 Pro
+: 1415 5 13 gramm:
+- 1420
+: 1427 2 11 Ro
+: 1430 2 11 bert 
+: 1435 6 9 Lemb
+: 1442 5 9 ke, 
+: 1451 2 9 vier
+: 1454 2 9 und
+: 1457 4 9 zwan
+: 1462 2 9 zig 
+: 1467 5 13 Stun
+: 1473 3 11 den 
+: 1478 4 9 lang
+- 1482
+: 1487 2 6 Ich 
+: 1491 2 6 hät
+: 1495 2 6 te 
+: 1499 7 4 zwei
+: 1507 2 9 hun
+: 1511 2 9 dert 
+: 1515 2 13 Schlös
+: 1519 2 13 ser
+- 1521
+: 1523 2 16 Und 
+: 1527 2 16 wär’ 
+: 1531 7 18 nie 
+: 1539 4 16 mehr 
+: 1547 3 13 plei
+: 1551 2 13 te
+- 1553
+: 1555 2 11 Ich 
+: 1559 2 9 wär’ 
+: 1563 3 9 Ri
+: 1567 4 9 o 
+: 1575 2 9 der 
+: 1579 5 9 Er
+: 1585 4 9 ste
+- 1589
+: 1595 3 13 Sis
+: 1599 6 11 si 
+: 1606 3 9 die 
+: 1610 7 13 Zwei
+: 1618 3 11 te
+: 1622 4 9 ~
+- 1626
+: 1635 4 13 Das 
+: 1643 3 13 al
+: 1647 3 11 le
+: 1651 4 9 ~s
+- 1655
+: 1671 4 13 Und 
+: 1679 4 13 noch 
+: 1687 3 16 viel 
+* 1691 32 18 mehr
+- 1723 1725
+- 1725
+: 1747 3 16 Würd’ 
+: 1751 3 16 ich 
+: 1755 3 11 ma
+: 1759 4 11 chen
+- 1763 1772
+- 1772
+: 1794 3 9 Wenn 
+: 1798 3 11 ich 
+: 1802 3 13 Kö
+: 1806 4 11 nig
+- 1810
+: 1814 3 9 Von 
+: 1818 8 9 Deutsch
+: 1830 8 9 land 
+: 1843 8 9 wär’
+- 1851
+: 1863 7 16 Oh
+: 1871 3 14 ~
+: 1875 3 13 ~
+: 1879 3 11 ~
+: 1883 4 9 ~
+- 1887
+: 1891 4 13 Das 
+: 1899 3 13 al
+: 1903 3 11 le
+: 1907 4 9 ~s
+- 1911
+: 1926 4 13 Und 
+: 1934 4 13 noch 
+: 1942 3 16 viel 
+: 1946 32 18 mehr
+- 1978 1979
+- 1979
+: 2001 3 16 Würd’ 
+: 2005 3 16 ich 
+: 2009 3 11 ma
+: 2013 4 11 chen
+- 2017 2027
+- 2027
+: 2049 3 9 Wenn 
+: 2053 3 11 ich 
+: 2057 3 13 Kö
+: 2061 4 11 nig
+- 2065
+: 2069 3 9 Von 
+: 2073 8 9 Deutsch
+: 2085 8 9 land 
+* 2097 40 9 wär’
+E

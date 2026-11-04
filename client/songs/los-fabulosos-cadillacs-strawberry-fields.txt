@@ -1,0 +1,335 @@
+#ARTIST:Los Fabulosos Cadillacs
+#TITLE:Strawberry fields
+#CREATOR:artax1979
+#BPM:186,2
+#YEAR:1995
+#VIDEO:v=smFCkjGySoU
+#VIDEOGAP:3
+#LANGUAGE:Spanish
+#GAP:26243,29752953813
+#ALLKARAOKE_ID:los-fabulosos-cadillacs-strawberry-fields
+#ALLKARAOKE_SID:6904
+#ALLKARAOKE_LASTUPDATE:2026-11-04T04:13:27.606Z
+#ALLKARAOKE_ARTISTORIGIN:AR
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/es/canciones?creador=artax1979
+#ALLKARAOKE_REALBPM:186,2
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?artista=Los%20Fabulosos%20Cadillacs&cancion=Strawberry%20fields
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:259
+#MP3:Los Fabulosos Cadillacs - Strawberry fields.mp3
+#COVER:Los Fabulosos Cadillacs - Strawberry fields.jpg
+: 12 3 14 De
+: 15 3 14 ja
+: 18 4 15 me 
+: 22 5 14 lle
+: 27 8 10 var
+: 35 4 5 te ha
+: 39 3 7 cia 
+: 42 4 12 don
+: 46 5 10 de 
+: 51 9 8 voy
+- 60
+: 66 5 8 straw
+: 71 4 10 ber
+: 75 4 12 ry 
+: 79 12 5 fields
+- 91 106
+- 106
+: 118 3 8 Na
+: 121 8 10 da es 
+: 129 3 11 re
+: 132 13 5 al
+- 145
+: 151 4 5 y 
+: 155 3 17 na
+: 159 3 15 da 
+: 162 3 14 en 
+: 165 2 12 lo 
+: 167 4 11 que 
+: 171 3 12 pen
+: 174 12 14 sar,
+- 186
+: 192 4 14 Straw
+: 198 3 10 ber
+: 201 2 7 ry 
+: 203 5 14 fie
+: 208 3 10 lds 
+: 212 4 5 for
+: 216 2 12 e
+: 218 10 10 ver
+- 228 232
+- 232
+: 244 3 12 Li
+: 247 4 12 ving 
+: 251 10 12 is 
+: 261 3 12 ea
+: 264 6 12 sy 
+: 270 5 12 with 
+: 275 16 12 eyes 
+: 291 14 12 closed
+- 305
+: 312 2 10 Mis
+: 314 3 10 un
+: 317 3 10 der
+: 320 4 14 stan
+: 324 3 12 ding 
+: 327 4 10 all 
+: 331 3 9 you 
+: 335 7 10 see
+- 342 349
+- 349
+: 361 2 10 It's 
+: 363 4 10 get
+: 367 3 10 ting 
+: 370 4 9 hard 
+: 374 2 7 to 
+: 376 3 5 be 
+: 380 3 14 some
+: 383 4 10 one
+- 387
+: 387 2 10 but 
+: 389 2 10 it 
+: 391 2 10 all
+: 393 2 12 - 
+: 395 4 10 wo
+: 399 2 9 rks 
+: 401 8 7 out
+- 409
+: 412 3 10 It 
+: 415 4 10 doe
+: 419 3 10 sn't 
+: 422 2 12 mat
+: 424 4 10 ter 
+: 428 4 9 much 
+: 432 4 10 to 
+: 436 14 10 me
+- 450 467
+- 467
+: 479 3 14 De
+: 483 3 14 ja
+: 487 4 15 me 
+: 491 5 14 lle
+: 496 7 10 var
+: 503 4 5 te ha
+: 507 3 7 cia 
+: 511 4 12 don
+: 515 5 10 de 
+: 520 9 8 voy
+- 529
+: 533 5 8 straw
+: 541 4 10 ber
+: 545 4 12 ry 
+: 551 12 5 fields
+- 563 573
+- 573
+: 585 5 8 Na
+: 590 6 10 da es 
+: 596 4 11 re
+: 600 13 5 al
+- 613
+: 623 2 5 y 
+: 625 3 17 na
+: 628 3 15 da 
+: 631 3 14 en 
+: 634 3 12 lo 
+: 637 2 11 que 
+: 639 3 12 pen
+: 643 11 14 sar
+- 654
+: 661 4 14 Straw
+: 666 3 10 ber
+: 669 4 7 ry 
+: 673 3 14 fie
+: 676 3 10 lds 
+: 679 4 5 for
+: 683 3 12 e
+: 686 10 10 ver
+- 696 936
+- 936
+: 948 6 12 No 
+: 954 4 12 one 
+: 960 5 12 I 
+: 965 7 12 think 
+: 972 6 12 is 
+: 978 5 12 in 
+: 983 18 12 my 
+: 1001 14 12 tree
+- 1015
+: 1019 3 10 I 
+: 1022 4 10 mean 
+: 1026 2 10 it 
+: 1028 4 14 must 
+: 1032 2 12 be 
+: 1034 4 10 high 
+: 1038 5 9 or 
+: 1043 4 10 low
+: 1047 4 9 -
+: 1051 8 7 -
+- 1059
+: 1068 4 10 That 
+: 1072 2 10 is 
+: 1074 4 10 you 
+: 1078 4 9 can't 
+: 1082 2 7 you 
+: 1084 4 5 know 
+: 1088 2 14 tune 
+: 1090 5 10 in
+- 1095
+: 1095 4 10 but 
+: 1099 2 10 it's 
+: 1101 4 10 all 
+: 1105 10 7 right
+- 1115
+: 1127 2 10 I 
+: 1129 4 12 think 
+: 1133 3 10 it's 
+: 1136 4 9 not 
+: 1140 6 10 to 
+: 1146 14 10 bad
+- 1160 1176
+- 1176
+: 1188 3 14 De
+: 1191 3 14 ja
+: 1194 3 15 me 
+: 1197 4 14 lle
+: 1202 7 10 var
+: 1210 4 5 te ha
+: 1214 4 7 cia 
+: 1218 3 12 don
+: 1221 4 10 de 
+: 1226 8 8 voy
+- 1234
+: 1242 4 8 straw
+: 1247 4 10 ber
+: 1253 4 12 ry 
+: 1257 12 5 fields
+- 1269 1282
+- 1282
+: 1294 3 8 Na
+: 1298 7 10 da es 
+: 1305 4 10 re
+: 1309 13 5 al
+- 1322
+: 1330 2 5 y 
+: 1332 3 17 na
+: 1336 2 15 da 
+: 1339 2 14 en 
+: 1341 2 12 lo 
+: 1344 2 11 que 
+: 1347 3 12 pen
+: 1350 12 14 sar
+- 1362
+: 1370 4 14 Straw
+: 1374 2 10 ber
+: 1376 3 7 ry 
+: 1379 4 14 fie
+: 1383 3 10 lds 
+: 1386 4 5 for
+: 1390 2 12 e
+: 1393 10 10 ver
+- 1403 1647
+- 1647
+: 1659 4 12 Al
+: 1663 8 12 ways 
+: 1671 8 12 know 
+: 1681 6 12 some
+: 1687 12 12 times 
+: 1699 7 12 think 
+: 1706 3 12 it's 
+: 1710 8 12 me
+- 1718
+: 1726 2 10 But 
+: 1728 1 10 you 
+: 1729 3 10 know 
+: 1732 3 14 I 
+: 1735 3 12 know 
+: 1739 4 10 and 
+: 1743 2 9 it's 
+: 1745 2 10 a 
+: 1748 4 9 dre
+: 1752 10 7 am
+- 1762 1764
+- 1764
+: 1776 3 10 I 
+: 1779 4 10 think 
+: 1783 3 9 I 
+: 1786 4 7 know 
+: 1790 2 5 of 
+: 1793 4 14 thee,
+- 1797
+: 1797 2 10 ah, 
+: 1799 4 10 yes 
+: 1803 2 10 but 
+: 1805 2 10 it's 
+: 1807 5 12 all 
+: 1814 8 7 wrong
+- 1822
+: 1828 4 10 that 
+: 1832 2 10 is 
+: 1834 4 10 I 
+: 1838 6 12 think 
+: 1844 4 10 I 
+: 1848 3 9 dis
+: 1851 2 10 a
+: 1853 13 10 gree
+- 1866 1882
+- 1882
+: 1894 4 14 De
+: 1898 3 14 ja
+: 1901 4 15 me 
+: 1905 5 14 lle
+: 1910 5 10 var 
+: 1915 6 5 te ha
+: 1922 4 7 cia 
+: 1926 3 12 don
+: 1929 5 10 de 
+: 1934 14 8 voy
+- 1948
+: 1948 6 8 straw
+: 1954 5 10 ber
+: 1959 5 12 ry 
+: 1964 14 5 fields
+- 1978 1990
+- 1990
+: 2002 4 8 Na
+: 2006 7 10 da es 
+: 2013 4 11 re
+: 2017 13 5 al
+- 2030
+: 2040 3 5 na
+: 2043 3 17 da 
+: 2046 3 15 en 
+: 2049 2 14 lo 
+: 2051 4 12 que 
+: 2055 3 11 pen
+: 2058 2 12 s
+: 2060 10 14 ar...
+- 2070
+: 2076 4 14 Straw
+: 2080 4 10 ber
+: 2084 4 7 ry 
+: 2088 4 14 fi
+: 2092 4 10 elds 
+: 2097 3 5 for
+: 2100 4 12 e
+: 2104 5 10 ver
+- 2109 2113
+- 2113
+: 2125 3 14 Straw
+: 2129 3 10 ber
+: 2132 4 7 ry 
+: 2136 4 14 fie
+: 2140 4 10 lds 
+: 2144 3 5 for
+: 2147 4 12 e
+: 2151 10 10 ver
+- 2161
+: 2171 4 14 Straw
+: 2175 3 10 ber
+: 2179 3 7 ry 
+: 2183 3 14 fie
+: 2186 4 10 lds 
+: 2190 4 5 for
+: 2194 4 12 e
+: 2199 24 10 ver
+E
