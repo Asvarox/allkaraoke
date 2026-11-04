@@ -81,6 +81,7 @@
     "Owl City",
     "Rod Stewart",
     "Sabaton",
+    "Sabrina Carpenter",
     "Thirty Seconds to Mars",
     "5 Seconds of Summer",
     "Céline Dion",
@@ -94,7 +95,6 @@
     "Justin Bieber",
     "Melanie Martinez",
     "Pink Floyd",
-    "Sabrina Carpenter",
     "Serj Tankian",
     "Spice Girls",
     "Tenacious D",
@@ -135,6 +135,7 @@
     "Earth, Wind & Fire",
     "Eminem",
     "Faith No More",
+    "Florence + the Machine",
     "Genesis",
     "Goo Goo Dolls",
     "Johnny Cash",
@@ -148,8 +149,7 @@
     "The Offspring",
     "Twenty One Pilots",
     "Wham!",
-    "ZZ Top",
-    "a-ha"
+    "ZZ Top"
   ],
   "languages": [
     "Armenian",
@@ -191,9 +191,10 @@
     "Ukrainian",
     "en"
   ],
-  "songs": 6900,
-  "generatedAt": "2026-11-03T04:49:09.311Z",
+  "songs": 6922,
+  "generatedAt": "2026-11-04T04:14:15.867Z",
   "additionsPerDay": {
+    "2026-11-04": 22,
     "2026-11-03": 24,
     "2026-11-02": 21,
     "2026-10-31": 13,
@@ -238,6 +239,160 @@
     "2026-09-05": 6
   },
   "recentlyAdded": [
+    {
+      "id": "the-police-every-little-thing-she-does-is-magic",
+      "artist": "The Police",
+      "title": "Every Little Thing She Does Is Magic",
+      "video": "aENX1Sf3fgQ",
+      "addedAt": "2026-11-04T04:13:32.276Z"
+    },
+    {
+      "id": "harry-styles-aperture",
+      "artist": "Harry Styles",
+      "title": "Aperture",
+      "video": "7sxVHYZ_PnA",
+      "addedAt": "2026-11-04T04:13:32.272Z"
+    },
+    {
+      "id": "taylor-swift-patient-zero",
+      "artist": "Taylor Swift",
+      "title": "Patient Zero",
+      "video": "mw3kSNIxjqo",
+      "addedAt": "2026-11-04T04:13:32.269Z"
+    },
+    {
+      "id": "2ne1-ugly",
+      "artist": "2NE1",
+      "title": "Ugly",
+      "video": "NGe0hHvAGkc",
+      "addedAt": "2026-11-04T04:13:32.266Z"
+    },
+    {
+      "id": "ari-koivunen-hear-my-call",
+      "artist": "Ari Koivunen",
+      "title": "Hear My Call",
+      "video": "qwddQLMPNrY",
+      "addedAt": "2026-11-04T04:13:32.118Z"
+    },
+    {
+      "id": "loveshy-dead2me",
+      "artist": "LoveShy",
+      "title": "Dead2Me",
+      "video": "QaTRB-2kR0U",
+      "addedAt": "2026-11-04T04:13:31.980Z"
+    },
+    {
+      "id": "rammstein-angst",
+      "artist": "Rammstein",
+      "title": "Angst",
+      "video": "ONj9cvHCado",
+      "addedAt": "2026-11-04T04:13:31.979Z"
+    },
+    {
+      "id": "daisies-a-hazbin-hotel-song-daisies",
+      "artist": "Daisies (A Hazbin Hotel Song)",
+      "title": "Daisies",
+      "video": "qy9NX7iI6YQ",
+      "addedAt": "2026-11-04T04:13:31.842Z"
+    },
+    {
+      "id": "disneys-aladdin-principe-ali",
+      "artist": "Disney’s Aladdin",
+      "title": "Príncipe Alí",
+      "video": "e3iCPKBIMz4",
+      "addedAt": "2026-11-04T04:13:30.248Z"
+    },
+    {
+      "id": "napa-deslocado",
+      "artist": "Napa",
+      "title": "Deslocado",
+      "video": "pNstFdk-hnY",
+      "addedAt": "2026-11-04T04:13:30.087Z"
+    },
+    {
+      "id": "sabrina-carpenter-juno",
+      "artist": "Sabrina Carpenter",
+      "title": "Juno",
+      "video": "1aMCVgRKcP4",
+      "addedAt": "2026-11-04T04:13:30.084Z"
+    },
+    {
+      "id": "charlie-puth-feat-kehlani-done-for-me",
+      "artist": "Charlie Puth feat. Kehlani",
+      "title": "Done For Me",
+      "video": "TdyllLZeviY",
+      "addedAt": "2026-11-04T04:13:29.949Z"
+    },
+    {
+      "id": "paktofonika-jestem-bogiem",
+      "artist": "Paktofonika",
+      "title": "Jestem Bogiem",
+      "video": "u3HeJFr01T0",
+      "addedAt": "2026-11-04T04:13:29.945Z"
+    },
+    {
+      "id": "florence-the-machine-hunger",
+      "artist": "Florence + the Machine",
+      "title": "Hunger",
+      "video": "5GHXEGz3PJg",
+      "addedAt": "2026-11-04T04:13:29.942Z"
+    },
+    {
+      "id": "het-huis-anubis-het-huis-anubis",
+      "artist": "Het Huis Anubis",
+      "title": "Het Huis Anubis",
+      "video": "SgC8T_MhDp4",
+      "addedAt": "2026-11-04T04:13:29.939Z"
+    },
+    {
+      "id": "disneys-ratatouille-camille-le-festin",
+      "artist": "Disney’s Ratatouille (Camille)",
+      "title": "Le festin",
+      "video": "G3lSONLLx70",
+      "addedAt": "2026-11-04T04:13:27.762Z"
+    },
+    {
+      "id": "disneys-camp-rock-2-demi-lovato-brand-new-day",
+      "artist": "Disney’s Camp Rock 2 (Demi Lovato)",
+      "title": "Brand New Day",
+      "video": "0cKxYUdIoeA",
+      "addedAt": "2026-11-04T04:13:27.617Z"
+    },
+    {
+      "id": "george-ezra-blame-it-on-me",
+      "artist": "George Ezra",
+      "title": "Blame It On Me",
+      "video": "H4ifSrE8iSg",
+      "addedAt": "2026-11-04T04:13:27.612Z"
+    },
+    {
+      "id": "rio-reiser-koenig-von-deutschland-kurzversion",
+      "artist": "Rio Reiser",
+      "title": "König von Deutschland (Kurzversion)",
+      "video": "BzGHhaMUqSQ",
+      "addedAt": "2026-11-04T04:13:27.609Z"
+    },
+    {
+      "id": "los-fabulosos-cadillacs-strawberry-fields",
+      "artist": "Los Fabulosos Cadillacs",
+      "title": "Strawberry fields",
+      "video": "smFCkjGySoU",
+      "addedAt": "2026-11-04T04:13:27.606Z"
+    },
+    {
+      "id": "sanah-etc",
+      "artist": "sanah",
+      "title": "etc.",
+      "video": "J3YdO44YNBE",
+      "addedAt": "2026-11-04T04:13:27.012Z"
+    },
+    {
+      "id": "modern-baseball-wedding-singer",
+      "artist": "Modern Baseball",
+      "title": "Wedding Singer",
+      "video": "MJXGscQdKyQ",
+      "addedAt": "2026-11-04T04:13:27.003Z"
+    },
     {
       "id": "sara-bareilles-love-song",
       "artist": "Sara Bareilles",
@@ -419,160 +574,6 @@
       "title": "Open Hearts",
       "video": "Bn-3ICGjz0U",
       "addedAt": "2026-11-02T03:43:56.369Z"
-    },
-    {
-      "id": "daoko-tactic",
-      "artist": "Daoko",
-      "title": "TACTIC",
-      "video": "9rOztM5Q524",
-      "addedAt": "2026-11-02T03:43:56.203Z"
-    },
-    {
-      "id": "my-chemical-romance-this-is-how-i-disappear",
-      "artist": "My Chemical Romance",
-      "title": "This Is How I Disappear",
-      "video": "3df8CooYnSs",
-      "addedAt": "2026-11-02T03:43:56.202Z"
-    },
-    {
-      "id": "abba-i-do-i-do-i-do-i-do-i-do",
-      "artist": "ABBA",
-      "title": "I Do, I Do, I Do, I Do, I Do",
-      "video": "SbVjQuM_2j8",
-      "addedAt": "2026-11-02T03:43:56.201Z"
-    },
-    {
-      "id": "paramore-caught-in-the-middle",
-      "artist": "Paramore",
-      "title": "Caught In The Middle",
-      "video": "eFOY6KJlFEg",
-      "addedAt": "2026-11-02T03:43:56.201Z"
-    },
-    {
-      "id": "hilary-duff-with-love",
-      "artist": "Hilary Duff",
-      "title": "With Love",
-      "video": "dhgLoanz1b4",
-      "addedAt": "2026-11-02T03:43:56.200Z"
-    },
-    {
-      "id": "amaia-yo-invito",
-      "artist": "Amaia",
-      "title": "Yo invito",
-      "video": "1HJIJ_Chi9Q",
-      "addedAt": "2026-11-02T03:43:55.299Z"
-    },
-    {
-      "id": "scooter-rebel-yell",
-      "artist": "Scooter",
-      "title": "Rebel Yell",
-      "video": "BBQ36Y1GL1g",
-      "addedAt": "2026-11-02T03:43:55.297Z"
-    },
-    {
-      "id": "disneys-starstruck-sterling-knight-starstruck",
-      "artist": "Disney’s StarStruck (Sterling Knight)",
-      "title": "Starstruck",
-      "video": "rOuErtbjslY",
-      "addedAt": "2026-11-02T03:43:55.131Z"
-    },
-    {
-      "id": "mgmt-kids",
-      "artist": "MGMT",
-      "title": "Kids",
-      "video": "fe4EK4HSPkI",
-      "addedAt": "2026-11-02T03:43:55.128Z"
-    },
-    {
-      "id": "glee-cast-kristen-chenoweth-lea-michele-maybe-this-time",
-      "artist": "Glee Cast (Kristen Chenoweth & Lea Michele)",
-      "title": "Maybe This Time",
-      "video": "XAEcmdso-PY",
-      "addedAt": "2026-11-02T03:43:54.937Z"
-    },
-    {
-      "id": "zaho-de-sagazan-la-symphonie-des-eclairs",
-      "artist": "Zaho de Sagazan",
-      "title": "La symphonie des éclairs",
-      "video": "pqo59FkF_5g",
-      "addedAt": "2026-11-02T03:43:54.769Z"
-    },
-    {
-      "id": "men-at-work-its-a-mistake",
-      "artist": "Men At Work",
-      "title": "It's a Mistake",
-      "video": "I0AxrOUJ62E",
-      "addedAt": "2026-11-02T03:43:54.767Z"
-    },
-    {
-      "id": "junna-here",
-      "artist": "JUNNA",
-      "title": "Here",
-      "video": "SNUOYgeuwso",
-      "addedAt": "2026-11-02T03:43:54.766Z"
-    },
-    {
-      "id": "the-1975-its-not-living-if-its-not-with-you",
-      "artist": "The 1975",
-      "title": "It’s Not Living (If It’s Not With You)",
-      "video": "_G0WKkjgNU4",
-      "addedAt": "2026-11-02T03:43:54.765Z"
-    },
-    {
-      "id": "mrozu-poza-logika",
-      "artist": "Mrozu",
-      "title": "Poza Logiką",
-      "video": "Oj1_DilIbHY",
-      "addedAt": "2026-11-02T03:43:53.739Z"
-    },
-    {
-      "id": "kraftklub-kein-liebeslied",
-      "artist": "Kraftklub",
-      "title": "Kein Liebeslied",
-      "video": "3V8160J2WxI",
-      "addedAt": "2026-11-02T03:43:53.736Z"
-    },
-    {
-      "id": "my-chemical-romance-house-of-wolves",
-      "artist": "My Chemical Romance",
-      "title": "House Of Wolves",
-      "video": "woalhgxmnDo",
-      "addedAt": "2026-11-02T03:43:53.733Z"
-    },
-    {
-      "id": "abba-felicidad",
-      "artist": "ABBA",
-      "title": "Felicidad",
-      "video": "YihxpsmH3cQ",
-      "addedAt": "2026-11-02T03:43:53.731Z"
-    },
-    {
-      "id": "my-chemical-romance-blood",
-      "artist": "My Chemical Romance",
-      "title": "Blood",
-      "video": "uX3Gw82f6GU",
-      "addedAt": "2026-11-02T03:43:53.724Z"
-    },
-    {
-      "id": "lindemann-platz-eins",
-      "artist": "Lindemann",
-      "title": "Platz eins",
-      "video": "0nS9W7MdbrA",
-      "addedAt": "2026-10-31T03:33:25.319Z"
-    },
-    {
-      "id": "brandy-and-ray-j-another-day-in-paradise",
-      "artist": "Brandy and Ray J",
-      "title": "Another Day In Paradise",
-      "video": "Nz22j_pZYUw",
-      "addedAt": "2026-10-31T03:33:23.894Z"
-    },
-    {
-      "id": "dave-dobbyn-dave-dobbyn-loyal",
-      "artist": "Dave Dobbyn",
-      "title": "Dave Dobbyn - Loyal",
-      "video": "N22Bcdc07p8",
-      "addedAt": "2026-10-31T03:33:23.892Z"
     }
   ]
 }

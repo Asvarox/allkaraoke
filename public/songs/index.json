@@ -409,6 +409,34 @@
     "local": false
   },
   {
+    "id": "2ne1-ugly",
+    "title": "Ugly",
+    "artist": "2NE1",
+    "video": "NGe0hHvAGkc",
+    "language": [
+      "Korean"
+    ],
+    "bpm": 256.04,
+    "gap": 151.3232307451961,
+    "year": "2011",
+    "artistOrigin": "KR",
+    "lastUpdate": "2026-11-04T04:13:32.266Z",
+    "genre": "K-Pop",
+    "realBpm": 127,
+    "volume": 1,
+    "author": "lop",
+    "duration": 274,
+    "tracks": [
+      {
+        "start": 8
+      }
+    ],
+    "shortId": 6920,
+    "tracksCount": 1,
+    "search": "2ne1ugly",
+    "local": false
+  },
+  {
     "id": "2pac-changes",
     "title": "Changes",
     "artist": "2Pac",
@@ -12892,6 +12920,33 @@
     "shortId": 306,
     "tracksCount": 1,
     "search": "arethafranklinthebluesbrothersbandthink",
+    "local": false
+  },
+  {
+    "id": "ari-koivunen-hear-my-call",
+    "title": "Hear My Call",
+    "artist": "Ari Koivunen",
+    "video": "qwddQLMPNrY",
+    "language": [
+      "English"
+    ],
+    "bpm": 276,
+    "gap": 13201.739130434782,
+    "year": "2007",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-11-04T04:13:32.118Z",
+    "realBpm": 69,
+    "volume": 1,
+    "author": "Kivelae",
+    "duration": 242,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6919,
+    "tracksCount": 1,
+    "search": "arikoivunenhearmycall",
     "local": false
   },
   {
@@ -36520,6 +36575,32 @@
     "local": false
   },
   {
+    "id": "charlie-puth-feat-kehlani-done-for-me",
+    "title": "Done For Me",
+    "artist": "Charlie Puth feat. Kehlani",
+    "video": "TdyllLZeviY",
+    "language": [
+      "English"
+    ],
+    "bpm": 224,
+    "gap": 7845.535714285715,
+    "year": "2018",
+    "lastUpdate": "2026-11-04T04:13:29.949Z",
+    "realBpm": 112,
+    "volume": 1,
+    "author": "PowerOric",
+    "duration": 177,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6912,
+    "tracksCount": 1,
+    "search": "charlieputhfeatkehlanidoneforme",
+    "local": false
+  },
+  {
     "id": "charlie-puth-feat-meghan-trainor-marvin-gaye",
     "title": "Marvin Gaye",
     "artist": "Charlie Puth feat. Meghan Trainor",
@@ -43343,6 +43424,34 @@
     "local": false
   },
   {
+    "id": "daisies-a-hazbin-hotel-song-daisies",
+    "title": "Daisies",
+    "artist": "Daisies (A Hazbin Hotel Song)",
+    "video": "qy9NX7iI6YQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 375,
+    "gap": 6900,
+    "year": "2024",
+    "lastUpdate": "2026-11-04T04:13:31.842Z",
+    "genre": "Soundtrack",
+    "realBpm": 100,
+    "volume": 1,
+    "author": "Black Gyph0n",
+    "sourceUrl": "https://www.youtube.com/watch?v=qy9NX7iI6YQ&pp=ygUHZGFpc2llcw%3D%3D",
+    "duration": 143,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6916,
+    "tracksCount": 1,
+    "search": "daisiesahazbinhotelsongdaisies",
+    "local": false
+  },
+  {
     "id": "daisuke-hasegawa-uragirimono-no-requiem",
     "title": "Uragirimono no Requiem",
     "artist": "Daisuke Hasegawa",
@@ -49827,6 +49936,33 @@
     "local": false
   },
   {
+    "id": "disneys-aladdin-principe-ali",
+    "title": "Príncipe Alí",
+    "artist": "Disney’s Aladdin",
+    "video": "e3iCPKBIMz4",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 353.05,
+    "gap": 14530.314403059057,
+    "year": "1992",
+    "lastUpdate": "2026-11-04T04:13:30.248Z",
+    "genre": "Soundtrack",
+    "realBpm": 353.05,
+    "volume": 1,
+    "author": "wildnight",
+    "duration": 171,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6915,
+    "tracksCount": 1,
+    "search": "disneysaladdinprincipeali",
+    "local": false
+  },
+  {
     "id": "disneys-aladin-a-whole-new-world",
     "title": "A Whole New World",
     "artist": "Disney's Aladin",
@@ -50046,6 +50182,33 @@
     "shortId": 6391,
     "tracksCount": 1,
     "search": "disneyscamprock2cantbackdown",
+    "local": false
+  },
+  {
+    "id": "disneys-camp-rock-2-demi-lovato-brand-new-day",
+    "title": "Brand New Day",
+    "artist": "Disney’s Camp Rock 2 (Demi Lovato)",
+    "video": "0cKxYUdIoeA",
+    "language": [
+      "English"
+    ],
+    "bpm": 380.08,
+    "gap": 5123.365607240581,
+    "year": "2010",
+    "lastUpdate": "2026-11-04T04:13:27.617Z",
+    "genre": "Soundtrack",
+    "realBpm": 95,
+    "volume": 1,
+    "author": "Victorin",
+    "duration": 213,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6907,
+    "tracksCount": 1,
+    "search": "disneyscamprock2demilovatobrandnewday",
     "local": false
   },
   {
@@ -52124,6 +52287,33 @@
     "shortId": 1288,
     "tracksCount": 1,
     "search": "disneyspocahontasedytagorniakkolorowywiatr",
+    "local": false
+  },
+  {
+    "id": "disneys-ratatouille-camille-le-festin",
+    "title": "Le festin",
+    "artist": "Disney’s Ratatouille (Camille)",
+    "video": "G3lSONLLx70",
+    "language": [
+      "French"
+    ],
+    "bpm": 268,
+    "gap": 21592.537313432837,
+    "year": "2007",
+    "lastUpdate": "2026-11-04T04:13:27.762Z",
+    "genre": "Soundtrack",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "Basti",
+    "duration": 173,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6908,
+    "tracksCount": 1,
+    "search": "disneysratatouillecamillelefestin",
     "local": false
   },
   {
@@ -67420,6 +67610,33 @@
     "local": false
   },
   {
+    "id": "florence-the-machine-hunger",
+    "title": "Hunger",
+    "artist": "Florence + the Machine",
+    "video": "5GHXEGz3PJg",
+    "language": [
+      "English"
+    ],
+    "bpm": 232.42999999999998,
+    "gap": 44480.71554732262,
+    "year": "2018",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-11-04T04:13:29.942Z",
+    "realBpm": 116,
+    "volume": 1,
+    "author": "riperrin",
+    "duration": 272,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6910,
+    "tracksCount": 1,
+    "search": "florencethemachinehunger",
+    "local": false
+  },
+  {
     "id": "florence-the-machine-shake-it-out",
     "title": "Shake It Out",
     "artist": "Florence + the Machine",
@@ -70997,6 +71214,34 @@
     "shortId": 4841,
     "tracksCount": 1,
     "search": "georgebensongivemethenight",
+    "local": false
+  },
+  {
+    "id": "george-ezra-blame-it-on-me",
+    "title": "Blame It On Me",
+    "artist": "George Ezra",
+    "video": "H4ifSrE8iSg",
+    "language": [
+      "English"
+    ],
+    "bpm": 208.02,
+    "gap": 32050.481684453418,
+    "year": "2014",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-11-04T04:13:27.612Z",
+    "genre": "Alternative",
+    "realBpm": 104,
+    "volume": 1,
+    "author": "aac",
+    "duration": 225,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6906,
+    "tracksCount": 1,
+    "search": "georgeezrablameitonme",
     "local": false
   },
   {
@@ -79474,6 +79719,36 @@
     "local": false
   },
   {
+    "id": "harry-styles-aperture",
+    "title": "Aperture",
+    "artist": "Harry Styles",
+    "video": "7sxVHYZ_PnA",
+    "language": [
+      "English"
+    ],
+    "bpm": 256,
+    "gap": 58593.90625,
+    "year": "2026",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-11-04T04:13:32.272Z",
+    "videoGap": 40,
+    "realBpm": 114,
+    "previewStart": 110,
+    "previewEnd": 146,
+    "volume": 1,
+    "author": "Tracks",
+    "duration": 352,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6922,
+    "tracksCount": 1,
+    "search": "harrystylesaperture",
+    "local": false
+  },
+  {
     "id": "harry-styles-as-it-was",
     "title": "As It Was",
     "artist": "Harry Styles",
@@ -80880,6 +81155,35 @@
     "shortId": 6849,
     "tracksCount": 1,
     "search": "hethuisanubishetgeheim",
+    "local": false
+  },
+  {
+    "id": "het-huis-anubis-het-huis-anubis",
+    "title": "Het Huis Anubis",
+    "artist": "Het Huis Anubis",
+    "video": "SgC8T_MhDp4",
+    "language": [
+      "Dutch"
+    ],
+    "bpm": 400,
+    "gap": 15,
+    "year": "2006",
+    "artistOrigin": "BE",
+    "lastUpdate": "2026-11-04T04:13:29.939Z",
+    "realBpm": 100,
+    "previewStart": 64,
+    "previewEnd": 89,
+    "volume": 1,
+    "author": "eppo2001",
+    "duration": 166,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6909,
+    "tracksCount": 1,
+    "search": "hethuisanubishethuisanubis",
     "local": false
   },
   {
@@ -113881,6 +114185,36 @@
     "local": false
   },
   {
+    "id": "los-fabulosos-cadillacs-strawberry-fields",
+    "title": "Strawberry fields",
+    "artist": "Los Fabulosos Cadillacs",
+    "video": "smFCkjGySoU",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 186.2,
+    "gap": 26243.29752953813,
+    "year": "1995",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-11-04T04:13:27.606Z",
+    "videoGap": 3,
+    "realBpm": 186.2,
+    "volume": 1,
+    "author": "artax1979",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=artax1979",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Los%20Fabulosos%20Cadillacs&cancion=Strawberry%20fields",
+    "duration": 259,
+    "tracks": [
+      {
+        "start": 12
+      }
+    ],
+    "shortId": 6904,
+    "tracksCount": 1,
+    "search": "losfabulososcadillacsstrawberryfields",
+    "local": false
+  },
+  {
     "id": "los-lobos-gipsy-kings-la-bamba",
     "title": "La Bamba",
     "artist": "Los Lobos & Gipsy Kings",
@@ -114414,6 +114748,35 @@
     "shortId": 2654,
     "tracksCount": 1,
     "search": "loverboyworkingfortheweekend",
+    "local": false
+  },
+  {
+    "id": "loveshy-dead2me",
+    "title": "Dead2Me",
+    "artist": "LoveShy",
+    "video": "QaTRB-2kR0U",
+    "language": [
+      "English"
+    ],
+    "bpm": 380,
+    "gap": 3348.157894736842,
+    "year": "2024",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-11-04T04:13:31.980Z",
+    "realBpm": 155,
+    "volume": 70,
+    "author": "LoveShy",
+    "authorUrl": "https://www.youtube.com/channel/UCPYB-tvDmGGVECos-ZFLr_Q",
+    "sourceUrl": "https://youtu.be/QaTRB-2kR0U?si=79FLQTQBMa6Ko2nL",
+    "duration": 169,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6918,
+    "tracksCount": 1,
+    "search": "loveshydead2me",
     "local": false
   },
   {
@@ -128990,6 +129353,39 @@
     "local": false
   },
   {
+    "id": "modern-baseball-wedding-singer",
+    "title": "Wedding Singer",
+    "artist": "Modern Baseball",
+    "video": "MJXGscQdKyQ",
+    "language": [
+      "English,"
+    ],
+    "bpm": 729.24,
+    "gap": 97372.82486557665,
+    "year": "2016",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-04T04:13:27.003Z",
+    "genre": "Emo",
+    "videoGap": 77,
+    "realBpm": 182,
+    "previewStart": 147,
+    "previewEnd": 203,
+    "volume": 1,
+    "author": "strumd",
+    "authorUrl": "https://www.youtube.com/@strumdeet",
+    "sourceUrl": "rock band 3 converted thingamajig",
+    "duration": 265,
+    "tracks": [
+      {
+        "start": 49
+      }
+    ],
+    "shortId": 6902,
+    "tracksCount": 1,
+    "search": "modernbaseballweddingsinger",
+    "local": false
+  },
+  {
     "id": "modern-baseball-your-graduation",
     "title": "Your Graduation",
     "artist": "Modern Baseball",
@@ -132683,6 +133079,35 @@
     "shortId": 4829,
     "tracksCount": 1,
     "search": "nanowarofsteelfeatcharlyglamourgigatronnorwegianreggaeton",
+    "local": false
+  },
+  {
+    "id": "napa-deslocado",
+    "title": "Deslocado",
+    "artist": "Napa",
+    "video": "pNstFdk-hnY",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 308.18,
+    "gap": 2787.8700759296516,
+    "year": "2025",
+    "artistOrigin": "PT",
+    "lastUpdate": "2026-11-04T04:13:30.087Z",
+    "realBpm": 76,
+    "volume": 1,
+    "author": "DoubleDee73",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=58767",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=31094",
+    "duration": 190,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6914,
+    "tracksCount": 1,
+    "search": "napadeslocado",
     "local": false
   },
   {
@@ -142377,6 +142802,35 @@
     "local": false
   },
   {
+    "id": "paktofonika-jestem-bogiem",
+    "title": "Jestem Bogiem",
+    "artist": "Paktofonika",
+    "video": "u3HeJFr01T0",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 359,
+    "gap": 3917.2144846796655,
+    "year": "2000",
+    "artistOrigin": "PL",
+    "lastUpdate": "2026-11-04T04:13:29.945Z",
+    "genre": "Rap",
+    "realBpm": 180,
+    "volume": 1,
+    "author": "Paktofonika",
+    "sourceUrl": "https://www.youtube.com/watch?v=u3HeJFr01T0",
+    "tracks": [
+      {
+        "name": "Paktofonika - Jestem Bogiem",
+        "start": 24
+      }
+    ],
+    "shortId": 6911,
+    "tracksCount": 1,
+    "search": "paktofonikajestembogiem",
+    "local": false
+  },
+  {
     "id": "panda-los-malaventurados-no-lloran",
     "title": "Los malaventurados no lloran",
     "artist": "Panda",
@@ -150925,6 +151379,33 @@
     "local": false
   },
   {
+    "id": "rammstein-angst",
+    "title": "Angst",
+    "artist": "Rammstein",
+    "video": "ONj9cvHCado",
+    "language": [
+      "German"
+    ],
+    "bpm": 332.7,
+    "gap": 48748.115419296664,
+    "year": "2022",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-11-04T04:13:31.979Z",
+    "realBpm": 112,
+    "volume": 1,
+    "author": "Tracks",
+    "duration": 345,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6917,
+    "tracksCount": 1,
+    "search": "rammsteinangst",
+    "local": false
+  },
+  {
     "id": "rammstein-asche-zu-asche",
     "title": "Asche zu Asche",
     "artist": "Rammstein",
@@ -155033,6 +155514,36 @@
     "local": false
   },
   {
+    "id": "rio-reiser-koenig-von-deutschland-kurzversion",
+    "title": "König von Deutschland (Kurzversion)",
+    "artist": "Rio Reiser",
+    "video": "BzGHhaMUqSQ",
+    "language": [
+      "German"
+    ],
+    "bpm": 337,
+    "gap": 62740.77151335312,
+    "year": "1986",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-11-04T04:13:27.609Z",
+    "genre": "Pop",
+    "realBpm": 168,
+    "volume": 1,
+    "author": "bohning",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=334",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=29393",
+    "duration": 159,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6905,
+    "tracksCount": 1,
+    "search": "rioreiserkoenigvondeutschlandkurzversion",
+    "local": false
+  },
+  {
     "id": "rio-roma-mi-persona-favorita",
     "title": "Mi persona favorita",
     "artist": "Río Roma",
@@ -158276,6 +158787,33 @@
     "local": false
   },
   {
+    "id": "sabrina-carpenter-juno",
+    "title": "Juno",
+    "artist": "Sabrina Carpenter",
+    "video": "1aMCVgRKcP4",
+    "language": [
+      "English"
+    ],
+    "bpm": 261.04,
+    "gap": 6743.138216365308,
+    "year": "2024",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-04T04:13:30.084Z",
+    "realBpm": 119,
+    "volume": 1,
+    "author": "Yodamies",
+    "duration": 224,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6913,
+    "tracksCount": 1,
+    "search": "sabrinacarpenterjuno",
+    "local": false
+  },
+  {
     "id": "sabrina-carpenter-manchild",
     "title": "Manchild",
     "artist": "Sabrina Carpenter",
@@ -159243,6 +159781,33 @@
     "shortId": 3785,
     "tracksCount": 2,
     "search": "samsongertsamsonrock",
+    "local": false
+  },
+  {
+    "id": "sanah-etc",
+    "title": "etc.",
+    "artist": "sanah",
+    "video": "J3YdO44YNBE",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 384.11,
+    "gap": 7514.66585092812,
+    "year": "2021",
+    "artistOrigin": "PL",
+    "lastUpdate": "2026-11-04T04:13:27.012Z",
+    "realBpm": 140,
+    "volume": 1,
+    "author": "cubitus",
+    "duration": 192,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6903,
+    "tracksCount": 1,
+    "search": "sanahetc",
     "local": false
   },
   {
@@ -177267,6 +177832,34 @@
     "local": false
   },
   {
+    "id": "taylor-swift-patient-zero",
+    "title": "Patient Zero",
+    "artist": "Taylor Swift",
+    "video": "mw3kSNIxjqo",
+    "language": [
+      "English"
+    ],
+    "bpm": 368,
+    "gap": 10350.978260869566,
+    "year": "2026",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-04T04:13:32.269Z",
+    "genre": "Pop",
+    "realBpm": 92,
+    "volume": 1,
+    "author": "DoubleDee",
+    "duration": 313,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6921,
+    "tracksCount": 1,
+    "search": "taylorswiftpatientzero",
+    "local": false
+  },
+  {
     "id": "taylor-swift-red",
     "title": "Red",
     "artist": "Taylor Swift",
@@ -184065,6 +184658,34 @@
     "shortId": 5013,
     "tracksCount": 1,
     "search": "thepoliceeverybreathyoutake",
+    "local": false
+  },
+  {
+    "id": "the-police-every-little-thing-she-does-is-magic",
+    "title": "Every Little Thing She Does Is Magic",
+    "artist": "The Police",
+    "video": "aENX1Sf3fgQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 323.5,
+    "gap": 11569.907264296755,
+    "year": "1981",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-11-04T04:13:32.276Z",
+    "genre": "Rock",
+    "realBpm": 89,
+    "volume": 1,
+    "author": "bohning",
+    "duration": 261,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 6923,
+    "tracksCount": 1,
+    "search": "thepoliceeverylittlethingshedoesismagic",
     "local": false
   },
   {
