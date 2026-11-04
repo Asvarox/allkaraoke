@@ -274,13 +274,13 @@ jobs:
           snapshotSuffix: '-linux.png'
 
   # Collects the snapshots every test job (and shard) changed, commits them to the PR branch in one
-  # go and posts a single PR comment linking to an old / new / diff gallery of all of them.
+  # go and adds a section to the end of the PR description linking to an old / new / diff gallery of all of them.
   commit-snapshots:
     if: ${{ !cancelled() && github.event_name == 'pull_request' }}
     needs: ['browser-tests-run', 'visual-regression-tests-run', 'storybook-screenshots-run']
     permissions:
       contents: write # https://github.com/stefanzweifel/git-auto-commit-action?tab=readme-ov-file#usage
-      pull-requests: write # allows commenting on a PR
+      pull-requests: write # allows editing the PR description
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
@@ -318,22 +318,22 @@ jobs:
       - name: Upload visual diff gallery to Cloudflare Pages
         id: deploy-visual-diff
         if: steps.visual-diff.outputs.has_report == 'true'
-        continue-on-error: true # a hosting hiccup shouldn't block the review comment
+        continue-on-error: true # a hosting hiccup shouldn't block the PR description update
         uses: cloudflare/wrangler-action@v4
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy test-results/visual-diff-report --project-name=allkaraoke-party-tests-results --branch=visual-diff-${{ github.run_id }}
-      - name: Render visual diff comment
+      - name: Render visual diff gallery link
         if: steps.visual-diff.outputs.has_report == 'true'
         env:
           BASE_URL: ${{ steps.deploy-visual-diff.outputs.deployment-alias-url }}
         run: pnpm visual-diff:comment
-      # A single comment (identified by a hidden marker) is kept: any prior one is deleted and
-      # replaced with a fresh comment (not edited in place) so the PR author gets a notification,
-      # and removed entirely once the snapshots match the target branch again. When a test job
-      # failed its snapshots are missing here, so an existing comment is left as-is instead.
-      - name: Replace or remove visual diff comment
+      # A single section (between hidden start/end markers) is kept at the end of the PR
+      # description: it is replaced on every run and removed once the snapshots match the target
+      # branch again. When a test job failed its snapshots are missing here, so an existing section
+      # is left as-is instead.
+      - name: Update visual diff section in PR description
         uses: actions/github-script@v8
         env:
           HAS_REPORT: ${{ steps.visual-diff.outputs.has_report }}
@@ -342,40 +342,40 @@ jobs:
           script: |
             const { owner, repo } = context.repo;
             const issue_number = context.issue.number;
-            // Prefix match also cleans up the per-job comments (`:ct`, `:vr`) posted before the jobs were merged
             const markerPrefix = '<!-- visual-diff-thumbnails';
-            const marker = `${markerPrefix} -->`;
-
-            const comments = await github.paginate(github.rest.issues.listComments, {
-              owner,
-              repo,
-              issue_number,
-              per_page: 100,
-            });
-            const existing = comments.filter((comment) => comment.body?.includes(markerPrefix));
+            const startMarker = `${markerPrefix}:start -->`;
+            const endMarker = `${markerPrefix}:end -->`;
 
             if (process.env.HAS_REPORT !== 'true' && process.env.ALL_TESTS_PASSED !== 'true') {
               return;
             }
 
-            for (const comment of existing) {
-              await github.rest.issues.deleteComment({ owner, repo, comment_id: comment.id });
+            // Fetched fresh rather than read from the event payload, which may predate edits made since
+            const { data: pr } = await github.rest.pulls.get({ owner, repo, pull_number: issue_number });
+            const currentBody = pr.body ?? '';
+            const escape = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            const sectionPattern = new RegExp(`\\s*${escape(startMarker)}[\\s\\S]*?${escape(endMarker)}`, 'g');
+            const baseBody = currentBody.replace(sectionPattern, '').trimEnd();
+
+            let section = '';
+            if (process.env.HAS_REPORT === 'true') {
+              const fs = require('node:fs');
+              const runUrl = `https://github.com/${owner}/${repo}/actions/runs/${context.runId}`;
+
+              let galleryLink = '';
+              try {
+                galleryLink = fs.readFileSync('test-results/visual-diff-report/comment.md', 'utf8');
+              } catch {}
+
+              section = `${startMarker}\n## Visual regression snapshots\n\nChanges detected in visual regression snapshots. Please review.\n\n[View the run that committed the updated snapshots](${runUrl})${galleryLink}\n${endMarker}`;
             }
 
-            if (process.env.HAS_REPORT !== 'true') {
+            const body = section ? (baseBody ? `${baseBody}\n\n${section}` : section) : baseBody;
+            if (body === currentBody) {
               return;
             }
+            await github.rest.pulls.update({ owner, repo, pull_number: issue_number, body });
 
-            const fs = require('node:fs');
-            const runUrl = `https://github.com/${owner}/${repo}/actions/runs/${context.runId}`;
-
-            let galleryLink = '';
-            try {
-              galleryLink = fs.readFileSync('test-results/visual-diff-report/comment.md', 'utf8');
-            } catch {}
-
-            const body = `Changes detected in visual regression snapshots. Please review.\n\n[View the run that committed the updated snapshots](${runUrl})${galleryLink}\n\n${marker}`;
-            await github.rest.issues.createComment({ owner, repo, issue_number, body });
 
   deploy:
     runs-on: ubuntu-latest
