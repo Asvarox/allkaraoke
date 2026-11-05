@@ -13,8 +13,8 @@
     "Take That",
     "The Beatles",
     "My Chemical Romance",
-    "System of a Down",
     "One Direction",
+    "System of a Down",
     "Girls Aloud",
     "Imagine Dragons",
     "ABBA",
@@ -30,10 +30,10 @@
     "Disturbed",
     "Foo Fighters",
     "Beyoncé",
+    "Ed Sheeran",
     "Metallica",
     "Miley Cyrus",
     "Bruno Mars",
-    "Ed Sheeran",
     "Katy Perry",
     "Lana Del Rey",
     "Paramore",
@@ -83,6 +83,7 @@
     "Sabaton",
     "Sabrina Carpenter",
     "Thirty Seconds to Mars",
+    "Weezer",
     "5 Seconds of Summer",
     "Céline Dion",
     "Christina Aguilera",
@@ -99,7 +100,6 @@
     "Spice Girls",
     "Tenacious D",
     "The Pussycat Dolls",
-    "Weezer",
     "Whitney Houston",
     "Bon Jovi",
     "Calvin Harris",
@@ -191,9 +191,10 @@
     "Ukrainian",
     "en"
   ],
-  "songs": 6922,
-  "generatedAt": "2026-11-04T04:14:15.867Z",
+  "songs": 6942,
+  "generatedAt": "2026-11-05T04:33:27.486Z",
   "additionsPerDay": {
+    "2026-11-05": 20,
     "2026-11-04": 22,
     "2026-11-03": 24,
     "2026-11-02": 21,
@@ -235,10 +236,149 @@
     "2026-09-09": 12,
     "2026-09-08": 13,
     "2026-09-07": 3,
-    "2026-09-06": 19,
-    "2026-09-05": 6
+    "2026-09-06": 19
   },
   "recentlyAdded": [
+    {
+      "id": "kara-wanna",
+      "artist": "Kara",
+      "title": "Wanna",
+      "video": "m4oWdgIPrG4",
+      "addedAt": "2026-11-05T04:32:36.883Z"
+    },
+    {
+      "id": "marino-devil-in-disguise",
+      "artist": "Marino",
+      "title": "Devil In Disguise",
+      "video": "DC-cqWO_GM0",
+      "addedAt": "2026-11-05T04:32:35.900Z"
+    },
+    {
+      "id": "weezer-island-in-the-sun",
+      "artist": "Weezer",
+      "title": "Island In The Sun",
+      "video": "erG5rgNYSdk",
+      "addedAt": "2026-11-05T04:32:35.899Z"
+    },
+    {
+      "id": "maria-de-jesus-teran-mikami-la-cazafantasmas",
+      "artist": "María de Jesús Terán",
+      "title": "Mikami La cazafantasmas",
+      "video": "g09V2nHv3Mo",
+      "addedAt": "2026-11-05T04:32:35.897Z"
+    },
+    {
+      "id": "zedd-feat-foxes-clarity-acoustic-version",
+      "artist": "Zedd feat. Foxes",
+      "title": "Clarity (Acoustic Version)",
+      "video": "FPHhNuSdrYE",
+      "addedAt": "2026-11-05T04:32:35.773Z"
+    },
+    {
+      "id": "george-ezra-listen-to-the-man",
+      "artist": "George Ezra",
+      "title": "Listen To The Man",
+      "video": "ZS0WvzRVByg",
+      "addedAt": "2026-11-05T04:32:35.771Z"
+    },
+    {
+      "id": "cnco-little-mix-reggaeton-lento-remix",
+      "artist": "CNCO & Little Mix",
+      "title": "Reggaetón lento (Remix)",
+      "video": "UONnRMuuDps",
+      "addedAt": "2026-11-05T04:32:35.643Z"
+    },
+    {
+      "id": "corneille-parce-quon-vient-de-loin",
+      "artist": "Corneille",
+      "title": "Parce qu’on vient de loin",
+      "video": "WDr3qCcXKXk",
+      "addedAt": "2026-11-05T04:32:35.501Z"
+    },
+    {
+      "id": "rainhard-fendrich-i-am-from-austria",
+      "artist": "Rainhard Fendrich",
+      "title": "I Am From Austria",
+      "video": "Xi_8DB7zsD4",
+      "addedAt": "2026-11-05T04:32:34.282Z"
+    },
+    {
+      "id": "disneys-lemonade-mouth-shes-so-gone",
+      "artist": "Disney’s Lemonade Mouth",
+      "title": "She’s So Gone",
+      "video": "vrE9ylag6a4",
+      "addedAt": "2026-11-05T04:32:29.150Z"
+    },
+    {
+      "id": "stefan-raab-feat-spucky-kork-schrotty-traumschiff-surprise-space-taxi",
+      "artist": "Stefan Raab feat. Spucky, Kork & Schrotty (Traumschiff Surprise)",
+      "title": "Space-Taxi",
+      "video": "Ue3FsQOFRaw",
+      "addedAt": "2026-11-05T04:32:29.014Z"
+    },
+    {
+      "id": "disneys-tangled-mandy-moore-when-will-my-life-begin",
+      "artist": "Disney’s Tangled (Mandy Moore)",
+      "title": "When Will My Life Begin",
+      "video": "Loo41xVIb_I",
+      "addedAt": "2026-11-05T04:32:28.277Z"
+    },
+    {
+      "id": "one-direction-strong",
+      "artist": "One Direction",
+      "title": "Strong",
+      "video": "9JiW1UrLiBo",
+      "addedAt": "2026-11-05T04:32:28.275Z"
+    },
+    {
+      "id": "style-five-splash-free",
+      "artist": "STYLE FIVE",
+      "title": "SPLASH FREE",
+      "video": "ojPKvzQdo7k",
+      "addedAt": "2026-11-05T04:32:28.137Z"
+    },
+    {
+      "id": "disneys-starstruck-sterling-knight-brandon-michael-smith-shades",
+      "artist": "Disney’s StarStruck (Sterling Knight & Brandon Michael Smith)",
+      "title": "Shades",
+      "video": "MWVzA4GIUMU",
+      "addedAt": "2026-11-05T04:32:27.531Z"
+    },
+    {
+      "id": "yuiko-ohara-tabibito-no-uta",
+      "artist": "Yuiko Ohara",
+      "title": "Tabibito no Uta",
+      "video": "hZ6TnKvB2rc",
+      "addedAt": "2026-11-05T04:32:27.383Z"
+    },
+    {
+      "id": "yelle-je-veux-te-voir",
+      "artist": "Yelle",
+      "title": "Je veux te voir",
+      "video": "Y99UqvgCmE8",
+      "addedAt": "2026-11-05T04:32:27.249Z"
+    },
+    {
+      "id": "kusumi-koharu-balalaika",
+      "artist": "Kusumi Koharu",
+      "title": "Balalaika",
+      "video": "SYLWe09cOjc",
+      "addedAt": "2026-11-05T04:32:26.515Z"
+    },
+    {
+      "id": "ed-sheeran-small-bump",
+      "artist": "Ed Sheeran",
+      "title": "Small Bump",
+      "video": "A_af256mnTE",
+      "addedAt": "2026-11-05T04:32:26.511Z"
+    },
+    {
+      "id": "addison-rae-fame-is-a-gun",
+      "artist": "Addison Rae",
+      "title": "Fame Is A Gun",
+      "video": "TkwZ2uQu2hE",
+      "addedAt": "2026-11-05T04:32:25.376Z"
+    },
     {
       "id": "the-police-every-little-thing-she-does-is-magic",
       "artist": "The Police",
@@ -434,146 +574,6 @@
       "title": "Vienna",
       "video": "3jL4S4X97sQ",
       "addedAt": "2026-11-03T04:48:29.647Z"
-    },
-    {
-      "id": "judas-priest-painkiller",
-      "artist": "Judas Priest",
-      "title": "Painkiller",
-      "video": "nM__lPTWThU",
-      "addedAt": "2026-11-03T04:48:29.645Z"
-    },
-    {
-      "id": "rema-selena-gomez-calm-down",
-      "artist": "Rema & Selena Gomez",
-      "title": "Calm Down",
-      "video": "WcIcVapfqXw",
-      "addedAt": "2026-11-03T04:48:29.514Z"
-    },
-    {
-      "id": "kygo-stole-the-show",
-      "artist": "Kygo",
-      "title": "Stole the Show",
-      "video": "Vs3LXhqm5h4",
-      "addedAt": "2026-11-03T04:48:29.383Z"
-    },
-    {
-      "id": "herbert-groenemeyer-mambo",
-      "artist": "Herbert Grönemeyer",
-      "title": "Mambo",
-      "video": "40hQeVlkpRI",
-      "addedAt": "2026-11-03T04:48:29.382Z"
-    },
-    {
-      "id": "stevie-wonder-ribbon-in-the-sky",
-      "artist": "Stevie Wonder",
-      "title": "Ribbon In The Sky",
-      "video": "zH8sl8pEvaQ",
-      "addedAt": "2026-11-03T04:48:29.380Z"
-    },
-    {
-      "id": "zen-cafe-piha-ilman-sadettajaa",
-      "artist": "Zen Café",
-      "title": "Piha ilman sadettajaa",
-      "video": "Ve6Rd0G4TK0",
-      "addedAt": "2026-11-03T04:48:25.957Z"
-    },
-    {
-      "id": "beyonce-flaws-and-all",
-      "artist": "Beyoncé",
-      "title": "Flaws And All",
-      "video": "iK9Iio7WgaI",
-      "addedAt": "2026-11-03T04:48:25.954Z"
-    },
-    {
-      "id": "alain-bashung-gaby-oh-gaby-training",
-      "artist": "Alain Bashung",
-      "title": "Gaby oh Gaby training",
-      "video": "KgLsxmqlEQc",
-      "addedAt": "2026-11-03T04:48:25.952Z"
-    },
-    {
-      "id": "electric-light-orchestra-the-lights-go-down",
-      "artist": "Electric Light Orchestra",
-      "title": "The Lights Go Down",
-      "video": "SecdY6_F9aA",
-      "addedAt": "2026-11-03T04:48:25.948Z"
-    },
-    {
-      "id": "one-ok-rock-the-way-back",
-      "artist": "ONE OK ROCK",
-      "title": "The Way Back",
-      "video": "q2dFMNPA9jQ",
-      "addedAt": "2026-11-03T04:48:25.944Z"
-    },
-    {
-      "id": "aventura-obsesion",
-      "artist": "Aventura",
-      "title": "Obsesión",
-      "video": "IERkYr29iao",
-      "addedAt": "2026-11-03T04:48:25.942Z"
-    },
-    {
-      "id": "haiducii-dragostea-din-tei",
-      "artist": "Haiducii",
-      "title": "Dragostea din tei",
-      "video": "MhuTaD-B4qs",
-      "addedAt": "2026-11-03T04:48:25.804Z"
-    },
-    {
-      "id": "queens-of-the-stone-age-little-sister",
-      "artist": "Queens Of The Stone Age",
-      "title": "Little Sister",
-      "video": "hGRqnNEOpe0",
-      "addedAt": "2026-11-03T04:48:25.664Z"
-    },
-    {
-      "id": "chord-overstreet-hold-on",
-      "artist": "Chord Overstreet",
-      "title": "Hold On",
-      "video": "1r79eaANM_o",
-      "addedAt": "2026-11-03T04:48:25.534Z"
-    },
-    {
-      "id": "the-rare-occasions-notion",
-      "artist": "The Rare Occasions",
-      "title": "Notion",
-      "video": "PD1EXJScA6k",
-      "addedAt": "2026-11-03T04:48:25.082Z"
-    },
-    {
-      "id": "korn-did-my-time",
-      "artist": "KoRn",
-      "title": "Did My Time",
-      "video": "xmOOGeZE-aE",
-      "addedAt": "2026-11-03T04:48:25.081Z"
-    },
-    {
-      "id": "kelis-trick-me",
-      "artist": "Kelis",
-      "title": "Trick Me",
-      "video": "NZ6HDPUrmsM",
-      "addedAt": "2026-11-03T04:48:25.078Z"
-    },
-    {
-      "id": "apulanta-pahempi-toistaan",
-      "artist": "Apulanta",
-      "title": "Pahempi toistaan",
-      "video": "YU08gHNq_Pg",
-      "addedAt": "2026-11-03T04:48:25.070Z"
-    },
-    {
-      "id": "jesus-christ-superstar-movie-gethsemane-i-only-want-to-say",
-      "artist": "Jesus Christ Superstar (Movie)",
-      "title": "Gethsemane (I Only Want To Say)",
-      "video": "ndZ6B1EaJEs",
-      "addedAt": "2026-11-02T03:43:56.370Z"
-    },
-    {
-      "id": "the-weeknd-open-hearts",
-      "artist": "The Weeknd",
-      "title": "Open Hearts",
-      "video": "Bn-3ICGjz0U",
-      "addedAt": "2026-11-02T03:43:56.369Z"
     }
   ]
 }
