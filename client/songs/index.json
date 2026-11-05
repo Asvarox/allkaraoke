@@ -3669,6 +3669,33 @@
     "local": false
   },
   {
+    "id": "addison-rae-fame-is-a-gun",
+    "title": "Fame Is A Gun",
+    "artist": "Addison Rae",
+    "video": "TkwZ2uQu2hE",
+    "language": [
+      "English"
+    ],
+    "bpm": 276,
+    "gap": 7331.739130434783,
+    "year": "2025",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-05T04:32:25.376Z",
+    "realBpm": 138,
+    "volume": 1,
+    "author": "ziqiangao",
+    "duration": 185,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6924,
+    "tracksCount": 1,
+    "search": "addisonraefameisagun",
+    "local": false
+  },
+  {
     "id": "adel-tawil-lieder",
     "title": "Lieder",
     "artist": "Adel Tawil",
@@ -39841,6 +39868,32 @@
     "local": false
   },
   {
+    "id": "cnco-little-mix-reggaeton-lento-remix",
+    "title": "Reggaetón lento (Remix)",
+    "artist": "CNCO & Little Mix",
+    "video": "UONnRMuuDps",
+    "language": [
+      "English"
+    ],
+    "bpm": 375.89,
+    "gap": 8462.36771395887,
+    "year": "2017",
+    "lastUpdate": "2026-11-05T04:32:35.643Z",
+    "realBpm": 94,
+    "volume": 1,
+    "author": "Sing-Girl",
+    "duration": 190,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6937,
+    "tracksCount": 1,
+    "search": "cncolittlemixreggaetonlentoremix",
+    "local": false
+  },
+  {
     "id": "cobra-starship-feat-leighton-meester-good-girls-go-bad",
     "title": "Good Girls Go Bad",
     "artist": "Cobra Starship feat. Leighton Meester",
@@ -40889,6 +40942,33 @@
     "shortId": 1013,
     "tracksCount": 1,
     "search": "corinnebaileyraeputyourrecordson",
+    "local": false
+  },
+  {
+    "id": "corneille-parce-quon-vient-de-loin",
+    "title": "Parce qu’on vient de loin",
+    "artist": "Corneille",
+    "video": "WDr3qCcXKXk",
+    "language": [
+      "French"
+    ],
+    "bpm": 368.04,
+    "gap": 10111.089012063907,
+    "year": "2002",
+    "artistOrigin": "CA",
+    "lastUpdate": "2026-11-05T04:32:35.501Z",
+    "realBpm": 90,
+    "volume": 1,
+    "author": "davidlink",
+    "duration": 240,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 6936,
+    "tracksCount": 1,
+    "search": "corneilleparcequonvientdeloin",
     "local": false
   },
   {
@@ -51872,6 +51952,33 @@
     "local": false
   },
   {
+    "id": "disneys-lemonade-mouth-shes-so-gone",
+    "title": "She’s So Gone",
+    "artist": "Disney’s Lemonade Mouth",
+    "video": "vrE9ylag6a4",
+    "language": [
+      "English"
+    ],
+    "bpm": 284.04,
+    "gap": -86.71356147021538,
+    "year": "2011",
+    "lastUpdate": "2026-11-05T04:32:29.150Z",
+    "genre": "Soundtrack",
+    "realBpm": 142,
+    "volume": 1,
+    "author": "vicktoben",
+    "duration": 125,
+    "tracks": [
+      {
+        "start": 12
+      }
+    ],
+    "shortId": 6934,
+    "tracksCount": 1,
+    "search": "disneyslemonademouthshessogone",
+    "local": false
+  },
+  {
     "id": "disneys-lemonade-mouth-somebody-single",
     "title": "Somebody (Single)",
     "artist": "Disney’s Lemonade Mouth",
@@ -52348,6 +52455,33 @@
     "local": false
   },
   {
+    "id": "disneys-starstruck-sterling-knight-brandon-michael-smith-shades",
+    "title": "Shades",
+    "artist": "Disney’s StarStruck (Sterling Knight & Brandon Michael Smith)",
+    "video": "MWVzA4GIUMU",
+    "language": [
+      "English"
+    ],
+    "bpm": 230,
+    "gap": 17631.739130434784,
+    "year": "2010",
+    "lastUpdate": "2026-11-05T04:32:27.531Z",
+    "genre": "Soundtrack",
+    "realBpm": 115,
+    "volume": 1,
+    "author": "DoubleDee, commissioned by UrGamingTechie",
+    "duration": 166,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6929,
+    "tracksCount": 1,
+    "search": "disneysstarstrucksterlingknightbrandonmichaelsmithshades",
+    "local": false
+  },
+  {
     "id": "disneys-starstruck-sterling-knight-brandon-mychal-smith-drew-ryan-scott-hero",
     "title": "Hero",
     "artist": "Disney’s StarStruck (Sterling Knight, Brandon Mychal Smith, Drew Ryan Scott)",
@@ -52454,6 +52588,33 @@
     "shortId": 1289,
     "tracksCount": 1,
     "search": "disneystanglediseethelight",
+    "local": false
+  },
+  {
+    "id": "disneys-tangled-mandy-moore-when-will-my-life-begin",
+    "title": "When Will My Life Begin",
+    "artist": "Disney’s Tangled (Mandy Moore)",
+    "video": "Loo41xVIb_I",
+    "language": [
+      "English"
+    ],
+    "bpm": 432,
+    "gap": 52553.055555555555,
+    "year": "2010",
+    "lastUpdate": "2026-11-05T04:32:28.277Z",
+    "genre": "Soundtrack",
+    "realBpm": 108,
+    "volume": 1,
+    "author": "matthu",
+    "duration": 186,
+    "tracks": [
+      {
+        "start": 29
+      }
+    ],
+    "shortId": 6932,
+    "tracksCount": 1,
+    "search": "disneystangledmandymoorewhenwillmylifebegin",
     "local": false
   },
   {
@@ -57595,6 +57756,35 @@
     "shortId": 1431,
     "tracksCount": 1,
     "search": "edsheeransing",
+    "local": false
+  },
+  {
+    "id": "ed-sheeran-small-bump",
+    "title": "Small Bump",
+    "artist": "Ed Sheeran",
+    "video": "A_af256mnTE",
+    "language": [
+      "English"
+    ],
+    "bpm": 240.04,
+    "gap": 14490.166638893517,
+    "year": "2011",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-11-05T04:32:26.511Z",
+    "genre": "Pop",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "lozboorman",
+    "sourceUrl": "https://www.youtube.com/watch?v=A_af256mnTE",
+    "duration": 248,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6925,
+    "tracksCount": 1,
+    "search": "edsheeransmallbump",
     "local": false
   },
   {
@@ -71276,6 +71466,34 @@
     "shortId": 1715,
     "tracksCount": 1,
     "search": "georgeezrabudapest",
+    "local": false
+  },
+  {
+    "id": "george-ezra-listen-to-the-man",
+    "title": "Listen To The Man",
+    "artist": "George Ezra",
+    "video": "ZS0WvzRVByg",
+    "language": [
+      "English"
+    ],
+    "bpm": 242.75,
+    "gap": 16631.32852729145,
+    "year": "2014",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-11-05T04:32:35.771Z",
+    "genre": "Folk, Singer-Songwriter",
+    "realBpm": 121,
+    "volume": 1,
+    "author": "Dragon33",
+    "duration": 244,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6938,
+    "tracksCount": 1,
+    "search": "georgeezralistentotheman",
     "local": false
   },
   {
@@ -97058,6 +97276,33 @@
     "local": false
   },
   {
+    "id": "kara-wanna",
+    "title": "Wanna",
+    "artist": "Kara",
+    "video": "m4oWdgIPrG4",
+    "language": [
+      "Korean"
+    ],
+    "bpm": 322.20000000000005,
+    "gap": 11597.346368715083,
+    "year": "2009",
+    "artistOrigin": "KR",
+    "lastUpdate": "2026-11-05T04:32:36.883Z",
+    "realBpm": 161,
+    "volume": 1,
+    "author": "b888arb",
+    "duration": 185,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6943,
+    "tracksCount": 1,
+    "search": "karawanna",
+    "local": false
+  },
+  {
     "id": "kardinal-offishall-feat-akon-dangerous",
     "title": "Dangerous",
     "artist": "Kardinal Offishall feat. Akon",
@@ -103067,6 +103312,33 @@
     "shortId": 2417,
     "tracksCount": 1,
     "search": "kumikonomaelfenliedlilium",
+    "local": false
+  },
+  {
+    "id": "kusumi-koharu-balalaika",
+    "title": "Balalaika",
+    "artist": "Kusumi Koharu",
+    "video": "SYLWe09cOjc",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 280.02,
+    "gap": 14672.215556031711,
+    "year": "2006",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-11-05T04:32:26.515Z",
+    "realBpm": 140,
+    "volume": 1,
+    "author": "Rubn4",
+    "duration": 223,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6926,
+    "tracksCount": 1,
+    "search": "kusumikoharubalalaika",
     "local": false
   },
   {
@@ -119554,6 +119826,36 @@
     "local": false
   },
   {
+    "id": "maria-de-jesus-teran-mikami-la-cazafantasmas",
+    "title": "Mikami La cazafantasmas",
+    "artist": "María de Jesús Terán",
+    "video": "g09V2nHv3Mo",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 218.7,
+    "gap": 14641.19341563786,
+    "year": "1993",
+    "artistOrigin": "MX",
+    "lastUpdate": "2026-11-05T04:32:35.897Z",
+    "genre": "Anime",
+    "realBpm": 108,
+    "volume": 1,
+    "author": "ConejoF1",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=conejof1",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?cancion=cazafantasmas",
+    "duration": 92,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6940,
+    "tracksCount": 1,
+    "search": "mariadejesusteranmikamilacazafantasmas",
+    "local": false
+  },
+  {
     "id": "maria-de-jesus-teran-no-me-hagas-sentir-una-salvaje",
     "title": "No me hagas sentir una salvaje",
     "artist": "María de Jesús Terán",
@@ -120978,6 +121280,35 @@
     "shortId": 2834,
     "tracksCount": 1,
     "search": "marinatobehuman",
+    "local": false
+  },
+  {
+    "id": "marino-devil-in-disguise",
+    "title": "Devil In Disguise",
+    "artist": "Marino",
+    "video": "DC-cqWO_GM0",
+    "language": [
+      "English"
+    ],
+    "bpm": 220,
+    "gap": 2687.2727272727275,
+    "year": "2025",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-05T04:32:35.900Z",
+    "genre": "Pop",
+    "realBpm": 110,
+    "volume": 1,
+    "author": "Marino",
+    "sourceUrl": "https://www.youtube.com/watch?v=DC-cqWO_GM0",
+    "duration": 110,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6942,
+    "tracksCount": 1,
+    "search": "marinodevilindisguise",
     "local": false
   },
   {
@@ -141059,6 +141390,35 @@
     "local": false
   },
   {
+    "id": "one-direction-strong",
+    "title": "Strong",
+    "artist": "One Direction",
+    "video": "9JiW1UrLiBo",
+    "language": [
+      "English"
+    ],
+    "bpm": 306.82,
+    "gap": 8472.228016426569,
+    "year": "2013",
+    "artistOrigin": "UK",
+    "lastUpdate": "2026-11-05T04:32:28.275Z",
+    "realBpm": 115,
+    "previewStart": 37,
+    "previewEnd": 65,
+    "volume": 1,
+    "author": "Sing-Girl",
+    "duration": 186,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6931,
+    "tracksCount": 1,
+    "search": "onedirectionstrong",
+    "local": false
+  },
+  {
     "id": "one-direction-taken",
     "title": "Taken",
     "artist": "One Direction",
@@ -151291,6 +151651,33 @@
     "shortId": 3581,
     "tracksCount": 1,
     "search": "rainbowstargazer",
+    "local": false
+  },
+  {
+    "id": "rainhard-fendrich-i-am-from-austria",
+    "title": "I Am From Austria",
+    "artist": "Rainhard Fendrich",
+    "video": "Xi_8DB7zsD4",
+    "language": [
+      "German"
+    ],
+    "bpm": 356.2,
+    "gap": 23839.331836047164,
+    "year": "1989",
+    "artistOrigin": "AT",
+    "lastUpdate": "2026-11-05T04:32:34.282Z",
+    "realBpm": 82,
+    "volume": 1,
+    "author": "RES",
+    "duration": 229,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6935,
+    "tracksCount": 1,
+    "search": "rainhardfendrichiamfromaustria",
     "local": false
   },
   {
@@ -170575,6 +170962,35 @@
     "local": false
   },
   {
+    "id": "stefan-raab-feat-spucky-kork-schrotty-traumschiff-surprise-space-taxi",
+    "title": "Space-Taxi",
+    "artist": "Stefan Raab feat. Spucky, Kork & Schrotty (Traumschiff Surprise)",
+    "video": "Ue3FsQOFRaw",
+    "language": [
+      "English",
+      "German"
+    ],
+    "bpm": 221.39,
+    "gap": 18323.693933782015,
+    "year": "2004",
+    "lastUpdate": "2026-11-05T04:32:29.014Z",
+    "realBpm": 110,
+    "volume": 1,
+    "author": "DaPhilosopha",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=1284",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=26954",
+    "duration": 213,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6933,
+    "tracksCount": 1,
+    "search": "stefanraabfeatspuckykorkschrottytraumschiffsurprisespacetaxi",
+    "local": false
+  },
+  {
     "id": "steindi-the-hardest-karaoke-song-in-the-world",
     "title": "The Hardest Karaoke Song in the World",
     "artist": "Steindi",
@@ -172004,6 +172420,36 @@
     "shortId": 6730,
     "tracksCount": 1,
     "search": "studiokillersjenny",
+    "local": false
+  },
+  {
+    "id": "style-five-splash-free",
+    "title": "SPLASH FREE",
+    "artist": "STYLE FIVE",
+    "video": "ojPKvzQdo7k",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 255.3,
+    "gap": 741.1750881316099,
+    "year": "2013",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-11-05T04:32:28.137Z",
+    "realBpm": 128,
+    "previewStart": 39,
+    "previewEnd": 88,
+    "volume": 1,
+    "author": "omega-xis",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=16636",
+    "duration": 88,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6930,
+    "tracksCount": 1,
+    "search": "stylefivesplashfree",
     "local": false
   },
   {
@@ -197763,6 +198209,34 @@
     "local": false
   },
   {
+    "id": "weezer-island-in-the-sun",
+    "title": "Island In The Sun",
+    "artist": "Weezer",
+    "video": "erG5rgNYSdk",
+    "language": [
+      "English"
+    ],
+    "bpm": 229.34,
+    "gap": 3618.9238684921947,
+    "year": "2001",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-05T04:32:35.899Z",
+    "genre": "Rock",
+    "realBpm": 115,
+    "volume": 1,
+    "author": "EaterOfFromage",
+    "duration": 201,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6941,
+    "tracksCount": 1,
+    "search": "weezerislandinthesun",
+    "local": false
+  },
+  {
     "id": "weezer-no-other-one",
     "title": "No Other One",
     "artist": "Weezer",
@@ -200995,6 +201469,34 @@
     "local": false
   },
   {
+    "id": "yelle-je-veux-te-voir",
+    "title": "Je veux te voir",
+    "artist": "Yelle",
+    "video": "Y99UqvgCmE8",
+    "language": [
+      "French"
+    ],
+    "bpm": 300,
+    "gap": 19370,
+    "year": "2006",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-11-05T04:32:27.249Z",
+    "genre": "Pop",
+    "realBpm": 127,
+    "volume": 1,
+    "author": "ozzy2",
+    "duration": 239,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6927,
+    "tracksCount": 1,
+    "search": "yellejeveuxtevoir",
+    "local": false
+  },
+  {
     "id": "yellowcard-breathing",
     "title": "Breathing",
     "artist": "Yellowcard",
@@ -201803,6 +202305,35 @@
     "local": false
   },
   {
+    "id": "yuiko-ohara-tabibito-no-uta",
+    "title": "Tabibito no Uta",
+    "artist": "Yuiko Ohara",
+    "video": "hZ6TnKvB2rc",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 274,
+    "gap": 21283.598540145984,
+    "year": "2021",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-11-05T04:32:27.383Z",
+    "genre": "J-pop",
+    "realBpm": 137,
+    "volume": 1,
+    "author": "wolf359",
+    "sourceUrl": "https://www.youtube.com/watch?v=hZ6TnKvB2rc",
+    "duration": 265,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 6928,
+    "tracksCount": 1,
+    "search": "yuikooharatabibitonouta",
+    "local": false
+  },
+  {
     "id": "yuki-kimura-love-joy",
     "title": "Love & Joy",
     "artist": "Yuki Kimura",
@@ -202493,6 +203024,33 @@
     "shortId": 4787,
     "tracksCount": 1,
     "search": "zeddalessiacarastay",
+    "local": false
+  },
+  {
+    "id": "zedd-feat-foxes-clarity-acoustic-version",
+    "title": "Clarity (Acoustic Version)",
+    "artist": "Zedd feat. Foxes",
+    "video": "FPHhNuSdrYE",
+    "language": [
+      "English"
+    ],
+    "bpm": 256,
+    "gap": 5.46875,
+    "year": "2013",
+    "lastUpdate": "2026-11-05T04:32:35.773Z",
+    "genre": "Pop",
+    "realBpm": 128,
+    "volume": 1,
+    "author": "taite83",
+    "duration": 210,
+    "tracks": [
+      {
+        "start": 11
+      }
+    ],
+    "shortId": 6939,
+    "tracksCount": 1,
+    "search": "zeddfeatfoxesclarityacousticversion",
     "local": false
   },
   {

@@ -1,0 +1,638 @@
+#ARTIST:Stefan Raab feat. Spucky, Kork & Schrotty (Traumschiff Surprise)
+#TITLE:Space-Taxi
+#CREATOR:DaPhilosopha
+#BPM:221,39
+#YEAR:2004
+#VIDEO:v=Ue3FsQOFRaw
+#LANGUAGE:English, German
+#GAP:18323,693933782015
+#ALLKARAOKE_ID:stefan-raab-feat-spucky-kork-schrotty-traumschiff-surprise-space-taxi
+#ALLKARAOKE_SID:6933
+#ALLKARAOKE_LASTUPDATE:2026-11-05T04:32:29.014Z
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=1284
+#ALLKARAOKE_REALBPM:110
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=26954
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:213
+#MP3:Stefan Raab feat. Spucky, Kork & Schrotty (Traumschiff Surprise) - Space-Taxi.mp3
+#COVER:Stefan Raab feat. Spucky, Kork & Schrotty (Traumschiff Surprise) - Space-Taxi [CO].jpg
+#BACKGROUND:Stefan Raab feat. Spucky, Kork & Schrotty (Traumschiff Surprise) - Space-Taxi [BG].jpg
+F 15 3 0 Space 
+F 20 2 0 Ta
+F 23 2 0 xi?
+- 25
+F 36 2 0 Ja, 
+F 40 1 0 ha
+F 42 2 0 llo, 
+F 46 1 0 hier 
+F 50 2 0 spricht 
+F 55 1 0 der 
+F 58 1 0 Spuc
+F 61 2 0 ky.
+- 63 67
+- 67
+F 82 2 0 Und 
+F 85 1 0 wir 
+F 88 1 0 brau
+F 90 2 0 chen 
+F 94 2 0 ganz 
+F 98 3 0 drin
+F 102 1 0 gend 
+F 104 1 0 ein 
+F 107 1 0 Ta
+F 109 1 0 xi 
+F 112 1 0 zur 
+F 115 2 0 Er
+F 118 1 0 de.
+- 119
+F 123 1 0 I’ll 
+F 125 1 0 be 
+F 127 2 0 right 
+F 131 1 0 there, 
+F 134 2 0 Ba
+F 137 1 0 by!
+- 138
+F 141 2 0 Ah, 
+F 144 2 0 dan
+F 148 1 0 ke.
+- 149
+R 160 1 0 Well, 
+R 162 1 0 I’m 
+R 164 1 0 a 
+R 166 3 0 space 
+R 170 2 0 cab 
+R 174 2 0 dri
+R 177 1 0 ver,
+- 178
+R 179 1 0 And 
+R 181 2 0 I 
+R 184 3 0 burst 
+R 188 1 0 the 
+R 190 2 0 speed,
+- 192
+: 194 2 66 Come 
+: 197 1 64 on 
+: 199 1 66 o
+: 201 1 66 ver 
+: 203 1 64 to 
+: 205 1 66 me, 
+: 208 3 68 that’s 
+: 213 3 64 frea
+: 217 2 61 ky.
+- 219
+R 225 1 0 With 
+R 227 1 0 full 
+R 230 1 0 po
+R 232 2 0 wer’s 
+R 236 3 0 set,
+- 239
+R 242 1 0 You 
+R 244 1 0 got
+R 246 1 0 ta 
+R 248 2 0 lose 
+R 251 1 0 your 
+R 253 2 0 head,
+- 255
+: 256 1 66 And 
+: 258 2 66 when 
+: 261 1 64 I 
+: 263 3 66 don’t 
+: 267 2 66 know 
+: 270 2 66 Jean, 
+: 275 1 64 that’s 
+: 278 2 66 tric
+: 282 3 68 ky.
+- 285
+R 289 1 0 I 
+R 291 1 0 got
+R 293 1 0 ta 
+R 295 2 0 hot, 
+R 298 2 0 hot 
+R 302 2 0 ste
+R 305 1 0 re
+R 307 2 0 o,
+- 309
+R 310 2 0 Right 
+R 314 2 0 in 
+R 317 1 0 the 
+R 320 1 0 mid
+R 322 1 0 dle,
+- 323
+: 324 1 66 And 
+: 326 1 64 the 
+: 328 1 66 spea
+: 330 1 66 ker 
+: 332 1 64 smokes 
+: 336 1 66 just 
+: 339 1 66 like 
+: 341 1 68 a 
+: 344 2 66 joint.
+- 346
+R 355 2 0 No 
+R 359 2 0 mat
+R 362 2 0 ter 
+R 366 2 0 what,
+- 368
+R 370 1 0 I’m 
+R 372 1 0 gon
+R 374 1 0 na 
+R 376 2 0 make 
+R 380 1 0 you 
+R 384 2 0 hot!
+- 386
+F 392 7 0 Hui, 
+F 403 2 0 ein 
+F 408 8 0 Freund!
+- 416
+: 428 2 66 We’re 
+: 432 2 66 go
+: 436 2 64 ing 
+: 440 2 66 straight 
+: 444 2 64 to 
+: 448 1 66 mo
+: 450 2 68 ther 
+: 454 5 64 earth,
+- 459
+: 462 1 61 To 
+: 464 1 64 make 
+: 467 2 61 a 
+: 471 3 64 par
+: 475 6 61 ty!
+- 481
+: 492 2 68 There’ll 
+: 496 2 68 be 
+: 500 2 68 no 
+: 504 2 64 pro
+: 508 2 61 blem,
+- 510
+: 512 2 61 We’re 
+: 516 2 64 on 
+* 520 4 73 time 
+* 527 3 71 to
+* 532 4 71 ni
+* 539 8 73 ~ght!
+- 547
+F 552 2 0 Mops
+F 557 2 0 gesch
+F 561 1 0 win
+F 563 1 0 dig
+F 566 2 0 keit!
+- 568
+: 583 6 68 High, 
+: 592 4 66 high, 
+: 599 3 66 high 
+: 604 1 64 to 
+: 606 3 68 ti
+: 610 5 66 ~gh,
+- 615 633
+- 633
+: 648 4 68 Space 
+: 655 3 66 ta
+: 660 6 66 xi 
+: 672 2 66 to 
+: 676 2 64 the 
+* 680 3 68 sky
+* 684 7 66 ~.
+- 691 698
+- 698
+: 713 5 68 High, 
+: 721 4 66 high, 
+: 728 3 66 high 
+: 733 1 64 to 
+: 736 3 68 ti
+: 740 6 66 ~gh,
+- 746 763
+- 763
+: 778 4 68 Space 
+: 785 2 66 ta
+: 789 5 66 xi 
+: 801 2 66 to 
+: 804 1 64 the 
+: 808 2 69 sky
+: 811 6 66 ~.
+- 817 821
+- 821
+R 836 2 0 So 
+R 839 2 0 come 
+R 842 2 0 on, 
+R 845 2 0 join 
+R 848 1 0 me 
+R 850 1 0 ba
+R 852 1 0 by,
+- 853
+R 854 1 0 You 
+R 856 2 0 don’t 
+R 860 3 0 say 
+R 866 2 0 may
+R 869 1 0 be,
+- 870
+: 871 1 66 All 
+: 873 1 64 the 
+: 875 1 66 o
+: 877 1 66 ther 
+: 879 1 64 look 
+: 882 3 66 space 
+: 887 1 68 cab 
+: 890 4 66 show,
+- 894
+R 901 1 0 I 
+R 903 1 0 got 
+R 905 1 0 a 
+R 907 2 0 king 
+R 910 6 0 size,
+- 916
+R 918 3 0 Ex
+R 922 4 0 haust 
+R 928 3 0 pipe,
+- 931
+R 935 1 0 If 
+R 937 1 0 you 
+R 939 1 0 wan
+R 941 1 0 na 
+R 943 1 0 check 
+R 945 1 0 it 
+R 947 1 0 out 
+R 951 2 0 say 
+R 955 3 0 “Oh!”
+- 958
+R 967 1 0 If 
+R 969 1 0 you 
+R 971 1 0 e
+R 973 1 0 ver 
+R 975 1 0 might 
+R 977 1 0 get 
+R 982 2 0 for 
+R 985 1 0 the 
+R 987 2 0 ride 
+R 991 2 0 no 
+R 994 2 0 li
+R 997 1 0 mit,
+- 998
+R 999 2 0 All 
+R 1002 1 0 the 
+R 1004 1 0 la
+R 1006 1 0 dies 
+R 1008 1 0 in 
+R 1010 1 0 the 
+R 1012 2 0 house 
+R 1015 2 0 say 
+R 1018 6 0 “Yeah!”
+- 1024
+R 1030 1 0 Come 
+R 1033 1 0 on 
+R 1035 1 0 re
+R 1037 1 0 lax 
+R 1039 2 0 your
+R 1042 2 0 self 
+R 1048 1 0 on 
+R 1050 1 0 the 
+R 1052 2 0 back
+R 1056 2 0 seat, 
+R 1060 1 0 ba
+R 1063 2 0 by!
+- 1065
+F 1068 4 0 Vor
+F 1073 3 0 sicht 
+F 1080 2 0 Ver
+F 1084 4 0 kehr!
+- 1088 1089
+- 1089
+: 1104 3 66 We’re 
+: 1109 2 66 go
+: 1112 2 64 ing 
+: 1116 2 66 straight 
+: 1120 2 64 to 
+* 1124 1 66 mo
+* 1127 2 68 ther 
+* 1131 5 64 earth,
+- 1136
+: 1138 1 61 To 
+: 1141 1 64 make 
+: 1144 1 61 a 
+: 1147 2 64 par
+: 1152 2 61 ty!
+- 1154
+: 1168 2 68 There’ll 
+: 1173 2 68 be 
+: 1177 2 68 no 
+: 1181 2 64 pro
+: 1185 2 61 blem,
+- 1187
+: 1188 2 61 We’re 
+: 1193 2 64 on 
+: 1197 4 73 time 
+: 1203 3 71 to 
+* 1208 4 71 ni
+* 1214 7 73 ~ght!
+- 1221
+F 1229 2 0 Mops
+F 1234 2 0 gesch
+F 1238 1 0 win
+F 1241 1 0 dig
+F 1244 3 0 keit!
+- 1247
+: 1261 4 68 High, 
+: 1268 4 66 high, 
+: 1276 3 66 high 
+: 1281 1 64 to 
+: 1283 2 68 ti
+: 1288 3 66 ~gh,
+- 1291 1310
+- 1310
+: 1325 4 68 Space 
+: 1331 3 66 ta
+: 1337 3 66 xi 
+: 1349 2 66 to 
+: 1352 1 64 the 
+: 1355 3 68 sky
+: 1359 7 66 ~.
+- 1366 1375
+- 1375
+* 1390 5 68 High, 
+* 1398 5 66 high, 
+* 1405 3 66 high 
+* 1410 1 64 to 
+* 1413 2 68 ti
+* 1416 4 66 ~gh,
+- 1420 1439
+- 1439
+: 1454 4 68 Space 
+: 1461 2 66 ta
+: 1466 3 66 xi 
+: 1478 2 66 to 
+: 1481 1 64 the 
+: 1485 2 69 sky
+: 1488 7 66 ~.
+- 1495 1504
+- 1504
+: 1519 4 68 Space 
+: 1526 3 68 cab 
+: 1534 2 64 dri
+: 1538 3 61 ver,
+- 1541
+: 1547 2 64 Please 
+: 1551 2 66 take 
+: 1555 2 64 us 
+: 1559 2 66 to 
+: 1563 1 64 the 
+: 1565 3 69 par
+: 1570 5 66 ty!
+- 1575
+R 1580 1 0 No 
+R 1582 2 0 mat
+R 1585 2 0 ter 
+R 1589 3 0 where,
+- 1592
+R 1593 1 0 I’m 
+R 1595 1 0 gon
+R 1597 1 0 na 
+R 1599 2 0 take 
+R 1602 2 0 you 
+R 1606 3 0 there!
+- 1609
+: 1611 2 64 We 
+: 1614 2 66 want 
+: 1618 2 64 to 
+: 1623 2 66 touch 
+: 1627 2 64 your 
+: 1630 2 67 bo
+: 1635 5 66 dy!
+- 1640
+R 1648 2 0 Feu
+R 1652 2 0 er
+R 1655 2 0 sa
+R 1659 2 0 la
+R 1664 2 0 man
+R 1668 3 0 der,
+- 1671
+R 1676 1 0 Mach 
+R 1680 2 0 Bei
+R 1684 2 0 ne 
+R 1688 2 0 aus
+R 1692 2 0 ein
+R 1696 2 0 an
+R 1700 3 0 der,
+- 1703
+R 1708 1 0 Mach 
+R 1711 2 0 Bei
+R 1715 1 0 ne 
+R 1719 2 0 wie
+R 1723 2 0 der 
+R 1728 5 0 zu,
+- 1733
+R 1736 4 0 Und 
+R 1744 4 0 raus 
+R 1752 5 0 bist 
+R 1760 6 0 du!
+- 1766
+R 1770 1 0 Well, 
+R 1772 1 0 I’m 
+R 1774 1 0 a 
+R 1776 1 0 num
+R 1778 1 0 ber 
+R 1780 2 0 one, 
+R 1784 1 0 su
+R 1786 1 0 per 
+R 1788 3 0 cool, 
+R 1794 3 0 cap
+R 1798 1 0 tain 
+R 1800 3 0 cab,
+- 1803
+R 1804 1 0 And 
+R 1806 1 0 I’m 
+R 1808 2 0 ri
+R 1811 1 0 ding 
+R 1813 1 0 to 
+R 1815 1 0 the 
+R 1817 1 0 moon 
+R 1819 1 0 and 
+R 1821 1 0 the 
+R 1823 5 0 stars.
+- 1828
+R 1837 1 0 Wher
+R 1841 1 0 ev
+R 1843 1 0 er 
+R 1845 1 0 you 
+R 1848 1 0 wan
+R 1850 1 0 na 
+R 1852 1 0 go,
+- 1853
+R 1854 1 0 Be 
+R 1856 1 0 sure 
+R 1860 2 0 I’m 
+R 1864 2 0 gon
+R 1867 1 0 na 
+R 1869 1 0 go,
+- 1870
+R 1872 2 0 You 
+R 1875 1 0 can 
+R 1877 1 0 call 
+R 1879 1 0 me 
+R 1881 1 0 on 
+R 1883 1 0 the 
+R 1885 1 0 way 
+R 1887 1 0 to 
+R 1889 2 0 mars, 
+R 1893 1 0 ba
+R 1895 1 0 by.
+- 1896
+R 1899 1 0 And 
+R 1901 2 0 I’m 
+R 1904 3 0 fast 
+R 1909 1 0 like 
+R 1911 1 0 a 
+R 1913 1 0 go
+R 1915 1 0 ing 
+R 1917 1 0 rhyth
+R 1919 1 0 m,
+- 1920
+R 1923 1 0 A 
+R 1925 1 0 jet 
+R 1927 1 0 en
+R 1929 1 0 gine,
+- 1930
+: 1934 1 66 And 
+: 1936 1 64 the 
+: 1938 1 66 o
+: 1940 1 66 ther 
+: 1942 1 66 cars 
+: 1945 1 66 ma
+: 1947 1 66 king 
+: 1949 1 64 me 
+: 1951 3 69 itch!
+- 1954
+R 1966 2 0 So 
+R 1969 2 0 let’s 
+R 1973 2 0 go 
+R 1978 1 0 crui
+R 1981 2 0 sing 
+R 1986 1 0 la
+R 1989 4 0 dies!
+- 1993
+F 1996 2 0 Was 
+F 2000 2 0 meint 
+F 2003 2 0 ihr? 
+F 2011 1 0 Hmm, 
+F 2013 1 0 he’s 
+F 2015 1 0 a 
+F 2017 5 0 bitch
+- 2022 2023
+- 2023
+: 2038 2 66 We’re 
+: 2043 2 66 go
+: 2047 1 64 ing 
+: 2050 2 66 straight 
+: 2054 2 64 to 
+: 2058 1 66 mo
+: 2061 1 68 ther 
+: 2065 4 64 earth,
+- 2069
+: 2072 1 61 To 
+: 2074 1 64 make 
+: 2077 2 61 a 
+: 2081 2 64 par
+: 2085 7 61 ty!
+- 2092
+: 2101 3 68 There’ll 
+: 2106 2 68 be 
+: 2111 2 68 no 
+: 2115 2 64 pro
+: 2119 2 61 blem,
+- 2121
+* 2122 2 61 We’re 
+* 2126 2 64 on 
+* 2131 4 73 time 
+* 2137 3 71 to
+* 2142 4 71 ni
+* 2149 10 73 ~ght!
+- 2159
+F 2164 1 0 Mops
+F 2169 2 0 ge
+F 2173 1 0 schwin
+F 2175 1 0 dig
+F 2179 3 0 keit!
+- 2182
+: 2194 7 68 High, 
+: 2203 5 66 high, 
+: 2210 3 66 high 
+: 2214 1 64 to 
+: 2217 2 68 ti
+: 2220 6 66 ~gh,
+- 2226 2244
+- 2244
+: 2259 4 68 Space 
+: 2266 2 66 ta
+: 2271 6 66 xi 
+: 2283 1 66 to 
+: 2286 1 64 the 
+: 2290 3 68 sky
+: 2294 4 66 ~.
+- 2298 2309
+- 2309
+: 2324 5 68 High, 
+: 2331 5 66 high, 
+: 2339 3 66 high 
+: 2344 1 64 to 
+: 2347 2 68 ti
+: 2350 3 66 ~gh,
+- 2353 2373
+- 2373
+: 2388 4 68 Space 
+: 2395 2 66 ta
+: 2400 4 66 xi 
+: 2411 1 66 to 
+: 2415 1 64 the 
+: 2418 4 69 sky
+: 2423 6 66 ~.
+- 2429 2437
+- 2437
+: 2452 5 68 High, 
+: 2461 4 66 high, 
+: 2468 2 66 high 
+: 2472 1 64 to 
+: 2475 1 68 ti
+: 2479 4 66 ~gh,
+- 2483 2502
+- 2502
+: 2517 4 68 Space 
+: 2523 3 66 ta
+: 2528 4 66 xi 
+: 2541 1 66 to 
+: 2543 1 64 the 
+: 2547 3 68 sky
+: 2551 7 66 ~.
+- 2558 2566
+- 2566
+: 2581 4 68 High, 
+: 2589 5 66 high, 
+: 2597 2 66 high 
+: 2602 1 64 to 
+: 2604 2 68 ti
+: 2607 5 66 ~gh,
+- 2612 2631
+- 2631
+: 2646 4 68 Space 
+: 2652 3 66 ta
+: 2657 4 66 xi
+- 2661
+: 2673 3 64 I 
+: 2677 3 66 want 
+: 2681 2 64 you 
+: 2686 2 66 to 
+: 2690 2 64 get 
+: 2695 3 68 do
+: 2699 3 66 ~wn
+- 2702
+* 2711 4 68 Space 
+* 2718 2 66 Ta
+* 2722 2 66 xi
+- 2724 2727
+- 2727
+F 2742 2 0 Space 
+F 2747 2 0 Ta
+F 2751 5 0 xi
+- 2756
+F 2764 7 0 Flieg 
+F 2773 2 0 mit 
+F 2776 8 0 uns!
+E

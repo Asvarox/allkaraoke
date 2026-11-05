@@ -1,0 +1,200 @@
+#ARTIST:María de Jesús Terán
+#TITLE:Mikami La cazafantasmas
+#CREATOR:ConejoF1
+#BPM:218,7
+#YEAR:1993
+#VIDEO:v=g09V2nHv3Mo
+#GENRE:Anime
+#LANGUAGE:Spanish
+#GAP:14641,19341563786
+#ALLKARAOKE_ID:maria-de-jesus-teran-mikami-la-cazafantasmas
+#ALLKARAOKE_SID:6940
+#ALLKARAOKE_LASTUPDATE:2026-11-05T04:32:35.897Z
+#ALLKARAOKE_ARTISTORIGIN:MX
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/es/canciones?creador=conejof1
+#ALLKARAOKE_REALBPM:108
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/es/canciones?cancion=cazafantasmas
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:92
+#MP3:Mar僘 de Jes俍 Ter疣 - La cazafantasmas.mp3
+#COVER:Mar僘 de Jes俍 Ter疣 - La cazafantasmas.jpg
+: 15 3 4 Su 
+: 19 3 4 lar
+: 23 1 2 go 
+: 25 3 0 ca
+: 29 3 2 be
+: 33 3 0 llo el 
+: 37 3 -3 vien
+: 41 3 -1 to 
+: 45 4 0 me
+: 51 4 -3 ce
+- 55 64
+- 64
+: 79 3 4 so
+: 83 3 4 bre un 
+: 87 1 4 be
+: 89 3 4 llo 
+: 93 3 7 cuer
+: 97 4 7 po 
+: 102 2 4 se
+: 105 3 2 duc
+: 109 8 4 tor
+- 117 119
+- 119
+: 134 3 4 sus 
+: 138 3 7 za
+: 142 6 11 pa
+: 150 4 7 tos 
+: 156 8 9 son 
+: 170 3 4 con 
+: 174 3 2 muy 
+: 178 3 0 al
+: 182 1 2 to 
+: 184 3 0 ta
+: 188 6 4 cón
+- 194
+: 198 3 -3 siem
+: 202 3 -1 pre en 
+: 206 3 0 bus
+: 210 3 0 ca 
+: 214 1 2 de 
+: 216 3 4 di
+: 220 3 7 ne
+: 224 3 4 ro y 
+* 228 3 2 sin 
+* 232 3 0 te
+* 236 6 -3 mor
+- 242 254
+- 254
+: 269 3 4 A 
+: 273 3 4 los 
+: 277 1 2 pies 
+: 279 3 0 de e
+: 283 3 2 nor
+: 287 3 0 mes 
+: 291 3 -3 ras
+: 295 3 -1 ca
+: 299 3 0 cie
+: 303 6 -3 los
+- 309 313
+- 313
+: 328 3 4 tes
+: 332 3 4 ti
+: 336 3 4 gos 
+: 340 3 4 que in
+: 344 1 4 mu
+: 346 3 7 ta
+: 350 4 7 bles 
+: 356 1 4 pue
+: 358 3 2 den 
+: 362 6 4 ver
+- 368 373
+- 373
+: 388 3 4 que 
+: 392 3 7 sin 
+: 396 6 11 de
+: 404 4 7 cep
+: 410 8 9 ción
+- 418
+: 423 3 4 si 
+: 427 1 2 lle
+: 429 1 0 ga 
+: 431 1 2 u
+: 433 1 0 na a
+: 435 1 2 pa
+: 437 3 0 ri
+: 441 8 4 ción
+- 449
+: 453 1 -3 a 
+: 455 3 -1 su 
+: 459 3 0 mun
+: 463 3 0 do 
+: 467 1 2 lo
+: 469 3 4 gra
+: 473 5 7 rá ha
+: 479 3 4 cer
+: 483 1 2 lo 
+* 485 3 0 vol
+* 489 10 -3 ver
+- 499 512
+- 512
+: 527 4 4 siem
+: 533 4 5 pre in
+: 539 4 7 mer
+: 545 4 9 sa
+- 549
+: 558 3 4 en 
+: 562 1 4 su 
+: 564 3 5 la
+: 568 6 7 bor
+- 574
+: 578 1 4 que 
+: 580 3 2 nun
+: 584 1 0 ca 
+: 586 5 2 pien
+: 592 10 4 sa
+- 602
+: 610 3 0 en 
+: 614 2 0 el 
+: 617 3 -1 a
+: 621 8 -3 mor
+- 629 638
+- 638
+: 653 3 2 pe
+: 657 1 2 ro e
+: 659 3 0 lla 
+: 663 3 2 cree 
+: 667 3 0 que a
+: 671 3 2 sí es 
+: 675 3 4 me
+: 679 1 7 jor
+: 681 18 4 ~
+- 699
+: 709 3 4 Mi
+: 713 4 7 ka
+: 719 4 9 mi, 
+: 725 3 4 Mi
+: 729 4 7 ka
+: 735 4 9 mi
+- 739
+: 744 3 9 la 
+: 748 3 9 ca
+: 752 3 7 za
+: 756 3 4 fan
+: 760 4 7 tas
+: 766 3 9 mas!
+- 769
+: 772 3 4 O
+: 776 4 7 sa
+: 782 4 9 da, ad
+: 788 3 4 mi
+: 792 4 7 ra
+: 798 4 9 da
+- 802 820
+- 820
+: 835 3 4 Mi
+: 839 4 7 ka
+: 845 4 9 mi, 
+: 851 3 4 Mi
+: 855 4 7 ka
+: 861 4 9 mi
+- 865
+: 871 3 9 la 
+: 875 3 9 ca
+: 879 3 7 za
+: 883 3 4 fan
+: 887 4 7 tas
+: 893 3 9 mas!
+- 896
+: 899 3 9 her
+: 903 14 11 mo
+: 919 8 9 sa 
+* 929 3 11 mu
+* 933 3 9 jer
+* 937 16 8 ~
+- 953
+: 958 3 4 Es 
+: 962 3 11 Mi
+: 966 4 11 ka
+: 972 56 9 mi!
+E

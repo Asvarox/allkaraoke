@@ -1,0 +1,322 @@
+#ARTIST:Marino
+#TITLE:Devil In Disguise
+#CREATOR:Marino
+#BPM:220
+#YEAR:2025
+#VIDEO:v=DC-cqWO_GM0
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:2687,2727272727275
+#ALLKARAOKE_ID:marino-devil-in-disguise
+#ALLKARAOKE_SID:6942
+#ALLKARAOKE_LASTUPDATE:2026-11-05T04:32:35.900Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:110
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=DC-cqWO_GM0
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:110
+#MP3:Marino - Devil In Disguise.mp3
+#COVER:Marino - Devil In Disguise [CO].jpg
+#BACKGROUND:Marino - Devil In Disguise [BG].jpg
+: 15 2 1 She 
+: 18 9 1 said:
+- 27
+: 32 2 1 You 
+: 35 3 1 think 
+: 40 2 1 the 
+: 43 4 1 de
+: 48 3 1 vil 
+: 52 6 1 has 
+* 59 6 1 ho
+* 66 3 -1 ~rns?
+- 69
+* 72 2 8 Well, 
+* 76 4 8 so 
+* 81 2 8 did 
+* 84 4 9 I
+* 89 2 8 ~
+- 91
+: 96 3 6 But 
+: 100 3 7 I 
+: 104 3 7 was 
+: 108 3 7 wrong
+- 111
+: 114 2 8 His 
+: 117 4 6 hair 
+: 122 1 8 is 
+: 124 5 6 combed
+- 129
+: 132 4 7 And 
+: 137 2 8 he 
+: 140 5 6 wears 
+: 146 2 4 a 
+: 149 4 1 suit 
+: 154 2 -1 and 
+: 157 9 1 tie
+- 166
+: 169 2 4 He’s 
+: 172 10 4 nice, 
+: 185 3 8 po
+: 189 8 6 lite
+- 197
+: 201 2 8 He’ll 
+: 204 5 6 catch 
+: 210 2 8 you 
+: 213 3 6 by 
+: 217 3 1 sur
+: 221 9 1 prise
+- 230
+: 233 1 4 A 
+: 235 11 4 smile 
+: 247 5 8 so 
+: 253 9 6 bright
+- 262
+: 265 3 8 You’d 
+: 269 3 6 ne
+: 273 3 8 ver 
+: 277 3 6 bat 
+: 281 3 1 an 
+: 285 10 1 eye
+- 295 321
+- 321
+: 336 2 1 Said 
+: 339 5 1 she 
+: 345 3 1 was 
+: 349 4 6 in 
+: 354 1 8 a 
+: 356 5 6 hu
+: 362 2 8 ~r
+: 365 8 11 ry
+- 373
+: 386 2 11 That’s 
+: 389 2 11 when 
+: 392 3 9 she 
+: 396 5 7 met 
+: 402 1 8 him
+- 403
+: 405 3 7 Sun
+: 409 2 8 day 
+: 412 5 8 wal
+: 418 2 8 kin’ 
+: 421 4 7 down 
+: 426 2 8 the 
+: 429 9 11 street
+- 438
+: 448 4 11 She 
+: 453 4 11 dropped 
+: 458 2 9 her 
+: 461 5 8 bag
+- 466
+: 469 3 7 And 
+: 473 1 8 it 
+: 475 8 8 fell 
+: 485 4 7 to 
+: 490 2 8 his 
+: 493 2 11 feet
+- 495
+: 498 2 7 He 
+: 501 3 8 got 
+: 505 12 8 down 
+: 518 4 7 on 
+: 523 1 8 one 
+: 525 8 11 knee
+- 533
+: 537 3 8 He 
+: 541 4 11 han
+: 546 2 13 ded 
+: 549 3 11 her 
+: 553 3 9 the 
+: 557 2 8 purse
+- 559
+: 562 2 8 And 
+: 565 4 8 gave 
+: 570 1 7 a 
+: 572 5 8 war
+: 578 2 7 nin’ 
+: 581 7 8 to 
+: 590 4 8 her 
+: 595 5 1 say
+: 601 1 1 in’
+- 602
+: 605 4 0 “Miss, 
+: 610 2 1 you 
+: 613 4 1 know, 
+: 618 1 1 the 
+: 620 4 1 de
+: 625 4 1 vil 
+: 630 6 1 has 
+* 637 5 1 ho
+* 643 4 -1 ~rns
+- 647
+* 650 3 8 He’s 
+* 654 3 8 out 
+* 658 1 8 to
+* 660 5 9 ni
+* 666 4 8 ~ght
+- 670
+: 677 4 6 Wal
+: 682 2 8 king 
+: 685 3 6 ’rou
+: 689 2 8 ~nd 
+: 692 3 6 do
+: 696 2 8 ~wn
+: 699 6 6 town
+- 705
+: 708 4 6 Car
+: 713 3 8 ry
+: 717 4 6 in’ 
+: 722 2 4 a 
+: 725 4 1 gun 
+: 730 2 -1 and 
+: 733 9 1 knife
+- 742
+: 746 1 3 He’ll 
+: 748 8 4 fight, 
+: 761 3 8 you’ll 
+: 765 5 6 die
+- 770
+: 773 3 6 But 
+: 777 2 8 you’ll 
+: 780 5 6 see 
+: 786 2 4 him 
+: 789 5 1 clear 
+: 795 1 -1 his 
+: 797 9 1 light
+- 806
+: 810 2 3 An 
+: 813 9 4 e
+: 825 2 8 vil 
+: 828 6 6 sight
+- 834
+: 837 2 6 You 
+: 840 4 8 should 
+: 845 4 6 know 
+: 850 2 4 the 
+: 853 4 1 war
+: 858 2 -1 nin’ 
+: 861 10 1 signs.”
+- 871 898
+- 898
+: 913 2 1 So 
+: 916 5 1 then 
+: 922 1 1 he 
+: 924 5 7 walked 
+: 930 2 8 her 
+: 933 4 7 to 
+: 938 2 8 her 
+: 941 10 11 home
+- 951
+: 961 2 11 He 
+: 964 5 11 said: 
+* 970 2 8 “A 
+* 973 4 7 pret
+* 978 2 8 ty 
+* 981 4 7 girl 
+* 986 2 8 like 
+* 989 3 8 you 
+* 993 6 8 can’t 
+* 1000 1 7 be 
+* 1002 1 4 a
+* 1004 10 6 lone
+- 1014
+: 1026 2 11 Be
+: 1029 4 11 cause 
+: 1034 2 9 the 
+: 1037 4 8 de
+: 1042 1 8 vil
+- 1043
+: 1045 3 8 He 
+: 1049 2 8 will 
+: 1052 5 7 take 
+: 1058 2 8 all 
+: 1061 4 7 that 
+: 1066 2 8 you 
+: 1069 2 11 own
+- 1071
+: 1074 2 8 And 
+: 1077 2 8 he’ll 
+: 1080 8 7 strip 
+: 1089 3 8 you 
+: 1093 4 7 to 
+: 1098 2 8 the 
+: 1101 9 11 bone.”
+- 1110
+: 1113 2 8 She 
+: 1116 5 11 thanked 
+: 1122 1 13 him 
+: 1124 4 11 twice 
+: 1129 2 9 and 
+: 1132 5 8 said 
+: 1138 1 9 good 
+: 1140 2 8 night
+- 1142
+: 1145 2 8 She 
+: 1148 5 8 checked 
+: 1154 2 9 her 
+: 1157 2 8 bag
+- 1159
+: 1162 1 8 But 
+: 1164 4 7 no
+: 1169 2 8 thing 
+: 1172 5 7 was 
+: 1178 2 -1 in
+: 1181 2 1 side
+- 1183
+: 1186 1 1 You 
+: 1188 4 1 think 
+: 1193 2 1 the 
+: 1196 4 1 de
+: 1201 3 1 vil 
+: 1205 7 1 has 
+* 1213 5 1 ho
+* 1219 4 -1 ~rns?
+- 1223
+: 1226 1 8 Well, 
+: 1228 5 8 so 
+: 1234 2 8 did 
+: 1237 3 9 I
+: 1241 3 8 ~
+- 1244
+: 1251 2 8 But 
+: 1254 4 7 I 
+: 1259 1 8 was 
+: 1261 3 7 wrong
+- 1264
+: 1267 1 8 His 
+: 1269 4 6 hair 
+: 1274 2 8 is 
+: 1277 5 6 combed
+- 1282
+: 1285 4 6 And 
+: 1290 1 8 he 
+: 1292 5 6 wears 
+: 1298 1 4 a 
+: 1300 4 1 suit 
+: 1305 2 -1 and 
+: 1309 9 1 tie
+- 1318
+: 1321 2 3 He’s 
+: 1324 12 4 nice, 
+: 1337 3 8 po
+: 1341 8 6 lite
+- 1349
+: 1354 2 8 He’ll 
+: 1357 3 6 catch 
+: 1361 2 4 you 
+: 1364 3 1 by 
+: 1368 4 -1 sur
+: 1373 9 1 prise
+- 1382
+: 1385 1 3 A 
+: 1387 12 4 smile 
+: 1400 4 8 so 
+: 1405 6 6 bright
+- 1411
+* 1414 4 6 He’s 
+* 1419 1 8 the 
+* 1421 2 6 de
+* 1424 2 4 vil 
+* 1427 2 1 in 
+* 1430 6 -1 dis
+* 1437 15 1 guise
+E
