@@ -1,0 +1,552 @@
+#ARTIST:Nine Inch Nails
+#TITLE:The Perfect Drug
+#CREATOR:sanicsip
+#BPM:300
+#YEAR:1997
+#PREVIEWSTART:58
+#VIDEO:v=dn3j6-yQKWQ
+#GENRE:Metal
+#LANGUAGE:English
+#GAP:10950
+#ALLKARAOKE_ID:nine-inch-nails-the-perfect-drug
+#ALLKARAOKE_SID:6948
+#ALLKARAOKE_LASTUPDATE:2026-11-06T04:31:31.824Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/fr/canciones?creador=sanicsip
+#ALLKARAOKE_REALBPM:149
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/fr/canciones?artista=Nine%20Inch%20Nails&cancion=The%20Perfect%20Drug
+#ALLKARAOKE_PREVIEWEND:88
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:252
+#MP3:Nine Inch Nails - The Perfect Drug.mp3
+#COVER:Nine Inch Nails - The Perfect Drug [CO].jpg
+#START:2,5
+: 20 3 5 I 
+: 24 3 5 got 
+* 28 3 4 my 
+: 32 4 5 head
+- 36
+: 40 2 5 But 
+: 44 3 4 my 
+: 48 3 5 head 
+: 52 4 5 is 
+: 57 6 5 un
+: 64 3 7 rav
+: 68 3 7 el
+: 72 8 6 ing
+- 80
+: 84 4 5 Can't 
+: 89 2 5 keep 
+: 92 3 4 con
+: 96 4 5 trol
+- 100
+: 104 3 5 Can't 
+: 108 3 4 keep 
+: 112 4 5 track 
+: 117 2 5 of 
+: 120 4 5 where 
+* 125 3 7 it's 
+: 129 3 8 tra
+: 133 3 7 vel
+: 137 5 6 ing
+- 142
+: 149 2 5 I 
+: 153 2 5 got 
+: 156 4 4 my 
+: 161 4 5 heart
+- 165
+: 169 3 5 But 
+: 173 2 4 my 
+: 177 3 5 heart 
+: 181 3 5 is 
+: 185 6 7 no 
+: 193 6 6 good
+- 199
+: 206 2 6 And 
+: 209 6 5 you're 
+: 217 3 5 the 
+: 222 5 7 on
+: 229 5 7 ly 
+: 236 5 7 one
+- 241
+: 245 6 1 That's 
+: 253 6 2 un
+: 261 7 2 der
+: 270 4 3 stood
+- 274
+: 278 2 6 I 
+: 281 4 9 come 
+* 286 3 9 a
+: 290 5 10 long
+- 295
+: 299 2 10 But 
+: 302 2 8 I 
+: 305 4 10 don't 
+: 310 3 10 know 
+: 314 3 11 where 
+: 318 2 11 you're 
+: 321 4 11 ta
+: 326 3 11 king 
+: 330 6 10 me
+- 336
+: 342 2 12 I 
+: 345 8 10 shouldn't 
+: 355 5 9 go 
+* 362 3 10 but 
+: 366 3 10 you're 
+: 370 3 11 reach
+: 374 3 10 ing 
+: 378 2 10 back
+- 380
+: 384 1 11 And 
+: 386 3 11 shak
+: 390 4 11 ing 
+: 395 6 11 me
+- 401
+: 406 3 10 Turn 
+: 410 3 10 off 
+* 415 2 11 the 
+: 419 4 10 sun
+- 423
+: 427 3 10 Pull 
+: 431 3 8 the 
+: 435 6 10 stars 
+: 443 2 11 from 
+: 446 3 12 the 
+* 450 4 10 sky
+: 455 3 8 ~
+- 458
+: 463 3 10 The 
+: 467 5 10 more 
+: 473 5 10 I 
+: 479 7 11 give 
+* 487 6 12 to 
+: 494 7 15 you
+- 501
+: 511 3 16 The 
+: 515 4 17 more 
+: 520 6 17 I 
+: 528 10 18 die
+- 538 544
+- 544
+: 564 6 22 And 
+: 571 7 22 I 
+* 579 3 22 want
+* 583 3 22 ~ 
+: 587 3 22 you
+: 591 5 20 ~
+- 596 608
+- 608
+: 628 6 22 And 
+: 636 6 22 I 
+: 643 7 23 want 
+: 651 3 22 you
+: 655 6 20 ~
+- 661 672
+- 672
+: 692 6 22 And 
+: 700 6 22 I 
+* 708 3 23 want
+* 712 3 22 ~ 
+: 716 2 22 you
+: 719 6 20 ~
+- 725 736
+- 736
+: 756 6 28 And 
+: 764 7 28 I 
+: 772 7 34 want 
+: 780 8 34 you
+- 788
+: 797 7 5 You 
+: 806 6 5 are 
+: 814 2 5 the 
+: 817 6 8 per
+: 825 6 10 fect 
+: 833 9 9 drug
+- 842
+: 845 3 5 The 
+: 849 6 8 per
+: 857 5 10 fect 
+* 864 11 8 drug 
+: 877 3 5 the 
+: 882 5 10 per
+: 889 6 11 fect 
+: 897 13 8 drug
+- 910
+: 925 8 5 You 
+: 935 5 5 are 
+: 942 3 5 the 
+: 946 6 10 per
+: 954 5 11 fect 
+: 961 9 9 drug
+- 970
+: 974 4 6 The 
+: 979 5 10 per
+: 985 6 11 fect 
+: 993 11 8 drug 
+: 1006 3 5 the 
+: 1010 6 10 per
+: 1018 6 11 fect 
+: 1025 13 8 drug
+- 1038 1158
+- 1158
+: 1178 5 12 You 
+: 1184 3 13 make 
+: 1188 2 14 me 
+* 1191 10 15 hard
+- 1201
+: 1206 4 11 When 
+: 1211 4 10 I'm 
+: 1216 2 10 all
+: 1219 2 10 ~ 
+: 1223 3 12 soft 
+: 1227 3 10 in
+: 1232 7 12 side
+- 1239
+: 1244 3 10 I 
+: 1248 3 13 see 
+: 1252 2 14 the 
+* 1255 9 15 truth
+- 1264
+: 1272 3 11 When 
+: 1276 3 10 I'm 
+: 1280 2 10 all
+: 1283 3 10 ~ 
+: 1287 4 12 stu
+: 1293 2 11 pid 
+: 1296 9 12 eyed
+- 1305
+: 1310 1 17 The 
+: 1312 4 19 ar
+: 1317 5 18 row 
+: 1324 7 17 goes 
+* 1332 6 18 straight 
+: 1340 4 17 through 
+: 1345 6 17 my 
+: 1353 6 13 heart
+- 1359
+F 1367 1 24 With
+F 1369 6 23 out 
+F 1377 7 22 you 
+F 1385 3 23 ev
+F 1389 6 20 ery
+F 1397 6 21 thing 
+F 1405 5 20 just 
+F 1412 11 17 falls 
+F 1425 3 16 a
+F 1429 8 17 part
+- 1437
+: 1440 7 13 My 
+: 1449 10 15 blood 
+: 1461 7 17 wants 
+: 1469 3 17 to 
+: 1473 3 17 say 
+: 1477 3 17 hel
+: 1481 3 20 lo 
+: 1485 3 20 to 
+: 1489 6 20 you
+- 1495
+: 1505 7 13 My 
+: 1513 7 15 feel
+: 1521 4 15 ings 
+: 1526 8 17 want 
+: 1535 2 17 to 
+: 1538 3 17 get 
+: 1542 3 17 in
+: 1546 3 20 side 
+: 1550 3 20 of 
+: 1554 6 20 you
+- 1560
+: 1570 5 14 My 
+: 1577 8 15 soul 
+: 1586 3 15 is 
+* 1590 6 18 so 
+: 1598 2 17 a
+: 1602 3 17 fraid 
+: 1606 4 17 to 
+: 1611 3 18 re
+: 1615 3 16 a
+: 1619 4 17 lize
+- 1623
+: 1627 3 22 E
+: 1631 5 24 very 
+: 1638 6 22 lit
+: 1646 7 20 tle 
+: 1655 7 19 there 
+: 1663 6 17 is 
+: 1671 6 15 left 
+: 1678 7 14 of 
+: 1686 10 14 me
+- 1696 1702
+- 1702
+: 1722 8 22 And 
+: 1731 7 22 I 
+: 1739 3 22 want
+: 1743 3 22 ~ 
+: 1747 10 20 you
+- 1757 1759
+- 1759
+: 1779 13 22 And 
+: 1794 7 22 I 
+: 1803 3 23 want
+: 1807 3 22 ~ 
+: 1811 3 22 you
+: 1815 5 20 ~
+- 1820 1831
+- 1831
+: 1851 7 22 And 
+* 1860 7 22 I 
+* 1868 3 22 want
+: 1872 2 22 ~ 
+: 1875 10 20 you
+- 1885 1886
+- 1886
+: 1906 8 28 Oh 
+: 1916 6 28 and 
+: 1924 7 28 I 
+: 1932 6 34 want 
+: 1940 13 34 you
+- 1953
+: 1957 7 5 You 
+: 1965 7 5 are 
+: 1973 3 5 the 
+: 1977 7 9 per
+: 1985 6 10 fect 
+: 1992 8 9 drug
+- 2000
+: 2004 4 5 The 
+* 2009 6 9 per
+* 2016 6 10 fect 
+: 2023 11 8 drug 
+: 2036 3 5 the 
+: 2040 7 10 per
+: 2048 6 11 fect 
+: 2056 11 9 drug
+- 2067
+: 2084 8 5 You 
+: 2093 8 5 are 
+: 2102 3 5 the 
+: 2106 6 10 per
+: 2113 6 11 fect 
+: 2120 9 9 drug
+- 2129
+: 2133 4 5 The 
+: 2138 7 10 per
+: 2146 5 11 fect 
+* 2153 12 9 drug 
+: 2166 3 5 the 
+: 2170 6 9 per
+: 2177 6 11 fect 
+: 2185 13 8 drug
+- 2198
+: 2213 8 5 You 
+: 2222 8 5 are 
+: 2231 3 5 the 
+: 2235 6 9 per
+: 2242 6 11 fect 
+: 2249 10 9 drug
+- 2259
+: 2262 4 5 The 
+: 2267 6 9 per
+: 2274 6 11 fect 
+: 2282 10 8 drug 
+: 2294 3 5 the 
+: 2298 7 9 per
+: 2306 7 11 fect 
+: 2314 13 8 drug
+- 2327
+: 2342 8 5 You 
+: 2351 6 5 are 
+: 2359 3 5 the 
+* 2363 7 9 per
+: 2371 5 10 fect 
+: 2378 9 9 drug
+- 2387
+: 2391 3 5 The 
+: 2395 6 9 per
+: 2403 5 11 fect 
+: 2410 11 8 drug 
+: 2423 4 5 the 
+: 2428 6 10 per
+: 2435 6 10 fect 
+: 2442 14 8 drug
+- 2456
+: 2471 8 12 You 
+: 2481 6 12 are 
+: 2488 3 11 the 
+: 2492 5 11 per
+: 2499 6 11 fect 
+: 2507 8 9 drug
+- 2515
+: 2519 4 10 The 
+: 2524 7 10 per
+: 2532 6 10 fect 
+: 2540 11 8 drug 
+* 2553 3 10 the 
+: 2557 6 10 per
+: 2565 6 10 fect 
+: 2572 10 8 drug
+- 2582
+: 2600 8 12 You 
+: 2609 7 12 are 
+: 2617 2 11 the 
+: 2621 6 10 per
+: 2629 6 10 fect 
+: 2637 8 9 drug
+- 2645
+F 2650 3 5 The 
+F 2654 6 10 per
+F 2661 7 10 fect 
+F 2669 11 8 drug 
+F 2681 2 5 the 
+F 2684 7 10 per
+F 2692 7 10 fect 
+F 2700 15 8 drug
+- 2715
+F 2728 8 13 You 
+F 2737 8 13 are 
+F 2746 3 10 the 
+F 2751 6 10 per
+F 2758 6 9 fect 
+F 2765 10 9 drug
+- 2775
+F 2778 2 11 The 
+F 2782 6 10 per
+F 2790 5 7 fect 
+F 2798 10 7 drug 
+F 2810 3 10 the 
+F 2814 6 10 per
+F 2821 7 9 fect 
+F 2829 15 9 drug
+- 2844 3475
+- 3475
+: 3495 12 7 Take 
+* 3509 26 4 me 
+: 3558 16 4 with 
+: 3575 15 4 you
+: 3592 15 0 ~
+- 3607
+: 3624 12 7 Take 
+: 3638 28 4 me 
+: 3685 18 4 with 
+: 3704 14 4 you
+: 3720 16 0 ~
+- 3736 3739
+- 3739
+: 3759 5 4 With
+: 3765 7 11 out 
+: 3774 21 10 you
+- 3795 3804
+- 3804
+: 3824 4 4 With
+: 3829 6 10 out 
+: 3837 8 10 you 
+: 3846 5 8 e
+: 3852 4 8 very 
+: 3857 6 8 things 
+: 3864 8 7 falls 
+: 3873 3 7 a
+: 3877 5 4 part
+- 3882
+: 3888 4 4 With
+* 3893 7 11 out 
+: 3902 16 10 you
+- 3918 3921
+- 3921
+: 3941 4 4 It's 
+: 3946 6 4 not 
+: 3953 7 4 much 
+: 3961 6 4 fun 
+: 3968 4 3 to 
+: 3973 5 2 pick 
+: 3979 6 -1 up 
+: 3987 4 -2 the 
+: 3992 7 -1 pie
+: 4000 7 -1 ces
+- 4007
+: 4015 6 4 With
+* 4022 7 11 out 
+: 4030 17 10 you
+- 4047 4061
+- 4061
+: 4081 4 4 With
+: 4086 7 10 out 
+: 4094 8 10 you 
+: 4103 5 8 e
+: 4109 5 8 very 
+: 4115 7 8 things 
+: 4123 7 7 falls 
+: 4131 3 7 a
+: 4135 5 4 part
+- 4140
+: 4145 5 4 With
+: 4151 7 11 out 
+: 4159 16 10 you
+- 4175 4179
+- 4179
+: 4199 5 4 It's 
+: 4205 5 4 not 
+: 4211 6 4 much 
+: 4218 8 4 fun 
+: 4227 3 4 to 
+: 4231 6 2 pick 
+: 4238 5 -1 up 
+: 4244 3 -2 the 
+: 4249 8 -1 pie
+: 4259 8 -1 ces
+- 4267 4307
+- 4307
+: 4327 5 4 It's 
+: 4333 7 4 not 
+: 4341 6 4 much 
+: 4348 7 4 fun 
+: 4356 3 4 to 
+: 4360 6 2 pick 
+: 4367 6 -1 up 
+: 4374 3 -2 the 
+: 4379 8 -1 pie
+: 4389 10 -1 ces
+- 4399 4435
+- 4435
+: 4455 5 4 It's 
+: 4461 6 4 not 
+: 4468 7 4 much 
+: 4476 7 4 fun 
+: 4484 3 4 to 
+: 4488 8 2 pick 
+: 4497 5 -1 up 
+: 4503 3 -2 the 
+: 4508 7 -1 pie
+: 4517 7 -1 ces
+- 4524
+: 4532 4 4 With
+* 4537 8 11 out 
+: 4547 15 10 you
+- 4562 4577
+- 4577
+: 4597 4 4 With
+: 4602 5 10 out 
+: 4609 9 10 you 
+: 4620 4 8 e
+: 4625 5 8 very 
+: 4631 6 8 things 
+: 4638 7 7 falls 
+: 4646 3 7 a
+: 4650 6 4 part
+- 4656
+: 4660 5 4 With
+* 4666 7 11 out 
+: 4674 16 10 you
+- 4690 4695
+- 4695
+: 4715 3 4 It's 
+: 4719 5 4 not 
+: 4725 7 4 much 
+: 4733 8 4 fun 
+: 4742 2 4 to 
+: 4746 6 2 pick 
+: 4754 7 1 up 
+: 4762 3 1 the 
+: 4766 5 -1 pie
+: 4773 7 -1 ces
+E

@@ -6771,6 +6771,36 @@
     "local": false
   },
   {
+    "id": "alan-jackson-chattahoochee",
+    "title": "Chattahoochee",
+    "artist": "Alan Jackson",
+    "video": "JW5UEW2kYvc",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 34280,
+    "year": "1992",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-06T04:31:31.813Z",
+    "edition": "SingStar Country",
+    "genre": "Country",
+    "realBpm": 200,
+    "volume": 1,
+    "author": "IC",
+    "sourceUrl": "Alan Jackson",
+    "duration": 245,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6945,
+    "tracksCount": 1,
+    "search": "alanjacksonchattahoochee",
+    "local": false
+  },
+  {
     "id": "alan-jackson-feat-jimmy-buffett-its-five-oclock-somewhere",
     "title": "It’s Five O’Clock Somewhere",
     "artist": "Alan Jackson feat. Jimmy Buffett",
@@ -24171,6 +24201,62 @@
     "shortId": 572,
     "tracksCount": 1,
     "search": "billytalentsurrender",
+    "local": false
+  },
+  {
+    "id": "billy-talent-sympathy",
+    "title": "Sympathy",
+    "artist": "Billy Talent",
+    "video": "ursthlHEhSc",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 8380,
+    "year": "2006",
+    "artistOrigin": "CA",
+    "lastUpdate": "2026-11-06T04:31:41.454Z",
+    "realBpm": 120,
+    "previewStart": 68,
+    "previewEnd": 95,
+    "volume": 1,
+    "author": "Lorc",
+    "duration": 198,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6962,
+    "tracksCount": 1,
+    "search": "billytalentsympathy",
+    "local": false
+  },
+  {
+    "id": "billy-talent-the-dead-cant-testify",
+    "title": "The Dead Can’t Testify",
+    "artist": "Billy Talent",
+    "video": "kK_K68bATTM",
+    "language": [
+      "English"
+    ],
+    "bpm": 340,
+    "gap": 47955.294117647056,
+    "year": "2009",
+    "artistOrigin": "CA",
+    "lastUpdate": "2026-11-06T04:31:31.825Z",
+    "realBpm": 170,
+    "volume": 1,
+    "author": "Wüstenpfeil",
+    "duration": 268,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6949,
+    "tracksCount": 1,
+    "search": "billytalentthedeadcanttestify",
     "local": false
   },
   {
@@ -62019,6 +62105,33 @@
     "local": false
   },
   {
+    "id": "epic-the-musical-jorge-rivera-herrans-armando-julian-luck-runs-out",
+    "title": "Luck Runs Out",
+    "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Armando Julian)",
+    "video": "aCy8f96G2v0",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 6287.5,
+    "year": "2024",
+    "lastUpdate": "2026-11-06T04:31:41.277Z",
+    "genre": "Musical",
+    "realBpm": 135,
+    "volume": 1,
+    "author": "b888arb",
+    "duration": 210,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 6959,
+    "tracksCount": 1,
+    "search": "epicthemusicaljorgeriveraherransarmandojulianluckrunsout",
+    "local": false
+  },
+  {
     "id": "epic-the-musical-jorge-rivera-herrans-armando-julian-mutiny",
     "title": "Mutiny",
     "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Armando Julian)",
@@ -67741,6 +67854,34 @@
     "shortId": 1634,
     "tracksCount": 1,
     "search": "floridawhistle",
+    "local": false
+  },
+  {
+    "id": "florence-the-machine-bedroom-hymns",
+    "title": "Bedroom Hymns",
+    "artist": "Florence + the Machine",
+    "video": "jb1HteTOEKs",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 16540,
+    "year": "2011",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-11-06T04:31:32.572Z",
+    "genre": "Baroque Pop",
+    "realBpm": 106,
+    "volume": 1,
+    "author": "Senortruco",
+    "duration": 187,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6954,
+    "tracksCount": 1,
+    "search": "florencethemachinebedroomhymns",
     "local": false
   },
   {
@@ -73849,6 +73990,32 @@
     "shortId": 1749,
     "tracksCount": 1,
     "search": "girlsgenerationoh",
+    "local": false
+  },
+  {
+    "id": "girls-generation-snsd-flower-power",
+    "title": "Flower Power",
+    "artist": "Girls’ Generation (SNSD)",
+    "video": "jG1cIlM1juw",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 236,
+    "gap": 21983.050847457627,
+    "year": "2012",
+    "lastUpdate": "2026-11-06T04:31:32.176Z",
+    "realBpm": 118,
+    "volume": 1,
+    "author": "b888arb",
+    "duration": 223,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6952,
+    "tracksCount": 1,
+    "search": "girlsgenerationsnsdflowerpower",
     "local": false
   },
   {
@@ -89370,6 +89537,34 @@
     "local": false
   },
   {
+    "id": "jean-pierre-mader-macumba",
+    "title": "Macumba",
+    "artist": "Jean-Pierre Mader",
+    "video": "NAYD9tiTKUQ",
+    "language": [
+      "French"
+    ],
+    "bpm": 261.6800000000007,
+    "gap": 28314.226070821092,
+    "year": "1985",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-11-06T04:31:32.575Z",
+    "genre": "Pop",
+    "realBpm": 131,
+    "volume": 1,
+    "author": "mustangfred",
+    "duration": 217,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 6955,
+    "tracksCount": 1,
+    "search": "jeanpierremadermacumba",
+    "local": false
+  },
+  {
     "id": "jeanette-porque-te-vas",
     "title": "Porque te vas",
     "artist": "Jeanette",
@@ -94153,6 +94348,35 @@
     "shortId": 2199,
     "tracksCount": 1,
     "search": "journeyopenarms",
+    "local": false
+  },
+  {
+    "id": "journey-separate-ways-worlds-apart",
+    "title": "Separate Ways (Worlds Apart)",
+    "artist": "Journey",
+    "video": "LatorN4P9aA",
+    "language": [
+      "English"
+    ],
+    "bpm": 239.83999999999995,
+    "gap": 21980.16663889352,
+    "year": "1983",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-06T04:31:31.816Z",
+    "genre": "Rock",
+    "realBpm": 131,
+    "volume": 1,
+    "author": "Mantis",
+    "sourceUrl": "https://www.youtube.com/watch?v=LatorN4P9aA&list=RDLatorN4P9aA&start_radio=1",
+    "duration": 266,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 6946,
+    "tracksCount": 1,
+    "search": "journeyseparatewaysworldsapart",
     "local": false
   },
   {
@@ -100403,6 +100627,33 @@
     "shortId": 2361,
     "tracksCount": 1,
     "search": "kenshiyonezukickback",
+    "local": false
+  },
+  {
+    "id": "kenshi-yonezu-plazma",
+    "title": "Plazma",
+    "artist": "Kenshi Yonezu",
+    "video": "fp3F6TqBsAU",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 346,
+    "gap": 5372.890173410405,
+    "year": "2025",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-11-06T04:31:41.455Z",
+    "realBpm": 173,
+    "volume": 1,
+    "author": "DeinAlptraum, HansiMcKlaus",
+    "duration": 200,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 6963,
+    "tracksCount": 1,
+    "search": "kenshiyonezuplazma",
     "local": false
   },
   {
@@ -107671,6 +107922,34 @@
     "shortId": 4836,
     "tracksCount": 1,
     "search": "lafeeheuldoch",
+    "local": false
+  },
+  {
+    "id": "lafee-prinzesschen",
+    "title": "Prinzesschen",
+    "artist": "LaFee",
+    "video": "EJMYdch314c",
+    "language": [
+      "German"
+    ],
+    "bpm": 280,
+    "gap": 17842.14285714286,
+    "year": "2006",
+    "lastUpdate": "2026-11-06T04:31:32.004Z",
+    "realBpm": 140,
+    "volume": 1,
+    "author": "Mamba99",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=156400",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=25064",
+    "duration": 239,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 6951,
+    "tracksCount": 1,
+    "search": "lafeeprinzesschen",
     "local": false
   },
   {
@@ -128692,6 +128971,33 @@
     "local": false
   },
   {
+    "id": "milky-chance-stolen-dance",
+    "title": "Stolen Dance",
+    "artist": "Milky Chance",
+    "video": "iX-QaNzd-0Y",
+    "language": [
+      "English"
+    ],
+    "bpm": 228,
+    "gap": 24953.157894736843,
+    "year": "2013",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-11-06T04:31:31.145Z",
+    "realBpm": 114,
+    "volume": 1,
+    "author": "Silverbeam",
+    "duration": 314,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6944,
+    "tracksCount": 1,
+    "search": "milkychancestolendance",
+    "local": false
+  },
+  {
     "id": "millencolin-no-cigar",
     "title": "No Cigar",
     "artist": "Millencolin",
@@ -137631,6 +137937,38 @@
     "local": false
   },
   {
+    "id": "nine-inch-nails-the-perfect-drug",
+    "title": "The Perfect Drug",
+    "artist": "Nine Inch Nails",
+    "video": "dn3j6-yQKWQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 10950,
+    "year": "1997",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-06T04:31:31.824Z",
+    "genre": "Metal",
+    "realBpm": 149,
+    "previewStart": 58,
+    "previewEnd": 88,
+    "volume": 1,
+    "author": "sanicsip",
+    "authorUrl": "https://ultrastar-es.org/fr/canciones?creador=sanicsip",
+    "sourceUrl": "https://ultrastar-es.org/fr/canciones?artista=Nine%20Inch%20Nails&cancion=The%20Perfect%20Drug",
+    "duration": 252,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 6948,
+    "tracksCount": 1,
+    "search": "nineinchnailstheperfectdrug",
+    "local": false
+  },
+  {
     "id": "nino-bravo-un-beso-y-una-flor",
     "title": "Un beso y una flor",
     "artist": "Nino Bravo",
@@ -142007,6 +142345,33 @@
     "shortId": 3333,
     "tracksCount": 1,
     "search": "operaciontriunforevolucionsexual",
+    "local": false
+  },
+  {
+    "id": "ophelie-winter-dieu-ma-donne-la-foi",
+    "title": "Dieu m’a donné la foi",
+    "artist": "Ophélie Winter",
+    "video": "gmuyfiJKFaA",
+    "language": [
+      "French"
+    ],
+    "bpm": 216,
+    "gap": 4977.777777777777,
+    "year": "1995",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-11-06T04:31:41.103Z",
+    "realBpm": 108,
+    "volume": 1,
+    "author": "Leroidukitch",
+    "duration": 242,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 6958,
+    "tracksCount": 1,
+    "search": "opheliewinterdieumadonnelafoi",
     "local": false
   },
   {
@@ -153234,6 +153599,36 @@
     "local": false
   },
   {
+    "id": "red-hot-chili-peppers-the-zephyr-song",
+    "title": "The Zephyr Song",
+    "artist": "Red Hot Chili Peppers",
+    "video": "0fcRa5Z6LmU",
+    "language": [
+      "English"
+    ],
+    "bpm": 312.03,
+    "gap": 16300.481684453418,
+    "year": "2002",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-06T04:31:41.457Z",
+    "genre": "Rock",
+    "realBpm": 117,
+    "previewStart": 51,
+    "previewEnd": 81,
+    "volume": 1,
+    "author": "mustangfred",
+    "duration": 232,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 6964,
+    "tracksCount": 1,
+    "search": "redhotchilipeppersthezephyrsong",
+    "local": false
+  },
+  {
     "id": "red-hot-chili-peppers-under-the-bridge",
     "title": "Under the bridge",
     "artist": "Red Hot Chili Peppers",
@@ -156306,6 +156701,35 @@
     "shortId": 6803,
     "tracksCount": 1,
     "search": "ritaoraiwillneverletyoudown",
+    "local": false
+  },
+  {
+    "id": "rita-ora-let-you-love-me",
+    "title": "Let You Love Me",
+    "artist": "Rita Ora",
+    "video": "XCQK6LmhYqc",
+    "language": [
+      "English"
+    ],
+    "bpm": 383.9,
+    "gap": 4524.110445428497,
+    "year": "2018",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-11-06T04:31:31.821Z",
+    "genre": "Pop",
+    "realBpm": 94,
+    "volume": 1,
+    "author": "aac",
+    "sourceUrl": "https://www.youtube.com/watch?v=XCQK6LmhYqc",
+    "duration": 191,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 6947,
+    "tracksCount": 1,
+    "search": "ritaoraletyouloveme",
     "local": false
   },
   {
@@ -166581,6 +167005,35 @@
     "local": false
   },
   {
+    "id": "silent-poets-leila-adu-asylum-for-the-feeling",
+    "title": "Asylum For The Feeling",
+    "artist": "Silent Poets, Leila Adu",
+    "video": "R2t8pHCbVFc",
+    "language": [
+      "English"
+    ],
+    "bpm": 82,
+    "gap": 48589.365853658535,
+    "year": "2018",
+    "lastUpdate": "2026-11-06T04:31:40.756Z",
+    "genre": "Pop, Singer-Songwriter",
+    "realBpm": 82,
+    "previewStart": 60,
+    "previewEnd": 91,
+    "volume": 1,
+    "author": "Purpleurple",
+    "duration": 430,
+    "tracks": [
+      {
+        "start": 5
+      }
+    ],
+    "shortId": 6956,
+    "tracksCount": 1,
+    "search": "silentpoetsleilaaduasylumforthefeeling",
+    "local": false
+  },
+  {
     "id": "silia-kapsis-liar",
     "title": "Liar",
     "artist": "Silia Kapsis",
@@ -171017,6 +171470,34 @@
     "shortId": 4063,
     "tracksCount": 1,
     "search": "steindithehardestkaraokesongintheworld",
+    "local": false
+  },
+  {
+    "id": "stella-aamun-kuiskaus",
+    "title": "Aamun kuiskaus",
+    "artist": "Stella",
+    "video": "DiQRDTxlvk4",
+    "language": [
+      "Finnish"
+    ],
+    "bpm": 252.2,
+    "gap": 42.140364789849286,
+    "year": "2004",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-11-06T04:31:32.570Z",
+    "genre": "Pop",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "palli",
+    "duration": 236,
+    "tracks": [
+      {
+        "start": 6
+      }
+    ],
+    "shortId": 6953,
+    "tracksCount": 1,
+    "search": "stellaaamunkuiskaus",
     "local": false
   },
   {
@@ -177952,6 +178433,35 @@
     "shortId": 6287,
     "tracksCount": 1,
     "search": "taylorswiftivy",
+    "local": false
+  },
+  {
+    "id": "taylor-swift-king-of-my-heart",
+    "title": "King Of My Heart",
+    "artist": "Taylor Swift",
+    "video": "5U7bF68xcRg",
+    "language": [
+      "English"
+    ],
+    "bpm": 224.75,
+    "gap": 3428.8876529477197,
+    "year": "2017",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-06T04:31:41.452Z",
+    "genre": "Pop",
+    "realBpm": 109,
+    "volume": 1,
+    "author": "princetongirl98",
+    "sourceUrl": "https://www.youtube.com/watch?v=5U7bF68xcRg",
+    "duration": 215,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6960,
+    "tracksCount": 1,
+    "search": "taylorswiftkingofmyheart",
     "local": false
   },
   {
@@ -194104,6 +194614,33 @@
     "local": false
   },
   {
+    "id": "type-o-negative-love-you-to-death",
+    "title": "Love You To Death",
+    "artist": "Type O Negative",
+    "video": "xD5No_JRrZw",
+    "language": [
+      "English"
+    ],
+    "bpm": 220,
+    "gap": 10117.272727272728,
+    "year": "1996",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-06T04:31:41.101Z",
+    "realBpm": 80,
+    "volume": 1,
+    "author": "Daniel Baur",
+    "duration": 291,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 6957,
+    "tracksCount": 1,
+    "search": "typeonegativeloveyoutodeath",
+    "local": false
+  },
+  {
     "id": "u-kiss-0330",
     "title": "0330",
     "artist": "U-Kiss",
@@ -201234,6 +201771,35 @@
     "local": false
   },
   {
+    "id": "xtc-dear-god",
+    "title": "Dear God",
+    "artist": "XTC",
+    "video": "p554R-Jq43A",
+    "language": [
+      "English"
+    ],
+    "bpm": 363.7,
+    "gap": 14838.173219686554,
+    "year": "1986",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-11-06T04:31:31.827Z",
+    "genre": "Pop Psicodelico",
+    "videoGap": 1,
+    "realBpm": 92,
+    "volume": 1,
+    "author": "yuzz",
+    "duration": 238,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 6950,
+    "tracksCount": 1,
+    "search": "xtcdeargod",
+    "local": false
+  },
+  {
     "id": "xutos-puntapes-ai-se-ele-cai",
     "title": "Ai Se Ele Cai",
     "artist": "Xutos & Puntapés",
@@ -202247,6 +202813,37 @@
     "shortId": 4769,
     "tracksCount": 1,
     "search": "youseiteikokukuusoumesorogiwi",
+    "local": false
+  },
+  {
+    "id": "yu-ka-rouge",
+    "title": "Rouge",
+    "artist": "YU-KA",
+    "video": "lnDUYan0a88",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 436,
+    "gap": 8381.29357798165,
+    "year": "2024",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-11-06T04:31:41.453Z",
+    "edition": "Tv Size",
+    "genre": "JPop",
+    "realBpm": 109,
+    "volume": 1,
+    "author": "Currymalker",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=currymalker",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=YU-KA",
+    "duration": 101,
+    "tracks": [
+      {
+        "start": 29
+      }
+    ],
+    "shortId": 6961,
+    "tracksCount": 1,
+    "search": "yukarouge",
     "local": false
   },
   {

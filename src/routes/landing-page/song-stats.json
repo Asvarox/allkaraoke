@@ -42,12 +42,12 @@
     "Demi Lovato",
     "Kelly Clarkson",
     "Radiohead",
+    "Red Hot Chili Peppers",
     "The Weeknd",
     "Avril Lavigne",
     "Backstreet Boys",
     "Jamiroquai",
     "Maroon 5",
-    "Red Hot Chili Peppers",
     "The Black Eyed Peas",
     "Avenged Sevenfold",
     "Bad Religion",
@@ -85,6 +85,7 @@
     "Thirty Seconds to Mars",
     "Weezer",
     "5 Seconds of Summer",
+    "Billy Talent",
     "Céline Dion",
     "Christina Aguilera",
     "Deftones",
@@ -106,6 +107,7 @@
     "Depeche Mode",
     "Elvis Presley",
     "Fleetwood Mac",
+    "Florence + the Machine",
     "Groove Coverage",
     "Hamilton",
     "Hilary Duff",
@@ -126,7 +128,6 @@
     "UB40",
     "3 Doors Down",
     "Avicii",
-    "Billy Talent",
     "blink-182",
     "Bryan Adams",
     "Chris Brown",
@@ -135,7 +136,6 @@
     "Earth, Wind & Fire",
     "Eminem",
     "Faith No More",
-    "Florence + the Machine",
     "Genesis",
     "Goo Goo Dolls",
     "Johnny Cash",
@@ -191,9 +191,10 @@
     "Ukrainian",
     "en"
   ],
-  "songs": 6942,
-  "generatedAt": "2026-11-05T04:33:27.486Z",
+  "songs": 6963,
+  "generatedAt": "2026-11-06T04:32:26.772Z",
   "additionsPerDay": {
+    "2026-11-06": 21,
     "2026-11-05": 20,
     "2026-11-04": 22,
     "2026-11-03": 24,
@@ -235,10 +236,156 @@
     "2026-09-10": 4,
     "2026-09-09": 12,
     "2026-09-08": 13,
-    "2026-09-07": 3,
-    "2026-09-06": 19
+    "2026-09-07": 3
   },
   "recentlyAdded": [
+    {
+      "id": "red-hot-chili-peppers-the-zephyr-song",
+      "artist": "Red Hot Chili Peppers",
+      "title": "The Zephyr Song",
+      "video": "0fcRa5Z6LmU",
+      "addedAt": "2026-11-06T04:31:41.457Z"
+    },
+    {
+      "id": "kenshi-yonezu-plazma",
+      "artist": "Kenshi Yonezu",
+      "title": "Plazma",
+      "video": "fp3F6TqBsAU",
+      "addedAt": "2026-11-06T04:31:41.455Z"
+    },
+    {
+      "id": "billy-talent-sympathy",
+      "artist": "Billy Talent",
+      "title": "Sympathy",
+      "video": "ursthlHEhSc",
+      "addedAt": "2026-11-06T04:31:41.454Z"
+    },
+    {
+      "id": "yu-ka-rouge",
+      "artist": "YU-KA",
+      "title": "Rouge",
+      "video": "lnDUYan0a88",
+      "addedAt": "2026-11-06T04:31:41.453Z"
+    },
+    {
+      "id": "taylor-swift-king-of-my-heart",
+      "artist": "Taylor Swift",
+      "title": "King Of My Heart",
+      "video": "5U7bF68xcRg",
+      "addedAt": "2026-11-06T04:31:41.452Z"
+    },
+    {
+      "id": "epic-the-musical-jorge-rivera-herrans-armando-julian-luck-runs-out",
+      "artist": "EPIC: The Musical (Jorge Rivera-Herrans, Armando Julian)",
+      "title": "Luck Runs Out",
+      "video": "aCy8f96G2v0",
+      "addedAt": "2026-11-06T04:31:41.277Z"
+    },
+    {
+      "id": "ophelie-winter-dieu-ma-donne-la-foi",
+      "artist": "Ophélie Winter",
+      "title": "Dieu m’a donné la foi",
+      "video": "gmuyfiJKFaA",
+      "addedAt": "2026-11-06T04:31:41.103Z"
+    },
+    {
+      "id": "type-o-negative-love-you-to-death",
+      "artist": "Type O Negative",
+      "title": "Love You To Death",
+      "video": "xD5No_JRrZw",
+      "addedAt": "2026-11-06T04:31:41.101Z"
+    },
+    {
+      "id": "silent-poets-leila-adu-asylum-for-the-feeling",
+      "artist": "Silent Poets, Leila Adu",
+      "title": "Asylum For The Feeling",
+      "video": "R2t8pHCbVFc",
+      "addedAt": "2026-11-06T04:31:40.756Z"
+    },
+    {
+      "id": "jean-pierre-mader-macumba",
+      "artist": "Jean-Pierre Mader",
+      "title": "Macumba",
+      "video": "NAYD9tiTKUQ",
+      "addedAt": "2026-11-06T04:31:32.575Z"
+    },
+    {
+      "id": "florence-the-machine-bedroom-hymns",
+      "artist": "Florence + the Machine",
+      "title": "Bedroom Hymns",
+      "video": "jb1HteTOEKs",
+      "addedAt": "2026-11-06T04:31:32.572Z"
+    },
+    {
+      "id": "stella-aamun-kuiskaus",
+      "artist": "Stella",
+      "title": "Aamun kuiskaus",
+      "video": "DiQRDTxlvk4",
+      "addedAt": "2026-11-06T04:31:32.570Z"
+    },
+    {
+      "id": "girls-generation-snsd-flower-power",
+      "artist": "Girls’ Generation (SNSD)",
+      "title": "Flower Power",
+      "video": "jG1cIlM1juw",
+      "addedAt": "2026-11-06T04:31:32.176Z"
+    },
+    {
+      "id": "lafee-prinzesschen",
+      "artist": "LaFee",
+      "title": "Prinzesschen",
+      "video": "EJMYdch314c",
+      "addedAt": "2026-11-06T04:31:32.004Z"
+    },
+    {
+      "id": "xtc-dear-god",
+      "artist": "XTC",
+      "title": "Dear God",
+      "video": "p554R-Jq43A",
+      "addedAt": "2026-11-06T04:31:31.827Z"
+    },
+    {
+      "id": "billy-talent-the-dead-cant-testify",
+      "artist": "Billy Talent",
+      "title": "The Dead Can’t Testify",
+      "video": "kK_K68bATTM",
+      "addedAt": "2026-11-06T04:31:31.825Z"
+    },
+    {
+      "id": "nine-inch-nails-the-perfect-drug",
+      "artist": "Nine Inch Nails",
+      "title": "The Perfect Drug",
+      "video": "dn3j6-yQKWQ",
+      "addedAt": "2026-11-06T04:31:31.824Z"
+    },
+    {
+      "id": "rita-ora-let-you-love-me",
+      "artist": "Rita Ora",
+      "title": "Let You Love Me",
+      "video": "XCQK6LmhYqc",
+      "addedAt": "2026-11-06T04:31:31.821Z"
+    },
+    {
+      "id": "journey-separate-ways-worlds-apart",
+      "artist": "Journey",
+      "title": "Separate Ways (Worlds Apart)",
+      "video": "LatorN4P9aA",
+      "addedAt": "2026-11-06T04:31:31.816Z"
+    },
+    {
+      "id": "alan-jackson-chattahoochee",
+      "artist": "Alan Jackson",
+      "title": "Chattahoochee",
+      "video": "JW5UEW2kYvc",
+      "addedAt": "2026-11-06T04:31:31.813Z"
+    },
+    {
+      "id": "milky-chance-stolen-dance",
+      "artist": "Milky Chance",
+      "title": "Stolen Dance",
+      "video": "iX-QaNzd-0Y",
+      "addedAt": "2026-11-06T04:31:31.145Z"
+    },
     {
       "id": "kara-wanna",
       "artist": "Kara",
@@ -427,153 +574,6 @@
       "title": "Angst",
       "video": "ONj9cvHCado",
       "addedAt": "2026-11-04T04:13:31.979Z"
-    },
-    {
-      "id": "daisies-a-hazbin-hotel-song-daisies",
-      "artist": "Daisies (A Hazbin Hotel Song)",
-      "title": "Daisies",
-      "video": "qy9NX7iI6YQ",
-      "addedAt": "2026-11-04T04:13:31.842Z"
-    },
-    {
-      "id": "disneys-aladdin-principe-ali",
-      "artist": "Disney’s Aladdin",
-      "title": "Príncipe Alí",
-      "video": "e3iCPKBIMz4",
-      "addedAt": "2026-11-04T04:13:30.248Z"
-    },
-    {
-      "id": "napa-deslocado",
-      "artist": "Napa",
-      "title": "Deslocado",
-      "video": "pNstFdk-hnY",
-      "addedAt": "2026-11-04T04:13:30.087Z"
-    },
-    {
-      "id": "sabrina-carpenter-juno",
-      "artist": "Sabrina Carpenter",
-      "title": "Juno",
-      "video": "1aMCVgRKcP4",
-      "addedAt": "2026-11-04T04:13:30.084Z"
-    },
-    {
-      "id": "charlie-puth-feat-kehlani-done-for-me",
-      "artist": "Charlie Puth feat. Kehlani",
-      "title": "Done For Me",
-      "video": "TdyllLZeviY",
-      "addedAt": "2026-11-04T04:13:29.949Z"
-    },
-    {
-      "id": "paktofonika-jestem-bogiem",
-      "artist": "Paktofonika",
-      "title": "Jestem Bogiem",
-      "video": "u3HeJFr01T0",
-      "addedAt": "2026-11-04T04:13:29.945Z"
-    },
-    {
-      "id": "florence-the-machine-hunger",
-      "artist": "Florence + the Machine",
-      "title": "Hunger",
-      "video": "5GHXEGz3PJg",
-      "addedAt": "2026-11-04T04:13:29.942Z"
-    },
-    {
-      "id": "het-huis-anubis-het-huis-anubis",
-      "artist": "Het Huis Anubis",
-      "title": "Het Huis Anubis",
-      "video": "SgC8T_MhDp4",
-      "addedAt": "2026-11-04T04:13:29.939Z"
-    },
-    {
-      "id": "disneys-ratatouille-camille-le-festin",
-      "artist": "Disney’s Ratatouille (Camille)",
-      "title": "Le festin",
-      "video": "G3lSONLLx70",
-      "addedAt": "2026-11-04T04:13:27.762Z"
-    },
-    {
-      "id": "disneys-camp-rock-2-demi-lovato-brand-new-day",
-      "artist": "Disney’s Camp Rock 2 (Demi Lovato)",
-      "title": "Brand New Day",
-      "video": "0cKxYUdIoeA",
-      "addedAt": "2026-11-04T04:13:27.617Z"
-    },
-    {
-      "id": "george-ezra-blame-it-on-me",
-      "artist": "George Ezra",
-      "title": "Blame It On Me",
-      "video": "H4ifSrE8iSg",
-      "addedAt": "2026-11-04T04:13:27.612Z"
-    },
-    {
-      "id": "rio-reiser-koenig-von-deutschland-kurzversion",
-      "artist": "Rio Reiser",
-      "title": "König von Deutschland (Kurzversion)",
-      "video": "BzGHhaMUqSQ",
-      "addedAt": "2026-11-04T04:13:27.609Z"
-    },
-    {
-      "id": "los-fabulosos-cadillacs-strawberry-fields",
-      "artist": "Los Fabulosos Cadillacs",
-      "title": "Strawberry fields",
-      "video": "smFCkjGySoU",
-      "addedAt": "2026-11-04T04:13:27.606Z"
-    },
-    {
-      "id": "sanah-etc",
-      "artist": "sanah",
-      "title": "etc.",
-      "video": "J3YdO44YNBE",
-      "addedAt": "2026-11-04T04:13:27.012Z"
-    },
-    {
-      "id": "modern-baseball-wedding-singer",
-      "artist": "Modern Baseball",
-      "title": "Wedding Singer",
-      "video": "MJXGscQdKyQ",
-      "addedAt": "2026-11-04T04:13:27.003Z"
-    },
-    {
-      "id": "sara-bareilles-love-song",
-      "artist": "Sara Bareilles",
-      "title": "Love Song",
-      "video": "qi7Yh16dA0w",
-      "addedAt": "2026-11-03T04:48:30.104Z"
-    },
-    {
-      "id": "domingues-romance-de-cinema",
-      "artist": "Domingues",
-      "title": "Romance de Cinema",
-      "video": "jbF7Q2JcCqU",
-      "addedAt": "2026-11-03T04:48:29.929Z"
-    },
-    {
-      "id": "the-virgins-rich-girls",
-      "artist": "The Virgins",
-      "title": "Rich Girls",
-      "video": "kVDNcN9Dg_U",
-      "addedAt": "2026-11-03T04:48:29.785Z"
-    },
-    {
-      "id": "bastille-things-we-lost-in-the-fire",
-      "artist": "Bastille",
-      "title": "Things We Lost In The Fire",
-      "video": "MGR4U7W1dZU",
-      "addedAt": "2026-11-03T04:48:29.783Z"
-    },
-    {
-      "id": "kinky-boots-step-one",
-      "artist": "Kinky Boots",
-      "title": "Step One",
-      "video": "pi5Ji9qA4aM",
-      "addedAt": "2026-11-03T04:48:29.649Z"
-    },
-    {
-      "id": "billy-joel-vienna",
-      "artist": "Billy Joel",
-      "title": "Vienna",
-      "video": "3jL4S4X97sQ",
-      "addedAt": "2026-11-03T04:48:29.647Z"
     }
   ]
 }
