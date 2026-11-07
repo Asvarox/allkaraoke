@@ -305,7 +305,10 @@ jobs:
           ARTIFACTS_DIR="${{ runner.temp }}/changed-snapshot-artifacts"
           MERGED_DIR="${{ runner.temp }}/changed-snapshots"
           [ -d "$ARTIFACTS_DIR" ] || exit 0
-          for ARTIFACT in "$ARTIFACTS_DIR"/*/; do
+          ARTIFACTS=("$ARTIFACTS_DIR"/changed-snapshots-*/)
+          # A lone matching artifact is extracted straight into the path, without its own directory
+          [ -d "${ARTIFACTS[0]}" ] || ARTIFACTS=("$ARTIFACTS_DIR/")
+          for ARTIFACT in "${ARTIFACTS[@]}"; do
             while IFS= read -r -d '' FILE; do
               FILE="${FILE#./}"
               DEST="$MERGED_DIR/$FILE"
