@@ -53,7 +53,7 @@ function CreateOrJoin() {
         Sing together with up to 6 people, each on their own device with their own microphone.
       </Menu.HelpText>
       <Menu.Button {...register('create-room-button', () => setMode('create'))} data-test="create-room-button">
-        Open a new room
+        Start a new room
       </Menu.Button>
       <Input
         {...register('online-room-code', () => undefined)}
