@@ -290,12 +290,35 @@ jobs:
           persist-credentials: true
       - name: Setup Node
         uses: './.github/templates/setup-node'
+      # Not merge-multiple: a snapshot the PR already changed is in every shard's artifact (it differs
+      # from the target branch everywhere), and extracting several copies of one file in parallel
+      # interleaves them into a corrupt PNG. Each artifact gets its own directory, merged below.
       - name: Download changed snapshots
         uses: actions/download-artifact@v5
         with:
           pattern: changed-snapshots-*
-          merge-multiple: true
-          path: ${{ runner.temp }}/changed-snapshots
+          path: ${{ runner.temp }}/changed-snapshot-artifacts
+      # A shard that didn't run a test still uploads the branch's committed copy of its snapshot, so
+      # when copies collide the one that differs from the branch - the fresh render - wins.
+      - name: Merge changed snapshots
+        run: |
+          ARTIFACTS_DIR="${{ runner.temp }}/changed-snapshot-artifacts"
+          MERGED_DIR="${{ runner.temp }}/changed-snapshots"
+          [ -d "$ARTIFACTS_DIR" ] || exit 0
+          ARTIFACTS=("$ARTIFACTS_DIR"/changed-snapshots-*/)
+          # A lone matching artifact is extracted straight into the path, without its own directory
+          [ -d "${ARTIFACTS[0]}" ] || ARTIFACTS=("$ARTIFACTS_DIR/")
+          for ARTIFACT in "${ARTIFACTS[@]}"; do
+            while IFS= read -r -d '' FILE; do
+              FILE="${FILE#./}"
+              DEST="$MERGED_DIR/$FILE"
+              if [ -e "$DEST" ] && [ "$(git hash-object "$ARTIFACT$FILE")" = "$(git rev-parse -q --verify "HEAD:$FILE")" ]; then
+                continue
+              fi
+              mkdir -p "$(dirname "$DEST")"
+              cp "$ARTIFACT$FILE" "$DEST"
+            done < <(cd "$ARTIFACT" && find . -type f -print0)
+          done
       - name: Fetch target branch for visual diff baseline
         run: git fetch --depth=1 origin "${{ github.base_ref }}:refs/remotes/origin/${{ github.base_ref }}"
       # Diffs against the target branch rather than the PR branch, so the gallery always shows the
