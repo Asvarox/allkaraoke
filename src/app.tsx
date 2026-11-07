@@ -36,6 +36,9 @@ const LazySetlist = lazy(() => import('~/routes/edit/setlists').then((modules) =
 // import.meta.env.DEV is statically replaced at build time, so this whole branch (and the dev-screenshots
 // module's eager glob import of the test screenshot PNGs) is dead-code-eliminated from production builds.
 const LazyDevScreenshots = import.meta.env.DEV ? lazy(() => import('~/routes/dev-screenshots/dev-screenshots')) : null;
+const LazyDevMergeTracks = import.meta.env.DEV
+  ? lazy(() => import('~/routes/dev-merge-tracks/dev-merge-tracks'))
+  : null;
 
 // The app navigates with base-relative paths (`menu/`). wouter v3 treats a `/` base as empty and joins it
 // with the target as-is, which would turn them into document-relative URLs (`/edit/song/menu/`), so anchor
@@ -116,6 +119,16 @@ function App() {
                     component={() => (
                       <Suspense fallback={<PageLoader />}>
                         <LazyDevScreenshots />
+                      </Suspense>
+                    )}
+                  />
+                )}
+                {LazyDevMergeTracks && (
+                  <Route
+                    path="dev/merge-tracks"
+                    component={() => (
+                      <Suspense fallback={<PageLoader />}>
+                        <LazyDevMergeTracks />
                       </Suspense>
                     )}
                   />

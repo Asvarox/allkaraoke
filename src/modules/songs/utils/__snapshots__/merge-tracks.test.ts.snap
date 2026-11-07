@@ -2,7 +2,8 @@
 
 exports[`mergeTracks > should properly merge tracks in beelzeboss 1`] = `
 "[0 - 79] I AM COMPLETE!
-[146 - 193] YES YOU ARE FUCKED
+[79 - 163] Fuck~
+[163 - 193] YES YOU ARE FUCKED
 [193 - 228] SHIT OUT OF LUCK!
 [228 - 262] NOW I'M COMPLETE
 [262 - 301] AND MY COCK YOU WILL SUCK!
@@ -10,6 +11,7 @@ exports[`mergeTracks > should properly merge tracks in beelzeboss 1`] = `
 [339 - 373] AND YOUR FIRST IN LINE!
 [373 - 407] YOU BROUGHT ME THE PICK
 [407 - 454] AND NOW YOU SHALL BOTH DIE!
+[454 - 485] Wait
 [485 - 527] Wa~it
 [527 - 550] Wa~it
 [550 - 594] you motherfucker~
@@ -38,6 +40,7 @@ exports[`mergeTracks > should properly merge tracks in beelzeboss 1`] = `
 [1918 - 1955] it's the only way
 [1955 - 1982] What are you talkin about
 [1982 - 2056] To be your little~ bitch
+[2056 - 2074] FINE!
 [2074 - 2139] LET THE ROCK OFF BEGIN
 [2139 - 2207] WUAHAHAHA!
 [2278 - 2332] I'M THE DEVIL
@@ -125,12 +128,15 @@ exports[`mergeTracks > should properly merge tracks in beelzeboss 1`] = `
 [5168 - 5218] YOU GUYS ARE FUCKIN LAME
 [5218 - 5256] COME ON KAGE YOUR COMIN WITH ME
 [5265 - 5328] TASTE MY LIGHTNING FUCKER!
+[5328 - 5364] NOOOO!
 [5368 - 5415] OW FUCK!
 [5415 - 5447] MY FUCKIN HORN!
-[5471 - 5512] From whence you came
+[5453 - 5483] OHH NO
+[5483 - 5512] From whence you came
 [5512 - 5541] you shall remain
 [5541 - 5567] until you are
 [5567 - 5596] complete again
+[5596 - 5678] NOOOOO!
 [5838 - 5886] FUCK YOU KAGE
 [5886 - 5929] AND FUCK YOU JABLES
 [5932 - 6055] I'LL GET YOU TENACIOUS D!!"
@@ -157,7 +163,8 @@ exports[`mergeTracks > should properly merge tracks in dosko 1`] = `
 [445 - 487] I wszystko kapuję
 [506 - 545] Na lekkiej fazie
 [559 - 600] Wciąż trybię i jarzę
-[617 - 664] I dosko się czuję
+[600 - 627] O! O! O! O!
+[627 - 664] I dosko się czuję
 [675 - 722] I wszystko kapuję
 [731 - 779] I na lekkiej fazie
 [789 - 837] Wciąż trybię i jarzę
@@ -174,10 +181,12 @@ exports[`mergeTracks > should properly merge tracks in dosko 1`] = `
 [1159 - 1188] Tutaj nie zostanie
 [1188 - 1217] My królowie mety
 [1217 - 1246] Zryjemy berety
-[1276 - 1322] I dosko się czuję
+[1246 - 1286] O! O! O! O!
+[1286 - 1322] I dosko się czuję
 [1334 - 1380] I wszystko kapuję
 [1390 - 1438] I na lekkiej fazie
-[1491 - 1519] Potężna
+[1448 - 1496] Wciąż trybię i jarzę
+[1496 - 1519] Potężna
 [1519 - 1532] Wichura
 [1532 - 1561] Łamiąc duże drzewa
 [1561 - 1619] Trzciną zaledwie tylko kołysze
@@ -186,10 +195,151 @@ exports[`mergeTracks > should properly merge tracks in dosko 1`] = `
 [1681 - 1710] Bo jak przyjdzie co do czego
 [1710 - 1740] To już będziesz do niczego
 [1740 - 1767] No to ja poproszę Colę
-[1781 - 1822] Dzisiaj poproszę Colę
-[1838 - 1879] Jednak poproszę Colę
-[1892 - 1932] Ja poproszę Colę
+[1767 - 1793] On chce jednak Colę
+[1793 - 1822] Dzisiaj poproszę Colę
+[1822 - 1849] On chce dzisiaj Colę
+[1849 - 1879] Jednak poproszę Colę
+[1879 - 1906] O ja cię pindolę
+[1906 - 1932] Ja poproszę Colę
+[1932 - 1952] O ja cię
 [1964 - 2012] A ja chcę nerwosol!"
+`;
+
+exports[`mergeTracks > should properly merge tracks in heavy is the crown 1`] = `
+"[0 - 53] It’s pourin’ in, you’re laid on the floor again
+[53 - 77] One knock at the door and then
+[77 - 100] We both know how the story ends
+[100 - 141] You can’t win if your white flag’s out when the war begins
+[141 - 175] Aimin’ so high but swingin’ so low
+[175 - 207] Tryin’ to catch fire but feelin’ so cold
+[207 - 238] Hold it inside and hope it won’t show
+[238 - 271] I’m sayin’ it’s not, but inside, I know
+[271 - 325] Today’s gonna be the day you notice
+[325 - 386] ’Cause I’m tired of explainin’ what the joke is
+[386 - 417] This is what you asked for,
+[417 - 445] Heavy is the crown
+[445 - 481] Fire in the sun~rise,
+[481 - 509] Ashes rainin’ down
+[509 - 546] Try to hold it in, but
+[546 - 572] It keeps bleedin’ out
+[572 - 610] This is what you asked for,
+[610 - 628] Heavy is the
+[628 - 675] Heavy is the crown
+[708 - 757] Turn to run, now look what it’s become
+[757 - 782] Outnumbered, ten to one
+[782 - 805] Back thеn should’ve bit your tongue
+[805 - 846] ’Cause thеre’s no turnin’ back this path once it’s begun
+[846 - 871] You’re already on that list
+[871 - 903] Say you don’t want what you can’t resist
+[903 - 935] Wavin’ that sword when the pen won’t miss
+[935 - 963] Watch it all fallin’ apart like 
+[963 - 993] This is what you asked for,
+[993 - 1021] Heavy is the crown
+[1021 - 1057] Fire in the sun~rise,
+[1057 - 1085] Ashes rainin’ down
+[1085 - 1122] Try to hold it in, but
+[1122 - 1148] It keeps bleedin’ out
+[1148 - 1186] This is what you asked for,
+[1186 - 1204] Heavy is the
+[1204 - 1251] Heavy is the crown
+[1344 - 1413] Today’s gonna be the day you notice
+[1413 - 1474] ’Cause I’m tired of explainin’ what the joke is
+[1474 - 1759] This is what you asked for
+[1759 - 1784] This is what you asked
+[1988 - 2034] This is what you asked for
+[2034 - 2061] Heavy is the crown
+[2061 - 2097] Fire in the sun~rise,
+[2097 - 2125] Ashes rainin’ down
+[2125 - 2162] Try to hold it in, but
+[2162 - 2188] It keeps bleedin’ out
+[2188 - 2226] This is what you asked for,
+[2226 - 2244] Heavy is the
+[2244 - 2339] Heavy is the crown
+[2372 - 2467] Heavy is the crown
+[2468 - 2505] Heavy is the,
+[2505 - 2541] Heavy is the crown"
+`;
+
+exports[`mergeTracks > should properly merge tracks in in the end 1`] = `
+"[0 - 32] It starts with 
+[32 - 61] One thing I don’t know why 
+[61 - 92] It doesn’t even matter how hard you try 
+[92 - 109] Keep that in mind 
+[109 - 123] I designed this rhyme 
+[123 - 141] To explain in due time 
+[141 - 164] All I know 
+[164 - 187] Time is a valuable thing 
+[187 - 220] Watch it fly by as the pendulum swings 
+[220 - 251] Watch it count down to the end of the day 
+[251 - 270] The clock ticks life away 
+[270 - 317] It’s so unreal 
+[317 - 348] Watch the time go right out the window 
+[348 - 381] Try’n to hold on, but didn’t even know 
+[381 - 401] Wasted it all just to 
+[401 - 420] Watch you go... 
+[420 - 443] I kept ev’rything inside 
+[443 - 477] And even though I tried, it all fell apart 
+[477 - 493] What it meant to me 
+[493 - 507] Will eventually be 
+[507 - 525] A memory of a time when 
+[525 - 553] I tried so hard 
+[553 - 594] And got so far 
+[594 - 618] But in the end 
+[618 - 651] It doesn’t even ma~tter 
+[651 - 680] I had to fall 
+[680 - 718] To lose it all 
+[718 - 744] But in the end 
+[744 - 764] It doesn’t even 
+[764 - 802] Matte~~~~~r 
+[802 - 830] One thing, I don’t know why 
+[830 - 860] It doesn’t even matter how hard you try, 
+[860 - 877] Keep that in mind 
+[877 - 909] I designed this rhyme, to remind myself how 
+[909 - 932] I tried so hard 
+[932 - 961] In spite of the way you were mocking me 
+[961 - 993] Acting like I was part of your property 
+[993 - 1004] Remembering 
+[1004 - 1025] All the times you fought with me 
+[1025 - 1037] I’m surprised 
+[1037 - 1070] It got so far 
+[1089 - 1122] You wouldn’t even recognize me anymore 
+[1122 - 1149] Not that you knew me back then 
+[1149 - 1169] But it all comes back to me 
+[1169 - 1188] In the end 
+[1188 - 1211] You kept ev’rything inside 
+[1211 - 1228] And even though I tried, 
+[1228 - 1246] It all fell apart 
+[1246 - 1261] What it meant to me 
+[1261 - 1273] Will eventually 
+[1273 - 1295] Be a memory of a time when 
+[1295 - 1321] I tried so hard 
+[1321 - 1360] And got so far 
+[1360 - 1384] But in the end 
+[1384 - 1419] It doesn’t even ma~tter 
+[1419 - 1449] I had to fall 
+[1449 - 1487] To lose it all 
+[1487 - 1513] But in the end 
+[1513 - 1533] It doesn’t even 
+[1533 - 1572] Matte~~~~~r 
+[1572 - 1642] I’ve put my trust in you~ 
+[1642 - 1704] Pushed as fa~r as I can go 
+[1704 - 1734] For all this 
+[1734 - 1772] There’s only one thing 
+[1772 - 1832] You should kno~~~w 
+[1832 - 1898] I’ve put my trust in you 
+[1898 - 1961] Pushed as fa~r as I can go 
+[1961 - 1990] For all this 
+[1990 - 2028] There’s only one thing 
+[2028 - 2088] You should kno~~~w 
+[2088 - 2122] I tried so hard 
+[2122 - 2161] And got so far. 
+[2161 - 2186] But in the end 
+[2186 - 2218] It doesn’t even ma~tter 
+[2218 - 2249] I had to fall 
+[2249 - 2286] To lose it all 
+[2286 - 2311] But in the end 
+[2311 - 2332] It doesn’t even 
+[2332 - 2375] Matte~~~~~r "
 `;
 
 exports[`mergeTracks > should properly merge tracks in queens bohemian rhapsody 1`] = `
@@ -206,8 +356,9 @@ exports[`mergeTracks > should properly merge tracks in queens bohemian rhapsody 
 [809 - 847] Little high
 [847 - 884] Little low
 [884 - 964] Any way the wind~blows
-[964 - 1039] Doesn't really matter
-[1083 - 1164] To~me
+[964 - 1038] Doesn't really matter
+[1038 - 1099] To me
+[1099 - 1164] To~me
 [1257 - 1321] Mama
 [1324 - 1391] Just killed a man
 [1402 - 1478] Put a gun against his head
@@ -238,28 +389,40 @@ exports[`mergeTracks > should properly merge tracks in queens bohemian rhapsody 
 [3456 - 3513] I sometimes wish I'd
 [3513 - 3578] Never been born at all~
 [4223 - 4310] I see a little silhouetto of a man
+[4310 - 4326] Scaramouche
 [4326 - 4345] Scaramouche
-[4371 - 4427] Thunderbolt and lightning
+[4345 - 4389] Will you do the fandango?
+[4389 - 4427] Thunderbolt and lightning
 [4427 - 4472] Very, very fright'ning me
-[4472 - 4494] Galileo
-[4494 - 4530] Galileo
-[4530 - 4575] Galileo figaro
+[4472 - 4492] Galileo
+[4492 - 4510] Galileo
+[4510 - 4528] Galileo
+[4528 - 4544] Galileo
+[4544 - 4575] Galileo figaro
 [4575 - 4619] Magnifico
 [4619 - 4660] I'm just a poor boy
 [4660 - 4697] Nobody loves me
+[4697 - 4733] He's just a poor boy
 [4733 - 4767] From a poor family
 [4767 - 4832] Spare him his life from this monstrosity
 [4856 - 4892] Easy come
 [4892 - 4914] Easy go
 [4914 - 4943] Will you let me go?
-[4988 - 5053] Let him go
-[5061 - 5130] Let him go
-[5132 - 5170] Let me go
-[5190 - 5228] Will not let you go
+[4943 - 4967] Bismillah
+[4967 - 5011] No we will not let you go
+[5011 - 5033] Let him go
+[5033 - 5056] Bismillah
+[5056 - 5082] We will not let you go
+[5082 - 5130] Let him go
+[5130 - 5155] We will not let you go
+[5155 - 5169] Let me go
+[5169 - 5190] Will not let you go
+[5190 - 5231] Never, never, never, never
 [5231 - 5283] Let me go
 [5314 - 5356] Oh mama mia
-[5356 - 5382] Mama mia
-[5388 - 5480] Beelzebub has a devil put aside
+[5356 - 5375] Mama mia
+[5375 - 5407] Mama mia let me go
+[5407 - 5480] Beelzebub has a devil put aside
 [5480 - 5516] For me~~
 [5516 - 5554] For me~~
 [5554 - 5637] For me
