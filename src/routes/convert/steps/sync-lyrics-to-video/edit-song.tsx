@@ -1,6 +1,6 @@
 import { Button, Typography } from '@mui/material';
 import { cloneDeep } from 'es-toolkit';
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import { useWindowSize } from 'react-use';
 import createPersistedState from 'use-persisted-state';
@@ -99,8 +99,8 @@ const LOW_LYRICS_COVERAGE_THRESHOLD = 0.5;
 const usePlaybackSpeed = createPersistedState<number>('edit-song-playback-speed');
 
 export default function EditSong({ song, onUpdate, visible }: Props) {
-  'use no memo'; // React Compiler: `player.current && (...)` reads a ref directly during render to decide what to show, which the compiler can't safely cache across renders (e.g. after the queue advances to the next song, the manipulation panel never reappears).
-  const player = useRef<PlayerRef | null>(null);
+  // State, not a ref: the controls below render only once the player handle is attached
+  const [player, setPlayer] = useState<PlayerRef | null>(null);
   const [playbackSpeed, setPlaybackSpeed] = usePlaybackSpeed(1);
   const [playerState, setPlayerState] = useState(VideoState.UNSTARTED);
   const [videoDuration, setVideoDuration] = useState<seconds>(0);
@@ -153,22 +153,23 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
   const beatLength = getSongBeatLength(newSong);
   const lyricsCoverage = getLyricsCoverage(newSong, videoDuration);
   const notesSections = useMemo(() => newSong.tracks[0].sections.filter(isNotesSection), [newSong]);
-  const currentSectionIndex = useCurrentSectionIndex(notesSections, player.current, beatLength, newSong.gap);
+  const currentSectionIndex = useCurrentSectionIndex(notesSections, player, beatLength, newSong.gap);
 
   useEffect(() => {
     if (!visible) {
-      player.current?.pause();
+      player?.pause();
     }
-  }, [visible]);
+  }, [visible, player]);
 
   useEffect(() => {
-    player.current?.setPlaybackSpeed(playbackSpeed);
-  }, [playbackSpeed, playerState]);
+    player?.setPlaybackSpeed(playbackSpeed);
+  }, [playbackSpeed, playerState, player]);
 
-  const seekToNote = (note?: Note, padding: seconds = 0.5 * playbackSpeed) => {
-    if (note && player.current) {
-      player.current.seekTo((note.start * beatLength + newSong.gap) / 1000 - padding);
-      player.current.play();
+  // No computed default param - React Compiler can't compile those and would skip this whole component
+  const seekToNote = (note?: Note, padding?: seconds) => {
+    if (note && player) {
+      player.seekTo((note.start * beatLength + newSong.gap) / 1000 - (padding ?? 0.5 * playbackSpeed));
+      player.play();
     }
   };
 
@@ -184,8 +185,8 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
   };
 
   const seekToSubsequentSection = async (direction: -1 | 1, padding?: seconds) => {
-    if (!player.current) return;
-    const currentBeat = getCurrentBeat(await player.current!.getCurrentTime!(), beatLength, newSong.gap);
+    if (!player) return;
+    const currentBeat = getCurrentBeat(await player.getCurrentTime(), beatLength, newSong.gap);
     const targetSectionIndex = notesSections.filter((section) => section.start <= currentBeat).length - 1 + direction;
 
     const finalSectionIndex = Math.max(Math.min(targetSectionIndex, notesSections.length - 1), 0);
@@ -288,7 +289,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
             autoplay={false}
             width={playerWidth}
             height={playerHeight}
-            ref={player}
+            ref={setPlayer}
             effectsEnabled={false}
             singSetup={singSetup}
             onSongEnd={() => undefined}
@@ -302,9 +303,9 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
         )}
       </div>
       <div className="col-span-12 flex flex-col gap-4 sm:col-span-4">
-        {player.current && (
+        {player && (
           <>
-            <AdjustPlayback player={player.current} playbackSpeed={playbackSpeed} setPlaybackSpeed={setPlaybackSpeed} />
+            <AdjustPlayback player={player} playbackSpeed={playbackSpeed} setPlaybackSpeed={setPlaybackSpeed} />
             <div className="flex flex-col gap-1">
               <SectionSlider
                 notesSections={notesSections}
@@ -336,14 +337,14 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
             </div>
           </>
         )}
-        {!player.current && <h2 className="text-xl">Start the song to see the manipulation form</h2>}
+        {!player && <h2 className="text-xl">Start the song to see the manipulation form</h2>}
       </div>
-      {player.current && (
+      {player && (
         <>
           <div className="col-span-12 sm:col-span-8">
             <div className="flex flex-1 flex-col-reverse gap-5 sm:flex-row">
               <ShiftVideoGap
-                player={player.current}
+                player={player}
                 onChange={(newShift) => {
                   const delta = newShift - videoGapShift;
                   setVideoGapShift(newShift);
@@ -355,7 +356,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
                 current={videoGapShift}
                 finalGap={newSong.videoGap}
               />
-              <ShiftGap player={player.current} onChange={setGapShift} current={gapShift} finalGap={newSong.gap} />
+              <ShiftGap player={player} onChange={setGapShift} current={gapShift} finalGap={newSong.gap} />
             </div>
           </div>
           <div className="hidden sm:col-span-4 sm:block">
@@ -373,10 +374,9 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
             </Typography>
             <ManipulateBpm
               onChange={setOverrideBpm}
-              onUseCurrentTime={async () => Math.round((await player.current?.getCurrentTime()) ?? 0)}
+              onUseCurrentTime={async () => Math.round((await player?.getCurrentTime()) ?? 0)}
               current={overrideBpm}
               song={newSong}
-              key={newSong.gap}
             />
           </div>
           <div className="hidden sm:col-span-4 sm:block">
@@ -397,7 +397,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
               playbackSpeed={playbackSpeed}
               song={newSong}
               beatLength={beatLength}
-              player={player.current}
+              player={player}
               onRecordChange={setChangeRecords}
               onTrackNameChange={(track, newName) =>
                 setTrackNames((current) => {

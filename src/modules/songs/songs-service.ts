@@ -58,15 +58,47 @@ class SongsService {
   // otherwise it could overwrite a just-stored song with a stale pre-store snapshot.
   private reloadSeq = 0;
   public store = async (song: Song, reloadIndex = true) => {
-    await (
-      await getStorage()
-    )?.setItem(this.generateSongFile(song), {
-      ...song,
-      lastUpdate: new Date().toISOString(),
-    });
+    const storedSong = { ...song, lastUpdate: new Date().toISOString() };
+    await (await getStorage())?.setItem(this.generateSongFile(song), storedSong);
     if (reloadIndex) {
       await this.reloadIndex();
     }
+
+    return storedSong;
+  };
+
+  /**
+   * Stores the song and patches it into the in-memory index instead of rebuilding the whole index,
+   * which parses the multi-MB built-in index and every local song on the main thread.
+   */
+  public storeAndPatchIndex = async (song: Song) => {
+    const storedSong = await this.store(song, false);
+    this.upsertIndexEntry(storedSong);
+  };
+
+  private upsertIndexEntry = (song: Song) => {
+    // Nothing loaded yet - the first getIndex() call builds the index with this song in it.
+    if (this.indexWithDeletedSongs === null) return;
+
+    const id = this.generateSongFile(song);
+    const existing = this.indexWithDeletedSongs.find((entry) => entry.id === id);
+    const entry: SongPreview = {
+      ...getSongPreview(song, { local: true }),
+      isBuiltIn: this.isBuiltIn(id),
+      isNew: true,
+      isDeleted: existing?.isDeleted ?? false,
+    };
+    const withoutEntry = this.indexWithDeletedSongs.filter((indexEntry) => indexEntry.id !== id);
+    const sortKey = (indexEntry: SongPreview) => `${indexEntry.artist} ${indexEntry.title}`;
+    const insertAt = withoutEntry.findIndex(
+      (indexEntry) => sortKey(indexEntry).localeCompare(sortKey(entry).toLowerCase()) > 0,
+    );
+    withoutEntry.splice(insertAt === -1 ? withoutEntry.length : insertAt, 0, entry);
+
+    // Discard any reloadIndex() still in flight - it may have read storage before this song was stored.
+    this.reloadSeq++;
+    this.indexWithDeletedSongs = withoutEntry;
+    this.finalIndex = withoutEntry.filter((indexEntry) => !indexEntry.isDeleted);
   };
 
   /**

@@ -11,7 +11,7 @@ import {
   TextField,
   Typography,
 } from '@mui/material';
-import { useEffect, useState } from 'react';
+import { memo, useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react';
 
 import { Song } from '~/interfaces';
 import GameState from '~/modules/game-engine/game-state/game-state';
@@ -78,6 +78,13 @@ export default function EditSection({
     player.seekTo(firstNoteStart / 1000 - 0.8 * playbackSpeed);
   };
 
+  // Stable handler so the memoized rows don't re-render when the song changes (e.g. on every gap shift)
+  const latestOnSectionClick = useRef(onSectionClick);
+  useLayoutEffect(() => {
+    latestOnSectionClick.current = onSectionClick;
+  });
+  const selectSection = useCallback((index: number) => latestOnSectionClick.current(index), []);
+
   const deleteSection = () => {
     setChangeRecords((records) => [...records, { type: 'delete', section: selectedSection, track }]);
     if (selectedSection === sections.length - 1) {
@@ -141,33 +148,14 @@ export default function EditSection({
       <Stack direction="row" spacing={2} sx={{ height: '400px', mt: 3 }}>
         <List sx={{ overflowY: 'auto' }}>
           {sections.map((section, index) => (
-            <ListItem
+            <SectionListItem
               key={section.start}
-              disablePadding
-              data-test={`section-${index}`}
-              sx={{
-                maxWidth: 250,
-                overflowX: 'hidden',
-                textWrap: 'ellipsis',
-                whiteSpace: 'nowrap',
-              }}>
-              <ListItemButton onClick={() => onSectionClick(index)} selected={selectedSection === index}>
-                <ListItemText
-                  slotProps={{
-                    primary: {
-                      sx: {
-                        fontWeight: index === currentSectionIndex ? 'bold' : 'normal',
-                      },
-                    },
-                  }}
-                  primary={
-                    isNotesSection(section)
-                      ? section.notes.map((note) => note.lyrics.replaceAll(' ', '·')).join('')
-                      : '[pause]'
-                  }
-                />
-              </ListItemButton>
-            </ListItem>
+              index={index}
+              label={section.notes.map((note) => note.lyrics.replaceAll(' ', '·')).join('')}
+              isSelected={selectedSection === index}
+              isCurrent={index === currentSectionIndex}
+              onSelect={selectSection}
+            />
           ))}
         </List>
         <SectionEditForm>
@@ -294,6 +282,39 @@ export default function EditSection({
     </SectionEdtiorContainer>
   );
 }
+
+interface SectionListItemProps {
+  index: number;
+  label: string;
+  isSelected: boolean;
+  isCurrent: boolean;
+  onSelect: (index: number) => void;
+}
+
+// Memoized so a change of the currently playing section re-renders only the two affected rows
+const SectionListItem = memo(function SectionListItem({
+  index,
+  label,
+  isSelected,
+  isCurrent,
+  onSelect,
+}: SectionListItemProps) {
+  return (
+    <ListItem
+      disablePadding
+      data-test={`section-${index}`}
+      sx={{
+        maxWidth: 250,
+        overflowX: 'hidden',
+        textWrap: 'ellipsis',
+        whiteSpace: 'nowrap',
+      }}>
+      <ListItemButton onClick={() => onSelect(index)} selected={isSelected}>
+        <ListItemText slotProps={{ primary: { sx: { fontWeight: isCurrent ? 'bold' : 'normal' } } }} primary={label} />
+      </ListItemButton>
+    </ListItem>
+  );
+});
 
 const SectionChangeList = styled.div`
   flex: 1;
