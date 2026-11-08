@@ -1,0 +1,403 @@
+#ARTIST:KoRn
+#TITLE:Good God
+#CREATOR:haistshomie666
+#BPM:280,72
+#YEAR:1996
+#VIDEO:v=EI1zVDtBthQ
+#GENRE:Nu Metal
+#LANGUAGE:English
+#GAP:24674,753491023082
+#ALLKARAOKE_ID:korn-good-god
+#ALLKARAOKE_SID:7012
+#ALLKARAOKE_LASTUPDATE:2026-11-08T03:43:19.349Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:124
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:202
+#MP3:KoRn - Good God.mp3
+: 19 4 4 You 
+: 24 3 4 came 
+: 28 1 4 in
+: 30 3 4 to 
+: 34 4 4 my 
+: 39 11 4 life
+- 50
+: 55 4 4 With
+: 60 3 4 out 
+: 64 2 4 a 
+: 67 3 4 sin
+: 71 4 4 gle 
+: 76 10 4 thing
+- 86
+: 92 3 4 I 
+: 96 4 4 gave 
+: 101 1 4 in
+: 103 4 4 to 
+: 108 3 0 your 
+: 112 10 0 ways,
+- 122
+: 128 4 7 Which 
+: 133 3 7 left 
+: 137 2 7 me 
+: 140 3 7 with 
+: 144 4 7 no
+: 149 4 7 thing
+: 154 3 9 ~
+- 157
+: 164 4 4 I’ve 
+: 169 3 4 giv
+: 173 1 4 en 
+: 175 4 4 in 
+: 180 4 4 to 
+: 185 10 4 smiles,
+- 195
+: 201 4 4 I 
+: 206 3 4 fell 
+: 210 1 4 for 
+: 212 4 4 all 
+: 217 3 4 your 
+: 221 9 4 games
+- 230
+: 237 4 4 I 
+: 242 3 4 wish 
+: 246 2 4 so 
+: 249 4 4 bad 
+: 254 4 0 right 
+: 259 8 0 now
+- 267
+: 273 4 -5 I 
+: 278 3 -5 had
+: 282 1 -5 n’t 
+: 284 4 -5 let 
+: 289 6 -5 you 
+: 296 3 -5 in
+: 300 2 -3 ~
+- 302
+F 308 2 0 Won’t 
+F 311 1 0 you 
+F 314 1 0 get 
+F 317 1 0 the 
+F 319 2 0 fuck 
+F 323 1 0 out 
+F 326 1 0 of 
+F 328 1 0 my 
+F 331 5 0 face? 
+F 353 16 0 Now!
+- 369
+F 380 1 0 Won’t 
+F 383 1 0 you 
+F 385 1 0 get 
+F 388 1 0 the 
+F 391 1 0 fuck 
+F 394 1 0 out 
+F 397 1 0 of 
+F 400 1 0 my 
+F 403 8 0 face? 
+F 425 14 0 Now!
+- 439 441
+- 441
+: 460 4 2 The 
+: 465 5 9 sea 
+: 471 7 9 of 
+: 479 10 7 life, 
+: 497 4 0 you’re 
+: 502 6 5 just 
+: 509 6 5 a 
+: 516 6 4 min
+: 523 6 0 now
+- 529
+: 536 8 9 Live 
+: 545 6 9 your 
+: 552 11 7 life 
+: 574 6 5 in
+: 581 6 5 se
+: 588 10 4 cure
+- 598
+: 610 6 9 Feel 
+: 617 7 9 the 
+: 625 11 7 pain 
+: 646 7 5 of 
+: 654 6 5 you 
+: 661 6 4 need
+: 668 6 0 les
+- 674
+: 683 7 9 As 
+: 691 6 9 they 
+: 698 10 7 shit 
+: 715 4 2 in
+: 720 7 5 to 
+: 728 7 5 my 
+: 736 41 4 brain
+- 777 868
+- 868
+: 887 5 4 I 
+: 893 3 4 scream 
+: 897 1 4 with
+: 899 4 4 out 
+: 904 3 4 a 
+: 908 10 4 sound
+- 918
+: 924 3 4 How 
+: 928 4 4 could 
+: 933 1 4 you 
+: 935 4 4 take 
+: 940 3 4 a
+: 944 9 4 way
+- 953
+: 960 3 4 Eve
+: 964 3 4 ry
+: 968 2 4 thing 
+: 971 4 4 that 
+: 976 3 0 I 
+: 980 9 0 was
+- 989
+: 995 4 7 Made 
+: 1000 4 7 me 
+: 1005 2 7 a 
+: 1008 3 7 fuck
+: 1012 5 7 ing 
+: 1018 4 7 slave
+: 1023 4 9 ~
+- 1027
+: 1032 4 4 Your 
+: 1037 3 4 face 
+: 1041 1 4 that 
+: 1043 4 4 I 
+: 1048 4 4 des
+: 1053 10 4 pise
+- 1063
+: 1068 4 4 Your 
+: 1073 3 4 heart 
+: 1077 1 4 in
+: 1079 4 4 side 
+: 1084 4 4 that’s 
+: 1089 9 4 grey
+- 1098
+: 1104 3 4 I 
+: 1108 3 4 came 
+: 1112 2 4 to
+: 1115 5 4 day 
+: 1121 4 0 to 
+: 1126 8 0 say
+- 1134
+: 1139 4 7 You’re 
+: 1144 3 7 fucked 
+: 1148 2 7 in 
+: 1151 5 7 ev’
+: 1157 5 7 ryway
+: 1163 4 7 ~
+: 1168 2 9 ~
+- 1170
+F 1175 2 0 Won’t 
+F 1178 1 0 you 
+F 1181 1 0 get 
+F 1183 1 0 the 
+F 1186 2 0 fuck 
+F 1189 1 0 out 
+F 1192 1 0 of 
+F 1195 2 0 my 
+F 1198 7 0 face? 
+F 1219 16 0 Now!
+- 1235
+F 1247 2 0 Won’t 
+F 1250 1 0 you 
+F 1253 1 0 get 
+F 1256 1 0 the 
+F 1259 1 0 fuck 
+F 1261 1 0 out 
+F 1264 1 0 of 
+F 1267 1 0 my 
+F 1270 7 0 face? 
+F 1291 17 0 Now!
+- 1308
+: 1325 5 2 The 
+: 1331 7 9 sea 
+: 1339 6 9 of 
+: 1346 7 7 life, 
+: 1362 3 0 you’re 
+: 1366 6 5 just 
+: 1373 5 5 a 
+: 1379 7 4 min
+: 1387 6 0 now
+- 1393
+: 1403 7 9 Live 
+: 1411 5 9 your 
+: 1417 11 7 life 
+: 1439 6 5 in
+: 1446 6 5 se
+: 1453 11 4 cure
+- 1464
+: 1474 8 9 Feel 
+: 1483 5 9 the 
+: 1489 13 7 pain 
+: 1511 8 5 of 
+: 1520 5 5 you 
+: 1526 6 4 need
+: 1533 6 0 les
+- 1539
+: 1548 7 9 As 
+: 1556 6 9 they 
+: 1563 10 7 shit 
+: 1579 5 2 in
+: 1585 8 4 to 
+: 1594 7 2 my 
+: 1602 36 1 mind
+: 1639 11 2 ~
+- 1650
+: 1653 3 2 You 
+: 1657 8 4 stole 
+: 1666 7 2 my 
+: 1674 36 1 life
+: 1711 11 2 ~
+- 1722
+: 1726 4 2 With
+: 1731 7 4 out 
+: 1739 8 2 a 
+: 1748 35 1 sigh
+: 1784 11 2 ~
+- 1795
+: 1799 3 2 You 
+: 1803 9 4 sucked 
+: 1813 6 2 me 
+: 1820 70 1 dry
+- 1890 2021
+- 2021
+F 2040 2 0 Won’t 
+F 2043 1 0 you 
+F 2045 1 0 get 
+F 2047 1 0 the 
+F 2050 1 0 fuck 
+F 2053 2 0 out 
+F 2056 1 0 of 
+F 2059 1 0 my 
+F 2061 6 0 face? 
+F 2082 13 0 Now!
+- 2095
+F 2109 2 0 Won’t 
+F 2112 1 0 you 
+F 2114 1 0 get 
+F 2117 1 0 the 
+F 2120 1 0 fuck 
+F 2123 1 0 out 
+F 2126 1 0 of 
+F 2128 1 0 my 
+F 2131 9 0 face? 
+F 2151 15 0 Now!
+- 2166
+F 2178 2 0 Won’t 
+F 2181 1 0 you 
+F 2184 1 0 get 
+F 2187 1 0 the 
+F 2190 1 0 fuck 
+F 2193 1 0 out 
+F 2196 1 0 of 
+F 2199 1 0 my 
+F 2202 5 0 face? 
+F 2222 11 0 Now!
+- 2233
+F 2247 1 0 Won’t 
+F 2250 1 0 you 
+F 2253 1 0 get 
+F 2256 1 0 the 
+F 2259 1 0 fuck 
+F 2262 1 0 out 
+F 2264 1 0 of 
+F 2267 1 0 my 
+F 2270 8 0 face? 
+F 2295 15 0 Now!
+- 2310
+F 2318 2 0 Won’t 
+F 2321 1 0 you 
+F 2324 1 0 get 
+F 2327 1 0 the 
+F 2330 1 0 fuck 
+F 2333 2 0 out 
+F 2336 1 0 of 
+F 2339 2 0 my 
+F 2342 8 0 face? 
+F 2364 20 0 Now!
+- 2384
+F 2390 2 0 Won’t 
+F 2394 1 0 you 
+F 2397 1 0 get 
+F 2400 1 0 the 
+F 2402 1 0 fuck 
+F 2405 2 0 out 
+F 2409 1 0 of 
+F 2411 2 0 my 
+F 2415 7 0 face? 
+F 2437 19 0 Now!
+- 2456
+F 2463 1 0 Won’t 
+F 2466 1 0 you 
+F 2469 1 0 get 
+F 2471 1 0 the 
+F 2474 2 0 fuck 
+F 2478 1 0 out 
+F 2481 1 0 of 
+F 2483 1 0 my 
+F 2486 6 0 face? 
+F 2509 20 0 Now!
+- 2529
+F 2536 2 0 Won’t 
+F 2540 1 0 you 
+F 2542 1 0 get 
+F 2545 1 0 the 
+F 2548 1 0 fuck 
+F 2551 1 0 out 
+F 2554 1 0 of 
+F 2556 1 0 my 
+F 2560 12 0 face? 
+F 2584 29 0 Now!
+- 2613
+: 2617 4 2 The 
+: 2622 5 9 sea 
+: 2628 6 9 of 
+: 2635 11 7 life, 
+: 2652 5 0 you’re 
+: 2658 5 5 just 
+: 2664 7 5 a 
+: 2672 6 4 min
+: 2679 8 0 now
+- 2687
+: 2694 6 9 Live 
+: 2701 6 9 your 
+: 2708 11 7 life 
+: 2730 6 5 in
+: 2737 5 5 se
+: 2743 12 4 cure
+- 2755
+: 2762 8 9 Feel 
+: 2771 6 9 the 
+: 2778 14 7 pain 
+: 2801 6 5 of 
+: 2808 6 5 you 
+: 2815 5 4 need
+: 2821 9 0 les
+- 2830
+: 2837 6 9 As 
+: 2844 6 9 they 
+: 2851 14 7 shit 
+: 2869 4 2 in
+: 2874 7 4 to 
+: 2882 8 2 my 
+: 2891 36 1 mind
+: 2928 9 2 ~
+- 2937
+: 2940 4 2 You 
+: 2945 8 4 stole 
+: 2954 8 2 my 
+: 2963 35 1 life
+: 2999 10 2 ~
+- 3009
+: 3012 4 2 With
+: 3017 7 4 out 
+: 3025 8 2 a 
+: 3034 35 1 sigh
+: 3070 9 2 ~
+- 3079
+: 3084 3 2 You 
+: 3088 10 4 sucked 
+: 3099 7 2 me 
+: 3107 52 1 dry
+E

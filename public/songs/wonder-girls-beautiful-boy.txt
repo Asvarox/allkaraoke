@@ -1,0 +1,591 @@
+#ARTIST:Wonder Girls
+#TITLE:Beautiful Boy
+#CREATOR:Rubn4
+#BPM:260,02
+#YEAR:2016
+#VIDEO:v=28hKKBY6MqM
+#LANGUAGE:Korean
+#GAP:16706,30620721483
+#ALLKARAOKE_ID:wonder-girls-beautiful-boy
+#ALLKARAOKE_SID:7019
+#ALLKARAOKE_LASTUPDATE:2026-11-08T03:43:19.368Z
+#ALLKARAOKE_ARTISTORIGIN:KR
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=rubn4
+#ALLKARAOKE_REALBPM:130
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Wonder%20Girls&cancion=To%20The%20Beautiful%20You
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:193
+#MP3:Wonder Girls - To The Beautiful You.mp3
+#COVER:Wonder Girls - To The Beautiful You.jpg
+#MEDLEYSTARTBEAT:500
+#MEDLEYENDBEAT:1011
+: 17 2 -3 Mae
+: 21 2 4 il 
+: 25 2 5 ha
+: 29 2 4 neu
+: 33 2 2 reul 
+: 37 2 2 o
+: 41 2 0 reu
+: 45 2 0 nae
+: 49 2 -3 ri
+: 53 2 0 neun 
+: 57 2 0 geot 
+: 61 3 2 ga
+: 67 1 2 ta
+- 68
+: 73 2 -1 Neol 
+: 77 2 -1 bo
+: 81 2 -5 go 
+: 85 2 -5 i
+: 89 2 -7 sseul 
+: 93 2 -5 ttae
+: 97 7 -5 myeon
+- 104 128
+- 128
+: 145 2 -3 Jeong
+: 149 2 4 mal
+: 153 2 5 lo 
+: 157 2 4 u
+: 161 2 2 rin 
+: 165 2 2 keo
+: 169 2 2 da
+: 173 2 7 ra
+: 177 1 2 ~
+: 179 1 2 ke
+- 180
+: 185 2 2 Sa
+: 189 2 2 rang
+: 193 2 0 ha
+: 197 2 2 go 
+: 201 2 0 in
+: 205 2 2 neun 
+* 209 1 0 geo 
+* 211 3 4 mat
+* 217 3 2 jji 
+: 225 2 4 geu
+: 229 3 2 chi
+- 232 236
+- 236
+: 253 2 4 Nae 
+: 257 2 5 nu
+: 261 18 7 nen 
+: 281 2 5 neo
+: 285 2 4 mu
+: 289 3 2 na
+- 292 300
+- 300
+: 317 2 0 Keo 
+: 321 2 2 bo
+: 325 2 4 i
+: 329 2 2 neun
+: 333 2 0 de 
+: 337 2 2 da
+: 341 3 4 reun
+- 344
+: 349 2 0 Sa
+: 353 2 2 ram
+: 357 2 4 deul 
+: 361 2 2 nu
+: 365 2 0 nen 
+: 369 2 2 ja
+: 373 3 4 ga
+- 376
+: 379 4 7 Bo
+: 385 2 5 in
+* 389 11 4 dae 
+: 413 2 7 wae 
+: 417 1 2 il
+: 419 5 2 kka
+- 424 428
+- 428
+: 445 2 0 Neo
+: 449 2 2 ui 
+: 453 2 7 ma
+: 457 2 5 eu
+: 461 2 4 meun 
+: 465 2 2 nae
+: 469 3 0 ge
+- 472
+: 477 2 0 Nae 
+: 481 2 2 ma
+: 485 2 7 eum 
+: 489 2 5 gat
+: 493 2 4 jji 
+: 497 2 5 a
+: 501 4 4 neun 
+: 507 4 5 geol
+: 513 1 4 kka
+- 514
+: 517 2 12 A
+: 521 2 7 reum
+: 525 2 12 da
+: 529 2 7 un 
+: 533 2 12 geu
+: 537 5 7 daee
+: 545 9 7 ge 
+: 561 3 12 Hey!
+- 564
+: 569 2 4 Yeong
+: 573 2 4 won
+: 577 2 4 hi 
+* 581 2 4 nam
+* 585 2 5 go 
+* 589 2 7 si
+: 593 5 12 peo
+- 598
+: 601 2 4 Neol 
+: 605 2 4 ji
+: 609 2 4 kyeo
+: 613 2 4 ju
+: 617 2 5 go 
+: 621 2 7 si
+: 625 5 12 peo
+- 630
+: 645 2 12 A
+: 649 2 7 reum
+: 653 2 12 da
+: 657 2 7 un 
+: 661 2 12 geu
+: 665 5 7 daee
+: 673 9 7 ge 
+: 689 3 12 Hey!
+- 692
+: 697 2 4 Nae
+: 701 2 4 ga 
+: 705 2 4 neo
+: 709 2 4 ui 
+: 713 2 5 ha
+: 717 2 7 neu
+: 721 5 12 ri
+- 726
+: 729 2 4 Doe
+: 733 2 4 eo
+: 737 2 4 jul 
+* 741 2 4 su 
+* 745 2 5 it
+* 749 2 7 tta
+: 753 5 12 go
+- 758
+: 773 2 14 Hai
+: 777 10 16 ~
+: 789 4 16 hai
+: 795 4 16 hai
+: 801 7 12 yan
+- 808
+: 813 2 4 A
+: 817 2 4 reum
+: 821 2 4 da
+: 825 2 5 un 
+: 829 2 7 geu
+: 833 5 12 dae
+- 838
+: 845 2 4 Nae 
+: 849 2 4 mam
+: 853 2 4 gwa 
+: 857 2 5 gan
+: 861 2 7 na
+: 865 3 12 yo
+- 868
+F 873 3 -5 Oh, 
+F 877 3 -5 I’m 
+F 881 1 -8 in 
+F 883 5 -5 love 
+F 889 3 -8 with 
+F 893 3 -5 you
+- 896
+: 901 2 14 Hai
+: 905 10 16 ~
+: 917 4 16 hai
+* 923 4 16 hai
+: 929 7 12 yan
+- 936
+: 941 2 4 A
+: 945 2 4 reum
+: 949 2 4 da
+: 953 2 5 un 
+: 957 2 7 u
+: 961 3 12 ri
+- 964
+F 969 3 -5 Nae 
+F 973 3 -5 mam
+F 977 1 -8 so
+F 979 5 -5 ge 
+F 985 3 -5 beon
+F 989 3 -5 jeo
+F 993 1 -8 ga
+F 995 3 -5 ne
+- 998
+F 1001 3 -5 Yeah, 
+F 1005 3 -5 we are 
+F 1009 1 -8 so 
+F 1011 5 -5 beau
+F 1017 3 -8 ti
+F 1021 7 -5 ful
+- 1028
+: 1041 2 2 Neon
+: 1045 2 4 ~
+: 1049 3 2 ~ 
+* 1061 2 2 nal 
+* 1065 2 0 eol
+* 1069 2 0 man
+* 1073 2 -3 keum 
+: 1077 5 0 saeng
+: 1085 4 2 ga
+: 1091 5 2 kae
+- 1096 1132
+- 1132
+: 1149 2 4 Nae 
+: 1153 2 5 nu
+: 1157 18 7 nen 
+: 1177 2 5 neo
+: 1181 2 4 mu
+: 1185 3 2 na
+- 1188 1196
+- 1196
+: 1213 2 0 Keo 
+: 1217 2 2 bo
+: 1221 2 4 i
+: 1225 2 2 neun
+: 1229 2 0 de 
+: 1233 2 2 da
+: 1237 3 4 reun
+- 1240
+: 1245 2 0 Sa
+: 1249 2 2 ram
+: 1253 2 4 deul 
+: 1257 2 2 nu
+: 1261 2 0 nen 
+: 1265 2 2 ja
+: 1269 3 4 ga
+- 1272
+: 1275 4 7 Bo
+: 1281 2 5 in
+: 1285 11 4 dae 
+* 1309 2 7 wae 
+* 1313 1 2 il
+* 1315 5 2 kka
+- 1320 1324
+- 1324
+: 1341 2 0 Neo
+: 1345 2 2 ui 
+: 1349 2 7 ma
+: 1353 2 5 eu
+: 1357 2 4 meun 
+: 1361 2 2 nae
+: 1365 3 0 ge
+- 1368
+: 1373 2 0 Nae 
+: 1377 2 2 ma
+: 1381 2 7 eum 
+: 1385 2 5 gat
+: 1389 2 4 jji 
+: 1393 2 5 a
+: 1397 4 4 neun 
+: 1403 4 5 geol
+: 1409 1 4 kka
+- 1410
+F 1413 1 0 Nae 
+F 1415 3 0 ma
+F 1421 1 0 eum 
+F 1423 3 0 ni 
+F 1427 1 0 maeum 
+F 1429 1 0 ga
+F 1431 1 0 teun 
+F 1433 1 0 go
+F 1435 1 0 seul 
+F 1437 1 0 ppo
+F 1439 1 0 ni
+F 1441 1 0 kka
+- 1442
+F 1445 1 0 A
+F 1447 3 0 ra 
+F 1453 3 0 nan 
+F 1457 3 0 neoui 
+F 1461 1 0 ha
+F 1463 1 0 na
+F 1465 1 0 ppu
+F 1467 1 0 nin 
+F 1469 1 0 chi
+F 1471 1 0 ca 
+F 1473 1 2 bo
+F 1475 1 2 ni
+F 1477 1 0 ta
+- 1478
+F 1481 1 0 Na
+F 1483 1 0 man 
+F 1485 3 0 bwa 
+F 1489 3 0 look 
+F 1493 3 -3 through 
+F 1497 1 -7 my 
+F 1499 1 -3 heart
+- 1500
+F 1505 1 2 Ni 
+F 1507 1 2 mal 
+F 1509 1 2 ha
+F 1511 1 2 na 
+F 1513 1 2 ha
+F 1515 1 2 na
+F 1517 1 2 e
+- 1518
+F 1521 1 2 Ha
+F 1523 1 2 ru
+F 1525 3 2 ga 
+F 1529 1 2 gyeol
+F 1531 1 2 jeong 
+F 1533 1 1 dwae nan
+- 1534
+F 1537 3 2 Nae 
+F 1541 3 2 nal
+F 1545 1 2 kae
+F 1547 1 2 neun 
+F 1549 3 2 neo a
+F 1553 1 2 pe
+F 1555 3 2 seo
+F 1559 1 2 man 
+F 1561 1 2 ba
+F 1563 1 2 neung
+F 1565 1 2 hae
+- 1566
+F 1569 1 2 Byeo
+F 1571 1 2 rang 
+F 1573 3 2 keu
+F 1577 1 1 te 
+F 1579 3 2 ma
+F 1583 1 1 kyo
+F 1585 1 1 do 
+F 1587 1 1 neo
+F 1589 1 1 ni
+F 1591 1 1 ka 
+F 1593 1 1 ga
+F 1595 1 1 neng
+F 1597 3 2 hae
+- 1600
+F 1605 1 0 Spread
+F 1607 1 0 ing 
+F 1609 3 0 my 
+F 1613 3 0 wings, 
+F 1617 1 0 won’t 
+F 1619 1 0 you 
+F 1621 3 0 fly 
+F 1625 1 0 with 
+F 1627 3 2 me?
+- 1630
+F 1633 3 0 Nae
+F 1637 3 0 ~
+F 1641 3 2 ge 
+F 1647 1 0 sa
+F 1649 1 0 rang
+F 1651 1 0 eul 
+F 1653 1 0 jju
+F 1655 1 0 ji 
+F 1657 1 0 a
+F 1659 1 0 neul
+F 1661 3 -1 lae
+- 1664
+* 1669 2 12 A
+* 1673 2 7 reum
+* 1677 2 12 da
+* 1681 2 7 un 
+: 1685 2 12 geu
+: 1689 5 7 daee
+: 1697 9 7 ge 
+: 1713 3 12 Hey!
+- 1716
+: 1721 2 4 Yeong
+: 1725 2 4 won
+: 1729 2 4 hi 
+: 1733 2 4 nam
+: 1737 2 5 go 
+: 1741 2 7 si
+: 1745 5 12 peo
+- 1750
+: 1753 2 4 Neol 
+: 1757 2 4 ji
+: 1761 2 4 kyeo
+: 1765 2 4 ju
+: 1769 2 5 go 
+: 1773 2 7 si
+: 1777 5 12 peo
+- 1782
+: 1797 2 12 A
+: 1801 2 7 reum
+: 1805 2 12 da
+: 1809 2 7 un 
+: 1813 2 12 geu
+: 1817 5 7 daee
+: 1825 9 7 ge 
+: 1841 3 12 Hey!
+- 1844
+: 1849 2 4 Nae
+: 1853 2 4 ga 
+: 1857 2 4 neo
+: 1861 2 4 ui 
+: 1865 2 5 ha
+: 1869 2 7 neu
+* 1873 5 12 ri
+- 1878
+: 1881 2 4 Doe
+: 1885 2 4 eo
+: 1889 2 4 jul 
+: 1893 2 4 su 
+: 1897 2 5 it
+: 1901 2 7 tta
+: 1905 5 12 go
+- 1910
+: 1925 2 14 Hai
+: 1929 10 16 ~
+: 1941 4 16 hai
+: 1947 4 16 hai
+: 1953 7 12 yan
+- 1960
+: 1965 2 4 A
+: 1969 2 4 reum
+: 1973 2 4 da
+: 1977 2 5 un 
+: 1981 2 7 geu
+: 1985 5 12 dae
+- 1990
+: 1997 2 4 Nae 
+: 2001 2 4 mam
+: 2005 2 4 gwa 
+: 2009 2 5 gan
+: 2013 2 7 na
+: 2017 5 12 yo
+- 2022
+F 2025 3 -5 Oh, 
+F 2029 3 -5 I’m 
+F 2033 1 -8 in 
+F 2035 5 -5 love 
+F 2041 3 -8 with 
+F 2045 3 -5 you
+- 2048
+: 2053 2 14 Hai
+: 2057 10 16 ~
+: 2069 4 16 hai
+: 2075 4 16 hai
+: 2081 7 12 yan
+- 2088
+: 2093 2 4 A
+: 2097 2 4 reum
+: 2101 2 4 da
+: 2105 2 5 un 
+: 2109 2 7 u
+: 2113 5 12 ri
+- 2118
+F 2121 3 -5 Nae 
+F 2125 3 -5 mam
+F 2129 1 -8 so
+F 2131 5 -5 ge 
+F 2137 3 -5 beon
+F 2141 3 -5 jeo
+F 2145 1 -8 ga
+F 2147 3 -5 ne
+- 2150
+F 2153 3 -5 Yeah, 
+F 2157 3 -5 we are 
+F 2161 1 -8 so 
+F 2163 5 -5 beau
+F 2169 3 -8 ti
+F 2173 7 -5 ful
+- 2180 2196
+- 2196
+: 2213 2 12 A
+: 2217 2 7 reum
+: 2221 2 12 da
+: 2225 2 7 un 
+: 2229 2 12 geu
+: 2233 5 7 daee
+* 2241 9 7 ge 
+* 2257 3 12 Hey!
+- 2260
+: 2265 2 4 Yeong
+: 2269 2 4 won
+: 2273 2 4 hi 
+: 2277 2 4 nam
+: 2281 2 5 go 
+: 2285 2 7 si
+: 2289 5 12 peo
+- 2294
+: 2297 2 4 Neol 
+: 2301 2 4 ji
+: 2305 2 4 kyeo
+: 2309 2 4 ju
+: 2313 2 5 go 
+: 2317 2 7 si
+: 2321 5 12 peo
+- 2326
+: 2341 2 12 A
+: 2345 2 7 reum
+: 2349 2 12 da
+: 2353 2 7 un 
+: 2357 2 12 geu
+: 2361 5 7 daee
+: 2369 9 7 ge 
+: 2385 3 12 Hey!
+- 2388
+: 2393 2 4 Nae
+: 2397 2 4 ga 
+: 2401 2 4 neo
+: 2405 2 4 ui 
+: 2409 2 5 ha
+: 2413 2 7 neu
+: 2417 5 12 ri
+- 2422
+: 2425 2 4 Doe
+: 2429 2 4 eo
+: 2433 2 4 jul 
+: 2437 2 4 su 
+: 2441 2 5 it
+: 2445 2 7 tta
+: 2449 5 12 go
+- 2454
+: 2469 2 12 A
+: 2473 2 7 reum
+: 2477 2 12 da
+: 2481 2 7 un 
+: 2485 2 12 geu
+: 2489 5 7 daee
+: 2497 9 7 ge 
+: 2513 3 12 Hey!
+- 2516
+: 2521 2 4 Yeong
+: 2525 2 4 won
+: 2529 2 4 hi 
+: 2533 2 4 nam
+: 2537 2 5 go 
+: 2541 2 7 si
+: 2545 5 12 peo
+- 2550
+: 2553 2 4 Neol 
+: 2557 2 4 ji
+: 2561 2 4 kyeo
+: 2565 2 4 ju
+: 2569 2 5 go 
+: 2573 2 7 si
+: 2577 5 12 peo
+- 2582
+: 2597 2 12 A
+: 2601 2 7 reum
+: 2605 2 12 da
+: 2609 2 7 un 
+: 2613 2 12 geu
+: 2617 5 7 daee
+: 2625 9 7 ge 
+: 2641 3 12 Hey!
+- 2644
+: 2649 2 7 Nae
+: 2653 2 7 ga 
+: 2657 2 7 neo
+: 2661 3 7 ma
+: 2669 2 4 nui 
+: 2673 5 2 ha
+: 2681 2 0 neu
+: 2685 2 0 ri 
+: 2689 2 0 doeeo
+: 2693 4 2 jul 
+: 2699 4 0 su 
+* 2705 6 2 it
+* 2713 2 4 tta
+* 2717 6 5 go
+* 2725 3 4 ~
+E

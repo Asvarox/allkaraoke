@@ -1,0 +1,252 @@
+#ARTIST:Apocalyptica feat. Nina Hagen
+#TITLE:Seemann
+#CREATOR:fepo
+#BPM:281,55
+#YEAR:2003
+#VIDEO:v=v-YzdvmD2aQ
+#GENRE:Symphonic Metal
+#LANGUAGE:German
+#GAP:16287,746403835908
+#ALLKARAOKE_ID:apocalyptica-feat-nina-hagen-seemann
+#ALLKARAOKE_SID:7003
+#ALLKARAOKE_LASTUPDATE:2026-11-08T03:43:18.990Z
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=10393
+#ALLKARAOKE_REALBPM:71
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=7194
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:246
+#MP3:Apocalyptica feat. Nina Hagen - Seemann.mp3
+: 19 40 14 Komm 
+: 67 10 12 in 
+: 79 8 10 mein 
+* 88 36 12 Boot
+- 124
+: 143 4 12 Ein 
+: 149 13 10 Sturm 
+: 163 8 10 kommt 
+: 172 13 10 auf
+- 185
+: 192 5 10 Und 
+: 198 8 10 es 
+: 207 6 10 wird 
+: 214 26 9 Nacht
+- 240 258
+- 258
+: 277 47 14 Wo 
+: 326 12 12 willst 
+: 340 4 10 du 
+: 345 33 12 hin
+- 378 392
+- 392
+: 411 4 9 So 
+: 416 8 10 ganz 
+: 425 3 10 al
+: 429 15 10 lein
+- 444
+* 447 16 10 Treibst 
+: 464 7 10 du 
+: 472 3 10 da
+: 476 26 9 von
+- 502 513
+- 513
+: 532 37 14 Wer 
+: 573 14 14 hält 
+: 588 8 12 dei
+: 597 4 10 ne 
+: 602 33 12 Hand
+- 635 640
+- 640
+: 659 8 10 Wenn 
+: 670 3 10 es 
+: 674 19 10 dich
+- 693
+: 700 8 10 Nach 
+: 709 10 10 un
+: 720 8 9 ten 
+: 730 34 9 zieht
+- 764 1019
+- 1019
+: 1038 10 0 Jetzt 
+: 1049 9 2 stehst 
+: 1061 4 2 du 
+: 1066 17 2 da 
+: 1089 5 2 an 
+: 1096 8 4 der 
+: 1105 4 5 La
+: 1111 16 4 ter
+: 1128 22 0 ne
+- 1150
+: 1168 8 0 Mit 
+: 1178 15 -2 Trä
+: 1194 20 -2 nen 
+: 1224 9 -2 im 
+: 1234 3 -5 Ge
+: 1238 29 -3 sicht
+- 1267 1281
+- 1281
+: 1300 7 0 Das 
+: 1308 9 2 Ta
+: 1318 8 2 ges
+: 1327 13 2 licht 
+: 1345 8 2 fällt 
+: 1354 7 4 auf 
+: 1362 4 5 die 
+: 1368 15 4 Sei
+: 1386 28 0 te
+- 1414
+: 1430 6 0 Der 
+: 1437 13 -2 Herbst
+: 1451 8 -2 wind 
+: 1460 13 -2 fegt 
+: 1477 3 0 die 
+: 1481 13 -3 Stra
+: 1495 5 -5 ße 
+: 1501 21 -3 leer
+- 1522 1534
+- 1534
+: 1553 9 12 Jetzt 
+: 1563 10 14 stehst 
+: 1574 5 14 du 
+: 1581 15 14 da 
+: 1601 9 14 an 
+: 1611 7 16 der 
+: 1619 4 17 La
+: 1624 19 16 ter
+: 1644 27 12 ne
+- 1671
+: 1682 8 12 Mit 
+: 1691 18 10 Trä
+: 1710 19 10 nen 
+: 1740 11 10 im 
+: 1752 3 7 Ge
+: 1756 46 9 sicht
+- 1802
+: 1815 5 14 Das 
+: 1821 10 14 A
+: 1832 4 14 bend
+: 1837 15 14 licht 
+: 1858 8 14 ver
+: 1867 8 16 jagt 
+: 1876 3 17 die 
+: 1882 8 16 Schat
+: 1891 31 12 ten
+- 1922 1925
+- 1925
+: 1944 10 12 Die 
+: 1955 12 10 Zeit 
+: 1968 10 10 steht 
+: 1979 10 10 still 
+: 1990 6 10 und 
+: 1997 8 9 es 
+: 2006 8 10 wird 
+: 2015 26 9 Herbst
+- 2041 2188
+- 2188
+* 2207 46 14 Komm 
+* 2256 9 12 in 
+* 2267 6 10 mein 
+* 2274 46 12 Boot
+- 2320
+: 2332 4 12 Die 
+: 2337 7 10 Sehn
+: 2345 9 10 sucht 
+: 2355 15 10 wird 
+: 2375 5 10 der 
+: 2382 11 10 Steu
+: 2395 2 10 er
+: 2398 11 9 mann
+- 2409 2447
+- 2447
+: 2466 46 14 Komm 
+: 2514 10 12 in 
+: 2525 5 10 mein 
+: 2531 46 12 Boot
+- 2577
+: 2589 4 12 Der 
+: 2594 5 10 bes
+: 2600 3 10 te 
+: 2604 6 10 See
+: 2611 11 10 mann
+- 2622 2623
+- 2623
+: 2642 8 10 War 
+: 2651 7 9 doch 
+: 2659 12 10 ich
+- 2671 2695
+- 2695
+: 2714 7 12 Jetzt 
+: 2722 10 14 stehst 
+: 2733 4 14 du 
+: 2738 18 14 da 
+: 2761 6 14 an 
+: 2768 8 16 der 
+: 2777 4 17 La
+: 2782 20 16 ter
+: 2803 27 12 ne
+- 2830
+: 2845 7 12 Mit 
+: 2853 17 10 Trä
+: 2871 15 10 nen 
+: 2896 12 10 im 
+: 2909 5 7 Ge
+: 2915 34 9 sicht
+- 2949 2951
+- 2951
+: 2970 7 12 Das 
+: 2978 7 14 Feu
+: 2986 3 14 er 
+: 2990 21 14 nimmst 
+: 3017 8 14 du 
+: 3026 7 16 von 
+: 3034 6 17 der 
+: 3041 15 16 Ker
+: 3057 27 12 ze
+- 3084
+: 3099 6 12 Die 
+: 3106 8 10 Zeit 
+: 3115 8 10 steht 
+: 3124 24 10 still 
+: 3149 5 10 und 
+: 3155 8 9 es 
+: 3164 7 7 wird 
+* 3172 28 9 Herbst
+- 3200 3207
+- 3207
+: 3226 7 12 Sie 
+: 3234 12 14 spra
+: 3247 5 14 chen 
+: 3253 18 14 nur 
+: 3275 8 14 von 
+: 3285 6 16 dei
+: 3292 6 17 ner 
+: 3299 11 16 Mut
+: 3312 31 12 ter
+- 3343
+: 3355 8 12 So 
+: 3364 9 10 gna
+: 3374 3 10 den
+: 3378 21 10 los 
+: 3404 9 10 ist 
+: 3414 11 14 nur 
+: 3426 4 7 die 
+: 3431 35 9 Nacht
+- 3466
+: 3485 7 12 Am 
+: 3493 9 14 En
+: 3503 3 14 de 
+: 3507 9 14 bleib 
+: 3517 15 14 ich 
+: 3539 11 16 doch 
+: 3551 4 17 al
+: 3556 18 16 lei
+: 3575 25 12 ne
+- 3600
+: 3618 6 17 Die 
+: 3626 8 19 Zeit 
+: 3636 8 19 steht 
+: 3646 15 19 still 
+: 3666 8 19 und 
+: 3675 7 17 mir 
+: 3683 8 17 ist 
+: 3693 31 17 kalt
+E

@@ -1,0 +1,162 @@
+#ARTIST:Pokémon
+#TITLE:Theme (French)
+#CREATOR:Pinky007
+#BPM:302,6
+#YEAR:2000
+#PREVIEWSTART:29
+#VIDEO:v=YhN4oAS3O4c
+#GENRE:Soundtrack
+#LANGUAGE:French
+#GAP:5808,592200925314
+#ALLKARAOKE_ID:pokemon-theme-french
+#ALLKARAOKE_SID:7018
+#ALLKARAOKE_LASTUPDATE:2026-11-08T03:43:19.365Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_REALBPM:145
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=14156
+#ALLKARAOKE_PREVIEWEND:65
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:65
+#MP3:Pokémon - Theme (French).mp3
+: 20 2 14 Un 
+: 23 2 14 jour 
+: 26 3 14 je 
+: 31 4 14 se
+: 36 6 14 rai 
+: 43 3 14 le 
+: 47 4 12 mei
+: 52 2 12 lleur 
+: 56 2 9 dre
+: 60 3 5 sseur
+- 63
+: 76 2 7 Je 
+: 82 6 14 me 
+: 89 3 14 ba
+: 94 3 14 ttrai 
+: 98 3 12 sans 
+: 102 2 10 ré
+* 107 10 12 pit
+- 117 132
+- 132
+: 152 2 15 Je 
+: 156 3 15 fe
+: 160 3 15 rai 
+: 165 9 15 tout 
+: 177 3 14 pour 
+: 181 2 12 êt
+: 185 3 12 re 
+: 189 3 10 vain
+: 194 8 10 queur
+- 202
+: 211 2 10 Et 
+: 215 6 14 ga
+: 223 4 14 gner 
+: 228 5 12 les 
+: 234 3 10 dé
+: 240 17 14 fis
+- 257 265
+- 265
+: 285 2 14 Je 
+: 290 3 14 par
+: 295 3 14 cour’
+: 300 7 14 rai 
+: 309 3 14 la 
+: 315 8 12 terre 
+: 324 2 9 en
+: 327 4 5 tière
+- 331
+: 349 7 14 Ba
+: 357 5 14 ttant 
+: 363 1 14 a
+: 365 3 12 vec 
+: 370 2 10 es
+: 374 10 12 poir
+- 384 399
+- 399
+: 419 2 15 Les 
+: 423 3 15 Po
+: 427 4 15 ke
+: 432 12 15 mon 
+: 445 3 15 et 
+: 449 7 14 leur 
+: 457 3 12 mys
+: 462 10 10 tères
+- 472
+: 478 2 10 Les 
+: 482 7 14 se
+: 490 4 14 crets 
+: 495 3 14 de 
+: 499 2 12 leurs 
+: 503 2 10 pou
+* 508 16 14 voirs
+- 524 557
+- 557
+: 577 5 19 C’est 
+: 583 3 17 notre 
+: 588 3 14 his
+: 594 8 10 toire
+- 602 608
+- 608
+: 628 2 19 En
+: 632 3 19 sem
+: 636 2 21 ble 
+: 640 3 22 pour 
+: 645 5 21 la 
+: 653 4 19 vic
+* 660 10 17 toire
+- 670 674
+- 674
+: 694 12 19 Rien 
+: 707 3 19 ne 
+: 711 3 19 nous 
+: 716 2 17 a
+: 720 2 14 rrê
+: 724 3 12 te
+: 728 5 10 ra
+- 733
+: 740 2 12 Notr’ 
+: 745 2 10 a
+: 748 8 14 mi
+: 757 3 14 tié 
+: 761 4 14 tri
+: 766 3 12 om
+: 770 3 10 phe
+: 774 16 14 ra
+- 790 825
+- 825
+: 845 3 17 Mêm’ 
+: 850 1 19 à 
+: 853 5 19 notr’ 
+: 861 7 19 â
+: 871 2 17 ~
+: 874 7 19 ~ge
+- 881
+: 897 1 17 Un 
+: 899 2 19 vo
+: 903 4 19 yage 
+: 908 2 22 d’ap
+: 912 5 21 pren
+: 921 4 19 tis
+: 928 12 17 sage
+- 940
+: 945 6 15 Ca 
+: 954 5 22 de
+: 962 7 22 man
+: 970 5 22 de 
+: 979 5 17 du 
+: 987 7 22 cou
+: 995 12 22 rage
+- 1007
+: 1016 10 22 Po
+: 1029 8 22 ke
+: 1041 5 22 mo
+: 1048 16 21 ~n
+- 1064 1072
+- 1072
+: 1092 1 14 A
+: 1095 2 14 trap
+: 1099 5 17 pez
+: 1105 4 19 -les 
+: 1112 3 22 tous
+: 1117 8 19 ~!!
+E
