@@ -1,20 +1,20 @@
-import { expect } from '@playwright/test';
+import { expect, Page } from '@playwright/test';
 
-import songStats from '../../src/routes/landing-page/song-stats.json';
 import { mockLeaderboard, mockSongs } from '../helpers';
 import initialise from '../page-objects/initialise';
 import { openAndConnectRemoteMicDirectly } from '../steps/open-and-connect-remote-mic';
 import { REMOTE_MIC_VIEWPORTS, VIEWPORTS, visual } from './visual';
 
+const replaceText = (page: Page, testId: string, text: string) =>
+  page.getByTestId(testId).evaluateAll((nodes, text) => nodes.forEach((node) => (node.textContent = text)), text);
+
 // Captured against a full board, which is the state the rail is laid out for: it fills the height
 // the cards beside it set and scrolls the rest, and a board of five rows would never show whether
 // it still does.
 visual('Landing page', async ({ page, context, viewport, makeScreenshot }) => {
+  // Not pinning the page clock: the board's dates are made relative to the test's own now, so a
+  // page clock anywhere else turns "3 days ago" into whatever the gap between the two happens to be
   await mockLeaderboard({ page, context });
-  // The recently added songs are labelled relative to now ("added 2 days ago", "236 songs added in
-  // the last 30 days"), so against the real clock the same page would read differently every day.
-  // Pinned to when the stats file was generated, it only changes when the songs do.
-  await page.clock.setFixedTime(songStats.generatedAt);
 
   await page.goto('/?e2e-test');
   await expect(page.getByTestId('enter-the-game').and(page.locator(':visible'))).toBeVisible();
@@ -28,6 +28,14 @@ visual('Landing page', async ({ page, context, viewport, makeScreenshot }) => {
   // Hiding keeps the number's own width, so it is also pinned - or the label after it still moves
   const songCount = page.getByTestId('song-count');
   await songCount.evaluate((node) => node.setAttribute('style', 'display: inline-block; width: 5ch'));
+
+  // The recently added songs come from the stats file, which is regenerated with every song update,
+  // so which songs, how many and how long ago all change. Fixed text keeps the panel's layout covered.
+  await replaceText(page, 'recently-added-count', '123 songs');
+  await replaceText(page, 'recently-added-song-title', 'Song Title');
+  await replaceText(page, 'recently-added-song-artist', 'Song Artist');
+  await replaceText(page, 'recently-added-song-added-at', 'added 2 days ago');
+
   await makeScreenshot(undefined, { extraMasks: [songCount] });
 });
 
