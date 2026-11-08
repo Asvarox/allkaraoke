@@ -9,6 +9,7 @@ import { OnlineSongSelectionContext, OnlineSongSelectionIntegration } from '~/mo
 import ChatPanel from '~/routes/online/lobby/chat-panel';
 import OnlineSongPlayersPanel, { OnlineSongVotesSummary } from '~/routes/online/lobby/song-players-panel';
 import SingASong from '~/routes/sing-a-song/sing-a-song';
+import { closeExtendedPreview } from '~/routes/sing-a-song/song-selection/hooks/extended-preview-url';
 
 /** Keeps the chat off the song settings' keyboard navigation, whose controls all mirror to a phone
  * remote — a text field has no mirrored form, and one unmirrored control drops the whole screen out. */
@@ -68,7 +69,11 @@ function OnlineSongBrowser({ preselectedSong, onSongSelected }: Props) {
   return (
     <OnlineSongSelectionContext.Provider value={integration}>
       <SingASong
-        onSongSelected={(setup) => onSongSelected(setup.song, setup.tolerance, previewDraft.current.difficulty)}
+        onSongSelected={async (setup) => {
+          // Pop the preview's history entry first, so closing the browser lands on the lobby
+          await closeExtendedPreview();
+          onSongSelected(setup.song, setup.tolerance, previewDraft.current.difficulty);
+        }}
         onSongFocused={publisher.onSongFocused}
         preselectedSong={preselectedSong}
       />
