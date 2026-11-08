@@ -1,0 +1,341 @@
+#ARTIST:Das Haus Anubis
+#TITLE:Suche mit uns
+#CREATOR:Greg5
+#BPM:234
+#YEAR:2022
+#PREVIEWSTART:67
+#VIDEO:v=dgjlq3FY3EE
+#GENRE:Soundtrack
+#LANGUAGE:German
+#GAP:3254,3589743589746
+#ALLKARAOKE_ID:das-haus-anubis-suche-mit-uns
+#ALLKARAOKE_SID:6976
+#ALLKARAOKE_LASTUPDATE:2026-11-08T03:43:07.178Z
+#ALLKARAOKE_REALBPM:100
+#ALLKARAOKE_PREVIEWEND:94
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:167
+#MP3:Das Haus Anubis - Suche mit uns.mp3
+#COVER:Das Haus Anubis - Suche mit uns [CO].jpg
+#BACKGROUND:Das Haus Anubis - Suche mit uns [BG].jpg
+: 16 3 1 Die 
+: 20 1 3 Ge
+: 22 3 4 dan
+: 26 4 4 ken
+- 30
+: 32 3 1 Sie 
+: 36 1 3 um
+: 38 3 4 ran
+: 42 4 4 ken
+- 46
+: 48 3 1 Die 
+: 52 2 3 tief 
+: 56 3 4 schwar
+: 60 2 4 ze 
+: 64 6 1 Nacht
+- 70
+: 80 3 1 Was 
+: 84 1 3 ist 
+: 86 4 4 wahr?
+- 90
+: 92 2 4 Wo 
+: 96 3 1 droht 
+: 100 1 3 Ge
+: 102 4 4 fahr?
+- 106
+: 108 2 4 Und 
+: 112 2 1 wer 
+: 116 1 3 gibt 
+: 118 3 4 auf 
+: 122 4 4 mich 
+: 128 6 1 acht?
+- 134
+: 144 3 4 Ei
+: 148 2 6 ne 
+* 152 3 8 un
+* 156 3 8 ge
+* 160 3 4 wis
+* 164 2 6 se 
+* 168 3 8 Rei
+* 172 2 8 se
+- 174
+: 176 3 8 Wet
+: 180 3 6 tlauf 
+: 184 3 6 mit 
+: 188 1 4 der 
+: 190 6 6 Zeit
+- 196
+: 208 3 4 Rät
+: 212 3 6 sel 
+: 216 3 8 lö
+: 220 3 8 sen 
+: 224 4 4 still 
+: 230 1 6 und 
+: 232 3 8 lei
+: 236 2 8 se
+- 238
+* 240 3 8 Wir 
+* 244 3 6 sind 
+* 248 5 6 jetzt 
+* 254 1 4 be
+* 256 12 6 reit
+- 268 288
+- 288
+: 304 8 8 Komm, 
+: 318 5 8 su
+: 324 5 9 che 
+: 330 4 11 mit 
+: 336 10 4 uns
+- 346
+: 350 5 4 Fin
+: 356 4 6 de 
+: 362 3 8 den 
+: 366 6 1 Schatz
+- 372
+: 384 5 1 Bei 
+: 390 5 3 uns 
+: 396 3 4 im 
+: 400 5 8 Haus 
+: 406 9 6 A
+: 416 7 4 nu
+: 424 5 6 bis
+- 429
+: 430 8 8 Komm, 
+: 448 3 8 su
+: 452 4 9 che 
+: 458 3 11 mit 
+: 462 10 4 uns
+- 472
+: 478 5 4 Fin
+: 484 4 6 de 
+: 490 3 8 den 
+: 494 10 1 Schatz
+- 504
+: 512 5 1 Bei 
+: 518 5 3 uns 
+: 524 3 4 im 
+: 528 7 8 Haus 
+: 536 7 6 A
+: 544 17 4 nu
+: 562 26 1 bis
+- 588 596
+- 596
+F 612 3 0 Bei 
+F 616 3 0 uns 
+F 620 3 0 im 
+F 624 12 0 Haus
+- 636 660
+- 660
+F 676 3 0 Bei 
+F 680 3 0 uns 
+F 684 3 0 im 
+F 688 12 0 Haus
+- 700
+F 704 5 0 Bei 
+F 710 5 0 uns 
+F 716 3 0 im 
+F 720 7 0 Haus 
+F 728 7 0 A
+F 736 5 0 nu
+F 742 6 0 bis
+- 748 800
+- 800
+: 816 3 4 Dun
+: 820 1 4 kle 
+: 822 3 3 See
+: 826 4 4 len
+- 830
+: 832 3 4 We
+: 836 1 4 ge 
+: 838 3 3 wäh
+: 842 4 4 len
+- 846
+: 848 3 4 Das 
+: 852 1 4 ris
+: 854 3 3 kan
+: 858 3 4 te 
+: 862 6 1 Spiel
+- 868
+: 880 3 4 Un
+: 884 1 4 er
+: 886 3 3 schro
+: 890 4 4 cken
+- 894
+: 896 3 4 Nicht 
+: 900 1 4 zu 
+: 902 3 3 stop
+: 906 4 4 pen
+- 910
+: 912 3 4 Fin
+: 916 1 4 den 
+: 918 3 3 wir 
+: 922 3 4 ans 
+: 926 4 1 Ziel
+- 930
+: 942 1 1 Zu
+: 944 3 4 sam
+: 948 3 4 men 
+: 952 3 6 sind 
+: 956 3 8 wir 
+* 960 3 1 bä
+* 964 1 4 ren
+* 966 3 6 stark
+- 969
+: 970 5 8 Wir 
+: 976 3 8 krie
+: 980 3 6 gen 
+: 984 3 6 al
+: 988 1 4 les 
+: 990 6 6 hin
+- 996
+: 1006 5 1 Egal 
+: 1012 3 4 was 
+: 1016 3 6 auch 
+: 1020 3 8 noch 
+: 1024 3 1 kom
+: 1028 1 4 men 
+: 1030 3 6 mag
+- 1033
+* 1034 3 8 Wir 
+* 1038 5 8 sind 
+* 1044 5 6 dafür 
+* 1050 1 4 be
+* 1052 5 6 stimmt
+- 1057
+F 1058 3 0 Sind 
+F 1062 5 0 dafür 
+F 1068 18 0 bestimmt
+- 1086
+: 1102 15 8 Komm, 
+: 1118 5 8 su
+: 1124 5 9 che 
+: 1130 3 11 mit 
+: 1134 10 4 uns
+- 1144
+: 1150 5 4 Fin
+: 1156 5 6 de 
+: 1162 3 8 den 
+: 1166 6 1 Schatz
+- 1172
+: 1184 5 1 Bei 
+: 1190 5 3 uns 
+: 1196 3 4 im 
+: 1200 7 8 Haus 
+: 1208 7 6 A
+: 1216 7 4 nu
+: 1224 5 6 bis
+- 1229
+: 1230 8 8 Komm, 
+: 1246 5 8 su
+: 1252 5 9 che 
+: 1258 3 11 mit 
+: 1262 10 4 uns
+- 1272
+: 1278 5 4 Fin
+: 1284 4 6 de 
+: 1290 3 8 den 
+: 1294 10 1 Schatz
+- 1304
+: 1312 5 1 Bei 
+: 1318 5 3 uns 
+: 1324 3 4 im 
+: 1328 7 8 Haus 
+: 1336 7 6 A
+: 1344 15 4 nu
+: 1360 28 1 bis
+- 1388 1600
+- 1600
+* 1616 15 15 Komm, 
+* 1632 5 15 su
+* 1638 5 16 che 
+* 1644 3 18 mit 
+* 1648 10 11 uns
+- 1658
+: 1664 5 11 Fin
+: 1670 5 13 de 
+: 1676 3 15 den 
+: 1680 10 8 Schatz
+- 1690
+: 1696 5 8 Bei 
+: 1702 5 10 uns 
+: 1708 5 11 im 
+: 1714 5 15 Haus 
+* 1720 7 13 A
+* 1728 7 11 nu
+* 1736 6 13 bis
+- 1742
+* 1744 8 15 Komm, 
+* 1758 5 15 su
+* 1764 5 16 che 
+* 1770 5 18 mit 
+* 1776 10 11 uns
+- 1786
+: 1790 5 11 Fin
+: 1796 5 13 de 
+: 1802 5 15 den 
+: 1808 10 8 Schatz
+- 1818
+: 1824 5 8 Bei 
+: 1830 5 10 uns 
+: 1836 3 11 im 
+: 1840 7 15 Haus 
+* 1848 7 13 A
+* 1856 9 11 nu
+* 1866 20 13 bis
+- 1886 1952
+- 1952
+F 1968 5 0 Komm, 
+F 1974 3 0 such 
+F 1978 3 0 mit 
+F 1982 12 0 uns
+- 1994 1996
+- 1996
+F 2012 3 0 Im 
+F 2016 7 0 Haus 
+F 2024 24 0 Anubis
+- 2048
+F 2052 34 0 Uh-uhh
+- 2086
+F 2094 7 0 Kommt 
+F 2102 9 0 mit 
+F 2112 12 0 uns
+- 2124 2144
+- 2144
+: 2160 13 8 Komm, 
+: 2174 5 8 su
+: 2180 5 9 che 
+: 2186 5 11 mit 
+: 2192 10 4 uns
+- 2202
+: 2206 5 4 Fin
+: 2212 5 6 de 
+: 2218 3 8 den 
+: 2222 10 1 Schatz
+- 2232
+: 2240 5 1 Bei 
+: 2246 5 3 uns 
+: 2252 3 4 im 
+: 2256 7 8 Haus 
+: 2264 7 6 A
+: 2272 7 4 nu
+: 2280 7 6 bis
+- 2287
+: 2288 8 8 Komm, 
+: 2302 5 8 su
+: 2308 5 9 che 
+: 2314 3 11 mit 
+: 2318 12 4 uns
+- 2330
+: 2334 5 4 Fin
+: 2340 5 6 de 
+: 2346 3 8 den 
+: 2350 12 1 Schatz
+- 2362
+* 2368 5 1 Bei 
+* 2374 5 3 uns 
+* 2380 3 4 im 
+* 2384 7 8 Haus 
+* 2392 7 6 A
+* 2400 15 4 nu
+* 2416 30 1 bis
+E

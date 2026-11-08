@@ -1,0 +1,261 @@
+#ARTIST:Tangled: The Series
+#TITLE:Ready As I’ll Ever Be
+#CREATOR:barbeque
+#BPM:330
+#YEAR:2018
+#VIDEO:v=2XtBCQ3jQPU
+#LANGUAGE:English
+#GAP:4920
+#ALLKARAOKE_ID:tangled-the-series-ready-as-ill-ever-be
+#ALLKARAOKE_SID:6967
+#ALLKARAOKE_LASTUPDATE:2026-11-08T03:43:06.455Z
+#ALLKARAOKE_REALBPM:80
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:122
+#MP3:Tangled: The Series - Ready As I’ll Ever Be.mp3
+#COVER:Tangled: The Series - Ready As I’ll Ever Be [CO].jpg
+#BACKGROUND:Tangled: The Series - Ready As I’ll Ever Be [BG].jpg
+F 22 2 0 A
+F 25 2 0 ny 
+F 29 2 0 mo
+F 32 2 0 ment 
+F 36 7 0 now, 
+F 51 3 0 Your 
+F 58 2 0 High
+F 63 3 0 ness
+- 66 73
+- 73
+: 95 3 9 Be
+: 101 5 2 lieve 
+: 110 4 4 me 
+: 117 3 5 I 
+: 125 6 7 know
+- 131
+: 143 2 9 I’ve 
+: 150 4 2 sunk 
+: 160 2 4 pret
+: 164 2 5 ty 
+: 169 2 5 lo
+: 173 6 7 -ow
+- 179
+: 188 2 5 But 
+: 194 2 4 what
+: 198 4 2 e
+: 205 3 4 ver 
+: 213 4 5 I’ve 
+: 222 5 7 done, 
+: 234 5 5 you 
+: 242 2 0 de
+: 245 10 2 served
+- 255
+F 269 2 0 Qui
+F 272 4 0 et!
+- 276
+* 286 2 2 I’m 
+* 290 2 2 the 
+: 295 3 2 bad 
+: 301 6 4 guy, 
+: 310 3 5 that’s 
+* 318 5 9 fine
+- 323
+: 335 2 2 It’s 
+: 343 3 2 no 
+: 351 3 4 fault 
+: 358 2 5 of 
+: 364 8 7 mine 
+: 375 3 5 and 
+: 383 3 4 some 
+: 391 3 2 jus
+: 399 3 4 tice 
+: 407 2 5 at 
+: 414 6 7 last 
+: 427 3 5 will 
+* 432 3 7 be 
+* 442 14 9 served
+- 456
+: 477 2 7 Now 
+: 480 2 7 it’s 
+: 485 3 9 ti
+: 489 2 7 -me 
+: 493 3 7 to 
+: 503 2 9 step 
+: 509 3 10 up 
+: 519 2 9 o
+: 523 2 7 -or 
+: 527 2 7 it’s 
+: 535 5 7 time 
+: 543 3 5 to 
+: 549 4 7 back 
+: 558 7 9 down
+- 565
+: 567 5 7 And 
+: 575 3 5 there’s 
+: 583 3 5 on
+: 591 2 4 ly 
+: 598 5 5 one 
+: 607 5 7 an
+: 616 2 5 swer 
+: 623 5 7 for 
+: 633 19 9 me
+- 652
+: 669 2 9 And 
+: 672 2 9 I’ll 
+: 679 5 9 stand 
+: 687 3 7 up 
+: 692 3 9 and 
+: 701 5 10 fight 
+: 710 3 9 ’cause 
+: 717 3 7 I 
+* 725 4 12 know 
+: 733 3 10 tha
+: 737 2 7 -at 
+: 741 3 7 I’m 
+: 749 5 9 right
+- 754
+: 762 3 14 And 
+: 768 2 16 I’m 
+: 773 7 17 rea
+: 782 5 16 dy, 
+: 790 4 14 I’m 
+: 798 6 19 rea
+: 807 4 17 dy, 
+: 814 5 19 I’m 
+: 822 8 21 rea
+: 833 3 19 dy
+: 838 19 17 -y
+- 857 859
+- 859
+: 881 3 24 Rea
+: 886 2 22 dy 
+: 890 2 21 as 
+: 897 4 19 I’ll 
+: 903 3 17 e
+: 911 6 16 ve
+: 918 2 14 -er 
+: 926 47 14 be
+- 973 1081
+- 1081
+: 1103 2 5 Now 
+: 1106 2 7 it’s 
+: 1109 6 9 time 
+: 1118 5 7 to 
+: 1126 5 9 rise 
+: 1134 5 10 up 
+: 1143 5 9 or 
+* 1151 2 5 it’s 
+: 1158 6 7 time 
+: 1168 2 5 to 
+: 1175 4 7 stand 
+: 1183 6 9 down
+- 1189
+: 1195 3 2 And 
+: 1200 4 4 the 
+: 1207 3 5 an
+: 1215 6 4 swer 
+: 1224 3 5 is 
+: 1230 5 7 ea
+: 1238 5 5 sy 
+: 1246 4 7 to 
+: 1255 26 9 see
+- 1281
+: 1292 2 5 And 
+: 1295 2 7 I 
+* 1301 5 9 swea
+* 1307 2 5 ~r 
+: 1311 5 7 by 
+: 1318 3 9 the 
+: 1325 7 10 sword 
+: 1334 3 9 if 
+: 1342 4 7 you’re 
+: 1350 5 12 in, 
+: 1358 6 10 get 
+: 1367 3 7 on 
+: 1374 8 9 board
+- 1382
+: 1386 2 2 Are 
+: 1392 3 4 you 
+: 1399 5 5 rea
+: 1407 6 4 dy? 
+: 1416 3 2 I’m 
+: 1422 6 7 rea
+: 1431 6 5 dy! 
+: 1440 3 7 We’re 
+: 1446 7 9 rea
+: 1456 13 2 dy!
+- 1469 1483
+- 1483
+: 1505 2 12 Rea
+: 1509 2 10 dy 
+: 1514 2 9 as 
+: 1520 4 7 I’ll 
+: 1528 3 5 e
+: 1534 2 4 ve
+: 1538 2 2 -er 
+: 1543 43 2 be
+- 1586 1711
+- 1711
+: 1733 5 2 Are 
+: 1742 3 4 you 
+: 1749 6 5 quite 
+: 1760 5 7 sure 
+: 1768 3 5 we 
+* 1774 3 2 can 
+* 1781 5 4 do 
+* 1791 3 0 this?
+- 1794 1801
+- 1801
+: 1823 3 0 To
+: 1830 6 2 ge
+: 1838 4 4 ther 
+: 1846 3 5 we 
+: 1854 4 9 will 
+: 1863 4 7 gua
+: 1870 4 5 ran
+: 1878 23 12 tee
+- 1901
+: 1906 3 -3 I’ll 
+: 1913 4 7 make 
+: 1920 2 5 them 
+: 1927 3 4 hear 
+: 1935 55 5 me
+- 1990
+: 2004 3 9 Prove 
+: 2009 3 7 they 
+: 2015 3 5 can 
+: 2023 3 2 trust 
+: 2034 36 9 me
+- 2070
+: 2082 6 9 I’ll 
+: 2093 9 7 save 
+: 2106 7 0 my 
+: 2118 9 12 home 
+: 2131 6 10 and 
+: 2142 3 9 fa
+: 2147 6 14 mi
+: 2156 7 2 ly
+- 2163 2226
+- 2226
+: 2248 5 2 And 
+: 2256 3 4 I’m 
+: 2262 6 5 rea
+: 2271 6 4 dy! 
+: 2280 3 2 I’m 
+: 2287 5 7 rea
+: 2294 6 5 dy! 
+: 2303 4 7 I’m 
+: 2311 8 9 rea
+: 2321 4 7 dy
+: 2327 23 5 -y!
+- 2350
+: 2372 5 0 Rea
+: 2380 6 -2 dy 
+: 2390 2 -3 a
+: 2393 3 -5 -as 
+: 2400 5 -5 I
+: 2407 14 -8 -I’ll 
+: 2443 4 -8 e
+: 2449 10 -7 -e
+: 2465 2 -8 ve
+: 2469 3 -10 -er 
+* 2480 5 -10 be
+E

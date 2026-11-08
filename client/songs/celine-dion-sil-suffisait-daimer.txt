@@ -1,0 +1,435 @@
+#ARTIST:Céline Dion
+#TITLE:S'il suffisait d'aimer
+#CREATOR:cinemalin0
+#BPM:338,7
+#YEAR:1998
+#VIDEO:v=2vmHANYQcVw
+#GENRE:Variété française
+#LANGUAGE:French
+#GAP:8819,399468556245
+#ALLKARAOKE_ID:celine-dion-sil-suffisait-daimer
+#ALLKARAOKE_SID:6973
+#ALLKARAOKE_LASTUPDATE:2026-11-08T03:43:07.170Z
+#ALLKARAOKE_ARTISTORIGIN:CA
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/fr/canciones?creador=cinemalin0
+#ALLKARAOKE_REALBPM:83
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/fr/canciones?cancion=S%27il+suffisait+d%27aimer
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:217
+#MP3:Céline Dion - S'il suffisait d'aimer.mp3
+#COVER:Céline Dion - S'il suffisait d'aimer.jpg
+#MEDLEYSTARTBEAT:425
+#MEDLEYENDBEAT:1582
+: 23 3 5 Je 
+: 28 5 10 rêve 
+: 40 3 9 son 
+: 44 2 7 vi
+: 50 6 9 sage 
+: 60 1 7 je 
+: 62 1 5 dé
+: 69 4 7 cli
+: 74 1 5 ne 
+: 80 5 4 son 
+: 91 6 5 corps
+- 97
+: 113 1 -2 Et 
+: 115 2 3 puis 
+: 119 2 5 je 
+: 123 3 7 l'i
+: 128 3 3 ma
+: 135 4 5 gine 
+: 141 2 2 ha
+: 145 2 0 bi
+: 151 4 -2 tant 
+: 157 10 3 mon 
+: 170 4 2 dé
+: 180 7 0 cor
+- 187
+: 200 1 2 J'au
+: 203 2 2 rais 
+: 209 3 -3 tant 
+: 216 2 2 à 
+: 219 2 0 lui 
+: 226 4 -2 dire 
+: 242 1 5 si 
+: 246 3 5 j'a
+: 250 1 0 vais 
+: 255 2 5 su 
+: 260 4 3 par
+: 266 6 2 ler
+- 272
+: 283 3 2 Com
+: 288 4 1 ment 
+: 293 1 4 lui 
+: 298 3 7 fai
+: 303 4 10 re 
+* 309 4 9 lire 
+: 314 1 7 au 
+: 321 4 5 fond 
+: 327 3 5 de 
+: 332 6 7 mes 
+* 344 5 9 pen
+: 357 14 9 sées?
+- 371 425
+- 425
+: 448 1 5 Mais 
+: 453 3 10 com
+: 457 3 10 ment 
+: 463 1 9 font 
+: 468 1 7 ces 
+: 473 6 9 autres 
+: 485 1 7 à 
+: 490 1 5 qui 
+: 496 3 7 tout 
+: 501 1 5 ré
+: 503 6 3 us
+: 514 5 5 si?
+- 519
+: 532 2 -2 Qu'on 
+: 535 4 3 me 
+: 542 3 5 di
+: 548 2 7 se 
+: 552 1 3 mes 
+: 558 3 5 fau
+: 565 1 2 tes 
+: 568 1 0 mes 
+: 574 4 -2 chi
+* 579 8 3 mères 
+: 588 4 2 aus
+: 599 6 0 si
+- 605
+: 620 1 2 Moi, 
+: 623 2 2 j'of
+: 629 2 -3 fri
+: 633 2 2 rais 
+: 637 3 0 mon 
+: 643 7 -2 âme
+- 650
+: 657 2 5 Mon 
+: 664 3 5 cœur 
+: 669 2 0 et 
+: 676 2 5 tout 
+: 680 2 3 mon 
+: 686 5 2 temps
+- 691
+: 702 1 2 Mais 
+: 706 2 1 j'ai 
+: 711 1 4 beau 
+: 716 2 7 tout 
+* 720 4 10 don
+* 726 3 9 ner, 
+: 734 2 7 tout 
+: 737 1 5 n'est 
+: 742 1 5 pas 
+: 748 5 7 suf
+: 759 6 9 fi
+: 769 24 9 sant
+- 793 873
+- 873
+: 896 7 5 S'il 
+: 909 2 7 suf
+: 915 2 9 fi
+: 922 27 10 sait 
+: 958 5 10 qu'on 
+: 971 4 9 s'ai
+: 978 7 2 me,
+- 985 990
+- 990
+: 1013 6 5 S'il 
+: 1024 2 10 suf
+: 1031 4 7 fi
+: 1040 11 5 sait 
+: 1056 1 3 d'ai
+: 1060 15 5 mer
+- 1075 1089
+- 1089
+: 1112 4 -2 Si 
+* 1120 2 10 l'on 
+: 1127 4 7 chan
+: 1135 6 5 geait 
+: 1143 1 3 les 
+: 1152 10 5 choses 
+: 1169 2 2 un 
+: 1175 1 0 peu
+: 1177 3 -2 ~,
+- 1180
+: 1200 1 -2 rien 
+: 1207 2 -5 qu'en 
+: 1211 2 -2 ai
+: 1217 14 0 mant 
+: 1233 3 2 don
+: 1238 11 0 ner
+- 1249
+: 1269 5 5 S'il 
+: 1278 2 7 suf
+: 1283 3 9 fi
+* 1289 26 10 sait 
+: 1323 5 10 qu'on 
+: 1338 3 9 s'ai
+: 1343 13 2 me,
+- 1356
+: 1379 4 -2 S'il 
+* 1389 1 10 suf
+: 1395 4 7 fi
+: 1403 9 5 sait 
+: 1415 1 3 d'ai
+: 1419 21 5 mer
+- 1440
+: 1463 2 -2 Je 
+* 1473 5 10 fe
+* 1480 5 7 rais 
+: 1487 4 5 de 
+: 1499 1 3 ce 
+: 1504 4 5 monde 
+: 1519 2 2 un 
+: 1523 5 -2 rêve,
+- 1528
+: 1550 1 -7 Une 
+* 1552 2 3 é
+: 1561 10 2 ter
+: 1573 7 0 ni
+: 1586 19 -2 té
+- 1605 1660
+- 1660
+: 1683 1 5 J'ai 
+: 1687 2 10 du 
+: 1693 2 10 sang 
+: 1697 3 9 dans 
+: 1701 1 7 mes 
+: 1707 6 9 songes, 
+: 1717 1 7 un 
+: 1722 1 5 pé
+: 1727 3 7 ta
+: 1732 1 5 le 
+: 1738 3 3 sé
+: 1747 4 5 ché
+- 1751
+: 1766 2 -2 Quand 
+: 1770 3 3 des 
+: 1775 5 5 lar
+: 1782 2 7 mes 
+: 1786 2 3 me 
+: 1791 3 5 ron
+: 1796 1 2 gent 
+: 1802 1 0 que 
+: 1805 2 -2 d'autres 
+: 1812 8 3 ont 
+: 1822 4 2 ver
+: 1833 4 0 sées
+- 1837
+: 1851 1 2 La 
+: 1855 3 2 vie 
+: 1860 2 -3 n'est 
+: 1868 1 2 pas 
+: 1871 1 0 é
+: 1875 9 -2 tanche, 
+: 1889 5 5 mon 
+: 1896 4 5 île 
+: 1905 1 0 est 
+: 1908 3 5 sous 
+: 1913 1 3 le 
+: 1916 6 2 vent
+- 1922
+: 1933 1 2 Les 
+: 1937 4 1 por
+: 1944 1 4 tes 
+: 1947 1 7 laissent 
+: 1953 4 10 en
+: 1960 2 9 trer 
+: 1963 1 7 les 
+: 1970 3 5 cris 
+: 1975 3 5 même 
+: 1980 4 7 en 
+: 1993 7 9 fer
+: 2002 17 9 mant
+- 2019 2074
+- 2074
+: 2097 2 5 Dans 
+* 2103 5 14 un 
+* 2110 3 14 jar
+* 2115 2 12 din 
+: 2119 2 10 l'en
+: 2125 5 12 fant, 
+: 2136 2 10 sur 
+: 2140 2 9 un 
+: 2144 4 10 bal
+: 2152 3 9 con 
+: 2157 3 7 des 
+: 2164 10 5 fleurs
+- 2174
+: 2183 1 -2 Ma 
+: 2187 2 3 vie 
+: 2193 1 5 pai
+: 2198 1 7 sible 
+: 2202 1 3 où 
+: 2208 1 5 j'en
+: 2214 3 2 tends 
+: 2219 1 0 bat
+: 2223 1 -2 tre 
+: 2231 6 3 tous 
+: 2240 5 2 les 
+: 2249 6 0 cœurs
+- 2255
+: 2268 2 2 Quand 
+: 2272 3 2 les 
+: 2277 2 -3 nu
+: 2281 3 2 a
+: 2285 1 0 ges 
+: 2291 6 -2 foncent
+- 2297
+: 2306 4 5 Pré
+: 2313 5 5 sa
+: 2322 3 0 ges 
+: 2327 2 5 des 
+: 2331 1 3 mal
+: 2334 9 2 heurs
+- 2343
+: 2353 2 2 Quel
+: 2357 1 1 les 
+: 2362 3 4 ar
+: 2367 3 7 mes 
+: 2372 3 10 ré
+: 2379 3 9 pondent 
+: 2386 3 7 aux 
+: 2391 2 5 pa
+: 2395 3 5 ys 
+: 2402 7 7 de 
+: 2413 6 9 nos 
+: 2423 23 9 peurs?
+- 2446 2529
+- 2529
+: 2552 8 5 S'il 
+: 2566 2 7 suf
+: 2572 3 9 fi
+: 2579 29 10 sait 
+: 2621 5 10 qu'on 
+: 2633 4 9 s'ai
+: 2640 8 2 me,
+- 2648 2655
+- 2655
+: 2678 6 5 S'il 
+* 2689 3 10 suf
+: 2695 5 7 fi
+: 2705 10 5 sait 
+: 2718 2 3 d'ai
+: 2722 20 5 mer
+- 2742 2751
+- 2751
+: 2774 4 -2 Si 
+: 2782 3 10 l'on 
+: 2790 4 7 chan
+: 2797 9 5 geait 
+: 2809 1 3 les 
+: 2815 8 5 choses 
+: 2830 3 2 un 
+: 2836 3 0 peu
+: 2841 2 -2 ~,
+- 2843
+: 2862 2 -2 Rien 
+: 2869 1 -5 qu'en 
+: 2872 4 -2 ai
+: 2878 15 0 mant 
+: 2895 3 2 don
+: 2901 10 0 ner
+- 2911
+: 2929 3 5 S'il 
+: 2936 2 7 suf
+: 2941 3 9 fi
+: 2948 26 10 sait 
+: 2980 5 10 qu'on 
+: 2990 2 10 s'ai
+: 2993 5 9 ~
+: 3001 1 2 me,
+- 3002 3017
+- 3017
+: 3040 2 -2 S'il 
+* 3048 2 10 suf
+: 3055 4 7 fi
+: 3062 8 5 sait 
+: 3075 2 3 d'ai
+: 3079 16 5 mer
+- 3095 3101
+- 3101
+: 3124 1 -2 Je 
+* 3132 4 10 fe
+* 3139 5 7 rais 
+: 3147 4 5 de 
+: 3158 3 3 ce 
+: 3163 9 5 monde 
+: 3179 3 2 un 
+: 3184 6 -2 rêve,
+- 3190
+: 3207 1 -7 Une 
+: 3209 6 3 é
+: 3221 2 3 ter
+: 3224 4 2 ~
+: 3232 6 0 ni
+: 3243 12 -2 té
+- 3255
+: 3276 7 5 S'il 
+: 3286 3 7 suf
+: 3292 2 9 fi
+: 3298 24 10 sait 
+: 3327 5 12 qu'on 
+: 3339 5 9 s'ai
+: 3345 4 7 me
+- 3349 3364
+- 3364
+: 3387 2 5 S'il 
+: 3395 2 10 suf
+: 3401 5 7 fi
+: 3409 4 5 sait 
+: 3420 1 3 d'ai
+: 3425 18 5 mer
+- 3443 3446
+- 3446
+: 3469 4 -2 Si 
+* 3477 3 10 l'on 
+: 3485 4 7 pou
+: 3490 7 5 vait 
+: 3503 2 3 chan
+: 3509 7 5 ger 
+: 3525 1 2 les 
+: 3530 2 0 choses
+: 3533 3 -2 ~
+- 3536
+: 3552 1 -2 Et 
+: 3557 7 -5 tout 
+: 3567 1 -2 re
+: 3572 12 0 com
+: 3586 5 2 men
+: 3595 10 0 cer
+- 3605
+: 3617 4 5 S'il 
+: 3624 2 7 suf
+: 3629 3 9 fi
+: 3635 21 10 sait 
+* 3661 12 14 qu'on 
+: 3683 3 9 s'aime
+: 3687 2 7 ~
+: 3690 7 5 ~,
+- 3697
+: 3713 1 -2 S'il 
+: 3720 9 7 suf
+: 3733 3 7 fi
+: 3739 15 9 sait 
+: 3756 3 10 d'ai
+: 3761 28 10 mer
+- 3789
+: 3810 1 -2 Nous 
+: 3815 2 7 fe
+: 3819 14 7 rions 
+: 3841 2 5 de 
+: 3848 3 3 ce 
+* 3854 17 5 rêve 
+* 3873 6 10 un 
+: 3880 46 10 monde
+- 3926 3948
+- 3948
+: 3971 2 -7 S'il 
+: 3981 3 2 suf
+: 3988 2 2 fi
+: 3993 25 0 sait 
+: 4023 3 -2 d'ai
+: 4029 156 -2 mer
+E
