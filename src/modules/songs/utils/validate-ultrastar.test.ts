@@ -27,9 +27,40 @@ R 15 9 24 And we just talk and we talk
 E
 `;
 
+const rapOnlySongTxt = `
+#ARTIST:Artist
+#TITLE:Title
+#BPM:60
+#LANGUAGE:Polish
+#GAP:0
+R 0 1 0 la
+- 1
+G 1 1 0 la
+F 2 1 0 la
+E
+`;
+
+const noNotesSongTxt = `
+#ARTIST:Artist
+#TITLE:Title
+#BPM:60
+#LANGUAGE:English
+#GAP:0
+- 1
+E
+`;
+
 describe('isValidUltrastarTxtFormat', () => {
   it('accepts valid Ultrastar txt', () => {
     expect(isValidUltrastarTxtFormat(validSongTxt)).toBe(true);
+  });
+
+  it('accepts songs with only rap and freestyle notes', () => {
+    expect(isValidUltrastarTxtFormat(rapOnlySongTxt)).toBe(true);
+  });
+
+  it('rejects songs without any notes', () => {
+    expect(isValidUltrastarTxtFormat(noNotesSongTxt)).toBe(false);
   });
 
   it('rejects songs with non-finite note values', () => {

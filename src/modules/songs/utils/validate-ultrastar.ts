@@ -30,7 +30,8 @@ export default function isValidUltrastarTxtFormat(songTxt: string) {
     }
   }
 
-  if (!lines.some((line) => line.startsWith(':'))) {
+  // Any note type counts - normal (:), golden (*), freestyle (F), rap (R), golden rap (G)
+  if (!lines.some((line) => /^[:*FRG] /.test(line))) {
     return false;
   }
 
