@@ -5,6 +5,7 @@ import { SongPreview } from '~/interfaces';
 import isSongRecentlyUpdated from '~/modules/songs/utils/is-song-recently-updated';
 import clearString, { removeAccents } from '~/modules/utils/clear-string';
 import { ExcludedLanguagesSetting, useSettingValue } from '~/routes/settings/settings-state';
+import { replaceSearchParam } from '~/routes/sing-a-song/song-selection/hooks/extended-preview-url';
 import { LANGUAGE_PLAYLIST_PREFIX, usePlaylists } from '~/routes/sing-a-song/song-selection/hooks/use-playlists';
 
 type FilterFunc = (
@@ -145,10 +146,7 @@ export const useSongListFilter = (
   const playlists = usePlaylists(prefilteredList, popular, isLoading, extraLanguage);
 
   const setPlaylist = (name: string) => {
-    /// push query param to url containing playlist name
-    const url = new URL(global.location?.href);
-    url.searchParams.set('playlist', name);
-    global.history.replaceState(null, '', url.toString());
+    replaceSearchParam('playlist', name);
 
     setSelectedPlaylist(name);
   };

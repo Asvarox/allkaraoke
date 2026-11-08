@@ -5,6 +5,12 @@ import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import { woosh } from '~/modules/sound-manager';
 import { randomInt } from '~/modules/utils/random-value';
 import startViewTransition from '~/modules/utils/start-view-transition';
+import {
+  closeExtendedPreview,
+  openExtendedPreview,
+  replaceSearchParam,
+  useIsPreviewExtended,
+} from '~/routes/sing-a-song/song-selection/hooks/extended-preview-url';
 import useSongList from '~/routes/sing-a-song/song-selection/hooks/use-song-list';
 import { useSongSelectionKeyboardNavigation } from '~/routes/sing-a-song/song-selection/hooks/use-song-selection-keyboard-navigation';
 import useToolbarKeyboardNav from '~/routes/sing-a-song/song-selection/hooks/use-toolbar-keyboard-nav';
@@ -22,14 +28,16 @@ export default function useSongSelection(additionalSong: string | null, songsPer
     setSelectedPlaylist,
     playlists,
   } = useSongList(cleanAdditionalSong);
-  const [keyboardControl, setKeyboardControl] = useState(true);
+  // `keyboardControl === false` means the song preview is extended
+  const keyboardControl = !useIsPreviewExtended();
   const [toolbarFocusMode, setToolbarFocusMode] = useState(false);
   const navigate = useSmoothNavigate();
 
   const handleKeyboardControl = (value: boolean, additionalUpdates?: () => void) => {
-    startViewTransition(() => {
+    startViewTransition(async () => {
+      if (value) await closeExtendedPreview();
       flushSync(() => {
-        setKeyboardControl(value);
+        if (!value) openExtendedPreview();
         additionalUpdates?.();
       });
     });
@@ -94,10 +102,7 @@ export default function useSongSelection(additionalSong: string | null, songsPer
 
   useEffect(() => {
     if (preselected && !isLoading && songList.length && songList.some((song) => song.id === cleanSelectedSongId)) {
-      /// push query param to url containing playlist name
-      const url = new URL(global.location?.href);
-      url.searchParams.set('song', selectedSongId!);
-      global.history.replaceState(null, '', url.toString());
+      replaceSearchParam('song', selectedSongId!);
     }
   }, [preselected, selectedSongId, songList, isLoading, cleanSelectedSongId]);
 
