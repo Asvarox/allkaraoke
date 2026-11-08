@@ -370,6 +370,7 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
                 data={metadataEntity}
                 songArtist={conversionResult?.artist}
                 videoId={conversionResult?.video ?? ''}
+                isAdminUnverifiedSong={!!adminUnverifiedSongId}
               />
             )}
 
