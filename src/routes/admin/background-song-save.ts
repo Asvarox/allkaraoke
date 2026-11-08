@@ -46,7 +46,7 @@ const publishSaves = () => {
 };
 
 const storeSong = async (sharedSongId: string, song: Song) => {
-  await SongDao.store(song);
+  await SongDao.storeAndPatchIndex(song);
   await shareSong(song.id);
   await updateAdminUnverifiedSong(sharedSongId, song);
   markAdminSongVerified(sharedSongId);

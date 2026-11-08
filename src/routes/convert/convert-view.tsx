@@ -38,6 +38,9 @@ function isEmptyValue<T>(v: T | T[] | undefined) {
   return Array.isArray(v) ? v.length === 0 : !v;
 }
 
+// Kept out of the component: React Compiler can't compile `||` inside a try block
+const getVideoIdOrFallback = (videoUrl: string, fallback: string) => getVideoId(videoUrl) || fallback;
+
 const steps = ['basic-data', 'author-and-video', 'sync', 'metadata'] as const;
 
 const getBasicDataFromSong = (song?: Song): BasicDataEntity => ({
@@ -117,7 +120,7 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
       if (isEdit)
         return {
           ...song,
-          video: getVideoId(authorAndVid.video) || song.video,
+          video: getVideoIdOrFallback(authorAndVid.video, song.video),
           author: authorAndVid.author,
           authorUrl: authorAndVid.authorUrl,
           sourceUrl: basicData.sourceUrl,
@@ -234,45 +237,47 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
     return getNextAdminUnverifiedSongProcessingUrl(songs, adminUnverifiedSongId!);
   };
 
-  const saveSong = async () => {
-    setIsSaving(true);
-    setSaveError(null);
-
-    try {
-      if (adminUnverifiedSongId) {
-        if (isAdminProcessingQueue) {
-          // Save in the background so the next song can be processed right away.
-          void saveAdminUnverifiedSongInBackground(adminUnverifiedSongId, finalSong!);
-          const nextUrl = await getAdminProcessingQueueRedirect();
-          navigate(nextUrl);
-          return;
-        }
-
-        await SongDao.store(finalSong!);
-        await shareSong(finalSong!.id);
-        await updateAdminUnverifiedSong(adminUnverifiedSongId, finalSong!);
-        markAdminSongVerified(adminUnverifiedSongId);
-        navigate('admin/');
-        return;
-      }
-
-      if (redirect && !adminUnverifiedSongId) {
-        // dont wait for the share to finish if redirect is set
-        SongDao.store(finalSong!);
-        shareSong(finalSong!.id);
-        navigate(`${redirect}?previousSongId=${finalSong!.id}`);
+  const persistSong = async () => {
+    if (adminUnverifiedSongId) {
+      if (isAdminProcessingQueue) {
+        // Save in the background so the next song can be processed right away.
+        void saveAdminUnverifiedSongInBackground(adminUnverifiedSongId, finalSong!);
+        const nextUrl = await getAdminProcessingQueueRedirect();
+        navigate(nextUrl);
         return;
       }
 
       await SongDao.store(finalSong!);
       await shareSong(finalSong!.id);
-
-      navigate(`edit/list/`, { id: finalSong!.id, created: !isEdit ? 'true' : null, song: null });
-    } catch (error) {
-      setSaveError(error instanceof Error ? error.message : 'Failed to save song');
-    } finally {
-      setIsSaving(false);
+      await updateAdminUnverifiedSong(adminUnverifiedSongId, finalSong!);
+      markAdminSongVerified(adminUnverifiedSongId);
+      navigate('admin/');
+      return;
     }
+
+    if (redirect && !adminUnverifiedSongId) {
+      // dont wait for the share to finish if redirect is set
+      SongDao.store(finalSong!);
+      shareSong(finalSong!.id);
+      navigate(`${redirect}?previousSongId=${finalSong!.id}`);
+      return;
+    }
+
+    await SongDao.store(finalSong!);
+    await shareSong(finalSong!.id);
+
+    navigate(`edit/list/`, { id: finalSong!.id, created: !isEdit ? 'true' : null, song: null });
+  };
+
+  const saveSong = async () => {
+    setIsSaving(true);
+    setSaveError(null);
+
+    // No try/finally - React Compiler can't compile it and would skip this whole component
+    await persistSong().catch((error: unknown) => {
+      setSaveError(error instanceof Error ? error.message : 'Failed to save song');
+    });
+    setIsSaving(false);
   };
 
   const onNextStep = () => {

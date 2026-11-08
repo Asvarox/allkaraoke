@@ -122,14 +122,19 @@ function Player({
 
   const duration = usePlayerSetDuration(player, currentStatus, onVideoDurationLoad);
 
-  useImperativeHandle(ref, () => ({
-    seekTo: (time: seconds) => player.current!.seekTo(time),
-    setPlaybackSpeed: (speed: number) => player.current!.setPlaybackSpeed(speed),
-    play: () => player.current!.playVideo(),
-    pause: () => player.current!.pauseVideo(),
-    getCurrentTime: async () => ((await player.current?.getCurrentTime()) ?? 0) * 1000,
-    getDuration: () => duration,
-  }));
+  // Deps keep the handle stable across the per-frame re-renders, so callback refs (e.g. a state setter) don't fire every frame
+  useImperativeHandle(
+    ref,
+    () => ({
+      seekTo: (time: seconds) => player.current!.seekTo(time),
+      setPlaybackSpeed: (speed: number) => player.current!.setPlaybackSpeed(speed),
+      play: () => player.current!.playVideo(),
+      pause: () => player.current!.pauseVideo(),
+      getCurrentTime: async () => ((await player.current?.getCurrentTime()) ?? 0) * 1000,
+      getDuration: () => duration,
+    }),
+    [duration],
+  );
 
   const onStateChangeCallback = useCallback(
     (state: VideoState) => {

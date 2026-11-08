@@ -21,6 +21,12 @@ export default function ManipulateBpm({ current, onChange, onUseCurrentTime, son
   const lastNoteEndBeat = Math.max(...song.tracks.map((track) => getLastNoteEndFromSections(track.sections)));
   const lastNoteEndMs = beatToMs(lastNoteEndBeat, song) + song.gap;
   const [desiredLastNoteEnd, setDesiredLastNoteEnd] = useState<number>(Math.round(lastNoteEndMs));
+  // Reset the target when the gap shifts - cheaper than remounting the whole form via `key`
+  const [gapOfDesiredEnd, setGapOfDesiredEnd] = useState(song.gap);
+  if (gapOfDesiredEnd !== song.gap) {
+    setGapOfDesiredEnd(song.gap);
+    setDesiredLastNoteEnd(Math.round(lastNoteEndMs));
+  }
   const estimatedBpm = desiredLastNoteEnd ? calculateProperBPM(desiredLastNoteEnd, song) : undefined;
 
   const setDesiredLastNoteEndToCurrentPlayerTime = async () => {
