@@ -110,8 +110,8 @@ function RecentlyAddedSongs({ className }: { className?: string }) {
         {/* The count is the heading — the four songs under it say "recently added" better than a
             title would, and the row has the height for one line, not two. */}
         <Menu.HelpText as="h2" className="min-w-0 flex-1 text-left">
-          <strong>{formatter.format(songsAddedRecently)} songs</strong> added in the last{' '}
-          <strong>{RECENT_WINDOW_DAYS} days</strong>
+          <strong data-test="recently-added-count">{formatter.format(songsAddedRecently)} songs</strong> added in the
+          last <strong>{RECENT_WINDOW_DAYS} days</strong>
         </Menu.HelpText>
         {/* Which page of the rotation this is — without it the row looks like it reshuffles itself
             at random rather than walking through a list. */}
@@ -166,11 +166,21 @@ function RecentlyAddedSongs({ className }: { className?: string }) {
                     padding. `text-shadow-legible` is what carries the first letter or two that still
                     land on the picture. */}
                 <div className="text-shadow-legible relative z-10 flex min-w-0 flex-col justify-center">
-                  <Typography className="text-md truncate leading-tight font-bold">{song.title}</Typography>
-                  <Typography className="truncate text-sm leading-snug opacity-75">{song.artist}</Typography>
+                  <Typography
+                    className="text-md truncate leading-tight font-bold"
+                    data-test="recently-added-song-title">
+                    {song.title}
+                  </Typography>
+                  <Typography
+                    className="truncate text-sm leading-snug opacity-75"
+                    data-test="recently-added-song-artist">
+                    {song.artist}
+                  </Typography>
                   {/* Truncated rather than wrapped: a second line here and not on the tile beside it
                       would make the row's height change with whichever page is up. */}
-                  <Typography className="text-active truncate text-xs leading-snug">
+                  <Typography
+                    className="text-active truncate text-xs leading-snug"
+                    data-test="recently-added-song-added-at">
                     added {dayjs(song.addedAt).fromNow()}
                   </Typography>
                 </div>
