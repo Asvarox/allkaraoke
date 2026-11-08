@@ -50,6 +50,16 @@ const noNotesSongTxt = `
 E
 `;
 
+const incompleteRapLineSongTxt = `
+#ARTIST:Artist
+#TITLE:Title
+#BPM:60
+#LANGUAGE:English
+#GAP:0
+R 
+E
+`;
+
 describe('isValidUltrastarTxtFormat', () => {
   it('accepts valid Ultrastar txt', () => {
     expect(isValidUltrastarTxtFormat(validSongTxt)).toBe(true);
@@ -61,6 +71,10 @@ describe('isValidUltrastarTxtFormat', () => {
 
   it('rejects songs without any notes', () => {
     expect(isValidUltrastarTxtFormat(noNotesSongTxt)).toBe(false);
+  });
+
+  it('rejects songs whose only note line is incomplete', () => {
+    expect(isValidUltrastarTxtFormat(incompleteRapLineSongTxt)).toBe(false);
   });
 
   it('rejects songs with non-finite note values', () => {

@@ -37,7 +37,10 @@ export default function isValidUltrastarTxtFormat(songTxt: string) {
 
   try {
     const song = convertTxtToSong(songTxt);
-    return hasOnlyFiniteSectionValues(song);
+    const hasNotes = song.tracks.some((track) =>
+      track.sections.some((section) => section.type === 'notes' && section.notes.length > 0),
+    );
+    return hasNotes && hasOnlyFiniteSectionValues(song);
   } catch (e) {
     console.log(e);
     return false;
