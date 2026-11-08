@@ -10,6 +10,7 @@ import useQueryParam from '~/modules/hooks/use-query-param';
 import { woosh } from '~/modules/sound-manager';
 import startViewTransition from '~/modules/utils/start-view-transition';
 import SingASong from '~/routes/sing-a-song/sing-a-song';
+import { closeExtendedPreview } from '~/routes/sing-a-song/song-selection/hooks/extended-preview-url';
 
 import Singing from './singing/singing';
 
@@ -54,7 +55,9 @@ function Game() {
             key={resetKey}
             songPreview={singSetup.song}
             singSetup={singSetup}
-            returnToSongSelection={() => {
+            returnToSongSelection={async () => {
+              // The URL keeps the preview open while singing (so a refresh restores it), but returning shows the list
+              await closeExtendedPreview();
               setPreselectedSong(singSetup.song.id);
               setSingSetup(null);
             }}

@@ -239,6 +239,7 @@ export default function SongPreviewComponent({
           }
           footer={
             <SongSettings
+              key={songPreview.id}
               songPreview={songPreview}
               onPlay={onPlay}
               keyboardControl={keyboardControl}

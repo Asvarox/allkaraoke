@@ -247,15 +247,8 @@ export default function SongSelection({ onSongSelected, preselectedSong, onSongF
           setAdditionalSong(songId);
         });
       }
-      if (focusedSong !== songId) {
-        moveToSong(songId);
-        if (!keyboardControl) {
-          setKeyboardControl(true);
-        }
-        expandSong();
-      } else if (keyboardControl) {
-        expandSong();
-      }
+      if (focusedSong !== songId) moveToSong(songId);
+      if (keyboardControl) expandSong();
     },
     [songList, focusedSong, keyboardControl, expandSong, moveToSong],
   );
