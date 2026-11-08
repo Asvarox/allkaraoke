@@ -28,6 +28,7 @@ interface Props {
   songArtist?: string;
   videoId: string;
   videoGap?: number;
+  isAdminUnverifiedSong?: boolean;
 }
 
 const useDefaultArtistOrigin = (artist: string) => {
@@ -115,6 +116,8 @@ export default function SongMetadata(props: Props) {
   const isRealBpmInvalid = +(props.data?.realBpm ?? 0) > 200;
 
   const [hasSearchedBpm, setHasSearchedBpm] = useState(false);
+  // Admins processing unverified songs shouldn't be blocked on researching the tempo
+  const isRealBpmRequired = !hasSearchedBpm && !props.isAdminUnverifiedSong;
 
   return (
     <div className="grid grid-cols-12 gap-4" data-test="song-metadata">
@@ -271,14 +274,14 @@ export default function SongMetadata(props: Props) {
                 save the song)
               </>
             ) : (
-              `The actual tempo of the song. Click the 'Lookup' button to look for it on Google. ${hasSearchedBpm ? "If you can't find it, you can still save the song" : ''}`
+              `The actual tempo of the song. Click the 'Lookup' button to look for it on Google. ${!isRealBpmRequired ? "If you can't find it, you can still save the song" : ''}`
             )
           }
           color={isRealBpmInvalid ? 'warning' : undefined}
           fullWidth
           type="number"
           size="small"
-          required={!hasSearchedBpm}
+          required={isRealBpmRequired}
           {...inputAction(() => {
             setHasSearchedBpm(true);
             searchGoogle('tempo');
