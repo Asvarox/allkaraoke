@@ -1,0 +1,451 @@
+#ARTIST:EPIC: The Musical (Jorge Rivera-Herrans, Barbara Wangui)
+#TITLE:Not Sorry For Loving You
+#CREATOR:Epic the musical
+#BPM:387,6
+#YEAR:2024
+#VIDEO:v=Q5i2-51LS20
+#GENRE:Musical
+#LANGUAGE:English
+#GAP:13263,808049535604
+#ALLKARAOKE_ID:epic-the-musical-jorge-rivera-herrans-barbara-wangui-not-sorry-for-loving-you
+#ALLKARAOKE_SID:7049
+#ALLKARAOKE_LASTUPDATE:2026-11-09T03:56:46.124Z
+#ALLKARAOKE_REALBPM:87
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=Q5i2-51LS20&list=RDQ5i2-51LS20&start_radio=1
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:191
+#MP3:EPIC: The Musical (Jorge Rivera-Herrans, Barbara Wangui) - Not Sorry For Loving You.mp3
+#COVER:EPIC: The Musical (Jorge Rivera-Herrans, Barbara Wangui) - Not Sorry For Loving You [CO].jpg
+#BACKGROUND:EPIC: The Musical (Jorge Rivera-Herrans, Barbara Wangui) - Not Sorry For Loving You [BG].jpg
+#END:180000
+: 26 4 8 Some
+: 34 7 7 one 
+: 46 5 8 ar
+: 52 7 0 rived 
+: 61 4 0 to
+: 66 15 0 day
+- 81
+: 97 4 8 They 
+: 106 5 7 said 
+: 115 5 8 they’re 
+: 126 5 0 tak
+: 132 4 0 ing 
+: 138 9 0 you 
+: 149 4 1 a
+: 155 9 0 way
+- 164
+: 168 4 8 That 
+: 174 8 7 you’re 
+: 185 4 8 not 
+: 196 6 0 mine 
+: 203 2 0 to 
+: 211 12 0 save
+- 223
+: 240 2 7 And 
+: 244 7 7 soon 
+: 253 7 8 I 
+: 261 5 0 won’t 
+: 270 8 0 get 
+: 279 2 0 to 
+: 283 3 0 see 
+: 287 3 1 your 
+: 299 9 1 face
+- 308
+: 312 3 8 So 
+: 319 5 7 I 
+: 329 5 8 came 
+: 337 5 0 by 
+: 344 2 0 to 
+: 352 12 3 say
+- 364
+: 382 2 8 You’re 
+: 388 2 8 un
+: 392 6 7 like 
+: 406 4 7 any
+: 411 6 8 ~
+: 419 10 7 one 
+: 431 5 7 I 
+: 438 2 5 have 
+: 444 3 7 ever
+: 449 3 8 ~ 
+: 454 16 5 known
+- 470
+: 491 3 0 ’Cause 
+: 497 3 5 you’re 
+: 502 6 7 all 
+: 509 3 5 I’ve 
+: 515 3 5 ever
+: 519 4 8 ~ 
+: 524 16 5 known
+- 540 572
+- 572
+: 598 7 8 And 
+: 608 5 10 if 
+: 616 4 12 I 
+: 623 8 3 pushed 
+: 634 6 7 you
+: 641 15 10 ~
+- 656
+: 668 3 8 Or 
+: 672 2 8 if 
+: 678 5 10 i 
+: 686 6 12 came 
+: 694 3 3 on 
+: 703 4 8 to 
+: 713 10 10 strong
+: 724 11 8 ~
+- 735
+: 739 3 8 Or 
+: 743 2 8 if 
+: 748 7 10 I 
+: 758 5 12 am
+: 765 10 3 bushed 
+: 780 1 9 you
+: 782 15 10 ~
+- 797
+: 811 4 8 For 
+: 819 7 10 that, 
+: 829 3 12 I’ll 
+: 837 5 3 say 
+: 844 1 8 I 
+: 846 5 10 was 
+: 853 13 10 wrong
+: 867 10 8 ~
+- 877
+: 881 6 8 And 
+: 890 4 10 if 
+: 898 7 12 you 
+: 909 8 3 hated 
+: 922 2 8 me
+: 925 12 10 ~
+- 937
+: 952 3 8 Then 
+: 961 4 10 I 
+: 966 3 12 am 
+: 975 3 12 sor
+: 979 3 13 ~
+: 983 3 12 ry
+: 987 3 10 ~ 
+: 993 6 10 my 
+: 1000 5 10 love’s 
+: 1010 3 7 to 
+: 1015 4 7 much 
+: 1023 3 8 for 
+: 1027 17 5 you
+- 1044 1088
+- 1088
+: 1114 2 15 But 
+: 1118 6 11 I’m 
+: 1126 4 13 not 
+: 1135 1 12 sor
+: 1137 2 13 ~
+: 1140 2 13 ry
+: 1143 4 12 ~
+: 1148 1 11 ~ 
+: 1152 3 10 for 
+: 1157 3 8 lov
+: 1162 1 11 ing
+- 1163
+: 1167 33 12 You
+- 1200 1234
+- 1234
+: 1260 5 10 Im 
+: 1269 4 13 not 
+: 1278 2 11 sor
+: 1281 4 13 ~
+: 1286 6 12 ry 
+: 1294 3 10 for 
+: 1300 3 8 lov
+: 1305 1 11 ing
+- 1306
+: 1310 20 12 You
+- 1330 1358
+- 1358
+F 1384 3 -4 Ca
+F 1388 5 3 lyp
+F 1394 8 3 so
+- 1402
+: 1406 4 3 Let 
+: 1415 4 10 me 
+: 1424 8 12 speak
+: 1433 4 10 ~
+- 1437
+: 1451 4 8 I 
+: 1458 4 7 spent 
+: 1465 5 8 my 
+: 1474 5 0 whole 
+: 1480 6 -2 life 
+: 1492 13 0 here
+- 1505
+: 1523 5 7 Was 
+: 1531 6 7 cast 
+: 1541 3 8 a
+: 1546 12 0 way 
+: 1561 3 -2 when 
+: 1567 4 0 I 
+: 1573 3 1 was 
+: 1578 7 0 young
+- 1585
+: 1594 3 8 A
+: 1598 5 7 lone 
+: 1607 4 7 for 
+: 1613 3 8 a 
+: 1621 3 0 hun
+: 1625 4 -2 dred 
+: 1634 16 0 years
+- 1650
+: 1665 2 8 I 
+: 1671 3 7 had 
+: 1676 6 7 no 
+: 1687 5 0 friends 
+: 1695 3 0 but 
+: 1703 2 -2 the 
+: 1710 5 0 sky 
+: 1716 4 1 and 
+: 1723 5 0 sun
+- 1728
+: 1736 3 8 So
+: 1740 5 7 ~ 
+: 1746 7 7 when 
+: 1755 3 8 you 
+: 1760 8 3 washed 
+: 1772 2 7 a
+: 1776 16 7 shore
+- 1792
+: 1807 3 8 I 
+: 1813 3 7 thought 
+: 1821 3 9 for 
+: 1829 3 8 sure
+: 1833 3 10 ~ 
+: 1839 3 7 that 
+: 1843 12 7 you 
+: 1857 4 7 were 
+: 1864 3 5 my 
+: 1870 6 7 dream 
+: 1879 3 8 come 
+: 1886 12 5 true
+: 1899 5 3 ~
+- 1904
+: 1914 3 8 I 
+: 1920 7 7 thought 
+: 1928 3 8 i 
+: 1934 14 5 knew
+: 1949 4 3 ~
+- 1953 1996
+- 1996
+: 2022 8 8 So 
+: 2031 3 10 if 
+: 2039 5 12 I 
+: 2049 6 3 pushed 
+: 2062 22 10 you
+- 2084
+: 2093 3 8 Or 
+: 2097 2 8 if 
+: 2101 4 10 I 
+: 2111 5 12 came 
+: 2120 3 3 on 
+: 2127 4 8 to 
+: 2138 19 7 strong
+- 2157
+: 2164 3 8 Or 
+: 2168 2 8 if 
+: 2173 8 10 i 
+: 2183 4 12 am 
+: 2189 9 3 pushed 
+: 2205 19 10 you
+- 2224
+: 2237 5 8 For 
+: 2245 6 10 that 
+: 2253 3 12 I’ll 
+: 2260 5 3 say 
+: 2267 2 3 I 
+: 2271 5 3 was 
+: 2280 12 10 wrong
+: 2297 2 8 ~
+: 2300 3 8 ~
+- 2303
+: 2307 4 8 And 
+: 2316 4 10 if 
+: 2324 4 12 you 
+: 2336 13 3 hate 
+: 2350 2 2 me~
+: 2353 2 3 ~
+: 2356 8 3 ~
+: 2365 7 3 ~
+- 2372
+: 2379 3 8 Then 
+: 2387 3 10 I 
+: 2392 3 12 am 
+: 2400 2 12 sor
+: 2404 2 13 ~
+: 2407 1 13 ry
+: 2409 2 12 ~
+: 2412 3 10 ~ 
+: 2418 7 10 my 
+: 2426 6 10 love’s 
+: 2435 5 7 too 
+: 2441 4 7 much 
+: 2450 3 8 for 
+: 2455 19 5 you
+- 2474 2512
+- 2512
+: 2538 2 15 But 
+: 2544 2 11 I’m 
+: 2552 4 13 not 
+: 2562 6 13 sor
+: 2569 6 12 ry 
+: 2577 2 10 for 
+: 2582 4 8 lov
+: 2587 2 10 ing
+- 2589
+: 2593 27 12 You
+- 2620 2661
+- 2661
+: 2687 3 13 I’m 
+: 2694 4 13 not 
+: 2703 2 12 sor
+: 2706 5 13 ~
+: 2712 5 12 ry 
+: 2720 3 10 for 
+: 2724 4 8 lov
+: 2729 1 10 ing
+- 2730
+: 2734 2 11 You
+: 2737 33 12 ~
+- 2770 2802
+- 2802
+: 2828 5 12 I’m 
+: 2837 3 13 not 
+: 2846 2 11 sor
+: 2849 4 13 ~
+: 2854 4 12 ry
+- 2858
+R 2862 2 8 I’m 
+R 2869 2 12 an
+R 2873 5 10 gry 
+R 2879 4 8 and 
+R 2888 7 10 tired 
+R 2897 3 8 and 
+R 2903 5 10 rest
+R 2909 3 10 less 
+R 2913 3 8 and 
+R 2921 5 3 sad
+- 2926
+R 2934 2 3 I’m 
+R 2939 4 9 stuck 
+R 2946 3 10 in 
+R 2951 3 8 the 
+R 2957 4 10 mo
+R 2962 4 10 ment 
+R 2969 3 8 I 
+R 2975 5 12 swore 
+R 2982 3 10 that 
+R 2986 3 8 we 
+R 2993 4 3 had
+- 2997
+R 3006 3 3 I 
+R 3012 3 12 wish 
+R 3018 3 10 you 
+R 3022 4 8 would 
+R 3027 5 7 chase 
+R 3034 1 5 me
+- 3035
+R 3039 3 3 Or 
+R 3047 4 12 try 
+R 3053 4 10 to 
+R 3058 3 8 em
+R 3064 4 7 brace 
+R 3070 3 5 me 
+R 3076 4 3 for 
+R 3081 7 3 once
+- 3088
+R 3096 2 3 I 
+R 3102 4 3 wish 
+R 3108 3 10 you 
+R 3112 3 8 would 
+R 3117 9 10 lie 
+R 3127 2 10 and 
+: 3133 8 22 say
+- 3141
+F 3145 2 3 I 
+F 3149 6 3 love 
+F 3159 9 0 you
+- 3168 3194
+- 3194
+F 3220 3 1 You 
+F 3224 8 1 do?
+- 3232
+: 3257 3 -7 But 
+: 3263 3 1 not 
+: 3268 4 1 in 
+: 3273 4 1 the 
+: 3278 4 1 way 
+: 3284 4 0 that 
+: 3291 3 -2 you 
+: 3295 7 -4 want 
+: 3304 3 -2 me 
+: 3310 28 0 to
+- 3338 3366
+- 3366
+: 3392 3 3 I 
+: 3398 7 13 hate 
+: 3408 6 13 that 
+: 3416 3 13 I 
+: 3425 3 12 fell 
+: 3429 3 11 in 
+: 3434 10 8 love 
+: 3445 2 10 with
+- 3447
+: 3451 39 12 You
+- 3490 3515
+- 3515
+: 3541 6 13 Why 
+: 3551 7 13 did 
+: 3559 5 13 I 
+: 3568 4 12 fall 
+: 3573 3 11 in 
+: 3577 9 8 love 
+: 3588 1 10 with
+- 3589
+: 3593 30 12 You
+- 3623 3658
+- 3658
+: 3684 4 19 What 
+: 3692 5 13 do 
+: 3698 6 13 I 
+: 3708 5 13 do 
+: 3714 5 12 with 
+: 3721 3 10 this 
+: 3726 7 8 love 
+: 3736 2 11 for
+- 3738
+* 3742 33 12 You
+* 3776 2 10 ~
+* 3779 7 12 ~
+* 3787 1 10 ~
+* 3789 14 7 ~
+- 3803
+: 3826 6 13 How 
+: 3833 5 13 I 
+: 3840 3 13 am 
+: 3848 2 13 sup
+: 3851 4 13 posed 
+: 3858 3 12 to 
+: 3862 2 10 get 
+: 3866 5 8 o
+: 3873 2 11 ver
+- 3875
+: 3879 2 11 You
+: 3882 24 12 ~
+- 3906 3943
+- 3943
+: 3969 7 3 Why 
+: 3979 3 13 in 
+: 3984 3 13 the 
+: 3991 8 13 world 
+: 4000 3 12 won’t 
+: 4004 5 10 you 
+: 4011 5 10 love 
+: 4017 4 8 me 
+: 4024 25 8 to?
+E
