@@ -1,0 +1,242 @@
+#ARTIST:Andrew Gold
+#TITLE:Spooky Scary Skeletons
+#CREATOR:stobb3s
+#BPM:400
+#YEAR:1996
+#VIDEO:v=sVjk5nrb_lI
+#GENRE:Halloween
+#LANGUAGE:English
+#GAP:17667,5
+#ALLKARAOKE_ID:andrew-gold-spooky-scary-skeletons
+#ALLKARAOKE_SID:7025
+#ALLKARAOKE_LASTUPDATE:2026-11-09T03:56:33.536Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:77
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=31225
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:159
+#MP3:Andrew Gold - Spooky Scary Skeletons.mp3
+#COVER:Andrew Gold - Spooky Scary Skeletons [CO].jpg
+#BACKGROUND:Andrew Gold - Spooky Scary Skeletons [BG].jpg
+#START:6.2
+#END:132100
+: 27 5 19 Spoo
+: 37 7 19 ky, 
+: 47 6 18 sca
+: 58 8 18 ry 
+: 69 6 11 skel
+: 78 3 14 e
+: 84 9 11 tons
+- 93
+: 99 5 23 Send 
+: 110 3 31 shi
+: 116 11 31 vers 
+: 131 5 30 down 
+: 141 5 30 your 
+: 151 8 23 spine
+- 159 165
+- 165
+: 192 4 19 Shrie
+: 202 5 19 king 
+: 213 6 18 skulls 
+: 223 5 18 will 
+: 234 5 11 shock 
+: 244 5 14 your 
+: 253 10 11 soul
+- 263
+: 275 6 26 Seal 
+: 286 6 28 your 
+: 297 6 25 doom 
+: 307 5 30 to
+: 317 9 23 night
+- 326 331
+- 331
+: 358 5 31 Spoo
+: 368 6 31 ky, 
+: 378 5 30 sca
+: 390 5 30 ry 
+: 399 7 23 skel
+: 410 3 26 e
+: 416 11 23 tons
+- 427
+: 440 5 31 Speak 
+: 451 4 31 with 
+: 462 5 30 such 
+: 472 4 30 a 
+: 482 13 23 screech
+- 495
+: 513 4 23 You’ll 
+: 523 5 31 shake 
+: 534 5 31 and 
+: 544 3 30 shu
+: 550 12 30 dder 
+: 566 5 23 in 
+: 576 3 26 sur
+: 582 10 23 prise
+- 592
+: 597 2 23 When 
+: 602 2 23 you 
+: 608 4 26 hear 
+: 618 4 28 these 
+: 629 5 25 zom
+: 639 5 26 bies 
+: 649 7 23 shriek
+- 656 664
+- 664
+: 691 4 29 We’re 
+: 700 5 31 so 
+: 711 7 29 so
+: 721 5 31 rry, 
+: 732 7 33 ske
+: 742 3 35 le
+: 748 10 33 tons, 
+: 764 5 31 you’re 
+: 774 5 29 so 
+: 784 7 31 mis
+: 796 6 29 un
+: 806 3 28 der
+: 812 23 26 stood
+- 835
+: 853 2 26 You 
+: 858 6 28 on
+: 867 9 29 ly 
+: 878 5 28 want 
+: 888 6 29 to 
+: 898 7 31 so
+: 908 2 33 cial
+: 914 15 31 ize
+- 929
+: 935 2 26 But 
+: 940 5 28 I 
+: 950 6 29 don’t 
+: 960 6 31 think 
+: 970 4 35 we 
+: 980 10 34 should
+- 990
+: 1010 5 18 ’Cause 
+: 1021 5 19 Spoo
+: 1031 7 19 ky, 
+: 1041 6 18 sca
+: 1052 8 18 ry 
+: 1063 6 11 skel
+: 1072 3 14 e
+: 1078 9 11 tons
+- 1087
+: 1095 5 23 Shout 
+: 1106 5 31 start
+: 1114 9 31 ling, 
+: 1127 7 30 shri
+: 1137 5 30 lly 
+: 1147 8 23 screams
+- 1155
+: 1177 5 18 They’ll 
+: 1188 5 19 sneak 
+: 1198 7 19 from 
+: 1208 6 18 their 
+: 1219 8 18 sar
+: 1230 6 11 coph
+: 1239 3 14 a
+: 1245 9 11 gus
+- 1254
+: 1261 4 23 And 
+: 1271 5 26 just 
+: 1282 6 28 won’t 
+: 1292 5 25 leave 
+: 1302 5 26 you 
+: 1312 8 23 be
+- 1320 1659
+- 1659
+: 1686 6 29 Spi
+: 1696 6 31 rits 
+: 1707 7 29 su
+: 1718 7 31 per
+: 1728 6 33 na
+: 1738 3 35 tur
+: 1745 9 33 al 
+: 1758 5 31 are 
+: 1768 7 29 shy, 
+: 1779 6 31 what’s 
+: 1791 7 29 all 
+: 1802 3 28 the 
+: 1808 17 26 fuss?
+- 1825
+: 1849 3 26 But 
+: 1854 5 28 bags 
+: 1863 5 29 of 
+: 1873 6 28 bones 
+: 1883 5 29 seem 
+: 1893 6 31 so 
+: 1903 3 33 un
+: 1909 11 31 safe
+- 1920
+: 1924 4 26 It’s 
+: 1935 2 28 se
+: 1941 11 29 mi-
+: 1956 6 31 ser
+: 1966 3 35 i
+: 1972 16 34 ous
+- 1988 1990
+- 1990
+: 2017 6 19 Spoo
+: 2028 5 19 ky, 
+: 2038 6 18 sca
+: 2049 5 18 ry 
+: 2059 7 11 skel
+: 2070 3 14 e
+: 2076 10 11 tons
+- 2086
+: 2090 4 23 Are 
+: 2101 3 31 sil
+: 2108 9 31 ly 
+: 2121 5 30 all 
+: 2130 5 30 the 
+: 2142 12 23 same
+- 2154
+: 2173 4 18 They’ll 
+: 2183 6 19 smile 
+: 2193 5 19 and 
+: 2204 6 18 scra
+: 2215 6 18 bble 
+: 2225 7 11 slow
+: 2236 3 14 ly 
+: 2242 13 11 by
+- 2255
+: 2258 3 23 And 
+: 2266 5 26 drive 
+: 2277 5 29 you 
+: 2287 5 34 so 
+: 2297 5 36 in
+: 2307 8 36 sane
+- 2315 2323
+- 2323
+: 2350 4 19 Sticks 
+: 2361 5 19 and 
+: 2371 4 18 stones 
+: 2382 5 18 will 
+: 2392 5 11 break 
+: 2401 3 14 your 
+: 2409 10 11 bones
+- 2419
+: 2423 4 23 They 
+: 2433 5 31 sel
+: 2444 5 31 dom 
+: 2454 4 30 let 
+: 2463 4 30 you 
+: 2473 11 23 snooze
+- 2484 2489
+- 2489
+: 2516 5 19 Spoo
+: 2526 5 19 ky, 
+: 2536 5 18 sca
+: 2546 5 18 ry 
+: 2556 7 11 skel
+: 2568 2 14 e
+: 2574 10 11 tons
+- 2584
+: 2592 3 23 Will 
+: 2599 10 26 wake 
+: 2620 10 28 you 
+: 2640 11 25 with 
+: 2661 11 26 a 
+: 2681 16 23 boo!
+E

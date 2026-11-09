@@ -1,0 +1,199 @@
+#ARTIST:Disney’s Pocahontas
+#TITLE:Jak uparty bębna dźwięk
+#CREATOR:slepyio
+#BPM:337
+#YEAR:1995
+#VIDEO:v=_3Slp_AYFtg
+#GENRE:Soundtrack
+#LANGUAGE:Polish
+#GAP:15650,771513353116
+#ALLKARAOKE_ID:disneys-pocahontas-jak-uparty-bebna-dzwiek
+#ALLKARAOKE_SID:7093
+#ALLKARAOKE_LASTUPDATE:2026-11-09T03:56:57.140Z
+#ALLKARAOKE_VOLUME:70
+#ALLKARAOKE_DURATION:97
+#MP3:Disney’s Pocahontas - Jak uparty bębna dźwięk.mp3
+#COVER:Disney’s Pocahontas - Jak uparty bębna dźwięk [CO].jpg
+#BACKGROUND:Disney’s Pocahontas - Jak uparty bębna dźwięk [BG].jpg
+: 22 8 -4 He 
+: 34 6 1 ga 
+: 47 8 -4 he 
+: 59 6 1 ga 
+: 72 3 -1 ya 
+: 78 2 1 hi 
+: 85 2 -2 ye
+: 91 3 -4 ~ 
+: 97 8 -4 he 
+: 110 5 -11 ga
+- 115
+: 122 5 -11 Ya 
+: 128 5 -4 hi 
+: 134 4 -4 ye
+: 140 4 -11 ~ 
+: 146 8 -11 ne 
+: 162 5 -6 he 
+: 174 9 -9 he 
+: 186 7 -7 ga
+- 193 254
+- 254
+: 276 8 -4 He 
+: 288 6 1 ga 
+: 300 8 -4 he 
+: 313 6 1 ga 
+: 325 3 -1 ya 
+: 332 2 1 hi 
+: 339 2 -2 ye
+: 346 3 -4 ~ 
+: 352 8 -4 he 
+: 366 5 -11 ga
+- 371
+: 378 5 -11 Ya 
+: 384 5 -4 hi 
+: 390 4 -4 ye
+: 396 4 -11 ~ 
+: 402 8 -11 ne 
+: 418 5 -6 he 
+: 430 8 -9 he 
+: 442 7 -7 ga
+- 449 511
+- 511
+: 533 2 -9 Jak 
+: 540 2 -4 u
+: 546 2 -4 par
+: 552 2 -9 ty 
+: 558 2 -4 bę
+: 564 2 -9 bna 
+: 570 4 -2 dźwięk,
+- 574
+: 584 2 0 Co 
+: 590 3 -2 wyz
+: 596 3 -4 wa
+: 602 3 -9 la 
+: 608 4 -4 fle
+: 614 3 -9 tu 
+: 621 8 -7 czar.
+- 629
+: 634 4 -9 Po
+: 640 2 -4 ra 
+: 648 2 -4 ro
+: 654 2 -9 ku 
+: 660 2 -4 zmie
+: 666 2 -9 nia 
+: 674 2 -2 się
+- 676
+: 685 2 0 Nio
+: 692 2 -2 sąc 
+: 698 2 -4 hoj
+: 704 2 -9 ny 
+: 710 2 -4 plo
+: 716 2 -9 nów 
+: 722 32 -7 dar.
+- 754
+: 774 2 -9 I 
+: 782 2 -4 nad 
+: 788 2 -4 brze
+: 794 3 -9 giem 
+: 800 2 -4 czys
+: 806 2 -9 tych 
+: 812 4 -2 wód,
+- 816
+: 826 2 0 Gdzie 
+: 832 2 -2 pa
+: 838 5 -4 nu
+: 844 2 -9 je 
+: 852 2 -4 je
+: 858 2 -9 siotr 
+: 866 3 -7 król.
+- 869
+: 878 2 -9 Dy
+: 884 2 -4 nia 
+: 890 2 -4 i 
+: 898 2 -9 do
+: 903 2 -4 rod
+: 910 2 -9 ny 
+: 916 2 -2 bób
+- 918
+: 928 2 0 Są 
+: 934 2 -2 oz
+: 940 2 -4 do
+: 946 2 -9 bą 
+: 952 2 -4 na
+: 958 2 -2 szych
+: 966 44 0 pól.
+- 1010
+: 1018 6 0 Dob
+: 1026 2 3 ry 
+: 1032 3 3 du
+: 1038 3 0 chu, 
+: 1044 4 3 us
+: 1051 2 0 łysz 
+: 1058 5 5 nas!
+- 1063
+: 1070 3 3 Ty 
+: 1076 3 0 wie
+: 1082 5 -2 rze
+: 1090 3 -4 nia 
+: 1096 4 -4 sta
+: 1102 5 -4 re 
+: 1110 3 -2 chroń!
+- 1113
+: 1122 3 0 Nie 
+: 1128 3 3 daj, 
+: 1134 3 3 by 
+: 1140 4 0 znicz 
+: 1146 4 3 świę
+: 1152 4 0 ty 
+: 1157 3 5 zgasł,
+- 1160
+: 1170 3 3 Niech 
+: 1178 3 0 pro
+: 1184 3 -2 wa
+: 1190 3 -4 dzi 
+: 1196 3 -4 nas 
+: 1202 3 -4 twa 
+* 1208 22 -2 dłoń!
+- 1230 1237
+- 1237
+: 1259 3 0 Po
+: 1266 3 3 ra 
+: 1274 3 3 ro
+: 1280 3 0 ku 
+: 1286 3 3 zmie
+: 1292 3 0 nia 
+: 1298 3 5 się,
+- 1301
+: 1310 3 3 Jak 
+: 1316 3 0 u
+: 1323 3 -2 par
+: 1329 3 -4 ty 
+: 1335 3 -4 bę
+: 1341 3 -4 bna 
+: 1347 3 -2 dźwięk.
+- 1350
+: 1362 3 0 Kwit
+: 1368 4 3 ną 
+: 1374 3 3 drze
+: 1380 3 0 wa, 
+: 1388 3 3 roś
+: 1394 3 0 nie 
+* 1400 45 5 plon,
+- 1445 1480
+- 1480
+: 1502 3 3 Jak 
+: 1508 3 0 u
+: 1514 4 -2 par
+: 1520 3 -4 ty 
+: 1526 3 -2 bę
+: 1532 6 -4 bna 
+: 1542 54 -4 ton.
+- 1596 1634
+- 1634
+: 1656 3 -4 Ya 
+: 1662 3 3 hi 
+: 1668 3 3 ye
+: 1674 4 -4 ~ 
+: 1680 3 -4 ne 
+: 1694 6 1 he 
+: 1706 5 -2 he 
+: 1720 13 0 ga
+E

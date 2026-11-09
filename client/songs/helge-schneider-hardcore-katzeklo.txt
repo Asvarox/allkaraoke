@@ -1,0 +1,339 @@
+#ARTIST:Helge Schneider & Hardcore
+#TITLE:Katzeklo
+#CREATOR:Peschi
+#BPM:330
+#YEAR:1993
+#VIDEO:v=o99uuZ6pNv4
+#LANGUAGE:German
+#GAP:241,8181818181818
+#ALLKARAOKE_ID:helge-schneider-hardcore-katzeklo
+#ALLKARAOKE_SID:7094
+#ALLKARAOKE_LASTUPDATE:2026-11-09T03:56:57.305Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=263
+#ALLKARAOKE_REALBPM:84
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=2038
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:185
+#MP3:Helge Schneider & Hardcore - Katzeklo.mp3
+: 7 5 9 Kat
+: 13 7 9 zen
+: 21 12 9 klo, 
+: 43 5 9 Kat
+: 49 5 9 zen
+: 55 12 9 klo,
+- 67
+: 75 6 10 Ja 
+: 83 6 7 das 
+: 91 6 7 macht 
+: 99 4 14 die 
+: 105 5 12 Kat
+: 111 5 10 ze 
+: 117 10 9 froh.
+- 127
+: 137 5 9 Kat
+: 143 5 9 zen
+: 149 10 9 klo, 
+: 169 5 9 Kat
+: 175 3 9 zen
+: 179 12 9 klo,
+- 191
+: 201 5 12 Macht 
+: 207 6 12 die 
+: 215 5 10 Kat
+: 221 5 7 ze 
+: 227 24 5 froh.
+- 251
+: 265 6 5 Willst 
+: 273 6 5 Du 
+: 281 7 5 ei
+: 289 4 7 ne 
+: 295 5 9 sau
+: 301 3 9 be
+: 305 4 9 re 
+: 313 5 7 Kat
+: 319 7 5 ze 
+: 327 15 7 ha
+: 343 10 0 ben,
+- 353 355
+- 355
+: 377 6 7 Musst 
+: 385 6 7 Du 
+: 393 5 7 im 
+: 399 5 9 Ge
+: 405 8 10 schäft 
+: 417 4 10 nach 
+: 423 3 10 Kat
+: 427 3 9 zen
+: 431 6 7 klo 
+: 439 14 9 fra
+: 455 10 5 gen.
+- 465
+: 471 7 9 Kat
+: 479 7 9 zen
+: 487 12 9 klo, 
+: 505 5 9 Kat
+: 511 3 9 zen
+: 515 10 9 klo,
+- 525
+: 537 6 10 Ja 
+: 545 6 7 das 
+: 553 6 7 macht 
+: 561 3 14 die 
+: 565 7 12 Kat
+: 573 5 10 ze 
+: 579 10 9 froh.
+- 589
+: 599 5 9 Kat
+: 605 5 9 zen
+: 611 12 9 klo, 
+: 631 5 9 Kat
+: 637 5 9 zen
+: 643 9 9 klo,
+- 652
+: 653 5 12 Macht 
+: 659 3 12 die 
+: 663 3 12 rich
+: 667 3 12 ti
+: 671 4 12 ge 
+: 677 5 10 Kat
+: 683 5 7 ze 
+: 689 12 5 froh.
+- 701 703
+- 703
+: 725 7 9 Kat
+: 733 5 9 zen
+: 739 12 9 klo, 
+: 757 5 9 Kat
+: 763 5 9 zen
+: 769 8 9 klo,
+- 777
+: 789 10 10 Ja 
+: 801 3 7 das 
+: 805 4 7 macht 
+: 813 4 14 die 
+: 819 5 12 Kat
+: 825 5 10 ze 
+: 831 10 9 froh.
+- 841
+: 851 7 9 Kat
+: 859 5 9 zen
+: 865 10 9 klo, 
+F 883 7 9 Kat
+F 891 5 9 zen
+F 897 12 9 klo,
+- 909
+F 917 2 12 Macht 
+F 923 1 12 die 
+F 925 1 12 rich
+F 927 1 12 ti
+F 929 2 12 ge 
+F 933 5 10 Kat
+F 939 4 7 ze 
+F 947 22 5 froh.
+- 969
+: 979 7 5 Gehst 
+: 987 6 7 Du 
+: 995 5 9 in’s 
+: 1001 5 5 Ge
+: 1007 8 7 schäft 
+: 1017 3 9 hi
+: 1021 8 10 nein,
+- 1029
+: 1037 9 12 Kaufst 
+: 1047 7 12 was 
+: 1055 5 12 schö
+: 1061 3 12 nes 
+: 1065 7 10 für die 
+: 1073 5 9 Kat
+: 1079 5 5 ze 
+: 1085 10 5 ein.
+- 1095
+: 1101 5 9 Kat
+: 1107 9 9 zen
+: 1117 10 9 klo, 
+: 1133 5 9 Kat
+: 1139 5 9 zen
+: 1145 10 9 klo,
+- 1155
+: 1165 8 10 Ja 
+: 1175 5 7 das 
+: 1181 6 7 macht 
+: 1189 6 14 die 
+: 1197 5 12 Kat
+: 1203 6 10 ze 
+: 1211 7 12 froh
+: 1219 9 21 ~
+- 1228
+: 1229 5 21 Kat
+: 1235 7 12 zen
+: 1243 10 14 klo, 
+: 1261 5 21 Kat
+: 1267 5 12 zen
+: 1273 8 14 klo,
+- 1281
+: 1283 3 12 Macht 
+: 1287 3 14 die 
+: 1291 3 12 rich
+: 1295 3 12 ti
+: 1299 6 12 ge 
+: 1307 5 14 Kat
+: 1313 3 7 ze 
+: 1317 10 5 froh.
+- 1327 1331
+- 1331
+F 1353 5 21 Kat
+F 1359 7 21 zen
+F 1367 12 21 klo, 
+F 1385 5 21 Kat
+F 1391 5 21 zen
+F 1397 12 21 klo,
+- 1409
+F 1417 6 22 Ja 
+F 1425 4 19 das 
+F 1433 4 19 macht 
+F 1441 4 26 die 
+F 1449 4 24 Kat
+F 1455 4 22 ze 
+F 1461 10 21 froh.
+- 1471
+F 1481 4 21 Kat
+F 1489 4 21 zen
+F 1497 8 21 klo, 
+F 1513 4 21 Kat
+F 1521 2 21 zen
+F 1527 6 21 klo,
+- 1533
+F 1535 1 24 Macht 
+F 1537 1 24 die 
+F 1539 3 24 rich
+F 1543 3 24 ti
+F 1547 7 24 ge 
+F 1555 6 22 Kat
+F 1565 4 19 ze 
+F 1571 24 17 froh.
+- 1595
+: 1599 1 5 Ei
+: 1601 3 5 ne 
+: 1605 3 5 Kat
+: 1609 3 5 ze 
+: 1613 7 5 will 
+: 1621 3 5 im
+: 1625 3 5 mer
+: 1629 6 5 zu 
+: 1637 5 7 fres
+: 1643 18 12 sen,
+- 1661
+: 1665 5 17 Eine 
+: 1671 3 19 Kat
+: 1675 3 19 ze 
+: 1679 5 19 will 
+: 1685 3 19 im
+: 1689 3 17 mer
+: 1693 4 19 zu 
+: 1699 3 21 fres
+: 1703 16 17 sen.
+- 1719
+: 1725 6 29 Ich 
+: 1733 3 29 ge
+: 1737 3 29 be 
+: 1741 3 29 ihr 
+: 1745 8 28 was,
+- 1753
+: 1757 4 26 Ich 
+: 1763 4 24 geb 
+: 1769 3 24 ihr 
+: 1773 3 24 was 
+: 1777 3 24 zu 
+: 1781 3 22 fres
+: 1785 9 21 sen
+- 1794
+: 1795 5 24 Sie 
+: 1801 3 24 be
+: 1805 7 24 zahlt 
+: 1813 6 21 nichts 
+: 1821 5 17 da
+: 1827 28 12 für.
+- 1855
+: 1869 4 12 Und 
+: 1879 6 16 das 
+: 1887 4 19 ist 
+: 1893 22 17 gut.
+- 1915 1929
+- 1929
+: 1951 6 12 Die 
+: 1959 5 17 Kat
+: 1965 6 17 ze 
+: 1989 9 19 frisst 
+: 1999 7 19 mir 
+: 2007 3 17 die 
+: 2011 3 21 Haa
+: 2015 1 20 re 
+: 2017 5 19 vom 
+: 2023 20 17 Kopf.
+- 2043 2059
+- 2059
+: 2081 6 12 Eine 
+: 2089 5 17 Kat
+: 2095 8 17 ze 
+: 2117 10 19 frisst 
+: 2129 6 12 den 
+: 2137 5 16 gan
+: 2143 5 19 zen 
+: 2149 16 17 Tag.
+- 2165
+: 2175 5 29 Da
+: 2181 5 29 mit 
+: 2187 3 29 es 
+: 2191 3 29 ihr 
+: 2195 6 28 gut 
+: 2203 8 26 geht, 
+: 2215 5 24 will 
+: 2221 5 24 sie 
+: 2227 7 22 fres
+: 2235 9 21 sen,
+- 2244
+: 2245 5 24 Ich 
+: 2251 3 24 stel
+: 2255 5 24 le 
+: 2261 5 21 ihr 
+: 2267 7 17 was 
+: 2275 30 12 hin.
+- 2305 2327
+- 2327
+: 2349 6 12 Sie 
+: 2357 7 16 isst 
+: 2365 9 19 datt 
+: 2375 14 17 auf.
+- 2389
+: 2409 5 21 Kat
+: 2415 5 21 zen
+: 2421 12 21 klo, 
+F 2441 3 21 Kat
+F 2445 3 21 zen
+F 2449 14 21 klo,
+- 2463
+F 2469 11 19 Ja 
+: 2481 3 19 das 
+: 2485 7 19 macht 
+: 2493 6 12 die 
+: 2501 6 17 Kat
+: 2509 4 21 ze 
+: 2515 12 12 froh.
+- 2527
+: 2533 5 17 Kat
+: 2539 7 17 zen
+: 2547 14 21 klo, 
+: 2565 5 22 Kat
+: 2571 5 21 zen
+: 2577 9 17 klo,
+- 2586
+: 2587 5 14 Macht 
+: 2593 3 13 die 
+: 2597 3 12 rich
+: 2601 3 12 ti
+: 2605 4 12 ge 
+: 2613 5 14 Kat
+: 2619 5 16 ze 
+: 2625 12 17 froh.
+E

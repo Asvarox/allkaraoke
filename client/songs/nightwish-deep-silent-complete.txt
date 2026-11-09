@@ -1,0 +1,248 @@
+#ARTIST:Nightwish
+#TITLE:Deep Silent Complete
+#CREATOR:geRt
+#BPM:370
+#YEAR:2000
+#VIDEO:v=TyXU91hH9lw
+#GENRE:Symphonic Metal
+#LANGUAGE:English
+#GAP:100
+#ALLKARAOKE_ID:nightwish-deep-silent-complete
+#ALLKARAOKE_SID:7064
+#ALLKARAOKE_LASTUPDATE:2026-11-09T03:56:47.935Z
+#ALLKARAOKE_ARTISTORIGIN:FI
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=62
+#ALLKARAOKE_REALBPM:124
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=2764
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:238
+#MP3:Nightwish - Deep Silent Complete.mp3
+: 0 17 12 Ha 
+: 18 15 11 ha 
+: 34 11 9 ha 
+: 46 16 7 ha 
+: 64 21 2 ha 
+: 86 81 4 ha
+- 167
+: 168 43 9 Ha 
+: 212 21 7 ha 
+: 234 17 2 ha 
+: 252 86 4 ha
+- 338
+: 340 17 12 Ha 
+: 358 21 16 ha 
+: 380 17 14 ha 
+: 398 13 9 ha 
+: 412 11 11 ha 
+: 424 82 12 ha
+- 506
+: 512 39 17 Ha 
+: 552 13 19 ha 
+: 566 15 17 ha 
+: 582 11 16 ha 
+: 594 122 14 ha
+- 716 1207
+- 1207
+: 1232 11 9 In 
+: 1244 15 11 your 
+: 1260 7 12 cre
+: 1268 7 12 a
+: 1276 11 11 tion 
+: 1288 11 9 hea
+: 1300 11 7 ven 
+: 1312 11 9 did 
+: 1324 5 11 de
+: 1330 19 11 cree
+- 1349
+: 1350 15 11 That 
+: 1366 9 7 in 
+: 1376 11 9 your 
+: 1388 9 11 arms 
+: 1398 11 11 sweet 
+: 1410 7 9 death 
+: 1418 13 7 should 
+: 1432 59 4 dwell
+- 1491
+: 1492 11 9 Deep 
+: 1504 13 11 Si
+: 1518 8 12 lent 
+: 1528 9 12 Com
+: 1538 9 11 ple- 
+: 1548 10 9 ete
+- 1558
+: 1560 9 7 Black 
+: 1570 9 9 Vel
+: 1580 7 11 vet 
+: 1588 20 11 Sea
+- 1608
+: 1612 7 11 The 
+: 1620 13 7 Si
+: 1634 15 9 rens 
+: 1650 5 11 are 
+: 1656 13 11 cal
+: 1670 7 9 ling 
+: 1678 9 7 for 
+: 1688 33 9 me- 
+: 1722 29 7 e
+- 1751
+: 1752 15 12 Ha 
+: 1768 9 11 ha 
+: 1778 7 9 ha 
+: 1786 15 7 ha 
+: 1802 13 2 ha 
+: 1816 66 4 ha
+- 1882
+: 1884 29 9 Ha 
+: 1914 15 7 ha 
+: 1930 17 2 ha 
+: 1948 59 4 ha
+- 2007
+: 2008 17 12 Ha 
+: 2026 19 16 ha 
+: 2046 11 14 ha 
+: 2058 11 9 ha 
+: 2070 9 11 ha 
+: 2080 60 12 ha
+- 2140
+: 2142 31 17 Ha 
+: 2174 11 19 ha 
+: 2186 9 17 ha 
+: 2196 7 16 ha 
+: 2204 62 14 ha
+- 2266
+: 2270 9 9 Saved 
+: 2280 11 11 my 
+: 2292 7 12 soul 
+: 2300 15 12 thin
+: 2316 9 11 ki
+: 2326 7 9 ng 
+: 2334 11 7 “this 
+: 2346 11 9 song’s 
+: 2358 7 11 a 
+: 2366 30 11 lie”
+- 2396
+: 2398 13 7 Sand 
+: 2412 9 9 on 
+: 2422 7 11 the 
+: 2430 15 11 shore 
+: 2446 9 9 is 
+: 2456 11 7 so 
+: 2468 52 4 dry
+- 2520
+: 2528 11 9 Deep 
+: 2540 11 11 Si
+: 2552 7 12 lent 
+: 2560 11 12 Com
+: 2572 9 11 ple- 
+: 2582 9 9 ete
+- 2591
+: 2592 11 7 Black 
+: 2604 11 9 Vel
+: 2616 7 11 vet 
+: 2624 23 11 Sea
+- 2647
+: 2648 3 11 Bra- 
+: 2652 7 9 ave 
+: 2660 9 7 day 
+: 2670 9 9 sin 
+: 2680 11 11 king 
+: 2692 9 11 in 
+: 2702 9 9 end 
+: 2712 9 7 less 
+: 2722 35 9 ni- 
+: 2758 36 7 ight
+- 2794 3283
+- 3283
+: 3308 11 9 The 
+: 3320 11 11 age 
+: 3332 5 12 will 
+: 3338 11 12 sa
+: 3350 11 11 a
+: 3362 7 9 ay 
+: 3370 9 7 “this 
+: 3380 9 9 po
+: 3390 9 11 et 
+: 3400 33 11 lies
+- 3433
+: 3434 5 7 Hea
+: 3440 9 7 ven 
+: 3450 7 9 ne
+: 3458 5 11 ver 
+: 3464 17 11 touched 
+: 3482 9 9 earth
+: 3492 7 7 ly 
+: 3500 56 4 face”
+- 3556
+: 3566 9 9 The 
+: 3576 11 11 age 
+: 3588 7 12 will 
+: 3596 11 12 sa
+: 3608 11 11 a
+: 3620 7 9 y 
+: 3628 11 7 “this 
+: 3640 11 9 night 
+: 3652 9 11 was 
+: 3662 24 11 ours
+- 3686
+: 3694 10 7 Blessed 
+: 3706 10 9 with 
+: 3718 7 11 the 
+: 3726 11 11 Deep 
+: 3738 9 9 the 
+: 3748 9 7 Si
+: 3758 9 9 lent 
+: 3768 9 9 the 
+: 3778 13 7 Com
+: 3792 34 7 plete
+- 3826 4057
+- 4057
+: 4082 13 12 Ha 
+: 4096 9 11 ha 
+: 4106 7 9 ha 
+: 4114 15 7 ha 
+: 4130 15 2 ha 
+: 4146 64 4 ha
+- 4210
+: 4212 33 9 Ha 
+: 4246 13 7 ha 
+: 4260 15 2 ha 
+: 4276 57 4 ha
+- 4333
+: 4334 21 12 Ha 
+: 4356 17 16 ha 
+: 4374 13 14 ha 
+: 4388 9 9 ha 
+: 4398 9 11 ha 
+: 4408 61 12 ha
+- 4469
+: 4470 31 17 Ha 
+: 4502 7 19 ha 
+: 4510 15 17 ha 
+: 4526 13 16 ha 
+: 4540 58 14 ha
+- 4598
+: 4600 11 12 Ha 
+: 4612 11 11 ha 
+: 4624 7 9 ha 
+: 4632 15 7 ha 
+: 4648 15 2 ha 
+: 4664 64 4 ha
+- 4728
+: 4730 31 9 Ha 
+: 4762 15 7 ha 
+: 4778 15 2 ha 
+: 4794 61 4 ha
+- 4855
+: 4856 19 12 Ha 
+: 4876 15 16 ha 
+: 4892 11 14 ha 
+: 4904 11 9 ha 
+: 4916 9 11 ha 
+: 4926 59 12 ha
+- 4985
+: 4986 33 17 Ha 
+: 5020 11 19 ha 
+: 5032 11 17 ha 
+: 5044 13 16 ha 
+: 5058 64 14 ha
+E

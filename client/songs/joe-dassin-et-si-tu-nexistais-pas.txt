@@ -1,0 +1,319 @@
+#ARTIST:Joe Dassin
+#TITLE:Et si tu n'existais pas
+#CREATOR:mustangfred
+#BPM:199,06
+#YEAR:1975
+#PREVIEWSTART:66
+#VIDEO:v=0fYr5vh3wXI
+#GENRE:Pop
+#LANGUAGE:French
+#GAP:8944,395860544559
+#ALLKARAOKE_ID:joe-dassin-et-si-tu-nexistais-pas
+#ALLKARAOKE_SID:7068
+#ALLKARAOKE_LASTUPDATE:2026-11-09T03:56:48.119Z
+#ALLKARAOKE_ARTISTORIGIN:FR
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/fr/canciones?creador=mustangfred
+#ALLKARAOKE_REALBPM:99
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/fr/canciones?artista=Joe+Dassin&idioma=fr
+#ALLKARAOKE_PREVIEWEND:99
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:191
+#MP3:Joe Dassin - Et si tu n'existais pas.mp3
+#COVER:Joe Dassin - Et si tu n'existais pas.jpg
+#MEDLEYSTARTBEAT:0
+#MEDLEYENDBEAT:535
+: 13 1 -6 Et 
+: 16 1 -1 si 
+: 20 3 1 tu 
+: 24 2 2 n'e
+: 29 3 1 xis
+: 36 1 -1 tais 
+: 40 3 -6 pas
+- 43
+: 56 2 -6 Dis
+: 60 2 -1 -moi 
+: 64 1 1 pour
+: 68 2 2 quoi 
+: 72 2 6 j'e
+: 77 5 9 xis
+: 85 3 7 te
+: 89 7 1 rais?
+- 96 117
+- 117
+: 130 1 1 Pour 
+: 133 3 2 traî
+: 137 6 4 ner 
+: 145 3 3 dans 
+: 149 3 4 un 
+: 153 6 6 mon
+: 161 1 4 de 
+: 165 3 6 sans 
+: 169 6 7 toi
+- 175 177
+- 177
+: 190 2 6 Sans 
+: 193 2 4 es
+: 198 3 2 poir 
+: 202 1 1 et 
+: 206 5 1 sans 
+: 214 1 -1 re
+: 218 4 2 gret
+- 222 257
+- 257
+: 270 2 -6 Et 
+: 274 1 -1 si 
+: 278 2 1 tu 
+: 282 2 2 n'e
+: 286 3 1 xis
+: 293 2 -1 tais 
+: 298 3 -6 pas
+- 301 302
+- 302
+: 315 1 -6 J'es
+: 318 3 -1 saie
+: 322 2 1 rais 
+* 325 4 2 d'in
+* 330 3 6 ven
+* 334 6 9 ter 
+: 342 4 7 l'a
+: 347 6 1 mour
+- 353 374
+- 374
+: 387 3 1 Comme 
+: 391 2 2 un 
+: 395 6 4 pein
+: 404 1 3 tre 
+: 407 2 4 qui 
+: 411 4 6 voit 
+: 419 1 4 sous 
+: 423 1 6 ses 
+: 426 5 7 doigts
+- 431 433
+- 433
+: 446 3 6 Naî
+: 451 2 4 tre 
+: 454 2 2 les 
+: 459 1 1 cou
+: 461 7 1 leurs 
+: 471 2 2 du 
+: 475 7 -3 jour
+- 482 494
+- 494
+: 507 1 -3 Et 
+: 511 6 4 qui 
+: 519 6 2 n'en 
+: 527 4 1 re
+: 534 3 -1 vient 
+: 539 9 -2 pas
+- 548 578
+- 578
+: 591 1 -6 Et 
+: 595 1 -1 si 
+: 599 3 1 tu 
+: 603 2 2 n'e
+: 608 2 1 xis
+: 614 2 -1 tais 
+: 619 8 -6 pas
+- 627
+: 635 2 -6 Dis
+: 638 3 -1 -moi 
+: 643 2 1 pour 
+: 647 2 2 qui 
+: 651 2 6 j'e
+: 655 5 9 xis
+* 663 4 7 te
+: 668 7 1 rais?
+- 675 694
+- 694
+: 707 2 1 Des 
+: 711 2 2 pas
+: 715 6 4 santes 
+: 723 3 3 en
+: 727 4 4 dor
+: 732 5 6 mies 
+: 739 4 4 dans 
+: 744 2 6 mes 
+: 747 7 7 bras
+- 754 755
+- 755
+: 768 2 6 Que 
+: 772 2 4 je 
+: 776 2 2 n'ai
+: 780 2 1 me
+: 783 6 1 rai 
+: 792 2 -1 ja
+: 796 6 2 mais
+- 802 835
+- 835
+: 848 1 -6 Et 
+: 852 1 -1 si 
+: 856 3 1 tu 
+: 860 2 2 n'e
+: 864 4 1 xis
+: 871 2 -1 tais 
+: 876 7 -6 pas
+- 883
+: 893 1 -6 Je 
+: 896 1 -1 ne 
+: 900 3 1 se
+: 904 1 2 rais 
+: 907 3 6 qu'un 
+* 912 7 9 point 
+: 920 2 7 de 
+: 924 7 1 plus
+- 931 952
+- 952
+: 965 2 1 Dans 
+: 970 1 2 ce 
+: 973 7 4 mon
+: 981 2 3 de 
+: 985 2 4 qui 
+: 988 7 4 vient 
+: 997 1 4 et 
+: 1001 2 6 qui 
+: 1005 10 7 va
+- 1015
+: 1025 3 6 Je 
+: 1029 2 4 me 
+: 1033 2 2 sen
+: 1037 3 1 ti
+: 1041 6 1 rais 
+: 1049 3 2 per
+: 1054 6 -3 du
+- 1060 1072
+- 1072
+: 1085 2 -3 J'au
+: 1088 7 4 rais 
+: 1097 5 2 be
+: 1105 6 1 soin 
+: 1113 2 -1 de 
+: 1117 9 -2 toi
+- 1126 1412
+- 1412
+: 1425 2 -3 Et 
+: 1430 1 2 si 
+: 1433 3 4 tu 
+: 1438 2 5 n'e
+: 1442 3 4 xis
+: 1449 1 2 tais 
+: 1453 5 -3 pas
+- 1458
+: 1469 2 -3 Dis
+: 1473 2 2 -moi 
+: 1477 2 4 com
+: 1480 3 5 ment 
+* 1485 2 9 j'e
+* 1490 4 12 xis
+* 1497 3 10 te
+* 1502 7 4 rais?
+- 1509 1529
+- 1529
+: 1542 1 4 Je 
+: 1545 3 5 pour
+: 1549 5 7 rais 
+: 1557 2 6 faire 
+: 1562 3 7 sem
+: 1566 5 9 blant 
+: 1573 2 7 d'ê
+: 1578 2 9 tre 
+: 1581 8 10 moi
+- 1589
+: 1601 3 9 Mais 
+: 1606 2 7 je 
+: 1609 2 5 ne 
+: 1614 3 4 se
+: 1618 5 4 rais 
+: 1625 4 2 pas 
+: 1630 5 5 vrai
+- 1635 1669
+- 1669
+: 1682 1 -3 Et 
+: 1686 1 2 si 
+: 1690 1 4 tu 
+: 1693 2 5 n'e
+: 1698 3 4 xis
+: 1704 2 2 tais 
+: 1709 8 -3 pas
+- 1717
+: 1725 1 -3 Je 
+: 1728 3 2 crois 
+: 1733 2 4 que 
+: 1737 2 5 je 
+* 1741 3 9 l'au
+* 1745 5 12 rais 
+: 1753 2 10 trou
+: 1757 6 4 vé
+- 1763 1784
+- 1784
+: 1797 1 4 Le 
+: 1801 1 5 se
+: 1804 7 7 cret 
+: 1813 3 6 de 
+: 1817 2 7 la 
+: 1821 6 9 vie, 
+: 1829 1 7 le 
+: 1833 1 9 pour
+: 1837 9 10 quoi
+- 1846
+: 1857 3 9 Sim
+: 1861 2 7 ple
+: 1864 3 5 ment 
+: 1869 1 4 pour 
+: 1873 5 4 te 
+: 1881 2 5 cré
+: 1884 7 0 er
+- 1891 1904
+- 1904
+: 1917 1 0 Et 
+: 1920 6 7 pour 
+: 1928 6 5 te 
+: 1937 5 4 re
+: 1944 2 2 gar
+: 1949 6 1 der
+- 1955 2115
+- 2115
+: 2128 1 -3 Et 
+: 2132 1 2 si 
+: 2135 3 4 tu 
+: 2140 2 5 n'e
+: 2144 3 4 xis
+: 2150 1 2 tais 
+: 2154 4 -3 pas
+- 2158
+: 2171 3 -3 Dis
+: 2175 2 2 -moi 
+: 2179 2 4 pour
+: 2183 2 5 quoi 
+: 2187 2 9 j'e
+: 2192 4 12 xis
+: 2199 3 10 te
+: 2204 6 4 rais?
+- 2210 2229
+- 2229
+: 2242 2 4 Pour 
+: 2247 2 5 traî
+: 2250 6 7 ner 
+: 2258 3 6 dans 
+: 2263 3 7 un 
+: 2267 6 9 mon
+: 2274 2 7 de 
+: 2278 3 9 sans 
+: 2282 7 10 toi
+- 2289
+: 2301 3 9 Sans 
+: 2306 1 7 es
+: 2310 3 5 poir 
+: 2314 1 4 et 
+: 2318 6 4 sans 
+: 2326 1 2 re
+: 2329 9 5 gret
+- 2338 2367
+- 2367
+: 2380 1 -3 Et 
+: 2384 1 2 si 
+: 2388 3 4 tu 
+: 2392 3 5 n'e
+: 2397 2 4 xis
+: 2403 1 2 tais 
+: 2407 6 -3 pas
+E
