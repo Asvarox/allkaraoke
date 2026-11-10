@@ -1406,6 +1406,35 @@
     "local": false
   },
   {
+    "id": "5-seconds-of-summer-heartbreak-girl",
+    "title": "Heartbreak Girl",
+    "artist": "5 Seconds of Summer",
+    "video": "RLLEB4Ac3Hg",
+    "language": [
+      "English"
+    ],
+    "bpm": 334.56,
+    "gap": 3843.6298421807746,
+    "year": "2014",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-11-10T05:30:35.860Z",
+    "realBpm": 167,
+    "previewStart": 36,
+    "previewEnd": 63,
+    "volume": 1,
+    "author": "Sing-Girl",
+    "duration": 200,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 7121,
+    "tracksCount": 1,
+    "search": "5secondsofsummerheartbreakgirl",
+    "local": false
+  },
+  {
     "id": "5-seconds-of-summer-hey-everybody",
     "title": "Hey Everybody!",
     "artist": "5 Seconds of Summer",
@@ -1957,6 +1986,33 @@
     "shortId": 6568,
     "tracksCount": 1,
     "search": "ahafootofthemountain",
+    "local": false
+  },
+  {
+    "id": "a-ha-hunting-high-and-low",
+    "title": "Hunting High And Low",
+    "artist": "a-ha",
+    "video": "s6VaeFCxta8",
+    "language": [
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 420,
+    "year": "1985",
+    "artistOrigin": "NO",
+    "lastUpdate": "2026-11-10T05:30:34.310Z",
+    "realBpm": 77,
+    "volume": 1,
+    "author": "exxi",
+    "duration": 223,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 7115,
+    "tracksCount": 1,
+    "search": "ahahuntinghighandlow",
     "local": false
   },
   {
@@ -6511,6 +6567,33 @@
     "shortId": 140,
     "tracksCount": 1,
     "search": "akinamelesssong",
+    "local": false
+  },
+  {
+    "id": "akira-yamaoka-feat-mary-elizabeth-mcglynn-waiting-for-you",
+    "title": "Waiting For You",
+    "artist": "Akira Yamaoka feat. Mary Elizabeth McGlynn",
+    "video": "XF3xCifQ290",
+    "language": [
+      "English"
+    ],
+    "bpm": 380,
+    "gap": 38803.15789473684,
+    "year": "2004",
+    "lastUpdate": "2026-11-10T05:30:33.860Z",
+    "genre": "Rock",
+    "realBpm": 67,
+    "volume": 1,
+    "author": "Double D",
+    "duration": 381,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 7108,
+    "tracksCount": 1,
+    "search": "akirayamaokafeatmaryelizabethmcglynnwaitingforyou",
     "local": false
   },
   {
@@ -11603,6 +11686,34 @@
     "local": false
   },
   {
+    "id": "ania-dabrowska-serce-nie-sluga",
+    "title": "Serce Nie Sługa",
+    "artist": "Ania Dąbrowska",
+    "video": "v6P8mQY0sDI",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 250,
+    "gap": 26030,
+    "year": "2018",
+    "artistOrigin": "PL",
+    "lastUpdate": "2026-11-10T05:30:55.555Z",
+    "genre": "Pop",
+    "videoGap": 10,
+    "volume": 70,
+    "author": "MylordWaliza",
+    "duration": 206,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 7157,
+    "tracksCount": 1,
+    "search": "aniadabrowskaserceniesluga",
+    "local": false
+  },
+  {
     "id": "ania-dabrowska-z-toba-nie-umiem-wygrac",
     "title": "Z Tobą nie umiem wygrać",
     "artist": "Ania Dąbrowska",
@@ -11627,6 +11738,33 @@
     "shortId": 7083,
     "tracksCount": 1,
     "search": "aniadabrowskaztobanieumiemwygrac",
+    "local": false
+  },
+  {
+    "id": "ania-szarmach-radosc-dzielenia",
+    "title": "Radość Dzielenia",
+    "artist": "Ania Szarmach",
+    "video": "tjDWI0Ea3Sw",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 300.09999999999957,
+    "gap": 2656.9513406156902,
+    "year": "2006",
+    "artistOrigin": "PL",
+    "lastUpdate": "2026-11-10T05:30:46.406Z",
+    "genre": "Christmas",
+    "volume": 70,
+    "author": "Pure6",
+    "duration": 230,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 7150,
+    "tracksCount": 1,
+    "search": "aniaszarmachradoscdzielenia",
     "local": false
   },
   {
@@ -14452,6 +14590,36 @@
     "local": false
   },
   {
+    "id": "ariya-bespechniy-angel",
+    "title": "Беспечный Ангел",
+    "artist": "Ария",
+    "video": "ztKl8qqZr0c",
+    "language": [
+      "Russian"
+    ],
+    "bpm": 132,
+    "gap": 17981.272727272728,
+    "year": "2004",
+    "artistOrigin": "RU",
+    "lastUpdate": "2026-11-10T05:30:43.686Z",
+    "genre": "Rok",
+    "realBpm": 130,
+    "previewStart": 19,
+    "previewEnd": 50,
+    "volume": 1,
+    "author": "Человек со слухом",
+    "duration": 239,
+    "tracks": [
+      {
+        "start": 9
+      }
+    ],
+    "shortId": 7132,
+    "tracksCount": 1,
+    "search": "ariyabespechniyangel",
+    "local": false
+  },
+  {
     "id": "ariya-shtil",
     "title": "Shtil",
     "artist": "Ariya",
@@ -15727,6 +15895,36 @@
     "shortId": 5319,
     "tracksCount": 1,
     "search": "atomickittenwholeagain",
+    "local": false
+  },
+  {
+    "id": "attaque-77-no-me-arrepiento-de-este-amor",
+    "title": "No me arrepiento de este amor",
+    "artist": "Attaque 77",
+    "video": "qN3Y3Z5-3sw",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 380.84,
+    "gap": 20243.334523684487,
+    "year": "2006",
+    "artistOrigin": "AR",
+    "lastUpdate": "2026-11-10T05:30:46.138Z",
+    "genre": "Rock",
+    "realBpm": 380.84,
+    "volume": 1,
+    "author": "subkei",
+    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=subkei",
+    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Attaque%2077&cancion=No%20me%20arrepiento%20de%20este%20amor",
+    "duration": 208,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 7145,
+    "tracksCount": 1,
+    "search": "attaque77nomearrepientodeesteamor",
     "local": false
   },
   {
@@ -18149,6 +18347,36 @@
     "shortId": 6403,
     "tracksCount": 1,
     "search": "babymetalheadbangeeeeerrrrr",
+    "local": false
+  },
+  {
+    "id": "babymetal-karate",
+    "title": "Karate",
+    "artist": "Babymetal",
+    "video": "GvD3CHA48pA",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 360,
+    "gap": 70180,
+    "year": "2016",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-11-10T05:30:45.741Z",
+    "realBpm": 180,
+    "previewStart": 82,
+    "previewEnd": 122,
+    "volume": 0.79,
+    "author": "Su-Metal",
+    "sourceUrl": "https://www.youtube.com/watch?v=GvD3CHA48pA",
+    "duration": 293,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 7139,
+    "tracksCount": 1,
+    "search": "babymetalkarate",
     "local": false
   },
   {
@@ -28604,6 +28832,57 @@
     "local": false
   },
   {
+    "id": "bracia-figo-fagot-bozenka",
+    "title": "Bożenka",
+    "artist": "Bracia Figo Fagot",
+    "video": "KaOEVHQoHzM",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 280,
+    "gap": 17802.14285714286,
+    "year": "2012",
+    "lastUpdate": "2026-11-10T05:30:45.291Z",
+    "volume": 70,
+    "author": "gpm",
+    "duration": 223,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 7136,
+    "tracksCount": 1,
+    "search": "braciafigofagotbozenka",
+    "local": false
+  },
+  {
+    "id": "bracia-figo-fagot-czy-kochalabys-mnie-bardziej",
+    "title": "Czy kochałabyś mnie bardziej",
+    "artist": "Bracia Figo Fagot",
+    "video": "v2R3_8zhQ2U",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 260,
+    "gap": 3029.230769230769,
+    "year": "2025",
+    "lastUpdate": "2026-11-10T05:30:34.449Z",
+    "genre": "Disco-Polo, Parodia",
+    "volume": 70,
+    "author": "MylordWaliza",
+    "duration": 96,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 7117,
+    "tracksCount": 1,
+    "search": "braciafigofagotczykochalabysmniebardziej",
+    "local": false
+  },
+  {
     "id": "bracia-wierze-w-lepszy-swiat",
     "title": "Wierzę w lepszy świat",
     "artist": "Bracia",
@@ -35771,6 +36050,34 @@
     "local": false
   },
   {
+    "id": "caroline-polachek-so-hot-youre-hurting-my-feelings",
+    "title": "So Hot You’re Hurting My Feelings",
+    "artist": "Caroline Polachek",
+    "video": "sn3cHUtNZKo",
+    "language": [
+      "English"
+    ],
+    "bpm": 448.16,
+    "gap": 3085.8943234559083,
+    "year": "2019",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-10T05:30:46.532Z",
+    "genre": "Pop",
+    "realBpm": 112,
+    "volume": 1,
+    "author": "lukmuk",
+    "duration": 194,
+    "tracks": [
+      {
+        "start": 30
+      }
+    ],
+    "shortId": 7151,
+    "tracksCount": 1,
+    "search": "carolinepolacheksohotyourehurtingmyfeelings",
+    "local": false
+  },
+  {
     "id": "caroline-polachek-welcome-to-my-island",
     "title": "Welcome To My Island",
     "artist": "Caroline Polachek",
@@ -36557,6 +36864,34 @@
     "shortId": 5067,
     "tracksCount": 1,
     "search": "celinedionpeabobrysonbeautyandthebeast",
+    "local": false
+  },
+  {
+    "id": "celine-dion-pour-que-tu-maimes-encore",
+    "title": "Pour que tu m’aimes encore",
+    "artist": "Céline Dion",
+    "video": "AzaTyxMduH4",
+    "language": [
+      "French"
+    ],
+    "bpm": 360.4,
+    "gap": 9641.10987791343,
+    "year": "1995",
+    "artistOrigin": "CA",
+    "lastUpdate": "2026-11-10T05:30:36.006Z",
+    "genre": "Pop",
+    "realBpm": 90,
+    "volume": 1,
+    "author": "Canni",
+    "duration": 251,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 7123,
+    "tracksCount": 1,
+    "search": "celinedionpourquetumaimesencore",
     "local": false
   },
   {
@@ -43341,6 +43676,33 @@
     "shortId": 1050,
     "tracksCount": 1,
     "search": "customizcoolest",
+    "local": false
+  },
+  {
+    "id": "cute-is-what-we-aim-for-the-curse-of-curves",
+    "title": "The Curse Of Curves",
+    "artist": "Cute Is What We Aim For",
+    "video": "UAQcNo9yWbM",
+    "language": [
+      "English"
+    ],
+    "bpm": 292.44,
+    "gap": 350.95199015182607,
+    "year": "2007",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-10T05:30:46.534Z",
+    "realBpm": 146,
+    "volume": 1,
+    "author": "synonomy",
+    "duration": 202,
+    "tracks": [
+      {
+        "start": 7
+      }
+    ],
+    "shortId": 7152,
+    "tracksCount": 1,
+    "search": "cuteiswhatweaimforthecurseofcurves",
     "local": false
   },
   {
@@ -51416,6 +51778,33 @@
     "local": false
   },
   {
+    "id": "disneys-camp-rock-2-nick-jonas-introducing-me",
+    "title": "Introducing Me",
+    "artist": "Disney’s Camp Rock 2 (Nick Jonas)",
+    "video": "ukWPR88H53Q",
+    "language": [
+      "English"
+    ],
+    "bpm": 226,
+    "gap": 4674.424778761062,
+    "year": "2010",
+    "lastUpdate": "2026-11-10T05:30:46.007Z",
+    "genre": "Soundtrack",
+    "realBpm": 113,
+    "volume": 1,
+    "author": "Victorin",
+    "duration": 189,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 7144,
+    "tracksCount": 1,
+    "search": "disneyscamprock2nickjonasintroducingme",
+    "local": false
+  },
+  {
     "id": "disneys-camp-rock-2-this-is-our-song",
     "title": "This Is Our Song",
     "artist": "Disney’s Camp Rock 2",
@@ -54155,6 +54544,34 @@
     "local": false
   },
   {
+    "id": "disneys-the-little-mermaid-under-the-sea",
+    "title": "Under The Sea",
+    "artist": "Disney’s The Little Mermaid",
+    "video": "GC_mV1IpjWA",
+    "language": [
+      "English"
+    ],
+    "bpm": 326.2,
+    "gap": 15538.350705088902,
+    "year": "1989",
+    "lastUpdate": "2026-11-10T05:30:32.336Z",
+    "genre": "Soundtrack",
+    "realBpm": 100,
+    "volume": 1,
+    "author": "Kimbo",
+    "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=5844",
+    "duration": 207,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 7103,
+    "tracksCount": 1,
+    "search": "disneysthelittlemermaidunderthesea",
+    "local": false
+  },
+  {
     "id": "disneys-the-muppets-man-or-muppet",
     "title": "Man Or Muppet",
     "artist": "Disney’s The Muppets",
@@ -55604,6 +56021,33 @@
     "local": false
   },
   {
+    "id": "doda-pamietnik",
+    "title": "Pamiętnik",
+    "artist": "Doda",
+    "video": "KTFF95ooA0A",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 376,
+    "gap": 8682.659574468085,
+    "year": "2026",
+    "artistOrigin": "PL",
+    "lastUpdate": "2026-11-10T05:30:34.145Z",
+    "genre": "Rock",
+    "volume": 1,
+    "author": "MylordWaliza",
+    "duration": 191,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 7111,
+    "tracksCount": 1,
+    "search": "dodapamietnik",
+    "local": false
+  },
+  {
     "id": "dodger-ben-briggs-besso0-undertale-from-undertale",
     "title": "Undertale (from Undertale)",
     "artist": "Dodger, Ben Briggs & Besso0",
@@ -55957,6 +56401,31 @@
     "local": false
   },
   {
+    "id": "domowe-melodie-grazka",
+    "title": "Grażka",
+    "artist": "Domowe Melodie",
+    "video": "PjpdgvPnOEQ",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 373.24,
+    "gap": 9215.284535419569,
+    "year": "2012",
+    "lastUpdate": "2026-11-10T05:30:55.561Z",
+    "volume": 70,
+    "author": "Pazio777",
+    "duration": 138,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 7163,
+    "tracksCount": 1,
+    "search": "domowemelodiegrazka",
+    "local": false
+  },
+  {
     "id": "don-mclean-american-pie",
     "title": "American Pie",
     "artist": "Don McLean",
@@ -56063,6 +56532,35 @@
     "shortId": 1349,
     "tracksCount": 1,
     "search": "donswanderdeepintheheartoftexaspart2",
+    "local": false
+  },
+  {
+    "id": "don-williams-some-broken-hearts-never-mend",
+    "title": "Some Broken Hearts Never Mend",
+    "artist": "Don Williams",
+    "video": "ONAhFxPapWg",
+    "language": [
+      "English"
+    ],
+    "bpm": 391,
+    "gap": 8462.557544757034,
+    "year": "1976",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-10T05:30:34.311Z",
+    "genre": "Country",
+    "realBpm": 200,
+    "volume": 1,
+    "author": "ultrastarsongs",
+    "sourceUrl": "Don Williams",
+    "duration": 164,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 7116,
+    "tracksCount": 1,
+    "search": "donwilliamssomebrokenheartsnevermend",
     "local": false
   },
   {
@@ -67480,6 +67978,33 @@
     "local": false
   },
   {
+    "id": "feel-no-kochaj-mnie",
+    "title": "No kochaj mnie",
+    "artist": "Feel",
+    "video": "pSxTkAG6DFo",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 360,
+    "gap": 3220,
+    "year": "2009",
+    "artistOrigin": "PL",
+    "lastUpdate": "2026-11-10T05:30:55.560Z",
+    "genre": "Pop, Rock",
+    "volume": 70,
+    "author": "mylordwaliza",
+    "duration": 204,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 7161,
+    "tracksCount": 1,
+    "search": "feelnokochajmnie",
+    "local": false
+  },
+  {
     "id": "feel-pokaz-na-co-cie-stac",
     "title": "Pokaż na co Cię stać",
     "artist": "Feel",
@@ -69339,6 +69864,34 @@
     "shortId": 7022,
     "tracksCount": 1,
     "search": "florencethemachinemylove",
+    "local": false
+  },
+  {
+    "id": "florence-the-machine-no-light-no-light",
+    "title": "No Light, No Light",
+    "artist": "Florence + the Machine",
+    "video": "HGH-4jQZRcc",
+    "language": [
+      "English"
+    ],
+    "bpm": 263.76,
+    "gap": 30556.34212920837,
+    "year": "2011",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-11-10T05:30:34.147Z",
+    "genre": "Baroque Pop",
+    "realBpm": 132,
+    "volume": 1,
+    "author": "Senortruco",
+    "duration": 255,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 7112,
+    "tracksCount": 1,
+    "search": "florencethemachinenolightnolight",
     "local": false
   },
   {
@@ -75394,6 +75947,36 @@
     "local": false
   },
   {
+    "id": "girls-generation-i-got-a-boy",
+    "title": "I GOT A BOY",
+    "artist": "Girls' Generation",
+    "video": "wq7ftOZBy0E",
+    "language": [
+      "Korean"
+    ],
+    "bpm": 280.22,
+    "gap": 30103.941974163157,
+    "year": "2013",
+    "artistOrigin": "KR",
+    "lastUpdate": "2026-11-10T05:30:34.582Z",
+    "genre": "Kpop",
+    "realBpm": 140,
+    "volume": 1,
+    "author": "subkei",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=subkei",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Girls%27%20Generation&cancion=I%20GOT%20A%20BOY",
+    "duration": 305,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 7118,
+    "tracksCount": 1,
+    "search": "girlsgenerationigotaboy",
+    "local": false
+  },
+  {
     "id": "girls-generation-oh",
     "title": "Oh!",
     "artist": "Girls' Generation",
@@ -77459,6 +78042,38 @@
     "local": false
   },
   {
+    "id": "gracie-abrams-i-love-you-im-sorry",
+    "title": "I Love You, I’m Sorry",
+    "artist": "Gracie Abrams",
+    "video": "uxjhN_Donfw",
+    "language": [
+      "English"
+    ],
+    "bpm": 383,
+    "gap": 3751.723237597911,
+    "year": "2024",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-10T05:30:46.005Z",
+    "genre": "Pop, Rock",
+    "realBpm": 116,
+    "previewStart": 36,
+    "previewEnd": 53,
+    "volume": 1,
+    "author": "Battman",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=138379",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=32480",
+    "duration": 234,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 7143,
+    "tracksCount": 1,
+    "search": "gracieabramsiloveyouimsorry",
+    "local": false
+  },
+  {
     "id": "gracie-abrams-thats-so-true",
     "title": "That’s So True",
     "artist": "Gracie Abrams",
@@ -78519,6 +79134,34 @@
     "local": false
   },
   {
+    "id": "green-day-st-jimmy",
+    "title": "St. Jimmy",
+    "artist": "Green Day",
+    "video": "UuhjHwr8YXo",
+    "language": [
+      "English"
+    ],
+    "bpm": 393.1,
+    "gap": 2787.8860340880183,
+    "year": "2004",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-10T05:30:46.267Z",
+    "genre": "Rock",
+    "realBpm": 136,
+    "volume": 1,
+    "author": "DarkPixels",
+    "duration": 181,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 7146,
+    "tracksCount": 1,
+    "search": "greendaystjimmy",
+    "local": false
+  },
+  {
     "id": "green-day-stray-heart",
     "title": "Stray Heart",
     "artist": "Green Day",
@@ -79387,6 +80030,34 @@
     "shortId": 1819,
     "tracksCount": 1,
     "search": "grzegorzturnaucichosza",
+    "local": false
+  },
+  {
+    "id": "guelsen-of-of",
+    "title": "Of of",
+    "artist": "Gülşen",
+    "video": "8ubZ6xl5Sz4",
+    "language": [
+      "Turkish"
+    ],
+    "bpm": 252.1,
+    "gap": 16418.496628322093,
+    "year": "2004",
+    "artistOrigin": "TR",
+    "lastUpdate": "2026-11-10T05:30:55.419Z",
+    "realBpm": 126,
+    "volume": 1,
+    "author": "logo123",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=7224",
+    "duration": 197,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 7156,
+    "tracksCount": 1,
+    "search": "guelsenofof",
     "local": false
   },
   {
@@ -81377,6 +82048,34 @@
     "shortId": 6139,
     "tracksCount": 1,
     "search": "hannahmontanaillalwaysrememberyou",
+    "local": false
+  },
+  {
+    "id": "hannah-montana-ordinary-girl",
+    "title": "Ordinary Girl",
+    "artist": "Hannah Montana",
+    "video": "-vHKfwuCrQM",
+    "language": [
+      "English"
+    ],
+    "bpm": 365.36,
+    "gap": 1594.6704620100722,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-10T05:30:46.403Z",
+    "genre": "Soundtrack",
+    "realBpm": 91,
+    "volume": 1,
+    "author": "Victorin",
+    "duration": 157,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 7148,
+    "tracksCount": 1,
+    "search": "hannahmontanaordinarygirl",
     "local": false
   },
   {
@@ -83850,6 +84549,35 @@
     "shortId": 1918,
     "tracksCount": 1,
     "search": "hillsongunitedoceanswherefeetmayfail",
+    "local": false
+  },
+  {
+    "id": "hillsong-worship-what-a-beautiful-name",
+    "title": "What A Beautiful Name",
+    "artist": "Hillsong Worship",
+    "video": "nQWFzMvCfLE",
+    "language": [
+      "English"
+    ],
+    "bpm": 272,
+    "gap": 9627.35294117647,
+    "year": "2016",
+    "artistOrigin": "AU",
+    "lastUpdate": "2026-11-10T05:30:43.548Z",
+    "genre": "Christian",
+    "realBpm": 68,
+    "volume": 1,
+    "author": "Hillsong Worship",
+    "sourceUrl": "https://www.youtube.com/watch?v=nQWFzMvCfLE&t=7s",
+    "duration": 343,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 7129,
+    "tracksCount": 1,
+    "search": "hillsongworshipwhatabeautifulname",
     "local": false
   },
   {
@@ -87847,6 +88575,32 @@
     "shortId": 2025,
     "tracksCount": 1,
     "search": "iosyscirnosperfectmathclass",
+    "local": false
+  },
+  {
+    "id": "ira-pare-chwil",
+    "title": "Parę chwil",
+    "artist": "IRA",
+    "video": "V6E46qaySz4",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 340.04,
+    "gap": 4235.413480766969,
+    "year": "2004",
+    "artistOrigin": "BR",
+    "lastUpdate": "2026-11-10T05:30:32.188Z",
+    "volume": 70,
+    "author": "michas17j",
+    "duration": 200,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 7102,
+    "tracksCount": 1,
+    "search": "iraparechwil",
     "local": false
   },
   {
@@ -99585,6 +100339,34 @@
     "local": false
   },
   {
+    "id": "karmin-brokenhearted",
+    "title": "Brokenhearted",
+    "artist": "Karmin",
+    "video": "s8cbak34DR0",
+    "language": [
+      "English"
+    ],
+    "bpm": 240,
+    "gap": 20090,
+    "year": "2012",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-10T05:30:32.050Z",
+    "genre": "Pop",
+    "realBpm": 118,
+    "volume": 1,
+    "author": "EpicSandvichz",
+    "duration": 233,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 7100,
+    "tracksCount": 1,
+    "search": "karminbrokenhearted",
+    "local": false
+  },
+  {
     "id": "karol-g-shakira-tqg",
     "title": "TQG",
     "artist": "KAROL G & Shakira",
@@ -102326,6 +103108,35 @@
     "local": false
   },
   {
+    "id": "kendji-girac-habibi",
+    "title": "Habibi",
+    "artist": "Kendji Girac",
+    "video": "0iwUQeldVXw",
+    "language": [
+      "French"
+    ],
+    "bpm": 213.93,
+    "gap": 12828.370495021736,
+    "year": "2020",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-11-10T05:30:43.678Z",
+    "genre": "Pop",
+    "realBpm": 107,
+    "volume": 1,
+    "author": "mustangfred",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=23822",
+    "duration": 212,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 7130,
+    "tracksCount": 1,
+    "search": "kendjigirachabibi",
+    "local": false
+  },
+  {
     "id": "kendrick-lamar-feat-drake-poetic-justice",
     "title": "Poetic Justice",
     "artist": "Kendrick Lamar feat. Drake",
@@ -102506,6 +103317,36 @@
     "shortId": 2360,
     "tracksCount": 2,
     "search": "kennyrogersdollypartonislandsinthestream",
+    "local": false
+  },
+  {
+    "id": "kenshi-yonezu-iris-out",
+    "title": "IRIS OUT",
+    "artist": "Kenshi Yonezu",
+    "video": "LmZD-TU96q4",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 270,
+    "gap": 3123,
+    "year": "2025",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-11-10T05:30:45.868Z",
+    "genre": "Jpop",
+    "realBpm": 135,
+    "volume": 0.9,
+    "author": "subkei",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=subkei",
+    "sourceUrl": "https://ultrastar-es.org",
+    "duration": 154,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 7141,
+    "tracksCount": 1,
+    "search": "kenshiyonezuirisout",
     "local": false
   },
   {
@@ -104095,6 +104936,32 @@
     "shortId": 2398,
     "tracksCount": 1,
     "search": "kombipokolenie",
+    "local": false
+  },
+  {
+    "id": "kombii-slad",
+    "title": "Ślad",
+    "artist": "Kombii",
+    "video": "Nz8dfYQRd24",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 212,
+    "gap": 26459.43396226415,
+    "year": "2007",
+    "artistOrigin": "PL",
+    "lastUpdate": "2026-11-10T05:30:33.996Z",
+    "edition": "SingStar Polskie Hity",
+    "volume": 70,
+    "author": "bohning",
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 7110,
+    "tracksCount": 1,
+    "search": "kombiislad",
     "local": false
   },
   {
@@ -109949,6 +110816,34 @@
     "local": false
   },
   {
+    "id": "lafee-ring-frei",
+    "title": "Ring Frei",
+    "artist": "LaFee",
+    "video": "-AnF4KkrhxE",
+    "language": [
+      "German"
+    ],
+    "bpm": 360.4,
+    "gap": 25521.10987791343,
+    "year": "2008",
+    "lastUpdate": "2026-11-10T05:30:55.288Z",
+    "realBpm": 90,
+    "volume": 1,
+    "author": "bohning",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=334",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=30773",
+    "duration": 231,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 7154,
+    "tracksCount": 1,
+    "search": "lafeeringfrei",
+    "local": false
+  },
+  {
     "id": "lama-spell",
     "title": "Spell",
     "artist": "Lama",
@@ -110470,6 +111365,34 @@
     "shortId": 2512,
     "tracksCount": 1,
     "search": "lanadelreyyoungandbeautiful",
+    "local": false
+  },
+  {
+    "id": "lara-fabian-tout",
+    "title": "Tout",
+    "artist": "Lara Fabian",
+    "video": "qMeGcU5FBys",
+    "language": [
+      "French"
+    ],
+    "bpm": 248,
+    "gap": 14861.774193548386,
+    "year": "1996",
+    "artistOrigin": "BE",
+    "lastUpdate": "2026-11-10T05:30:32.608Z",
+    "realBpm": 124,
+    "volume": 1,
+    "author": "Cybergirl76",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=15412",
+    "duration": 227,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 7107,
+    "tracksCount": 1,
+    "search": "larafabiantout",
     "local": false
   },
   {
@@ -115772,6 +116695,32 @@
     "local": false
   },
   {
+    "id": "lombard-przezyj-to-sam",
+    "title": "Przeżyj to sam",
+    "artist": "Lombard",
+    "video": "rRjEko2_up0",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 232,
+    "gap": 13870.172413793103,
+    "year": "1983",
+    "lastUpdate": "2026-11-10T05:30:45.011Z",
+    "genre": "Rock",
+    "volume": 70,
+    "author": "Ikjas",
+    "duration": 301,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 7133,
+    "tracksCount": 1,
+    "search": "lombardprzezyjtosam",
+    "local": false
+  },
+  {
     "id": "london-grammar-strong",
     "title": "Strong",
     "artist": "London Grammar",
@@ -115858,6 +116807,34 @@
     "shortId": 2629,
     "tracksCount": 1,
     "search": "longshotpartydistance",
+    "local": false
+  },
+  {
+    "id": "loona-hi-high",
+    "title": "Hi High",
+    "artist": "LOONA",
+    "video": "ts01MxEW3_I",
+    "language": [
+      "Korean",
+      "English"
+    ],
+    "bpm": 300,
+    "gap": 5100,
+    "year": "2018",
+    "artistOrigin": "NL",
+    "lastUpdate": "2026-11-10T05:30:45.870Z",
+    "realBpm": 97,
+    "volume": 1,
+    "author": "b888arb",
+    "duration": 208,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 7142,
+    "tracksCount": 1,
+    "search": "loonahihigh",
     "local": false
   },
   {
@@ -116338,6 +117315,33 @@
     "shortId": 6639,
     "tracksCount": 1,
     "search": "loriejeseraitameilleureamie",
+    "local": false
+  },
+  {
+    "id": "lorie-toute-seule",
+    "title": "Toute seule",
+    "artist": "Lorie",
+    "video": "0aPwh4CsV94",
+    "language": [
+      "French"
+    ],
+    "bpm": 234,
+    "gap": 23944.358974358973,
+    "year": "2001",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-11-10T05:30:45.148Z",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "thoun",
+    "duration": 209,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 7134,
+    "tracksCount": 1,
+    "search": "lorietouteseule",
     "local": false
   },
   {
@@ -120426,6 +121430,32 @@
     "shortId": 2735,
     "tracksCount": 1,
     "search": "majorlazerfeatjustinbiebermocoldwater",
+    "local": false
+  },
+  {
+    "id": "mako-bardzo-mala-zaba",
+    "title": "Bardzo Mała Żaba",
+    "artist": "Mako",
+    "video": "xWIO_ibvRuI",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 397.42,
+    "gap": 1708.6704242363244,
+    "year": "2023",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-10T05:30:35.861Z",
+    "volume": 70,
+    "author": "Ikjas",
+    "duration": 131,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 7122,
+    "tracksCount": 1,
+    "search": "makobardzomalazaba",
     "local": false
   },
   {
@@ -125629,6 +126659,37 @@
     "local": false
   },
   {
+    "id": "matsuko-mawatari-sayonara-bye-bye",
+    "title": "Sayonara bye bye",
+    "artist": "Matsuko Mawatari",
+    "video": "SY8t4cJl4J4",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 299.64,
+    "gap": 6211.798558269924,
+    "year": "1993",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-11-10T05:30:55.558Z",
+    "realBpm": 150,
+    "previewStart": 38.5,
+    "previewEnd": 87,
+    "volume": 1,
+    "author": "Rubn4",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=rubn4",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?cancion=Sayonara+bye+bye+%28TV%29",
+    "duration": 87,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 7160,
+    "tracksCount": 1,
+    "search": "matsukomawatarisayonarabyebye",
+    "local": false
+  },
+  {
     "id": "matt-redman-10000-reasons-bless-the-lord",
     "title": "10,000 Reasons (Bless The Lord)",
     "artist": "Matt Redman",
@@ -126674,6 +127735,33 @@
     "shortId": 6753,
     "tracksCount": 1,
     "search": "melaniecfeatlisalefteyelopesneverbethesameagain",
+    "local": false
+  },
+  {
+    "id": "melanie-c-i-turn-to-you",
+    "title": "I Turn To You",
+    "artist": "Melanie C",
+    "video": "lsjKK_s_nyY",
+    "language": [
+      "English"
+    ],
+    "bpm": 280,
+    "gap": 14152.142857142857,
+    "year": "1999",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-11-10T05:30:32.479Z",
+    "genre": "Pop",
+    "realBpm": 135,
+    "volume": 1,
+    "author": "Diddlmaus30mg",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 7106,
+    "tracksCount": 1,
+    "search": "melanieciturntoyou",
     "local": false
   },
   {
@@ -130919,6 +132007,33 @@
     "local": false
   },
   {
+    "id": "miley-cyrus-jolene-the-backyard-sessions",
+    "title": "Jolene (The Backyard Sessions)",
+    "artist": "Miley Cyrus",
+    "video": "wOwblaKmyVw",
+    "language": [
+      "English"
+    ],
+    "bpm": 206,
+    "gap": 12810.582524271846,
+    "year": "2010",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-10T05:30:36.009Z",
+    "realBpm": 110,
+    "volume": 1,
+    "author": "QuantenspringerXXX",
+    "duration": 180,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 7126,
+    "tracksCount": 1,
+    "search": "mileycyrusjolenethebackyardsessions",
+    "local": false
+  },
+  {
     "id": "miley-cyrus-mothers-daughter",
     "title": "Mother’s Daughter",
     "artist": "Miley Cyrus",
@@ -131378,6 +132493,33 @@
     "shortId": 3016,
     "tracksCount": 1,
     "search": "milomanheimmegdonnellysomedaydezombies",
+    "local": false
+  },
+  {
+    "id": "milypan-krolowa",
+    "title": "Królowa",
+    "artist": "MiłyPan",
+    "video": "ngj0Gi_yy3M",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 276,
+    "gap": 351.7391304347826,
+    "year": "2018",
+    "artistOrigin": "PL",
+    "lastUpdate": "2026-11-10T05:30:45.544Z",
+    "genre": "Disco-Polo",
+    "volume": 70,
+    "author": "MylordWaliza",
+    "duration": 250,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 7138,
+    "tracksCount": 1,
+    "search": "milypankrolowa",
     "local": false
   },
   {
@@ -132377,6 +133519,39 @@
     "shortId": 3036,
     "tracksCount": 1,
     "search": "moderntalkingchericherilady",
+    "local": false
+  },
+  {
+    "id": "modern-talking-youre-my-heart-youre-my-soul",
+    "title": "You’re My Heart, You’re My Soul",
+    "artist": "Modern Talking",
+    "video": "wmR4NvUR6XU",
+    "language": [
+      "English"
+    ],
+    "bpm": 234.75,
+    "gap": 20437.635782747602,
+    "year": "1984",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-11-10T05:30:43.685Z",
+    "genre": "Pop",
+    "realBpm": 117,
+    "volume": 1,
+    "author": "Canni",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=1219",
+    "duration": 195,
+    "tracks": [
+      {
+        "start": 16
+      },
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 7131,
+    "tracksCount": 2,
+    "search": "moderntalkingyouremyheartyouremysoul",
     "local": false
   },
   {
@@ -133799,6 +134974,33 @@
     "shortId": 6007,
     "tracksCount": 1,
     "search": "mumfordsonsdustbowldance",
+    "local": false
+  },
+  {
+    "id": "mumford-sons-holland-road",
+    "title": "Holland Road",
+    "artist": "Mumford & Sons",
+    "video": "5UONyh7vHMc",
+    "language": [
+      "English"
+    ],
+    "bpm": 236,
+    "gap": 10163.050847457627,
+    "year": "2012",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-11-10T05:30:55.558Z",
+    "genre": "Folk",
+    "realBpm": 79,
+    "volume": 1,
+    "author": "borax",
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 7159,
+    "tracksCount": 1,
+    "search": "mumfordsonshollandroad",
     "local": false
   },
   {
@@ -136210,6 +137412,36 @@
     "shortId": 3131,
     "tracksCount": 1,
     "search": "nanobullseye",
+    "local": false
+  },
+  {
+    "id": "nano-nevereverland",
+    "title": "Nevereverland",
+    "artist": "Nano",
+    "video": "Hx_nMs-sjZg",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 411.84,
+    "gap": 12670.608391608392,
+    "year": "2013",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-11-10T05:30:35.859Z",
+    "genre": "JRock",
+    "realBpm": 103,
+    "volume": 1,
+    "author": "Currymalker",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=currymalker",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Nano&cancion=Nevereverland",
+    "duration": 288,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 7120,
+    "tracksCount": 1,
+    "search": "nanonevereverland",
     "local": false
   },
   {
@@ -139944,6 +141176,36 @@
     "shortId": 6146,
     "tracksCount": 1,
     "search": "nightwishplanethell",
+    "local": false
+  },
+  {
+    "id": "nightwish-she-is-my-sin",
+    "title": "She Is My Sin",
+    "artist": "Nightwish",
+    "video": "Sz6-mHQRbac",
+    "language": [
+      "English"
+    ],
+    "bpm": 310,
+    "gap": 36993.87096774194,
+    "year": "2000",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-11-10T05:30:36.007Z",
+    "realBpm": 152,
+    "previewEnd": 10,
+    "volume": 1,
+    "author": "mu",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=38715",
+    "sourceUrl": "https://usdb.animux.de/?link=detail&id=11233",
+    "duration": 287,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 7124,
+    "tracksCount": 1,
+    "search": "nightwishsheismysin",
     "local": false
   },
   {
@@ -144109,6 +145371,35 @@
     "local": false
   },
   {
+    "id": "one-direction-little-things",
+    "title": "Little Things",
+    "artist": "One Direction",
+    "video": "xGPeNN9S0Fg",
+    "language": [
+      "English"
+    ],
+    "bpm": 400,
+    "gap": 16597.5,
+    "year": "2012",
+    "artistOrigin": "UK",
+    "lastUpdate": "2026-11-10T05:30:46.405Z",
+    "realBpm": 110,
+    "previewStart": 52,
+    "previewEnd": 77,
+    "volume": 1,
+    "author": "Sing-Girl",
+    "duration": 218,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 7149,
+    "tracksCount": 1,
+    "search": "onedirectionlittlethings",
+    "local": false
+  },
+  {
     "id": "one-direction-live-while-were-young",
     "title": "Live While We're Young",
     "artist": "One Direction",
@@ -146569,6 +147860,33 @@
     "local": false
   },
   {
+    "id": "panic-at-the-disco-northern-downpour",
+    "title": "Northern Downpour",
+    "artist": "Panic! at the Disco",
+    "video": "zouSojyIi94",
+    "language": [
+      "English"
+    ],
+    "bpm": 340.07,
+    "gap": 12905.502984679624,
+    "year": "2008",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-10T05:30:33.995Z",
+    "realBpm": 85,
+    "volume": 1,
+    "author": "princetongirl98",
+    "duration": 251,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 7109,
+    "tracksCount": 1,
+    "search": "panicatthedisconortherndownpour",
+    "local": false
+  },
+  {
     "id": "panic-at-the-disco-the-ballad-of-mona-lisa-album-version",
     "title": "The Ballad Of Mona Lisa (Album Version)",
     "artist": "Panic! at the Disco",
@@ -147854,6 +149172,33 @@
     "shortId": 6313,
     "tracksCount": 1,
     "search": "patriciovazquezamorsoloenmiamor",
+    "local": false
+  },
+  {
+    "id": "patrycja-markowska-jeszcze-raz",
+    "title": "Jeszcze raz",
+    "artist": "Patrycja Markowska",
+    "video": "Feuexes7ntw",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 228,
+    "gap": 8673.157894736842,
+    "year": "2007",
+    "artistOrigin": "PL",
+    "lastUpdate": "2026-11-10T05:30:34.149Z",
+    "edition": "SingStar Polskie Hity",
+    "volume": 70,
+    "author": "bohning",
+    "duration": 192,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 7113,
+    "tracksCount": 1,
+    "search": "patrycjamarkowskajeszczeraz",
     "local": false
   },
   {
@@ -153552,6 +154897,35 @@
     "local": false
   },
   {
+    "id": "queen-these-are-the-days-of-our-lives",
+    "title": "These Are The Days Of Our Lives",
+    "artist": "Queen",
+    "video": "oB4K0scMysc",
+    "language": [
+      "English"
+    ],
+    "bpm": 225,
+    "gap": 14790,
+    "year": "1991",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-11-10T05:30:32.473Z",
+    "genre": "Rock",
+    "realBpm": 112,
+    "volume": 1,
+    "author": "sgandtg",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=6048",
+    "duration": 252,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 7104,
+    "tracksCount": 1,
+    "search": "queenthesearethedaysofourlives",
+    "local": false
+  },
+  {
     "id": "queen-tie-your-mother-down",
     "title": "Tie Your Mother Down",
     "artist": "Queen",
@@ -154405,6 +155779,34 @@
     "shortId": 3568,
     "tracksCount": 1,
     "search": "radioheadletdown",
+    "local": false
+  },
+  {
+    "id": "radiohead-lift",
+    "title": "Lift",
+    "artist": "Radiohead",
+    "video": "QBGaO89cBMI",
+    "language": [
+      "English"
+    ],
+    "bpm": 320.51,
+    "gap": 25647.19135128389,
+    "year": "2017",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-11-10T05:30:43.546Z",
+    "genre": "Alternative",
+    "realBpm": 157,
+    "volume": 1,
+    "author": "mus31",
+    "duration": 249,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 7128,
+    "tracksCount": 1,
+    "search": "radioheadlift",
     "local": false
   },
   {
@@ -156422,6 +157824,36 @@
     "shortId": 6147,
     "tracksCount": 2,
     "search": "redhotchilipeppersdosed",
+    "local": false
+  },
+  {
+    "id": "red-hot-chili-peppers-my-friends",
+    "title": "My Friends",
+    "artist": "Red Hot Chili Peppers",
+    "video": "X9QM9rymqRU",
+    "language": [
+      "English"
+    ],
+    "bpm": 323.35,
+    "gap": 24279.43404979125,
+    "year": "1995",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-10T05:30:34.309Z",
+    "genre": "Rock",
+    "realBpm": 81,
+    "previewStart": 67,
+    "previewEnd": 97,
+    "volume": 1,
+    "author": "Lesla",
+    "duration": 262,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 7114,
+    "tracksCount": 1,
+    "search": "redhotchilipeppersmyfriends",
     "local": false
   },
   {
@@ -160287,6 +161719,32 @@
     "local": false
   },
   {
+    "id": "robert-rozzi-rozmus-mowili-na-nia-slonce",
+    "title": "Mówili na nią słońce",
+    "artist": "Robert Rozzi Rozmus",
+    "video": "JGFrrdU3Cxw",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 331.72,
+    "gap": 4875.185095863982,
+    "year": "1993",
+    "lastUpdate": "2026-11-10T05:30:36.011Z",
+    "genre": "Disco Polo",
+    "volume": 70,
+    "author": "mardzillo",
+    "duration": 258,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 7127,
+    "tracksCount": 1,
+    "search": "robertrozzirozmusmowilinaniaslonce",
+    "local": false
+  },
+  {
     "id": "robi-ivana-fa-tal",
     "title": "FA-TAL!",
     "artist": "ROBI & Ivana",
@@ -161762,6 +163220,33 @@
     "shortId": 3739,
     "tracksCount": 1,
     "search": "rudischuberthcorkarybaka",
+    "local": false
+  },
+  {
+    "id": "ruelle-feat-fleurie-carry-you",
+    "title": "Carry You",
+    "artist": "Ruelle feat. Fleurie",
+    "video": "-rKwPblSdQA",
+    "language": [
+      "English"
+    ],
+    "bpm": 253.5,
+    "gap": 48774.08284023669,
+    "year": "2017",
+    "lastUpdate": "2026-11-10T05:30:45.742Z",
+    "genre": "Ballad",
+    "realBpm": 78,
+    "volume": 1,
+    "author": "Daniel",
+    "duration": 307,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 7140,
+    "tracksCount": 1,
+    "search": "ruellefeatfleuriecarryyou",
     "local": false
   },
   {
@@ -164487,6 +165972,37 @@
     "local": false
   },
   {
+    "id": "sawanohiroyukinzk-rei-inertia",
+    "title": "INERTIA",
+    "artist": "SawanoHiroyuki[nZk] Rei",
+    "video": "j0KhH04xMlE",
+    "language": [
+      "English"
+    ],
+    "bpm": 252,
+    "gap": 1809.095238095238,
+    "year": "2024",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-11-10T05:30:55.560Z",
+    "edition": "Tv Size",
+    "genre": "Pop",
+    "realBpm": 126,
+    "volume": 1,
+    "author": "subkei",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=subkei",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?busqueda=sawanohiroyuki",
+    "duration": 101,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 7162,
+    "tracksCount": 1,
+    "search": "sawanohiroyukinzkreiinertia",
+    "local": false
+  },
+  {
     "id": "sawanohiroyukinzk-yosh-scapegoat",
     "title": "scaPEGoat",
     "artist": "SawanoHiroyuki[nZk] Yosh",
@@ -164512,6 +166028,33 @@
     "shortId": 3802,
     "tracksCount": 1,
     "search": "sawanohiroyukinzkyoshscapegoat",
+    "local": false
+  },
+  {
+    "id": "sawanohiroyukinzkmizuki-aliez",
+    "title": "aLIEz",
+    "artist": "SawanoHiroyuki[nZk]:mizuki",
+    "video": "kbf7Outji1E",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 396,
+    "gap": 10165.151515151516,
+    "year": "2014",
+    "lastUpdate": "2026-11-10T05:30:45.399Z",
+    "genre": "Anime",
+    "realBpm": 99,
+    "volume": 0.9,
+    "author": "omega-xis",
+    "duration": 93,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 7137,
+    "tracksCount": 1,
+    "search": "sawanohiroyukinzkmizukialiez",
     "local": false
   },
   {
@@ -169341,6 +170884,32 @@
     "local": false
   },
   {
+    "id": "shout-przepraszam-za-milosc",
+    "title": "Przepraszam za miłość",
+    "artist": "Shout",
+    "video": "Z-UuXiEz7Qo",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 258,
+    "gap": 17071.627906976744,
+    "year": "1992",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-10T05:30:46.268Z",
+    "volume": 70,
+    "author": "mardzillo",
+    "duration": 294,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 7147,
+    "tracksCount": 1,
+    "search": "shoutprzepraszamzamilosc",
+    "local": false
+  },
+  {
     "id": "shrek-2-holding-out-for-a-hero",
     "title": "Holding Out For A Hero",
     "artist": "Shrek 2",
@@ -173977,6 +175546,35 @@
     "shortId": 4046,
     "tracksCount": 1,
     "search": "sportfreundestillerapplausapplaus",
+    "local": false
+  },
+  {
+    "id": "sportfreunde-stiller-das-geschenk",
+    "title": "Das Geschenk",
+    "artist": "Sportfreunde Stiller",
+    "video": "TCEiawGYs5E",
+    "language": [
+      "German"
+    ],
+    "bpm": 224,
+    "gap": 15445.535714285714,
+    "year": "2016",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-11-10T05:30:55.287Z",
+    "realBpm": 112,
+    "previewStart": 45,
+    "previewEnd": 87,
+    "volume": 1,
+    "author": "Mamba99",
+    "duration": 245,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 7153,
+    "tracksCount": 1,
+    "search": "sportfreundestillerdasgeschenk",
     "local": false
   },
   {
@@ -186997,6 +188595,34 @@
     "local": false
   },
   {
+    "id": "the-greatest-showman-come-alive",
+    "title": "Come Alive",
+    "artist": "The Greatest Showman",
+    "video": "ru9wXF5Cm70",
+    "language": [
+      "English"
+    ],
+    "bpm": 236,
+    "gap": 7443.050847457627,
+    "year": "2017",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-10T05:30:32.476Z",
+    "genre": "Soundtrack",
+    "realBpm": 118,
+    "volume": 1,
+    "author": "Herbertbrow",
+    "duration": 218,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 7105,
+    "tracksCount": 1,
+    "search": "thegreatestshowmancomealive",
+    "local": false
+  },
+  {
     "id": "the-greatest-showman-from-now-on",
     "title": "From Now On",
     "artist": "The Greatest Showman",
@@ -191616,6 +193242,32 @@
     "local": false
   },
   {
+    "id": "the-vamps-feat-shawn-mendes-oh-cecilia-breaking-my-heart",
+    "title": "Oh Cecilia (Breaking My Heart)",
+    "artist": "The Vamps feat. Shawn Mendes",
+    "video": "COwkCW38J54",
+    "language": [
+      "English"
+    ],
+    "bpm": 200.28,
+    "gap": 6496.363091671659,
+    "year": "2014",
+    "lastUpdate": "2026-11-10T05:30:31.574Z",
+    "realBpm": 100,
+    "volume": 1,
+    "author": "seanie627",
+    "duration": 218,
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 7099,
+    "tracksCount": 1,
+    "search": "thevampsfeatshawnmendesohceciliabreakingmyheart",
+    "local": false
+  },
+  {
     "id": "the-veronicas-hook-me-up",
     "title": "Hook Me Up",
     "artist": "The Veronicas",
@@ -193580,6 +195232,33 @@
     "shortId": 4470,
     "tracksCount": 1,
     "search": "threedaysgracepain",
+    "local": false
+  },
+  {
+    "id": "three-days-grace-riot",
+    "title": "Riot",
+    "artist": "Three Days Grace",
+    "video": "ixZDTiXiHsc",
+    "language": [
+      "English"
+    ],
+    "bpm": 397.54,
+    "gap": 14611.234592745384,
+    "year": "2006",
+    "artistOrigin": "CA",
+    "lastUpdate": "2026-11-10T05:30:36.008Z",
+    "realBpm": 130,
+    "volume": 1,
+    "author": "Brawdogger",
+    "duration": 208,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 7125,
+    "tracksCount": 1,
+    "search": "threedaysgraceriot",
     "local": false
   },
   {
@@ -197419,6 +199098,35 @@
     "local": false
   },
   {
+    "id": "twenty-one-pilots-semi-automatic",
+    "title": "Semi-Automatic",
+    "artist": "Twenty One Pilots",
+    "video": "DOGnelLkphM",
+    "language": [
+      "English"
+    ],
+    "bpm": 315,
+    "gap": 9340,
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-10T05:30:55.418Z",
+    "realBpm": 105,
+    "volume": 1,
+    "author": "blackcat6",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=179304",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=29250",
+    "duration": 255,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 7155,
+    "tracksCount": 1,
+    "search": "twentyonepilotssemiautomatic",
+    "local": false
+  },
+  {
     "id": "twenty-one-pilots-shy-away",
     "title": "Shy Away",
     "artist": "Twenty One Pilots",
@@ -200519,6 +202227,33 @@
     "local": false
   },
   {
+    "id": "verba-pokaz-mi",
+    "title": "Pokaż mi",
+    "artist": "Verba",
+    "video": "eQnVIPNlQ3k",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 240,
+    "gap": 14850,
+    "year": "2007",
+    "artistOrigin": "PL",
+    "lastUpdate": "2026-11-10T05:30:45.150Z",
+    "edition": "SingStar Polskie Hity",
+    "volume": 70,
+    "author": "bohning",
+    "duration": 202,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 7135,
+    "tracksCount": 1,
+    "search": "verbapokazmi",
+    "local": false
+  },
+  {
     "id": "verka-serduchka-dancing-lasha-tumbai",
     "title": "Dancing Lasha Tumbai",
     "artist": "Verka Serduchka",
@@ -202430,6 +204165,33 @@
     "shortId": 6842,
     "tracksCount": 1,
     "search": "weezerfallingforyou",
+    "local": false
+  },
+  {
+    "id": "weezer-hash-pipe",
+    "title": "Hash Pipe",
+    "artist": "Weezer",
+    "video": "N8qeWzemYBA",
+    "language": [
+      "English"
+    ],
+    "bpm": 248,
+    "gap": 6971.774193548387,
+    "year": "2001",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-10T05:30:32.186Z",
+    "realBpm": 128,
+    "volume": 1,
+    "author": "anthem_1",
+    "duration": 186,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 7101,
+    "tracksCount": 1,
+    "search": "weezerhashpipe",
     "local": false
   },
   {
@@ -205572,6 +207334,35 @@
     "local": false
   },
   {
+    "id": "yael-naim-new-soul",
+    "title": "New Soul",
+    "artist": "Yael Naim",
+    "video": "hhE7QMXRE1g",
+    "language": [
+      "English"
+    ],
+    "bpm": 200.3,
+    "gap": 8306.460309535696,
+    "year": "2008",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-11-10T05:30:34.584Z",
+    "genre": "Pop",
+    "realBpm": 100,
+    "volume": 1,
+    "author": "FaKK",
+    "sourceUrl": "https://www.youtube.com/watch?v=hhE7QMXRE1g",
+    "duration": 222,
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 7119,
+    "tracksCount": 1,
+    "search": "yaelnaimnewsoul",
+    "local": false
+  },
+  {
     "id": "yazoo-dont-go",
     "title": "Don’t Go",
     "artist": "Yazoo",
@@ -205716,6 +207507,33 @@
     "shortId": 5580,
     "tracksCount": 1,
     "search": "yeahyeahyeahsgoldlion",
+    "local": false
+  },
+  {
+    "id": "yeah-yeah-yeahs-maps",
+    "title": "Maps",
+    "artist": "Yeah Yeah Yeahs",
+    "video": "oIIxlgcuQRU",
+    "language": [
+      "English"
+    ],
+    "bpm": 239.92,
+    "gap": 56999.6665555185,
+    "year": "2003",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-10T05:30:55.556Z",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "boohjaa",
+    "duration": 261,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 7158,
+    "tracksCount": 1,
+    "search": "yeahyeahyeahsmaps",
     "local": false
   },
   {

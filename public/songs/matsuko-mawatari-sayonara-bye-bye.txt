@@ -1,0 +1,237 @@
+#ARTIST:Matsuko Mawatari
+#TITLE:Sayonara bye bye
+#CREATOR:Rubn4
+#BPM:299,64
+#YEAR:1993
+#PREVIEWSTART:38,5
+#VIDEO:v=SY8t4cJl4J4
+#LANGUAGE:Japanese
+#GAP:6211,798558269924
+#ALLKARAOKE_ID:matsuko-mawatari-sayonara-bye-bye
+#ALLKARAOKE_SID:7160
+#ALLKARAOKE_LASTUPDATE:2026-11-10T05:30:55.558Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=rubn4
+#ALLKARAOKE_REALBPM:150
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?cancion=Sayonara+bye+bye+%28TV%29
+#ALLKARAOKE_PREVIEWEND:87
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:87
+#MP3:Matsuko Mawatari - Sayonara bye bye (TV).mp3
+#COVER:Matsuko Mawatari - Sayonara bye bye (TV).jpg
+: 20 6 9 Fu
+: 28 10 9 kki
+: 40 6 7 ru 
+: 48 2 6 ha
+: 52 5 4 zu 
+: 60 7 6 no
+- 67 76
+- 76
+: 96 2 2 Ko
+: 100 2 4 ko
+: 104 2 5 ro 
+: 108 7 6 ni
+- 115 128
+- 128
+: 148 3 9 So
+: 156 10 9 tto 
+: 168 6 7 yo
+* 176 2 6 ko
+* 180 6 4 gi
+: 188 5 6 ru
+- 193
+: 212 2 -1 Ka
+: 216 2 2 ze 
+: 220 7 -3 wa 
+: 236 2 -6 o
+: 240 2 -1 ya
+: 244 2 -3 sa
+: 248 2 -1 shi
+: 252 3 -3 ku
+- 255 264
+- 264
+: 284 2 9 Mu
+: 288 6 9 ka
+: 296 6 7 i
+: 304 2 6 a
+: 308 3 4 ~
+: 316 7 6 tte
+- 323 332
+- 332
+* 352 2 2 Ni
+* 356 2 4 gi
+* 360 2 5 ~
+: 364 7 6 tta
+- 371
+: 388 2 -3 Te 
+: 392 2 -1 to 
+: 396 2 1 te 
+: 400 2 2 wo 
+: 404 2 4 i
+: 408 2 6 tsu
+: 412 2 7 mo
+: 416 2 6 ~ 
+: 420 2 2 ta
+: 424 2 4 so
+: 428 2 1 ga
+: 432 2 -1 re 
+: 436 5 -3 ga 
+: 448 5 6 tsumi
+- 453
+: 460 2 6 To
+: 464 5 11 kashi
+: 472 2 11 te 
+: 476 2 9 yu
+: 480 2 9 ku
+: 484 6 11 ~
+: 492 2 10 ~
+: 496 11 11 ~
+- 507 512
+- 512
+: 532 2 -1 O
+* 536 2 -1 ka
+* 540 2 -3 shi
+* 544 2 -1 i 
+: 548 7 2 ne
+- 555
+: 564 2 -1 Ko
+: 568 2 -1 re
+: 572 2 -3 bo
+: 576 2 -1 ~
+: 580 6 4 chi 
+: 588 6 6 mo 
+: 596 2 1 ni
+: 600 2 -1 te 
+: 604 2 -3 i
+: 608 2 -1 na
+: 612 7 2 i
+- 619 632
+- 632
+: 652 5 2 A
+: 660 2 4 na
+: 664 2 6 ta 
+: 668 2 7 to 
+: 672 17 9 wa
+: 692 2 7 ta
+: 696 2 6 shi 
+: 700 15 4 no
+- 715
+: 724 2 4 E
+: 728 2 2 ga
+: 732 3 4 o 
+* 744 7 9 i
+: 756 2 7 ma 
+: 760 2 2 de
+: 764 3 4 wa
+- 767
+: 780 2 6 Ka
+: 784 2 4 ga
+: 788 2 2 mi 
+: 792 2 -1 wo 
+: 796 2 -3 mi
+: 800 2 -1 te
+: 804 5 2 ru
+- 809
+: 828 2 -6 Yo
+: 832 2 -3 u 
+: 836 5 -1 na 
+: 852 2 -6 ki
+: 856 2 1 bu
+: 860 5 -1 n
+- 865 888
+- 888
+: 908 2 -3 Ka
+: 912 2 -1 na
+* 916 2 2 shi
+* 920 2 7 ma
+* 924 2 6 na
+: 928 3 -1 i
+- 931 952
+- 952
+: 972 2 11 He
+: 976 2 9 i
+: 980 2 7 ki 
+: 984 2 6 da 
+: 988 2 4 ka
+: 992 2 4 ra 
+: 996 3 6 ne
+- 999 1016
+- 1016
+: 1036 2 -3 Na
+: 1040 2 -1 ni
+: 1044 2 2 ge 
+: 1048 2 7 na
+: 1052 2 6 i 
+: 1056 6 4 a
+: 1064 2 4 i
+: 1068 2 2 sa
+: 1072 2 4 tsu 
+: 1076 3 6 ni
+- 1079
+: 1088 5 4 Ka
+: 1096 2 4 ku
+: 1100 2 2 re
+: 1104 2 4 te
+: 1108 5 6 ru 
+: 1120 3 9 a
+* 1136 2 4 ri
+* 1140 2 6 ga
+* 1144 2 9 to
+: 1148 3 6 u
+- 1151
+: 1164 2 -3 Sa
+: 1168 2 -1 yo
+: 1172 2 2 na
+: 1176 2 7 ra 
+: 1180 2 6 bye 
+: 1184 3 -1 bye
+- 1187 1208
+- 1208
+: 1228 2 11 Ge
+: 1232 2 9 n
+: 1236 2 7 ki 
+: 1240 2 6 de 
+: 1244 2 4 i
+: 1248 2 4 te 
+: 1252 3 6 ne
+- 1255 1272
+- 1272
+: 1292 2 -3 Wa
+: 1296 2 -1 ta
+: 1300 2 2 shi 
+: 1304 2 7 ka
+: 1308 2 6 ra 
+: 1312 6 4 ki
+: 1320 2 4 ri
+: 1324 2 2 da
+: 1328 2 4 shi
+: 1332 3 6 ta
+- 1335
+: 1344 6 4 Ke
+: 1352 2 4 ji
+: 1356 2 2 me 
+: 1360 2 4 da 
+: 1364 6 6 ka
+: 1372 2 6 ra 
+: 1376 3 9 kya
+: 1392 2 4 chi 
+: 1396 2 6 shi
+: 1400 2 9 te 
+: 1404 3 6 yo
+- 1407
+: 1420 2 -3 Sa
+: 1424 2 -1 yo
+* 1428 2 2 na
+* 1432 2 7 ra 
+* 1436 2 6 bye 
+* 1440 3 -1 bye
+- 1443 1464
+- 1464
+: 1484 2 11 Ge
+: 1488 2 9 n
+: 1492 2 7 ki 
+: 1496 2 6 de 
+: 1500 2 4 i
+: 1504 2 4 te 
+: 1508 3 6 ne
+E

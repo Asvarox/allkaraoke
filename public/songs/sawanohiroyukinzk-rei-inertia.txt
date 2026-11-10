@@ -1,0 +1,281 @@
+#ARTIST:SawanoHiroyuki[nZk] Rei
+#TITLE:INERTIA
+#CREATOR:subkei
+#BPM:252
+#YEAR:2024
+#VIDEO:v=j0KhH04xMlE
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:1809,095238095238
+#EDITION:Tv Size
+#ALLKARAOKE_ID:sawanohiroyukinzk-rei-inertia
+#ALLKARAOKE_SID:7162
+#ALLKARAOKE_LASTUPDATE:2026-11-10T05:30:55.560Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=subkei
+#ALLKARAOKE_REALBPM:126
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?busqueda=sawanohiroyuki
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:101
+#MP3:SawanoHiroyuki[nZk] Rei - INERTIA (TV).mp3
+#COVER:SawanoHiroyuki[nZk] Rei - INERTIA (TV).jpg
+#MEDLEYSTARTBEAT:641
+#MEDLEYENDBEAT:894
+: 17 4 -3 I 
+: 22 1 0 al
+: 24 1 4 ~
+: 26 1 0 ways 
+: 30 3 0 knew
+: 34 11 2 ~ 
+: 46 3 0 where 
+: 50 1 -3 I 
+: 54 12 0 stood
+- 66
+: 82 1 -3 I 
+* 86 3 4 tried 
+* 90 1 0 to 
+* 94 2 0 be
+* 97 8 2 ~ 
+: 110 3 0 so
+: 114 2 -3 ~ 
+: 118 9 0 good
+- 127 129
+- 129
+: 146 1 0 look 
+: 150 2 2 at 
+: 154 1 2 me 
+: 158 10 2 now
+- 168
+: 174 3 0 I 
+: 182 3 4 don’t 
+: 186 3 0 know 
+: 190 3 0 how
+: 194 5 2 ~
+- 199
+: 206 3 0 but 
+: 214 3 4 I’m 
+: 218 2 0 a 
+: 222 3 0 re
+: 226 7 2 al 
+: 238 2 0 he
+: 241 2 -3 ~
+: 246 7 -3 ro
+- 253 286
+- 286
+: 303 3 -3 No 
+: 307 3 -3 hid
+: 311 2 0 ing 
+: 314 2 0 in 
+: 318 1 -3 the 
+: 322 4 2 shad
+: 330 2 -3 ows, 
+: 334 5 -3 time 
+: 342 4 0 to 
+: 350 4 2 strut
+- 354
+: 366 2 -3 I’m 
+: 370 3 -3 gon
+: 374 1 0 na 
+: 378 2 0 make 
+: 382 1 -3 a 
+: 386 2 2 splash 
+: 394 1 -3 to 
+: 398 4 -3 make 
+: 406 3 0 this 
+: 414 2 2 cut
+- 416
+: 422 2 0 you’ve
+: 425 2 2 ~ 
+: 430 3 2 got 
+: 438 3 2 to 
+: 443 2 0 be
+: 446 3 0 lieve
+: 450 4 2 ~
+- 454
+: 466 3 2 that 
+: 470 3 2 I 
+: 474 2 0 am 
+: 479 3 2 free
+- 482
+: 486 3 2 so 
+: 494 4 2 no 
+: 502 2 4 hes
+: 507 1 0 i
+: 510 3 0 ta
+: 514 1 2 ~
+: 518 4 2 tion
+- 522 529
+- 529
+* 546 1 12 Pic
+* 552 5 11 ture 
+* 558 1 9 your 
+* 562 5 9 plan
+* 568 1 4 et 
+: 574 2 2 in 
+: 578 2 2 dis
+: 584 3 0 har
+: 588 1 -3 ~
+: 590 2 -3 mo
+: 594 14 2 ny
+: 609 2 0 ~
+- 611 641
+- 641
+: 658 2 7 Jump 
+: 663 1 7 in
+: 666 3 7 to 
+: 670 1 7 the 
+: 672 3 9 night
+- 675
+: 679 3 4 'cause 
+: 687 5 2 I 
+: 695 1 2 can 
+: 699 2 2 smell 
+: 702 1 0 the 
+: 705 4 2 trou
+: 710 4 0 ble
+- 714
+: 723 2 7 don’t 
+: 727 2 7 you 
+: 730 2 7 miss 
+: 734 1 7 the 
+: 736 3 9 fight
+- 739
+: 742 2 4 just 
+: 750 3 2 get 
+: 758 4 2 there 
+: 763 1 2 at 
+: 766 1 0 the 
+: 769 4 2 dou
+: 774 4 4 ble
+- 778
+: 782 1 4 I 
+: 784 5 2 got
+: 790 1 2 ta 
+: 794 3 2 make 
+: 798 1 0 a 
+: 800 2 2 diff
+: 807 2 0 'rence
+- 809
+: 813 1 0 I’m 
+: 817 4 2 mov
+: 822 2 2 ing 
+: 827 2 2 with 
+: 830 1 0 a 
+: 832 5 2 pur
+: 838 2 4 pose
+- 840
+: 846 1 0 I’m 
+: 848 4 2 feel
+: 854 2 2 ing 
+: 858 3 2 my 
+: 862 1 0 in
+: 865 3 2 er
+: 870 4 0 tia
+- 874
+: 878 1 0 in
+: 880 4 2 er
+: 886 4 0 tia
+- 890
+: 894 1 0 in
+: 896 4 2 er
+* 902 9 4 tia
+- 911
+* 922 1 5 Stub
+* 924 3 7 born
+* 928 6 2 ly, 
+: 935 2 2 I 
+: 938 2 0 will 
+: 942 1 -3 be
+: 944 5 2 lieve, 
+: 950 3 2 I 
+: 954 2 0 will 
+: 958 1 -3 be
+: 960 6 2 lieve
+- 966 969
+- 969
+: 986 2 5 stub
+: 989 2 7 born
+: 992 6 2 ly, 
+: 999 2 2 I 
+: 1002 2 0 will 
+: 1006 1 -3 be
+: 1009 4 2 lieve, 
+: 1014 3 2 I 
+: 1018 2 0 will 
+: 1022 1 -3 be
+: 1025 8 2 lieve
+- 1033
+: 1050 1 -3 Is 
+: 1052 1 0 it 
+: 1057 1 -3 my 
+: 1061 2 0 turn 
+: 1064 1 -3 to 
+: 1066 3 0 be 
+: 1070 1 -3 the 
+: 1072 3 0 he
+: 1077 4 -3 ro?
+- 1081
+: 1085 1 -3 'cause 
+: 1089 2 0 I 
+: 1093 2 0 got 
+: 1097 1 -3 to 
+: 1099 3 0 be 
+: 1103 1 -3 the 
+: 1105 3 0 he
+: 1109 5 -3 ro
+- 1114
+: 1118 1 0 'cause 
+: 1120 2 2 I 
+: 1125 2 2 got 
+: 1129 1 0 to 
+: 1131 2 2 be 
+: 1134 1 0 the 
+: 1137 2 2 he
+: 1141 4 0 ro
+- 1145
+: 1149 1 0 'cause 
+: 1153 1 2 I 
+: 1157 2 4 got 
+: 1161 1 2 to 
+: 1163 2 4 be 
+: 1166 1 2 the 
+: 1169 2 4 he
+: 1172 13 2 ro
+- 1185 1193
+- 1193
+: 1210 1 4 All
+: 1212 1 7 ~ 
+: 1214 3 4 my 
+: 1218 2 4 life, 
+: 1222 1 2 they 
+: 1226 3 2 said 
+: 1230 3 0 that 
+: 1234 7 0 I 
+: 1242 1 -3 was 
+: 1248 5 0 strange
+- 1253 1257
+- 1257
+: 1274 3 7 but 
+: 1278 2 4 I 
+: 1282 3 4 knew 
+: 1286 3 2 that 
+: 1290 1 2 I 
+: 1294 1 0 could 
+: 1298 7 0 be 
+: 1306 1 2 the 
+: 1311 6 0 change
+- 1317
+: 1322 1 4 I 
+: 1326 5 2 still 
+: 1337 1 2 ain’t
+: 1339 1 4 ~ 
+: 1342 11 0 done 
+* 1354 2 -1 e
+* 1358 9 -5 nough
+- 1367 1369
+- 1369
+: 1386 3 7 not 
+: 1390 10 2 e
+: 1402 2 0 ven 
+: 1407 17 -1 close
+E

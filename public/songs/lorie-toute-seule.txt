@@ -1,0 +1,380 @@
+#ARTIST:Lorie
+#TITLE:Toute seule
+#CREATOR:thoun
+#BPM:234
+#YEAR:2001
+#VIDEO:v=0aPwh4CsV94
+#LANGUAGE:French
+#GAP:23944,358974358973
+#ALLKARAOKE_ID:lorie-toute-seule
+#ALLKARAOKE_SID:7134
+#ALLKARAOKE_LASTUPDATE:2026-11-10T05:30:45.148Z
+#ALLKARAOKE_ARTISTORIGIN:FR
+#ALLKARAOKE_REALBPM:120
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:209
+#MP3:Lorie - Toute seule.mp3
+: 16 2 0 Tous 
+: 20 2 9 les 
+: 24 4 5 gar
+: 29 8 7 cons 
+: 40 2 5 que 
+: 44 6 9 je 
+: 52 6 9 vois 
+: 60 2 7 me 
+: 64 4 5 de
+: 70 8 5 mandent
+- 78
+: 80 3 0 Pour
+: 84 2 9 quoi 
+: 88 2 5 je 
+: 92 6 7 suis 
+: 100 6 9 toute 
+: 108 10 5 seu
+: 120 2 2 ~
+: 124 9 0 ~le?
+- 133
+: 144 2 0 C’est 
+: 148 3 9 pour
+: 152 2 5 tant 
+: 156 10 7 clair
+- 166
+: 168 2 5 Leurs 
+: 172 6 9 men
+: 180 6 9 songes 
+: 188 2 7 me 
+: 192 4 5 dé
+: 197 9 5 rangent
+- 206
+: 208 2 0 Je 
+: 212 2 9 sais 
+: 216 2 5 ce 
+: 220 6 7 qu’ils 
+: 228 6 9 me 
+: 236 10 5 veulent
+- 246
+: 258 2 5 Et 
+: 262 2 5 si 
+: 266 2 7 l’un 
+: 270 2 7 d’eux 
+: 274 4 5 s’ap
+: 279 9 7 proche
+- 288
+: 290 2 0 Pour 
+: 294 2 0 se 
+: 298 4 9 la 
+: 303 2 10 jou
+: 306 2 9 er 
+: 310 7 9 fa
+: 318 6 7 con 
+: 326 2 7 « Dom 
+: 330 2 5 Ju
+: 333 15 5 an È
+- 348
+: 352 2 12 J’lui 
+: 356 4 9 ré
+: 361 5 14 ponds 
+: 368 6 12 en 
+: 376 6 9 sou
+: 384 6 7 ri
+: 392 6 5 ant
+- 398
+* 400 2 5 Moi 
+* 404 3 5 j’pré
+* 408 2 5 fere 
+* 412 3 5 res
+* 416 2 5 ter 
+* 420 6 9 toute 
+* 428 8 5 seule
+- 436 448
+- 448
+: 464 2 12 Sous 
+: 468 2 10 leurs 
+: 472 6 9 airs 
+: 480 4 9 in
+: 485 6 10 no
+: 492 8 9 cents
+- 500 512
+- 512
+: 528 2 12 Ce 
+: 532 2 10 sont 
+: 536 6 9 de 
+: 544 2 9 vrais 
+: 548 6 10 bri
+: 556 2 9 gands
+- 558
+: 560 3 0 Quoi
+: 564 2 9 qu’ils 
+: 568 2 5 me 
+: 572 6 7 veuillent
+- 578
+: 580 2 7 Moi 
+: 584 2 5 je 
+: 588 7 9 pré
+: 596 6 9 fere 
+: 604 3 7 res
+: 608 2 5 ter 
+: 612 2 9 toute 
+: 616 4 5 seule
+- 620 672
+- 672
+: 688 2 0 J’ai 
+: 692 2 9 pas 
+: 696 2 5 de 
+: 700 10 7 temps
+- 710
+: 712 2 5 Pour 
+: 716 6 9 leurs 
+: 724 6 9 a
+: 732 2 7 mours 
+: 736 4 5 fu
+: 741 9 5 gaces
+- 750
+: 752 2 0 Je 
+: 756 2 9 sais 
+: 760 2 5 ca 
+: 764 6 7 les 
+: 772 7 9 a
+: 780 13 5 gace
+- 793
+F 802 2 5 Hey 
+F 806 1 5 les 
+F 808 12 5 filles
+- 820
+F 822 1 5 Ça 
+F 824 1 5 n’vaut 
+F 826 1 5 pas 
+F 828 1 5 la 
+F 830 10 5 peine
+- 840
+F 842 1 5 Des 
+F 844 3 5 dra
+F 848 1 5 gueurs 
+F 850 1 5 y’en 
+F 852 2 5 a 
+F 856 1 5 par 
+F 858 4 5 di
+F 863 9 5 zaines
+- 872
+F 880 2 0 On 
+F 884 2 9 sait 
+F 888 2 5 ou 
+F 892 6 7 ca 
+F 900 6 9 nous 
+F 908 11 9 me
+F 920 10 5 ne!
+- 930
+: 932 2 5 Et 
+: 936 2 5 si 
+: 940 2 7 l’un 
+: 944 2 7 d’eux 
+: 948 4 5 s’é
+: 953 9 7 gare
+- 962
+: 964 2 0 Pour 
+: 968 4 0 jou
+: 973 5 9 er 
+: 980 2 10 le 
+: 984 6 9 prin
+: 992 6 7 ce 
+: 1000 8 7 char
+: 1009 13 5 mant
+- 1022
+: 1024 2 12 J’lui 
+: 1028 4 9 ré
+: 1033 5 14 ponds 
+: 1040 6 12 en 
+: 1048 6 9 sou
+: 1056 6 7 ri
+: 1064 6 5 ant
+- 1070
+: 1072 2 0 Moi 
+: 1076 3 5 j’pré
+: 1080 2 0 fere 
+: 1084 3 5 res
+: 1088 2 0 ter 
+: 1092 6 9 toute 
+: 1100 8 5 seule
+- 1108 1120
+- 1120
+: 1136 2 12 Sous 
+: 1140 2 10 leurs 
+: 1144 6 9 airs 
+: 1152 4 9 in
+: 1157 6 10 no
+: 1164 8 9 cents
+- 1172 1184
+- 1184
+: 1200 2 12 Ce 
+: 1204 2 10 sont 
+: 1208 6 9 de 
+: 1216 2 9 vrais 
+: 1220 7 10 bri
+: 1228 2 9 gands
+- 1230
+: 1232 3 0 Quoi
+: 1236 2 9 qu’ils 
+: 1240 2 5 me 
+: 1244 6 7 veuillent
+- 1250
+: 1252 2 7 Moi 
+: 1256 2 5 je 
+: 1260 6 9 pré
+: 1268 6 9 fere 
+: 1276 2 7 res
+: 1280 2 5 ter 
+: 1284 2 9 toute 
+: 1288 8 5 seule
+- 1296 1312
+- 1312
+: 1328 2 5 Moi 
+: 1332 3 5 j’pré
+: 1336 2 5 fere 
+: 1340 3 5 res
+: 1344 2 5 ter 
+: 1348 6 9 toute 
+: 1356 8 5 seule
+- 1364 1376
+- 1376
+: 1392 2 12 Sous 
+: 1396 2 10 leurs 
+: 1400 6 9 airs 
+: 1408 4 9 in
+: 1413 6 10 no
+: 1420 8 9 cents
+- 1428 1440
+- 1440
+: 1456 2 12 Ce 
+: 1460 2 10 sont 
+: 1464 6 9 de 
+: 1472 2 9 vrais 
+: 1476 5 10 bri
+: 1482 4 9 gands
+- 1486
+: 1488 3 0 Quoi
+: 1492 2 9 qu’ils 
+: 1496 2 5 me 
+: 1500 6 7 veuillent
+- 1506
+: 1508 2 7 Moi 
+: 1512 2 5 je 
+: 1516 6 9 pré
+: 1524 6 9 fere 
+: 1532 3 7 res
+: 1536 2 5 ter 
+: 1540 2 9 toute 
+: 1544 8 5 seule
+- 1552 1856
+- 1856
+: 1872 2 0 Moi 
+: 1876 3 5 j’pré
+: 1880 2 0 fere 
+: 1884 3 5 res
+: 1888 2 0 ter 
+: 1892 6 9 toute 
+: 1900 8 5 seule
+- 1908 1920
+- 1920
+: 1936 2 12 Sous 
+: 1940 2 10 leurs 
+: 1944 6 9 airs 
+: 1952 4 9 in
+: 1957 6 10 no
+: 1964 8 9 cents
+- 1972 1984
+- 1984
+: 2000 2 12 Ce 
+: 2004 2 10 sont 
+: 2008 6 9 de 
+: 2016 3 9 vrais
+: 2020 5 10 bri
+: 2026 4 9 gands
+- 2030
+: 2032 3 0 Quoi
+: 2036 2 9 qu’ils 
+: 2040 2 5 me 
+: 2044 6 7 veulent
+- 2050
+: 2052 2 7 Moi 
+: 2056 2 5 je 
+: 2060 6 9 pré
+: 2068 6 9 fere 
+: 2076 3 7 res
+: 2080 2 5 ter 
+* 2084 2 9 toute 
+* 2088 16 5 seule
+- 2104 2144
+- 2144
+* 2160 2 5 Moi 
+* 2164 3 5 j’pré
+* 2168 2 5 fere 
+: 2172 3 5 res
+: 2176 2 5 ter 
+: 2180 6 9 toute 
+: 2188 8 5 seule
+- 2196 2208
+- 2208
+: 2224 2 12 Sous 
+: 2228 2 10 leurs 
+: 2232 6 9 airs 
+: 2240 4 9 in
+: 2246 6 10 no
+: 2253 13 9 cents
+- 2266 2272
+- 2272
+: 2288 2 12 Même 
+: 2292 2 10 s’ils 
+: 2296 6 9 sont 
+: 2304 4 9 sé
+: 2309 6 10 dui
+: 2316 2 9 sants
+- 2318
+: 2320 3 0 Quoi
+: 2324 2 9 qu’ils 
+: 2328 2 5 me 
+: 2332 6 7 veuillent
+- 2338
+: 2340 2 7 Moi 
+: 2344 2 5 je 
+: 2348 7 9 pré
+: 2356 6 9 fere 
+: 2364 3 7 res
+: 2368 2 5 ter 
+: 2372 2 9 toute 
+: 2376 6 5 seule
+- 2382
+: 2384 2 9 Toute 
+: 2388 6 5 seule
+- 2394
+: 2396 2 9 Toute 
+: 2400 5 5 seule
+- 2405
+: 2416 2 0 Moi 
+: 2419 4 7 j’pré
+: 2424 2 5 fere 
+: 2428 3 7 res
+: 2432 2 5 ter 
+: 2436 6 9 toute 
+: 2444 13 5 seule
+- 2457 2472
+- 2472
+: 2488 10 12 Tou 
+: 2500 2 9 te 
+: 2504 10 9 seu 
+: 2516 17 5 le
+- 2533 2560
+- 2560
+: 2576 3 0 Quoi
+: 2580 2 9 qu’ils 
+: 2584 2 5 me 
+: 2588 6 7 veuillent
+- 2594
+: 2596 2 7 Moi 
+: 2600 2 5 je 
+: 2604 7 9 pré
+: 2612 6 9 fere 
+: 2620 3 7 res
+: 2624 2 5 ter 
+* 2628 2 9 toute 
+* 2632 4 5 seule
+E

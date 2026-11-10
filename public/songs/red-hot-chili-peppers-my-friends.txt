@@ -1,0 +1,271 @@
+#ARTIST:Red Hot Chili Peppers
+#TITLE:My Friends
+#CREATOR:Lesla
+#BPM:323,35
+#YEAR:1995
+#PREVIEWSTART:67
+#VIDEO:v=X9QM9rymqRU
+#GENRE:Rock
+#LANGUAGE:English
+#GAP:24279,43404979125
+#ALLKARAOKE_ID:red-hot-chili-peppers-my-friends
+#ALLKARAOKE_SID:7114
+#ALLKARAOKE_LASTUPDATE:2026-11-10T05:30:34.309Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:81
+#ALLKARAOKE_PREVIEWEND:97
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:262
+#MP3:Red Hot Chili Peppers - My Friends (Original Anton Corbijn Video).mp3
+#COVER:Red Hot Chili Peppers - My Friends (Original Anton Corbijn Video) [CO].jpg
+#BACKGROUND:Red Hot Chili Peppers - My Friends (Original Anton Corbijn Video) [BG].jpg
+: 22 6 14 My 
+: 30 6 14 friends 
+: 38 6 16 are 
+: 46 6 17 so 
+: 54 6 14 de
+: 64 12 14 pressed
+- 76 82
+- 82
+: 104 6 9 I 
+: 112 22 16 feel 
+: 136 6 16 the 
+: 144 6 17 ques
+: 152 6 14 tion 
+: 160 6 9 of 
+: 168 6 9 your 
+: 178 6 12 lone
+: 186 6 14 li
+: 194 14 14 ness
+- 208 212
+- 212
+: 234 6 9 Con
+: 242 20 16 fide 
+: 266 8 16 ’cause 
+: 276 6 18 I’ll 
+: 284 6 21 be 
+: 294 6 21 on 
+: 302 4 23 your 
+* 310 20 17 side
+- 330 342
+- 342
+: 364 6 9 You 
+: 372 4 14 know 
+: 378 6 12 I 
+: 386 18 12 will
+- 404 406
+- 406
+: 428 6 7 You 
+: 438 6 9 know 
+: 446 16 12 I 
+: 464 24 7 will
+- 488 520
+- 520
+: 542 6 14 Ex-
+: 550 7 14 girl
+: 558 6 16 friend 
+: 568 5 17 called 
+: 574 6 14 me 
+: 582 10 14 up
+- 592 602
+- 602
+: 624 5 7 A
+: 630 22 16 lone 
+: 656 6 16 and 
+: 664 6 17 des
+: 672 6 14 perate 
+: 680 6 9 on 
+: 688 6 9 the 
+: 696 6 12 pri
+: 704 6 14 son 
+: 712 16 14 phone
+- 728 730
+- 730
+: 752 6 9 They 
+: 760 20 16 want 
+: 784 6 16 to 
+: 792 6 18 give 
+: 800 6 21 her 
+: 808 6 21 se
+: 816 6 23 ven 
+: 824 18 17 years
+- 842 858
+- 858
+: 880 6 7 For 
+: 888 4 14 be
+: 894 6 12 ing 
+: 902 16 12 sad
+- 918
+: 936 12 12 I 
+* 952 28 11 love 
+: 984 14 11 all 
+: 1000 6 9 of 
+: 1008 22 4 you
+- 1030 1040
+- 1040
+: 1062 14 12 Hurt 
+: 1078 12 14 by 
+: 1094 6 14 the 
+: 1102 28 9 cold
+- 1130 1164
+- 1164
+: 1186 12 12 So 
+: 1202 22 11 hard 
+: 1226 6 11 and 
+: 1234 13 11 lone
+: 1248 6 9 ly 
+: 1256 26 4 too
+- 1282 1292
+- 1292
+: 1314 13 12 When 
+: 1328 12 14 you 
+: 1342 4 14 don’t 
+: 1350 20 9 know 
+: 1374 6 12 your
+: 1382 17 8 se
+: 1400 18 9 ~lf
+- 1418
+: 1430 6 14 My 
+: 1438 5 14 friends 
+: 1444 6 16 are 
+: 1452 6 17 so 
+: 1460 6 14 dis
+: 1468 14 14 tressed
+- 1482 1484
+- 1484
+: 1506 6 7 And 
+: 1514 22 16 stan
+: 1538 6 16 din’ 
+: 1548 5 17 on 
+: 1554 6 14 the 
+: 1562 6 9 brink 
+: 1570 6 9 of 
+: 1578 6 12 emp
+: 1586 6 14 ti
+: 1594 14 14 ness
+- 1608 1614
+- 1614
+: 1636 6 7 No 
+: 1644 22 16 words 
+: 1668 5 16 I 
+: 1674 6 18 know 
+: 1682 6 9 of 
+: 1690 6 9 to 
+: 1698 6 11 ex
+: 1706 20 5 press
+- 1726 1740
+- 1740
+: 1762 6 7 This 
+: 1772 4 14 emp
+: 1778 4 12 ti
+: 1784 16 12 ness
+- 1800
+: 1818 14 12 I 
+: 1834 28 11 love 
+: 1866 14 11 all 
+: 1882 6 9 of 
+: 1890 26 4 you
+- 1916 1922
+- 1922
+: 1944 14 12 Hurt 
+: 1960 14 14 by 
+: 1976 6 14 the 
+: 1984 32 9 cold
+- 2016 2046
+- 2046
+: 2068 12 12 So 
+* 2082 22 11 hard 
+: 2108 5 11 and 
+: 2114 14 11 lone
+: 2132 4 9 ly 
+: 2138 30 4 too
+- 2168 2170
+- 2170
+: 2192 14 12 When 
+: 2210 12 14 you 
+: 2224 4 14 don’t 
+: 2232 22 9 know 
+: 2256 5 12 your
+* 2262 18 8 se
+: 2282 16 9 ~lf
+- 2298 2778
+- 2778
+: 2800 34 16 I
+: 2836 13 16 ma
+: 2850 6 15 gine 
+: 2858 52 14 me 
+: 2928 13 13 taught 
+: 2942 14 13 by 
+* 2960 13 14 tra
+: 2974 6 13 ge
+: 2982 42 12 dy
+- 3024
+: 3034 12 11 Re
+: 3050 44 7 lease 
+: 3098 12 7 is 
+* 3114 54 11 peace
+- 3168 3286
+- 3286
+: 3308 6 14 I 
+: 3316 6 14 heard 
+: 3326 5 16 a 
+: 3332 6 17 lit
+: 3340 6 14 tle 
+: 3348 16 14 girl
+- 3364 3366
+- 3366
+: 3388 6 7 And 
+: 3396 22 16 what 
+: 3420 6 16 she 
+: 3428 6 17 said 
+: 3436 6 12 was 
+: 3444 6 9 some
+: 3452 6 9 thing 
+: 3460 5 12 beau
+: 3466 6 14 ti
+: 3474 14 14 ful
+- 3488 3492
+- 3492
+: 3514 6 7 To 
+: 3522 20 16 give 
+: 3544 6 16 your 
+: 3554 6 18 love 
+: 3562 6 9 no 
+: 3570 6 9 mat
+: 3578 6 11 ter 
+: 3586 16 17 what
+- 3602 3616
+- 3616
+* 3638 8 7 And 
+: 3648 6 14 what 
+: 3656 3 12 she 
+: 3660 18 12 said
+- 3678
+: 3696 14 12 I 
+: 3712 28 11 love 
+: 3742 16 11 all 
+: 3760 5 9 of 
+: 3766 26 4 you
+- 3792 3798
+- 3798
+: 3820 14 12 Hurt 
+: 3836 12 14 by 
+: 3850 6 14 the 
+: 3858 38 9 cold
+- 3896 3922
+- 3922
+: 3944 13 12 So 
+* 3958 24 11 hard 
+: 3984 5 11 and 
+: 3990 14 11 lone
+: 4006 6 9 ly 
+: 4014 32 4 too
+- 4046
+: 4068 14 12 When 
+: 4084 13 14 you 
+: 4098 4 14 don’t 
+: 4106 20 9 know 
+: 4130 4 12 your
+: 4136 18 8 se
+: 4156 16 9 ~lf
+E
