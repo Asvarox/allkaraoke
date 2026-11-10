@@ -21,6 +21,7 @@ import { getAdminPassword } from '~/routes/admin/admin-password';
 import { saveAdminUnverifiedSongInBackground } from '~/routes/admin/background-song-save';
 import { getNextAdminUnverifiedSongProcessingUrl } from '~/routes/admin/unverified-song-processing-queue';
 import { listAdminUnverifiedSongs, updateAdminUnverifiedSong } from '~/routes/admin/unverified-songs-admin-api';
+import { armVerificationAutoplay, useVerificationAutoplay } from '~/routes/admin/verification-autoplay';
 import { markAdminSongVerified } from '~/routes/admin/verified-songs-counter';
 import { VerifiedSongsCounter } from '~/routes/admin/verified-songs-counter-badge';
 import AuthorAndVideo, { AuthorAndVidEntity } from '~/routes/convert/steps/author-and-video';
@@ -80,6 +81,7 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
   const [saveError, setSaveError] = useState<string | null>(null);
   const redirect = useQueryParam('redirect');
   const isAdminProcessingQueue = useQueryParam('processQueue') === 'true';
+  const autoplayFirstSection = useVerificationAutoplay(!!adminUnverifiedSongId && isAdminProcessingQueue);
 
   // Prefetch the queue so saving can redirect to the next song without waiting for a request.
   const { data: prefetchedUnverifiedSongs } = useSWR(
@@ -242,6 +244,7 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
       if (isAdminProcessingQueue) {
         // Save in the background so the next song can be processed right away.
         void saveAdminUnverifiedSongInBackground(adminUnverifiedSongId, finalSong!);
+        armVerificationAutoplay();
         const nextUrl = await getAdminProcessingQueueRedirect();
         navigate(nextUrl);
         return;
@@ -365,6 +368,7 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
                 onChange={setEditedSong}
                 data={conversionResult}
                 visible={steps.at(currentStep) === 'sync'}
+                autoplayFirstSection={autoplayFirstSection}
               />
             )}
 

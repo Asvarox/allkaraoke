@@ -32,6 +32,7 @@ interface Props {
   song: Song;
   onUpdate?: (song: Song) => void;
   visible: boolean;
+  autoplayFirstSection?: boolean;
 }
 
 const shiftGap = (song: Song, gapShift: number): Song => ({ ...song, gap: song.gap + gapShift });
@@ -98,11 +99,13 @@ const LOW_LYRICS_COVERAGE_THRESHOLD = 0.5;
 
 const usePlaybackSpeed = createPersistedState<number>('edit-song-playback-speed');
 
-export default function EditSong({ song, onUpdate, visible }: Props) {
+export default function EditSong({ song, onUpdate, visible, autoplayFirstSection }: Props) {
   // State, not a ref: the controls below render only once the player handle is attached
   const [player, setPlayer] = useState<PlayerRef | null>(null);
   const [playbackSpeed, setPlaybackSpeed] = usePlaybackSpeed(1);
   const [playerState, setPlayerState] = useState(VideoState.UNSTARTED);
+  const [isPlayerReady, setIsPlayerReady] = useState(false);
+  const [hasAutoplayed, setHasAutoplayed] = useState(false);
   const [videoDuration, setVideoDuration] = useState<seconds>(0);
   const { width } = useWindowSize();
   const playerWidth = Math.min(width - 16, 824);
@@ -183,6 +186,14 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
     const finalSectionIndex = Math.max(Math.min(sectionIndex, notesSections.length - 1), 0);
     seekToNote(notesSections[finalSectionIndex].notes[0], padding);
   };
+
+  useEffect(() => {
+    if (!autoplayFirstSection || hasAutoplayed || !isPlayerReady || !player || !visible) return;
+
+    setHasAutoplayed(true);
+    seekToFirstSection();
+    // oxlint-disable-next-line react-hooks/exhaustive-deps
+  }, [autoplayFirstSection, hasAutoplayed, isPlayerReady, player, visible]);
 
   const seekToSubsequentSection = async (direction: -1 | 1, padding?: seconds) => {
     if (!player) return;
@@ -283,6 +294,7 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
           <Player
             onStatusChange={setPlayerState}
             onVideoDurationLoad={setVideoDuration}
+            onReady={() => setIsPlayerReady(true)}
             key={0}
             song={newSong}
             showControls
