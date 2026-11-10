@@ -1,6 +1,6 @@
 import { Button, Typography } from '@mui/material';
 import { cloneDeep } from 'es-toolkit';
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import { useWindowSize } from 'react-use';
 import createPersistedState from 'use-persisted-state';
@@ -23,6 +23,7 @@ import SectionSlider from '~/routes/convert/steps/sync-lyrics-to-video/component
 import ShiftGap from '~/routes/convert/steps/sync-lyrics-to-video/components/shift-gap';
 import ShiftVideoGap from '~/routes/convert/steps/sync-lyrics-to-video/components/shift-video-gap';
 import getLyricsCoverage from '~/routes/convert/steps/sync-lyrics-to-video/helpers/get-lyrics-coverage';
+import seekPrecisely from '~/routes/convert/steps/sync-lyrics-to-video/helpers/seek-precisely';
 import useCurrentSectionIndex from '~/routes/game/singing/hooks/use-current-section-index';
 import Player, { PlayerRef } from '~/routes/game/singing/player';
 
@@ -165,11 +166,15 @@ export default function EditSong({ song, onUpdate, visible }: Props) {
     player?.setPlaybackSpeed(playbackSpeed);
   }, [playbackSpeed, playerState, player]);
 
+  // Bumped on every seek, so an older seek's re-seek loop stops instead of fighting the new one
+  const seekRequestId = useRef(0);
+
   // No computed default param - React Compiler can't compile those and would skip this whole component
   const seekToNote = (note?: Note, padding?: seconds) => {
     if (note && player) {
-      player.seekTo((note.start * beatLength + newSong.gap) / 1000 - (padding ?? 0.5 * playbackSpeed));
-      player.play();
+      const requestId = ++seekRequestId.current;
+      const target = (note.start * beatLength + newSong.gap) / 1000 - (padding ?? 0.5 * playbackSpeed);
+      seekPrecisely(player, target, () => requestId !== seekRequestId.current);
     }
   };
 
