@@ -1,0 +1,246 @@
+#ARTIST:Bracia Figo Fagot
+#TITLE:Czy kochałabyś mnie bardziej
+#CREATOR:MylordWaliza
+#BPM:260
+#YEAR:2025
+#VIDEO:v=v2R3_8zhQ2U
+#GENRE:Disco-Polo, Parodia
+#LANGUAGE:Polish
+#GAP:3029,230769230769
+#ALLKARAOKE_ID:bracia-figo-fagot-czy-kochalabys-mnie-bardziej
+#ALLKARAOKE_SID:7117
+#ALLKARAOKE_LASTUPDATE:2026-11-10T05:30:34.449Z
+#ALLKARAOKE_VOLUME:70
+#ALLKARAOKE_DURATION:96
+#MP3:Bracia Figo Fagot - Czy kochałabyś mnie bardziej.mp3
+#COVER:Bracia Figo Fagot - Czy kochałabyś mnie bardziej [CO].jpg
+#BACKGROUND:Bracia Figo Fagot - Czy kochałabyś mnie bardziej [BG].jpg
+F 17 2 0 (Go
+F 20 3 0 dzi
+F 24 2 0 na 
+F 27 3 0 mi
+F 31 3 0 łoś
+F 35 3 0 ci 
+F 39 3 0 wy
+F 43 3 0 bi
+F 47 5 0 ła...)
+- 52
+F 69 2 0 (Mi 
+F 72 3 0 zę
+F 77 4 0 by)
+- 81 85
+- 85
+F 102 2 0 (Ko
+F 105 3 0 cham 
+F 109 2 0 ce, 
+F 112 4 0 slyc
+F 117 4 0 not
+F 122 4 0 ko)
+- 126 180
+- 180
+: 197 2 -3 Czy 
+: 200 2 -2 ko
+: 204 2 5 cha
+: 208 2 7 ła
+: 212 2 7 byś 
+: 216 2 5 mnie 
+* 220 2 7 bar
+* 224 2 2 dziej 
+: 228 2 4 za 
+: 232 2 2 dwie 
+: 236 3 4 stó
+: 240 1 0 wy?
+- 241 243
+- 243
+: 260 2 -3 Czy 
+: 264 2 -5 w tej 
+: 268 2 5 ce
+: 272 2 7 nie 
+: 276 2 7 byś 
+: 280 2 5 zro
+: 284 2 7 bi
+: 288 2 5 ła 
+: 292 2 2 to 
+: 296 2 5 bez 
+: 300 2 5 gu
+: 304 2 2 my?
+- 306 308
+- 308
+: 325 2 0 Na 
+: 328 2 -2 ze
+: 332 2 0 ga
+: 336 2 2 rek 
+: 340 2 2 nie 
+: 344 2 2 zer
+* 348 3 2 ka
+* 352 2 0 ła 
+: 356 2 0 co 
+: 360 2 0 mi
+: 364 2 0 nu
+: 368 1 -2 tę
+- 369 371
+- 371
+: 388 2 -2 Przy 
+: 392 2 0 fran
+: 396 2 2 cu
+: 400 2 2 zie 
+: 404 2 2 mi 
+: 408 2 2 wło
+: 412 2 2 ży
+: 416 2 0 ła 
+: 420 2 0 pa
+: 424 1 0 lec 
+: 428 2 4 w du
+: 432 3 2 pę?
+- 435 436
+- 436
+: 453 2 -3 Czy 
+: 457 2 -3 ko
+: 462 4 5 cha
+: 469 2 7 ła
+: 473 6 7 byś 
+* 485 2 7 mnie 
+: 489 4 7 bar
+: 497 4 5 dziej 
+: 508 2 4 za 
+* 515 2 2 dwie 
+: 520 3 2 stó
+: 528 9 0 wy?
+- 537 692
+- 692
+: 709 1 -3 Czy 
+: 713 1 -2 z do
+: 717 2 5 pła
+: 721 2 7 tą 
+: 725 2 7 mo
+: 729 2 7 gę 
+: 733 2 7 lek
+: 737 2 4 ko 
+: 741 2 2 być 
+: 745 2 2 zro
+: 749 2 4 bio
+: 753 1 0 ny?
+- 754 755
+- 755
+: 772 2 -3 I 
+: 776 2 -2 czy 
+: 780 2 7 fi
+: 784 2 7 nał 
+: 788 2 7 mo
+: 792 2 7 gę 
+* 796 2 7 na
+* 800 2 5 grać 
+: 804 2 4 te
+: 808 2 4 le
+: 812 2 4 fo
+: 816 2 2 nem?
+- 818 819
+- 819
+: 836 2 0 Czy 
+: 840 2 0 po 
+: 844 2 0 wszyst
+: 848 2 2 kim 
+: 852 2 2 mo
+: 856 2 2 gę 
+: 860 2 2 wy
+: 864 2 0 pła
+: 868 2 0 kać 
+: 872 2 0 się 
+: 876 2 0 w cy
+: 880 1 -2 ce?
+- 881 883
+- 883
+: 900 2 -3 Nie 
+: 904 2 -5 wy
+: 908 2 2 rzu
+: 912 2 4 caj 
+* 916 2 4 mnie 
+: 920 2 4 od 
+: 924 2 4 ra
+: 928 2 2 zu 
+: 932 2 2 na 
+: 936 2 0 u
+: 940 2 4 li
+: 944 1 2 ce
+- 945 948
+- 948
+: 965 2 -3 Czy 
+: 969 1 -3 z do
+: 973 4 5 pła
+: 981 2 7 tą 
+* 985 6 7 mo
+* 997 2 7 gę 
+: 1001 4 7 lek
+: 1009 3 5 ko 
+: 1026 2 5 prz
+: 1031 3 2 pier
+: 1036 3 2 do
+: 1044 14 0 lić?
+- 1058 1204
+- 1204
+: 1221 2 10 Cze
+: 1225 1 11 mu 
+* 1229 2 20 pach
+* 1233 2 20 nie 
+: 1237 2 19 dwieś
+: 1241 1 19 cie 
+: 1245 2 20 zło
+: 1249 2 20 tych 
+* 1253 1 19 Ci 
+: 1255 2 15 jak 
+: 1261 2 17 gów
+: 1265 2 12 no!
+- 1267
+: 1284 2 10 Wiesz 
+: 1288 2 11 jak 
+: 1292 2 19 dłu
+: 1296 2 19 go 
+: 1300 2 19 mu
+: 1304 2 19 szę 
+: 1308 2 19 ro
+: 1312 2 17 bić 
+: 1316 2 16 na 
+: 1320 2 16 to 
+: 1325 3 17 kur
+: 1330 3 14 wo!
+- 1333
+: 1348 2 12 Ty 
+: 1352 2 12 w go
+: 1356 2 14 dzi
+: 1360 2 14 nę 
+: 1364 2 14 to 
+: 1368 2 14 ka
+: 1372 2 14 su
+: 1376 2 12 jesz, 
+: 1380 2 12 ja 
+: 1384 2 14 w dzień 
+: 1388 2 16 ca
+: 1392 1 12 ły!
+- 1393 1395
+- 1395
+: 1412 2 12 Ja 
+: 1416 2 14 za 
+: 1420 2 14 ty
+: 1424 1 14 le 
+: 1428 2 14 to 
+: 1432 2 14 bym 
+: 1436 2 16 cha
+: 1440 2 14 pał 
+: 1444 2 12 po 
+: 1448 1 12 mig
+: 1452 2 16 da
+: 1456 3 12 ły!
+- 1459
+: 1476 2 9 Więc 
+* 1480 2 9 po
+: 1484 4 17 ko
+* 1492 2 19 chaj 
+: 1496 6 19 mnie 
+: 1508 3 19 księż
+: 1514 4 19 nicz
+* 1522 3 17 ko 
+: 1533 2 16 za 
+: 1541 2 14 dwie 
+: 1545 6 14 stó
+: 1553 8 12 wy!
+E

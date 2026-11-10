@@ -1,3 +1,0 @@
-import{r as e}from"./songs-service-BvPcr6vq.js";function t(e){return e.tracks.every(e=>e.sections.every(e=>Number.isFinite(e.start)?e.type===`pause`?Number.isFinite(e.end):e.notes.every(e=>Number.isFinite(e.start)&&Number.isFinite(e.length)&&Number.isFinite(e.pitch)):!1))}function n(n){let r=n.split(`
-`);for(let e of[`#TITLE`,`#ARTIST`,`#BPM`])if(!r.some(t=>t.startsWith(e)))return!1;if(!r.some(e=>/^[:*FRG] /.test(e)))return!1;try{let r=e(n);return r.tracks.some(e=>e.sections.some(e=>e.type===`notes`&&e.notes.length>0))&&t(r)}catch(e){return console.log(e),!1}}export{n as t};
-//# sourceMappingURL=validate-ultrastar-BDbQAV-9.js.map
