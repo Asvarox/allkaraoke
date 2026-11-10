@@ -34,6 +34,7 @@ interface Props extends Omit<ComponentProps<'div'>, 'ref'>, RefAttributes<Player
   onSongEnd?: () => void;
   onStatusChange?: (status: VideoState) => void;
   onVideoDurationLoad?: (duration: seconds) => void;
+  onReady?: () => void;
 
   effectsEnabled?: boolean;
   pauseMenu?: boolean;
@@ -84,6 +85,7 @@ function Player({
   onSongEnd,
   onStatusChange,
   onVideoDurationLoad,
+  onReady,
   effectsEnabled = true,
   singSetup,
   restartSong,
@@ -235,6 +237,7 @@ function Player({
           volume={song.manualVolume}
           startAt={song.videoGap ?? 0}
           onStateChange={onStateChangeCallback}
+          onReady={onReady}
         />
         {currentStatus === VideoState.PLAYING && (
           <div
