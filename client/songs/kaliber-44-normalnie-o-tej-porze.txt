@@ -1,0 +1,812 @@
+#ARTIST:Kaliber 44
+#TITLE:Normalnie o tej porze
+#CREATOR:mardzillo
+#BPM:257,56
+#YEAR:2000
+#VIDEO:v=9nJt9TlYVUY
+#GENRE:Rap
+#LANGUAGE:Polish
+#GAP:3129,939431588756
+#ALLKARAOKE_ID:kaliber-44-normalnie-o-tej-porze
+#ALLKARAOKE_SID:7169
+#ALLKARAOKE_LASTUPDATE:2026-11-11T04:02:25.021Z
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_VOLUME:70
+#ALLKARAOKE_DURATION:261
+#MP3:Kaliber 44 - Normalnie o tej porze.mp3
+#COVER:Kaliber 44 - Normalnie o tej porze [CO].jpg
+#BACKGROUND:Kaliber 44 - Normalnie o tej porze [BG].jpg
+R 17 2 0 Nor
+R 21 2 0 mal
+R 25 1 0 nie 
+R 27 2 0 o 
+R 30 3 0 tej 
+R 34 2 0 po
+R 38 4 0 rze
+- 42 651
+- 651
+R 668 1 0 Nor
+R 671 2 0 mal
+R 674 2 0 nie 
+R 677 2 0 o 
+R 680 2 0 tej 
+R 683 2 0 po
+R 688 3 0 rze - 
+R 693 2 0 wo
+R 697 1 0 żę 
+R 699 3 0 się 
+R 703 1 0 po 
+R 705 2 0 mieś
+R 710 3 0 cie
+- 713
+R 714 1 0 Nor
+R 717 2 0 mal
+R 720 2 0 nie 
+R 723 2 0 o 
+R 726 2 0 tej 
+R 730 2 0 po
+R 733 3 0 rze - 
+R 737 2 0 raz 
+R 740 2 0 le
+R 744 3 0 piej 
+R 749 3 0 raz 
+R 753 1 0 go
+R 755 3 0 rzej
+- 758
+R 760 2 0 Zaz
+R 764 2 0 wy
+R 767 2 0 czaj - 
+R 771 2 0 jak 
+R 774 2 0 ża
+R 777 2 0 ba 
+R 780 2 0 ska
+R 783 2 0 czę 
+R 787 3 0 z miejs
+R 792 1 0 ca 
+R 794 2 0 na 
+R 797 3 0 miejs
+R 803 4 0 ce
+- 807
+R 809 1 0 Dzi
+R 811 2 0 siaj 
+R 814 1 0 to 
+R 817 2 0 nie 
+R 821 3 0 przej
+R 825 3 0 dzie - 
+R 830 1 0 do 
+R 832 1 0 do
+R 834 2 0 mu 
+R 838 1 0 wró
+R 841 2 0 cę 
+R 845 3 0 wcześ
+R 849 3 0 niej
+- 852
+R 855 2 0 Wczo
+R 858 5 0 raj...
+- 863
+R 875 1 0 Przy 
+R 877 2 0 faj
+R 881 1 0 ce 
+R 883 2 0 i 
+R 886 2 0 bu
+R 889 4 0 tel
+R 894 2 0 ce, 
+R 898 3 0 po 
+R 902 2 0 któ
+R 905 6 0 rą...
+- 911
+R 923 2 0 Trze
+R 926 1 0 ba 
+R 929 2 0 stać 
+R 934 2 0 w ko
+R 937 3 0 lej
+R 942 3 0 ce
+- 945
+R 946 1 0 By
+R 948 2 0 ło 
+R 952 3 0 wię
+R 956 3 0 cej 
+R 962 1 0 ko
+R 964 3 0 biet - 
+R 969 3 0 wszyst
+R 974 2 0 kie 
+R 978 1 0 by
+R 980 1 0 ły 
+R 984 4 0 pięk
+R 991 4 0 ne
+- 995
+R 998 15 0 Tak... 
+R 1014 2 0 le
+R 1017 2 0 piej 
+R 1020 2 0 jak 
+R 1024 2 0 jest 
+R 1027 3 0 wię
+R 1033 2 0 cej
+- 1035
+R 1036 3 0 Mo
+R 1040 2 0 żna 
+R 1043 2 0 by 
+R 1046 1 0 coś 
+R 1049 1 0 dzi
+R 1052 1 0 siaj, 
+R 1055 2 0 a
+R 1058 1 0 le 
+R 1061 2 0 ja 
+R 1064 1 0 u
+R 1066 1 0 my
+R 1069 2 0 wam 
+R 1072 3 0 rę
+R 1078 2 0 ce
+- 1080
+R 1084 2 0 Prę
+R 1087 3 0 dzej 
+R 1091 2 0 do 
+R 1094 2 0 do
+R 1097 2 0 mu 
+R 1100 2 0 pę
+R 1103 2 0 dzę 
+R 1106 2 0 niż 
+R 1109 2 0 M
+R 1112 2 0 5 
+R 1115 2 0 Be
+R 1118 2 0 Em
+R 1123 4 0 Ce
+- 1127
+R 1129 1 0 Pięk
+R 1132 2 0 nej 
+R 1135 1 0 ko
+R 1138 1 0 le
+R 1141 3 0 żan
+R 1146 3 0 ce, 
+R 1151 3 0 w pięk
+R 1156 3 0 nej 
+R 1161 1 0 su
+R 1163 2 0 kien
+R 1166 1 0 ce
+- 1167
+R 1170 1 0 Mó
+R 1172 1 0 wię 
+R 1175 4 0 „PA”, 
+R 1180 2 0 chwy
+R 1183 2 0 tam 
+R 1186 2 0 kie
+R 1189 2 0 row
+R 1192 1 0 ni
+R 1194 2 0 cę 
+R 1197 2 0 jak 
+R 1201 3 0 Zor
+R 1206 1 0 ro 
+R 1209 4 0 lej
+R 1214 4 0 ce
+- 1218
+R 1224 1 0 Nu
+R 1226 1 0 me
+R 1229 1 0 ro
+R 1232 1 0 ma
+R 1235 1 0 nia 
+R 1237 1 0 na 
+R 1240 1 0 licz
+R 1244 1 0 ni
+R 1247 3 0 ku,
+- 1250
+R 1252 1 0 Sam 
+R 1255 2 0 so
+R 1258 2 0 bie 
+R 1261 1 0 ko
+R 1263 2 0 men
+R 1267 1 0 tu
+R 1269 2 0 je 
+R 1272 1 0 to 
+R 1275 1 0 co 
+R 1278 2 0 w ra
+R 1281 2 0 dio
+R 1284 2 0 od
+R 1287 1 0 bior
+R 1290 1 0 ni
+R 1292 2 0 ku
+- 1294
+R 1299 1 0 Nie
+R 1302 1 0 dłu
+R 1304 1 0 go 
+R 1306 2 0 bę
+R 1309 2 0 dę 
+R 1312 1 0 w do
+R 1315 1 0 mu,
+- 1316
+R 1317 1 0 Nic 
+R 1320 2 0 nie 
+R 1323 2 0 pok
+R 1326 1 0 rzy
+R 1329 1 0 żu
+R 1331 1 0 je 
+R 1335 1 0 mo
+R 1337 2 0 ich 
+R 1341 1 0 szy
+R 1344 3 0 ków
+- 1347
+R 1350 1 0 Za 
+R 1353 1 0 pa
+R 1355 1 0 rę 
+R 1357 1 0 mi
+R 1360 1 0 nut 
+R 1363 1 0 za
+R 1366 1 0 par
+R 1369 1 0 ku
+R 1371 3 0 ję 
+R 1375 1 0 przy 
+R 1378 2 0 chod
+R 1381 2 0 ni
+R 1384 4 0 ku
+- 1388 1567
+- 1567
+R 1584 1 0 Nor
+R 1587 2 0 mal
+R 1590 1 0 nie 
+R 1592 2 0 o 
+R 1595 1 0 tej 
+R 1598 2 0 po
+R 1602 3 0 rze - 
+R 1610 1 0 wo
+R 1612 1 0 żę 
+R 1615 2 0 się 
+R 1619 1 0 po 
+R 1622 1 0 mieś
+R 1627 1 0 cie
+- 1628
+R 1630 1 0 Nor
+R 1632 1 0 mal
+R 1635 2 0 nie 
+R 1638 1 0 o 
+R 1641 2 0 tej 
+R 1645 1 0 po
+R 1649 2 0 rze - 
+R 1653 1 0 raz 
+R 1657 1 0 le
+R 1661 1 0 piej 
+R 1663 2 0 raz 
+R 1668 2 0 go
+R 1672 3 0 rzej
+- 1675
+R 1676 1 0 Nor
+R 1679 2 0 mal
+R 1682 1 0 nie 
+R 1684 2 0 o 
+R 1687 2 0 tej 
+R 1690 1 0 po
+R 1693 2 0 rze - 
+R 1701 1 0 wo
+R 1704 1 0 żę 
+R 1707 2 0 się 
+R 1710 2 0 jak 
+R 1714 1 0 bo
+R 1717 3 0 żek
+- 1720
+R 1722 1 0 Nor
+R 1724 2 0 mal
+R 1728 1 0 nie 
+R 1730 2 0 o 
+R 1733 2 0 tej 
+R 1737 2 0 po
+R 1741 2 0 rze - 
+R 1744 2 0 raz 
+R 1747 2 0 le
+R 1751 2 0 piej, 
+R 1755 2 0 raz 
+R 1759 1 0 go
+R 1761 1 0 rzej
+- 1762
+R 1763 1 0 Ja
+R 1765 1 0 koś 
+R 1767 3 0 niech
+R 1771 2 0 cą
+R 1775 2 0 cy - 
+R 1781 2 0 zła
+R 1784 2 0 pa
+R 1787 2 0 łem 
+R 1790 2 0 za 
+R 1793 1 0 cy
+R 1795 2 0 buch 
+R 1799 1 0 go
+R 1801 3 0 rą
+R 1806 2 0 cy
+- 1808
+R 1811 1 0 Wy
+R 1813 1 0 ko
+R 1815 1 0 na
+R 1817 1 0 łem 
+R 1822 3 0 wdech 
+R 1826 2 0 tę
+R 1830 3 0 py, 
+R 1838 2 0 żar 
+R 1841 2 0 mi 
+R 1844 2 0 wpadł 
+R 1848 1 0 do 
+R 1850 3 0 gę
+R 1854 1 0 by
+- 1855
+R 1856 3 0 Wyp
+R 1861 2 0 lu
+R 1864 1 0 łem 
+R 1866 2 0 od 
+R 1870 1 0 ra
+R 1873 1 0 zu, 
+R 1878 1 0 nie
+R 1880 2 0 far
+R 1884 2 0 tow
+R 1887 1 0 nie
+- 1888
+R 1893 1 0 Bo 
+R 1895 1 0 spadł 
+R 1899 1 0 mi 
+R 1901 1 0 na 
+R 1905 2 0 spod
+R 1909 1 0 nie 
+R 1911 1 0 i 
+R 1913 1 0 na 
+R 1916 1 0 szyb
+R 1919 1 0 koś
+R 1922 1 0 ci
+- 1923
+R 1924 2 0 Mia
+R 1927 2 0 łem 
+R 1931 1 0 dziu
+R 1934 1 0 rę 
+R 1936 2 0 o 
+R 1939 2 0 wiel
+R 1942 1 0 koś
+R 1945 1 0 ci 
+R 1947 2 0 dwu
+R 1950 2 0 zło
+R 1953 2 0 tó
+R 1957 2 0 wki
+- 1959
+R 1963 1 0 Nie 
+R 1965 1 0 pa
+R 1967 1 0 lę 
+R 1970 1 0 dziś 
+R 1973 1 0 już 
+R 1976 2 0 luf
+R 1979 2 0 ki, 
+R 1985 1 0 nie 
+R 1988 1 0 pa
+R 1990 1 0 lę 
+R 1993 1 0 dziś 
+R 1995 1 0 już 
+R 1999 2 0 wca
+R 2003 3 0 le
+- 2006
+R 2010 2 0 Wie
+R 2013 2 0 czór 
+R 2016 2 0 dłu
+R 2019 1 0 gi 
+R 2021 1 0 jak 
+R 2025 1 0 ko
+R 2027 1 0 ra
+R 2030 2 0 le, 
+R 2033 1 0 a 
+R 2035 2 0 ja 
+R 2038 2 0 wciąż 
+R 2041 2 0 zmie
+R 2044 2 0 niam 
+R 2047 2 0 lo
+R 2050 2 0 ka
+R 2053 3 0 le
+- 2056
+R 2062 1 0 Za 
+R 2064 1 0 ok
+R 2067 2 0 na
+R 2070 2 0 mi 
+R 2073 2 0 mi
+R 2076 1 0 ga
+R 2079 1 0 ją 
+R 2081 2 0 la
+R 2084 1 0 tar
+R 2087 2 0 nie, 
+R 2090 2 0 ja
+R 2093 1 0 dę 
+R 2096 2 0 da
+R 2099 3 0 lej
+- 2102
+R 2107 1 0 Coś 
+R 2110 2 0 się 
+R 2113 1 0 dzi
+R 2116 2 0 siaj 
+R 2119 1 0 ba
+R 2121 2 0 wię 
+R 2125 1 0 mar
+R 2129 1 0 nie,
+- 2130
+R 2133 1 0 Czer
+R 2136 1 0 wo
+R 2138 2 0 na 
+R 2142 2 0 fa
+R 2145 4 0 la 
+R 2152 2 0 je
+R 2155 2 0 chać 
+R 2158 2 0 ciąg
+R 2162 1 0 le 
+R 2165 2 0 nie 
+R 2168 1 0 poz
+R 2171 2 0 wa
+R 2174 2 0 la
+- 2176
+R 2182 1 0 Z da
+R 2185 2 0 la 
+R 2188 1 0 ktoś 
+R 2191 2 0 pod
+R 2194 3 0 bie
+R 2198 2 0 ga - 
+R 2202 1 0 to 
+R 2204 2 0 dal
+R 2208 2 0 szy 
+R 2211 1 0 mój 
+R 2214 1 0 ko
+R 2216 2 0 le
+R 2219 1 0 ga
+- 2220
+R 2222 2 0 Stu
+R 2225 1 0 ka 
+R 2228 2 0 w szyb
+R 2232 2 0 kę, 
+R 2235 1 0 wsia
+R 2238 1 0 da 
+R 2241 2 0 szyb
+R 2244 2 0 ko,
+- 2246
+R 2251 3 0 Gad
+R 2255 1 0 ką 
+R 2257 1 0 mę
+R 2260 1 0 czy 
+R 2263 2 0 płyt
+R 2267 3 0 ką
+- 2270
+R 2273 1 0 I 
+R 2275 1 0 mó
+R 2277 1 0 wi 
+R 2279 1 0 dziw
+R 2282 1 0 nym 
+R 2285 1 0 to
+R 2288 1 0 nem -
+- 2289
+R 2291 2 0 Cóż 
+R 2296 1 0 wi
+R 2299 2 0 szę 
+R 2303 2 0 mu 
+R 2306 1 0 ka
+R 2308 2 0 bo
+R 2312 2 0 nę
+- 2314
+R 2323 1 0 - Hej 
+R 2325 2 0 Pe
+R 2328 2 0 pe
+R 2331 1 0 ro
+R 2333 1 0 ni 
+R 2337 1 0 skręć 
+R 2342 1 0 w le
+R 2345 1 0 wą 
+R 2348 1 0 stro
+R 2351 3 0 nę
+- 2354
+R 2358 1 0 Ja 
+R 2360 1 0 tu
+R 2362 1 0 taj 
+R 2366 1 0 z ty
+R 2368 1 0 łu 
+R 2371 2 0 w pi
+R 2374 2 0 wie 
+R 2377 2 0 to
+R 2380 2 0 nę,
+- 2382
+R 2386 1 0 Bo 
+R 2389 1 0 by
+R 2391 2 0 ło 
+R 2395 1 0 wzbu
+R 2398 2 0 rzo
+R 2401 1 0 ne
+- 2402
+R 2403 1 0 I 
+R 2405 2 0 jak
+R 2408 1 0 by 
+R 2411 2 0 te
+R 2414 2 0 go 
+R 2417 1 0 by
+R 2419 1 0 ło 
+R 2422 2 0 ma
+R 2426 2 0 ło
+- 2428
+F 2432 2 0 Ku
+F 2435 2 0 rew
+F 2438 1 0 sko 
+R 2441 2 0 się 
+R 2445 2 0 roz
+R 2449 1 0 pa
+R 2451 1 0 da
+R 2454 3 0 ło
+- 2457
+R 2459 2 0 Op
+R 2462 2 0 rócz 
+R 2465 1 0 do
+R 2467 2 0 mów
+R 2471 1 0 ki 
+R 2473 2 0 nic 
+R 2477 1 0 już 
+R 2480 1 0 z pla
+R 2482 2 0 nów 
+R 2486 1 0 nie 
+R 2488 1 0 zos
+R 2491 2 0 ta
+R 2494 4 0 ło
+- 2498 2502
+- 2502
+R 2519 1 0 Nic 
+R 2522 2 0 już 
+R 2526 1 0 z pla
+R 2528 2 0 nów 
+R 2531 1 0 nie 
+R 2534 1 0 zos
+R 2537 3 0 ta
+R 2541 4 0 ło
+- 2545 2575
+- 2575
+R 2592 1 0 Nor
+R 2594 2 0 mal
+R 2597 1 0 nie 
+R 2599 2 0 o 
+R 2602 3 0 tej 
+R 2606 2 0 po
+R 2610 2 0 rze - 
+R 2617 2 0 wo
+R 2620 2 0 żę 
+R 2623 1 0 się 
+R 2625 3 0 jak 
+R 2629 2 0 bo
+R 2633 2 0 żek
+- 2635
+R 2636 1 0 Nor
+R 2639 2 0 mal
+R 2642 1 0 nie 
+R 2645 2 0 o 
+R 2648 1 0 tej 
+R 2651 1 0 po
+R 2656 2 0 rze - 
+R 2660 1 0 raz 
+R 2663 2 0 le
+R 2667 1 0 piej, 
+R 2671 2 0 raz 
+R 2675 2 0 go
+R 2679 1 0 rzej
+- 2680
+R 2683 1 0 Nor
+R 2685 2 0 mal
+R 2689 1 0 nie 
+R 2691 2 0 o 
+R 2694 2 0 tej 
+R 2698 1 0 po
+R 2701 2 0 rze - 
+R 2709 2 0 wo
+R 2712 1 0 żę 
+R 2714 2 0 się 
+R 2717 2 0 jak 
+R 2721 1 0 bo
+R 2725 1 0 żek
+- 2726
+R 2728 2 0 Nor
+R 2731 3 0 mal
+R 2735 1 0 nie 
+R 2737 2 0 o 
+R 2740 2 0 tej 
+R 2744 1 0 po
+R 2748 2 0 rze - 
+R 2752 1 0 raz 
+R 2755 3 0 le
+R 2759 2 0 piej, 
+R 2762 3 0 raz 
+R 2767 1 0 go
+R 2770 3 0 rzej
+- 2773
+R 2774 1 0 Nor
+R 2777 2 0 mal
+R 2780 1 0 nie 
+R 2782 2 0 o 
+R 2786 1 0 tej 
+R 2789 1 0 po
+R 2792 4 0 rze...
+- 2796 2801
+- 2801
+R 2818 1 0 To 
+R 2820 1 0 nor
+R 2823 2 0 mal
+R 2827 1 0 ne 
+R 2829 2 0 o 
+R 2832 2 0 tej 
+R 2836 2 0 po
+R 2839 2 0 rze - 
+R 2844 2 0 raz 
+R 2848 2 0 le
+R 2851 1 0 piej, 
+R 2854 2 0 raz 
+R 2859 1 0 go
+R 2861 1 0 rzej
+- 2862
+R 2863 1 0 A 
+R 2866 1 0 nor
+R 2869 2 0 mal
+R 2872 1 0 nie 
+R 2874 2 0 o 
+R 2878 2 0 tej 
+R 2882 1 0 po
+R 2885 2 0 rze - 
+R 2892 1 0 wo
+R 2895 1 0 żę 
+R 2898 1 0 się 
+R 2901 2 0 jak...
+- 2903
+R 2907 1 0 To 
+R 2909 2 0 jest 
+R 2913 2 0 nor
+R 2916 2 0 mal
+R 2920 1 0 ne 
+R 2922 2 0 o 
+R 2925 2 0 tej 
+R 2928 2 0 po
+R 2931 2 0 rze - 
+R 2935 1 0 raz 
+R 2938 3 0 le
+R 2943 1 0 piej 
+R 2946 2 0 raz 
+R 2950 1 0 go
+R 2954 3 0 rzej
+- 2957
+R 2961 1 0 Wsia
+R 2963 2 0 daj - 
+R 2968 2 0 je
+R 2971 1 0 dzie
+R 2973 1 0 my
+- 2974
+R 2977 1 0 Na 
+R 2980 4 0 trans
+R 2985 2 0 por
+R 2988 2 0 ter 
+R 2992 2 0 się 
+R 2995 2 0 zło
+R 2999 2 0 żę, 
+R 3003 2 0 mu
+R 3006 2 0 zy
+R 3010 2 0 ka 
+R 3015 2 0 for
+R 3019 2 0 te
+- 3021
+R 3022 2 0 Jak 
+R 3025 2 0 zaz
+R 3029 1 0 wy
+R 3031 2 0 czaj 
+R 3034 1 0 o 
+R 3037 2 0 tej 
+R 3041 2 0 po
+R 3044 1 0 rze
+- 3045
+R 3046 3 0 Noc 
+R 3052 3 0 ciem
+R 3056 2 0 na 
+R 3059 2 0 jak 
+R 3062 3 0 por
+R 3066 1 0 ter, 
+R 3070 2 0 por
+R 3074 2 0 ter 
+R 3078 1 0 szu
+R 3080 1 0 mi 
+R 3082 2 0 jak 
+R 3086 2 0 mo
+R 3090 1 0 rze
+- 3091
+R 3096 3 0 Szu
+R 3101 2 0 mi 
+R 3104 2 0 też 
+R 3108 3 0 coś 
+R 3112 2 0 tam 
+R 3116 2 0 w zie
+R 3119 2 0 lo
+R 3123 2 0 nym 
+R 3128 1 0 ko
+R 3130 2 0 lo
+R 3135 1 0 rze
+- 3136
+R 3137 10 0 Tak... 
+R 3150 1 0 dziś 
+R 3153 2 0 bę
+R 3157 1 0 dę 
+R 3159 2 0 pa
+R 3163 1 0 sa
+R 3166 1 0 że
+R 3169 3 0 rem
+- 3172
+R 3174 2 0 Dziś 
+R 3178 1 0 w do
+R 3180 1 0 mu 
+R 3183 1 0 chcia
+R 3186 1 0 łem 
+R 3189 2 0 wcześ
+R 3192 1 0 niej 
+R 3194 1 0 być
+- 3195
+R 3198 1 0 In
+R 3200 1 0 ten
+R 3203 1 0 cje 
+R 3206 1 0 mia
+R 3208 2 0 łem 
+R 3212 2 0 szcze
+R 3215 2 0 re, 
+R 3219 2 0 dziś 
+R 3223 1 0 spę
+R 3226 2 0 dzam 
+R 3230 1 0 dob
+R 3233 3 0 rze
+- 3236
+R 3237 1 0 So
+R 3239 2 0 bo
+R 3242 2 0 tę - 
+R 3245 2 0 bę
+R 3248 1 0 dę 
+R 3251 1 0 na 
+R 3254 1 0 nie
+R 3256 2 0 dzie
+R 3260 4 0 le
+- 3264
+R 3265 2 0 Nie 
+R 3268 2 0 bę
+R 3271 2 0 dzie 
+R 3274 2 0 kło
+R 3277 2 0 po
+R 3280 1 0 tów 
+R 3284 1 0 z pow
+R 3286 1 0 ro
+R 3289 4 0 tem - 
+R 3295 1 0 są 
+R 3298 1 0 przy
+R 3300 2 0 ja
+R 3303 2 0 cie
+R 3306 2 0 le
+- 3308
+R 3309 3 0 Są 
+R 3314 2 0 przy
+R 3317 2 0 ja
+R 3320 2 0 cie
+R 3324 3 0 le,
+- 3327 3333
+- 3333
+R 3350 3 0 Są 
+R 3354 2 0 przy
+R 3357 2 0 ja
+R 3360 2 0 cie
+R 3363 1 0 le,
+- 3364
+R 3365 2 0 Są 
+R 3370 2 0 przy
+R 3373 2 0 ja
+R 3377 2 0 cie
+R 3381 3 0 le
+- 3384
+R 3398 2 0 Są 
+R 3401 1 0 przy
+R 3403 2 0 ja
+R 3407 1 0 cie
+R 3409 2 0 le,
+- 3411
+R 3412 3 0 Są 
+R 3417 2 0 przy
+R 3420 2 0 ja
+R 3424 2 0 cie
+R 3427 3 0 le,
+- 3430
+R 3443 3 0 Są 
+R 3447 2 0 przy
+R 3450 2 0 ja
+R 3453 1 0 cie
+R 3456 1 0 le
+- 3457
+R 3458 2 0 Są 
+R 3463 1 0 przy
+R 3465 2 0 ja
+R 3469 2 0 cie
+R 3472 4 0 le
+E

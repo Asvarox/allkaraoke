@@ -1,0 +1,348 @@
+#ARTIST:Kygo
+#TITLE:Stole The Show (Lyrics) feat. Parson James
+#CREATOR:Mrs_Luu_x3
+#BPM:100,446
+#YEAR:2015
+#VIDEO:v=Vs3LXhqm5h4
+#LANGUAGE:en
+#GAP:1456,662206558748
+#ALLKARAOKE_ID:kygo-stole-the-show-lyrics-feat-parson-james
+#ALLKARAOKE_SID:7230
+#ALLKARAOKE_LASTUPDATE:2026-11-11T04:02:46.862Z
+#ALLKARAOKE_ARTISTORIGIN:NO
+#ALLKARAOKE_REALBPM:100
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:219
+#VERSION:1.1.0
+#MP3:audio.mp3
+#AUDIO:audio.mp3
+: 7 4 -4 Darling, 
+: 11 4 -4 darling, 
+: 15 2 -4 oh, 
+: 25 1 -4 turn 
+: 26 1 -3 the 
+: 27 2 -2 lights 
+: 29 2 -4 back 
+: 32 1 -6 on 
+: 33 3 -9 now
+- 36
+: 39 3 -4 Watching, 
+: 43 3 -5 watching, 
+: 58 1 -5 as 
+: 59 1 -5 the 
+: 59 3 -2 credits 
+: 62 1 -4 all 
+: 64 2 -5 roll 
+: 66 2 -9 down
+- 68
+: 71 4 -5 Crying, 
+: 76 3 -4 crying, 
+: 79 10 -4 you 
+: 89 1 -4 know 
+: 90 1 -3 we're 
+: 91 2 -2 playing 
+: 94 1 -4 to 
+: 95 1 -4 a 
+: 95 2 -5 full 
+: 98 5 -7 house, 
+: 114 5 -8 house
+- 119 123
+- 123
+: 130 2 -4 No 
+: 132 4 -4 heroes, 
+: 136 4 -4 villains, 
+: 140 2 -4 one 
+: 142 1 -2 to 
+: 143 3 -4 blame
+- 146
+: 146 2 -2 While 
+: 148 3 0 wilted 
+: 152 4 1 roses 
+: 156 1 -1 fill 
+: 157 2 -1 the 
+: 159 2 -1 stage
+- 161
+: 161 1 0 And 
+: 162 1 -1 the 
+: 163 4 2 thrill, 
+: 171 1 2 the 
+: 172 4 2 thrill 
+: 177 1 -1 is 
+: 178 2 -4 gone
+- 180 188
+- 188
+: 195 1 -4 Our 
+: 196 4 -4 debut 
+: 200 2 -4 was 
+: 203 1 -2 a 
+: 204 6 -4 masterpiece
+- 210
+: 210 2 -2 But 
+: 212 2 -1 in 
+: 214 2 1 the 
+: 216 1 -1 end 
+: 217 3 1 for 
+: 220 2 -1 you 
+: 222 1 0 and 
+: 223 2 -1 me
+- 225
+: 225 2 1 Oh, 
+: 227 1 -1 the 
+: 228 4 2 show, 
+: 235 3 1 it 
+: 238 2 2 can't 
+: 241 1 -1 go 
+: 244 1 -4 on
+- 245 260
+- 260
+: 267 1 6 We 
+: 269 1 3 used 
+: 271 1 3 to 
+: 273 2 6 have 
+: 275 1 6 it 
+: 277 2 3 all, 
+: 283 1 -3 but 
+: 284 2 3 now's 
+: 288 1 3 our 
+: 289 2 2 curtain 
+: 292 2 1 call
+- 294
+: 299 1 1 So 
+: 300 2 2 hold 
+: 302 2 3 for 
+: 304 3 2 the 
+: 307 3 1 applause, 
+: 310 3 1 oh
+- 313 324
+- 324
+: 331 1 -5 And 
+: 332 3 3 wave 
+: 335 1 3 out 
+: 336 2 3 to 
+: 338 1 3 the 
+: 339 5 8 crowd, 
+: 347 1 8 and 
+: 348 2 1 take 
+: 351 1 3 our 
+: 353 2 2 final 
+: 356 2 1 bow
+- 358
+: 364 2 11 Oh, 
+: 367 1 3 it's 
+: 368 1 1 our 
+: 369 1 2 time 
+: 371 1 -1 to 
+: 372 2 1 go, 
+: 379 1 -1 but 
+: 380 1 1 at 
+: 381 1 3 least 
+: 383 1 3 we 
+: 384 3 3 stole 
+: 387 1 -4 the 
+: 388 6 -4 show
+- 394
+: 396 1 -4 At 
+: 397 1 3 least 
+: 399 1 3 we 
+: 400 3 15 stole 
+: 403 1 15 the 
+: 404 6 -4 show
+- 410
+: 412 1 -2 At 
+: 413 2 3 least 
+: 415 1 3 we 
+: 416 3 3 stole 
+: 419 1 -4 the 
+: 420 6 -4 show
+- 426
+: 428 1 -3 At 
+: 429 2 3 least 
+: 431 1 3 we 
+: 432 3 3 stole 
+: 435 1 3 the 
+: 436 6 -4 show
+- 442
+: 444 1 -4 At 
+: 445 2 3 least 
+: 447 1 3 we 
+: 448 3 2 stole 
+: 451 1 -4 the 
+: 452 2 -4 show
+- 454 711
+- 711
+: 718 1 -4 At 
+: 718 2 3 least 
+: 720 1 3 we 
+: 721 1 2 stole 
+: 722 2 3 the 
+: 724 1 3 show
+- 725 739
+- 739
+: 746 4 -4 Darling, 
+: 750 4 -4 darling, 
+: 754 1 -4 you 
+: 764 1 -4 know 
+: 766 1 -3 that 
+: 767 1 -1 we 
+: 769 1 -4 are 
+: 770 3 -5 sold 
+: 774 1 -9 out
+- 775
+: 779 3 -4 This 
+: 782 1 -4 is 
+: 783 3 -4 fading, 
+: 797 1 -4 but 
+: 798 1 -3 the 
+: 799 2 -2 band 
+: 801 2 -4 plays 
+: 804 1 -6 on 
+: 805 2 -9 now
+- 807
+: 810 1 -9 We're 
+: 811 4 -4 crying, 
+: 815 4 -4 crying, 
+: 828 1 -4 so 
+: 829 1 -4 let 
+: 830 1 -4 the 
+: 831 3 -3 velvet 
+: 835 2 -5 roll 
+: 837 4 -7 down, 
+: 853 9 -2 down
+- 862
+: 869 2 -4 No 
+: 871 4 -4 heroes, 
+: 875 4 -4 villains, 
+: 879 2 -4 one 
+: 881 1 -2 to 
+: 882 3 -4 blame
+- 885
+: 887 2 -2 While 
+: 889 2 1 wilted 
+: 891 2 -1 roses 
+: 895 3 -1 fill 
+: 898 1 -1 the 
+: 898 2 -1 stage
+- 900
+: 901 1 1 And 
+: 902 1 -1 the 
+: 903 4 2 thrill, 
+: 910 1 -2 the 
+: 911 4 2 thrill 
+: 916 1 -1 is 
+: 918 1 -4 gone
+- 919 927
+- 927
+: 934 1 -4 Our 
+: 935 4 -4 debut 
+: 939 2 -4 was 
+: 942 1 -2 a 
+: 943 6 -4 masterpiece
+- 949
+: 950 1 -2 Our 
+: 952 1 -1 lines 
+: 954 1 1 we 
+: 955 2 -1 read 
+: 957 2 1 so 
+: 960 4 -1 perfectly
+- 964
+: 965 1 1 But 
+: 966 4 1 the 
+: 970 1 3 show, 
+: 975 1 -2 it 
+: 975 5 1 can't 
+: 980 1 -1 go 
+: 983 1 -3 on
+- 984 999
+- 999
+: 1006 1 -3 We 
+: 1008 1 -3 used 
+: 1010 1 3 to 
+: 1012 2 6 have 
+: 1014 1 6 it 
+: 1017 1 3 all, 
+: 1022 1 -3 but 
+: 1024 2 2 now's 
+: 1027 1 3 our 
+: 1028 2 2 curtain 
+: 1031 3 1 call
+- 1034
+: 1038 1 1 So 
+: 1040 1 2 hold 
+: 1041 2 2 for 
+: 1044 2 2 the 
+: 1046 19 1 applause, 
+: 1065 4 -4 oh
+- 1069
+: 1071 1 -5 And 
+: 1072 1 3 wave 
+: 1074 1 3 out 
+: 1076 2 3 to 
+: 1078 1 3 the 
+: 1079 4 8 crowd, 
+: 1087 1 8 and 
+: 1087 3 3 take 
+: 1090 2 3 our 
+: 1092 2 1 final 
+: 1095 3 1 bow
+- 1098
+: 1102 2 11 Oh, 
+: 1104 1 11 it's 
+: 1105 1 11 our 
+: 1106 4 3 time 
+: 1110 1 0 to 
+: 1111 3 1 go, 
+: 1118 1 -1 but 
+: 1120 1 1 at 
+: 1120 2 3 least 
+: 1122 1 3 we 
+: 1123 3 3 stole 
+: 1126 1 3 the 
+: 1127 7 -4 show
+- 1134
+: 1136 1 -4 At 
+: 1136 2 3 least 
+: 1138 2 3 we 
+: 1140 2 15 stole 
+: 1142 1 15 the 
+: 1143 3 -5 show
+- 1146 1158
+- 1158
+: 1165 3 6 At 
+: 1168 2 3 least 
+: 1170 1 3 we 
+: 1172 2 3 stole 
+: 1174 1 8 the 
+: 1175 2 -5 show
+- 1177 1193
+- 1193
+: 1200 1 -5 At 
+: 1200 2 3 least 
+: 1203 1 3 we 
+: 1204 3 14 stole 
+: 1207 1 -5 the 
+: 1208 2 -4 show
+- 1210 1261
+- 1261
+: 1268 3 14 Stole 
+: 1271 3 -4 the 
+: 1274 3 -5 show
+- 1277 1296
+- 1296
+: 1303 1 14 At 
+: 1329 2 3 least 
+: 1331 1 3 we 
+: 1332 3 3 stole 
+: 1335 2 -5 the 
+: 1397 3 14 show
+- 1400
+: 1400 4 -4 Stole 
+: 1404 3 -4 the 
+: 1407 4 -4 show
+- 1411
+: 1410 4 14 At 
+: 1414 3 15 least 
+: 1417 4 15 we 
+: 1421 4 15 stole 
+: 1425 3 15 the 
+: 1428 4 14 show
+E

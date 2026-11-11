@@ -1,0 +1,245 @@
+#ARTIST:KanoeRana
+#TITLE:Tsuki to Hoshizora (TV Size)
+#CREATOR:Currymalker
+#BPM:390
+#YEAR:2020
+#VIDEO:v=rSct8nvWPDw
+#GENRE:Anime
+#LANGUAGE:Japanese
+#GAP:8778
+#EDITION:Anime
+#ALLKARAOKE_ID:kanoerana-tsuki-to-hoshizora-tv-size
+#ALLKARAOKE_SID:7217
+#ALLKARAOKE_LASTUPDATE:2026-11-11T04:02:40.854Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=currymalker
+#ALLKARAOKE_REALBPM:97
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=KanoeRana&cancion=Tsuki%20to%20Hoshizora%20(TV)
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:90
+#MP3:KanoeRana - Tsuki to Hoshizora (TV).mp3
+#COVER:KanoeRana - Tsuki to Hoshizora (TV) [CO].jpg
+#MEDLEYSTARTBEAT:1024
+#MEDLEYENDBEAT:1520
+: 26 2 1 Te
+: 30 2 3 re
+: 34 9 5 te
+- 43
+: 58 3 5 Do
+: 66 5 5 ki 
+: 74 4 5 do
+: 82 4 3 ki 
+: 90 4 5 de
+: 98 14 6 ki
+: 114 6 5 ru 
+: 122 5 3 no 
+: 130 8 5 mo
+- 138
+: 154 5 3 Su
+: 162 4 5 ne
+: 170 5 5 te
+- 175
+: 186 6 5 So
+: 194 4 5 o
+: 202 6 5 po 
+: 210 6 3 wo 
+: 218 3 1 mu
+: 226 13 1 ke
+: 242 5 3 ru 
+: 250 5 5 no 
+: 258 5 3 mo
+- 263
+: 282 3 3 Su
+: 290 5 5 ki 
+: 298 4 5 to
+- 302
+: 314 6 5 I
+: 322 6 5 i 
+: 330 6 5 a
+* 338 6 3 e
+: 346 6 5 ru 
+: 354 6 6 no 
+: 362 6 6 mo 
+: 370 6 5 a
+: 378 5 3 no 
+: 386 7 5 hi
+- 393
+: 410 3 3 U
+: 418 6 5 kka
+: 426 5 5 ri 
+: 434 6 8 u
+: 442 6 10 n
+: 450 11 8 mei
+- 461
+: 466 6 5 To 
+: 474 2 5 de
+: 478 2 5 a
+: 482 6 6 e
+: 490 4 5 ta 
+: 498 6 3 ka
+: 506 15 1 ra
+- 521
+: 538 6 1 Na
+* 546 6 0 ni 
+: 554 6 0 ga 
+: 562 6 1 a
+: 570 4 3 ~
+: 578 9 1 tte
+- 587
+: 594 4 1 Mo 
+: 602 6 1 ma
+: 610 14 0 e 
+: 626 5 1 mu
+: 634 6 3 ki 
+: 642 4 1 de
+- 646
+: 658 13 5 Ta
+: 674 6 6 ma 
+: 682 6 8 ni 
+: 690 2 8 dai
+: 694 10 10 ~
+: 706 13 8 tan 
+: 722 10 6 da
+: 738 2 5 tta
+: 742 2 6 ri 
+: 746 2 6 ne
+: 750 24 8 ~
+- 774
+: 794 6 5 I
+: 802 13 6 ron
+: 818 5 8 na 
+* 826 6 10 ha
+* 834 13 9 ji
+: 850 4 5 me
+: 858 5 3 te 
+: 866 5 1 ba
+: 874 4 3 ~
+: 882 2 5 kka
+: 886 2 1 ~
+: 890 3 1 ri 
+: 898 10 10 de
+- 908
+: 922 2 3 Kyo
+: 926 2 5 u 
+: 930 11 6 mo
+- 941
+: 954 5 6 Ha
+: 962 4 6 tsu
+: 970 6 5 ko
+: 978 6 6 i 
+: 986 2 8 mi
+: 990 2 10 ~
+: 994 25 8 tai
+- 1019 1024
+- 1024
+: 1050 2 5 Fu
+: 1054 2 6 ta
+: 1058 2 6 ri
+: 1062 10 8 ~
+- 1072
+: 1082 6 8 Te 
+: 1090 2 6 wo
+: 1094 2 8 ~ 
+: 1098 5 6 tsu
+* 1106 6 5 na
+: 1114 6 6 i
+: 1122 2 6 de
+: 1126 25 8 ~
+- 1151
+: 1162 6 8 A
+: 1170 6 10 ru
+: 1178 5 10 ku 
+* 1186 6 12 hi
+: 1194 2 8 bi
+: 1198 2 9 ~ 
+: 1202 5 9 no 
+: 1210 5 5 na
+: 1218 6 5 ka
+- 1224
+: 1234 6 3 Na
+: 1242 6 0 n
+: 1250 2 1 do 
+: 1254 2 3 de
+: 1258 2 3 mo
+: 1262 18 5 ~
+- 1280
+: 1298 6 8 Ki
+: 1306 6 8 mi 
+* 1314 4 10 ni 
+: 1322 2 5 ko
+: 1326 3 6 ~
+: 1331 4 6 i
+: 1338 5 5 shi
+: 1346 11 3 te
+- 1357
+: 1370 2 5 Ki
+: 1374 2 6 mi 
+* 1378 4 9 wo 
+: 1386 2 5 a
+: 1390 2 6 ~
+: 1394 4 5 i
+: 1402 3 3 shi
+: 1410 5 1 te
+- 1415
+: 1426 8 5 Mo
+: 1442 2 8 tto
+: 1446 11 10 ~
+- 1457
+: 1466 6 10 Fu
+: 1474 6 10 e
+: 1482 6 10 te
+: 1490 5 8 ku 
+: 1498 5 6 o
+: 1506 10 5 mo
+: 1518 2 3 i
+: 1522 24 3 da
+- 1546
+: 1562 2 5 Ka
+: 1566 2 6 wa
+: 1570 2 6 i
+: 1574 12 8 i
+- 1586
+: 1594 2 8 Ki
+: 1598 2 8 mi 
+: 1602 2 6 no
+: 1606 2 8 ~ 
+: 1610 6 6 shi
+: 1618 4 5 gu
+: 1626 6 6 sa 
+: 1634 2 6 ni
+: 1638 24 8 ~
+- 1662
+: 1674 6 8 O
+: 1682 6 10 mo
+: 1690 5 10 wa
+* 1698 6 12 zu 
+* 1706 4 9 a
+: 1714 6 9 ka
+: 1722 5 5 ku 
+: 1730 6 5 na
+: 1738 3 3 ~
+: 1746 6 3 tte 
+: 1754 4 1 mi
+: 1762 2 1 a
+: 1766 2 3 ge
+: 1770 2 3 ta
+: 1774 18 5 ~
+- 1792
+: 1809 12 8 Ya
+: 1826 5 10 sa
+: 1834 4 6 shi
+: 1842 5 6 ku 
+: 1850 5 5 ka
+: 1858 9 3 ga
+: 1874 5 3 ya
+: 1882 4 5 ku 
+: 1890 5 6 tsu
+: 1898 6 8 ki 
+* 1906 20 9 to
+- 1926
+: 1938 6 5 Ho
+: 1946 5 6 ~
+: 1954 6 5 shi
+: 1962 6 3 zo
+: 1970 36 1 ra
+E

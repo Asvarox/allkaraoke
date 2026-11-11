@@ -1,0 +1,547 @@
+#ARTIST:My Ordinary Life
+#TITLE:The Living Tombstone
+#CREATOR:karo
+#BPM:363
+#YEAR:2017
+#VIDEO:v=9Zj0JOHJR-s
+#GENRE:Edm
+#LANGUAGE:English
+#GAP:43238,264462809915
+#ALLKARAOKE_ID:my-ordinary-life-the-living-tombstone
+#ALLKARAOKE_SID:7183
+#ALLKARAOKE_LASTUPDATE:2026-11-11T04:02:27.750Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:176
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:246
+#MP3:My Ordinary Life-The Living Tombstone.mp3
+#COVER:Ayuda en el recreo escolar.png
+#BACKGROUND:4XIzi9ZkwWj0NLDxvzgCqv9GUqyqF1NUtajcz1ATdU_bq0ldUkFzDeaUO9cJvREWz4DryCJMKL43AERamPq_uRhszACYfXiUrMUbj7vdryNVj5bZvbADonVMfTkULBXUAwxjMzGT9FG4uM5WzsMt8dDDTyd8v2hKinsMu1-essgfYMBWpIqRfXe5ECD5xKhP.jpg
+: 24 2 0 They 
+: 29 1 0 tell 
+: 33 2 0 me 
+: 37 3 0 keep 
+: 43 3 0 it 
+: 48 7 0 simple, 
+: 57 3 0 I 
+: 63 2 0 tell 
+: 67 2 0 them 
+: 71 2 0 take 
+: 75 1 0 it 
+: 78 9 0 slow
+- 87
+: 89 2 0 I 
+: 94 2 0 feed 
+: 99 1 0 and 
+: 103 4 0 water 
+: 109 3 0 an 
+: 115 8 0 idea 
+: 125 4 0 so 
+: 130 4 0 I 
+: 136 3 0 let 
+: 140 1 0 it 
+: 143 8 0 grow
+- 151
+: 154 4 0 I 
+: 160 4 0 tell 
+: 166 2 0 them 
+: 169 2 0 take 
+: 173 2 0 it 
+: 177 6 0 easy, 
+: 186 4 0 they 
+: 192 3 0 laugh 
+: 196 3 0 and 
+: 202 4 0 tell 
+: 208 3 0 me 
+: 212 9 0 no
+- 221
+: 223 2 0 It’s 
+: 226 3 0 cool 
+: 231 2 0 but 
+: 236 3 0 I 
+: 240 2 0 don’t 
+: 245 1 0 see 
+: 250 3 0 them 
+: 254 3 0 laughing 
+: 259 2 0 at 
+: 264 1 0 my 
+: 268 2 0 money 
+: 272 13 0 though
+- 285
+: 288 2 0 They 
+: 292 5 0 spittin’ 
+: 299 6 0 facts 
+: 308 2 0 at 
+: 312 8 0 me, 
+: 322 1 0 I’m 
+: 326 5 0 spittin’ 
+: 332 6 0 tracks, 
+: 341 2 0 catch 
+: 345 8 0 me?
+- 353
+: 355 2 0 I’m 
+: 359 6 0 spinning 
+: 366 4 0 gold 
+: 373 6 0 out 
+: 381 1 0 my 
+: 384 6 0 records 
+: 392 3 0 know 
+: 397 2 0 you 
+: 400 4 0 can’t 
+: 406 1 0 combat 
+: 408 9 0 me
+- 417
+: 420 3 0 They 
+: 424 2 0 tell 
+: 428 3 0 me 
+: 433 3 0 Jesus 
+: 438 12 0 walks, 
+: 452 2 0 I 
+: 456 2 0 tell 
+: 461 2 0 them 
+: 466 4 0 money 
+: 472 7 0 talks
+- 479
+: 481 6 0 Bling 
+: 490 2 0 got 
+: 495 3 0 me 
+: 499 6 0 chill, 
+: 507 2 0 cause 
+: 512 3 0 I’m 
+: 516 3 0 living 
+: 522 3 0 in 
+: 528 2 0 an 
+: 532 18 0 icebox
+- 550
+: 551 2 0 They 
+: 555 2 0 tell 
+: 560 3 0 me 
+: 565 2 0 I’ve 
+: 570 2 0 been 
+: 574 8 0 sleepin’, 
+: 584 2 0 I 
+: 589 2 0 say 
+: 594 2 0 I’m 
+: 598 3 0 wide 
+: 603 9 0 awake
+- 612
+: 614 5 0 Tracks 
+: 621 3 0 hot 
+: 627 4 0 and 
+: 632 5 0 ready 
+: 639 5 0 so 
+: 646 3 0 they 
+: 651 2 0 call 
+: 655 3 0 me 
+: 660 2 0 mister 
+: 664 4 0 e-
+: 670 3 0 z 
+: 674 7 0 bake
+- 681
+: 683 3 0 They 
+: 689 4 0 say 
+: 696 3 0 the 
+: 701 3 0 grass 
+: 706 3 0 is 
+: 710 7 0 greener, 
+: 719 2 0 I 
+: 723 3 0 think 
+: 728 3 0 my 
+: 733 3 0 grass 
+: 738 3 0 is 
+: 743 6 0 dank
+- 749
+: 750 2 0 Drivin’ 
+: 754 2 0 with 
+: 759 1 0 a 
+: 763 6 0 drank 
+: 771 2 0 on 
+: 775 2 0 an 
+: 779 5 0 empty 
+: 786 3 0 tank 
+: 791 4 0 to 
+: 798 2 0 the 
+: 802 12 0 bank
+- 814
+: 818 4 0 Do 
+: 824 3 0 you 
+: 828 3 0 feel 
+: 833 4 0 me? 
+: 839 3 0 Take 
+: 843 1 0 a 
+: 847 2 0 look 
+: 852 2 0 inside 
+: 857 2 0 my 
+: 861 13 0 brain
+- 874
+: 876 2 0 The 
+: 881 2 0 people 
+: 886 2 0 always 
+: 891 2 0 different 
+: 896 6 0 but 
+: 903 4 0 it 
+: 910 6 0 always 
+: 919 2 0 feels 
+: 923 2 0 the 
+: 928 14 0 same
+- 942
+: 944 5 0 That’s 
+: 959 2 0 the 
+: 964 2 0 real 
+: 970 2 0 me. 
+: 976 7 0 Pop 
+: 984 4 0 the 
+: 991 15 0 champagne.
+- 1006
+: 1009 2 0 The 
+: 1014 2 0 haters 
+: 1018 2 0 wanna 
+: 1024 5 0 hurt 
+: 1030 2 0 me 
+: 1035 3 0 and 
+: 1040 2 0 I’m 
+: 1044 6 0 laughin’ 
+: 1052 2 0 at 
+: 1056 2 0 the 
+: 1060 15 0 pain
+- 1075
+: 1087 13 0 Stayin’ 
+: 1102 16 0 still, 
+: 1121 11 0 eyes 
+: 1134 12 0 closed
+- 1146
+: 1148 4 0 Let 
+: 1154 2 0 the 
+: 1158 7 0 world 
+: 1166 6 0 just 
+: 1174 7 0 pass 
+: 1183 3 0 me 
+: 1188 29 0 by
+- 1217
+: 1220 10 0 Pain 
+: 1232 18 0 pills, 
+: 1252 10 0 nice 
+: 1264 11 0 clothes
+- 1275
+: 1277 6 0 If 
+: 1285 2 0 I 
+: 1289 12 0 fall 
+: 1303 2 0 I 
+: 1307 6 0 think 
+: 1315 3 0 I’ll 
+: 1320 27 0 fly
+- 1347
+: 1351 10 0 Touch 
+: 1363 16 0 me, 
+: 1383 24 0 Midas
+- 1407
+: 1410 4 0 Make 
+: 1416 3 0 me 
+: 1421 8 0 part 
+: 1430 5 0 of 
+: 1437 8 0 your 
+: 1447 33 0 design
+- 1480
+: 1483 7 0 None 
+: 1493 16 0 to 
+: 1513 12 0 guide 
+: 1527 8 0 us
+- 1535
+: 1537 5 0 I 
+: 1545 6 0 feel 
+: 1553 6 0 fear 
+: 1562 4 0 for 
+: 1568 2 0 the 
+: 1571 4 0 very 
+: 1578 6 0 last 
+: 1586 13 0 time
+: 2136 2 0 They 
+: 2140 1 0 tell 
+: 2144 1 0 me 
+: 2148 2 0 that 
+: 2152 1 0 I’m 
+: 2156 8 0 special, 
+: 2167 2 0 I 
+: 2171 1 0 smile 
+: 2176 1 0 and 
+: 2180 1 0 shake 
+: 2185 1 0 my 
+: 2189 9 0 head
+- 2198
+: 2201 2 0 I’ll 
+: 2205 2 0 give 
+: 2210 4 0 them 
+: 2215 1 0 stories 
+: 2218 4 0 to 
+: 2223 2 0 tell 
+: 2227 1 0 friends 
+: 2229 7 0 about 
+: 2238 5 0 the 
+: 2245 6 0 things 
+: 2253 2 0 I 
+: 2256 8 0 said
+- 2264
+: 2266 2 0 They 
+: 2271 2 0 tell 
+: 2275 2 0 me 
+: 2280 2 0 I’m 
+: 2284 1 0 so 
+: 2288 8 0 humble, 
+: 2298 1 0 I 
+: 2302 1 0 say 
+: 2306 1 0 I’m 
+: 2309 2 0 turning 
+: 2315 14 0 red
+- 2329
+: 2331 2 0 They 
+: 2336 2 0 let 
+: 2341 2 0 me 
+: 2345 3 0 lie 
+: 2352 2 0 to 
+: 2357 3 0 them 
+: 2362 5 0 and 
+: 2370 3 0 don’t 
+: 2375 2 0 feel 
+: 2379 2 0 like 
+: 2384 1 0 they’ve 
+: 2388 1 0 been 
+: 2391 6 0 misled
+- 2397
+: 2398 2 0 They 
+: 2403 2 0 give 
+: 2408 2 0 so 
+: 2412 4 0 much 
+: 2419 2 0 to 
+: 2423 6 0 me, 
+: 2433 2 0 I’m 
+: 2437 2 0 losing 
+: 2444 4 0 touch 
+: 2451 2 0 get 
+: 2456 7 0 me?
+- 2463
+: 2465 2 0 Served 
+: 2470 2 0 on 
+: 2476 2 0 a 
+: 2480 2 0 silver 
+: 2486 2 0 platter, 
+: 2493 5 0 ask 
+: 2500 2 0 for 
+: 2504 2 0 seconds 
+: 2510 2 0 they 
+: 2514 2 0 just 
+: 2519 2 0 let 
+: 2524 5 0 me
+- 2529
+: 2533 2 0 They 
+: 2537 2 0 tell 
+: 2542 2 0 me 
+: 2547 2 0 I’m 
+: 2552 2 0 a 
+: 2556 7 0 god, 
+: 2565 2 0 I’m 
+: 2569 2 0 lost 
+: 2573 2 0 in 
+: 2578 2 0 the 
+: 2582 1 0 façade
+- 2583
+: 2592 3 0 Six 
+: 2598 2 0 feet 
+: 2603 3 0 off 
+: 2608 1 0 the 
+: 2612 4 0 ground 
+: 2619 2 0 at 
+: 2624 2 0 all 
+: 2628 2 0 times 
+: 2633 2 0 I 
+: 2638 2 0 think 
+: 2643 2 0 I’m 
+: 2647 1 0 feelin’ 
+: 2652 8 0 odd
+- 2660
+: 2664 2 0 No 
+: 2668 2 0 matter 
+: 2674 2 0 what 
+: 2679 2 0 I 
+: 2684 5 0 make, 
+: 2695 3 0 they 
+: 2700 2 0 never 
+: 2705 2 0 see 
+: 2710 13 0 mistakes
+- 2723
+: 2725 6 0 Makin’ 
+: 2733 3 0 so 
+: 2738 3 0 much 
+: 2743 5 0 bread, 
+: 2751 3 0 I 
+: 2756 2 0 don’t 
+: 2761 2 0 care 
+: 2766 2 0 that 
+: 2770 2 0 they’re 
+: 2775 1 0 just 
+: 2780 1 0 being 
+: 2784 7 0 fake
+- 2791
+: 2795 2 0 They 
+: 2799 2 0 tell 
+: 2804 3 0 me 
+: 2810 2 0 they’re 
+: 2815 10 0 below 
+: 2828 2 0 me, 
+: 2833 2 0 I 
+: 2837 2 0 act 
+: 2841 2 0 like 
+: 2846 1 0 I’m 
+: 2850 6 0 above
+- 2856
+: 2858 5 0 The 
+: 2866 2 0 people 
+: 2872 3 0 blend 
+: 2877 2 0 together 
+: 2885 1 0 but 
+: 2889 2 0 I 
+: 2894 2 0 would 
+: 2899 1 0 be 
+: 2903 2 0 lost 
+: 2909 2 0 without 
+: 2914 1 0 their 
+: 2918 9 0 love
+- 2927
+: 2935 1 0 Can 
+: 2939 2 0 you 
+: 2944 2 0 heal 
+: 2949 4 0 me? 
+: 2955 2 0 Have 
+: 2961 5 0 I 
+: 2968 2 0 gained 
+: 2973 2 0 too 
+: 2978 12 0 much?
+- 2990
+: 2992 2 0 When 
+: 2997 2 0 you 
+: 3002 2 0 become 
+: 3007 10 0 untouchable 
+: 3019 3 0 you’re 
+: 3024 4 0 unable 
+: 3031 2 0 to 
+: 3036 17 0 touch
+- 3053
+: 3056 2 0 Is 
+: 3062 3 0 there 
+: 3069 2 0 a 
+: 3073 3 0 real 
+: 3080 6 0 me? 
+: 3089 4 0 Pop 
+: 3095 2 0 the 
+: 3099 21 0 champagne
+- 3120
+: 3122 2 0 It 
+: 3126 1 0 hurts 
+: 3130 2 0 me 
+: 3135 1 0 just 
+: 3139 2 0 to 
+: 3144 2 0 think 
+: 3148 3 0 and 
+: 3154 2 0 I 
+: 3159 2 0 don’t 
+: 3163 2 0 do 
+: 3178 8 0 pain
+- 3186
+: 3189 20 0 Stayin’ 
+: 3211 20 0 still, 
+: 3234 9 0 eyes 
+: 3246 10 0 closed
+- 3256
+: 3257 6 0 Let 
+: 3265 2 0 the 
+: 3269 8 0 world 
+: 3278 6 0 just 
+: 3286 8 0 pass 
+: 3295 3 0 me 
+: 3300 28 0 by
+- 3328
+: 3331 9 0 Pain 
+: 3342 20 0 pills, 
+: 3364 11 0 nice 
+: 3377 10 0 clothes
+- 3387
+: 3389 4 0 If 
+: 3396 2 0 I 
+: 3401 8 0 fall 
+: 3411 5 0 I 
+: 3418 7 0 think 
+: 3427 3 0 I’ll 
+: 3432 27 0 fly
+- 3459
+: 3462 10 0 Touch 
+: 3474 19 0 me, 
+: 3495 21 0 Midas
+- 3516
+: 3518 8 0 Make 
+: 3528 3 0 me 
+: 3532 7 0 part 
+: 3541 5 0 of 
+: 3549 6 0 your 
+: 3557 34 0 design
+- 3591
+: 3593 9 0 None 
+: 3604 19 0 to 
+: 3626 7 0 guide 
+: 3636 8 0 us
+- 3644
+: 3646 6 0 I 
+: 3655 6 0 feel 
+: 3663 7 0 fear 
+: 3672 3 0 for 
+: 3677 1 0 the 
+: 3681 5 0 very 
+: 3689 23 0 last 
+: 3714 17 0 time
+- 3731
+: 3732 5 0 Lay 
+: 3740 18 0 still, 
+: 3761 24 0 restless
+- 3785
+: 3786 1 0 Losing 
+: 3788 9 0 sleep 
+: 3799 13 0 while 
+: 3813 7 0 I 
+: 3822 2 0 lose 
+: 3827 3 0 my 
+: 3831 24 0 mind
+- 3855
+: 3858 11 0 All 
+: 3871 16 0 thrill, 
+: 3890 9 0 no 
+: 3901 14 0 stress
+- 3915
+: 3916 5 0 All 
+: 3923 3 0 my 
+: 3928 15 0 muses 
+: 3945 6 0 left 
+: 3953 35 0 behind
+- 3988
+: 3990 9 0 World 
+: 4002 22 0 is 
+: 4026 21 0 below
+- 4047
+: 4049 4 0 So 
+: 4055 9 0 high 
+: 4066 4 0 up, 
+: 4071 6 0 I’m 
+: 4079 6 0 near 
+: 4087 31 0 divine
+- 4118
+: 4120 11 0 Lean 
+: 4134 17 0 in, 
+: 4153 11 0 let 
+: 4167 8 0 go
+- 4175
+: 4176 7 0 I 
+: 4185 6 0 feel 
+: 4193 7 0 fear 
+: 4202 4 0 for 
+: 4208 2 0 the 
+: 4211 5 0 very 
+: 4218 5 0 last 
+: 4226 13 0 time
+E

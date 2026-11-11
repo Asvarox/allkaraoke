@@ -1,0 +1,296 @@
+#ARTIST:The Dead South
+#TITLE:You Are My Sunshine
+#CREATOR:hermes137
+#BPM:337,16
+#YEAR:2021
+#VIDEO:v=1MevYCdn5S8
+#GENRE:Folk
+#LANGUAGE:English
+#GAP:4761,23620832839
+#ALLKARAOKE_ID:the-dead-south-you-are-my-sunshine
+#ALLKARAOKE_SID:7261
+#ALLKARAOKE_LASTUPDATE:2026-11-11T04:02:59.310Z
+#ALLKARAOKE_REALBPM:86
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:220
+#MP3:The Dead South - You Are My Sunshine.mp3
+#COVER:The Dead South - You Are My Sunshine [CO].jpg
+#BACKGROUND:The Dead South - You Are My Sunshine [BG].jpg
+: 22 5 -3 The 
+: 29 4 0 o
+: 34 4 2 ther 
+: 44 9 4 night, 
+: 59 18 4 dear,
+- 77
+: 83 4 4 As 
+: 90 4 2 I 
+: 98 3 4 lay 
+: 107 7 0 slee
+: 116 7 -3 ping
+- 123
+: 143 4 4 I 
+: 150 7 4 dreamed 
+: 158 6 4 I 
+: 166 11 5 held 
+: 181 27 9 you 
+: 213 5 7 in 
+: 220 5 5 my 
+: 228 9 4 arms.
+- 237 248
+- 248
+: 270 8 5 When 
+: 279 6 5 I 
+: 287 3 5 a
+: 291 11 5 woke, 
+: 304 22 9 dear, 
+: 332 5 9 I 
+: 339 5 7 was 
+: 345 5 5 mis
+: 354 13 4 ta
+: 372 12 0 ken
+- 384
+: 401 5 0 So 
+: 410 5 2 I 
+: 418 20 4 bowed 
+: 441 4 4 my 
+: 448 18 2 head 
+: 468 5 4 and 
+: 475 5 2 I 
+: 491 5 0 crie
+: 497 11 -3 ~d.
+- 508
+: 525 4 0 You 
+: 530 5 2 are 
+: 538 3 4 my 
+: 546 7 4 sun
+: 555 15 4 shine, 
+: 584 6 4 my 
+: 592 5 2 on
+: 598 6 4 ly 
+: 609 10 0 sun
+: 620 9 -3 shine
+- 629
+: 647 6 5 You 
+: 654 7 5 make 
+: 664 6 5 me 
+: 672 15 5 hap
+: 688 19 9 py 
+: 710 5 9 when 
+: 720 7 7 skies 
+: 728 4 5 are 
+: 733 12 4 gray.
+- 745 753
+- 753
+: 775 5 4 You’ll 
+: 782 8 4 ne
+: 791 7 4 ver 
+: 799 12 5 know, 
+: 813 25 9 dear, 
+: 839 6 9 how 
+: 848 6 7 much 
+: 858 4 5 I 
+: 865 12 4 love 
+: 880 13 0 you.
+- 893
+: 914 6 0 Please, 
+: 921 5 2 don’t 
+: 929 19 4 take 
+: 953 6 4 my 
+: 961 12 2 sun
+: 975 10 4 shine 
+: 987 5 2 a
+: 993 7 0 way
+: 1002 4 -3 ~.
+- 1006 1523
+- 1523
+: 1545 7 -3 I’ll 
+: 1553 6 -3 al
+: 1560 7 -3 ways 
+: 1569 11 0 love 
+: 1583 27 0 you 
+: 1611 5 0 and 
+: 1619 5 0 make 
+: 1626 5 -3 you 
+: 1634 4 0 ha
+: 1639 2 -1 ~p
+: 1642 21 -3 py.
+- 1663
+: 1673 4 4 If 
+: 1682 4 4 you 
+: 1690 4 4 will 
+: 1696 2 4 o
+: 1699 3 2 ~n
+: 1703 35 0 ly 
+: 1744 7 0 say 
+: 1752 3 -1 the 
+: 1757 15 -3 same,
+- 1772 1784
+- 1784
+: 1806 4 4 But 
+: 1811 6 4 if 
+: 1818 7 2 you 
+: 1826 12 4 leave 
+* 1840 25 7 me 
+: 1867 6 4 to 
+: 1874 7 4 love 
+: 1883 9 2 a
+: 1893 10 4 no
+: 1904 16 0 ther
+- 1920
+: 1938 6 0 You’ll 
+: 1946 8 0 re
+: 1956 21 0 gret 
+: 1978 8 0 it 
+: 1987 11 -1 all 
+: 2000 7 0 so
+: 2008 10 -1 ~me
+: 2024 5 -1 day
+: 2030 16 -3 ~.
+- 2046
+: 2059 7 4 You 
+: 2068 5 4 are 
+: 2075 4 4 my 
+: 2081 12 4 sun
+* 2095 25 9 shine, 
+: 2124 6 9 my 
+: 2131 6 7 on
+: 2138 6 9 ly 
+: 2147 10 0 sun
+: 2158 16 -3 shine
+- 2174
+: 2187 4 -3 You 
+: 2193 9 -3 make 
+: 2203 6 -3 me 
+: 2210 11 0 hap
+: 2222 25 0 py 
+: 2251 6 5 when 
+: 2259 5 5 skies 
+: 2266 4 5 are 
+: 2273 11 4 gray.
+- 2284 2293
+- 2293
+: 2315 5 5 You’ll 
+: 2322 7 4 ne
+: 2330 6 2 ver 
+: 2338 4 4 kno
+: 2343 6 2 ~w, 
+: 2350 26 0 dear,
+- 2376
+: 2380 6 0 How 
+: 2388 6 0 much 
+: 2396 7 -1 I 
+: 2405 5 0 lo
+: 2412 3 -1 ~ve 
+: 2417 15 -3 you.
+- 2432
+: 2452 6 0 Please, 
+: 2459 6 0 don’t 
+: 2466 23 0 take 
+: 2490 8 0 my 
+: 2499 12 -1 sun
+: 2512 11 0 shine 
+: 2524 8 0 a
+: 2533 2 -1 way
+: 2536 21 -3 ~.
+- 2557 3067
+- 3067
+: 3089 3 4 You 
+: 3093 7 4 told 
+: 3101 8 4 me 
+: 3110 12 4 once, 
+: 3124 26 4 dear, 
+: 3154 6 4 you 
+: 3161 7 2 real
+: 3169 7 4 ly 
+: 3178 12 0 loved 
+: 3192 19 -3 me
+- 3211
+: 3220 5 -3 And 
+: 3227 6 -3 no 
+: 3235 7 -3 one 
+: 3244 9 0 else 
+: 3255 27 0 could 
+: 3291 7 4 come 
+: 3299 6 4 be
+: 3306 20 4 tween.
+- 3326 3328
+- 3328
+: 3350 5 4 But 
+: 3357 7 4 now 
+: 3365 6 4 you’ve 
+: 3372 4 4 le
+: 3377 8 2 ~ft 
+: 3387 25 0 me 
+: 3413 5 0 to 
+: 3419 9 0 love 
+: 3429 9 -1 a
+: 3439 11 0 no
+: 3451 14 -3 ther
+- 3465
+: 3485 6 4 You 
+: 3492 7 4 have 
+: 3500 31 4 shattered 
+: 3533 7 4 all 
+: 3541 5 4 of 
+: 3547 13 4 my 
+: 3563 28 4 dreams.
+- 3591
+: 3609 6 4 You 
+: 3616 4 4 are 
+: 3621 6 4 my 
+: 3628 14 4 sun
+: 3643 18 4 shine, 
+: 3671 7 4 my 
+: 3679 5 2 on
+: 3685 4 4 ly 
+: 3691 10 0 sun
+: 3702 21 -3 shine
+- 3723
+: 3733 6 4 You 
+: 3740 7 4 make 
+: 3749 5 4 me 
+* 3755 15 5 hap
+* 3771 21 0 py 
+* 3797 6 0 when 
+* 3804 7 0 skies 
+* 3812 2 -1 are 
+* 3815 16 -3 gray.
+- 3831 3841
+- 3841
+: 3863 5 4 You’ll 
+: 3870 6 4 ne
+: 3877 6 4 ver 
+: 3885 4 4 kno
+: 3890 6 2 ~w, 
+: 3898 22 0 dear,
+- 3920
+: 3925 8 4 How 
+: 3934 7 4 much 
+: 3942 5 2 I 
+* 3948 12 4 lo
+* 3962 2 2 ~
+* 3965 2 4 ~
+* 3968 13 2 ~ve 
+: 3983 3 0 you
+: 3987 6 -3 ~
+- 3993
+: 3998 7 4 Please, 
+: 4006 7 4 don’t 
+: 4014 16 4 take 
+: 4037 4 4 my 
+: 4043 10 2 sun
+: 4061 8 4 shine 
+: 4070 3 2 a
+: 4074 8 0 way
+: 4083 14 -3 ~.
+- 4097 4104
+- 4104
+: 4126 6 -3 Please, 
+: 4134 8 -3 don’t 
+: 4143 13 0 take 
+: 4159 14 -3 my 
+: 4175 18 -3 sun
+: 4197 11 -3 shine 
+: 4210 10 -3 a
+: 4221 36 -3 way.
+E
