@@ -1,0 +1,220 @@
+#ARTIST:SCREEN mode
+#TITLE:ROUGH DIAMONDS - Shokugeki
+#CREATOR:Currymalker
+#BPM:380,4
+#YEAR:2016
+#VIDEO:v=dWlBTmKhZVo
+#LANGUAGE:Japanese
+#GAP:15064,195583596214
+#ALLKARAOKE_ID:screen-mode-rough-diamonds-shokugeki
+#ALLKARAOKE_SID:7200
+#ALLKARAOKE_LASTUPDATE:2026-11-11T04:02:35.587Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_REALBPM:95
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:92
+#MP3:SCREEN mode - ROUGH DIAMONDS (TV).mp3
+#COVER:SCREEN mode - ROUGH DIAMONDS (TV) [CO].jpg
+#MEDLEYSTARTBEAT:1001
+#MEDLEYENDBEAT:1385
+: 25 3 1 O
+* 33 3 1 mo
+* 37 2 -2 i
+: 45 3 1 e
+: 53 3 -2 ga
+: 61 5 -4 i
+: 69 3 -4 te
+: 74 6 -2 ru
+- 80
+: 89 3 1 I
+: 97 3 1 me
+: 101 3 -2 e
+: 109 4 1 ji 
+: 117 6 3 yo
+: 125 4 1 ri 
+* 133 3 -4 ha
+* 137 2 -4 ru
+: 142 26 -6 ka
+- 168 172
+- 172
+: 197 1 1 Mu
+: 201 3 1 ko
+: 206 15 3 u
+* 230 1 1 ga
+* 233 2 3 wa 
+: 237 27 -4 e
+- 264
+: 281 3 1 Tsu
+: 289 3 1 ku
+: 293 2 -2 ri
+: 301 4 1 a
+: 309 4 -2 ge
+: 317 6 -4 te 
+: 325 2 -4 yu
+: 330 6 -2 ku
+- 336
+: 345 4 1 Shin
+* 353 1 1 ji
+* 358 4 -2 tsu 
+: 365 4 1 wa 
+: 373 4 3 ma
+: 381 3 1 da 
+: 389 3 -4 to
+: 393 2 -4 o
+: 398 27 -6 ku
+- 425 428
+- 428
+: 453 1 1 Ha
+: 457 2 1 te
+: 461 15 3 nai 
+: 486 2 1 ta
+: 490 1 3 bi
+: 494 28 5 ji
+- 522
+: 538 3 6 Ta
+: 542 3 6 ga
+: 546 2 6 i 
+: 550 2 8 no 
+: 558 6 6 pu
+: 566 3 5 ra
+: 574 5 3 i
+* 581 2 3 do 
+* 585 4 5 wo
+- 589
+: 593 6 1 To
+: 601 4 -2 gi
+* 610 1 1 su
+* 614 3 3 ma
+: 622 6 3 se
+: 630 5 1 you 
+: 638 13 1 ze
+- 651
+: 665 2 6 Ko
+: 669 2 6 to
+: 673 2 6 ba 
+: 677 3 8 nan
+: 685 4 6 te 
+: 693 5 5 ka
+: 702 5 3 za
+: 709 2 3 ri 
+: 713 4 5 wo
+- 717
+* 722 4 10 Ha
+* 730 3 3 da
+: 737 2 1 ke
+: 742 3 3 sa
+: 750 6 3 se
+: 758 4 1 rya 
+: 765 11 1 ii
+- 776
+: 785 9 4 Bu
+: 798 7 3 tsu
+: 809 11 1 ka
+: 822 5 -2 ri
+: 834 8 1 ai
+- 842
+: 850 9 4 Mi
+: 862 7 3 ga
+: 874 9 1 ka
+: 886 8 -2 re
+: 898 10 1 tei
+: 915 37 6 ku
+- 952
+* 965 3 8 Roll
+* 969 2 6 ing 
+: 974 3 6 stone
+: 978 37 5 ~
+- 1015
+: 1026 3 -4 De
+: 1030 2 -4 a
+: 1034 2 1 i 
+: 1038 1 1 wa 
+: 1042 4 8 sho
+: 1050 2 1 kku 
+: 1054 6 1 wave, 
+* 1066 3 8 sho
+* 1074 2 1 kku 
+* 1078 5 1 wave
+- 1083
+: 1089 2 -4 Ma
+: 1093 2 -4 da 
+: 1097 2 1 shi
+: 1101 2 1 ra
+: 1105 4 8 nai 
+: 1113 2 6 se
+: 1117 6 5 ka
+: 1125 2 6 i 
+: 1129 23 5 e
+- 1152
+: 1162 2 1 A
+: 1166 2 1 ru
+: 1170 5 3 ki 
+: 1178 1 1 ha
+* 1182 4 1 ji
+* 1190 1 0 me
+: 1194 15 1 ta
+- 1209
+: 1218 2 -4 Mu
+* 1222 3 -4 bo
+* 1226 2 1 u 
+: 1230 1 1 na 
+: 1234 7 5 chou
+: 1246 7 3 sen
+: 1258 7 6 sha 
+: 1270 7 5 sa
+- 1277
+: 1282 2 -4 Te 
+: 1286 2 -4 ni 
+: 1290 2 1 shi
+: 1294 2 1 ta 
+: 1298 5 8 yai
+: 1306 2 1 ba 
+: 1310 3 1 de
+- 1313
+: 1322 3 8 Ashi
+: 1330 2 1 ta 
+: 1334 5 1 wo
+- 1339
+* 1346 2 -4 Ki
+* 1350 1 -4 ri
+* 1354 2 1 hi
+* 1358 2 1 ra
+* 1362 4 8 ke
+* 1370 2 6 ba 
+: 1374 5 5 iin 
+: 1382 2 6 da
+: 1386 24 5 ro?
+- 1410
+: 1418 2 1 Da
+: 1422 1 1 re
+: 1426 6 3 ka 
+: 1434 2 1 no 
+: 1438 4 1 mono 
+: 1446 1 0 ja 
+: 1450 14 1 nai
+- 1464
+: 1474 3 -4 Ji
+: 1478 2 -4 bu
+: 1482 2 1 n 
+: 1486 1 1 da
+: 1490 6 5 ke 
+: 1502 6 3 no 
+: 1514 8 6 sto
+: 1527 33 5 ry
+- 1560
+: 1570 2 -4 'Cause
+: 1574 2 -4 ~ 
+: 1578 1 1 we
+: 1581 2 1 're 
+* 1587 5 8 still 
+* 1595 2 1 a
+: 1599 5 1 live 
+: 1610 6 8 di
+: 1618 2 1 a
+: 1622 6 1 monds
+- 1628
+: 1635 5 8 On 
+* 1643 1 5 the 
+* 1647 3 8 road
+: 1651 64 10 ~
+E

@@ -1,0 +1,200 @@
+#ARTIST:Muse
+#TITLE:Space Dementia
+#CREATOR:Terminated
+#BPM:240
+#YEAR:2001
+#VIDEO:v=-bNnekk2_Yk
+#LANGUAGE:English
+#GAP:42350
+#ALLKARAOKE_ID:muse-space-dementia
+#ALLKARAOKE_SID:7231
+#ALLKARAOKE_LASTUPDATE:2026-11-11T04:02:46.863Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:171
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:383
+#P1:Space Dementia
+#MP3:Muse - Space Dementia.mp3
+F 16 64 -1 Mmmmm,
+- 80
+: 84 14 -1 H
+: 100 27 -1 8
+: 128 13 -2 ~
+: 142 18 -3 ~ 
+: 162 14 -1 is 
+: 180 3 -2 the 
+: 184 16 -1 one 
+: 202 8 -3 for 
+: 214 9 -3 me
+: 224 18 -4 ~
+- 242
+: 246 6 -1 It 
+: 254 10 -1 gives 
+: 266 10 -1 me 
+: 278 12 -1 all 
+: 292 6 -1 I 
+: 302 30 -3 need
+- 332
+: 342 12 2 Helps 
+: 356 8 2 me 
+: 366 15 4 co
+: 382 5 2 ex
+: 388 9 0 i
+: 398 24 -1 ~st
+- 422
+: 432 7 6 With 
+: 440 8 6 the 
+: 450 108 6 chill
+- 558
+F 562 74 11 Ooooohaa
+- 636 676
+- 676
+: 692 10 -1 You 
+: 704 12 -1 make 
+: 718 6 -1 me 
+: 726 16 -1 sick
+- 742 772
+- 772
+: 788 7 -1 Be
+: 796 8 -1 cause 
+: 806 4 -1 I 
+: 812 6 -2 a
+: 820 12 -1 dore 
+: 834 6 -3 you 
+: 842 11 -3 so
+: 854 18 -4 ~
+- 872
+: 880 3 -1 I 
+: 884 10 -1 love 
+: 896 4 -1 all 
+: 902 4 -1 the 
+: 908 14 -1 dir
+: 926 4 -1 ty 
+: 932 32 -3 tricks
+- 964
+: 976 12 2 Twis
+: 990 8 2 ted 
+: 1000 14 4 games 
+: 1016 4 2 you 
+: 1022 11 0 play
+: 1034 20 -1 ~
+- 1054 1056
+- 1056
+: 1072 8 6 On 
+: 1084 104 6 me
+- 1188
+F 1196 74 11 Oooooh
+- 1270 1524
+- 1524
+* 1540 20 8 Space 
+* 1562 20 7 de
+* 1584 11 7 men
+* 1596 12 7 tia 
+* 1610 10 7 in 
+* 1622 8 6 your 
+* 1632 22 6 eyes 
+* 1656 16 5 and
+- 1672
+: 1676 22 5 Peace 
+: 1700 10 5 will 
+: 1712 9 4 a
+: 1722 43 4 rise
+- 1765
+: 1766 34 6 And 
+: 1802 10 4 tear 
+: 1814 8 4 us 
+: 1826 7 3 a
+: 1834 22 2 part
+- 1856
+: 1868 10 1 And 
+: 1880 10 0 make 
+: 1892 10 -2 us 
+: 1904 19 -1 mea
+: 1924 21 -3 ning
+: 1946 30 -2 less 
+: 1980 5 0 a
+: 1986 50 -1 gain
+- 2036 2134
+- 2134
+F 2150 33 -1 Mmmmyeah
+- 2183
+: 2184 10 -1 You’ll 
+: 2196 8 -1 make 
+: 2206 4 -1 us 
+: 2212 2 -1 wan
+: 2216 4 -3 na 
+: 2222 27 -1 die
+: 2250 29 -1 ~
+- 2279
+: 2280 6 -1 I’d 
+: 2288 6 -1 cut 
+: 2298 8 -2 your 
+: 2308 15 -1 name 
+: 2324 4 -3 in 
+: 2330 4 -3 my 
+: 2338 26 -3 heart
+- 2364
+: 2370 6 -1 We’ll 
+: 2378 7 -1 des
+: 2386 6 -1 troy 
+: 2394 4 -1 this 
+: 2400 12 -1 world 
+: 2414 6 -1 for 
+: 2424 30 -3 you
+- 2454
+: 2464 1 2 I
+: 2466 10 2 know 
+: 2478 10 2 you 
+: 2490 14 4 want 
+: 2506 6 2 me 
+: 2514 9 0 to
+: 2524 20 -1 ~
+- 2544
+: 2556 6 6 Feel 
+: 2564 8 6 your 
+* 2576 106 6 pain
+- 2682
+F 2686 74 11 Oooohaaahoo
+- 2760 3014
+- 3014
+: 3030 20 8 Space 
+: 3054 16 7 de
+: 3076 9 7 men
+: 3086 10 7 tia 
+: 3098 10 7 in 
+: 3110 10 6 your 
+: 3122 22 6 eyes 
+: 3146 19 5 and
+- 3165
+* 3166 22 5 Peace 
+* 3190 10 5 will 
+: 3202 9 4 a
+: 3212 43 4 rise
+- 3255
+: 3256 32 6 And 
+: 3290 12 4 tear 
+: 3304 10 4 us 
+: 3316 7 3 a
+: 3324 22 2 part
+- 3346
+: 3358 10 1 And 
+: 3370 12 0 make 
+: 3384 8 -2 us 
+: 3394 19 -1 mea
+: 3414 22 -3 ning
+: 3438 32 -2 less 
+: 3472 5 0 a
+: 3478 82 -1 gain
+- 3560
+F 3572 80 11 Ooooh, 
+F 3664 80 11 ooooh,
+- 3744
+: 3754 80 6 Ooooh 
+: 3844 27 9 ooooh
+: 3872 8 7 ~
+: 3882 7 6 ~ 
+: 3890 32 7 ooooh 
+: 3934 40 10 oooooooh 
+: 3976 74 8 aaaah
+: 4056 16 7 ~
+E

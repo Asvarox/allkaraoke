@@ -1,0 +1,467 @@
+#ARTIST:EPIC: The Musical (Jorge Rivera-Herrans, Armando Julian, Steven Dookie)
+#TITLE:Full Speed Ahead
+#CREATOR:Andore
+#BPM:400
+#YEAR:2024
+#VIDEO:v=Wm_Ayf_adXo
+#GENRE:Musical
+#LANGUAGE:English
+#GAP:13467,5
+#ALLKARAOKE_ID:epic-the-musical-jorge-rivera-herrans-armando-julian-steven-dookie-full-speed-ahead
+#ALLKARAOKE_SID:7216
+#ALLKARAOKE_LASTUPDATE:2026-11-11T04:02:40.675Z
+#ALLKARAOKE_REALBPM:114
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:180
+#MP3:EPIC: The Musical (Jorge Rivera-Herrans, Armando Julian, Steven Dookie) - Full Speed Ahead.mp3
+#COVER:EPIC: The Musical (Jorge Rivera-Herrans, Armando Julian, Steven Dookie) - Full Speed Ahead [CO].jpg
+#BACKGROUND:EPIC: The Musical (Jorge Rivera-Herrans, Armando Julian, Steven Dookie) - Full Speed Ahead [BG].jpg
+: 27 4 3 Six 
+: 37 11 2 hun
+: 50 3 -2 dred 
+: 59 7 0 men
+- 66 74
+- 74
+: 101 3 3 Six 
+: 108 5 2 hun
+: 117 4 -2 dred 
+: 125 6 0 men 
+: 139 4 -5 un
+: 145 3 -5 der 
+: 150 5 -4 my 
+: 159 3 -3 com
+: 164 7 -4 mand
+- 171
+: 192 1 -11 With 
+: 196 3 -8 on
+: 202 1 -5 ly 
+: 208 2 -4 one 
+: 216 6 -5 goal 
+: 225 1 -9 in 
+: 234 5 -7 mind
+: 240 4 -5 ~
+: 245 2 -4 ~
+- 247
+F 252 3 2 Make 
+F 257 3 2 it 
+F 262 6 2 back 
+F 272 2 2 a
+F 276 7 2 live 
+F 288 3 2 to 
+F 294 3 2 our 
+F 300 5 2 home
+F 308 8 2 land
+- 316
+: 330 2 3 Six 
+: 339 3 2 hun
+: 352 3 -2 dred 
+: 360 7 0 men,
+- 367 376
+- 376
+: 403 3 1 Six 
+: 409 4 1 hun
+: 418 4 1 dred 
+: 427 2 4 miles
+: 431 4 5 ~
+: 437 4 3 ~ 
+: 446 1 2 of 
+: 451 4 0 o
+: 457 2 -4 pen 
+: 466 13 -4 sea
+- 479
+: 501 1 -5 But 
+: 505 1 -5 the 
+: 508 2 -4 pro
+: 516 3 -5 blem’s 
+: 523 2 -7 not 
+: 529 2 -7 the 
+: 536 5 -7 dis
+: 545 1 -7 tance
+- 546
+R 550 4 -12 It’s 
+R 558 3 -9 what 
+R 563 3 -9 lies 
+R 572 2 -9 in 
+R 576 2 -11 be
+R 581 7 -12 tween
+- 588
+: 595 1 0 And 
+: 601 2 7 I
+: 605 3 5 tha
+: 612 4 3 ca’s 
+: 619 9 -2 wai
+: 630 15 3 ting
+- 645
+: 664 3 7 My 
+: 673 5 7 king
+: 681 4 5 dom 
+: 690 1 5 is 
+: 696 6 -2 wai
+: 707 24 5 ting
+- 731
+: 743 1 7 Pen
+: 749 6 7 e
+: 756 1 7 lo
+: 763 3 3 pe’s 
+: 771 13 8 wai
+: 786 29 7 tin’ 
+: 830 7 7 for 
+: 841 4 7 me
+: 846 12 5 ~
+- 858
+: 875 2 -2 So 
+: 885 5 3 full 
+: 895 6 2 speed
+: 903 5 0 ~
+- 908
+: 913 13 0 A
+: 942 65 0 head,
+- 1007
+: 1027 8 3 Full
+: 1036 1 4 ~
+: 1038 2 5 ~
+: 1041 1 4 ~
+: 1043 2 3 ~ 
+: 1051 6 2 speed
+: 1058 3 0 ~
+- 1061
+: 1065 9 0 A
+: 1078 4 5 head
+: 1083 2 6 ~
+: 1089 37 7 ~
+- 1126 1138
+- 1138
+R 1165 2 0 Cap
+R 1175 4 -5 tain
+- 1179
+R 1194 4 0 Eu
+R 1199 9 2 ryl
+R 1209 2 3 o
+R 1213 5 0 chus
+- 1218
+: 1232 1 3 Six 
+: 1243 4 2 hun
+: 1255 3 -2 dred 
+: 1263 4 0 men
+- 1267 1282
+- 1282
+: 1309 2 3 Six 
+: 1314 3 2 hun
+: 1322 3 -2 dred 
+: 1330 5 0 men 
+: 1339 1 6 with 
+: 1345 2 7 big 
+: 1356 2 -7 mouths 
+: 1363 1 -2 to 
+: 1369 9 -6 feed
+- 1378
+R 1397 1 -5 And 
+R 1401 1 -5 we’ve 
+R 1406 3 -5 run 
+R 1412 4 -4 out 
+R 1420 1 -4 of 
+R 1424 1 -4 sup
+R 1430 6 -5 plies 
+R 1439 1 -5 to 
+R 1445 8 -5 eat
+- 1453
+F 1457 3 -2 Curse 
+F 1462 2 -2 the 
+F 1467 5 -2 war, 
+F 1475 4 -2 our 
+F 1481 4 -2 food 
+F 1490 6 -2 store’s 
+F 1499 2 -2 de
+F 1505 5 -2 ple
+F 1513 5 -2 ted
+- 1518
+: 1533 2 3 Six 
+: 1542 3 2 hun
+: 1548 3 2 ~
+: 1555 4 -2 dred 
+: 1564 3 0 men
+- 1567
+F 1571 4 -2 Six 
+F 1580 4 2 hun
+F 1594 4 -2 dred 
+F 1602 2 0 men
+- 1604
+: 1608 1 2 Six 
+: 1614 4 2 hun
+: 1623 3 3 dred 
+: 1634 3 5 rea
+: 1640 3 3 sons 
+: 1649 1 2 to 
+: 1654 2 0 take 
+: 1661 2 -5 what 
+: 1668 1 -2 we 
+: 1674 5 -4 can
+- 1679
+R 1698 1 -8 So 
+R 1702 1 -7 Cap
+R 1708 1 -4 tain, 
+: 1712 3 -4 what’s 
+: 1721 2 -5 the 
+: 1732 6 -5 plan?
+- 1738
+F 1750 3 0 Cap
+F 1757 4 0 tain, 
+F 1764 5 0 what’s 
+F 1773 2 2 the 
+F 1782 12 3 plan?
+- 1794
+: 1803 3 7 Watch 
+: 1812 4 5 where 
+: 1820 1 3 the 
+: 1825 5 -2 birds 
+: 1837 21 3 fly
+- 1858
+: 1871 2 6 They 
+: 1876 4 7 will 
+: 1882 4 7 lead 
+: 1888 2 5 us 
+: 1895 1 2 to 
+: 1901 20 -2 land
+- 1921 1932
+- 1932
+: 1959 3 5 There 
+: 1967 2 7 we’ll 
+: 1972 3 8 hunt 
+: 1981 3 7 for 
+: 1991 3 7 food,
+: 1995 4 6 ~ 
+: 2005 2 5 my 
+: 2013 2 3 sec
+: 2018 4 3 ond 
+: 2028 9 3 in 
+: 2041 2 5 com
+: 2046 15 2 mand
+- 2061
+: 2079 4 -2 Now 
+: 2089 6 3 full 
+: 2102 6 2 speed
+: 2109 1 1 ~
+: 2111 1 0 ~
+- 2112
+: 2116 12 0 A
+: 2130 2 0 ~
+: 2136 9 5 head
+: 2146 1 6 ~
+: 2148 38 7 ~
+: 2187 4 8 ~
+: 2192 4 7 ~
+: 2197 7 8 ~
+: 2205 6 7 ~
+- 2211 2217
+- 2217
+: 2244 4 3 Full 
+: 2254 3 2 speed 
+: 2273 6 0 a
+: 2287 54 10 head
+- 2341
+R 2352 3 0 Cap
+R 2362 3 -5 tain! 
+R 2371 3 3 Po
+R 2376 2 2 li
+R 2381 11 -2 tes!
+- 2392
+F 2407 5 7 Look!
+- 2412 2420
+- 2420
+R 2447 3 3 There 
+R 2452 1 5 in 
+R 2456 1 5 the 
+: 2462 4 5 dis
+: 2470 4 3 tance, 
+R 2484 1 5 I 
+R 2491 2 5 see 
+R 2494 2 5 an 
+: 2499 8 5 is
+: 2509 2 5 land
+- 2511
+R 2521 2 3 I 
+R 2527 2 5 see 
+R 2532 1 5 a 
+R 2536 6 5 light 
+R 2549 2 7 that 
+: 2556 4 5 faint
+: 2564 3 3 ly 
+: 2574 11 -2 glows
+- 2585
+R 2596 3 5 May
+R 2602 1 5 be 
+R 2605 2 5 they’re 
+R 2612 2 7 peo
+R 2621 2 3 ple 
+R 2633 4 3 light
+R 2640 1 5 ing 
+R 2643 1 5 a 
+R 2650 6 7 fi
+R 2659 3 4 re
+- 2662
+R 2673 2 3 May
+R 2677 2 5 be 
+R 2681 1 5 they’ll 
+: 2690 5 5 share 
+: 2701 2 7 some 
+: 2708 9 5 food, 
+: 2719 2 3 who 
+: 2726 13 -2 knows?
+- 2739
+R 2747 2 -4 Some
+R 2751 2 -1 thing 
+R 2756 4 -2 feels 
+R 2763 2 -2 off 
+: 2771 6 -5 here, 
+R 2788 3 2 I 
+R 2796 3 2 see 
+R 2805 4 2 fi
+R 2810 1 2 re 
+R 2814 1 0 but 
+R 2820 6 2 there’s 
+R 2829 2 0 no 
+: 2838 5 -5 smoke
+- 2843
+R 2861 1 -9 I 
+R 2866 1 -7 say 
+R 2870 1 -5 we 
+R 2877 3 -5 strike 
+R 2885 3 -7 first, 
+R 2898 2 -10 we 
+R 2902 2 -7 don’t 
+R 2906 4 -5 have 
+R 2916 5 -5 time 
+R 2926 2 -7 to 
+R 2930 5 -5 waste
+- 2935
+R 2941 1 -7 So 
+R 2944 3 -5 let’s 
+: 2954 4 2 raid 
+: 2962 1 0 the 
+: 2972 3 2 place 
+: 2979 10 3 and
+- 2989
+F 2993 3 -10 No
+- 2996
+: 3013 2 -5 Po
+: 3017 1 -3 li
+: 3023 3 -9 tes, 
+: 3032 4 -9 gear 
+: 3041 3 -8 up,
+- 3044 3052
+- 3052
+: 3079 2 -5 You 
+: 3083 2 -5 and 
+: 3088 3 -5 I’ll 
+: 3095 4 -7 go 
+: 3101 1 -9 a
+: 3106 4 -9 head
+- 3110
+: 3114 2 2 You 
+: 3120 1 3 and 
+: 3126 4 3 I’ll 
+: 3134 2 2 go 
+: 3139 1 3 a
+: 3146 1 3 head
+: 3148 1 4 ~
+: 3150 10 5 ~
+- 3160
+: 3164 2 -7 We 
+: 3171 1 -5 should 
+: 3178 10 -4 try 
+: 3192 1 -5 to 
+: 3200 5 -5 find 
+: 3210 1 -7 a 
+: 3214 6 -7 way 
+: 3225 4 -9 no 
+: 3231 2 -9 one 
+: 3238 4 -10 ends 
+: 3246 1 -7 up 
+: 3255 3 -10 dead
+- 3258
+R 3263 3 3 We 
+R 3268 3 3 don’t 
+R 3274 3 3 know 
+R 3280 3 2 what’s 
+: 3288 2 0 a
+: 3294 10 -2 head
+- 3304
+: 3308 4 7 Give 
+: 3316 2 5 me 
+: 3322 4 3 ’til 
+: 3332 5 -2 sun
+: 3341 20 3 rise,
+- 3361
+: 3374 4 7 And 
+: 3382 2 7 if 
+: 3389 4 7 we 
+: 3395 4 5 don’t 
+: 3402 2 3 re
+: 3408 33 -2 turn
+- 3441
+: 3463 3 5 Then 
+: 3473 3 7 six 
+: 3481 5 8 hun
+: 3490 2 7 dred 
+: 3496 8 7 men 
+: 3509 2 5 can 
+: 3515 3 5 make 
+: 3527 2 3 this 
+: 3534 3 3 whole 
+: 3544 6 4 place 
+: 3558 11 2 burn
+- 3569
+: 3585 4 -2 Now 
+: 3594 8 3 full 
+: 3609 6 2 speed
+: 3616 1 1 ~
+: 3618 2 0 ~
+- 3620
+: 3624 15 0 A
+* 3643 8 5 head
+* 3652 1 6 ~
+* 3654 39 7 ~
+* 3694 1 6 ~
+* 3696 2 5 ~
+* 3699 1 4 ~
+* 3701 2 3 ~
+* 3704 13 2 ~
+* 3718 1 1 ~
+* 3720 1 0 ~
+- 3721
+: 3748 5 3 Full 
+: 3761 5 2 speed 
+: 3777 11 0 a
+: 3793 53 8 head
+- 3846 3900
+- 3900
+: 3927 3 7 We’re 
+: 3932 4 7 up, 
+: 3944 3 7 we’re 
+: 3948 2 6 off, 
+: 3957 4 7 and 
+: 3966 2 7 a
+: 3971 6 5 way 
+: 3981 5 8 we 
+: 3991 6 7 go
+- 3997 4022
+- 4022
+: 4049 6 3 Full 
+: 4060 7 2 speed
+- 4067
+: 4075 14 0 A
+* 4095 2 8 head
+* 4098 1 9 ~
+* 4100 44 10 ~
+* 4145 1 9 ~
+* 4147 3 8 ~
+* 4151 3 7 ~
+* 4155 1 6 ~
+* 4157 11 5 ~
+- 4168 4171
+- 4171
+: 4198 6 3 Full 
+: 4211 4 2 speed 
+: 4220 3 0 a
+: 4224 11 0 head
+E

@@ -1,0 +1,503 @@
+#ARTIST:Peaches
+#TITLE:F**K The Pain Away
+#CREATOR:Monkeyhands
+#BPM:524
+#YEAR:2000
+#VIDEO:v=3cV6pnvCVM4
+#GENRE:Electroclash, Electronic
+#LANGUAGE:English
+#GAP:27415,091603053435
+#ALLKARAOKE_ID:peaches-fk-the-pain-away
+#ALLKARAOKE_SID:7186
+#ALLKARAOKE_LASTUPDATE:2026-11-11T04:02:27.759Z
+#ALLKARAOKE_ARTISTORIGIN:CA
+#ALLKARAOKE_REALBPM:132
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:250
+#MP3:Peaches - F**K The Pain Away.mp3
+#COVER:Peaches - F**K The Pain Away [CO].jpg
+#BACKGROUND:Peaches - F**K The Pain Away [BG].jpg
+R 35 3 1 Suck
+R 43 2 6 in’ 
+R 48 7 5 on 
+R 57 5 5 my 
+R 68 4 1 titt
+R 74 4 4 ies 
+R 82 4 2 like 
+R 90 5 4 you 
+R 99 5 2 wan
+R 107 3 -2 ted 
+R 113 4 -5 me
+- 117
+R 123 6 2 Cal
+R 130 2 2 ling 
+R 136 4 -4 me
+- 140
+R 144 7 -1 All 
+R 153 2 4 the 
+R 161 6 -3 time 
+R 169 3 -5 like 
+R 178 5 -4 Blon
+R 185 2 4 die
+- 187
+R 194 3 4 Check 
+R 200 5 2 out 
+R 210 3 -1 my 
+R 217 4 2 Chriss
+R 224 6 0 ie 
+R 233 6 -3 be
+R 242 7 2 hind
+- 249
+R 252 3 2 It’s 
+R 258 4 0 fine 
+R 264 5 -3 all 
+R 272 4 -3 of 
+R 280 2 2 the 
+R 289 9 -4 time
+- 298
+R 311 4 -2 Like 
+R 320 3 -3 sex 
+R 329 4 -2 on 
+R 335 3 -3 the 
+R 343 5 -2 bea
+R 353 5 -7 ches
+- 358
+R 377 5 4 What 
+R 384 7 5 else 
+R 393 3 4 is 
+R 401 3 5 in 
+R 406 5 5 the 
+R 416 5 4 tea
+R 423 5 5 ches 
+R 431 3 5 of 
+R 439 6 3 Pea
+R 449 8 5 ches
+- 457
+R 480 12 0 Huh
+- 492
+R 503 27 -3 What
+- 530 765
+- 765
+R 800 5 0 Suc
+R 808 5 2 kin’ 
+R 814 5 2 on 
+R 822 5 2 my 
+R 832 4 0 titt
+R 837 5 1 ies 
+R 845 4 0 like 
+R 853 7 1 you 
+R 861 3 -4 wa
+R 866 3 0 n
+R 870 3 0 ted 
+R 876 4 -6 me
+- 880
+R 888 6 -1 Cal
+R 895 5 -1 ling 
+R 902 4 -5 me 
+R 910 5 -5 all 
+R 917 3 1 the 
+R 927 4 -1 time 
+R 934 4 -1 like 
+R 942 7 -2 Blon
+R 950 3 -3 die
+- 953
+R 959 3 -1 Check 
+R 965 6 -1 out 
+R 974 3 -1 my 
+R 982 4 0 Chriss
+R 991 4 -1 ie 
+R 998 4 0 be
+R 1005 7 0 hind
+- 1012
+R 1017 2 3 It’s 
+R 1022 6 3 fine 
+R 1029 4 3 all 
+R 1037 4 3 of 
+R 1045 3 3 the 
+R 1054 4 3 time
+- 1058
+R 1078 4 1 What 
+R 1084 6 1 else 
+R 1094 3 2 is 
+R 1105 4 2 in 
+R 1110 2 2 the 
+R 1117 4 0 tea
+R 1124 5 2 ches 
+R 1133 2 0 of 
+R 1139 5 1 Pea
+R 1149 6 3 ches
+- 1155
+R 1187 4 -4 Like 
+R 1196 4 -4 sex 
+R 1204 5 -5 on 
+R 1211 3 -5 the 
+R 1220 5 -4 bea
+R 1230 5 -5 ches
+- 1235
+R 1245 14 -4 Huh
+- 1259
+R 1269 17 -4 What
+- 1286
+R 1310 18 -2 Huh
+- 1328 1334
+- 1334
+R 1369 17 -5 Right
+- 1386 1403
+- 1403
+R 1438 21 -4 What
+- 1459 1466
+- 1466
+R 1501 22 -5 Uhh
+- 1523 1532
+- 1532
+R 1567 18 -4 Huh
+- 1585 1592
+- 1592
+R 1627 25 -3 What
+- 1652 1653
+- 1653
+R 1688 27 -4 Right
+- 1715 1718
+- 1718
+R 1753 22 -6 Uhh
+- 1775 2297
+- 2297
+R 2332 21 0 Huh
+- 2353 2357
+- 2357
+R 2392 28 -2 What
+- 2420 2422
+- 2422
+R 2457 24 -4 Right
+- 2481 2487
+- 2487
+R 2522 25 -1 Uhh
+- 2547 2551
+- 2551
+R 2586 25 -4 Huh
+- 2611 2612
+- 2612
+R 2647 28 -4 What
+- 2675
+R 2710 29 -5 Right
+- 2739 2741
+- 2741
+R 2776 25 -4 Uhh
+- 2801 2804
+- 2804
+R 2839 4 -4 S 
+R 2849 11 -3 I 
+R 2864 8 -4 S
+- 2872
+R 2904 8 -4 I 
+R 2914 9 -3 U 
+R 2928 15 -3 D
+- 2943
+R 2967 6 -3 Stay 
+R 2976 7 -3 in 
+R 2991 15 -4 school
+- 3006
+R 3024 4 -3 ’Cause 
+R 3031 3 -4 it’s 
+R 3042 7 -4 the 
+R 3056 9 -4 best
+- 3065
+R 3095 7 -3 I 
+R 3104 9 -3 U 
+R 3118 13 -4 D
+- 3131
+R 3160 3 -3 S 
+R 3169 14 -3 I 
+R 3185 8 -5 S
+- 3193
+R 3223 6 -3 Stay 
+R 3231 6 -3 in 
+R 3248 9 -5 school
+- 3257
+R 3278 6 -3 ’Cause 
+R 3288 3 -3 it’s 
+R 3299 6 -3 the 
+R 3311 9 -4 best
+- 3320
+R 3351 8 -3 I 
+R 3361 9 -3 U 
+R 3374 13 -2 D
+- 3387
+R 3414 4 -3 S 
+R 3423 12 -3 I 
+R 3436 10 -5 S
+- 3446
+R 3477 8 -3 Stay 
+R 3487 6 -3 in 
+R 3503 15 -6 school
+- 3518
+R 3534 4 -4 ’Cause 
+R 3541 3 -3 it’s 
+R 3551 9 -3 the 
+R 3566 10 -3 best
+- 3576
+R 3605 9 -3 I 
+R 3617 9 -3 U 
+R 3631 9 -2 D
+- 3640
+R 3669 5 -3 S 
+R 3679 11 -4 I 
+R 3693 6 -3 S
+- 3699
+R 3732 7 -3 Stay 
+R 3741 8 -3 in 
+R 3758 10 -5 school
+- 3768
+R 3788 5 -3 ’Cause 
+R 3798 3 -4 it’s 
+R 3808 9 -4 the 
+R 3821 10 -3 best
+- 3831
+R 3861 4 0 Suck
+R 3869 5 4 ing’ 
+R 3876 5 4 on 
+R 3883 5 5 my 
+R 3893 3 1 titt
+R 3899 4 4 ies 
+R 3908 5 1 like 
+R 3916 5 3 you 
+R 3926 4 -3 wan
+R 3932 3 -2 ted 
+R 3941 2 3 me
+- 3943
+R 3949 5 2 Cal
+R 3956 3 1 ling 
+R 3960 4 -6 me 
+R 3971 7 -2 all 
+R 3980 3 2 the 
+R 3987 7 -1 time 
+R 3996 3 -2 like 
+R 4003 3 -2 Bl
+R 4007 4 4 on
+R 4013 2 4 die
+- 4015
+R 4020 3 -1 Check 
+R 4028 4 -1 out 
+R 4034 5 -3 my 
+R 4044 5 0 Chriss
+R 4053 3 0 ie 
+R 4060 5 -3 be
+R 4068 6 -2 hind
+- 4074
+R 4076 2 -2 It’s 
+R 4083 6 -1 fine 
+R 4091 6 -2 all 
+R 4099 2 -2 of 
+R 4106 5 -1 the 
+R 4114 12 -3 time
+- 4126
+R 4139 4 -1 Like 
+R 4148 3 -1 sex 
+R 4156 3 -1 on 
+R 4163 4 -2 the 
+R 4170 5 0 bea
+R 4180 4 -6 ches
+- 4184
+R 4203 4 0 What 
+R 4210 5 2 else 
+R 4219 2 3 is 
+R 4228 4 5 in 
+R 4235 3 6 the 
+R 4242 6 5 tea
+R 4251 4 5 ches 
+R 4259 2 6 of 
+R 4266 5 5 Pea
+R 4274 5 6 ches
+- 4279
+R 4291 16 1 Huh
+- 4307
+R 4330 23 0 What
+- 4353
+: 4371 4 -3 Fuck 
+: 4379 2 -3 the 
+: 4385 6 -3 pain 
+: 4392 2 -6 a
+* 4396 14 -6 way
+- 4410
+: 4435 3 -3 Fuck 
+: 4443 2 -3 the 
+: 4447 7 -3 pain 
+: 4456 2 -6 a
+* 4460 13 -6 way
+- 4473
+: 4497 4 -3 Fuck 
+: 4506 2 -3 the 
+: 4511 6 -3 pain 
+: 4519 2 -6 a
+* 4523 14 -6 way
+- 4537
+: 4562 3 -3 Fuck 
+: 4570 2 -3 the 
+: 4574 6 -3 pain 
+: 4582 2 -6 a
+* 4586 17 -6 way
+- 4603
+: 4626 3 -3 Fuck 
+: 4634 2 -3 the 
+: 4639 6 -3 pain 
+: 4647 2 -6 a
+* 4651 14 -6 way
+- 4665
+: 4690 3 -3 Fuck 
+: 4697 2 -3 the 
+: 4702 6 -3 pain 
+: 4710 2 -6 a
+* 4714 16 -6 way
+- 4730
+: 4754 3 -3 Fuck 
+: 4761 2 -3 the 
+: 4766 6 -3 pain 
+: 4774 2 -6 a
+* 4778 17 -6 way
+- 4795
+: 4817 3 -3 Fuck 
+: 4825 2 -3 the 
+: 4830 6 -3 pain 
+: 4838 2 -6 a
+* 4842 15 -6 way
+- 4857
+: 4882 3 -3 Fuck 
+: 4889 2 -3 the 
+: 4894 7 -3 pain 
+: 4902 2 -6 a
+* 4905 16 -6 way
+- 4921
+: 4944 4 -3 Fuck 
+: 4952 2 -3 the 
+: 4957 5 -3 pain 
+: 4965 2 -6 a
+* 4969 15 -6 way
+- 4984
+: 5010 3 -3 Fuck 
+: 5017 2 -3 the 
+: 5022 5 -3 pain 
+: 5030 2 -6 a
+* 5034 13 -6 way
+- 5047
+: 5072 3 -3 Fuck 
+: 5078 2 -3 the 
+: 5084 6 -3 pain 
+: 5093 2 -6 a
+* 5097 14 -6 way
+- 5111
+: 5136 4 -3 Fuck 
+: 5143 2 -3 the 
+: 5148 7 -3 pain 
+: 5158 2 -6 a
+* 5162 12 -6 way
+- 5174
+: 5201 3 -3 Fuck 
+: 5208 2 -3 the 
+: 5213 7 -3 pain 
+: 5221 2 -6 a
+* 5225 13 -6 way
+- 5238
+: 5264 3 -3 Fuck 
+: 5271 2 -3 the 
+: 5277 6 -3 pain 
+: 5285 2 -6 a
+* 5289 14 -6 way
+- 5303
+: 5327 4 -3 Fuck 
+: 5335 2 -3 the 
+: 5340 6 -3 pain 
+: 5349 2 -6 a
+* 5352 16 -6 way
+- 5368 5483
+- 5483
+R 5518 24 -2 Huh
+- 5542
+R 5545 28 -2 What
+- 5573
+R 5581 22 -3 Right
+- 5603
+R 5608 12 -3 Uhh
+- 5620 5740
+- 5740
+R 5775 20 -3 Huh
+- 5795
+R 5799 20 -3 What
+- 5819
+R 5835 20 -4 Right
+- 5855
+R 5863 17 -1 Uhh
+- 5880 6002
+- 6002
+R 6037 4 -2 What 
+R 6043 6 -2 else 
+R 6054 4 0 is 
+R 6062 4 0 in 
+R 6068 4 0 the 
+R 6076 5 1 tea
+R 6083 8 0 ches 
+R 6093 2 -2 of 
+R 6102 4 1 Pea
+R 6110 7 1 ches
+- 6117
+R 6119 2 2 Like 
+R 6126 3 3 sex 
+R 6134 5 3 on 
+R 6141 2 3 the 
+R 6149 5 0 bea
+R 6159 4 -5 ches
+- 6163
+R 6182 18 -4 What
+- 6200
+R 6218 19 -3 Right
+- 6237
+R 6245 32 -3 Uhh
+- 6277 6376
+- 6376
+: 6411 4 -3 Fuck 
+: 6419 2 -3 the 
+: 6425 5 -3 pain 
+: 6432 2 -6 a
+* 6436 13 -6 way
+- 6449
+: 6476 4 -3 Fuck 
+: 6483 2 -3 the 
+: 6488 5 -3 pain 
+: 6495 2 -6 a
+* 6499 14 -6 way
+- 6513
+: 6539 4 -3 Fuck 
+: 6546 2 -3 the 
+: 6552 6 -3 pain 
+: 6559 2 -6 a
+* 6564 14 -6 way
+- 6578
+: 6602 4 -3 Fuck 
+: 6609 2 -3 the 
+: 6614 6 -3 pain 
+: 6622 2 -6 a
+* 6626 13 -6 way
+- 6639
+: 6667 3 -3 Fuck 
+: 6674 2 -3 the 
+: 6679 5 -3 pain 
+: 6687 2 -6 a
+* 6691 13 -6 way
+- 6704
+: 6730 4 -3 Fuck 
+: 6737 2 -3 the 
+: 6743 6 -3 pain 
+: 6750 2 -6 a
+* 6755 12 -6 way
+- 6767
+: 6793 4 -3 Fuck 
+: 6800 2 -3 the 
+: 6806 5 -3 pain 
+: 6813 2 -6 a
+* 6818 12 -6 way
+- 6830
+: 6858 4 -3 Fuck 
+: 6866 2 -3 the 
+: 6870 6 -3 pain 
+: 6878 2 -6 a
+* 6882 15 -6 way
+E

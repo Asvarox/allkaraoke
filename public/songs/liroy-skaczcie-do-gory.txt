@@ -1,0 +1,846 @@
+#ARTIST:Liroy
+#TITLE:Skaczcie do góry
+#CREATOR:mardzillo
+#BPM:204,02
+#YEAR:1997
+#VIDEO:v=2ThYOeLcFtE
+#GENRE:Rap
+#LANGUAGE:Polish
+#GAP:39010,689148122736
+#ALLKARAOKE_ID:liroy-skaczcie-do-gory
+#ALLKARAOKE_SID:7211
+#ALLKARAOKE_LASTUPDATE:2026-11-11T04:02:38.368Z
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_VOLUME:70
+#ALLKARAOKE_DURATION:252
+#MP3:Liroy - Skaczcie do góry.mp3
+#COVER:Liroy - Skaczcie do góry [CO].jpg
+#BACKGROUND:Liroy - Skaczcie do góry [BG].jpg
+R 14 2 4 Skacz
+R 18 1 4 cie 
+R 20 1 4 do 
+R 22 1 5 gó
+R 24 3 4 ry 
+R 30 2 4 jak 
+R 34 2 4 kan
+R 38 1 5 gu
+R 40 3 4 ry!
+- 43
+R 46 2 4 Skacz
+R 50 1 4 cie 
+R 52 1 4 do 
+R 54 1 5 gó
+R 56 3 4 ry 
+R 62 2 4 jak 
+R 66 2 4 kan
+R 70 1 5 gu
+R 72 3 4 ry!
+- 75
+R 77 2 4 Skacz
+R 81 1 4 cie 
+R 83 1 4 do 
+R 85 1 5 gó
+R 87 3 4 ry 
+R 93 2 4 jak 
+R 97 2 4 kan
+R 101 1 5 gu
+R 103 3 4 ry!
+- 106
+R 109 3 4 Skacz
+R 113 1 4 cie 
+R 115 1 4 do 
+R 117 1 5 gó
+R 119 3 4 ry, 
+R 125 3 4 skacz
+R 129 1 4 cie 
+R 131 1 4 do 
+R 133 1 5 gó
+R 135 3 4 ry
+- 138
+R 142 3 3 Skacz
+R 146 1 3 cie 
+R 148 1 3 do 
+R 150 1 4 gó
+R 152 1 3 ry 
+R 158 1 3 jak 
+R 162 2 3 kan
+R 166 1 4 gu
+R 168 1 3 ry
+- 169
+R 171 2 1 Nie 
+R 174 3 1 bądź
+R 178 2 1 cie 
+R 182 1 2 szczu
+R 184 1 1 ry 
+R 186 1 1 i 
+R 188 3 1 skacz
+R 193 2 1 cie 
+R 196 1 1 do 
+R 198 1 2 gó
+R 200 1 1 ry
+- 201
+R 202 2 1 Jak 
+R 206 1 1 swe
+R 208 1 1 go 
+R 210 1 1 cza
+R 212 1 1 su 
+G 214 3 1 House 
+G 218 2 1 Of 
+G 221 2 1 Pain 
+G 225 2 4 „Jump 
+G 228 1 1 a
+G 230 8 3 round”
+- 238
+G 242 3 1 Jump 
+G 246 3 1 up, 
+G 250 3 1 Jump 
+G 254 1 1 up, 
+G 256 1 1 and 
+G 258 2 1 get 
+G 262 7 1 down
+- 269
+R 270 1 2 Li
+R 272 3 1 roy 
+R 276 3 2 zno
+R 280 1 1 wu 
+R 282 1 1 za
+R 284 1 1 po
+R 286 1 1 da
+R 288 1 1 je 
+R 290 2 2 jak 
+R 294 2 1 wal
+R 297 2 1 kie-
+R 301 2 1 tal
+R 304 4 1 kie
+- 308
+R 309 1 1 To 
+R 311 1 2 nie 
+R 313 1 1 jest 
+R 315 2 1 for
+R 318 1 1 mac
+R 320 1 1 ja 
+R 322 1 2 i 
+R 324 1 1 to 
+R 326 1 2 nie 
+R 328 1 1 są 
+R 330 2 1 ba
+R 333 2 2 bo
+R 336 3 1 ki
+- 339
+R 342 1 2 Rze
+R 344 1 2 czy
+R 346 1 2 wis
+R 348 1 2 tość 
+R 350 1 1 do
+R 352 1 1 o
+R 354 1 1 ko
+R 356 1 1 ła 
+R 358 1 2 jest 
+R 360 1 2 tak 
+R 362 1 2 za
+R 364 1 2 mo
+R 366 1 1 ta
+R 368 1 1 na
+- 369
+R 374 3 1 Zag
+R 378 3 1 mat
+R 382 1 2 wa
+R 384 1 1 na 
+R 386 1 1 jak 
+R 388 3 2 wiej
+R 392 1 1 ska 
+R 394 3 2 śmie
+R 398 1 1 tan
+R 400 1 1 a,
+- 401
+G 402 1 1 Na 
+G 404 1 1 śnia
+G 406 1 1 da
+G 408 1 1 nie 
+G 410 1 2 lub 
+G 414 1 1 do 
+G 416 1 1 o
+G 418 1 1 bia
+G 420 2 1 du 
+G 423 4 1 do 
+G 428 3 2 zu
+G 432 2 1 py,
+- 434
+G 436 1 1 Za 
+R 438 1 1 chwi
+R 440 1 1 le 
+R 442 2 2 mój 
+R 445 1 4 beat 
+R 447 1 4 na
+R 449 1 1 ko
+R 451 1 2 pie 
+R 454 3 2 ci 
+R 458 3 1 do 
+R 462 1 4 Te
+R 464 3 3 Ge
+- 467
+R 468 1 1 Więc 
+R 470 2 2 rusz 
+R 474 1 2 go 
+R 476 1 2 do 
+R 478 1 -2 gó
+R 480 1 0 ry 
+R 482 1 1 za
+R 484 1 1 nim 
+R 486 2 1 to 
+R 489 2 1 się 
+R 494 1 2 sta
+R 496 4 1 nie
+- 500
+R 503 2 0 Czas 
+R 506 1 0 za
+R 508 1 0 cząć 
+R 510 1 0 no
+R 512 1 0 we 
+R 514 1 0 za
+R 516 1 0 mie
+R 518 1 0 sza
+R 520 1 0 nie
+- 521
+R 522 2 0 Yes 
+R 526 2 0 yes 
+R 530 3 -5 yo, 
+R 537 2 0 yes 
+R 542 2 -5 yo, 
+R 546 3 0 yes
+- 549
+R 558 1 0 To 
+R 560 1 1 nie 
+R 562 2 1 jest 
+R 566 3 1 sen 
+R 570 1 0 i 
+R 572 1 1 to 
+R 574 1 1 nie 
+R 576 1 1 są 
+R 578 1 1 ka
+R 580 1 1 lam
+R 582 1 1 bu
+R 584 1 1 ry
+- 585
+G 587 2 0 Yes 
+G 590 2 0 yes 
+G 594 3 -5 yo, 
+G 602 2 0 yes 
+G 606 2 -5 yo, 
+G 610 4 0 yes
+- 614
+R 619 2 3 Więc 
+R 622 3 3 skacz
+R 626 1 3 cie 
+R 628 1 3 do 
+R 630 1 4 gó
+R 632 1 3 ry 
+R 638 2 3 jak 
+R 642 3 3 kan
+R 646 1 4 gu
+R 648 1 3 ry
+- 649
+R 654 2 4 Skacz
+R 658 1 4 cie 
+R 660 1 4 do 
+R 662 1 5 gó
+R 664 3 4 ry 
+R 670 2 4 jak 
+R 674 2 4 kan
+R 678 1 5 gu
+R 680 3 4 ry!
+- 683
+R 686 2 4 Skacz
+R 690 1 4 cie 
+R 692 1 4 do 
+R 694 1 5 gó
+R 696 3 4 ry 
+R 702 2 4 jak 
+R 706 2 4 kan
+R 710 1 5 gu
+R 712 3 4 ry!
+- 715
+R 718 2 4 Skacz
+R 722 1 4 cie 
+R 724 1 4 do 
+R 726 1 5 gó
+R 728 3 4 ry 
+R 734 2 4 jak 
+R 738 2 4 kan
+R 742 1 5 gu
+R 744 3 4 ry!
+- 747
+R 750 2 4 Skacz
+R 754 1 4 cie 
+R 756 1 4 do 
+R 758 1 5 gó
+R 760 3 4 ry, 
+R 766 2 4 skacz
+R 770 1 4 cie 
+R 772 1 4 do 
+R 774 1 5 gó
+R 776 3 4 ry
+- 779
+R 782 2 4 Skacz
+R 786 1 4 cie 
+R 788 1 4 do 
+R 790 1 5 gó
+R 792 3 4 ry 
+R 798 2 4 jak 
+R 802 2 4 kan
+R 806 1 5 gu
+R 808 3 4 ry!
+- 811
+R 814 2 4 Skacz
+R 818 1 4 cie 
+R 820 1 4 do 
+R 822 1 5 gó
+R 824 3 4 ry 
+R 830 2 4 jak 
+R 834 2 4 kan
+R 838 1 5 gu
+R 840 3 4 ry!
+- 843
+R 846 2 4 Skacz
+R 850 1 4 cie 
+R 852 1 4 do 
+R 854 1 5 gó
+R 856 3 4 ry 
+R 862 3 4 jak 
+R 866 2 4 kan
+R 870 1 5 gu
+R 872 3 4 ry!
+- 875
+R 878 3 4 Skacz
+R 882 1 4 cie 
+R 884 1 4 do 
+R 886 1 5 gó
+R 888 3 4 ry, 
+R 894 2 4 skacz
+R 898 1 4 cie 
+R 900 1 4 do 
+R 902 1 5 gó
+R 904 1 4 ry
+- 905
+R 906 1 4 To 
+R 908 1 4 nie 
+R 910 1 4 czas 
+R 912 1 4 na 
+R 914 1 4 po
+R 916 1 4 li
+R 918 1 6 ty
+R 920 1 4 kę, 
+R 922 1 4 to 
+R 924 1 4 nie 
+R 926 1 4 jest 
+R 928 1 16 czas 
+R 930 1 5 na 
+R 932 1 4 lo
+R 934 1 5 gi
+R 936 1 4 kę
+- 937
+R 943 2 1 Nad
+R 946 3 3 szedł 
+R 950 3 4 czas 
+R 954 2 4 na 
+R 958 1 4 zwyk
+R 960 1 4 łą 
+R 962 1 4 gim
+R 964 1 4 nas
+R 966 1 4 ty
+R 968 1 4 kę
+- 969
+R 970 1 0 Więc 
+R 975 2 2 skacz
+R 978 1 3 cie 
+R 980 1 2 do 
+R 982 1 3 gó
+R 984 3 0 ry, 
+R 988 1 2 naj
+R 990 1 2 wy
+R 992 1 2 żej 
+R 994 1 2 jak 
+R 996 1 2 się 
+R 998 4 2 da
+- 1002
+R 1006 3 3 Za... 
+R 1010 2 4 zu... 
+R 1014 2 -2 a... 
+R 1018 3 -1 mu... 
+R 1022 3 -1 yy... 
+R 1026 1 5 Nie
+R 1029 2 4 waż
+R 1032 1 4 ne
+- 1033
+R 1035 1 3 Tes
+R 1037 1 3 tin’ 
+R 1039 2 3 raz 
+R 1048 2 3 dwa 
+R 1051 2 3 raz 
+R 1054 1 3 dwa 
+R 1058 1 3 tes
+R 1060 1 3 tin’ 
+R 1062 1 7 kick 
+R 1064 3 6 it!
+- 1067
+G 1071 1 3 Li
+G 1073 1 1 roy 
+G 1075 1 3 psy
+G 1077 1 3 cho
+G 1079 1 3 pa
+G 1081 1 3 ta 
+G 1083 1 3 zno
+G 1085 1 1 wu 
+G 1087 1 3 wy
+G 1089 1 3 ko
+G 1091 1 3 nu
+G 1093 1 3 je 
+G 1095 1 3 my
+G 1097 1 1 ki
+- 1098
+R 1101 1 3 Na
+R 1103 1 1 wy
+R 1105 3 1 ki 
+R 1109 1 3 zos
+R 1111 1 3 ta
+R 1113 1 3 ły 
+R 1115 3 3 mi 
+R 1119 1 3 jed
+R 1121 1 3 nak 
+R 1123 1 3 ta
+R 1125 1 3 kie 
+R 1127 1 4 sa
+R 1129 2 3 me
+- 1131
+R 1135 2 4 Lu
+R 1138 3 4 bie 
+R 1142 2 3 ro
+R 1146 1 3 bić 
+R 1148 1 3 ka
+R 1150 1 3 wał
+R 1152 1 2 ki 
+R 1154 1 2 od
+R 1156 1 2 je
+R 1158 1 3 cha
+R 1160 1 2 ne
+- 1161
+R 1162 1 3 Za
+R 1164 1 2 mo
+R 1166 1 3 ta
+R 1168 1 2 ne 
+R 1174 3 11 psy
+R 1178 1 3 cho 
+R 1180 1 2 i 
+R 1182 1 3 tym 
+R 1184 1 1 po
+R 1186 1 1 dob
+R 1188 1 1 ne 
+R 1190 1 2 spra
+R 1192 1 1 wy
+- 1193
+R 1194 3 2 Pięć 
+R 1198 1 3 o
+R 1200 1 2 siem 
+R 1202 1 2 w mo
+R 1204 1 2 jej 
+R 1206 1 3 rę
+R 1208 1 2 ce 
+R 1210 1 2 przysz
+R 1212 1 2 ła 
+R 1214 1 2 chwi
+R 1216 1 2 la 
+R 1218 2 3 roz
+R 1222 1 3 pra
+R 1224 1 2 wy
+- 1225
+R 1230 2 -1 Sta
+R 1233 4 1 wy 
+R 1239 2 1 czas 
+R 1242 1 1 nad
+R 1244 1 1 wy
+R 1246 2 2 rę
+R 1250 1 1 żyć
+- 1251
+G 1252 1 1 Naj
+G 1254 1 3 wyż
+G 1257 3 3 sza 
+G 1262 1 3 po
+G 1264 1 3 ra 
+G 1266 1 3 a
+G 1268 1 3 by 
+G 1270 1 3 tro
+G 1272 1 1 chę 
+G 1274 3 3 się 
+G 1278 2 3 sprę
+G 1281 2 1 życ 
+G 1286 4 4 więc:
+- 1290
+R 1294 2 4 Skacz
+R 1298 1 4 cie 
+R 1300 1 4 do 
+R 1302 1 5 gó
+R 1304 3 4 ry 
+R 1310 2 4 jak 
+R 1314 2 4 kan
+R 1318 1 5 gu
+R 1320 3 4 ry!
+- 1323
+R 1327 2 4 Skacz
+R 1331 1 4 cie 
+R 1333 1 4 do 
+R 1335 1 5 gó
+R 1337 3 4 ry 
+R 1343 2 4 jak 
+R 1347 2 4 kan
+R 1351 1 5 gu
+R 1353 3 4 ry!
+- 1356
+R 1358 2 4 Skacz
+R 1362 1 4 cie 
+R 1364 1 4 do 
+R 1366 1 5 gó
+R 1368 3 4 ry 
+R 1374 2 4 jak 
+R 1378 2 4 kan
+R 1382 1 5 gu
+R 1384 3 4 ry!
+- 1387
+R 1390 3 4 Skacz
+R 1394 1 4 cie 
+R 1396 1 4 do 
+R 1398 1 5 gó
+R 1400 3 4 ry, 
+R 1406 3 4 skacz
+R 1410 1 4 cie 
+R 1412 1 4 do 
+R 1414 1 5 gó
+R 1416 1 4 ry
+- 1417
+R 1423 2 4 Skacz
+R 1427 1 4 cie 
+R 1429 1 4 do 
+R 1431 1 5 gó
+R 1433 3 4 ry 
+R 1439 2 4 jak 
+R 1443 2 4 kan
+R 1447 1 5 gu
+R 1449 3 4 ry!
+- 1452
+R 1455 2 4 Skacz
+R 1459 1 4 cie 
+R 1461 1 4 do 
+R 1463 1 5 gó
+R 1465 3 4 ry 
+R 1471 2 4 jak 
+R 1475 2 4 kan
+R 1479 1 5 gu
+R 1481 3 4 ry!
+- 1484
+R 1487 2 4 Skacz
+R 1491 1 4 cie 
+R 1493 1 4 do 
+R 1495 1 5 gó
+R 1497 3 4 ry 
+R 1503 2 4 jak 
+R 1507 2 4 kan
+R 1511 1 5 gu
+R 1513 2 4 ry!
+- 1515
+R 1518 3 4 Skacz
+R 1522 1 4 cie 
+R 1524 1 4 do 
+R 1526 1 5 gó
+R 1528 3 4 ry, 
+R 1534 3 4 skacz
+R 1538 1 4 cie 
+R 1540 1 4 do 
+R 1542 1 5 gó
+R 1544 1 4 ry
+- 1545 1821
+- 1821
+G 1835 2 4 Yo 
+G 1838 3 6 boom 
+G 1842 1 4 bat
+G 1844 1 4 ta 
+G 1846 3 6 bing
+G 1850 3 1 boom 
+G 1854 1 3 bat
+G 1856 1 3 ta 
+G 1858 3 3 bing 
+G 1862 2 7 check 
+G 1865 3 6 it!
+- 1868
+R 1870 1 1 Li
+R 1872 1 1 roy 
+R 1874 1 1 zno
+R 1876 1 1 wu 
+R 1878 1 3 w cha
+R 1880 1 1 łu
+R 1882 1 1 pie, 
+R 1884 1 1 po
+R 1886 1 1 now
+R 1888 1 1 nie 
+R 1890 1 1 na 
+R 1894 3 2 sce
+R 1898 1 1 nie
+- 1899
+R 1900 1 0 Ko
+R 1902 3 0 lej
+R 1906 1 0 ny 
+R 1908 2 1 kon
+R 1911 3 0 cert, 
+R 1916 2 1 nas
+R 1919 1 1 tęp
+R 1922 1 1 ne 
+R 1924 2 3 mias
+R 1927 2 1 to
+- 1929
+R 1934 3 3 Zno
+R 1938 2 3 wu 
+R 1942 1 3 w gard
+R 1944 1 3 le 
+R 1946 1 3 mi 
+R 1948 1 3 cho
+R 1950 2 3 ler
+R 1954 1 3 nie 
+R 1956 3 4 zas
+R 1960 2 3 chło
+- 1962
+R 1964 1 4 Więc 
+R 1966 2 11 skacz
+R 1970 1 11 cie 
+R 1972 1 11 do 
+R 1974 1 5 gó
+R 1976 1 4 ry, 
+R 1982 2 4 skacz
+R 1986 1 4 cie 
+R 1988 1 4 do 
+R 1990 1 5 gó
+R 1992 1 4 ry
+- 1993
+R 1999 2 3 Czas 
+R 2002 1 3 po
+R 2004 1 3 wy
+R 2006 1 3 rzu
+R 2008 1 3 cać 
+R 2010 1 4 za 
+R 2012 2 3 ok
+R 2016 1 3 no 
+R 2018 1 3 gar
+R 2020 1 3 ni
+R 2022 1 4 tu
+R 2024 1 3 ry
+- 2025
+R 2026 1 4 Przed
+R 2028 1 2 sta
+R 2030 1 1 wie
+R 2032 1 2 nie 
+R 2034 2 3 czas 
+R 2038 1 4 za
+R 2040 3 3 cząć 
+R 2046 3 3 show 
+R 2050 1 3 must 
+R 2052 1 4 go 
+R 2054 4 3 on
+- 2058
+R 2062 1 3 Za
+R 2064 1 3 dam 
+R 2066 2 3 py
+R 2069 2 4 ta
+R 2072 1 3 nie 
+R 2074 1 11 „Ko
+R 2076 1 9 mu 
+R 2078 1 4 bi
+R 2080 5 3 je 
+R 2086 4 3 dzwon?”
+- 2090
+R 2092 1 1 A 
+R 2094 1 4 ba
+R 2096 1 4 ba 
+R 2098 1 4 do 
+R 2100 1 4 mnie 
+R 2102 1 4 mó
+R 2104 1 4 wi: 
+G 2106 1 3 „jes
+G 2108 1 3 teś 
+G 2110 2 1 chłop
+G 2114 1 1 cze 
+G 2116 1 1 psy
+G 2118 2 1 chicz
+G 2122 2 -1 ny”
+- 2124
+R 2127 1 1 Mnie 
+R 2130 1 1 to 
+R 2134 1 1 wa
+R 2136 1 1 li 
+R 2138 1 1 mam 
+R 2140 2 4 młot 
+R 2144 1 4 pne
+R 2146 1 1 u
+R 2148 1 1 ma
+R 2150 1 1 ty
+R 2153 1 -1 czny
+- 2154
+R 2156 1 1 Dras
+R 2158 1 -3 tycz
+R 2162 1 1 ny 
+R 2164 1 1 jest 
+R 2166 2 2 prze
+R 2169 2 1 bieg 
+R 2174 1 1 mo
+R 2176 1 1 jej 
+R 2180 1 1 cho
+R 2182 1 2 ro
+R 2184 3 1 by
+- 2187
+R 2190 1 -4 Kie
+R 2192 1 -1 dy 
+R 2194 1 1 mam 
+R 2196 1 2 mik
+R 2198 1 2 ro
+R 2200 1 2 fon 
+R 2202 1 2 nie 
+R 2204 1 3 mo
+R 2206 1 3 gę 
+R 2208 1 4 rę
+R 2210 1 4 czyć 
+R 2212 1 4 za 
+R 2214 1 5 szko
+R 2216 1 4 dy
+- 2217
+R 2218 1 4 Mam 
+R 2220 1 3 pom
+R 2222 2 -1 rocz
+R 2225 2 1 ność 
+R 2228 2 3 jas
+R 2231 2 2 ną, 
+R 2234 1 2 a 
+R 2236 1 2 mo
+R 2238 1 2 że 
+R 2240 1 2 ciem
+R 2242 1 1 ną 
+R 2244 1 2 nie 
+R 2246 1 1 pa
+R 2248 1 2 mię
+R 2250 2 1 tam
+- 2252
+R 2254 1 3 W te
+R 2256 1 3 le
+R 2258 1 3 wiz
+R 2260 1 3 ji 
+R 2262 1 4 zno
+R 2264 1 3 wu 
+R 2266 1 1 ktoś 
+R 2269 2 2 woj
+R 2272 1 2 nę 
+R 2274 1 2 roz
+R 2277 2 3 pę
+R 2280 1 2 tał
+- 2281
+R 2282 1 2 A 
+R 2284 1 2 ja 
+R 2286 1 -2 ciąg
+R 2288 1 0 le 
+R 2290 2 1 mej 
+R 2293 1 2 gło
+R 2295 1 2 wie 
+R 2297 1 3 czu
+R 2299 1 3 je 
+R 2302 2 3 ten 
+R 2306 1 4 dziw
+R 2308 1 4 ny 
+R 2310 5 3 szum
+- 2315
+R 2318 3 4 Skacz
+R 2322 1 4 cie 
+R 2324 1 4 do 
+R 2326 1 5 gó
+R 2328 1 4 ry, 
+R 2330 3 4 boom 
+R 2334 1 5 bat
+R 2336 1 5 ta, 
+R 2338 3 7 bing 
+R 2342 4 8 boom
+- 2346
+R 2350 2 4 Skacz
+R 2354 1 4 cie 
+R 2356 1 4 do 
+R 2358 1 5 gó
+R 2360 3 4 ry 
+R 2366 2 4 jak 
+R 2370 2 4 kan
+R 2374 1 5 gu
+R 2376 3 4 ry!
+- 2379
+R 2382 2 4 Skacz
+R 2386 1 4 cie 
+R 2388 1 4 do 
+R 2390 1 5 gó
+R 2392 3 4 ry 
+R 2398 2 4 jak 
+R 2402 2 4 kan
+R 2406 1 5 gu
+R 2408 3 4 ry!
+- 2411
+R 2414 2 4 Skacz
+R 2418 1 4 cie 
+R 2420 1 4 do 
+R 2422 1 5 gó
+R 2424 3 4 ry 
+R 2430 2 4 jak 
+R 2434 2 4 kan
+R 2438 1 5 gu
+R 2440 3 4 ry!
+- 2443
+R 2446 3 4 Skacz
+R 2450 1 4 cie 
+R 2452 1 4 do 
+R 2454 1 5 gó
+R 2456 3 4 ry, 
+R 2462 3 4 skacz
+R 2466 1 4 cie 
+R 2468 1 4 do 
+R 2470 1 5 gó
+R 2472 2 4 ry
+- 2474
+R 2478 2 4 Skacz
+R 2482 1 4 cie 
+R 2484 1 4 do 
+R 2486 1 5 gó
+R 2488 3 4 ry 
+R 2494 2 4 jak 
+R 2498 2 4 kan
+R 2502 1 5 gu
+R 2504 3 4 ry!
+- 2507
+R 2510 2 4 Skacz
+R 2514 1 4 cie 
+R 2516 1 4 do 
+R 2518 1 5 gó
+R 2520 3 4 ry 
+R 2526 2 4 jak 
+R 2530 2 4 kan
+R 2534 1 5 gu
+R 2536 3 4 ry!
+- 2539
+R 2542 2 4 Skacz
+R 2546 1 4 cie 
+R 2548 1 4 do 
+R 2550 1 5 gó
+R 2552 3 4 ry 
+R 2558 2 4 jak 
+R 2562 2 4 kan
+R 2566 1 5 gu
+R 2568 3 4 ry!
+- 2571
+G 2574 3 4 Skacz
+G 2578 1 4 cie 
+G 2580 1 4 do 
+G 2582 1 5 gó
+G 2584 3 4 ry, 
+G 2590 3 4 skacz
+G 2594 1 4 cie 
+G 2596 1 4 do 
+G 2598 1 5 gó
+G 2600 5 4 ry
+E

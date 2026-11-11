@@ -1,0 +1,213 @@
+#ARTIST:Wiktor Zborowski
+#TITLE:Muminki
+#CREATOR:BENY
+#BPM:296,79999999999984
+#YEAR:1990
+#VIDEO:v=c6IfcgY6cFM
+#LANGUAGE:Polish
+#GAP:12061,596638655463
+#ALLKARAOKE_ID:wiktor-zborowski-muminki
+#ALLKARAOKE_SID:7241
+#ALLKARAOKE_LASTUPDATE:2026-11-11T04:02:47.862Z
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:90
+#MP3:Wiktor Zborowski - Muminki.mp3
+#COVER:Wiktor Zborowski - Muminki [CO].jpg
+#BACKGROUND:Wiktor Zborowski - Muminki [BG].jpg
+: 20 3 4 Tu
+: 27 2 7 taj 
+: 30 2 7 je 
+: 34 5 7 znaj
+: 41 2 7 dzie 
+: 45 5 9 każ
+: 52 3 7 de 
+: 59 7 7 z Was
+- 66
+: 75 2 4 W Mu
+: 78 3 4 min
+: 84 3 7 ków 
+: 90 3 7 się 
+: 98 2 7 prze
+: 102 4 9 nieś
+: 109 4 7 cie 
+: 116 7 7 świat
+- 123
+: 131 2 4 I 
+: 134 4 4 siądź
+: 142 3 7 cie 
+: 148 3 7 przy 
+: 155 2 7 ek
+: 159 5 9 ra
+: 166 4 7 nach 
+: 174 7 7 w krąg
+- 181
+: 188 2 7 I 
+: 191 4 9 ciesz
+: 198 3 9 cie 
+: 205 4 9 się 
+: 213 2 9 bo 
+: 216 5 9 wresz
+: 224 3 9 cie 
+: 230 4 9 są
+- 234
+: 238 2 7 Wa
+: 241 2 7 sze 
+: 244 2 7 Mu
+: 248 4 7 min
+: 254 8 4 ki
+- 262 275
+- 275
+: 295 2 7 Wa
+: 298 2 7 sze 
+: 301 2 7 Mu
+: 305 4 7 min
+: 311 8 4 ki
+- 319 339
+- 339
+: 359 2 4 Prze
+: 362 4 4 śledź
+: 370 3 7 cie 
+: 376 3 7 każ
+: 383 2 7 dy 
+: 387 5 9 drob
+: 394 4 7 ny 
+: 402 7 7 ruch
+- 409
+: 415 2 4 Nie 
+: 418 4 4 trać
+: 426 3 7 cie 
+: 432 3 7 chwil, 
+: 439 2 7 wy
+: 443 6 9 ostrz
+: 451 4 7 cie 
+: 458 7 7 słuch
+- 465
+: 473 2 4 Bo 
+: 476 3 4 przy 
+: 482 2 7 Mu
+: 486 4 7 min
+: 493 4 7 kach 
+: 501 6 9 zle
+: 509 3 7 ci 
+: 514 7 7 czas
+- 521
+: 530 2 7 Za
+: 533 4 9 pom
+: 540 3 9 ni 
+: 546 5 9 tros
+: 554 2 9 ki 
+: 558 4 9 każ
+: 564 3 9 de 
+: 571 5 9 z Was
+- 576
+: 579 2 7 Bo 
+: 582 2 7 to 
+: 585 2 7 Mu
+: 589 4 7 min
+: 596 8 4 ki
+- 604 615
+- 615
+: 635 2 7 Bo 
+: 638 2 7 to 
+: 641 2 7 Mu
+: 645 4 7 min
+: 652 8 4 ki
+- 660 672
+- 672
+: 692 2 2 Wa
+: 695 2 4 sze 
+: 698 2 4 Mu
+: 702 4 2 min
+: 709 8 2 ki
+- 717 730
+- 730
+: 750 2 2 Bo 
+: 753 2 2 to 
+: 756 2 2 Mu
+: 760 4 0 min
+: 767 8 0 ki
+- 775 788
+- 788
+: 808 2 4 Bo 
+: 811 2 4 to 
+: 814 2 4 Mu
+: 818 4 2 min
+: 825 8 2 ki
+- 833 844
+- 844
+: 864 2 2 Wa
+: 867 2 2 sze 
+: 870 2 2 Mu
+: 874 4 0 min
+: 881 8 0 ki
+- 889 913
+- 913
+* 933 3 7 Pa 
+* 939 2 7 pa 
+* 943 2 7 pa 
+* 947 4 7 pa 
+* 954 2 7 pa 
+* 957 4 7 pa 
+* 964 4 7 pa 
+* 971 2 7 pa 
+* 975 4 9 pa 
+* 982 5 10 pa
+- 987
+* 989 4 9 Ma 
+* 995 2 9 ma 
+* 999 2 9 ma 
+* 1003 4 9 ma 
+* 1010 2 9 ma 
+* 1013 4 9 ma 
+* 1020 4 9 ma 
+* 1027 2 9 ma 
+* 1031 4 9 ma 
+* 1038 5 9 ma
+- 1043
+* 1046 4 7 Pa 
+* 1052 2 7 pa 
+* 1056 2 7 pa 
+* 1060 4 7 pa 
+* 1067 2 7 pa 
+* 1071 4 14 ma 
+* 1077 4 14 ma 
+* 1084 2 14 ma 
+* 1088 5 14 ma 
+* 1095 4 12 ma - 
+* 1103 6 7 Pa
+- 1109 1141
+- 1141
+* 1161 4 7 Pa 
+* 1167 2 7 pa 
+* 1171 2 7 pa 
+* 1175 4 7 pa 
+* 1182 2 7 pa 
+* 1185 4 7 pa 
+* 1192 4 7 pa 
+* 1199 2 7 pa 
+* 1203 4 9 pa 
+* 1210 5 10 pa
+- 1215
+* 1217 4 9 Ma 
+* 1223 2 9 ma 
+* 1227 2 9 ma 
+* 1231 4 9 ma 
+* 1238 2 9 ma 
+* 1241 4 9 ma 
+* 1248 4 9 ma 
+* 1255 2 9 ma 
+* 1259 4 9 ma 
+* 1266 5 9 ma
+- 1271
+* 1274 4 11 Pa 
+* 1280 2 11 pa 
+* 1284 2 11 pa 
+* 1288 4 11 pa 
+* 1295 2 11 pa 
+* 1298 4 11 ma 
+* 1305 4 11 ma 
+* 1312 2 11 ma 
+* 1316 4 11 ma 
+* 1323 4 9 ma - 
+* 1331 7 7 Pa
+E
