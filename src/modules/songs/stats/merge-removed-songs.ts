@@ -2,26 +2,12 @@ import events from '~/modules/game-events/game-events';
 import { getAllStats, removeSongStatsByKey, SongStats, storeSongStatsByKey } from '~/modules/songs/stats/common';
 import { RemovedSongs, resolveMergeTarget } from '~/modules/songs/utils/removed-songs';
 
-type MergeRecords = NonNullable<SongStats['mergedFrom']>;
-
-const unionRecords = (into: MergeRecords = {}, from: MergeRecords = {}): MergeRecords => {
-  const records = { ...into };
-  for (const [key, record] of Object.entries(from)) {
-    records[key] = {
-      dates: [...new Set([...(records[key]?.dates ?? []), ...record.dates])],
-      plays: Math.max(records[key]?.plays ?? 0, record.plays),
-    };
-  }
-  return records;
-};
-
 /**
- * Moves the history of merged songs onto the songs they were merged into.
+ * Moves the runs of merged songs onto the songs they were merged into.
  *
- * Each parent remembers, per old key, the dates of the runs it took and the old key's play count at that point.
- * A retry after an interrupted merge (old key not removed yet) then adds only what was played since, and history
- * recorded under an old key after its merge (e.g. a local copy of the removed song) is moved again, not dropped.
- * Records are dates, not scores, as the merged-track fix may rescale scores in between.
+ * Each parent remembers, per old key, the dates of the runs it took (dates, as the merged-track fix may rescale
+ * scores). A retry after an interrupted merge adds nothing twice, and runs recorded under an old key after its merge
+ * (e.g. a local copy of the removed song) are moved too. Only runs move: song end recounts `plays` from the runs anyway.
  */
 export function mergeRemovedSongStats(stats: Record<string, SongStats>, removed: RemovedSongs) {
   const updated: Record<string, SongStats> = {};
@@ -39,30 +25,24 @@ export function mergeRemovedSongStats(stats: Record<string, SongStats>, removed:
   for (const { songStats, target } of sources) {
     if (!songStats.mergedFrom) continue;
     const parent = parentOf(target);
-    updated[target] = { ...parent, mergedFrom: unionRecords(parent.mergedFrom, songStats.mergedFrom) };
+    const mergedFrom = { ...parent.mergedFrom };
+    for (const [key, dates] of Object.entries(songStats.mergedFrom)) {
+      mergedFrom[key] = [...new Set([...(mergedFrom[key] ?? []), ...dates])];
+    }
+    updated[target] = { ...parent, mergedFrom };
   }
 
   for (const { key, songStats, target } of sources) {
     const parent = parentOf(target);
-    const record = parent.mergedFrom?.[key];
-    const taken = new Set(record?.dates);
-    const scores = songStats.scores ?? [];
-    const newRuns = scores.filter((run) => !taken.has(run.date));
-    // The key still holds what was taken (interrupted merge). New plays always add a run, so plays-only history is old
-    const stillHoldsTaken = scores.length === 0 || scores.some((run) => taken.has(run.date));
-    const alreadyCounted = record && stillHoldsTaken ? record.plays : 0;
-    const newPlays = Math.max(0, (songStats.plays ?? 0) - alreadyCounted);
+    const taken = new Set(parent.mergedFrom?.[key]);
+    const newRuns = (songStats.scores ?? []).filter((run) => !taken.has(run.date));
 
-    if (newRuns.length > 0 || newPlays > 0) {
+    if (newRuns.length > 0) {
       updated[target] = {
         ...parent,
-        plays: (parent.plays ?? 0) + newPlays,
+        plays: (parent.plays ?? 0) + newRuns.length,
         scores: [...(parent.scores ?? []), ...newRuns].sort((a, b) => a.date.localeCompare(b.date)),
-        mergedFrom: {
-          ...parent.mergedFrom,
-          // Play count of the key as it is now, so a retry of this merge subtracts exactly that
-          [key]: { dates: [...new Set([...taken, ...scores.map((run) => run.date)])], plays: songStats.plays ?? 0 },
-        },
+        mergedFrom: { ...parent.mergedFrom, [key]: [...taken, ...newRuns.map((run) => run.date)] },
       };
     }
     removedKeys.push(key);
