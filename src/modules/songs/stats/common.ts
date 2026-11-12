@@ -47,6 +47,10 @@ export const storeSongStatsByKey = async (storageKey: string, stats: SongStats) 
   await (await getStorage())?.setItem<SongStats>(storageKey, stats);
 };
 
+export const removeSongStatsByKey = async (storageKey: string) => {
+  await (await getStorage())?.removeItem(storageKey);
+};
+
 export const storeSongStats = async (song: Pick<SongPreview, 'artist' | 'title'>, stats: SongStats) =>
   storeSongStatsByKey(getSongKey(song), stats);
 

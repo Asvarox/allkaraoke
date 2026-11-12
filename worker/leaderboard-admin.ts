@@ -5,6 +5,7 @@ import {
 } from '../functions/unverified-songs-browser-admin-auth';
 import { MAX_SUBMITTED_SCORE } from '../src/modules/leaderboard/consts';
 import { boardCacheKey, getBoardStub, LeaderboardEnv } from './leaderboard';
+import type { SongMerge } from './leaderboard-do';
 
 export interface LeaderboardAdminEnv extends LeaderboardEnv {
   ADMIN_PANEL_PASSWORD?: string;
@@ -25,8 +26,19 @@ const parseScoreUpdates = (body: unknown): Array<{ id: string; score: number }> 
   return isValid ? scores.map(({ id, score }) => ({ id, score })) : null;
 };
 
+const parseSongMerges = (body: unknown): SongMerge[] | null => {
+  const merges = (body as { merges?: unknown } | null)?.merges;
+  if (!Array.isArray(merges)) return null;
+
+  const isValid = merges.every((entry) =>
+    (['from', 'to', 'artist', 'title'] as const).every((key) => typeof entry?.[key] === 'string' && entry[key]),
+  );
+
+  return isValid ? merges.map(({ from, to, artist, title }) => ({ from, to, artist, title })) : null;
+};
+
 /**
- * Authenticated list, delete, score correction, and a manual projection rebuild. Row ids only ever reach the admin UI
+ * Authenticated list, delete, score correction, merging duplicate songs, and a manual projection rebuild. Row ids only ever reach the admin UI
  * through here — the public board never carries them.
  */
 export const handleLeaderboardAdmin = async (request: Request, env: LeaderboardAdminEnv) => {
@@ -64,6 +76,22 @@ export const handleLeaderboardAdmin = async (request: Request, env: LeaderboardA
     }
 
     const result = await board.updateScores(scores);
+    await caches.default.delete(boardCacheKey(request));
+
+    return new Response(JSON.stringify(result), { headers: responseHeaders });
+  }
+
+  if (request.method === 'PUT') {
+    const merges = parseSongMerges(await request.json().catch(() => null));
+
+    if (!merges) {
+      return new Response(JSON.stringify({ error: 'Expected { merges: [{ from, to, artist, title }] }' }), {
+        status: 400,
+        headers: responseHeaders,
+      });
+    }
+
+    const result = await board.mergeSongs(merges);
     await caches.default.delete(boardCacheKey(request));
 
     return new Response(JSON.stringify(result), { headers: responseHeaders });
