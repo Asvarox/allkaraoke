@@ -1,0 +1,114 @@
+#ARTIST:Code Lyoko
+#TITLE:Kod Lyoko (Intro Sezon 1)
+#CREATOR:PennyPapermoon
+#BPM:254
+#YEAR:2003
+#VIDEO:v=zHZCIGOn1L0
+#LANGUAGE:Polish
+#GAP:13766,062992125984
+#ALLKARAOKE_ID:code-lyoko-kod-lyoko-intro-sezon-1
+#ALLKARAOKE_SID:7283
+#ALLKARAOKE_LASTUPDATE:2026-11-12T05:12:56.002Z
+#ALLKARAOKE_ARTISTORIGIN:FR
+#ALLKARAOKE_VOLUME:70
+#ALLKARAOKE_DURATION:48
+#MP3:Code Lyoko - Kod Lyoko (Intro Sezon 1).mp3
+#COVER:Code Lyoko - Kod Lyoko (Intro Sezon 1) [CO].jpg
+#BACKGROUND:Code Lyoko - Kod Lyoko (Intro Sezon 1) [BG].jpg
+: 17 2 0 Ma
+: 20 3 5 ło 
+: 24 4 5 nas
+- 28
+: 31 2 0 Choć 
+: 35 4 5 w sam 
+: 40 4 5 raz
+- 44
+: 48 3 0 By 
+: 52 2 5 ra
+: 55 8 5 to
+: 64 2 4 wać 
+: 67 2 2 ten 
+: 71 5 4 świat
+- 76
+: 79 2 0 Bo 
+: 82 3 5 gdy 
+: 87 4 5 znasz 
+: 94 3 0 si
+: 98 2 5 łę 
+: 102 5 5 swą
+- 107
+: 111 2 0 Prze
+: 114 4 5 zwy
+: 119 6 5 cię
+: 126 7 4 żysz 
+: 135 6 2 zło
+- 141
+: 145 2 0 Ma
+: 148 3 5 ło 
+: 152 4 5 nas
+- 156
+: 159 3 0 Lecz 
+: 163 2 5 do 
+: 166 7 5 gwiazd
+- 173
+: 176 3 0 Każ
+: 180 2 5 dy 
+: 183 7 5 sko
+: 191 3 4 czyć 
+: 195 3 2 by 
+: 200 6 4 mógł
+- 206
+: 211 2 5 Gdy 
+: 215 24 5 chcę
+- 239
+: 244 3 0 Po
+: 248 6 10 ko
+: 257 5 9 nać 
+: 263 7 7 si
+: 271 6 5 ły 
+: 278 7 5 złe
+- 285
+: 290 7 12 Kod 
+: 299 1 10 ly
+: 301 1 10 o
+: 303 6 9 ko
+- 309
+: 311 6 7 Wię
+: 318 5 4 cej 
+: 326 6 5 jest 
+: 335 5 7 niż 
+: 342 8 2 grą
+- 350
+: 353 8 12 Kod 
+: 362 1 10 ly
+: 364 1 10 o
+: 366 8 9 ko
+- 374
+: 378 6 5 Wzmoc
+: 386 2 5 ni 
+: 390 8 7 si
+: 399 6 9 łę 
+: 406 8 5 twą
+- 414
+: 417 8 12 Kod 
+: 426 1 10 ly
+: 428 1 10 o
+: 430 8 9 ko
+- 438
+: 441 8 7 Wro
+: 450 2 4 gów 
+: 454 6 5 śle 
+: 462 6 7 na 
+: 470 8 2 dno
+- 478
+: 482 6 12 Kod 
+: 489 1 10 ly
+: 491 1 10 o
+: 493 7 9 ko
+- 500
+: 503 6 5 Znisz
+: 511 7 5 czy 
+: 519 6 7 każ
+: 527 5 9 de 
+: 534 14 5 zło
+E

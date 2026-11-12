@@ -1,0 +1,222 @@
+#ARTIST:YURiKA
+#TITLE:Kyoumen no Nami
+#CREATOR:Currymalker
+#BPM:350,04
+#YEAR:2017
+#VIDEO:v=C9MuI4gfyiA
+#GENRE:Anime
+#LANGUAGE:Japanese
+#GAP:2,773054508056248
+#EDITION:Anime
+#ALLKARAOKE_ID:yurika-kyoumen-no-nami
+#ALLKARAOKE_SID:7262
+#ALLKARAOKE_LASTUPDATE:2026-11-12T05:12:41.929Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=currymalker
+#ALLKARAOKE_REALBPM:87
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=YURiKA&cancion=Kyoumen%20no%20Nami%20(TV)
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:91
+#MP3:YURiKA - Kyoumen no Nami (TV).mp3
+#COVER:YURiKA - Kyoumen no Nami (TV) [CO].jpg
+#MEDLEYSTARTBEAT:1000
+#MEDLEYENDBEAT:1524
+: 12 8 9 Ne
+- 20
+* 36 2 7 mu
+: 40 7 9 ri
+- 47
+: 68 2 7 No 
+: 72 6 9 te
+- 78
+: 100 2 7 To
+: 104 8 9 ji
+: 116 9 10 ko
+- 125
+: 132 2 5 me
+: 136 9 5 ra
+- 145
+* 164 2 3 re
+: 168 8 2 te
+- 176
+: 196 2 0 i
+: 200 7 2 ta
+- 207
+: 228 2 0 Ne
+: 232 9 2 tsu 
+* 244 11 -3 ga
+- 255
+: 268 9 9 Mi
+- 277
+: 292 2 7 zu
+: 296 8 9 gi
+- 304
+: 324 2 7 wa 
+: 328 7 9 ni
+- 335
+* 356 2 7 Ta
+: 360 10 9 da
+: 372 9 10 yo
+: 388 2 5 ~
+: 392 8 5 tta
+- 400
+: 420 2 3 So
+: 424 7 2 no
+- 431
+: 452 2 0 I
+: 456 6 2 ro
+- 462 501
+- 501
+* 524 10 9 Yu
+- 534
+: 548 2 7 ki
+: 552 10 9 sa
+- 562
+: 580 2 7 ki 
+: 584 10 9 o 
+: 596 6 10 wa
+* 604 4 5 su
+: 610 4 3 re
+: 618 5 2 te
+- 623
+: 628 6 3 Hi
+: 636 4 2 bi 
+: 642 4 3 ni 
+: 648 12 5 to
+- 660
+: 676 2 3 ke
+: 680 8 2 ta
+- 688
+* 708 2 0 Mu
+: 712 10 2 su
+- 722
+: 740 2 0 u 
+: 744 5 2 no 
+: 752 6 -2 tsu
+* 760 5 -3 bu 
+: 768 9 5 ga 
+: 780 10 9 yo
+- 790
+: 804 2 7 tsu
+: 808 12 9 yu
+- 820
+: 836 2 10 U
+: 840 5 9 ke
+: 848 6 5 to
+: 856 6 3 me
+: 864 6 2 ru 
+: 872 6 2 u
+: 880 2 3 tsu
+: 884 5 5 wa 
+* 892 2 -2 ka
+: 896 5 0 ke
+: 904 2 2 ta 
+: 908 13 2 hi
+- 921
+: 932 2 3 to
+: 936 5 2 ka
+: 944 6 0 ke
+: 952 5 -2 ra 
+: 960 6 0 sa
+: 968 8 2 ga
+: 980 6 5 shi
+* 988 2 11 te
+* 992 2 12 ~
+: 996 8 9 ru
+- 1004
+: 1012 6 7 Yu
+: 1020 6 9 u
+: 1028 2 12 da
+: 1032 50 14 ~
+* 1086 10 15 chi 
+: 1098 23 9 ga
+- 1121
+: 1132 2 9 Na
+: 1136 10 10 ~
+: 1148 13 12 zu
+: 1164 2 12 ke
+: 1168 2 14 ~
+: 1172 2 12 ra
+: 1176 2 12 re
+: 1180 1 10 ta
+: 1182 2 12 ~ 
+: 1186 4 10 se
+: 1192 4 10 ka
+: 1198 8 9 i 
+: 1208 4 10 o
+- 1212
+* 1216 5 12 Ha
+: 1224 2 3 na
+: 1228 5 5 ~
+: 1236 2 3 shi
+: 1240 5 2 ta 
+: 1248 2 3 to
+: 1252 7 2 ki
+- 1259
+: 1268 6 7 So
+* 1276 6 9 re 
+: 1284 2 12 wa
+: 1288 44 14 ~
+- 1332
+: 1340 2 14 Na
+: 1344 6 15 ~
+: 1352 10 9 mi 
+: 1364 2 10 no
+: 1368 10 12 ~ 
+: 1380 2 9 you
+: 1384 10 10 ~ 
+: 1396 10 9 ni
+- 1406
+* 1416 2 12 Yu
+* 1420 4 17 bi 
+: 1426 4 12 no 
+: 1432 2 10 su
+: 1436 4 12 ki
+: 1442 4 9 ma 
+: 1448 2 10 o 
+: 1452 10 12 su
+: 1464 9 14 ri
+: 1476 2 14 nu
+: 1480 6 15 ~
+: 1488 2 14 ke
+: 1492 6 10 te
+- 1498
+: 1508 6 9 Ki
+: 1516 10 10 e
+: 1528 8 12 te
+- 1536
+: 1544 2 14 Ka
+: 1548 7 14 ta
+* 1560 10 7 chi 
+: 1572 2 10 o
+: 1576 4 12 ~
+- 1580
+: 1588 2 9 Ka
+: 1592 2 10 ~
+: 1596 6 9 e 
+: 1604 5 10 ku
+: 1612 2 15 ri
+: 1616 14 17 ~
+- 1630
+: 1636 4 14 ka
+: 1642 7 12 e
+: 1652 6 10 su 
+* 1660 6 9 yu
+: 1668 6 10 me 
+: 1676 9 12 da
+: 1688 2 12 ke
+: 1692 5 14 ~ 
+: 1700 12 10 ga
+- 1712
+: 1720 2 10 Wa
+: 1724 5 9 ta
+: 1732 6 10 shi 
+: 1740 17 9 o
+- 1757
+: 1768 2 5 Tsu
+: 1772 6 5 na
+: 1780 2 3 i
+: 1784 6 2 de
+: 1792 2 3 i
+: 1796 56 5 ru
+E

@@ -1,0 +1,503 @@
+#ARTIST:Wet Leg
+#TITLE:Chaise Longue
+#CREATOR:Monkeyhands
+#BPM:330
+#YEAR:2020
+#VIDEO:v=Zd9jeJk2UHQ
+#GENRE:Indie pop, Indie rock, Post-punk, Post-punk revival
+#LANGUAGE:English
+#GAP:8052
+#ALLKARAOKE_ID:wet-leg-chaise-longue
+#ALLKARAOKE_SID:7279
+#ALLKARAOKE_LASTUPDATE:2026-11-12T05:12:44.797Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:160
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:207
+#MP3:Wet Leg - Chaise Longue.mp3
+#COVER:Wet Leg - Chaise Longue [CO].jpg
+#BACKGROUND:Wet Leg - Chaise Longue [BG].jpg
+: 22 3 -1 Mum
+: 26 5 0 my 
+: 39 2 -2 dad
+: 43 5 -2 dy 
+: 54 4 -3 look 
+: 63 2 -3 at 
+: 67 7 -4 me
+- 74
+: 84 2 -3 I
+: 87 2 -2 ~ 
+: 90 3 -1 went 
+: 96 2 -1 to 
+: 101 9 -3 school 
+: 114 2 -3 and 
+: 117 3 -3 I 
+: 121 3 -3 got 
+: 125 2 -3 a 
+: 129 2 -3 de
+: 133 8 -4 gree
+- 141
+: 154 6 -1 All 
+: 163 5 -3 my 
+: 171 5 -3 friends 
+: 179 5 -4 call 
+: 187 2 -1 it 
+: 191 2 -1 the 
+: 195 2 -2 big 
+: 200 8 -4 D
+- 208
+R 216 2 -3 I 
+R 220 4 -3 went 
+R 228 2 -3 to 
+R 233 9 -4 school 
+R 245 3 -4 and 
+R 249 2 -5 I 
+R 253 1 -4 got 
+R 257 1 -4 the 
+R 261 4 -4 big 
+R 270 8 -4 D
+- 278 293
+- 293
+R 315 2 -3 I 
+R 319 2 -3 got 
+R 324 2 -3 the 
+R 328 3 -3 big 
+R 336 11 -4 D
+- 347 359
+- 359
+R 381 2 -3 I 
+R 385 2 -3 got 
+R 390 1 -3 the 
+R 394 3 -3 big 
+R 402 8 -4 D
+- 410 425
+- 425
+R 447 2 -3 I 
+R 451 2 -3 got 
+R 455 2 -3 the 
+R 460 3 -3 big 
+R 468 10 -4 D
+- 478
+R 481 3 -3 I 
+R 485 4 -3 went 
+R 493 2 -3 to 
+R 498 10 -3 school 
+R 510 3 -4 and 
+R 514 2 -4 I 
+R 517 2 -4 got 
+R 521 2 -4 the 
+R 526 3 -4 big 
+R 534 8 -4 D
+- 542 594
+- 594
+: 616 5 0 Is 
+: 625 5 0 your 
+: 631 4 -2 muf
+: 638 5 -2 fin 
+: 645 3 -3 but
+: 650 4 -4 tered
+- 654
+R 673 2 -2 Would 
+R 678 2 -2 you 
+R 681 3 -2 like 
+R 686 2 1 us 
+R 691 2 0 to 
+R 694 2 -2 as
+R 699 2 -3 sign 
+R 703 3 -4 some
+R 707 2 -4 one 
+R 711 2 -4 to 
+R 715 1 -4 but
+R 719 4 -4 ter 
+R 724 2 -4 your 
+R 727 2 -4 muf
+R 732 5 -4 fin
+- 737
+R 743 2 -3 Ex
+R 748 2 -2 cuse 
+R 754 6 -3 me
+- 760
+R 779 3 -5 (What)
+- 782 788
+- 788
+R 810 2 -3 Ex
+R 815 3 -2 cuse 
+R 821 9 -3 me
+- 830
+R 845 3 -5 (What)
+- 848 866
+- 866
+: 888 6 0 Hey 
+: 896 9 -2 you 
+: 914 2 -2 o
+: 917 3 0 ~
+: 921 3 0 ver 
+: 926 7 -3 there
+- 933
+: 947 2 0 On 
+: 950 1 1 the 
+: 955 6 -1 chaise 
+: 963 7 -3 longue 
+: 972 3 -3 in 
+: 976 2 -3 your 
+: 979 7 -3 un
+: 987 3 -3 der
+: 992 7 -4 wear
+- 999
+: 1011 3 -1 What 
+: 1017 3 1 are 
+: 1021 5 -1 you 
+: 1029 4 -3 do
+: 1034 6 -3 ing 
+: 1045 2 -3 sit
+: 1050 5 -4 ting 
+: 1057 5 -5 do
+: 1063 6 -4 ~wn
+- 1069
+R 1078 4 -4 You 
+R 1086 2 -4 should 
+R 1090 7 -3 be 
+R 1099 5 -5 ho
+R 1106 3 -4 ri
+R 1111 5 -3 zon
+R 1119 5 -4 tal 
+R 1127 8 -4 now
+- 1135 1387
+- 1387
+R 1409 2 1 On 
+R 1412 2 5 the 
+R 1417 5 1 chaise 
+R 1425 7 -1 longue 
+R 1433 2 -2 on 
+R 1436 2 -2 the 
+R 1443 4 -3 chaise 
+R 1449 8 -3 longue 
+R 1458 2 -3 on 
+R 1461 2 -3 the 
+R 1467 5 -3 chaise 
+R 1475 7 -3 longue
+- 1482
+R 1484 5 -3 All 
+R 1492 6 -3 day 
+R 1501 5 -3 long 
+R 1509 2 -3 on 
+R 1512 2 -3 the 
+R 1517 4 -3 chaise 
+R 1524 7 -3 longue
+- 1531
+R 1541 2 3 On 
+R 1544 2 5 the 
+R 1549 5 1 chaise 
+R 1558 6 -1 longue 
+R 1565 2 -2 on 
+R 1568 2 -2 the 
+R 1574 5 -2 chaise 
+R 1582 7 -3 longue 
+R 1590 3 -3 on 
+R 1594 2 -3 the 
+R 1599 5 -3 chaise 
+R 1606 7 -3 longue
+- 1613
+R 1615 5 -3 All 
+R 1623 5 -3 day 
+R 1631 6 -3 long 
+R 1640 2 -3 on 
+R 1643 2 -3 the 
+R 1648 5 -3 chaise 
+R 1656 8 -3 longue
+- 1664
+: 1672 3 0 Is 
+: 1680 5 1 your 
+: 1688 4 -2 mo
+: 1693 4 -2 ther 
+: 1701 3 -4 wor
+: 1705 5 -5 ried
+- 1710
+R 1730 2 -2 Would 
+R 1734 2 -2 you 
+R 1737 3 -2 like 
+R 1742 2 1 us 
+R 1747 2 1 to 
+R 1750 1 0 as
+R 1754 4 -3 sign 
+R 1761 2 -3 some
+R 1764 3 -3 one 
+R 1769 2 -4 to 
+R 1772 2 -4 wor
+R 1776 2 -4 ry 
+R 1779 3 -4 your 
+R 1784 2 -4 mo
+R 1788 3 -4 ther
+- 1791
+R 1799 2 -2 Ex
+R 1804 3 -2 cuse 
+R 1810 6 -3 me
+- 1816
+R 1835 4 -5 (What)
+- 1839 1844
+- 1844
+R 1866 2 -2 Ex
+R 1871 4 -2 cuse 
+R 1877 9 -3 me
+- 1886
+R 1901 3 -5 (What)
+- 1904 1922
+- 1922
+: 1944 6 1 Hey 
+: 1952 8 -2 you 
+: 1969 3 -1 in 
+: 1973 2 0 the 
+: 1978 3 0 front 
+: 1982 8 -3 row
+- 1990
+: 1995 2 -2 Are 
+: 1998 2 -2 you 
+: 2003 3 -1 co
+: 2007 2 0 ming 
+: 2010 3 -2 back
+: 2019 5 -3 stage 
+: 2032 3 -3 af
+: 2039 5 -4 ter 
+: 2047 2 -5 the 
+: 2052 2 -5 show
+- 2054
+R 2055 2 -4 Be
+R 2059 2 -3 cause 
+R 2064 2 -3 I’ve 
+R 2068 3 -1 got 
+R 2072 2 1 a 
+R 2077 4 -1 chaise 
+R 2085 6 -3 longue 
+R 2094 2 -4 in 
+R 2097 2 -4 my 
+R 2100 3 -4 dres
+R 2108 5 -5 sing 
+R 2114 6 -5 room
+- 2120
+R 2126 2 -4 And 
+R 2130 2 -4 a 
+R 2134 3 -3 pack 
+R 2138 2 -3 of 
+R 2143 6 -4 warm 
+R 2151 6 -5 beer 
+R 2158 2 -5 that 
+R 2164 3 -5 we 
+R 2171 6 -5 can 
+R 2179 2 -5 con
+R 2184 6 -5 sume
+- 2190 2442
+- 2442
+R 2464 2 3 On 
+R 2467 2 5 the 
+R 2473 5 1 chaise 
+R 2481 6 -1 longue 
+R 2489 2 -2 on 
+R 2492 2 -2 the 
+R 2498 5 -2 chaise 
+R 2505 7 -3 longue 
+R 2514 2 -3 on 
+R 2517 2 -3 the 
+R 2523 7 -3 chaise 
+R 2531 7 -3 longue
+- 2538
+R 2539 5 -3 All 
+R 2547 7 -3 day 
+R 2555 8 -4 long 
+R 2564 2 -5 on 
+R 2567 2 -5 the 
+R 2573 5 -6 chaise 
+R 2580 6 -6 longue
+- 2586
+R 2597 2 3 On 
+R 2600 2 5 the 
+R 2605 6 1 chaise 
+R 2612 7 -1 longue 
+R 2621 2 -2 on 
+R 2624 2 -2 the 
+R 2629 5 -3 chaise 
+R 2638 6 -4 longue 
+R 2646 2 -4 on 
+R 2649 2 -4 the 
+R 2655 5 -4 chaise 
+R 2663 6 -5 longue
+- 2669
+R 2671 5 -5 All 
+R 2679 4 -5 day 
+R 2687 7 -5 long 
+R 2696 2 -6 on 
+R 2699 2 -6 the 
+R 2704 6 -6 chaise 
+R 2712 6 -5 longue
+- 2718
+R 2729 2 3 On 
+R 2732 2 5 the 
+R 2737 5 1 chaise 
+R 2744 7 0 longue 
+R 2753 2 -2 on 
+R 2756 2 -2 the 
+R 2762 5 -3 chaise 
+R 2769 7 -3 longue 
+R 2777 2 -4 on 
+R 2780 2 -4 the 
+R 2786 7 -4 chaise 
+R 2794 7 -4 longue
+- 2801
+R 2803 5 -4 All 
+R 2811 7 -4 day 
+R 2820 6 -5 long 
+R 2827 2 -5 on 
+R 2830 2 -5 the 
+R 2836 7 -6 chaise 
+R 2844 5 -6 longue
+- 2849
+R 2860 2 3 On 
+R 2864 2 5 the 
+R 2869 5 1 chaise 
+R 2876 7 -1 longue 
+R 2885 2 -2 on 
+R 2888 2 -2 the 
+R 2894 6 -3 chaise 
+R 2901 6 -3 longue 
+R 2910 2 -4 on 
+R 2913 2 -4 the 
+R 2918 6 -4 chaise 
+R 2925 7 -4 longue
+- 2932
+R 2935 4 -5 All 
+R 2943 5 -5 day 
+R 2951 7 -6 long 
+R 2960 2 -6 on 
+R 2963 2 -6 the 
+R 2968 7 -6 chaise 
+R 2976 6 -6 longue
+- 2982 3234
+- 3234
+R 3256 2 3 On 
+R 3259 2 5 the 
+R 3266 5 2 chaise 
+R 3273 6 1 longue 
+R 3281 2 1 on 
+R 3284 2 1 the 
+R 3290 5 -1 chaise 
+R 3297 8 -1 longue 
+R 3306 2 -2 on 
+R 3309 2 -2 the 
+R 3314 6 -2 chaise 
+R 3322 6 -2 longue
+- 3328
+R 3331 6 -2 All 
+R 3339 6 -2 day 
+R 3347 8 -3 long 
+R 3356 2 -3 on 
+R 3359 2 -3 the 
+R 3364 6 -3 chaise 
+R 3373 6 -4 longue
+- 3379
+R 3389 2 3 On 
+R 3392 2 5 the 
+R 3397 7 1 chaise 
+R 3406 7 0 longue 
+R 3414 2 -2 on 
+R 3417 2 -2 the 
+R 3422 6 -2 chaise 
+R 3430 8 -2 longue 
+R 3439 2 -3 on 
+R 3442 2 -3 the 
+R 3447 6 -3 chaise 
+R 3455 7 -3 longue
+- 3462
+R 3463 6 -3 All 
+R 3471 5 -3 day 
+R 3479 7 -3 long 
+R 3487 3 -3 on 
+R 3491 2 -3 the 
+R 3496 6 -4 chaise 
+R 3504 5 -5 longue
+- 3509
+R 3521 2 3 On 
+R 3524 2 5 the 
+R 3530 5 2 chaise 
+R 3537 6 1 longue 
+R 3545 2 0 on 
+R 3548 2 0 the 
+R 3554 5 -1 chaise 
+R 3562 7 -2 longue 
+R 3570 2 -2 on 
+R 3573 2 -2 the 
+R 3578 5 -2 chaise 
+R 3586 8 -2 longue
+- 3594
+R 3596 5 -2 All 
+R 3603 6 -3 day 
+R 3611 6 -3 long 
+R 3619 3 -3 on 
+R 3623 2 -3 the 
+R 3629 5 -3 chaise 
+R 3636 6 -4 longue
+- 3642
+R 3653 2 3 On 
+R 3656 2 5 the 
+R 3661 6 1 chaise 
+R 3669 7 -1 longue 
+R 3678 2 -2 on 
+R 3681 2 -2 the 
+R 3686 6 -2 chaise 
+R 3694 7 -2 longue 
+R 3702 2 -3 on 
+R 3706 2 -3 the 
+R 3711 5 -3 chaise 
+R 3719 7 -3 longue
+- 3726
+R 3727 5 -3 All 
+R 3735 6 -3 day 
+R 3743 7 -4 long 
+R 3752 2 -3 on 
+R 3755 2 -3 the 
+R 3760 7 -4 chaise 
+R 3769 5 -5 longue
+- 3774
+* 3784 3 2 All 
+* 3788 3 2 day 
+* 3792 4 2 long 
+* 3800 3 2 all 
+* 3804 3 2 day 
+* 3809 4 2 long 
+R 3817 2 -1 on 
+R 3820 2 0 the 
+R 3826 5 -3 chaise 
+R 3833 5 -5 longue
+- 3838
+G 3850 3 2 All 
+G 3854 3 2 day 
+G 3858 5 2 long 
+G 3866 3 2 all 
+G 3870 3 2 day 
+G 3874 5 2 long 
+R 3883 2 -2 on 
+R 3886 2 -2 the 
+R 3892 6 -3 chaise 
+R 3901 6 -5 longue
+- 3907
+G 3917 3 2 All 
+G 3921 2 2 day 
+G 3925 3 2 long 
+G 3932 3 2 all 
+G 3936 3 2 day 
+G 3941 3 2 long 
+R 3949 3 0 on 
+R 3953 2 0 the 
+R 3958 6 -3 chaise 
+R 3965 7 -5 longue
+- 3972
+R 3982 3 3 On 
+R 3986 2 3 the 
+R 3991 5 1 chaise 
+R 3999 6 0 longue 
+R 4007 7 -2 all 
+R 4016 5 -3 day 
+R 4024 6 -4 long 
+R 4032 2 -3 on 
+R 4036 2 -4 the 
+R 4041 5 -4 chaise 
+R 4049 7 -4 longue
+E

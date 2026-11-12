@@ -1,0 +1,311 @@
+#ARTIST:Porter Robinson & Madeon
+#TITLE:Shelter
+#CREATOR:subkei
+#BPM:199,86
+#YEAR:2016
+#VIDEO:v=fzQ6gRAEoy0
+#GENRE:Electronic
+#LANGUAGE:English
+#GAP:87662,31702191534
+#ALLKARAOKE_ID:porter-robinson-madeon-shelter
+#ALLKARAOKE_SID:7324
+#ALLKARAOKE_LASTUPDATE:2026-11-12T05:13:10.221Z
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=subkei
+#ALLKARAOKE_REALBPM:200
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=Porter+Robinson+%26+Madeon
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:367
+#COVER:Porter Robinson & Madeon - Shelter.jpg
+#MP3:Porter Robinson & Madeon - Shelter.mp3
+#START:48
+#END:283000
+#MEDLEYSTARTBEAT:236
+#MEDLEYENDBEAT:481
+: 13 2 0 I 
+: 17 1 5 could
+: 19 1 7 ~ 
+: 21 3 5 nev
+: 25 1 4 er 
+: 29 1 2 find
+: 31 1 0 ~ 
+: 33 2 0 the 
+: 37 1 0 right
+: 39 2 2 ~ 
+: 43 5 2 way 
+: 49 1 0 to 
+: 53 1 0 tell
+: 55 3 2 ~ 
+: 59 5 2 you
+- 64
+: 77 1 2 Have 
+: 80 1 4 you 
+: 83 1 4 no
+: 85 2 5 ~
+: 88 1 4 ticed 
+: 91 1 2 I've
+: 93 1 0 ~ 
+: 95 2 0 been 
+: 99 8 0 gone?
+- 107 128
+- 128
+: 141 1 0 Cause 
+: 144 1 5 I
+: 146 1 7 ~ 
+: 148 2 5 left 
+: 153 2 4 be
+: 157 1 2 hind
+: 159 1 0 ~ 
+: 161 2 0 the 
+: 165 1 0 home
+: 167 2 2 ~ 
+: 171 3 2 that 
+: 177 2 0 you 
+: 181 1 0 made
+: 183 2 2 ~ 
+: 187 1 2 me
+: 189 4 4 ~
+- 193
+: 203 1 0 But 
+: 205 1 2 I 
+: 207 2 4 will 
+: 211 1 4 car
+: 213 2 5 ~
+: 217 1 4 ry
+: 219 1 2 ~ 
+: 221 2 0 it 
+: 225 1 0 a
+: 227 8 0 long
+- 235 236
+- 236
+: 249 2 -3 Mm, 
+: 253 2 -1 it's 
+: 257 2 0 a 
+: 261 1 5 long
+: 263 2 7 ~ 
+: 267 1 4 way
+: 269 2 2 ~ 
+: 273 7 2 for
+: 281 3 4 ward, 
+: 289 2 0 so 
+: 293 1 7 trust
+: 295 2 9 ~ 
+: 299 1 7 in
+: 301 2 2 ~ 
+: 305 6 2 me
+- 311
+: 321 2 0 I'll 
+: 325 1 5 give
+: 327 3 7 ~ 
+: 331 1 4 them
+: 333 2 2 ~ 
+: 337 5 2 shel
+: 345 3 4 ter 
+: 349 2 0 like 
+: 353 2 0 you've 
+: 357 1 7 done
+: 359 2 9 ~ 
+: 363 2 7 for
+: 366 1 2 ~ 
+: 369 5 2 me
+- 374
+: 377 2 0 And 
+: 381 1 5 I
+: 383 1 7 ~ 
+: 385 7 7 know, 
+* 397 1 7 I'm
+* 399 1 9 ~ 
+* 401 7 7 not 
+* 413 1 2 a
+* 415 1 4 ~
+* 417 6 2 lone
+- 423
+: 429 2 2 You'll 
+: 433 1 4 be 
+: 435 1 4 watch
+: 437 3 5 ~
+: 441 1 4 ing 
+: 443 1 2 ov
+: 445 1 0 ~
+: 449 1 0 er 
+: 451 7 0 us
+- 458
+: 461 1 7 Un
+: 463 1 9 ~
+: 465 9 7 til 
+: 476 1 2 you're
+: 478 1 4 ~ 
+: 481 13 2 gone
+- 494 1023
+- 1023
+: 1036 1 0 When 
+: 1039 1 5 I'm
+: 1041 1 7 ~ 
+: 1043 2 5 old
+: 1046 1 4 ~
+: 1048 2 4 er, 
+: 1052 1 2 I'll
+: 1054 1 0 ~ 
+: 1056 1 0 be 
+: 1060 1 0 si
+: 1062 2 2 ~
+: 1067 4 2 lent 
+: 1072 1 0 be
+: 1076 1 0 side
+: 1078 2 2 ~ 
+: 1082 5 2 you
+- 1087
+: 1100 2 2 I 
+: 1103 2 4 know 
+: 1106 1 4 words
+: 1108 3 5 ~ 
+: 1113 1 4 won't
+: 1115 1 2 ~ 
+: 1117 1 2 be
+: 1119 1 0 ~ 
+: 1121 1 0 e
+: 1123 14 0 nough
+- 1137 1149
+- 1149
+: 1162 1 0 And 
+: 1165 1 0 they 
+: 1167 1 5 won't
+: 1169 1 7 ~ 
+* 1171 4 5 need 
+* 1177 2 4 to 
+* 1180 1 2 know
+* 1182 1 0 ~ 
+: 1185 2 0 our 
+: 1189 1 0 names
+: 1191 1 2 ~ 
+: 1195 1 2 or
+: 1197 2 0 ~ 
+: 1201 2 0 our 
+: 1205 1 0 fac
+: 1207 1 2 ~
+: 1211 7 2 es
+- 1218
+: 1226 1 2 But 
+: 1228 2 2 they 
+: 1231 1 4 will 
+: 1234 2 4 car
+: 1237 2 5 ~
+: 1241 1 4 ry 
+: 1243 1 2 on
+: 1245 2 0 ~ 
+: 1249 1 0 for 
+: 1251 10 0 us
+- 1261
+: 1273 2 -3 Mm, 
+: 1277 2 -1 it's 
+: 1281 2 0 a 
+: 1285 1 5 long
+: 1287 2 7 ~ 
+: 1291 1 4 way
+: 1293 2 2 ~ 
+: 1297 6 2 for
+: 1305 3 4 ward, 
+: 1312 2 0 so 
+: 1316 1 7 trust
+: 1318 2 9 ~ 
+: 1322 2 7 in
+: 1325 2 2 ~ 
+: 1329 5 2 me
+- 1334
+: 1344 2 0 I'll 
+: 1348 1 5 give
+: 1350 3 7 ~ 
+: 1354 1 4 them
+: 1356 2 2 ~ 
+: 1360 5 2 shel
+: 1368 3 4 ter 
+: 1372 2 0 like 
+: 1376 2 0 you've 
+: 1380 1 7 done
+: 1382 2 9 ~ 
+: 1386 2 7 for
+: 1389 1 2 ~ 
+: 1392 5 2 me
+- 1397
+* 1400 2 0 And 
+* 1404 1 5 I
+* 1406 1 7 ~ 
+* 1408 7 7 know, 
+: 1420 1 7 I'm
+: 1422 2 9 ~ 
+: 1425 6 7 not 
+: 1436 1 2 a
+: 1438 2 4 ~
+: 1441 5 2 lone
+- 1446
+: 1452 2 2 You'll 
+: 1456 1 4 be 
+: 1458 1 4 watch
+: 1460 3 5 ~
+: 1464 1 4 ing 
+: 1467 1 2 ov
+: 1469 2 0 ~
+: 1472 1 0 er 
+: 1475 6 0 us
+- 1481
+: 1484 1 7 Un
+: 1486 2 9 ~
+: 1489 8 7 til 
+: 1499 1 2 you're
+: 1501 1 4 ~ 
+: 1504 14 2 gone
+- 1518 2287
+- 2287
+* 2300 2 -1 It's 
+* 2304 2 0 a 
+* 2308 1 5 long
+* 2310 2 7 ~ 
+: 2314 1 4 way
+: 2316 2 2 ~ 
+: 2320 7 2 for
+: 2328 4 4 ward, 
+: 2340 1 7 trust
+: 2342 2 9 ~ 
+: 2346 1 7 in
+: 2348 2 2 ~ 
+: 2352 6 2 me
+- 2358
+: 2368 2 0 I'll 
+: 2372 1 5 give
+: 2374 3 7 ~ 
+: 2378 1 4 them
+: 2380 1 2 ~ 
+: 2384 5 2 shel
+: 2391 3 4 ter 
+: 2396 2 0 like 
+: 2400 1 0 you've 
+: 2404 1 7 done
+: 2406 2 9 ~ 
+: 2410 2 7 for
+: 2413 1 2 ~ 
+: 2416 5 2 me
+- 2421
+: 2424 2 0 And 
+: 2428 1 5 I
+: 2430 1 7 ~ 
+: 2432 7 7 know, 
+: 2444 1 7 I'm
+: 2446 1 9 ~ 
+: 2448 7 7 not 
+: 2460 1 2 a
+: 2462 1 4 ~
+: 2464 6 2 lone
+- 2470
+: 2476 2 2 You'll 
+: 2480 1 4 be 
+: 2482 1 4 watch
+: 2484 2 5 ~
+: 2488 1 4 ing 
+* 2490 1 2 ov
+* 2492 2 0 ~
+* 2496 1 0 er 
+* 2498 6 0 us
+- 2504
+F 2507 2 7 Un
+F 2510 2 9 ~
+F 2516 77 7 til
+E

@@ -1,0 +1,256 @@
+#ARTIST:TrySail
+#TITLE:adrenaline!!!
+#CREATOR:Xylo
+#BPM:267,98
+#YEAR:2017
+#PREVIEWSTART:39,5
+#VIDEO:v=UzFArt9M7JM
+#GENRE:Anime
+#LANGUAGE:Japanese
+#GAP:15668,462124039108
+#ALLKARAOKE_ID:trysail-adrenaline
+#ALLKARAOKE_SID:7265
+#ALLKARAOKE_LASTUPDATE:2026-11-12T05:12:42.881Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=xylo
+#ALLKARAOKE_REALBPM:136
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?artista=TrySail&cancion=adrenaline!!!%20(TV)
+#ALLKARAOKE_PREVIEWEND:89
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:89
+#MP3:TrySail - adrenaline!!! (TV).mp3
+#COVER:TrySail - adrenaline!!! (TV) [CO].jpg
+#MEDLEYSTARTBEAT:559
+#MEDLEYENDBEAT:1203
+: 18 2 8 Tan
+: 23 1 8 jun 
+: 26 1 8 na 
+: 28 4 8 ko
+: 34 2 4 to
+: 38 1 4 ba 
+* 42 1 -1 ka
+: 46 3 1 sa
+: 50 2 4 ne
+: 54 3 4 te 
+: 58 1 6 yu
+: 61 3 4 ku
+- 64
+: 70 1 4 Mo
+: 74 3 6 tto 
+: 82 1 8 ko
+: 86 3 8 ko
+: 90 1 8 ro 
+: 92 4 9 wa 
+: 98 3 8 su
+: 102 2 9 na
+: 106 2 11 o 
+: 110 28 11 de
+- 138
+: 146 2 8 Nan
+: 150 2 8 de
+: 154 1 8 mo 
+: 156 5 8 nai 
+: 162 3 4 you 
+: 166 2 4 na 
+* 171 2 -1 so
+: 174 3 1 no 
+: 178 3 4 e
+: 182 3 4 ga
+: 186 1 6 o 
+: 189 3 4 ga
+- 192
+: 198 2 4 A
+: 203 1 6 su 
+: 206 4 8 wo 
+: 212 5 8 te
+: 218 2 8 ra
+: 222 2 6 su 
+: 226 1 6 hi
+* 230 2 8 ka
+* 233 2 6 ri 
+: 237 17 4 ni
+- 254
+: 258 2 4 Zu
+: 262 2 3 tto 
+: 266 3 4 ki
+: 270 2 1 dzu
+: 273 3 1 i
+: 278 6 4 te
+: 286 5 6 tan
+: 294 5 4 da
+: 302 2 6 tte
+: 306 3 8 ~
+- 309
+: 314 1 8 Ko
+: 318 2 9 no 
+: 322 2 8 te 
+: 326 2 6 ni 
+: 330 2 4 ka
+: 334 5 1 kae
+: 342 6 4 tei 
+: 350 5 6 tan
+: 358 5 4 da
+: 366 13 4 tte
+- 379
+: 386 3 8 Ha
+: 390 1 6 ji
+: 394 2 8 ke
+: 398 6 1 ta 
+* 410 1 1 ko
+* 412 1 4 e 
+: 414 7 3 ni
+- 421
+: 426 2 3 Na
+: 431 3 3 ga
+: 437 3 6 shita 
+: 442 2 3 ko
+: 446 5 4 tae 
+: 452 4 6 ga 
+* 458 2 8 i
+* 462 6 9 ma
+- 468
+: 473 2 1 So
+* 479 5 9 tto 
+: 491 1 1 ki
+* 494 7 9 tto 
+: 506 2 9 ne
+: 510 5 9 gai 
+: 516 5 8 ko
+: 522 2 9 me
+: 527 2 9 ta
+: 531 24 11 ~
+- 555 560
+- 560
+* 578 2 11 Zu
+* 583 2 9 tto 
+* 586 2 7 ma
+: 591 2 11 wa
+: 595 1 11 ru 
+: 598 3 11 ma
+: 602 1 11 wa
+: 605 4 12 ru 
+: 611 2 11 yu
+: 614 3 9 me 
+* 619 2 7 no 
+: 622 4 9 na
+: 628 5 11 ka 
+: 635 2 11 de
+- 637
+* 642 2 2 Ku
+* 646 2 7 ri
+: 650 3 9 ka
+: 654 2 11 e
+: 658 1 11 shi 
+: 662 3 11 ki
+* 666 1 11 mi 
+: 668 4 12 to 
+: 674 2 11 o
+: 678 2 12 do
+: 682 2 14 ~
+: 686 2 12 tta
+: 690 3 14 ~
+- 693
+* 698 2 2 Yu
+* 702 3 14 re
+: 706 2 12 ru 
+: 711 1 11 ke
+: 714 2 14 shi
+: 718 5 12 ki
+- 723
+: 730 2 12 Mi
+: 734 3 12 chi 
+: 739 1 11 wa 
+: 742 3 9 tsu
+: 746 2 12 dzu
+: 750 5 11 ku
+- 755
+: 762 3 12 To
+: 767 2 11 ~
+: 770 2 9 ri 
+: 774 2 7 su
+: 779 2 6 gi
+: 782 6 4 ru 
+: 791 5 6 ka
+: 799 6 7 ze 
+: 807 5 4 ni 
+: 815 3 11 fu
+: 821 4 11 ka
+: 827 2 9 re
+- 829
+: 834 2 11 Nan
+: 839 2 9 do
+: 843 1 7 mo 
+: 847 3 11 ko
+: 851 1 11 e
+: 854 3 11 te 
+: 858 1 11 yu
+: 860 5 12 ke
+: 866 2 11 ru 
+: 870 3 9 ka
+: 874 2 7 ra 
+: 879 3 9 kyo
+: 885 1 9 kai
+: 887 1 11 ~
+: 890 3 11 sen
+- 893
+* 898 2 2 Ku
+* 902 2 7 mo 
+: 907 1 9 ka
+: 910 3 11 ki
+: 914 2 11 wa
+: 918 3 11 ke 
+: 922 1 11 te 
+: 924 4 12 wo 
+: 930 3 11 no
+: 934 2 12 ba
+: 938 3 14 shi
+: 942 6 14 ta
+- 948
+* 954 1 2 Na
+* 958 3 14 mi
+: 963 2 12 da 
+: 966 3 11 wa 
+: 970 3 14 i
+: 974 6 12 ma
+- 980
+: 986 2 12 U
+: 990 3 12 ka
+: 994 1 11 bu 
+: 998 3 9 so
+: 1002 3 12 ra 
+: 1006 5 11 ni 
+: 1014 6 9 a
+: 1023 5 7 zu
+: 1031 5 6 ke
+: 1039 6 4 te
+- 1045
+: 1050 2 4 Ha
+: 1054 3 7 shi
+: 1059 2 6 ri
+: 1062 1 4 da
+: 1067 2 6 su 
+: 1070 14 7 no
+- 1084
+: 1090 2 7 Na
+: 1094 3 6 ra
+: 1099 1 7 n
+: 1103 5 4 de 
+: 1110 5 7 mi
+: 1118 2 7 tsu
+: 1121 3 9 ~
+: 1126 5 7 ke
+: 1134 1 9 ta
+: 1137 3 11 ~
+- 1140
+: 1146 3 12 Ka
+: 1151 2 11 ga
+: 1154 2 9 ya
+: 1159 1 7 ku 
+: 1162 2 6 hi
+: 1166 7 4 ka
+: 1174 7 7 ri 
+: 1182 6 9 wo 
+* 1190 2 11 te
+* 1194 3 7 ~ 
+: 1199 27 7 ni
+E

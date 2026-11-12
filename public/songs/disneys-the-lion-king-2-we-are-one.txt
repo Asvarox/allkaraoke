@@ -1,0 +1,262 @@
+#ARTIST:Disney’s The Lion King 2
+#TITLE:We Are One
+#CREATOR:belgium2
+#BPM:320,2
+#YEAR:1998
+#VIDEO:v=vaVpATo8jzM
+#GENRE:Soundtrack
+#LANGUAGE:English
+#GAP:34366,23985009369
+#ALLKARAOKE_ID:disneys-the-lion-king-2-we-are-one
+#ALLKARAOKE_SID:7292
+#ALLKARAOKE_LASTUPDATE:2026-11-12T05:12:57.933Z
+#ALLKARAOKE_REALBPM:160,1
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=FSqaZ6kD1Rg
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:239
+#MP3:Disney’s The Lion King 2 - We Are One.mp3
+#START:23
+#END:190000
+: 21 4 7 As 
+: 27 8 9 you 
+: 37 4 11 go 
+: 43 6 9 through 
+: 51 6 7 life 
+: 59 4 6 you’ll 
+: 65 10 7 see
+- 75
+: 85 6 7 There 
+: 93 6 9 is 
+: 101 10 7 so 
+: 113 6 6 much 
+: 121 4 2 that 
+: 129 20 4 we
+- 149 152
+- 152
+: 173 4 2 Don’t 
+: 181 4 2 un
+: 187 4 2 der
+: 193 18 2 stand
+- 211 256
+- 256
+: 277 6 7 And 
+: 285 4 9 the 
+: 291 6 11 on
+: 299 4 9 ly 
+: 305 8 7 thing 
+: 315 6 6 we 
+: 323 10 7 know
+- 333
+: 343 6 7 Is 
+: 351 6 9 things 
+: 359 8 7 don’t 
+: 369 6 6 al
+: 377 6 2 ways 
+: 385 20 4 go
+- 405 408
+- 408
+: 429 4 2 The 
+: 435 4 2 way 
+: 441 4 2 we 
+: 447 20 2 planned
+- 467 480
+- 480
+: 501 6 7 But 
+: 511 4 9 you’ll 
+: 519 14 11 see 
+: 535 4 12 ever
+: 541 4 14 y 
+* 547 16 12 day
+- 563
+: 567 4 11 That 
+: 573 6 7 we’ll 
+: 581 6 9 ne
+: 589 2 11 ver 
+: 593 6 9 turn 
+: 601 6 7 a
+: 609 12 4 way
+- 621
+: 635 2 4 When 
+: 639 4 6 it 
+: 645 12 7 seems 
+: 659 6 7 all 
+: 667 6 7 your 
+: 677 14 7 dreams 
+: 693 8 9 come 
+: 703 6 11 un
+: 711 20 9 done
+- 731 738
+- 738
+: 759 4 7 We 
+: 765 4 9 will 
+: 773 14 11 stand 
+: 789 4 12 by 
+: 795 8 14 your 
+: 805 12 12 side
+- 817
+: 823 6 11 Filled 
+: 831 6 7 with 
+: 839 6 9 hope 
+: 847 2 11 and 
+: 851 6 9 filled 
+: 859 4 7 with
+: 867 24 4 pride
+- 891 898
+- 898
+: 919 4 4 We 
+: 925 6 6 are 
+: 935 12 7 more 
+: 951 2 7 than 
+: 955 10 11 we 
+: 967 14 9 are
+- 981
+* 983 2 7 We 
+* 987 10 6 are 
+* 999 42 7 one.
+- 1041 1314
+- 1314
+: 1335 6 7 If 
+: 1343 2 9 there’s 
+: 1347 8 11 so 
+: 1357 4 9 much 
+: 1363 8 7 I 
+: 1373 4 6 must 
+: 1379 12 7 be
+- 1391
+: 1399 4 7 Can 
+: 1405 2 9 I 
+: 1411 12 7 still 
+: 1427 8 6 just 
+: 1437 4 2 be 
+: 1443 30 4 me
+- 1473
+: 1481 8 3 The 
+: 1493 4 5 way 
+: 1499 4 3 I 
+: 1507 32 3 am
+- 1539 1574
+- 1574
+: 1595 4 7 Can 
+: 1601 4 9 I 
+: 1607 4 11 trust 
+: 1613 4 9 in 
+: 1619 8 7 my 
+: 1629 6 6 own 
+: 1637 14 7 heart
+- 1651
+: 1655 4 7 Or 
+: 1661 6 9 am 
+: 1669 12 7 I 
+: 1683 6 6 just 
+: 1691 6 2 one 
+: 1701 24 4 part
+- 1725
+: 1745 2 2 Of 
+: 1749 6 4 some 
+: 1757 6 2 big 
+: 1767 32 2 plan?
+- 1799
+: 1817 4 7 Even 
+: 1823 6 9 those 
+: 1831 14 11 who 
+: 1847 4 12 a
+: 1853 8 14 re 
+: 1863 12 12 gone
+- 1875
+: 1879 6 11 Are 
+: 1887 6 7 with 
+: 1897 6 9 us 
+: 1905 2 11 as 
+: 1909 4 9 we 
+: 1915 6 7 go 
+: 1925 22 4 on
+- 1947
+: 1951 6 6 Your 
+: 1959 10 7 jour
+: 1971 10 7 ney 
+: 1983 8 7 has 
+: 1993 8 7 on
+: 2003 10 9 ly 
+: 2015 6 11 be
+: 2023 16 9 gun
+- 2039 2052
+- 2052
+: 2073 6 7 Tears 
+: 2081 6 9 of 
+: 2089 14 11 pain, 
+: 2105 6 12 tears 
+: 2113 4 14 of 
+: 2119 14 12 joy
+- 2133
+: 2139 4 11 One 
+: 2145 4 7 thing 
+: 2151 6 9 no
+: 2159 4 11 thing 
+: 2165 6 9 can 
+: 2173 4 7 des
+: 2181 24 4 troy
+- 2205 2210
+- 2210
+: 2231 4 4 Is 
+: 2237 6 6 our 
+: 2245 18 7 pride, 
+: 2265 2 7 deep 
+: 2269 8 11 in
+: 2279 14 9 side
+- 2293
+: 2295 4 7 We 
+: 2301 8 6 are 
+: 2313 44 7 one.
+- 2357 2596
+- 2596
+: 2617 6 7 We 
+: 2625 6 9 are 
+: 2633 14 11 one, 
+: 2649 4 12 you 
+: 2655 10 14 and 
+: 2667 12 12 I
+- 2679
+: 2681 6 11 We 
+: 2689 6 7 are 
+: 2697 6 9 like 
+: 2705 2 11 the 
+: 2711 4 9 earth 
+: 2717 6 7 and 
+: 2725 14 4 sky
+- 2739
+: 2753 4 6 One 
+: 2761 8 7 fa
+: 2773 8 7 mi
+: 2785 8 7 ly 
+: 2797 8 7 un
+: 2807 6 9 der 
+: 2815 6 11 the 
+: 2825 24 9 sun
+- 2849 2852
+- 2852
+: 2873 6 7 All 
+: 2881 6 9 the 
+: 2889 14 11 wis
+: 2905 4 12 dom 
+: 2911 8 14 to 
+: 2921 16 12 lead
+- 2937
+: 2939 6 11 All 
+: 2947 4 7 the 
+: 2953 6 9 cour
+: 2961 4 11 age 
+: 2967 4 9 that 
+: 2973 6 7 you 
+: 2981 20 4 need
+- 3001 3012
+- 3012
+: 3033 4 4 You 
+: 3039 8 6 will 
+: 3049 12 7 find 
+: 3065 4 7 when 
+: 3073 4 11 you 
+: 3081 30 9 see: 
+: 3113 14 7 we 
+: 3129 14 6 are 
+* 3145 48 7 one.
+E

@@ -1,0 +1,386 @@
+#ARTIST:Irwin Goodman
+#TITLE:Haistakaa paska koko valtiovalta
+#CREATOR:jexrutin
+#BPM:122
+#YEAR:1976
+#VIDEO:v=LhF14SPsVvU
+#GENRE:Schlager
+#LANGUAGE:Finnish
+#GAP:614,3934426229508
+#ALLKARAOKE_ID:irwin-goodman-haistakaa-paska-koko-valtiovalta
+#ALLKARAOKE_SID:7323
+#ALLKARAOKE_LASTUPDATE:2026-11-12T05:13:10.220Z
+#ALLKARAOKE_ARTISTORIGIN:FI
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=226439
+#ALLKARAOKE_REALBPM:122
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=32643
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:152
+#AUDIO:Irwin Goodman - Haistakaa paska koko valtiovalta.mp3
+#MP3:Irwin Goodman - Haistakaa paska koko valtiovalta.mp3
+#COVER:Irwin Goodman - Haistakaa paska koko valtiovalta [CO].jpg
+#BACKGROUND:Irwin Goodman - Haistakaa paska koko valtiovalta [BG].jpg
+#TAGS:Explicit
+: 8 3 -5 Hais
+: 11 1 0 ta
+: 12 3 0 kaa 
+: 16 2 3 pas
+: 18 2 3 ka 
+: 20 4 0 koko 
+: 24 4 2 val
+: 28 4 0 tio
+: 33 5 -5 valta
+- 38
+: 40 2 -4 Et
+: 42 2 -4 te 
+: 45 3 -2 osaa 
+: 48 4 0 muu
+: 52 2 -3 ta 
+: 54 2 -3 kun 
+: 56 2 -7 ve
+: 58 5 -4 rot
+: 64 6 -5 taa
+- 70
+: 72 4 -5 Muu
+: 76 2 0 ten
+: 78 2 0 kin 
+: 81 2 3 tou
+: 83 2 0 hu 
+: 85 3 0 tuntuu 
+: 89 3 2 hol
+: 92 2 0 tit
+: 94 3 0 to
+: 97 4 -5 mal
+: 101 3 -5 ta
+- 104
+: 104 5 -4 Kaikki 
+: 109 1 -4 pi
+: 110 3 -4 täis 
+: 113 3 -4 ker
+: 116 4 -7 ralla 
+: 121 2 -5 e
+: 123 5 -1 rot
+: 129 8 0 taa
+- 137 207
+- 207
+: 215 3 -5 On 
+: 218 3 3 sii
+: 221 2 2 nä 
+: 224 3 3 meil
+: 227 3 0 lä 
+: 231 2 2 o
+: 233 1 0 mi
+: 235 2 2 tui
+: 237 1 0 nen 
+: 239 3 -2 sak
+: 242 3 -4 ki
+- 245
+: 247 2 -2 Kaik
+: 249 1 -2 ki 
+: 251 2 -2 si
+: 253 1 -2 tä 
+: 255 2 2 joh
+: 257 2 0 to 
+: 259 2 -2 hom
+: 261 2 -4 miin 
+: 264 2 -5 pää
+: 266 4 -4 see
+: 270 6 -5 kin
+- 276
+: 278 3 -5 On 
+: 282 2 3 nyt 
+: 284 3 2 jo 
+: 288 2 3 tyh
+: 290 3 0 jä 
+* 294 1 2 jo
+* 295 2 0 ka 
+* 298 2 2 jät
+* 300 1 0 kän 
+* 302 4 -2 tak
+* 306 3 -4 ki
+- 309
+: 310 2 -5 Mut
+: 312 2 -5 ta 
+: 314 1 -5 ve
+: 315 2 -5 ro
+: 317 2 -3 tus 
+: 319 2 -3 vain 
+: 321 2 -3 jat
+: 323 2 -3 kuu 
+: 326 3 -1 hur
+: 329 4 0 jem
+: 333 6 2 min
+- 339
+: 341 2 -5 On 
+: 344 3 3 ai
+: 347 2 2 van 
+: 350 3 3 tur
+: 353 3 0 haa 
+: 357 1 2 e
+: 358 2 0 nää 
+: 361 2 2 teh
+: 363 1 0 dä 
+: 365 3 -2 työ
+: 368 3 -4 tä
+- 371
+: 372 2 -2 Ve
+: 374 2 -2 rot 
+: 376 2 -2 vie
+: 378 2 -2 vät 
+: 380 2 2 ko
+: 382 1 0 ko 
+: 384 2 -2 pal
+: 386 2 -4 kan 
+: 389 3 -5 kui
+: 392 4 -4 ten
+: 396 5 -5 kin
+- 401
+: 403 3 -5 Saat 
+: 407 3 3 viet
+: 410 2 2 tää 
+: 413 3 3 mon
+: 416 3 0 ta 
+: 420 1 2 u
+: 421 2 0 ne
+: 423 3 2 ton
+: 426 2 0 ta 
+: 429 2 -2 yö
+: 431 3 -4 tä
+- 434
+: 436 2 -5 Her
+: 438 2 -5 rat 
+: 440 2 -5 te
+: 442 1 -5 ki 
+: 444 1 -3 e
+: 445 1 -3 lä
+: 446 2 -3 mäs
+: 448 3 -3 tä 
+: 452 3 -1 hel
+: 455 2 0 ve
+: 457 7 2 tin
+- 464
+: 467 3 -5 Hais
+: 470 1 0 ta
+: 471 3 0 kaa 
+: 475 2 3 pas
+: 477 2 3 ka 
+: 479 3 0 koko 
+: 483 4 2 val
+: 487 4 0 tio
+: 491 6 -5 valta
+- 497
+: 499 2 -4 Et
+: 501 2 -4 te 
+: 504 3 -2 osaa 
+: 507 3 0 muu
+: 511 2 -3 ta 
+: 513 2 -3 kun 
+* 516 1 -7 ve
+* 517 5 -4 rot
+* 522 6 -5 taa
+- 528
+: 531 3 -5 Muu
+: 535 2 0 ten
+: 537 2 0 kin 
+: 540 2 3 tou
+: 542 2 0 hu 
+: 544 3 0 tuntuu 
+: 548 3 2 hol
+: 551 2 0 tit
+: 553 2 0 to
+: 556 4 -5 mal
+: 560 2 -5 ta
+- 562
+: 564 3 -4 Kaikki 
+: 568 2 -4 pi
+: 570 2 -4 täis 
+: 572 3 -4 ker
+: 575 4 -7 ralla 
+: 580 2 -5 e
+: 582 4 -1 rot
+: 587 10 0 taa
+- 597 668
+- 668
+: 676 2 -5 On 
+: 679 2 3 her
+: 681 2 2 rain 
+: 684 4 3 help
+: 688 3 0 po 
+: 692 2 2 la
+: 694 1 0 ke
+: 695 2 2 jan
+: 697 2 0 sa 
+: 700 3 -2 lyö
+: 703 3 -4 dä
+- 706
+: 707 3 -2 Sil
+: 710 1 -2 lä 
+: 712 1 -2 ei 
+: 713 2 -2 ne 
+: 716 2 2 nii
+: 718 1 0 tä 
+: 719 2 -2 kos
+: 721 2 -4 ke 
+* 723 4 -5 kui
+* 727 4 -4 ten
+* 731 6 -5 kaan
+- 737
+: 739 2 -5 On 
+: 742 3 3 haus
+: 745 2 2 ka 
+: 748 3 3 edus
+: 751 3 0 ta
+: 754 3 2 a 
+: 757 1 0 ja 
+: 759 2 2 lou
+: 761 2 0 naat 
+: 763 3 -2 syö
+: 766 3 -4 dä
+- 769
+: 770 2 -5 Kan
+: 772 2 -5 sa 
+: 774 2 -5 lys
+: 776 2 -5 tin 
+: 778 2 -3 kus
+: 780 2 -3 tan
+: 782 2 -3 taa 
+: 784 2 -3 kun 
+* 786 4 -1 hom
+* 790 3 0 mail
+* 793 6 2 laan
+- 799
+: 802 1 -5 Ja 
+: 803 2 -5 kun 
+: 806 3 3 on 
+: 809 3 3 ve
+: 812 2 3 ro
+: 814 2 0 ra
+: 816 3 0 hat 
+: 821 2 2 kaik
+: 823 2 0 ki 
+: 825 3 -2 juo
+: 829 3 -4 tu
+- 832
+: 835 2 -2 Kan
+: 837 1 -2 sa 
+: 838 2 -2 kyl
+: 840 1 -2 lä 
+: 842 3 2 pik
+: 845 1 0 ku
+: 846 2 -2 vi
+: 848 2 -4 pin 
+: 851 2 -5 jär
+: 853 4 -4 jes
+: 857 7 -5 tää
+- 864
+: 865 3 -5 Vain 
+: 869 2 3 pää
+: 871 2 2 tös 
+: 874 3 3 niin 
+: 877 3 0 on 
+: 881 2 2 li
+: 883 2 0 sä
+: 885 2 2 ve
+: 887 2 0 ro 
+: 889 3 -2 luo
+: 892 3 -4 tu
+- 895
+: 897 2 -5 Sil
+: 899 2 -5 lä 
+: 901 2 -5 lail
+: 903 2 -5 la 
+: 905 2 -3 kas
+: 907 2 -3 sa
+: 909 2 -3 huo
+: 911 1 -3 let 
+: 913 3 -1 sel
+: 916 3 0 vi
+: 919 7 2 ää
+- 926
+: 929 3 -5 Hais
+: 932 1 0 ta
+: 933 3 0 kaa 
+: 938 2 3 pas
+: 940 2 3 ka 
+: 942 3 0 koko 
+: 946 4 2 val
+: 950 4 0 tio
+: 954 6 -5 valta
+- 960
+: 962 2 -4 Et
+: 964 2 -4 te 
+: 967 3 -2 osaa 
+: 970 4 0 muu
+: 974 2 -3 ta 
+: 976 1 -3 kun 
+: 978 2 -7 ve
+: 980 5 -4 rot
+: 985 7 -5 taa
+- 992
+: 995 3 -5 Muu
+: 998 2 0 ten
+: 1000 2 0 kin 
+: 1003 2 3 tou
+: 1005 2 0 hu 
+: 1007 3 0 tuntuu 
+: 1011 3 2 hol
+: 1015 2 0 tit
+: 1017 2 0 to
+: 1019 4 -5 mal
+: 1023 3 -5 ta
+- 1026
+* 1028 3 -4 Kaikki 
+* 1032 1 -4 pi
+* 1033 3 -4 täis 
+* 1036 4 -4 ker
+* 1040 3 -7 ralla 
+* 1044 2 -5 e
+* 1046 4 -1 rot
+* 1050 8 0 taa
+- 1058
+: 1058 1 -5 Ja 
+: 1059 3 -5 hais
+: 1062 1 0 ta
+: 1063 3 0 kaa 
+: 1068 2 3 pas
+: 1070 2 3 ka 
+: 1072 4 0 koko 
+: 1076 4 2 val
+: 1080 4 0 tio
+: 1084 6 -5 valta
+- 1090
+: 1092 2 -4 Et
+: 1094 2 -4 te 
+: 1096 3 -2 osaa 
+: 1100 4 0 muu
+: 1104 2 -3 ta 
+: 1106 2 -3 kun 
+: 1109 2 -7 ve
+: 1111 4 -4 rot
+: 1115 7 -5 taa...
+- 1122
+: 1124 4 -5 Muu
+: 1128 2 0 ten
+: 1130 2 0 kin 
+: 1133 2 3 tou
+: 1135 2 0 hu 
+: 1137 3 0 tuntuu 
+: 1141 3 2 hol
+: 1144 2 0 tit
+: 1146 3 0 to
+: 1149 4 -5 mal
+: 1153 3 -5 ta
+- 1156
+: 1157 4 -4 Kaikki 
+: 1161 1 -4 pi
+: 1162 3 -4 täis 
+: 1165 3 -4 ker
+: 1169 4 -7 ralla 
+: 1173 2 -5 e
+: 1175 5 -1 rot
+: 1181 8 0 taa
+- 1189 1190
+- 1190
+F 1198 8 0 Haistakaa 
+F 1207 7 0 paska!
+E
