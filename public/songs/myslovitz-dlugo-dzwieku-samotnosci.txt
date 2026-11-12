@@ -1,5 +1,5 @@
 #ARTIST:Myslovitz
-#TITLE:Długo dźwięku samotności
+#TITLE:Długość dźwięku samotności
 #CREATOR:jockel1974
 #BPM:196,5
 #YEAR:1999
