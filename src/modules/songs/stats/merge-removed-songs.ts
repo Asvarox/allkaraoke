@@ -3,46 +3,29 @@ import { getAllStats, removeSongStatsByKey, SongStats, storeSongStatsByKey } fro
 import { RemovedSongs, resolveMergeTarget } from '~/modules/songs/utils/removed-songs';
 
 /**
- * Moves the runs of merged songs onto the songs they were merged into.
- *
- * Each parent remembers, per old key, the dates of the runs it took (dates, as the merged-track fix may rescale
- * scores). A retry after an interrupted merge adds nothing twice, and runs recorded under an old key after its merge
- * (e.g. a local copy of the removed song) are moved too. Only runs move: song end recounts `plays` from the runs anyway.
+ * Moves the runs of merged songs onto the songs they were merged into. Runs are matched by date (scores may have been
+ * rescaled by the merged-track fix), so retries, chains and re-created old keys never add a run twice.
+ * Only runs move: song end recounts `plays` from the runs anyway.
  */
 export function mergeRemovedSongStats(stats: Record<string, SongStats>, removed: RemovedSongs) {
   const updated: Record<string, SongStats> = {};
   const removedKeys: string[] = [];
-  const parentOf = (target: string): SongStats => updated[target] ?? stats[target] ?? { plays: 0, scores: [] };
 
-  const sources = Object.entries(stats).flatMap(([key, songStats]) => {
-    if (!(key in removed) || !songStats) return [];
+  for (const [key, songStats] of Object.entries(stats)) {
+    if (!(key in removed) || !songStats) continue;
     const target = resolveMergeTarget(removed, key);
     // History of a song removed without a merge (or in a merge loop) stays, it may come back
-    return target === null ? [] : [{ key, songStats, target }];
-  });
+    if (target === null) continue;
 
-  // Inherit what merged sources already took from others first, so overlapping histories count once in any order
-  for (const { songStats, target } of sources) {
-    if (!songStats.mergedFrom) continue;
-    const parent = parentOf(target);
-    const mergedFrom = { ...parent.mergedFrom };
-    for (const [key, dates] of Object.entries(songStats.mergedFrom)) {
-      mergedFrom[key] = [...new Set([...(mergedFrom[key] ?? []), ...dates])];
-    }
-    updated[target] = { ...parent, mergedFrom };
-  }
-
-  for (const { key, songStats, target } of sources) {
-    const parent = parentOf(target);
-    const taken = new Set(parent.mergedFrom?.[key]);
-    const newRuns = (songStats.scores ?? []).filter((run) => !taken.has(run.date));
+    const parent = updated[target] ?? stats[target] ?? { plays: 0, scores: [] };
+    const held = new Set((parent.scores ?? []).map((run) => run.date));
+    const newRuns = (songStats.scores ?? []).filter((run) => !held.has(run.date));
 
     if (newRuns.length > 0) {
       updated[target] = {
         ...parent,
         plays: (parent.plays ?? 0) + newRuns.length,
         scores: [...(parent.scores ?? []), ...newRuns].sort((a, b) => a.date.localeCompare(b.date)),
-        mergedFrom: { ...parent.mergedFrom, [key]: [...taken, ...newRuns.map((run) => run.date)] },
       };
     }
     removedKeys.push(key);

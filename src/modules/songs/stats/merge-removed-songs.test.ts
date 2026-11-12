@@ -34,7 +34,6 @@ describe('mergeRemovedSongStats', () => {
       parent: {
         plays: 3,
         scores: [run('2026-01-01', 50), run('2026-02-01', 100), run('2026-03-01', 70)],
-        mergedFrom: { dupe: ['2026-01-01', '2026-03-01'] },
       },
     });
   });
@@ -50,7 +49,6 @@ describe('mergeRemovedSongStats', () => {
     expect(updated.parent).toEqual({
       plays: 2,
       scores: [run('2026-01-01', 1), run('2026-01-02', 2)],
-      mergedFrom: { a: ['2026-01-01'], b: ['2026-01-02'] },
     });
   });
 
@@ -59,7 +57,6 @@ describe('mergeRemovedSongStats', () => {
       parent: {
         plays: 3,
         scores: [run('2026-01-01', 55), run('2026-02-01', 100)],
-        mergedFrom: { dupe: ['2026-01-01'] },
       },
       dupe: { plays: 2, scores: [run('2026-01-01', 50)] },
     };
@@ -68,22 +65,20 @@ describe('mergeRemovedSongStats', () => {
   });
 
   it('moves history recorded under an old key after it was merged, instead of dropping it', () => {
-    const merged = { dupe: ['2026-01-01'] };
     const stats: Record<string, SongStats> = {
-      parent: { plays: 1, scores: [run('2026-01-01', 50)], mergedFrom: merged },
+      parent: { plays: 1, scores: [run('2026-01-01', 50)] },
       dupe: { plays: 1, scores: [run('2026-05-01', 80)] },
     };
 
     expect(mergeRemovedSongStats(stats, { dupe: 'parent' }).updated.parent).toEqual({
       plays: 2,
       scores: [run('2026-01-01', 50), run('2026-05-01', 80)],
-      mergedFrom: { dupe: ['2026-01-01', '2026-05-01'] },
     });
   });
 
   it('counts plays of a re-created old key once when its second merge is interrupted', () => {
     const stats: Record<string, SongStats> = {
-      parent: { plays: 5, scores: [run('2026-01-01', 50)], mergedFrom: { dupe: ['2026-01-01'] } },
+      parent: { plays: 5, scores: [run('2026-01-01', 50)] },
       dupe: { plays: 1, scores: [run('2026-05-01', 80)] },
     };
     const first = mergeRemovedSongStats(stats, { dupe: 'parent' }).updated.parent;
@@ -106,10 +101,10 @@ describe('mergeRemovedSongStats', () => {
     expect(mergeRemovedSongStats(stats, { dupe: 'parent' })).toEqual({ updated: {}, removedKeys: ['dupe'] });
   });
 
-  it('keeps run dates inherited from a merged parent next to its own record of the same key', () => {
+  it('does not add a run the parent already holds through another merged song', () => {
     const stats: Record<string, SongStats> = {
-      b: { plays: 1, scores: [run('2026-01-01', 10)], mergedFrom: { a: ['2026-01-01'] } },
-      c: { plays: 1, scores: [run('2026-05-01', 80)], mergedFrom: { a: ['2026-05-01'] } },
+      b: { plays: 1, scores: [run('2026-01-01', 10)] },
+      c: { plays: 1, scores: [run('2026-05-01', 80)] },
       a: { plays: 2, scores: [run('2026-05-01', 80), run('2026-06-01', 90)] },
     };
 
@@ -127,7 +122,6 @@ describe('mergeRemovedSongStats', () => {
     const b = {
       plays: 2,
       scores: [run('2026-01-01', 10), run('2026-02-01', 20)],
-      mergedFrom: { a: ['2026-01-01'] },
     };
     const all: Record<string, SongStats> = { a, b, c: { plays: 1, scores: [run('2026-03-01', 30)] } };
     const stats = Object.fromEntries([first, second, 'c'].map((key) => [key, all[key]]));
