@@ -1,0 +1,370 @@
+#ARTIST:SpongeBob Schwammkopf
+#TITLE:F.U.N.
+#CREATOR:Tirgatt, Hoanzl
+#BPM:226
+#YEAR:2003
+#PREVIEWSTART:46
+#VIDEO:v=aZFwMwQdvQM
+#LANGUAGE:German
+#GAP:2704,424778761062
+#ALLKARAOKE_ID:spongebob-schwammkopf-fun
+#ALLKARAOKE_SID:7322
+#ALLKARAOKE_LASTUPDATE:2026-11-12T05:13:10.072Z
+#ALLKARAOKE_REALBPM:156
+#ALLKARAOKE_PREVIEWEND:60
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:99
+#MP3:SpongeBob Schwammkopf - F.U.N..mp3
+#COVER:SpongeBob Schwammkopf - F.U.N. [CO].jpg
+#BACKGROUND:SpongeBob Schwammkopf - F.U.N. [BG].jpg
+F 15 3 0 Fun 
+F 19 3 0 ist, 
+F 23 4 0 wenn 
+F 28 5 0 man...
+- 33
+F 44 2 0 Das 
+F 47 1 0 ist 
+F 49 1 0 so 
+F 51 2 0 was 
+F 54 4 0 wie
+- 58
+F 66 4 0 Weißt 
+F 71 1 0 du, 
+F 73 4 0 wenn... 
+F 86 3 0 Wenn 
+F 90 4 0 man...
+- 94
+F 107 1 0 Al
+F 109 2 0 so 
+F 112 1 0 ir
+F 114 1 0 gend
+F 116 1 0 wie 
+F 118 6 0 wenn...
+- 124
+F 131 3 0 Tja, 
+F 135 2 0 was 
+F 138 2 0 ist 
+F 141 7 0 Fun?
+- 148
+F 153 7 0 Ich... 
+F 167 2 0 Ich 
+F 170 1 0 buch
+F 172 2 0 sta
+F 175 2 0 bier’s 
+F 178 1 0 dir 
+F 180 2 0 mal, 
+F 183 1 0 o
+F 185 3 0 kay?
+- 188
+: 191 3 2 F 
+: 195 4 2 steht 
+: 200 1 4 für 
+: 202 3 6 Freun
+: 206 3 2 de,
+- 209
+: 212 2 -1 Die 
+: 215 3 -1 was 
+: 219 1 -1 un
+: 221 1 1 ter
+: 223 5 2 neh
+: 229 2 4 men.
+- 231
+: 234 3 2 U 
+: 238 4 2 steht 
+: 243 2 4 für 
+: 246 5 6 uns, 
+: 252 2 9 dich 
+: 255 2 9 und 
+: 258 15 4 mich.
+- 273
+: 279 3 2 N 
+: 283 3 2 steht 
+: 287 2 4 für 
+: 291 4 6 End
+: 296 1 2 lich
+- 297
+: 300 2 11 Ha
+: 303 2 9 ben 
+: 306 2 11 wir 
+: 309 1 13 mal 
+: 311 4 14 Spaß.
+- 315
+: 318 4 11 Ganz 
+: 323 2 9 fried
+: 326 4 9 lich 
+: 331 1 11 und 
+: 333 4 6 freund
+: 338 5 4 schaft
+: 344 15 2 lich.
+- 359
+: 364 3 2 F 
+: 368 4 2 steht 
+: 373 2 4 für 
+: 376 3 6 Feu
+: 380 3 2 er,
+- 383
+: 384 3 2 Das 
+: 388 1 11 wü
+: 390 4 11 tet 
+: 395 2 13 und 
+: 398 4 14 lo
+: 403 5 11 dert.
+- 408
+: 410 2 2 U 
+: 413 4 2 steht 
+: 418 2 4 für 
+: 421 2 6 un
+: 424 3 9 fai
+: 428 3 9 ren 
+: 432 12 4 Kampf.
+- 444
+: 452 3 2 N 
+: 456 3 2 steht 
+: 460 2 4 für 
+: 463 2 6 nu
+: 466 2 4 kle
+: 469 1 2 a
+: 471 3 2 res
+- 474
+: 475 2 11 Waf
+: 478 2 9 fen
+: 481 2 11 ar
+: 484 1 13 se
+: 486 10 14 nal 
+: 497 2 11 mit 
+: 500 2 11 dem
+- 502
+F 503 8 0 Plank
+F 512 6 0 ton.
+- 518
+F 521 2 0 Das 
+F 524 1 0 hat 
+F 526 2 0 doch 
+F 529 3 0 rein 
+F 533 2 0 gar 
+F 536 3 0 nichts 
+F 540 1 0 mit 
+F 542 4 0 Fun 
+F 547 2 0 zu 
+F 550 4 0 tun.
+- 554
+F 559 3 0 Pass 
+F 563 4 0 auf, 
+F 568 2 0 mach’s 
+F 571 1 0 mir 
+F 573 1 0 ein
+F 575 2 0 fach 
+F 578 4 0 nach.
+- 582
+: 587 3 2 F 
+: 591 4 2 steht 
+: 596 2 4 für 
+: 599 4 6 Freun
+: 604 4 2 de, 
+: 610 2 -1 die 
+: 613 2 -1 was...
+- 615
+F 616 1 0 Ver
+F 618 3 0 giss 
+F 622 4 0 es. 
+F 630 2 0 Das 
+F 633 1 0 ist 
+F 635 2 0 doch 
+F 638 2 0 völ
+F 641 2 0 lig 
+F 644 1 0 i
+F 646 4 0 dio
+F 651 7 0 tisch.
+- 658
+F 661 3 0 Weißt 
+F 665 1 0 du 
+F 667 5 0 was? 
+F 673 2 0 Ich 
+F 676 2 0 helf 
+F 679 1 0 dir 
+F 681 3 0 mal.
+- 684
+: 689 3 2 F 
+: 693 4 2 steht 
+: 698 1 2 für 
+: 700 4 6 Freun
+: 705 2 2 de,
+- 707
+: 710 3 -1 Die 
+: 714 2 -1 was 
+: 717 1 -1 un
+: 719 3 1 ter
+: 723 3 2 neh
+: 727 3 4 men.
+- 730
+: 733 4 2 U 
+: 738 4 2 steht 
+: 743 2 4 für 
+: 746 4 6 uns, 
+: 751 2 9 dich 
+: 754 2 9 und 
+: 757 3 4 mich.
+- 760
+F 763 1 0 Ver
+F 765 5 0 such’s 
+F 771 2 0 mal.
+- 773
+: 776 3 2 N 
+: 780 4 2 steht 
+: 785 2 4 für 
+: 788 3 6 end
+: 792 5 2 lich
+- 797
+: 799 3 11 Ha
+: 803 2 9 ben 
+: 806 2 11 wir 
+: 809 1 13 mal 
+: 811 3 14 Spaß.
+- 814
+: 816 3 11 Ganz 
+: 820 2 9 fried
+: 823 6 9 lich 
+: 830 2 11 und 
+: 833 3 6 freund
+: 837 4 4 schaft
+: 842 19 2 lich.
+- 861
+F 864 2 0 Ich 
+F 867 2 0 ver
+F 870 4 0 steh’ 
+F 875 2 0 das 
+F 878 1 0 ein
+F 880 3 0 fach 
+F 884 5 0 nicht.
+- 889
+F 893 2 0 Ich 
+F 896 3 0 hab’ 
+F 900 1 0 so 
+F 902 1 0 ’n 
+F 904 4 0 Krib
+F 909 3 0 beln 
+F 913 2 0 im 
+F 916 8 0 Bauch.
+- 924
+F 927 4 0 Soll’n 
+F 932 2 0 wir 
+F 935 2 0 auf
+F 938 5 0 hör’n?
+- 943
+F 947 10 0 Nein, 
+F 959 2 0 das 
+F 962 1 0 ist 
+F 964 1 0 ge
+F 966 2 0 nau 
+F 969 2 0 das 
+F 972 2 0 rich
+F 975 1 0 ti
+F 977 1 0 ge 
+F 979 1 0 Ge
+F 981 6 0 fühl.
+- 987
+F 990 1 0 Al
+F 992 2 0 so 
+F 995 3 0 mir 
+F 999 1 0 ge
+F 1001 6 0 fällt’s.
+- 1007
+F 1010 1 0 Ma
+F 1012 1 0 chen 
+F 1014 2 0 wir’s 
+F 1017 2 0 noch 
+F 1020 4 0 mal?
+- 1024
+F 1027 3 0 O
+F 1031 6 0 kay.
+- 1037
+: 1041 2 2 F 
+: 1044 3 2 steht 
+: 1048 3 4 für 
+: 1052 4 6 Freu
+: 1057 1 2 de
+- 1058
+: 1060 2 2 An 
+: 1063 2 -1 all 
+: 1066 1 -1 den 
+: 1068 2 -1 schö
+: 1071 3 1 nen 
+: 1075 3 2 Blu
+: 1079 3 4 men.
+- 1082
+: 1085 2 2 U 
+: 1088 4 2 steht 
+: 1093 2 4 für 
+: 1096 3 6 U
+: 1100 5 9 ku
+: 1106 11 4 le
+: 1118 7 4 le.
+- 1125
+: 1129 2 2 N 
+: 1132 4 2 steht 
+: 1137 2 4 für 
+: 1140 2 6 Na
+: 1143 1 4 se
+: 1145 1 2 weiß
+- 1146
+: 1149 1 2 Und 
+: 1151 2 11 ich 
+: 1154 2 9 mach’ 
+: 1157 2 11 mit 
+: 1160 1 13 bei 
+: 1162 1 14 je
+: 1164 2 13 dem 
+: 1167 3 11 Scheiß 
+: 1171 1 9 und
+- 1172
+: 1173 2 6 La
+: 1176 3 6 che 
+: 1180 4 9 aus 
+: 1185 2 4 tief
+: 1188 5 6 ster 
+: 1194 10 2 See
+: 1205 5 2 le.
+- 1210
+: 1217 2 2 Ha 
+: 1220 2 2 ha 
+: 1223 1 2 ha 
+: 1225 1 4 ha 
+: 1227 5 6 ha 
+: 1233 4 2 ha
+- 1237
+: 1238 2 -1 Ha 
+: 1241 2 -1 ha 
+: 1244 1 -1 ha 
+: 1246 2 1 ha 
+: 1249 5 2 ha 
+: 1255 5 4 ha
+- 1260
+: 1261 2 2 Ha 
+: 1264 2 2 ha 
+: 1267 2 2 ha 
+: 1270 1 4 ha 
+: 1272 4 6 ha 
+: 1277 5 9 ha 
+: 1283 13 4 ha
+- 1296
+: 1304 2 2 Ha 
+: 1307 2 2 ha 
+: 1310 1 2 ha 
+: 1312 1 4 ha 
+: 1314 5 6 ha 
+: 1320 4 2 ha
+- 1324
+: 1325 2 -1 Ha 
+: 1328 2 -1 ha 
+: 1331 1 -1 ha 
+: 1333 2 1 ha 
+: 1336 5 2 ha 
+: 1342 5 4 ha
+- 1347
+F 1348 2 9 Ha 
+F 1351 2 11 ha 
+F 1354 2 9 ha 
+F 1357 1 7 ha 
+F 1359 4 6 ha 
+F 1364 5 4 ha
+E

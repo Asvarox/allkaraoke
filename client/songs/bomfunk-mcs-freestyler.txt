@@ -1,0 +1,610 @@
+#ARTIST:Bomfunk MC’s
+#TITLE:Freestyler
+#CREATOR:Bomfunk MC's
+#BPM:327,7
+#YEAR:1999
+#VIDEO:v=ymNFyxvIdaM
+#LANGUAGE:English
+#GAP:45822,981385413485
+#ALLKARAOKE_ID:bomfunk-mcs-freestyler
+#ALLKARAOKE_SID:7312
+#ALLKARAOKE_LASTUPDATE:2026-11-12T05:13:08.213Z
+#ALLKARAOKE_ARTISTORIGIN:FI
+#ALLKARAOKE_REALBPM:164
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=ymNFyxvIdaM
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:293
+#MP3:Bomfunk MC’s - Freestyler.mp3
+#COVER:Bomfunk MC’s - Freestyler [CO].jpg
+#BACKGROUND:Bomfunk MC’s - Freestyler [BG].jpg
+R 22 4 4 Free
+R 30 5 4 sty
+R 38 4 2 ler,
+- 42 56
+- 56
+R 78 2 4 Rock 
+R 82 2 4 the 
+R 86 2 4 mi
+R 90 2 2 cro
+R 94 6 4 phone
+- 100 120
+- 120
+R 142 4 2 Straight 
+R 150 2 1 from 
+R 154 2 -1 the 
+R 158 2 1 top 
+R 162 2 -1 of 
+R 166 2 -5 my 
+R 170 4 -1 dome
+- 174 231
+- 231
+R 253 4 -1 Free- 
+R 277 4 -1 Free
+R 285 4 -3 sty
+R 294 3 -8 ler,
+- 297 311
+- 311
+R 333 2 4 Rock 
+R 337 2 4 the 
+R 341 2 4 mi
+R 345 2 2 cro
+R 349 6 4 phone
+- 355 360
+- 360
+R 382 3 -1 Car
+R 386 2 -5 ry 
+R 390 3 -8 on 
+R 398 2 2 with 
+R 402 2 -3 the 
+R 406 4 -1 free
+R 414 5 -3 sty
+R 421 3 -8 ler
+- 424 460
+- 460
+R 482 2 -3 I 
+R 486 2 -1 gotz 
+R 490 2 -1 to 
+R 506 2 -2 to 
+R 510 3 -1 throw 
+R 514 3 -8 on
+- 517
+R 522 2 -3 And 
+R 526 2 -1 go 
+R 530 3 -8 on, 
+R 538 2 -1 you 
+R 542 3 0 know 
+R 546 2 -2 I 
+R 550 2 -1 gotz 
+R 554 2 -1 to 
+R 558 3 -1 flow 
+R 562 2 -8 on
+- 564
+R 570 2 -1 Se
+R 574 2 -1 lect 
+R 578 2 -2 us 
+R 582 2 -1 on 
+R 586 2 -2 ya 
+R 590 2 -1 ra
+R 594 2 -2 di
+R 598 1 -5 o, 
+R 602 2 -1 play 
+R 606 3 -1 us
+- 609
+R 613 3 -1 ’Cause 
+R 618 2 -3 we’re 
+R 622 2 -1 friend
+R 626 2 -2 ly 
+R 630 2 -1 for 
+R 634 3 -1 o
+R 642 3 -5 zone
+- 645
+R 649 2 -3 But 
+R 653 2 -1 that’s 
+R 657 3 -2 not 
+R 661 2 -1 all 
+R 665 2 -3 so 
+R 669 4 -1 hold 
+R 674 4 -8 on
+- 678
+R 686 4 -1 Tight, 
+R 693 2 -1 as 
+R 698 2 -3 I 
+R 702 2 -1 rock 
+R 706 2 -2 the 
+R 710 2 -1 mic 
+R 718 3 2 right
+- 721
+R 726 2 -1 Oh, 
+R 730 2 -3 ex
+R 734 2 0 cuse 
+R 742 2 -1 me, 
+R 746 3 2 par
+R 754 2 -5 don
+- 756
+R 758 2 -1 As 
+R 762 2 -3 I 
+R 766 2 2 syn
+R 774 2 -2 chro
+R 778 3 -1 nize 
+R 790 2 -1 with 
+R 794 2 -3 the 
+R 798 2 -1 a
+R 802 2 -3 na
+R 806 3 -1 lyzed
+- 809
+R 814 2 -1 Up
+R 822 2 -1 co
+R 826 2 -3 ming 
+R 830 4 -1 vibes 
+R 838 2 -5 the 
+R 842 3 -1 ses
+R 846 3 -8 sion
+- 849
+R 854 3 -1 Let 
+R 858 2 -3 there 
+R 862 2 -1 be 
+R 866 1 -5 a 
+R 870 3 -1 les
+R 874 2 -8 son, 
+R 878 2 -1 ques
+R 883 2 -8 tion
+- 885
+R 890 2 -3 You 
+R 894 2 -1 car
+R 898 2 -8 ry 
+R 902 2 -3 pro
+R 906 1 -1 tec
+R 910 2 -3 tion
+- 912
+R 914 2 -3 Or 
+R 918 2 -1 will 
+R 922 2 -3 your 
+R 926 3 -1 heart 
+R 934 2 -3 go 
+R 938 3 -1 on
+- 941
+R 946 2 -2 Like 
+R 950 2 -1 Cé
+R 954 2 -3 line 
+R 958 2 -1 Di
+R 962 2 -8 on, 
+G 974 2 -1 Kar
+G 978 2 -1 ma 
+G 982 2 -3 Cha
+G 986 4 -1 me
+G 994 2 -1 le
+G 998 3 -8 on
+- 1001
+R 1006 4 -1 Yeah, 
+R 1022 4 -1 straight 
+R 1030 2 -1 from 
+R 1034 2 -3 the 
+R 1038 2 -1 top 
+R 1042 2 -1 of 
+R 1046 2 -3 my 
+R 1050 6 -1 dome
+- 1056
+R 1062 2 -1 As 
+R 1066 2 -5 I 
+R 1070 3 -1 rock, 
+R 1078 3 -1 rock, 
+R 1086 2 -1 ro
+R 1090 2 -3 ~ck, 
+R 1094 2 -1 ro
+R 1098 2 -3 ~ck, 
+R 1102 2 -1 rock 
+R 1106 2 -3 the 
+R 1110 2 -1 mi
+R 1114 2 -3 cro
+R 1118 4 -1 phone
+- 1122
+R 1134 4 -1 Yeah, 
+R 1150 4 -1 straight 
+R 1158 2 -1 from 
+R 1162 2 -3 the 
+R 1166 2 -1 top 
+R 1170 2 -1 of 
+R 1174 2 -3 my 
+R 1178 6 -1 dome
+- 1184
+R 1190 2 -1 As 
+R 1194 2 -5 I 
+R 1198 3 -1 rock, 
+R 1206 3 -1 rock, 
+R 1214 2 -1 ro
+R 1218 2 -3 ~ck, 
+R 1222 2 -1 ro
+R 1226 2 -3 ~ck, 
+R 1230 2 -1 rock 
+R 1234 2 -3 the 
+R 1238 2 -1 mi
+R 1242 2 -3 cro
+R 1246 4 -1 phone
+- 1250
+R 1262 4 -1 Yeah, 
+R 1278 4 -1 straight 
+R 1286 2 -1 from 
+R 1290 2 -3 the 
+R 1294 2 -1 top 
+R 1298 2 -1 of 
+R 1302 2 -3 my 
+R 1306 6 -1 dome
+- 1312
+R 1318 2 -1 As 
+R 1322 2 -5 I 
+R 1326 3 -1 rock, 
+R 1334 3 -1 rock, 
+R 1342 2 -1 ro
+R 1346 2 -3 ~ck, 
+R 1350 2 -1 ro
+R 1354 2 -3 ~ck, 
+R 1358 2 -1 rock 
+R 1362 2 -3 the 
+R 1366 2 -1 mi
+R 1370 2 -3 cro
+R 1374 4 -1 phone
+- 1378
+R 1390 4 -1 Yeah, 
+R 1406 4 -1 straight 
+R 1414 2 -1 from 
+R 1418 2 -3 the 
+R 1422 2 -1 top 
+R 1426 2 -1 of 
+R 1430 2 -3 my 
+R 1434 6 -1 dome
+- 1440
+R 1446 2 -1 As 
+R 1450 2 -5 I 
+R 1454 3 -1 rock, 
+R 1462 3 -1 rock, 
+R 1470 2 -1 ro
+R 1474 2 -3 ~ck, 
+R 1478 2 -1 ro
+R 1482 2 -3 ~ck, 
+R 1486 2 -1 rock 
+R 1490 2 -3 the 
+R 1494 2 -1 mi
+R 1498 2 -3 cro
+R 1502 4 -1 phone
+- 1506 1816
+- 1816
+R 1838 7 -1 Styles, 
+R 1854 3 -1 stee
+R 1858 3 -8 los, 
+R 1866 2 -1 we 
+R 1870 2 -1 bring 
+R 1878 2 -1 ma
+R 1882 2 -8 ny 
+R 1886 2 -1 ki
+R 1890 4 -8 los
+- 1894
+R 1898 2 -3 So 
+R 1902 2 -1 you 
+R 1906 2 -3 could 
+R 1910 2 -1 pick 
+R 1918 4 -2 yours, 
+R 1934 2 -1 from 
+R 1938 2 -3 the 
+R 1942 2 -1 va
+R 1946 2 -4 ri
+R 1950 3 -1 ous
+- 1953
+R 1958 4 -1 Am
+R 1966 2 -1 bi
+R 1970 2 -8 tious, 
+R 1974 3 -1 nu
+R 1982 2 -1 tri
+R 1986 2 -8 tious, 
+R 1994 2 -1 de
+R 1998 2 -1 li
+R 2002 2 -8 cious, 
+R 2006 2 -1 de
+R 2010 2 0 li
+R 2017 2 -2 ri
+R 2022 2 -1 ous
+- 2024
+R 2026 2 -3 Or 
+R 2030 2 -1 vi
+R 2034 2 -8 cious, 
+R 2038 2 -1 just 
+R 2046 2 -1 tell 
+R 2050 2 -5 us
+- 2052
+R 2054 2 -1 We 
+R 2058 2 -2 de
+R 2062 2 -1 li
+R 2066 2 -1 ver 
+R 2070 2 -1 a
+R 2074 2 -2 ny
+R 2078 2 -1 thin’ 
+R 2082 2 -2 from 
+R 2086 2 -1 a
+R 2090 2 -3 cap
+R 2094 2 -1 pel
+R 2098 2 -2 la’s 
+R 2102 2 -1 to 
+R 2106 2 -3 pro
+R 2110 2 -1 pel
+R 2114 2 -8 lers
+- 2116
+R 2126 2 -3 Suc
+R 2130 2 -2 kers 
+R 2134 2 -2 get 
+R 2142 2 -1 jea
+R 2146 2 -8 lous
+- 2148
+R 2150 2 -1 But 
+R 2154 2 -3 they’re 
+R 2158 2 -1 soft 
+R 2162 2 -3 like 
+R 2166 3 -3 marsh
+R 2174 2 -1 mal
+R 2178 2 -8 lows
+- 2180
+R 2186 2 1 You 
+R 2190 2 1 know 
+R 2194 2 -4 they 
+R 2198 2 -6 can’t 
+R 2202 2 -5 han
+R 2210 2 -4 dle 
+R 2214 2 -3 us
+- 2216
+R 2218 2 -3 Like 
+R 2222 2 -3 Deb
+R 2226 2 -4 bie 
+R 2230 2 -3 does 
+R 2238 2 -3 Dal
+R 2242 2 -8 las
+- 2244
+G 2254 3 -1 Yeah, 
+G 2258 3 4 we 
+G 2262 2 -5 come 
+G 2266 3 -3 scan
+G 2274 2 -4 da
+G 2278 2 -3 lous 
+G 2282 2 -6 so 
+G 2286 2 -3 who 
+G 2290 2 -4 the 
+G 2294 2 -3 fuck 
+G 2298 2 -5 is 
+G 2302 2 -3 A
+G 2306 1 -1 lice,
+- 2307
+G 2308 1 -3 Is 
+G 2310 2 -3 she 
+G 2314 2 -5 from 
+G 2318 2 -3 Buc
+G 2322 2 -2 king
+G 2326 2 -5 ham 
+G 2330 2 -2 Pa
+G 2334 3 2 lace?
+- 2337
+R 2350 4 -1 Yeah, 
+R 2366 4 -1 straight 
+R 2374 2 -1 from 
+R 2378 2 -3 the 
+R 2382 2 -1 top 
+R 2386 2 -1 of 
+R 2390 2 -3 my 
+R 2394 6 -1 dome
+- 2400
+R 2406 2 -1 As 
+R 2410 2 -5 I 
+R 2414 3 -1 rock, 
+R 2422 3 -1 rock, 
+R 2430 2 -1 roc
+R 2434 2 -3 ~ck, 
+R 2438 2 -1 ro
+R 2442 2 -3 ~ck, 
+R 2446 2 -1 rock 
+R 2450 2 -3 the 
+R 2454 2 -1 mi
+R 2458 2 -3 cro
+R 2462 4 -1 phone
+- 2466
+R 2478 4 -1 Yeah, 
+R 2494 4 -1 straight 
+R 2502 2 -1 from 
+R 2506 2 -3 the 
+R 2510 2 -1 top 
+R 2514 2 -1 of 
+R 2518 2 -3 my 
+R 2522 6 -1 dome
+- 2528
+R 2534 2 -1 As 
+R 2538 2 -5 I 
+R 2542 3 -1 rock, 
+R 2550 3 -1 rock, 
+R 2558 2 -1 ro
+R 2562 2 -3 ~ck, 
+R 2566 2 -1 ro
+R 2570 2 -3 ~ck, 
+R 2574 2 -1 rock 
+R 2578 2 -3 the 
+R 2582 2 -1 mi
+R 2586 2 -3 cro
+R 2590 4 -1 phone
+- 2594
+R 2606 4 -1 Yeah, 
+R 2622 4 -1 straight 
+R 2630 2 -1 from 
+R 2634 2 -3 the 
+R 2638 2 -1 top 
+R 2642 2 -1 of 
+R 2646 2 -3 my 
+R 2650 6 -1 dome
+- 2656
+R 2662 2 -1 As 
+R 2666 2 -5 I 
+R 2670 3 -1 rock, 
+R 2678 3 -1 rock, 
+R 2686 2 -1 ro
+R 2690 2 -3 ~ck, 
+R 2694 2 -1 ro
+R 2698 2 -3 ~ck, 
+R 2702 2 -1 rock 
+R 2706 2 -3 the 
+R 2710 2 -1 mi
+R 2714 2 -3 cro
+R 2718 4 -1 phone
+- 2722
+R 2734 4 -1 Yeah, 
+R 2750 4 -1 straight 
+R 2758 2 -1 from 
+R 2762 2 -3 the 
+R 2766 2 -1 top 
+R 2770 2 -1 of 
+R 2774 2 -3 my 
+R 2778 6 -1 dome
+- 2784
+R 2790 2 -1 As 
+R 2794 2 -5 I 
+R 2798 3 -1 rock, 
+R 2806 3 -1 rock, 
+R 2814 2 -1 ro
+R 2818 2 -3 ~ck, 
+R 2822 2 -1 ro
+R 2826 2 -3 ~ck, 
+R 2830 2 -1 rock 
+R 2834 2 -3 the 
+R 2838 2 -1 mi
+R 2842 2 -3 cro
+R 2846 4 -1 phone
+- 2850 3392
+- 3392
+G 3414 4 4 Free
+G 3422 5 4 sty
+G 3430 4 2 ler,
+- 3434 3448
+- 3448
+R 3470 2 4 Rock 
+R 3474 2 4 the 
+R 3478 2 4 mi
+R 3482 2 2 cro
+R 3486 6 4 phone
+- 3492 3512
+- 3512
+R 3534 4 2 Straight 
+R 3542 2 1 from 
+R 3546 2 -1 the 
+R 3550 2 1 top 
+R 3554 2 -1 of 
+R 3558 2 -5 my 
+R 3562 4 -1 dome
+- 3566 3624
+- 3624
+G 3646 4 -1 Free- 
+G 3670 4 -1 Free
+G 3678 4 -3 sty
+G 3686 3 -8 ler,
+- 3689 3704
+- 3704
+R 3726 2 4 Rock 
+R 3730 2 4 the 
+R 3734 2 4 mi
+R 3738 2 2 cro
+R 3742 6 4 phone
+- 3748 3752
+- 3752
+R 3774 3 -1 Car
+R 3778 2 -5 ry 
+R 3782 3 -8 on 
+R 3790 2 2 with 
+R 3794 2 -3 the 
+R 3798 4 -1 free
+R 3806 5 -3 sty
+R 3814 3 -8 ler
+- 3817 3864
+- 3864
+R 3886 4 -1 Yeah, 
+R 3902 4 -1 straight 
+R 3910 2 -1 from 
+R 3914 2 -3 the 
+R 3918 2 -1 top 
+R 3922 2 -1 of 
+R 3926 2 -3 my 
+R 3930 6 -1 dome
+- 3936
+R 3942 2 -1 As 
+R 3946 2 -5 I 
+R 3950 3 -1 rock, 
+R 3958 3 -1 rock, 
+R 3966 2 -1 ro
+R 3970 2 -3 ~ck, 
+R 3974 2 -1 ro
+R 3978 2 -3 ~ck, 
+R 3982 2 -1 rock 
+R 3986 2 -3 the 
+R 3990 2 -1 mi
+R 3994 2 -3 cro
+R 3998 4 -1 phone
+- 4002
+R 4014 4 -1 Yeah, 
+R 4030 4 -1 straight 
+R 4038 2 -1 from 
+R 4042 2 -3 the 
+R 4046 2 -1 top 
+R 4050 2 -1 of 
+R 4054 2 -3 my 
+R 4058 6 -1 dome
+- 4064
+R 4070 2 -1 As 
+R 4074 2 -5 I 
+R 4078 3 -1 rock, 
+R 4086 3 -1 rock, 
+R 4094 2 -1 ro
+R 4098 2 -3 ~ck, 
+R 4102 2 -1 ro
+R 4106 2 -3 ~ck, 
+R 4110 2 -1 rock 
+R 4114 2 -3 the 
+R 4118 2 -1 mi
+R 4122 2 -3 cro
+R 4126 4 -1 phone
+- 4130
+R 4142 4 -1 Yeah, 
+R 4158 4 -1 straight 
+R 4166 2 -1 from 
+R 4170 2 -3 the 
+R 4174 2 -1 top 
+R 4178 2 -1 of 
+R 4182 2 -3 my 
+R 4186 6 -1 dome
+- 4192
+R 4198 2 -1 As 
+R 4202 2 -5 I 
+R 4206 3 -1 rock, 
+R 4214 3 -1 rock, 
+R 4222 2 -1 ro
+R 4226 2 -3 ~ck, 
+R 4230 2 -1 ro
+R 4234 2 -3 ~ck, 
+R 4238 2 -1 rock 
+R 4242 2 -3 the 
+R 4246 2 -1 mi
+R 4250 2 -3 cro
+R 4254 4 -1 phone
+- 4258
+R 4270 4 -1 Yeah, 
+R 4286 4 -1 straight 
+R 4294 2 -1 from 
+R 4298 2 -3 the 
+R 4302 2 -1 top 
+R 4306 2 -1 of 
+R 4310 2 -3 my 
+R 4314 6 -1 dome
+- 4320
+R 4326 2 -1 As 
+R 4330 2 -5 I 
+R 4334 3 -1 rock, 
+R 4342 3 -1 rock, 
+R 4350 2 -1 ro
+R 4354 2 -3 ~ck, 
+R 4358 2 -1 ro
+R 4362 2 -3 ~ck, 
+R 4366 2 -1 rock 
+R 4370 2 -3 the 
+R 4374 2 -1 mi
+R 4378 2 -3 cro
+R 4382 4 -1 phone
+E

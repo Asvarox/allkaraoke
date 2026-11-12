@@ -1,0 +1,272 @@
+#ARTIST:Tom Jones
+#TITLE:Green, Green Grass Of Home
+#CREATOR:Canni
+#BPM:384
+#YEAR:1966
+#VIDEO:v=bAXkZkGzxWk
+#LANGUAGE:English
+#GAP:13944,375
+#ALLKARAOKE_ID:tom-jones-green-green-grass-of-home
+#ALLKARAOKE_SID:7314
+#ALLKARAOKE_LASTUPDATE:2026-11-12T05:13:08.699Z
+#ALLKARAOKE_REALBPM:95
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:183
+#MP3:Tom Jones - Green, Green Grass Of Home.mp3
+: 26 7 2 The 
+: 34 7 2 old 
+: 42 11 2 home 
+: 54 27 2 town 
+: 82 11 1 looks 
+: 94 3 4 the 
+: 98 36 2 same
+- 134
+: 150 3 2 As 
+: 154 3 2 I 
+: 158 11 4 step 
+: 170 39 7 down 
+: 210 7 4 from 
+: 218 3 7 the 
+: 222 28 2 train
+- 250
+: 266 3 2 And 
+: 270 11 7 there 
+: 282 3 9 to 
+: 286 7 11 meet 
+: 294 36 11 me
+- 330
+: 342 7 9 Is 
+: 350 7 11 my 
+: 358 15 12 ma
+: 374 35 11 ma 
+: 410 7 9 and 
+: 418 11 7 pa
+: 430 36 6 pa
+- 466 500
+- 500
+: 526 11 7 Down 
+: 538 3 11 the 
+: 542 27 14 road 
+: 570 3 14 I 
+: 574 16 14 look
+- 590
+: 602 7 11 And 
+: 610 11 12 there 
+: 622 19 11 runs 
+: 642 15 9 Mar
+: 658 16 7 y
+- 674
+: 694 7 7 Hair 
+: 702 7 7 of 
+: 710 19 6 gold 
+: 730 7 7 and 
+: 738 19 9 lips 
+: 758 7 7 like 
+: 766 15 6 cherr
+: 782 11 4 ies
+- 793
+: 794 7 4 It’s 
+: 802 23 2 good 
+: 826 3 2 to 
+: 830 27 7 touch 
+: 858 3 7 the 
+: 862 23 9 green
+: 886 15 9 green 
+: 902 23 7 grass 
+: 926 7 6 of 
+: 934 40 7 home
+- 974 1000
+- 1000
+: 1026 15 7 Yes 
+: 1042 7 11 they 
+: 1050 39 14 all 
+: 1090 23 14 come 
+: 1114 7 11 to 
+: 1122 15 12 meet 
+: 1138 24 11 me
+- 1162
+: 1170 23 11 Out 
+: 1194 7 9 reach
+: 1202 12 7 ing 
+: 1234 15 6 smil
+: 1250 7 7 ing 
+: 1258 11 9 sweet
+: 1270 24 7 ly
+- 1294
+: 1306 11 4 It’s 
+: 1318 23 2 good 
+: 1342 3 2 to 
+: 1346 27 7 touch 
+: 1374 3 7 the 
+: 1378 23 9 green
+: 1402 15 9 green 
+: 1418 27 7 grass 
+: 1446 7 6 of 
+: 1454 64 7 home
+- 1518 1548
+- 1548
+: 1574 4 2 The 
+: 1582 7 2 old 
+: 1590 24 2 house 
+: 1630 3 1 is 
+: 1634 7 4 still 
+: 1642 11 2 stand
+: 1654 8 11 ing
+- 1662 1668
+- 1668
+: 1694 3 2 Though 
+: 1698 3 2 the 
+: 1702 23 4 paint 
+: 1726 7 7 is 
+: 1734 23 7 cracked 
+: 1758 11 7 and 
+: 1770 24 2 dry
+- 1794
+: 1806 7 2 And 
+: 1814 11 7 there’s 
+: 1826 7 9 that 
+: 1834 15 11 old 
+: 1850 11 11 oak 
+: 1862 28 11 tree
+- 1890
+: 1898 7 11 That 
+: 1906 19 12 I 
+: 1926 19 11 us
+: 1946 7 9 ed 
+: 1954 7 7 to 
+: 1962 7 6 play 
+: 1970 44 9 on
+- 2014 2032
+- 2032
+: 2058 15 7 Down 
+: 2074 7 11 the 
+: 2082 31 14 lane 
+: 2114 7 14 I 
+: 2122 16 14 walk
+- 2138
+: 2146 7 11 With 
+: 2154 15 12 my 
+: 2170 15 11 sweet 
+: 2186 15 9 Mar
+: 2202 16 7 y
+- 2218
+: 2234 11 7 Hair 
+: 2246 7 7 of 
+: 2254 23 6 gold 
+: 2278 3 7 and 
+: 2282 15 9 lips 
+: 2298 11 7 like 
+: 2310 15 6 cherr
+: 2326 15 4 ies
+- 2341
+: 2342 7 4 It’s 
+: 2350 15 2 good 
+: 2366 11 2 to 
+: 2378 23 7 touch 
+: 2402 7 7 the 
+: 2410 23 9 green
+: 2434 15 9 green 
+: 2450 19 7 grass 
+: 2470 11 6 of 
+: 2482 52 7 home
+- 2534 2604
+- 2604
+: 2630 3 2 Then 
+: 2634 3 2 I 
+: 2638 3 2 a
+: 2642 11 2 wake 
+: 2654 3 4 and 
+: 2658 7 2 look 
+: 2666 3 11 a
+: 2670 11 11 round 
+: 2682 12 2 me
+- 2694 2724
+- 2724
+: 2750 7 4 At 
+: 2758 15 7 four 
+: 2774 7 7 grey 
+: 2782 23 4 walls 
+: 2806 3 2 that 
+: 2810 3 2 su
+: 2814 7 2 rround 
+: 2822 16 2 me
+- 2838 2860
+- 2860
+: 2886 7 9 And 
+: 2894 3 11 I 
+: 2898 11 11 real
+: 2910 20 11 ise
+- 2930
+: 2942 27 9 Yes 
+: 2970 3 12 I 
+: 2974 3 11 was 
+: 2978 7 9 on
+: 2986 3 7 ly 
+: 2990 11 6 dream
+: 3002 16 9 ing
+- 3018 3064
+- 3064
+: 3090 11 7 For 
+: 3102 7 11 there’s 
+: 3110 3 14 a 
+: 3114 20 14 God 
+: 3158 11 14 and 
+: 3170 8 14 there’s
+- 3178
+: 3182 3 11 A 
+: 3186 15 12 sad 
+: 3202 15 11 old 
+: 3218 7 9 Pe
+: 3226 16 7 dr’e
+- 3242
+: 3266 11 7 On 
+: 3278 3 7 and 
+: 3282 23 6 on 
+: 3306 7 7 we’ll 
+: 3314 19 9 walk 
+: 3334 11 7 at 
+: 3346 7 6 day
+: 3354 12 4 break
+- 3366
+: 3386 7 4 A
+: 3394 23 2 gain 
+: 3418 7 2 I’ll 
+: 3426 23 7 touch 
+: 3450 3 7 the 
+: 3454 15 9 green 
+: 3470 11 9 green
+: 3482 23 7 grass 
+: 3506 11 6 of 
+: 3518 20 7 home
+- 3538 3576
+- 3576
+: 3602 19 7 Yes 
+: 3622 7 11 they’ll 
+: 3630 39 14 all 
+: 3670 23 14 come 
+: 3694 3 11 to 
+: 3698 15 12 see 
+: 3714 28 11 me
+- 3742
+: 3750 7 11 In 
+: 3758 3 9 the 
+: 3762 44 7 shade 
+: 3810 11 6 of 
+: 3822 7 7 that 
+: 3830 19 9 old 
+: 3850 7 7 oak 
+: 3858 20 6 tree
+- 3878
+: 3882 7 4 As 
+: 3890 3 4 they 
+: 3894 11 2 lay 
+: 3906 31 7 me 
+: 3938 15 7 ’neath 
+: 3954 7 7 the 
+: 3962 16 9 green
+- 3978
+: 3982 27 12 Green 
+: 4010 39 7 grass 
+: 4050 43 6 of 
+: 4094 96 7 home.
+E

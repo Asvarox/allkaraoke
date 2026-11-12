@@ -1,0 +1,383 @@
+#ARTIST:Taylor Swift
+#TITLE:this is me trying
+#CREATOR:princetongirl98
+#BPM:272,6100000000002
+#YEAR:2020
+#VIDEO:v=9bdLTPNrlEg
+#GENRE:Folklore
+#LANGUAGE:English
+#GAP:28295,574116870255
+#ALLKARAOKE_ID:taylor-swift-this-is-me-trying
+#ALLKARAOKE_SID:7310
+#ALLKARAOKE_LASTUPDATE:2026-11-12T05:13:08.209Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:135
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=9bdLTPNrlEg
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:196
+#MP3:Taylor Swift - this is me trying.mp3
+: 18 1 11 I’ve 
+: 21 1 1 been 
+: 25 5 1 hav
+: 32 2 1 ing 
+: 36 2 1 a 
+: 41 6 1 hard 
+: 49 2 11 time 
+: 53 2 9 ad
+: 58 4 9 just
+: 65 6 11 ing
+- 71
+: 77 1 9 I 
+: 81 2 9 had 
+: 85 2 9 the 
+: 89 4 1 shi
+: 95 2 1 ni
+: 100 5 2 est 
+: 107 3 1 wheels,
+- 110
+: 112 3 1 Now 
+: 116 2 9 they’re 
+: 120 5 9 rust
+: 128 6 11 ing
+- 134
+: 142 2 9 I 
+: 146 4 1 didn’t 
+: 153 3 1 know 
+: 160 2 1 if 
+: 164 3 2 you’d 
+: 169 6 4 care 
+: 176 3 4 if 
+: 181 1 9 I 
+: 184 6 9 came 
+: 192 7 11 back
+- 199
+: 204 3 9 I 
+: 209 1 11 have 
+: 212 2 1 a 
+: 216 6 1 lot 
+: 224 2 1 of 
+: 229 2 2 re
+: 232 6 1 grets 
+: 241 3 11 a
+: 245 4 9 bout 
+: 251 6 9 that
+- 257
+: 272 1 11 Pul
+: 275 1 11 led 
+: 278 2 11 the 
+: 281 5 1 car 
+: 289 2 1 off 
+: 293 2 2 the 
+: 297 5 1 road
+- 302
+: 305 2 11 To 
+: 309 2 9 the 
+: 313 5 9 look
+: 320 6 11 out
+- 326
+: 335 8 11 Could’ve 
+: 344 6 1 fol
+: 351 1 1 low
+: 354 1 1 ed 
+: 356 3 2 my 
+: 361 5 1 fears
+- 366
+: 369 2 11 All 
+: 373 2 9 the 
+: 377 5 9 way 
+: 385 6 11 down
+- 391
+: 398 1 11 And 
+: 401 3 11 may
+: 406 1 1 be 
+: 408 3 1 I 
+: 413 3 1 don’t 
+: 419 3 1 quite 
+: 424 3 1 know 
+: 430 2 1 what 
+: 435 3 1 to 
+: 440 4 1 say
+- 444
+: 446 3 1 But 
+: 451 2 11 I’m 
+: 455 5 11 here 
+: 463 2 1 in 
+: 467 2 1 your 
+: 471 5 1 door
+: 479 5 9 way
+- 484
+: 487 3 9 I 
+: 492 5 11 just 
+: 499 6 1 want
+: 508 5 2 ed 
+: 515 11 1 you 
+: 528 2 11 to 
+: 532 7 9 know
+- 539
+: 546 3 9 That 
+: 551 2 4 this 
+: 555 2 9 is 
+: 559 6 1 me 
+: 567 6 1 try
+: 575 14 2 ing
+- 589 597
+- 597
+: 615 3 9 I 
+: 620 5 11 just 
+: 627 6 1 want
+: 635 5 2 ed 
+: 642 12 1 you 
+: 656 1 1 to 
+: 659 7 9 know
+- 666
+: 675 2 1 That 
+: 679 1 9 this 
+: 683 2 2 is 
+: 688 5 1 me 
+: 695 6 1 try
+: 703 5 1 ing
+- 708 1018
+- 1018
+: 1036 1 6 They 
+: 1039 3 11 told 
+: 1043 1 11 me
+- 1044
+: 1047 5 1 All 
+: 1055 2 1 of 
+: 1059 1 2 my 
+: 1063 6 1 ca
+: 1071 3 11 ges 
+: 1075 2 9 were 
+: 1079 6 9 men
+: 1087 5 11 tal
+- 1092
+: 1100 1 9 So 
+: 1103 2 9 I 
+: 1107 1 1 got 
+: 1110 6 1 wast
+: 1118 2 9 ed
+- 1120
+: 1123 2 2 Like 
+: 1127 5 1 all 
+: 1135 2 1 my 
+: 1139 2 9 po
+: 1143 4 9 ten
+: 1149 7 11 tial
+- 1156
+: 1167 2 1 And 
+: 1171 2 1 my 
+: 1175 5 1 words 
+: 1182 2 1 shoot 
+: 1187 1 1 to 
+: 1191 5 2 kill
+- 1196
+: 1199 2 9 When 
+: 1203 2 9 I’m 
+: 1207 6 9 mad
+- 1213
+: 1227 2 9 I 
+: 1231 2 11 have 
+: 1235 1 11 a 
+: 1238 6 1 lot 
+: 1247 1 1 of 
+: 1250 2 1 re
+: 1254 6 1 grets 
+: 1263 2 11 a
+: 1267 4 9 bout 
+: 1274 5 9 that
+- 1279
+: 1288 1 11 I 
+: 1291 2 1 was 
+: 1296 1 1 so 
+: 1299 1 1 a
+: 1303 2 1 head 
+: 1307 1 1 of 
+: 1310 1 1 cu 
+: 1312 1 1 the
+: 1314 1 1 r
+: 1316 3 2 ve,
+- 1319
+: 1321 1 2 The 
+: 1324 7 9 curve 
+: 1334 1 9 be
+: 1338 3 9 came 
+: 1342 1 9 a 
+: 1357 1 9 sph
+: 1360 3 11 ere
+- 1363
+: 1367 1 1 Fell 
+: 1370 2 1 be
+: 1374 2 1 hind 
+: 1378 2 1 on 
+: 1382 2 2 my 
+: 1385 6 9 class
+: 1394 3 9 mates,
+- 1397
+: 1399 1 9 And 
+: 1401 2 9 I 
+: 1406 2 9 end
+: 1410 2 9 ed 
+: 1414 5 9 up 
+: 1421 4 11 here
+- 1425
+: 1430 3 1 Pour
+: 1435 1 1 ing 
+: 1438 3 1 out 
+: 1443 4 1 my 
+: 1448 3 1 heart 
+: 1453 3 1 to 
+: 1458 3 1 a 
+: 1463 4 1 stran
+: 1469 4 9 ger
+- 1473
+: 1477 2 11 But 
+: 1480 2 11 I 
+: 1485 6 1 didn’t 
+: 1493 2 2 pour 
+: 1498 1 1 the 
+: 1502 5 9 whis
+: 1509 6 9 key
+- 1515
+: 1518 2 11 I 
+: 1523 6 1 just 
+: 1531 6 2 want
+: 1538 6 1 ed 
+: 1546 11 1 you 
+: 1559 2 9 to 
+: 1562 7 9 know
+- 1569
+: 1578 1 2 That 
+: 1582 2 1 this 
+: 1586 1 1 is 
+: 1589 5 1 me 
+: 1597 6 1 try
+: 1604 15 2 ing
+- 1619 1627
+- 1627
+: 1645 3 11 I 
+: 1650 5 1 just 
+: 1657 6 2 want
+: 1665 5 1 ed 
+: 1673 12 1 you 
+: 1686 1 9 to 
+: 1690 6 9 know
+- 1696
+: 1705 2 2 That 
+: 1710 3 1 this 
+: 1714 2 1 is 
+: 1718 6 1 me 
+: 1725 5 1 try
+: 1733 5 1 ing
+- 1738 1760
+- 1760
+: 1778 2 9 At 
+: 1782 5 1 least 
+: 1789 5 8 I’m 
+: 1796 7 8 try
+: 1804 5 8 ~
+: 1810 7 9 ing
+- 1817 2031
+- 2031
+: 2049 1 9 And 
+: 2052 2 9 it’s 
+: 2056 9 6 hard
+- 2065
+: 2070 2 4 To 
+: 2074 2 6 be 
+: 2077 2 6 at 
+: 2081 2 4 a 
+: 2084 4 6 par
+: 2090 3 4 ty
+- 2093
+: 2095 1 9 When 
+: 2099 1 9 I 
+: 2102 1 4 feel 
+: 2104 3 4 like 
+: 2109 2 9 an 
+: 2112 4 4 o
+: 2118 1 4 pen 
+: 2121 5 2 wound
+- 2126
+: 2133 2 9 It’s 
+: 2137 2 11 hard 
+: 2141 1 9 to 
+: 2144 1 2 be 
+: 2147 4 2 any
+: 2153 1 9 where 
+: 2155 4 9 these 
+: 2161 4 9 days
+- 2165
+: 2167 1 9 When 
+: 2170 2 9 all 
+: 2174 1 9 I 
+: 2176 2 9 want 
+: 2180 2 11 is 
+: 2184 6 11 you
+- 2190
+: 2196 1 4 You’re 
+: 2199 1 4 a 
+: 2202 3 2 flash
+: 2207 5 11 back
+- 2212
+: 2214 1 11 In 
+: 2216 1 11 a 
+: 2219 3 11 film 
+: 2224 4 11 reel
+- 2228
+: 2230 1 11 On 
+: 2232 1 4 the 
+: 2235 3 11 one 
+: 2240 5 11 screen 
+: 2246 2 4 in 
+: 2250 4 11 my 
+: 2255 7 11 town
+- 2262
+: 2278 1 9 And 
+: 2281 3 4 I 
+: 2286 5 11 just 
+: 2293 6 1 want
+: 2300 5 2 ed 
+: 2308 12 1 you 
+: 2321 2 1 to 
+: 2325 8 9 know
+- 2333
+: 2340 2 1 That 
+: 2344 3 1 this 
+: 2349 1 1 is 
+: 2352 6 1 me 
+: 2361 6 1 try
+: 2368 15 2 ing
+- 2383
+: 2396 1 1 And 
+: 2399 1 2 maybe 
+: 2401 2 2 I 
+: 2404 3 2 don’t 
+: 2409 1 9 quite 
+: 2413 9 1 know 
+: 2424 2 1 what 
+: 2428 1 2 to 
+: 2432 1 2 say
+- 2433
+: 2434 1 4 I 
+: 2437 2 1 just 
+: 2441 1 1 want
+: 2445 3 1 ed 
+: 2450 5 9 you 
+: 2457 2 9 to 
+: 2461 8 1 know
+- 2469
+: 2478 2 1 That 
+: 2481 2 1 this 
+: 2485 2 1 is 
+: 2489 6 1 me 
+: 2497 5 1 try
+: 2503 6 4 ing
+- 2509 2535
+- 2535
+: 2553 2 9 At 
+: 2557 5 8 least 
+: 2564 5 8 I’m 
+: 2571 11 8 try
+: 2584 3 9 ~
+: 2588 7 4 ing
+E
