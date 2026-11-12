@@ -375,9 +375,24 @@ export class LeaderboardBoard extends DurableObject<LeaderboardDurableObjectEnv>
   async mergeSongs(merges: SongMerge[]): Promise<{ moved: number; dropped: number }> {
     let moved = 0;
     let dropped = 0;
+    const mergeByFrom = new Map(merges.map((merge) => [merge.from, merge]));
+    // Follows chains (a → b, b → c) so every row lands on the final song whatever the order; null on loops
+    const finalMerge = (merge: SongMerge) => {
+      const seen = new Set([merge.from]);
+      let current = merge;
+      while (mergeByFrom.has(current.to)) {
+        if (seen.has(current.to)) return null;
+        seen.add(current.to);
+        current = mergeByFrom.get(current.to)!;
+      }
+      return current;
+    };
 
-    for (const { from, to, artist, title } of merges) {
-      if (from === to) continue;
+    for (const merge of merges) {
+      const target = finalMerge(merge);
+      if (!target || merge.from === target.to) continue;
+      const { from } = merge;
+      const { to, artist, title } = target;
 
       const rows = this.sql
         .exec<{ id: string; client_id: string; name_normalized: string; tolerance: number; score: number }>(

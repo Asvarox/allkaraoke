@@ -189,6 +189,25 @@ describe('LeaderboardBoard', () => {
     expect(await board.mergeSongs([merge])).toEqual({ moved: 0, dropped: 0 });
   });
 
+  it('moves rows of merge chains to the final song whatever the order, and skips loops', async () => {
+    const board = getBoard();
+    await board.submit(generateSubmission({ songId: 'a', name: 'Ann' }), notesBlob);
+    await board.submit(generateSubmission({ songId: 'b', name: 'Bob' }), notesBlob);
+    await board.submit(generateSubmission({ songId: 'x', name: 'Xen' }), notesBlob);
+
+    const merges = [
+      { from: 'b', to: 'c', artist: 'C Artist', title: 'C Title' },
+      { from: 'a', to: 'b', artist: 'B Artist', title: 'B Title' },
+      { from: 'x', to: 'y', artist: 'Y', title: 'Y' },
+      { from: 'y', to: 'x', artist: 'X', title: 'X' },
+    ];
+    expect(await board.mergeSongs(merges)).toEqual({ moved: 2, dropped: 0 });
+
+    const rows = await board.listForAdmin();
+    expect(Object.fromEntries(rows.map((row) => [row.name, row.songId]))).toEqual({ Ann: 'c', Bob: 'c', Xen: 'x' });
+    expect(rows.find((row) => row.name === 'Ann')).toMatchObject({ artist: 'C Artist', title: 'C Title' });
+  });
+
   it('lists rows with ids for admin and rebuilds the board on delete', async () => {
     const board = getBoard();
     await board.submit(generateSubmission({ name: 'Ann', score: 2_000_000 }), notesBlob);

@@ -31,10 +31,12 @@ const parseSongMerges = (body: unknown): SongMerge[] | null => {
   if (!Array.isArray(merges)) return null;
 
   const isValid = merges.every((entry) =>
-    (['from', 'to', 'artist', 'title'] as const).every((key) => typeof entry?.[key] === 'string' && entry[key]),
+    (['from', 'to', 'artist', 'title'] as const).every((key) => typeof entry?.[key] === 'string' && entry[key].trim()),
   );
 
-  return isValid ? merges.map(({ from, to, artist, title }) => ({ from, to, artist, title })) : null;
+  return isValid
+    ? merges.map(({ from, to, artist, title }) => ({ from: from.trim(), to: to.trim(), artist, title }))
+    : null;
 };
 
 /**

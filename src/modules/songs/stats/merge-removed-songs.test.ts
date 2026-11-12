@@ -15,7 +15,7 @@ describe('resolveMergeTarget', () => {
   it('returns null when the chain ends in a removal or loops', () => {
     expect(resolveMergeTarget({ a: 'b', b: null }, 'a')).toBeNull();
     expect(resolveMergeTarget({ a: null }, 'a')).toBeNull();
-    expect(resolveMergeTarget({ a: 'b', b: 'a' }, 'a')).toBe('a');
+    expect(resolveMergeTarget({ a: 'b', b: 'a' }, 'a')).toBeNull();
   });
 });
 
@@ -31,7 +31,11 @@ describe('mergeRemovedSongStats', () => {
 
     expect(removedKeys).toEqual(['dupe']);
     expect(updated).toEqual({
-      parent: { plays: 3, scores: [run('2026-01-01', 50), run('2026-02-01', 100), run('2026-03-01', 70)] },
+      parent: {
+        plays: 3,
+        scores: [run('2026-01-01', 50), run('2026-02-01', 100), run('2026-03-01', 70)],
+        mergedFrom: ['dupe'],
+      },
     });
   });
 
@@ -43,16 +47,26 @@ describe('mergeRemovedSongStats', () => {
 
     const { updated } = mergeRemovedSongStats(stats, { a: 'parent', b: 'parent' });
 
-    expect(updated.parent).toEqual({ plays: 2, scores: [run('2026-01-01', 1), run('2026-01-02', 2)] });
+    expect(updated.parent).toEqual({
+      plays: 2,
+      scores: [run('2026-01-01', 1), run('2026-01-02', 2)],
+      mergedFrom: ['a', 'b'],
+    });
   });
 
-  it('does not duplicate runs already moved by an interrupted merge', () => {
+  it('only removes the old key when an interrupted merge already moved it, even after the scores changed', () => {
     const stats: Record<string, SongStats> = {
-      parent: { plays: 2, scores: [run('2026-01-01', 50), run('2026-02-01', 100)] },
-      dupe: { plays: 1, scores: [run('2026-01-01', 50)] },
+      parent: { plays: 3, scores: [run('2026-01-01', 55), run('2026-02-01', 100)], mergedFrom: ['dupe'] },
+      dupe: { plays: 2, scores: [run('2026-01-01', 50)] },
     };
 
-    expect(mergeRemovedSongStats(stats, { dupe: 'parent' }).updated.parent).toEqual(stats.parent);
+    expect(mergeRemovedSongStats(stats, { dupe: 'parent' })).toEqual({ updated: {}, removedKeys: ['dupe'] });
+  });
+
+  it('keeps the history of songs in a merge loop', () => {
+    const stats: Record<string, SongStats> = { a: { plays: 1, scores: [run('2026-01-01', 1)] } };
+
+    expect(mergeRemovedSongStats(stats, { a: 'b', b: 'a' })).toEqual({ updated: {}, removedKeys: [] });
   });
 
   it('keeps the history of songs removed without a merge', () => {

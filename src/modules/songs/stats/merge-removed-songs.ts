@@ -2,17 +2,12 @@ import events from '~/modules/game-events/game-events';
 import { getAllStats, removeSongStatsByKey, SongStats, storeSongStatsByKey } from '~/modules/songs/stats/common';
 import { RemovedSongs, resolveMergeTarget } from '~/modules/songs/utils/removed-songs';
 
-const runKey = (run: SongStats['scores'][number]) => `${run.date}|${JSON.stringify(run.scores)}`;
-
-/** Skips runs already present, so re-merging after an interrupted run doesn't duplicate them. */
-const combineStats = (into: SongStats | undefined, from: SongStats): SongStats => {
-  const existing = new Set((into?.scores ?? []).map(runKey));
-  const added = (from.scores ?? []).filter((run) => !existing.has(runKey(run)));
-  const duplicates = (from.scores?.length ?? 0) - added.length;
-  const scores = [...(into?.scores ?? []), ...added].sort((a, b) => a.date.localeCompare(b.date));
-
-  return { plays: (into?.plays ?? 0) + Math.max(0, (from.plays ?? 0) - duplicates), scores };
-};
+const combineStats = (into: SongStats | undefined, from: SongStats, fromKey: string): SongStats => ({
+  ...into,
+  plays: (into?.plays ?? 0) + (from.plays ?? 0),
+  scores: [...(into?.scores ?? []), ...(from.scores ?? [])].sort((a, b) => a.date.localeCompare(b.date)),
+  mergedFrom: [...(into?.mergedFrom ?? []), fromKey],
+});
 
 /** Moves the history of merged songs onto the songs they were merged into. */
 export function mergeRemovedSongStats(stats: Record<string, SongStats>, removed: RemovedSongs) {
@@ -25,7 +20,9 @@ export function mergeRemovedSongStats(stats: Record<string, SongStats>, removed:
     // History of a song removed without a merge stays, it is harmless and the song may come back
     if (target === null) continue;
 
-    updated[target] = combineStats(updated[target] ?? stats[target], songStats);
+    const parent = updated[target] ?? stats[target];
+    // Already merged by a run interrupted before the old key was removed
+    if (!parent?.mergedFrom?.includes(key)) updated[target] = combineStats(parent, songStats, key);
     removedKeys.push(key);
   }
 

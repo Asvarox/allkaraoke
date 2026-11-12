@@ -4,7 +4,7 @@
  */
 export type RemovedSongs = Record<string, string | null>;
 
-/** Follows merge chains (a → b → c) to the song still in the library. `null` when the chain ends in a removal. */
+/** Follows merge chains (a → b → c) to the song still in the library. `null` when the chain ends in a removal or loops. */
 export const resolveMergeTarget = (removed: RemovedSongs, id: string): string | null => {
   const seen = new Set([id]);
   let target = removed[id] ?? null;
@@ -13,5 +13,6 @@ export const resolveMergeTarget = (removed: RemovedSongs, id: string): string | 
     target = removed[target] ?? null;
   }
 
-  return target;
+  // A cycle never reaches a song still in the library
+  return target !== null && seen.has(target) ? null : target;
 };
