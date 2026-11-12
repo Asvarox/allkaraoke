@@ -4,6 +4,7 @@ import { GAME_MODE, Song } from '~/interfaces';
 import events from '~/modules/game-events/game-events';
 import SongsService from '~/modules/songs/songs-service';
 import { getAllStats, getSongKey, SongStats, storeSongStatsByKey } from '~/modules/songs/stats/common';
+import { mergeStoredRemovedSongStats } from '~/modules/songs/stats/merge-removed-songs';
 import { getMergedTrackFactor } from '~/modules/songs/utils/merged-track-factor';
 import isE2E from '~/modules/utils/is-e2-e';
 import isPreRendering from '~/modules/utils/is-pre-rendering';
@@ -71,6 +72,9 @@ export function fixMergedTrackScores(
 }
 
 async function fixStoredScores() {
+  // Runs first so merged history is rescaled against the song it now belongs to and the backfill sees it
+  await mergeStoredRemovedSongStats().catch((error: unknown) => console.error('Merging removed songs failed', error));
+
   const [stats, songs] = await Promise.all([getAllStats(), SongsService.getIndex()]);
   const duets = new Map(songs.filter((song) => song.tracksCount > 1).map((song) => [getSongKey(song), song]));
   const adjustments: ScoreAdjustment[] = [];

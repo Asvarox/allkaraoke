@@ -166,6 +166,48 @@ describe('LeaderboardBoard', () => {
     expect(stored?.entries).toEqual([expect.objectContaining({ score: 2_500_000 })]);
   });
 
+  it('moves rows of a merged song onto its parent, keeping the better score of a player on both', async () => {
+    const board = getBoard();
+    await board.submit(generateSubmission({ songId: 'dupe', name: 'Ann', score: 2_000_000 }), notesBlob);
+    await board.submit(generateSubmission({ songId: 'dupe', name: 'Bob', score: 1_500_000 }), notesBlob);
+    await board.submit(generateSubmission({ songId: 'dupe', name: 'Cid', score: 1_200_000 }), notesBlob);
+    await board.submit(generateSubmission({ songId: 'parent', name: 'Bob', score: 1_800_000 }), notesBlob);
+    await board.submit(generateSubmission({ songId: 'parent', name: 'Cid', score: 1_000_000 }), notesBlob);
+
+    const merge = { from: 'dupe', to: 'parent', artist: 'Parent Artist', title: 'Parent Title' };
+    expect(await board.mergeSongs([merge])).toEqual({ moved: 2, dropped: 2 });
+
+    const rows = await board.listForAdmin();
+    expect(rows.every((row) => row.songId === 'parent')).toBe(true);
+    expect(Object.fromEntries(rows.map((row) => [row.name, row.score]))).toEqual({
+      Ann: 2_000_000,
+      Bob: 1_800_000,
+      Cid: 1_200_000,
+    });
+    expect(rows.find((row) => row.name === 'Ann')).toMatchObject({ artist: 'Parent Artist', title: 'Parent Title' });
+    // Running the same merge again is a no-op
+    expect(await board.mergeSongs([merge])).toEqual({ moved: 0, dropped: 0 });
+  });
+
+  it('moves rows of merge chains to the final song whatever the order, and skips loops', async () => {
+    const board = getBoard();
+    await board.submit(generateSubmission({ songId: 'a', name: 'Ann' }), notesBlob);
+    await board.submit(generateSubmission({ songId: 'b', name: 'Bob' }), notesBlob);
+    await board.submit(generateSubmission({ songId: 'x', name: 'Xen' }), notesBlob);
+
+    const merges = [
+      { from: 'b', to: 'c', artist: 'C Artist', title: 'C Title' },
+      { from: 'a', to: 'b', artist: 'B Artist', title: 'B Title' },
+      { from: 'x', to: 'y', artist: 'Y', title: 'Y' },
+      { from: 'y', to: 'x', artist: 'X', title: 'X' },
+    ];
+    expect(await board.mergeSongs(merges)).toEqual({ moved: 2, dropped: 0 });
+
+    const rows = await board.listForAdmin();
+    expect(Object.fromEntries(rows.map((row) => [row.name, row.songId]))).toEqual({ Ann: 'c', Bob: 'c', Xen: 'x' });
+    expect(rows.find((row) => row.name === 'Ann')).toMatchObject({ artist: 'C Artist', title: 'C Title' });
+  });
+
   it('lists rows with ids for admin and rebuilds the board on delete', async () => {
     const board = getBoard();
     await board.submit(generateSubmission({ name: 'Ann', score: 2_000_000 }), notesBlob);

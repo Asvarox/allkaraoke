@@ -70,6 +70,14 @@ const toBoardEntry = (row: RecordRow): BoardEntry => ({
   createdAt: row.created_at,
 });
 
+/** A duplicate song (`from`) dropped from the library in favour of `to`, whose artist and title the rows take. */
+export interface SongMerge {
+  from: string;
+  to: string;
+  artist: string;
+  title: string;
+}
+
 export interface SubmitResult {
   accepted: boolean;
   /** `false` when an equal or better score for the same (client, song, name, difficulty) already exists. */
@@ -358,6 +366,74 @@ export class LeaderboardBoard extends DurableObject<LeaderboardDurableObjectEnv>
     await this.rebuildProjection();
 
     return { updated };
+  }
+
+  /**
+   * Moves every row of a dropped duplicate song onto the song it was merged into. A player with rows on
+   * both songs (same client, name and difficulty) keeps only their higher score. Idempotent.
+   */
+  async mergeSongs(merges: SongMerge[]): Promise<{ moved: number; dropped: number }> {
+    let moved = 0;
+    let dropped = 0;
+    const mergeByFrom = new Map(merges.map((merge) => [merge.from, merge]));
+    // Follows chains (a → b, b → c) so every row lands on the final song whatever the order; null on loops
+    const finalMerge = (merge: SongMerge) => {
+      const seen = new Set([merge.from]);
+      let current = merge;
+      while (mergeByFrom.has(current.to)) {
+        if (seen.has(current.to)) return null;
+        seen.add(current.to);
+        current = mergeByFrom.get(current.to)!;
+      }
+      return current;
+    };
+
+    for (const merge of merges) {
+      const target = finalMerge(merge);
+      if (!target || merge.from === target.to) continue;
+      const { from } = merge;
+      const { to, artist, title } = target;
+
+      const rows = this.sql
+        .exec<{ id: string; client_id: string; name_normalized: string; tolerance: number; score: number }>(
+          `SELECT id, client_id, name_normalized, tolerance, score FROM records WHERE song_id = ?`,
+          from,
+        )
+        .toArray();
+
+      for (const row of rows) {
+        const existing = this.sql
+          .exec<{ id: string; score: number }>(
+            `SELECT id, score FROM records WHERE client_id = ? AND song_id = ? AND name_normalized = ? AND tolerance = ?`,
+            row.client_id,
+            to,
+            row.name_normalized,
+            row.tolerance,
+          )
+          .toArray()[0];
+
+        const loser = existing && (existing.score >= row.score ? row.id : existing.id);
+        if (loser) {
+          this.sql.exec(`DELETE FROM notes WHERE record_id = ?`, loser);
+          this.sql.exec(`DELETE FROM records WHERE id = ?`, loser);
+          dropped += 1;
+        }
+        if (loser !== row.id) {
+          this.sql.exec(
+            `UPDATE records SET song_id = ?, artist = ?, title = ? WHERE id = ?`,
+            to,
+            artist,
+            title,
+            row.id,
+          );
+          moved += 1;
+        }
+      }
+    }
+
+    await this.rebuildProjection();
+
+    return { moved, dropped };
   }
 
   async deleteRow(id: string): Promise<boolean> {
