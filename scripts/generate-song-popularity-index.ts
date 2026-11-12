@@ -3,8 +3,6 @@ import fs from 'fs';
 import dotenv from 'dotenv';
 
 import currentSongs from '../public/songs/index.json';
-import removedSongs from '../public/songs/removed-songs.json';
-import { resolveMergeTarget } from '../src/modules/songs/utils/removed-songs';
 import { requestPostHog } from './utils.cjs';
 
 dotenv.config({ path: '.env.local' });
@@ -39,16 +37,7 @@ interface Response {
     }),
   });
 
-  // Plays of songs merged as duplicates count towards the song they were merged into (sessions/users are summed, so approximate)
-  const ratingById = new Map<string, [string, number, number, number]>();
-  for (const [songId, played, sessions, users] of response.results) {
-    const id = resolveMergeTarget(removedSongs, songId) ?? songId;
-    const [, p = 0, s = 0, u = 0] = ratingById.get(id) ?? [];
-    ratingById.set(id, [id, p + played, s + sessions, u + users]);
-  }
-  const mergedResults = [...ratingById.values()].sort((a, b) => b[2] - a[2] || b[1] - a[1]);
-
-  const builtInSongsRating = mergedResults.filter(([song]) =>
+  const builtInSongsRating = response.results.filter(([song]) =>
     currentSongs.some((currentSong) => currentSong.id === song),
   );
 
