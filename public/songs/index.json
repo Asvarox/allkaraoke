@@ -231,39 +231,6 @@
     "local": false
   },
   {
-    "id": "2500-at-nightcord-x-kagamine-len-irony",
-    "title": "Irony",
-    "artist": "25:00 at Nightcord x Kagamine Len",
-    "video": "vcPkSC7SDZo",
-    "language": [
-      "Japanese"
-    ],
-    "bpm": 360.08,
-    "gap": 28.824039102421693,
-    "year": "2023",
-    "artistOrigin": "JP",
-    "lastUpdate": "2025-07-28T13:16:06.331Z",
-    "edition": "Project Sekai",
-    "genre": "Anime",
-    "realBpm": 90,
-    "previewStart": 87,
-    "previewEnd": 109,
-    "volume": 0.56,
-    "manualVolume": 0.55,
-    "author": "Subkei",
-    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=subkei",
-    "duration": 252,
-    "tracks": [
-      {
-        "start": 17
-      }
-    ],
-    "shortId": 4934,
-    "tracksCount": 1,
-    "search": "2500atnightcordxkagaminelenirony",
-    "local": false
-  },
-  {
     "id": "2ne1-fire",
     "title": "Fire",
     "artist": "2NE1",
@@ -1074,38 +1041,6 @@
     "shortId": 20,
     "tracksCount": 1,
     "search": "31minutosmiequilibrioespiritual",
-    "local": false
-  },
-  {
-    "id": "31-minutos-mi-equilibrio-espiritualworking",
-    "title": "Mi equilibrio espiritual(Working)",
-    "artist": "31 Minutos",
-    "video": "htgVNIEzIUQ",
-    "language": [
-      "Spanish"
-    ],
-    "bpm": 269.96,
-    "gap": 13300.851829900726,
-    "year": "2003",
-    "artistOrigin": "CL",
-    "lastUpdate": "2026-11-08T03:43:07.165Z",
-    "genre": "Infantil",
-    "realBpm": 135,
-    "previewStart": 14,
-    "previewEnd": 33,
-    "volume": 1,
-    "author": "Coppo",
-    "authorUrl": "https://ultrastar-es.org/es/canciones?creador=coppo",
-    "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=31%20Minutos",
-    "duration": 147,
-    "tracks": [
-      {
-        "start": 18
-      }
-    ],
-    "shortId": 6971,
-    "tracksCount": 1,
-    "search": "31minutosmiequilibrioespiritualworking",
     "local": false
   },
   {
@@ -6707,33 +6642,6 @@
     "local": false
   },
   {
-    "id": "akira-yamaoka-feat-mary-elizabeth-mcglynn-waiting-for-you",
-    "title": "Waiting For You",
-    "artist": "Akira Yamaoka feat. Mary Elizabeth McGlynn",
-    "video": "XF3xCifQ290",
-    "language": [
-      "English"
-    ],
-    "bpm": 380,
-    "gap": 38803.15789473684,
-    "year": "2004",
-    "lastUpdate": "2026-11-10T05:30:33.860Z",
-    "genre": "Rock",
-    "realBpm": 67,
-    "volume": 1,
-    "author": "Double D",
-    "duration": 381,
-    "tracks": [
-      {
-        "start": 25
-      }
-    ],
-    "shortId": 7108,
-    "tracksCount": 1,
-    "search": "akirayamaokafeatmaryelizabethmcglynnwaitingforyou",
-    "local": false
-  },
-  {
     "id": "akira-yamaoka-feat-mary-elizabeth-mcglynn-youre-not-here",
     "title": "You’re Not Here",
     "artist": "Akira Yamaoka feat. Mary Elizabeth McGlynn",
@@ -7024,60 +6932,6 @@
     "shortId": 148,
     "tracksCount": 1,
     "search": "akuratlubiemowicztoba",
-    "local": false
-  },
-  {
-    "id": "aladdin-ce-reve-bleu",
-    "title": "Ce reve bleu",
-    "artist": "Aladdin",
-    "video": "kGyS2-rZsC0",
-    "language": [
-      "French"
-    ],
-    "bpm": 258,
-    "gap": 11450.627906976744,
-    "year": "1992",
-    "artistOrigin": "GB",
-    "lastUpdate": "2025-04-19T00:12:23.938Z",
-    "realBpm": 54.48,
-    "volume": 1,
-    "manualVolume": 1,
-    "tracks": [
-      {
-        "start": 17
-      }
-    ],
-    "shortId": 149,
-    "tracksCount": 1,
-    "search": "aladdincerevebleu",
-    "local": false
-  },
-  {
-    "id": "alain-bashung-gaby-oh-gaby-training",
-    "title": "Gaby oh Gaby training",
-    "artist": "Alain Bashung",
-    "video": "KgLsxmqlEQc",
-    "language": [
-      "French"
-    ],
-    "bpm": 383.8,
-    "gap": 15693.845752996353,
-    "year": "1980",
-    "artistOrigin": "FR",
-    "lastUpdate": "2026-11-03T04:48:25.952Z",
-    "realBpm": 383.2,
-    "volume": 1,
-    "sourceUrl": "https://www.youtube.com/watch?v=KgLsxmqlEQc",
-    "duration": 236,
-    "tracks": [
-      {
-        "name": "Alain Bashung - Gaby oh Gaby",
-        "start": 26
-      }
-    ],
-    "shortId": 6888,
-    "tracksCount": 1,
-    "search": "alainbashunggabyohgabytraining",
     "local": false
   },
   {
@@ -8881,34 +8735,6 @@
     "shortId": 191,
     "tracksCount": 1,
     "search": "aliciakeysgirlonfire",
-    "local": false
-  },
-  {
-    "id": "alicia-keys-if-i-aint-got-you-full-version",
-    "title": "If I Ain’t Got You (Full Version)",
-    "artist": "Alicia Keys",
-    "video": "P1pIzbHC1Z4",
-    "language": [
-      "English"
-    ],
-    "bpm": 237,
-    "gap": 8037.341772151899,
-    "year": "2003",
-    "artistOrigin": "US",
-    "lastUpdate": "2026-10-30T03:49:00.664Z",
-    "genre": "Contemporary R&B, Soul",
-    "realBpm": 87,
-    "volume": 1,
-    "author": "fizzypop109",
-    "duration": 229,
-    "tracks": [
-      {
-        "start": 16
-      }
-    ],
-    "shortId": 6832,
-    "tracksCount": 1,
-    "search": "aliciakeysifiaintgotyoufullversion",
     "local": false
   },
   {
@@ -14625,35 +14451,6 @@
     "local": false
   },
   {
-    "id": "ariana-grande-positions",
-    "title": "Positions",
-    "artist": "Ariana Grande",
-    "video": "AoAm4om0wTs",
-    "language": [
-      "English"
-    ],
-    "bpm": 246,
-    "gap": 1099.3902439024391,
-    "year": "2020",
-    "artistOrigin": "US",
-    "lastUpdate": "2023-11-07T21:41:35.553Z",
-    "genre": "Pop",
-    "realBpm": 144,
-    "volume": 0.9,
-    "manualVolume": 0.64,
-    "author": "asdFer",
-    "duration": 189,
-    "tracks": [
-      {
-        "start": 16
-      }
-    ],
-    "shortId": 336,
-    "tracksCount": 1,
-    "search": "arianagrandepositions",
-    "local": false
-  },
-  {
     "id": "ariana-grande-raindrops-an-angel-cried",
     "title": "Raindrops (An Angel Cried)",
     "artist": "Ariana Grande",
@@ -15471,38 +15268,6 @@
     "shortId": 356,
     "tracksCount": 1,
     "search": "asiankungfugenerationafterdark",
-    "local": false
-  },
-  {
-    "id": "asian-kung-fu-generation-haruka-kanata",
-    "title": "Haruka Kanata",
-    "artist": "Asian Kung-Fu Generation",
-    "video": "nJ6A6GC_ki4",
-    "language": [
-      "Japanese"
-    ],
-    "bpm": 350.1,
-    "gap": 30444.567266495287,
-    "year": "2005",
-    "artistOrigin": "JP",
-    "lastUpdate": "2024-12-31T00:11:37.574Z",
-    "edition": "Hokai Amplifier",
-    "genre": "J-Rock",
-    "realBpm": 175,
-    "previewStart": 50,
-    "previewEnd": 80,
-    "volume": 0.5,
-    "manualVolume": 0.87,
-    "author": "Rubilosde",
-    "duration": 247,
-    "tracks": [
-      {
-        "start": 23
-      }
-    ],
-    "shortId": 357,
-    "tracksCount": 1,
-    "search": "asiankungfugenerationharukakanata",
     "local": false
   },
   {
@@ -23417,38 +23182,6 @@
     "local": false
   },
   {
-    "id": "beyonce-if-i-were-a-boy-album-version",
-    "title": "If I Were A Boy (Album Version)",
-    "artist": "Beyoncé",
-    "video": "Xk2O_p1ICco",
-    "language": [
-      "English"
-    ],
-    "bpm": 360,
-    "gap": 4540,
-    "year": "2008",
-    "artistOrigin": "US",
-    "lastUpdate": "2024-05-07T06:05:12.125Z",
-    "edition": "[SC]-Songs",
-    "genre": "R&B",
-    "realBpm": 90,
-    "previewStart": 48,
-    "previewEnd": 73,
-    "volume": 0.72,
-    "manualVolume": 0.5,
-    "author": "IC",
-    "duration": 257,
-    "tracks": [
-      {
-        "start": 24
-      }
-    ],
-    "shortId": 522,
-    "tracksCount": 1,
-    "search": "beyonceifiwereaboyalbumversion",
-    "local": false
-  },
-  {
     "id": "beyonce-if-i-were-a-boy",
     "title": "If I Were A Boy",
     "artist": "Beyoncé",
@@ -29630,41 +29363,6 @@
     "local": false
   },
   {
-    "id": "bradley-cooper-lady-gaga-shallow",
-    "title": "Shallow",
-    "artist": "Bradley Cooper & Lady Gaga",
-    "video": "bo_efYhYU2A",
-    "language": [
-      "English"
-    ],
-    "bpm": 367.75,
-    "gap": 15220.285520054385,
-    "year": "2018",
-    "artistOrigin": "US",
-    "lastUpdate": "2023-05-06T19:21:28.618Z",
-    "edition": "[DUET]-Songs",
-    "genre": "Pop",
-    "realBpm": 96,
-    "volume": 0.91,
-    "manualVolume": 1,
-    "author": "Bene28",
-    "duration": 217,
-    "tracks": [
-      {
-        "name": "Bradley Cooper",
-        "start": 25
-      },
-      {
-        "name": "Lady Gaga",
-        "start": 1251
-      }
-    ],
-    "shortId": 684,
-    "tracksCount": 2,
-    "search": "bradleycooperladygagashallow",
-    "local": false
-  },
-  {
     "id": "bran-van-astounded",
     "title": "Astounded",
     "artist": "Bran Van",
@@ -33372,34 +33070,6 @@
     "shortId": 796,
     "tracksCount": 1,
     "search": "btsfakelove",
-    "local": false
-  },
-  {
-    "id": "bts-feat-desiigner-mic-drop-steve-aoki-remix",
-    "title": "Mic Drop (Steve Aoki Remix)",
-    "artist": "BTS feat. Desiigner",
-    "video": "kTlv5_Bs8aw",
-    "language": [
-      "English"
-    ],
-    "bpm": 340.2,
-    "gap": 58105.89065255732,
-    "year": "2017",
-    "lastUpdate": "2024-05-11T06:35:35.307Z",
-    "genre": "K-Pop",
-    "realBpm": 170,
-    "volume": 0.5,
-    "manualVolume": 0.81,
-    "author": "magic-ott",
-    "duration": 274,
-    "tracks": [
-      {
-        "start": 23
-      }
-    ],
-    "shortId": 797,
-    "tracksCount": 1,
-    "search": "btsfeatdesiignermicdropsteveaokiremix",
     "local": false
   },
   {
@@ -41521,33 +41191,6 @@
     "local": false
   },
   {
-    "id": "clean-bandit-featuring-zara-larsson-symphony",
-    "title": "Symphony",
-    "artist": "Clean Bandit featuring  Zara Larsson",
-    "video": "aatr_2MstrI",
-    "language": [
-      "English"
-    ],
-    "bpm": 246,
-    "gap": 38704.39024390244,
-    "year": "2017",
-    "lastUpdate": "2024-08-23T06:38:34.529Z",
-    "realBpm": 123,
-    "volume": 0.62,
-    "manualVolume": 0.73,
-    "author": "lozboorman",
-    "duration": 246,
-    "tracks": [
-      {
-        "start": 16
-      }
-    ],
-    "shortId": 982,
-    "tracksCount": 1,
-    "search": "cleanbanditfeaturingzaralarssonsymphony",
-    "local": false
-  },
-  {
     "id": "cleo-alfabet-swiatel",
     "title": "Alfabet Świateł",
     "artist": "Cleo",
@@ -44339,37 +43982,6 @@
     "shortId": 1044,
     "tracksCount": 1,
     "search": "crush40liveandlearn",
-    "local": false
-  },
-  {
-    "id": "crush-40-live-learn",
-    "title": "Live & Learn",
-    "artist": "Crush 40",
-    "video": "My-WSM-6QlE",
-    "language": [
-      "English"
-    ],
-    "bpm": 344,
-    "gap": 16347.093023255813,
-    "year": "2001",
-    "artistOrigin": "JP",
-    "lastUpdate": "2024-04-20T06:51:24.423Z",
-    "genre": "Soundtrack",
-    "realBpm": 172,
-    "previewStart": 41,
-    "previewEnd": 92,
-    "volume": 0.5,
-    "manualVolume": 0.98,
-    "author": "thenail",
-    "duration": 272,
-    "tracks": [
-      {
-        "start": 23
-      }
-    ],
-    "shortId": 1045,
-    "tracksCount": 1,
-    "search": "crush40livelearn",
     "local": false
   },
   {
@@ -50020,33 +49632,6 @@
     "local": false
   },
   {
-    "id": "demi-lovato-joe-jonas-this-is-me",
-    "title": "This Is Me",
-    "artist": "Demi Lovato & Joe Jonas",
-    "video": "AowFvM3WYFs",
-    "language": [
-      "English"
-    ],
-    "bpm": 272.76,
-    "gap": 9180.11878574571,
-    "year": "2008",
-    "lastUpdate": "2026-11-08T03:43:10.324Z",
-    "genre": "Pop",
-    "realBpm": 91,
-    "volume": 1,
-    "author": "britneyblisswilliams",
-    "duration": 195,
-    "tracks": [
-      {
-        "start": 18
-      }
-    ],
-    "shortId": 6989,
-    "tracksCount": 1,
-    "search": "demilovatojoejonasthisisme",
-    "local": false
-  },
-  {
     "id": "demi-lovato-la-la-land",
     "title": "La La Land",
     "artist": "Demi Lovato",
@@ -52954,33 +52539,6 @@
     "local": false
   },
   {
-    "id": "disneys-camp-rock-demi-lovato-joe-jonas-this-is-me",
-    "title": "This Is Me",
-    "artist": "Disney’s Camp Rock (Demi Lovato & Joe Jonas)",
-    "video": "fD6DoCTnTaY",
-    "language": [
-      "English"
-    ],
-    "bpm": 272.76,
-    "gap": 4410.118785745711,
-    "year": "2008",
-    "lastUpdate": "2026-10-12T03:36:49.819Z",
-    "genre": "Soundtrack",
-    "realBpm": 91,
-    "volume": 1,
-    "author": "Phen1x",
-    "duration": 190,
-    "tracks": [
-      {
-        "start": 18
-      }
-    ],
-    "shortId": 6606,
-    "tracksCount": 1,
-    "search": "disneyscamprockdemilovatojoejonasthisisme",
-    "local": false
-  },
-  {
     "id": "disneys-camp-rock-joe-jonas-gotta-find-you",
     "title": "Gotta Find You",
     "artist": "Disney’s Camp Rock (Joe Jonas)",
@@ -54752,33 +54310,6 @@
     "local": false
   },
   {
-    "id": "disneys-mulan-comme-un-homme",
-    "title": "Comme un homme",
-    "artist": "Disney’s Mulan",
-    "video": "cVWrCr2Hh1A",
-    "language": [
-      "French"
-    ],
-    "bpm": 218.75,
-    "gap": 85590,
-    "year": "1998",
-    "lastUpdate": "2026-08-28T12:06:04.831Z",
-    "genre": "Soundtrack",
-    "realBpm": 130,
-    "volume": 1,
-    "author": "khorne59",
-    "duration": 269,
-    "tracks": [
-      {
-        "start": 14
-      }
-    ],
-    "shortId": 6219,
-    "tracksCount": 1,
-    "search": "disneysmulancommeunhomme",
-    "local": false
-  },
-  {
     "id": "disneys-mulan-ill-make-a-man-out-of-you",
     "title": "I’ll Make A Man Out Of You",
     "artist": "Disney’s Mulan",
@@ -55250,33 +54781,6 @@
     "shortId": 1289,
     "tracksCount": 1,
     "search": "disneystanglediseethelight",
-    "local": false
-  },
-  {
-    "id": "disneys-tangled-mandy-moore-when-will-my-life-begin",
-    "title": "When Will My Life Begin",
-    "artist": "Disney’s Tangled (Mandy Moore)",
-    "video": "Loo41xVIb_I",
-    "language": [
-      "English"
-    ],
-    "bpm": 432,
-    "gap": 52553.055555555555,
-    "year": "2010",
-    "lastUpdate": "2026-11-05T04:32:28.277Z",
-    "genre": "Soundtrack",
-    "realBpm": 108,
-    "volume": 1,
-    "author": "matthu",
-    "duration": 186,
-    "tracks": [
-      {
-        "start": 29
-      }
-    ],
-    "shortId": 6932,
-    "tracksCount": 1,
-    "search": "disneystangledmandymoorewhenwillmylifebegin",
     "local": false
   },
   {
@@ -77857,34 +77361,6 @@
     "local": false
   },
   {
-    "id": "glee-cast-forget-you",
-    "title": "Forget You",
-    "artist": "Glee Cast",
-    "video": "TFSsoWv7zOs",
-    "language": [
-      "English"
-    ],
-    "bpm": 255.02,
-    "gap": 17200.078425221553,
-    "year": "2010",
-    "artistOrigin": "US",
-    "lastUpdate": "2024-03-20T06:29:33.089Z",
-    "videoGap": 2,
-    "realBpm": 126,
-    "volume": 0.68,
-    "manualVolume": 0.68,
-    "author": "Coppolatte",
-    "tracks": [
-      {
-        "start": 17
-      }
-    ],
-    "shortId": 1757,
-    "tracksCount": 1,
-    "search": "gleecastforgetyou",
-    "local": false
-  },
-  {
     "id": "glee-cast-get-it-right",
     "title": "Get It Right",
     "artist": "Glee Cast",
@@ -78022,39 +77498,6 @@
     "shortId": 6866,
     "tracksCount": 1,
     "search": "gleecastkristenchenowethleamichelemaybethistime",
-    "local": false
-  },
-  {
-    "id": "glee-cast-lea-michele-jake-zyrus-telephone",
-    "title": "Telephone",
-    "artist": "Glee Cast (Lea Michele & Jake Zyrus)",
-    "video": "mgkA_7nfVfk",
-    "language": [
-      "English"
-    ],
-    "bpm": 244,
-    "gap": 7176.393442622951,
-    "year": "2012",
-    "artistOrigin": "US",
-    "lastUpdate": "2025-03-13T06:44:39.674Z",
-    "genre": "Pop",
-    "realBpm": 122,
-    "volume": 0.51,
-    "manualVolume": 0.81,
-    "author": "petiboy20",
-    "duration": 224,
-    "tracks": [
-      {
-        "name": "Telephone",
-        "start": 16
-      },
-      {
-        "start": 1422
-      }
-    ],
-    "shortId": 1762,
-    "tracksCount": 2,
-    "search": "gleecastleamichelejakezyrustelephone",
     "local": false
   },
   {
@@ -78197,38 +77640,6 @@
     "shortId": 1765,
     "tracksCount": 1,
     "search": "gleecasttotaleclipseoftheheart",
-    "local": false
-  },
-  {
-    "id": "glen-hansard-and-marketa-irglova-falling-slowly-once-ost",
-    "title": "Falling Slowly (Once OST)",
-    "artist": "Glen Hansard And Markéta Irglová",
-    "video": "k8mtXwtapX4",
-    "language": [
-      "English"
-    ],
-    "bpm": 288.8,
-    "gap": 12983.157894736842,
-    "year": "2007",
-    "lastUpdate": "2024-07-11T00:11:05.916Z",
-    "realBpm": 137,
-    "volume": 1,
-    "manualVolume": 1,
-    "author": "GiantCrab",
-    "duration": 243,
-    "tracks": [
-      {
-        "name": "Glen Hansard",
-        "start": 19
-      },
-      {
-        "name": "Markéta Irglová",
-        "start": 291
-      }
-    ],
-    "shortId": 1766,
-    "tracksCount": 2,
-    "search": "glenhansardandmarketairglovafallingslowlyonceost",
     "local": false
   },
   {
@@ -80809,34 +80220,6 @@
     "shortId": 1812,
     "tracksCount": 1,
     "search": "greendaywaiting",
-    "local": false
-  },
-  {
-    "id": "green-day-wake-me-up-when-september-ends-short-version",
-    "title": "Wake Me Up When September Ends (Short Version)",
-    "artist": "Green Day",
-    "video": "R1JXYgwwDeY",
-    "language": [
-      "English"
-    ],
-    "bpm": 315,
-    "gap": 90390,
-    "year": "2004",
-    "artistOrigin": "US",
-    "lastUpdate": "2026-01-17T18:57:03.891Z",
-    "realBpm": 24,
-    "volume": 0.5,
-    "author": "bohning",
-    "sourceUrl": "Green Day - Wake Me Up When September Ends (Short Version)",
-    "duration": 410,
-    "tracks": [
-      {
-        "start": 21
-      }
-    ],
-    "shortId": 5479,
-    "tracksCount": 1,
-    "search": "greendaywakemeupwhenseptemberendsshortversion",
     "local": false
   },
   {
@@ -85875,34 +85258,6 @@
     "shortId": 1908,
     "tracksCount": 1,
     "search": "highschoolmusicalgottagomyownway",
-    "local": false
-  },
-  {
-    "id": "high-school-musical-just-wanna-be-with-you",
-    "title": "Just Wanna Be With You",
-    "artist": "High School Musical",
-    "video": "mueirlYAwlI",
-    "language": [
-      "English"
-    ],
-    "bpm": 300,
-    "gap": 780,
-    "year": "2008",
-    "artistOrigin": "US",
-    "lastUpdate": "2023-11-07T21:41:36.085Z",
-    "edition": "Sing It HSM3 USA",
-    "realBpm": 102,
-    "volume": 1,
-    "manualVolume": 0.77,
-    "duration": 149,
-    "tracks": [
-      {
-        "start": 20
-      }
-    ],
-    "shortId": 1909,
-    "tracksCount": 1,
-    "search": "highschoolmusicaljustwannabewithyou",
     "local": false
   },
   {
@@ -96531,34 +95886,6 @@
     "local": false
   },
   {
-    "id": "john-mayer-free-fallin-live-at-the-nokia-theatre",
-    "title": "Free Fallin’ (Live At The Nokia Theatre)",
-    "artist": "John Mayer",
-    "video": "20Ov0cDPZy8",
-    "language": [
-      "English"
-    ],
-    "bpm": 400,
-    "gap": 22207.5,
-    "year": "2009",
-    "artistOrigin": "US",
-    "lastUpdate": "2024-07-09T03:19:13.670Z",
-    "realBpm": 174,
-    "volume": 1,
-    "manualVolume": 0.86,
-    "author": "davidlink",
-    "duration": 243,
-    "tracks": [
-      {
-        "start": 27
-      }
-    ],
-    "shortId": 2141,
-    "tracksCount": 1,
-    "search": "johnmayerfreefallinliveatthenokiatheatre",
-    "local": false
-  },
-  {
     "id": "john-mayer-free-fallin",
     "title": "Free Fallin’",
     "artist": "John Mayer",
@@ -96640,37 +95967,6 @@
     "shortId": 7042,
     "tracksCount": 1,
     "search": "johnmichaelhowellstoryofawarrior",
-    "local": false
-  },
-  {
-    "id": "john-rzeznik-im-still-here",
-    "title": "I'm Still Here",
-    "artist": "John Rzeznik",
-    "video": "bsOwYw9TkJM",
-    "language": [
-      "English"
-    ],
-    "bpm": 222.94,
-    "gap": 11335.759845698394,
-    "year": "2002",
-    "artistOrigin": "US",
-    "lastUpdate": "2024-09-25T00:16:30.167Z",
-    "genre": "Anime",
-    "realBpm": 111,
-    "previewStart": 60,
-    "volume": 0.65,
-    "manualVolume": 0.73,
-    "author": "REL",
-    "sourceUrl": "https://www.youtube.com/watch?v=bsOwYw9TkJM",
-    "duration": 245,
-    "tracks": [
-      {
-        "start": 15
-      }
-    ],
-    "shortId": 2144,
-    "tracksCount": 1,
-    "search": "johnrzeznikimstillhere",
     "local": false
   },
   {
@@ -104794,35 +104090,6 @@
     "local": false
   },
   {
-    "id": "kelly-clarkson-because-of-you",
-    "title": "Because Of You",
-    "artist": "Kelly Clarkson",
-    "video": "Ra-Om7UMSJc",
-    "language": [
-      "English"
-    ],
-    "bpm": 280,
-    "gap": 732.1428571428572,
-    "year": "2005",
-    "artistOrigin": "US",
-    "lastUpdate": "2024-05-20T19:25:45.469Z",
-    "genre": "Pop",
-    "realBpm": 140,
-    "volume": 0.76,
-    "manualVolume": 0.76,
-    "author": "perzu25",
-    "duration": 224,
-    "tracks": [
-      {
-        "start": 19
-      }
-    ],
-    "shortId": 2343,
-    "tracksCount": 1,
-    "search": "kellyclarksonbecauseofyou",
-    "local": false
-  },
-  {
     "id": "kelly-clarkson-behind-these-hazel-eyes",
     "title": "Behind These Hazel Eyes",
     "artist": "Kelly Clarkson",
@@ -109025,35 +108292,6 @@
     "shortId": 7230,
     "tracksCount": 1,
     "search": "kygostoletheshowlyricsfeatparsonjames",
-    "local": false
-  },
-  {
-    "id": "kygo-stole-the-show",
-    "title": "Stole the Show",
-    "artist": "Kygo",
-    "video": "Vs3LXhqm5h4",
-    "language": [
-      "en"
-    ],
-    "bpm": 397.54,
-    "gap": 1441.2345927453844,
-    "year": "2016",
-    "artistOrigin": "NO",
-    "lastUpdate": "2026-11-03T04:48:29.383Z",
-    "genre": "Dance",
-    "realBpm": 100,
-    "previewStart": 41.32,
-    "volume": 1,
-    "author": "Mrs_Luu_x3",
-    "duration": 219,
-    "tracks": [
-      {
-        "start": 27
-      }
-    ],
-    "shortId": 6893,
-    "tracksCount": 1,
-    "search": "kygostoletheshow",
     "local": false
   },
   {
@@ -114548,34 +113786,6 @@
     "shortId": 2528,
     "tracksCount": 1,
     "search": "lesserafimsmart",
-    "local": false
-  },
-  {
-    "id": "lea-salonga-and-brad-kane-a-whole-new-world",
-    "title": "A Whole New World",
-    "artist": "Lea Salonga and Brad Kane",
-    "video": "EXTLJmYsaUQ",
-    "language": [
-      "English"
-    ],
-    "bpm": 230.4,
-    "gap": 22625,
-    "year": "1992",
-    "lastUpdate": "2024-02-13T05:38:34.366Z",
-    "genre": "Disney",
-    "realBpm": 108,
-    "volume": 0.84,
-    "manualVolume": 0.81,
-    "author": "varisha",
-    "duration": 165,
-    "tracks": [
-      {
-        "start": 16
-      }
-    ],
-    "shortId": 2529,
-    "tracksCount": 1,
-    "search": "leasalongaandbradkaneawholenewworld",
     "local": false
   },
   {
@@ -125116,35 +124326,6 @@
     "local": false
   },
   {
-    "id": "mandy-moore-when-will-my-life-begin",
-    "title": "When Will My Life Begin",
-    "artist": "Mandy Moore",
-    "video": "kRXmAIHYQR4",
-    "language": [
-      "English"
-    ],
-    "bpm": 431.88,
-    "gap": 12652.775771047513,
-    "year": "2010",
-    "artistOrigin": "US",
-    "lastUpdate": "2024-02-13T06:15:26.577Z",
-    "genre": "Disney",
-    "realBpm": 108,
-    "volume": 0.79,
-    "manualVolume": 0.73,
-    "author": "varisha",
-    "duration": 148,
-    "tracks": [
-      {
-        "start": 29
-      }
-    ],
-    "shortId": 2764,
-    "tracksCount": 1,
-    "search": "mandymoorewhenwillmylifebegin",
-    "local": false
-  },
-  {
     "id": "maneskin-beggin",
     "title": "Beggin’",
     "artist": "Måneskin",
@@ -129469,33 +128650,6 @@
     "shortId": 2884,
     "tracksCount": 1,
     "search": "maurenmendozafantasiadepegaso",
-    "local": false
-  },
-  {
-    "id": "mauren-mendoza-pegasus-fantasy",
-    "title": "Pegasus Fantasy",
-    "artist": "Mauren Mendoza",
-    "video": "_6dbcQaOddk",
-    "language": [
-      "Spanish"
-    ],
-    "bpm": 327.28,
-    "gap": 12577.689073576143,
-    "year": "2004",
-    "lastUpdate": "2024-09-25T00:16:30.172Z",
-    "realBpm": 165,
-    "volume": 1,
-    "manualVolume": 1,
-    "author": "Sint seya",
-    "duration": 85,
-    "tracks": [
-      {
-        "start": 22
-      }
-    ],
-    "shortId": 2885,
-    "tracksCount": 1,
-    "search": "maurenmendozapegasusfantasy",
     "local": false
   },
   {
@@ -134682,34 +133836,6 @@
     "local": false
   },
   {
-    "id": "miley-cyrus-flowers-the-backyard-sessions",
-    "title": "Flowers (The Backyard Sessions)",
-    "artist": "Miley Cyrus",
-    "video": "QNv8iODCAwE",
-    "language": [
-      "English"
-    ],
-    "bpm": 236,
-    "gap": 3523.0508474576272,
-    "year": "2023",
-    "artistOrigin": "US",
-    "lastUpdate": "2026-10-29T03:46:33.761Z",
-    "genre": "Pop",
-    "realBpm": 118,
-    "volume": 1,
-    "author": "vicktoben",
-    "duration": 195,
-    "tracks": [
-      {
-        "start": 16
-      }
-    ],
-    "shortId": 6793,
-    "tracksCount": 1,
-    "search": "mileycyrusflowersthebackyardsessions",
-    "local": false
-  },
-  {
     "id": "miley-cyrus-flowers",
     "title": "Flowers",
     "artist": "Miley Cyrus",
@@ -134883,35 +134009,6 @@
     "shortId": 6785,
     "tracksCount": 1,
     "search": "mileycyrusmothersdaughter",
-    "local": false
-  },
-  {
-    "id": "miley-cyrus-nobodys-perfect",
-    "title": "Nobody’s Perfect",
-    "artist": "Miley Cyrus",
-    "video": "t93u0qg5q_M",
-    "language": [
-      "English"
-    ],
-    "bpm": 263.98,
-    "gap": 6737.195242063793,
-    "year": "2007",
-    "artistOrigin": "US",
-    "lastUpdate": "2024-05-12T06:56:56.620Z",
-    "genre": "Pop",
-    "realBpm": 133,
-    "volume": 1,
-    "manualVolume": 1,
-    "author": "perzu25",
-    "duration": 206,
-    "tracks": [
-      {
-        "start": 18
-      }
-    ],
-    "shortId": 3007,
-    "tracksCount": 1,
-    "search": "mileycyrusnobodysperfect",
     "local": false
   },
   {
@@ -137420,37 +136517,6 @@
     "shortId": 3062,
     "tracksCount": 1,
     "search": "motoerheadaceofspades",
-    "local": false
-  },
-  {
-    "id": "moulin-rouge-come-what-may-album-version",
-    "title": "Come What May (Album Version)",
-    "artist": "Moulin Rouge",
-    "video": "2lGP78ckF_Q",
-    "language": [
-      "English"
-    ],
-    "bpm": 264.16,
-    "gap": 35187.8921865536,
-    "year": "2001",
-    "artistOrigin": "SI",
-    "lastUpdate": "2024-06-05T00:10:22.619Z",
-    "realBpm": 132,
-    "volume": 0.65,
-    "manualVolume": 0.86,
-    "author": "Hoanzl",
-    "duration": 293,
-    "tracks": [
-      {
-        "start": 18
-      },
-      {
-        "start": 1655
-      }
-    ],
-    "shortId": 3063,
-    "tracksCount": 2,
-    "search": "moulinrougecomewhatmayalbumversion",
     "local": false
   },
   {
@@ -142224,36 +141290,6 @@
     "local": false
   },
   {
-    "id": "newjeans-league-of-legends-gods",
-    "title": "GODS",
-    "artist": "NewJeans; League of Legends",
-    "video": "C3GouGa0noM",
-    "language": [
-      "English"
-    ],
-    "bpm": 147,
-    "gap": 1959.591836734694,
-    "year": "2023",
-    "artistOrigin": "KR",
-    "lastUpdate": "2024-08-07T20:58:27.602Z",
-    "realBpm": 146,
-    "volume": 0.5,
-    "manualVolume": 0.8,
-    "author": "NewJeans",
-    "sourceUrl": "https://www.youtube.com/watch?v=_03-NQCb-qw",
-    "duration": 256,
-    "tracks": [
-      {
-        "name": "Gods",
-        "start": 10
-      }
-    ],
-    "shortId": 3182,
-    "tracksCount": 1,
-    "search": "newjeansleagueoflegendsgods",
-    "local": false
-  },
-  {
     "id": "newjeans-new-jeans",
     "title": "New Jeans",
     "artist": "NewJeans",
@@ -147010,35 +146046,6 @@
     "shortId": 7078,
     "tracksCount": 1,
     "search": "officialhigedandismsamebluefullversion",
-    "local": false
-  },
-  {
-    "id": "official-hige-dandism-same-blue",
-    "title": "Same Blue",
-    "artist": "Official HIGE DANdism",
-    "video": "d0jg9hNHqn8",
-    "language": [
-      "Japanese"
-    ],
-    "bpm": 368,
-    "gap": 5969.978260869565,
-    "year": "2024",
-    "artistOrigin": "JP",
-    "lastUpdate": "2025-04-19T00:11:53.585Z",
-    "genre": "J-rock",
-    "realBpm": 92,
-    "volume": 1,
-    "manualVolume": 1,
-    "author": "wolf359",
-    "duration": 91,
-    "tracks": [
-      {
-        "start": 25
-      }
-    ],
-    "shortId": 3277,
-    "tracksCount": 1,
-    "search": "officialhigedandismsameblue",
     "local": false
   },
   {
@@ -155319,35 +154326,6 @@
     "shortId": 3481,
     "tracksCount": 2,
     "search": "pnkfeatnateruessjustgivemeareason",
-    "local": false
-  },
-  {
-    "id": "pnk-get-the-party-started-radio-mix",
-    "title": "Get The Party Started (Radio Mix)",
-    "artist": "P!nk",
-    "video": "WJYp_w8Oku8",
-    "language": [
-      "English"
-    ],
-    "bpm": 257.8,
-    "gap": 9530.861132660977,
-    "year": "2001",
-    "artistOrigin": "US",
-    "lastUpdate": "2025-07-27T06:31:17.467Z",
-    "genre": "Pop",
-    "realBpm": 19,
-    "volume": 0.5,
-    "author": "Canni",
-    "sourceUrl": "P!nk - Get The Party Started (Radio Mix)",
-    "duration": 193,
-    "tracks": [
-      {
-        "start": 17
-      }
-    ],
-    "shortId": 5682,
-    "tracksCount": 1,
-    "search": "pnkgetthepartystartedradiomix",
     "local": false
   },
   {
@@ -163980,37 +162958,6 @@
     "local": false
   },
   {
-    "id": "rin-kagamine-tokyo-teddy-bear",
-    "title": "Tokyo Teddy Bear",
-    "artist": "Rin Kagamine",
-    "video": "YTYh3rbXDlY",
-    "language": [
-      "Japanese"
-    ],
-    "bpm": 204.02,
-    "gap": 766.6891481227331,
-    "year": "2011",
-    "lastUpdate": "2024-04-20T06:51:25.136Z",
-    "genre": "Vocaloid",
-    "realBpm": 102,
-    "volume": 0.5,
-    "manualVolume": 0.84,
-    "author": "subkei",
-    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=subkei",
-    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Rin%20Kagamine&cancion=Tokyo%20Teddy%20Bear",
-    "duration": 194,
-    "tracks": [
-      {
-        "name": "Tokyo Teddy Bear",
-        "start": 14
-      }
-    ],
-    "shortId": 3685,
-    "tracksCount": 1,
-    "search": "rinkagaminetokyoteddybear",
-    "local": false
-  },
-  {
     "id": "rin-kagamine-x-luka-megurine-drop-pop-candy",
     "title": "drop pop candy",
     "artist": "Rin Kagamine x Luka Megurine",
@@ -164124,37 +163071,6 @@
     "shortId": 6257,
     "tracksCount": 1,
     "search": "ringosheenahonnouinstinct",
-    "local": false
-  },
-  {
-    "id": "ringo-sheena-honnou",
-    "title": "Honnou",
-    "artist": "Ringo Sheena",
-    "video": "Xz-qUcF6dIM",
-    "language": [
-      "Japanese"
-    ],
-    "bpm": 193.98,
-    "gap": 9268.74172595113,
-    "year": "1999",
-    "artistOrigin": "JP",
-    "lastUpdate": "2026-06-30T13:24:01.945Z",
-    "genre": "Alternative rock",
-    "realBpm": 97,
-    "previewStart": 30,
-    "previewEnd": 73,
-    "volume": 1,
-    "author": "Subkei",
-    "sourceUrl": "https://www.youtube.com/watch?v=Xz-qUcF6dIM",
-    "duration": 256,
-    "tracks": [
-      {
-        "start": 13
-      }
-    ],
-    "shortId": 5961,
-    "tracksCount": 1,
-    "search": "ringosheenahonnou",
     "local": false
   },
   {
@@ -173493,36 +172409,6 @@
     "local": false
   },
   {
-    "id": "shakira-zoo-de-disney-zootopia-2",
-    "title": "Zoo (De \"Disney Zootopia 2\")",
-    "artist": "Shakira",
-    "video": "Kw3935PH01E",
-    "language": [
-      "English"
-    ],
-    "bpm": 258,
-    "gap": -95.11627906976742,
-    "year": "2025",
-    "artistOrigin": "CO",
-    "lastUpdate": "2026-09-13T12:29:17.888Z",
-    "genre": "Sountrack",
-    "realBpm": 129,
-    "volume": 1,
-    "author": "vicktoben",
-    "sourceUrl": "https://www.youtube.com/watch?v=Kw3935PH01E",
-    "duration": 198,
-    "tracks": [
-      {
-        "name": "Shakira - Zoo",
-        "start": 8
-      }
-    ],
-    "shortId": 6326,
-    "tracksCount": 1,
-    "search": "shakirazoodedisneyzootopia2",
-    "local": false
-  },
-  {
     "id": "shania-twain-any-man-of-mine",
     "title": "Any Man Of Mine",
     "artist": "Shania Twain",
@@ -177427,34 +176313,6 @@
     "shortId": 4010,
     "tracksCount": 1,
     "search": "smashintopiecessixfeetunder",
-    "local": false
-  },
-  {
-    "id": "smash-mouth-all-star-but-the-whole-song-is-sung-on-a-c-note",
-    "title": "All Star but the whole song is sung on a C Note",
-    "artist": "Smash Mouth",
-    "video": "qVIyE5717AU",
-    "language": [
-      "English"
-    ],
-    "bpm": 208,
-    "gap": 200,
-    "year": "1999",
-    "artistOrigin": "US",
-    "realBpm": 103,
-    "volume": 0.52,
-    "author": "TeLiXj",
-    "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
-    "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Smash%20Mouth&cancion=All%20Star",
-    "duration": 201,
-    "tracks": [
-      {
-        "start": 0
-      }
-    ],
-    "shortId": 4011,
-    "tracksCount": 1,
-    "search": "smashmouthallstarbutthewholesongissungonacnote",
     "local": false
   },
   {
@@ -181834,36 +180692,6 @@
     "shortId": 6801,
     "tracksCount": 1,
     "search": "sugarrayeverymorning",
-    "local": false
-  },
-  {
-    "id": "suisei-hoshimachi-bibbidiba",
-    "title": "BIBBIDIBA",
-    "artist": "Suisei Hoshimachi",
-    "video": "8ZP5eqm4JqM",
-    "language": [
-      "Japanese"
-    ],
-    "bpm": 240,
-    "gap": 11562,
-    "year": "2024",
-    "artistOrigin": "JP",
-    "lastUpdate": "2026-11-11T04:02:40.670Z",
-    "genre": "Jpop",
-    "realBpm": 120,
-    "volume": 0.9,
-    "author": "subkei",
-    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=subkei",
-    "sourceUrl": "https://ultrastar-es.org/en/canciones",
-    "duration": 172,
-    "tracks": [
-      {
-        "start": 16
-      }
-    ],
-    "shortId": 7213,
-    "tracksCount": 1,
-    "search": "suiseihoshimachibibbidiba",
     "local": false
   },
   {
@@ -186270,35 +185098,6 @@
     "local": false
   },
   {
-    "id": "taylor-swift-all-too-well-10-minute-version",
-    "title": "All Too Well (10 Minute Version)",
-    "artist": "Taylor Swift",
-    "video": "sRxrwjOtIag",
-    "language": [
-      "English"
-    ],
-    "bpm": 398.44,
-    "gap": 22143.53578957936,
-    "year": "2021",
-    "artistOrigin": "US",
-    "lastUpdate": "2024-09-23T00:17:35.720Z",
-    "realBpm": 93,
-    "volume": 1,
-    "manualVolume": 0.76,
-    "author": "UltraSinger [GitHub]",
-    "sourceUrl": "https://www.youtube.com/watch?v=sRxrwjOtIag&feature=youtu.be",
-    "duration": 613,
-    "tracks": [
-      {
-        "start": 27
-      }
-    ],
-    "shortId": 4188,
-    "tracksCount": 1,
-    "search": "taylorswiftalltoowell10minuteversion",
-    "local": false
-  },
-  {
     "id": "taylor-swift-all-too-well",
     "title": "All Too Well",
     "artist": "Taylor Swift",
@@ -187171,34 +185970,6 @@
     "shortId": 6487,
     "tracksCount": 1,
     "search": "taylorswifthitsdifferent",
-    "local": false
-  },
-  {
-    "id": "taylor-swift-how-you-get-the-girl-taylors-version",
-    "title": "How You Get The Girl (Taylor's Version)",
-    "artist": "Taylor Swift",
-    "video": "rnwD7veCoFQ",
-    "language": [
-      "English"
-    ],
-    "bpm": 240.05,
-    "gap": 27.669235575921675,
-    "year": "2014",
-    "artistOrigin": "US",
-    "lastUpdate": "2026-10-08T20:48:44.627Z",
-    "genre": "Pop",
-    "realBpm": 120,
-    "volume": 1,
-    "author": "amro98",
-    "duration": 253,
-    "tracks": [
-      {
-        "start": 13
-      }
-    ],
-    "shortId": 6537,
-    "tracksCount": 1,
-    "search": "taylorswifthowyougetthegirltaylorsversion",
     "local": false
   },
   {
@@ -193317,36 +192088,6 @@
     "shortId": 4342,
     "tracksCount": 1,
     "search": "thekidlaroifeatjustinbieberstay",
-    "local": false
-  },
-  {
-    "id": "the-kid-laroi-justin-bieber-stay",
-    "title": "Stay",
-    "artist": "The Kid Laroi & Justin Bieber",
-    "video": "kTJczUoc26U",
-    "language": [
-      "English"
-    ],
-    "bpm": 331.73,
-    "gap": 29805.21508455672,
-    "year": "2019",
-    "lastUpdate": "2024-05-08T16:45:43.830Z",
-    "genre": "Pop",
-    "realBpm": 170,
-    "previewStart": 65,
-    "previewEnd": 93,
-    "volume": 0.55,
-    "manualVolume": 0.71,
-    "author": "The Kid Laori and Justin Bieber",
-    "duration": 158,
-    "tracks": [
-      {
-        "start": 22
-      }
-    ],
-    "shortId": 4343,
-    "tracksCount": 1,
-    "search": "thekidlaroijustinbieberstay",
     "local": false
   },
   {
@@ -201870,36 +200611,6 @@
     "local": false
   },
   {
-    "id": "toranja-carta-2",
-    "title": "Carta 2",
-    "artist": "Toranja",
-    "video": "GKl6hK2IzbY",
-    "language": [
-      "Portuguese"
-    ],
-    "bpm": 320,
-    "gap": 19593.625,
-    "year": "2003",
-    "lastUpdate": "2024-06-19T00:10:48.050Z",
-    "edition": "2",
-    "genre": "Pop",
-    "realBpm": 80,
-    "previewStart": 58,
-    "previewEnd": 89,
-    "volume": 1,
-    "manualVolume": 1,
-    "duration": 284,
-    "tracks": [
-      {
-        "start": 21
-      }
-    ],
-    "shortId": 4531,
-    "tracksCount": 1,
-    "search": "toranjacarta2",
-    "local": false
-  },
-  {
     "id": "toranja-carta",
     "title": "Carta",
     "artist": "Toranja",
@@ -205367,34 +204078,6 @@
     "shortId": 4608,
     "tracksCount": 1,
     "search": "usherniceslow",
-    "local": false
-  },
-  {
-    "id": "usher-pitbull-dj-got-us-falling-in-love-again",
-    "title": "DJ Got Us Falling In Love Again",
-    "artist": "Usher & Pitbull",
-    "video": "C-dvTjK_07c",
-    "language": [
-      "English"
-    ],
-    "bpm": 239.98,
-    "gap": 27289.916659721643,
-    "year": "2010",
-    "lastUpdate": "2024-02-13T05:38:45.713Z",
-    "genre": "R&B",
-    "realBpm": 119,
-    "volume": 1,
-    "manualVolume": 0.62,
-    "author": "vicktoben",
-    "duration": 247,
-    "tracks": [
-      {
-        "start": 16
-      }
-    ],
-    "shortId": 4609,
-    "tracksCount": 1,
-    "search": "usherpitbulldjgotusfallinginloveagain",
     "local": false
   },
   {
@@ -209842,35 +208525,6 @@
     "local": false
   },
   {
-    "id": "whitesnake-here-i-go-again-1987",
-    "title": "Here I Go Again (1987)",
-    "artist": "Whitesnake",
-    "video": "WyF8RHM1OCg",
-    "language": [
-      "English"
-    ],
-    "bpm": 361.15,
-    "gap": 11203.184272462966,
-    "year": "1987",
-    "artistOrigin": "GB",
-    "lastUpdate": "2024-02-08T06:16:42.907Z",
-    "genre": "None",
-    "realBpm": 174,
-    "volume": 1,
-    "manualVolume": 0.99,
-    "author": "mk90",
-    "duration": 272,
-    "tracks": [
-      {
-        "start": 24
-      }
-    ],
-    "shortId": 4699,
-    "tracksCount": 1,
-    "search": "whitesnakehereigoagain1987",
-    "local": false
-  },
-  {
     "id": "whitesnake-here-i-go-again",
     "title": "Here I Go Again",
     "artist": "Whitesnake",
@@ -210219,35 +208873,6 @@
     "shortId": 4711,
     "tracksCount": 2,
     "search": "wickedforgood",
-    "local": false
-  },
-  {
-    "id": "wicked-musical-defying-gravity",
-    "title": "Defying Gravity",
-    "artist": "Wicked (Musical)",
-    "video": "l0Bs_eaXaCo",
-    "language": [
-      "English"
-    ],
-    "bpm": 316.12,
-    "gap": 12.946982158673904,
-    "year": "2003",
-    "lastUpdate": "2026-10-10T21:25:56.567Z",
-    "genre": "Musical",
-    "realBpm": 88,
-    "volume": 1,
-    "author": "crimmins",
-    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=9750",
-    "duration": 352,
-    "tracks": [
-      {
-        "name": "Defying Gravity",
-        "start": 9
-      }
-    ],
-    "shortId": 6579,
-    "tracksCount": 1,
-    "search": "wickedmusicaldefyinggravity",
     "local": false
   },
   {
@@ -210808,36 +209433,6 @@
     "shortId": 6641,
     "tracksCount": 1,
     "search": "williamigotitfrommymama",
-    "local": false
-  },
-  {
-    "id": "william-thatpower",
-    "title": "#thatPOWER",
-    "artist": "will.i.am",
-    "video": "DGIgXP9SvB8",
-    "language": [
-      "English"
-    ],
-    "bpm": 255.88,
-    "gap": 28803.43911208379,
-    "year": "2013",
-    "artistOrigin": "US",
-    "lastUpdate": "2024-08-23T06:38:45.689Z",
-    "genre": "Pop",
-    "realBpm": 128,
-    "volume": 1,
-    "manualVolume": 0.78,
-    "author": "aac",
-    "duration": 293,
-    "tracks": [
-      {
-        "name": "#thatPOWER",
-        "start": 17
-      }
-    ],
-    "shortId": 4726,
-    "tracksCount": 1,
-    "search": "williamthatpower",
     "local": false
   },
   {
@@ -212396,33 +210991,6 @@
     "local": false
   },
   {
-    "id": "yoasobi-yoru-ni-kakeru",
-    "title": "Yoru ni Kakeru",
-    "artist": "YOASOBI",
-    "video": "xtfXl7TZTac",
-    "language": [
-      "Japanese"
-    ],
-    "bpm": 260.02,
-    "gap": 821.3062072148297,
-    "year": "2019",
-    "artistOrigin": "JP",
-    "lastUpdate": "2026-11-11T04:02:49.760Z",
-    "realBpm": 130,
-    "volume": 1,
-    "author": "subkei",
-    "duration": 262,
-    "tracks": [
-      {
-        "start": 17
-      }
-    ],
-    "shortId": 7249,
-    "tracksCount": 1,
-    "search": "yoasobiyorunikakeru",
-    "local": false
-  },
-  {
     "id": "yoasobi-yuusha",
     "title": "Yuusha",
     "artist": "YOASOBI",
@@ -212568,35 +211136,6 @@
     "local": false
   },
   {
-    "id": "yoko-takahashi-zankoku-na-tenshi-no-te-ze",
-    "title": "Zankoku na Tenshi no Te-ze",
-    "artist": "Yoko Takahashi",
-    "video": "SjBOC94WHBQ",
-    "language": [
-      "Japanese"
-    ],
-    "bpm": 258.02,
-    "gap": 521.7045190295325,
-    "year": "1995",
-    "artistOrigin": "JP",
-    "lastUpdate": "2024-07-11T00:11:15.377Z",
-    "genre": "Anime",
-    "realBpm": 124,
-    "previewStart": 59,
-    "previewEnd": 76,
-    "volume": 0.98,
-    "manualVolume": 0.98,
-    "tracks": [
-      {
-        "start": 17
-      }
-    ],
-    "shortId": 4763,
-    "tracksCount": 1,
-    "search": "yokotakahashizankokunatenshinoteze",
-    "local": false
-  },
-  {
     "id": "yoomiii-a-kiss-is-all-i-miss",
     "title": "A Kiss Is All I Miss",
     "artist": "Yoomiii",
@@ -212622,36 +211161,6 @@
     "shortId": 5095,
     "tracksCount": 1,
     "search": "yoomiiiakissisallimiss",
-    "local": false
-  },
-  {
-    "id": "yorushika-haru-full-version",
-    "title": "Haru (Full version)",
-    "artist": "Yorushika",
-    "video": "CkvWJNt77mU",
-    "language": [
-      "Japanese"
-    ],
-    "bpm": 204,
-    "gap": 9230.588235294117,
-    "year": "2024",
-    "artistOrigin": "JP",
-    "lastUpdate": "2026-10-10T21:25:50.928Z",
-    "realBpm": 102,
-    "previewStart": 50,
-    "previewEnd": 90,
-    "volume": 0.75,
-    "author": "DeinAlptraum, HansiMcKlaus",
-    "duration": 277,
-    "tracks": [
-      {
-        "name": "Haru (Full version)",
-        "start": 14
-      }
-    ],
-    "shortId": 6566,
-    "tracksCount": 1,
-    "search": "yorushikaharufullversion",
     "local": false
   },
   {
@@ -214014,35 +212523,6 @@
     "shortId": 4794,
     "tracksCount": 1,
     "search": "zielonezabkinumerekwkrzaczkach",
-    "local": false
-  },
-  {
-    "id": "ziferblat-bird-of-pray-esc-2025-ukraine",
-    "title": "Bird Of Pray (ESC 2025 Ukraine)",
-    "artist": "Ziferblat",
-    "video": "OJ1x2aiL7ks",
-    "language": [
-      "Ukrainian",
-      "English"
-    ],
-    "bpm": 201,
-    "gap": 3859.8507462686566,
-    "year": "2025",
-    "artistOrigin": "UA",
-    "lastUpdate": "2025-08-20T20:44:31.275Z",
-    "realBpm": 201,
-    "volume": 0.97,
-    "manualVolume": 0.5,
-    "author": "Tuupertunut",
-    "duration": 190,
-    "tracks": [
-      {
-        "start": 13
-      }
-    ],
-    "shortId": 5030,
-    "tracksCount": 1,
-    "search": "ziferblatbirdofprayesc2025ukraine",
     "local": false
   },
   {
