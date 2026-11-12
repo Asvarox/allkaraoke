@@ -1,7 +1,7 @@
 import { Alert, AlertTitle, Button, Step, StepButton } from '@mui/material';
 import Stepper from '@mui/material/Stepper';
 import { StyledEngineProvider } from '@mui/material/styles';
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import useSWR from 'swr';
 import { ValuesType } from 'utility-types';
@@ -159,8 +159,12 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
     [songs, conversionResult, isEdit],
   );
 
+  // Prefill empty fields once per source (txt or edited song), so fields the user clears stay cleared
+  const prefilledFromSource = useRef<unknown>(null);
   useEffect(() => {
-    if (conversionResult) {
+    const source = isEdit ? song : basicData.txtInput;
+    if (conversionResult && prefilledFromSource.current !== source) {
+      prefilledFromSource.current = source;
       if (!!conversionResult.video && !authorAndVid.video) {
         setAuthorAndVid((current) => ({
           ...current,
@@ -203,20 +207,7 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
       });
     }
     // oxlint-disable-next-line react-hooks/exhaustive-deps
-  }, [
-    conversionResult,
-    metadataEntity.year,
-    metadataEntity.language,
-    metadataEntity.realBpm,
-    metadataEntity.genre,
-    metadataEntity.artist,
-    metadataEntity.volume,
-    metadataEntity.title,
-    metadataEntity.previewStart,
-    metadataEntity.previewEnd,
-    basicData.sourceUrl,
-    authorAndVid.video,
-  ]);
+  }, [conversionResult]);
 
   const isBasicInfoCompleted = !!basicData.txtInput || isEdit;
   const isAuthorAndVidCompleted = !!authorAndVid.video;
