@@ -24,8 +24,8 @@ async function getStorage() {
 
 export interface SongStats {
   plays: number;
-  /** Keys of removed duplicate songs whose history was merged into this one, see `merge-removed-songs.ts`. */
-  mergedFrom?: string[];
+  /** Per removed duplicate song key: run dates and play count merged into this one, see `merge-removed-songs.ts`. */
+  mergedFrom?: Record<string, { dates: string[]; plays: number }>;
   scores: Array<{
     setup: SingSetup;
     scores: Array<{ name: string; score: number }>;
