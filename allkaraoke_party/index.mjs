@@ -2434,8 +2434,23 @@ var parseScoreUpdates = (body) => {
 		score
 	})) : null;
 };
+var parseSongMerges = (body) => {
+	const merges = body?.merges;
+	if (!Array.isArray(merges)) return null;
+	return merges.every((entry) => [
+		"from",
+		"to",
+		"artist",
+		"title"
+	].every((key) => typeof entry?.[key] === "string" && entry[key].trim())) ? merges.map(({ from, to, artist, title }) => ({
+		from: from.trim(),
+		to: to.trim(),
+		artist,
+		title
+	})) : null;
+};
 /**
-* Authenticated list, delete, score correction, and a manual projection rebuild. Row ids only ever reach the admin UI
+* Authenticated list, delete, score correction, merging duplicate songs, and a manual projection rebuild. Row ids only ever reach the admin UI
 * through here — the public board never carries them.
 */
 var handleLeaderboardAdmin = async (request, env) => {
@@ -2458,6 +2473,16 @@ var handleLeaderboardAdmin = async (request, env) => {
 			headers: responseHeaders$3
 		});
 		const result = await board.updateScores(scores);
+		await caches.default.delete(boardCacheKey(request));
+		return new Response(JSON.stringify(result), { headers: responseHeaders$3 });
+	}
+	if (request.method === "PUT") {
+		const merges = parseSongMerges(await request.json().catch(() => null));
+		if (!merges) return new Response(JSON.stringify({ error: "Expected { merges: [{ from, to, artist, title }] }" }), {
+			status: 400,
+			headers: responseHeaders$3
+		});
+		const result = await board.mergeSongs(merges);
 		await caches.default.delete(boardCacheKey(request));
 		return new Response(JSON.stringify(result), { headers: responseHeaders$3 });
 	}
@@ -2658,6 +2683,50 @@ var LeaderboardBoard = class extends DurableObject {
 		for (const { id, score } of scores) updated += this.sql.exec(`UPDATE records SET original_score = COALESCE(original_score, score), score = ? WHERE id = ? RETURNING id`, score, id).toArray().length;
 		await this.rebuildProjection();
 		return { updated };
+	}
+	/**
+	* Moves every row of a dropped duplicate song onto the song it was merged into. A player with rows on
+	* both songs (same client, name and difficulty) keeps only their higher score. Idempotent.
+	*/
+	async mergeSongs(merges) {
+		let moved = 0;
+		let dropped = 0;
+		const mergeByFrom = new Map(merges.map((merge) => [merge.from, merge]));
+		const finalMerge = (merge) => {
+			const seen = /* @__PURE__ */ new Set([merge.from]);
+			let current = merge;
+			while (mergeByFrom.has(current.to)) {
+				if (seen.has(current.to)) return null;
+				seen.add(current.to);
+				current = mergeByFrom.get(current.to);
+			}
+			return current;
+		};
+		for (const merge of merges) {
+			const target = finalMerge(merge);
+			if (!target || merge.from === target.to) continue;
+			const { from } = merge;
+			const { to, artist, title } = target;
+			const rows = this.sql.exec(`SELECT id, client_id, name_normalized, tolerance, score FROM records WHERE song_id = ?`, from).toArray();
+			for (const row of rows) {
+				const existing = this.sql.exec(`SELECT id, score FROM records WHERE client_id = ? AND song_id = ? AND name_normalized = ? AND tolerance = ?`, row.client_id, to, row.name_normalized, row.tolerance).toArray()[0];
+				const loser = existing && (existing.score >= row.score ? row.id : existing.id);
+				if (loser) {
+					this.sql.exec(`DELETE FROM notes WHERE record_id = ?`, loser);
+					this.sql.exec(`DELETE FROM records WHERE id = ?`, loser);
+					dropped += 1;
+				}
+				if (loser !== row.id) {
+					this.sql.exec(`UPDATE records SET song_id = ?, artist = ?, title = ? WHERE id = ?`, to, artist, title, row.id);
+					moved += 1;
+				}
+			}
+		}
+		await this.rebuildProjection();
+		return {
+			moved,
+			dropped
+		};
 	}
 	async deleteRow(id) {
 		if (this.sql.exec(`SELECT id FROM records WHERE id = ?`, id).toArray().length === 0) return false;
