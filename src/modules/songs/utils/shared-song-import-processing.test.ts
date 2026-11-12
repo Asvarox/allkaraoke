@@ -61,6 +61,20 @@ const createSong = (): Song => ({
   ],
 });
 
+describe('language normalization', () => {
+  it.each([
+    ['English,', 'English'],
+    ['en', 'English'],
+    ['es', 'Spanish'],
+    ['Español', 'Spanish'],
+    ['Japanese (Romanized)', 'Japanese'],
+  ])('normalizes %s to %s', (input, expected) => {
+    const song = { ...createSong(), language: [input] } as Song;
+    applyCommonSharedSongImportProcessing(song);
+    expect(song.language).toEqual([expected]);
+  });
+});
+
 describe('unverifiedSongProcessing', () => {
   it('extracts ESC edition from title suffix', () => {
     const song = createSong();

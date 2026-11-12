@@ -4,7 +4,7 @@
 #BPM:100,446
 #YEAR:2015
 #VIDEO:v=Vs3LXhqm5h4
-#LANGUAGE:en
+#LANGUAGE:English
 #GAP:1456,662206558748
 #ALLKARAOKE_ID:kygo-stole-the-show-lyrics-feat-parson-james
 #ALLKARAOKE_SID:7230

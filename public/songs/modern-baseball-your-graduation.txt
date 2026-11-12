@@ -6,7 +6,7 @@
 #PREVIEWSTART:85
 #VIDEO:v=MbrUzJlTffs
 #GENRE:Emo
-#LANGUAGE:English,
+#LANGUAGE:English
 #GAP:20996,412719891745
 #ALLKARAOKE_ID:modern-baseball-your-graduation
 #ALLKARAOKE_SID:6199
