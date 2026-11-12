@@ -48,7 +48,9 @@ export function mergeRemovedSongStats(stats: Record<string, SongStats>, removed:
     const taken = new Set(record?.dates);
     const scores = songStats.scores ?? [];
     const newRuns = scores.filter((run) => !taken.has(run.date));
-    const alreadyCounted = record && scores.some((run) => taken.has(run.date)) ? record.plays : 0;
+    // The key still holds what was taken (interrupted merge). New plays always add a run, so plays-only history is old
+    const stillHoldsTaken = scores.length === 0 || scores.some((run) => taken.has(run.date));
+    const alreadyCounted = record && stillHoldsTaken ? record.plays : 0;
     const newPlays = Math.max(0, (songStats.plays ?? 0) - alreadyCounted);
 
     if (newRuns.length > 0 || newPlays > 0) {
@@ -56,9 +58,11 @@ export function mergeRemovedSongStats(stats: Record<string, SongStats>, removed:
         ...parent,
         plays: (parent.plays ?? 0) + newPlays,
         scores: [...(parent.scores ?? []), ...newRuns].sort((a, b) => a.date.localeCompare(b.date)),
-        mergedFrom: unionRecords(parent.mergedFrom, {
-          [key]: { dates: scores.map((run) => run.date), plays: songStats.plays ?? 0 },
-        }),
+        mergedFrom: {
+          ...parent.mergedFrom,
+          // Play count of the key as it is now, so a retry of this merge subtracts exactly that
+          [key]: { dates: [...new Set([...taken, ...scores.map((run) => run.date)])], plays: songStats.plays ?? 0 },
+        },
       };
     }
     removedKeys.push(key);

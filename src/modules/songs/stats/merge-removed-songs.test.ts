@@ -81,6 +81,45 @@ describe('mergeRemovedSongStats', () => {
     });
   });
 
+  it('counts plays of a re-created old key once when its second merge is interrupted', () => {
+    const stats: Record<string, SongStats> = {
+      parent: { plays: 5, scores: [run('2026-01-01', 50)], mergedFrom: { dupe: { dates: ['2026-01-01'], plays: 5 } } },
+      dupe: { plays: 1, scores: [run('2026-05-01', 80)] },
+    };
+    const first = mergeRemovedSongStats(stats, { dupe: 'parent' }).updated.parent;
+    expect(first.plays).toBe(6);
+
+    // Interrupted before the old key was removed, then played once more
+    const retried = { parent: first, dupe: { plays: 2, scores: [run('2026-05-01', 80), run('2026-06-01', 90)] } };
+    const { updated } = mergeRemovedSongStats(retried, { dupe: 'parent' });
+
+    expect(updated.parent.plays).toBe(7);
+    expect(updated.parent.scores.map((entry) => entry.date)).toEqual(['2026-01-01', '2026-05-01', '2026-06-01']);
+  });
+
+  it('does not count plays-only history twice after an interrupted merge', () => {
+    const stats: Record<string, SongStats> = {
+      parent: { plays: 3, scores: [], mergedFrom: { dupe: { dates: [], plays: 2 } } },
+      dupe: { plays: 2, scores: [] },
+    };
+
+    expect(mergeRemovedSongStats(stats, { dupe: 'parent' })).toEqual({ updated: {}, removedKeys: ['dupe'] });
+  });
+
+  it.each([
+    ['a', 'b'],
+    ['b', 'a'],
+  ])('counts plays-only history once when an interrupted a → b is merged on into c (%s first)', (first, second) => {
+    const all: Record<string, SongStats> = {
+      a: { plays: 1, scores: [] },
+      b: { plays: 1, scores: [], mergedFrom: { a: { dates: [], plays: 1 } } },
+      c: { plays: 1, scores: [] },
+    };
+    const stats = Object.fromEntries([first, second, 'c'].map((key) => [key, all[key]]));
+
+    expect(mergeRemovedSongStats(stats, { a: 'b', b: 'c' }).updated.c.plays).toBe(2);
+  });
+
   it.each([
     ['a', 'b'],
     ['b', 'a'],
