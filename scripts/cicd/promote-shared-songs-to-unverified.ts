@@ -3,6 +3,7 @@ import { writeFile } from 'node:fs/promises';
 import dotenv from 'dotenv';
 
 import currentSongs from '../../public/songs/index.json';
+import removedSongs from '../../public/songs/removed-songs.json';
 import convertSongToTxt from '../../src/modules/songs/utils/convert-song-to-txt';
 import convertTxtToSong from '../../src/modules/songs/utils/convert-txt-to-song';
 import {
@@ -111,7 +112,8 @@ const buildQuery = (opts: { userIds: string[]; hoursFrom: number; hoursTo: numbe
 
 (async () => {
   const { requestPostHog } = require('../utils.cjs');
-  const builtInSongIds = new Set(currentSongs.map((song) => song.id));
+  // Songs dropped as duplicates count as built-in, so a shared copy doesn't bring them back
+  const builtInSongIds = new Set([...currentSongs.map((song) => song.id), ...Object.keys(removedSongs)]);
   const builtInVideoIds = new Set(currentSongs.map((song) => song.video).filter((video): video is string => !!video));
   const summaryOutputPath = process.env.UNVERIFIED_SONGS_SUMMARY_PATH;
   const analyzedSongs = new Map<string, AnalyzedSongSummary>();

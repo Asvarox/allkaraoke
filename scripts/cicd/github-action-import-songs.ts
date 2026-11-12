@@ -5,6 +5,7 @@ import { writeFile } from 'node:fs/promises';
 import dotenv from 'dotenv';
 
 import currentSongs from '../../public/songs/index.json';
+import removedSongs from '../../public/songs/removed-songs.json';
 import convertSongToTxt from '../../src/modules/songs/utils/convert-song-to-txt';
 import convertTxtToSong from '../../src/modules/songs/utils/convert-txt-to-song';
 import {
@@ -119,6 +120,12 @@ type ImportedSongSummary = {
         if (!song.id) {
           rememberSongStatus(currentSongId, 'BROKEN');
           console.log('Song has no ID', song, songId);
+          continue;
+        }
+
+        if (song.id in removedSongs) {
+          rememberSongStatus(song.id, 'SKIPPED');
+          console.log(`Skipping ${song.id}, it was removed as a duplicate (see public/songs/removed-songs.json)`);
           continue;
         }
 
