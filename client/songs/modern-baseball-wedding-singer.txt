@@ -7,7 +7,7 @@
 #VIDEO:v=MJXGscQdKyQ
 #VIDEOGAP:77
 #GENRE:Emo
-#LANGUAGE:English,
+#LANGUAGE:English
 #GAP:97372,82486557665
 #ALLKARAOKE_ID:modern-baseball-wedding-singer
 #ALLKARAOKE_SID:6902
