@@ -1,0 +1,940 @@
+#ARTIST:Trailerpark
+#TITLE:Fledermausland
+#CREATOR:BlodsveptKrigare
+#BPM:361,55
+#YEAR:2012
+#VIDEO:v=fpJ0VJGNXgY
+#LANGUAGE:German
+#GAP:13684,287097220302
+#ALLKARAOKE_ID:trailerpark-fledermausland
+#ALLKARAOKE_SID:7364
+#ALLKARAOKE_LASTUPDATE:2026-11-13T04:28:39.819Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=168937
+#ALLKARAOKE_REALBPM:136
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=27002
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:262
+#MP3:Trailerpark - Fledermausland.mp3
+#COVER:Trailerpark - Fledermausland [CO].jpg
+#BACKGROUND:Trailerpark - Fledermausland [BG].jpg
+: 24 3 10 Und 
+: 29 4 8 das 
+: 35 3 10 Wohn
+: 40 3 8 mo
+: 45 4 10 bil 
+: 51 3 8 hat 
+: 56 8 10 Rä
+: 66 4 6 der 
+: 72 3 6 ver
+: 77 8 6 dammt
+- 85
+: 88 3 8 Doch 
+: 93 4 6 wir 
+: 99 3 8 kön
+: 104 3 6 nen 
+: 109 3 8 hier 
+: 114 4 6 nicht 
+: 120 3 8 wei
+: 125 3 6 ter, 
+: 130 3 8 hier 
+: 135 4 6 ist 
+: 141 8 10 Fle
+: 151 4 8 der
+: 157 3 6 maus
+: 162 8 5 land
+- 170
+: 174 3 6 Und 
+: 179 3 3 so 
+: 184 3 10 bleib’ 
+: 189 3 8 ich 
+: 194 3 10 in 
+: 199 4 8 der 
+: 205 3 10 Wa
+: 210 3 8 gen
+: 215 4 10 burg 
+: 221 3 13 und 
+: 226 7 13 le
+: 235 4 10 be 
+: 241 8 10 hier
+- 249
+: 252 4 8 Kannst 
+: 258 3 8 du 
+: 263 4 6 die 
+: 269 3 8 Ber
+: 274 4 6 ge 
+: 280 3 8 nicht 
+: 285 3 6 er
+: 290 3 8 rei
+: 295 3 6 chen, 
+: 300 3 8 hol 
+: 305 4 6 den 
+: 311 8 10 Schnee 
+: 321 5 11 zu 
+: 327 12 10 dir
+- 339 341
+- 341
+: 365 3 10 Und 
+: 370 3 8 das 
+: 375 3 10 Wohn
+: 380 4 8 mo
+: 386 3 10 bil 
+: 391 3 8 hat 
+: 396 8 10 Rä
+: 406 4 6 der 
+: 412 3 6 ver
+: 417 7 6 dammt
+- 424
+: 428 3 8 Doch 
+: 433 3 6 wir 
+: 438 4 8 kön
+: 444 3 6 nen 
+: 449 4 8 hier 
+: 455 3 6 nicht 
+: 460 3 8 wei
+: 465 4 6 ter, 
+: 471 3 8 hier 
+: 476 4 6 ist 
+: 482 7 10 Fle
+: 491 4 8 der
+: 497 3 6 maus
+: 502 7 5 land
+- 509
+: 513 3 6 Bei 
+: 518 4 3 uns 
+: 524 4 10 siehst 
+: 530 3 8 du 
+: 535 3 10 kei
+: 540 4 8 ne 
+: 546 3 10 Zü
+: 551 3 8 ge 
+: 556 4 10 durch 
+: 562 3 13 die 
+: 567 8 13 Ge
+: 577 3 10 gend 
+: 582 8 10 fahr’n
+- 590
+: 598 3 8 Doch 
+: 603 4 6 wir 
+: 609 3 8 war
+: 614 4 6 ten 
+: 620 3 8 un
+: 625 3 6 ge
+: 630 4 8 dul
+: 636 3 6 dig 
+: 641 3 8 auf 
+: 646 4 6 die 
+: 652 8 10 nächs
+: 662 4 11 te 
+: 668 8 10 Bahn
+- 676
+F 680 1 0 Wer 
+F 685 1 0 klaut 
+F 689 1 0 deinen 
+F 695 3 0 Beutel 
+F 704 1 0 voll 
+F 711 6 0 Pillen
+- 717
+F 721 2 0 Mutterficker 
+F 731 2 0 wer 
+F 735 1 0 ist 
+F 739 1 0 heut’ 
+F 744 1 0 in 
+F 749 2 0 der 
+F 755 4 0 Bild
+- 759
+F 764 2 0 Wer 
+F 769 2 0 kackt 
+F 774 2 0 Frau 
+F 780 2 0 Merkel 
+F 790 1 0 auf 
+F 794 2 0 den 
+F 800 2 0 Bauch
+- 802
+F 805 2 0 Und 
+F 811 1 0 wird 
+F 814 1 0 dabei 
+F 818 2 0 von 
+F 822 6 0 Schäuble 
+F 833 8 0 gefilmt
+- 841
+F 852 1 0 (Timmy) 
+F 869 1 0 Leih 
+F 873 1 0 mir 
+F 876 1 0 bitte 
+F 879 1 0 mal 
+F 883 2 0 ’nen 
+F 886 5 0 Zehner 
+F 895 4 0 Mann
+- 899
+F 902 1 0 Denn 
+F 905 1 0 ich 
+F 907 1 0 will 
+F 911 2 0 nicht 
+F 915 1 0 zum 
+F 919 2 0 Klauen 
+F 924 1 0 in 
+F 927 2 0 den 
+F 930 1 0 REWE 
+F 938 4 0 Markt
+- 942
+F 944 1 0 Ey 
+F 946 1 0 der 
+F 949 1 0 goldene 
+F 961 1 0 Schuss 
+F 964 1 0 war 
+F 966 2 0 nur 
+F 969 1 0 ein 
+F 972 8 0 Fehlalarm
+- 980
+F 987 1 0 Denn 
+F 989 2 0 es 
+F 992 1 0 war 
+F 994 1 0 kein 
+F 997 1 0 Heroin, 
+F 1007 1 0 es 
+F 1010 1 0 war 
+F 1014 15 0 Lebertran
+- 1029
+F 1046 1 0 Mach 
+F 1048 1 0 mal 
+F 1051 2 0 nicht 
+F 1054 2 0 auf 
+F 1057 2 0 Gangster 
+F 1067 6 0 Homie
+- 1073
+F 1077 1 0 Zeig 
+F 1082 1 0 mir 
+F 1085 1 0 die 
+F 1088 1 0 Leute 
+F 1094 1 0 die 
+F 1096 2 0 den 
+F 1099 1 0 Dreck 
+F 1110 8 0 glauben
+- 1118
+F 1125 1 0 Du 
+F 1128 1 0 bist 
+F 1131 6 0 höchstens 
+F 1141 11 0 Biathlet, 
+F 1164 2 0 schießen 
+F 1173 2 0 und 
+F 1178 1 0 dann 
+F 1183 3 0 weg 
+F 1193 2 0 laufen
+- 1195
+F 1200 2 0 Ey 
+F 1205 1 0 Nutte 
+F 1210 1 0 du 
+F 1213 1 0 hast 
+F 1216 7 0 eine 
+F 1227 7 0 gute 
+F 1237 9 0 Line, 
+F 1269 5 0 lucky 
+F 1279 9 0 Punch
+- 1288
+F 1296 1 0 Das 
+F 1301 2 0 hier 
+F 1306 1 0 ist 
+F 1311 12 0 Trailerpark
+- 1323
+F 1333 2 0 Bitch 
+F 1339 1 0 hier 
+F 1343 2 0 wirst 
+F 1347 1 0 du 
+F 1349 2 0 nicht 
+F 1352 2 0 mal 
+F 1355 15 0 Praktikant
+- 1370
+F 1375 2 0 Steck’ 
+F 1378 2 0 mal 
+F 1381 2 0 dein 
+F 1385 2 0 Messer 
+F 1393 1 0 weg 
+F 1397 1 0 und 
+F 1402 1 0 lerne 
+F 1408 1 0 mit 
+F 1413 1 0 einer 
+F 1419 2 0 Gabel 
+F 1429 14 0 umzugehen
+- 1443
+F 1449 1 0 Dann 
+F 1452 1 0 hat 
+F 1455 2 0 dein 
+F 1460 2 0 Vater 
+F 1471 2 0 auch 
+F 1475 2 0 keinen 
+F 1481 2 0 Grund 
+F 1487 1 0 mehr
+- 1488
+F 1493 1 0 Sich 
+F 1498 1 0 im 
+F 1503 2 0 Grabe 
+F 1513 17 0 umzudrehen
+- 1530
+F 1535 1 0 Und 
+F 1540 1 0 deine 
+F 1546 2 0 krassen 
+F 1556 2 0 Gangster 
+F 1566 2 0 Freunde 
+F 1577 2 0 ticken 
+F 1587 3 0 Walter 
+F 1597 13 0 P4’s
+- 1610
+F 1614 1 0 Die 
+F 1619 2 0 dealen 
+F 1629 4 0 Knarren 
+F 1641 5 0 höchstens,
+- 1646
+F 1651 4 0 Wenn 
+F 1657 2 0 sie 
+F 1662 2 0 durch 
+F 1667 2 0 einen 
+F 1673 2 0 Altbau 
+F 1684 11 0 marschieren
+- 1695
+F 1699 2 0 (Du 
+F 1705 5 0 Hund)
+- 1710
+F 1714 2 0 Spar’ 
+F 1717 1 0 dir 
+F 1720 2 0 deine 
+F 1725 2 0 Kohle 
+F 1730 2 0 für 
+F 1733 2 0 den 
+F 1736 1 0 Killer 
+F 1741 1 0 der 
+F 1744 1 0 mich 
+F 1747 2 0 kalt 
+F 1752 4 0 macht,
+- 1756
+F 1758 1 0 Lass 
+F 1763 1 0 mal 
+F 1769 2 0 besser 
+F 1779 8 0 sein
+- 1787
+F 1791 2 0 Gib 
+F 1796 2 0 mir 
+F 1800 2 0 lieber 
+F 1805 2 0 noch 
+F 1808 2 0 ein 
+F 1811 1 0 Jahr 
+F 1816 1 0 mit 
+F 1818 1 0 dem 
+F 1821 8 0 Lifestyle
+- 1829
+F 1833 2 0 Und 
+F 1838 1 0 ich 
+F 1843 1 0 mach 
+F 1847 1 0 das 
+F 1853 1 0 ganz 
+F 1859 17 0 allein
+- 1876
+F 1881 2 0 Mich 
+F 1885 7 0 hindert 
+F 1896 2 0 daran 
+F 1906 4 0 nichts, 
+F 1917 2 0 ey 
+F 1922 2 0 das 
+F 1928 2 0 ist 
+F 1933 2 0 wie 
+F 1939 2 0 Groupies 
+F 1949 7 0 ficken
+- 1956
+F 1960 2 0 Und 
+F 1965 2 0 in 
+F 1971 2 0 jeder 
+F 1982 2 0 Hinsicht 
+F 1991 2 0 einfach 
+F 2001 2 0 nur 
+F 2006 2 0 ein 
+F 2011 12 0 Kinderspiel 
+F 2029 2 0 für 
+F 2034 10 0 mich
+- 2044
+: 2067 3 10 Und 
+: 2072 3 8 das 
+: 2077 4 10 Wohn
+: 2083 3 8 mo
+: 2088 3 10 bil 
+: 2093 3 8 hat 
+: 2098 8 10 Rä
+: 2108 4 6 der 
+: 2114 4 6 ver
+: 2120 6 6 dammt
+- 2126
+: 2130 3 8 Doch 
+: 2135 3 6 wir 
+: 2140 3 8 kön
+: 2145 4 6 nen 
+: 2151 3 8 hier 
+: 2156 4 6 nicht 
+: 2162 3 8 wei
+: 2167 3 6 ter, 
+: 2172 4 8 hier 
+: 2178 3 6 ist 
+: 2183 9 10 Fle
+: 2194 3 8 der
+: 2199 3 6 maus
+: 2204 7 5 land
+- 2211
+: 2215 3 6 Und 
+: 2220 3 3 so 
+: 2225 3 10 bleib’ 
+: 2230 4 8 ich 
+: 2236 4 10 in 
+: 2242 3 8 der 
+: 2247 3 10 Wa
+: 2252 3 8 gen
+: 2257 3 10 burg 
+: 2262 4 13 und 
+: 2268 8 13 le
+: 2278 3 10 be 
+: 2283 7 10 hier
+- 2290
+: 2294 3 8 Kannst 
+: 2299 4 8 du 
+: 2305 3 6 die 
+: 2310 4 8 Ber
+: 2316 3 6 ge 
+: 2321 3 8 nicht 
+: 2326 4 6 er
+: 2332 3 8 rei
+: 2337 3 6 chen, 
+: 2342 3 8 hol 
+: 2347 4 6 den 
+: 2353 8 10 Schnee 
+: 2363 4 11 zu 
+: 2369 12 10 dir
+- 2381
+: 2405 4 10 Und 
+: 2411 3 8 das 
+: 2416 4 10 Wohn
+: 2422 4 8 mo
+: 2428 3 10 bil 
+: 2433 3 8 hat 
+: 2438 9 10 Rä
+: 2449 3 6 der 
+: 2454 3 6 ver
+: 2459 6 6 dammt
+- 2465
+: 2469 4 8 Doch 
+: 2475 3 6 wir 
+: 2480 3 8 kön
+: 2485 4 6 nen 
+: 2491 3 8 hier 
+: 2496 3 6 nicht 
+: 2501 4 8 wei
+: 2507 4 6 ter, 
+: 2513 3 8 hier 
+: 2518 3 6 ist 
+: 2523 8 10 Fle
+: 2533 4 8 der
+: 2539 3 6 maus
+: 2544 6 5 land
+- 2550
+: 2554 4 6 Bei 
+: 2560 3 3 uns 
+: 2565 4 10 siehst 
+: 2571 3 8 du 
+: 2576 4 10 kei
+: 2582 3 8 ne 
+: 2587 3 10 Zü
+: 2592 3 8 ge 
+: 2597 3 10 durch 
+: 2602 4 13 die 
+: 2608 8 13 Ge
+: 2618 4 10 gend 
+: 2624 8 10 fahr’n
+- 2632
+: 2640 3 8 Doch 
+: 2645 3 6 wir 
+: 2650 4 8 war
+: 2656 3 6 ten 
+: 2661 4 8 un
+: 2667 3 6 ge
+: 2672 3 8 dul
+: 2677 4 6 dig 
+: 2683 3 8 auf 
+: 2688 3 6 die 
+: 2693 9 10 nächs
+: 2704 3 11 te 
+: 2709 6 10 Bahn
+- 2715
+F 2720 1 0 Ich 
+F 2725 1 0 habe 
+F 2730 2 0 keine 
+F 2736 2 0 Zeit, 
+F 2746 12 0 verzeiht
+- 2758
+F 2763 2 0 Mir 
+F 2768 2 0 wenn 
+F 2771 2 0 ich 
+F 2774 2 0 ein 
+F 2779 6 0 bisschen 
+F 2790 3 0 kühl 
+F 2800 6 0 wirke
+- 2806
+F 2810 2 0 Über 
+F 2815 3 0 meinem 
+F 2820 7 0 Schädel 
+F 2832 3 0 schwebt 
+F 2838 1 0 schon
+- 2839
+F 2843 6 0 Wieder 
+F 2853 2 0 diese 
+F 2858 10 0 verfickte 
+F 2874 18 0 Glühbirne
+- 2892
+F 2896 2 0 Leider 
+F 2900 1 0 ist 
+F 2902 2 0 sie 
+F 2905 2 0 nie 
+F 2910 2 0 wirklich 
+F 2917 1 0 da 
+F 2920 1 0 wenn 
+F 2922 2 0 man 
+F 2925 1 0 sie 
+F 2928 1 0 braucht,
+- 2929
+F 2933 2 0 Das 
+F 2938 1 0 Leben 
+F 2944 1 0 ist 
+F 2949 12 0 gnadenlos 
+F 2966 1 0 und 
+F 2969 9 0 unfair
+- 2978
+F 2981 2 0 Deshalb 
+F 2991 1 0 habe 
+F 2998 2 0 ich 
+F 3001 1 0 immer 
+F 3006 3 0 eine 
+F 3013 15 0 Badehose 
+F 3033 6 0 drunter,
+- 3039
+F 3043 2 0 In 
+F 3050 1 0 deinem 
+F 3056 2 0 Face 
+F 3065 2 0 steht 
+F 3071 1 0 ein 
+F 3078 28 0 Fragezeichen
+- 3106
+F 3114 1 0 Denn 
+F 3119 4 0 wenn 
+F 3125 1 0 ich 
+F 3131 1 0 mir 
+F 3135 2 0 die 
+F 3140 2 0 Haare 
+F 3154 8 0 schneide
+- 3162
+F 3167 2 0 Nehme 
+F 3171 2 0 ich 
+F 3177 1 0 die 
+F 3182 2 0 Schere 
+F 3193 4 0 zwischen 
+F 3203 7 0 Arm 
+F 3214 2 0 und 
+F 3219 8 0 Reich
+- 3227
+F 3231 1 0 Ich 
+F 3236 1 0 habe 
+F 3241 1 0 keine 
+F 3246 2 0 Kohle
+- 3248
+F 3251 1 0 Aber 
+F 3256 1 0 dennoch 
+F 3261 1 0 siehst 
+F 3264 1 0 du 
+F 3267 1 0 mich
+- 3268
+F 3271 1 0 Wie 
+F 3274 2 0 ich 
+F 3277 1 0 mich 
+F 3280 2 0 immer 
+F 3283 1 0 noch 
+F 3286 1 0 mit 
+F 3289 1 0 feinstem 
+F 3299 1 0 Alk 
+F 3306 7 0 besauf’
+- 3313
+F 3316 2 0 Denn 
+F 3321 2 0 Gott 
+F 3326 2 0 sei 
+F 3331 1 0 dank 
+F 3337 2 0 stehe 
+F 3341 2 0 ich 
+F 3347 2 0 auf 
+F 3352 2 0 alte 
+F 3364 2 0 reiche 
+F 3374 3 0 Frauen,
+- 3377
+F 3380 2 0 Es 
+F 3384 2 0 tut 
+F 3389 3 0 mir 
+F 3394 12 0 so 
+F 3410 1 0 Leid
+- 3411
+F 3413 1 0 Guten 
+F 3417 1 0 Tag
+- 3418
+F 3425 1 0 Mein 
+F 3428 3 0 Name 
+F 3433 1 0 ist 
+F 3437 2 0 Sudden
+- 3439
+F 3442 1 0 Und 
+F 3445 1 0 wenn 
+F 3448 1 0 du 
+F 3451 1 0 mit 
+F 3454 2 0 in 
+F 3457 1 0 den 
+F 3460 10 0 Trailerpark 
+F 3471 1 0 willst 
+F 3475 1 0 musst 
+F 3480 1 0 du 
+F 3484 6 0 Titten 
+F 3493 3 0 haben
+- 3496
+F 3508 1 0 Wir 
+F 3513 2 0 sind 
+F 3519 2 0 gestört 
+F 3532 1 0 und 
+F 3535 2 0 brüten 
+F 3541 2 0 was 
+F 3546 2 0 Böses 
+F 3557 2 0 aus 
+F 3561 2 0 so 
+F 3564 2 0 wie 
+F 3567 2 0 Hitlers 
+F 3579 15 0 Mom
+- 3594
+F 3599 1 0 Wir 
+F 3604 2 0 sind 
+F 3609 2 0 asozial 
+F 3627 1 0 und 
+F 3630 2 0 leben 
+F 3638 2 0 die 
+F 3641 1 0 meiste 
+F 3652 2 0 Zeit 
+F 3658 21 0 zurückgezogen
+- 3679
+F 3685 1 0 Wie 
+F 3689 1 0 mein 
+F 3694 1 0 Schwanz, 
+F 3702 2 0 und 
+F 3707 1 0 ja 
+F 3711 2 0 das 
+F 3717 2 0 Koks 
+F 3723 2 0 macht 
+F 3728 18 0 Ignorant
+- 3746
+F 3750 2 0 Und 
+F 3754 1 0 ich 
+F 3757 2 0 ficke 
+F 3761 1 0 jede 
+F 3768 1 0 Schlampe 
+F 3773 1 0 ohne 
+F 3777 2 0 Skrupel,
+- 3779
+F 3782 1 0 Ey 
+F 3785 2 0 ich 
+F 3788 2 0 habe 
+F 3792 2 0 ein 
+F 3797 2 0 Kondom 
+F 3805 2 0 nie 
+F 3811 13 0 gebraucht
+- 3824
+F 3828 2 0 Ich 
+F 3833 2 0 höre 
+F 3838 2 0 erst 
+F 3843 2 0 auf 
+F 3847 2 0 wenn 
+F 3850 2 0 mein 
+F 3854 1 0 Schwanz 
+F 3858 1 0 schreit
+- 3859
+F 3864 1 0 Ich 
+F 3868 1 0 bin 
+F 3871 1 0 ein 
+F 3873 1 0 Star 
+F 3879 2 0 man, 
+F 3886 2 0 hol 
+F 3890 2 0 mich 
+F 3895 1 0 hier 
+F 3901 19 0 raus
+- 3920
+F 3929 2 0 Meine 
+F 3938 2 0 Frauen, 
+F 3950 2 0 angeleint, 
+F 3970 2 0 keine 
+F 3982 2 0 Angst 
+F 3988 2 0 die 
+F 3994 2 0 beißen 
+F 4005 3 0 nur
+- 4008
+F 4020 2 0 Ich 
+F 4024 1 0 ficke 
+F 4031 2 0 sie 
+F 4035 2 0 alle 
+F 4040 2 0 der 
+F 4045 2 0 Reihe 
+F 4049 2 0 nach 
+F 4054 1 0 durch 
+F 4060 1 0 trotz 
+F 4066 3 0 meiner 
+F 4077 2 0 scheiß 
+F 4084 18 0 Frisur
+- 4102
+: 4108 3 10 Und 
+: 4113 3 8 das 
+: 4118 3 10 Wohn
+: 4123 3 8 mo
+: 4128 3 10 bil 
+: 4133 3 8 hat 
+: 4138 10 10 Rä
+: 4150 3 6 der 
+: 4155 4 6 ver
+: 4161 7 6 dammt
+- 4168
+: 4172 3 8 Doch 
+: 4177 2 6 wir 
+: 4181 4 8 kön
+: 4187 3 6 nen 
+: 4192 3 8 hier 
+: 4197 5 6 nicht 
+: 4204 3 8 wei
+: 4209 3 6 ter, 
+: 4214 3 8 hier 
+: 4219 4 6 ist 
+: 4225 8 10 Fle
+: 4235 4 8 der
+: 4241 4 6 maus
+: 4247 5 5 land
+- 4252
+: 4256 3 6 Und 
+: 4261 3 3 so 
+: 4266 4 10 bleib’ 
+: 4272 4 8 ich 
+: 4278 3 10 in 
+: 4283 4 8 der 
+: 4289 3 10 Wa
+: 4294 3 8 gen
+: 4299 3 10 burg 
+: 4304 3 13 und 
+: 4309 8 13 le
+: 4319 4 10 be 
+: 4325 6 10 hier
+- 4331
+: 4335 4 8 Kannst 
+: 4341 3 8 du 
+: 4346 4 6 die 
+: 4352 4 8 Ber
+: 4358 3 6 ge 
+: 4363 3 8 nicht 
+: 4368 3 6 er
+: 4373 3 8 rei
+: 4378 3 6 chen, 
+: 4383 4 8 hol 
+: 4389 4 6 den 
+: 4395 9 10 Schnee 
+: 4406 3 11 zu 
+: 4411 8 10 dir
+- 4419 4424
+- 4424
+: 4448 3 10 Und 
+: 4453 4 8 das 
+: 4459 3 10 Wohn
+: 4464 3 8 mo
+: 4469 3 10 bil 
+: 4474 4 8 hat 
+: 4480 7 10 Rä
+: 4489 4 6 der 
+: 4495 3 6 ver
+: 4500 6 6 dammt
+- 4506
+: 4510 4 8 Doch 
+: 4516 3 6 wir 
+: 4521 3 8 kön
+: 4526 5 6 nen 
+: 4533 3 8 hier 
+: 4538 4 6 nicht 
+: 4544 3 8 wei
+: 4549 4 6 ter, 
+: 4555 2 8 hier 
+: 4559 4 6 ist 
+: 4565 7 10 Fle
+: 4574 4 8 der
+: 4580 3 6 maus
+: 4585 7 5 land
+- 4592
+: 4596 4 6 Bei 
+: 4602 3 3 uns 
+: 4607 4 10 siehst 
+: 4613 3 8 du 
+: 4618 4 10 kei
+: 4624 2 8 ne 
+: 4628 4 10 Zü
+: 4634 3 8 ge 
+: 4639 4 10 durch 
+: 4645 4 13 die 
+: 4651 7 13 Ge
+: 4660 3 10 gend 
+: 4665 10 10 fahr’n
+- 4675
+: 4682 3 8 Doch 
+: 4687 3 6 wir 
+: 4692 4 8 war
+: 4698 4 6 ten 
+: 4704 3 8 un
+: 4709 3 6 ge
+: 4714 4 8 dul
+: 4720 3 6 dig 
+: 4725 3 8 auf 
+: 4730 3 6 die 
+: 4735 9 10 nächs
+: 4746 3 11 te 
+: 4751 12 10 Bahn
+- 4763 4785
+- 4785
+: 4809 4 3 Die 
+: 4815 3 5 so
+: 4820 9 6 zia
+: 4831 4 6 le 
+: 4837 7 6 Un
+: 4846 9 5 ter
+: 4857 24 5 schicht
+- 4881
+: 4890 3 3 Voll
+: 4895 3 3 zieht 
+: 4900 3 5 die 
+: 4905 9 6 Paa
+: 4916 3 6 rung 
+: 4921 7 5 un
+: 4930 9 6 ter 
+: 4941 24 3 sich
+- 4965
+: 4979 4 3 Hier 
+: 4985 4 5 im 
+: 4991 9 6 Wa
+: 5002 3 6 gen
+: 5007 8 6 burg
+: 5017 9 5 dis
+: 5028 32 5 trikt
+- 5060
+: 5075 3 6 Will
+: 5080 4 6 kom
+: 5086 4 6 men 
+: 5092 3 6 im 
+: 5097 8 5 Trai
+: 5107 3 6 ler
+: 5112 8 3 park
+- 5120
+: 5129 3 10 Und 
+: 5134 4 8 das 
+: 5140 3 10 Wohn
+: 5145 3 8 mo
+: 5150 3 10 bil 
+: 5155 3 8 hat 
+: 5160 9 10 Rä
+: 5171 4 6 der 
+: 5177 3 6 ver
+: 5182 7 6 dammt
+- 5189
+: 5193 3 8 Doch 
+: 5198 3 6 wir 
+: 5203 3 8 kön
+: 5208 3 6 nen 
+: 5213 3 8 hier 
+: 5218 3 6 nicht 
+: 5223 4 8 wei
+: 5229 3 6 ter, 
+: 5234 3 8 hier 
+: 5239 4 6 ist 
+: 5245 9 10 Fle
+: 5256 3 8 der
+: 5261 4 6 maus
+: 5267 7 5 land
+- 5274
+: 5278 3 6 Und 
+: 5283 4 3 so 
+: 5289 3 10 bleib’ 
+: 5294 3 8 ich 
+: 5299 4 10 in 
+: 5305 3 8 der 
+: 5310 3 10 Wa
+: 5315 3 8 gen
+: 5320 3 10 burg 
+: 5325 3 13 und 
+: 5330 8 13 le
+: 5340 4 10 be 
+: 5346 7 10 hier
+- 5353
+: 5357 3 8 Kannst 
+: 5362 4 8 du 
+: 5368 3 6 die 
+: 5373 3 8 Ber
+: 5378 4 6 ge 
+: 5384 3 8 nicht 
+: 5389 3 6 er
+: 5394 4 8 rei
+: 5400 3 6 chen, 
+: 5405 3 8 hol 
+: 5410 4 6 den 
+: 5416 7 10 Schnee 
+: 5425 4 11 zu 
+: 5431 8 10 dir
+- 5439 5445
+- 5445
+: 5469 3 10 Und 
+: 5474 4 8 das 
+: 5480 3 10 Wohn
+: 5485 2 8 mo
+: 5489 4 10 bil 
+: 5495 3 8 hat 
+: 5500 9 10 Rä
+: 5511 3 6 der 
+: 5516 3 6 ver
+: 5521 7 6 dammt
+- 5528
+: 5532 4 8 Doch 
+: 5538 3 6 wir 
+: 5543 3 8 kön
+: 5548 3 6 nen 
+: 5553 4 8 hier 
+: 5559 3 6 nicht 
+: 5564 4 8 wei
+: 5570 3 6 ter, 
+: 5575 3 8 hier 
+: 5580 4 6 ist 
+: 5586 8 10 Fle
+: 5596 3 8 der
+: 5601 3 6 maus
+: 5606 8 5 land
+- 5614
+: 5618 3 6 Bei 
+: 5623 4 3 uns 
+: 5629 3 10 siehst 
+: 5634 3 8 du 
+: 5639 3 10 kei
+: 5644 3 8 ne 
+: 5649 3 10 Zü
+: 5654 4 8 ge 
+: 5660 4 10 durch 
+: 5666 3 13 die 
+: 5671 7 13 Ge
+: 5680 5 10 gend 
+: 5687 8 10 fahr’n
+- 5695
+: 5703 3 8 Doch 
+: 5708 3 6 wir 
+: 5713 4 8 war
+: 5719 3 6 ten 
+: 5724 4 8 un
+: 5730 3 6 ge
+: 5735 3 8 dul
+: 5740 4 6 dig 
+: 5746 2 8 auf 
+: 5750 4 6 die 
+: 5756 9 10 nächs
+: 5767 3 11 te 
+: 5772 12 10 Bahn
+E

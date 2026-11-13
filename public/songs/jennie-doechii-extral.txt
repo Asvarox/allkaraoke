@@ -1,0 +1,586 @@
+#ARTIST:JENNIE, Doechii
+#TITLE:ExtraL
+#CREATOR:c0nn3rb0k
+#BPM:280
+#YEAR:2025
+#VIDEO:v=eWAdpUyzCkI
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:1502,1428571428573
+#ALLKARAOKE_ID:jennie-doechii-extral
+#ALLKARAOKE_SID:7361
+#ALLKARAOKE_LASTUPDATE:2026-11-13T04:28:39.445Z
+#ALLKARAOKE_REALBPM:140
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:221
+#MP3:JENNIE, Doechii - ExtraL.mp3
+#COVER:JENNIE, Doechii - ExtraL [CO].jpg
+#BACKGROUND:JENNIE, Doechii - ExtraL [BG].jpg
+#START:2.571
+#END:152571
+: 19 3 0 Do 
+: 23 2 0 my
+- 25
+: 35 3 0 Do 
+: 39 2 0 my 
+: 43 3 0 lad 
+: 47 2 1 ies 
+: 51 2 0 run 
+: 55 2 -1 this?
+- 57
+: 59 3 0 Lad 
+: 63 2 1 ies 
+: 67 2 0 run 
+: 71 2 -1 this?
+- 73
+: 83 3 0 Do 
+: 87 2 0 my
+- 89
+: 99 3 0 Do 
+: 103 2 0 my 
+: 107 3 0 lad 
+: 111 2 1 ies 
+: 115 2 0 run 
+: 119 2 -1 this?
+- 121
+: 123 3 0 Lad 
+: 127 2 1 ies 
+: 131 2 0 run 
+: 135 2 -1 this?
+- 137
+G 141 2 -1 (Yeah)
+- 143
+: 147 3 0 Do 
+: 151 2 0 my
+- 153
+: 163 3 0 Do 
+: 167 2 0 my 
+: 171 3 0 lad 
+: 175 2 1 ies 
+: 179 2 0 run 
+: 183 2 -1 this?
+- 185
+: 187 3 0 Lad
+- 190
+: 191 2 1 Ies
+- 193
+: 195 2 0 Run
+- 197
+: 199 2 -1 This?
+- 201
+: 211 3 0 Do 
+: 215 2 0 my
+- 217
+: 227 3 0 Do 
+: 231 2 0 my 
+: 237 3 0 lad 
+: 241 2 1 ies 
+: 245 2 0 run 
+: 249 2 -1 this?
+- 251
+: 253 3 0 Lad 
+: 257 2 1 ies 
+: 261 2 0 run 
+: 265 1 -1 this?
+- 266
+: 267 1 1 All 
+: 269 2 -1 of 
+: 273 2 0 my 
+: 277 2 0 girls 
+: 281 3 -1 lookin 
+: 285 2 1 good
+- 287
+: 289 1 0 And 
+: 291 1 0 they 
+: 293 1 0 got 
+: 295 1 0 they 
+: 297 1 -1 own 
+: 299 1 -1 mon 
+: 301 2 0 ey
+- 303
+G 315 2 0 Pop 
+G 319 2 0 your 
+G 323 2 0 shit
+- 325
+: 331 1 1 This 
+: 333 1 -1 for 
+: 335 3 0 my 
+: 339 3 1 girls 
+: 343 1 0 with 
+: 345 1 -1 no 
+: 347 1 0 spon 
+: 349 1 -1 sor
+- 350
+: 351 3 0 They 
+: 355 1 0 got 
+: 357 1 0 they 
+: 359 1 -1 own 
+: 361 3 -1 fun 
+: 365 4 1 din’
+- 369
+G 379 2 0 Not 
+G 383 2 0 your 
+G 387 2 0 shit
+- 389
+: 395 1 0 Run 
+: 397 3 -1 through 
+: 401 1 0 your 
+: 403 1 0 ci 
+: 405 1 1 ty 
+: 407 1 0 that
+- 408
+: 409 5 -1 Mo 
+: 415 1 -2 tor 
+: 417 9 0 cade
+- 426
+: 427 3 0 Soon 
+: 431 1 0 as 
+: 433 1 0 I 
+: 435 5 0 enter
+- 440
+: 441 3 0 They 
+: 445 3 -1 close 
+: 449 1 1 the 
+: 451 4 0 gate
+- 455
+R 459 7 0 Presidental 
+R 467 3 0 through 
+R 471 3 0 your 
+R 475 8 0 residental
+- 483
+R 485 1 0 Bitch 
+R 487 1 0 it’s 
+R 489 4 0 nothing
+- 493
+: 511 1 3 Said 
+: 513 3 3 fuck 
+: 517 3 1 your 
+: 521 7 2 rules 
+: 529 1 2 is 
+: 531 3 3 the 
+: 535 7 2 mood
+- 542
+* 543 9 2 Damn 
+* 553 3 2 ri 
+* 557 3 1 i 
+* 561 8 0 ight
+- 569
+: 575 3 2 Walk 
+: 579 3 2 in 
+: 583 3 1 a 
+: 587 7 1 room
+- 594
+: 595 3 2 And 
+: 599 3 1 I 
+: 603 7 2 set 
+: 611 5 2 the
+- 616
+* 617 18 4 Vibe 
+: 639 1 3 Get 
+: 641 1 4 a 
+: 643 3 3 pic 
+: 647 3 3 it’ll 
+: 651 3 3 last 
+: 655 3 2 you 
+: 659 6 3 long 
+: 671 1 2 Whole 
+: 673 5 2 team 
+: 679 3 2 they 
+: 683 7 2 gassin’ 
+: 691 1 2 on 
+: 693 6 2 us
+- 699
+: 703 1 1 You 
+: 705 3 2 sit 
+: 709 3 2 too 
+: 713 5 3 far 
+: 719 3 2 down 
+: 723 3 2 on 
+: 727 3 2 them 
+: 731 3 2 charts
+- 734
+: 735 3 2 To 
+: 739 5 2 even 
+: 745 5 2 ask 
+: 751 3 2 me 
+: 755 3 2 who’s 
+: 759 3 1 in 
+* 763 7 3 charge
+- 770
+: 771 7 2 Ridin’ 
+: 779 16 3 round
+- 795
+: 803 7 2 Foreign 
+: 811 16 1 cars
+- 827
+: 835 7 2 Top 
+: 843 11 1 down
+- 854
+: 855 7 2 Stare 
+: 863 3 1 ing 
+: 867 3 2 at 
+: 871 3 3 the 
+* 875 20 4 stars
+- 895
+: 899 3 3 Att 
+: 903 3 4 it 
+: 907 22 2 tude
+- 929
+: 931 3 3 So 
+: 935 3 3 don’t 
+: 939 15 3 start
+- 954
+R 955 7 1 Shit
+- 962
+: 963 7 3 Big 
+: 971 15 3 moves
+- 986
+: 987 7 4 Only 
+: 995 7 3 extra 
+: 1003 16 3 large
+- 1019
+: 1027 7 1 Ridin’ 
+: 1035 16 2 round
+- 1051
+: 1059 7 2 Foreign 
+: 1067 16 1 cars
+- 1083
+: 1091 7 2 Top 
+: 1099 11 1 down
+- 1110
+: 1111 7 2 Stare 
+: 1119 3 1 ing 
+: 1123 3 2 at 
+: 1127 3 3 the 
+* 1131 20 4 stars
+- 1151
+: 1155 3 3 Att 
+: 1159 3 4 it 
+: 1163 22 2 tude
+- 1185
+: 1187 3 3 So 
+: 1191 3 3 don’t 
+: 1195 15 3 start
+- 1210
+R 1211 7 1 Shit
+- 1218
+: 1219 7 3 Big 
+: 1227 15 3 moves
+- 1242
+: 1243 7 4 Only 
+: 1251 7 3 extra 
+: 1259 15 3 large
+- 1274
+R 1275 8 1 Yeah
+- 1283
+: 1291 7 2 Wait!
+- 1298
+R 1299 3 0 Do 
+R 1303 3 0 my 
+R 1307 7 0 ladies 
+R 1315 3 0 run 
+R 1319 3 0 this?
+- 1322
+R 1323 7 2 Wait!
+- 1330
+R 1331 3 0 Do 
+R 1335 3 0 my 
+R 1339 7 0 ladies 
+R 1347 3 0 run 
+R 1351 3 0 this?
+- 1354
+R 1355 7 3 Wait!
+- 1362
+R 1363 3 0 Do 
+R 1367 3 0 my 
+R 1371 7 0 ladies 
+R 1379 3 0 run 
+R 1383 3 0 this?
+- 1386
+* 1387 5 2 Doe 
+G 1393 25 3 chii
+- 1418
+R 1419 3 0 Gimme 
+R 1423 7 0 chi 
+R 1431 3 0 Gimme 
+R 1435 7 0 purr
+- 1442
+R 1443 3 0 Gimme 
+R 1447 7 0 meow 
+R 1455 3 0 Gimme 
+R 1459 7 0 her
+- 1466
+R 1467 3 0 Gimme 
+R 1471 7 0 funds 
+R 1479 3 0 Gimme 
+R 1483 7 0 rights
+- 1490
+R 1491 3 0 Gimme 
+R 1495 7 0 fight 
+R 1503 3 0 Gimme 
+R 1507 7 0 nerve
+- 1514
+R 1515 3 0 Gimme 
+R 1519 5 0 cunt
+- 1524
+R 1525 1 0 Let 
+R 1527 1 0 me 
+R 1529 9 0 serve
+- 1538
+F 1539 7 0 Rrr
+- 1546
+R 1547 1 0 Let 
+R 1549 1 0 me 
+R 1551 1 0 Let 
+R 1553 1 0 me 
+R 1555 3 0 out 
+R 1559 1 0 Let 
+R 1561 1 0 me 
+R 1563 7 0 in
+- 1570
+R 1571 1 0 Knock 
+R 1573 1 0 the 
+R 1575 3 0 doors 
+R 1579 3 0 down 
+R 1583 1 0 got 
+R 1585 1 0 the 
+R 1587 1 0 keys 
+R 1589 1 0 to 
+R 1591 1 0 the 
+R 1593 7 0 Benz
+- 1600
+R 1601 3 0 In 
+R 1605 1 0 the 
+R 1607 3 0 board 
+R 1611 3 0 room 
+R 1615 3 0 lookin’ 
+R 1619 3 0 bored 
+R 1623 1 0 cause
+- 1624
+R 1625 1 0 I’m 
+R 1627 1 0 not 
+R 1629 3 0 here 
+R 1633 1 0 for 
+R 1635 3 0 pleasin’ 
+R 1639 3 0 the 
+R 1643 4 0 men
+- 1647
+R 1651 1 0 Not 
+R 1653 3 0 here 
+R 1657 1 0 to 
+R 1659 3 0 reason 
+R 1663 3 0 with 
+R 1667 3 0 them
+- 1670
+R 1671 1 0 Miss 
+R 1673 13 0 Misbehaved
+- 1686
+R 1687 2 0 Miss 
+R 1691 2 0 Push 
+R 1695 2 0 My 
+R 1699 4 0 Pen
+- 1703
+R 1707 3 0 I 
+R 1711 3 0 can’t 
+R 1715 3 0 tame 
+R 1719 3 0 my 
+R 1723 5 0 passion 
+R 1729 3 0 for 
+R 1733 4 0 him
+- 1737
+R 1739 3 0 Can’t 
+R 1743 3 0 keep 
+R 1747 3 0 up 
+R 1751 3 0 what 
+R 1755 5 0 happened 
+R 1761 1 0 to 
+R 1763 4 0 them?
+- 1767
+R 1779 3 0 Yeah 
+R 1783 3 0 we 
+R 1787 3 0 lappin’ 
+R 1791 3 0 the 
+R 1795 4 0 men
+- 1799
+R 1803 3 0 Top 
+R 1807 1 0 of 
+R 1809 1 0 the 
+R 1811 3 0 food 
+R 1815 3 0 chain
+- 1818
+R 1819 3 0 Bussin’ 
+R 1823 3 0 a 
+R 1827 3 0 new 
+R 1831 3 0 chain
+- 1834
+R 1835 3 0 This 
+R 1839 1 0 ain’t 
+R 1841 1 0 a 
+R 1843 3 0 new 
+R 1847 3 0 thing
+- 1850
+G 1851 5 0 No 
+G 1857 6 0 sir
+- 1863
+R 1867 3 0 Money 
+R 1871 3 0 on 
+R 1875 7 0 stupid
+- 1882
+R 1883 3 0 Hopped 
+R 1887 3 0 in 
+R 1891 3 0 the 
+R 1895 3 0 whip
+- 1898
+R 1899 3 0 You 
+R 1903 3 0 still 
+R 1907 3 0 on 
+R 1911 3 0 my 
+R 1915 7 0 old 
+R 1923 7 0 work
+- 1930
+R 1931 4 0 Work 
+R 1939 4 0 Work
+- 1943
+R 1947 3 0 This 
+R 1951 3 0 might 
+R 1955 4 0 hurt
+- 1959
+R 1963 3 0 I 
+R 1967 3 0 sweat 
+R 1971 4 0 hard 
+R 1979 3 0 Wet 
+R 1983 3 0 tee
+R 1987 4 0 shirt
+- 1991
+R 1995 3 0 Extra 
+R 1999 3 0 large 
+R 2003 3 0 Ain’t 
+R 2007 3 0 scared 
+R 2011 3 0 of 
+R 2015 3 0 the 
+R 2019 4 0 dirt
+- 2023
+G 2027 3 0 Hit 
+G 2031 3 0 that 
+G 2035 7 0 jackpot
+- 2042
+R 2043 3 0 Now 
+R 2047 3 0 I’m
+- 2050
+: 2051 7 2 Ridin’ 
+: 2059 16 3 round
+- 2075
+: 2083 7 2 Foreign 
+: 2091 16 1 cars
+- 2107
+: 2115 7 2 Top 
+: 2123 11 1 down
+- 2134
+: 2135 7 2 Stare 
+: 2143 3 1 ing 
+: 2147 3 2 at 
+: 2151 3 3 the
+- 2154
+* 2155 20 4 Stars
+- 2175
+: 2177 3 3 Att 
+: 2181 3 4 it 
+: 2185 22 2 tude
+- 2207
+: 2209 3 3 So 
+: 2213 3 3 don’t 
+: 2217 15 3 start
+- 2232
+R 2233 7 1 Shit
+- 2240
+: 2241 7 3 Big 
+: 2249 15 3 moves
+- 2264
+: 2265 7 4 Only 
+: 2273 7 3 extra 
+: 2281 16 3 large
+- 2297
+: 2307 7 2 Ridin’ 
+: 2315 16 3 round
+- 2331
+: 2339 7 2 Foreign 
+: 2347 16 1 cars
+- 2363
+: 2371 7 2 Top 
+: 2379 11 1 down
+- 2390
+: 2391 7 2 Stare 
+: 2399 3 1 ing 
+: 2403 3 2 at 
+: 2407 3 3 the
+- 2410
+* 2411 20 4 Stars
+- 2431
+: 2433 3 3 Att 
+: 2437 3 4 it 
+: 2441 22 2 tude
+- 2463
+: 2465 3 3 So 
+: 2469 3 3 don’t 
+: 2473 15 3 start
+- 2488
+R 2489 7 1 Shit
+- 2496
+: 2497 7 3 Big 
+: 2505 15 3 moves 
+: 2521 7 4 Only 
+: 2529 7 3 extra 
+: 2537 16 3 large
+- 2553
+R 2571 4 0 Work 
+R 2579 4 0 Work
+- 2583
+R 2587 3 0 This 
+R 2591 3 0 might 
+R 2595 4 0 hurt
+- 2599
+R 2603 3 0 I 
+R 2607 3 0 sweat 
+R 2611 4 0 hard
+- 2615
+R 2619 3 0 Wet 
+R 2623 3 0 tee 
+R 2627 4 0 shirt
+- 2631
+R 2635 3 0 Extra 
+R 2639 3 0 large 
+R 2643 3 0 Ain’t 
+R 2647 3 0 scared 
+R 2651 3 0 of 
+R 2655 3 0 the 
+R 2659 4 0 dirt
+- 2663 2680
+- 2680
+R 2699 4 0 Work 
+R 2707 4 0 Work
+- 2711
+R 2715 3 0 This 
+R 2719 3 0 might 
+R 2723 4 0 hurt
+- 2727
+R 2731 3 0 I 
+R 2735 3 0 sweat 
+R 2739 4 0 hard
+- 2743
+R 2747 3 0 Wet 
+R 2751 3 0 tee 
+R 2755 4 0 shirt
+- 2759
+R 2763 3 0 Extra 
+R 2767 3 0 large
+- 2770
+R 2771 3 0 Ain’t 
+R 2775 3 0 scared 
+R 2779 3 0 of 
+R 2783 3 0 the 
+R 2787 4 0 dirt
+- 2791 2792
+- 2792
+G 2811 4 0 Work 
+G 2819 4 0 Work
+E

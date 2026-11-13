@@ -1,0 +1,238 @@
+#ARTIST:Astrid Lindgren
+#TITLE:Hey, Pippi Langstrumpf
+#CREATOR:RES
+#BPM:329,7
+#YEAR:1971
+#PREVIEWSTART:12
+#VIDEO:v=lPOdvUUw6dc
+#LANGUAGE:German
+#GAP:12019,09008189263
+#ALLKARAOKE_ID:astrid-lindgren-hey-pippi-langstrumpf
+#ALLKARAOKE_SID:7368
+#ALLKARAOKE_LASTUPDATE:2026-11-13T04:28:41.215Z
+#ALLKARAOKE_ARTISTORIGIN:SE
+#ALLKARAOKE_REALBPM:134
+#ALLKARAOKE_PREVIEWEND:30
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:81
+#MP3:Astrid Lindgren - Hey, Pippi Langstrumpf.mp3
+: 22 4 0 Zwei 
+: 28 3 5 mal 
+: 34 4 9 Drei 
+: 40 2 5 macht 
+: 46 6 7 Vier
+- 52
+: 57 2 10 Wid
+: 60 2 9 de
+: 63 2 7 wid
+: 66 2 5 de
+: 69 3 4 witt 
+: 75 4 7 und 
+: 81 4 0 Drei 
+: 87 3 4 macht 
+: 93 6 5 Neu
+: 105 4 9 ne!!
+- 109
+: 117 3 0 Ich 
+: 123 3 5 mach’ 
+: 129 3 9 mir 
+: 135 3 5 die 
+: 141 6 7 Welt
+- 147
+: 153 2 10 Wid
+: 156 2 9 de
+: 159 2 7 wid
+: 162 2 5 de 
+: 165 4 4 wie 
+: 171 3 7 sie 
+: 177 3 0 mir 
+: 183 3 4 ge
+* 189 9 5 fällt....
+- 198
+: 215 7 9 Hey 
+: 226 2 9 Pip
+: 232 4 9 pi 
+: 238 5 10 Lang
+: 250 4 10 strumpf
+- 254
+: 256 2 10 Trall
+: 259 2 9 a
+: 262 4 7 ri 
+: 268 2 7 tral
+: 271 2 7 la
+: 274 3 7 hey 
+: 280 2 5 tral
+: 283 2 5 la 
+: 286 3 4 hopp
+: 292 3 5 sa
+: 298 5 7 sa
+- 303
+: 310 7 9 Hey 
+: 322 3 9 Pip
+: 328 4 9 pi 
+* 334 7 10 Lang
+: 346 4 10 strumpf,
+- 350
+: 353 3 9 Die 
+: 359 3 7 macht, 
+: 365 3 7 was 
+: 371 3 5 ihr 
+: 377 3 4 ge
+: 383 11 5 fällt.
+- 394
+: 407 4 0 Drei 
+: 413 3 5 mal 
+* 419 4 9 Drei 
+: 425 3 5 macht 
+: 432 4 7 Sechs
+- 436
+: 443 2 10 Wid
+: 446 2 9 de
+: 449 2 7 wi
+: 452 2 5 de 
+: 455 4 4 wer 
+: 461 4 7 will’s 
+: 468 3 0 von 
+: 474 4 4 mir 
+: 480 7 5 ler
+: 492 4 9 nen?
+- 496
+: 505 4 0 Al
+: 511 3 5 le 
+: 517 3 9 Groß 
+: 523 3 5 und 
+: 529 6 7 Klein
+- 535
+: 540 2 10 Tral
+: 543 2 9 la
+: 546 2 7 la
+: 549 2 5 la 
+: 552 4 4 lad’ 
+: 558 3 7 ich 
+: 564 3 0 zu 
+: 570 3 4 mir 
+: 576 2 5 ein.
+- 578
+: 590 8 9 Ich 
+: 602 7 10 hab’ 
+: 614 8 12 ein 
+* 626 12 14 Haus,
+- 638
+: 646 3 17 Ein 
+: 652 3 16 kun
+: 658 3 14 ter
+: 664 3 12 bun
+: 670 2 10 tes 
+: 676 10 12 Haus
+- 686
+: 693 4 16 Ein 
+: 699 3 14 Äff
+: 705 3 12 chen 
+: 711 3 10 und 
+: 717 3 9 ein 
+* 723 7 10 Pferd,
+- 730
+: 742 3 14 Die 
+: 748 4 12 schau
+: 754 3 10 en 
+: 760 3 9 dort 
+: 766 3 7 zum 
+: 772 7 9 Fens
+: 784 7 10 ter 
+: 795 4 12 raus.
+- 799
+: 803 3 9 Ich 
+: 809 3 10 hab’ 
+: 815 2 12 ein 
+* 821 9 14 Haus,
+- 830
+: 839 3 17 Ein 
+: 845 3 16 Äff
+: 851 3 14 chen 
+: 857 3 12 und 
+: 863 3 10 ein 
+: 869 9 12 Pferd,
+- 878
+: 887 4 16 Ein 
+: 893 4 14 Je
+: 899 3 12 der, 
+: 905 4 10 der 
+: 911 3 9 uns 
+* 917 9 10 mag,
+- 926
+: 935 4 14 Kriegt 
+: 941 3 12 un
+: 947 3 10 ser 
+: 953 3 9 Ein 
+: 959 3 7 mal 
+: 965 6 9 Eins 
+: 977 7 7 ge
+: 989 8 5 lehrt.
+- 997
+: 1014 3 0 Zwei 
+: 1020 3 5 mal 
+: 1026 3 9 Drei 
+: 1032 2 5 macht 
+: 1038 6 7 Vier
+- 1044
+: 1049 2 10 Wid
+: 1052 2 9 de
+: 1055 2 7 wi
+: 1058 2 5 de
+: 1061 3 4 witt 
+: 1067 3 7 und 
+: 1073 4 0 Drei 
+: 1079 3 4 macht 
+* 1085 7 5 Neu
+: 1097 4 9 ne!!
+- 1101
+: 1107 2 0 Wir 
+: 1110 2 0 ma
+: 1115 3 5 chen 
+: 1121 3 9 uns 
+: 1127 3 5 die 
+: 1133 9 7 Welt,
+- 1142
+: 1145 2 10 Wid
+: 1148 2 9 de
+: 1151 2 7 wi
+: 1154 2 5 de 
+: 1157 4 4 wie 
+: 1163 3 7 sie 
+: 1169 3 0 uns 
+: 1175 3 4 ge
+: 1181 9 5 fällt.
+- 1190
+: 1206 3 0 Drei 
+: 1212 3 5 mal 
+: 1218 3 9 Drei 
+: 1224 2 5 macht 
+: 1230 4 7 Sechs
+- 1234
+: 1242 2 10 Wid
+: 1245 2 9 de
+: 1248 2 7 wi
+: 1251 2 5 de 
+: 1254 3 4 wer 
+: 1260 3 7 will’s 
+: 1266 3 0 von 
+: 1272 3 4 uns 
+: 1278 7 5 ler
+* 1290 4 9 nen
+- 1294
+: 1302 4 0 Al
+: 1308 3 5 le 
+: 1314 3 9 Groß 
+: 1320 3 5 und 
+: 1326 6 7 Klein
+- 1332
+: 1337 2 10 Tral
+: 1340 2 9 la
+: 1343 2 7 la
+: 1346 2 5 la 
+: 1349 4 4 lad’ 
+: 1355 3 7 ich 
+: 1361 3 0 zu 
+: 1367 3 4 uns 
+: 1373 10 5 ein.
+E
