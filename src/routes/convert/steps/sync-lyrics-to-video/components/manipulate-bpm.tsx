@@ -23,7 +23,8 @@ export default function ManipulateBpm({ current, onChange, onUseCurrentTime, son
   const [desiredLastNoteEnd, setDesiredLastNoteEnd] = useState<number>(Math.round(lastNoteEndMs));
   // Reset the target when the gap shifts - cheaper than remounting the whole form via `key`
   const [gapOfDesiredEnd, setGapOfDesiredEnd] = useState(song.gap);
-  if (gapOfDesiredEnd !== song.gap) {
+  // Object.is: NaN !== NaN would re-trigger this reset on every render
+  if (!Object.is(gapOfDesiredEnd, song.gap)) {
     setGapOfDesiredEnd(song.gap);
     setDesiredLastNoteEnd(Math.round(lastNoteEndMs));
   }

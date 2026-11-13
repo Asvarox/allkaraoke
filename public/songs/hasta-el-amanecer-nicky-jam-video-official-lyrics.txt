@@ -5,7 +5,7 @@
 #YEAR:2016
 #PREVIEWSTART:3,72
 #VIDEO:v=Kt45SXqlP54
-#LANGUAGE:es
+#LANGUAGE:Spanish
 #GAP:2722,2615405081815
 #ALLKARAOKE_ID:hasta-el-amanecer-nicky-jam-video-official-lyrics
 #ALLKARAOKE_SID:7263

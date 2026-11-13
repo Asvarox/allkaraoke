@@ -42,6 +42,13 @@ test('Edit song', async ({ page }) => {
     await expect(pages.songEditAuthorAndVideoPage.videoUrlInput).toHaveValue(editedSong.videoURL);
   });
 
+  await test.step('Cleared video URL stays cleared and can be replaced', async () => {
+    await pages.songEditAuthorAndVideoPage.enterVideoURL('');
+    await expect(pages.songEditAuthorAndVideoPage.videoUrlInput).toHaveValue('');
+    await pages.songEditAuthorAndVideoPage.enterVideoURL(editedSong.videoURL);
+    await expect(pages.songEditAuthorAndVideoPage.videoUrlInput).toHaveValue(editedSong.videoURL);
+  });
+
   await test.step('Go to sync lyrics to video Step', async () => {
     await pages.songEditAuthorAndVideoPage.goToSyncLyricsStep();
     await expect(pages.songEditSyncLyricsToVideoPage.pageContainer).toBeVisible();

@@ -29,7 +29,8 @@ export default function ray(
   color: string | any,
   alpha: number = 1,
 ) {
-  if (width <= 0) return;
+  // Non-finite coords (e.g. NaN from a bad song gap) make createRadialGradient throw
+  if (!(width > 0) || !Number.isFinite(width) || !Number.isFinite(x) || !Number.isFinite(y)) return;
 
   ctx.globalAlpha = alpha;
   try {

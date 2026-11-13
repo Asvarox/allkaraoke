@@ -79,6 +79,14 @@ describe('convertTxtToSong', () => {
     expect(convertTxtToSong(inputSongTxt, videoUrl, author, authorUrl, sourceUrl)).toEqual(expectedSong);
   });
 
+  it('should fall back to 0 gap when #GAP is malformed', () => {
+    const sections: Section[] = [{ start: 0, type: 'notes', notes: [generateNote(0)] }];
+    const txt = generateSongTxt([sections]).replace(/#GAP:.*/, '#GAP:abc');
+
+    expect(txt).toContain('#GAP:abc');
+    expect(convertTxtToSong(txt, videoUrl, author, authorUrl, sourceUrl).gap).toBe(0);
+  });
+
   describe('multitrack', function () {
     it('should convert double track', () => {
       const sections: Section[] = [
