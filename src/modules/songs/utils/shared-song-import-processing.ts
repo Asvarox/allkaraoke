@@ -5,6 +5,8 @@ import getSongId from './get-song-id';
 const ESC_TITLE_SUFFIX_REGEX = /\s*\(ESC\s+(\d+)\s+[^)]+\)\s*$/i;
 const LEGACY_TITLE_SUFFIXES = ['(tv)', '(album version)', '(movie version)', '[duet]'];
 
+const LANGUAGE_NAMES = new Intl.DisplayNames('en', { type: 'language' });
+
 export const FALLBACK_VIDEO_DURATION_SECONDS = 20 * 60;
 
 export function normalizeSharedSongTxt(songTxt: string): string {
@@ -31,7 +33,13 @@ export function normalizeLegacyMetadata(song: Song): void {
 
   song.title = song.title.trim();
 
-  song.language = song.language.map((language) => {
+  song.language = song.language.map((rawLanguage) => {
+    // Strip stray separators, e.g. "English,"
+    const language = rawLanguage.trim().replace(/^[,;\s]+|[,;\s]+$/g, '');
+    // Two-letter ISO codes, e.g. "en" -> "English"
+    if (/^[a-z]{2}$/i.test(language)) {
+      return LANGUAGE_NAMES.of(language.toLowerCase()) ?? language;
+    }
     if (language.toLowerCase().startsWith('espa')) {
       return 'Spanish';
     }
