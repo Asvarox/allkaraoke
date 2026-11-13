@@ -176,7 +176,7 @@ export default function convertTxtToSong(
     language: getPropertyValueFromTxt(text, ['LANGUAGE'], 'array') ?? [],
     bpm: Number(getPropertyValueFromTxt(text, ['BPM'])?.replace(',', '.') ?? 0),
     bar: 4,
-    gap: Number(getPropertyValueFromTxt(text, ['GAP'])?.replace(',', '.') ?? 0),
+    gap: Number(getPropertyValueFromTxt(text, ['GAP'])?.replace(',', '.') ?? 0) || 0,
     ...additionalData,
     tracks: [],
     unsupportedProps: getUnknownProps(text),
