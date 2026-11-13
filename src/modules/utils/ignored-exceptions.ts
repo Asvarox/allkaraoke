@@ -41,3 +41,14 @@ export const isIgnoredException = (message: string | null | undefined): boolean 
 
   return ignoredExceptions.some((entry) => (entry instanceof RegExp ? entry.test(message) : message.includes(entry)));
 };
+
+export interface ExceptionListItem {
+  type?: string;
+  value?: string;
+}
+
+// posthog-js `$exception_list` items hold `type` and `value` separately, while the patterns may include the "Type: " prefix.
+export const hasIgnoredException = (exceptionList: ExceptionListItem[]): boolean =>
+  exceptionList.some(
+    ({ type, value }) => isIgnoredException(value) || (!!type && !!value && isIgnoredException(`${type}: ${value}`)),
+  );

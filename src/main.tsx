@@ -22,7 +22,7 @@ import '~/index.css';
 import NoPrerender from '~/modules/elements/no-prerender';
 import { fixStoredMergedTrackScores } from '~/modules/songs/stats/merged-track-score-fix';
 import { normalizeSting } from '~/modules/songs/utils/get-song-id';
-import { isIgnoredException } from '~/modules/utils/ignored-exceptions';
+import { type ExceptionListItem, hasIgnoredException } from '~/modules/utils/ignored-exceptions';
 import isE2E from '~/modules/utils/is-e2-e';
 import isPreRendering from '~/modules/utils/is-pre-rendering';
 import { randomInt } from '~/modules/utils/random-value';
@@ -36,8 +36,8 @@ if (!isE2E() && import.meta.env.VITE_APP_POSTHOG_KEY) {
     ui_host: 'https://eu.posthog.com',
     before_send: (event) => {
       if (event?.event === '$exception') {
-        const exceptionList = (event.properties?.['$exception_list'] ?? []) as { $exception_message?: string }[];
-        if (exceptionList.some((exception) => isIgnoredException(exception.$exception_message))) {
+        const exceptionList = (event.properties?.['$exception_list'] ?? []) as ExceptionListItem[];
+        if (hasIgnoredException(exceptionList)) {
           return null;
         }
       }
