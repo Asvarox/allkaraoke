@@ -70,6 +70,14 @@ const getMetadataEntityFromSong = (song?: Song): SongMetadataEntity => ({
   artistOrigin: song?.artistOrigin,
 });
 
+const duplicateStepProps = (isDuplicate: boolean) =>
+  isDuplicate
+    ? {
+        icon: <Icon icon="ic:baseline-error" className="text-error text-2xl" data-test="step-duplicate" />,
+        sx: { '& .MuiStepLabel-label': { color: 'error.main' } },
+      }
+    : {};
+
 export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
   const isEdit = !!song;
   const { data: songs } = useSongIndex(true);
@@ -152,22 +160,20 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
     isEdit,
   ]);
 
-  const possibleDuplicate = useMemo(
+  const duplicateByName = useMemo(
     () =>
-      !isEdit &&
-      conversionResult &&
-      songs?.find((addedSong) => SongDao.generateSongFile(addedSong) === SongDao.generateSongFile(conversionResult)),
+      !isEdit && conversionResult
+        ? songs?.find((addedSong) => SongDao.generateSongFile(addedSong) === SongDao.generateSongFile(conversionResult))
+        : undefined,
     [songs, conversionResult, isEdit],
   );
 
   const currentVideoId = authorAndVid.video.length === 11 ? authorAndVid.video : getVideoId(authorAndVid.video);
   const duplicateByVideo = useMemo(
-    () =>
-      !isEdit && currentVideoId
-        ? songs?.find((addedSong) => addedSong.video === currentVideoId && addedSong !== possibleDuplicate)
-        : undefined,
-    [songs, currentVideoId, isEdit, possibleDuplicate],
+    () => (!isEdit && currentVideoId ? songs?.find((addedSong) => addedSong.video === currentVideoId) : undefined),
+    [songs, currentVideoId, isEdit],
   );
+  const possibleDuplicate = duplicateByName ?? duplicateByVideo;
 
   // Prefill empty fields once per source (txt or edited song), so fields the user clears stay cleared
   const prefilledFromSource = useRef<unknown>(null);
@@ -317,20 +323,12 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
         <div className="col-span-12 px-2 md:px-0 md:py-4">
           <Stepper activeStep={currentStep} nonLinear={isEdit}>
             <Step key={0} completed={isBasicInfoCompleted}>
-              <StepButton color="inherit" onClick={() => setCurrentStep(0)}>
+              <StepButton color="inherit" {...duplicateStepProps(!!duplicateByName)} onClick={() => setCurrentStep(0)}>
                 <span className="hidden md:block">Basic Info</span>
               </StepButton>
             </Step>
             <Step key={1} completed={isAuthorAndVidCompleted}>
-              <StepButton
-                color="inherit"
-                icon={
-                  duplicateByVideo ? (
-                    <Icon icon="ic:baseline-error" className="text-error text-2xl" data-test="step-duplicate-video" />
-                  ) : undefined
-                }
-                sx={duplicateByVideo ? { '& .MuiStepLabel-label': { color: 'error.main' } } : undefined}
-                onClick={() => setCurrentStep(1)}>
+              <StepButton color="inherit" {...duplicateStepProps(!!duplicateByVideo)} onClick={() => setCurrentStep(1)}>
                 <span className="hidden md:block">Author and video data</span>
               </StepButton>
             </Step>
@@ -395,18 +393,9 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
             {possibleDuplicate && (
               <Alert severity="warning" data-test="possible-duplicate">
                 <AlertTitle>Possible duplicate</AlertTitle>
-                There is already a song with similar artist and/or name:{' '}
+                There is already a song with similar artist and/or name, or the same video:{' '}
                 <b>
                   {possibleDuplicate.artist} - {possibleDuplicate.title}
-                </b>
-              </Alert>
-            )}
-            {duplicateByVideo && (
-              <Alert severity="warning" data-test="duplicate-video">
-                <AlertTitle>Duplicate video</AlertTitle>
-                This video is already used by:{' '}
-                <b>
-                  {duplicateByVideo.artist} - {duplicateByVideo.title}
                 </b>
               </Alert>
             )}
