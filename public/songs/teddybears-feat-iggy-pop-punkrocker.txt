@@ -1,0 +1,241 @@
+#ARTIST:Teddybears feat. Iggy Pop
+#TITLE:Punkrocker
+#CREATOR:daggeg
+#BPM:282,44
+#YEAR:2006
+#VIDEO:v=8P09rxVaQAM
+#LANGUAGE:English
+#GAP:14090,936128027191
+#ALLKARAOKE_ID:teddybears-feat-iggy-pop-punkrocker
+#ALLKARAOKE_SID:7336
+#ALLKARAOKE_LASTUPDATE:2026-11-13T04:28:27.603Z
+#ALLKARAOKE_REALBPM:142
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=22380
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:167
+#MP3:Teddybears feat. Iggy Pop - Punkrocker.mp3
+: 19 2 9 You 
+: 23 2 9 see 
+: 27 2 9 me 
+: 31 5 9 dri
+: 38 2 5 vin’ 
+: 43 4 2 down 
+: 51 3 5 the 
+: 59 5 9 street
+- 64 135
+- 135
+: 154 2 5 I’m 
+: 158 3 9 bored 
+: 166 3 9 with 
+: 173 3 9 loo
+: 177 6 5 king 
+: 185 5 5 good
+- 190 254
+- 254
+: 273 2 2 I 
+: 277 2 5 got 
+: 285 3 9 both 
+: 293 3 5 hands 
+: 301 2 2 off 
+: 305 6 5 the 
+: 314 6 9 wheel
+- 320 389
+- 389
+: 408 2 2 The 
+: 412 2 9 cops 
+: 420 3 9 are 
+* 428 3 9 co
+* 432 5 5 min’
+- 437 501
+- 501
+: 520 2 9 I’m 
+: 523 3 12 liste
+: 527 2 12 ning 
+: 531 2 12 to 
+: 535 2 12 the 
+: 539 5 12 mu
+: 547 2 10 sic 
+: 551 3 9 with 
+: 559 3 7 no 
+: 567 5 9 fear
+- 572 631
+- 631
+: 650 2 9 You 
+: 654 2 9 can 
+* 658 2 9 hear 
+: 662 2 9 it 
+* 667 4 9 too 
+: 675 2 9 if 
+: 679 4 9 you’re 
+: 687 4 5 sin
+: 695 5 5 cere
+- 700 763
+- 763
+: 782 2 9 ’Cause 
+: 786 2 9 I’m 
+: 790 2 9 a 
+: 794 4 9 punk 
+: 802 2 5 roc
+: 806 2 5 ker, 
+: 810 2 2 yes 
+: 814 2 5 I 
+: 818 3 9 am
+- 821 891
+- 891
+: 910 2 9 Well 
+: 914 2 9 I’m 
+: 918 2 9 a 
+: 922 4 9 punk 
+: 930 2 5 roc
+: 934 2 5 ker, 
+: 938 2 2 yes 
+: 942 2 5 I 
+: 946 3 9 am
+- 949 1018
+- 1018
+: 1037 2 9 ’Cause 
+: 1041 2 9 I’m 
+: 1045 2 9 a 
+: 1049 4 9 punk 
+: 1057 2 5 roc
+: 1061 2 5 ker, 
+: 1065 2 2 yes 
+: 1069 2 5 I 
+: 1073 3 9 am
+- 1076 1145
+- 1145
+: 1164 2 9 Well 
+: 1168 2 9 I’m 
+: 1172 2 9 a 
+* 1176 4 9 punk 
+* 1184 2 5 roc
+* 1188 2 5 ker, 
+: 1192 2 2 yes 
+: 1196 2 5 I 
+: 1200 3 9 am
+- 1203 1273
+- 1273
+: 1292 2 9 I 
+: 1296 2 9 see 
+: 1300 2 9 you 
+: 1304 6 9 stag
+: 1312 2 5 ger 
+: 1317 3 2 in 
+: 1325 3 5 the 
+: 1333 5 9 street
+- 1338 1404
+- 1404
+: 1423 2 9 And 
+: 1427 2 9 you 
+: 1431 3 9 can’t 
+: 1439 2 9 stay 
+: 1443 5 9 on 
+: 1452 5 5 your 
+: 1461 5 5 feet
+- 1466 1532
+- 1532
+: 1551 2 9 And 
+: 1555 2 9 you’re 
+: 1559 5 9 fa
+: 1566 2 5 king 
+: 1571 4 2 in 
+: 1579 4 5 your 
+: 1587 5 9 sleep
+- 1592 1664
+- 1664
+: 1683 2 2 You 
+: 1687 2 9 wish 
+: 1694 2 9 that 
+: 1698 4 9 you 
+* 1706 4 5 were 
+* 1714 5 5 deep
+- 1719 1774
+- 1774
+: 1793 2 5 But 
+: 1797 2 12 you 
+: 1801 2 12 can’t 
+: 1805 2 12 hear 
+: 1809 2 12 me 
+: 1813 5 12 lau
+: 1821 2 10 ghing 
+: 1825 4 9 to 
+: 1833 4 7 my
+: 1841 7 9 self
+- 1848 1906
+- 1906
+: 1925 2 9 If 
+: 1929 2 9 you 
+: 1933 2 9 could, 
+: 1937 2 9 you 
+: 1941 3 9 would 
+: 1949 2 9 be 
+: 1953 4 9 some
+: 1961 4 5 one 
+: 1969 5 5 else
+- 1974 2037
+- 2037
+: 2056 2 9 ’Cause 
+: 2060 2 9 I’m 
+: 2064 2 9 a 
+: 2068 4 9 punk 
+: 2076 2 5 roc
+: 2080 2 5 ker, 
+: 2084 2 2 yes 
+: 2088 2 5 I 
+: 2092 3 9 am
+- 2095 2165
+- 2165
+* 2184 2 9 Well 
+* 2188 2 9 I’m 
+: 2192 2 9 a 
+: 2196 4 9 punk 
+: 2204 2 5 roc
+: 2208 2 5 ker, 
+: 2212 2 2 yes 
+: 2216 2 5 I 
+: 2220 3 9 am
+- 2223 2292
+- 2292
+: 2311 2 9 ’Cause 
+: 2315 2 9 I’m 
+: 2319 2 9 a 
+: 2323 4 9 punk 
+: 2331 2 5 roc
+: 2335 2 5 ker, 
+: 2339 2 2 yes 
+: 2343 2 5 I 
+: 2347 3 9 am
+- 2350 2419
+- 2419
+: 2438 2 9 Well 
+: 2442 2 9 I’m 
+: 2446 2 9 a 
+: 2450 4 9 punk 
+: 2458 2 5 roc
+: 2462 2 5 ker, 
+: 2466 2 2 yes 
+: 2470 2 5 I 
+: 2474 3 9 am
+- 2477 2546
+- 2546
+: 2565 2 9 ’Cause 
+: 2569 2 9 I’m 
+: 2573 2 9 a 
+: 2577 4 9 punk 
+: 2585 2 5 roc
+: 2589 2 5 ker, 
+: 2593 2 2 yes 
+: 2597 2 5 I 
+: 2601 3 9 am
+- 2604 2674
+- 2674
+: 2693 2 9 Well 
+: 2697 2 9 I’m 
+: 2701 2 9 a 
+* 2705 4 9 punk 
+* 2713 2 5 roc
+* 2717 2 5 ker, 
+: 2721 2 2 yes 
+: 2725 2 5 I 
+: 2729 3 9 am
+E

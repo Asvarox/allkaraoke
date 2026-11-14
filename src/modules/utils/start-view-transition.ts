@@ -5,14 +5,16 @@ export default function startViewTransition(callback: (isTransitioning: boolean)
     callback(false);
   } else {
     try {
-      if (previousTransition && !previousTransition.finished) {
-        previousTransition.skipTransition();
-      }
-      previousTransition = document.startViewTransition(async () => {
+      // No-op if the previous transition already finished
+      previousTransition?.skipTransition();
+      const transition = document.startViewTransition(async () => {
         await callback(true);
       });
+      // `ready` rejects with AbortError when a newer transition supersedes this one - expected, not an error
+      transition.ready.catch(() => undefined);
+      previousTransition = transition;
 
-      return previousTransition;
+      return transition;
     } catch (e) {
       console.error(e);
     }

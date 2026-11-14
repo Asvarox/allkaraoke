@@ -1,0 +1,581 @@
+#ARTIST:Bryson tiller
+#TITLE:Dont
+#CREATOR:usauto (auto)
+#BPM:300
+#YEAR:2004
+#PREVIEWSTART:3
+#VIDEO:v=M6jRr8fpbyk
+#LANGUAGE:en
+#GAP:1890
+#ALLKARAOKE_ID:bryson-tiller-dont
+#ALLKARAOKE_SID:7346
+#ALLKARAOKE_LASTUPDATE:2026-11-13T04:28:31.250Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:97
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=M6jRr8fpbyk
+#ALLKARAOKE_PREVIEWEND:189
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:199
+#P1:dont
+#VERSION:1.1.0
+#AUDIO:Bryson tiller - Dont.mp3
+#MP3:Bryson tiller - Dont.mp3
+#INSTRUMENTAL:Bryson tiller - Dont.mp3
+#ORIGINALAUDIO:Bryson tiller - Dont [ORIG].mp3
+#MEDLEYSTARTBEAT:691
+#MEDLEYENDBEAT:1291
+#LEITURA:0|dôunt|plei|uíd|rrâr|dôunt|bi|di|ssá|nist
+#LEITURA:109|stil|nát|an|dar|stén|din|dis|lá|djik
+#LEITURA:214|aim|bék|énd|aim|bé|rar
+#LEITURA:263|ai|uónt|iú|béd|éz|é|var
+#LEITURA:314|dôunt|lét|mi|djâst|lét|âp
+#LEITURA:363|ai|uóna|guiv|iú|bé|rar
+#LEITURA:413|bêi|bi|its|ua|té|var
+#LEITURA:463|sâm|ba|di|gá|ra|stép|âp
+#LEITURA:508|gârl|aim|dét|sâm|ba|di|sôu|nékst|âp
+#LEITURA:561|bi|if|ai|lét|rrim|kétch|âp
+#LEITURA:597|its|í|zi|ta|si|dét|iúr|féd|âp
+#LEITURA:638|ai|ém|ón|a|rrôul|nâ|dar|lé|val
+#LEITURA:691|gârl|rri|ôun|li|fâkt|iú|ôuvar|kóz|iú|lét|rrim
+#LEITURA:736|fâk|rrim|gârl|ai
+#LEITURA:749|gués|rri|didnt||nôu|éni|bé|rar
+#LEITURA:785|gârl|dét|mén|didnt||chôu|éni|é|fart
+#LEITURA:833|du|ól|ai|kén|djâst|ta|chôu|iú|iúr|spé|chal
+#LEITURA:880|sâr|an|its|iúr|lâv|dét|rrôuldz|mi|ta|gué|dar
+#LEITURA:932|lêit|li|iú|sei|rri|bin|kí|lin|da|vaib
+#LEITURA:981|gá|ra|bi|sik|âv|dis|gai
+#LEITURA:1019|pul|âp|eskeiarrár|guét|in|da|raid
+#LEITURA:1068|léft|rrénd|iz|stí|rin
+#LEITURA:1095|di|â|dar|iz|grípin|iúr|thai
+#LEITURA:1130|lait|âp|a|splif|énd|guét|rrai
+#LEITURA:1169|chó|ri|iú|di|zârv|uât|iúv|bin|mí|ssin
+#LEITURA:1229|lú|kin|ét|iú|aim|thínkin|rri|mâst|bi|trí|pin
+#LEITURA:1281|plei|dis|són|fór|rrim|tél|rrim|djâst|lí|ssan
+#LEITURA:1353|dôunt
+#LEITURA:1360|dôunt
+#LEITURA:1552|gârl|séd|rri|kips|ón|plêi|in|gueimz
+#LEITURA:1619|énd|rriz|lâ|vin|eint|da|seim
+#LEITURA:1673|ai|dôunt|nôu|uât|ta|sei|bât
+#LEITURA:1739|uât|a|cheim
+#LEITURA:1760|if|iú|uâr|main|iú|uúd|nát|guét|da|seim
+#LEITURA:1810|if|iú|uâr|main|iú|uúd|táp|év|ri|thin
+#LEITURA:1863|súissaid||in|da|dráp|suí|tchin|leinz
+#LEITURA:1903|énd|dét|thin|sôu|fáiar|bêi|bi|nôu|prôu|pein
+#LEITURA:1959|gát|gud|pú|ssi|gârl|kén|ai|bi|frénk
+#LEITURA:2008|ta|kip|it|uân|rrândrid|gârl|ai|eint|nôu|seint
+#LEITURA:2055|bât|rri|di|ôun|li
+#LEITURA:2072|rí|zan|dét|aim|fí|lin|dis|uei
+#LEITURA:2109|djívin|iú|da|uârld|bêi|bi|uén|iú|guét|speis
+#LEITURA:2153|pén|gueim|guét|mi|leid|bêi|bi|déts|pé|ni|treit
+#LEITURA:2199|ôu|bêi|bi
+#LEITURA:2433|gát|a|ní|ga|sôu|thrôud
+#LEITURA:2475|pór|âp|uí|kén|pár|ri|sâm|mór
+#LEITURA:2522|ié|gát|dis|drénk|in|mai|kâp
+#LEITURA:2574|gát|a|iân|níga|fí|lin|sôu|thrôud
+#LEITURA:2621|spit|fáiar|in|a|uârld|sôu|kôuld
+#LEITURA:2667|iân|mâ|ni|gát|a|ní|ga|fí|lin|ôuld
+#LEITURA:2720|spit|fáiar|in|a|uârld|sôu|kôuld
+#LEITURA:2770|êitch|táun|gát|mi|fí|lin|sôu|thrôud
+#LEITURA:2819|êitch|táun|gát|mi|fí|lin|sôu|thrôud
+#LEITURA:2871|raid|peint|énd|uí|sip|til|uí|fôuld
+#LEITURA:2932|gát|mi|fí|lin|sôu|thrôud
+#LEITURA:2967|spit|fáiar|in|a|uârld|sôu|kôuld
+#LEITURA:3013|êitch|táun|gát|a|ní|ga|sôu|thrôud
+* 20 16 6 don't 
+: 38 5 8 play 
+: 45 6 6 with 
+: 53 7 7 her, 
+: 62 6 9 don't 
+: 70 6 7 be 
+: 78 5 7 di
+: 83 2 7 sho
+* 85 11 9 nest
+- 96 109
+- 109
+: 129 5 6 Still 
+* 136 8 7 not 
+: 146 5 6 un
+: 151 6 6 der
+: 157 1 8 stan
+* 158 8 9 din' 
+* 169 11 7 this 
+: 182 6 9 lo
+* 188 9 6 gic
+- 197 214
+- 214
+: 234 2 6 I'm 
+: 237 3 6 back 
+: 242 3 6 (And 
+* 247 8 6 I'm 
+R 261 2 0 bet
+: 263 6 6 ter)
+- 269
+: 283 2 9 I 
+: 287 3 9 want 
+: 292 2 7 you 
+: 296 4 9 bad 
+: 302 2 6 as 
+: 306 7 9 e
+* 313 10 9 ver
+- 323
+: 334 5 10 Don't 
+: 341 2 9 let 
+: 345 4 11 me 
+: 351 2 9 just 
+: 355 4 9 let 
+* 361 11 9 up
+- 372
+: 383 2 7 I 
+: 386 2 11 wanna 
+* 390 9 10 give 
+: 401 2 9 you 
+: 404 13 9 bet
+: 417 6 9 ter
+- 423
+: 433 2 10 Ba
+* 435 8 11 by, 
+: 445 6 6 it's 
+: 453 7 6 what
+: 460 7 6 e
+: 467 5 9 ver
+- 472
+: 483 2 9 Some
+: 485 2 9 bo
+: 487 2 11 dy 
+: 490 7 6 got
+: 497 3 6 ta 
+* 502 12 6 step 
+: 516 6 7 up
+- 522
+: 528 2 4 Girl, 
+: 534 2 9 I'm 
+: 536 2 11 that 
+: 539 4 8 some
+: 543 3 7 bo
+: 546 2 7 dy, 
+: 548 2 7 so 
+* 553 9 6 next 
+: 564 6 9 up
+- 570
+: 581 2 9 Be 
+: 589 2 6 if 
+: 592 2 6 I 
+: 595 2 6 let 
+: 597 2 6 him 
+* 601 10 6 catch 
+: 613 2 4 up
+- 615
+: 617 2 7 It's 
+: 620 2 8 ea
+: 622 2 9 sy 
+: 626 5 6 to 
+: 633 2 9 see 
+: 637 2 9 that 
+: 641 7 9 you're 
+: 650 3 6 fed 
+: 655 1 4 up
+- 656
+* 658 9 4 I 
+: 669 6 9 am 
+: 677 2 8 on 
+: 679 2 6 a 
+: 682 4 9 whole 
+: 688 3 9 'no
+: 691 2 6 ther 
+: 694 5 9 le
+: 699 1 6 vel
+- 700
+: 711 2 9 Girl, 
+: 715 2 9 he 
+: 717 2 9 on
+: 719 4 9 ly 
+: 725 2 9 fucked 
+: 728 2 6 you 
+: 732 2 8 over 
+: 735 2 7 'cause 
+: 737 4 8 you 
+: 743 2 9 let 
+: 747 2 6 him
+- 749
+: 756 2 9 Fuck 
+: 760 2 7 him, 
+: 762 2 9 girl, 
+: 766 1 6 I
+- 767
+: 769 2 9 guess 
+: 771 2 7 he 
+: 775 2 9 did
+: 777 2 7 n't 
+: 780 5 9 know 
+: 787 4 9 any 
+: 793 3 9 bet
+: 796 3 6 ter
+- 799
+: 805 5 2 Girl, 
+: 812 4 9 that 
+: 818 3 7 man 
+: 823 2 6 did
+: 825 4 6 n't 
+: 831 4 6 show 
+: 837 4 6 any 
+: 843 4 6 ef
+: 847 2 4 fort
+- 849
+: 853 4 -3 Do 
+: 859 2 7 all 
+: 863 2 6 I 
+: 867 4 7 can 
+: 873 2 5 just 
+: 876 2 4 to 
+: 880 2 6 show 
+: 884 3 6 you 
+: 889 2 6 you're 
+: 892 5 6 spe
+: 897 1 4 cial
+- 898
+: 900 5 8 Cer
+: 905 2 8 tain 
+: 909 6 7 it's 
+: 917 2 7 your 
+: 920 3 6 love 
+: 925 3 4 that 
+: 930 2 6 holds 
+: 933 4 6 me 
+: 939 3 6 to
+: 942 1 6 ge
+: 943 4 4 ther
+- 947
+: 952 2 9 Late
+: 954 4 9 ly 
+: 960 5 7 you 
+: 967 2 9 say 
+: 970 3 9 he 
+: 975 2 6 been 
+: 978 2 9 kil
+: 980 5 9 lin' 
+: 987 2 6 the 
+: 991 8 9 vibe
+- 999
+: 1001 3 7 Got
+: 1004 3 9 ta 
+: 1009 5 6 be 
+: 1016 2 9 sick 
+: 1019 3 9 of 
+: 1024 2 7 this 
+: 1028 7 9 guy
+- 1035
+: 1039 4 9 Pull 
+: 1045 2 9 up, 
+* 1049 14 11 skrr, 
+: 1065 3 9 get 
+: 1070 2 9 in 
+: 1073 3 6 the 
+: 1078 6 9 ride
+- 1084
+: 1088 5 9 Left 
+: 1095 2 9 hand 
+: 1098 3 6 is 
+: 1103 8 9 stee
+: 1111 2 6 rin'
+- 1113
+: 1115 1 9 the 
+: 1116 3 9 o
+: 1119 2 9 ther 
+: 1123 3 6 is 
+: 1128 2 9 grippin' 
+: 1131 6 7 your 
+: 1139 7 9 thigh
+- 1146
+: 1150 4 9 Light 
+: 1156 2 9 up 
+: 1160 3 6 a 
+: 1165 2 9 spliff 
+: 1169 2 9 and 
+: 1172 5 6 get 
+: 1179 5 9 high
+- 1184
+: 1189 5 9 Shaw
+: 1194 7 6 ty, 
+: 1203 4 6 you 
+: 1209 5 2 de
+: 1214 3 2 serve 
+: 1219 4 4 what 
+: 1225 5 5 you've 
+: 1232 5 2 been 
+: 1239 7 4 mis
+: 1246 1 6 sin'
+- 1247
+: 1249 2 6 Loo
+: 1251 4 7 kin' 
+: 1257 2 6 at 
+: 1261 2 6 you 
+: 1264 2 6 I'm 
+: 1267 2 6 thinkin' 
+: 1270 4 6 he 
+: 1276 4 6 must 
+: 1282 3 2 be 
+: 1287 8 4 trip
+: 1295 4 6 pin'
+- 1299
+: 1301 4 7 Play 
+: 1307 4 7 this 
+: 1313 5 7 song 
+: 1320 2 6 for 
+: 1322 2 4 him, 
+: 1326 2 4 tell 
+: 1330 2 4 him, 
+: 1332 4 4 "Just 
+: 1338 7 3 lis
+* 1345 15 -3 ten"
+- 1360
+: 1373 5 11 Don't
+- 1378
+: 1380 3 6 Don't
+- 1383 1552
+- 1552
+: 1572 8 -3 Girl, 
+: 1590 2 -3 said 
+: 1593 2 -3 he 
+: 1596 8 4 keeps 
+: 1606 2 4 on 
+: 1610 12 2 play
+: 1622 1 -3 in' 
+: 1636 1 -3 games
+- 1637
+: 1639 2 -3 And 
+: 1641 3 -3 his 
+: 1646 3 1 lo
+: 1649 6 4 vin' 
+* 1657 9 2 ain't 
+: 1668 3 1 the 
+* 1673 13 -3 same
+- 1686
+: 1693 3 0 I 
+: 1698 5 4 don't 
+: 1705 3 4 know 
+: 1710 3 4 what 
+: 1715 5 2 to 
+* 1722 14 4 say, 
+: 1745 5 2 but
+- 1750
+: 1759 3 6 What 
+: 1764 5 6 a 
+: 1771 7 6 shame
+- 1778
+: 1780 6 6 If 
+: 1788 3 6 you 
+: 1793 2 7 were 
+: 1795 4 9 mine 
+: 1801 2 9 you 
+: 1804 2 9 would 
+: 1808 3 11 not 
+: 1813 2 7 get 
+: 1816 2 6 the 
+: 1820 8 6 same
+- 1828
+: 1830 6 5 If 
+: 1838 2 6 you 
+: 1842 2 7 were 
+: 1845 3 9 mine 
+: 1850 2 9 you 
+: 1853 2 10 would 
+: 1857 3 11 top 
+: 1862 7 6 eve
+: 1869 2 6 ry
+* 1871 10 6 thing
+- 1881
+: 1883 11 6 Sui
+: 1894 4 9 cide 
+: 1900 2 9 in 
+: 1903 2 9 the 
+: 1905 6 11 drop 
+: 1915 1 6 swit
+: 1916 2 6 chin' 
+: 1920 1 6 lanes
+- 1921
+: 1923 5 6 And 
+: 1930 3 9 that 
+: 1935 2 7 thing 
+: 1937 5 6 so 
+: 1944 2 9 fire, 
+: 1948 2 6 ba
+: 1950 3 6 by, 
+: 1955 5 8 no 
+: 1962 7 6 pro
+: 1969 5 9 pane
+- 1974
+: 1979 5 9 Got 
+: 1986 3 6 good 
+: 1991 2 7 pus
+: 1993 4 9 sy, 
+: 1999 3 6 girl, 
+: 2004 2 9 can 
+: 2008 2 9 I 
+: 2011 4 13 be 
+* 2017 9 9 frank?
+- 2026
+: 2028 2 9 To 
+: 2030 2 9 keep 
+: 2033 2 9 it 
+: 2037 2 6 one 
+: 2041 5 9 hundred, 
+: 2048 3 6 girl, 
+: 2053 2 6 I 
+: 2056 3 9 ain't 
+: 2061 5 6 no 
+: 2068 3 9 saint
+- 2071
+: 2075 2 2 But 
+: 2079 2 8 he 
+: 2083 2 6 the 
+: 2086 3 6 on
+: 2089 1 6 ly
+- 2090
+: 2092 3 6 rea
+: 2095 2 4 son 
+: 2098 2 4 that 
+: 2101 2 4 I'm 
+: 2105 1 5 fee
+: 2106 3 6 lin' 
+: 2111 4 9 this 
+: 2117 3 4 way
+- 2120
+: 2129 2 9 Givin' 
+: 2133 6 6 you 
+: 2141 2 8 the 
+: 2143 3 9 world, 
+: 2148 2 6 ba
+: 2150 2 6 by, 
+: 2153 2 8 when 
+: 2156 2 9 you 
+: 2160 3 6 get 
+: 2165 6 9 space
+- 2171
+: 2173 3 6 Pen 
+: 2178 3 9 game 
+: 2183 3 6 get 
+: 2188 2 6 me 
+: 2191 2 9 laid, 
+: 2195 3 6 ba
+: 2198 2 6 by, 
+: 2201 6 9 that's 
+: 2209 3 6 pe
+: 2212 3 6 ne
+: 2215 2 9 trate
+- 2217
+* 2219 13 11 Oh, 
+: 2234 4 6 ba
+* 2238 9 6 by
+- 2247 2433
+- 2433
+: 2453 3 6 got 
+: 2458 4 6 a 
+: 2464 3 7 nig
+: 2467 2 6 ga 
+: 2470 3 5 so 
+* 2475 12 -4 throwed
+- 2487
+: 2495 1 -6 Pour 
+: 2496 4 -6 up, 
+: 2502 3 -6 we 
+: 2507 4 -5 can 
+: 2513 6 -5 par
+: 2519 1 -5 ty 
+: 2520 5 -5 some 
+* 2527 10 -4 more
+- 2537
+* 2542 12 -7 Yeah, 
+: 2556 2 -7 got 
+: 2560 2 -7 this 
+: 2563 4 -5 drank 
+: 2569 2 -4 in 
+: 2572 3 -5 my 
+: 2577 8 -6 cup
+- 2585
+: 2594 3 -5 Got 
+: 2599 2 -5 a 
+: 2602 3 -5 young 
+: 2607 2 -5 nigga 
+: 2609 5 -5 fee
+: 2614 2 -5 lin' 
+: 2618 5 -5 so 
+* 2625 12 -4 throwed
+- 2637
+: 2641 7 -5 Spit 
+: 2650 3 -5 fire 
+: 2655 2 -5 in 
+: 2659 2 -5 a 
+: 2663 2 -5 world 
+: 2666 5 -6 so 
+* 2673 9 -4 cold
+- 2682
+* 2687 10 -5 Young 
+: 2699 2 -5 mo
+: 2701 2 -5 ney 
+: 2703 3 -5 got 
+: 2708 2 -5 a 
+: 2711 3 -5 nig
+: 2714 2 -5 ga 
+: 2716 8 -5 fee
+: 2724 4 -3 lin' 
+: 2730 3 -7 old
+- 2733
+: 2740 7 -4 Spit 
+: 2749 3 -5 fire 
+: 2754 2 -5 in 
+: 2757 2 -5 a 
+: 2761 2 -5 world 
+: 2764 6 -4 so 
+* 2772 11 -4 cold
+- 2783
+: 2790 2 -7 H-
+* 2792 10 -4 Town 
+: 2804 2 -5 got 
+: 2807 2 -4 me 
+: 2811 5 -5 fee
+: 2816 1 -4 lin' 
+: 2818 2 -4 so 
+* 2822 13 -4 throwed
+- 2835
+: 2839 2 -7 H-
+* 2841 11 -5 Town 
+: 2854 2 -5 got 
+: 2857 2 -4 me 
+: 2860 1 -4 fee
+: 2861 4 -5 lin' 
+: 2867 4 -4 so 
+* 2873 16 -4 throwed
+- 2889
+: 2891 5 -5 Ride 
+: 2898 4 -4 paint 
+: 2904 2 -5 and 
+: 2907 3 -4 we 
+: 2912 2 -4 sip 
+: 2916 6 -5 'til 
+: 2924 3 -4 we 
+: 2929 4 -6 fold
+- 2933
+: 2952 2 -5 got 
+: 2956 2 -5 me 
+: 2959 4 -5 fee
+: 2963 2 -5 lin' 
+: 2966 3 -5 so 
+* 2971 10 -4 throwed
+- 2981
+: 2987 6 -4 Spit 
+: 2995 5 -4 fire 
+: 3002 2 -5 in 
+: 3006 2 -5 a 
+: 3009 2 -5 world 
+: 3012 6 -5 so 
+* 3020 11 -4 cold
+- 3031
+R 3033 6 0 H-
+* 3039 10 -6 Town 
+: 3051 2 -6 got 
+: 3055 2 -5 a 
+: 3058 3 -5 nig
+: 3061 2 -6 ga 
+: 3064 3 -7 so 
+* 3069 22 -5 throwed
+E

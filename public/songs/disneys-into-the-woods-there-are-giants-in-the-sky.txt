@@ -1,0 +1,438 @@
+#ARTIST:Disney’s Into The Woods
+#TITLE:There Are Giants In The Sky
+#CREATOR:matthu
+#BPM:300
+#YEAR:2014
+#VIDEO:v=Nr1MH4BaXRE
+#GENRE:Soundtrack
+#LANGUAGE:English
+#GAP:41880
+#ALLKARAOKE_ID:disneys-into-the-woods-there-are-giants-in-the-sky
+#ALLKARAOKE_SID:7375
+#ALLKARAOKE_LASTUPDATE:2026-11-13T04:28:43.407Z
+#ALLKARAOKE_REALBPM:128
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:186
+#MP3:Disney’s Into The Woods - There Are Giants In The Sky.mp3
+: 20 1 8 There 
+: 22 1 9 are 
+* 25 4 11 gi
+: 30 3 4 ants 
+: 35 4 6 in 
+: 41 5 3 the 
+: 47 31 1 sky
+- 78 79
+- 79
+: 99 1 8 There 
+: 101 1 9 are 
+* 103 7 11 big 
+: 112 6 4 tall 
+: 120 2 6 te
+: 123 2 4 rri
+: 128 7 3 ble 
+: 136 4 1 gi
+: 142 3 4 ants 
+: 147 4 6 in 
+: 153 6 3 the 
+: 160 29 1 sky
+- 189 256
+- 256
+: 276 2 8 When 
+: 279 2 9 you’re 
+* 282 4 11 way 
+: 287 2 4 up 
+: 291 3 6 high 
+: 297 1 4 and 
+: 299 1 3 you 
+: 301 3 1 look 
+: 305 4 4 be
+: 310 4 6 low
+- 314
+: 316 1 4 At 
+: 318 1 3 the 
+: 320 4 1 world 
+: 325 3 4 you 
+: 330 3 6 left 
+: 335 1 4 and 
+: 337 1 3 the 
+: 340 4 1 things 
+: 345 3 4 you 
+: 349 4 6 know,
+- 353
+: 354 1 4 Li
+: 357 2 3 ttle 
+: 360 3 1 more 
+: 364 1 4 than 
+: 366 1 4 a 
+: 368 4 6 glance 
+: 374 1 4 is 
+: 376 2 3 e
+: 379 3 1 nough 
+: 383 2 4 to 
+: 386 3 6 show 
+: 391 3 3 you
+- 394
+: 397 3 1 Just 
+: 401 3 4 how 
+: 405 6 6 small 
+: 414 1 8 you 
+* 416 18 11 are
+- 434 449
+- 449
+: 469 1 8 When 
+: 471 1 9 you’re 
+* 473 4 11 way 
+: 478 2 4 up 
+: 483 3 6 high 
+: 487 1 4 and 
+: 489 1 3 you’re 
+: 491 3 1 on 
+: 495 3 4 your 
+: 500 3 6 own
+- 503
+: 505 1 4 In 
+: 507 1 3 a 
+: 510 3 1 world 
+: 516 3 4 like 
+: 521 3 8 none 
+: 526 1 4 that 
+: 528 2 3 you’ve 
+: 531 2 1 e
+: 536 3 4 ver 
+: 541 3 8 known,
+- 544
+: 545 2 4 Where 
+: 549 1 3 the 
+: 551 4 1 sky 
+: 556 3 4 is 
+: 560 3 8 lead 
+: 565 1 4 and 
+: 567 1 3 the 
+: 569 4 1 earth 
+: 574 3 4 is 
+: 579 3 11 stone,
+- 582
+: 583 3 8 You’re 
+* 588 10 13 free, 
+: 603 2 8 to 
+* 607 9 13 do 
+: 622 2 8 what
+: 626 3 13 e
+: 630 3 8 ver 
+: 635 3 6 pleas
+: 639 3 8 es 
+: 644 9 1 you,
+- 653
+: 659 2 8 Ex
+: 663 3 13 plo
+: 669 3 8 ring 
+: 673 3 6 things 
+: 678 3 8 you’d 
+: 683 4 1 ne
+: 689 3 3 ver
+: 693 3 4 dare 
+: 697 3 3 ’cause 
+: 701 4 1 you 
+: 707 3 3 don’t 
+: 711 4 4 care,
+- 715
+: 717 2 4 When 
+: 722 1 4 su
+: 724 2 4 dden
+: 727 3 4 ly 
+: 731 3 4 there’s 
+: 735 3 4 a 
+: 740 7 1 big
+- 747
+: 749 7 3 Tall 
+: 758 5 6 te
+: 764 3 5 rri
+: 768 4 3 ble 
+: 774 10 5 gi
+* 789 7 8 ant 
+: 797 7 5 at 
+: 807 7 1 the 
+* 816 25 -2 door,
+- 841 872
+- 872
+: 892 3 1 A 
+: 896 5 1 big 
+: 904 6 3 tall 
+: 912 3 6 te
+: 916 3 5 rri
+: 920 3 3 ble 
+: 925 12 5 la
+: 942 7 8 dy 
+: 951 7 5 gi
+: 960 6 1 ant 
+: 968 3 5 swee
+: 973 3 3 ping 
+: 978 3 1 the 
+: 983 25 3 floor
+- 1008 1021
+- 1021
+: 1041 1 10 And 
+: 1043 2 8 she 
+* 1047 7 13 gives 
+: 1056 6 13 you 
+: 1064 4 13 food 
+: 1071 3 12 And 
+: 1076 3 10 she 
+: 1080 7 8 gives 
+: 1088 7 5 you 
+: 1097 7 1 rest
+- 1104
+: 1113 3 3 And 
+: 1117 2 1 she 
+: 1122 7 13 draws 
+: 1131 7 13 you 
+* 1140 7 13 close 
+: 1148 3 12 to 
+: 1152 4 10 her 
+: 1157 6 8 gi
+: 1164 6 5 ant 
+: 1173 8 1 breast,
+- 1181
+: 1188 3 -2 And 
+: 1193 4 -4 you 
+: 1199 6 1 know 
+: 1206 6 3 things 
+: 1215 3 6 now 
+: 1220 3 5 that 
+: 1225 3 3 you 
+: 1230 9 5 ne
+* 1241 9 8 ver 
+: 1255 5 5 knew 
+: 1263 6 1 be
+: 1271 21 -2 fore,
+- 1292 1304
+- 1304
+: 1324 3 6 Not 
+: 1328 2 5 till 
+: 1331 2 3 the 
+: 1335 19 1 sky
+- 1354 1390
+- 1390
+: 1410 2 5 On
+: 1413 1 6 ly 
+* 1415 3 8 just 
+: 1420 2 1 when 
+: 1423 2 1 you’ve 
+: 1426 3 3 made 
+: 1430 1 0 a 
+: 1432 4 -2 friend 
+: 1439 3 1 and 
+: 1443 2 3 all,
+- 1445
+: 1449 2 1 And 
+: 1452 1 0 you 
+: 1454 3 -2 know 
+: 1458 3 1 she’s 
+: 1462 3 3 big 
+: 1466 1 1 but 
+: 1468 2 0 you 
+: 1471 3 -2 don’t 
+: 1476 3 1 feel 
+: 1480 4 3 small,
+- 1484
+: 1487 1 1 Some
+: 1489 2 0 one 
+: 1493 1 -2 bigg
+: 1495 1 -2 er 
+: 1497 2 1 than 
+: 1500 3 3 her 
+: 1505 2 1 comes 
+: 1508 1 0 a
+: 1510 3 -2 long 
+: 1515 3 1 the 
+: 1519 3 3 hall
+- 1522
+: 1523 3 0 To 
+: 1528 3 -2 swa
+: 1532 3 1 llow 
+: 1537 3 3 you 
+: 1541 3 5 for 
+* 1546 9 8 lunch
+- 1555 1578
+- 1578
+: 1598 2 8 And 
+: 1601 2 9 you 
+* 1604 4 11 heart 
+: 1609 2 4 is 
+: 1612 3 6 lead 
+: 1617 1 4 And 
+: 1619 1 3 your 
+: 1621 3 1 sto
+: 1626 3 4 mach 
+: 1631 3 6 stone
+- 1634
+: 1636 1 4 And 
+: 1638 1 3 you’re 
+: 1641 3 1 reall
+: 1645 2 4 y 
+: 1649 3 6 scared 
+: 1655 1 4 be
+: 1657 2 3 ing 
+: 1660 3 1 all 
+: 1664 3 4 a
+* 1668 24 7 lone
+- 1692
+: 1709 1 4 And 
+: 1711 2 3 it’s 
+: 1714 3 1 then 
+: 1718 2 4 that 
+: 1721 1 4 you 
+: 1723 3 6 miss 
+: 1728 2 4 all 
+: 1731 2 3 the 
+: 1734 3 1 things 
+: 1738 2 4 you’ve 
+: 1742 4 9 known
+- 1746
+: 1747 1 4 And 
+: 1749 1 3 the 
+: 1751 3 1 world 
+: 1755 3 4 you’ve 
+: 1760 3 10 left 
+: 1764 1 4 and 
+: 1766 1 3 the 
+: 1768 2 1 li
+: 1771 2 1 ttle 
+: 1774 2 4 you 
+: 1778 2 11 own
+- 1780
+: 1783 2 8 The 
+: 1787 7 13 fun 
+: 1801 2 8 is 
+: 1805 8 13 done
+- 1813
+: 1818 3 8 You 
+: 1822 3 13 steal 
+: 1827 1 8 what 
+: 1829 2 8 you 
+: 1834 3 6 can 
+: 1839 3 8 and 
+: 1843 8 1 run
+- 1851
+: 1854 2 8 And 
+: 1857 2 8 you 
+: 1860 3 13 scram
+: 1866 3 8 ble 
+: 1870 3 6 down 
+: 1875 1 6 and 
+: 1877 2 8 you 
+: 1880 3 1 look 
+: 1886 2 3 be
+: 1889 3 4 low,
+- 1892
+: 1894 1 3 And 
+: 1896 1 3 the 
+: 1898 3 4 world 
+: 1902 3 6 you 
+: 1906 3 7 know 
+: 1911 2 6 be
+: 1917 3 7 gins 
+: 1922 3 9 to 
+* 1927 4 10 grow: 
+: 1932 3 1 The 
+* 1936 5 2 roof,
+- 1941
+: 1949 3 4 The 
+: 1954 4 7 house, 
+: 1959 3 6 and 
+: 1964 2 4 your 
+: 1968 7 6 mo
+* 1977 5 9 ther 
+: 1991 6 6 at 
+: 2000 7 2 the 
+* 2010 42 -1 door
+- 2052 2060
+- 2060
+: 2080 3 -3 The 
+: 2084 8 2 roof, 
+: 2098 3 4 the 
+: 2102 5 7 house 
+: 2108 2 6 and 
+: 2112 2 4 the 
+: 2117 11 6 world
+- 2128
+: 2132 7 9 You 
+* 2140 7 6 ne
+: 2149 7 2 ver 
+: 2160 4 6 thought 
+: 2165 2 4 to 
+: 2169 3 2 ex
+* 2174 32 4 plore
+- 2206
+: 2222 3 11 And 
+: 2226 3 9 you 
+* 2232 8 14 think 
+: 2242 8 14 of 
+: 2252 3 14 all 
+: 2256 3 13 of 
+: 2260 3 11 the 
+: 2264 9 9 things 
+: 2274 6 6 you’ve 
+* 2281 8 2 seen,
+- 2289
+: 2297 3 4 And 
+: 2301 3 2 you 
+* 2306 7 14 wish 
+: 2316 6 14 that 
+: 2325 4 14 you 
+: 2330 3 13 could 
+: 2334 3 11 live 
+: 2338 5 9 in 
+: 2347 5 6 be
+: 2354 8 2 tween,
+- 2362
+: 2371 2 -3 And 
+: 2375 2 -3 you’re 
+: 2379 6 2 back 
+: 2387 8 4 a
+: 2397 5 7 gain, 
+: 2403 2 6 on
+: 2406 3 4 ly 
+: 2410 7 6 di
+: 2420 9 9 fferent 
+: 2435 4 6 than 
+: 2442 5 2 be
+: 2450 32 -1 fore,
+- 2482 2488
+- 2488
+: 2508 5 7 Af
+: 2514 2 6 ter 
+: 2517 1 4 the 
+: 2519 28 2 sky
+- 2547
+: 2565 2 6 There 
+: 2568 2 7 are 
+* 2572 4 9 gi
+: 2578 3 2 ants 
+: 2582 5 4 in 
+: 2589 5 1 the 
+: 2597 36 -1 sky
+- 2633
+: 2640 2 6 There 
+: 2643 2 7 are 
+* 2647 5 9 big 
+: 2655 5 2 tall 
+: 2663 2 4 te
+: 2666 1 2 rri
+: 2668 3 1 ble,
+- 2671
+* 2677 6 9 Awe
+: 2684 4 2 some, 
+: 2690 6 4 sca
+: 2698 5 1 ry,
+- 2703
+* 2708 3 13 Won
+: 2713 2 11 der
+: 2716 5 9 ful 
+* 2723 8 11 gi
+: 2735 7 7 ants
+- 2742
+* 2757 5 14 In 
+: 2764 6 13 the 
+* 2773 61 14 sky
+E
