@@ -1,0 +1,179 @@
+#ARTIST:Larval Stage Planning
+#TITLE:Trip Innocent of D - DXD
+#CREATOR:Dangereus
+#BPM:327,03
+#YEAR:2012
+#VIDEO:v=QmZyPST2BPk
+#GENRE:Anime
+#LANGUAGE:Japanese
+#GAP:17580,918264379416
+#ALLKARAOKE_ID:larval-stage-planning-trip-innocent-of-d-dxd
+#ALLKARAOKE_SID:7505
+#ALLKARAOKE_LASTUPDATE:2026-11-14T21:48:22.286Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_REALBPM:167
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:92
+#MP3:Larval Stage Planning - Trip Innocent of D (TV).mp3
+#COVER:Larval Stage Planning - Trip Innocent of D (TV).jpg
+: 22 6 8 Ma
+: 30 3 7 ji
+: 34 6 8 wa
+: 42 3 7 ri 
+: 46 3 8 a
+: 50 3 10 u 
+: 54 10 12 se
+: 66 3 3 n 
+: 70 8 3 to
+- 78
+: 86 10 8 Too
+* 98 3 8 ku 
+* 102 3 7 yo
+: 106 3 8 bi 
+: 110 3 10 ka
+: 114 3 3 ke
+: 118 10 1 ru 
+: 130 3 0 so
+: 134 12 0 ra
+- 146
+: 150 10 5 Ju
+: 162 3 5 u
+: 166 3 7 ji 
+: 170 3 8 no 
+: 174 3 10 shi
+: 178 3 3 ta 
+: 182 10 8 de 
+: 194 3 3 ma
+: 198 8 3 u
+- 206
+: 213 6 5 Se
+* 221 6 8 n
+* 229 3 7 rit
+: 233 3 8 su 
+: 237 3 10 no 
+: 241 3 3 ko
+: 245 26 8 e
+- 271
+: 277 10 7 Yo
+: 289 6 7 wa
+: 297 3 7 sa 
+: 301 3 7 na
+: 305 3 5 do 
+: 309 6 4 ki
+: 317 6 0 mi 
+: 325 6 12 ni 
+: 333 6 10 mi
+: 341 10 8 se 
+* 353 3 8 ta
+* 357 3 7 ku 
+* 361 3 5 na
+: 365 3 3 i 
+: 369 3 7 ka
+: 373 25 8 ra
+- 398
+: 405 6 1 Ka
+: 413 3 3 ze 
+: 417 6 5 wo
+- 423
+: 437 6 3 U
+: 445 3 5 ke
+: 449 12 7 te
+- 461
+: 468 3 8 Fu
+: 472 3 8 ri 
+: 476 3 8 ki
+* 480 6 8 ~
+* 488 3 8 tte 
+: 492 3 8 su
+: 496 3 8 su
+: 500 3 8 me
+: 504 29 10 ~
+- 533 538
+- 538
+: 560 6 5 Sho
+: 568 3 12 u
+: 572 3 12 do
+: 576 3 12 u 
+: 580 3 12 wo 
+: 584 3 12 to
+* 588 3 12 ki 
+* 592 6 11 ha
+: 600 3 9 na
+: 604 13 7 te!
+- 617
+: 624 6 4 Ka
+: 632 3 12 ke 
+: 636 3 12 me
+: 640 3 12 gu
+: 644 3 12 ri 
+: 648 3 12 tsu
+: 652 3 12 mo
+: 656 6 11 ru 
+: 664 3 9 i
+: 668 13 7 shi
+- 681
+: 692 18 12 So
+* 712 3 9 no 
+* 716 3 11 me 
+* 720 3 12 wo 
+: 724 6 11 wa
+: 732 6 9 su
+: 740 6 7 re 
+: 748 6 11 wa 
+: 756 6 11 shi 
+: 764 3 12 na
+: 768 3 7 i
+: 772 34 9 ~
+- 806
+: 816 6 5 Ki
+: 824 3 12 o
+: 828 3 12 ku 
+: 832 3 12 wo 
+: 836 3 12 yu
+: 840 3 12 ra
+* 844 3 12 su 
+* 848 6 11 draw 
+: 856 3 9 de
+: 860 12 7 lete
+- 872
+: 879 6 4 A
+: 887 3 12 shi
+: 891 3 12 ta 
+: 895 3 12 ni 
+: 899 3 12 ka
+: 903 3 12 e
+: 907 3 12 ru 
+: 911 6 11 i
+: 919 3 9 ma 
+: 923 18 7 wo
+- 941
+: 948 18 9 Ma
+: 968 3 9 ta 
+* 972 3 7 ri
+* 976 3 9 n
+: 980 14 11 ne 
+: 996 14 7 su
+: 1012 8 4 ru
+- 1020
+: 1031 3 11 To
+: 1035 3 9 mo
+: 1039 3 11 shi
+: 1043 12 12 bi
+- 1055
+* 1059 3 11 So
+* 1063 3 12 ~
+: 1067 3 11 ~
+: 1071 18 9 tto
+- 1089
+: 1095 3 5 Ho
+* 1099 3 7 ho 
+* 1103 3 9 wo 
+: 1107 6 7 tsu
+: 1115 6 5 ta
+: 1123 6 4 u 
+: 1131 6 11 ku
+: 1139 6 11 re
+: 1147 3 12 na
+: 1151 3 7 i
+: 1155 45 9 ~
+E

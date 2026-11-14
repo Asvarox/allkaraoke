@@ -1,0 +1,889 @@
+#ARTIST:Liroy
+#TITLE:Scoobiedoo Ya
+#CREATOR:mardzillo
+#BPM:387,56
+#YEAR:1995
+#VIDEO:v=sWoTWA8JN8A
+#GENRE:Rap
+#LANGUAGE:Polish
+#GAP:2903,7042006399006
+#ALLKARAOKE_ID:liroy-scoobiedoo-ya
+#ALLKARAOKE_SID:7419
+#ALLKARAOKE_LASTUPDATE:2026-11-14T21:47:45.616Z
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_VOLUME:70
+#ALLKARAOKE_DURATION:216
+#MP3:Liroy - Scoobiedoo Ya.mp3
+#COVER:Liroy - Scoobiedoo Ya [CO].jpg
+#BACKGROUND:Liroy - Scoobiedoo Ya [BG].jpg
+R 26 3 -2 A 
+R 30 3 0 mil
+R 34 3 0 li 
+R 38 3 0 bil
+R 42 3 0 li 
+R 46 3 0 dil
+R 50 2 -2 li 
+R 54 6 -2 bum 
+R 62 6 -2 bum
+- 68 127
+- 127
+R 153 3 -2 A 
+R 157 3 0 mil
+R 161 3 0 li 
+R 165 3 0 bil
+R 169 3 0 li 
+R 173 3 0 dil
+R 177 2 -2 li 
+R 181 6 -2 bum 
+R 189 6 -2 bum
+- 195 256
+- 256
+R 282 3 -2 A 
+R 286 3 0 mil
+R 290 3 0 li 
+R 294 3 0 bil
+R 298 3 0 li 
+R 302 3 0 dil
+R 306 2 -2 li 
+R 310 6 -2 bum 
+R 318 6 -2 bum
+- 324 384
+- 384
+R 410 3 -2 A 
+R 414 3 0 mil
+R 418 3 0 li 
+R 422 3 0 bil
+R 426 3 0 li 
+R 430 3 0 dil
+R 434 2 -2 li 
+R 438 6 -2 bum 
+R 446 6 -2 bum
+- 452 512
+- 512
+R 538 3 -2 A 
+R 542 3 0 mil
+R 546 3 0 li 
+R 550 3 0 bil
+R 554 3 0 li 
+R 558 3 0 dil
+R 562 2 -2 li 
+R 566 6 -2 bum 
+R 574 6 -2 bum
+- 580 639
+- 639
+R 665 3 -2 A 
+R 669 3 0 mil
+R 673 3 0 li 
+R 677 3 0 bil
+R 681 3 0 li 
+R 685 3 0 dil
+R 689 2 -2 li 
+R 693 6 -2 bum 
+R 701 6 -2 bum
+- 707 767
+- 767
+G 793 3 -2 A 
+G 797 3 0 mil
+G 801 3 0 li 
+G 805 3 0 bil
+G 809 3 0 li 
+G 813 3 0 dil
+G 817 2 -2 li 
+G 821 6 -2 bum 
+G 829 6 -2 bum
+- 835 896
+- 896
+R 922 2 -2 A 
+R 925 3 0 mil
+R 929 3 0 li 
+R 933 3 0 bil
+R 937 3 0 li 
+R 941 3 0 dil
+R 945 2 -2 li 
+R 949 7 -2 bum
+- 956
+G 957 5 0 Y’all 
+G 963 2 0 rea
+G 966 2 0 dy 
+G 969 2 0 to 
+G 972 6 0 get 
+G 979 5 0 fun
+G 987 5 0 ky, 
+G 995 5 0 fun
+G 1003 5 0 ky?
+- 1008
+R 1016 2 0 The 
+R 1020 6 0 beat 
+R 1028 3 0 that 
+R 1032 5 0 will 
+R 1038 4 0 not 
+R 1044 4 0 be 
+R 1049 4 0 de
+R 1054 12 0 nied.
+- 1066
+R 1085 5 0 Y’all 
+R 1091 2 0 rea
+R 1094 2 0 dy 
+R 1097 2 0 to 
+R 1100 6 0 get 
+R 1107 5 0 fun
+R 1115 5 0 ky, 
+R 1123 5 0 fun
+R 1131 5 0 ky?
+- 1136
+R 1143 2 0 The 
+R 1147 6 0 beat 
+R 1155 3 0 that 
+R 1159 5 0 will 
+R 1165 4 0 not 
+R 1172 3 0 be 
+R 1176 4 0 de
+R 1181 12 0 nied.
+- 1193
+R 1202 3 2 Mam 
+R 1206 4 3 dwie 
+R 1212 4 2 rę
+R 1220 6 -2 ce. 
+R 1227 7 7 Mmm, 
+R 1236 1 12 to 
+R 1239 1 7 już 
+R 1244 4 10 by
+R 1249 7 5 ło.
+- 1256
+R 1259 3 5 To 
+R 1263 3 3 na 
+R 1267 4 3 mej 
+R 1272 2 3 psy
+R 1276 5 3 chi
+R 1283 7 3 ce 
+R 1291 3 3 bar
+R 1296 1 3 dzo 
+R 1298 2 3 się 
+R 1302 4 3 od
+R 1307 2 2 bi
+R 1310 5 3 ło.
+- 1315
+R 1326 4 2 Więc 
+R 1332 5 3 pos
+R 1340 3 3 łu
+R 1344 4 3 chaj 
+R 1350 3 0 dziew
+R 1354 3 3 czy
+R 1358 6 2 no 
+R 1367 3 0 co 
+R 1371 3 3 chcę 
+R 1376 2 2 po
+R 1379 2 2 wie
+R 1382 4 2 dzieć 
+R 1387 6 2 ci.
+- 1393
+R 1403 4 3 Scoo
+R 1408 3 3 bie 
+R 1412 2 3 doo
+R 1415 3 3 bie 
+R 1419 6 5 doo 
+R 1426 3 3 z to
+R 1430 4 2 bą 
+R 1435 3 2 ciąg
+R 1439 2 0 le 
+R 1442 2 0 mi 
+R 1445 2 0 się 
+R 1451 6 0 śni.
+- 1457
+R 1468 6 2 Scoo
+R 1475 5 2 bie 
+R 1483 5 3 doo 
+R 1490 3 3 i 
+R 1494 2 3 nie 
+R 1498 3 2 zwa
+R 1502 3 0 żaj 
+R 1506 6 2 na 
+R 1514 7 3 skut
+R 1522 5 0 ki.
+- 1527
+R 1531 3 2 Czu
+R 1535 3 0 je 
+R 1539 5 2 ko
+R 1545 4 2 cha
+R 1550 2 2 nie 
+R 1553 4 2 jak 
+R 1559 2 2 tward
+R 1563 2 2 nie
+R 1566 3 2 ją 
+R 1572 4 3 ci 
+R 1578 3 3 sut
+R 1582 3 3 ki.
+- 1585
+R 1587 3 2 Check
+R 1591 3 2 ing 
+R 1596 9 2 one, 
+R 1611 7 3 two, 
+R 1626 7 3 three, 
+R 1635 3 10 scoo
+R 1639 3 3 bie 
+R 1643 4 5 doo.
+- 1647
+G 1660 6 3 Uap 
+G 1668 3 3 bam 
+G 1672 2 3 be
+G 1675 3 3 lu
+G 1679 6 3 ba 
+G 1689 5 5 uap 
+G 1698 5 7 bem 
+G 1707 4 10 boo.
+- 1711
+R 1716 4 3 Jest 
+R 1724 5 3 słoń
+R 1732 4 3 ce, 
+R 1738 3 3 pi
+R 1742 3 3 wo, 
+R 1746 3 3 są 
+R 1750 3 2 ko
+R 1755 3 3 bie
+R 1759 1 3 ty 
+R 1762 4 3 i 
+R 1770 3 3 pla
+R 1774 2 2 ża,
+- 1776
+R 1780 4 3 Więc 
+R 1787 4 2 nad
+R 1795 4 3 szedł 
+R 1803 4 2 czas 
+R 1811 6 3 Sind
+R 1819 2 2 ba
+R 1823 1 2 da 
+R 1826 7 3 żeg
+R 1835 3 3 la
+R 1839 4 2 rza
+- 1843
+R 1852 5 3 Jes
+R 1858 6 3 tem 
+R 1867 4 3 Li
+R 1872 5 2 roy, 
+R 1879 3 3 Scy
+R 1883 3 3 zo
+R 1887 3 2 ryk 
+R 1892 5 2 z Ga
+R 1899 4 3 lic
+R 1904 4 2 ji
+- 1908
+R 1911 3 3 Nie 
+R 1915 2 3 zno
+R 1918 2 2 sze 
+R 1922 3 2 gar
+R 1926 3 2 ni
+R 1930 2 2 tu
+R 1934 4 2 rów, 
+R 1942 3 3 ka
+R 1946 3 3 na
+R 1950 3 2 rów 
+R 1954 3 3 pro
+R 1958 3 2 hi
+R 1962 3 3 bi
+R 1967 2 3 cji
+- 1969
+R 1970 3 3 Więc 
+R 1974 2 3 dzień 
+R 1979 2 2 dob
+R 1983 4 2 ry, 
+R 1993 2 2 dzień 
+R 1996 2 3 dob
+R 1999 1 3 ry,
+- 2000
+G 2005 2 3 Di
+G 2008 1 3 gi
+G 2010 1 3 riś
+G 2012 2 3 mob
+G 2015 2 3 ry, 
+G 2019 2 3 di
+G 2022 1 3 gi
+G 2024 2 3 riś
+G 2027 4 5 mob
+G 2032 6 3 ry
+- 2038
+R 2044 3 3 Jes
+R 2051 5 3 tem 
+R 2058 3 3 lek
+R 2062 3 2 ki 
+R 2067 3 3 psy
+R 2071 3 3 chol 
+R 2075 3 3 i 
+R 2079 3 3 jes
+R 2087 2 2 tem 
+R 2091 5 3 dob
+R 2098 3 3 ry,
+- 2101
+R 2108 3 3 Kob
+R 2113 2 3 ry, 
+R 2121 4 5 śmog
+R 2126 2 5 ry, 
+R 2130 1 5 di
+R 2132 1 3 gi
+R 2134 2 5 ri
+R 2138 4 3 be
+R 2143 4 -2 by.
+- 2147
+R 2150 2 0 Tak 
+R 2154 3 3 sa
+R 2158 3 3 mo 
+R 2162 4 3 jak 
+R 2171 5 0 in
+R 2177 6 0 ni 
+R 2186 4 2 mam 
+R 2194 2 3 swe 
+R 2198 2 3 pot
+R 2203 2 2 rze
+R 2207 4 0 by
+- 2211
+R 2219 4 2 Mam 
+R 2226 3 3 swo
+R 2230 3 2 je 
+R 2236 4 2 sny 
+R 2246 3 2 i 
+R 2251 2 3 swo
+R 2255 3 3 je 
+R 2260 4 2 ma
+R 2266 4 2 rze
+R 2271 6 2 nia
+- 2277
+R 2279 4 0 O
+R 2284 3 3 gól
+R 2290 6 3 nie 
+R 2298 3 2 mó
+R 2302 7 0 wiąc 
+R 2310 4 2 prz
+R 2315 4 3 ypad
+R 2321 3 3 ki 
+R 2326 3 2 myś
+R 2330 3 2 le
+R 2334 5 0 nia
+- 2339
+R 2347 5 3 Gie
+R 2353 4 3 nią, 
+R 2363 6 3 Gie
+R 2370 4 2 nia 
+R 2380 4 12 nic 
+R 2386 3 2 się 
+R 2390 3 2 nie 
+R 2395 4 3 zmie
+R 2400 5 2 nia
+- 2405
+R 2411 3 3 Co
+R 2415 3 3 ca-
+R 2419 3 2 Co
+R 2423 3 2 la 
+R 2428 3 2 Bro
+R 2432 5 0 war 
+R 2442 3 3 szu
+R 2446 3 3 kam 
+R 2450 5 3 szer
+R 2458 3 2 sze
+R 2462 3 2 nia, 
+R 2467 4 3 ma
+R 2473 3 2 rze
+R 2477 2 2 nia.
+- 2479
+R 2482 5 3 O 
+R 2489 3 2 He
+R 2494 6 3 nia 
+R 2502 2 0 bo 
+R 2505 2 3 jeś
+R 2509 3 2 li 
+R 2513 4 3 o 
+R 2518 2 2 nich 
+R 2521 4 2 mo
+R 2526 5 0 wa
+- 2531
+R 2540 6 3 Mam 
+R 2547 5 3 ma
+R 2554 3 0 rze
+R 2558 4 2 nie, 
+R 2569 3 3 wiz
+R 2574 3 3 ja 
+R 2578 3 2 mło
+R 2582 3 0 dzie
+R 2586 4 0 żo
+R 2591 4 0 wa
+- 2595
+R 2610 5 3 Chce 
+R 2618 3 3 z to
+R 2622 3 0 bą 
+R 2630 3 -2 up
+R 2634 3 3 ra
+R 2638 3 2 wiać 
+R 2642 3 3 Scoo
+R 2646 4 2 bie 
+R 2651 8 3 doo
+- 2659
+R 2683 6 3 Uap 
+R 2690 3 3 bam 
+R 2694 2 4 be
+R 2697 3 5 lu
+R 2701 8 6 ba 
+R 2714 4 6 uap 
+R 2720 5 7 bem 
+R 2729 8 6 boo.
+- 2737
+R 2754 3 3 Scoo
+R 2758 3 3 bie 
+R 2762 6 5 do 
+R 2770 6 3 ya 
+R 2778 4 3 Scoo
+R 2783 3 3 bie 
+R 2787 3 3 doo
+R 2791 3 3 bie 
+R 2795 5 5 doo 
+R 2802 7 3 ya
+- 2809
+R 2818 3 3 Scoo
+R 2822 3 3 bie 
+R 2826 4 5 do 
+R 2833 4 3 ya 
+R 2841 4 3 Scoo
+R 2846 3 2 bie 
+R 2850 3 3 doo
+R 2854 3 2 bie 
+R 2858 5 3 doo
+- 2863
+R 2881 3 2 Scoo
+R 2885 3 3 bie 
+R 2889 6 5 do 
+R 2897 6 3 ya 
+R 2905 4 3 Scoo
+R 2910 3 3 bie 
+R 2914 3 3 doo
+R 2918 3 3 bie 
+R 2922 5 5 doo 
+R 2929 7 3 ya
+- 2936
+R 2945 3 3 Scoo
+R 2949 3 3 bie 
+R 2953 4 5 do 
+R 2960 4 3 ya 
+R 2969 4 3 Scoo
+R 2974 3 3 bie 
+R 2978 3 3 doo
+R 2982 3 3 bie 
+R 2986 5 3 doo
+- 2991
+R 3008 3 3 Scoo
+R 3012 3 3 bie 
+R 3016 6 5 do 
+R 3024 6 3 ya 
+R 3032 4 3 Scoo
+R 3037 3 3 bie 
+R 3041 3 3 doo
+R 3045 3 3 bie 
+R 3049 5 5 doo 
+R 3056 7 3 ya
+- 3063
+R 3073 3 3 Scoo
+R 3077 3 3 bie 
+R 3081 4 5 do 
+R 3088 4 3 ya 
+R 3097 4 3 Scoo
+R 3102 3 3 bie 
+R 3106 3 3 doo
+R 3110 3 2 bie 
+R 3114 5 3 doo
+- 3119
+R 3137 3 3 Scoo
+R 3141 3 3 bie 
+R 3145 6 5 do 
+R 3153 6 3 ya 
+R 3161 4 3 Scoo
+R 3166 3 3 bie 
+R 3170 3 3 doo
+R 3174 3 3 bie 
+R 3178 5 5 doo 
+R 3185 7 3 ya
+- 3192
+R 3195 3 3 Scoo
+R 3199 3 3 bie 
+R 3203 3 3 do
+R 3207 3 3 bie 
+R 3211 3 5 doo
+R 3217 4 3 ya 
+R 3226 3 3 Scoo
+R 3230 3 3 bie 
+R 3234 8 3 doo
+- 3242
+R 3259 5 0 Y’all 
+R 3265 2 0 rea
+R 3268 2 0 dy 
+R 3271 2 0 to 
+R 3274 6 0 get 
+R 3281 5 0 fun
+R 3289 5 0 ky, 
+R 3297 5 0 fun
+R 3305 5 0 ky?
+- 3310
+G 3318 2 0 The 
+G 3322 6 0 beat 
+G 3330 3 0 that 
+G 3334 5 0 will 
+G 3340 4 0 not 
+G 3346 4 0 be 
+G 3351 4 0 de
+G 3356 12 0 nied.
+- 3368
+R 3386 5 0 Y’all 
+R 3392 2 0 rea
+R 3395 2 0 dy 
+R 3398 2 0 to 
+R 3401 6 0 get 
+R 3408 5 0 fun
+R 3416 5 0 ky, 
+R 3424 5 0 fun
+R 3432 5 0 ky?
+- 3437
+R 3445 2 0 The 
+R 3449 6 0 beat 
+R 3457 3 0 that 
+R 3461 5 0 will 
+R 3467 4 0 not 
+R 3473 4 0 be 
+R 3478 4 0 de
+R 3483 12 0 nied.
+- 3495 3548
+- 3548
+R 3574 2 0 The 
+R 3578 6 0 beat 
+R 3586 3 0 that 
+R 3590 5 0 will 
+R 3596 4 0 not 
+R 3602 4 0 be 
+R 3607 4 0 de
+R 3612 12 0 nied.
+- 3624
+G 3633 6 3 Włazł 
+G 3641 3 5 ko
+G 3645 3 2 tek 
+G 3649 7 3 na 
+G 3657 2 3 pło
+G 3660 3 3 tek, 
+G 3665 2 3 di
+G 3668 1 3 gi
+G 3670 1 3 ri
+G 3672 3 5 be
+G 3676 2 3 ba
+- 3678
+R 3681 2 3 Po
+R 3684 3 3 wi
+R 3688 2 3 nę
+R 3691 2 3 ła 
+R 3695 2 3 mu 
+R 3698 4 3 się 
+R 3704 6 5 ła
+R 3712 4 3 pa 
+R 3720 3 3 cze
+R 3724 4 3 ka 
+R 3729 4 3 go 
+R 3735 4 2 gle
+R 3740 6 2 ba
+- 3746
+R 3748 2 2 A 
+R 3752 2 3 ży
+R 3757 4 3 cie 
+R 3767 4 3 to
+R 3772 2 3 czy 
+R 3776 5 3 się 
+R 3783 3 3 da
+R 3787 3 3 lej 
+R 3792 5 3 swym 
+R 3800 2 3 to
+R 3805 6 2 rem
+- 3811
+R 3813 2 3 Wy
+R 3816 2 3 pie
+R 3819 2 3 re 
+R 3823 4 3 se 
+R 3833 6 5 spod
+R 3840 6 3 nie 
+R 3857 4 3 ko
+R 3863 4 1 lo
+R 3868 5 1 rem
+- 3873
+R 3883 4 2 Cho
+R 3888 4 2 re 
+R 3897 3 3 tro
+R 3901 3 3 chę 
+R 3906 5 2 są 
+R 3912 3 2 mo
+R 3916 3 2 je 
+R 3920 1 2 di
+R 3922 1 3 gi
+R 3924 3 2 li
+R 3929 4 2 tek
+R 3937 6 -2 sty
+- 3943
+R 3944 6 0 Tek
+R 3953 4 3 sty 
+R 3959 3 0 lu
+R 3964 5 0 bię 
+R 3972 2 0 i 
+R 3975 2 3 lu
+R 3979 4 3 bię 
+R 3984 6 3 lum
+R 3992 3 0 pek
+R 3998 2 3 sy
+- 4000
+R 4004 5 2 Więc 
+R 4010 5 2 nie 
+R 4016 4 2 trać 
+R 4024 3 3 cza
+R 4028 3 2 su 
+R 4032 5 3 dziew
+R 4039 3 3 czy
+R 4043 2 2 no 
+R 4046 5 3 rol
+R 4054 3 3 ni
+R 4058 3 2 ka
+- 4061
+R 4071 2 2 Gra
+R 4074 3 2 ba
+R 4078 3 2 rza 
+R 4086 6 2 szkla
+R 4093 4 2 rza 
+R 4104 3 3 ra
+R 4108 3 3 dio
+R 4112 5 3 tech
+R 4119 5 2 ni
+R 4126 6 2 ka
+- 4132
+R 4137 5 2 Tyl
+R 4144 5 3 ko 
+R 4151 3 3 za
+R 4155 3 2 mień 
+R 4159 5 3 się 
+R 4167 5 3 w słuch
+- 4172
+R 4176 2 2 Mam 
+R 4180 2 2 do 
+R 4184 2 2 cie
+R 4187 2 2 bie 
+R 4191 2 2 ma
+R 4194 3 2 łą 
+R 4200 3 3 spra
+R 4204 7 2 wę
+- 4211
+R 4214 2 3 Nie 
+R 4217 6 2 bę
+R 4224 3 2 dę 
+R 4231 6 3 ściem
+R 4239 4 2 niał 
+R 4248 3 2 cho
+R 4252 2 3 dzi 
+R 4255 4 3 o 
+R 4260 3 2 za
+R 4264 3 2 ba
+R 4268 6 2 wę
+- 4274
+G 4278 2 2 Na 
+G 4281 4 2 ka
+G 4286 5 2 wę 
+G 4293 6 3 chcę 
+G 4300 2 2 zap
+G 4304 3 3 ro
+G 4308 2 0 sić 
+G 4312 2 2 cie
+G 4315 3 2 bie 
+G 4319 4 2 dziś 
+G 4324 3 2 wie
+G 4328 4 2 czo
+G 4333 4 2 rem
+- 4337
+R 4347 3 5 Bę
+R 4351 3 5 dę 
+R 4355 3 5 dok
+R 4360 3 5 to
+R 4364 5 0 rem, 
+R 4376 6 7 bę
+R 4383 3 7 dę 
+R 4387 5 5 dok
+R 4393 4 7 to
+R 4398 6 5 rem
+- 4404
+R 4413 3 5 Bę
+R 4417 2 3 dę 
+R 4420 3 3 cię 
+R 4424 3 3 ba
+R 4428 4 3 dał 
+R 4438 1 3 z 
+R 4440 2 3 ty
+R 4443 3 3 łu 
+R 4447 3 3 i 
+R 4455 3 3 z przo
+R 4459 5 1 du
+- 4464
+R 4470 2 5 Po
+R 4473 2 3 ka
+R 4476 2 3 żę 
+R 4480 6 3 ci 
+R 4488 5 5 tyl
+R 4494 3 3 nie 
+R 4499 3 3 sie
+R 4503 2 3 dze
+R 4506 2 3 nie 
+R 4512 2 3 sa
+R 4515 3 3 mo
+R 4519 3 5 cho
+R 4523 6 3 du
+- 4529
+R 4533 2 2 Bę
+R 4536 3 3 dzie
+R 4541 4 2 my 
+R 4549 2 2 up
+R 4552 3 3 ra
+R 4556 5 3 wiać 
+R 4568 2 5 Scoo
+R 4571 3 3 bie 
+R 4575 4 5 doo
+R 4580 2 3 bie 
+R 4583 6 5 doo 
+R 4590 9 3 ya
+- 4599
+R 4607 3 5 Scoo
+R 4611 3 3 bie 
+R 4616 3 5 doo 
+R 4622 5 3 ya 
+R 4631 3 7 scoo
+R 4635 3 5 bie 
+R 4639 3 7 doo
+R 4643 3 3 bie 
+R 4647 7 7 doo
+- 4654
+R 4664 2 3 Wiem 
+R 4667 3 3 że 
+R 4672 2 3 te
+R 4675 2 2 go 
+R 4680 4 3 chcesz 
+R 4686 7 3 więc 
+R 4694 3 3 roz
+R 4698 8 3 łóż 
+R 4708 3 3 swe 
+R 4713 2 3 u
+R 4716 3 2 da
+- 4719
+R 4724 2 3 Za
+R 4727 3 3 u
+R 4732 3 3 faj 
+R 4736 2 3 mi 
+R 4740 2 3 ko
+R 4743 3 3 cha
+R 4747 4 3 nie 
+R 4755 2 3 pot
+R 4759 3 3 ra
+R 4764 3 3 fię 
+R 4768 2 3 czy
+R 4771 3 2 nić 
+R 4776 3 3 cu
+R 4780 4 2 da
+- 4784
+R 4792 3 3 Jest
+R 4798 6 3 em 
+R 4806 2 3 Li
+R 4810 6 3 roy 
+R 4820 2 5 Scy
+R 4823 3 3 zo
+R 4827 2 2 ryk, 
+F 4831 5 7 SIĘ 
+F 4838 11 7 WIE
+- 4849
+G 4856 3 5 Scoo
+G 4860 2 3 bie 
+G 4864 6 3 doo 
+G 4871 3 3 mas
+G 4875 3 3 ter, 
+G 4879 4 3 więc 
+G 4887 2 3 zde
+G 4891 2 3 cy
+G 4894 4 3 duj 
+G 4902 6 3 się
+- 4908
+R 4912 5 5 Czy 
+R 4919 6 3 masz 
+R 4931 2 3 o
+R 4934 3 3 cho
+R 4938 4 3 tę 
+R 4943 4 3 na 
+R 4950 3 5 Scoo
+R 4954 4 3 bie 
+R 4959 2 5 doo
+R 4963 3 3 bie 
+R 4967 5 5 doo 
+R 4974 8 3 ya
+- 4982
+R 4991 4 3 Scoo
+R 4996 2 3 bie 
+R 5000 5 4 do 
+R 5006 7 3 ya 
+R 5015 3 4 Scoo
+R 5019 3 3 bie 
+R 5024 2 4 doo
+R 5027 2 3 bie 
+R 5032 7 3 doo
+- 5039
+R 5057 3 3 Scoo
+R 5061 2 2 bie 
+R 5065 4 3 do 
+R 5071 6 2 ya 
+R 5080 3 3 Scoo
+R 5084 3 3 bie 
+R 5088 3 3 doo
+R 5092 2 3 bie 
+R 5095 7 3 doo 
+R 5103 3 1 ya
+- 5106
+R 5120 4 5 Scoo
+R 5125 2 2 bie 
+R 5129 5 3 do 
+R 5135 7 3 ya 
+R 5144 3 4 Scoo
+R 5148 3 3 bie 
+R 5153 2 4 doo
+R 5156 2 3 bie 
+R 5161 7 4 doo
+- 5168
+R 5185 3 5 Scoo
+R 5189 2 3 bie 
+R 5193 4 3 do 
+R 5199 6 2 ya 
+R 5208 3 3 Scoo
+R 5212 3 2 bie 
+R 5216 3 3 doo
+R 5220 2 2 bie 
+R 5223 6 3 doo 
+R 5231 6 2 ya
+- 5237
+R 5248 4 4 Scoo
+R 5253 2 3 bie 
+R 5257 5 4 do 
+R 5263 7 3 ya 
+R 5272 3 4 Scoo
+R 5276 3 3 bie 
+R 5281 2 4 doo
+R 5284 2 3 bie 
+R 5289 7 4 doo
+- 5296
+R 5313 3 3 Scoo
+R 5317 2 3 bie 
+R 5321 4 4 do 
+R 5327 6 3 ya 
+R 5336 3 4 Scoo
+R 5340 3 3 bie 
+R 5344 3 4 doo
+R 5348 2 3 bie 
+R 5351 7 4 doo 
+R 5359 5 3 ya
+- 5364
+R 5370 2 3 Scoo
+R 5373 2 3 bie 
+R 5376 2 3 do
+R 5379 4 3 bie 
+R 5384 4 3 doo 
+R 5391 5 3 ya 
+F 5398 4 5 SCOO
+F 5403 4 3 BIE 
+F 5408 6 5 DOO!
+E

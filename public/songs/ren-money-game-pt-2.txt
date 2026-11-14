@@ -1,0 +1,1002 @@
+#ARTIST:Ren
+#TITLE:Money Game, Pt. 2
+#CREATOR:Ren
+#BPM:392
+#YEAR:2020
+#VIDEO:v=YonS9_QJbp8
+#GENRE:Alternative
+#LANGUAGE:English
+#GAP:10525,102040816326
+#ALLKARAOKE_ID:ren-money-game-pt-2
+#ALLKARAOKE_SID:7395
+#ALLKARAOKE_LASTUPDATE:2026-11-14T21:47:35.289Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:98
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=YonS9_QJbp8
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:223
+#MP3:Ren - Money Game, Pt. 2.mp3
+#COVER:Ren - Money Game, Pt. 2 [CO].jpg
+#BACKGROUND:Ren - Money Game, Pt. 2 [BG].jpg
+R 26 6 6 Strange 
+R 36 3 3 times 
+R 41 3 3 we’re 
+R 45 2 3 li
+R 49 2 3 ving 
+R 52 2 3 in; 
+R 57 3 3 pa
+R 62 2 3 nic 
+R 66 1 3 and 
+R 70 2 3 hys
+R 76 7 3 te
+R 84 2 2 ri
+R 87 2 2 a
+- 89
+R 93 5 3 Poor 
+R 100 4 3 man, 
+R 107 5 7 learn 
+R 116 2 3 the 
+R 120 3 3 rich 
+R 127 3 3 man 
+R 132 5 3 don’t 
+R 140 6 3 care 
+R 148 3 2 for 
+R 152 3 2 ya
+- 155
+R 157 5 3 Nar
+R 165 2 2 cis
+R 169 2 2 sist 
+R 173 4 6 mind
+R 181 2 7 sets 
+R 186 4 2 spread 
+R 193 4 2 like 
+R 200 3 3 ma
+R 204 6 2 la
+R 211 3 2 ri
+R 215 2 2 a
+- 217
+R 221 4 7 Sit 
+R 227 3 7 back 
+R 233 2 2 and 
+R 237 5 9 watch 
+R 245 1 10 the 
+R 250 7 2 show, 
+R 264 2 3 A
+R 269 7 3 me
+R 277 2 3 ri
+R 281 2 3 ca
+- 283
+R 284 4 6 Bri
+R 290 4 -3 tain 
+R 300 4 5 split 
+R 309 3 5 through 
+R 316 3 6 fic
+R 321 4 -3 kle 
+R 329 4 6 shit
+- 333
+R 340 4 5 A 
+R 347 4 8 go
+R 353 5 -3 vern
+R 360 4 6 ment 
+R 371 5 6 of 
+R 379 3 8 hy
+R 385 4 -3 po
+R 393 4 6 crites
+- 397
+R 404 4 5 These 
+R 412 5 7 coun
+R 418 3 -3 ter
+R 425 3 5 feit 
+R 435 3 5 po
+R 439 3 5 li
+R 444 2 7 ti
+R 450 3 -3 cians 
+R 458 4 5 sit 
+R 467 6 4 in 
+R 476 4 7 par
+R 482 3 -3 lia
+R 488 5 5 ment
+- 493
+R 501 4 5 Not 
+R 508 4 7 a
+R 514 3 -3 de
+R 521 6 5 quate
+- 527
+R 528 2 5 Come 
+R 532 3 0 on
+- 535
+R 539 4 1 Need
+R 545 4 1 less
+R 551 3 1 ly 
+R 555 5 1 blee
+R 561 5 1 ding 
+R 567 4 1 re
+R 572 4 1 sour
+R 578 3 1 ces 
+R 583 4 1 all 
+R 589 8 -3 dry
+- 597
+R 604 4 1 Turn 
+R 609 4 1 a 
+R 614 5 1 blind 
+R 621 4 1 eye 
+R 626 3 1 if 
+R 631 3 1 it 
+R 636 5 1 means 
+R 642 3 1 a 
+R 647 4 1 pay 
+R 652 8 -3 rise
+- 660
+R 668 5 0 “Oh 
+R 674 3 0 what 
+R 678 1 0 a 
+R 683 7 0 shame 
+R 691 2 0 it 
+R 694 4 0 would 
+R 699 5 0 be, 
+R 705 4 0 I 
+R 710 2 0 would 
+R 716 10 0 die”
+- 726
+R 727 2 0 If 
+R 731 5 1 Num
+R 737 2 0 ber 
+R 741 5 0 Ten 
+R 747 4 0 Dow
+R 752 4 0 ning 
+R 759 2 0 Street 
+R 764 5 0 burned 
+R 770 3 0 in 
+R 774 2 0 a 
+R 780 14 0 fire
+- 794
+R 803 4 7 On 
+R 808 2 3 ly 
+R 811 4 3 jo
+R 817 2 3 king
+- 819
+R 820 4 7 On
+R 825 2 3 ly 
+R 828 3 3 mes
+R 833 2 3 sing
+- 835
+R 836 4 7 Don’t 
+R 841 1 3 be 
+R 845 2 3 stres
+R 849 2 3 sing
+- 851
+R 852 3 3 I’m 
+R 856 2 1 a 
+R 859 4 8 peace
+R 865 2 4 ful 
+R 868 2 3 a
+R 872 2 0 do
+R 875 2 2 les
+R 880 3 3 cent
+- 883
+R 884 3 3 There’s 
+R 889 2 1 no 
+R 892 3 7 need 
+R 897 1 6 to 
+R 900 2 1 be 
+R 903 2 1 un
+R 907 3 3 plea
+R 912 2 4 sant
+- 914
+R 916 3 2 Write 
+R 920 2 0 my 
+R 924 4 5 the
+R 930 1 5 sis 
+R 933 1 5 in 
+R 935 2 3 a 
+R 938 6 4 rhyme 
+R 947 5 0 scheme 
+R 953 2 0 to 
+R 956 3 2 a
+R 960 1 2 na
+R 962 4 3 lyze 
+R 968 1 2 the 
+R 971 8 3 brain
+- 979
+R 981 2 0 While 
+R 985 1 0 my 
+R 989 3 1 fin
+R 993 2 1 ger’s 
+R 996 3 0 on 
+R 1000 1 0 the 
+R 1006 2 0 trig
+R 1010 1 0 ger 
+R 1013 2 0 of 
+R 1017 2 0 a 
+R 1022 5 3 mo
+R 1028 3 0 ney 
+R 1034 9 0 game
+- 1043
+: 1053 4 6 Rain,
+: 1058 5 5 ~ 
+: 1065 2 4 rain,
+: 1068 4 5 ~ 
+: 1075 8 3 rain, 
+: 1085 6 0 rain
+- 1091
+: 1111 1 -2 A 
+: 1116 5 -2 storm, 
+: 1122 4 0 it 
+: 1129 5 3 comes 
+: 1137 4 -2 our 
+: 1144 13 0 way
+- 1157
+: 1171 1 4 And
+: 1173 1 3 ~
+: 1175 4 2 ~ 
+: 1180 3 2 those 
+: 1186 3 3 who 
+: 1193 8 5 rise 
+: 1204 2 1 through 
+: 1207 2 3 dis
+: 1212 4 2 tor
+: 1219 3 3 ted 
+: 1226 8 5 lies
+- 1234
+: 1243 7 6 Poi
+: 1251 4 5 so
+: 1256 6 3 ning 
+: 1265 4 5 the 
+: 1273 5 7 veins
+- 1278
+: 1284 2 0 But 
+: 1288 2 0 we 
+: 1291 3 0 like 
+: 1296 1 0 to 
+: 1299 3 0 point 
+: 1303 1 0 the 
+: 1307 4 6 blame,
+: 1312 6 5 ~ 
+: 1321 2 4 blame,
+: 1324 4 5 ~ 
+: 1330 9 3 blame, 
+: 1341 2 0 blame
+: 1344 5 -2 ~
+- 1349
+: 1368 1 -2 It’s 
+: 1372 4 -2 ea
+: 1379 3 0 si
+: 1384 5 3 er 
+: 1393 4 -2 to 
+: 1399 13 0 blame
+- 1412
+: 1428 4 3 But 
+: 1436 5 2 point 
+: 1444 3 3 the 
+: 1449 4 2 mir
+: 1457 4 3 ror 
+: 1464 4 2 at 
+: 1472 4 3 our
+: 1480 6 2 selves
+- 1486
+: 1499 8 7 We’re 
+: 1508 4 5 all 
+: 1515 5 3 part 
+: 1521 3 2 of 
+: 1527 3 7 this 
+: 1534 13 5 old 
+: 1549 4 3 mo
+: 1554 5 2 ney 
+: 1561 14 0 game
+- 1575
+: 1588 3 5 M
+: 1592 4 7 m
+: 1597 2 5 m
+: 1600 3 3 m
+: 1604 3 0 m
+: 1608 3 -2 m
+: 1612 4 3 m
+: 1620 7 0 m
+: 1628 1 -2 m
+: 1630 6 0 ~
+- 1636
+: 1652 3 5 M
+: 1656 4 7 m
+: 1661 2 5 m
+: 1664 3 3 m
+: 1668 3 0 m
+: 1672 3 -2 m
+: 1676 5 3 m
+: 1685 2 3 m
+: 1688 2 5 m
+: 1691 9 2 ~
+- 1700
+: 1716 3 5 M
+: 1720 4 7 m
+: 1725 2 5 m
+: 1728 3 3 m
+: 1732 3 0 m
+: 1736 3 -2 m
+: 1740 4 3 m
+: 1748 7 0 m
+: 1756 1 -2 m
+: 1758 6 0 ~
+- 1764
+: 1780 4 10 This 
+: 1789 11 7 old 
+: 1806 4 5 mo
+: 1811 3 3 ney 
+: 1818 17 5 game
+- 1835
+: 1844 3 5 M
+: 1848 4 7 m
+: 1853 2 5 m
+: 1856 3 3 m
+: 1860 3 0 m
+: 1864 3 -2 m
+: 1868 4 3 m
+: 1876 7 0 m
+: 1884 1 -2 m
+: 1886 6 0 ~
+- 1892
+: 1908 3 5 M
+: 1912 4 7 m
+: 1917 2 5 m
+: 1920 3 3 m
+: 1924 3 0 m
+: 1928 3 -2 m
+: 1932 5 3 m
+: 1941 2 3 m
+: 1944 2 5 m
+: 1947 9 2 ~
+- 1956
+: 1972 3 5 M
+: 1976 4 7 m
+: 1981 2 5 m
+: 1984 3 3 m
+: 1988 3 0 m
+: 1992 3 -2 m
+: 1996 4 3 m
+: 2004 7 0 m
+: 2012 1 -2 m
+: 2014 6 0 ~
+- 2020
+: 2036 4 10 This 
+: 2045 11 7 old
+- 2056
+R 2076 4 3 Mo
+R 2081 3 5 ney 
+R 2085 1 5 is 
+R 2088 1 5 a 
+R 2092 7 2 game 
+R 2100 3 2 and 
+R 2104 1 2 the 
+R 2107 4 0 lad
+R 2112 2 0 der 
+R 2115 2 0 we 
+R 2120 8 -2 climb
+- 2128
+R 2131 4 -2 Turns 
+R 2136 2 -2 a 
+R 2141 4 1 saint 
+R 2146 1 1 in
+R 2148 2 1 to 
+R 2151 2 1 a 
+R 2155 3 -2 sin
+R 2159 2 -2 ner 
+R 2162 2 -2 with 
+R 2166 2 -2 his 
+R 2171 2 -3 fin
+R 2176 1 -3 ger 
+R 2178 3 -3 in 
+R 2183 5 -3 crime
+- 2188
+R 2192 2 -1 I’ll 
+R 2195 3 0 break 
+R 2199 2 2 it 
+R 2203 6 2 down 
+R 2212 1 2 for 
+R 2214 3 2 you 
+R 2219 2 2 mot
+R 2223 1 1 her
+R 2227 2 2 fuc
+R 2231 2 2 kers
+- 2233
+R 2236 5 0 Line 
+R 2244 3 0 by 
+R 2249 8 -1 line
+- 2257
+R 2261 1 -2 This 
+R 2264 1 -1 is 
+R 2268 2 -1 busi
+R 2272 2 -1 ness 
+R 2277 1 -1 e
+R 2280 2 -1 co
+R 2283 3 2 no
+R 2288 1 -1 mics 
+R 2293 1 -5 in 
+R 2295 2 -5 a 
+R 2299 6 2 nurse
+R 2308 3 -8 ry 
+R 2312 6 -10 rhyme
+- 2318
+R 2332 5 7 She 
+R 2340 5 7 sells 
+R 2348 5 6 sea
+R 2356 5 6 shells 
+R 2364 3 4 on 
+R 2368 2 4 the 
+R 2373 4 3 sea
+R 2381 5 -5 shore
+- 2386
+R 2388 2 -2 But 
+R 2392 2 -2 the 
+R 2396 6 9 val
+R 2403 6 6 ue 
+R 2411 3 2 of 
+R 2418 5 7 these 
+R 2427 6 0 shells 
+R 2437 3 13 will 
+R 2446 5 7 fall
+- 2451
+R 2461 4 10 Due 
+R 2469 1 10 to 
+R 2471 2 10 the 
+R 2476 6 6 laws 
+R 2483 1 6 of 
+R 2487 2 6 sup
+R 2492 5 4 ply 
+R 2498 4 4 and 
+R 2503 2 4 de
+R 2507 5 6 mand
+- 2512
+R 2516 3 10 No 
+R 2520 2 10 one 
+R 2524 3 8 wants 
+R 2530 1 6 to 
+R 2533 4 3 buy 
+R 2541 5 8 shells
+- 2546
+R 2549 2 3 ’Cause 
+R 2553 3 9 there’s 
+R 2558 5 4 loads 
+R 2565 2 3 on 
+R 2568 2 3 the 
+R 2573 5 8 sand
+- 2578
+R 2583 3 8 Step 
+R 2591 2 0 one:
+- 2593
+R 2594 2 0 You 
+R 2597 2 8 must 
+R 2602 4 8 create 
+R 2608 2 3 a 
+R 2611 3 6 sense 
+R 2615 2 2 of 
+R 2620 4 4 scar
+R 2625 2 1 ci
+R 2628 3 -6 ty
+- 2631
+R 2635 4 8 Shells 
+R 2641 2 8 will 
+R 2645 3 8 sell 
+R 2649 2 8 much 
+R 2654 2 7 bet
+R 2657 1 7 ter
+- 2658
+R 2659 2 6 If 
+R 2663 2 5 the 
+R 2667 2 7 peo
+R 2671 2 5 ple 
+R 2674 4 5 think 
+R 2679 2 2 they’re 
+R 2683 3 5 rare
+- 2686
+R 2688 2 2 You 
+R 2692 3 -3 see
+- 2695
+R 2698 5 9 Bear 
+R 2704 2 2 with 
+R 2707 3 2 me
+- 2710
+R 2716 3 9 Take 
+R 2721 1 9 as 
+R 2724 2 9 ma
+R 2727 2 9 ny 
+R 2732 4 7 shells 
+R 2737 2 5 as 
+R 2740 2 6 you 
+R 2743 4 5 can 
+R 2748 4 5 find
+- 2752
+R 2753 1 4 And 
+R 2757 4 5 hide 
+R 2762 1 4 ’em 
+R 2765 3 5 on 
+R 2769 2 4 an 
+R 2772 4 5 is
+R 2777 2 4 land
+- 2779
+R 2782 2 4 Stock
+R 2788 4 5 pile 
+R 2793 1 4 ’em 
+R 2796 3 5 high 
+R 2800 3 5 un
+R 2804 3 5 til 
+R 2808 2 4 they’re 
+R 2812 4 5 ra
+R 2817 1 4 rer 
+R 2819 2 4 than 
+R 2822 2 4 a 
+R 2826 5 5 dia
+R 2832 2 4 mond
+- 2834
+R 2836 3 4 Step 
+R 2843 6 -3 two:
+- 2849
+R 2853 2 9 Got
+R 2856 3 10 ta 
+R 2860 2 10 make 
+R 2864 2 9 the 
+R 2868 2 7 peo
+R 2871 2 6 ple 
+R 2876 3 7 think 
+R 2880 1 4 that 
+R 2883 2 4 they 
+R 2887 3 4 want 
+R 2891 2 -8 ’em
+- 2893
+R 2900 3 9 Real
+R 2905 2 7 ly 
+R 2908 3 1 want 
+R 2912 2 -6 ’em
+- 2914
+R 2916 3 8 Real
+R 2920 2 9 ly 
+R 2925 3 11 fuc
+R 2929 2 7 kin’ 
+R 2933 3 5 want 
+R 2937 2 -2 ’em
+- 2939
+R 2940 2 9 Hit 
+R 2944 2 9 ’em 
+R 2948 2 9 like 
+R 2952 4 6 Bron
+R 2959 2 -2 son
+- 2961
+R 2963 3 7 In
+R 2967 2 5 flu
+R 2970 3 5 en
+R 2974 3 5 cers
+- 2977
+R 2980 2 10 Pro
+R 2983 1 8 duct 
+R 2987 2 5 place
+R 2992 3 5 ment
+- 2995
+R 2997 2 10 Fea
+R 3000 2 8 tured 
+R 3004 4 5 prime 
+R 3009 4 5 time 
+R 3014 1 5 en
+R 3016 2 3 ter
+R 3020 4 6 tain
+R 3025 3 5 ment
+- 3028
+R 3029 2 5 If 
+R 3032 2 3 you 
+R 3037 2 7 ha
+R 3040 3 6 ven’t 
+R 3044 2 0 got 
+R 3047 1 0 a 
+R 3053 5 9 shell
+- 3058
+R 3059 2 6 Then 
+R 3062 2 0 you’re 
+R 3066 2 0 just 
+R 3071 1 10 a 
+R 3076 2 7 fuc
+R 3080 4 -5 king 
+R 3085 5 6 waste, 
+R 3093 4 0 man
+- 3097
+R 3102 4 0 Three:
+- 3106
+R 3107 2 0 It’s 
+R 3113 2 2 mo
+R 3116 3 2 no
+R 3121 1 -9 po
+R 3123 2 -9 ly
+- 3125
+R 3129 1 -2 In
+R 3131 3 1 vest 
+R 3137 2 1 in
+R 3140 3 1 side 
+R 3144 2 1 some 
+R 3148 3 3 pro
+R 3152 2 -2 per
+R 3156 2 -7 ty
+- 3158
+R 3164 3 2 Start 
+R 3168 2 2 a 
+R 3172 3 2 cor
+R 3176 2 2 po
+R 3179 3 2 ra
+R 3185 2 2 tion
+- 3187
+R 3188 3 2 Make 
+R 3192 2 2 a 
+R 3195 4 2 lo
+R 3201 2 2 go
+- 3203
+R 3204 3 2 Do 
+R 3208 2 2 it 
+R 3212 3 3 pro
+R 3217 2 2 per
+R 3220 1 2 ly
+- 3221
+R 3228 5 5 “Shells 
+R 3236 4 6 must 
+R 3244 6 4 sell”
+- 3250
+R 3253 2 0 That 
+R 3256 2 0 will 
+R 3260 3 0 be 
+R 3264 2 0 your 
+R 3267 3 0 new 
+R 3272 2 0 phi
+R 3275 3 3 lo
+R 3280 1 0 so
+R 3283 4 -8 phy
+- 3287
+R 3291 3 0 Swal
+R 3295 2 0 low 
+R 3298 4 0 all 
+R 3303 2 0 your 
+R 3307 3 4 mo
+R 3311 3 2 rals
+- 3314
+R 3317 3 0 They’re 
+R 3321 1 0 a 
+R 3325 5 0 poor 
+R 3332 3 -1 man’s 
+R 3341 3 2 qua
+R 3345 2 -1 li
+R 3349 3 -8 ty
+- 3352
+R 3356 7 -1 Four:
+- 3363
+R 3365 3 8 Ex
+R 3372 9 4 pand, 
+R 3383 2 6 ex
+R 3390 7 7 pand, 
+R 3400 1 6 ex
+R 3405 9 4 pand
+- 3414
+R 3416 3 7 Clear 
+R 3421 4 5 fo
+R 3426 2 4 rest, 
+R 3432 3 7 make 
+R 3437 8 4 land, 
+R 3447 3 7 fresh 
+R 3453 5 4 blood 
+R 3462 3 7 on 
+R 3468 7 5 hands
+- 3475
+R 3477 6 4 Five
+- 3483
+R 3484 6 13 Why 
+R 3492 4 16 just 
+R 3500 7 9 shells?
+- 3507
+R 3509 5 16 Why 
+R 3517 3 17 li
+R 3521 3 14 mit 
+R 3525 5 4 your
+R 3533 6 2 self?
+- 3539
+R 3542 3 16 She 
+R 3549 5 4 sells 
+R 3557 4 16 sea
+R 3565 5 5 shells, 
+R 3573 5 17 sell 
+R 3579 7 5 oil 
+R 3587 5 14 as 
+R 3596 7 17 well
+- 3603
+R 3606 3 11 Six:
+- 3609
+R 3613 4 7 Guns, 
+R 3622 4 7 sell 
+R 3630 3 11 stocks, 
+R 3637 5 7 sell 
+R 3644 4 7 dia
+R 3649 2 7 monds, 
+R 3654 4 7 sell 
+R 3660 4 8 rocks
+- 3664
+R 3669 5 7 Sell 
+R 3676 4 7 wa
+R 3681 2 7 ter 
+R 3685 2 7 to 
+R 3688 2 7 a 
+R 3693 3 14 fish, 
+R 3699 3 7 sell 
+R 3703 2 7 the 
+R 3708 6 9 time 
+R 3715 2 8 to 
+R 3718 2 5 a 
+R 3724 4 9 clock
+- 3728
+R 3733 3 7 Se
+R 3737 2 3 ven:
+- 3739
+R 3741 4 5 Press 
+R 3748 2 3 on 
+R 3752 2 8 the 
+R 3756 4 7 gass
+- 3760
+R 3764 2 7 Take 
+R 3768 3 7 your 
+R 3774 3 9 foot 
+R 3779 2 6 off 
+R 3784 2 10 the 
+R 3788 6 9 brakes
+- 3794
+R 3801 2 10 Then 
+R 3804 3 10 run 
+R 3809 2 10 to 
+R 3812 3 10 be 
+R 3816 2 10 the 
+R 3820 3 10 pre
+R 3825 1 11 si
+R 3828 2 11 dent 
+R 3832 2 11 of 
+R 3835 3 11 the 
+R 3839 3 11 U
+R 3843 3 11 ni
+R 3847 2 11 ted 
+R 3852 4 12 States
+- 3856
+R 3859 5 12 Eight:
+- 3864
+R 3867 4 12 Big 
+R 3876 7 14 smile 
+R 3885 4 12 mate, 
+R 3893 4 17 big 
+R 3900 6 11 wave, 
+R 3908 4 16 that’s 
+R 3916 6 12 great
+- 3922
+R 3924 4 12 Now 
+R 3929 2 12 the 
+R 3933 3 12 truth 
+R 3937 1 12 is 
+R 3940 4 12 o
+R 3945 2 12 ver
+R 3948 4 14 ra
+R 3953 2 15 ted
+- 3955
+R 3957 4 12 Tell 
+R 3964 5 14 lies 
+R 3971 4 12 out 
+R 3977 1 12 the 
+R 3979 6 14 gate
+- 3985
+R 3987 6 12 Nine:
+- 3993
+R 3995 5 19 Po
+R 4001 2 15 la
+R 4004 3 15 rise 
+R 4009 1 13 the 
+R 4012 3 13 peo
+R 4017 2 11 ple
+- 4019
+R 4020 4 20 Con
+R 4025 2 15 tro
+R 4028 4 15 ver
+R 4035 2 13 sy 
+R 4038 1 13 is 
+R 4042 1 11 the 
+R 4044 7 15 game
+- 4051
+R 4052 2 12 It 
+R 4056 4 11 don’t 
+R 4061 4 18 mat
+R 4066 1 15 ter 
+R 4068 2 15 if 
+R 4072 3 11 they 
+R 4076 4 18 hate 
+R 4081 3 18 you 
+R 4085 1 11 if 
+R 4089 3 11 they 
+R 4093 4 23 all 
+R 4099 3 13 say 
+R 4103 3 10 your 
+R 4109 10 15 name
+- 4119
+R 4122 7 9 Ten:
+- 4129
+R 4151 2 -1 The 
+R 4155 7 6 world 
+R 4163 3 6 is 
+R 4167 11 2 yours
+- 4178
+R 4184 2 1 Step 
+R 4188 6 5 out 
+R 4195 2 3 on 
+R 4198 1 1 a 
+R 4204 7 6 stage 
+R 4212 3 4 to 
+R 4216 2 2 a 
+R 4220 4 4 round 
+R 4225 1 1 of 
+R 4228 1 1 ap
+R 4233 8 4 plause
+- 4241
+R 4243 4 2 You’re 
+R 4248 2 0 a 
+R 4251 5 1 li
+R 4257 4 -3 ar
+- 4261
+R 4269 5 4 Cheat
+- 4274
+R 4280 2 -1 A 
+R 4284 3 1 de
+R 4288 5 -3 vil
+- 4293
+R 4298 2 -3 A 
+R 4303 7 -3 whore
+- 4310
+R 4314 2 -3 And 
+R 4318 4 -3 you 
+R 4325 5 -3 sell 
+R 4333 4 -3 sea
+R 4340 5 -3 shells 
+R 4348 3 -4 on 
+R 4352 2 -4 the 
+R 4358 3 -4 sea
+R 4366 5 -6 shore
+- 4371
+: 4381 4 6 Rain,
+: 4386 5 5 ~ 
+: 4393 2 4 rain,
+: 4396 4 5 ~ 
+: 4403 8 3 rain, 
+: 4413 6 0 rain
+- 4419
+: 4439 1 -2 A 
+: 4444 5 -2 storm, 
+: 4450 4 0 it 
+: 4457 5 3 comes 
+: 4465 4 -2 our 
+: 4472 13 0 way
+- 4485
+: 4499 1 4 And
+: 4501 1 3 ~
+: 4503 4 2 ~ 
+: 4508 3 2 those 
+: 4514 3 3 who 
+: 4521 8 5 rise 
+: 4532 2 1 through 
+: 4535 2 3 dis
+: 4540 4 2 tor
+: 4547 3 3 ted 
+: 4554 8 5 lies
+- 4562
+: 4571 7 6 Poi
+: 4579 4 5 so
+: 4584 6 3 ning 
+: 4593 4 5 the 
+: 4601 5 7 veins
+- 4606
+: 4612 2 0 But 
+: 4616 2 0 we 
+: 4619 3 0 like 
+: 4624 1 0 to 
+: 4627 3 0 point 
+: 4631 1 0 the 
+: 4635 4 6 blame,
+: 4640 6 5 ~ 
+: 4649 2 4 blame,
+: 4652 4 5 ~ 
+: 4658 9 3 blame, 
+: 4669 2 0 blame
+: 4672 5 -2 ~
+- 4677
+: 4696 1 -2 It’s 
+: 4700 4 -2 ea
+: 4707 3 0 si
+: 4712 5 3 er 
+: 4721 4 -2 to 
+: 4727 13 0 blame
+- 4740
+: 4756 4 3 But 
+: 4764 5 2 point 
+: 4772 3 3 the 
+: 4777 4 2 mir
+: 4785 4 3 ror 
+: 4792 4 2 at 
+: 4800 4 3 our
+: 4808 6 2 selves
+- 4814
+: 4827 8 7 We’re 
+: 4836 4 5 all 
+: 4843 5 3 part 
+: 4849 3 2 of 
+: 4855 3 7 this 
+: 4862 13 5 old 
+: 4877 4 3 mo
+: 4882 5 2 ney 
+: 4889 14 0 game
+- 4903
+: 4916 3 5 M
+: 4920 4 7 m
+: 4925 2 5 m
+: 4928 3 3 m
+: 4932 3 0 m
+: 4936 3 -2 m
+: 4940 4 3 m
+: 4948 7 0 m
+: 4956 1 -2 m
+: 4958 6 0 ~
+- 4964
+: 4980 3 5 M
+: 4984 4 7 m
+: 4989 2 5 m
+: 4992 3 3 m
+: 4996 3 0 m
+: 5000 3 -2 m
+: 5004 5 3 m
+: 5013 2 3 m
+: 5016 2 5 m
+: 5019 9 2 ~
+- 5028
+: 5044 3 5 M
+: 5048 4 7 m
+: 5053 2 5 m
+: 5056 3 3 m
+: 5060 3 0 m
+: 5064 3 -2 m
+: 5068 4 3 m
+: 5076 7 0 m
+: 5084 1 -2 m
+: 5086 6 0 ~
+- 5092
+: 5108 4 10 This 
+: 5117 11 7 old 
+: 5134 4 5 mo
+: 5139 3 3 ney 
+: 5146 17 5 game
+- 5163
+: 5172 3 5 M
+: 5176 4 7 m
+: 5181 2 5 m
+: 5184 3 3 m
+: 5188 3 0 m
+: 5192 3 -2 m
+: 5196 4 3 m
+: 5204 7 0 m
+: 5212 1 -2 m
+: 5214 6 0 ~
+- 5220
+: 5236 3 5 M
+: 5240 4 7 m
+: 5245 2 5 m
+: 5248 3 3 m
+: 5252 3 0 m
+: 5256 3 -2 m
+: 5260 5 3 m
+: 5269 2 3 m
+: 5272 2 5 m
+: 5275 9 2 ~
+- 5284
+: 5300 3 5 M
+: 5304 4 7 m
+: 5309 2 5 m
+: 5312 3 3 m
+: 5316 3 0 m
+: 5320 3 -2 m
+: 5324 4 3 m
+: 5332 7 0 m
+: 5340 1 -2 m
+: 5342 6 0 ~
+- 5348
+: 5364 4 10 This 
+: 5373 11 7 old
+E
