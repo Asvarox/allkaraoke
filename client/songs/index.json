@@ -8336,6 +8336,7 @@
     "year": "2026",
     "artistOrigin": "RO",
     "lastUpdate": "2026-11-13T04:28:39.050Z",
+    "edition": "ESC 2026",
     "genre": "Rock",
     "realBpm": 124,
     "previewStart": 36,
@@ -23686,36 +23687,6 @@
     "shortId": 531,
     "tracksCount": 1,
     "search": "bigbangfantasticbaby",
-    "local": false
-  },
-  {
-    "id": "big-bang-haru-haru",
-    "title": "Haru Haru",
-    "artist": "Big Bang",
-    "video": "MzCbEdtNbJ0",
-    "language": [
-      "Korean"
-    ],
-    "bpm": 252.04,
-    "gap": 10498.255832407554,
-    "year": "2008",
-    "artistOrigin": "KR",
-    "lastUpdate": "2026-08-08T11:14:10.412Z",
-    "genre": "Kpop",
-    "realBpm": 126,
-    "volume": 1,
-    "author": "subkei",
-    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=subkei",
-    "sourceUrl": "https://ultrastar-es.org/en/canciones?cancion=Haru+Haru",
-    "duration": 324,
-    "tracks": [
-      {
-        "start": 17
-      }
-    ],
-    "shortId": 6064,
-    "tracksCount": 1,
-    "search": "bigbangharuharu",
     "local": false
   },
   {
@@ -122116,33 +122087,6 @@
     "shortId": 2683,
     "tracksCount": 1,
     "search": "lynyrdskynyrdsweethomealabama",
-    "local": false
-  },
-  {
-    "id": "lzy-agnieszka-juz-dawno",
-    "title": "Agnieszka już dawno …",
-    "artist": "Łzy",
-    "video": "QDlbFuhMVDo",
-    "language": [
-      "Polish"
-    ],
-    "bpm": 244.9,
-    "gap": 13320.00816659861,
-    "year": "2000",
-    "artistOrigin": "PL",
-    "lastUpdate": "2026-11-09T03:56:49.117Z",
-    "edition": "SingStar Wakacyjna Impreza!",
-    "volume": 70,
-    "author": "Ikjas",
-    "duration": 230,
-    "tracks": [
-      {
-        "start": 16
-      }
-    ],
-    "shortId": 7075,
-    "tracksCount": 1,
-    "search": "lzyagnieszkajuzdawno",
     "local": false
   },
   {
