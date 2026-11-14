@@ -1,4 +1,4 @@
-import { Alert, AlertTitle, Button, Step, StepButton } from '@mui/material';
+import { Alert, AlertTitle, Box, Button, Step, StepButton } from '@mui/material';
 import Stepper from '@mui/material/Stepper';
 import { StyledEngineProvider } from '@mui/material/styles';
 import { useEffect, useMemo, useRef, useState } from 'react';
@@ -73,7 +73,12 @@ const getMetadataEntityFromSong = (song?: Song): SongMetadataEntity => ({
 const duplicateStepProps = (isDuplicate: boolean) =>
   isDuplicate
     ? {
-        icon: <Icon icon="ic:baseline-error" className="text-error text-2xl" data-test="step-duplicate" />,
+        // 24px like MUI's numbered step icon; same red as the label
+        icon: (
+          <Box component="span" sx={{ display: 'flex', color: 'error.main' }} data-test="step-duplicate">
+            <Icon icon="ic:baseline-error" size={6} />
+          </Box>
+        ),
         sx: { '& .MuiStepLabel-label': { color: 'error.main' } },
       }
     : {};
