@@ -8,6 +8,8 @@ import { useBackground } from '~/modules/elements/background-context';
 import SongPreviewLayout from '~/modules/elements/song-preview-layout';
 import VideoPlayer, { VideoPlayerRef, VideoState } from '~/modules/elements/video-player/index';
 import useDebounce from '~/modules/hooks/use-debounce';
+import isE2E from '~/modules/utils/is-e2-e';
+import PreviewLyrics from '~/routes/sing-a-song/song-selection/components/preview-lyrics/preview-lyrics';
 import { SongCard } from '~/routes/sing-a-song/song-selection/components/song-card';
 import SongSettings from '~/routes/sing-a-song/song-selection/components/song-settings/index';
 import { cn } from '~/utils/cn';
@@ -77,9 +79,11 @@ export default function SongPreviewComponent({
     [songPreview.video, start, end, songPreviewVolume],
   );
   const [videoId, previewStart, previewEnd, volume] = useDebounce(undebounced, 350);
+  const debouncedSong = useDebounce(songPreview, 350);
   const fullSongStart = songPreview.videoGap ?? 0;
   // Lives here, not in the player, so expanding or collapsing the preview doesn't reset it
   const previewPlays = useRef(0);
+  const [playingFullSong, setPlayingFullSong] = useState(false);
 
   // Hide immediately whenever the selected song changes; the PLAYING event in
   // onVideoStateChange will reveal the video once the new one has actually loaded.
@@ -96,6 +100,7 @@ export default function SongPreviewComponent({
       player.current?.setSize(thumbnailSize.current.w, thumbnailSize.current.h);
     }
     previewPlays.current = 0;
+    setPlayingFullSong(false);
     player.current?.loadVideoById({
       videoId: videoId,
       startSeconds: previewStart,
@@ -111,6 +116,7 @@ export default function SongPreviewComponent({
         // doesn't reliably re-arm it, and the preview would play past `previewEnd` on the next loop.
         previewPlays.current++;
         if (previewPlays.current >= PREVIEW_PLAYS_BEFORE_FULL_SONG) {
+          setPlayingFullSong(true);
           player.current?.loadVideoById({ videoId, startSeconds: fullSongStart });
         } else {
           player.current?.loadVideoById({ videoId, startSeconds: previewStart, endSeconds: previewEnd });
@@ -149,6 +155,21 @@ export default function SongPreviewComponent({
             animationIterationCount: 'infinite',
             animationTimingFunction: 'ease-out',
           }}
+        />
+      )}
+
+      {/* Off in E2E runs, so focusing songs there doesn't also load each one for its lyrics */}
+      {!expanded && !isE2E() && (
+        <PreviewLyrics
+          key={debouncedSong.id}
+          songPreview={debouncedSong}
+          player={player}
+          active={showVideo}
+          playedFrom={playingFullSong ? -Infinity : previewStart * 1000}
+          top={top}
+          left={left}
+          width={width}
+          height={height}
         />
       )}
 
