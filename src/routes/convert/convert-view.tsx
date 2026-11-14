@@ -1,4 +1,4 @@
-import { Alert, AlertTitle, Button, Step, StepButton } from '@mui/material';
+import { Alert, AlertTitle, Box, Button, Step, StepButton } from '@mui/material';
 import Stepper from '@mui/material/Stepper';
 import { StyledEngineProvider } from '@mui/material/styles';
 import { useEffect, useMemo, useRef, useState } from 'react';
@@ -8,6 +8,7 @@ import { ValuesType } from 'utility-types';
 import { Link } from 'wouter';
 
 import { Song } from '~/interfaces';
+import { Icon } from '~/modules/elements/akui/icon';
 import { useBackground } from '~/modules/elements/background-context';
 import useBackgroundMusic from '~/modules/hooks/use-background-music';
 import useQueryParam from '~/modules/hooks/use-query-param';
@@ -68,6 +69,19 @@ const getMetadataEntityFromSong = (song?: Song): SongMetadataEntity => ({
   edition: song?.edition,
   artistOrigin: song?.artistOrigin,
 });
+
+const duplicateStepProps = (isDuplicate: boolean) =>
+  isDuplicate
+    ? {
+        // 24px like MUI's numbered step icon; same red as the label
+        icon: (
+          <Box component="span" sx={{ display: 'flex', color: 'error.main' }} data-test="step-duplicate">
+            <Icon icon="ic:baseline-error" size={6} />
+          </Box>
+        ),
+        sx: { '& .MuiStepLabel-label': { color: 'error.main' } },
+      }
+    : {};
 
 export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
   const isEdit = !!song;
@@ -151,13 +165,31 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
     isEdit,
   ]);
 
-  const possibleDuplicate = useMemo(
+  // When editing, the song being edited is in the index too - don't flag it as its own duplicate
+  const otherSongs = useMemo(
     () =>
-      !isEdit &&
-      conversionResult &&
-      songs?.find((addedSong) => SongDao.generateSongFile(addedSong) === SongDao.generateSongFile(conversionResult)),
-    [songs, conversionResult, isEdit],
+      isEdit
+        ? songs?.filter((addedSong) => SongDao.generateSongFile(addedSong) !== SongDao.generateSongFile(song))
+        : songs,
+    [songs, song, isEdit],
   );
+
+  const duplicateByName = useMemo(
+    () =>
+      conversionResult
+        ? otherSongs?.find(
+            (addedSong) => SongDao.generateSongFile(addedSong) === SongDao.generateSongFile(conversionResult),
+          )
+        : undefined,
+    [otherSongs, conversionResult],
+  );
+
+  const currentVideoId = authorAndVid.video.length === 11 ? authorAndVid.video : getVideoId(authorAndVid.video);
+  const duplicateByVideo = useMemo(
+    () => (currentVideoId ? otherSongs?.find((addedSong) => addedSong.video === currentVideoId) : undefined),
+    [otherSongs, currentVideoId],
+  );
+  const possibleDuplicate = duplicateByName ?? duplicateByVideo;
 
   // Prefill empty fields once per source (txt or edited song), so fields the user clears stay cleared
   const prefilledFromSource = useRef<unknown>(null);
@@ -307,12 +339,12 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
         <div className="col-span-12 px-2 md:px-0 md:py-4">
           <Stepper activeStep={currentStep} nonLinear={isEdit}>
             <Step key={0} completed={isBasicInfoCompleted}>
-              <StepButton color="inherit" onClick={() => setCurrentStep(0)}>
+              <StepButton color="inherit" {...duplicateStepProps(!!duplicateByName)} onClick={() => setCurrentStep(0)}>
                 <span className="hidden md:block">Basic Info</span>
               </StepButton>
             </Step>
             <Step key={1} completed={isAuthorAndVidCompleted}>
-              <StepButton color="inherit" onClick={() => setCurrentStep(1)}>
+              <StepButton color="inherit" {...duplicateStepProps(!!duplicateByVideo)} onClick={() => setCurrentStep(1)}>
                 <span className="hidden md:block">Author and video data</span>
               </StepButton>
             </Step>
@@ -377,7 +409,7 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
             {possibleDuplicate && (
               <Alert severity="warning" data-test="possible-duplicate">
                 <AlertTitle>Possible duplicate</AlertTitle>
-                There is already a song with similar artist and/or name:{' '}
+                There is already a song with similar artist and/or name, or the same video:{' '}
                 <b>
                   {possibleDuplicate.artist} - {possibleDuplicate.title}
                 </b>
