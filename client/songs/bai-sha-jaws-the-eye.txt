@@ -1,0 +1,283 @@
+#ARTIST:Bai Sha JAWS
+#TITLE:The Eye
+#CREATOR:wolf359
+#BPM:330
+#YEAR:2024
+#VIDEO:v=qFHvA-sK-Ek
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:5208
+#ALLKARAOKE_ID:bai-sha-jaws-the-eye
+#ALLKARAOKE_SID:7387
+#ALLKARAOKE_LASTUPDATE:2026-11-14T21:47:32.000Z
+#ALLKARAOKE_ARTISTORIGIN:CN
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=wolf359
+#ALLKARAOKE_REALBPM:110
+#ALLKARAOKE_VOLUME:70
+#ALLKARAOKE_DURATION:102
+#P1:"Link Click: Bridon Arc" OP 「The Eye」| Bai Sha Jaws
+#MP3:Bai Sha JAWS - The Eye (TV).mp3
+#COVER:Bai Sha JAWS - The Eye (TV).jpg
+#MEDLEYSTARTBEAT:1184
+#MEDLEYENDBEAT:1556
+: 22 3 -1 I 
+: 29 7 6 wish 
+: 41 5 3 that 
+: 47 3 3 I 
+: 53 2 1 could 
+: 59 4 -1 tell 
+: 65 4 1 you 
+: 71 1 -1 the 
+: 77 8 6 truth
+- 85
+: 89 1 -1 I've 
+: 95 4 3 seen 
+: 101 3 1 it 
+: 107 1 -1 a 
+: 113 4 1 mil
+: 119 2 1 lion 
+: 126 7 1 times
+- 133
+: 137 2 -1 I 
+: 143 7 6 stopped 
+: 154 5 -1 paint
+: 161 3 1 ing 
+: 166 2 -1 ex
+: 173 7 6 cus
+: 185 3 3 es 
+: 191 5 3 red 
+: 197 4 1 e
+: 203 5 3 ven 
+: 210 3 3 if 
+: 215 3 4 I'm 
+: 223 1 1 trapped
+: 225 9 3 ~ 
+: 239 4 1 in 
+: 245 15 -1 a 
+: 264 2 1 re
+: 270 2 -6 wind
+: 273 13 -4 ~
+- 286 344
+- 344
+: 366 1 -6 re
+: 372 1 -1 wind
+: 374 3 1 ~
+: 378 4 1 ing 
+: 384 4 1 right 
+: 389 2 1 in 
+: 396 3 1 front 
+: 400 3 -1 of 
+: 407 5 -1 the 
+: 413 10 -1 eye
+- 423 433
+- 433
+: 455 3 -6 I 
+: 462 1 -1 ran
+: 464 5 1 ~ 
+: 474 4 1 to
+: 479 2 1 wards 
+: 485 5 1 the 
+: 491 4 1 end 
+: 497 2 -1 of 
+: 503 4 -1 the 
+: 509 14 -1 line
+- 523 529
+- 529
+: 551 3 -6 I 
+: 557 2 -1 heard
+: 560 6 1 ~ 
+: 569 3 1 your 
+: 575 2 1 voice 
+: 581 4 1 but 
+: 587 1 1 missed 
+: 593 1 1 you
+: 595 2 3 ~ 
+: 599 1 -1 in 
+: 605 13 -1 time
+- 618 624
+- 624
+: 646 1 -6 I 
+: 653 1 -1 fol
+: 655 8 1 ~
+: 665 5 1 lowed 
+: 671 4 1 eve
+: 679 4 1 ry 
+: 684 4 1 end 
+: 690 2 -1 of 
+: 695 1 -1 the 
+: 701 13 -1 signs
+- 714 716
+- 716
+: 738 3 -6 but 
+: 743 1 -6 the 
+: 749 1 -1 clock
+: 751 3 1 ~ 
+: 761 5 1 tow
+: 768 1 1 er 
+: 773 5 1 bell 
+: 780 4 1 on
+: 785 2 3 ly 
+: 791 1 -1 struck 
+: 797 15 -1 nine
+- 812
+: 834 2 -1 When 
+: 839 1 -1 the 
+: 845 6 6 sun 
+: 857 2 3 sets 
+: 863 3 3 on 
+: 869 1 1 this 
+: 875 5 -1 side 
+: 881 1 1 of 
+: 887 2 1 my 
+: 893 11 1 mind
+- 904 907
+- 907
+: 929 5 -1 and 
+: 935 1 -1 I 
+: 941 1 -1 thought
+: 943 7 1 ~ 
+: 953 4 -1 it 
+: 959 1 1 was 
+* 965 11 -4 snow
+* 978 1 -4 ing
+* 980 9 -1 ~
+- 989 1002
+- 1002
+: 1024 4 -1 on
+: 1031 3 -1 ly 
+: 1038 8 6 when 
+: 1050 4 3 the 
+: 1055 4 3 ash
+: 1061 2 1 es 
+: 1067 4 -1 fell 
+* 1073 4 1 on 
+* 1079 1 -1 the 
+* 1085 3 1 film
+* 1089 4 2 ~ 
+: 1097 3 1 in 
+: 1103 4 1 my 
+: 1111 5 -1 hands
+- 1116
+: 1122 5 -5 did 
+: 1134 11 -6 I 
+* 1158 8 1 know
+* 1169 2 3 ~
+* 1172 5 4 ~
+* 1181 14 3 ~
+- 1195
+: 1206 1 -1 There
+: 1208 1 1 ~ 
+: 1212 1 1 will 
+: 1217 5 1 be 
+: 1223 1 1 a 
+: 1229 4 1 fire
+: 1234 5 -1 ~ 
+: 1241 5 -1 when 
+: 1247 3 -1 it 
+: 1254 6 -6 all 
+: 1265 1 3 un
+: 1267 5 4 ~
+: 1277 11 3 folds
+- 1288
+: 1296 1 -1 we 
+: 1301 3 1 should 
+: 1307 4 1 bur
+: 1313 4 1 y 
+: 1319 2 -1 the 
+: 1326 4 1 treas
+: 1331 3 -1 ure 
+: 1337 4 -1 a
+: 1342 5 -1 long 
+: 1349 1 -6 with 
+: 1355 4 -6 all 
+: 1362 1 3 we
+: 1364 5 4 ~ 
+: 1374 10 3 know
+- 1384
+: 1397 3 -1 but 
+: 1402 4 -1 I 
+: 1409 4 1 could
+: 1414 2 3 n't 
+* 1421 2 8 save
+* 1424 7 10 ~ 
+* 1434 6 11 you
+- 1440
+: 1447 2 -1 but 
+: 1451 3 -1 I 
+: 1457 5 1 could
+: 1463 3 3 n't 
+: 1469 3 8 make
+: 1473 5 10 ~ 
+: 1482 3 11 it 
+: 1488 3 -1 to 
+: 1493 12 -1 you
+- 1505
+: 1511 2 -2 trapped 
+: 1517 4 -1 in 
+: 1523 1 -1 end
+: 1525 3 1 ~
+: 1529 3 1 ings 
+: 1535 5 1 I 
+: 1542 3 1 don't 
+: 1547 2 1 want 
+: 1554 1 1 you
+: 1556 2 3 ~ 
+: 1560 3 -1 to 
+: 1565 13 -1 know
+- 1578
+: 1589 5 -1 so 
+: 1595 1 -1 long
+: 1597 1 1 ~ 
+: 1601 5 1 to 
+: 1607 1 1 a 
+: 1613 3 1 burst
+: 1619 2 -1 ing 
+: 1625 3 -1 wave 
+: 1631 3 -6 of 
+: 1638 7 -6 blind
+: 1649 2 3 ing
+: 1652 5 4 ~ 
+: 1661 14 3 lights
+- 1675
+: 1680 4 -1 but 
+: 1686 1 -1 we 
+: 1691 4 6 fought 
+: 1697 1 6 the 
+: 1703 10 6 tides
+- 1713
+: 1722 1 -1 we 
+: 1727 4 6 fought 
+: 1733 2 6 the 
+: 1739 4 6 tides
+: 1745 2 -1 ~
+: 1748 7 1 ~
+: 1756 18 -1 ~
+- 1774
+: 1781 2 -1 till 
+: 1787 3 -1 the 
+: 1793 4 1 riv
+: 1799 2 3 er 
+: 1805 2 8 dried
+: 1808 8 10 ~
+: 1817 6 11 ~
+- 1823
+: 1830 1 -1 we 
+: 1835 3 -1 splash 
+: 1841 3 1 vel
+: 1847 3 3 vet 
+: 1853 2 8 dye
+: 1856 6 10 ~ 
+: 1864 4 11 in 
+: 1871 1 -1 the 
+: 1877 16 -1 sky
+- 1893
+: 1907 1 -1 stand
+: 1909 3 1 ~
+: 1913 2 1 ing 
+: 1919 3 1 still 
+: 1923 3 1 in 
+: 1931 4 1 front 
+: 1937 2 -1 of 
+: 1943 4 -1 the 
+: 1950 20 -1 eye
+E

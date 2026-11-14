@@ -1,0 +1,447 @@
+#ARTIST:EPIC: The Musical (Jorge Rivera-Herrans, Anna Lea)
+#TITLE:Suffering
+#CREATOR:Epic the musical
+#BPM:300
+#YEAR:2024
+#VIDEO:v=h84fYAsvsco
+#GENRE:Musical
+#LANGUAGE:English
+#GAP:7050
+#ALLKARAOKE_ID:epic-the-musical-jorge-rivera-herrans-anna-lea-suffering
+#ALLKARAOKE_SID:7430
+#ALLKARAOKE_LASTUPDATE:2026-11-14T21:47:47.607Z
+#ALLKARAOKE_REALBPM:130
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=h84fYAsvsco&list=RDh84fYAsvsco&start_radio=1
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:170
+#MP3:EPIC: The Musical (Jorge Rivera-Herrans, Anna Lea) - Suffering [DUET].mp3
+#COVER:EPIC: The Musical (Jorge Rivera-Herrans, Anna Lea) - Suffering [DUET] [CO].jpg
+#BACKGROUND:EPIC: The Musical (Jorge Rivera-Herrans, Anna Lea) - Suffering [DUET] [BG].jpg
+#END:151000
+- 0 230
+- 230
+: 250 4 8 More 
+: 255 4 8 than 
+: 260 4 15 you 
+: 265 19 15 know
+- 284 358
+- 358
+: 378 1 8 Pe
+: 380 1 10 ne
+: 382 1 8 lo
+: 384 9 10 pe 
+: 394 3 8 I’ve 
+: 398 4 10 told 
+: 403 3 12 you 
+: 407 3 13 this 
+: 411 4 15 be
+: 416 13 12 fore
+- 429 434
+- 434
+: 454 4 17 You 
+: 459 5 15 know 
+: 465 3 15 I’m 
+: 469 1 15 af
+: 471 5 12 raid 
+: 477 4 10 of 
+: 482 1 8 the 
+: 484 6 10 wa
+: 491 5 5 ter
+- 496 723
+- 723
+: 743 10 8 Oh 
+: 754 8 15 I 
+: 763 6 15 would
+- 769
+: 776 4 12 But 
+: 781 16 13 I’d 
+: 798 2 12 be 
+: 801 6 13 su
+: 808 4 12 ffe
+: 813 4 8 ring 
+: 818 16 10 trying 
+: 835 4 8 to 
+: 840 4 10 float 
+: 845 4 12 the 
+: 850 3 13 whole 
+: 854 13 12 time
+- 867 910
+- 910
+: 930 19 13 Ooh 
+: 950 1 12 as 
+: 952 4 13 good 
+: 957 1 12 as 
+: 959 4 8 it 
+: 964 19 10 sounds
+- 983
+: 984 3 8 Right 
+: 988 7 10 here 
+: 996 2 12 I’m 
+: 999 2 13 just 
+: 1002 12 12 fine
+- 1014 1054
+- 1054
+: 1074 22 13 You 
+: 1097 2 12 know 
+: 1100 4 13 that 
+: 1105 2 15 I 
+: 1108 4 17 pre
+: 1113 10 19 fer 
+: 1130 4 17 my 
+: 1135 6 19 feet 
+: 1142 3 17 on 
+: 1146 1 15 the 
+: 1148 14 12 ground
+- 1162 1228
+- 1228
+F 1248 5 13 Fine
+- 1253
+: 1265 2 3 But 
+: 1268 6 12 only 
+: 1275 4 12 if 
+: 1280 6 12 you 
+: 1287 7 12 answer 
+: 1295 1 12 a 
+: 1297 7 12 ques
+: 1305 3 10 tion 
+: 1309 2 10 or 
+: 1312 12 10 two
+- 1324 1337
+- 1337
+F 1357 5 13 Ok
+- 1362
+F 1367 7 13 So 
+F 1375 6 13 let’s 
+F 1382 3 13 say 
+F 1386 3 13 I 
+F 1390 2 13 was 
+F 1393 1 13 on 
+F 1395 1 13 the 
+F 1397 2 13 run 
+F 1401 1 13 or 
+F 1403 3 13 hiding
+- 1406
+F 1418 6 14 From 
+F 1426 1 14 I 
+F 1428 5 14 don’t 
+F 1434 2 14 know 
+F 1437 8 14 Poseidon
+- 1445
+F 1448 2 14 And 
+F 1451 3 14 let’s 
+F 1455 2 14 say 
+F 1459 4 14 he 
+F 1465 4 14 blocked 
+F 1471 2 14 the 
+F 1475 2 14 way 
+F 1478 4 14 home
+- 1482
+F 1483 3 14 With 
+F 1487 4 14 gigant 
+F 1492 10 14 waves 
+F 1503 2 14 and 
+F 1506 5 14 gigant 
+F 1512 9 14 storms
+- 1521
+: 1534 4 12 How 
+: 1539 1 10 am 
+: 1541 2 12 I 
+: 1544 5 12 to 
+: 1550 2 10 e
+: 1553 6 12 vade 
+: 1560 3 10 him?
+- 1563
+: 1570 3 12 How 
+: 1574 3 10 am 
+: 1578 1 12 I 
+: 1580 3 10 to 
+: 1584 3 12 get 
+: 1588 7 12 home?
+- 1595
+: 1608 4 12 Which 
+: 1613 4 12 route 
+: 1618 3 10 should 
+: 1622 3 12 I 
+: 1626 5 12 take?
+- 1631
+: 1645 4 12 Where 
+: 1650 1 10 am 
+: 1652 1 12 I 
+: 1654 6 12 supposed 
+: 1661 3 10 to 
+: 1665 7 12 go?
+- 1672 1987
+- 1987
+F 2007 10 16 No
+- 2017 2110
+- 2110
+F 2130 3 16 But 
+F 2134 4 16 Scylla 
+F 2139 3 16 has 
+F 2143 1 16 a 
+F 2146 11 16 cost
+- 2157 2255
+- 2255
+: 2275 4 10 Pe
+: 2280 3 12 ne
+: 2284 4 10 lo
+: 2289 5 8 pe 
+: 2295 15 13 why
+- 2310
+: 2312 4 12 You 
+: 2317 6 13 know 
+: 2324 2 12 I’m 
+: 2327 2 8 too 
+: 2330 9 10 shy
+: 2341 3 7 ~
+- 2344
+: 2350 2 8 And 
+: 2353 6 10 te
+: 2360 1 12 ~r
+: 2362 5 13 ri
+: 2368 13 10 fied
+- 2381 2422
+- 2422
+: 2442 16 13 Ooh 
+: 2459 3 12 for 
+: 2463 7 13 you 
+: 2471 4 12 I 
+: 2476 4 8 would 
+: 2481 6 10 die
+- 2487
+: 2488 4 3 But 
+: 2493 6 10 can’t 
+: 2500 2 8 you 
+: 2503 3 10 let 
+: 2507 1 12 me 
+: 2509 4 13 stay 
+: 2516 14 12 dry
+- 2530 2569
+- 2569
+: 2589 9 13 You 
+: 2599 7 13 should 
+: 2607 6 12 come 
+: 2614 3 13 on
+: 2618 3 15 to 
+: 2622 3 17 the 
+: 2626 12 19 ship
+- 2638
+: 2639 3 19 We’ll 
+: 2643 6 20 jump 
+: 2651 3 22 at 
+: 2655 2 20 the 
+: 2658 5 19 same 
+: 2664 9 15 time
+- 2673 2759
+- 2759
+F 2779 6 12 Aah
+- 2785
+: 2792 5 -2 The 
+: 2798 7 0 things 
+: 2806 5 0 I’d 
+: 2812 4 0 do 
+: 2817 5 -2 for 
+: 2823 11 -2 you
+F 20 75 5 Penelope
+- 95
+F 96 71 7 Penelope
+- 167
+: 178 7 5 Don’t 
+: 186 4 8 you 
+: 191 7 10 miss 
+: 199 8 12 me
+- 207 280
+- 280
+: 300 8 15 Then 
+: 309 2 20 ju
+: 312 3 22 ~mp 
+: 316 4 19 in 
+: 321 4 20 the 
+: 326 3 17 wa
+: 330 3 19 ter 
+: 334 3 15 and 
+: 338 9 22 kiss 
+: 348 8 24 me
+- 356 509
+- 509
+: 529 1 20 I’ll 
+: 531 3 22 make 
+: 535 4 19 sure 
+: 540 5 20 that 
+: 546 3 17 you 
+: 550 3 19 are 
+: 554 9 15 safe 
+: 564 2 17 and 
+: 567 20 12 sound
+- 587
+: 600 8 15 Come 
+: 609 6 15 play 
+: 616 3 15 with 
+: 620 2 15 me 
+: 623 5 15 and 
+: 629 2 15 our 
+: 632 9 20 daugh
+: 642 12 19 ter 
+: 655 4 17 and 
+: 660 9 15 let’s
+- 669
+: 670 11 20 Watch 
+: 682 7 19 our 
+: 690 6 17 love 
+: 697 4 15 leave 
+: 702 3 17 the 
+: 706 37 12 ground
+- 743 834
+- 834
+: 854 10 24 I 
+: 865 6 22 would 
+: 872 11 20 take 
+: 884 5 19 the 
+: 890 8 22 suf
+: 899 10 20 fe
+: 910 5 19 ring 
+: 916 9 17 from 
+: 926 13 13 you
+- 939 982
+- 982
+: 1002 10 24 I 
+: 1013 6 22 can 
+: 1020 11 20 take 
+: 1032 5 19 the 
+: 1038 8 22 suf
+: 1047 10 20 fe
+: 1058 5 19 ring 
+: 1064 9 17 from 
+: 1074 13 13 you
+- 1087 1133
+- 1133
+: 1153 10 24 I 
+: 1164 6 22 will 
+: 1171 11 20 take 
+: 1183 5 19 the 
+: 1189 8 22 suf
+: 1198 10 20 fe
+: 1209 5 19 ring 
+: 1215 9 17 from 
+: 1225 13 13 you
+- 1238 1318
+- 1318
+F 1338 1 14 Of 
+F 1340 11 14 course
+- 1351 1498
+- 1498
+: 1518 4 19 Oh 
+: 1523 8 20 no
+- 1531 1653
+- 1653
+: 1673 7 17 He 
+: 1681 7 12 will 
+: 1689 10 13 chase 
+: 1700 8 20 you 
+: 1709 8 19 high 
+: 1718 8 17 and 
+: 1727 11 15 low
+- 1738
+: 1739 4 15 So 
+: 1744 11 15 find 
+: 1756 3 8 a 
+: 1762 11 12 place 
+: 1774 7 20 he’d 
+: 1782 8 14 ne
+: 1791 9 20 ver 
+: 1801 6 15 go
+- 1807
+: 1814 3 13 The 
+: 1818 8 13 only 
+: 1827 10 15 way 
+: 1838 8 17 you’ll 
+: 1847 8 20 get 
+: 1856 5 20 ho
+: 1862 3 22 me
+- 1865
+: 1870 3 24 Is 
+: 1874 10 24 sailing 
+: 1885 4 24 where 
+: 1890 2 24 he’s 
+: 1893 8 24 scared 
+: 1902 3 20 to 
+: 1906 13 20 roam
+- 1919
+: 1921 7 15 Oh 
+: 1935 4 15 It’s 
+: 1940 2 15 through 
+: 1943 6 15 the 
+: 1950 5 24 la
+: 1956 6 22 ir 
+: 1963 5 20 of 
+: 1969 4 19 Scyl
+: 1974 7 17 la
+- 1981 2004
+- 2004
+: 2024 6 17 This 
+: 2031 4 19 is 
+: 2036 5 20 your 
+: 2042 11 25 on
+: 2054 5 24 ly 
+: 2060 12 24 way
+: 2073 4 22 ~ 
+: 2078 14 22 home
+- 2092
+: 2093 4 20 The 
+: 2098 6 20 la
+: 2105 4 19 ir 
+: 2110 2 17 of 
+: 2113 6 17 Scyl 
+: 2120 3 15 la
+- 2123 2151
+- 2151
+: 2171 8 12 Well 
+: 2180 9 15 you 
+: 2190 4 15 as
+: 2195 7 17 ked
+- 2202
+: 2203 4 15 And 
+: 2208 5 17 now 
+: 2214 7 20 you 
+: 2222 5 20 kno
+: 2228 4 22 ~w
+- 2232
+F 2238 4 17 Now 
+F 2243 6 17 jump 
+F 2250 3 17 in 
+F 2254 1 17 the 
+F 2256 17 17 water
+- 2273 2350
+- 2350
+: 2370 10 24 I 
+: 2381 6 22 would 
+: 2388 11 20 take 
+: 2400 5 19 the 
+: 2406 8 22 suf
+: 2415 10 20 fe
+: 2426 5 19 ring 
+: 2432 9 17 from 
+: 2442 13 13 you
+- 2455 2497
+- 2497
+: 2517 10 24 I 
+: 2528 6 22 can 
+: 2535 11 20 take 
+: 2547 5 19 the 
+: 2553 8 22 suf
+: 2562 10 20 fe
+: 2573 5 19 ring 
+: 2579 9 17 from 
+: 2589 13 13 you
+- 2602 2645
+- 2645
+: 2665 10 24 I 
+: 2676 6 22 will 
+: 2683 11 20 take 
+: 2695 5 19 the 
+: 2701 8 22 suf
+: 2710 10 20 fe
+: 2721 5 19 ring 
+: 2727 9 17 from 
+: 2737 17 13 you
+E

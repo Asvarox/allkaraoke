@@ -1,0 +1,446 @@
+#ARTIST:Skillet
+#TITLE:Awake and Alive
+#CREATOR:Lorc
+#BPM:320
+#YEAR:2009
+#VIDEO:v=2aJUnltwsqs
+#GENRE:Christian Rock
+#LANGUAGE:English
+#GAP:19577,625
+#ALLKARAOKE_ID:skillet-awake-and-alive
+#ALLKARAOKE_SID:7492
+#ALLKARAOKE_LASTUPDATE:2026-11-14T21:48:13.717Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=lorc
+#ALLKARAOKE_REALBPM:80
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?cancion=Awake%20and%20Alive
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:222
+#COVER:Skillet - Awake and Alive.jpg
+#MP3:Skillet - Awake and Alive.mp3
+: 21 3 -1 I'm 
+: 26 2 -1 at 
+: 29 7 7 war 
+: 37 3 6 with 
+: 41 3 4 the 
+: 45 7 4 world 
+: 53 8 -1 and 
+: 62 11 0 they
+- 73
+: 85 3 0 Try 
+: 89 3 -1 to 
+: 93 7 0 pull 
+: 101 4 0 me 
+: 106 3 2 in
+: 110 6 0 to 
+: 117 7 -1 the 
+: 125 12 -1 dark
+- 137
+: 150 3 -1 I 
+: 156 7 7 strug
+: 164 4 6 gle 
+: 169 2 4 to 
+: 172 3 4 find
+: 176 4 -1 ~ 
+: 181 7 -1 my 
+: 189 12 0 faith
+- 201
+: 213 3 6 As 
+: 217 2 4 I'm 
+: 221 7 6 slip
+: 229 7 7 pin' 
+: 237 7 6 from 
+: 245 7 4 your 
+: 253 15 4 arms
+- 268
+: 273 3 4 It's 
+: 277 3 4 get
+: 281 3 4 ting 
+: 285 7 11 har
+: 293 3 9 der 
+: 297 2 7 to 
+: 301 7 7 stay 
+: 309 7 9 a
+: 317 14 11 wake
+- 331
+: 341 3 11 And 
+: 345 2 11 my 
+: 349 7 11 strength 
+: 357 7 9 is 
+: 365 6 7 fad
+: 372 8 9 ing 
+: 381 12 12 fast
+- 393
+: 405 7 4 You 
+: 413 11 4 breathe 
+: 425 6 6 in
+: 433 10 7 to 
+: 445 15 7 me 
+: 461 8 11 at
+: 470 6 9 ~ 
+: 477 14 9 last
+- 491
+* 494 6 6 I'm 
+* 501 8 7 a
+* 510 11 7 wake 
+* 525 7 6 I'm 
+* 533 8 7 a
+* 542 11 7 live
+- 553
+: 557 7 7 Now 
+: 565 7 9 I 
+: 573 7 7 know 
+: 581 4 2 what 
+: 586 6 7 I 
+: 593 5 9 be
+: 599 5 7 ~
+: 605 7 7 lieve 
+: 613 5 6 in
+: 620 14 6 side
+- 634
+: 637 12 7 Now 
+: 653 7 6 it's 
+: 661 7 7 my 
+: 669 16 7 time
+- 685
+: 693 7 9 I'll 
+: 701 2 11 do 
+: 704 4 7 what 
+: 709 7 7 I 
+: 717 11 7 want 
+: 729 2 -1 'cause 
+: 732 4 11 this 
+: 737 3 9 is 
+: 741 8 9 my 
+: 750 12 9 life
+- 762
+* 765 16 7 Here, 
+* 789 7 6 right 
+* 797 18 7 now
+- 815
+: 827 9 11 Stand 
+: 837 7 11 my 
+: 845 11 11 ground 
+: 857 3 12 and 
+: 861 3 11 ne
+: 865 3 9 ver 
+: 869 7 9 back 
+: 877 9 9 down
+- 886
+: 890 2 2 I 
+: 893 7 7 know 
+: 901 3 6 what 
+: 905 9 4 I 
+: 915 9 6 be
+: 925 7 6 lieve 
+: 933 7 4 in
+: 941 12 4 side
+- 953
+: 957 7 7 I'm 
+: 965 4 6 a
+: 970 6 4 wake 
+: 978 10 6 and 
+: 989 7 6 I'm 
+: 997 8 4 a
+: 1006 17 4 live
+- 1023 1280
+- 1280
+: 1301 3 -1 I'm 
+: 1305 2 -1 at 
+: 1309 7 7 war 
+: 1317 3 6 with 
+: 1321 3 4 the 
+: 1325 7 4 world 
+: 1333 7 -1 'cause 
+: 1341 16 0 I
+- 1357
+: 1369 3 -1 Ain't 
+: 1373 3 0 ne
+: 1377 3 0 ver 
+: 1381 2 0 gon
+: 1384 2 -1 na 
+: 1387 9 0 sell 
+: 1397 7 -1 my 
+: 1405 12 -1 soul
+- 1417
+* 1429 3 -1 I've 
+* 1433 3 -1 al
+* 1437 3 7 rea
+* 1441 3 7 dy 
+: 1445 4 6 made
+: 1450 2 4 ~ 
+: 1453 6 4 up 
+: 1461 7 -1 my 
+: 1469 10 0 mind
+- 1479
+: 1482 2 0 No 
+: 1485 3 7 mat
+: 1489 3 7 ter 
+: 1493 3 6 what 
+: 1497 3 4 I 
+: 1501 7 6 can't 
+: 1509 7 7 be 
+: 1517 7 6 bought 
+: 1525 7 4 or 
+: 1533 15 4 sold
+- 1548
+: 1557 3 4 When 
+: 1561 3 4 my 
+: 1565 7 11 faith 
+: 1573 6 9 is 
+: 1580 8 7 get
+: 1589 7 9 ting 
+: 1597 12 11 weak
+- 1609
+* 1621 3 11 And 
+* 1625 3 11 I 
+* 1629 6 11 feel 
+: 1636 8 9 like 
+: 1645 7 7 giv
+: 1653 6 9 ing 
+: 1660 13 12 in
+- 1673
+: 1685 7 4 You 
+: 1693 11 4 breathe 
+: 1705 6 6 in
+: 1713 10 7 to 
+: 1725 14 7 me 
+: 1740 9 11 a
+: 1750 6 9 ~
+: 1757 13 9 gain
+- 1770
+: 1773 7 6 I'm 
+: 1781 8 7 a
+: 1790 11 7 wake 
+: 1805 7 6 I'm 
+: 1813 8 7 a
+: 1822 11 7 live
+- 1833
+: 1837 7 7 Now 
+: 1845 7 9 I 
+: 1853 7 7 know 
+: 1861 4 2 what 
+: 1866 6 7 I 
+: 1873 5 9 be
+: 1879 5 7 ~
+: 1885 7 7 lieve 
+: 1893 5 6 in
+: 1900 12 6 side
+- 1912
+: 1917 12 7 Now 
+: 1933 7 6 it's 
+: 1941 7 7 my 
+: 1949 16 7 time
+- 1965
+: 1973 7 9 I'll 
+: 1981 2 11 do 
+: 1984 4 7 what 
+: 1989 7 7 I 
+: 1997 11 7 want 
+: 2009 2 -1 'cause 
+: 2012 4 11 this 
+: 2017 3 9 is 
+: 2021 8 9 my 
+: 2030 12 9 life
+- 2042
+: 2045 16 7 Here, 
+: 2069 7 6 right 
+: 2077 18 7 now
+- 2095
+: 2107 9 11 Stand 
+: 2117 7 11 my 
+: 2125 11 11 ground 
+: 2137 3 12 and 
+* 2141 3 11 ne
+* 2145 3 9 ver 
+* 2149 7 9 back 
+* 2157 9 9 down
+- 2166
+: 2170 2 2 I 
+: 2173 7 7 know 
+: 2181 3 6 what 
+: 2185 9 4 I 
+: 2195 9 6 be
+: 2205 7 6 lieve 
+: 2213 7 4 in
+: 2221 12 4 side
+- 2233
+: 2237 7 7 I'm 
+: 2245 4 6 a
+: 2250 6 4 wake 
+: 2258 10 6 and 
+: 2269 7 6 I'm 
+: 2277 8 4 a
+: 2286 13 4 live
+- 2299
+F 2302 6 11 Wak
+F 2309 7 4 ing 
+F 2317 6 4 up, 
+F 2325 7 11 wak
+F 2333 7 4 ing 
+F 2341 6 4 up
+- 2347
+F 2365 7 11 Wak
+F 2373 7 4 ing 
+F 2381 6 4 up, 
+F 2389 7 11 wak
+F 2397 7 4 ing 
+F 2405 6 4 up
+- 2411
+F 2429 7 11 Wak
+F 2437 7 4 ing 
+F 2445 6 4 up, 
+F 2453 7 11 wak
+F 2461 7 4 ing 
+F 2469 6 4 up
+- 2475
+F 2493 7 11 Wak
+F 2501 7 4 ing 
+F 2509 6 4 up, 
+F 2517 7 11 wak
+F 2525 7 4 ing 
+F 2533 5 4 up
+- 2538
+: 2541 7 6 In 
+: 2549 7 7 the 
+: 2557 16 4 dark
+- 2573
+: 2581 3 4 I 
+: 2585 3 4 can 
+: 2590 6 9 feel 
+: 2597 7 7 you 
+: 2605 8 6 in 
+* 2614 6 9 my 
+* 2621 16 7 sleep
+- 2637
+: 2645 3 6 In 
+: 2649 3 7 your 
+: 2653 7 9 arms 
+: 2661 6 7 I 
+: 2669 7 6 feel 
+: 2677 7 7 you 
+: 2685 22 4 breathe
+- 2707
+: 2710 22 9 In
+: 2733 15 7 to 
+: 2749 4 7 me
+: 2754 11 6 ~
+- 2765
+: 2776 5 0 For
+: 2782 5 9 e
+: 2789 7 7 ver 
+: 2797 7 6 hold 
+: 2805 6 7 this 
+: 2812 8 4 heart 
+: 2821 7 6 that 
+: 2829 5 6 I 
+: 2837 7 4 will 
+: 2845 7 6 give 
+: 2853 7 7 to 
+: 2861 9 7 you
+- 2870
+* 2874 6 2 For
+* 2881 4 7 e
+* 2886 6 7 ver 
+: 2893 7 6 I 
+: 2901 7 7 will 
+: 2909 6 9 live 
+: 2917 7 9 for 
+: 2925 8 9 you
+: 2934 10 7 ~
+- 2944
+F 2947 260 6 *Solo*
+- 3207 3224
+- 3224
+: 3245 7 6 I'm 
+: 3253 8 7 a
+: 3262 11 7 wake 
+: 3277 7 6 I'm 
+: 3285 8 7 a
+: 3294 11 7 live
+- 3305
+: 3309 7 7 Now 
+: 3317 7 9 I 
+: 3325 7 7 know 
+: 3333 4 2 what 
+: 3338 6 7 I 
+: 3345 5 9 be
+: 3351 5 7 ~
+: 3357 7 7 lieve 
+: 3365 5 6 in
+: 3372 12 6 side
+- 3384
+: 3389 12 7 Now 
+: 3405 7 6 it's 
+: 3413 7 7 my 
+: 3421 16 7 time
+- 3437
+: 3445 7 9 I'll 
+: 3453 2 11 do 
+: 3456 4 7 what 
+: 3461 7 7 I 
+: 3469 11 7 want 
+* 3481 2 -1 'cause 
+* 3484 4 11 this 
+* 3489 3 9 is 
+* 3493 8 9 my 
+* 3502 12 9 life
+- 3514
+: 3517 16 7 Here, 
+: 3541 7 6 right 
+: 3549 18 7 now
+- 3567
+: 3579 9 11 Stand 
+: 3589 7 11 my 
+: 3597 11 11 ground 
+: 3609 3 12 and 
+: 3613 3 11 ne
+: 3617 3 9 ver 
+: 3621 7 9 back 
+: 3629 9 9 down
+- 3638
+: 3642 2 2 I 
+: 3645 7 7 know 
+: 3653 3 6 what 
+: 3657 9 4 I 
+: 3667 9 6 be
+: 3677 7 6 lieve 
+: 3685 7 4 in
+: 3693 12 4 side
+- 3705
+: 3709 7 7 I'm 
+: 3717 4 6 a
+: 3722 6 4 wake 
+: 3730 10 6 and 
+: 3741 7 6 I'm 
+: 3749 8 4 a
+: 3758 13 4 live
+- 3771
+F 3774 6 11 Wak
+F 3781 7 4 ing 
+F 3789 6 4 up, 
+F 3797 7 11 wak
+F 3805 7 4 ing 
+F 3813 6 4 up
+- 3819
+F 3837 7 11 Wak
+F 3845 7 4 ing 
+F 3853 6 4 up, 
+F 3861 7 11 wak
+F 3869 7 4 ing 
+F 3877 6 4 up
+- 3883
+F 3901 7 11 Wak
+F 3909 7 4 ing 
+F 3917 6 4 up, 
+F 3925 7 11 wak
+F 3933 7 4 ing 
+F 3941 6 4 up
+- 3947
+F 3965 7 11 Wak
+F 3973 7 4 ing 
+F 3981 6 4 up, 
+F 3989 7 11 wak
+F 3997 7 4 ing 
+F 4005 5 4 up
+E

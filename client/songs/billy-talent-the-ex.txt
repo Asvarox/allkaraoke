@@ -1,0 +1,432 @@
+#ARTIST:Billy Talent
+#TITLE:The Ex
+#CREATOR:Canni
+#BPM:329
+#YEAR:2003
+#PREVIEWSTART:41
+#VIDEO:v=FR13Io8ZKlE
+#LANGUAGE:English
+#GAP:17936,96048632219
+#ALLKARAOKE_ID:billy-talent-the-ex
+#ALLKARAOKE_SID:7508
+#ALLKARAOKE_LASTUPDATE:2026-11-14T21:48:33.642Z
+#ALLKARAOKE_ARTISTORIGIN:CA
+#ALLKARAOKE_REALBPM:162
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=gettxt&id=199
+#ALLKARAOKE_PREVIEWEND:61
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:176
+#MP3:Billy Talent - The Ex.mp3
+: 22 4 1 Well, 
+: 27 3 1 I 
+: 31 5 1 looked 
+: 37 3 1 at 
+: 41 1 1 her 
+: 43 10 2 face
+- 53
+: 58 1 -3 And 
+: 60 1 -3 then 
+: 62 1 -3 I 
+: 64 3 -3 know 
+: 68 6 -1 she’d 
+: 75 11 1 changed,
+- 86
+: 89 3 4 Then 
+: 93 3 4 my 
+: 97 3 4 heart 
+: 101 3 4 tu
+: 105 4 4 ~rned 
+: 110 8 6 black
+- 118
+: 119 1 -3 And 
+: 121 3 -3 then 
+: 125 2 -3 the 
+: 128 4 -3 sky 
+: 133 8 -1 turned 
+: 142 8 1 gray!
+- 150
+F 152 1 4 Yeah 
+: 157 3 4 my 
+: 161 3 4 heart 
+: 165 3 4 tu
+: 169 4 4 ~rned 
+: 174 10 6 black
+- 184
+: 186 3 -3 Then 
+: 190 3 -3 the 
+: 194 4 -3 sky 
+: 199 7 -1 turned 
+* 211 31 4 gra
+* 243 26 1 ~y!
+- 269
+: 283 5 1 So 
+: 289 2 1 I 
+: 292 4 1 sat 
+: 297 4 1 in 
+: 302 3 1 my 
+: 306 6 2 room 
+: 313 4 -3 for 
+: 318 3 -3 twen
+: 322 2 -3 ty
+: 325 3 -3 se
+: 329 6 -1 ven 
+: 337 10 1 days,
+- 347
+: 350 3 4 No 
+: 354 3 4 she 
+: 358 2 4 ne
+: 361 1 4 ~
+: 363 4 4 ver 
+: 369 11 6 called, 
+: 384 2 -3 I 
+: 387 2 -3 had 
+: 390 3 -3 some
+: 394 3 -3 thing 
+: 399 2 -1 to 
+: 403 8 1 say!
+- 411
+: 415 3 4 No 
+: 419 3 4 she 
+: 423 4 4 ne
+: 428 4 4 ver 
+: 434 11 6 called, 
+: 449 3 -3 I 
+: 453 3 -3 had 
+: 457 3 -3 some
+: 461 3 -3 thing 
+: 465 4 -1 to 
+* 472 31 4 sa
+* 504 24 1 ~y!
+- 528
+: 546 3 1 Well 
+: 550 3 1 I 
+: 554 4 1 don’t 
+: 559 6 2 know 
+: 566 8 1 much,
+- 574
+: 583 3 1 I 
+: 587 4 1 don’t 
+: 592 6 2 know 
+: 599 15 1 ho
+: 615 3 -1 ~
+: 619 12 -3 ~
+: 632 3 -1 ~
+: 636 30 1 ~w...
+- 666
+: 667 8 9 Why 
+: 676 2 8 would 
+: 679 4 6 she 
+: 684 7 4 put 
+: 692 6 1 me 
+: 699 8 4 through 
+: 708 8 6 such 
+: 717 7 4 tor
+: 725 7 1 ture,
+- 732
+: 733 7 9 I 
+: 741 4 8 would 
+: 746 3 6 have 
+: 750 6 4 gi
+: 757 6 1 ven 
+: 765 7 4 my 
+: 773 7 6 life 
+: 781 7 4 for 
+: 789 8 1 her,
+- 797
+: 798 8 9 She 
+: 807 3 8 was 
+: 811 3 6 the 
+: 815 7 4 one 
+: 823 5 1 that 
+: 830 9 4 knocked 
+: 840 8 6 me 
+: 849 6 4 o
+: 856 5 1 ver,
+- 861
+: 863 9 9 Now 
+: 873 2 8 I’m 
+: 876 2 6 a
+: 879 7 4 lone 
+: 887 3 1 sit
+: 891 4 1 ting 
+: 896 7 4 on 
+: 904 7 6 the 
+: 912 7 4 cor
+: 920 7 1 ner
+- 927 980
+- 980
+: 1002 4 1 Well, 
+: 1007 3 1 I 
+: 1011 3 1 heard 
+: 1015 7 1 she’s 
+: 1023 7 2 great
+- 1030
+: 1033 2 -3 And 
+: 1036 2 -3 her 
+: 1039 2 -6 new 
+: 1043 3 -1 boy
+: 1047 7 -1 friend’s 
+: 1055 8 1 lame,
+- 1063
+: 1065 4 4 She 
+: 1070 4 4 can 
+: 1075 4 4 go 
+: 1080 5 4 to 
+: 1086 9 6 hell 
+: 1096 3 -3 I’ll 
+: 1100 2 -3 ne
+: 1103 4 -3 ver 
+: 1108 3 -3 be 
+: 1112 6 -1 the 
+: 1119 8 1 same!
+- 1127
+: 1130 4 4 She 
+: 1135 4 4 can 
+: 1140 4 4 go 
+: 1145 4 4 to 
+: 1150 11 6 hell 
+: 1162 2 -3 I’ll 
+: 1165 2 -3 ne
+: 1168 4 -3 ver 
+: 1173 3 -3 be 
+: 1177 6 -1 the 
+* 1188 31 4 sa
+* 1220 28 1 ~me!
+- 1248
+: 1264 4 1 And 
+: 1269 3 1 these 
+: 1273 2 1 o
+: 1276 5 1 pen 
+: 1282 9 2 wounds
+- 1291
+: 1292 4 -3 Will 
+: 1297 2 -3 heal 
+: 1300 3 -3 with 
+: 1304 4 -3 time 
+: 1309 5 -1 they 
+: 1315 8 1 say,
+- 1323
+: 1328 3 4 Then 
+: 1332 3 4 my 
+: 1336 3 4 heart 
+: 1340 3 4 tu
+: 1344 4 4 ~rned 
+: 1349 8 6 black
+- 1357
+: 1358 2 -3 And 
+: 1361 3 -3 then 
+: 1365 2 -3 the 
+: 1368 4 -3 sky 
+: 1373 7 -1 turned 
+: 1381 8 1 gray!
+- 1389
+: 1393 3 4 Then 
+: 1397 3 4 my 
+: 1401 3 4 heart 
+: 1405 3 4 tu
+: 1409 4 4 ~rned 
+: 1414 8 6 black
+- 1422
+: 1423 2 -3 And 
+: 1426 3 -3 then 
+: 1430 3 -3 the 
+: 1434 4 -3 sky 
+: 1439 7 -1 turned 
+* 1450 31 4 gra
+* 1482 26 1 ~y!
+- 1508
+: 1515 3 1 Well 
+: 1519 3 1 I 
+: 1523 4 1 don’t 
+: 1528 7 2 know 
+: 1536 8 1 much,
+- 1544
+: 1550 3 1 I 
+: 1554 4 1 don’t 
+: 1559 7 2 know 
+: 1567 18 1 ho
+: 1586 3 -1 ~
+: 1590 10 -3 ~
+: 1601 4 -1 ~
+: 1606 30 1 ~w...
+- 1636
+: 1637 7 9 Why 
+: 1645 3 8 would 
+: 1649 4 6 she 
+: 1654 7 4 put 
+: 1662 6 1 me 
+: 1669 7 4 through 
+: 1677 8 6 such 
+: 1686 6 4 tor
+: 1693 7 1 ture,
+- 1700
+: 1702 7 9 I 
+: 1710 3 8 would 
+: 1714 4 6 have 
+: 1719 6 4 gi
+: 1726 6 1 ven 
+: 1734 8 4 my 
+: 1743 7 6 life 
+: 1751 7 4 for 
+: 1759 6 1 her,
+- 1765
+: 1766 10 9 She 
+: 1777 3 8 was 
+: 1781 3 6 the 
+: 1785 6 4 one 
+: 1792 7 1 that 
+: 1801 6 4 knocked 
+: 1808 8 6 me 
+: 1817 6 4 o
+: 1824 6 1 ver,
+- 1830
+: 1832 9 9 Now 
+: 1842 2 8 I’m 
+: 1845 3 6 a
+: 1849 6 4 lone 
+: 1856 3 1 sit
+: 1860 5 1 ting 
+: 1866 7 4 on 
+: 1874 6 6 the 
+: 1881 8 4 cor
+: 1890 5 1 ner
+- 1895
+: 1898 7 9 Why 
+: 1906 3 8 would 
+: 1910 4 6 she 
+: 1915 6 4 put 
+: 1922 7 1 me 
+: 1930 7 4 through 
+: 1938 7 6 such 
+: 1946 7 4 tor
+: 1954 6 1 ture,
+- 1960
+: 1963 8 9 I 
+: 1972 3 8 would 
+: 1976 3 6 have 
+: 1980 5 4 gi
+: 1986 6 1 ven 
+: 1996 7 4 my 
+: 2004 7 6 life 
+: 2012 7 4 for 
+: 2020 4 1 her,
+- 2024
+: 2027 9 9 She 
+: 2037 3 8 was 
+: 2041 3 6 the 
+: 2045 7 4 one 
+: 2053 5 1 that 
+: 2060 8 4 knocked 
+: 2069 8 6 me 
+: 2079 6 4 o
+: 2086 5 1 ver,
+- 2091
+: 2093 9 9 Now 
+: 2103 2 8 I’m 
+: 2106 3 6 a
+: 2110 6 4 lone 
+: 2117 4 1 sit
+: 2122 3 1 ting 
+: 2126 7 4 on 
+: 2134 7 6 the 
+: 2142 6 4 cor
+: 2149 35 1 ner
+- 2184 2406
+- 2406
+: 2428 3 1 Well 
+: 2432 4 1 I 
+: 2437 4 1 don’t 
+: 2442 5 2 know 
+: 2448 9 1 much,
+- 2457
+: 2465 3 1 I 
+: 2469 4 1 don’t 
+: 2474 7 2 know 
+: 2482 16 1 ho
+: 2499 2 -1 ~
+: 2502 12 -3 ~
+: 2515 4 -1 ~
+: 2520 22 1 ~w...
+- 2542
+: 2549 8 9 Why 
+: 2558 3 8 would 
+: 2562 3 6 she 
+: 2566 7 4 put 
+: 2574 6 1 me 
+: 2581 7 4 through 
+: 2589 9 6 such 
+: 2599 6 4 tor
+: 2606 6 1 ture,
+- 2612
+: 2615 8 9 I 
+: 2624 3 8 would 
+: 2628 4 6 have 
+: 2633 5 4 gi
+: 2639 6 1 ven 
+: 2647 8 4 my 
+: 2656 7 6 life 
+: 2664 7 4 for 
+: 2672 5 1 her,
+- 2677
+: 2680 9 9 She 
+: 2690 4 8 was 
+: 2695 3 6 the 
+: 2699 6 4 one 
+: 2706 6 1 that 
+: 2714 7 4 knocked 
+: 2722 8 6 me 
+: 2731 5 4 o
+: 2737 6 1 ver,
+- 2743
+: 2745 9 9 Now 
+: 2755 2 8 I’m 
+: 2758 4 6 a
+: 2763 4 4 lone 
+: 2769 4 1 sit
+: 2774 3 1 ting 
+: 2779 6 4 on 
+: 2786 7 6 the 
+: 2794 7 4 cor
+: 2802 6 1 ner
+- 2808
+: 2810 9 9 Why 
+: 2820 3 8 would 
+: 2824 3 6 she 
+: 2828 7 4 put 
+: 2836 6 1 me 
+: 2843 7 4 through 
+: 2851 8 6 such 
+: 2860 7 4 tor
+: 2868 5 1 ture,
+- 2873
+: 2876 8 9 I 
+: 2885 3 8 would 
+: 2889 4 6 have 
+: 2894 5 4 gi
+: 2900 6 1 ven 
+: 2908 8 4 my 
+: 2917 8 6 life 
+: 2926 7 4 for 
+: 2934 6 1 her,
+- 2940
+: 2941 9 9 She 
+: 2951 3 8 was 
+: 2955 3 6 the 
+: 2959 6 4 one 
+: 2966 6 1 that 
+: 2974 9 4 knocked 
+: 2984 7 6 me 
+: 2992 6 4 o
+: 2999 5 1 ver,
+- 3004
+: 3006 8 9 Now 
+: 3015 4 8 I’m 
+: 3020 3 6 a
+: 3024 5 4 lone 
+: 3030 3 1 sit
+: 3034 4 1 ting 
+: 3040 6 4 on 
+: 3047 7 6 the 
+: 3055 8 4 cor
+: 3064 8 1 ner
+E

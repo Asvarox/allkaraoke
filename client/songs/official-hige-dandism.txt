@@ -1,0 +1,387 @@
+#ARTIST:Official Hige Dandism
+#TITLE:ノーダウト
+#CREATOR:Talay
+#BPM:293,1
+#YEAR:2018
+#VIDEO:v=EHw005ZqCXk
+#GENRE:J-Pop
+#LANGUAGE:Japanese
+#GAP:9304,458546571135
+#ALLKARAOKE_ID:official-hige-dandism
+#ALLKARAOKE_SID:7426
+#ALLKARAOKE_LASTUPDATE:2026-11-14T21:47:47.448Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_REALBPM:150
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:199
+#MP3:No Doubt.mp3
+#COVER:No Doubt.jpg
+#BACKGROUND:No Doubt.jpg
+: 20 17 2 Ooh
+- 37
+: 38 20 4 Yeah-eah-eah-eah
+- 58
+: 59 23 6 Yeah-eah-eah-eah 
+: 83 12 9 (Oh-oh-oh)
+- 95
+: 97 19 4 Yeah-eah-eah-eah
+- 116
+: 117 23 6 Yeah-eah-eah-eah 
+: 141 19 9 (Oh-oh-oh)
+- 160
+: 162 6 1 Ma
+: 168 4 4 ru
+: 172 7 11 de ma
+: 179 8 6 hou 
+: 188 4 2 no 
+: 194 16 4 youni 
+: 216 8 2 kan
+: 225 16 4 tan ni
+- 241
+: 244 5 2 Hi
+: 249 4 4 ro
+: 253 6 6 ma
+: 260 11 4 tteku 
+: 272 3 2 uwa
+: 275 6 9 sa 
+: 282 3 2 ba
+: 285 11 11 nashi
+- 296
+: 299 7 1 Hen
+: 306 7 4 ken 
+: 314 4 2 wo 
+: 319 6 6 mae 
+: 326 9 4 ni 
+: 336 11 4 pyua 
+: 348 2 2 mo
+- 350
+: 351 11 4 Seigi 
+: 363 15 2 mo atta 
+: 379 6 4 mon 
+: 386 3 6 ja
+: 390 12 2 nai
+- 402
+: 408 4 2 Shi
+: 412 18 11 katanai 
+: 431 13 11 doushi
+: 444 4 1 you 
+: 449 15 9 mo nai
+- 464
+: 469 10 7 Sou 
+: 480 6 6 i
+: 486 4 11 tte 
+: 491 8 7 waga
+: 500 6 9 mama 
+: 507 14 6 houdai 
+: 522 7 4 oto
+: 530 3 2 na
+: 534 4 1 ta
+: 538 10 11 chi
+- 548
+: 549 8 1 Dou
+: 558 3 2 zo 
+: 562 8 4 go ji
+: 571 6 6 yuu 
+: 578 6 4 ni
+- 584
+: 587 6 2 Ki
+: 593 12 4 ratte
+: 607 3 2 ku
+: 610 3 4 re
+: 613 10 2 te betsu 
+: 624 15 4 ni kamawa
+: 640 17 2 nai
+- 657
+: 661 9 4 Let me 
+: 671 13 2 show 
+: 685 9 4 kami
+: 695 4 2 sa
+: 699 3 4 ma 
+: 703 8 2 mo
+- 711
+: 713 16 2 Hamaru ho
+: 730 4 4 do 
+: 735 10 2 no 
+: 749 6 2 oo 
+: 756 7 9 uso 
+: 764 6 2 wo, 
+: 771 27 2 woah
+- 798
+: 803 5 2 Da
+: 808 3 4 re 
+: 812 11 2 mo 
+: 825 6 11 ha
+: 831 10 4 ribote 
+: 842 11 2 to
+- 853
+: 857 4 11 Shi
+: 861 11 4 ru yoshi 
+: 874 11 2 mo nai 
+: 886 10 2 kan
+: 897 6 6 peki
+: 903 7 9 na
+- 910
+: 913 26 11 Lie and lie, 
+: 941 27 9 lie and lie
+- 968
+: 971 3 1 So
+: 975 20 9 shite suko
+: 997 11 11 shi no 
+: 1009 13 1 ai 
+: 1023 12 9 de
+- 1035
+: 1037 3 4 Let 
+: 1041 4 6 me 
+: 1046 13 2 show 
+: 1060 4 2 yo
+: 1065 12 4 kubari 
+: 1078 8 2 no
+- 1086
+: 1088 4 2 So
+: 1093 3 1 no 
+: 1097 11 2 mukou 
+: 1109 15 2 wo, 
+: 1129 7 11 hey, 
+: 1138 24 2 hey, yo
+- 1162
+: 1163 19 11 Yеah-eah-eah-eah
+- 1182
+: 1184 20 6 Yеah-eah-eah-eah 
+: 1208 13 11 (Oh-oh-oh)
+- 1221
+: 1225 21 2 Yeah-eah-eah-eah
+- 1246
+: 1248 18 6 Yeah-eah-eah-eah 
+: 1270 16 2 (Oh-oh-oh)
+- 1286
+: 1288 19 2 Yeah-eah-eah-eah
+- 1307
+: 1310 21 2 Yeah-eah-eah-eah 
+: 1335 13 11 (Oh-oh-oh)
+- 1348
+: 1350 19 2 Yeah-eah-eah-eah
+- 1369
+: 1373 18 6 Yeah-eah-eah-eah 
+: 1392 19 2 (Oh-oh-oh)
+- 1411
+: 1413 10 11 Stop, 
+: 1424 11 2 nise no 
+: 1436 25 4 uooainii
+- 1461
+: 1465 3 2 Ma
+: 1468 3 7 ki 
+: 1472 4 2 chi
+: 1476 4 6 ra 
+: 1481 9 4 shite 
+: 1495 9 2 bou
+: 1504 10 6 sou shi
+: 1515 7 4 te-ru 
+: 1523 4 2 a
+: 1528 3 4 na
+: 1531 6 2 tata
+: 1537 8 11 chi
+- 1545
+: 1548 26 2 Tsukatte karei 
+: 1576 9 4 ni
+- 1585
+: 1588 4 2 A
+: 1592 5 4 bi
+: 1597 2 2 ru 
+: 1600 6 6 wa 
+: 1608 7 4 kyuu 
+: 1616 9 2 nota 
+: 1627 11 4 no birusha
+: 1639 13 2 waa
+- 1652
+: 1659 5 2 A
+: 1665 19 11 yashii 
+: 1688 1 6 o
+: 1694 21 9 kashii
+- 1715
+: 1721 9 7 Sore 
+: 1731 8 6 igai 
+: 1740 14 7 nani mo 
+: 1755 5 7 kan
+: 1761 3 6 ji
+: 1764 5 6 ra 
+: 1771 1 6 re
+: 1774 1 11 nai 
+: 1779 1 4 wa
+: 1781 12 2 tashi
+- 1793
+: 1803 5 6 Ji
+: 1809 5 1 dai 
+: 1815 10 2 no koe 
+: 1826 10 4 ni
+- 1836
+: 1838 5 2 Se
+: 1843 4 4 me
+: 1847 4 7 ta 
+: 1852 3 6 te
+: 1855 10 4 rareru 
+: 1867 4 7 su
+: 1872 12 2 jiai 
+: 1885 4 4 wa 
+: 1890 11 2 nai
+- 1901
+: 1910 5 1 Let 
+: 1916 3 4 me 
+: 1920 14 2 show 
+: 1936 4 6 ka
+: 1941 3 4 mi
+: 1945 3 2 sa
+: 1948 3 4 ma 
+: 1952 9 2 mo
+- 1961
+: 1964 4 11 Ha
+: 1969 11 2 maru ho
+: 1981 3 4 do 
+: 1985 8 2 no 
+: 1997 9 7 oo 
+: 2007 6 4 uso 
+: 2014 5 9 wo, 
+: 2020 28 2 woah
+- 2048
+: 2053 9 4 Let you 
+: 2063 9 2 show 
+: 2076 4 2 so
+: 2080 3 4 no 
+: 2084 5 2 beau
+: 2089 3 4 ti
+: 2092 12 2 ful
+- 2104
+: 2106 5 4 So
+: 2111 4 2 no 
+: 2116 4 4 o
+: 2121 3 7 ku 
+: 2125 3 4 no 
+: 2129 3 2 ya
+: 2133 6 11 sei 
+: 2140 7 2 no 
+* 2148 12 4 kake
+* 2161 40 9 ra
+- 2201
+: 2204 33 9 Yeah, 
+: 2240 33 9 woah
+- 2273 2322
+- 2322
+* 2342 63 11 Oh-oh-oh-oh-oh
+- 2405
+: 2409 5 1 Ha
+: 2414 3 9 ya
+: 2417 3 6 ku 
+: 2421 4 4 de
+: 2425 7 11 maka
+: 2432 4 4 se 
+: 2437 4 2 ni 
+: 2442 17 4 kizuite 
+: 2460 12 7 (Kizuite)
+- 2472
+: 2474 12 4 Damashite
+: 2487 3 9 ta 
+: 2491 3 2 wa
+: 2495 4 6 ke 
+: 2500 4 2 ni 
+: 2505 2 6 ki
+: 2508 5 9 zui
+: 2514 10 6 te 
+: 2525 9 7 (Kizuite)
+- 2534
+: 2538 4 6 Da
+: 2542 20 4 re ni nan do 
+: 2566 4 6 u
+: 2570 3 1 ra
+: 2574 4 4 gi
+: 2578 3 2 ra
+: 2581 4 4 re
+: 2585 3 9 te 
+: 2589 6 2 mo
+- 2595
+: 2598 12 4 Me wo 
+: 2611 8 9 sama
+: 2619 8 4 shite 
+: 2628 3 9 wa
+: 2631 4 2 ra
+: 2636 7 4 tte, 
+* 2646 8 6 one 
+* 2655 6 7 more 
+* 2662 133 11 time
+- 2795 2893
+- 2893
+: 2913 8 4 Let me 
+: 2922 11 2 show 
+: 2936 5 2 ka
+: 2941 3 4 mi
+: 2944 4 2 sa
+: 2948 3 4 ma 
+: 2953 9 2 mo
+- 2962
+: 2963 5 7 Ha
+: 2968 7 2 maru 
+: 2976 7 4 hodo 
+: 2984 12 2 no 
+: 3000 8 2 oo 
+: 3009 6 6 uso 
+: 3016 4 4 wo, 
+* 3021 23 2 woah
+- 3044
+: 3051 7 11 Da
+: 3058 5 4 re 
+: 3065 9 2 mo 
+: 3076 8 2 hari
+: 3085 8 4 bote 
+: 3094 8 2 to
+- 3102
+: 3106 5 11 Shi
+: 3112 4 2 ru 
+: 3117 19 4 yoshi mo nai 
+: 3138 7 4 kan
+: 3146 6 6 peki
+: 3153 6 9 na
+- 3159
+* 3161 27 11 Lie and lie, 
+* 3191 26 9 lie and lie
+- 3217
+: 3223 1 1 So
+: 3226 29 9 shite sukoshi no 
+: 3257 16 1 ai 
+: 3274 10 9 de
+- 3284
+: 3287 5 2 Let 
+: 3293 3 6 me 
+: 3297 11 2 show 
+: 3310 6 1 yo
+: 3316 4 2 ku
+: 3320 7 4 bari 
+: 3328 8 2 no
+- 3336
+: 3338 9 2 Sono 
+: 3348 10 4 mukou 
+: 3359 16 2 wo, 
+: 3380 8 11 hey, 
+: 3389 28 2 hey, yo
+- 3417
+: 3421 16 11 Yeah-eah-eah-eah
+- 3437
+: 3440 16 6 Yeah-eah-eah-eah 
+: 3459 14 6 (Oh-oh-oh)
+- 3473
+: 3475 22 4 Yeah-eah-eah-eah
+- 3497
+: 3499 20 6 Yeah-eah-eah-eah 
+: 3520 4 9 (Oh-oh-oh)
+- 3524
+: 3526 6 4 One 
+: 3533 22 2 more time
+- 3555
+: 3556 6 2 Yeah-eah-eah-eah
+- 3562
+: 3564 13 2 Yeah-eah-eah-eah 
+: 3581 15 2 (Oh-oh-oh)
+- 3596
+: 3599 17 6 Yeah-eah-eah-eah
+- 3616
+: 3625 20 9 Yeah-eah-eah-eah (Oh-oh-oh)
+- 3645
+: 3648 25 4 Woah-oh-oh
+E

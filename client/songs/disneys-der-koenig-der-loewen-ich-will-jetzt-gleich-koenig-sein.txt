@@ -1,0 +1,257 @@
+#ARTIST:Disney’s Der König der Löwen
+#TITLE:Ich will jetzt gleich König sein
+#CREATOR:kaugummi.nl
+#BPM:395,6
+#YEAR:1994
+#VIDEO:v=obahrzAVWBY
+#GENRE:Soundtrack
+#LANGUAGE:German
+#GAP:53314,15571284125
+#ALLKARAOKE_ID:disneys-der-koenig-der-loewen-ich-will-jetzt-gleich-koenig-sein
+#ALLKARAOKE_SID:7458
+#ALLKARAOKE_LASTUPDATE:2026-11-14T21:47:59.626Z
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=516
+#ALLKARAOKE_REALBPM:99
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=5376
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:206
+#MP3:Disney’s Der König der Löwen - Ich will jetzt gleich König sein.mp3
+#START:39.0
+: 26 2 1 Als 
+: 30 2 1 Kö
+* 34 4 1 nig 
+: 42 4 3 wär 
+: 50 4 6 ich 
+: 58 6 10 su
+: 66 4 8 per
+: 74 10 6 stark
+- 84
+: 90 1 1 Ein 
+: 92 3 3 wirk
+: 96 4 6 lich 
+: 106 4 6 ho
+: 114 4 8 hes 
+: 122 14 6 Tier
+- 136 256
+- 256
+: 282 2 1 Die 
+: 286 2 1 lan
+: 290 4 1 ge 
+: 298 6 3 Mäh
+: 306 4 6 ne 
+* 314 6 10 ist 
+: 322 4 8 ein 
+: 330 4 6 Wunsch
+- 334
+: 346 2 1 Den 
+: 350 4 3 ich 
+: 358 4 6 mir 
+: 366 2 6 noch 
+: 370 2 8 er
+: 378 6 6 füll’
+- 384
+: 410 2 1 Bis 
+: 414 4 3 dann 
+: 422 4 6 trag’ 
+: 430 4 6 ich 
+: 438 4 3 die 
+: 446 5 9 Na
+: 452 4 8 se 
+: 458 6 6 hoch
+- 464
+: 472 2 6 Und 
+: 476 4 10 ü
+: 482 4 6 be 
+: 492 4 6 mein 
+: 500 4 6 Ge
+: 508 16 6 brüll
+- 524 628
+- 628
+: 654 2 3 Oh 
+: 658 8 6 ich 
+: 670 12 9 will 
+: 686 7 8 je
+: 694 4 6 ~tzt 
+* 702 8 13 gleich 
+: 718 5 8 Kö
+: 724 8 6 nig 
+: 734 26 6 sein
+- 760 816
+- 816
+: 842 2 3 Nie 
+: 848 1 3 und 
+: 850 2 6 nim
+: 854 2 6 mer 
+: 862 8 8 tu 
+: 872 8 6 dies
+- 880 884
+- 884
+: 910 2 3 Nie 
+: 914 2 3 und 
+: 918 2 6 nim
+: 922 2 6 mer 
+: 928 8 10 tu 
+: 938 14 8 das
+- 952
+: 972 2 3 Nie 
+: 976 2 3 und 
+: 980 2 6 nim
+: 984 2 6 mer 
+* 994 4 10 hör 
+: 1000 12 8 auf
+- 1012
+: 1038 2 3 Nie 
+: 1042 2 3 und 
+: 1046 2 6 nim
+: 1050 2 6 mer 
+: 1056 6 11 hör 
+: 1064 33 10 ma
+: 1098 3 8 ~
+: 1102 10 6 ~l
+- 1112
+: 1118 6 3 Im
+: 1126 4 6 mer 
+: 1134 6 6 frei 
+: 1142 4 3 in 
+: 1150 14 6 vol
+: 1166 7 10 le
+: 1174 4 6 ~r 
+: 1180 20 8 Fahrt
+- 1200 1220
+- 1220
+: 1246 6 9 Frei 
+: 1254 6 9 und 
+: 1262 6 8 nur 
+: 1270 4 6 auf 
+: 1278 12 8 mei
+: 1294 7 8 ne
+: 1302 6 6 ~ 
+: 1310 68 6 Art
+- 1378 1540
+- 1540
+: 1566 6 3 Ich 
+: 1574 6 6 brauch’ 
+: 1582 4 6 kei
+: 1588 4 3 nen 
+: 1596 6 6 Rat
+- 1602
+: 1606 6 6 Von 
+: 1616 2 6 ei
+: 1620 4 8 nem 
+* 1628 8 10 Schna
+: 1638 6 10 bel
+: 1646 4 10 maul 
+: 1654 2 8 Za
+: 1658 16 6 zu
+- 1674 2036
+- 2036
+: 2062 2 3 Oh 
+: 2068 4 6 ich 
+: 2078 12 9 will 
+: 2094 7 8 je
+: 2102 4 6 ~tzt 
+: 2110 12 13 gleich 
+: 2126 6 8 Kö
+: 2134 4 6 nig 
+: 2140 36 6 sein
+- 2176 2484
+- 2484
+: 2510 2 4 Je
+: 2514 2 4 der 
+* 2518 2 7 sieht 
+: 2522 2 7 nach 
+: 2528 4 9 links 
+: 2538 6 7 und
+- 2544 2548
+- 2548
+: 2574 2 4 Je
+: 2578 2 4 der 
+: 2582 4 7 sieht 
+: 2588 2 7 nach 
+: 2592 4 11 rechts 
+: 2604 8 9 und
+- 2612 2614
+- 2614
+: 2640 2 4 Je
+: 2644 1 4 der 
+: 2646 2 7 sieht 
+: 2650 2 7 auf 
+: 2656 6 11 mich 
+: 2668 8 9 und
+- 2676 2678
+- 2678
+: 2704 2 7 Sieht 
+: 2708 2 7 auf 
+: 2712 2 7 mei
+: 2716 2 7 ne 
+* 2720 8 12 Zu
+: 2732 16 11 kunft
+- 2748 2750
+- 2750
+: 2776 6 2 Hier 
+: 2784 4 4 sing
+: 2792 3 7 en 
+: 2796 12 7 al
+: 2810 2 4 le 
+: 2814 8 7 Tie
+: 2824 2 7 re
+- 2826
+: 2828 11 11 Groß 
+: 2840 6 7 und 
+* 2848 34 9 klein
+- 2882
+: 2904 6 2 Und 
+: 2912 6 4 al
+: 2920 2 7 les 
+: 2924 10 7 was 
+: 2936 2 4 da 
+: 2940 10 7 kreucht 
+: 2952 2 7 und 
+* 2956 8 11 fleucht
+- 2964
+: 2966 7 7 Stimmt 
+: 2974 32 9 ein
+- 3006
+: 3032 6 2 Der 
+: 3040 6 4 Sim
+: 3048 2 7 ba 
+: 3052 10 7 wird
+- 3062
+: 3064 4 4 Bald 
+: 3072 7 7 Kö
+: 3080 4 7 nig, 
+: 3086 8 11 er 
+: 3096 7 7 al
+: 3104 30 9 lein
+- 3134
+: 3150 4 4 Oh 
+: 3158 8 7 ich 
+: 3168 10 10 will 
+: 3184 4 9 je
+: 3192 4 7 ~tzt 
+: 3200 12 9 gleich 
+: 3214 6 9 Kö
+: 3222 4 7 nig 
+: 3228 36 7 sein
+- 3264
+: 3280 2 4 Oh 
+: 3284 8 7 ich 
+: 3296 10 10 will 
+: 3312 4 9 je
+: 3320 4 7 ~tzt 
+: 3328 12 9 gleich 
+: 3344 4 9 Kö
+: 3352 4 7 nig 
+: 3358 34 7 sein
+- 3392
+: 3408 4 4 Oh 
+: 3414 8 7 ich 
+: 3424 10 10 will 
+: 3440 4 9 je
+: 3446 4 7 ~tzt 
+* 3456 96 9 gleich
+- 3552
+: 3566 4 9 Kö
+: 3572 6 7 nig 
+: 3582 96 7 sein
+E

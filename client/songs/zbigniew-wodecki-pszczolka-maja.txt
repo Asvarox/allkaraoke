@@ -1,0 +1,156 @@
+#ARTIST:Zbigniew Wodecki
+#TITLE:Pszczółka Maja
+#CREATOR:BENY
+#BPM:396,6
+#YEAR:1979
+#VIDEO:v=XndzE7baD7M
+#LANGUAGE:Polish
+#GAP:1826,641452344932
+#ALLKARAOKE_ID:zbigniew-wodecki-pszczolka-maja
+#ALLKARAOKE_SID:7480
+#ALLKARAOKE_LASTUPDATE:2026-11-14T21:48:10.410Z
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_VOLUME:70
+#ALLKARAOKE_DURATION:75
+#MP3:Zbigniew Wodecki - Pszczółka Maja.mp3
+#COVER:Zbigniew Wodecki - Pszczółka Maja [CO].jpg
+#BACKGROUND:Zbigniew Wodecki - Pszczółka Maja [BG].jpg
+: 26 6 0 Gdzieś 
+: 36 6 5 jest 
+: 46 4 9 lecz 
+: 54 4 14 nie 
+: 60 4 12 wia
+: 66 4 9 do
+: 72 4 5 mo 
+: 80 48 7 gdzie
+- 128 130
+- 130
+: 156 6 0 Świat, 
+: 168 4 2 w któ
+: 174 4 5 rym 
+: 180 6 10 baśń 
+: 190 4 9 ta 
+: 196 4 7 dzie
+: 204 4 14 je 
+: 212 58 12 się
+- 270
+: 290 4 0 Ma
+: 296 4 5 lut
+: 304 4 9 ka 
+: 310 6 14 pszczó
+: 320 6 12 łka 
+: 332 4 9 miesz
+: 340 4 5 ka 
+: 348 52 7 w nim
+- 400
+: 418 4 0 Co 
+: 424 8 2 wieść 
+: 436 4 5 chce 
+: 442 6 10 wśrod 
+: 454 4 9 o
+: 460 4 7 wa
+: 466 6 2 dów 
+: 476 54 5 prym
+- 530 536
+- 536
+: 562 10 12 Tę 
+: 578 12 14 pszczół
+: 594 12 16 kę, 
+: 610 6 17 któ
+: 620 6 16 rą 
+: 630 4 16 tu 
+: 636 4 14 wi
+: 642 4 14 dzi
+: 648 8 12 cie
+- 656
+: 660 4 12 Zo
+: 668 4 5 wią - 
+* 676 10 7 Ma
+* 690 38 14 ją
+- 728
+: 738 10 16 Wszys
+: 752 4 14 cy 
+: 758 4 14 Ma
+: 764 4 12 ję 
+: 770 4 12 zna
+: 778 6 10 ją 
+: 792 4 10 i 
+: 798 4 7 ko
+: 804 10 5 cha
+: 818 40 17 ją
+- 858
+* 866 20 21 Ma
+: 890 4 17 ja 
+: 898 4 17 fru
+: 906 4 12 wa 
+: 914 4 12 tu 
+: 922 4 9 i 
+: 930 30 10 tam
+- 960 970
+- 970
+* 996 18 19 Świat 
+: 1020 4 16 swój 
+: 1028 4 16 po
+: 1036 4 12 ka
+: 1044 4 12 zu
+: 1052 4 10 jąc 
+: 1060 8 9 nam
+- 1068
+: 1078 10 12 Dziś 
+: 1094 10 14 spot
+: 1110 8 16 ka 
+: 1122 14 17 Was
+- 1136
+: 1140 4 16 Ma
+: 1146 4 16 leń
+: 1154 4 14 ka, 
+: 1162 4 14 zwin
+: 1170 4 12 na - 
+: 1180 6 12 Pszczół
+: 1188 4 5 ka 
+* 1194 8 7 Ma
+* 1206 32 14 ja
+- 1238
+: 1256 6 16 Śmia
+: 1264 4 14 ła, 
+: 1272 4 14 spryt
+: 1280 8 12 na, 
+: 1294 4 12 re
+: 1300 4 10 zo
+: 1306 4 10 lut
+: 1312 4 7 na - 
+* 1320 10 5 Ma
+* 1334 40 17 ja
+- 1374
+: 1386 20 21 Ma
+: 1410 4 17 ła 
+: 1418 4 17 przy
+: 1426 4 12 ja
+: 1434 4 12 ciół
+: 1442 4 9 ka - 
+* 1450 10 7 Ma
+* 1464 34 14 ja
+- 1498
+* 1512 4 17 Ma
+* 1520 4 12 ~
+* 1528 14 12 ju 
+F 1544 6 17 (Ma
+F 1552 6 12 ~
+F 1560 10 12 ju)
+- 1570
+* 1574 4 17 Ba
+* 1582 4 12 ~
+* 1590 16 12 ju 
+F 1608 6 17 (ba
+F 1616 6 12 ~
+F 1624 10 12 ju)
+- 1634
+* 1640 22 21 Ma
+* 1668 12 17 ju, 
+: 1686 10 12 cóż 
+: 1702 12 16 zo
+: 1720 16 12 ba
+: 1744 30 10 czy
+: 1782 36 7 my 
+: 1828 78 5 dziś?
+E

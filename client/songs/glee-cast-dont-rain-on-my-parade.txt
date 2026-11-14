@@ -1,0 +1,395 @@
+#ARTIST:GLEE Cast
+#TITLE:Don't Rain On My Parade
+#CREATOR:USKMaker v0.26.0
+#BPM:295,31
+#YEAR:2009
+#PREVIEWSTART:32,72
+#VIDEO:v=cBLdhU5gUu4
+#GENRE:Soundtrack
+#LANGUAGE:English
+#GAP:7674,118384070976
+#ALLKARAOKE_ID:glee-cast-dont-rain-on-my-parade
+#ALLKARAOKE_SID:7438
+#ALLKARAOKE_LASTUPDATE:2026-11-14T21:47:49.412Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:80
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:171
+#VERSION:1.0.0
+#MP3:GLEE Cast - Don't Rain On My Parade.ogg
+#AUDIO:GLEE Cast - Don't Rain On My Parade.ogg
+#AUDIOURL:https://www.youtube.com/watch?v=cBLdhU5gUu4
+#MEDLEYSTARTBEAT:473
+#MEDLEYENDBEAT:806
+#COVER:GLEE Cast - Don't Rain On My Parade [CO].jpg
+#COVERURL:https://is1-ssl.mzstatic.com/image/thumb/Music/3b/4e/f0/mzi.eprngmqj.jpg/600x600bb.jpg
+#BACKGROUND:GLEE Cast - Don't Rain On My Parade [BG].jpg
+: 20 5 4 Don't 
+: 31 5 1 tell 
+: 39 1 2 me 
+: 43 3 4 not 
+: 47 4 4 to 
+: 53 5 9 live
+- 58
+: 59 4 4 Just 
+: 65 4 2 sit 
+: 69 3 1 and 
+: 73 4 -3 put
+: 77 4 -3 ter
+- 81
+: 89 5 4 Life's 
+: 96 5 1 can
+: 101 2 2 dy 
+: 105 3 4 and 
+: 108 1 4 the 
+: 113 7 9 sun's
+- 120
+: 122 1 1 A 
+: 125 6 1 ball 
+: 132 1 1 of 
+: 135 3 -3 but
+: 138 5 -3 ter
+- 143
+: 151 4 4 Don't 
+: 155 5 2 bring 
+: 161 1 2 a
+: 162 4 2 round 
+: 166 1 2 a 
+: 167 12 11 cloud
+- 179
+: 180 3 13 To 
+: 185 5 9 rain 
+: 191 4 8 on 
+: 198 4 6 my 
+: 204 5 4 pa
+: 209 1 3 rade
+* 210 53 9 ~
+- 263
+: 266 4 4 Don't 
+: 276 6 1 tell 
+: 284 1 1 me 
+: 288 2 5 not 
+: 291 1 5 to 
+: 293 9 9 fly
+- 302
+: 308 1 2 I've 
+: 311 3 2 sim
+: 314 3 1 ply 
+: 319 3 -1 got 
+: 323 7 4 to
+- 330
+: 334 2 5 If 
+: 338 5 1 some
+: 343 2 2 one 
+: 346 7 3 takes 
+: 354 1 6 a 
+: 358 5 13 spill
+- 363
+: 364 3 12 It's 
+: 369 3 13 me 
+: 374 3 12 and 
+: 377 4 12 not 
+: 383 6 13 you
+- 389
+: 396 1 2 Who 
+: 400 6 2 told 
+: 406 2 3 you 
+: 409 4 2 you're 
+: 413 7 11 al
+: 420 4 11 lowed
+- 424
+: 424 3 11 To 
+: 430 7 12 rain 
+: 438 10 11 on 
+: 464 3 9 my 
+: 470 5 9 pa
+* 475 17 9 rade
+- 492
+: 493 2 11 I'll 
+: 495 4 11 march 
+: 501 5 11 my 
+* 508 15 9 band 
+: 524 8 1 out
+- 532
+: 547 4 11 I'll 
+: 555 12 11 beat 
+: 582 1 9 my 
+* 584 14 9 drum
+- 598
+: 613 4 11 And 
+: 619 5 11 if 
+: 627 4 11 I'm 
+* 633 15 9 fanned 
+: 650 12 0 out
+- 662
+: 670 4 8 Your 
+: 676 8 7 turn 
+: 686 3 6 at 
+: 691 9 5 bat, 
+: 704 8 5 sir
+- 712
+: 720 2 11 At 
+: 724 4 7 least 
+: 729 1 7 I 
+: 731 5 5 didn't 
+: 738 6 7 fake 
+: 745 4 5 it
+- 749
+: 753 5 4 Hat, 
+: 765 8 4 sir, 
+: 781 1 6 I 
+: 783 5 6 guess 
+: 791 1 5 I 
+: 792 7 5 didn't 
+: 801 6 6 make 
+: 809 3 5 it
+- 812
+: 815 11 4 But 
+: 828 9 1 whether 
+: 839 2 4 I'm 
+: 843 3 4 the 
+: 849 6 9 rose
+- 855
+: 856 1 2 Of 
+: 859 4 2 sheer 
+: 863 5 1 per
+: 868 6 -3 fec
+: 874 5 4 tion
+- 879
+: 884 1 2 Or 
+: 887 10 2 freck
+: 897 1 2 le 
+: 899 1 4 on 
+: 901 3 4 the 
+: 907 6 9 nose
+- 913
+: 914 2 3 Of 
+: 917 6 2 life's 
+: 924 3 0 com
+: 927 8 -3 plex
+: 935 4 4 ion
+- 939
+: 942 2 4 The 
+: 947 7 2 cin
+: 954 4 2 der 
+: 960 2 2 or 
+: 962 4 2 the 
+: 974 9 11 shiny 
+: 986 6 9 ap
+: 992 3 6 ple 
+: 996 3 6 of 
+: 1001 13 4 its 
+* 1046 14 6 eye
+- 1060
+: 1063 1 11 I 
+: 1065 5 11 got
+: 1070 1 9 ta 
+: 1072 8 13 fly 
+: 1082 9 11 once 
+: 1094 1 9 I 
+: 1096 3 9 got
+: 1099 1 8 ta 
+: 1102 7 12 try 
+: 1111 4 9 once
+- 1115
+: 1118 5 8 On
+: 1123 2 8 ly 
+: 1128 4 15 can 
+: 1134 7 4 die 
+: 1144 6 1 once, 
+: 1157 5 1 right, 
+* 1165 15 1 sir?
+- 1180
+: 1181 3 13 Ooh, 
+: 1186 7 11 life 
+: 1194 4 13 is 
+: 1200 11 13 juicy 
+* 1213 14 10 Juicy, 
+: 1228 2 8 and 
+: 1231 4 11 you 
+: 1238 6 9 see
+- 1244
+: 1247 1 8 I 
+: 1250 5 8 got
+: 1255 1 6 ta 
+: 1258 5 5 have 
+: 1265 3 3 my 
+: 1271 5 1 bite, 
+* 1284 18 2 sir
+- 1302
+: 1309 5 4 Get 
+: 1316 5 4 ready 
+: 1324 4 4 for 
+: 1328 4 8 me, 
+: 1335 5 9 love
+- 1340
+: 1344 6 4 'Cause 
+: 1351 1 4 I'm 
+: 1353 1 -3 a 
+: 1355 4 -3 com
+: 1359 5 -3 mer
+- 1364
+: 1371 1 1 I 
+: 1374 4 1 sim
+: 1378 5 2 ply 
+: 1384 4 4 got
+: 1388 3 4 ta 
+: 1394 6 9 march 
+: 1401 3 4 My 
+: 1405 5 10 heart's 
+: 1411 1 10 a 
+: 1413 6 14 drum
+: 1419 4 13 mer
+- 1423
+: 1430 4 4 Don't 
+: 1434 7 2 bring 
+: 1442 1 2 a
+: 1443 4 2 round 
+: 1447 1 2 a 
+: 1449 11 11 cloud
+- 1460
+: 1461 3 12 To 
+: 1467 6 13 rain 
+: 1475 11 10 on 
+: 1505 2 10 my 
+F 1537 4 0 pa
+F 1541 3 0 rade
+- 1544
+: 1547 6 4 I'm 
+: 1555 10 2 gon
+: 1565 5 3 na 
+: 1573 6 4 live 
+: 1585 4 2 and 
+: 1591 5 4 live 
+: 1598 8 4 now
+- 1606
+: 1612 4 4 Get 
+* 1618 15 2 what 
+: 1635 1 2 I 
+: 1638 8 4 want, 
+: 1653 1 4 I 
+: 1655 4 4 know 
+: 1661 8 4 how
+- 1669
+: 1676 5 6 One 
+: 1684 6 4 roll 
+: 1693 4 7 for 
+: 1699 8 7 the 
+: 1709 5 4 whole 
+: 1716 7 7 she
+: 1723 7 8 bang
+- 1730
+: 1737 4 6 One 
+: 1743 7 4 throw, 
+: 1752 4 6 that 
+: 1759 5 6 bell 
+: 1766 5 4 will 
+: 1774 2 7 go 
+: 1778 8 6 clang
+- 1786
+: 1794 9 8 Eye 
+: 1803 3 6 on 
+: 1808 2 7 the 
+: 1812 10 8 tar
+: 1822 7 6 get 
+: 1830 3 7 and 
+: 1834 8 8 wham
+- 1842
+: 1848 4 8 One 
+: 1855 6 6 shot, 
+: 1865 3 8 one 
+: 1871 5 8 gun 
+: 1878 9 6 shot, 
+: 1888 3 8 and 
+* 1893 16 16 bam
+- 1909
+: 1919 6 -3 Hey, 
+: 1927 7 1 Mis
+: 1934 6 4 ter 
+: 1942 21 9 Arn
+* 1963 40 8 stein
+- 2003
+: 2012 23 9 Here 
+: 2049 7 8 I 
+: 2113 9 9 am
+- 2122
+: 2140 11 11 I'll 
+* 2154 16 11 march 
+: 2172 15 11 my 
+: 2231 3 9 band 
+* 2235 14 11 out
+- 2249 2272
+- 2272
+: 2292 5 14 I'll 
+: 2297 11 14 beat 
+: 2323 1 13 my 
+: 2327 14 9 drum
+- 2341
+: 2354 3 11 And 
+: 2359 8 11 if 
+: 2370 6 9 I'm 
+: 2379 1 15 fanned
+* 2381 22 9 ~ 
+: 2405 14 1 out
+- 2419
+: 2433 4 7 Your 
+: 2438 7 7 turn 
+: 2446 2 6 at 
+: 2450 5 5 bat, 
+: 2458 2 5 sir
+- 2460
+: 2460 13 5 At 
+: 2474 3 6 least 
+: 2478 1 5 I 
+: 2479 3 5 didn't 
+: 2485 6 6 fake 
+: 2492 1 6 it
+- 2493
+: 2495 4 4 Hat, 
+: 2502 7 4 sir, 
+: 2515 1 8 I 
+: 2516 4 8 guess 
+: 2520 1 8 I 
+: 2522 4 6 didn't 
+: 2528 5 6 make 
+: 2535 3 5 it
+- 2538
+: 2539 5 3 Get 
+: 2547 5 4 ready 
+: 2554 3 5 for 
+: 2557 3 4 me, 
+: 2562 4 9 love 
+: 2567 3 8 'Cause 
+: 2571 1 8 I'm 
+: 2572 1 15 a 
+: 2574 5 15 com
+: 2579 3 12 mer
+- 2582
+: 2590 1 5 I 
+: 2592 3 5 sim
+: 2595 4 5 ply 
+: 2600 3 6 got
+: 2603 1 5 ta 
+: 2607 5 10 march 
+: 2614 2 11 My 
+: 2617 4 10 heart's 
+: 2622 1 10 a 
+: 2623 4 10 drum
+: 2627 9 10 mer
+- 2636
+: 2648 2 9 No
+: 2650 2 9 body, 
+: 2653 1 9 no, 
+: 2657 13 9 no
+* 2670 18 4 body
+- 2688 2691
+- 2691
+: 2711 16 6 Is 
+: 2730 10 11 gon
+: 2740 10 11 na 
+: 2780 9 11 rain 
+: 2790 12 11 on 
+: 2823 8 13 my 
+: 2870 3 12 pa
+: 2873 9 9 rade
+E
