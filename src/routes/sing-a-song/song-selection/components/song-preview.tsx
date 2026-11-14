@@ -8,6 +8,7 @@ import { useBackground } from '~/modules/elements/background-context';
 import SongPreviewLayout from '~/modules/elements/song-preview-layout';
 import VideoPlayer, { VideoPlayerRef, VideoState } from '~/modules/elements/video-player/index';
 import useDebounce from '~/modules/hooks/use-debounce';
+import isE2E from '~/modules/utils/is-e2-e';
 import PreviewLyrics from '~/routes/sing-a-song/song-selection/components/preview-lyrics/preview-lyrics';
 import { SongCard } from '~/routes/sing-a-song/song-selection/components/song-card';
 import SongSettings from '~/routes/sing-a-song/song-selection/components/song-settings/index';
@@ -157,7 +158,8 @@ export default function SongPreviewComponent({
         />
       )}
 
-      {!expanded && (
+      {/* Off in E2E runs, so focusing songs there doesn't also load each one for its lyrics */}
+      {!expanded && !isE2E() && (
         <PreviewLyrics
           key={debouncedSong.id}
           songPreview={debouncedSong}

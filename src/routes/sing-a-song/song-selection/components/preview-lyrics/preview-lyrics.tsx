@@ -4,7 +4,6 @@ import { RefObject, useEffect, useRef, useState } from 'react';
 import { milliseconds, SongPreview } from '~/interfaces';
 import { VideoPlayerRef } from '~/modules/elements/video-player/index';
 import { loadSongById } from '~/modules/songs/load-song';
-import isE2E from '~/modules/utils/is-e2-e';
 import { cn } from '~/utils/cn';
 
 import { findCurrentIndex, getLyricSyllables, getLyricWords, LyricSyllable, LyricWord } from './get-lyric-syllables';
@@ -126,8 +125,6 @@ export default function PreviewLyrics({ songPreview, player, active, playedFrom,
       cancelAnimationFrame(frame);
     };
   }, [active, words, player, maxChars, playedFrom]);
-
-  if (isE2E()) return null;
 
   const visible = lyricsWindow ? words.slice(lyricsWindow.from, lyricsWindow.to + 1) : [];
   const pitches = words.map((word) => word.pitch);
