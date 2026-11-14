@@ -134,6 +134,16 @@
   }
 }
 
+/* Karaoke wipe of a song preview's lyric syllable while it is sung */
+@keyframes lyric-fill {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
 @keyframes playlist-gradient {
   0% {
     background-position: 0% 0%;
