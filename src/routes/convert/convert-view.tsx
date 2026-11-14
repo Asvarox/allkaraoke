@@ -160,18 +160,29 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
     isEdit,
   ]);
 
+  // When editing, the song being edited is in the index too - don't flag it as its own duplicate
+  const otherSongs = useMemo(
+    () =>
+      song
+        ? songs?.filter((addedSong) => SongDao.generateSongFile(addedSong) !== SongDao.generateSongFile(song))
+        : songs,
+    [songs, song],
+  );
+
   const duplicateByName = useMemo(
     () =>
-      !isEdit && conversionResult
-        ? songs?.find((addedSong) => SongDao.generateSongFile(addedSong) === SongDao.generateSongFile(conversionResult))
+      conversionResult
+        ? otherSongs?.find(
+            (addedSong) => SongDao.generateSongFile(addedSong) === SongDao.generateSongFile(conversionResult),
+          )
         : undefined,
-    [songs, conversionResult, isEdit],
+    [otherSongs, conversionResult],
   );
 
   const currentVideoId = authorAndVid.video.length === 11 ? authorAndVid.video : getVideoId(authorAndVid.video);
   const duplicateByVideo = useMemo(
-    () => (!isEdit && currentVideoId ? songs?.find((addedSong) => addedSong.video === currentVideoId) : undefined),
-    [songs, currentVideoId, isEdit],
+    () => (currentVideoId ? otherSongs?.find((addedSong) => addedSong.video === currentVideoId) : undefined),
+    [otherSongs, currentVideoId],
   );
   const possibleDuplicate = duplicateByName ?? duplicateByVideo;
 
