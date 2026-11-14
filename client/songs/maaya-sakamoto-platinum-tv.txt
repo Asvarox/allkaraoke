@@ -1,5 +1,5 @@
 #ARTIST:Maaya Sakamoto
-#TITLE:Platinum (TV)
+#TITLE:Platinum
 #CREATOR:Dangereus
 #BPM:336
 #YEAR:1999
