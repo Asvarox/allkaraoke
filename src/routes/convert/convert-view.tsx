@@ -8,6 +8,7 @@ import { ValuesType } from 'utility-types';
 import { Link } from 'wouter';
 
 import { Song } from '~/interfaces';
+import { Icon } from '~/modules/elements/akui/icon';
 import { useBackground } from '~/modules/elements/background-context';
 import useBackgroundMusic from '~/modules/hooks/use-background-music';
 import useQueryParam from '~/modules/hooks/use-query-param';
@@ -157,6 +158,15 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
       conversionResult &&
       songs?.find((addedSong) => SongDao.generateSongFile(addedSong) === SongDao.generateSongFile(conversionResult)),
     [songs, conversionResult, isEdit],
+  );
+
+  const currentVideoId = getVideoId(authorAndVid.video);
+  const duplicateByVideo = useMemo(
+    () =>
+      !isEdit && currentVideoId
+        ? songs?.find((addedSong) => addedSong.video === currentVideoId && addedSong !== possibleDuplicate)
+        : undefined,
+    [songs, currentVideoId, isEdit, possibleDuplicate],
   );
 
   useEffect(() => {
@@ -321,7 +331,15 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
               </StepButton>
             </Step>
             <Step key={1} completed={isAuthorAndVidCompleted}>
-              <StepButton color="inherit" onClick={() => setCurrentStep(1)}>
+              <StepButton
+                color="inherit"
+                icon={
+                  duplicateByVideo ? (
+                    <Icon icon="ic:baseline-error" className="text-error text-2xl" data-test="step-duplicate-video" />
+                  ) : undefined
+                }
+                sx={duplicateByVideo ? { '& .MuiStepLabel-label': { color: 'error.main' } } : undefined}
+                onClick={() => setCurrentStep(1)}>
                 <span className="hidden md:block">Author and video data</span>
               </StepButton>
             </Step>
@@ -389,6 +407,15 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
                 There is already a song with similar artist and/or name:{' '}
                 <b>
                   {possibleDuplicate.artist} - {possibleDuplicate.title}
+                </b>
+              </Alert>
+            )}
+            {duplicateByVideo && (
+              <Alert severity="warning" data-test="duplicate-video">
+                <AlertTitle>Duplicate video</AlertTitle>
+                This video is already used by:{' '}
+                <b>
+                  {duplicateByVideo.artist} - {duplicateByVideo.title}
                 </b>
               </Alert>
             )}
