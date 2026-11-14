@@ -1,5 +1,5 @@
 #ARTIST:Bôa
-#TITLE:Duvet (TV)
+#TITLE:Duvet
 #CREATOR:memo65
 #BPM:480
 #YEAR:1996

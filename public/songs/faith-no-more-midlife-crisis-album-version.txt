@@ -1,5 +1,5 @@
 #ARTIST:Faith No More
-#TITLE:Midlife Crisis (Album Version)
+#TITLE:Midlife Crisis
 #CREATOR:Gollum
 #BPM:378,2
 #YEAR:1992

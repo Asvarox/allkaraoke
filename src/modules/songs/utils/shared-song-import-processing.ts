@@ -3,7 +3,23 @@ import { Song } from '~/interfaces';
 import getSongId from './get-song-id';
 
 const ESC_TITLE_SUFFIX_REGEX = /\s*\(ESC\s+(\d+)\s+[^)]+\)\s*$/i;
-const LEGACY_TITLE_SUFFIXES = ['(tv)', '(album version)', '(movie version)', '[duet]'];
+const REMOVABLE_TITLE_SUFFIXES = [
+  'tv',
+  'album version',
+  'movie version',
+  'duet',
+  'radio mix',
+  'original mix',
+  'movie ver.',
+  'tv size',
+  'lyrics',
+  'lyrics video',
+  'official music video',
+];
+const REMOVABLE_TITLE_SUFFIX_REGEX = new RegExp(
+  `\\s*[(\\[]\\s*(?:${REMOVABLE_TITLE_SUFFIXES.map((suffix) => suffix.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})\\s*[)\\]]\\s*$`,
+  'i',
+);
 
 const LANGUAGE_NAMES = new Intl.DisplayNames('en', { type: 'language' });
 
@@ -25,13 +41,12 @@ export function applyEscEditionFromTitle(song: Song): void {
 }
 
 export function normalizeLegacyMetadata(song: Song): void {
-  LEGACY_TITLE_SUFFIXES.forEach((suffix) => {
-    if (song.title.toLowerCase().endsWith(suffix)) {
-      song.title = song.title.slice(0, -suffix.length);
-    }
-  });
-
-  song.title = song.title.trim();
+  // Loop to also strip stacked suffixes, e.g. "Song (Lyrics) (TV)"
+  let previousTitle: string;
+  do {
+    previousTitle = song.title;
+    song.title = song.title.replace(REMOVABLE_TITLE_SUFFIX_REGEX, '').trim();
+  } while (song.title !== previousTitle);
 
   song.language = song.language.map((rawLanguage) => {
     // Strip stray separators, e.g. "English,"
@@ -72,6 +87,8 @@ export function normalizeSongLyricsQuotes(song: Song): void {
 export function applyCommonSharedSongImportProcessing(song: Song): void {
   normalizeLegacyMetadata(song);
   applyEscEditionFromTitle(song);
+  // ESC suffix may have hidden another one, e.g. "Song (TV) (ESC 2025 Germany)"
+  normalizeLegacyMetadata(song);
   normalizeSongLyricsQuotes(song);
 
   song.id = getSongId({ artist: song.artist, title: song.title });

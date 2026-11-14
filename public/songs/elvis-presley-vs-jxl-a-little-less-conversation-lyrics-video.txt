@@ -1,5 +1,5 @@
 #ARTIST:Elvis Presley vs. JXL
-#TITLE:A Little Less Conversation (Lyrics Video)
+#TITLE:A Little Less Conversation
 #CREATOR:Diddlmaus30mg fixed by DoubleDee
 #BPM:460
 #YEAR:2002
