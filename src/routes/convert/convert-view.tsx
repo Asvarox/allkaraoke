@@ -163,10 +163,10 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
   // When editing, the song being edited is in the index too - don't flag it as its own duplicate
   const otherSongs = useMemo(
     () =>
-      song
+      isEdit
         ? songs?.filter((addedSong) => SongDao.generateSongFile(addedSong) !== SongDao.generateSongFile(song))
         : songs,
-    [songs, song],
+    [songs, song, isEdit],
   );
 
   const duplicateByName = useMemo(
