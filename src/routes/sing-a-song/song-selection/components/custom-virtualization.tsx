@@ -104,12 +104,13 @@ export function CustomVirtualization<T>(props: Props<T>) {
   useLayoutEffect(() => {
     const viewport = viewportElementRef.current;
     if (viewport) {
-      // if the new scrollTop would cause different changes the range to render, update it
+      // Keep the range out of the deps: re-running on every range change let an alternating range
+      // (e.g. viewport height changing as rows mount) loop synchronously into React error #185
       const onScroll = () => {
         const newItemsRange = computeVisibleItemsRange(viewport.scrollTop ?? 0);
-        if (rangeFrom !== newItemsRange[0] || rangeTo !== newItemsRange[1]) {
-          setItemsRange(newItemsRange);
-        }
+        setItemsRange((current) =>
+          current[0] === newItemsRange[0] && current[1] === newItemsRange[1] ? current : newItemsRange,
+        );
       };
 
       viewport.addEventListener('scroll', onScroll);
@@ -124,7 +125,7 @@ export function CustomVirtualization<T>(props: Props<T>) {
         viewport.removeEventListener('scroll', onScroll);
       };
     }
-  }, [rangeFrom, rangeTo, computeVisibleItemsRange, totalHeight]);
+  }, [computeVisibleItemsRange, totalHeight]);
 
   const countPxDistance = useCallback(
     (from: number, to: number) => (itemsPositions[to]?.bottom ?? 0) - (itemsPositions[from]?.bottom ?? 0),
