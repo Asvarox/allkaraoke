@@ -1,5 +1,5 @@
 #ARTIST:Lyn
-#TITLE:Dark Sun (TV)
+#TITLE:Dark Sun
 #CREATOR:Currymalker
 #BPM:260,1
 #YEAR:2018

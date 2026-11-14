@@ -1,5 +1,5 @@
 #ARTIST:TSA
-#TITLE:Marsz wilków (TV)
+#TITLE:Marsz wilków
 #CREATOR:Currymalker
 #BPM:244
 #YEAR:1983

@@ -1,5 +1,5 @@
 #ARTIST:Groove Coverage
-#TITLE:Moonlight Shadow (Original Mix)
+#TITLE:Moonlight Shadow
 #CREATOR:Canni
 #BPM:281
 #YEAR:2002

@@ -1,5 +1,5 @@
 #ARTIST:RADWIMPS
-#TITLE:Nandemonaiya (movie ver.)
+#TITLE:Nandemonaiya
 #CREATOR:subkei
 #BPM:336,12
 #YEAR:2016
