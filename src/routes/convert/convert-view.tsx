@@ -160,7 +160,7 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
     [songs, conversionResult, isEdit],
   );
 
-  const currentVideoId = getVideoId(authorAndVid.video);
+  const currentVideoId = authorAndVid.video.length === 11 ? authorAndVid.video : getVideoId(authorAndVid.video);
   const duplicateByVideo = useMemo(
     () =>
       !isEdit && currentVideoId
