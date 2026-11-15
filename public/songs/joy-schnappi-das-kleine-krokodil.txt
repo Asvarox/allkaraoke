@@ -1,0 +1,309 @@
+#ARTIST:Joy
+#TITLE:Schnappi, das kleine Krokodil
+#CREATOR:Ceptic
+#BPM:259,9
+#YEAR:2001
+#PREVIEWSTART:52
+#VIDEO:v=Oe3FG4EOgyU
+#LANGUAGE:German
+#GAP:7829,2307692307695
+#ALLKARAOKE_ID:joy-schnappi-das-kleine-krokodil
+#ALLKARAOKE_SID:7524
+#ALLKARAOKE_LASTUPDATE:2026-11-15T04:08:41.805Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:133
+#ALLKARAOKE_PREVIEWEND:82
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:130
+#MP3:Joy - Schnappi, das kleine Krokodil.mp3
+: 17 3 2 Ich 
+: 21 3 0 bin 
+: 25 3 -1 Schnap
+: 29 3 2 pi 
+: 37 3 -1 das 
+: 41 3 0 klei
+: 45 3 2 ne 
+: 49 3 0 Kro
+: 53 3 2 ko
+: 57 8 -1 dil
+- 65
+: 77 3 -1 Komm 
+: 81 3 0 aus 
+: 85 3 2 Ä
+: 89 3 4 gyp
+: 93 6 4 ten 
+: 101 3 4 das 
+: 105 4 2 liegt 
+: 111 1 4 di
+: 113 3 2 rekt 
+: 117 3 -1 am 
+: 121 9 -3 Nil
+- 130 132
+- 132
+: 149 3 2 Zu
+: 153 7 4 erst 
+: 165 3 4 lag 
+: 169 3 6 ich 
+: 173 3 6 in 
+: 177 3 4 ei
+: 181 3 6 nem 
+: 186 8 7 Ei
+- 194 196
+- 196
+: 213 3 4 Dann 
+: 217 6 2 schni 
+: 229 3 -1 schna 
+: 233 5 0 schnapp
+: 239 1 0 te 
+: 241 3 0 ich 
+: 245 3 0 mich 
+* 251 8 -1 frei
+- 259 264
+- 264
+: 281 5 7 Schni 
+: 289 5 7 Schna 
+: 297 3 4 Schnap
+: 301 3 2 pi
+- 304
+: 313 3 0 Schnap
+: 317 3 2 pi 
+: 321 3 0 Schnap
+: 325 3 2 pi 
+: 329 3 2 Schnapp
+- 332
+: 345 6 7 Schni 
+: 353 6 7 Schna 
+: 361 3 4 Schnap
+: 365 3 2 pi
+- 368
+: 377 3 0 Schnap
+: 381 3 2 pi 
+: 385 3 0 Schnap
+: 389 3 2 pi 
+: 393 3 -1 Schnapp
+- 396 512
+- 512
+: 529 3 2 Ich 
+: 533 3 0 bin 
+: 537 3 -1 Schnap
+: 541 3 2 pi 
+: 549 3 -1 das 
+: 553 3 0 klei
+: 557 3 2 ne 
+: 561 3 0 Kro
+: 565 3 2 ko
+: 569 9 -1 dil
+- 578
+: 589 3 -1 Hab 
+: 593 3 0 schar
+: 597 3 2 fe 
+: 601 3 4 Zäh
+: 605 6 4 ne 
+: 613 3 4 und 
+: 617 4 2 da
+: 623 1 4 von 
+: 625 3 2 ganz 
+: 629 3 -1 schön 
+: 633 9 -3 viel
+- 642 644
+- 644
+: 661 3 2 Ich 
+: 665 7 4 schnapp 
+: 677 3 4 mir 
+: 681 3 6 was 
+: 685 3 6 ich 
+: 689 3 4 schnap
+: 693 3 6 pen 
+* 697 6 7 kann
+- 703 704
+- 704
+: 721 3 4 Ja 
+: 725 3 3 ich 
+: 729 3 2 schnapp 
+: 733 3 2 zu 
+: 741 3 -1 weil 
+: 745 4 0 ich 
+: 751 1 0 das 
+: 753 3 0 so 
+: 757 3 0 gut 
+: 761 5 -1 kann
+- 766 776
+- 776
+: 793 6 7 Schni 
+: 801 6 7 Schna 
+: 809 3 4 Schnap
+: 813 3 2 pi
+- 816
+: 825 3 0 Schnap
+: 829 3 2 pi 
+: 833 3 0 Schnap
+: 837 3 2 pi 
+: 841 3 2 Schnapp
+- 844
+: 857 6 7 Schni 
+: 865 6 7 Schna 
+: 873 3 4 Schnap
+: 877 3 2 pi
+- 880
+: 889 3 0 Schnap
+: 893 3 2 pi 
+: 897 3 0 Schnap
+: 901 3 2 pi 
+: 905 3 -1 Schnapp
+- 908 1024
+- 1024
+: 1041 3 2 Ich 
+: 1045 3 0 bin 
+: 1049 3 -1 Schnap
+* 1053 3 2 pi 
+: 1061 3 -1 das 
+: 1065 3 0 klei
+: 1069 3 2 ne 
+: 1073 3 0 Kro
+* 1077 3 2 ko
+: 1081 10 -1 dil
+- 1091
+: 1101 3 -1 Ich 
+: 1105 3 0 schnap
+: 1109 3 2 pe 
+: 1113 3 4 ger
+: 1117 7 4 ne
+- 1124
+: 1125 3 4 Das 
+: 1129 4 2 ist 
+: 1135 1 4 mein 
+: 1137 3 2 Lieb
+: 1141 3 -1 lings
+: 1145 11 -3 spiel
+- 1156
+: 1173 3 2 Ich 
+: 1177 7 4 schleich 
+: 1189 3 4 mich 
+: 1193 3 6 an 
+: 1197 3 6 die 
+: 1201 3 4 Ma
+: 1205 3 6 ma 
+: 1209 7 7 ran
+- 1216 1220
+- 1220
+: 1237 3 4 Und 
+: 1241 7 2 zeig 
+: 1253 3 -1 ihr 
+: 1257 4 0 wie 
+: 1263 1 0 ich 
+: 1265 3 0 schnap
+: 1269 3 0 pen 
+: 1273 7 -1 kann
+- 1280 1288
+- 1288
+: 1305 6 7 Schni 
+: 1313 6 7 Schna 
+: 1321 3 4 Schnap
+: 1325 3 2 pi
+- 1328
+: 1337 3 0 Schnap
+: 1341 3 2 pi 
+: 1345 3 0 Schnap
+: 1349 3 2 pi 
+: 1353 3 2 Schnapp
+- 1356
+: 1369 6 7 Schni 
+: 1377 6 7 Schna 
+: 1385 3 4 Schnap
+: 1389 3 2 pi
+- 1392
+: 1401 3 0 Schnap
+: 1405 3 2 pi 
+: 1409 3 0 Schnap
+: 1413 3 2 pi 
+: 1417 3 -1 Schnapp
+- 1420 1536
+- 1536
+: 1553 3 2 Ich 
+: 1557 3 0 bin 
+: 1561 3 -1 Schnap
+: 1565 3 2 pi 
+: 1573 3 -1 das 
+: 1577 3 0 klei
+: 1581 3 2 ne 
+: 1585 3 0 Kro
+: 1589 3 2 ko
+: 1593 10 -1 dil
+- 1603
+: 1613 3 -1 Und 
+: 1617 3 0 vo
+: 1621 3 2 m 
+: 1625 3 4 Schnap
+: 1629 6 4 pen 
+: 1637 3 4 da 
+: 1641 4 2 krieg 
+: 1647 1 4 ich 
+: 1649 3 2 nicht 
+: 1653 3 -1 zu 
+: 1657 6 -3 viel
+- 1663 1668
+- 1668
+: 1685 3 2 Ich 
+: 1689 7 4 beiß’ 
+: 1701 3 4 den 
+: 1705 3 6 Pa
+: 1709 3 6 pi 
+: 1713 3 4 kurz 
+: 1717 3 6 ins 
+: 1721 10 7 Bein
+- 1731 1732
+- 1732
+: 1749 3 4 Und 
+: 1753 7 2 dann 
+: 1765 3 -1 dann 
+: 1769 5 0 schlaf 
+: 1775 1 0 ich 
+: 1777 3 0 ein
+: 1781 3 0 fach 
+: 1785 10 -1 ein
+- 1795 1800
+- 1800
+: 1817 6 7 Schni 
+* 1825 6 7 Schnap 
+: 1833 3 4 Schnap
+: 1837 3 2 pi
+- 1840
+: 1849 3 0 Schnap
+: 1853 3 2 pi 
+: 1857 3 0 Schnap
+: 1861 3 2 pi 
+: 1865 3 2 Schnapp
+- 1868
+: 1881 6 7 Schni 
+: 1889 6 7 Schna 
+: 1897 3 4 Schnap
+: 1901 3 2 pi
+- 1904
+: 1913 3 0 Schnap
+: 1917 3 2 pi 
+: 1921 3 0 Schnap
+: 1925 3 2 pi 
+: 1929 3 -1 Schnapp
+- 1932
+: 1943 6 7 Schni 
+: 1951 6 7 Schna 
+: 1959 3 4 Schnap
+: 1963 3 2 pi
+- 1966
+: 1973 4 0 Schnap
+: 1979 3 2 pi 
+: 1983 4 0 Schnap
+: 1989 3 2 pi 
+* 1993 4 2 Schnapp
+- 1997
+: 2007 6 7 Schni 
+: 2015 6 7 Schna 
+: 2023 6 4 Schnap
+: 2031 3 2 pi
+- 2034
+: 2039 4 0 Schnap
+: 2045 3 2 pi 
+: 2049 3 0 Schnap
+: 2053 3 2 pi 
+: 2057 4 -1 Schnapp
+E
