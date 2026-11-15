@@ -1,0 +1,302 @@
+#ARTIST:Enter Shikari
+#TITLE:Anything Can Happen In The Next Half Hour…
+#CREATOR:synonomy
+#BPM:238,06
+#YEAR:2007
+#VIDEO:v=uimfKXgdUCQ
+#LANGUAGE:English
+#GAP:3591,8507939174997
+#ALLKARAOKE_ID:enter-shikari-anything-can-happen-in-the-next-half-hour
+#ALLKARAOKE_SID:7529
+#ALLKARAOKE_LASTUPDATE:2026-11-15T04:08:43.440Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:121
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=gettxt&id=9695
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:279
+#MP3:Enter Shikari - Anything Can Happen In The Next Half Hour….mp3
+: 16 6 20 His 
+: 24 6 18 eyes 
+: 32 6 16 are 
+: 40 10 8 locked 
+: 53 9 11 on 
+: 64 12 16 her
+- 76
+: 80 6 20 Her 
+: 88 6 18 eyes 
+: 96 6 16 are 
+: 104 10 9 fixed 
+: 116 9 13 else
+: 127 11 16 where
+- 138
+: 143 6 20 He’s 
+: 151 6 18 con
+: 159 6 16 fi
+: 167 23 16 dent
+- 190
+: 192 2 16 But 
+: 195 3 16 he’s 
+: 200 3 16 not 
+* 204 1 18 a
+: 206 16 15 ware;
+- 222
+: 227 3 16 She 
+: 231 3 16 does
+: 235 3 18 n’t 
+: 239 19 15 care
+- 258
+: 270 6 20 Their 
+: 278 6 18 on
+: 286 6 16 ly 
+* 294 10 8 co
+: 307 9 11 nnec
+: 318 12 16 tion
+- 330
+* 335 2 20 Is 
+* 338 3 20 the 
+* 342 6 18 si
+* 350 6 16 lence 
+: 358 10 9 they 
+: 370 9 13 both 
+: 381 11 16 grasp
+- 392
+: 397 6 20 He’s 
+: 405 6 18 lost 
+: 413 6 16 con 
+* 421 19 16 trol
+- 440
+: 445 2 16 But 
+: 448 3 16 she’s 
+: 453 3 16 not 
+: 457 1 18 a
+: 459 17 15 ware
+- 476
+* 485 3 16 Of 
+* 490 4 18 his 
+* 496 14 15 stare
+- 510
+F 517 3 13 Eve
+F 522 4 13 ry
+F 528 4 13 thing 
+F 536 3 13 seems 
+F 540 2 13 to 
+F 543 3 13 in
+F 547 4 13 tim
+F 553 4 13 i
+F 559 4 13 date 
+F 564 4 13 him
+- 568
+: 571 3 16 With 
+: 575 3 16 the 
+: 580 4 16 strobe 
+: 586 4 16 lights 
+* 592 3 18 fla
+* 596 3 16 ~
+* 600 4 16 shing
+- 604
+: 607 3 16 Her 
+: 611 4 16 bo
+: 617 4 16 dy’s 
+: 623 3 18 jo
+: 627 3 16 ~
+: 631 5 16 lting
+- 636
+: 639 3 16 But 
+: 644 3 16 crac
+: 649 17 15 king
+- 666
+: 671 3 16 As 
+: 676 3 16 his 
+: 681 17 15 eyes
+- 698
+: 707 4 16 Split 
+: 712 4 18 in 
+: 718 14 15 two
+- 732
+: 736 2 16 If 
+: 739 3 16 on
+: 743 3 16 ly 
+* 747 3 18 she
+* 751 17 15 ~
+- 768
+* 771 35 15 Knew
+- 806
+F 814 3 12 If 
+F 818 2 12 on
+F 821 2 12 ly 
+F 825 4 12 she 
+F 832 12 12 knew!
+- 844 863
+- 863
+F 879 3 12 If 
+F 883 4 12 on
+F 889 5 12 ly!
+- 894 926
+- 926
+F 942 3 12 If 
+F 946 2 12 on
+F 949 2 12 ly 
+F 953 4 12 she 
+F 960 12 12 knew!
+- 972 1382
+- 1382
+* 1398 6 15 The 
+* 1406 14 16 cur
+* 1421 31 16 tain
+- 1452
+: 1454 14 16 Goes 
+: 1469 51 15 down
+- 1520
+* 1526 7 13 On 
+* 1534 30 16 him
+- 1564
+: 1566 23 15 A
+: 1590 3 13 ~
+: 1594 3 11 ~
+: 1598 28 11 gain
+- 1626 1639
+- 1639
+: 1655 6 13 The 
+: 1663 14 16 cur
+: 1678 30 16 tain
+- 1708
+* 1711 14 16 Goes 
+* 1726 50 15 down
+- 1776
+: 1782 7 13 On 
+: 1790 30 16 him
+- 1820
+* 1822 23 15 A
+* 1846 3 13 ~
+* 1850 3 11 ~
+* 1854 28 11 gain
+- 1882 1999
+- 1999
+F 2015 3 13 Eve
+F 2020 4 13 ry
+F 2026 4 13 thing 
+F 2034 3 13 seems 
+F 2038 2 13 to 
+F 2041 3 13 be 
+F 2045 4 13 clo
+F 2051 4 13 sing 
+F 2057 5 13 in 
+F 2065 3 13 on 
+F 2069 3 13 her
+- 2072
+F 2075 2 13 It 
+F 2078 3 13 feels 
+F 2083 4 13 just 
+F 2088 5 13 like 
+F 2097 4 13 she 
+F 2104 3 13 is 
+F 2108 4 13 be
+F 2113 5 13 ing 
+F 2121 3 13 haun
+F 2125 3 13 ted
+- 2128
+: 2132 3 16 But 
+: 2136 3 16 it’s 
+: 2141 4 20 al
+: 2146 14 18 right
+- 2160
+* 2168 3 16 It’s 
+* 2173 4 20 all 
+* 2178 14 18 good
+- 2192
+F 2201 2 13 She’s 
+F 2204 4 13 not 
+F 2210 4 13 a
+F 2215 13 13 ware 
+F 2236 5 13 of 
+F 2243 3 13 his 
+F 2248 30 13 stare!
+- 2278 2754
+- 2754
+: 2770 3 14 We’ve 
+: 2774 46 16 had
+- 2820
+: 2821 3 16 Thi
+* 2825 17 18 ~s 
+: 2844 3 18 da
+: 2848 30 15 ~te
+- 2878
+: 2882 4 16 From 
+: 2887 4 13 the 
+: 2893 3 11 be
+: 2897 3 11 gin
+: 2901 7 13 ning
+- 2908 3019
+- 3019
+: 3035 3 14 We’ve 
+: 3039 43 16 had
+- 3082
+: 3083 3 16 Thi
+: 3087 17 18 ~s 
+: 3106 3 18 da
+: 3110 26 15 ~te
+- 3136
+: 3142 4 16 From 
+: 3147 4 13 the 
+* 3153 3 11 be
+* 3157 3 11 gin
+* 3161 7 13 ning
+- 3168 3586
+- 3586
+: 3602 6 15 The 
+: 3610 14 16 cur
+: 3625 29 16 tain
+- 3654
+: 3656 14 16 Goes 
+: 3671 47 15 down
+- 3718
+: 3724 7 13 On 
+: 3732 28 16 him
+- 3760
+: 3761 23 15 A
+* 3785 3 13 ~
+* 3789 3 11 ~
+: 3793 27 11 gain
+- 3820 3844
+- 3844
+: 3860 3 21 Who 
+: 3864 3 21 re
+: 3868 3 21 mains 
+* 3872 1 21 when 
+* 3874 1 21 the 
+* 3876 2 21 cur
+* 3879 3 20 tain 
+* 3883 6 18 falls?
+- 3889
+: 3896 1 21 Who 
+: 3898 1 21 re
+: 3900 2 21 mains 
+: 3903 1 21 when 
+: 3905 2 21 the 
+: 3908 2 21 cur
+: 3911 3 20 tain 
+: 3915 6 16 goes 
+* 3923 3 16 do
+* 3927 26 15 ~wn?
+- 3953 3968
+- 3968
+: 3984 3 21 Who 
+: 3988 3 21 re
+: 3992 3 21 mains 
+: 3996 1 21 when 
+: 3998 1 21 the 
+: 4000 2 21 cur
+: 4003 3 20 tain 
+: 4007 6 18 falls?
+- 4013
+* 4018 1 21 Who 
+* 4020 1 21 re
+* 4022 2 21 mains 
+* 4025 1 21 when 
+* 4027 2 21 the 
+* 4030 2 21 cur
+* 4033 3 20 tain 
+* 4037 6 16 goes 
+* 4045 3 16 do
+* 4049 26 15 ~wn?
+E

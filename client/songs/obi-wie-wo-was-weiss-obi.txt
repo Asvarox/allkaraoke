@@ -1,0 +1,136 @@
+#ARTIST:Obi
+#TITLE:Wie, wo, was weiß Obi
+#CREATOR:IC
+#BPM:282,6
+#YEAR:2008
+#PREVIEWSTART:19
+#VIDEO:v=IHrqL78IOJg
+#LANGUAGE:German
+#GAP:5161,507430997877
+#ALLKARAOKE_ID:obi-wie-wo-was-weiss-obi
+#ALLKARAOKE_SID:7558
+#ALLKARAOKE_LASTUPDATE:2026-11-15T04:08:53.133Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_PREVIEWEND:30
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:40
+#MP3:Obi - Wie, wo, was weiß Obi.mp3
+: 19 2 12 Herz
+: 22 2 14 lich 
+: 26 3 14 will
+: 33 3 14 komm’n!
+- 36
+: 45 2 14 He
+: 48 3 12 rein
+: 55 4 14 spa
+: 63 2 14 ziert!
+- 65
+: 66 2 14 Hier 
+: 70 3 14 gibt’s 
+: 77 2 12 a
+: 80 2 14 lles,
+- 82
+: 83 2 14 Was 
+: 87 2 14 den 
+: 90 4 14 Heim
+: 96 2 14 wer
+: 99 2 14 ker
+- 101
+* 102 4 19 In
+: 110 3 17 t’re
+: 116 3 17 ssiert.
+- 119
+: 129 2 12 Wo 
+: 133 2 12 der 
+: 137 2 12 Ha
+: 140 2 12 mmer 
+: 144 3 12 hängt,
+- 147
+: 159 3 16 Könn’ 
+: 165 2 17 wir 
+: 169 2 15 dir 
+: 173 3 17 sa
+: 178 2 17 gen
+- 180
+: 186 2 12 Und 
+: 190 1 14 die 
+: 192 2 14 rich
+: 196 1 14 t’ge 
+: 199 3 14 Ant
+: 204 2 14 wort
+- 206
+: 211 2 14 Auf 
+: 215 2 7 tau
+: 219 2 5 send 
+: 222 2 5 and
+: 225 2 5 ’re 
+: 229 3 5 Fra
+: 233 2 5 gen.
+- 235 281
+- 281
+: 300 2 12 Wie 
+: 303 2 14 man 
+: 307 2 14 Schrau
+: 310 2 12 ben 
+: 314 4 14 schraubt
+- 318
+: 321 2 14 O
+: 324 2 14 der 
+* 328 5 12 Flie
+: 335 2 14 sen 
+: 342 4 14 fliest,
+- 346
+: 350 2 14 Un
+: 354 2 14 ge
+: 357 2 14 hemmt 
+: 361 2 14 mit 
+: 364 2 14 Hä
+: 367 2 14 mmern 
+: 371 2 14 hä
+: 374 2 14 mmert
+- 376
+: 379 2 14 O
+: 382 2 14 der 
+* 386 3 19 Topf
+: 392 3 17 pflan
+: 397 2 17 zen 
+: 400 4 17 gießt,
+- 404
+: 407 2 14 Wie 
+: 410 2 12 das 
+: 414 2 14 geht
+- 416
+: 417 2 14 Und 
+: 420 2 14 wo 
+: 423 2 12 das 
+: 427 4 14 steht
+- 431
+: 438 2 9 Und 
+: 441 2 12 was 
+: 445 2 14 man 
+: 448 3 14 da
+: 452 2 12 mit 
+: 455 4 14 macht,
+- 459
+: 468 4 12 Kriegst 
+: 474 2 12 du 
+: 477 2 12 oh
+: 480 2 12 ne 
+: 484 2 12 fach
+: 488 2 12 chi
+: 491 2 9 ne
+: 494 2 9 sisch
+- 496
+: 498 3 7 Bei
+: 502 2 5 ~
+: 505 3 2 ge
+: 512 3 2 bracht.
+- 515
+* 526 10 18 Wie, 
+: 540 10 17 wo, 
+: 554 6 15 was
+- 560
+: 568 8 13 Weiß 
+* 581 5 15 O
+: 588 5 15 bi.
+E
