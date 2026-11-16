@@ -1,0 +1,351 @@
+#ARTIST:Otto Waalkes
+#TITLE:Wir haben Grund zum Feiern
+#CREATOR:Canni
+#BPM:594,4
+#YEAR:2002
+#PREVIEWSTART:132
+#VIDEO:v=dkz_w1kLBYs
+#VIDEOGAP:71
+#LANGUAGE:German
+#GAP:85210,57873485867
+#ALLKARAOKE_ID:otto-waalkes-wir-haben-grund-zum-feiern
+#ALLKARAOKE_SID:7588
+#ALLKARAOKE_LASTUPDATE:2026-11-16T04:08:31.559Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:89
+#ALLKARAOKE_PREVIEWEND:150
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:181
+#MP3:Otto Waalkes - Wir haben Grund zum Feiern.mp3
+#START:72.5
+#END:167000
+: 40 4 11 Fa
+: 46 4 11 ber 
+: 54 4 11 Krö
+: 60 4 11 nung, 
+: 68 4 11 Dein
+: 74 4 11 hard 
+: 82 4 11 Li
+: 88 2 11 la,
+- 90
+: 94 4 9 Grap
+: 100 4 9 pa, 
+: 106 6 9 Cal
+: 114 4 9 va
+: 120 4 9 dos, 
+: 128 4 9 Te
+: 134 4 9 qui
+: 140 2 9 la,
+- 142
+: 148 4 11 As
+: 154 4 11 bach 
+: 160 4 11 Ur
+: 166 4 11 alt, 
+: 174 4 11 Spät
+: 180 4 11 bur
+: 186 4 11 gun
+: 194 2 11 der,
+- 196
+: 200 4 11 Wer
+: 208 4 7 muth 
+: 214 4 7 und 
+: 220 4 7 Per
+: 230 2 2 nod.
+- 232
+: 256 4 11 Wil
+: 262 4 11 liams 
+: 270 4 11 Bir
+: 276 4 11 ne, 
+: 282 6 11 Du
+: 290 4 11 jar
+: 296 2 11 din,
+- 298
+: 312 4 9 Hen
+: 318 4 9 nes
+: 324 4 9 sy, 
+: 330 4 9 Re
+: 336 4 9 my 
+: 342 4 9 Mar
+: 349 4 9 tin,
+- 353
+: 362 4 11 Fer
+: 368 4 11 net 
+: 376 4 11 Bran
+: 382 4 11 ca, 
+: 388 4 11 Un
+: 394 4 11 der
+: 402 2 11 berg,
+- 404
+: 414 4 11 Port
+: 422 4 7 wein 
+: 428 4 7 und 
+: 436 4 7 Bor
+* 444 4 2 deaux.
+- 448
+: 470 4 11 John
+: 476 4 11 nie 
+: 483 4 11 Wal
+: 489 4 11 ker, 
+: 495 4 11 Jä
+: 501 4 11 ger
+: 508 4 11 meis
+: 516 3 11 ter,
+- 519
+: 524 4 14 A
+: 530 4 14 ma
+: 535 4 14 ret
+: 541 4 14 to, 
+: 547 4 14 Kel
+: 553 4 14 ler
+: 559 4 14 geis
+: 565 2 14 ter,
+- 567
+: 575 4 16 Schar
+: 582 4 16 lach
+: 588 4 16 berg 
+: 594 4 16 und 
+: 600 4 16 Dop
+: 606 4 16 pel
+: 612 2 16 korn,
+- 614
+: 620 4 16 Das 
+: 626 4 16 Gan
+: 632 4 16 ze 
+: 639 4 16 jetzt 
+: 645 4 16 noch 
+: 651 4 16 mal 
+: 659 4 16 von 
+: 665 2 16 vorn.
+- 667
+: 683 5 2 Wir 
+: 692 6 2 ha
+: 701 5 2 ben 
+: 708 6 4 Grund 
+: 719 5 7 zum 
+: 726 8 9 Fei
+* 739 5 11 ern,
+- 744
+: 772 4 4 Kei
+: 778 4 7 ner 
+: 784 4 9 kann 
+: 796 4 11 mehr 
+: 804 4 9 lau
+: 815 3 7 fen,
+- 818
+: 822 4 4 Doch 
+: 828 4 7 wir 
+: 834 6 9 könn’ 
+: 846 4 11 noch 
+: 854 6 9 sau
+: 866 4 7 fen.
+- 870
+: 887 6 2 Wir 
+: 897 6 2 ha
+: 905 6 2 ben 
+: 913 6 4 Grund 
+: 923 6 7 zum 
+: 931 6 9 Fei
+: 943 6 11 ern,
+- 949
+: 976 4 4 Ist 
+: 982 4 7 uns 
+: 990 6 9 auch 
+: 1002 6 11 spei
+: 1010 6 9 ü
+: 1022 2 7 bel,
+- 1024
+: 1029 4 4 Bringt 
+: 1035 4 7 den 
+: 1043 4 9 näch
+: 1053 6 11 sten 
+* 1062 6 9 Kü
+: 1073 2 7 bel.
+- 1075 1104
+- 1104
+: 1144 4 16 Bom
+: 1150 4 16 mer
+: 1156 4 16 lun
+: 1162 4 16 der, 
+: 1169 4 16 Bal
+: 1175 4 16 lan
+: 1182 2 16 tine’s,
+- 1184
+: 1197 5 16 Heu
+: 1203 3 16 te 
+: 1208 4 16 ist 
+: 1215 4 16 uns 
+: 1221 4 16 al
+: 1227 4 16 les 
+: 1233 2 16 eins,
+- 1235
+: 1248 4 16 Bir
+: 1254 4 16 nen
+: 1260 6 16 schnaps 
+: 1268 4 16 und 
+: 1274 4 16 Ap
+: 1280 4 16 fel
+: 1286 2 16 wein,
+- 1288
+: 1300 4 16 Wir 
+: 1306 4 16 tun 
+: 1312 4 16 wirk
+: 1318 4 18 lich 
+: 1324 4 16 al
+: 1331 4 14 les 
+: 1337 4 14 rein.
+- 1341 1421
+- 1421
+: 1461 4 11 Whis
+: 1467 4 11 ky 
+: 1473 6 11 süß 
+: 1481 4 11 und 
+: 1487 4 11 Whis
+: 1493 4 11 ky 
+: 1499 4 11 sau
+: 1505 2 11 er,
+- 1507
+: 1514 4 9 Haupt
+: 1522 4 9 sa
+: 1528 4 9 che 
+: 1534 4 9 wir 
+: 1540 4 9 wer
+: 1546 4 9 den 
+: 1552 5 9 blau
+: 1558 2 9 er,
+- 1560
+: 1565 4 11 Ra
+: 1571 4 11 maz
+: 1577 4 11 zot
+: 1583 4 11 ti, 
+: 1589 4 11 Rat
+: 1595 4 11 ze
+: 1601 4 11 putz
+- 1605
+: 1616 4 11 Und 
+: 1622 4 7 ’ne 
+: 1628 3 7 Bud
+: 1632 4 7 del 
+* 1639 4 2 Rum.
+- 1643
+: 1670 4 11 Gin, 
+: 1676 4 11 Cam
+: 1683 4 11 pa
+: 1690 4 11 ri, 
+: 1696 4 11 Grand 
+: 1702 4 11 Mar
+: 1708 2 11 nier,
+- 1710
+: 1722 4 9 End
+: 1728 4 9 lich 
+: 1734 4 9 tut 
+: 1740 4 9 der 
+: 1747 4 9 Schä
+: 1753 4 9 del 
+: 1759 2 9 weh,
+- 1761
+: 1765 4 9 Mit 
+: 1772 6 11 Doorn
+: 1780 2 11 kaat 
+: 1784 4 11 und 
+: 1791 4 11 Ma
+: 1797 4 11 ri
+: 1802 2 11 a
+: 1808 3 11 cron
+- 1811
+: 1824 4 11 Ins 
+: 1830 4 7 De
+: 1838 4 7 li
+: 1844 4 7 ri
+: 1850 4 2 um.
+- 1854
+: 1874 6 11 Klos
+: 1882 4 11 ter
+: 1888 4 11 frau 
+: 1894 4 11 Me
+: 1900 6 11 lis
+: 1907 4 11 sen
+: 1914 2 11 geist,
+- 1916
+: 1929 2 14 O
+: 1933 2 14 der 
+: 1939 2 14 wie 
+: 1943 2 14 der 
+: 1950 6 14 Stoff 
+: 1958 4 14 sonst 
+: 1966 2 14 heißt,
+- 1968
+: 1978 4 16 Köl
+: 1984 4 16 nisch 
+: 1990 4 16 Was
+: 1996 4 16 ser, 
+: 2002 4 16 Pi
+: 2008 6 16 tra
+: 2016 2 16 lon,
+- 2018
+: 2024 4 14 Wir 
+: 2030 6 16 rülp
+: 2037 2 16 sen 
+: 2041 4 16 nicht 
+* 2049 4 16 wir 
+* 2055 4 16 kot
+* 2062 4 16 zen 
+* 2070 5 16 schon.
+- 2075
+: 2088 6 2 Wir 
+: 2098 6 2 ha
+: 2105 4 2 ben 
+: 2112 6 4 Grund 
+: 2122 6 7 zum 
+* 2130 8 9 Rei
+: 2142 6 11 ern,
+- 2148
+: 2168 4 4 Zer
+: 2174 4 4 frisst’s 
+: 2182 6 7 uns 
+: 2190 6 9 auch 
+* 2200 4 11 die 
+: 2206 6 9 Där
+: 2216 2 7 me,
+- 2218
+: 2224 6 4 Schenkt 
+: 2232 4 7 es 
+: 2238 8 9 uns 
+: 2250 6 11 doch 
+: 2258 8 9 Wär
+: 2270 4 7 me.
+- 2274
+: 2293 6 2 Wir 
+: 2303 4 2 ha
+: 2309 4 2 ben 
+: 2316 6 4 Grund 
+: 2326 6 7 zum 
+: 2334 8 9 Fei
+: 2346 6 11 ern,
+- 2352
+: 2379 4 4 Un
+: 2385 4 7 ser 
+: 2391 6 9 letz
+: 2403 4 11 ter 
+: 2411 6 9 Wil
+: 2421 2 7 le:
+- 2423
+: 2430 4 4 Im
+: 2436 4 7 mer 
+: 2442 6 9 mehr 
+* 2454 6 11 Pro
+: 2462 6 9 mil
+: 2472 4 7 le, 
+* 2481 6 11 Pro
+: 2489 6 9 mil
+: 2499 4 7 le, 
+* 2506 6 11 Pro
+: 2514 6 9 mil
+: 2526 4 7 le,
+- 2530
+: 2538 8 9 Mil
+: 2552 4 7 le, 
+: 2562 8 9 mil
+: 2576 4 7 le, 
+* 2586 8 9 mil
+: 2601 4 7 le
+E

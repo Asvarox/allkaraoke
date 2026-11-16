@@ -1,0 +1,385 @@
+#ARTIST:Kopruch
+#TITLE:Po Prostu Badz
+#CREATOR:Pazio777
+#BPM:387,6
+#YEAR:2008
+#VIDEO:v=ZacA1bZlsCs
+#LANGUAGE:Polish
+#GAP:283,8080495356038
+#ALLKARAOKE_ID:kopruch-po-prostu-badz
+#ALLKARAOKE_SID:7578
+#ALLKARAOKE_LASTUPDATE:2026-11-16T04:08:29.692Z
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:96
+#MP3:Kopruch - Po Prostu Badz.mp3
+#COVER:Kopruch - Po Prostu Badz [CO].jpg
+#BACKGROUND:Kopruch - Po Prostu Badz [BG].jpg
+F 26 3 0 Mo
+F 30 4 -2 żesz 
+F 38 4 -4 za
+F 43 4 -3 tkać 
+F 50 3 -3 uszy
+- 53
+F 79 2 11 Nie 
+F 82 2 2 bę
+F 85 1 -2 dą 
+F 89 1 0 ci 
+F 91 2 -1 te
+F 94 2 -3 raz 
+F 97 3 -5 po
+F 101 2 -3 trzeb
+F 105 2 0 ne
+- 107 115
+- 115
+: 141 3 3 Nie 
+: 145 5 7 ocze
+: 151 3 7 ku
+: 155 4 7 ję 
+: 160 6 7 wie
+: 167 3 7 le 
+: 176 3 7 po 
+: 180 3 7 pro
+: 184 5 3 stu 
+: 192 12 3 bądź
+- 204 239
+- 239
+: 265 4 3 Nie 
+: 270 3 7 mu
+: 274 4 7 sisz 
+: 279 4 7 mieć 
+: 287 3 7 no
+: 293 4 7 gi 
+: 300 4 7 po 
+: 307 3 8 pro
+: 312 3 3 stu 
+: 319 14 5 bądź
+: 364 8 5 ~
+: 373 18 3 ~
+- 391
+: 394 2 3 Nie 
+: 397 4 7 mu
+: 402 4 7 sisz 
+: 407 3 7 mieć 
+: 414 4 7 oka 
+: 428 4 7 po 
+: 433 3 8 pro
+: 438 5 3 stu 
+: 444 9 5 bądź
+- 453 465
+- 465
+: 491 2 3 Po 
+: 494 3 3 pro
+: 498 3 3 stu 
+: 503 4 3 bądź 
+: 509 4 5 przy 
+: 514 5 5 mnie 
+: 520 2 3 i 
+: 523 3 5 trzym 
+: 528 4 5 mnie 
+: 534 3 3 za 
+: 540 5 5 rę
+: 546 5 3 kę
+- 551 554
+- 554
+: 580 2 5 Al
+: 583 3 5 bo 
+: 588 4 3 za 
+: 593 3 5 co 
+: 598 3 2 tam 
+: 603 8 3 chcesz?
+- 611
+F 625 3 4 Nig
+F 629 3 3 dy 
+F 633 4 -2 nie 
+F 638 2 -1 za
+F 641 3 4 po
+F 645 3 4 mnę 
+F 650 2 9 te
+F 653 2 1 go 
+F 656 4 0 jak 
+F 661 3 2 zmy
+F 665 3 5 sło
+F 669 3 -1 wo 
+F 673 3 -2 po
+F 677 2 0 ru
+F 680 3 3 szasz 
+F 686 3 5 usza
+F 693 3 -3 mi
+- 696
+F 702 3 4 Ko
+F 707 3 -1 cha
+F 712 3 6 nie 
+F 718 3 2 wiesz 
+F 723 1 2 że 
+F 725 3 0 nie 
+F 729 3 1 od
+F 733 2 2 dał
+F 736 3 4 bym 
+F 740 4 6 za 
+F 745 3 -2 nic
+- 748
+F 751 2 4 Chwil 
+F 754 3 3 spę
+F 758 3 0 dzo
+F 762 4 -1 nych 
+F 768 2 0 ra
+F 771 3 3 zem 
+F 775 1 15 w 
+F 777 3 19 Te
+F 782 3 8 sco 
+F 788 3 2 bo 
+F 792 3 1 wiesz 
+F 800 3 8 to 
+F 804 3 5 jest 
+F 812 3 2 to
+- 815
+F 816 1 1 Co 
+F 818 2 2 spra
+F 821 4 1 wi
+F 826 4 -1 ło 
+F 831 2 1 że 
+F 834 3 4 dwo
+F 838 4 3 je 
+F 843 3 6 się 
+F 847 4 5 ze
+F 852 3 7 szło 
+F 859 3 5 jak 
+F 864 3 5 orzeł 
+F 871 1 1 z 
+F 873 3 3 resz
+F 877 4 3 ką
+- 881
+F 882 3 12 Lecz 
+F 888 3 16 jest 
+F 894 4 2 coś 
+F 899 3 2 co 
+F 903 3 2 dziś 
+F 910 4 9 mnie 
+F 915 3 9 znie
+F 919 3 11 chę
+F 923 4 -1 ca 
+F 929 1 2 z 
+F 931 3 -2 lek
+F 939 3 -2 sza
+- 942
+F 948 3 2 Ry
+F 953 3 3 becz
+F 958 3 -2 ko 
+F 963 6 9 płaszcz
+F 971 3 4 ko 
+F 975 6 2 znów 
+F 982 2 6 psy
+F 985 2 7 cho
+F 988 2 6 tro
+F 991 3 8 py 
+F 999 3 16 wpie
+F 1005 6 1 przasz
+- 1011
+F 1012 3 2 Efekt 
+F 1017 3 1 gdzie 
+F 1021 3 3 pro
+F 1025 3 3 wa
+F 1029 3 3 dzisz 
+F 1033 2 4 za
+F 1036 3 4 żar
+F 1041 1 5 te 
+F 1043 3 6 spo
+F 1047 4 4 ry 
+F 1052 2 5 ze 
+F 1055 3 6 sztucz
+F 1059 3 8 na
+F 1063 4 9 mi 
+F 1069 3 2 nie?
+- 1072
+F 1081 2 5 Sy
+F 1084 3 5 piasz 
+F 1088 1 4 w 
+F 1090 3 4 lo
+F 1094 3 5 dów
+F 1099 3 8 ce 
+F 1105 1 7 i 
+F 1107 3 6 gło
+F 1111 3 3 so
+F 1115 3 2 wa
+F 1119 4 1 łaś 
+F 1124 3 4 na 
+F 1131 3 7 SLD
+- 1134
+F 1143 3 2 Lecz 
+F 1147 3 2 chcę 
+F 1160 2 3 pa
+F 1163 3 3 mię
+F 1167 2 4 tać 
+F 1171 2 5 cię 
+F 1174 2 2 ta
+F 1178 3 5 ką 
+F 1182 3 3 jak 
+F 1187 1 2 w 
+F 1189 1 5 ro
+F 1191 2 6 ku 
+F 1194 3 6 po
+F 1198 4 9 przed
+F 1203 3 1 nim
+- 1206
+F 1207 3 4 Bez 
+F 1211 1 9 cie
+F 1213 2 6 bie 
+F 1216 3 2 schnę 
+F 1231 3 3 jak 
+F 1235 2 4 mo
+F 1238 3 7 kry 
+F 1242 3 11 cho
+F 1246 4 1 mik 
+F 1252 2 -1 na 
+F 1255 3 -1 pa
+F 1259 3 4 tel
+F 1263 4 -3 ni
+- 1267
+F 1270 3 1 Tak 
+F 1274 2 1 dłu
+F 1277 3 1 go 
+F 1281 2 2 szu
+F 1284 3 4 ka
+F 1288 3 4 łem 
+F 1293 3 8 słów 
+F 1302 5 -1 aby 
+F 1310 3 -1 wy
+F 1314 3 -2 ra
+F 1318 3 -1 zić 
+F 1322 3 3 ten 
+F 1326 3 5 ból
+- 1329
+F 1334 2 4 Ko
+F 1337 3 6 cham 
+F 1342 2 5 cię 
+F 1345 3 6 tak 
+F 1349 3 6 że 
+F 1353 2 4 ja 
+F 1357 3 6 pier
+F 1361 3 6 do
+F 1365 3 6 lę 
+F 1369 3 8 kur
+F 1374 4 -5 wa 
+F 1382 2 3 i 
+F 1386 3 8 chuj
+- 1389
+: 1406 3 -2 Nie 
+: 1410 4 3 ocze
+: 1415 4 3 ku
+: 1420 3 3 ję 
+: 1424 5 3 wie
+: 1432 5 3 le 
+: 1440 4 3 po 
+: 1446 3 5 pro
+: 1451 3 -2 stu 
+: 1458 3 0 bądź
+- 1461 1506
+- 1506
+: 1532 3 -2 Nie 
+: 1536 4 3 mu
+: 1542 3 3 sisz 
+: 1547 5 3 mieć 
+: 1553 3 3 ple
+: 1558 3 3 ców 
+: 1568 3 3 po 
+: 1572 4 5 pro
+: 1577 4 2 stu 
+: 1584 8 3 bądź
+- 1592 1632
+- 1632
+: 1658 3 -5 Nie 
+: 1662 3 3 mu
+: 1666 4 3 sisz 
+: 1672 4 3 mieć 
+: 1678 5 3 bar
+: 1684 3 3 ku 
+: 1695 3 3 po 
+: 1699 3 3 pro
+: 1703 5 -2 stu 
+: 1710 3 0 bądź
+- 1713 1729
+- 1729
+: 1755 3 0 Po 
+: 1759 3 0 pro
+: 1763 3 0 stu 
+: 1767 4 0 bądź 
+: 1773 3 2 przy 
+: 1778 5 2 mnie 
+: 1784 2 2 i 
+: 1787 3 2 trzym 
+: 1794 4 2 mnie 
+: 1801 4 0 za 
+: 1806 3 2 rę
+: 1815 3 0 kę
+- 1818 1886
+- 1886
+: 1912 3 -2 Bo 
+: 1917 3 0 wiem 
+: 1924 2 7 że 
+: 1927 3 7 nie 
+: 1932 3 7 przyj
+: 1939 3 7 dziesz 
+: 1946 1 7 z 
+: 1948 2 7 Ta
+: 1951 3 7 tą 
+: 1955 2 7 a 
+: 1959 3 7 za 
+: 1964 3 5 wa
+: 1968 4 3 mi 
+: 1974 3 3 hy
+: 1979 3 5 drau
+: 1985 3 3 lik
+- 1988 2009
+- 2009
+: 2035 3 5 Więc 
+: 2040 2 7 nie 
+: 2043 3 7 mu
+: 2047 3 7 sisz 
+: 2053 5 7 mieć 
+: 2060 6 7 trzust
+: 2067 3 7 ki 
+: 2075 3 7 po 
+: 2080 2 8 pro
+: 2083 3 3 stu 
+: 2090 6 5 bądź
+- 2096 2140
+- 2140
+: 2166 2 -2 Nie 
+: 2169 3 2 mu
+: 2173 3 7 sisz 
+: 2177 3 7 mieć 
+: 2181 3 7 zwie
+: 2186 3 7 ra
+: 2191 3 7 cza 
+: 2201 2 7 po 
+: 2205 3 8 pro
+: 2210 4 3 stu 
+: 2217 9 3 bądź
+- 2226 2236
+- 2236
+: 2262 2 -2 Po 
+: 2265 3 1 pro
+: 2270 3 3 stu 
+: 2275 4 3 bądź 
+: 2280 4 5 przy 
+: 2286 5 5 mnie 
+: 2292 2 3 i 
+: 2295 4 5 trzym 
+: 2302 3 5 mnie 
+: 2308 3 3 za 
+: 2313 3 5 rę
+: 2320 4 3 kę
+- 2324
+: 2343 3 5 Je
+: 2347 6 5 śli 
+: 2356 1 3 w 
+: 2358 3 5 ogó
+: 2362 4 5 le 
+: 2367 3 3 masz 
+: 2380 6 3 czym
+- 2386
+F 2397 8 4 Bę
+F 2408 3 2 dzie 
+F 2422 1 7 w 
+F 2428 2 -3 pytę
+E

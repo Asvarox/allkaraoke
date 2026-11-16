@@ -25,21 +25,21 @@
     "Ghost",
     "Madonna",
     "Muse",
+    "Paramore",
     "Bee Gees",
     "Elton John",
-    "Paramore",
     "Disturbed",
     "Ed Sheeran",
+    "Florence + the Machine",
     "Radiohead",
     "Red Hot Chili Peppers",
     "Beyoncé",
     "Foo Fighters",
     "Miley Cyrus",
     "Panic! at the Disco",
-    "Florence + the Machine",
+    "Billy Talent",
     "Katy Perry",
     "Metallica",
-    "Billy Talent",
     "Bruno Mars",
     "Lana Del Rey",
     "Westlife",
@@ -189,9 +189,10 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 7506,
-  "generatedAt": "2026-11-15T04:10:29.510Z",
+  "songs": 7548,
+  "generatedAt": "2026-11-16T04:09:58.322Z",
   "additionsPerDay": {
+    "2026-11-16": 42,
     "2026-11-15": 47,
     "2026-11-14": 128,
     "2026-11-13": 31,
@@ -233,10 +234,303 @@
     "2026-09-22": 19,
     "2026-09-19": 13,
     "2026-09-18": 11,
-    "2026-09-17": 8,
-    "2026-09-16": 11
+    "2026-09-17": 8
   },
   "recentlyAdded": [
+    {
+      "id": "disneys-fineasz-i-ferb-fineasz-i-ferb",
+      "artist": "Disney’s Fineasz i Ferb",
+      "title": "Fineasz i Ferb",
+      "video": "7RfTWRc_M58",
+      "addedAt": "2026-11-16T04:08:37.777Z"
+    },
+    {
+      "id": "sade-is-it-a-crime",
+      "artist": "Sade",
+      "title": "Is It a Crime",
+      "video": "NYz8xs163YU",
+      "addedAt": "2026-11-16T04:08:37.777Z"
+    },
+    {
+      "id": "natori-serenade",
+      "artist": "natori",
+      "title": "Serenade",
+      "video": "ZWvFR00t-NE",
+      "addedAt": "2026-11-16T04:08:37.776Z"
+    },
+    {
+      "id": "florence-the-machine-drumming-song",
+      "artist": "Florence + the Machine",
+      "title": "Drumming Song",
+      "video": "boo2Zm69fhY",
+      "addedAt": "2026-11-16T04:08:37.775Z"
+    },
+    {
+      "id": "maryla-rodowicz-malgoska",
+      "artist": "Maryla Rodowicz",
+      "title": "Małgośka",
+      "video": "jA_mH1u4kpo",
+      "addedAt": "2026-11-16T04:08:37.774Z"
+    },
+    {
+      "id": "peter-wackel-joana-du",
+      "artist": "Peter Wackel",
+      "title": "Joana (Du…)",
+      "video": "8zW9trhJ_TQ",
+      "addedAt": "2026-11-16T04:08:37.567Z"
+    },
+    {
+      "id": "piotr-rogucki-caluj-sie",
+      "artist": "Piotr Rogucki",
+      "title": "Całuj się!",
+      "video": "e9Iszvh-qrY",
+      "addedAt": "2026-11-16T04:08:36.126Z"
+    },
+    {
+      "id": "vitor-kley-o-sol",
+      "artist": "Vitor Kley",
+      "title": "O Sol",
+      "video": "yOwwSByMd0k",
+      "addedAt": "2026-11-16T04:08:36.124Z"
+    },
+    {
+      "id": "mako-puscilem-baka-na-pogrzebie",
+      "artist": "Mako",
+      "title": "Puściłem Bąka Na Pogrzebie",
+      "video": "EudrsLuNt_w",
+      "addedAt": "2026-11-16T04:08:36.122Z"
+    },
+    {
+      "id": "crosby-stills-nash-young-teach-your-children",
+      "artist": "Crosby, Stills, Nash & Young",
+      "title": "Teach Your Children",
+      "video": "dQOaUnSmJr8",
+      "addedAt": "2026-11-16T04:08:35.900Z"
+    },
+    {
+      "id": "paramore-running-out-of-time",
+      "artist": "Paramore",
+      "title": "Running Out Of Time",
+      "video": "toKJP3luQbI",
+      "addedAt": "2026-11-16T04:08:35.898Z"
+    },
+    {
+      "id": "grupo-frontera-y-ke-personajes-ojitos-rojos",
+      "artist": "Grupo Frontera y Ke Personajes",
+      "title": "Ojitos rojos",
+      "video": "LTE9ktAcSQg",
+      "addedAt": "2026-11-16T04:08:35.652Z"
+    },
+    {
+      "id": "battle-beast-eden",
+      "artist": "Battle Beast",
+      "title": "Eden",
+      "video": "_hzssKb9940",
+      "addedAt": "2026-11-16T04:08:32.039Z"
+    },
+    {
+      "id": "4-strings-take-me-away-into-the-night",
+      "artist": "4 Strings",
+      "title": "Take Me Away (Into The Night)",
+      "video": "IFknru0KBFA",
+      "addedAt": "2026-11-16T04:08:31.829Z"
+    },
+    {
+      "id": "exaltasamba-ta-vendo-aquela-lua",
+      "artist": "Exaltasamba",
+      "title": "Ta vendo aquela lua?",
+      "video": "cDVR_Tf56pE",
+      "addedAt": "2026-11-16T04:08:31.828Z"
+    },
+    {
+      "id": "otto-waalkes-wir-haben-grund-zum-feiern",
+      "artist": "Otto Waalkes",
+      "title": "Wir haben Grund zum Feiern",
+      "video": "dkz_w1kLBYs",
+      "addedAt": "2026-11-16T04:08:31.559Z"
+    },
+    {
+      "id": "sergey-lazarev-v-samoe-serdtse",
+      "artist": "Сергей Лазарев",
+      "title": "В самое сердце",
+      "video": "mpGLqiv6r90",
+      "addedAt": "2026-11-16T04:08:31.558Z"
+    },
+    {
+      "id": "the-dresden-dolls-coin-operated-boy",
+      "artist": "The Dresden Dolls",
+      "title": "Coin-Operated Boy",
+      "video": "j4gPZPKJc0s",
+      "addedAt": "2026-11-16T04:08:31.312Z"
+    },
+    {
+      "id": "zaz-eblouie-par-la-nuit",
+      "artist": "ZAZ",
+      "title": "Éblouie par la nuit",
+      "video": "KDcgOpUp2nc",
+      "addedAt": "2026-11-16T04:08:31.311Z"
+    },
+    {
+      "id": "florence-the-machine-everybody-scream",
+      "artist": "Florence + the Machine",
+      "title": "Everybody Scream",
+      "video": "03iBgkXb1EE",
+      "addedAt": "2026-11-16T04:08:31.310Z"
+    },
+    {
+      "id": "paul-mccartney-wonderful-christmastime",
+      "artist": "Paul McCartney",
+      "title": "Wonderful Christmastime",
+      "video": "94Ye-3C1FC8",
+      "addedAt": "2026-11-16T04:08:31.309Z"
+    },
+    {
+      "id": "weekend-za-kazda-chwile-z-toba",
+      "artist": "Weekend",
+      "title": "Za każda chwilę z Tobą",
+      "video": "LDjwv_poguo",
+      "addedAt": "2026-11-16T04:08:31.308Z"
+    },
+    {
+      "id": "billy-talent-devil-on-my-shoulder",
+      "artist": "Billy Talent",
+      "title": "Devil On My Shoulder",
+      "video": "bkODPAqcxvQ",
+      "addedAt": "2026-11-16T04:08:31.307Z"
+    },
+    {
+      "id": "warcry-mas-alla",
+      "artist": "WarCry",
+      "title": "Más allá",
+      "video": "zcKsepyOOXk",
+      "addedAt": "2026-11-16T04:08:31.306Z"
+    },
+    {
+      "id": "silbermond-das-beste",
+      "artist": "Silbermond",
+      "title": "Das Beste",
+      "video": "LyYAQHDMqfA",
+      "addedAt": "2026-11-16T04:08:29.901Z"
+    },
+    {
+      "id": "kopruch-po-prostu-badz",
+      "artist": "Kopruch",
+      "title": "Po Prostu Badz",
+      "video": "ZacA1bZlsCs",
+      "addedAt": "2026-11-16T04:08:29.692Z"
+    },
+    {
+      "id": "sven-schumacher-aufstehn-aufeinander-zugehn",
+      "artist": "Sven Schumacher",
+      "title": "Aufstehn, aufeinander zugehn",
+      "video": "_JNGEb-8JZ8",
+      "addedAt": "2026-11-16T04:08:29.481Z"
+    },
+    {
+      "id": "rolf-zuckowski-und-seine-freunde-lieder-die-wie-bruecken-sind",
+      "artist": "Rolf Zuckowski und seine Freunde",
+      "title": "Lieder, die wie Brücken sind",
+      "video": "-axvKh-m4rY",
+      "addedAt": "2026-11-16T04:08:29.480Z"
+    },
+    {
+      "id": "ashanti-foolish",
+      "artist": "Ashanti",
+      "title": "Foolish",
+      "video": "gUPrnu3BEU8",
+      "addedAt": "2026-11-16T04:08:29.479Z"
+    },
+    {
+      "id": "angele-oui-ou-non",
+      "artist": "Angèle",
+      "title": "Oui ou non",
+      "video": "XqAiGeEzctQ",
+      "addedAt": "2026-11-16T04:08:29.478Z"
+    },
+    {
+      "id": "michel-sardou-le-france",
+      "artist": "Michel Sardou",
+      "title": "Le France",
+      "video": "F7AtMmPXWuQ",
+      "addedAt": "2026-11-16T04:08:29.476Z"
+    },
+    {
+      "id": "frederic-oddloop",
+      "artist": "Frederic",
+      "title": "oddloop",
+      "video": "PCp2iXA1uLE",
+      "addedAt": "2026-11-16T04:08:29.475Z"
+    },
+    {
+      "id": "the-vamps-matoma-all-night",
+      "artist": "The Vamps & Matoma",
+      "title": "All Night",
+      "video": "BqaoAQbkeXo",
+      "addedAt": "2026-11-16T04:08:28.021Z"
+    },
+    {
+      "id": "grzegorz-hyzy-o-pani",
+      "artist": "Grzegorz Hyży",
+      "title": "O Pani!",
+      "video": "3ssoWhPH2eI",
+      "addedAt": "2026-11-16T04:08:28.019Z"
+    },
+    {
+      "id": "linda-lampenius-x-pete-parkkonen-liekinheitin",
+      "artist": "Linda Lampenius x Pete Parkkonen",
+      "title": "Liekinheitin",
+      "video": "vtElm1dHUNo",
+      "addedAt": "2026-11-16T04:08:28.017Z"
+    },
+    {
+      "id": "ekipa-o-jak-milo",
+      "artist": "Ekipa",
+      "title": "O jak miło",
+      "video": "BNL6ImhgCnk",
+      "addedAt": "2026-11-16T04:08:27.651Z"
+    },
+    {
+      "id": "studio-killers-ode-to-the-bouncer",
+      "artist": "Studio Killers",
+      "title": "Ode To The Bouncer",
+      "video": "Lo-EmtXbFRg",
+      "addedAt": "2026-11-16T04:08:27.649Z"
+    },
+    {
+      "id": "kult-do-ani",
+      "artist": "Kult",
+      "title": "Do Ani",
+      "video": "VNAmqtRmp28",
+      "addedAt": "2026-11-16T04:08:27.648Z"
+    },
+    {
+      "id": "michel-berger-le-paradis-blanc",
+      "artist": "Michel Berger",
+      "title": "Le paradis blanc",
+      "video": "Z2OawuAcIF4",
+      "addedAt": "2026-11-16T04:08:27.421Z"
+    },
+    {
+      "id": "grzegorz-hyzy-tabb-na-chwile",
+      "artist": "Grzegorz Hyży & TABB",
+      "title": "Na chwilę",
+      "video": "SCEaOF_I8oE",
+      "addedAt": "2026-11-16T04:08:25.940Z"
+    },
+    {
+      "id": "warcry-capitan-lawrence",
+      "artist": "WarCry",
+      "title": "Capitan Lawrence",
+      "video": "PXbkC1i8Tbw",
+      "addedAt": "2026-11-16T04:08:25.935Z"
+    },
+    {
+      "id": "oeykue-berk-evlerinin-oenue-boyali-direk",
+      "artist": "Öykü & Berk",
+      "title": "Evlerinin Önü Boyalı Direk",
+      "video": "m4Nc1R4vOh8",
+      "addedAt": "2026-11-16T04:08:25.232Z"
+    },
     {
       "id": "one-direction-fireproof",
       "artist": "One Direction",
@@ -278,300 +572,6 @@
       "title": "Lemon",
       "video": "SX_ViT4Ra7k",
       "addedAt": "2026-11-15T04:08:52.979Z"
-    },
-    {
-      "id": "richard-sanderson-reality",
-      "artist": "Richard Sanderson",
-      "title": "Reality",
-      "video": "EQDHCyFe2rY",
-      "addedAt": "2026-11-15T04:08:51.640Z"
-    },
-    {
-      "id": "lordofon-opener",
-      "artist": "Lordofon",
-      "title": "Opener",
-      "video": "fC7bRVXPIWA",
-      "addedAt": "2026-11-15T04:08:51.490Z"
-    },
-    {
-      "id": "justin-timberlake-feat-timbaland-sexyback",
-      "artist": "Justin Timberlake feat. Timbaland",
-      "title": "SexyBack",
-      "video": "3gOHvDP_vCs",
-      "addedAt": "2026-11-15T04:08:50.045Z"
-    },
-    {
-      "id": "hey-kto-tam-kto-jest-w-srodku",
-      "artist": "Hey",
-      "title": "Kto tam? Kto jest w środku?",
-      "video": "XhNSRdOmG4s",
-      "addedAt": "2026-11-15T04:08:50.044Z"
-    },
-    {
-      "id": "coma-pasazer",
-      "artist": "COMA",
-      "title": "Pasażer",
-      "video": "IfsBIn96VYo",
-      "addedAt": "2026-11-15T04:08:50.043Z"
-    },
-    {
-      "id": "dawid-podsiadlo-sezon",
-      "artist": "Dawid Podsiadło",
-      "title": "Sezon",
-      "video": "jyXHU7PtsmI",
-      "addedAt": "2026-11-15T04:08:50.043Z"
-    },
-    {
-      "id": "nirvana-drain-you",
-      "artist": "Nirvana",
-      "title": "Drain You",
-      "video": "AJUpHxlJUNQ",
-      "addedAt": "2026-11-15T04:08:50.042Z"
-    },
-    {
-      "id": "deftones-infinite-source",
-      "artist": "Deftones",
-      "title": "infinite source",
-      "video": "U_uVVO7eGic",
-      "addedAt": "2026-11-15T04:08:50.041Z"
-    },
-    {
-      "id": "papa-dance-bezimienni",
-      "artist": "Papa Dance",
-      "title": "Bezimienni",
-      "video": "nAZCFdyA92k",
-      "addedAt": "2026-11-15T04:08:49.889Z"
-    },
-    {
-      "id": "rui-veloso-a-paixao-anel-de-rubi",
-      "artist": "Rui Veloso",
-      "title": "A paixão (Anel de Rubi)",
-      "video": "pB9gsLUF7HU",
-      "addedAt": "2026-11-15T04:08:45.426Z"
-    },
-    {
-      "id": "ich-ich-pflaster",
-      "artist": "Ich + Ich",
-      "title": "Pflaster",
-      "video": "DuX2-qXNlvQ",
-      "addedAt": "2026-11-15T04:08:45.426Z"
-    },
-    {
-      "id": "michel-sardou-je-vais-taimer",
-      "artist": "Michel Sardou",
-      "title": "Je vais t’aimer",
-      "video": "EbfL4kjiGOc",
-      "addedAt": "2026-11-15T04:08:45.425Z"
-    },
-    {
-      "id": "arctic-monkeys-leave-before-the-lights-come-on",
-      "artist": "Arctic Monkeys",
-      "title": "Leave Before the Lights Come On",
-      "video": "SEukS2YN9B8",
-      "addedAt": "2026-11-15T04:08:45.424Z"
-    },
-    {
-      "id": "lydka-grubasa-ona-mowi",
-      "artist": "Lydka Grubasa",
-      "title": "Ona mówi",
-      "video": "nbyextDGTtc",
-      "addedAt": "2026-11-15T04:08:45.270Z"
-    },
-    {
-      "id": "rolf-zuckowski-und-seine-freunde-stups-der-kleine-osterhase",
-      "artist": "Rolf Zuckowski und seine Freunde",
-      "title": "Stups, der kleine Osterhase",
-      "video": "0Hhlk6QfzSk",
-      "addedAt": "2026-11-15T04:08:45.268Z"
-    },
-    {
-      "id": "hoehner-viva-colonia-da-simmer-dabei-dat-is-prima",
-      "artist": "Höhner",
-      "title": "Viva Colonia (Da simmer dabei, dat is prima!)",
-      "video": "37RPcWyHxLE",
-      "addedAt": "2026-11-15T04:08:45.107Z"
-    },
-    {
-      "id": "howard-carpendale-ti-amo",
-      "artist": "Howard Carpendale",
-      "title": "Ti amo",
-      "video": "wrwzHK8aX8w",
-      "addedAt": "2026-11-15T04:08:44.954Z"
-    },
-    {
-      "id": "lanberry-tribbs-dzieki-ze-jestes",
-      "artist": "Lanberry & Tribbs",
-      "title": "Dzięki, że jesteś",
-      "video": "7VLShc83YE0",
-      "addedAt": "2026-11-15T04:08:43.604Z"
-    },
-    {
-      "id": "barbara-tinoco-antes-dela-dizer-que-sim",
-      "artist": "Bárbara Tinoco",
-      "title": "Antes Dela Dizer Que Sim",
-      "video": "JyjtX7qLlC0",
-      "addedAt": "2026-11-15T04:08:43.449Z"
-    },
-    {
-      "id": "spice-girls-mama",
-      "artist": "Spice Girls",
-      "title": "Mama",
-      "video": "VsNbhwSXDB8",
-      "addedAt": "2026-11-15T04:08:43.447Z"
-    },
-    {
-      "id": "cleo-dom",
-      "artist": "Cleo",
-      "title": "Dom",
-      "video": "sKr18aPxldQ",
-      "addedAt": "2026-11-15T04:08:43.446Z"
-    },
-    {
-      "id": "ellie-goulding-this-love-will-be-your-downfall",
-      "artist": "Ellie Goulding",
-      "title": "This Love (Will Be Your Downfall)",
-      "video": "Kq4WRF6IZI0",
-      "addedAt": "2026-11-15T04:08:43.445Z"
-    },
-    {
-      "id": "ich-ich-so-soll-es-bleiben",
-      "artist": "Ich + Ich",
-      "title": "So soll es bleiben",
-      "video": "4VPpzhb0zMQ",
-      "addedAt": "2026-11-15T04:08:43.444Z"
-    },
-    {
-      "id": "yoasobi-kaibutsu",
-      "artist": "YOASOBI",
-      "title": "Kaibutsu",
-      "video": "dy90tA3TT1c",
-      "addedAt": "2026-11-15T04:08:43.443Z"
-    },
-    {
-      "id": "smolasty-duze-oczy",
-      "artist": "Smolasty",
-      "title": "Duże Oczy",
-      "video": "o0IMclZOXwc",
-      "addedAt": "2026-11-15T04:08:43.442Z"
-    },
-    {
-      "id": "lady-pank-stacja-warszawa",
-      "artist": "Lady Pank",
-      "title": "Stacja Warszawa",
-      "video": "Y_zfLepNkwI",
-      "addedAt": "2026-11-15T04:08:43.441Z"
-    },
-    {
-      "id": "enter-shikari-anything-can-happen-in-the-next-half-hour",
-      "artist": "Enter Shikari",
-      "title": "Anything Can Happen In The Next Half Hour…",
-      "video": "uimfKXgdUCQ",
-      "addedAt": "2026-11-15T04:08:43.440Z"
-    },
-    {
-      "id": "disneys-zwierzogrod-paulina-przybysz-nie-boj-sie-chciec",
-      "artist": "Disney’s Zwierzogród (Paulina Przybysz)",
-      "title": "Nie bój się chcieć",
-      "video": "QOSoCmcR0Ms",
-      "addedAt": "2026-11-15T04:08:43.287Z"
-    },
-    {
-      "id": "kuqe-2115-taki-maly-ja",
-      "artist": "Kuqe 2115",
-      "title": "Taki mały ja",
-      "video": "4IwqHYcYEQA",
-      "addedAt": "2026-11-15T04:08:41.973Z"
-    },
-    {
-      "id": "simple-plan-take-my-hand",
-      "artist": "Simple Plan",
-      "title": "Take My Hand",
-      "video": "ztBcsIRYhdQ",
-      "addedAt": "2026-11-15T04:08:41.972Z"
-    },
-    {
-      "id": "jose-jose-piel-de-azucar",
-      "artist": "José José",
-      "title": "Piel de azúcar",
-      "video": "IYd-4aTJQu8",
-      "addedAt": "2026-11-15T04:08:41.970Z"
-    },
-    {
-      "id": "joy-schnappi-das-kleine-krokodil",
-      "artist": "Joy",
-      "title": "Schnappi, das kleine Krokodil",
-      "video": "Oe3FG4EOgyU",
-      "addedAt": "2026-11-15T04:08:41.805Z"
-    },
-    {
-      "id": "virgin-2-bajki",
-      "artist": "Virgin",
-      "title": "2 bajki",
-      "video": "cCTUiCg_1YQ",
-      "addedAt": "2026-11-15T04:08:41.804Z"
-    },
-    {
-      "id": "irena-jarocka-kawiarenki",
-      "artist": "Irena Jarocka",
-      "title": "Kawiarenki",
-      "video": "xDcUDIaBwy4",
-      "addedAt": "2026-11-15T04:08:41.249Z"
-    },
-    {
-      "id": "czeslaw-spiewa-maszynka-do-swierkania",
-      "artist": "Czesław Śpiewa",
-      "title": "Maszynka do świerkania",
-      "video": "qHqTTSjWBvg",
-      "addedAt": "2026-11-15T04:08:39.548Z"
-    },
-    {
-      "id": "nickelback-animals",
-      "artist": "Nickelback",
-      "title": "Animals",
-      "video": "0fZyNUikfEM",
-      "addedAt": "2026-11-15T04:08:39.547Z"
-    },
-    {
-      "id": "limp-bizkit-rollin",
-      "artist": "Limp Bizkit",
-      "title": "Rollin’",
-      "video": "RYnFIRc0k6E",
-      "addedAt": "2026-11-15T04:08:39.546Z"
-    },
-    {
-      "id": "my-chemical-romance-destroya",
-      "artist": "My Chemical Romance",
-      "title": "Destroya",
-      "video": "I4WgPi1hc6M",
-      "addedAt": "2026-11-15T04:08:39.544Z"
-    },
-    {
-      "id": "studio-killers-feat-kim-petras-jenny",
-      "artist": "Studio Killers feat. Kim Petras",
-      "title": "Jenny",
-      "video": "Mi25hQwTM0w",
-      "addedAt": "2026-11-15T04:08:37.784Z"
-    },
-    {
-      "id": "leona-lewis-footprints-in-the-sand",
-      "artist": "Leona Lewis",
-      "title": "Footprints In The Sand",
-      "video": "HkR04vbfwwQ",
-      "addedAt": "2026-11-15T04:08:37.781Z"
-    },
-    {
-      "id": "zaz-imagine",
-      "artist": "ZAZ",
-      "title": "Imagine",
-      "video": "NPiQTO2l-0s",
-      "addedAt": "2026-11-15T04:08:37.769Z"
-    },
-    {
-      "id": "jean-jacques-goldman-quand-la-musique-est-bonne",
-      "artist": "Jean-Jacques Goldman",
-      "title": "Quand la musique est bonne",
-      "video": "-boDeijWuOY",
-      "addedAt": "2026-11-14T21:48:33.820Z"
     }
   ]
 }
