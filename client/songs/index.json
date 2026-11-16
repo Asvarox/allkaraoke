@@ -1252,6 +1252,34 @@
     "local": false
   },
   {
+    "id": "4-strings-take-me-away-into-the-night",
+    "title": "Take Me Away (Into The Night)",
+    "artist": "4 Strings",
+    "video": "IFknru0KBFA",
+    "language": [
+      "English"
+    ],
+    "bpm": 276,
+    "gap": 15781.739130434782,
+    "year": "2001",
+    "artistOrigin": "NL",
+    "lastUpdate": "2026-11-16T04:08:31.829Z",
+    "genre": "Trance",
+    "realBpm": 138,
+    "volume": 1,
+    "author": "Bibs",
+    "duration": 197,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 7590,
+    "tracksCount": 1,
+    "search": "4stringstakemeawayintothenight",
+    "local": false
+  },
+  {
     "id": "4minute-volume-up",
     "title": "Volume Up",
     "artist": "4Minute",
@@ -11870,6 +11898,34 @@
     "local": false
   },
   {
+    "id": "angele-oui-ou-non",
+    "title": "Oui ou non",
+    "artist": "Angèle",
+    "video": "XqAiGeEzctQ",
+    "language": [
+      "French"
+    ],
+    "bpm": 400,
+    "gap": 9737.5,
+    "year": "2019",
+    "artistOrigin": "BE",
+    "lastUpdate": "2026-11-16T04:08:29.478Z",
+    "realBpm": 200,
+    "volume": 1,
+    "author": "theecnemelc",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=23332",
+    "duration": 216,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 7574,
+    "tracksCount": 1,
+    "search": "angeleouiounon",
+    "local": false
+  },
+  {
     "id": "angelina-mango-la-noia",
     "title": "La noia",
     "artist": "Angelina Mango",
@@ -15307,6 +15363,34 @@
     "shortId": 6496,
     "tracksCount": 1,
     "search": "ascaresister",
+    "local": false
+  },
+  {
+    "id": "ashanti-foolish",
+    "title": "Foolish",
+    "artist": "Ashanti",
+    "video": "gUPrnu3BEU8",
+    "language": [
+      "English"
+    ],
+    "bpm": 385.33,
+    "gap": 36517.88051799756,
+    "year": "2002",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-16T04:08:29.479Z",
+    "genre": "Soul, R&B, Urban Soul",
+    "realBpm": 90,
+    "volume": 1,
+    "author": "lava",
+    "duration": 265,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 7575,
+    "tracksCount": 1,
+    "search": "ashantifoolish",
     "local": false
   },
   {
@@ -21393,6 +21477,31 @@
     "local": false
   },
   {
+    "id": "battle-beast-eden",
+    "title": "Eden",
+    "artist": "Battle Beast",
+    "video": "_hzssKb9940",
+    "language": [
+      "English"
+    ],
+    "bpm": 326,
+    "gap": 23997.730061349692,
+    "year": "2019",
+    "lastUpdate": "2026-11-16T04:08:32.039Z",
+    "volume": 1,
+    "author": "xrJUExmQEk/Valaingaur",
+    "duration": 254,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 7591,
+    "tracksCount": 1,
+    "search": "battlebeasteden",
+    "local": false
+  },
+  {
     "id": "beach-bunny-cloud-9",
     "title": "Cloud 9",
     "artist": "Beach Bunny",
@@ -25579,6 +25688,33 @@
     "shortId": 568,
     "tracksCount": 1,
     "search": "billytalentdevilinamidnightmass",
+    "local": false
+  },
+  {
+    "id": "billy-talent-devil-on-my-shoulder",
+    "title": "Devil On My Shoulder",
+    "artist": "Billy Talent",
+    "video": "bkODPAqcxvQ",
+    "language": [
+      "English"
+    ],
+    "bpm": 287.79,
+    "gap": 20439.69456895653,
+    "year": "2009",
+    "artistOrigin": "CA",
+    "lastUpdate": "2026-11-16T04:08:31.307Z",
+    "realBpm": 96,
+    "volume": 1,
+    "author": "Wüstenpfeil",
+    "duration": 229,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 7581,
+    "tracksCount": 1,
+    "search": "billytalentdevilonmyshoulder",
     "local": false
   },
   {
@@ -44690,6 +44826,34 @@
     "local": false
   },
   {
+    "id": "crosby-stills-nash-young-teach-your-children",
+    "title": "Teach Your Children",
+    "artist": "Crosby, Stills, Nash & Young",
+    "video": "dQOaUnSmJr8",
+    "language": [
+      "English"
+    ],
+    "bpm": 311.24,
+    "gap": 11557.919290579617,
+    "year": "1969",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-16T04:08:35.900Z",
+    "realBpm": 311,
+    "volume": 1,
+    "author": "Fiete",
+    "sourceUrl": "https://youtu.be/EkaKwXddT_I?si=M-fXTnfm7FQFRKCV",
+    "duration": 175,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 7594,
+    "tracksCount": 1,
+    "search": "crosbystillsnashyoungteachyourchildren",
+    "local": false
+  },
+  {
     "id": "crowded-house-better-be-home-soon",
     "title": "Better Be Home Soon",
     "artist": "Crowded House",
@@ -54460,6 +54624,32 @@
     "local": false
   },
   {
+    "id": "disneys-fineasz-i-ferb-fineasz-i-ferb",
+    "title": "Fineasz i Ferb",
+    "artist": "Disney’s Fineasz i Ferb",
+    "video": "7RfTWRc_M58",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 374.92,
+    "gap": 59.94878907500271,
+    "year": "2011",
+    "lastUpdate": "2026-11-16T04:08:37.777Z",
+    "genre": "Soundtrack",
+    "volume": 70,
+    "author": "mardzillo",
+    "duration": 55,
+    "tracks": [
+      {
+        "start": 6
+      }
+    ],
+    "shortId": 7603,
+    "tracksCount": 1,
+    "search": "disneysfineasziferbfineasziferb",
+    "local": false
+  },
+  {
     "id": "disneys-friends-for-change-send-it-on",
     "title": "Send It On",
     "artist": "Disney’s Friends For Change",
@@ -62552,6 +62742,33 @@
     "local": false
   },
   {
+    "id": "ekipa-o-jak-milo",
+    "title": "O jak miło",
+    "artist": "Ekipa",
+    "video": "BNL6ImhgCnk",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 280,
+    "gap": 6892.142857142857,
+    "year": "2026",
+    "artistOrigin": "PL",
+    "lastUpdate": "2026-11-16T04:08:27.651Z",
+    "genre": "Disco-Polo",
+    "volume": 70,
+    "author": "MylordWaliza",
+    "duration": 199,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 7568,
+    "tracksCount": 1,
+    "search": "ekipaojakmilo",
+    "local": false
+  },
+  {
     "id": "el-bananero-ricardo",
     "title": "Ricardo",
     "artist": "El Bananero",
@@ -68533,6 +68750,34 @@
     "local": false
   },
   {
+    "id": "exaltasamba-ta-vendo-aquela-lua",
+    "title": "Ta vendo aquela lua?",
+    "artist": "Exaltasamba",
+    "video": "cDVR_Tf56pE",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 960,
+    "gap": 11862,
+    "year": "2011",
+    "artistOrigin": "BR",
+    "lastUpdate": "2026-11-16T04:08:31.828Z",
+    "genre": "Pagode",
+    "realBpm": 164,
+    "volume": 1,
+    "author": "Tongas",
+    "duration": 201,
+    "tracks": [
+      {
+        "start": 64
+      }
+    ],
+    "shortId": 7589,
+    "tracksCount": 1,
+    "search": "exaltasambatavendoaquelalua",
+    "local": false
+  },
+  {
     "id": "example-changed-the-way-you-kiss-me",
     "title": "Changed The Way You Kiss Me",
     "artist": "Example",
@@ -72380,6 +72625,62 @@
     "local": false
   },
   {
+    "id": "florence-the-machine-drumming-song",
+    "title": "Drumming Song",
+    "artist": "Florence + the Machine",
+    "video": "boo2Zm69fhY",
+    "language": [
+      "English"
+    ],
+    "bpm": 200.02,
+    "gap": 4150.097490250975,
+    "year": "2009",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-11-16T04:08:37.775Z",
+    "genre": "Alternative Rock",
+    "realBpm": 100,
+    "volume": 1,
+    "author": "Senortruco*Coppo",
+    "duration": 230,
+    "tracks": [
+      {
+        "start": 13
+      }
+    ],
+    "shortId": 7600,
+    "tracksCount": 1,
+    "search": "florencethemachinedrummingsong",
+    "local": false
+  },
+  {
+    "id": "florence-the-machine-everybody-scream",
+    "title": "Everybody Scream",
+    "artist": "Florence + the Machine",
+    "video": "03iBgkXb1EE",
+    "language": [
+      "English"
+    ],
+    "bpm": 238,
+    "gap": 58781.596638655465,
+    "year": "2025",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-11-16T04:08:31.310Z",
+    "genre": "Indie Rock",
+    "realBpm": 120,
+    "volume": 1,
+    "author": "DoubleDee",
+    "duration": 340,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 7584,
+    "tracksCount": 1,
+    "search": "florencethemachineeverybodyscream",
+    "local": false
+  },
+  {
     "id": "florence-the-machine-heartlines-live-at-hackney-empire",
     "title": "Heartlines (Live at Hackney Empire)",
     "artist": "Florence + the Machine",
@@ -75085,6 +75386,36 @@
     "shortId": 1686,
     "tracksCount": 1,
     "search": "frederickanashiiureshii",
+    "local": false
+  },
+  {
+    "id": "frederic-oddloop",
+    "title": "oddloop",
+    "artist": "Frederic",
+    "video": "PCp2iXA1uLE",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 344.08,
+    "gap": 21548.326203208555,
+    "year": "2014",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-11-16T04:08:29.475Z",
+    "genre": "Jrock",
+    "realBpm": 172,
+    "volume": 1,
+    "author": "subkei",
+    "authorUrl": "https://ultrastar-es.org/en/canciones?creador=subkei",
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Frederic&cancion=oddloop",
+    "duration": 263,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 7572,
+    "tracksCount": 1,
+    "search": "fredericoddloop",
     "local": false
   },
   {
@@ -82831,6 +83162,34 @@
     "local": false
   },
   {
+    "id": "grupo-frontera-y-ke-personajes-ojitos-rojos",
+    "title": "Ojitos rojos",
+    "artist": "Grupo Frontera y Ke Personajes",
+    "video": "LTE9ktAcSQg",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 360.36,
+    "gap": 4565.9990009990015,
+    "year": "2023",
+    "lastUpdate": "2026-11-16T04:08:35.652Z",
+    "genre": "Cumbia",
+    "realBpm": 90,
+    "volume": 1,
+    "author": "Pelu5",
+    "sourceUrl": "https://www.youtube.com/watch?v=LTE9ktAcSQg",
+    "duration": 232,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 7592,
+    "tracksCount": 1,
+    "search": "grupofronteraykepersonajesojitosrojos",
+    "local": false
+  },
+  {
     "id": "grupo-play-llora-me-llama",
     "title": "Llora, me llama",
     "artist": "Grupo Play",
@@ -82858,6 +83217,33 @@
     "shortId": 5971,
     "tracksCount": 1,
     "search": "grupoplaylloramellama",
+    "local": false
+  },
+  {
+    "id": "grzegorz-hyzy-o-pani",
+    "title": "O Pani!",
+    "artist": "Grzegorz Hyży",
+    "video": "3ssoWhPH2eI",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 252,
+    "gap": 11898.095238095239,
+    "year": "2017",
+    "artistOrigin": "PL",
+    "lastUpdate": "2026-11-16T04:08:28.019Z",
+    "genre": "Pop",
+    "volume": 70,
+    "author": "MylordWaliza",
+    "duration": 196,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 7570,
+    "tracksCount": 1,
+    "search": "grzegorzhyzyopani",
     "local": false
   },
   {
@@ -82891,6 +83277,32 @@
     "shortId": 1818,
     "tracksCount": 1,
     "search": "grzegorzhyzypodwiatr",
+    "local": false
+  },
+  {
+    "id": "grzegorz-hyzy-tabb-na-chwile",
+    "title": "Na chwilę",
+    "artist": "Grzegorz Hyży & TABB",
+    "video": "SCEaOF_I8oE",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 240,
+    "gap": 23650,
+    "year": "2014",
+    "lastUpdate": "2026-11-16T04:08:25.940Z",
+    "genre": "Pop, Rock",
+    "volume": 70,
+    "author": "mylordwaliza",
+    "duration": 244,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 7564,
+    "tracksCount": 1,
+    "search": "grzegorzhyzytabbnachwile",
     "local": false
   },
   {
@@ -109562,6 +109974,31 @@
     "local": false
   },
   {
+    "id": "kopruch-po-prostu-badz",
+    "title": "Po Prostu Badz",
+    "artist": "Kopruch",
+    "video": "ZacA1bZlsCs",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 387.6,
+    "gap": 283.8080495356038,
+    "year": "2008",
+    "lastUpdate": "2026-11-16T04:08:29.692Z",
+    "volume": 1,
+    "author": "Pazio777",
+    "duration": 96,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 7578,
+    "tracksCount": 1,
+    "search": "kopruchpoprostubadz",
+    "local": false
+  },
+  {
     "id": "korn-adidas",
     "title": "A.D.I.D.A.S.",
     "artist": "KoRn",
@@ -110867,6 +111304,33 @@
     "shortId": 2416,
     "tracksCount": 1,
     "search": "kultbaranek",
+    "local": false
+  },
+  {
+    "id": "kult-do-ani",
+    "title": "Do Ani",
+    "artist": "Kult",
+    "video": "VNAmqtRmp28",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 251.24,
+    "gap": 3555.034230218118,
+    "year": "1988",
+    "artistOrigin": "PL",
+    "lastUpdate": "2026-11-16T04:08:27.648Z",
+    "genre": "Rock",
+    "volume": 70,
+    "author": "gpm",
+    "duration": 252,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 7566,
+    "tracksCount": 1,
+    "search": "kultdoani",
     "local": false
   },
   {
@@ -119000,6 +119464,37 @@
     "local": false
   },
   {
+    "id": "linda-lampenius-x-pete-parkkonen-liekinheitin",
+    "title": "Liekinheitin",
+    "artist": "Linda Lampenius x Pete Parkkonen",
+    "video": "vtElm1dHUNo",
+    "language": [
+      "Finnish"
+    ],
+    "bpm": 292,
+    "gap": 5183.972602739726,
+    "year": "2026",
+    "artistOrigin": "FI",
+    "lastUpdate": "2026-11-16T04:08:28.017Z",
+    "edition": "ESC 2026",
+    "genre": "Alternative Pop, Classical Crossover",
+    "realBpm": 292,
+    "volume": 1,
+    "author": "Dragon33",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=184581",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=31521",
+    "duration": 193,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 7569,
+    "tracksCount": 1,
+    "search": "lindalampeniusxpeteparkkonenliekinheitin",
+    "local": false
+  },
+  {
     "id": "lindemann-platz-eins",
     "title": "Platz eins",
     "artist": "Lindemann",
@@ -126809,6 +127304,32 @@
     "local": false
   },
   {
+    "id": "mako-puscilem-baka-na-pogrzebie",
+    "title": "Puściłem Bąka Na Pogrzebie",
+    "artist": "Mako",
+    "video": "EudrsLuNt_w",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 288,
+    "gap": -34.16666666666667,
+    "year": "2023",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-16T04:08:36.122Z",
+    "volume": 70,
+    "author": "Ikjas",
+    "duration": 212,
+    "tracks": [
+      {
+        "start": 2
+      }
+    ],
+    "shortId": 7595,
+    "tracksCount": 1,
+    "search": "makopuscilembakanapogrzebie",
+    "local": false
+  },
+  {
     "id": "male-tgd-gory-do-gory",
     "title": "Góry do góry",
     "artist": "Małe TGD",
@@ -131846,6 +132367,33 @@
     "local": false
   },
   {
+    "id": "maryla-rodowicz-malgoska",
+    "title": "Małgośka",
+    "artist": "Maryla Rodowicz",
+    "video": "jA_mH1u4kpo",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 217.7,
+    "gap": 16526.4676159853,
+    "year": "1974",
+    "artistOrigin": "PL",
+    "lastUpdate": "2026-11-16T04:08:37.774Z",
+    "genre": "Pop, Folk",
+    "volume": 70,
+    "author": "mylordwaliza",
+    "duration": 175,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 7599,
+    "tracksCount": 1,
+    "search": "marylarodowiczmalgoska",
+    "local": false
+  },
+  {
     "id": "maryla-rodowicz-niech-zyje-bal",
     "title": "Niech żyje bal",
     "artist": "Maryla Rodowicz",
@@ -136485,6 +137033,35 @@
     "local": false
   },
   {
+    "id": "michel-berger-le-paradis-blanc",
+    "title": "Le paradis blanc",
+    "artist": "Michel Berger",
+    "video": "Z2OawuAcIF4",
+    "language": [
+      "French"
+    ],
+    "bpm": 280,
+    "gap": 31162.14285714286,
+    "year": "1990",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-11-16T04:08:27.421Z",
+    "genre": "Pop",
+    "realBpm": 70,
+    "volume": 1,
+    "author": "mustangfred",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=7233",
+    "duration": 280,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 7565,
+    "tracksCount": 1,
+    "search": "michelbergerleparadisblanc",
+    "local": false
+  },
+  {
     "id": "michel-delpech-les-divorces",
     "title": "Les divorcés",
     "artist": "Michel Delpech",
@@ -136538,6 +137115,34 @@
     "shortId": 7544,
     "tracksCount": 1,
     "search": "michelsardoujevaistaimer",
+    "local": false
+  },
+  {
+    "id": "michel-sardou-le-france",
+    "title": "Le France",
+    "artist": "Michel Sardou",
+    "video": "F7AtMmPXWuQ",
+    "language": [
+      "French"
+    ],
+    "bpm": 265.95,
+    "gap": 23874.771573604063,
+    "year": "1975",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-11-16T04:08:29.476Z",
+    "genre": "Variété Française",
+    "realBpm": 150,
+    "volume": 1,
+    "author": "Leroidukitch",
+    "duration": 236,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 7573,
+    "tracksCount": 1,
+    "search": "michelsardoulefrance",
     "local": false
   },
   {
@@ -142716,26 +143321,25 @@
     "id": "mythroid-hydra",
     "title": "HYDRA",
     "artist": "MYTH&ROID",
-    "video": "Cc-Ecr6Yh2Y",
+    "video": "PEWC-IYa1Ws",
     "language": [
       "Japanese"
     ],
     "bpm": 359.92,
-    "gap": 389.7777283840853,
+    "gap": 8.94443209602133,
     "year": "2018",
     "artistOrigin": "JP",
-    "lastUpdate": "2026-11-08T03:43:19.353Z",
-    "edition": "Anime",
+    "lastUpdate": "2026-11-15T21:40:16.300Z",
     "genre": "Anime",
     "realBpm": 83,
     "volume": 1,
     "author": "Currymalker",
     "authorUrl": "https://ultrastar-es.org/en/canciones?creador=currymalker",
-    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=MYTH&ROID&cancion=HYDRA",
-    "duration": 294,
+    "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=MYTH&ROID&cancion=HYDRA%20(TV)",
+    "duration": 91,
     "tracks": [
       {
-        "start": 24
+        "start": 6
       }
     ],
     "shortId": 7014,
@@ -143790,6 +144394,33 @@
     "shortId": 7376,
     "tracksCount": 1,
     "search": "natoripropose",
+    "local": false
+  },
+  {
+    "id": "natori-serenade",
+    "title": "Serenade",
+    "artist": "natori",
+    "video": "ZWvFR00t-NE",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 274,
+    "gap": 8270.598540145986,
+    "year": "2026",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-11-16T04:08:37.776Z",
+    "realBpm": 137,
+    "volume": 1,
+    "author": "subkei",
+    "duration": 91,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 7601,
+    "tracksCount": 1,
+    "search": "natoriserenade",
     "local": false
   },
   {
@@ -150005,6 +150636,37 @@
     "local": false
   },
   {
+    "id": "oeykue-berk-evlerinin-oenue-boyali-direk",
+    "title": "Evlerinin Önü Boyalı Direk",
+    "artist": "Öykü & Berk",
+    "video": "m4Nc1R4vOh8",
+    "language": [
+      "Turkish"
+    ],
+    "bpm": 350.8,
+    "gap": 35106.53363740023,
+    "year": "2007",
+    "artistOrigin": "TR",
+    "lastUpdate": "2026-11-16T04:08:25.232Z",
+    "realBpm": 176,
+    "volume": 1,
+    "author": "bohning",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=29562",
+    "duration": 227,
+    "tracks": [
+      {
+        "start": 23
+      },
+      {
+        "start": 1225
+      }
+    ],
+    "shortId": 7562,
+    "tracksCount": 2,
+    "search": "oeykueberkevlerininoenueboyalidirek",
+    "local": false
+  },
+  {
     "id": "of-monsters-and-men-little-talks",
     "title": "Little Talks",
     "artist": "Of Monsters and Men",
@@ -152807,6 +153469,36 @@
     "local": false
   },
   {
+    "id": "otto-waalkes-wir-haben-grund-zum-feiern",
+    "title": "Wir haben Grund zum Feiern",
+    "artist": "Otto Waalkes",
+    "video": "dkz_w1kLBYs",
+    "language": [
+      "German"
+    ],
+    "bpm": 594.4,
+    "gap": 85210.57873485867,
+    "year": "2002",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-11-16T04:08:31.559Z",
+    "videoGap": 71,
+    "realBpm": 89,
+    "previewStart": 132,
+    "previewEnd": 150,
+    "volume": 1,
+    "author": "Canni",
+    "duration": 181,
+    "tracks": [
+      {
+        "start": 40
+      }
+    ],
+    "shortId": 7588,
+    "tracksCount": 1,
+    "search": "ottowaalkeswirhabengrundzumfeiern",
+    "local": false
+  },
+  {
     "id": "outkast-hey-ya",
     "title": "Hey Ya!",
     "artist": "OutKast",
@@ -155206,6 +155898,34 @@
     "local": false
   },
   {
+    "id": "paramore-running-out-of-time",
+    "title": "Running Out Of Time",
+    "artist": "Paramore",
+    "video": "toKJP3luQbI",
+    "language": [
+      "English"
+    ],
+    "bpm": 254,
+    "gap": 19166.062992125982,
+    "year": "2023",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-16T04:08:35.898Z",
+    "genre": "Alternative Rock",
+    "realBpm": 127,
+    "volume": 1,
+    "author": "DoubleDee",
+    "duration": 216,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 7593,
+    "tracksCount": 1,
+    "search": "paramorerunningoutoftime",
+    "local": false
+  },
+  {
     "id": "paramore-still-into-you",
     "title": "Still Into You",
     "artist": "Paramore",
@@ -155871,6 +156591,36 @@
     "shortId": 5081,
     "tracksCount": 1,
     "search": "paulmccartneyweallstandtogether",
+    "local": false
+  },
+  {
+    "id": "paul-mccartney-wonderful-christmastime",
+    "title": "Wonderful Christmastime",
+    "artist": "Paul McCartney",
+    "video": "94Ye-3C1FC8",
+    "language": [
+      "English"
+    ],
+    "bpm": 378.8,
+    "gap": 20490.031678986274,
+    "year": "1979",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-11-16T04:08:31.309Z",
+    "edition": "Christmas",
+    "realBpm": 95,
+    "volume": 1,
+    "author": "ears",
+    "authorUrl": "https://usdb.animux.de/index.php?link=profil&id=36923",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=11024",
+    "duration": 227,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 7583,
+    "tracksCount": 1,
+    "search": "paulmccartneywonderfulchristmastime",
     "local": false
   },
   {
@@ -157189,6 +157939,36 @@
     "local": false
   },
   {
+    "id": "peter-wackel-joana-du",
+    "title": "Joana (Du…)",
+    "artist": "Peter Wackel",
+    "video": "8zW9trhJ_TQ",
+    "language": [
+      "German"
+    ],
+    "bpm": 251.74,
+    "gap": 1267.8542510121456,
+    "year": "2007",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-11-16T04:08:37.567Z",
+    "genre": "Schlager",
+    "realBpm": 120,
+    "previewStart": 53,
+    "previewEnd": 90,
+    "volume": 1,
+    "author": "pauldiddy",
+    "duration": 198,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 7598,
+    "tracksCount": 1,
+    "search": "peterwackeljoanadu",
+    "local": false
+  },
+  {
     "id": "petula-clark-downtown",
     "title": "Downtown",
     "artist": "Petula Clark",
@@ -158159,6 +158939,32 @@
     "shortId": 7057,
     "tracksCount": 1,
     "search": "piotrbukartykztyluchmur",
+    "local": false
+  },
+  {
+    "id": "piotr-rogucki-caluj-sie",
+    "title": "Całuj się!",
+    "artist": "Piotr Rogucki",
+    "video": "e9Iszvh-qrY",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 393.22,
+    "gap": 48248.18880016276,
+    "year": "2015",
+    "artistOrigin": "PL",
+    "lastUpdate": "2026-11-16T04:08:36.126Z",
+    "volume": 70,
+    "author": "Pazio777",
+    "duration": 240,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 7597,
+    "tracksCount": 1,
+    "search": "piotrroguckicalujsie",
     "local": false
   },
   {
@@ -164723,10 +165529,10 @@
       "English"
     ],
     "bpm": 323.35,
-    "gap": 24279.43404979125,
+    "gap": 24329.43404979125,
     "year": "1995",
     "artistOrigin": "US",
-    "lastUpdate": "2026-11-10T05:30:34.309Z",
+    "lastUpdate": "2026-11-15T08:47:52.214Z",
     "genre": "Rock",
     "realBpm": 81,
     "previewStart": 67,
@@ -169342,6 +170148,36 @@
     "local": false
   },
   {
+    "id": "rolf-zuckowski-und-seine-freunde-lieder-die-wie-bruecken-sind",
+    "title": "Lieder, die wie Brücken sind",
+    "artist": "Rolf Zuckowski und seine Freunde",
+    "video": "-axvKh-m4rY",
+    "language": [
+      "German"
+    ],
+    "bpm": 206.7,
+    "gap": 65264.034833091435,
+    "year": "1982",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-11-16T04:08:29.480Z",
+    "videoGap": 51,
+    "realBpm": 110,
+    "previewStart": 112,
+    "previewEnd": 145,
+    "volume": 1,
+    "author": "GrandiaFan",
+    "duration": 271,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 7576,
+    "tracksCount": 1,
+    "search": "rolfzuckowskiundseinefreundeliederdiewiebrueckensind",
+    "local": false
+  },
+  {
     "id": "rolf-zuckowski-und-seine-freunde-stups-der-kleine-osterhase",
     "title": "Stups, der kleine Osterhase",
     "artist": "Rolf Zuckowski und seine Freunde",
@@ -171522,6 +172358,34 @@
     "shortId": 3770,
     "tracksCount": 1,
     "search": "sabrinacarpenterwhy",
+    "local": false
+  },
+  {
+    "id": "sade-is-it-a-crime",
+    "title": "Is It a Crime",
+    "artist": "Sade",
+    "video": "NYz8xs163YU",
+    "language": [
+      "English"
+    ],
+    "bpm": 244,
+    "gap": 70826.39344262295,
+    "year": "1985",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-11-16T04:08:37.777Z",
+    "genre": "Contemporary R&B",
+    "realBpm": 122,
+    "volume": 1,
+    "author": "DoubleDee, commissioned by BC FOX",
+    "duration": 423,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 7602,
+    "tracksCount": 1,
+    "search": "sadeisitacrime",
     "local": false
   },
   {
@@ -175826,6 +176690,35 @@
     "local": false
   },
   {
+    "id": "sergey-lazarev-v-samoe-serdtse",
+    "title": "В самое сердце",
+    "artist": "Сергей Лазарев",
+    "video": "mpGLqiv6r90",
+    "language": [
+      "Russian"
+    ],
+    "bpm": 332.438,
+    "gap": 13466.33369831367,
+    "year": "2015",
+    "artistOrigin": "RU",
+    "lastUpdate": "2026-11-16T04:08:31.558Z",
+    "realBpm": 83,
+    "previewStart": 45,
+    "previewEnd": 75,
+    "volume": 0.9,
+    "author": "yt2usdx 0.1",
+    "duration": 244,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 7587,
+    "tracksCount": 1,
+    "search": "sergeylazarevvsamoeserdtse",
+    "local": false
+  },
+  {
     "id": "sergio-dalma-bailar-pegados",
     "title": "Bailar pegados",
     "artist": "Sergio Dalma",
@@ -179101,6 +179994,35 @@
     "shortId": 6664,
     "tracksCount": 1,
     "search": "siennaspirogreatexpectation",
+    "local": false
+  },
+  {
+    "id": "silbermond-das-beste",
+    "title": "Das Beste",
+    "artist": "Silbermond",
+    "video": "LyYAQHDMqfA",
+    "language": [
+      "German"
+    ],
+    "bpm": 224.14,
+    "gap": 376.16311234050147,
+    "year": "2006",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-11-16T04:08:29.901Z",
+    "realBpm": 112,
+    "previewStart": 52,
+    "previewEnd": 88,
+    "volume": 1,
+    "author": "Canni",
+    "duration": 271,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 7579,
+    "tracksCount": 1,
+    "search": "silbermonddasbeste",
     "local": false
   },
   {
@@ -185497,6 +186419,33 @@
     "local": false
   },
   {
+    "id": "studio-killers-ode-to-the-bouncer",
+    "title": "Ode To The Bouncer",
+    "artist": "Studio Killers",
+    "video": "Lo-EmtXbFRg",
+    "language": [
+      "English"
+    ],
+    "bpm": 246,
+    "gap": -21.951219512195124,
+    "year": "2011",
+    "artistOrigin": "DK",
+    "lastUpdate": "2026-11-16T04:08:27.649Z",
+    "realBpm": 123,
+    "volume": 1,
+    "author": "GaryCXJk",
+    "duration": 207,
+    "tracks": [
+      {
+        "start": 2
+      }
+    ],
+    "shortId": 7567,
+    "tracksCount": 1,
+    "search": "studiokillersodetothebouncer",
+    "local": false
+  },
+  {
     "id": "style-five-splash-free",
     "title": "SPLASH FREE",
     "artist": "STYLE FIVE",
@@ -186493,6 +187442,36 @@
     "shortId": 4116,
     "tracksCount": 1,
     "search": "survivoreyeofthetiger",
+    "local": false
+  },
+  {
+    "id": "sven-schumacher-aufstehn-aufeinander-zugehn",
+    "title": "Aufstehn, aufeinander zugehn",
+    "artist": "Sven Schumacher",
+    "video": "_JNGEb-8JZ8",
+    "language": [
+      "German"
+    ],
+    "bpm": 245.94,
+    "gap": 15324.152232251769,
+    "year": "2005",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-11-16T04:08:29.481Z",
+    "videoGap": 1,
+    "realBpm": 123,
+    "previewStart": 53,
+    "previewEnd": 97,
+    "volume": 1,
+    "author": "IC",
+    "duration": 201,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 7577,
+    "tracksCount": 1,
+    "search": "svenschumacheraufstehnaufeinanderzugehn",
     "local": false
   },
   {
@@ -196593,6 +197572,35 @@
     "local": false
   },
   {
+    "id": "the-dresden-dolls-coin-operated-boy",
+    "title": "Coin-Operated Boy",
+    "artist": "The Dresden Dolls",
+    "video": "j4gPZPKJc0s",
+    "language": [
+      "English"
+    ],
+    "bpm": 250,
+    "gap": 6610,
+    "year": "2003",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-16T04:08:31.312Z",
+    "realBpm": 128,
+    "volume": 1,
+    "author": "Frau_Amygdala",
+    "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=82723",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=16454",
+    "duration": 223,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 7586,
+    "tracksCount": 1,
+    "search": "thedresdendollscoinoperatedboy",
+    "local": false
+  },
+  {
     "id": "the-du-crazy-noisy-bizarre-town",
     "title": "Crazy Noisy Bizarre Town",
     "artist": "THE DU",
@@ -201635,6 +202643,35 @@
     "shortId": 7099,
     "tracksCount": 1,
     "search": "thevampsfeatshawnmendesohceciliabreakingmyheart",
+    "local": false
+  },
+  {
+    "id": "the-vamps-matoma-all-night",
+    "title": "All Night",
+    "artist": "The Vamps & Matoma",
+    "video": "BqaoAQbkeXo",
+    "language": [
+      "English"
+    ],
+    "bpm": 384.27,
+    "gap": 15865.088609571396,
+    "year": "2016",
+    "lastUpdate": "2026-11-16T04:08:28.021Z",
+    "videoGap": 2,
+    "realBpm": 145,
+    "previewStart": 64,
+    "previewEnd": 98,
+    "volume": 1,
+    "author": "Tracks",
+    "duration": 211,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 7571,
+    "tracksCount": 1,
+    "search": "thevampsmatomaallnight",
     "local": false
   },
   {
@@ -211853,6 +212890,34 @@
     "local": false
   },
   {
+    "id": "vitor-kley-o-sol",
+    "title": "O Sol",
+    "artist": "Vitor Kley",
+    "video": "yOwwSByMd0k",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 389.96,
+    "gap": 8668.897425376961,
+    "year": "2017",
+    "artistOrigin": "BR",
+    "lastUpdate": "2026-11-16T04:08:36.124Z",
+    "realBpm": 97,
+    "volume": 1,
+    "author": "airBN",
+    "sourceUrl": "https://www.youtube.com/watch?v=yOwwSByMd0k",
+    "duration": 211,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 7596,
+    "tracksCount": 1,
+    "search": "vitorkleyosol",
+    "local": false
+  },
+  {
     "id": "vivziepop-mastermind",
     "title": "Mastermind",
     "artist": "Vivziepop",
@@ -212663,6 +213728,34 @@
     "local": false
   },
   {
+    "id": "warcry-capitan-lawrence",
+    "title": "Capitan Lawrence",
+    "artist": "WarCry",
+    "video": "PXbkC1i8Tbw",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 208,
+    "gap": 62150.38461538462,
+    "year": "2002",
+    "artistOrigin": "ES",
+    "lastUpdate": "2026-11-16T04:08:25.935Z",
+    "genre": "Power Metal",
+    "videoGap": 46,
+    "volume": 1,
+    "author": "Paisano87/Valaingaur",
+    "duration": 346,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 7563,
+    "tracksCount": 1,
+    "search": "warcrycapitanlawrence",
+    "local": false
+  },
+  {
     "id": "warcry-la-vida-en-un-beso",
     "title": "La vida en un beso",
     "artist": "WarCry",
@@ -212689,6 +213782,33 @@
     "shortId": 6531,
     "tracksCount": 1,
     "search": "warcrylavidaenunbeso",
+    "local": false
+  },
+  {
+    "id": "warcry-mas-alla",
+    "title": "Más allá",
+    "artist": "WarCry",
+    "video": "zcKsepyOOXk",
+    "language": [
+      "Spanish"
+    ],
+    "bpm": 360,
+    "gap": 26310,
+    "year": "2006",
+    "artistOrigin": "ES",
+    "lastUpdate": "2026-11-16T04:08:31.306Z",
+    "genre": "Rock/Metal",
+    "volume": 1,
+    "author": "Haek/Valaingaur",
+    "duration": 294,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 7580,
+    "tracksCount": 1,
+    "search": "warcrymasalla",
     "local": false
   },
   {
@@ -212919,6 +214039,33 @@
     "shortId": 7349,
     "tracksCount": 1,
     "search": "weekendhalotulondyn",
+    "local": false
+  },
+  {
+    "id": "weekend-za-kazda-chwile-z-toba",
+    "title": "Za każda chwilę z Tobą",
+    "artist": "Weekend",
+    "video": "LDjwv_poguo",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 263.79,
+    "gap": 15306.458546571137,
+    "year": "2012",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-16T04:08:31.308Z",
+    "genre": "Disco-Polo",
+    "volume": 70,
+    "author": "MylordWaliza",
+    "duration": 209,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 7582,
+    "tracksCount": 1,
+    "search": "weekendzakazdachwileztoba",
     "local": false
   },
   {
@@ -218252,6 +219399,35 @@
     "shortId": 7437,
     "tracksCount": 1,
     "search": "zazdemaincesttoi",
+    "local": false
+  },
+  {
+    "id": "zaz-eblouie-par-la-nuit",
+    "title": "Éblouie par la nuit",
+    "artist": "ZAZ",
+    "video": "KDcgOpUp2nc",
+    "language": [
+      "French"
+    ],
+    "bpm": 307.7,
+    "gap": 9416.275593110173,
+    "year": "2010",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-11-16T04:08:31.311Z",
+    "genre": "Pop",
+    "realBpm": 75,
+    "volume": 1,
+    "author": "mustangfred",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=18002",
+    "duration": 174,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 7585,
+    "tracksCount": 1,
+    "search": "zazeblouieparlanuit",
     "local": false
   },
   {

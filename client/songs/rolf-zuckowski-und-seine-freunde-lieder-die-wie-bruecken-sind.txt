@@ -1,0 +1,315 @@
+#ARTIST:Rolf Zuckowski und seine Freunde
+#TITLE:Lieder, die wie Brücken sind
+#CREATOR:GrandiaFan
+#BPM:206,7
+#YEAR:1982
+#PREVIEWSTART:112
+#VIDEO:v=-axvKh-m4rY
+#VIDEOGAP:51
+#LANGUAGE:German
+#GAP:65264,034833091435
+#ALLKARAOKE_ID:rolf-zuckowski-und-seine-freunde-lieder-die-wie-bruecken-sind
+#ALLKARAOKE_SID:7576
+#ALLKARAOKE_LASTUPDATE:2026-11-16T04:08:29.480Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:110
+#ALLKARAOKE_PREVIEWEND:145
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:271
+#MP3:Rolf Zuckowski und seine Freunde - Lieder, die wie Brücken sind.mp3
+#COVER:Rolf Zuckowski und seine Freunde - Lieder, die wie Brücken sind [CO].jpg
+#BACKGROUND:Rolf Zuckowski und seine Freunde - Lieder, die wie Brücken sind [BG].jpg
+: 14 4 18 Lie
+: 21 5 18 der 
+: 30 4 18 die 
+: 38 4 19 wie 
+: 46 4 18 Brü
+: 53 4 16 cken 
+: 61 4 14 sind
+- 65
+: 78 5 18 Die 
+: 86 6 18 braucht 
+: 95 5 19 je 
+: 103 5 18 der 
+: 111 7 16 Mann
+- 118 129
+- 129
+: 143 6 16 Je
+: 152 4 16 de 
+: 159 4 16 Frau 
+: 167 4 18 und 
+: 176 5 16 je
+: 184 3 14 des 
+: 191 4 13 Kind
+- 195
+: 208 5 16 Braucht 
+: 216 5 16 sie 
+: 224 5 18 si
+: 232 4 16 cher 
+: 241 4 14 ir
+: 248 4 16 gend
+: 256 4 18 wann
+- 260
+: 273 5 18 Lie
+: 280 5 18 der 
+: 288 5 18 die 
+: 297 4 19 wie 
+: 305 3 18 Brü
+: 312 4 16 cken 
+: 320 4 14 sind
+- 324
+: 337 4 18 Schei
+: 345 4 18 nen 
+: 353 4 19 schwach 
+: 361 5 21 zu 
+* 369 10 23 sein
+- 379 387
+- 387
+: 401 4 23 Und 
+: 409 5 23 ob 
+: 417 6 25 sie 
+: 425 5 23 uns 
+: 434 11 21 tra
+: 449 3 14 gen
+- 452
+: 466 4 19 Liegt 
+: 474 5 19 an 
+: 482 5 21 uns 
+: 490 3 19 al
+: 498 10 18 lein
+- 508 517
+- 517
+: 531 4 23 Und 
+: 539 4 23 ob 
+: 547 5 25 sie 
+: 555 5 23 uns 
+* 564 11 21 tra
+: 580 2 14 gen
+- 582
+: 596 4 19 Liegt 
+: 604 5 18 an 
+: 612 8 16 uns 
+: 625 2 14 al
+: 629 12 14 lein
+- 641 647
+- 647
+: 661 5 16 Oh
+: 669 5 16 ne 
+: 677 5 14 Stahl 
+: 685 4 16 und 
+: 693 12 18 Stei
+: 710 2 14 ne
+- 712
+: 726 4 16 Sind 
+: 733 5 16 sie 
+: 742 5 21 schnell 
+: 750 5 16 ge
+: 759 8 18 baut
+- 767 774
+- 774
+: 788 1 13 Aus 
+: 792 5 16 Tö
+: 799 3 16 nen 
+: 807 5 14 ganz 
+: 815 4 16 al
+: 823 10 18 lei
+: 839 3 14 ne
+- 842
+: 855 5 16 Mau
+: 863 6 16 rer 
+: 872 5 16 Ma
+: 880 3 16 ler 
+: 888 5 18 Zim
+: 896 4 16 mer
+: 904 3 16 mann
+- 907
+: 920 4 16 Seht 
+: 928 5 16 euch 
+: 937 4 18 das 
+: 945 3 20 mal 
+: 953 9 21 an!
+- 962 972
+- 972
+: 986 4 18 Lie
+: 994 4 18 der 
+: 1002 4 18 die 
+: 1010 4 19 wie 
+: 1018 5 18 Brü
+: 1025 5 16 cken 
+: 1033 4 14 sind
+- 1037
+: 1050 5 18 Die 
+: 1058 6 18 braucht 
+: 1067 5 19 je 
+: 1075 5 18 der 
+: 1083 7 16 Mann
+- 1090 1101
+- 1101
+: 1115 5 16 Je
+: 1124 4 16 de 
+: 1131 4 16 Frau 
+: 1139 4 18 und 
+: 1148 5 16 je
+: 1156 3 14 des 
+: 1163 4 13 Kind
+- 1167
+: 1180 5 16 Braucht 
+: 1188 5 16 sie 
+: 1196 5 18 si
+: 1204 4 16 cher 
+: 1213 4 14 ir
+: 1220 4 16 gend
+: 1228 4 18 wann
+- 1232
+: 1245 6 18 Lie
+: 1254 4 18 der 
+: 1261 5 18 die 
+: 1269 5 19 wie 
+: 1277 5 18 Brü
+: 1284 4 16 cken 
+: 1292 4 14 sind
+- 1296
+: 1309 4 18 Schei
+: 1317 4 18 nen 
+: 1325 4 19 schwach 
+: 1333 5 21 zu 
+* 1341 10 23 sein
+- 1351 1359
+- 1359
+: 1373 4 23 Und 
+: 1381 5 23 ob 
+: 1389 6 25 sie 
+: 1397 5 23 uns 
+: 1406 11 21 tra
+: 1421 3 14 gen
+- 1424
+: 1437 4 19 Liegt 
+: 1445 5 19 an 
+: 1453 5 21 uns 
+: 1461 3 19 al
+: 1469 10 18 lein
+- 1479 1487
+- 1487
+: 1501 4 23 Und 
+: 1509 4 23 ob 
+: 1517 5 25 sie 
+: 1525 5 23 uns 
+: 1534 12 21 tra
+: 1550 2 14 gen
+- 1552
+: 1565 5 19 Liegt 
+: 1573 5 18 an 
+: 1581 8 16 uns 
+: 1593 2 14 al
+: 1597 13 14 lein
+- 1610 1615
+- 1615
+: 1629 5 16 Je
+: 1637 5 16 der 
+: 1645 5 14 kann 
+: 1653 6 16 be
+: 1661 13 18 gin
+: 1678 2 14 nen
+- 1680
+: 1694 4 16 Hier 
+: 1701 5 16 und 
+* 1710 4 21 ü
+: 1718 5 16 ber
+: 1726 9 18 all
+- 1735 1742
+- 1742
+: 1756 7 16 Braucht 
+: 1765 5 16 ja 
+: 1773 5 14 bloß 
+: 1781 4 16 zu 
+: 1789 11 18 sin
+: 1805 3 14 gen
+- 1808
+: 1821 4 16 Kei
+: 1829 5 16 ne 
+: 1837 4 16 Angst 
+: 1845 3 16 ein 
+: 1853 4 18 fal
+: 1861 3 16 scher 
+: 1869 3 16 Ton
+- 1872
+: 1885 4 16 Bringt 
+: 1893 5 16 sie 
+: 1901 3 18 nicht 
+: 1909 3 20 zu 
+: 1917 8 21 Fall
+- 1925 1967
+- 1967
+: 1981 6 19 Lie
+: 1989 5 19 der 
+* 1997 5 19 die 
+* 2005 5 20 wie 
+: 2013 5 19 Brü
+: 2020 5 17 cken 
+: 2028 4 15 sind
+- 2032
+: 2045 5 19 Die 
+: 2053 6 19 braucht 
+: 2061 6 20 je 
+: 2069 5 19 der 
+: 2076 8 17 Mann
+- 2084 2094
+- 2094
+: 2108 6 17 Je
+: 2116 5 17 de 
+: 2124 4 17 Frau 
+: 2132 4 19 und 
+: 2140 5 17 je
+: 2148 3 15 des 
+: 2155 4 14 Kind
+- 2159
+: 2172 5 17 Braucht 
+: 2180 5 17 sie 
+: 2188 4 19 si
+: 2196 4 17 cher 
+: 2204 5 15 ir
+: 2211 4 17 gend
+: 2219 4 19 wann
+- 2223
+: 2236 5 19 Lie
+: 2243 5 19 der 
+: 2251 6 19 die 
+: 2259 6 20 wie 
+: 2267 5 19 Brü
+: 2275 4 17 cken 
+: 2283 4 15 sind
+- 2287
+: 2299 4 19 Schei
+: 2307 4 19 nen 
+: 2315 4 20 schwach 
+: 2323 5 22 zu 
+* 2331 11 24 sein
+- 2342 2348
+- 2348
+: 2362 4 24 Und 
+: 2370 5 24 ob 
+: 2378 6 26 sie 
+: 2386 5 24 uns 
+: 2395 12 22 tra
+: 2410 3 15 gen
+- 2413
+: 2425 4 20 Liegt 
+: 2433 5 20 an 
+: 2441 5 22 uns 
+: 2449 5 20 al
+: 2457 10 19 lein
+- 2467 2476
+- 2476
+: 2490 4 24 Und 
+: 2497 5 24 ob 
+: 2506 5 26 sie 
+: 2514 5 24 uns 
+* 2522 13 22 tra
+: 2538 2 15 gen
+- 2540
+: 2554 4 20 Liegt 
+: 2562 5 19 an 
+: 2570 8 17 uns 
+: 2583 2 15 al
+: 2587 12 15 lein
+E
