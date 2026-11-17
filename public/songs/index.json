@@ -28537,6 +28537,37 @@
     "local": false
   },
   {
+    "id": "bob-dylan-must-be-santa",
+    "title": "Must Be Santa",
+    "artist": "Bob Dylan",
+    "video": "a8qE6WQmNus",
+    "language": [
+      "English"
+    ],
+    "bpm": 292.27,
+    "gap": 17654.874260101962,
+    "year": "2009",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-17T05:57:40.954Z",
+    "edition": "Christmas",
+    "genre": "Folk Rock, Christmas",
+    "realBpm": 145,
+    "volume": 1,
+    "author": "rote_rose",
+    "sourceUrl": "https://www.youtube.com/watch?v=a8qE6WQmNus&pp=ygUNbXVzdCBiZSBzYW50YQ%3D%3D",
+    "duration": 170,
+    "tracks": [
+      {
+        "name": "Must Be Santa",
+        "start": 19
+      }
+    ],
+    "shortId": 7614,
+    "tracksCount": 1,
+    "search": "bobdylanmustbesanta",
+    "local": false
+  },
+  {
     "id": "bob-feat-bruno-mars-nothin-on-you",
     "title": "Nothin’ On You",
     "artist": "B.o.B feat. Bruno Mars",
@@ -35404,6 +35435,61 @@
     "shortId": 839,
     "tracksCount": 1,
     "search": "bungacitralestariwanitaterbahagia",
+    "local": false
+  },
+  {
+    "id": "bungee-tak-to-lata",
+    "title": "Tak to lata",
+    "artist": "Bungee",
+    "video": "faQdSdaOyPY",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 280,
+    "gap": 272.1428571428572,
+    "year": "2025",
+    "artistOrigin": "UY",
+    "lastUpdate": "2026-11-17T05:57:41.395Z",
+    "genre": "Disco-Polo",
+    "volume": 70,
+    "author": "MylordWaliza",
+    "duration": 179,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 7616,
+    "tracksCount": 1,
+    "search": "bungeetaktolata",
+    "local": false
+  },
+  {
+    "id": "burcu-guenes-cile-buelbueluem",
+    "title": "Çile bülbülüm",
+    "artist": "Burcu Güneş",
+    "video": "3UrQcY1VHZU",
+    "language": [
+      "Turkish"
+    ],
+    "bpm": 255.9,
+    "gap": 30073.51699882767,
+    "year": "2001",
+    "artistOrigin": "TR",
+    "lastUpdate": "2026-11-17T05:57:42.669Z",
+    "realBpm": 128,
+    "volume": 1,
+    "author": "logo123",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=7213",
+    "duration": 222,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 7617,
+    "tracksCount": 1,
+    "search": "burcuguenescilebuelbueluem",
     "local": false
   },
   {
@@ -63887,6 +63973,34 @@
     "local": false
   },
   {
+    "id": "ellie-goulding-the-writer",
+    "title": "The Writer",
+    "artist": "Ellie Goulding",
+    "video": "H-ru2glqXAg",
+    "language": [
+      "English"
+    ],
+    "bpm": 279.9,
+    "gap": 18231.77920685959,
+    "year": "2010",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-11-17T05:57:40.947Z",
+    "genre": "Pop",
+    "realBpm": 70,
+    "volume": 1,
+    "author": "Coppolatte",
+    "duration": 236,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 7611,
+    "tracksCount": 1,
+    "search": "elliegouldingthewriter",
+    "local": false
+  },
+  {
     "id": "ellie-goulding-this-love-will-be-your-downfall",
     "title": "This Love (Will Be Your Downfall)",
     "artist": "Ellie Goulding",
@@ -89500,10 +89614,10 @@
       "English"
     ],
     "bpm": 240,
-    "gap": 14380,
+    "gap": 14330,
     "year": "2010",
     "artistOrigin": "GB",
-    "lastUpdate": "2026-11-11T04:02:25.841Z",
+    "lastUpdate": "2026-11-16T19:53:18.121Z",
     "genre": "Pop",
     "realBpm": 120,
     "volume": 1,
@@ -93569,6 +93683,33 @@
     "shortId": 2051,
     "tracksCount": 1,
     "search": "jamalfeatjambojetuspmpoliceman",
+    "local": false
+  },
+  {
+    "id": "jamal-peron",
+    "title": "Peron",
+    "artist": "Jamal",
+    "video": "TiinAVjPyRs",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 252,
+    "gap": 15688.095238095239,
+    "year": "2013",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-17T05:57:41.223Z",
+    "genre": "Alternative",
+    "volume": 70,
+    "author": "MylordWaliza",
+    "duration": 194,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 7615,
+    "tracksCount": 1,
+    "search": "jamalperon",
     "local": false
   },
   {
@@ -111438,6 +111579,33 @@
     "shortId": 2417,
     "tracksCount": 1,
     "search": "kumikonomaelfenliedlilium",
+    "local": false
+  },
+  {
+    "id": "kumiko-noma-lilium-full",
+    "title": "Lilium (Full)",
+    "artist": "Kumiko Noma",
+    "video": "5RI_z9o1aMw",
+    "language": [
+      "Latin"
+    ],
+    "bpm": 224.67999999999998,
+    "gap": 1843.236830377039,
+    "year": "2004",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-11-17T05:57:39.241Z",
+    "genre": "Anime",
+    "realBpm": 101,
+    "volume": 1,
+    "duration": 325,
+    "tracks": [
+      {
+        "start": 15
+      }
+    ],
+    "shortId": 7606,
+    "tracksCount": 1,
+    "search": "kumikonomaliliumfull",
     "local": false
   },
   {
@@ -139526,6 +139694,36 @@
     "local": false
   },
   {
+    "id": "miue-feat-zalia-dopoki-sie-nie-znuedzisz",
+    "title": "Dopóki się nie znüdzisz",
+    "artist": "MIÜ feat. Zalia",
+    "video": "jn6ZnlgfnO4",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 232,
+    "gap": 570.1724137931034,
+    "year": "2025",
+    "lastUpdate": "2026-11-17T05:57:38.601Z",
+    "edition": "[DUET]-Songs",
+    "genre": "Hip-Hop",
+    "volume": 70,
+    "author": "MylordWaliza",
+    "duration": 209,
+    "tracks": [
+      {
+        "start": 15
+      },
+      {
+        "start": 111
+      }
+    ],
+    "shortId": 7604,
+    "tracksCount": 2,
+    "search": "miuefeatzaliadopokisienieznuedzisz",
+    "local": false
+  },
+  {
     "id": "mk-dior",
     "title": "Dior",
     "artist": "MK",
@@ -141072,6 +141270,33 @@
     "shortId": 3067,
     "tracksCount": 1,
     "search": "mrpresidentcocojamboo",
+    "local": false
+  },
+  {
+    "id": "mrozu-1000-metrow-nad-ziemia",
+    "title": "1000 metrów nad ziemią",
+    "artist": "Mrozu",
+    "video": "PJQhDu25Xvw",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 376,
+    "gap": 36742.65957446808,
+    "year": "2012",
+    "artistOrigin": "PL",
+    "lastUpdate": "2026-11-17T05:57:40.952Z",
+    "genre": "Pop",
+    "volume": 70,
+    "author": "MylordWaliza",
+    "duration": 275,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 7613,
+    "tracksCount": 1,
+    "search": "mrozu1000metrownadziemia",
     "local": false
   },
   {
@@ -156363,6 +156588,36 @@
     "local": false
   },
   {
+    "id": "patricia-kaas-mademoiselle-chante-le-blues",
+    "title": "Mademoiselle chante le blues",
+    "artist": "Patricia Kaas",
+    "video": "wy7N5M700Y8",
+    "language": [
+      "French"
+    ],
+    "bpm": 315.14,
+    "gap": 17920.44424700133,
+    "year": "1987",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-11-17T05:57:39.624Z",
+    "genre": "Pop",
+    "realBpm": 105,
+    "volume": 1,
+    "author": "mustangfred",
+    "authorUrl": "https://usdb.animux.de/index.php?link=gettxt&id=16363",
+    "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=16363",
+    "duration": 227,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 7609,
+    "tracksCount": 1,
+    "search": "patriciakaasmademoisellechanteleblues",
+    "local": false
+  },
+  {
     "id": "patricio-rey-y-sus-redonditos-de-ricota-tarea-fina",
     "title": "Tarea fina",
     "artist": "Patricio Rey y sus Redonditos de Ricota",
@@ -157442,6 +157697,32 @@
     "shortId": 3424,
     "tracksCount": 1,
     "search": "perfectniepokonani",
+    "local": false
+  },
+  {
+    "id": "perfect-objazdowe-nieme-kino",
+    "title": "Objazdowe nieme kino",
+    "artist": "Perfect",
+    "video": "o02KSEbxK7I",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 260,
+    "gap": 26939.23076923077,
+    "year": "1983",
+    "artistOrigin": "PL",
+    "lastUpdate": "2026-11-17T05:57:40.949Z",
+    "volume": 70,
+    "author": "Ikjas",
+    "duration": 280,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 7612,
+    "tracksCount": 1,
+    "search": "perfectobjazdoweniemekino",
     "local": false
   },
   {
@@ -173424,6 +173705,32 @@
     "local": false
   },
   {
+    "id": "sanah-vito-bambino-ale-jazz",
+    "title": "Ale jazz!",
+    "artist": "sanah & Vito Bambino",
+    "video": "hHb3owr6PQg",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 206.1,
+    "gap": 10951.07714701601,
+    "year": "2021",
+    "lastUpdate": "2026-11-17T05:57:39.377Z",
+    "genre": "Pop",
+    "volume": 70,
+    "author": "MylordWaliza",
+    "duration": 192,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 7607,
+    "tracksCount": 1,
+    "search": "sanahvitobambinoalejazz",
+    "local": false
+  },
+  {
     "id": "sandie-shaw-puppet-on-a-string",
     "title": "Puppet On A String",
     "artist": "Sandie Shaw",
@@ -182532,6 +182839,32 @@
     "shortId": 7531,
     "tracksCount": 1,
     "search": "smolastyduzeoczy",
+    "local": false
+  },
+  {
+    "id": "smolasty-feat-roxie-wegiel-nie-mow-ze-kochasz",
+    "title": "Nie Mów Że Kochasz",
+    "artist": "Smolasty feat. Roxie Węgiel",
+    "video": "SXmPZQfEh18",
+    "language": [
+      "Polish"
+    ],
+    "bpm": 276,
+    "gap": 7341.739130434783,
+    "year": "2024",
+    "lastUpdate": "2026-11-17T05:57:39.504Z",
+    "genre": "Pop, R&B, Hip-Hop",
+    "volume": 70,
+    "author": "MylordWaliza",
+    "duration": 141,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 7608,
+    "tracksCount": 1,
+    "search": "smolastyfeatroxiewegielniemowzekochasz",
     "local": false
   },
   {
@@ -194827,6 +195160,35 @@
     "shortId": 4251,
     "tracksCount": 1,
     "search": "thebaseballsringringalovelysound",
+    "local": false
+  },
+  {
+    "id": "the-beach-boys-dont-worry-baby",
+    "title": "Don’t Worry Baby",
+    "artist": "The Beach Boys",
+    "video": "MRcLhqKyGCE",
+    "language": [
+      "English"
+    ],
+    "bpm": 244.34000000000006,
+    "gap": 17552.164276401563,
+    "year": "1964",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-17T05:57:39.239Z",
+    "genre": "Pop",
+    "realBpm": 121,
+    "volume": 1,
+    "author": "frinz",
+    "sourceUrl": "https://www.youtube.com/watch?v=MRcLhqKyGCE",
+    "duration": 171,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 7605,
+    "tracksCount": 1,
+    "search": "thebeachboysdontworrybaby",
     "local": false
   },
   {
@@ -213376,6 +213738,36 @@
     "shortId": 7494,
     "tracksCount": 1,
     "search": "volkerrosindaslieduebermich",
+    "local": false
+  },
+  {
+    "id": "volker-rosin-der-gorilla-mit-der-sonnenbrille",
+    "title": "Der Gorilla mit der Sonnenbrille",
+    "artist": "Volker Rosin",
+    "video": "KT6oCw535NI",
+    "language": [
+      "German"
+    ],
+    "bpm": 207.81,
+    "gap": 3699.46152735672,
+    "year": "2002",
+    "artistOrigin": "DE",
+    "lastUpdate": "2026-11-17T05:57:40.943Z",
+    "genre": "Kids",
+    "realBpm": 104,
+    "previewStart": 23,
+    "previewEnd": 42,
+    "volume": 1,
+    "author": "march",
+    "duration": 175,
+    "tracks": [
+      {
+        "start": 14
+      }
+    ],
+    "shortId": 7610,
+    "tracksCount": 1,
+    "search": "volkerrosindergorillamitdersonnenbrille",
     "local": false
   },
   {

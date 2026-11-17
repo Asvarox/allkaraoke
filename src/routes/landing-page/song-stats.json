@@ -138,6 +138,7 @@
     "Crowded House",
     "Delta Goodrem",
     "Earth, Wind & Fire",
+    "Ellie Goulding",
     "Eminem",
     "Faith No More",
     "Genesis",
@@ -148,8 +149,7 @@
     "Nicki Minaj",
     "P!nk",
     "Robbie Williams",
-    "Shania Twain",
-    "Shinedown"
+    "Shania Twain"
   ],
   "languages": [
     "Armenian",
@@ -189,9 +189,10 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 7548,
-  "generatedAt": "2026-11-16T04:09:58.322Z",
+  "songs": 7562,
+  "generatedAt": "2026-11-17T05:58:55.409Z",
   "additionsPerDay": {
+    "2026-11-17": 14,
     "2026-11-16": 42,
     "2026-11-15": 47,
     "2026-11-14": 128,
@@ -233,10 +234,107 @@
     "2026-09-23": 8,
     "2026-09-22": 19,
     "2026-09-19": 13,
-    "2026-09-18": 11,
-    "2026-09-17": 8
+    "2026-09-18": 11
   },
   "recentlyAdded": [
+    {
+      "id": "burcu-guenes-cile-buelbueluem",
+      "artist": "Burcu Güneş",
+      "title": "Çile bülbülüm",
+      "video": "3UrQcY1VHZU",
+      "addedAt": "2026-11-17T05:57:42.669Z"
+    },
+    {
+      "id": "bungee-tak-to-lata",
+      "artist": "Bungee",
+      "title": "Tak to lata",
+      "video": "faQdSdaOyPY",
+      "addedAt": "2026-11-17T05:57:41.395Z"
+    },
+    {
+      "id": "jamal-peron",
+      "artist": "Jamal",
+      "title": "Peron",
+      "video": "TiinAVjPyRs",
+      "addedAt": "2026-11-17T05:57:41.223Z"
+    },
+    {
+      "id": "bob-dylan-must-be-santa",
+      "artist": "Bob Dylan",
+      "title": "Must Be Santa",
+      "video": "a8qE6WQmNus",
+      "addedAt": "2026-11-17T05:57:40.954Z"
+    },
+    {
+      "id": "mrozu-1000-metrow-nad-ziemia",
+      "artist": "Mrozu",
+      "title": "1000 metrów nad ziemią",
+      "video": "PJQhDu25Xvw",
+      "addedAt": "2026-11-17T05:57:40.952Z"
+    },
+    {
+      "id": "perfect-objazdowe-nieme-kino",
+      "artist": "Perfect",
+      "title": "Objazdowe nieme kino",
+      "video": "o02KSEbxK7I",
+      "addedAt": "2026-11-17T05:57:40.949Z"
+    },
+    {
+      "id": "ellie-goulding-the-writer",
+      "artist": "Ellie Goulding",
+      "title": "The Writer",
+      "video": "H-ru2glqXAg",
+      "addedAt": "2026-11-17T05:57:40.947Z"
+    },
+    {
+      "id": "volker-rosin-der-gorilla-mit-der-sonnenbrille",
+      "artist": "Volker Rosin",
+      "title": "Der Gorilla mit der Sonnenbrille",
+      "video": "KT6oCw535NI",
+      "addedAt": "2026-11-17T05:57:40.943Z"
+    },
+    {
+      "id": "patricia-kaas-mademoiselle-chante-le-blues",
+      "artist": "Patricia Kaas",
+      "title": "Mademoiselle chante le blues",
+      "video": "wy7N5M700Y8",
+      "addedAt": "2026-11-17T05:57:39.624Z"
+    },
+    {
+      "id": "smolasty-feat-roxie-wegiel-nie-mow-ze-kochasz",
+      "artist": "Smolasty feat. Roxie Węgiel",
+      "title": "Nie Mów Że Kochasz",
+      "video": "SXmPZQfEh18",
+      "addedAt": "2026-11-17T05:57:39.504Z"
+    },
+    {
+      "id": "sanah-vito-bambino-ale-jazz",
+      "artist": "sanah & Vito Bambino",
+      "title": "Ale jazz!",
+      "video": "hHb3owr6PQg",
+      "addedAt": "2026-11-17T05:57:39.377Z"
+    },
+    {
+      "id": "kumiko-noma-lilium-full",
+      "artist": "Kumiko Noma",
+      "title": "Lilium (Full)",
+      "video": "5RI_z9o1aMw",
+      "addedAt": "2026-11-17T05:57:39.241Z"
+    },
+    {
+      "id": "the-beach-boys-dont-worry-baby",
+      "artist": "The Beach Boys",
+      "title": "Don’t Worry Baby",
+      "video": "MRcLhqKyGCE",
+      "addedAt": "2026-11-17T05:57:39.239Z"
+    },
+    {
+      "id": "miue-feat-zalia-dopoki-sie-nie-znuedzisz",
+      "artist": "MIÜ feat. Zalia",
+      "title": "Dopóki się nie znüdzisz",
+      "video": "jn6ZnlgfnO4",
+      "addedAt": "2026-11-17T05:57:38.601Z"
+    },
     {
       "id": "disneys-fineasz-i-ferb-fineasz-i-ferb",
       "artist": "Disney’s Fineasz i Ferb",
@@ -474,104 +572,6 @@
       "title": "O Pani!",
       "video": "3ssoWhPH2eI",
       "addedAt": "2026-11-16T04:08:28.019Z"
-    },
-    {
-      "id": "linda-lampenius-x-pete-parkkonen-liekinheitin",
-      "artist": "Linda Lampenius x Pete Parkkonen",
-      "title": "Liekinheitin",
-      "video": "vtElm1dHUNo",
-      "addedAt": "2026-11-16T04:08:28.017Z"
-    },
-    {
-      "id": "ekipa-o-jak-milo",
-      "artist": "Ekipa",
-      "title": "O jak miło",
-      "video": "BNL6ImhgCnk",
-      "addedAt": "2026-11-16T04:08:27.651Z"
-    },
-    {
-      "id": "studio-killers-ode-to-the-bouncer",
-      "artist": "Studio Killers",
-      "title": "Ode To The Bouncer",
-      "video": "Lo-EmtXbFRg",
-      "addedAt": "2026-11-16T04:08:27.649Z"
-    },
-    {
-      "id": "kult-do-ani",
-      "artist": "Kult",
-      "title": "Do Ani",
-      "video": "VNAmqtRmp28",
-      "addedAt": "2026-11-16T04:08:27.648Z"
-    },
-    {
-      "id": "michel-berger-le-paradis-blanc",
-      "artist": "Michel Berger",
-      "title": "Le paradis blanc",
-      "video": "Z2OawuAcIF4",
-      "addedAt": "2026-11-16T04:08:27.421Z"
-    },
-    {
-      "id": "grzegorz-hyzy-tabb-na-chwile",
-      "artist": "Grzegorz Hyży & TABB",
-      "title": "Na chwilę",
-      "video": "SCEaOF_I8oE",
-      "addedAt": "2026-11-16T04:08:25.940Z"
-    },
-    {
-      "id": "warcry-capitan-lawrence",
-      "artist": "WarCry",
-      "title": "Capitan Lawrence",
-      "video": "PXbkC1i8Tbw",
-      "addedAt": "2026-11-16T04:08:25.935Z"
-    },
-    {
-      "id": "oeykue-berk-evlerinin-oenue-boyali-direk",
-      "artist": "Öykü & Berk",
-      "title": "Evlerinin Önü Boyalı Direk",
-      "video": "m4Nc1R4vOh8",
-      "addedAt": "2026-11-16T04:08:25.232Z"
-    },
-    {
-      "id": "one-direction-fireproof",
-      "artist": "One Direction",
-      "title": "Fireproof",
-      "video": "_bXTbfnWPqk",
-      "addedAt": "2026-11-15T04:08:53.611Z"
-    },
-    {
-      "id": "letni-typ-bez-formy",
-      "artist": "Letni",
-      "title": "Typ bez formy",
-      "video": "EvQfBy3xIUc",
-      "addedAt": "2026-11-15T04:08:53.461Z"
-    },
-    {
-      "id": "young-leosia-noc-aniolow",
-      "artist": "Young Leosia",
-      "title": "Noc Aniołów",
-      "video": "izaO5-_nyp0",
-      "addedAt": "2026-11-15T04:08:53.307Z"
-    },
-    {
-      "id": "obi-wie-wo-was-weiss-obi",
-      "artist": "Obi",
-      "title": "Wie, wo, was weiß Obi",
-      "video": "IHrqL78IOJg",
-      "addedAt": "2026-11-15T04:08:53.133Z"
-    },
-    {
-      "id": "lombard-zdzislawa-sosnicka-aleja-gwiazd",
-      "artist": "Lombard & Zdzisława Sośnicka",
-      "title": "Aleją Gwiazd",
-      "video": "Ziqujo1O7rw",
-      "addedAt": "2026-11-15T04:08:52.980Z"
-    },
-    {
-      "id": "kenshi-yonezu-lemon",
-      "artist": "Kenshi Yonezu",
-      "title": "Lemon",
-      "video": "SX_ViT4Ra7k",
-      "addedAt": "2026-11-15T04:08:52.979Z"
     }
   ]
 }
