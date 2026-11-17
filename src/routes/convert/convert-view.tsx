@@ -165,13 +165,14 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
     isEdit,
   ]);
 
-  // When editing, the song being edited is in the index too - don't flag it as its own duplicate
+  // When editing, the song being edited is in the index too - don't flag it as its own duplicate.
+  // Unverified songs aren't in the index, so a same-named indexed song is a real duplicate, not the song itself
   const otherSongs = useMemo(
     () =>
-      isEdit
+      isEdit && !adminUnverifiedSongId
         ? songs?.filter((addedSong) => SongDao.generateSongFile(addedSong) !== SongDao.generateSongFile(song))
         : songs,
-    [songs, song, isEdit],
+    [songs, song, isEdit, adminUnverifiedSongId],
   );
 
   const duplicateByName = useMemo(
