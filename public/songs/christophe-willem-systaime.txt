@@ -1,0 +1,389 @@
+#ARTIST:Christophe Willem
+#TITLE:Systaime
+#CREATOR:Alinus57
+#BPM:353,83
+#YEAR:2026
+#VIDEO:v=7uPjokpbizQ
+#LANGUAGE:French
+#GAP:22,213520617245564
+#ALLKARAOKE_ID:christophe-willem-systaime
+#ALLKARAOKE_SID:7627
+#ALLKARAOKE_LASTUPDATE:2026-11-18T05:26:32.355Z
+#ALLKARAOKE_ARTISTORIGIN:FR
+#ALLKARAOKE_REALBPM:118
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:160
+#MP3:Christophe Willem - Systaime.mp3
+#COVER:Christophe Willem - Systaime.jpg
+#BACKGROUND:Christophe Willem - Systaime.jpg
+: 2 8 4 T'aimes 
+: 15 7 4 t'aimes
+- 22
+: 26 3 4 Pas 
+: 32 4 6 choi
+: 39 4 4 sir 
+: 44 3 6 le 
+: 51 8 3 thème 
+: 63 7 3 thème
+- 70
+: 74 3 3 T'aimes 
+: 80 5 4 pas 
+: 87 2 3 qu'on 
+: 93 2 4 t'en
+: 99 20 1 ferme
+- 119
+* 135 7 3 Tu 
+* 145 12 4 crois 
+: 176 5 6 que 
+: 183 2 4 tu 
+: 188 4 6 t'é
+: 194 15 3 vades
+- 209
+: 223 6 6 Loin 
+: 231 1 4 de 
+: 236 3 6 ta 
+: 243 14 3 cage, 
+: 272 5 1 fais 
+: 280 1 1 du 
+: 284 3 -1 sur
+: 291 10 1 place
+- 301 302
+- 302
+: 326 6 3 Tu 
+: 336 11 4 crois, 
+: 368 3 8 pois
+: 374 4 8 son 
+: 381 2 3 qui 
+: 387 12 3 nage
+- 399
+: 415 6 4 Bien 
+: 422 2 3 dans 
+: 428 3 4 ta 
+: 435 10 1 marre, 
+: 475 5 -1 pris 
+: 483 6 1 dans
+: 490 3 -1 ~ 
+: 495 4 1 la
+: 500 3 -1 ~ 
+: 506 7 1 glace
+- 513
+: 518 8 3 T'es 
+: 530 14 4 libre 
+* 560 5 6 que 
+* 566 2 4 dans 
+* 572 4 6 tes 
+: 578 17 3 rêves
+- 595
+: 607 5 4 Dès 
+: 614 2 3 que 
+: 619 2 4 tu 
+: 625 12 1 t'lèves, 
+: 667 5 -1 ils 
+: 676 6 1 crèvent
+: 683 11 -1 ~
+- 694
+: 711 10 3 T'es 
+: 723 8 4 ivre
+: 732 11 1 ~ 
+: 752 3 8 toute 
+: 757 3 8 la 
+: 764 3 3 se
+: 771 11 3 maine
+- 782
+: 796 7 4 É
+: 805 2 3 co
+: 811 2 4 sys
+: 818 10 1 tème, 
+: 859 3 -1 t'es 
+: 866 7 1 qu'au 
+: 878 7 1 sys
+: 890 7 1 tème
+- 897
+: 902 7 3 Mais 
+: 914 8 4 t'aimes, 
+* 926 8 4 t'aimes 
+: 938 2 4 pas 
+: 944 4 6 choi
+: 950 3 4 sir 
+: 955 3 6 le 
+: 962 8 3 thème, 
+: 973 9 3 thème
+- 982
+: 986 2 3 T'aimes 
+: 992 3 4 pas 
+: 998 3 3 qu'on 
+: 1004 2 4 t'en
+: 1010 11 1 ferme 
+: 1045 5 1 en 
+: 1052 4 1 un 
+: 1058 10 8 mil
+: 1071 5 6 lio
+: 1081 5 4 nième
+- 1086
+: 1094 7 1 La 
+: 1106 8 8 flemme, 
+: 1118 7 8 flemme 
+: 1130 3 8 d'ê
+: 1135 4 9 tre 
+: 1141 3 8 que 
+: 1147 4 4 toi
+: 1153 6 6 -même, 
+: 1166 5 6 même
+- 1171
+: 1177 3 6 Si 
+: 1183 6 8 c'est 
+: 1191 1 6 lui 
+: 1195 3 8 qui 
+: 1202 10 1 t'aime,
+- 1212
+: 1232 5 8 c'est 
+: 1238 2 6 le 
+: 1243 2 8 sys
+: 1249 13 1 tème
+- 1262
+: 1285 9 3 Mais 
+: 1297 8 4 t'aimes, 
+: 1309 9 4 t'aimes 
+: 1321 3 4 pas 
+: 1327 4 6 choi
+: 1334 3 4 sir 
+: 1339 3 6 le 
+: 1346 8 3 thème, 
+: 1357 9 3 thème
+- 1366
+: 1370 2 3 T'aimes 
+: 1375 4 4 pas 
+: 1382 3 3 qu'on 
+* 1387 3 4 t'en
+* 1394 10 1 ferme
+- 1404
+: 1428 6 1 En 
+: 1435 5 1 un 
+: 1442 11 8 mil
+: 1455 5 6 lio
+: 1464 6 4 nième
+- 1470
+: 1477 8 1 La 
+: 1489 8 8 flemme, 
+: 1501 8 8 flemme 
+: 1513 4 8 d'ê
+: 1519 4 9 tre 
+: 1525 3 8 que 
+: 1531 3 4 toi
+: 1537 6 6 -même, 
+: 1549 5 6 même
+- 1554
+: 1561 2 6 Si 
+: 1567 6 8 c'est 
+: 1575 1 6 lui 
+: 1579 3 8 qui 
+* 1585 12 1 t'aime
+- 1597
+: 1615 6 8 c'est 
+: 1622 2 6 le 
+: 1627 2 8 sys
+: 1633 14 1 tème
+- 1647
+: 1671 7 3 Tu 
+: 1681 23 4 pries, 
+: 1712 4 6 ton 
+: 1718 4 4 libre 
+: 1723 6 6 ar
+: 1732 9 3 bitre
+- 1741
+: 1758 3 4 Cas
+: 1765 4 3 ser 
+: 1771 3 4 la
+: 1775 2 3 ~ 
+: 1779 17 1 vitre, 
+: 1806 6 -1 vi
+: 1814 1 1 vre 
+: 1819 6 -1 ta 
+: 1827 14 1 vie
+- 1841
+: 1853 4 1 Mais 
+: 1861 8 3 t'es 
+: 1874 17 4 pris 
+: 1903 4 8 dans 
+: 1910 2 8 ses 
+: 1916 4 3 fi
+: 1925 15 3 chiers
+- 1940
+: 1951 2 4 Ses 
+: 1957 2 3 p'tits 
+: 1963 4 4 pa
+: 1972 15 1 piers, 
+: 2010 4 -1 dans 
+: 2018 6 1 ses 
+* 2031 5 1 fi
+* 2042 8 1 lets
+- 2050
+: 2055 5 3 Tu 
+: 2066 21 4 t'mens, 
+: 2096 4 4 si 
+: 2102 1 4 tu 
+: 2107 6 4 t'crois 
+: 2115 21 6 libre
+- 2136
+: 2143 5 6 À 
+: 2150 1 4 l'é
+: 2155 5 6 qui
+: 2163 7 8 libre, 
+* 2174 5 6 c'est 
+* 2184 3 4 lui 
+* 2190 3 4 qui 
+: 2196 5 4 tire 
+: 2203 2 4 les 
+: 2210 23 6 fils
+- 2233
+: 2244 5 3 Tu 
+: 2256 7 4 sens
+: 2264 2 3 ~
+: 2267 10 1 ~ 
+: 2286 5 8 qu'il 
+: 2293 2 8 t'aime 
+: 2300 3 8 si 
+: 2307 6 9 fort
+: 2314 3 8 ~
+: 2318 19 6 ~
+- 2337
+: 2347 4 6 Qu'il 
+: 2354 5 8 te
+: 2360 3 6 ~ 
+: 2366 4 8 dé
+: 2371 5 6 ~
+: 2379 12 8 vore, 
+: 2400 3 8 le 
+: 2408 6 9 cœur 
+* 2416 5 8 et 
+* 2423 1 6 le 
+* 2427 6 9 corps
+- 2433
+: 2437 8 3 Mais 
+: 2449 6 4 t'aimes, 
+: 2461 8 4 t'aimes 
+: 2473 2 4 pas 
+: 2479 4 6 choi
+: 2485 4 4 sir 
+: 2491 2 6 le 
+: 2497 9 3 thème, 
+: 2509 8 3 thème
+- 2517
+: 2521 4 3 T'aimes 
+: 2527 4 4 pas 
+: 2534 2 3 qu'on 
+: 2539 3 4 t'en
+: 2545 22 1 ferme 
+: 2580 5 1 en 
+: 2587 4 1 un 
+: 2593 10 8 mil
+: 2606 5 6 lio
+: 2616 5 4 nième
+- 2621
+: 2629 8 1 La 
+: 2641 9 8 flemme, 
+: 2652 8 8 flemme 
+* 2665 4 8 d'ê
+* 2671 3 9 tre 
+* 2676 4 8 que 
+* 2683 3 4 toi
+: 2689 5 6 -même, 
+: 2701 5 6 même
+- 2706
+: 2713 2 6 Si 
+: 2718 6 8 c'est 
+: 2726 1 6 lui 
+: 2731 3 8 qui 
+: 2737 13 1 t'aime
+- 2750
+: 2766 6 8 c'est 
+: 2774 1 6 le 
+: 2778 2 8 sys
+: 2785 16 1 tème
+- 2801
+: 2821 8 3 Mais 
+: 2832 8 4 t'aimes, 
+: 2845 7 4 t'aimes 
+: 2856 3 4 pas 
+: 2863 4 6 choi
+: 2869 4 4 sir 
+: 2874 3 6 le 
+: 2881 8 3 thème, 
+: 2893 7 3 thème
+- 2900
+* 2904 3 3 T'aimes 
+* 2911 4 4 pas 
+* 2917 3 3 qu'on 
+* 2922 4 4 t'en
+: 2929 14 1 ferme 
+: 2964 5 1 en 
+: 2972 3 1 un 
+: 2977 10 8 mil
+: 2990 6 6 lio
+: 3000 6 4 nième
+- 3006
+: 3013 7 1 La 
+: 3025 6 8 flemme, 
+: 3038 5 8 flemme 
+: 3049 4 8 d'ê
+: 3055 3 9 tre 
+: 3060 3 8 que 
+: 3067 3 4 toi
+: 3073 5 6 -même, 
+: 3085 5 6 même
+- 3090
+: 3097 3 6 Si 
+: 3102 6 8 c'est 
+: 3110 1 6 lui 
+: 3115 2 8 qui 
+: 3121 13 1 t'aime
+- 3134
+* 3150 6 8 c'est 
+* 3157 2 6 le 
+* 3162 2 8 sys
+: 3169 15 1 tème
+- 3184
+: 3197 6 8 Et 
+: 3205 2 6 le 
+: 3210 2 8 sys
+: 3217 8 1 tème 
+: 3230 9 1 t'aime
+- 3239
+: 3246 6 8 c'est 
+: 3253 2 6 le 
+: 3258 2 8 sys
+: 3265 15 1 tème
+- 3280
+: 3295 4 8 Et 
+: 3300 3 6 le 
+: 3306 2 8 sys
+: 3313 7 1 tème 
+: 3325 13 1 t'aime
+- 3338
+: 3343 4 8 c'est 
+: 3349 2 6 le 
+: 3354 2 8 sys
+: 3361 12 1 tème
+- 3373
+: 3388 7 8 Et 
+: 3397 2 6 le 
+: 3402 2 8 sys
+: 3409 8 1 tème 
+* 3421 9 1 t'aime
+- 3430
+: 3439 4 8 c'est 
+: 3445 2 6 le 
+: 3450 2 8 sys
+: 3457 16 1 tème
+- 3473
+: 3486 5 8 Et 
+: 3493 2 6 le 
+: 3498 2 8 sys
+: 3505 8 1 tème 
+: 3517 10 1 t'aime
+- 3527
+: 3534 5 8 c'est 
+: 3540 3 6 le 
+: 3546 2 8 sys
+: 3553 12 1 tème
+E

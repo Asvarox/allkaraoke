@@ -1,0 +1,188 @@
+#ARTIST:Disney’s Kubuś Puchatek (Władysław Grzywna)
+#TITLE:Intro
+#CREATOR:bakus33
+#BPM:263,26000000000164
+#YEAR:1992
+#VIDEO:v=xc-eU8JokU0
+#GENRE:Soundtrack
+#LANGUAGE:Polish
+#GAP:415,5883731833099
+#ALLKARAOKE_ID:disneys-kubus-puchatek-wladyslaw-grzywna-intro
+#ALLKARAOKE_SID:7653
+#ALLKARAOKE_LASTUPDATE:2026-11-18T05:26:42.554Z
+#ALLKARAOKE_VOLUME:70
+#ALLKARAOKE_DURATION:61
+#MP3:Disney’s Kubuś Puchatek (Władysław Grzywna) - Intro.mp3
+#COVER:Disney’s Kubuś Puchatek (Władysław Grzywna) - Intro [CO].jpg
+#BACKGROUND:Disney’s Kubuś Puchatek (Władysław Grzywna) - Intro [BG].jpg
+: 4 2 7 Już 
+: 8 2 9 po
+: 11 2 11 ra 
+: 15 4 11 wstać
+- 19
+: 33 2 9 Wy
+: 36 2 9 ru
+: 40 2 9 szyć 
+: 45 4 11 z do
+: 51 2 12 mu
+- 53
+: 63 2 11 Przy
+: 66 2 11 ja
+: 69 2 11 cie
+: 72 2 11 la 
+: 76 3 14 spot
+: 83 2 7 kać 
+: 88 5 9 znów
+- 93 102
+- 102
+: 120 2 14 Mi
+: 124 2 16 ły, 
+: 128 2 18 pu
+: 132 4 19 cha
+: 139 2 16 ty, 
+: 143 2 14 o
+: 147 4 12 krą
+: 153 2 14 gły
+- 155
+: 156 2 16 Bo 
+: 160 5 18 to 
+: 168 2 19 mój 
+: 171 3 21 jest
+- 174
+* 180 5 19 Ku
+* 187 3 14 buś 
+: 194 2 14 Pu
+: 198 2 12 cha
+: 201 2 11 tek, 
+* 205 9 19 Ku
+* 216 4 14 buś
+- 220
+: 238 2 14 Wśród 
+: 242 2 14 ro
+: 245 3 16 ju 
+: 250 4 18 pszczół
+- 254
+: 268 2 12 Jak 
+: 271 2 11 to 
+: 275 2 9 nie
+: 279 5 7 dźwia
+: 286 2 9 dków 
+: 290 3 11 ród
+- 293
+* 299 4 19 Ku
+* 305 3 14 buś, 
+: 312 2 14 wła
+: 316 2 12 zi 
+: 320 2 11 bez 
+* 324 8 19 tru
+* 334 4 14 du
+- 338
+: 356 4 9 Ram
+: 362 2 11 bo
+: 365 2 9 li, 
+: 369 5 14 bam
+: 376 2 16 bo
+: 380 2 14 li
+- 382
+: 387 5 14 Na 
+: 394 2 11 dąb 
+: 398 2 9 ła
+: 402 2 7 so
+: 405 2 9 wać 
+: 409 3 11 miód
+- 412
+: 417 2 11 Za
+: 420 2 11 ba
+: 423 2 11 wa - 
+: 427 6 11 sta
+: 435 2 12 ły 
+: 439 3 14 gość
+- 442
+: 446 2 13 A 
+: 449 2 13 przy
+: 453 2 13 gód 
+: 457 6 13 ni
+: 465 2 11 gdy 
+: 468 3 9 dość
+- 471
+: 476 2 9 To 
+: 479 2 9 jest 
+: 483 2 9 raz 
+: 487 5 9 na 
+: 495 2 7 ja
+: 498 3 9 kiś 
+: 503 12 11 czas
+- 515
+: 531 2 7 A 
+: 535 2 7 gdy 
+: 539 2 4 jes
+: 543 2 6 teś 
+: 547 5 7 sam
+- 552
+: 557 2 7 W do
+: 560 2 9 mu 
+: 564 3 11 wśród 
+: 570 2 7 czte
+: 573 2 9 rech 
+: 576 4 11 ścian
+- 580
+: 590 2 11 Gdy 
+: 594 2 9 coś 
+: 598 2 9 Ci 
+: 602 2 7 dos
+: 606 5 9 kwie
+: 613 3 11 ra
+- 616
+: 621 2 16 To 
+: 624 3 16 masz 
+* 629 2 16 przy
+* 632 2 16 ja
+* 636 6 21 cie
+* 644 5 23 la!
+- 649
+* 654 5 16 Ku
+* 661 4 13 buś 
+: 669 2 13 Pu
+: 673 2 11 cha
+: 676 2 9 tek, 
+* 680 9 16 Ku
+* 691 5 13 buś
+- 696
+: 709 2 11 Gdzie
+: 713 2 11 kol
+: 717 2 11 wiek 
+: 720 3 13 byś 
+: 725 4 16 szedł
+- 729
+* 743 4 16 Hej! 
+: 750 2 13 Pój
+: 754 2 11 dę 
+: 758 2 13 tam 
+: 762 2 11 i 
+: 765 3 9 ja
+- 768
+* 773 5 16 Ku
+* 780 3 13 buś 
+: 788 2 13 i 
+: 792 2 11 nie 
+: 795 2 9 ma 
+* 800 7 16 cu
+* 809 3 13 dó
+* 814 6 11 ~
+* 822 4 9 ~w
+- 826
+: 829 2 11 I 
+: 833 2 11 ju
+: 837 2 11 tro 
+: 840 2 13 i 
+: 844 6 16 dziś
+- 850
+: 858 2 11 I 
+: 862 2 13 ja 
+: 866 2 13 i 
+: 870 4 11 mój 
+: 877 2 9 pu
+: 881 2 6 cha
+: 884 2 4 ty 
+* 888 26 9 miś...
+E

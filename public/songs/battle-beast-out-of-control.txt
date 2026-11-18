@@ -1,0 +1,323 @@
+#ARTIST:Battle Beast
+#TITLE:Out Of Control
+#CREATOR:Valaingaur
+#BPM:320
+#YEAR:2013
+#VIDEO:v=VWHfiEKK3zw
+#GENRE:Rock
+#LANGUAGE:English
+#GAP:29045,625
+#ALLKARAOKE_ID:battle-beast-out-of-control
+#ALLKARAOKE_SID:7640
+#ALLKARAOKE_LASTUPDATE:2026-11-18T05:26:36.062Z
+#ALLKARAOKE_ARTISTORIGIN:FI
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:228
+#MP3:Battle Beast - Out Of Control.mp3
+#COVER:Battle Beast - Out Of Control [CO].jpg
+#BACKGROUND:Battle Beast - Out Of Control [BG].jpg
+: 21 13 3 Wel
+: 35 11 5 come 
+: 47 7 6 to 
+: 55 9 6 my 
+: 65 6 5 king
+: 77 2 6 dom 
+: 85 6 8 mad
+: 97 36 3 ness
+- 133
+: 151 11 1 You’re 
+: 163 11 3 just 
+: 175 7 5 in 
+: 183 11 5 time 
+: 195 11 3 for 
+: 207 15 1 the 
+: 223 24 -2 show
+- 247 258
+- 258
+: 279 11 3 Wel
+: 291 11 5 come 
+: 303 7 6 to 
+: 311 11 6 my 
+: 323 11 5 world 
+: 335 7 6 of 
+: 343 11 8 dark
+: 355 36 3 ness
+- 391
+: 403 1 5 A 
+: 405 13 6 place 
+: 419 11 5 where 
+: 431 7 3 un
+: 439 11 5 real 
+: 451 11 3 be
+: 463 11 1 comes 
+: 475 28 3 real
+- 503 514
+- 514
+: 535 11 3 Come 
+: 547 11 5 drink 
+: 559 7 6 my 
+: 567 11 5 blood, 
+: 579 11 3 wake 
+: 591 7 5 the 
+: 599 11 6 de
+: 611 11 5 mon 
+: 623 7 3 in 
+: 631 31 3 me
+- 662
+: 663 11 6 Come 
+: 675 11 8 taste 
+: 687 7 10 the 
+: 695 11 8 wine 
+: 707 11 6 of 
+: 719 7 8 my 
+: 727 32 10 sins
+- 759
+: 775 3 3 Out 
+: 779 3 3 of 
+: 783 3 3 con
+: 787 11 3 trol
+- 798
+: 799 3 6 With
+: 803 11 6 out 
+: 815 3 3 any 
+: 819 7 6 fear 
+: 827 7 8 of 
+: 835 7 5 fac
+: 843 3 3 ing 
+: 847 3 5 the 
+: 851 7 6 mad
+: 859 40 3 man
+- 899
+: 903 3 3 Out 
+: 907 3 3 of 
+: 911 3 3 con
+: 915 8 3 trol
+- 923
+: 927 3 10 De
+: 931 7 11 fy
+: 939 3 11 ing 
+: 943 3 11 the 
+: 947 7 10 Gods 
+: 955 7 10 of 
+: 963 47 8 Hell
+- 1010
+: 1011 3 8 You 
+: 1015 8 10 are 
+: 1031 3 3 out 
+: 1035 3 3 of 
+: 1039 3 3 con
+: 1043 4 3 trol
+- 1047 1278
+- 1278
+: 1299 3 1 You 
+: 1303 11 3 can’t 
+: 1315 11 5 find 
+: 1327 7 6 a 
+: 1335 11 6 shel
+: 1347 11 5 ter 
+: 1359 7 6 in 
+: 1367 11 8 Hell
+: 1379 36 3 space
+- 1415
+: 1431 11 1 Un
+: 1443 11 3 der 
+: 1455 7 5 my 
+: 1463 4 5 black 
+: 1475 11 3 wings 
+: 1487 15 1 of 
+: 1503 24 -2 doom
+- 1527 1534
+- 1534
+: 1555 3 1 The 
+: 1559 11 3 wind 
+: 1571 11 5 in 
+: 1583 7 6 the 
+: 1591 11 6 waste
+: 1603 11 5 land 
+: 1615 7 6 is 
+: 1623 11 8 how
+: 1635 35 8 ling
+- 1670
+: 1671 7 6 It’s 
+: 1679 7 8 the 
+: 1687 11 10 wai
+: 1699 11 8 ling 
+: 1711 7 6 of 
+: 1719 11 8 ghosts 
+: 1731 11 6 of 
+: 1743 3 5 the 
+: 1747 36 6 past
+- 1783 1794
+- 1794
+: 1815 11 3 Swing 
+: 1827 11 5 ’cross 
+: 1839 7 6 the 
+: 1847 11 5 o
+: 1859 11 3 cean 
+: 1871 7 5 of 
+: 1879 3 6 plea
+: 1883 8 6 sure 
+: 1899 7 3 and 
+: 1907 20 3 pain
+- 1927
+: 1943 11 6 In
+: 1955 11 8 to 
+: 1967 7 10 my 
+: 1975 11 8 fa
+: 1987 11 6 tal 
+: 1999 7 8 em
+: 2007 32 10 brace
+- 2039
+: 2055 3 3 Out 
+: 2059 3 3 of 
+: 2063 3 3 con
+: 2067 11 3 trol
+- 2078
+: 2079 3 6 With
+: 2083 11 6 out 
+: 2095 3 3 any 
+: 2099 7 6 fear 
+: 2107 7 8 of 
+: 2115 7 5 fac
+: 2123 3 3 ing 
+: 2127 3 5 the 
+: 2131 7 6 mad
+: 2139 40 3 man
+- 2179
+: 2183 3 3 Out 
+: 2187 3 3 of 
+: 2191 3 3 con
+: 2195 8 3 trol
+- 2203
+: 2207 3 10 De
+: 2211 7 11 fy
+: 2219 3 11 ing 
+: 2223 3 11 the 
+: 2227 7 10 Gods 
+: 2235 7 10 of 
+: 2243 47 8 Hell
+- 2290
+: 2291 3 8 You 
+: 2295 8 10 are
+- 2303
+: 2311 3 3 Out 
+: 2315 3 3 of 
+: 2319 3 3 con
+: 2323 11 3 trol
+- 2334
+: 2335 3 6 With
+: 2339 11 6 out 
+: 2351 3 3 any 
+: 2355 7 6 fear 
+: 2363 7 8 of 
+: 2371 7 5 fac
+: 2379 3 3 ing 
+: 2383 3 5 the 
+: 2387 7 6 mad
+: 2395 43 3 man
+- 2438
+: 2439 3 3 Out 
+: 2443 3 3 of 
+: 2447 3 3 con
+: 2451 8 3 trol
+- 2459
+: 2463 3 10 De
+: 2467 7 11 fy
+: 2475 3 11 ing 
+: 2479 3 11 the 
+: 2483 7 10 Gods 
+: 2491 7 10 of 
+: 2499 47 8 Hell
+- 2546
+: 2547 3 8 You 
+: 2551 8 10 are
+- 2559
+: 2567 3 3 Out 
+: 2571 3 3 of 
+: 2575 3 3 con
+: 2579 35 3 trol 
+* 2615 24 15 WHOAAAAA 
+* 2643 16 17 YEAH!
+- 2659 3186
+- 3186
+: 3207 3 3 Out 
+: 3211 3 3 of 
+: 3215 3 3 con
+: 3219 11 3 trol
+- 3230
+: 3231 3 6 With
+: 3235 11 6 out 
+: 3247 3 3 any 
+: 3251 7 6 fear 
+: 3259 7 8 of 
+: 3267 7 5 fac
+: 3275 3 3 ing 
+: 3279 3 5 the 
+: 3283 7 6 mad
+: 3291 40 3 man
+- 3331
+: 3335 3 3 Out 
+: 3339 3 3 of 
+: 3343 3 3 con
+: 3347 8 3 trol
+- 3355
+: 3359 3 10 De
+: 3363 7 11 fy
+: 3371 3 11 ing 
+: 3375 3 11 the 
+: 3379 7 10 Gods 
+: 3387 7 10 of 
+: 3395 47 8 Hell
+- 3442
+: 3443 3 8 You 
+: 3447 8 10 are
+- 3455
+: 3463 3 3 Out 
+: 3467 3 3 of 
+: 3471 3 3 con
+: 3475 11 3 trol
+- 3486
+: 3487 3 6 With
+: 3491 11 6 out 
+: 3503 3 3 any 
+: 3507 7 6 fear 
+: 3515 7 8 of 
+: 3523 7 5 fac
+: 3531 3 3 ing 
+: 3535 3 5 the 
+: 3539 7 6 mad
+: 3547 43 6 man
+- 3590
+: 3591 3 3 Out 
+: 3595 3 3 of 
+: 3599 3 3 con
+: 3603 8 3 trol
+- 3611
+: 3615 3 10 De
+: 3619 7 11 fy
+: 3627 3 11 ing 
+: 3631 3 11 the 
+: 3635 7 10 Gods 
+: 3643 7 10 of 
+: 3651 47 8 Hell
+- 3698
+: 3699 3 8 You 
+: 3703 8 10 are
+- 3711 3730
+- 3730
+* 3751 3 16 OUT 
+* 3755 3 16 OF 
+* 3759 3 16 CON
+* 3763 100 16 TROL
+- 3863
+: 3879 3 3 Out 
+: 3883 3 3 of 
+: 3887 3 3 con
+: 3891 4 3 trol
+- 3895 4014
+- 4014
+* 4035 7 19 OUT 
+* 4043 7 18 OF 
+* 4051 3 16 CON
+* 4055 16 16 TROL
+E
