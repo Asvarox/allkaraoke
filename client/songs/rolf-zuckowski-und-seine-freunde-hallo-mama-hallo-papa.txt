@@ -1,0 +1,261 @@
+#ARTIST:Rolf Zuckowski und seine Freunde
+#TITLE:Hallo Mama, hallo Papa
+#CREATOR:blewmaxx
+#BPM:232,5
+#YEAR:1977
+#PREVIEWSTART:57
+#VIDEO:v=quoQTsaHYBI
+#LANGUAGE:German
+#GAP:91,93548387096774
+#ALLKARAOKE_ID:rolf-zuckowski-und-seine-freunde-hallo-mama-hallo-papa
+#ALLKARAOKE_SID:7629
+#ALLKARAOKE_LASTUPDATE:2026-11-18T05:26:32.797Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:115
+#ALLKARAOKE_PREVIEWEND:90
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:102
+#MP3:Rolf Zuckowski und seine Freunde - Hallo Mama, hallo Papa.mp3
+: 4 3 2 Hal
+: 8 5 11 lo 
+: 14 1 9 Ma
+: 16 4 7 ma
+- 20
+: 36 3 2 Hal
+: 40 5 11 lo 
+: 46 1 9 Pa
+: 48 4 7 pa
+- 52
+: 68 3 2 Die 
+: 72 3 11 Zeit 
+: 76 3 9 ist 
+: 80 7 7 um 
+: 88 7 11 und 
+: 96 7 16 ich 
+: 104 7 14 bin 
+: 112 16 9 da.
+- 128
+: 133 3 2 Hal
+: 137 5 9 lo 
+: 143 1 7 Ma
+: 145 4 6 ma
+- 149
+: 165 3 2 Hal
+: 169 5 9 lo 
+: 175 1 7 Pa
+: 177 4 6 pa.
+- 181
+: 197 3 2 Wie 
+: 201 3 4 geht 
+: 205 3 5 es 
+: 209 5 6 euch?
+- 214
+: 229 3 2 Ist 
+: 233 3 4 al
+: 237 3 6 les 
+: 241 4 7 klar?
+- 245
+: 261 3 2 Hal
+: 265 5 11 lo 
+: 271 1 9 Ma
+: 273 4 7 ma
+- 277 278
+- 278
+: 294 3 2 Hal
+: 298 5 11 lo 
+: 304 1 9 Pa
+: 306 4 7 pa.
+- 310
+: 326 3 2 Was 
+: 330 3 11 schaut 
+: 334 3 9 ihr 
+: 338 7 7 mich 
+: 346 7 11 so 
+: 354 7 16 ko
+: 362 7 14 misch 
+: 370 16 9 an?
+- 386
+: 390 3 2 Hal
+: 394 5 9 lo 
+: 400 1 7 Ma
+: 402 4 6 ma
+- 406
+: 422 3 2 Hal
+: 426 5 9 lo 
+: 432 1 7 Pa
+: 434 4 6 pa.
+- 438 439
+- 439
+: 455 3 2 Ich 
+: 459 3 4 bin 
+: 463 3 5 schon 
+: 467 4 6 bald
+- 471
+: 487 3 2 Ein 
+: 491 3 4 gro
+: 495 3 6 ßer 
+: 499 4 7 Mann.
+- 503 511
+- 511
+: 527 3 7 Die 
+: 531 7 6 Zeit 
+: 539 7 9 im 
+: 547 7 2 Ei, 
+: 555 3 4 die 
+: 559 3 6 ist 
+: 563 7 7 nun 
+: 571 7 11 vor
+: 579 7 14 bei
+- 586
+: 587 3 13 Und 
+: 591 3 11 ich 
+: 595 7 9 sing 
+: 603 7 9 so 
+: 611 7 9 laut 
+: 619 7 9 ich 
+: 627 4 14 kann 
+: 635 4 14 juch
+: 643 3 14 hei.
+- 646
+: 647 3 2 Hal
+: 651 5 11 lo 
+: 657 1 9 Ma
+: 659 4 7 ma
+- 663 664
+- 664
+: 680 3 2 Hal
+: 684 5 11 lo 
+: 690 1 9 Pa
+: 692 4 7 pa.
+- 696 697
+- 697
+: 713 3 2 Wie 
+: 717 3 11 sieht 
+: 721 3 9 das 
+: 725 7 7 Nest 
+: 733 7 11 ge
+: 741 7 16 müt
+: 749 7 14 lich 
+: 757 16 9 aus.
+- 773
+: 777 3 2 Hal
+: 781 5 9 lo 
+: 787 1 7 Ma
+: 789 4 6 ma
+- 793 794
+- 794
+: 810 3 2 Hal
+: 814 5 9 lo 
+: 820 1 7 Pa
+: 822 4 6 pa.
+- 826
+: 842 3 2 Doch 
+: 846 3 4 passt 
+: 850 3 5 gut 
+: 854 4 6 auf
+- 858
+: 874 3 2 Sonst 
+: 878 3 4 fall 
+: 882 3 6 ich 
+: 886 4 7 raus.
+- 890
+: 906 3 2 Hal
+: 910 5 11 lo 
+: 916 1 9 Ma
+: 918 4 7 ma
+- 922
+: 938 3 2 Hal
+: 942 5 11 lo 
+: 948 1 9 Pa
+: 950 4 7 pa.
+- 954
+: 970 3 2 Nun 
+: 974 3 11 fang 
+: 978 3 9 ich 
+: 982 7 7 bald 
+: 990 7 11 zu 
+: 998 7 16 flie
+: 1006 7 14 gen 
+: 1014 16 9 an.
+- 1030
+: 1034 3 2 Hal
+: 1038 5 9 lo 
+: 1044 1 7 Ma
+: 1046 4 6 ma
+- 1050 1051
+- 1051
+: 1067 3 2 Hal
+: 1071 5 9 lo 
+: 1077 1 7 Pa
+: 1079 4 6 pa.
+- 1083
+: 1099 3 2 Ihr 
+: 1103 3 4 wer
+: 1107 3 5 det 
+: 1111 4 6 seh’n
+- 1115
+: 1131 3 2 Was 
+: 1135 3 4 ich 
+: 1139 3 6 schon 
+: 1143 4 7 kann.
+- 1147 1155
+- 1155
+: 1171 3 7 Die 
+: 1175 7 6 gan
+: 1183 7 9 ze 
+: 1191 7 2 Zeit 
+: 1199 3 4 hab’ 
+: 1203 3 6 ich 
+: 1207 7 7 mich 
+: 1215 7 11 ge
+: 1223 7 14 freut
+- 1230
+: 1231 3 13 Ja 
+: 1235 3 11 und 
+: 1239 7 9 end
+: 1247 7 9 lich 
+: 1255 7 9 ist 
+: 1263 7 9 es 
+: 1271 4 14 nun 
+: 1279 4 14 so 
+: 1287 3 14 weit
+- 1290
+: 1291 3 2 Hal
+: 1295 5 11 lo 
+: 1301 1 9 Ma
+: 1303 4 7 ma
+- 1307
+: 1323 3 2 Hal
+: 1327 5 11 lo 
+: 1333 1 9 Pa
+: 1335 4 7 pa
+- 1339
+: 1355 3 2 Nun 
+: 1359 3 11 fang 
+: 1363 3 9 ich 
+: 1367 7 7 bald 
+: 1375 7 11 zu 
+: 1383 7 16 flie
+: 1391 7 14 gen 
+: 1399 16 9 an.
+- 1415
+: 1419 3 2 Hal
+: 1423 5 9 lo 
+: 1429 1 7 Ma
+: 1431 4 6 ma
+- 1435
+: 1451 3 2 Hal
+: 1455 5 9 lo 
+: 1461 1 7 Pa
+: 1463 4 6 pa.
+- 1467
+: 1483 3 2 Ihr 
+: 1487 3 4 wer
+: 1491 3 5 det 
+: 1495 4 6 seh’n
+- 1499
+: 1515 3 2 Was 
+: 1519 3 4 ich 
+: 1523 3 6 schon 
+: 1527 4 7 kann.
+E
