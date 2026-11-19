@@ -233,6 +233,7 @@ export default defineConfig((env) => ({
               },
               bindings: {
                 ADMIN_PANEL_PASSWORD: 'admin-password',
+                UNVERIFIED_SONGS_ADMIN_TOKEN: 'ci-token',
               },
             },
           }),

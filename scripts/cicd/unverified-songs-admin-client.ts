@@ -85,6 +85,14 @@ export const replaceSongQualityFlags = async (songs: SongQualityFlag[]) => {
   });
 };
 
+/** songId -> when its reports were last dismissed (ms) */
+export const getSongQualityDismissals = async (): Promise<Record<string, number>> => {
+  const response = await requestUnverifiedSongsAdmin('/song-quality-flags-admin', { method: 'GET' });
+  const body = (await response.json()) as { dismissals?: Record<string, number> };
+
+  return body.dismissals ?? {};
+};
+
 export const regenerateUnverifiedSongIndex = async () => {
   await requestUnverifiedSongsAdmin('/unverified-songs-admin', {
     method: 'PUT',

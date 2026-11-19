@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 
 import currentSongs from '../../public/songs/index.json';
 import {
+  getSongQualityDismissals,
   isUnverifiedSongsAdminConfigured,
   replaceSongQualityFlags,
   SongQualityFlag,
@@ -79,15 +80,23 @@ const toTime = (date: string | null | undefined) => (date ? new Date(date).getTi
 
   // Skip reports about an older version of the song: compare the version the player rated when known,
   // otherwise fall back to when the report was made
+  const dismissals = await getSongQualityDismissals();
   const songsById = new Map(currentSongs.map((song) => [song.id, song]));
   const counts = new Map<string, Partial<Record<SongQualityIssue, number>>>();
   let skippedOutdated = 0;
   let skippedUnknownSong = 0;
+  let skippedDismissed = 0;
 
   for (const [songId, issue, timestamp, songLastUpdated] of rows) {
     const song = songsById.get(songId);
     if (!song) {
       skippedUnknownSong += 1;
+      continue;
+    }
+    // An admin already reviewed these reports
+    const dismissedAt = dismissals[songId];
+    if (dismissedAt && toTime(timestamp) <= dismissedAt) {
+      skippedDismissed += 1;
       continue;
     }
     const currentVersion = toTime(song.lastUpdate);
@@ -128,6 +137,7 @@ const toTime = (date: string | null | undefined) => (date ? new Date(date).getTi
     reportsAnalyzed: rows.length,
     skippedOutdated,
     skippedUnknownSong,
+    skippedDismissed,
     flaggedSongs: flags.length,
     byIssue: Object.fromEntries(
       ISSUES.map((issue) => [issue, flags.filter((flag) => flag.issues.includes(issue)).length]),

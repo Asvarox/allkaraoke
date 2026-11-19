@@ -75,6 +75,21 @@ describe('song quality flags admin function', () => {
     expect(list.songs.map((song) => song.songId)).toEqual(['song-2']);
   });
 
+  it('remembers dismissals for the weekly job', async () => {
+    await replaceSongQualityFlags(workerEnv.SHARED_SONGS_KV, [flag()]);
+    const before = Date.now();
+
+    await fetchWorker('https://example.com/admin/song-quality-flags?id=song-1', adminRequest({ method: 'DELETE' }));
+
+    const response = await fetchWorker('https://example.com/song-quality-flags-admin', {
+      headers: { 'x-unverified-songs-admin-token': 'ci-token' },
+    });
+    const { dismissals } = await response.json<{ dismissals: Record<string, number> }>();
+
+    expect(Object.keys(dismissals)).toEqual(['song-1']);
+    expect(dismissals['song-1']).toBeGreaterThanOrEqual(before);
+  });
+
   it('rejects CI updates without the admin token', async () => {
     const response = await fetchWorker('https://example.com/song-quality-flags-admin', {
       method: 'PUT',

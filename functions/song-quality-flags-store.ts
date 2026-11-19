@@ -17,7 +17,13 @@ export interface SongQualityFlagsDocument {
   songs: SongQualityFlag[];
 }
 
+/** When each song's reports were last dismissed (ms). The weekly job ignores reports made before that. */
+export type SongQualityDismissals = Record<string, number>;
+
 const SONG_QUALITY_FLAGS_KEY = 'song-quality-flags';
+const SONG_QUALITY_DISMISSALS_KEY = 'song-quality-dismissals';
+// Older dismissals no longer matter - the weekly job only looks this far back
+const DISMISSAL_RETENTION_MS = 200 * 24 * 60 * 60 * 1000;
 
 const isSongQualityIssue = (value: unknown): value is SongQualityIssue =>
   SONG_QUALITY_ISSUES.includes(value as SongQualityIssue);
@@ -66,12 +72,30 @@ export const replaceSongQualityFlags = async (kvNamespace: KVNamespace, songs: S
   await kvNamespace.put(SONG_QUALITY_FLAGS_KEY, JSON.stringify(document));
 };
 
+export const getSongQualityDismissals = async (kvNamespace: KVNamespace): Promise<SongQualityDismissals> => {
+  const stored = await kvNamespace.get<SongQualityDismissals>(SONG_QUALITY_DISMISSALS_KEY, 'json');
+
+  return Object.fromEntries(Object.entries(stored ?? {}).filter(([, dismissedAt]) => typeof dismissedAt === 'number'));
+};
+
+const recordSongQualityDismissal = async (kvNamespace: KVNamespace, songId: string, dismissedAt: number) => {
+  const current = await getSongQualityDismissals(kvNamespace);
+  const dismissals = Object.fromEntries(
+    Object.entries({ ...current, [songId]: dismissedAt }).filter(
+      ([, time]) => time > dismissedAt - DISMISSAL_RETENTION_MS,
+    ),
+  );
+
+  await kvNamespace.put(SONG_QUALITY_DISMISSALS_KEY, JSON.stringify(dismissals));
+};
+
 export const removeSongQualityFlag = async (kvNamespace: KVNamespace, songId: string) => {
   const current = await getSongQualityFlags(kvNamespace);
   const songs = current.songs.filter((flag) => flag.songId !== songId);
 
   if (songs.length === current.songs.length) return false;
 
+  await recordSongQualityDismissal(kvNamespace, songId, Date.now());
   await kvNamespace.put(SONG_QUALITY_FLAGS_KEY, JSON.stringify({ ...current, songs }));
   return true;
 };

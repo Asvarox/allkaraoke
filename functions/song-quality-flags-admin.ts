@@ -1,4 +1,9 @@
-import { normalizeSongQualityFlag, replaceSongQualityFlags, SongQualityFlag } from './song-quality-flags-store';
+import {
+  getSongQualityDismissals,
+  normalizeSongQualityFlag,
+  replaceSongQualityFlags,
+  SongQualityFlag,
+} from './song-quality-flags-store';
 import {
   getUnverifiedSongsAdminToken,
   getUnverifiedSongsKv,
@@ -13,7 +18,7 @@ const responseHeaders = {
 const jsonResponse = (body: unknown, status = 200) =>
   new Response(JSON.stringify(body), { status, headers: responseHeaders });
 
-// Called by the weekly CI job; it replaces the whole set of flagged songs.
+// Called by the weekly CI job: GET reads dismissals, PUT replaces the whole set of flagged songs.
 export const onRequest: PagesFunction<UnverifiedSongsEnv> = async ({ request, env }) => {
   const expectedToken = getUnverifiedSongsAdminToken(env);
   if (!expectedToken || getUnverifiedSongsRequestToken(request) !== expectedToken) {
@@ -23,6 +28,10 @@ export const onRequest: PagesFunction<UnverifiedSongsEnv> = async ({ request, en
   const kv = getUnverifiedSongsKv(env);
   if (!kv) {
     return jsonResponse({ error: 'Unverified songs storage is not configured' }, 500);
+  }
+
+  if (request.method === 'GET') {
+    return jsonResponse({ dismissals: await getSongQualityDismissals(kv) });
   }
 
   if (request.method !== 'PUT') {
