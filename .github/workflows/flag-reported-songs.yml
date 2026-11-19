@@ -1,0 +1,49 @@
+name: 'Flag songs reported by players'
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * 1'
+
+concurrency:
+  group: flag-reported-songs
+  cancel-in-progress: false
+
+jobs:
+  run_script:
+    runs-on: ubuntu-latest
+    env:
+      VITE_APP_POSTHOG_KEY: ${{ secrets.POSTHOG_PAT_KEY }}
+      UNVERIFIED_SONGS_ADMIN_URL: ${{ secrets.UNVERIFIED_SONGS_ADMIN_URL || secrets.SHARED_SONGS_ADMIN_URL }}
+      UNVERIFIED_SONGS_ADMIN_TOKEN: ${{ secrets.UNVERIFIED_SONGS_ADMIN_TOKEN || secrets.SHARED_SONGS_ADMIN_TOKEN }}
+      SONG_QUALITY_SUMMARY_PATH: ${{ github.workspace }}/flag-reported-songs-summary.json
+    steps:
+      - uses: actions/checkout@v5
+      - name: Setup Node
+        uses: './.github/templates/setup-node'
+      - name: Flag reported songs in Cloudflare KV
+        run: pnpm tsx scripts/cicd/flag-reported-songs.ts
+      - name: Add summary
+        if: ${{ always() }}
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const fs = require('node:fs');
+            const summaryPath = process.env.SONG_QUALITY_SUMMARY_PATH;
+            if (!summaryPath || !fs.existsSync(summaryPath)) return;
+
+            const { flags = [], byIssue = {}, reportsAnalyzed = 0 } = JSON.parse(fs.readFileSync(summaryPath, 'utf8'));
+            const lines = flags.length
+              ? flags.map(({ songId, issues, reportCounts }) =>
+                  `* ${songId} - ${issues.map((issue) => `${issue} (${reportCounts[issue]})`).join(', ')}`)
+              : ['* No songs flagged'];
+
+            await core.summary
+              .addRaw([
+                '# Reported songs',
+                '',
+                `${reportsAnalyzed} reports analyzed. ${Object.entries(byIssue).map(([issue, count]) => `${issue}: ${count}`).join(', ')}`,
+                '',
+                ...lines,
+              ].join('\n'))
+              .write();

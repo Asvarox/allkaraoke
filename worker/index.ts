@@ -1,6 +1,8 @@
+import { onRequest as songQualityFlagsBrowserAdminOnRequest } from '../functions/admin/song-quality-flags';
 import { onRequest as unverifiedSongBrowserAdminOnRequest } from '../functions/admin/unverified-song';
 import { onRequest as unverifiedSongsBrowserAdminOnRequest } from '../functions/admin/unverified-songs';
 import { onRequest as proxyOnRequest } from '../functions/proxy';
+import { onRequest as songQualityFlagsAdminOnRequest } from '../functions/song-quality-flags-admin';
 import { onRequest as unverifiedSongOnRequest } from '../functions/unverified-song';
 import { onRequest as unverifiedSongsOnRequest } from '../functions/unverified-songs';
 import { onRequest as unverifiedSongsAdminOnRequest } from '../functions/unverified-songs-admin';
@@ -100,6 +102,19 @@ export default {
 
     if (pathname === '/admin/unverified-song' || pathname === '/admin/shared-song') {
       return callPagesHandler(unverifiedSongBrowserAdminOnRequest as PagesLikeHandler, request, env, executionContext);
+    }
+
+    if (pathname === '/song-quality-flags-admin') {
+      return callPagesHandler(songQualityFlagsAdminOnRequest as PagesLikeHandler, request, env, executionContext);
+    }
+
+    if (pathname === '/admin/song-quality-flags') {
+      return callPagesHandler(
+        songQualityFlagsBrowserAdminOnRequest as PagesLikeHandler,
+        request,
+        env,
+        executionContext,
+      );
     }
 
     if (pathname === '/leaderboard') {

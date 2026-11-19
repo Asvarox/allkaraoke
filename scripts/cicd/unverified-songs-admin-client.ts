@@ -66,6 +66,25 @@ export const removeUnverifiedSongRecord = async (sharedSongId: string) => {
   });
 };
 
+export type SongQualityIssue = 'not-in-sync' | 'too-loud' | 'too-quiet';
+
+export interface SongQualityFlag {
+  songId: string;
+  artist: string;
+  title: string;
+  language: string[];
+  videoId: string;
+  issues: SongQualityIssue[];
+  reportCounts: Partial<Record<SongQualityIssue, number>>;
+}
+
+export const replaceSongQualityFlags = async (songs: SongQualityFlag[]) => {
+  await requestUnverifiedSongsAdmin('/song-quality-flags-admin', {
+    method: 'PUT',
+    body: JSON.stringify({ songs }),
+  });
+};
+
 export const regenerateUnverifiedSongIndex = async () => {
   await requestUnverifiedSongsAdmin('/unverified-songs-admin', {
     method: 'PUT',
