@@ -10577,6 +10577,33 @@
     "local": false
   },
   {
+    "id": "amel-bent-lamour-ca-se-donne",
+    "title": "L'amour ça se donne",
+    "artist": "Amel Bent",
+    "video": "2p6w2i0T3oE",
+    "language": [
+      "French"
+    ],
+    "bpm": 399.8799999999999,
+    "gap": 12802.208254222045,
+    "year": "2025",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-11-19T05:21:11.382Z",
+    "realBpm": 100.07,
+    "volume": 1,
+    "author": "Alinus57",
+    "duration": 174,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 7691,
+    "tracksCount": 1,
+    "search": "amelbentlamourcasedonne",
+    "local": false
+  },
+  {
     "id": "amel-bent-pourquoi-tu-restes",
     "title": "Pourquoi Tu Restes",
     "artist": "Amel Bent",
@@ -10863,6 +10890,33 @@
     "local": false
   },
   {
+    "id": "amir-a-limparfaite",
+    "title": "À l'imparfaite",
+    "artist": "Amir",
+    "video": "jEHlP3pnC8U",
+    "language": [
+      "French"
+    ],
+    "bpm": 348.27,
+    "gap": 3141.3892669480574,
+    "year": "2025",
+    "lastUpdate": "2026-11-19T05:21:13.912Z",
+    "genre": "Chanson Française",
+    "realBpm": 115.29,
+    "volume": 1,
+    "author": "Alinus57",
+    "duration": 196,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 7700,
+    "tracksCount": 1,
+    "search": "amiralimparfaite",
+    "local": false
+  },
+  {
     "id": "amir-avec-toi",
     "title": "Avec toi",
     "artist": "Amir",
@@ -10886,6 +10940,59 @@
     "shortId": 7671,
     "tracksCount": 1,
     "search": "amiravectoi",
+    "local": false
+  },
+  {
+    "id": "amir-complementaires",
+    "title": "Complémentaires",
+    "artist": "Amir",
+    "video": "_DvigtCEqpg",
+    "language": [
+      "French"
+    ],
+    "bpm": 388.37,
+    "gap": 9703.80297139326,
+    "year": "2024",
+    "lastUpdate": "2026-11-19T05:21:13.415Z",
+    "genre": "Variété Française",
+    "realBpm": 99.92,
+    "volume": 1,
+    "author": "Alinus57",
+    "duration": 193,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 7694,
+    "tracksCount": 1,
+    "search": "amircomplementaires",
+    "local": false
+  },
+  {
+    "id": "amir-nous",
+    "title": "Nous",
+    "artist": "Amir",
+    "video": "_xOKYvyi0Mc",
+    "language": [
+      "French"
+    ],
+    "bpm": 390.05,
+    "gap": 17189.128188693758,
+    "year": "2025",
+    "lastUpdate": "2026-11-19T05:21:13.285Z",
+    "realBpm": 130.16,
+    "volume": 1,
+    "author": "Alinus57",
+    "duration": 166,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 7693,
+    "tracksCount": 1,
+    "search": "amirnous",
     "local": false
   },
   {
@@ -21234,6 +21341,34 @@
     "local": false
   },
   {
+    "id": "barbara-goettingen",
+    "title": "Göttingen",
+    "artist": "Barbara",
+    "video": "t0sNy1xOhRc",
+    "language": [
+      "French"
+    ],
+    "bpm": 336.91000000000025,
+    "gap": 379.0087277709928,
+    "year": "1967",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-11-19T05:21:14.020Z",
+    "genre": "Chanson Française",
+    "realBpm": 92.43,
+    "volume": 1,
+    "author": "Alinus57",
+    "duration": 162,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 7703,
+    "tracksCount": 1,
+    "search": "barbaragoettingen",
+    "local": false
+  },
+  {
     "id": "barbara-pravi-voila",
     "title": "Voilà",
     "artist": "Barbara Pravi",
@@ -27697,6 +27832,32 @@
     "shortId": 7296,
     "tracksCount": 1,
     "search": "bletkakomumialabympowiedziec",
+    "local": false
+  },
+  {
+    "id": "bleu-soleil-luiza-soleil-bleu",
+    "title": "Soleil Bleu",
+    "artist": "Bleu Soleil & Luiza",
+    "video": "nd8RD3tjNQE",
+    "language": [
+      "French"
+    ],
+    "bpm": 314.83,
+    "gap": 11170.460026045803,
+    "year": "2025",
+    "lastUpdate": "2026-11-19T05:21:13.654Z",
+    "realBpm": 80,
+    "volume": 1,
+    "author": "Alinus57",
+    "duration": 203,
+    "tracks": [
+      {
+        "start": 21
+      }
+    ],
+    "shortId": 7698,
+    "tracksCount": 1,
+    "search": "bleusoleilluizasoleilbleu",
     "local": false
   },
   {
@@ -37269,6 +37430,35 @@
     "local": false
   },
   {
+    "id": "camille-lellouche-ninsiste-pas",
+    "title": "N'insiste pas",
+    "artist": "Camille Lellouche",
+    "video": "ecpZpIzHD_s",
+    "language": [
+      "French"
+    ],
+    "bpm": 400.9,
+    "gap": 54580.77301072587,
+    "year": "2021",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-11-19T05:21:15.254Z",
+    "genre": "French Music",
+    "videoGap": 34,
+    "realBpm": 101.73,
+    "volume": 1,
+    "author": "Alinus57",
+    "duration": 284,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 7707,
+    "tracksCount": 1,
+    "search": "camillelelloucheninsistepas",
+    "local": false
+  },
+  {
     "id": "camilo-indigo",
     "title": "Índigo",
     "artist": "Camilo",
@@ -38571,6 +38761,34 @@
     "local": false
   },
   {
+    "id": "celine-dion-bonjour-pardon-merci",
+    "title": "Bonjour, Pardon, Merci",
+    "artist": "Céline Dion",
+    "video": "x2sFb-hrg_M",
+    "language": [
+      "French"
+    ],
+    "bpm": 371.68,
+    "gap": 14578.067585019371,
+    "year": "2026",
+    "artistOrigin": "CA",
+    "lastUpdate": "2026-11-19T05:21:15.249Z",
+    "videoGap": 1,
+    "realBpm": 123.5,
+    "volume": 1,
+    "author": "Alinus57",
+    "duration": 187,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 7704,
+    "tracksCount": 1,
+    "search": "celinedionbonjourpardonmerci",
+    "local": false
+  },
+  {
     "id": "celine-dion-dansons",
     "title": "Dansons",
     "artist": "Céline Dion",
@@ -39870,6 +40088,32 @@
     "shortId": 919,
     "tracksCount": 1,
     "search": "charlieputhselenagomezwedonttalkanymore",
+    "local": false
+  },
+  {
+    "id": "charlotte-cardin-tant-pis-pour-elle",
+    "title": "Tant pis pour elle.",
+    "artist": "Charlotte Cardin",
+    "video": "Eg4hjfjS0YQ",
+    "language": [
+      "French"
+    ],
+    "bpm": 363.51,
+    "gap": 2488.6558554097546,
+    "year": "2025",
+    "lastUpdate": "2026-11-19T05:21:13.521Z",
+    "realBpm": 104.5,
+    "volume": 1,
+    "author": "Alinus57",
+    "duration": 310,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 7695,
+    "tracksCount": 1,
+    "search": "charlottecardintantpispourelle",
     "local": false
   },
   {
@@ -79481,6 +79725,61 @@
     "local": false
   },
   {
+    "id": "gims-ciel",
+    "title": "Ciel",
+    "artist": "Gims",
+    "video": "KG6ft_YDp5k",
+    "language": [
+      "French"
+    ],
+    "bpm": 390,
+    "gap": 13219,
+    "year": "2024",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-11-19T05:21:15.379Z",
+    "genre": "Rap/Hip Hop",
+    "realBpm": 130,
+    "volume": 1,
+    "author": "Alinus57",
+    "duration": 192,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 7708,
+    "tracksCount": 1,
+    "search": "gimsciel",
+    "local": false
+  },
+  {
+    "id": "gims-fantaisie",
+    "title": "Fantaisie",
+    "artist": "Gims",
+    "video": "3NXKBGfZAHg",
+    "language": [
+      "French"
+    ],
+    "bpm": 327.71,
+    "gap": 963.012114369412,
+    "year": "2026",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-11-19T05:21:14.019Z",
+    "realBpm": 134.85,
+    "volume": 1,
+    "author": "Alinus57",
+    "duration": 151,
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 7702,
+    "tracksCount": 1,
+    "search": "gimsfantaisie",
+    "local": false
+  },
+  {
     "id": "gims-la-mano-19-parisienne",
     "title": "Parisienne",
     "artist": "GIMS & La Mano 1.9",
@@ -79505,6 +79804,34 @@
     "shortId": 7676,
     "tracksCount": 1,
     "search": "gimslamano19parisienne",
+    "local": false
+  },
+  {
+    "id": "gims-sentimental",
+    "title": "Sentimental",
+    "artist": "Gims",
+    "video": "A0-JQ7r9l8E",
+    "language": [
+      "French"
+    ],
+    "bpm": 369.31,
+    "gap": 21353.592889442472,
+    "year": "2025",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-11-19T05:21:14.017Z",
+    "genre": "Pop, Rap, Hip -hop, Rnb",
+    "realBpm": 123.02,
+    "volume": 1,
+    "author": "Alinus57",
+    "duration": 218,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 7701,
+    "tracksCount": 1,
+    "search": "gimssentimental",
     "local": false
   },
   {
@@ -97363,6 +97690,33 @@
     "shortId": 7625,
     "tracksCount": 1,
     "search": "jeckcarlaaquiletour",
+    "local": false
+  },
+  {
+    "id": "jeck-carla-la-recette",
+    "title": "La recette",
+    "artist": "Jeck & Carla",
+    "video": "9kBpbQDZdbQ",
+    "language": [
+      "French"
+    ],
+    "bpm": 347.97,
+    "gap": 6582.535218553324,
+    "year": "2025",
+    "lastUpdate": "2026-11-19T05:21:12.063Z",
+    "genre": "French Music",
+    "realBpm": 115.99,
+    "volume": 1,
+    "author": "Alinus57",
+    "duration": 179,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 7692,
+    "tracksCount": 1,
+    "search": "jeckcarlalarecette",
     "local": false
   },
   {
@@ -119130,6 +119484,34 @@
     "local": false
   },
   {
+    "id": "legiao-urbana-pais-e-filhos",
+    "title": "Pais E Filhos",
+    "artist": "Legião Urbana",
+    "video": "sfixHYBWaiU",
+    "language": [
+      "Portuguese"
+    ],
+    "bpm": 385.58,
+    "gap": 22078.536749831423,
+    "year": "1989",
+    "artistOrigin": "BR",
+    "lastUpdate": "2026-11-19T05:21:11.374Z",
+    "realBpm": 88,
+    "volume": 1,
+    "author": "UltraSinger",
+    "sourceUrl": "https://youtu.be/sfixHYBWaiU",
+    "duration": 309,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 7690,
+    "tracksCount": 1,
+    "search": "legiaourbanapaisefilhos",
+    "local": false
+  },
+  {
     "id": "lej-mi-pol-labedz",
     "title": "Łabędź",
     "artist": "Lej mi pół",
@@ -125982,6 +126364,34 @@
     "shortId": 7684,
     "tracksCount": 1,
     "search": "lucianopavarottienucciafocilelibiamonelieticalici",
+    "local": false
+  },
+  {
+    "id": "luciano-pavarotti-la-donna-e-mobile",
+    "title": "La donna è mobile",
+    "artist": "Luciano Pavarotti",
+    "video": "8A3zetSuYRg",
+    "language": [
+      "Italian"
+    ],
+    "bpm": 464.32,
+    "gap": 12050.53549276361,
+    "year": "1983",
+    "artistOrigin": "IT",
+    "lastUpdate": "2026-11-19T05:21:15.252Z",
+    "genre": "Opera",
+    "realBpm": 132,
+    "volume": 1,
+    "author": "Mr Tulio",
+    "duration": 171,
+    "tracks": [
+      {
+        "start": 31
+      }
+    ],
+    "shortId": 7706,
+    "tracksCount": 1,
+    "search": "lucianopavarottiladonnaemobile",
     "local": false
   },
   {
@@ -156503,6 +156913,37 @@
     "local": false
   },
   {
+    "id": "panic-at-the-disco-emperors-new-clothes",
+    "title": "Emperor’s New Clothes",
+    "artist": "Panic! at the Disco",
+    "video": "7qFF2v8VsaA",
+    "language": [
+      "English"
+    ],
+    "bpm": 376.47,
+    "gap": 39363.904693601085,
+    "year": "2016",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-19T05:21:13.649Z",
+    "genre": "Alternative",
+    "videoGap": 25,
+    "realBpm": 94,
+    "previewStart": 68,
+    "previewEnd": 95,
+    "volume": 1,
+    "author": "princetongirl98",
+    "duration": 219,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 7696,
+    "tracksCount": 1,
+    "search": "panicatthediscoemperorsnewclothes",
+    "local": false
+  },
+  {
     "id": "panic-at-the-disco-hallelujah",
     "title": "Hallelujah",
     "artist": "Panic! at the Disco",
@@ -160400,6 +160841,33 @@
     "shortId": 7682,
     "tracksCount": 1,
     "search": "pierregarnierlhorizon",
+    "local": false
+  },
+  {
+    "id": "pierre-garnier-m-pokora-chaque-seconde",
+    "title": "Chaque seconde",
+    "artist": "Pierre Garnier & M. Pokora",
+    "video": "2dJ72dtw2tU",
+    "language": [
+      "French"
+    ],
+    "bpm": 306.82,
+    "gap": 11451.228016426569,
+    "year": "2024",
+    "lastUpdate": "2026-11-19T05:21:15.380Z",
+    "genre": "Pop",
+    "realBpm": 152.02,
+    "volume": 1,
+    "author": "Alinus57 et mustangFred",
+    "duration": 166,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 7709,
+    "tracksCount": 1,
+    "search": "pierregarniermpokorachaqueseconde",
     "local": false
   },
   {
@@ -167156,7 +167624,7 @@
     "gap": 3403.682000961028,
     "year": "2003",
     "artistOrigin": "PL",
-    "lastUpdate": "2026-11-18T05:26:28.831Z",
+    "lastUpdate": "2026-11-17T15:40:29.202Z",
     "volume": 70,
     "author": "Pazio777",
     "duration": 320,
@@ -173672,6 +174140,34 @@
     "shortId": 3747,
     "tracksCount": 1,
     "search": "ryokuoushokushakaihananinatte",
+    "local": false
+  },
+  {
+    "id": "ryokuoushoku-shakai-party",
+    "title": "Party!!",
+    "artist": "Ryokuoushoku Shakai",
+    "video": "7-h8UA7fFmg",
+    "language": [
+      "Japanese"
+    ],
+    "bpm": 244,
+    "gap": 7206.393442622951,
+    "year": "2024",
+    "artistOrigin": "JP",
+    "lastUpdate": "2026-11-19T05:21:15.251Z",
+    "genre": "J-Rock",
+    "realBpm": 122,
+    "volume": 1,
+    "author": "DeinAlptraum, HansiMcKlaus",
+    "duration": 275,
+    "tracks": [
+      {
+        "start": 16
+      }
+    ],
+    "shortId": 7705,
+    "tracksCount": 1,
+    "search": "ryokuoushokushakaiparty",
     "local": false
   },
   {
@@ -197675,6 +198171,33 @@
     "local": false
   },
   {
+    "id": "the-beatles-something",
+    "title": "Something",
+    "artist": "The Beatles",
+    "video": "UelDrZ1aFeY",
+    "language": [
+      "English"
+    ],
+    "bpm": 397.51,
+    "gap": 4821.157706724359,
+    "year": "1969",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-11-19T05:21:13.651Z",
+    "genre": "Pop",
+    "realBpm": 60,
+    "volume": 1,
+    "duration": 188,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 7697,
+    "tracksCount": 1,
+    "search": "thebeatlessomething",
+    "local": false
+  },
+  {
     "id": "the-beatles-strawberry-fields-forever",
     "title": "Strawberry Fields Forever",
     "artist": "The Beatles",
@@ -217844,6 +218367,34 @@
     "shortId": 4698,
     "tracksCount": 1,
     "search": "wheatusteenagedirtbag",
+    "local": false
+  },
+  {
+    "id": "when-in-rome-the-promise",
+    "title": "The Promise",
+    "artist": "When In Rome",
+    "video": "5HI_xFQWiYU",
+    "language": [
+      "English"
+    ],
+    "bpm": 388.96,
+    "gap": 23387.326203208555,
+    "year": "1988",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-11-19T05:21:13.779Z",
+    "realBpm": 118,
+    "volume": 1,
+    "author": "UltraSinger, mindtakerr",
+    "sourceUrl": "https://www.youtube.com/watch?v=5HI_xFQWiYU",
+    "duration": 219,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 7699,
+    "tracksCount": 1,
+    "search": "wheninromethepromise",
     "local": false
   },
   {
