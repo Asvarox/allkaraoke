@@ -15,10 +15,11 @@ const SHARE_SONGS_KEY = 'share-songs';
 // eslint-disable-next-line react-refresh/only-export-components
 export const useShareSongs = createPersistedState<boolean | null>(SHARE_SONGS_KEY);
 
+// Admin review always shares (ignores the preference) and rethrows, so a failed share doesn't clear the review entry
 // eslint-disable-next-line react-refresh/only-export-components
-export const shareSong = async (id: string) => {
+export const shareSong = async (id: string, { admin = false } = {}) => {
   try {
-    const isShareEnabled = storage.getItem(SHARE_SONGS_KEY);
+    const isShareEnabled = admin || storage.getItem(SHARE_SONGS_KEY);
 
     if (!isShareEnabled) return;
 
@@ -29,6 +30,7 @@ export const shareSong = async (id: string) => {
   } catch (e) {
     console.error(e);
     posthog.captureException(e);
+    if (admin) throw e;
   }
 };
 

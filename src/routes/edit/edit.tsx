@@ -3,6 +3,7 @@ import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 import posthog from 'posthog-js';
 import { Helmet } from 'react-helmet';
+import useSWR from 'swr';
 import { Link } from 'wouter';
 
 import { Icon } from '~/modules/elements/akui/icon';
@@ -14,8 +15,14 @@ import useSongIndex from '~/modules/songs/hooks/use-song-index';
 import SongDao from '~/modules/songs/songs-service';
 import { getAdminPassword } from '~/routes/admin/admin-password';
 import { BackgroundSavesIndicator } from '~/routes/admin/background-saves-indicator';
-import { getNextAdminUnverifiedSongProcessingUrl } from '~/routes/admin/unverified-song-processing-queue';
-import { deleteAdminUnverifiedSong, listAdminUnverifiedSongs } from '~/routes/admin/unverified-songs-admin-api';
+import { ReviewReasonTags } from '~/routes/admin/review-reason-tags';
+import { getNextAdminReviewSongProcessingUrl } from '~/routes/admin/unverified-song-processing-queue';
+import {
+  ADMIN_REVIEW_SONGS_SWR_KEY,
+  deleteAdminSongQualityFlag,
+  deleteAdminUnverifiedSong,
+  listAdminReviewSongs,
+} from '~/routes/admin/unverified-songs-admin-api';
 import { LazyConvert } from '~/routes/convert/convert';
 import { useShareSongs } from '~/routes/edit/share-songs-modal';
 
@@ -35,16 +42,38 @@ export default function Edit() {
     sharedSongId: sharedSongId ?? undefined,
   });
 
+  const adminUnverifiedSongId = isAdminEdit && sharedSongId ? sharedSongId : undefined;
+  const adminReportedSongId = isAdminEdit && !sharedSongId && songId ? songId : undefined;
+  const adminReviewKey = adminUnverifiedSongId ?? adminReportedSongId;
+  const { data: adminReviewSongs } = useSWR(
+    adminReviewKey ? ([ADMIN_REVIEW_SONGS_SWR_KEY, getAdminPassword()] as const) : null,
+    ([, password]) => listAdminReviewSongs(password),
+    { keepPreviousData: true },
+  );
+  const adminReviewSong = adminReviewSongs?.find((reviewSong) => reviewSong.key === adminReviewKey);
+
   if (!song.data) return <>Loading</>;
 
-  const adminUnverifiedSongId = isAdminEdit && sharedSongId ? sharedSongId : undefined;
-  const returnLink = adminUnverifiedSongId ? 'admin/' : 'edit/list/';
-  const returnLinkLabel = adminUnverifiedSongId ? 'Return to the unverified songs list' : 'Return to the song list';
+  const returnLink = adminReviewKey ? 'admin/' : 'edit/list/';
+  const returnLinkLabel = adminReviewKey ? 'Return to the unverified songs list' : 'Return to the song list';
 
   const getAdminProcessingQueueRedirect = async (password: string) => {
-    const songs = await listAdminUnverifiedSongs(password);
+    const songs = await listAdminReviewSongs(password);
 
-    return getNextAdminUnverifiedSongProcessingUrl(songs, adminUnverifiedSongId!);
+    return getNextAdminReviewSongProcessingUrl(songs, adminReviewKey!);
+  };
+
+  const dismissAdminReports = async () => {
+    if (!adminReportedSongId) return;
+    if (!global.confirm('Dismiss the player reports for this song without changing it?')) return;
+
+    try {
+      const password = getAdminPassword();
+      await deleteAdminSongQualityFlag(password, adminReportedSongId);
+      navigate(isAdminProcessingQueue ? await getAdminProcessingQueueRedirect(password) : 'admin/');
+    } catch (error) {
+      global.alert(error instanceof Error ? error.message : 'Failed to dismiss the reports');
+    }
   };
 
   const deleteAdminSong = async () => {
@@ -75,7 +104,7 @@ export default function Edit() {
       <Helmet>
         <title>Edit Song | AllKaraoke.Party - Free Online Karaoke Party Game</title>
       </Helmet>
-      {adminUnverifiedSongId && <BackgroundSavesIndicator />}
+      {adminReviewKey && <BackgroundSavesIndicator />}
       <div className="flex items-center justify-between gap-1 px-2 text-[14px]">
         <Link to={returnLink} asChild>
           <a>{returnLinkLabel}</a>
@@ -93,7 +122,16 @@ export default function Edit() {
               <Icon icon="ic:baseline-delete" />
             </IconButton>
           )}
-          {!adminUnverifiedSongId && song.data.local && (
+          {adminReportedSongId && (
+            <IconButton
+              title="Dismiss player reports"
+              aria-label="Dismiss player reports"
+              onClick={() => void dismissAdminReports()}
+              data-test="dismiss-admin-song-reports">
+              <Icon icon="ic:baseline-check" />
+            </IconButton>
+          )}
+          {!adminReviewKey && song.data.local && (
             <IconButton
               title="Delete the song"
               onClick={async () => {
@@ -116,10 +154,17 @@ export default function Edit() {
           Updated: <b>{song.data.lastUpdate ? dayjs(song.data.lastUpdate).fromNow() : '-'}</b>
         </abbr>
       </div>
+      {adminReviewSong && (
+        <div className="flex items-center gap-2 px-2 pt-2 text-[14px]" data-test="admin-review-song-reasons">
+          <span>In the review queue because:</span>
+          <ReviewReasonTags song={adminReviewSong} />
+        </div>
+      )}
       <LazyConvert
-        key={adminUnverifiedSongId ?? song.data.id}
+        key={adminReviewKey ?? song.data.id}
         song={song.data}
         adminUnverifiedSongId={adminUnverifiedSongId}
+        adminReportedSongId={adminReportedSongId}
       />
     </Paper>
   );

@@ -87,3 +87,100 @@ export const updateAdminUnverifiedSong = async (sharedSongId: string, song: Song
   });
   await assertOk(response);
 };
+
+export type SongQualityIssue = 'not-in-sync' | 'too-loud' | 'too-quiet';
+
+export interface AdminSongQualityFlag {
+  songId: string;
+  artist: string;
+  title: string;
+  language: string[];
+  videoId: string;
+  issues: SongQualityIssue[];
+  reportCounts: Partial<Record<SongQualityIssue, number>>;
+}
+
+export const listAdminSongQualityFlags = async (password: string) => {
+  const response = await fetch('/admin/song-quality-flags', {
+    headers: adminHeaders(password),
+  });
+  await assertOk(response);
+
+  return response.json() as Promise<{ generatedAt: number; songs: AdminSongQualityFlag[] }>;
+};
+
+export const deleteAdminSongQualityFlag = async (password: string, songId: string) => {
+  const url = new URL('/admin/song-quality-flags', window.location.origin);
+  url.searchParams.set('id', songId);
+  const response = await fetch(url.toString(), {
+    method: 'DELETE',
+    headers: adminHeaders(password),
+  });
+  // Already gone (e.g. replaced by the weekly job) - nothing left to dismiss
+  if (response.status === 404) return;
+  await assertOk(response);
+};
+
+export type AdminReviewReason = 'unverified' | SongQualityIssue;
+
+/** A song waiting for admin review - either an unverified (shared) song or a library song reported by players. */
+export interface AdminReviewSong {
+  /** sharedSongId for unverified songs, songId for reported library songs */
+  key: string;
+  songId: string;
+  artist: string;
+  title: string;
+  language: string[];
+  videoId: string;
+  reasons: AdminReviewReason[];
+  /** Set only for unverified songs */
+  sharedSongId?: string;
+  firstSeenAt?: number;
+  updated?: number;
+  reportCounts?: AdminSongQualityFlag['reportCounts'];
+}
+
+export const toAdminReviewSongs = (
+  unverifiedSongs: AdminUnverifiedSong[],
+  flags: AdminSongQualityFlag[],
+): AdminReviewSong[] => {
+  const unverified: AdminReviewSong[] = unverifiedSongs.map((song) => ({
+    ...song,
+    key: song.sharedSongId,
+    reasons: ['unverified'],
+  }));
+  const reported = flags.flatMap((flag): AdminReviewSong[] => {
+    const unverifiedSong = unverified.find((song) => song.songId === flag.songId);
+    if (unverifiedSong) {
+      unverifiedSong.reasons.push(...flag.issues);
+      unverifiedSong.reportCounts = flag.reportCounts;
+      return [];
+    }
+
+    return [
+      {
+        key: flag.songId,
+        songId: flag.songId,
+        artist: flag.artist,
+        title: flag.title,
+        language: flag.language,
+        videoId: flag.videoId,
+        reasons: flag.issues,
+        reportCounts: flag.reportCounts,
+      },
+    ];
+  });
+
+  return [...unverified, ...reported];
+};
+
+export const listAdminReviewSongs = async (password: string) => {
+  const [unverifiedSongs, flags] = await Promise.all([
+    listAdminUnverifiedSongs(password),
+    listAdminSongQualityFlags(password),
+  ]);
+
+  return toAdminReviewSongs(unverifiedSongs, flags.songs);
+};
+
+export const ADMIN_REVIEW_SONGS_SWR_KEY = 'admin-review-songs';

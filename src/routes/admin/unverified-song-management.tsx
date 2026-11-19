@@ -18,14 +18,14 @@ import { getUnverifiedSongById } from '~/modules/songs/unverified-songs/api';
 import { BackgroundSavesIndicator } from './background-saves-indicator';
 import { useAdminUnverifiedSongSaves } from './background-song-save';
 import { RegenerateIndexButton } from './regenerate-index-button';
+import { ReviewReasonTags } from './review-reason-tags';
+import { buildAdminReviewSongProcessingUrl, getRandomAdminReviewSong } from './unverified-song-processing-queue';
 import {
-  buildAdminUnverifiedSongProcessingUrl,
-  getRandomAdminUnverifiedSong,
-} from './unverified-song-processing-queue';
-import {
-  AdminUnverifiedSong,
+  ADMIN_REVIEW_SONGS_SWR_KEY,
+  AdminReviewSong,
+  deleteAdminSongQualityFlag,
   deleteAdminUnverifiedSong,
-  listAdminUnverifiedSongs,
+  listAdminReviewSongs,
   regenerateAdminUnverifiedSongsIndex,
 } from './unverified-songs-admin-api';
 
@@ -37,7 +37,13 @@ const DEFAULT_PAGE_SIZE = 10;
 const UNVERIFIED_SONGS_TABLE_PAGE_SIZE_STORAGE_KEY = 'admin-unverified-songs-table-page-size';
 const UNVERIFIED_SONGS_TABLE_SORTING_STORAGE_KEY = 'admin-unverified-songs-table-sorting';
 
-const columns: MRT_ColumnDef<AdminUnverifiedSong>[] = [
+const columns: MRT_ColumnDef<AdminReviewSong>[] = [
+  {
+    accessorFn: (song) => song.reasons.join(', '),
+    id: 'reasons',
+    header: 'Reason',
+    Cell: ({ row }) => <ReviewReasonTags song={row.original} />,
+  },
   {
     accessorKey: 'artist',
     header: 'Artist',
@@ -86,14 +92,14 @@ export function UnverifiedSongManagement({ password }: Props) {
     pageIndex: 0,
     pageSize: DEFAULT_PAGE_SIZE,
   });
-  const unverifiedSongsKey = password ? (['admin-unverified-songs', password] as const) : null;
+  const unverifiedSongsKey = password ? ([ADMIN_REVIEW_SONGS_SWR_KEY, password] as const) : null;
   const {
     data: songs = [],
     error: listError,
     isLoading,
     isValidating,
     mutate,
-  } = useSWR(unverifiedSongsKey, ([, adminPassword]) => listAdminUnverifiedSongs(adminPassword), {
+  } = useSWR(unverifiedSongsKey, ([, adminPassword]) => listAdminReviewSongs(adminPassword), {
     keepPreviousData: true,
   });
 
@@ -104,8 +110,10 @@ export function UnverifiedSongManagement({ password }: Props) {
     reset: resetDeleteError,
   } = useSWRMutation(
     unverifiedSongsKey,
-    ([, adminPassword], { arg: sharedSongId }: { arg: string }) =>
-      deleteAdminUnverifiedSong(adminPassword, sharedSongId),
+    ([, adminPassword], { arg: song }: { arg: AdminReviewSong }) =>
+      song.sharedSongId
+        ? deleteAdminUnverifiedSong(adminPassword, song.sharedSongId)
+        : deleteAdminSongQualityFlag(adminPassword, song.songId),
     {
       onSuccess: () => {
         void mutate();
@@ -139,6 +147,7 @@ export function UnverifiedSongManagement({ password }: Props) {
   }, [pendingSaves.length]);
 
   const hasSongsToProcess = songs.length > 0;
+  const unverifiedCount = songs.filter((song) => song.reasons.includes('unverified')).length;
   const isBusy = isLoading || isValidating || isDeleting || isRegenerating;
   const error = listError ?? deleteError ?? regenerateError;
   const errorMessage = error instanceof Error ? error.message : null;
@@ -187,13 +196,16 @@ export function UnverifiedSongManagement({ password }: Props) {
     localStorage.setItem(UNVERIFIED_SONGS_TABLE_SORTING_STORAGE_KEY, JSON.stringify(sorting));
   }, [hasHydratedPersistedState, sorting]);
 
-  const handleDelete = async (sharedSongId: string) => {
-    if (!global.confirm('Remove this unverified song from Cloudflare KV?')) return;
+  const handleDelete = async (song: AdminReviewSong) => {
+    const message = song.sharedSongId
+      ? 'Remove this unverified song from Cloudflare KV?'
+      : 'Dismiss the player reports for this song?';
+    if (!global.confirm(message)) return;
 
     resetRegenerateError();
 
     try {
-      await deleteSong(sharedSongId);
+      await deleteSong(song);
     } catch {
       // SWR stores the error for the alert above.
     }
@@ -209,8 +221,8 @@ export function UnverifiedSongManagement({ password }: Props) {
     }
   };
 
-  const handleDownload = async (song: AdminUnverifiedSong) => {
-    const { songTxt } = await getUnverifiedSongById(song.sharedSongId);
+  const handleDownload = async (sharedSongId: string, song: AdminReviewSong) => {
+    const { songTxt } = await getUnverifiedSongById(sharedSongId);
 
     const anchor = document.createElement('a');
     anchor.href = `data:plain/text;charset=utf-8,${encodeURIComponent(songTxt)}`;
@@ -226,16 +238,19 @@ export function UnverifiedSongManagement({ password }: Props) {
       <div className="flex flex-col gap-3 pb-4 md:flex-row md:items-center md:justify-between">
         <div>
           <h1 className="text-lg!">Unverified Songs Management</h1>
-          <p className="mt-1 text-sm">{songs.length} unverified songs in Cloudflare KV</p>
+          <p className="mt-1 text-sm">
+            {unverifiedCount} unverified songs and {songs.length - unverifiedCount} songs reported by players in
+            Cloudflare KV
+          </p>
         </div>
         <div className="flex flex-wrap gap-2">
           <Button
             variant="contained"
             onClick={() => {
-              const songToProcess = getRandomAdminUnverifiedSong(songs);
+              const songToProcess = getRandomAdminReviewSong(songs);
 
               if (songToProcess) {
-                navigate(buildAdminUnverifiedSongProcessingUrl(songToProcess.sharedSongId, true));
+                navigate(buildAdminReviewSongProcessingUrl(songToProcess, true));
               }
             }}
             disabled={isBusy || !hasSongsToProcess}>
@@ -262,7 +277,7 @@ export function UnverifiedSongManagement({ password }: Props) {
         columns={columns}
         data={songs}
         state={{ isLoading: isBusy, pagination, sorting }}
-        getRowId={(song) => song.sharedSongId}
+        getRowId={(song) => song.key}
         enableRowActions
         positionActionsColumn="last"
         initialState={{
@@ -273,40 +288,46 @@ export function UnverifiedSongManagement({ password }: Props) {
         onSortingChange={setSorting}
         enableDensityToggle={false}
         enableFullScreenToggle={false}
-        renderRowActions={({ row }) => (
-          <div className="flex items-center gap-1">
-            <Tooltip title="Edit unverified song">
-              <span>
-                <Link
-                  to={buildAdminUnverifiedSongProcessingUrl(row.original.sharedSongId)}
-                  aria-label={`Edit ${row.original.title}`}
-                  asChild>
-                  <IconButton data-test="edit-unverified-song" data-song={row.original.sharedSongId}>
-                    <Icon icon="ic:baseline-edit" />
+        renderRowActions={({ row }) => {
+          const { sharedSongId } = row.original;
+
+          return (
+            <div className="flex items-center gap-1">
+              <Tooltip title={sharedSongId ? 'Edit unverified song' : 'Edit reported song'}>
+                <span>
+                  <Link
+                    to={buildAdminReviewSongProcessingUrl(row.original)}
+                    aria-label={`Edit ${row.original.title}`}
+                    asChild>
+                    <IconButton data-test="edit-unverified-song" data-song={row.original.key}>
+                      <Icon icon="ic:baseline-edit" />
+                    </IconButton>
+                  </Link>
+                </span>
+              </Tooltip>
+              {sharedSongId && (
+                <Tooltip title="Download .txt file">
+                  <IconButton
+                    data-test="download-unverified-song"
+                    data-song={sharedSongId}
+                    aria-label={`Download ${row.original.title}`}
+                    onClick={() => void handleDownload(sharedSongId, row.original)}>
+                    <Icon icon="ic:baseline-download" />
                   </IconButton>
-                </Link>
-              </span>
-            </Tooltip>
-            <Tooltip title="Download .txt file">
-              <IconButton
-                data-test="download-unverified-song"
-                data-song={row.original.sharedSongId}
-                aria-label={`Download ${row.original.title}`}
-                onClick={() => void handleDownload(row.original)}>
-                <Icon icon="ic:baseline-download" />
-              </IconButton>
-            </Tooltip>
-            <Tooltip title="Delete unverified song">
-              <IconButton
-                data-test="delete-unverified-song"
-                data-song={row.original.sharedSongId}
-                aria-label={`Delete ${row.original.title}`}
-                onClick={() => void handleDelete(row.original.sharedSongId)}>
-                <Icon icon="ic:baseline-delete" />
-              </IconButton>
-            </Tooltip>
-          </div>
-        )}
+                </Tooltip>
+              )}
+              <Tooltip title={sharedSongId ? 'Delete unverified song' : 'Dismiss player reports'}>
+                <IconButton
+                  data-test={sharedSongId ? 'delete-unverified-song' : 'dismiss-song-reports'}
+                  data-song={row.original.key}
+                  aria-label={`${sharedSongId ? 'Delete' : 'Dismiss reports for'} ${row.original.title}`}
+                  onClick={() => void handleDelete(row.original)}>
+                  <Icon icon={sharedSongId ? 'ic:baseline-delete' : 'ic:baseline-check'} />
+                </IconButton>
+              </Tooltip>
+            </div>
+          );
+        }}
       />
     </section>
   );

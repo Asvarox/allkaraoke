@@ -66,6 +66,33 @@ export const removeUnverifiedSongRecord = async (sharedSongId: string) => {
   });
 };
 
+export type SongQualityIssue = 'not-in-sync' | 'too-loud' | 'too-quiet';
+
+export interface SongQualityFlag {
+  songId: string;
+  artist: string;
+  title: string;
+  language: string[];
+  videoId: string;
+  issues: SongQualityIssue[];
+  reportCounts: Partial<Record<SongQualityIssue, number>>;
+}
+
+export const replaceSongQualityFlags = async (songs: SongQualityFlag[]) => {
+  await requestUnverifiedSongsAdmin('/song-quality-flags-admin', {
+    method: 'PUT',
+    body: JSON.stringify({ songs }),
+  });
+};
+
+/** songId -> when its reports were last dismissed (ms) */
+export const getSongQualityDismissals = async (): Promise<Record<string, number>> => {
+  const response = await requestUnverifiedSongsAdmin('/song-quality-flags-admin', { method: 'GET' });
+  const body = (await response.json()) as { dismissals?: Record<string, number> };
+
+  return body.dismissals ?? {};
+};
+
 export const regenerateUnverifiedSongIndex = async () => {
   await requestUnverifiedSongsAdmin('/unverified-songs-admin', {
     method: 'PUT',

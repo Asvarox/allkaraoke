@@ -19,11 +19,14 @@ import convertTxtToSong, { getVideoId } from '~/modules/songs/utils/convert-txt-
 import getSongId from '~/modules/songs/utils/get-song-id';
 import setQueryParam from '~/modules/utils/set-query-param';
 import { getAdminPassword } from '~/routes/admin/admin-password';
-import { saveAdminUnverifiedSongInBackground } from '~/routes/admin/background-song-save';
-import { getNextAdminUnverifiedSongProcessingUrl } from '~/routes/admin/unverified-song-processing-queue';
-import { listAdminUnverifiedSongs, updateAdminUnverifiedSong } from '~/routes/admin/unverified-songs-admin-api';
+import {
+  AdminReviewSaveTarget,
+  persistAdminReviewSong,
+  saveAdminReviewSongInBackground,
+} from '~/routes/admin/background-song-save';
+import { getNextAdminReviewSongProcessingUrl } from '~/routes/admin/unverified-song-processing-queue';
+import { ADMIN_REVIEW_SONGS_SWR_KEY, listAdminReviewSongs } from '~/routes/admin/unverified-songs-admin-api';
 import { armVerificationAutoplay, useVerificationAutoplay } from '~/routes/admin/verification-autoplay';
-import { markAdminSongVerified } from '~/routes/admin/verified-songs-counter';
 import { VerifiedSongsCounter } from '~/routes/admin/verified-songs-counter-badge';
 import AuthorAndVideo, { AuthorAndVidEntity } from '~/routes/convert/steps/author-and-video';
 import BasicData, { BasicDataEntity } from '~/routes/convert/steps/basic-data';
@@ -34,6 +37,8 @@ import { shareSong } from '~/routes/edit/share-songs-modal';
 interface Props {
   song?: Song;
   adminUnverifiedSongId?: string;
+  /** A library song opened from the admin review queue because players reported it */
+  adminReportedSongId?: string;
 }
 
 function isEmptyValue<T>(v: T | T[] | undefined) {
@@ -83,7 +88,7 @@ const duplicateStepProps = (isDuplicate: boolean) =>
       }
     : {};
 
-export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
+export default function ConvertView({ song, adminUnverifiedSongId, adminReportedSongId }: Props) {
   const isEdit = !!song;
   const { data: songs } = useSongIndex(true);
   useBackground(false);
@@ -95,12 +100,17 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
   const [saveError, setSaveError] = useState<string | null>(null);
   const redirect = useQueryParam('redirect');
   const isAdminProcessingQueue = useQueryParam('processQueue') === 'true';
-  const autoplayFirstSection = useVerificationAutoplay(!!adminUnverifiedSongId && isAdminProcessingQueue);
+  const adminReviewTarget: AdminReviewSaveTarget | undefined = adminUnverifiedSongId
+    ? { key: adminUnverifiedSongId, sharedSongId: adminUnverifiedSongId }
+    : adminReportedSongId
+      ? { key: adminReportedSongId }
+      : undefined;
+  const autoplayFirstSection = useVerificationAutoplay(!!adminReviewTarget && isAdminProcessingQueue);
 
   // Prefetch the queue so saving can redirect to the next song without waiting for a request.
-  const { data: prefetchedUnverifiedSongs } = useSWR(
-    adminUnverifiedSongId && isAdminProcessingQueue ? (['admin-unverified-songs', getAdminPassword()] as const) : null,
-    ([, password]) => listAdminUnverifiedSongs(password),
+  const { data: prefetchedReviewSongs } = useSWR(
+    adminReviewTarget && isAdminProcessingQueue ? ([ADMIN_REVIEW_SONGS_SWR_KEY, getAdminPassword()] as const) : null,
+    ([, password]) => listAdminReviewSongs(password),
     { keepPreviousData: true },
   );
 
@@ -257,27 +267,24 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
     id: getSongId(metadataEntity),
   };
 
-  const getAdminProcessingQueueRedirect = async () => {
-    const songs = prefetchedUnverifiedSongs ?? (await listAdminUnverifiedSongs(getAdminPassword()));
+  const getAdminProcessingQueueRedirect = async (currentKey: string) => {
+    const songs = prefetchedReviewSongs ?? (await listAdminReviewSongs(getAdminPassword()));
 
-    return getNextAdminUnverifiedSongProcessingUrl(songs, adminUnverifiedSongId!);
+    return getNextAdminReviewSongProcessingUrl(songs, currentKey);
   };
 
   const persistSong = async () => {
-    if (adminUnverifiedSongId) {
+    if (adminReviewTarget) {
       if (isAdminProcessingQueue) {
         // Save in the background so the next song can be processed right away.
-        void saveAdminUnverifiedSongInBackground(adminUnverifiedSongId, finalSong!);
+        void saveAdminReviewSongInBackground(adminReviewTarget, finalSong!);
         armVerificationAutoplay();
-        const nextUrl = await getAdminProcessingQueueRedirect();
+        const nextUrl = await getAdminProcessingQueueRedirect(adminReviewTarget.key);
         navigate(nextUrl);
         return;
       }
 
-      await SongDao.store(finalSong!);
-      await shareSong(finalSong!.id);
-      await updateAdminUnverifiedSong(adminUnverifiedSongId, finalSong!);
-      markAdminSongVerified(adminUnverifiedSongId);
+      await persistAdminReviewSong(adminReviewTarget, finalSong!);
       navigate('admin/');
       return;
     }
@@ -426,7 +433,7 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
                   disabled={currentStep === 0}>
                   Previous
                 </Button>
-                {adminUnverifiedSongId && <VerifiedSongsCounter />}
+                {adminReviewTarget && <VerifiedSongsCounter />}
                 {isLastStep ? (
                   <Button
                     data-test="save-button"
