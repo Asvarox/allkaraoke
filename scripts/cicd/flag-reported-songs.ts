@@ -20,18 +20,27 @@ const LOOKBACK_MONTHS = 6;
 
 const PAGE_SIZE = 10000;
 
-type PostHogRow = [songId: string, issue: SongQualityIssue, timestamp: string, songLastUpdated: string | null];
+type PostHogEventRow = [
+  uuid: string,
+  songId: string,
+  issues: string[],
+  timestamp: string,
+  songLastUpdated: string | null,
+];
+type ReportRow = [songId: string, issue: SongQualityIssue, timestamp: string, songLastUpdated: string | null];
 
-const buildQuery = (offset: number) => `
-  select properties.songId as songId, issue, timestamp, properties.songLastUpdated as songLastUpdated
+// PostHog rejects OFFSET for API-key queries, so page by timestamp (inclusive) and dedupe events by uuid
+const buildQuery = (fromTimestamp: string | null) => `
+  select uuid, properties.songId as songId, JSONExtract(ifNull(properties.issues, '[]'), 'Array(String)') as issues,
+    timestamp, properties.songLastUpdated as songLastUpdated
   from events
-  array join JSONExtract(ifNull(properties.issues, '[]'), 'Array(String)') as issue
   where event = 'rate-song'
     and timestamp > now() - interval ${LOOKBACK_MONTHS} month
-    and issue in (${ISSUES.map((issue) => `'${issue}'`).join(', ')})
+    ${fromTimestamp ? `and timestamp >= toDateTime64('${fromTimestamp}', 6, 'UTC')` : ''}
+    and hasAny(issues, [${ISSUES.map((issue) => `'${issue}'`).join(', ')}])
     and properties.songId is not null
-  order by timestamp, uuid, issue
-  limit ${PAGE_SIZE} offset ${offset}
+  order by timestamp
+  limit ${PAGE_SIZE}
 `;
 
 const toTime = (date: string | null | undefined) => (date ? new Date(date).getTime() : NaN);
@@ -44,17 +53,28 @@ const toTime = (date: string | null | undefined) => (date ? new Date(date).getTi
   }
 
   // Page through the whole window - publishing a partial result would drop valid flags
-  const rows: PostHogRow[] = [];
-  for (let offset = 0; ; offset += PAGE_SIZE) {
+  const rows: ReportRow[] = [];
+  const seenEvents = new Set<string>();
+  for (let cursor: string | null = null; ;) {
     const response = await requestPostHog('query', {
       method: 'POST',
-      body: JSON.stringify({ query: { kind: 'HogQLQuery', query: buildQuery(offset) } }),
+      body: JSON.stringify({ query: { kind: 'HogQLQuery', query: buildQuery(cursor) } }),
     });
-    const page = response.results as PostHogRow[] | undefined;
+    const page = response.results as PostHogEventRow[] | undefined;
     if (!Array.isArray(page)) throw new Error(`Unexpected PostHog response: ${JSON.stringify(response)}`);
 
-    rows.push(...page);
+    for (const [uuid, songId, issues, timestamp, songLastUpdated] of page) {
+      if (seenEvents.has(uuid)) continue;
+      seenEvents.add(uuid);
+      issues
+        .filter((issue): issue is SongQualityIssue => ISSUES.includes(issue as SongQualityIssue))
+        .forEach((issue) => rows.push([songId, issue, timestamp, songLastUpdated]));
+    }
+
     if (page.length < PAGE_SIZE) break;
+    const nextCursor = page[page.length - 1][3];
+    if (nextCursor === cursor) throw new Error(`More than ${PAGE_SIZE} reports share timestamp ${cursor}`);
+    cursor = nextCursor;
   }
 
   // Skip reports about an older version of the song: compare the version the player rated when known,
@@ -104,6 +124,7 @@ const toTime = (date: string | null | undefined) => (date ? new Date(date).getTi
   await replaceSongQualityFlags(flags);
 
   const summary = {
+    eventsAnalyzed: seenEvents.size,
     reportsAnalyzed: rows.length,
     skippedOutdated,
     skippedUnknownSong,
