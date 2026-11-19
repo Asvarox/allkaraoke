@@ -54,7 +54,7 @@ export interface AdminReviewSaveTarget {
 
 export const persistAdminReviewSong = async (target: AdminReviewSaveTarget, song: Song) => {
   await SongDao.storeAndPatchIndex(song);
-  await shareSong(song.id);
+  await shareSong(song.id, { admin: true });
   if (target.sharedSongId) {
     await updateAdminUnverifiedSong(target.sharedSongId, song);
   } else {

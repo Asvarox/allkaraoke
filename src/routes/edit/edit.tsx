@@ -104,7 +104,7 @@ export default function Edit() {
       <Helmet>
         <title>Edit Song | AllKaraoke.Party - Free Online Karaoke Party Game</title>
       </Helmet>
-      {adminUnverifiedSongId && <BackgroundSavesIndicator />}
+      {adminReviewKey && <BackgroundSavesIndicator />}
       <div className="flex items-center justify-between gap-1 px-2 text-[14px]">
         <Link to={returnLink} asChild>
           <a>{returnLinkLabel}</a>

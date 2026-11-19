@@ -18,18 +18,23 @@ const ISSUES: SongQualityIssue[] = ['not-in-sync', 'too-loud', 'too-quiet'];
 const REPORT_THRESHOLD = 5;
 const LOOKBACK_MONTHS = 6;
 
-type PostHogRow = [songId: string, issue: SongQualityIssue, timestamp: string];
+const PAGE_SIZE = 10000;
 
-const query = `
-  select properties.songId as songId, issue, timestamp
+type PostHogRow = [songId: string, issue: SongQualityIssue, timestamp: string, songLastUpdated: string | null];
+
+const buildQuery = (offset: number) => `
+  select properties.songId as songId, issue, timestamp, properties.songLastUpdated as songLastUpdated
   from events
   array join JSONExtract(ifNull(properties.issues, '[]'), 'Array(String)') as issue
   where event = 'rate-song'
     and timestamp > now() - interval ${LOOKBACK_MONTHS} month
     and issue in (${ISSUES.map((issue) => `'${issue}'`).join(', ')})
     and properties.songId is not null
-  limit 50000
+  order by timestamp, uuid, issue
+  limit ${PAGE_SIZE} offset ${offset}
 `;
+
+const toTime = (date: string | null | undefined) => (date ? new Date(date).getTime() : NaN);
 
 (async () => {
   const { requestPostHog } = require('../utils.cjs');
@@ -38,25 +43,36 @@ const query = `
     throw new Error('Unverified songs admin endpoint env is not configured');
   }
 
-  const response = await requestPostHog('query', {
-    method: 'POST',
-    body: JSON.stringify({ query: { kind: 'HogQLQuery', query } }),
-  });
-  const rows = response.results as PostHogRow[];
+  // Page through the whole window - publishing a partial result would drop valid flags
+  const rows: PostHogRow[] = [];
+  for (let offset = 0; ; offset += PAGE_SIZE) {
+    const response = await requestPostHog('query', {
+      method: 'POST',
+      body: JSON.stringify({ query: { kind: 'HogQLQuery', query: buildQuery(offset) } }),
+    });
+    const page = response.results as PostHogRow[] | undefined;
+    if (!Array.isArray(page)) throw new Error(`Unexpected PostHog response: ${JSON.stringify(response)}`);
 
-  // Reports made before the song was last updated were most likely about the old version, so skip them
+    rows.push(...page);
+    if (page.length < PAGE_SIZE) break;
+  }
+
+  // Skip reports about an older version of the song: compare the version the player rated when known,
+  // otherwise fall back to when the report was made
   const songsById = new Map(currentSongs.map((song) => [song.id, song]));
   const counts = new Map<string, Partial<Record<SongQualityIssue, number>>>();
   let skippedOutdated = 0;
   let skippedUnknownSong = 0;
 
-  for (const [songId, issue, timestamp] of rows) {
+  for (const [songId, issue, timestamp, songLastUpdated] of rows) {
     const song = songsById.get(songId);
     if (!song) {
       skippedUnknownSong += 1;
       continue;
     }
-    if (song.lastUpdate && new Date(timestamp).getTime() <= new Date(song.lastUpdate).getTime()) {
+    const currentVersion = toTime(song.lastUpdate);
+    const reportedVersion = Number.isNaN(toTime(songLastUpdated)) ? toTime(timestamp) : toTime(songLastUpdated);
+    if (!Number.isNaN(currentVersion) && reportedVersion < currentVersion) {
       skippedOutdated += 1;
       continue;
     }
