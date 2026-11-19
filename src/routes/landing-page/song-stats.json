@@ -31,12 +31,12 @@
     "Disturbed",
     "Ed Sheeran",
     "Florence + the Machine",
+    "Panic! at the Disco",
     "Radiohead",
     "Red Hot Chili Peppers",
     "Beyoncé",
     "Foo Fighters",
     "Miley Cyrus",
-    "Panic! at the Disco",
     "Billy Talent",
     "Katy Perry",
     "Metallica",
@@ -189,11 +189,12 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 7634,
-  "generatedAt": "2026-11-18T05:28:25.160Z",
+  "songs": 7654,
+  "generatedAt": "2026-11-19T05:22:07.114Z",
   "additionsPerDay": {
-    "2026-11-18": 72,
-    "2026-11-17": 14,
+    "2026-11-19": 20,
+    "2026-11-18": 70,
+    "2026-11-17": 16,
     "2026-11-16": 42,
     "2026-11-15": 47,
     "2026-11-14": 128,
@@ -233,10 +234,149 @@
     "2026-09-29": 2,
     "2026-09-24": 16,
     "2026-09-23": 8,
-    "2026-09-22": 19,
-    "2026-09-19": 13
+    "2026-09-22": 19
   },
   "recentlyAdded": [
+    {
+      "id": "pierre-garnier-m-pokora-chaque-seconde",
+      "artist": "Pierre Garnier & M. Pokora",
+      "title": "Chaque seconde",
+      "video": "2dJ72dtw2tU",
+      "addedAt": "2026-11-19T05:21:15.380Z"
+    },
+    {
+      "id": "gims-ciel",
+      "artist": "Gims",
+      "title": "Ciel",
+      "video": "KG6ft_YDp5k",
+      "addedAt": "2026-11-19T05:21:15.379Z"
+    },
+    {
+      "id": "camille-lellouche-ninsiste-pas",
+      "artist": "Camille Lellouche",
+      "title": "N'insiste pas",
+      "video": "ecpZpIzHD_s",
+      "addedAt": "2026-11-19T05:21:15.254Z"
+    },
+    {
+      "id": "luciano-pavarotti-la-donna-e-mobile",
+      "artist": "Luciano Pavarotti",
+      "title": "La donna è mobile",
+      "video": "8A3zetSuYRg",
+      "addedAt": "2026-11-19T05:21:15.252Z"
+    },
+    {
+      "id": "ryokuoushoku-shakai-party",
+      "artist": "Ryokuoushoku Shakai",
+      "title": "Party!!",
+      "video": "7-h8UA7fFmg",
+      "addedAt": "2026-11-19T05:21:15.251Z"
+    },
+    {
+      "id": "celine-dion-bonjour-pardon-merci",
+      "artist": "Céline Dion",
+      "title": "Bonjour, Pardon, Merci",
+      "video": "x2sFb-hrg_M",
+      "addedAt": "2026-11-19T05:21:15.249Z"
+    },
+    {
+      "id": "barbara-goettingen",
+      "artist": "Barbara",
+      "title": "Göttingen",
+      "video": "t0sNy1xOhRc",
+      "addedAt": "2026-11-19T05:21:14.020Z"
+    },
+    {
+      "id": "gims-fantaisie",
+      "artist": "Gims",
+      "title": "Fantaisie",
+      "video": "3NXKBGfZAHg",
+      "addedAt": "2026-11-19T05:21:14.019Z"
+    },
+    {
+      "id": "gims-sentimental",
+      "artist": "Gims",
+      "title": "Sentimental",
+      "video": "A0-JQ7r9l8E",
+      "addedAt": "2026-11-19T05:21:14.017Z"
+    },
+    {
+      "id": "amir-a-limparfaite",
+      "artist": "Amir",
+      "title": "À l'imparfaite",
+      "video": "jEHlP3pnC8U",
+      "addedAt": "2026-11-19T05:21:13.912Z"
+    },
+    {
+      "id": "when-in-rome-the-promise",
+      "artist": "When In Rome",
+      "title": "The Promise",
+      "video": "5HI_xFQWiYU",
+      "addedAt": "2026-11-19T05:21:13.779Z"
+    },
+    {
+      "id": "bleu-soleil-luiza-soleil-bleu",
+      "artist": "Bleu Soleil & Luiza",
+      "title": "Soleil Bleu",
+      "video": "nd8RD3tjNQE",
+      "addedAt": "2026-11-19T05:21:13.654Z"
+    },
+    {
+      "id": "the-beatles-something",
+      "artist": "The Beatles",
+      "title": "Something",
+      "video": "UelDrZ1aFeY",
+      "addedAt": "2026-11-19T05:21:13.651Z"
+    },
+    {
+      "id": "panic-at-the-disco-emperors-new-clothes",
+      "artist": "Panic! at the Disco",
+      "title": "Emperor’s New Clothes",
+      "video": "7qFF2v8VsaA",
+      "addedAt": "2026-11-19T05:21:13.649Z"
+    },
+    {
+      "id": "charlotte-cardin-tant-pis-pour-elle",
+      "artist": "Charlotte Cardin",
+      "title": "Tant pis pour elle.",
+      "video": "Eg4hjfjS0YQ",
+      "addedAt": "2026-11-19T05:21:13.521Z"
+    },
+    {
+      "id": "amir-complementaires",
+      "artist": "Amir",
+      "title": "Complémentaires",
+      "video": "_DvigtCEqpg",
+      "addedAt": "2026-11-19T05:21:13.415Z"
+    },
+    {
+      "id": "amir-nous",
+      "artist": "Amir",
+      "title": "Nous",
+      "video": "_xOKYvyi0Mc",
+      "addedAt": "2026-11-19T05:21:13.285Z"
+    },
+    {
+      "id": "jeck-carla-la-recette",
+      "artist": "Jeck & Carla",
+      "title": "La recette",
+      "video": "9kBpbQDZdbQ",
+      "addedAt": "2026-11-19T05:21:12.063Z"
+    },
+    {
+      "id": "amel-bent-lamour-ca-se-donne",
+      "artist": "Amel Bent",
+      "title": "L'amour ça se donne",
+      "video": "2p6w2i0T3oE",
+      "addedAt": "2026-11-19T05:21:11.382Z"
+    },
+    {
+      "id": "legiao-urbana-pais-e-filhos",
+      "artist": "Legião Urbana",
+      "title": "Pais E Filhos",
+      "video": "sfixHYBWaiU",
+      "addedAt": "2026-11-19T05:21:11.374Z"
+    },
     {
       "id": "calogero-prendre-racine",
       "artist": "Calogero",
@@ -432,146 +572,6 @@
       "title": "Eddy Mitchell",
       "video": "84LnqOgeKp4",
       "addedAt": "2026-11-18T05:26:44.620Z"
-    },
-    {
-      "id": "closterkeller-wladza",
-      "artist": "Closterkeller",
-      "title": "Władza",
-      "video": "syrX7NfB1L4",
-      "addedAt": "2026-11-18T05:26:44.443Z"
-    },
-    {
-      "id": "la-oreja-de-van-gogh-paris",
-      "artist": "La Oreja de Van Gogh",
-      "title": "Paris",
-      "video": "r73sn8wVHZU",
-      "addedAt": "2026-11-18T05:26:44.442Z"
-    },
-    {
-      "id": "ania-wyszkoni-z-cisza-posrod-czterech-scian",
-      "artist": "Ania Wyszkoni",
-      "title": "Z ciszą pośród czterech ścian",
-      "video": "xCACjAtyBQ8",
-      "addedAt": "2026-11-18T05:26:44.441Z"
-    },
-    {
-      "id": "los-prisioneros-paramar",
-      "artist": "Los Prisioneros",
-      "title": "Paramar",
-      "video": "-ZhFmyhONew",
-      "addedAt": "2026-11-18T05:26:44.264Z"
-    },
-    {
-      "id": "vianney-dor-et-detain",
-      "artist": "Vianney",
-      "title": "D'or et d'Étain",
-      "video": "tMvS0wFUssw",
-      "addedAt": "2026-11-18T05:26:44.262Z"
-    },
-    {
-      "id": "andrzej-piaseczny-chodz-przytul-przebacz",
-      "artist": "Andrzej Piaseczny",
-      "title": "Chodź, przytul, przebacz",
-      "video": "kbkJq3NTWp4",
-      "addedAt": "2026-11-18T05:26:44.261Z"
-    },
-    {
-      "id": "quo-vadis-obojetnosc",
-      "artist": "Quo Vadis",
-      "title": "Obojętność",
-      "video": "lDT_Xb_NW2g",
-      "addedAt": "2026-11-18T05:26:42.913Z"
-    },
-    {
-      "id": "felicia-my-system",
-      "artist": "FELICIA",
-      "title": "My System",
-      "video": "JXLRzNLoOb4",
-      "addedAt": "2026-11-18T05:26:42.730Z"
-    },
-    {
-      "id": "disneys-kubus-puchatek-wladyslaw-grzywna-intro",
-      "artist": "Disney’s Kubuś Puchatek (Władysław Grzywna)",
-      "title": "Intro",
-      "video": "xc-eU8JokU0",
-      "addedAt": "2026-11-18T05:26:42.554Z"
-    },
-    {
-      "id": "vianney-dabali",
-      "artist": "Vianney",
-      "title": "Dabali",
-      "video": "TYWCGfofggg",
-      "addedAt": "2026-11-18T05:26:42.378Z"
-    },
-    {
-      "id": "cleo-lowcy-gwiazd",
-      "artist": "Cleo",
-      "title": "Łowcy Gwiazd",
-      "video": "xBB1GLK1xPc",
-      "addedAt": "2026-11-18T05:26:42.377Z"
-    },
-    {
-      "id": "crush-40-live-life",
-      "artist": "Crush 40",
-      "title": "Live Life",
-      "video": "K6PTS0HXFzI",
-      "addedAt": "2026-11-18T05:26:42.376Z"
-    },
-    {
-      "id": "eddy-mitchell-mman",
-      "artist": "Eddy Mitchell",
-      "title": "M'man",
-      "video": "GdHAmuHDQpE",
-      "addedAt": "2026-11-18T05:26:42.375Z"
-    },
-    {
-      "id": "matthias-reim-verdammt-ich-lieb-dich",
-      "artist": "Matthias Reim",
-      "title": "Verdammt - ich lieb’ dich",
-      "video": "wl0OmABk_5o",
-      "addedAt": "2026-11-18T05:26:41.045Z"
-    },
-    {
-      "id": "budka-suflera-martwe-morze",
-      "artist": "Budka Suflera",
-      "title": "Martwe morze",
-      "video": "OqPwjmi9hCg",
-      "addedAt": "2026-11-18T05:26:41.042Z"
-    },
-    {
-      "id": "eddy-mitchell-un-portrait-de-norman-rockwell",
-      "artist": "Eddy Mitchell",
-      "title": "Un portrait de Norman Rockwell",
-      "video": "QC6erwQUPxc",
-      "addedAt": "2026-11-18T05:26:41.041Z"
-    },
-    {
-      "id": "spider-murphy-gang-skandal-im-sperrbezirk",
-      "artist": "Spider Murphy Gang",
-      "title": "Skandal im Sperrbezirk",
-      "video": "oESfa8jt0p8",
-      "addedAt": "2026-11-18T05:26:40.855Z"
-    },
-    {
-      "id": "the-front-bottoms-twin-size-mattress",
-      "artist": "The Front Bottoms",
-      "title": "Twin Size Mattress",
-      "video": "cWJUk65EnQM",
-      "addedAt": "2026-11-18T05:26:40.589Z"
-    },
-    {
-      "id": "angele-ta-reine",
-      "artist": "Angèle",
-      "title": "Ta Reine",
-      "video": "Jo_4AvB6NKY",
-      "addedAt": "2026-11-18T05:26:40.588Z"
-    },
-    {
-      "id": "anavitoria-e-vitor-kley-pupila",
-      "artist": "AnaVitória e Vitor Kley",
-      "title": "Pupila",
-      "video": "9Sk7RQtSl5g",
-      "addedAt": "2026-11-18T05:26:40.587Z"
     }
   ]
 }
