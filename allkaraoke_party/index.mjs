@@ -1,6 +1,79 @@
 import { DurableObject } from "cloudflare:workers";
+//#region functions/song-quality-flags-store.ts
+var SONG_QUALITY_ISSUES = [
+	"not-in-sync",
+	"too-loud",
+	"too-quiet"
+];
+var SONG_QUALITY_FLAGS_KEY = "song-quality-flags";
+var SONG_QUALITY_DISMISSALS_KEY = "song-quality-dismissals";
+var DISMISSAL_RETENTION_MS = 1728e7;
+var isSongQualityIssue = (value) => SONG_QUALITY_ISSUES.includes(value);
+var normalizeSongQualityFlag = (payload) => {
+	if (!payload || typeof payload !== "object") return null;
+	const flag = payload;
+	if (typeof flag.songId !== "string" || !flag.songId || !Array.isArray(flag.issues)) return null;
+	if (typeof flag.artist !== "string" || typeof flag.title !== "string") return null;
+	const issues = [...new Set(flag.issues.filter(isSongQualityIssue))];
+	if (!issues.length) return null;
+	const reportCounts = {};
+	for (const issue of issues) {
+		const count = flag.reportCounts?.[issue];
+		if (typeof count === "number" && Number.isFinite(count)) reportCounts[issue] = count;
+	}
+	return {
+		songId: flag.songId,
+		artist: flag.artist,
+		title: flag.title,
+		language: Array.isArray(flag.language) ? flag.language.filter((lang) => typeof lang === "string") : [],
+		videoId: typeof flag.videoId === "string" ? flag.videoId : "",
+		issues,
+		reportCounts
+	};
+};
+var getSongQualityFlags = async (kvNamespace) => {
+	const stored = await kvNamespace.get(SONG_QUALITY_FLAGS_KEY, "json");
+	return {
+		generatedAt: stored?.generatedAt ?? 0,
+		songs: (stored?.songs ?? []).flatMap((flag) => {
+			const normalized = normalizeSongQualityFlag(flag);
+			return normalized ? [normalized] : [];
+		})
+	};
+};
+var replaceSongQualityFlags = async (kvNamespace, songs) => {
+	const document = {
+		generatedAt: Date.now(),
+		songs
+	};
+	await kvNamespace.put(SONG_QUALITY_FLAGS_KEY, JSON.stringify(document));
+};
+var getSongQualityDismissals = async (kvNamespace) => {
+	const stored = await kvNamespace.get(SONG_QUALITY_DISMISSALS_KEY, "json");
+	return Object.fromEntries(Object.entries(stored ?? {}).filter(([, dismissedAt]) => typeof dismissedAt === "number"));
+};
+var recordSongQualityDismissal = async (kvNamespace, songId, dismissedAt) => {
+	const current = await getSongQualityDismissals(kvNamespace);
+	const dismissals = Object.fromEntries(Object.entries({
+		...current,
+		[songId]: dismissedAt
+	}).filter(([, time]) => time > dismissedAt - DISMISSAL_RETENTION_MS));
+	await kvNamespace.put(SONG_QUALITY_DISMISSALS_KEY, JSON.stringify(dismissals));
+};
+var removeSongQualityFlag = async (kvNamespace, songId) => {
+	const current = await getSongQualityFlags(kvNamespace);
+	const songs = current.songs.filter((flag) => flag.songId !== songId);
+	if (songs.length === current.songs.length) return false;
+	await recordSongQualityDismissal(kvNamespace, songId, Date.now());
+	await kvNamespace.put(SONG_QUALITY_FLAGS_KEY, JSON.stringify({
+		...current,
+		songs
+	}));
+	return true;
+};
+//#endregion
 //#region functions/unverified-songs-browser-admin-auth.ts
-var responseHeaders$3 = { "Content-Type": "application/json" };
+var responseHeaders$4 = { "Content-Type": "application/json" };
 var isAuthorizedUnverifiedSongsAdmin = (request, env) => {
 	const expectedPassword = env.ADMIN_PANEL_PASSWORD;
 	const password = request.headers.get("x-admin-panel-password");
@@ -8,13 +81,36 @@ var isAuthorizedUnverifiedSongsAdmin = (request, env) => {
 };
 var unauthorizedResponse = () => new Response(JSON.stringify({ error: "Unauthorized" }), {
 	status: 401,
-	headers: responseHeaders$3
+	headers: responseHeaders$4
 });
 //#endregion
 //#region functions/unverified-songs-env.ts
 var getUnverifiedSongsKv = (env) => env.UNVERIFIED_SONGS_KV ?? env.SHARED_SONGS_KV;
 var getUnverifiedSongsAdminToken = (env) => env.UNVERIFIED_SONGS_ADMIN_TOKEN ?? env.SHARED_SONGS_ADMIN_TOKEN;
 var getUnverifiedSongsRequestToken = (request) => request.headers.get("x-unverified-songs-admin-token") ?? request.headers.get("x-shared-songs-admin-token");
+//#endregion
+//#region functions/admin/song-quality-flags.ts
+var jsonResponse$1 = (body, status = 200) => new Response(JSON.stringify(body), {
+	status,
+	headers: responseHeaders$4
+});
+var onRequest$7 = async ({ request, env }) => {
+	if (!isAuthorizedUnverifiedSongsAdmin(request, env)) return unauthorizedResponse();
+	const kv = getUnverifiedSongsKv(env);
+	if (!kv) return jsonResponse$1({ error: "Unverified songs storage is not configured" }, 500);
+	try {
+		if (request.method === "GET") return jsonResponse$1(await getSongQualityFlags(kv));
+		if (request.method === "DELETE") {
+			const songId = new URL(request.url).searchParams.get("id")?.trim();
+			if (!songId) return jsonResponse$1({ error: "Missing query parameter: id" }, 400);
+			return await removeSongQualityFlag(kv, songId) ? jsonResponse$1({ ok: true }) : jsonResponse$1({ error: "Song not found" }, 404);
+		}
+		return jsonResponse$1({ error: "Method not allowed" }, 405);
+	} catch (error) {
+		console.error("Failed to administer song quality flags", error);
+		return jsonResponse$1({ error: "Internal server error" }, 500);
+	}
+};
 //#endregion
 //#region functions/unverified-songs-store.ts
 var LEGACY_SHARED_SONG_KEY_PREFIX = "shared-song:";
@@ -140,86 +236,86 @@ var isUnverifiedSongUpdate = (payload) => {
 	const update = payload;
 	return typeof update.songId === "string" && typeof update.songTxt === "string" && typeof update.artist === "string" && typeof update.title === "string" && Array.isArray(update.language) && update.language.every((language) => typeof language === "string") && typeof update.videoId === "string";
 };
-var onRequest$5 = async ({ request, env }) => {
+var onRequest$6 = async ({ request, env }) => {
 	if (!isAuthorizedUnverifiedSongsAdmin(request, env)) return unauthorizedResponse();
 	const unverifiedSongsKv = getUnverifiedSongsKv(env);
 	if (!unverifiedSongsKv) return new Response(JSON.stringify({ error: "Unverified songs storage is not configured" }), {
 		status: 500,
-		headers: responseHeaders$3
+		headers: responseHeaders$4
 	});
 	try {
 		if (request.method !== "PUT") return new Response(JSON.stringify({ error: "Method not allowed" }), {
 			status: 405,
-			headers: responseHeaders$3
+			headers: responseHeaders$4
 		});
 		const sharedSongId = new URL(request.url).searchParams.get("id")?.trim();
 		if (!sharedSongId) return new Response(JSON.stringify({ error: "Missing query parameter: id" }), {
 			status: 400,
-			headers: responseHeaders$3
+			headers: responseHeaders$4
 		});
 		const payload = await request.json();
 		if (!isUnverifiedSongUpdate(payload)) return new Response(JSON.stringify({ error: "Invalid song payload" }), {
 			status: 400,
-			headers: responseHeaders$3
+			headers: responseHeaders$4
 		});
 		if (!await updateUnverifiedSong(unverifiedSongsKv, sharedSongId, payload)) return new Response(JSON.stringify({ error: "Song not found" }), {
 			status: 404,
-			headers: responseHeaders$3
+			headers: responseHeaders$4
 		});
-		return new Response(JSON.stringify({ ok: true }), { headers: responseHeaders$3 });
+		return new Response(JSON.stringify({ ok: true }), { headers: responseHeaders$4 });
 	} catch (error) {
 		console.error("Failed to update unverified song", error);
 		return new Response(JSON.stringify({ error: "Internal server error" }), {
 			status: 500,
-			headers: responseHeaders$3
+			headers: responseHeaders$4
 		});
 	}
 };
 //#endregion
 //#region functions/admin/unverified-songs.ts
-var onRequest$4 = async ({ request, env }) => {
+var onRequest$5 = async ({ request, env }) => {
 	if (!isAuthorizedUnverifiedSongsAdmin(request, env)) return unauthorizedResponse();
 	const unverifiedSongsKv = getUnverifiedSongsKv(env);
 	if (!unverifiedSongsKv) return new Response(JSON.stringify({ error: "Unverified songs storage is not configured" }), {
 		status: 500,
-		headers: responseHeaders$3
+		headers: responseHeaders$4
 	});
 	try {
 		if (request.method === "GET") {
 			const songs = await listUnverifiedSongs(unverifiedSongsKv);
-			return new Response(JSON.stringify(songs), { headers: responseHeaders$3 });
+			return new Response(JSON.stringify(songs), { headers: responseHeaders$4 });
 		}
 		if (request.method === "DELETE") {
 			const sharedSongId = new URL(request.url).searchParams.get("id")?.trim();
 			if (!sharedSongId) return new Response(JSON.stringify({ error: "Missing query parameter: id" }), {
 				status: 400,
-				headers: responseHeaders$3
+				headers: responseHeaders$4
 			});
 			if (!await removeUnverifiedSong(unverifiedSongsKv, sharedSongId)) return new Response(JSON.stringify({ error: "Song not found" }), {
 				status: 404,
-				headers: responseHeaders$3
+				headers: responseHeaders$4
 			});
-			return new Response(JSON.stringify({ ok: true }), { headers: responseHeaders$3 });
+			return new Response(JSON.stringify({ ok: true }), { headers: responseHeaders$4 });
 		}
 		if (request.method === "PUT") {
 			await regenerateIndex(unverifiedSongsKv);
-			return new Response(JSON.stringify({ ok: true }), { headers: responseHeaders$3 });
+			return new Response(JSON.stringify({ ok: true }), { headers: responseHeaders$4 });
 		}
 		return new Response(JSON.stringify({ error: "Method not allowed" }), {
 			status: 405,
-			headers: responseHeaders$3
+			headers: responseHeaders$4
 		});
 	} catch (error) {
 		console.error("Failed to administer unverified songs", error);
 		return new Response(JSON.stringify({ error: "Internal server error" }), {
 			status: 500,
-			headers: responseHeaders$3
+			headers: responseHeaders$4
 		});
 	}
 };
 //#endregion
 //#region functions/proxy.ts
-var onRequest$3 = async (context) => {
+var onRequest$4 = async (context) => {
 	const hostAllowList = ["ultrastar-es.org", "usdb.animux.de"];
 	try {
 		const url = new URL(context.request.url);
@@ -240,6 +336,35 @@ var onRequest$3 = async (context) => {
 	} catch (e) {
 		console.error(e);
 		return new Response();
+	}
+};
+//#endregion
+//#region functions/song-quality-flags-admin.ts
+var responseHeaders$3 = { "Content-Type": "application/json" };
+var jsonResponse = (body, status = 200) => new Response(JSON.stringify(body), {
+	status,
+	headers: responseHeaders$3
+});
+var onRequest$3 = async ({ request, env }) => {
+	const expectedToken = getUnverifiedSongsAdminToken(env);
+	if (!expectedToken || getUnverifiedSongsRequestToken(request) !== expectedToken) return jsonResponse({ error: "Unauthorized" }, 401);
+	const kv = getUnverifiedSongsKv(env);
+	if (!kv) return jsonResponse({ error: "Unverified songs storage is not configured" }, 500);
+	if (request.method === "GET") return jsonResponse({ dismissals: await getSongQualityDismissals(kv) });
+	if (request.method !== "PUT") return jsonResponse({ error: "Method not allowed" }, 405);
+	try {
+		const payload = await request.json();
+		if (!payload || !Array.isArray(payload.songs)) return jsonResponse({ error: "Invalid payload" }, 400);
+		const songs = payload.songs.map(normalizeSongQualityFlag);
+		if (songs.some((song) => song === null)) return jsonResponse({ error: "Invalid song flag in payload" }, 400);
+		await replaceSongQualityFlags(kv, songs);
+		return jsonResponse({
+			ok: true,
+			count: songs.length
+		});
+	} catch (error) {
+		console.error("Failed to store song quality flags", error);
+		return jsonResponse({ error: "Internal server error" }, 500);
 	}
 };
 //#endregion
@@ -2458,50 +2583,50 @@ var handleLeaderboardAdmin = async (request, env) => {
 	const board = getBoardStub(env);
 	if (!board) return new Response(JSON.stringify({ error: "Leaderboard storage is not configured" }), {
 		status: 500,
-		headers: responseHeaders$3
+		headers: responseHeaders$4
 	});
-	if (request.method === "GET") return new Response(JSON.stringify({ entries: await board.listForAdmin() }), { headers: responseHeaders$3 });
+	if (request.method === "GET") return new Response(JSON.stringify({ entries: await board.listForAdmin() }), { headers: responseHeaders$4 });
 	if (request.method === "POST") {
 		const result = await board.rebuild();
 		await caches.default.delete(boardCacheKey(request));
-		return new Response(JSON.stringify(result), { headers: responseHeaders$3 });
+		return new Response(JSON.stringify(result), { headers: responseHeaders$4 });
 	}
 	if (request.method === "PATCH") {
 		const scores = parseScoreUpdates(await request.json().catch(() => null));
 		if (!scores) return new Response(JSON.stringify({ error: "Expected { scores: [{ id, score }] }" }), {
 			status: 400,
-			headers: responseHeaders$3
+			headers: responseHeaders$4
 		});
 		const result = await board.updateScores(scores);
 		await caches.default.delete(boardCacheKey(request));
-		return new Response(JSON.stringify(result), { headers: responseHeaders$3 });
+		return new Response(JSON.stringify(result), { headers: responseHeaders$4 });
 	}
 	if (request.method === "PUT") {
 		const merges = parseSongMerges(await request.json().catch(() => null));
 		if (!merges) return new Response(JSON.stringify({ error: "Expected { merges: [{ from, to, artist, title }] }" }), {
 			status: 400,
-			headers: responseHeaders$3
+			headers: responseHeaders$4
 		});
 		const result = await board.mergeSongs(merges);
 		await caches.default.delete(boardCacheKey(request));
-		return new Response(JSON.stringify(result), { headers: responseHeaders$3 });
+		return new Response(JSON.stringify(result), { headers: responseHeaders$4 });
 	}
 	if (request.method === "DELETE") {
 		const id = new URL(request.url).searchParams.get("id")?.trim();
 		if (!id) return new Response(JSON.stringify({ error: "Missing query parameter: id" }), {
 			status: 400,
-			headers: responseHeaders$3
+			headers: responseHeaders$4
 		});
 		if (!await board.deleteRow(id)) return new Response(JSON.stringify({ error: "Record not found" }), {
 			status: 404,
-			headers: responseHeaders$3
+			headers: responseHeaders$4
 		});
 		await caches.default.delete(boardCacheKey(request));
-		return new Response(JSON.stringify({ ok: true }), { headers: responseHeaders$3 });
+		return new Response(JSON.stringify({ ok: true }), { headers: responseHeaders$4 });
 	}
 	return new Response(JSON.stringify({ error: "Method not allowed" }), {
 		status: 405,
-		headers: responseHeaders$3
+		headers: responseHeaders$4
 	});
 };
 //#endregion
@@ -3404,12 +3529,14 @@ var worker_entry_default = { async fetch(request, env, executionContext) {
 	if (pathname === "/unverified-songs" || pathname === "/shared-songs") return callPagesHandler(onRequest$1, request, env, executionContext);
 	if (pathname === "/unverified-song" || pathname === "/shared-song") return callPagesHandler(onRequest$2, request, env, executionContext);
 	if (pathname === "/unverified-songs-admin" || pathname === "/shared-songs-admin") return callPagesHandler(onRequest, request, env, executionContext);
-	if (pathname === "/admin/unverified-songs" || pathname === "/admin/shared-songs") return callPagesHandler(onRequest$4, request, env, executionContext);
-	if (pathname === "/admin/unverified-song" || pathname === "/admin/shared-song") return callPagesHandler(onRequest$5, request, env, executionContext);
+	if (pathname === "/admin/unverified-songs" || pathname === "/admin/shared-songs") return callPagesHandler(onRequest$5, request, env, executionContext);
+	if (pathname === "/admin/unverified-song" || pathname === "/admin/shared-song") return callPagesHandler(onRequest$6, request, env, executionContext);
+	if (pathname === "/song-quality-flags-admin") return callPagesHandler(onRequest$3, request, env, executionContext);
+	if (pathname === "/admin/song-quality-flags") return callPagesHandler(onRequest$7, request, env, executionContext);
 	if (pathname === "/leaderboard") return request.method === "GET" ? handleLeaderboardRead(request, env) : handleLeaderboardSubmit(request, env);
 	if (pathname === "/leaderboard-song") return handleSongLeaderboardRead(request, env);
 	if (pathname === "/leaderboard-admin") return handleLeaderboardAdmin(request, env);
-	if (pathname === "/proxy") return callPagesHandler(onRequest$3, request, env, executionContext);
+	if (pathname === "/proxy") return callPagesHandler(onRequest$4, request, env, executionContext);
 	return new Response("Not found", { status: 404 });
 } };
 //#endregion
