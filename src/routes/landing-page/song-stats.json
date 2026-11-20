@@ -189,9 +189,10 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 7654,
-  "generatedAt": "2026-11-19T05:22:07.114Z",
+  "songs": 7672,
+  "generatedAt": "2026-11-20T05:08:27.795Z",
   "additionsPerDay": {
+    "2026-11-20": 18,
     "2026-11-19": 20,
     "2026-11-18": 70,
     "2026-11-17": 16,
@@ -237,6 +238,132 @@
     "2026-09-22": 19
   },
   "recentlyAdded": [
+    {
+      "id": "slimane-claudio-capeo-chez-toi",
+      "artist": "Slimane & Claudio Capéo",
+      "title": "Chez Toi",
+      "video": "y8s8-7h11YA",
+      "addedAt": "2026-11-20T05:07:47.348Z"
+    },
+    {
+      "id": "vitaa-slimane-a-fleur-de-toi",
+      "artist": "Vitaa & Slimane",
+      "title": "À fleur de toi",
+      "video": "j0O13TSkxPc",
+      "addedAt": "2026-11-20T05:07:47.003Z"
+    },
+    {
+      "id": "vitaa-je-noublie-pas",
+      "artist": "Vitaa",
+      "title": "Je n'oublie pas",
+      "video": "Y_G9UWfoZns",
+      "addedAt": "2026-11-20T05:07:47.000Z"
+    },
+    {
+      "id": "vitaa-julien-dore-viens-on-essaie",
+      "artist": "Vitaa & Julien Doré",
+      "title": "Viens on essaie",
+      "video": "KwvCpirpSgI",
+      "addedAt": "2026-11-20T05:07:46.690Z"
+    },
+    {
+      "id": "stephane-ma-cherie",
+      "artist": "Stéphane",
+      "title": "Ma Chérie",
+      "video": "01bWOVQgpQI",
+      "addedAt": "2026-11-20T05:07:45.313Z"
+    },
+    {
+      "id": "clara-luciani-romance",
+      "artist": "Clara Luciani",
+      "title": "Romance",
+      "video": "jHkrVsiX7x4",
+      "addedAt": "2026-11-20T05:07:45.311Z"
+    },
+    {
+      "id": "sylvie-vartan-la-maritza",
+      "artist": "Sylvie Vartan",
+      "title": "La Maritza",
+      "video": "VBn87SA0oS8",
+      "addedAt": "2026-11-20T05:07:44.961Z"
+    },
+    {
+      "id": "renaud-boucan-denfer",
+      "artist": "Renaud",
+      "title": "Boucan d'Enfer",
+      "video": "KfhnfirorJI",
+      "addedAt": "2026-11-20T05:07:44.960Z"
+    },
+    {
+      "id": "vitaa-ton-amoureuse",
+      "artist": "Vitaa",
+      "title": "Ton amoureuse",
+      "video": "eGNQMZ3e4bg",
+      "addedAt": "2026-11-20T05:07:44.958Z"
+    },
+    {
+      "id": "renaud-marchand-de-cailloux",
+      "artist": "Renaud",
+      "title": "Marchand de cailloux",
+      "video": "OSK8E9KWoWs",
+      "addedAt": "2026-11-20T05:07:43.613Z"
+    },
+    {
+      "id": "styleto-faut-que-tu-maimes",
+      "artist": "Styleto",
+      "title": "Faut que tu m'aimes",
+      "video": "1TCYpxsaXm8",
+      "addedAt": "2026-11-20T05:07:43.182Z"
+    },
+    {
+      "id": "slimane-nous-deux",
+      "artist": "Slimane",
+      "title": "Nous deux",
+      "video": "unnn2fMOax8",
+      "addedAt": "2026-11-20T05:07:43.177Z"
+    },
+    {
+      "id": "elsa-esnoult-moi-jecrirai-ton-nom",
+      "artist": "Elsa Esnoult",
+      "title": "Moi j'écrirai ton nom",
+      "video": "Gen7lAH5ir8",
+      "addedAt": "2026-11-20T05:07:42.993Z"
+    },
+    {
+      "id": "clara-luciani-tout-pour-moi",
+      "artist": "Clara Luciani",
+      "title": "Tout pour moi",
+      "video": "A0hRkq4YT1o",
+      "addedAt": "2026-11-20T05:07:42.991Z"
+    },
+    {
+      "id": "slimane-jen-suis-la",
+      "artist": "Slimane",
+      "title": "J'en suis là",
+      "video": "TYG6SpM1zx8",
+      "addedAt": "2026-11-20T05:07:42.989Z"
+    },
+    {
+      "id": "vitaa-ca-fait-mal",
+      "artist": "Vitaa",
+      "title": "Ça fait mal",
+      "video": "3Dir-eVkRzM",
+      "addedAt": "2026-11-20T05:07:42.816Z"
+    },
+    {
+      "id": "zaz-je-pardonne",
+      "artist": "Zaz",
+      "title": "Je pardonne",
+      "video": "y39-ddBVRe4",
+      "addedAt": "2026-11-20T05:07:42.315Z"
+    },
+    {
+      "id": "slimane-mieux-que-moi",
+      "artist": "Slimane",
+      "title": "Mieux que moi",
+      "video": "ogV--_Ws3wc",
+      "addedAt": "2026-11-20T05:07:42.308Z"
+    },
     {
       "id": "pierre-garnier-m-pokora-chaque-seconde",
       "artist": "Pierre Garnier & M. Pokora",
@@ -446,132 +573,6 @@
       "title": "Les oubliés",
       "video": "CIfV6TQIhcc",
       "addedAt": "2026-11-18T05:26:54.925Z"
-    },
-    {
-      "id": "el-jordan-23-bailando",
-      "artist": "El Jordan 23",
-      "title": "Bailando",
-      "video": "ptsjqRbfM8E",
-      "addedAt": "2026-11-18T05:26:54.744Z"
-    },
-    {
-      "id": "maitre-gims-sois-pas-timide",
-      "artist": "Maître Gims",
-      "title": "Sois Pas Timide",
-      "video": "Sq5EDI7JktA",
-      "addedAt": "2026-11-18T05:26:54.567Z"
-    },
-    {
-      "id": "houkago-tea-time-tenshi-ni-fureta-yo",
-      "artist": "Houkago Tea Time",
-      "title": "Tenshi ni Fureta yo",
-      "video": "ba0juE9ROCg",
-      "addedAt": "2026-11-18T05:26:54.389Z"
-    },
-    {
-      "id": "gims-la-mano-19-parisienne",
-      "artist": "GIMS & La Mano 1.9",
-      "title": "Parisienne",
-      "video": "7CGKeID7nRc",
-      "addedAt": "2026-11-18T05:26:54.207Z"
-    },
-    {
-      "id": "gerard-lenorman-michele",
-      "artist": "Gérard Lenorman",
-      "title": "Michèle",
-      "video": "FqYlE7FUJjQ",
-      "addedAt": "2026-11-18T05:26:54.206Z"
-    },
-    {
-      "id": "celine-dion-dansons",
-      "artist": "Céline Dion",
-      "title": "Dansons",
-      "video": "FHL5wBjqXCI",
-      "addedAt": "2026-11-18T05:26:54.205Z"
-    },
-    {
-      "id": "calogero-pomme-c",
-      "artist": "Calogero",
-      "title": "Pomme C",
-      "video": "hscImB4KgXE",
-      "addedAt": "2026-11-18T05:26:52.867Z"
-    },
-    {
-      "id": "oria-soiree-mondaine",
-      "artist": "Oria",
-      "title": "Soirée mondaine",
-      "video": "qhlG-zSxvaY",
-      "addedAt": "2026-11-18T05:26:52.674Z"
-    },
-    {
-      "id": "amir-avec-toi",
-      "artist": "Amir",
-      "title": "Avec toi",
-      "video": "CdXI78kUFko",
-      "addedAt": "2026-11-18T05:26:52.478Z"
-    },
-    {
-      "id": "disclosure-feat-sam-smith-latch",
-      "artist": "Disclosure feat. Sam Smith",
-      "title": "Latch",
-      "video": "93ASUImTedo",
-      "addedAt": "2026-11-18T05:26:52.299Z"
-    },
-    {
-      "id": "bryska-mam-kogos-lepszego-skytech-remix",
-      "artist": "Bryska",
-      "title": "Mam kogoś lepszego (Skytech Remix)",
-      "video": "iepelRHBIrI",
-      "addedAt": "2026-11-18T05:26:52.125Z"
-    },
-    {
-      "id": "gronkh-lava-pisspfuetzen-quittung-gronkh-song",
-      "artist": "Gronkh",
-      "title": "Lava Pisspfützen & Quittung (Gronkh Song)",
-      "video": "AwDYmaOFYsg",
-      "addedAt": "2026-11-18T05:26:51.950Z"
-    },
-    {
-      "id": "angele-jalousie",
-      "artist": "Angèle",
-      "title": "Jalousie",
-      "video": "hhhXegAbgrU",
-      "addedAt": "2026-11-18T05:26:51.949Z"
-    },
-    {
-      "id": "gims-soleil",
-      "artist": "Gims",
-      "title": "Soleil",
-      "video": "QAJGWSM6Z-w",
-      "addedAt": "2026-11-18T05:26:51.948Z"
-    },
-    {
-      "id": "amel-bent-pourquoi-tu-restes",
-      "artist": "Amel Bent",
-      "title": "Pourquoi Tu Restes",
-      "video": "lDf7u_3LgZk",
-      "addedAt": "2026-11-18T05:26:44.980Z"
-    },
-    {
-      "id": "clueso-gewinner",
-      "artist": "Clueso",
-      "title": "Gewinner",
-      "video": "UJpyFMXtZb4",
-      "addedAt": "2026-11-18T05:26:44.801Z"
-    },
-    {
-      "id": "rolf-zuckowski-und-seine-freunde-die-jahresuhr",
-      "artist": "Rolf Zuckowski und seine Freunde",
-      "title": "Die Jahresuhr",
-      "video": "WJ0uJo5kJ04",
-      "addedAt": "2026-11-18T05:26:44.800Z"
-    },
-    {
-      "id": "les-tuniques-bleues-et-les-indiens-eddy-mitchell",
-      "artist": "Les tuniques bleues et les indiens",
-      "title": "Eddy Mitchell",
-      "video": "84LnqOgeKp4",
-      "addedAt": "2026-11-18T05:26:44.620Z"
     }
   ]
 }
