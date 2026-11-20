@@ -42850,6 +42850,60 @@
     "local": false
   },
   {
+    "id": "clara-luciani-romance",
+    "title": "Romance",
+    "artist": "Clara Luciani",
+    "video": "jHkrVsiX7x4",
+    "language": [
+      "French"
+    ],
+    "bpm": 397,
+    "gap": 7698.632241813602,
+    "year": "2024",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-11-20T05:07:45.311Z",
+    "realBpm": 102.83,
+    "volume": 1,
+    "author": "Alinus57",
+    "duration": 155,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 7722,
+    "tracksCount": 1,
+    "search": "claralucianiromance",
+    "local": false
+  },
+  {
+    "id": "clara-luciani-tout-pour-moi",
+    "title": "Tout pour moi",
+    "artist": "Clara Luciani",
+    "video": "A0hRkq4YT1o",
+    "language": [
+      "French"
+    ],
+    "bpm": 278.4,
+    "gap": 2895.293103448276,
+    "year": "2024",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-11-20T05:07:42.991Z",
+    "realBpm": 139.31,
+    "volume": 1,
+    "author": "Alinus57 et Mustangfred et Mlef",
+    "duration": 220,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 7714,
+    "tracksCount": 1,
+    "search": "claralucianitoutpourmoi",
+    "local": false
+  },
+  {
     "id": "clarice-falcao-feat-silva-eu-me-lembro",
     "title": "Eu Me Lembro",
     "artist": "Clarice Falcão feat. Silva",
@@ -65147,6 +65201,34 @@
     "shortId": 7534,
     "tracksCount": 1,
     "search": "elliegouldingthislovewillbeyourdownfall",
+    "local": false
+  },
+  {
+    "id": "elsa-esnoult-moi-jecrirai-ton-nom",
+    "title": "Moi j'écrirai ton nom",
+    "artist": "Elsa Esnoult",
+    "video": "Gen7lAH5ir8",
+    "language": [
+      "French"
+    ],
+    "bpm": 428.08,
+    "gap": 9789.834797234162,
+    "year": "2021",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-11-20T05:07:42.993Z",
+    "genre": "Variété Française",
+    "realBpm": 159.99,
+    "volume": 1,
+    "author": "Alinus57 et Mlef",
+    "duration": 244,
+    "tracks": [
+      {
+        "start": 29
+      }
+    ],
+    "shortId": 7715,
+    "tracksCount": 1,
+    "search": "elsaesnoultmoijecriraitonnom",
     "local": false
   },
   {
@@ -168922,6 +169004,62 @@
     "local": false
   },
   {
+    "id": "renaud-boucan-denfer",
+    "title": "Boucan d'Enfer",
+    "artist": "Renaud",
+    "video": "KfhnfirorJI",
+    "language": [
+      "French"
+    ],
+    "bpm": 400,
+    "gap": 11606.5,
+    "year": "2002",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-11-20T05:07:44.960Z",
+    "genre": "Variété Française",
+    "realBpm": 110.5,
+    "volume": 1,
+    "author": "Alinus57 et Mlef",
+    "duration": 303,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 7720,
+    "tracksCount": 1,
+    "search": "renaudboucandenfer",
+    "local": false
+  },
+  {
+    "id": "renaud-marchand-de-cailloux",
+    "title": "Marchand de cailloux",
+    "artist": "Renaud",
+    "video": "OSK8E9KWoWs",
+    "language": [
+      "French"
+    ],
+    "bpm": 396.93,
+    "gap": 20231.45899780818,
+    "year": "1991",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-11-20T05:07:43.613Z",
+    "genre": "Variété Française",
+    "realBpm": 131.86,
+    "volume": 1,
+    "author": "Alinus57",
+    "duration": 155,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 7718,
+    "tracksCount": 1,
+    "search": "renaudmarchanddecailloux",
+    "local": false
+  },
+  {
     "id": "reni-jusis-zakrecona",
     "title": "Zakręcona",
     "artist": "Reni Jusis",
@@ -184367,6 +184505,86 @@
     "local": false
   },
   {
+    "id": "slimane-claudio-capeo-chez-toi",
+    "title": "Chez Toi",
+    "artist": "Slimane & Claudio Capéo",
+    "video": "y8s8-7h11YA",
+    "language": [
+      "French"
+    ],
+    "bpm": 344.99,
+    "gap": 6327.97101365257,
+    "year": "2022",
+    "lastUpdate": "2026-11-20T05:07:47.348Z",
+    "genre": "Chanson Française",
+    "realBpm": 115.12,
+    "volume": 1,
+    "author": "Alinus57",
+    "duration": 199,
+    "tracks": [
+      {
+        "start": 23
+      }
+    ],
+    "shortId": 7727,
+    "tracksCount": 1,
+    "search": "slimaneclaudiocapeocheztoi",
+    "local": false
+  },
+  {
+    "id": "slimane-jen-suis-la",
+    "title": "J'en suis là",
+    "artist": "Slimane",
+    "video": "TYG6SpM1zx8",
+    "language": [
+      "French"
+    ],
+    "bpm": 328.15,
+    "gap": 10238.36233429834,
+    "year": "2017",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-11-20T05:07:42.989Z",
+    "realBpm": 163.09,
+    "volume": 1,
+    "author": "Alinus57",
+    "tracks": [
+      {
+        "start": 22
+      }
+    ],
+    "shortId": 7713,
+    "tracksCount": 1,
+    "search": "slimanejensuisla",
+    "local": false
+  },
+  {
+    "id": "slimane-mieux-que-moi",
+    "title": "Mieux que moi",
+    "artist": "Slimane",
+    "video": "ogV--_Ws3wc",
+    "language": [
+      "French"
+    ],
+    "bpm": 392.93,
+    "gap": 1365.4567989209274,
+    "year": "2025",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-11-20T05:07:42.308Z",
+    "realBpm": 99.95,
+    "volume": 1,
+    "author": "Alinus57",
+    "duration": 225,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 7710,
+    "tracksCount": 1,
+    "search": "slimanemieuxquemoi",
+    "local": false
+  },
+  {
     "id": "slimane-mon-amour",
     "title": "Mon amour",
     "artist": "Slimane",
@@ -184397,6 +184615,34 @@
     "shortId": 3997,
     "tracksCount": 1,
     "search": "slimanemonamour",
+    "local": false
+  },
+  {
+    "id": "slimane-nous-deux",
+    "title": "Nous deux",
+    "artist": "Slimane",
+    "video": "unnn2fMOax8",
+    "language": [
+      "French"
+    ],
+    "bpm": 363.5,
+    "gap": 10616.628610729023,
+    "year": "2018",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-11-20T05:07:43.177Z",
+    "genre": "Chanson Française",
+    "realBpm": 107.23,
+    "volume": 1,
+    "author": "Alinus57",
+    "duration": 162,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 7716,
+    "tracksCount": 1,
+    "search": "slimanenousdeux",
     "local": false
   },
   {
@@ -187669,6 +187915,33 @@
     "local": false
   },
   {
+    "id": "stephane-ma-cherie",
+    "title": "Ma Chérie",
+    "artist": "Stéphane",
+    "video": "01bWOVQgpQI",
+    "language": [
+      "French"
+    ],
+    "bpm": 390.08,
+    "gap": 27707.20508613618,
+    "year": "2024",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-11-20T05:07:45.313Z",
+    "realBpm": 130.01,
+    "volume": 1,
+    "author": "Alinus57 et Mlef",
+    "duration": 201,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 7723,
+    "tracksCount": 1,
+    "search": "stephanemacherie",
+    "local": false
+  },
+  {
     "id": "stephen-sanchez-until-i-found-you",
     "title": "Until I Found You",
     "artist": "Stephen Sanchez",
@@ -189180,6 +189453,33 @@
     "local": false
   },
   {
+    "id": "styleto-faut-que-tu-maimes",
+    "title": "Faut que tu m'aimes",
+    "artist": "Styleto",
+    "video": "1TCYpxsaXm8",
+    "language": [
+      "French"
+    ],
+    "bpm": 411.92,
+    "gap": 8313.799378520102,
+    "year": "2024",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-11-20T05:07:43.182Z",
+    "realBpm": 103.07,
+    "volume": 1,
+    "author": "Alinus57 et Mlef",
+    "duration": 192,
+    "tracks": [
+      {
+        "start": 27
+      }
+    ],
+    "shortId": 7717,
+    "tracksCount": 1,
+    "search": "styletofautquetumaimes",
+    "local": false
+  },
+  {
     "id": "styx-mr-roboto",
     "title": "Mr. Roboto",
     "artist": "Styx",
@@ -190381,6 +190681,33 @@
     "shortId": 4120,
     "tracksCount": 1,
     "search": "sylverturnthetide",
+    "local": false
+  },
+  {
+    "id": "sylvie-vartan-la-maritza",
+    "title": "La Maritza",
+    "artist": "Sylvie Vartan",
+    "video": "VBn87SA0oS8",
+    "language": [
+      "French"
+    ],
+    "bpm": 283.67,
+    "gap": 30815.31145344943,
+    "year": "1968",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-11-20T05:07:44.961Z",
+    "realBpm": 132.08,
+    "volume": 1,
+    "author": "Alinus57 et Mlef",
+    "duration": 224,
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 7721,
+    "tracksCount": 1,
+    "search": "sylvievartanlamaritza",
     "local": false
   },
   {
@@ -215649,6 +215976,143 @@
     "local": false
   },
   {
+    "id": "vitaa-ca-fait-mal",
+    "title": "Ça fait mal",
+    "artist": "Vitaa",
+    "video": "3Dir-eVkRzM",
+    "language": [
+      "French"
+    ],
+    "bpm": 387.75,
+    "gap": 11839.197292069632,
+    "year": "2026",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-11-20T05:07:42.816Z",
+    "genre": "Chanson française",
+    "realBpm": 116.01,
+    "volume": 1,
+    "author": "Alinus57",
+    "duration": 223,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 7712,
+    "tracksCount": 1,
+    "search": "vitaacafaitmal",
+    "local": false
+  },
+  {
+    "id": "vitaa-je-noublie-pas",
+    "title": "Je n'oublie pas",
+    "artist": "Vitaa",
+    "video": "Y_G9UWfoZns",
+    "language": [
+      "French"
+    ],
+    "bpm": 378.48,
+    "gap": 32650.194673430564,
+    "year": "2023",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-11-20T05:07:47.000Z",
+    "genre": "Chanson Française",
+    "videoGap": 19,
+    "realBpm": 93.95,
+    "volume": 1,
+    "author": "Alinus57 et Mlef",
+    "duration": 228,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 7725,
+    "tracksCount": 1,
+    "search": "vitaajenoubliepas",
+    "local": false
+  },
+  {
+    "id": "vitaa-julien-dore-viens-on-essaie",
+    "title": "Viens on essaie",
+    "artist": "Vitaa & Julien Doré",
+    "video": "KwvCpirpSgI",
+    "language": [
+      "French"
+    ],
+    "bpm": 381,
+    "gap": 13662.748031496063,
+    "year": "2025",
+    "lastUpdate": "2026-11-20T05:07:46.690Z",
+    "realBpm": 127,
+    "volume": 1,
+    "author": "Alinus57",
+    "duration": 169,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 7724,
+    "tracksCount": 1,
+    "search": "vitaajuliendoreviensonessaie",
+    "local": false
+  },
+  {
+    "id": "vitaa-slimane-a-fleur-de-toi",
+    "title": "À fleur de toi",
+    "artist": "Vitaa & Slimane",
+    "video": "j0O13TSkxPc",
+    "language": [
+      "French"
+    ],
+    "bpm": 300.68,
+    "gap": 19128.26154050818,
+    "year": "2019",
+    "lastUpdate": "2026-11-20T05:07:47.003Z",
+    "realBpm": 99.07,
+    "volume": 1,
+    "author": "Alinus57",
+    "duration": 243,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 7726,
+    "tracksCount": 1,
+    "search": "vitaaslimaneafleurdetoi",
+    "local": false
+  },
+  {
+    "id": "vitaa-ton-amoureuse",
+    "title": "Ton amoureuse",
+    "artist": "Vitaa",
+    "video": "eGNQMZ3e4bg",
+    "language": [
+      "French"
+    ],
+    "bpm": 377.82,
+    "gap": 6008.4638716849295,
+    "year": "2023",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-11-20T05:07:44.958Z",
+    "genre": "Chanson française",
+    "realBpm": 111.01,
+    "volume": 1,
+    "author": "Alinus57",
+    "duration": 157,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 7719,
+    "tracksCount": 1,
+    "search": "vitaatonamoureuse",
+    "local": false
+  },
+  {
     "id": "vitamin-c-graduation-friends-forever",
     "title": "Graduation (Friends Forever)",
     "artist": "Vitamin C",
@@ -222388,6 +222852,33 @@
     "shortId": 7515,
     "tracksCount": 1,
     "search": "zazimagine",
+    "local": false
+  },
+  {
+    "id": "zaz-je-pardonne",
+    "title": "Je pardonne",
+    "artist": "Zaz",
+    "video": "y39-ddBVRe4",
+    "language": [
+      "French"
+    ],
+    "bpm": 367.05,
+    "gap": 6590.207192480589,
+    "year": "2025",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-11-20T05:07:42.315Z",
+    "realBpm": 147.06,
+    "volume": 1,
+    "author": "Alinus57",
+    "duration": 208,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 7711,
+    "tracksCount": 1,
+    "search": "zazjepardonne",
     "local": false
   },
   {

@@ -1,0 +1,458 @@
+#ARTIST:Renaud
+#TITLE:Marchand de cailloux
+#CREATOR:Alinus57
+#BPM:396,93
+#YEAR:1991
+#VIDEO:v=OSK8E9KWoWs
+#GENRE:Variété Française
+#LANGUAGE:French
+#GAP:20231,45899780818
+#ALLKARAOKE_ID:renaud-marchand-de-cailloux
+#ALLKARAOKE_SID:7718
+#ALLKARAOKE_LASTUPDATE:2026-11-20T05:07:43.613Z
+#ALLKARAOKE_ARTISTORIGIN:FR
+#ALLKARAOKE_REALBPM:131,86
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:155
+#MP3:Renaud - Marchand de cailloux.mp3
+#COVER:Renaud - Marchand de cailloux.jpg
+#BACKGROUND:Renaud - Marchand de cailloux.jpg
+: 26 2 2 Dis 
+: 29 2 2 Pa
+: 31 9 2 pa, 
+: 46 2 2 quand 
+: 49 2 4 c'est 
+: 53 2 4 qu'y 
+: 56 6 4 passe
+- 62
+: 74 2 6 Le 
+: 79 6 6 mar
+: 85 4 6 chand 
+: 92 2 6 d'cail
+: 94 12 7 loux
+- 106
+: 121 3 2 J'en 
+: 125 3 2 vou
+: 128 11 2 drais 
+: 140 3 2 dans 
+: 146 2 4 mes 
+* 149 3 4 go
+* 152 6 4 dasses
+- 158
+: 166 2 4 À 
+: 169 2 6 la 
+: 175 4 6 place 
+: 181 3 6 des 
+: 185 3 9 jou
+: 188 6 7 joux
+- 194
+: 219 2 11 A
+: 221 5 11 vec 
+: 227 4 11 mes 
+: 234 4 11 co
+: 238 7 7 pines 
+: 246 2 7 en 
+: 251 6 7 classe
+- 257
+: 265 3 6 On 
+: 270 5 6 com
+: 275 3 4 prend 
+: 279 3 2 pas 
+: 283 12 2 tout
+- 295
+: 314 4 11 Pour
+: 318 6 11 quoi 
+: 325 2 11 des 
+: 331 5 11 gros 
+: 337 5 14 dé
+: 342 2 7 gueu
+: 344 13 7 lasses
+- 357
+* 366 2 2 Font 
+* 369 2 6 du 
+* 372 5 7 mal 
+: 380 5 9 par
+: 385 11 7 tout
+- 396
+: 412 3 2 Pour
+: 415 6 2 quoi 
+: 422 3 2 les 
+: 427 6 2 en
+: 433 3 4 fants 
+: 439 5 4 d'Bel
+: 444 6 4 fast
+- 450
+: 458 3 6 Et 
+: 465 4 6 d'tous 
+: 470 2 7 les 
+: 473 5 9 ghet
+: 478 16 7 tos
+- 494
+: 506 3 2 Quand 
+: 510 2 2 y 
+: 513 4 2 ba
+: 517 9 2 lancent 
+: 529 5 4 un 
+: 537 3 4 cail
+: 540 6 4 lasse
+- 546
+: 554 5 6 On 
+: 560 2 6 leur 
+: 566 2 6 fait 
+: 569 1 9 la 
+: 574 17 7 peau
+- 591
+: 602 4 11 J'cro
+: 606 4 11 yais 
+: 612 5 11 qu'Da
+: 617 6 11 vid 
+: 625 3 7 et 
+: 629 3 7 Go
+: 632 14 7 liath
+- 646
+: 650 3 6 Ça 
+: 654 4 6 mar
+: 658 6 4 chait 
+: 667 3 2 en
+: 670 12 2 core
+- 682
+: 695 3 11 Q'les 
+: 700 2 11 plus 
+: 706 9 11 p'tits 
+: 719 1 11 pou
+: 720 4 14 vaient 
+* 728 3 7 s'dé
+* 731 5 7 battrent
+- 736
+: 746 6 2 Sans 
+: 753 2 6 être 
+: 758 3 7 les 
+: 764 3 9 plus 
+: 769 19 7 morts
+- 788
+: 794 2 2 Dis 
+: 797 4 2 Pa
+: 801 9 2 pa, 
+: 813 3 2 quand 
+: 818 2 4 c'est 
+: 823 2 4 qu'y 
+: 827 6 4 passe
+- 833
+: 837 3 4 Le 
+: 842 5 6 mar
+: 847 5 6 chand 
+* 855 2 6 d'li
+* 857 6 6 ber
+* 863 14 4 té
+- 877
+: 887 2 2 L'
+: 890 3 2 en 
+: 895 7 2 a 
+: 904 5 2 ou
+: 909 9 4 blié 
+: 919 3 4 un 
+: 923 3 4 max
+- 926
+: 939 3 6 En 
+: 945 4 6 f'sant 
+: 951 2 6 sa 
+: 956 4 6 tour
+: 960 18 4 née
+- 978
+: 987 4 11 Pour
+: 991 4 11 quoi 
+: 996 2 11 des 
+: 999 7 11 mômes 
+: 1012 3 7 crèvent 
+: 1016 2 7 de 
+: 1021 11 7 faim
+- 1032
+: 1037 5 6 Pen
+: 1042 3 6 dant 
+: 1047 2 4 qu'on 
+: 1050 4 2 é
+: 1054 9 2 touffe
+- 1063
+: 1081 2 11 D'vant 
+: 1084 2 11 nos 
+* 1088 2 11 té
+* 1090 8 11 lés, 
+: 1102 4 11 comme 
+: 1107 3 14 des 
+: 1111 8 7 cré
+: 1119 10 7 tins
+- 1129
+: 1133 5 2 Sous 
+: 1139 2 6 des 
+: 1143 5 7 tonnes 
+: 1151 2 9 de 
+: 1155 3 7 bouffe
+- 1158 1226
+- 1226
+: 1252 2 2 Dis 
+: 1255 2 2 Pa
+: 1257 9 2 pa, 
+: 1272 2 2 quand 
+: 1275 2 4 c'est 
+: 1279 2 4 qu'y 
+: 1282 6 4 passe
+- 1288
+: 1299 3 6 Le 
+: 1303 6 6 mar
+: 1309 6 6 chand 
+: 1316 4 6 d'ten
+: 1320 11 7 dresse
+- 1331
+: 1347 1 2 S'il 
+: 1349 4 2 est 
+: 1357 2 2 sur 
+: 1362 4 2 l'trot
+: 1366 8 4 toir 
+: 1375 3 4 d'en 
+: 1381 5 4 face
+- 1386
+: 1396 2 4 Dis-
+: 1399 2 6 y 
+: 1405 4 6 qui 
+* 1411 3 6 tra
+* 1415 3 9 ver
+* 1418 6 7 se
+- 1424
+: 1445 2 11 J'peux 
+: 1448 3 11 lui 
+: 1452 6 11 en 
+: 1461 2 11 fi
+: 1463 5 7 ler 
+: 1469 3 7 un 
+: 1475 11 7 peu
+- 1486
+: 1490 2 6 Pour 
+: 1495 5 6 ceux 
+: 1502 3 4 qu'en 
+: 1506 2 2 ont 
+: 1510 13 2 b'soin
+- 1523
+: 1538 2 11 J'en 
+: 1541 2 11 ai 
+: 1547 7 11 r'çu 
+: 1556 6 11 tell'
+: 1562 4 14 ment 
+: 1567 3 7 mon 
+: 1572 8 7 vieux
+- 1580
+: 1584 3 4 J'veux 
+: 1588 5 6 en 
+: 1594 2 6 don
+: 1596 6 6 ner 
+: 1604 2 9 tout 
+: 1608 14 7 plein
+- 1622
+: 1635 3 2 J'veux 
+: 1640 5 2 par
+: 1645 5 2 ta
+: 1650 6 2 ger 
+: 1661 2 4 mon 
+: 1665 5 4 Mac-
+: 1670 10 4 Do
+- 1680
+* 1684 3 6 A
+* 1687 2 6 vec 
+* 1693 4 6 ceux 
+: 1701 2 9 qui ont 
+: 1708 10 7 faim
+- 1718
+: 1731 3 2 J'veux 
+: 1736 1 2 don
+: 1737 5 2 ner 
+: 1748 4 2 d'l'a
+: 1752 5 4 mour 
+: 1762 2 4 bien 
+: 1768 7 4 chaud
+- 1775
+: 1779 2 6 À 
+: 1785 5 6 ceux 
+: 1792 2 6 qu'ont 
+: 1797 2 9 plus 
+: 1801 15 7 rien
+- 1816
+: 1826 3 11 Est-ce 
+: 1832 1 11 que 
+: 1836 2 11 c'est 
+: 1840 8 11 ça 
+: 1849 3 7 être 
+: 1856 6 7 "co
+: 1862 5 7 co"
+- 1867
+: 1871 3 6 Ou 
+: 1875 3 6 être 
+: 1881 3 4 un 
+: 1888 2 4 vrai 
+: 1893 5 2 chré
+: 1898 15 2 tien
+- 1913
+: 1924 3 11 Moi 
+: 1929 2 11 j'me 
+: 1936 4 11 fous 
+: 1941 2 11 de 
+: 1946 2 14 tous 
+: 1952 2 7 ces 
+: 1955 9 7 mots
+- 1964
+: 1970 3 4 J'veux 
+: 1974 2 6 être 
+: 1979 2 6 un 
+: 1984 5 6 vrai 
+: 1990 5 9 hu
+: 1995 15 7 main
+- 2010
+* 2020 2 2 Dis 
+* 2023 3 2 Pa
+* 2026 8 2 pa, 
+: 2037 3 2 tous 
+: 2042 2 4 ces 
+: 2045 5 4 dis
+: 2050 7 4 cours
+- 2057
+: 2061 2 4 Me 
+: 2067 3 6 font 
+: 2071 6 6 mal 
+: 2079 3 6 aux 
+: 2083 4 6 o
+: 2087 15 4 reilles
+- 2102
+: 2116 2 2 Même 
+: 2122 6 2 ceux 
+: 2131 2 2 qui 
+: 2136 2 2 sont 
+: 2142 3 4 plein 
+: 2147 2 4 d'a
+: 2149 10 4 mour
+- 2159
+: 2165 2 6 C'est 
+: 2169 6 6 kif
+: 2175 3 6 -kif-
+: 2181 4 6 pa
+: 2185 9 4 reil
+- 2194
+: 2209 2 11 Ça 
+: 2214 1 11 m'fait 
+: 2217 2 11 comme 
+: 2221 3 11 des 
+: 2227 7 11 trous 
+: 2235 2 7 dans 
+: 2239 2 7 la 
+: 2244 3 7 tête
+- 2247
+: 2253 2 7 Ça 
+: 2258 2 7 m'pol
+: 2260 5 7 lue 
+: 2266 3 6 la 
+: 2270 7 6 vie 
+: 2278 2 4 et 
+: 2282 13 2 tout
+- 2295
+: 2305 1 11 Ça 
+: 2308 3 11 fait 
+: 2313 2 11 qu'je 
+: 2316 7 11 vois 
+: 2328 2 11 sur 
+: 2332 2 14 ma 
+: 2337 4 7 pla
+: 2341 3 7 nète
+- 2344
+: 2348 2 6 Des 
+* 2351 5 6 "In
+* 2356 6 6 ti
+* 2362 4 6 fa
+* 2366 3 6 da" 
+: 2373 6 9 par
+: 2379 36 7 tout
+- 2415 2837
+- 2837
+: 2863 2 2 Dis 
+: 2866 4 2 Pa
+: 2870 9 2 pa, 
+: 2881 3 2 quand 
+: 2887 2 4 c'est 
+: 2890 3 4 qu'y 
+: 2894 8 4 passe
+- 2902
+: 2910 4 6 Le 
+: 2916 5 6 mar
+: 2921 3 6 chand 
+: 2928 4 6 d'cail
+: 2932 18 7 loux
+- 2950
+: 2959 3 2 J'en 
+: 2963 3 2 vou
+: 2966 10 2 drais 
+: 2977 4 2 dans 
+: 2983 2 4 mes 
+: 2986 3 4 go
+: 2989 9 4 dasses
+- 2998
+: 3002 2 4 À 
+: 3005 2 6 la 
+: 3010 6 6 place 
+: 3018 4 6 des 
+: 3023 4 9 jou
+: 3027 16 7 joux
+- 3043
+: 3054 2 11 Mais 
+: 3059 2 11 p'têt' 
+: 3063 7 11 que 
+: 3072 2 11 sur 
+: 3077 3 7 ta 
+: 3081 4 7 gui
+: 3085 11 7 tare
+- 3096
+: 3101 5 6 J'en 
+: 3107 5 6 jett'
+: 3112 4 4 rai 
+: 3117 5 2 aus
+: 3122 16 2 si
+- 3138
+: 3151 2 11 Si 
+: 3154 2 11 tu 
+: 3158 8 11 t'sers 
+: 3167 3 11 de 
+: 3171 5 14 moi, 
+* 3182 2 7 trouil
+* 3184 7 7 lard
+- 3191
+: 3196 1 6 Pour 
+: 3198 6 6 chan
+: 3204 4 6 ter 
+: 3209 3 7 tes 
+: 3216 5 9 conn'
+: 3221 14 7 ries
+- 3235
+: 3246 2 11 Mais 
+: 3249 2 11 p'têt 
+: 3255 7 11 que 
+: 3266 3 11 sur 
+: 3270 2 7 ta 
+: 3277 1 7 gui
+: 3278 12 7 tare
+- 3290
+: 3294 4 6 J'en 
+: 3300 6 6 jett'
+: 3306 6 4 rai 
+: 3313 5 2 aus
+: 3318 12 2 si
+- 3330
+: 3343 4 11 Si 
+: 3348 1 11 tu 
+: 3350 10 11 t'sers 
+: 3362 2 11 de 
+: 3366 3 14 moi, 
+: 3375 2 7 trouil
+: 3377 7 7 lard
+- 3384
+: 3389 2 6 Pour 
+: 3392 5 6 chan
+: 3397 5 6 ter 
+: 3403 3 7 tes 
+* 3408 7 9 conn'
+* 3415 13 7 ries
+E
