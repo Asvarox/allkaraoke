@@ -23,6 +23,7 @@ const flag = (overrides: Partial<SongQualityFlag> = {}): SongQualityFlag => ({
   videoId: 'video-id',
   issues: ['not-in-sync'],
   reportCounts: { 'not-in-sync': 6 },
+  players: 40,
   ...overrides,
 });
 

@@ -19,7 +19,7 @@ const reasonVariants: Record<AdminReviewReason, ComponentProps<typeof Chip>['var
 };
 
 interface Props {
-  song: Pick<AdminReviewSong, 'reasons' | 'reportCounts'>;
+  song: Pick<AdminReviewSong, 'reasons' | 'reportCounts' | 'players'>;
 }
 
 export function ReviewReasonTags({ song }: Props) {
@@ -34,7 +34,11 @@ export function ReviewReasonTags({ song }: Props) {
             variant={reasonVariants[reason]}
             data-test="admin-review-reason"
             data-reason={reason}
-            title={reportCount ? `${reportCount} player reports` : undefined}>
+            title={
+              reportCount
+                ? `${reportCount} of ${song.players || '?'} players reported it since the last update`
+                : undefined
+            }>
             {reasonLabels[reason]}
             {reportCount ? ` (${reportCount})` : ''}
           </Chip>

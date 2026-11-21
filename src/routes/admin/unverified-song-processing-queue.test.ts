@@ -1,7 +1,9 @@
 import {
   buildAdminReviewSongProcessingUrl,
+  countAdminReviewQueueSongs,
   getNextAdminReviewSongProcessingUrl,
   getRandomAdminReviewSong,
+  parseAdminReviewQueue,
 } from './unverified-song-processing-queue';
 import { AdminReviewSong, toAdminReviewSongs } from './unverified-songs-admin-api';
 import { markAdminSongVerified } from './verified-songs-counter';
@@ -32,7 +34,7 @@ const makeSong = (overrides: Partial<AdminReviewSong> & Pick<AdminReviewSong, 's
 
 describe('getRandomAdminReviewSong', () => {
   it('returns undefined when there are no candidates', () => {
-    expect(getRandomAdminReviewSong([])).toBeUndefined();
+    expect(getRandomAdminReviewSong([], 'unverified')).toBeUndefined();
   });
 
   it('excludes the current song from the candidates regardless of the random draw', () => {
@@ -41,7 +43,7 @@ describe('getRandomAdminReviewSong', () => {
 
     for (const randomValue of [0, 0.25, 0.5, 0.75, 0.999]) {
       vi.spyOn(Math, 'random').mockReturnValue(randomValue);
-      expect(getRandomAdminReviewSong([current, other], 'current')?.sharedSongId).toBe('other');
+      expect(getRandomAdminReviewSong([current, other], 'unverified', 'current')?.sharedSongId).toBe('other');
     }
 
     vi.restoreAllMocks();
@@ -56,10 +58,10 @@ describe('getRandomAdminReviewSong', () => {
 
     for (const randomValue of [0, 0.5, 0.999]) {
       vi.spyOn(Math, 'random').mockReturnValue(randomValue);
-      expect(getRandomAdminReviewSong([verified, saving, other])?.sharedSongId).toBe('other');
+      expect(getRandomAdminReviewSong([verified, saving, other], 'unverified')?.sharedSongId).toBe('other');
     }
 
-    expect(getRandomAdminReviewSong([verified, saving])).toBeUndefined();
+    expect(getRandomAdminReviewSong([verified, saving], 'unverified')).toBeUndefined();
 
     vi.restoreAllMocks();
   });
@@ -71,16 +73,16 @@ describe('getRandomAdminReviewSong', () => {
 
     // totalWeight = 3 (oldest) + 1 (newest) = 4, so the oldest/newest split falls at random === 0.75.
     vi.spyOn(Math, 'random').mockReturnValue(0);
-    expect(getRandomAdminReviewSong(songs)?.sharedSongId).toBe('oldest');
+    expect(getRandomAdminReviewSong(songs, 'unverified')?.sharedSongId).toBe('oldest');
 
     vi.spyOn(Math, 'random').mockReturnValue(0.7499);
-    expect(getRandomAdminReviewSong(songs)?.sharedSongId).toBe('oldest');
+    expect(getRandomAdminReviewSong(songs, 'unverified')?.sharedSongId).toBe('oldest');
 
     vi.spyOn(Math, 'random').mockReturnValue(0.75);
-    expect(getRandomAdminReviewSong(songs)?.sharedSongId).toBe('newest');
+    expect(getRandomAdminReviewSong(songs, 'unverified')?.sharedSongId).toBe('newest');
 
     vi.spyOn(Math, 'random').mockReturnValue(0.99);
-    expect(getRandomAdminReviewSong(songs)?.sharedSongId).toBe('newest');
+    expect(getRandomAdminReviewSong(songs, 'unverified')?.sharedSongId).toBe('newest');
 
     vi.restoreAllMocks();
   });
@@ -93,13 +95,13 @@ describe('getRandomAdminReviewSong', () => {
 
     // weights = [3, 2, 1], totalWeight = 6 -> boundaries at random === 0.5 and random === 5/6.
     vi.spyOn(Math, 'random').mockReturnValue(0);
-    expect(getRandomAdminReviewSong(songs)?.sharedSongId).toBe('oldest');
+    expect(getRandomAdminReviewSong(songs, 'unverified')?.sharedSongId).toBe('oldest');
 
     vi.spyOn(Math, 'random').mockReturnValue(0.5);
-    expect(getRandomAdminReviewSong(songs)?.sharedSongId).toBe('middle');
+    expect(getRandomAdminReviewSong(songs, 'unverified')?.sharedSongId).toBe('middle');
 
     vi.spyOn(Math, 'random').mockReturnValue(5 / 6);
-    expect(getRandomAdminReviewSong(songs)?.sharedSongId).toBe('newest');
+    expect(getRandomAdminReviewSong(songs, 'unverified')?.sharedSongId).toBe('newest');
 
     vi.restoreAllMocks();
   });
@@ -110,10 +112,10 @@ describe('getRandomAdminReviewSong', () => {
     const songs = [first, second];
 
     vi.spyOn(Math, 'random').mockReturnValue(0.49);
-    expect(getRandomAdminReviewSong(songs)?.sharedSongId).toBe('first');
+    expect(getRandomAdminReviewSong(songs, 'unverified')?.sharedSongId).toBe('first');
 
     vi.spyOn(Math, 'random').mockReturnValue(0.51);
-    expect(getRandomAdminReviewSong(songs)?.sharedSongId).toBe('second');
+    expect(getRandomAdminReviewSong(songs, 'unverified')?.sharedSongId).toBe('second');
 
     vi.restoreAllMocks();
   });
@@ -129,27 +131,39 @@ const makeReportedSong = (songId: string, reasons: AdminReviewSong['reasons']): 
   reasons,
 });
 
-describe('getRandomAdminReviewSong pools', () => {
+describe('getRandomAdminReviewSong queues', () => {
   afterEach(() => {
     vi.restoreAllMocks();
   });
 
-  it('draws unverified songs first, then not-in-sync, then wrong volume', () => {
+  it('keeps unverified and reported songs in separate queues', () => {
     const unverified = makeSong({ sharedSongId: 'unverified' });
+    const notInSync = makeReportedSong('not-in-sync', ['not-in-sync']);
+
+    for (const randomValue of [0, 0.5, 0.999]) {
+      vi.spyOn(Math, 'random').mockReturnValue(randomValue);
+      expect(getRandomAdminReviewSong([notInSync, unverified], 'unverified')?.key).toBe('unverified');
+      expect(getRandomAdminReviewSong([unverified, notInSync], 'reports')?.key).toBe('not-in-sync');
+    }
+
+    expect(getRandomAdminReviewSong([notInSync], 'unverified')).toBeUndefined();
+    expect(getRandomAdminReviewSong([unverified], 'reports')).toBeUndefined();
+  });
+
+  it('draws not-in-sync reports before wrong volume', () => {
     const notInSync = makeReportedSong('not-in-sync', ['not-in-sync']);
     const tooLoud = makeReportedSong('too-loud', ['too-loud']);
     const tooQuiet = makeReportedSong('too-quiet', ['too-quiet']);
 
     for (const randomValue of [0, 0.5, 0.999]) {
       vi.spyOn(Math, 'random').mockReturnValue(randomValue);
-      expect(getRandomAdminReviewSong([tooLoud, notInSync, unverified])?.key).toBe('unverified');
-      expect(getRandomAdminReviewSong([tooLoud, notInSync, tooQuiet])?.key).toBe('not-in-sync');
+      expect(getRandomAdminReviewSong([tooLoud, notInSync, tooQuiet], 'reports')?.key).toBe('not-in-sync');
     }
 
     vi.spyOn(Math, 'random').mockReturnValue(0);
-    expect(getRandomAdminReviewSong([tooLoud, tooQuiet])?.key).toBe('too-loud');
+    expect(getRandomAdminReviewSong([tooLoud, tooQuiet], 'reports')?.key).toBe('too-loud');
     vi.spyOn(Math, 'random').mockReturnValue(0.999);
-    expect(getRandomAdminReviewSong([tooLoud, tooQuiet])?.key).toBe('too-quiet');
+    expect(getRandomAdminReviewSong([tooLoud, tooQuiet], 'reports')?.key).toBe('too-quiet');
   });
 
   it('moves on to the next pool once the previous one is processed', () => {
@@ -157,7 +171,7 @@ describe('getRandomAdminReviewSong pools', () => {
     const tooLoud = makeReportedSong('too-loud', ['too-loud']);
     markAdminSongVerified('not-in-sync');
 
-    expect(getRandomAdminReviewSong([notInSync, tooLoud])?.key).toBe('too-loud');
+    expect(getRandomAdminReviewSong([notInSync, tooLoud], 'reports')?.key).toBe('too-loud');
   });
 
   it('puts a song with several reasons in its highest priority pool', () => {
@@ -165,14 +179,42 @@ describe('getRandomAdminReviewSong pools', () => {
     const tooLoud = makeReportedSong('too-loud', ['too-loud']);
 
     vi.spyOn(Math, 'random').mockReturnValue(0.999);
-    expect(getRandomAdminReviewSong([tooLoud, both])?.key).toBe('both');
+    expect(getRandomAdminReviewSong([tooLoud, both], 'reports')?.key).toBe('both');
+  });
+
+  it('counts the songs in each queue', () => {
+    const songs = [
+      makeSong({ sharedSongId: 'a' }),
+      makeReportedSong('b', ['too-loud']),
+      makeReportedSong('c', ['not-in-sync']),
+    ];
+
+    expect(countAdminReviewQueueSongs(songs, 'unverified')).toBe(1);
+    expect(countAdminReviewQueueSongs(songs, 'reports')).toBe(2);
+  });
+
+  it('does not count songs already processed, so an exhausted queue reads as empty', () => {
+    const songs = [makeReportedSong('b', ['too-loud']), makeReportedSong('c', ['not-in-sync'])];
+    markAdminSongVerified('b');
+    pendingSaveIds.value = ['c'];
+
+    expect(countAdminReviewQueueSongs(songs, 'reports')).toBe(0);
+  });
+});
+
+describe('parseAdminReviewQueue', () => {
+  it('reads the queue from the URL, treating the old processQueue=true as the unverified queue', () => {
+    expect(parseAdminReviewQueue('reports')).toBe('reports');
+    expect(parseAdminReviewQueue('unverified')).toBe('unverified');
+    expect(parseAdminReviewQueue('true')).toBe('unverified');
+    expect(parseAdminReviewQueue(null)).toBeNull();
   });
 });
 
 describe('buildAdminReviewSongProcessingUrl', () => {
   it('opens unverified songs by their shared id and reported songs by their library id', () => {
-    expect(buildAdminReviewSongProcessingUrl({ songId: 'song', sharedSongId: 'shared' }, true)).toBe(
-      'edit/song/?externalSong=shared&admin=true&step=sync&processQueue=true',
+    expect(buildAdminReviewSongProcessingUrl({ songId: 'song', sharedSongId: 'shared' }, 'unverified')).toBe(
+      'edit/song/?externalSong=shared&admin=true&step=sync&processQueue=unverified',
     );
     expect(buildAdminReviewSongProcessingUrl({ songId: 'song' })).toBe('edit/song/?song=song&admin=true&step=sync');
   });
@@ -202,8 +244,18 @@ describe('toAdminReviewSongs', () => {
           videoId: '',
           issues: ['too-loud'],
           reportCounts: { 'too-loud': 6 },
+          players: 40,
         },
-        { songId: 'b', artist: 'B', title: 'B', language: [], videoId: '', issues: ['not-in-sync'], reportCounts: {} },
+        {
+          songId: 'b',
+          artist: 'B',
+          title: 'B',
+          language: [],
+          videoId: '',
+          issues: ['not-in-sync'],
+          reportCounts: {},
+          players: 0,
+        },
       ],
     );
 
@@ -220,8 +272,8 @@ describe('getNextAdminReviewSongProcessingUrl', () => {
     const other = makeSong({ sharedSongId: 'other' });
 
     vi.spyOn(Math, 'random').mockReturnValue(0);
-    expect(getNextAdminReviewSongProcessingUrl([current, other], 'current')).toBe(
-      buildAdminReviewSongProcessingUrl({ songId: 'other', sharedSongId: 'other' }, true),
+    expect(getNextAdminReviewSongProcessingUrl([current, other], 'unverified', 'current')).toBe(
+      buildAdminReviewSongProcessingUrl({ songId: 'other', sharedSongId: 'other' }, 'unverified'),
     );
 
     vi.restoreAllMocks();
@@ -230,6 +282,6 @@ describe('getNextAdminReviewSongProcessingUrl', () => {
   it('falls back to the admin list when no other song is left in the queue', () => {
     const current = makeSong({ sharedSongId: 'current' });
 
-    expect(getNextAdminReviewSongProcessingUrl([current], 'current')).toBe('admin/');
+    expect(getNextAdminReviewSongProcessingUrl([current], 'unverified', 'current')).toBe('admin/');
   });
 });

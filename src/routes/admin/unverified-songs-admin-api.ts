@@ -98,6 +98,7 @@ export interface AdminSongQualityFlag {
   videoId: string;
   issues: SongQualityIssue[];
   reportCounts: Partial<Record<SongQualityIssue, number>>;
+  players: number;
 }
 
 export const listAdminSongQualityFlags = async (password: string) => {
@@ -138,6 +139,7 @@ export interface AdminReviewSong {
   firstSeenAt?: number;
   updated?: number;
   reportCounts?: AdminSongQualityFlag['reportCounts'];
+  players?: number;
 }
 
 export const toAdminReviewSongs = (
@@ -154,6 +156,7 @@ export const toAdminReviewSongs = (
     if (unverifiedSong) {
       unverifiedSong.reasons.push(...flag.issues);
       unverifiedSong.reportCounts = flag.reportCounts;
+      unverifiedSong.players = flag.players;
       return [];
     }
 
@@ -167,6 +170,7 @@ export const toAdminReviewSongs = (
         videoId: flag.videoId,
         reasons: flag.issues,
         reportCounts: flag.reportCounts,
+        players: flag.players,
       },
     ];
   });

@@ -66,7 +66,7 @@ export const removeUnverifiedSongRecord = async (sharedSongId: string) => {
   });
 };
 
-export type SongQualityIssue = 'not-in-sync' | 'too-loud' | 'too-quiet';
+import type { SongQualityIssue } from './song-quality-scoring';
 
 export interface SongQualityFlag {
   songId: string;
@@ -75,7 +75,10 @@ export interface SongQualityFlag {
   language: string[];
   videoId: string;
   issues: SongQualityIssue[];
+  /** Distinct players who reported each issue */
   reportCounts: Partial<Record<SongQualityIssue, number>>;
+  /** Distinct players of the current version */
+  players: number;
 }
 
 export const replaceSongQualityFlags = async (songs: SongQualityFlag[]) => {

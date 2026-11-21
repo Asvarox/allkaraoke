@@ -32,17 +32,17 @@ jobs:
             const summaryPath = process.env.SONG_QUALITY_SUMMARY_PATH;
             if (!summaryPath || !fs.existsSync(summaryPath)) return;
 
-            const { flags = [], byIssue = {}, reportsAnalyzed = 0 } = JSON.parse(fs.readFileSync(summaryPath, 'utf8'));
+            const { flags = [], byIssue = {}, eventsAnalyzed = 0, rule = '' } = JSON.parse(fs.readFileSync(summaryPath, 'utf8'));
             const lines = flags.length
-              ? flags.map(({ songId, issues, reportCounts }) =>
-                  `* ${songId} - ${issues.map((issue) => `${issue} (${reportCounts[issue]})`).join(', ')}`)
+              ? flags.map(({ songId, issues, reportCounts, players }) =>
+                  `* ${songId} - ${issues.map((issue) => `${issue} (${reportCounts[issue]} of ${players} players)`).join(', ')}`)
               : ['* No songs flagged'];
 
             await core.summary
               .addRaw([
                 '# Reported songs',
                 '',
-                `${reportsAnalyzed} reports analyzed. ${Object.entries(byIssue).map(([issue, count]) => `${issue}: ${count}`).join(', ')}`,
+                `${eventsAnalyzed} reports analyzed. Rule: ${rule}. ${Object.entries(byIssue).map(([issue, count]) => `${issue}: ${count}`).join(', ')}`,
                 '',
                 ...lines,
               ].join('\n'))

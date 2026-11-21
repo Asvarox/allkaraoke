@@ -9,7 +9,10 @@ export interface SongQualityFlag {
   language: string[];
   videoId: string;
   issues: SongQualityIssue[];
+  /** Distinct players who reported each issue */
   reportCounts: Partial<Record<SongQualityIssue, number>>;
+  /** Distinct players of the current version, 0 when unknown */
+  players: number;
 }
 
 export interface SongQualityFlagsDocument {
@@ -52,6 +55,7 @@ export const normalizeSongQualityFlag = (payload: unknown): SongQualityFlag | nu
     videoId: typeof flag.videoId === 'string' ? flag.videoId : '',
     issues,
     reportCounts,
+    players: typeof flag.players === 'number' && Number.isFinite(flag.players) ? flag.players : 0,
   };
 };
 
