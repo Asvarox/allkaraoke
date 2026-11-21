@@ -106,6 +106,7 @@ export interface AdminSongQualityFlag {
   videoId: string;
   issues: SongQualityIssue[];
   reportCounts: Partial<Record<SongQualityIssue, number>>;
+  players: number;
   durationShift?: DurationShiftDetails;
 }
 
@@ -158,6 +159,7 @@ export interface AdminReviewSong {
   firstSeenAt?: number;
   updated?: number;
   reportCounts?: AdminSongQualityFlag['reportCounts'];
+  players?: number;
   durationShift?: DurationShiftDetails;
 }
 
@@ -175,6 +177,7 @@ export const toAdminReviewSongs = (
     if (unverifiedSong) {
       unverifiedSong.reasons.push(...flag.issues);
       unverifiedSong.reportCounts = flag.reportCounts;
+      unverifiedSong.players = flag.players;
       unverifiedSong.durationShift = flag.durationShift;
       return [];
     }
@@ -189,6 +192,7 @@ export const toAdminReviewSongs = (
         videoId: flag.videoId,
         reasons: flag.issues,
         reportCounts: flag.reportCounts,
+        players: flag.players,
         durationShift: flag.durationShift,
       },
     ];

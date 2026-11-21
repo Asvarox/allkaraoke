@@ -24,7 +24,10 @@ import {
   persistAdminReviewSong,
   saveAdminReviewSongInBackground,
 } from '~/routes/admin/background-song-save';
-import { getNextAdminReviewSongProcessingUrl } from '~/routes/admin/unverified-song-processing-queue';
+import {
+  getNextAdminReviewSongProcessingUrl,
+  parseAdminReviewQueue,
+} from '~/routes/admin/unverified-song-processing-queue';
 import { ADMIN_REVIEW_SONGS_SWR_KEY, listAdminReviewSongs } from '~/routes/admin/unverified-songs-admin-api';
 import { armVerificationAutoplay, useVerificationAutoplay } from '~/routes/admin/verification-autoplay';
 import { VerifiedSongsCounter } from '~/routes/admin/verified-songs-counter-badge';
@@ -99,7 +102,8 @@ export default function ConvertView({ song, adminUnverifiedSongId, adminReported
   const [isSaving, setIsSaving] = useState(false);
   const [saveError, setSaveError] = useState<string | null>(null);
   const redirect = useQueryParam('redirect');
-  const isAdminProcessingQueue = useQueryParam('processQueue') === 'true';
+  const adminProcessingQueue = parseAdminReviewQueue(useQueryParam('processQueue'));
+  const isAdminProcessingQueue = !!adminProcessingQueue;
   const adminReviewTarget: AdminReviewSaveTarget | undefined = adminUnverifiedSongId
     ? { key: adminUnverifiedSongId, sharedSongId: adminUnverifiedSongId }
     : adminReportedSongId
@@ -270,7 +274,7 @@ export default function ConvertView({ song, adminUnverifiedSongId, adminReported
   const getAdminProcessingQueueRedirect = async (currentKey: string) => {
     const songs = prefetchedReviewSongs ?? (await listAdminReviewSongs(getAdminPassword()));
 
-    return getNextAdminReviewSongProcessingUrl(songs, currentKey);
+    return getNextAdminReviewSongProcessingUrl(songs, adminProcessingQueue!, currentKey);
   };
 
   const persistSong = async () => {

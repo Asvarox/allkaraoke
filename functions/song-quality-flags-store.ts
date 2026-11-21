@@ -19,7 +19,10 @@ export interface SongQualityFlag {
   language: string[];
   videoId: string;
   issues: SongQualityIssue[];
+  /** Distinct players who reported each issue */
   reportCounts: Partial<Record<SongQualityIssue, number>>;
+  /** Distinct players of the current version, 0 when unknown */
+  players: number;
   durationShift?: DurationShiftDetails;
 }
 
@@ -82,6 +85,7 @@ export const normalizeSongQualityFlag = (payload: unknown): SongQualityFlag | nu
     videoId: typeof flag.videoId === 'string' ? flag.videoId : '',
     issues,
     reportCounts,
+    players: typeof flag.players === 'number' && Number.isFinite(flag.players) ? flag.players : 0,
     ...(durationShift ? { durationShift } : {}),
   };
 };
@@ -108,6 +112,8 @@ const mergeFlags = (existing: SongQualityFlag | undefined, update: SongQualityFl
     ...update,
     issues: [...new Set([...existing.issues, ...update.issues])],
     reportCounts: { ...existing.reportCounts, ...update.reportCounts },
+    // Duration-shift flags don't know the player count
+    players: update.players || existing.players,
     ...(durationShift ? { durationShift } : {}),
   };
 };
@@ -120,8 +126,9 @@ export const replaceSongQualityFlags = async (kvNamespace: KVNamespace, songs: S
   for (const flag of current.songs) {
     if (!flag.issues.includes('duration-shift')) continue;
 
-    const durationShiftOnly: SongQualityFlag = { ...flag, issues: ['duration-shift'], reportCounts: {} };
-    merged.set(flag.songId, mergeFlags(merged.get(flag.songId), durationShiftOnly));
+    const durationShiftOnly: SongQualityFlag = { ...flag, issues: ['duration-shift'], reportCounts: {}, players: 0 };
+    const reportFlag = merged.get(flag.songId);
+    merged.set(flag.songId, reportFlag ? mergeFlags(durationShiftOnly, reportFlag) : durationShiftOnly);
   }
 
   const document: SongQualityFlagsDocument = { generatedAt: Date.now(), songs: [...merged.values()] };

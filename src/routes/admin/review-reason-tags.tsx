@@ -21,7 +21,7 @@ const reasonVariants: Record<AdminReviewReason, ComponentProps<typeof Chip>['var
 };
 
 interface Props {
-  song: Pick<AdminReviewSong, 'reasons' | 'reportCounts' | 'durationShift'>;
+  song: Pick<AdminReviewSong, 'reasons' | 'reportCounts' | 'players' | 'durationShift'>;
 }
 
 export function ReviewReasonTags({ song }: Props) {
@@ -33,7 +33,7 @@ export function ReviewReasonTags({ song }: Props) {
           reason === 'duration-shift' && song.durationShift
             ? describeDurationShift(song.durationShift)
             : reportCount
-              ? `${reportCount} player reports`
+              ? `${reportCount} of ${song.players || '?'} players reported it since the last update`
               : undefined;
 
         return (

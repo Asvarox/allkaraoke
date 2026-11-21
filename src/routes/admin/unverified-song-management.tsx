@@ -19,7 +19,12 @@ import { BackgroundSavesIndicator } from './background-saves-indicator';
 import { useAdminUnverifiedSongSaves } from './background-song-save';
 import { RegenerateIndexButton } from './regenerate-index-button';
 import { ReviewReasonTags } from './review-reason-tags';
-import { buildAdminReviewSongProcessingUrl, getRandomAdminReviewSong } from './unverified-song-processing-queue';
+import {
+  AdminReviewQueue,
+  buildAdminReviewSongProcessingUrl,
+  countAdminReviewQueueSongs,
+  getRandomAdminReviewSong,
+} from './unverified-song-processing-queue';
 import {
   ADMIN_REVIEW_SONGS_SWR_KEY,
   AdminReviewSong,
@@ -146,7 +151,13 @@ export function UnverifiedSongManagement({ password }: Props) {
     // oxlint-disable-next-line react-hooks/exhaustive-deps
   }, [pendingSaves.length]);
 
-  const hasSongsToProcess = songs.length > 0;
+  const startQueue = (queue: AdminReviewQueue) => {
+    const songToProcess = getRandomAdminReviewSong(songs, queue);
+
+    if (songToProcess) {
+      navigate(buildAdminReviewSongProcessingUrl(songToProcess, queue));
+    }
+  };
   const unverifiedCount = songs.filter((song) => song.reasons.includes('unverified')).length;
   const isBusy = isLoading || isValidating || isDeleting || isRegenerating;
   const error = listError ?? deleteError ?? regenerateError;
@@ -246,15 +257,17 @@ export function UnverifiedSongManagement({ password }: Props) {
         <div className="flex flex-wrap gap-2">
           <Button
             variant="contained"
-            onClick={() => {
-              const songToProcess = getRandomAdminReviewSong(songs);
-
-              if (songToProcess) {
-                navigate(buildAdminReviewSongProcessingUrl(songToProcess, true));
-              }
-            }}
-            disabled={isBusy || !hasSongsToProcess}>
+            data-test="process-unverified-songs"
+            onClick={() => startQueue('unverified')}
+            disabled={isBusy || !countAdminReviewQueueSongs(songs, 'unverified')}>
             Process random unverified
+          </Button>
+          <Button
+            variant="contained"
+            data-test="process-reported-songs"
+            onClick={() => startQueue('reports')}
+            disabled={isBusy || !countAdminReviewQueueSongs(songs, 'reports')}>
+            Process random reported
           </Button>
           <RegenerateIndexButton disabled={isBusy} onRegenerate={() => void handleRegenerateIndex()} />
           <Button

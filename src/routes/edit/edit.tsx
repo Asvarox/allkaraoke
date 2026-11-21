@@ -16,7 +16,10 @@ import SongDao from '~/modules/songs/songs-service';
 import { getAdminPassword } from '~/routes/admin/admin-password';
 import { BackgroundSavesIndicator } from '~/routes/admin/background-saves-indicator';
 import { ReviewReasonTags } from '~/routes/admin/review-reason-tags';
-import { getNextAdminReviewSongProcessingUrl } from '~/routes/admin/unverified-song-processing-queue';
+import {
+  getNextAdminReviewSongProcessingUrl,
+  parseAdminReviewQueue,
+} from '~/routes/admin/unverified-song-processing-queue';
 import {
   ADMIN_REVIEW_SONGS_SWR_KEY,
   deleteAdminSongQualityFlag,
@@ -35,7 +38,8 @@ export default function Edit() {
   const songId = useQueryParam('song');
   const sharedSongId = useQueryParam('externalSong');
   const isAdminEdit = useQueryParam('admin') === 'true';
-  const isAdminProcessingQueue = useQueryParam('processQueue') === 'true';
+  const adminProcessingQueue = parseAdminReviewQueue(useQueryParam('processQueue'));
+  const isAdminProcessingQueue = !!adminProcessingQueue;
   const navigate = useSmoothNavigate();
   useBackgroundMusic(false);
   const song = useSong(songId ?? '', {
@@ -61,7 +65,7 @@ export default function Edit() {
   const getAdminProcessingQueueRedirect = async (password: string) => {
     const songs = await listAdminReviewSongs(password);
 
-    return getNextAdminReviewSongProcessingUrl(songs, adminReviewKey!);
+    return getNextAdminReviewSongProcessingUrl(songs, adminProcessingQueue!, adminReviewKey!);
   };
 
   const dismissAdminReports = async () => {
