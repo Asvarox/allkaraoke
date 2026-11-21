@@ -9,7 +9,11 @@ import useFullscreen from '~/modules/hooks/use-fullscreen';
 import useKeyboard from '~/modules/hooks/use-keyboard';
 import useViewportSize from '~/modules/hooks/use-viewport-size';
 import { useLiveOnlineLeader } from '~/modules/online/client/live-leaderboard';
-import { trackOnlineDriftSeek, trackOnlineSongStarted } from '~/modules/online/client/online-analytics';
+import {
+  recordOnlineSongProgress,
+  trackOnlineDriftSeek,
+  trackOnlineSongStarted,
+} from '~/modules/online/client/online-analytics';
 import OnlineClient from '~/modules/online/client/online-client';
 import { ONLINE_DRIFT_THRESHOLD_MS } from '~/modules/online/protocol/consts';
 import { OnlinePlaybackStatus, OnlineRoomState, WireDetailedScore } from '~/modules/online/protocol/types';
@@ -244,6 +248,7 @@ function OnlineSinging({ roomState, song }: Props) {
   const onSongEnd = useCallback(() => {
     if (hasFinished) return;
     setHasFinished(true);
+    recordOnlineSongProgress(song.id, GameState.getSongCompletionProgress());
     OnlineClient.reportSongPing(song.id);
     OnlineClient.send.scoring.publishScore(GameState.getPlayerScore(selfNumber));
     const [actual, max] = GameState.getPlayerDetailedScore(selfNumber);
