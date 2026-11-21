@@ -1,6 +1,7 @@
 import posthog from 'posthog-js';
 
 import { GAME_MODE, Song } from '~/interfaces';
+import GameState from '~/modules/game-engine/game-state/game-state';
 import { PingStats } from '~/modules/network/rpc/ping-stats';
 import { OnlineRoomState } from '~/modules/online/protocol/types';
 
@@ -58,6 +59,7 @@ export const trackOnlineSongEnded = (roomState: OnlineRoomState, song: Song) => 
     ...songMeta(roomState, song),
     singId: sing?.singId ?? null,
     progress: sing?.progress ?? null,
+    videoDuration: GameState.getDuration() || null,
     sameScores,
     ...scores.reduce((curr, score, index) => ({ ...curr, [`score${index}`]: score }), {}),
   });

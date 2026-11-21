@@ -81,6 +81,7 @@ export interface SongQualityFlag {
   players: number;
 }
 
+/** Replaces the player-report flags, duration-shift flags stay */
 export const replaceSongQualityFlags = async (songs: SongQualityFlag[]) => {
   await requestUnverifiedSongsAdmin('/song-quality-flags-admin', {
     method: 'PUT',
