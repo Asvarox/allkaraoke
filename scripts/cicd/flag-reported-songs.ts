@@ -70,6 +70,12 @@ const baselinesQuery = `
   group by issue
 `;
 
+const toTime = (date: string | null | undefined) => (date ? new Date(date).getTime() : NaN);
+
+// Versions that aren't dates fall back to the event time - the same rule applies to reports and player starts
+const VERSION_DATE_PATTERN = /^\d{4}-\d{2}-\d{2}/;
+const toVersionTime = (date: string | null) => (date && VERSION_DATE_PATTERN.test(date) ? toTime(date) : NaN);
+
 interface PlayersCutoff {
   /** Count only starts after this time (last update or dismissal), ms */
   since: number;
@@ -93,15 +99,13 @@ const buildPlayersQuery = (cutoffs: [songId: string, cutoff: PlayersCutoff][]) =
       and timestamp > now() - interval ${LOOKBACK_MONTHS} month
       and properties.songId in ${ids}
       and timestamp > fromUnixTimestamp64Milli(toInt64(transform(properties.songId, ${ids}, ${since}, 0)))
-      and (properties.songLastUpdated is null
+      and (not match(ifNull(toString(properties.songLastUpdated), ''), '${VERSION_DATE_PATTERN.source.replaceAll('\\', '\\\\')}')
         or toUnixTimestamp(parseDateTimeBestEffort(toString(properties.songLastUpdated)))
           >= toInt64(transform(properties.songId, ${ids}, ${versions}, 0)))
     group by songId
     limit ${PLAYERS_BATCH_SIZE * 2}
   `;
 };
-
-const toTime = (date: string | null | undefined) => (date ? new Date(date).getTime() : NaN);
 
 (async () => {
   const { requestPostHog } = require('../utils.cjs');
@@ -159,7 +163,9 @@ const toTime = (date: string | null | undefined) => (date ? new Date(date).getTi
     }
     // Skip reports about an older version: use the version the player rated when known, else the report time
     const currentVersion = toTime(song.lastUpdate);
-    const reportedVersion = Number.isNaN(toTime(songLastUpdated)) ? toTime(timestamp) : toTime(songLastUpdated);
+    const reportedVersion = Number.isNaN(toVersionTime(songLastUpdated))
+      ? toTime(timestamp)
+      : toVersionTime(songLastUpdated);
     if (!Number.isNaN(currentVersion) && reportedVersion < currentVersion) {
       skippedOutdated += 1;
       continue;
