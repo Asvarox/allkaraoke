@@ -18,9 +18,6 @@ const REVIEW_POOLS: Record<AdminReviewQueue, AdminReviewReason[][]> = {
 export const parseAdminReviewQueue = (value: string | null): AdminReviewQueue | null =>
   value === 'reports' ? 'reports' : value === 'unverified' || value === 'true' ? 'unverified' : null;
 
-export const countAdminReviewQueueSongs = (songs: AdminReviewSong[], queue: AdminReviewQueue) =>
-  songs.filter((song) => song.reasons.some((reason) => REVIEW_POOLS[queue].flat().includes(reason))).length;
-
 const getSubmissionAgeWeight = (song: AdminReviewSong, oldestFirstSeenAt: number, newestFirstSeenAt: number) => {
   if (oldestFirstSeenAt === newestFirstSeenAt) return OLDEST_SONG_WEIGHT;
 
@@ -47,14 +44,24 @@ const pickWeighted = (candidates: AdminReviewSong[]) => {
   return candidates[candidates.length - 1];
 };
 
+// Processed songs stay in KV until the nightly import removes them, so skip the ones already processed.
+const getUnprocessedSongs = (songs: AdminReviewSong[], currentKey?: string) => {
+  const processedKeys = new Set([...getAdminSongsVerifiedToday(), ...getPendingAdminUnverifiedSongSaveIds()]);
+  return songs.filter((song) => song.key !== currentKey && !processedKeys.has(song.key));
+};
+
+/** How many songs the queue can still pick from */
+export const countAdminReviewQueueSongs = (songs: AdminReviewSong[], queue: AdminReviewQueue) =>
+  getUnprocessedSongs(songs).filter((song) =>
+    song.reasons.some((reason) => REVIEW_POOLS[queue].flat().includes(reason)),
+  ).length;
+
 export const getRandomAdminReviewSong = (
   songs: AdminReviewSong[],
   queue: AdminReviewQueue,
   currentKey?: string,
 ): AdminReviewSong | undefined => {
-  // Processed songs stay in KV until the nightly import removes them, so skip the ones already processed.
-  const processedKeys = new Set([...getAdminSongsVerifiedToday(), ...getPendingAdminUnverifiedSongSaveIds()]);
-  const candidates = songs.filter((song) => song.key !== currentKey && !processedKeys.has(song.key));
+  const candidates = getUnprocessedSongs(songs, currentKey);
 
   for (const pool of REVIEW_POOLS[queue]) {
     const poolCandidates = candidates.filter((song) => song.reasons.some((reason) => pool.includes(reason)));

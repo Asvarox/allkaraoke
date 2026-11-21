@@ -192,6 +192,14 @@ describe('getRandomAdminReviewSong queues', () => {
     expect(countAdminReviewQueueSongs(songs, 'unverified')).toBe(1);
     expect(countAdminReviewQueueSongs(songs, 'reports')).toBe(2);
   });
+
+  it('does not count songs already processed, so an exhausted queue reads as empty', () => {
+    const songs = [makeReportedSong('b', ['too-loud']), makeReportedSong('c', ['not-in-sync'])];
+    markAdminSongVerified('b');
+    pendingSaveIds.value = ['c'];
+
+    expect(countAdminReviewQueueSongs(songs, 'reports')).toBe(0);
+  });
 });
 
 describe('parseAdminReviewQueue', () => {
