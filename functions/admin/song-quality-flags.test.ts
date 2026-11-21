@@ -90,6 +90,33 @@ describe('song quality flags admin function', () => {
     expect(dismissals['song-1']).toBeGreaterThanOrEqual(before);
   });
 
+  it('keeps duration-shift flags when the weekly job replaces player reports', async () => {
+    const ciRequest = (method: string, songs: SongQualityFlag[]) =>
+      fetchWorker('https://example.com/song-quality-flags-admin', {
+        method,
+        headers: { 'x-unverified-songs-admin-token': 'ci-token' },
+        body: JSON.stringify({ songs }),
+      });
+    const durationShift = { previousDuration: 200, currentDuration: 205, offset: null, detectedAt: 1 };
+
+    await ciRequest('PUT', [flag(), flag({ songId: 'song-2', issues: ['too-loud'] })]);
+    await ciRequest('POST', [
+      flag({ issues: ['duration-shift'], reportCounts: {}, durationShift }),
+      flag({ songId: 'song-3', issues: ['duration-shift'], reportCounts: {}, durationShift }),
+    ]);
+    await ciRequest('PUT', [flag({ songId: 'song-2', issues: ['too-quiet'], reportCounts: { 'too-quiet': 7 } })]);
+
+    const list = await (
+      await fetchWorker('https://example.com/admin/song-quality-flags', adminRequest())
+    ).json<{ songs: SongQualityFlag[] }>();
+
+    expect(list.songs.map((song) => [song.songId, song.issues, song.durationShift?.currentDuration]).sort()).toEqual([
+      ['song-1', ['duration-shift'], 205],
+      ['song-2', ['too-quiet'], undefined],
+      ['song-3', ['duration-shift'], 205],
+    ]);
+  });
+
   it('rejects CI updates without the admin token', async () => {
     const response = await fetchWorker('https://example.com/song-quality-flags-admin', {
       method: 'PUT',

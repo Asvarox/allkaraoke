@@ -66,7 +66,16 @@ export const removeUnverifiedSongRecord = async (sharedSongId: string) => {
   });
 };
 
-export type SongQualityIssue = 'not-in-sync' | 'too-loud' | 'too-quiet';
+export type SongQualityIssue = 'not-in-sync' | 'too-loud' | 'too-quiet' | 'duration-shift';
+
+export interface DurationShiftDetails {
+  previousDuration: number;
+  currentDuration: number;
+  /** Offset of the new video vs the old one (s), null when no consistent offset was found */
+  offset: number | null;
+  detectedAt: number;
+  note?: string;
+}
 
 export interface SongQualityFlag {
   songId: string;
@@ -76,11 +85,21 @@ export interface SongQualityFlag {
   videoId: string;
   issues: SongQualityIssue[];
   reportCounts: Partial<Record<SongQualityIssue, number>>;
+  durationShift?: DurationShiftDetails;
 }
 
+/** Replaces the player-report flags, duration-shift flags stay */
 export const replaceSongQualityFlags = async (songs: SongQualityFlag[]) => {
   await requestUnverifiedSongsAdmin('/song-quality-flags-admin', {
     method: 'PUT',
+    body: JSON.stringify({ songs }),
+  });
+};
+
+/** Adds flags without touching the other ones */
+export const addSongQualityFlags = async (songs: SongQualityFlag[]) => {
+  await requestUnverifiedSongsAdmin('/song-quality-flags-admin', {
+    method: 'POST',
     body: JSON.stringify({ songs }),
   });
 };

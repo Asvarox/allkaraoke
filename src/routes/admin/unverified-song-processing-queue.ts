@@ -8,7 +8,11 @@ const OLDEST_SONG_WEIGHT = 3;
 const NEWEST_SONG_WEIGHT = 1;
 
 // The queue drains these pools in order - a pool is only drawn from once all the previous ones are empty
-const REVIEW_POOLS: AdminReviewReason[][] = [['unverified'], ['not-in-sync'], ['too-loud', 'too-quiet']];
+const REVIEW_POOLS: AdminReviewReason[][] = [
+  ['unverified'],
+  ['not-in-sync', 'duration-shift'],
+  ['too-loud', 'too-quiet'],
+];
 
 const getSubmissionAgeWeight = (song: AdminReviewSong, oldestFirstSeenAt: number, newestFirstSeenAt: number) => {
   if (oldestFirstSeenAt === newestFirstSeenAt) return OLDEST_SONG_WEIGHT;

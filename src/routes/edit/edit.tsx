@@ -21,6 +21,7 @@ import {
   ADMIN_REVIEW_SONGS_SWR_KEY,
   deleteAdminSongQualityFlag,
   deleteAdminUnverifiedSong,
+  describeDurationShift,
   listAdminReviewSongs,
 } from '~/routes/admin/unverified-songs-admin-api';
 import { LazyConvert } from '~/routes/convert/convert';
@@ -158,6 +159,9 @@ export default function Edit() {
         <div className="flex items-center gap-2 px-2 pt-2 text-[14px]" data-test="admin-review-song-reasons">
           <span>In the review queue because:</span>
           <ReviewReasonTags song={adminReviewSong} />
+          {adminReviewSong.durationShift && (
+            <span className="text-white/70">{describeDurationShift(adminReviewSong.durationShift)}</span>
+          )}
         </div>
       )}
       <LazyConvert
