@@ -28,7 +28,8 @@ var normalizeSongQualityFlag = (payload) => {
 		language: Array.isArray(flag.language) ? flag.language.filter((lang) => typeof lang === "string") : [],
 		videoId: typeof flag.videoId === "string" ? flag.videoId : "",
 		issues,
-		reportCounts
+		reportCounts,
+		players: typeof flag.players === "number" && Number.isFinite(flag.players) ? flag.players : 0
 	};
 };
 var getSongQualityFlags = async (kvNamespace) => {
