@@ -11,6 +11,7 @@ import createCache from '@emotion/cache';
 import { CacheProvider } from '@emotion/react';
 import { MotionConfig } from 'motion/react';
 import posthog from 'posthog-js';
+import { sampleByEvent } from 'posthog-js/lib/src/customizations';
 import { PostHogProvider } from 'posthog-js/react';
 import { lazy, StrictMode, Suspense } from 'react';
 import { createRoot } from 'react-dom/client';
@@ -34,15 +35,19 @@ if (!isE2E() && import.meta.env.VITE_APP_POSTHOG_KEY) {
     // debug: true,
     api_host: import.meta.env.VITE_APP_POSTHOG_PROXY,
     ui_host: 'https://eu.posthog.com',
-    before_send: (event) => {
-      if (event?.event === '$exception') {
-        const exceptionList = (event.properties?.['$exception_list'] ?? []) as ExceptionListItem[];
-        if (hasIgnoredException(exceptionList)) {
-          return null;
+    before_send: [
+      (event) => {
+        if (event?.event === '$exception') {
+          const exceptionList = (event.properties?.['$exception_list'] ?? []) as ExceptionListItem[];
+          if (hasIgnoredException(exceptionList)) {
+            return null;
+          }
         }
-      }
-      return event;
-    },
+        return event;
+      },
+      // Keep 10% of web vitals events
+      sampleByEvent(['$web_vitals'], 0.1),
+    ],
     loaded: (ph) => {
       let storedUser = storage.local.getItem('posthog-user-id');
       if (!storedUser) {
