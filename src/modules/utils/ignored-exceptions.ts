@@ -30,17 +30,34 @@ const ignoredExceptions: (string | RegExp)[] = [
   // See http://toolbar.conduit.com/Developer/HtmlAndGadget/Methods/JSInjection.aspx
   'conduitPage',
   'Transition was aborted because of invalid state',
-  'NotFoundError: Requested device not found',
   /Transport disconnected during RPC: .+/,
   /RPC timeout: .+/,
   /Not connected \(calling .+\)/,
+  "Failed to execute 'appendChild' on 'Node': Unexpected identifier 'as'",
+  "undefined is not an object (evaluating 'window.ethereum.selectedAddress = undefined')",
 ];
 
-export const isIgnoredException = (message: string | null | undefined): boolean => {
+// Noisy but still worth seeing occasionally, so only SAMPLED_EXCEPTION_RATE of them are sent
+const sampledExceptions: (string | RegExp)[] = [
+  'Script error.',
+  'NotFoundError: Requested device not found',
+  'NotAllowedError: Permission denied',
+  'NotReadableError: Could not start audio source',
+  'NotAllowedError: The request is not allowed by the user agent or the platform in the current context.',
+  'NotAllowedError: The request is not allowed by the user agent or the platform in the current context, possibly because the user denied permission.',
+  'NotAllowedError: Permission dismissed',
+];
+
+export const SAMPLED_EXCEPTION_RATE = 0.1;
+
+const matchesAny = (patterns: (string | RegExp)[], message: string | null | undefined): boolean => {
   if (!message) return false;
 
-  return ignoredExceptions.some((entry) => (entry instanceof RegExp ? entry.test(message) : message.includes(entry)));
+  return patterns.some((entry) => (entry instanceof RegExp ? entry.test(message) : message.includes(entry)));
 };
+
+export const isIgnoredException = (message: string | null | undefined): boolean =>
+  matchesAny(ignoredExceptions, message);
 
 export interface ExceptionListItem {
   type?: string;
@@ -48,7 +65,14 @@ export interface ExceptionListItem {
 }
 
 // posthog-js `$exception_list` items hold `type` and `value` separately, while the patterns may include the "Type: " prefix.
-export const hasIgnoredException = (exceptionList: ExceptionListItem[]): boolean =>
+const listMatches = (patterns: (string | RegExp)[], exceptionList: ExceptionListItem[]): boolean =>
   exceptionList.some(
-    ({ type, value }) => isIgnoredException(value) || (!!type && !!value && isIgnoredException(`${type}: ${value}`)),
+    ({ type, value }) =>
+      matchesAny(patterns, value) || (!!type && !!value && matchesAny(patterns, `${type}: ${value}`)),
   );
+
+export const hasIgnoredException = (exceptionList: ExceptionListItem[]): boolean =>
+  listMatches(ignoredExceptions, exceptionList);
+
+export const hasSampledException = (exceptionList: ExceptionListItem[]): boolean =>
+  listMatches(sampledExceptions, exceptionList);
