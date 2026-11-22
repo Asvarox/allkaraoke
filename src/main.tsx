@@ -22,13 +22,10 @@ import App from '~/app';
 import '~/index.css';
 import NoPrerender from '~/modules/elements/no-prerender';
 import { fixStoredMergedTrackScores } from '~/modules/songs/stats/merged-track-score-fix';
-import { normalizeSting } from '~/modules/songs/utils/get-song-id';
 import { type ExceptionListItem, hasIgnoredException } from '~/modules/utils/ignored-exceptions';
 import isE2E from '~/modules/utils/is-e2-e';
 import isPreRendering from '~/modules/utils/is-pre-rendering';
-import { randomInt } from '~/modules/utils/random-value';
 import storage from '~/modules/utils/storage';
-import songStats from '~/routes/landing-page/song-stats.json';
 
 if (!isE2E() && import.meta.env.VITE_APP_POSTHOG_KEY) {
   posthog.init(import.meta.env.VITE_APP_POSTHOG_KEY, {
@@ -45,8 +42,9 @@ if (!isE2E() && import.meta.env.VITE_APP_POSTHOG_KEY) {
         }
         return event;
       },
-      // Keep 10% of web vitals events
+      // Keep 10% of web vitals events and half of the per-song ping events
       sampleByEvent(['$web_vitals'], 0.1),
+      sampleByEvent(['onlineSongPing', 'remote_mic_song_ping'], 0.5),
     ],
     loaded: (ph) => {
       let storedUser = storage.local.getItem('posthog-user-id');
@@ -55,20 +53,6 @@ if (!isE2E() && import.meta.env.VITE_APP_POSTHOG_KEY) {
         storage.local.setItem('posthog-user-id', storedUser);
       }
       ph.identify(storedUser);
-      let storedName = storage.local.getItem('posthog-user-name');
-      if (!storedName) {
-        const words = [...new Set(songStats.artists.flatMap((artist) => normalizeSting(artist).split('-')))].filter(
-          (word) => word.length <= 10,
-        );
-
-        storedName = new Array(randomInt(3, 5))
-          .fill(0)
-          .map(() => words[randomInt(0, words.length - 1)])
-          .join('-');
-        storage.local.setItem('posthog-user-name', storedName);
-
-        ph.alias(storedName, storedUser);
-      }
     },
   });
   // posthog.featureFlags.override({ websockets_remote_mics: false });
