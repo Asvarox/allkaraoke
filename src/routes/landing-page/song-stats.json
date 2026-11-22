@@ -189,9 +189,10 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 7672,
-  "generatedAt": "2026-11-20T05:08:27.795Z",
+  "songs": 7681,
+  "generatedAt": "2026-11-22T04:24:43.274Z",
   "additionsPerDay": {
+    "2026-11-22": 9,
     "2026-11-20": 18,
     "2026-11-19": 20,
     "2026-11-18": 70,
@@ -234,10 +235,72 @@
     "2026-10-01": 13,
     "2026-09-29": 2,
     "2026-09-24": 16,
-    "2026-09-23": 8,
-    "2026-09-22": 19
+    "2026-09-23": 8
   },
   "recentlyAdded": [
+    {
+      "id": "belinda-carlisle-heaven-is-a-place-on-earth",
+      "artist": "Belinda Carlisle",
+      "title": "Heaven Is A Place On Earth",
+      "video": "j2F4INQFjEI",
+      "addedAt": "2026-11-22T04:24:12.632Z"
+    },
+    {
+      "id": "michael-wong-tong-hua",
+      "artist": "Michael Wong",
+      "title": "Tong Hua",
+      "video": "IBTmypxD2mU",
+      "addedAt": "2026-11-22T04:24:12.189Z"
+    },
+    {
+      "id": "peter-gabriel-mercy-street",
+      "artist": "Peter Gabriel",
+      "title": "Mercy Street",
+      "video": "zs35CBGOxbc",
+      "addedAt": "2026-11-22T04:24:12.187Z"
+    },
+    {
+      "id": "summer-walker-summer-walker-girls-need-love-remix-with-drake",
+      "artist": "Summer Walker",
+      "title": "Summer Walker - Girls Need Love Remix (with Drake)",
+      "video": "TP3moIiyZFI",
+      "addedAt": "2026-11-22T04:24:10.805Z"
+    },
+    {
+      "id": "renaud-la-peche-a-la-ligne",
+      "artist": "Renaud",
+      "title": "La Pêche à La Ligne",
+      "video": "f15FPspIII4",
+      "addedAt": "2026-11-22T04:24:10.803Z"
+    },
+    {
+      "id": "sylvie-vartan-la-plus-belle-pour-aller-danser",
+      "artist": "Sylvie Vartan",
+      "title": "La plus belle pour aller danser",
+      "video": "sfiuaOWjEkI",
+      "addedAt": "2026-11-22T04:24:10.800Z"
+    },
+    {
+      "id": "stone-et-charden-lavventura",
+      "artist": "Stone et Charden",
+      "title": "L'avventura",
+      "video": "jJccs8ZbsMQ",
+      "addedAt": "2026-11-22T04:24:10.613Z"
+    },
+    {
+      "id": "zazie-chanson-dami",
+      "artist": "Zazie",
+      "title": "Chanson d'ami",
+      "video": "mShVHdf4BP0",
+      "addedAt": "2026-11-22T04:24:10.420Z"
+    },
+    {
+      "id": "soolking-ft-gazo-casanova",
+      "artist": "Soolking ft. Gazo",
+      "title": "Casanova",
+      "video": "6WrVXWgn094",
+      "addedAt": "2026-11-22T04:24:07.284Z"
+    },
     {
       "id": "slimane-claudio-capeo-chez-toi",
       "artist": "Slimane & Claudio Capéo",
@@ -510,69 +573,6 @@
       "title": "Prendre Racine",
       "video": "Bu21Qx7N6nM",
       "addedAt": "2026-11-18T05:27:04.562Z"
-    },
-    {
-      "id": "mrozu-feat-vito-bambino-za-daleko",
-      "artist": "Mrozu feat. Vito Bambino",
-      "title": "Za daleko",
-      "video": "wOBByEBgGFU",
-      "addedAt": "2026-11-18T05:27:04.385Z"
-    },
-    {
-      "id": "calogero-cest-dici-que-je-vous-ecris",
-      "artist": "Calogero",
-      "title": "C'est d'ici que je vous écris",
-      "video": "NAyuN6cAbXE",
-      "addedAt": "2026-11-18T05:27:04.384Z"
-    },
-    {
-      "id": "pierre-garnier-adieu-nous-deux",
-      "artist": "Pierre Garnier",
-      "title": "Adieu, nous deux",
-      "video": "JKXQZ2NCkWU",
-      "addedAt": "2026-11-18T05:27:04.383Z"
-    },
-    {
-      "id": "pierre-garnier-ce-qui-me-va",
-      "artist": "Pierre Garnier",
-      "title": "Ce Qui Me Va",
-      "video": "XVo8wml_oS8",
-      "addedAt": "2026-11-18T05:27:04.381Z"
-    },
-    {
-      "id": "luciano-pavarotti-e-nuccia-focile-libiamo-nelieti-calici",
-      "artist": "Luciano Pavarotti e Nuccia Focile",
-      "title": "Libiamo ne'lieti calici",
-      "video": "pu7zWrIMV_g",
-      "addedAt": "2026-11-18T05:27:03.050Z"
-    },
-    {
-      "id": "gims-appelle-ta-copine",
-      "artist": "Gims",
-      "title": "Appelle ta Copine",
-      "video": "gtvQOusc5mQ",
-      "addedAt": "2026-11-18T05:27:03.049Z"
-    },
-    {
-      "id": "pierre-garnier-lhorizon",
-      "artist": "Pierre Garnier",
-      "title": "L'Horizon",
-      "video": "fj_MkTfWS3s",
-      "addedAt": "2026-11-18T05:27:03.047Z"
-    },
-    {
-      "id": "pierre-garnier-nous-on-sait",
-      "artist": "Pierre Garnier",
-      "title": "Nous On Sait",
-      "video": "WVaVQwI5pZc",
-      "addedAt": "2026-11-18T05:26:57.421Z"
-    },
-    {
-      "id": "gauvain-sers-les-oublies",
-      "artist": "Gauvain Sers",
-      "title": "Les oubliés",
-      "video": "CIfV6TQIhcc",
-      "addedAt": "2026-11-18T05:26:54.925Z"
     }
   ]
 }
