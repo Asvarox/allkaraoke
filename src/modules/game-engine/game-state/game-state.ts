@@ -40,7 +40,11 @@ export class GameStateClass {
     return getCurrentBeat(this.getCurrentTime(), this.getSongBeatLength(), 0, false);
   };
 
-  public setSong = (song: Song) => (this.song = song);
+  public setSong = (song: Song) => {
+    // The player loads the video length only once playback starts - until then it's unknown, not the previous song's
+    if (song.id !== this.song?.id) this.duration = 0;
+    this.song = song;
+  };
   public getSong = () => this.song;
 
   public getSingSetup = () => this.singSetup;
