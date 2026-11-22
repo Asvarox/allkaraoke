@@ -44,7 +44,6 @@ const trackSongData =
       players: setup.players.length,
       tracks: setup.players.map((player) => player.track),
       progress: progress ?? null,
-      // Lets a maintenance script spot songs whose YouTube video changed length (likely out of sync)
       ...(event === 'songEnded' ? { videoDuration: GameState.getDuration() || null } : {}),
       singId: setup.id,
       sameScores,
