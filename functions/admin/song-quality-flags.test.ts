@@ -118,6 +118,37 @@ describe('song quality flags admin function', () => {
     ]);
   });
 
+  it('shows the weekly report metadata for a song that also has a duration shift, and dismisses both', async () => {
+    const ciRequest = (method: string, songs: SongQualityFlag[]) =>
+      fetchWorker('https://example.com/song-quality-flags-admin', {
+        method,
+        headers: { 'x-unverified-songs-admin-token': 'ci-token' },
+        body: JSON.stringify({ songs }),
+      });
+    const durationShift = { previousDuration: 200, currentDuration: 205, offset: 5, detectedAt: 1 };
+    const listFlags = async () =>
+      (
+        await (
+          await fetchWorker('https://example.com/admin/song-quality-flags', adminRequest())
+        ).json<{
+          songs: SongQualityFlag[];
+        }>()
+      ).songs;
+
+    await ciRequest('POST', [
+      flag({ videoId: 'old-video', issues: ['duration-shift'], reportCounts: {}, durationShift }),
+    ]);
+    await ciRequest('PUT', [flag({ videoId: 'new-video', players: 40 })]);
+
+    expect(await listFlags()).toMatchObject([
+      { songId: 'song-1', videoId: 'new-video', players: 40, issues: ['not-in-sync', 'duration-shift'], durationShift },
+    ]);
+
+    await fetchWorker('https://example.com/admin/song-quality-flags?id=song-1', adminRequest({ method: 'DELETE' }));
+
+    expect(await listFlags()).toEqual([]);
+  });
+
   it('rejects CI updates without the admin token', async () => {
     const response = await fetchWorker('https://example.com/song-quality-flags-admin', {
       method: 'PUT',

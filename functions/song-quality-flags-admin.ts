@@ -1,5 +1,5 @@
 import {
-  addSongQualityFlags,
+  addDurationShiftFlags,
   getSongQualityDismissals,
   normalizeSongQualityFlag,
   replaceSongQualityFlags,
@@ -52,7 +52,7 @@ export const onRequest: PagesFunction<UnverifiedSongsEnv> = async ({ request, en
 
     // POST (local duration-shift script) adds flags, PUT (weekly job) replaces the player-report ones
     if (request.method === 'POST') {
-      await addSongQualityFlags(kv, songs as SongQualityFlag[]);
+      await addDurationShiftFlags(kv, songs as SongQualityFlag[]);
     } else {
       await replaceSongQualityFlags(kv, songs as SongQualityFlag[]);
     }

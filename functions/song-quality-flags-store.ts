@@ -35,6 +35,7 @@ export interface SongQualityFlagsDocument {
 export type SongQualityDismissals = Record<string, number>;
 
 const SONG_QUALITY_FLAGS_KEY = 'song-quality-flags';
+const DURATION_SHIFT_FLAGS_KEY = 'song-duration-shift-flags';
 const SONG_QUALITY_DISMISSALS_KEY = 'song-quality-dismissals';
 // Older dismissals no longer matter - the weekly job only looks this far back
 const DISMISSAL_RETENTION_MS = 200 * 24 * 60 * 60 * 1000;
@@ -90,61 +91,67 @@ export const normalizeSongQualityFlag = (payload: unknown): SongQualityFlag | nu
   };
 };
 
-export const getSongQualityFlags = async (kvNamespace: KVNamespace): Promise<SongQualityFlagsDocument> => {
+const normalizeFlags = (songs: unknown[] | undefined) =>
+  (songs ?? []).flatMap((flag) => {
+    const normalized = normalizeSongQualityFlag(flag);
+    return normalized ? [normalized] : [];
+  });
+
+const getReportFlags = async (kvNamespace: KVNamespace) => {
   const stored = await kvNamespace.get<SongQualityFlagsDocument>(SONG_QUALITY_FLAGS_KEY, 'json');
 
-  return {
-    generatedAt: stored?.generatedAt ?? 0,
-    songs: (stored?.songs ?? []).flatMap((flag) => {
-      const normalized = normalizeSongQualityFlag(flag);
-      return normalized ? [normalized] : [];
-    }),
-  };
+  return { generatedAt: stored?.generatedAt ?? 0, songs: normalizeFlags(stored?.songs) };
 };
 
-const mergeFlags = (existing: SongQualityFlag | undefined, update: SongQualityFlag): SongQualityFlag => {
-  if (!existing) return update;
+const getDurationShiftFlags = async (kvNamespace: KVNamespace) =>
+  normalizeFlags((await kvNamespace.get<SongQualityFlag[]>(DURATION_SHIFT_FLAGS_KEY, 'json')) ?? undefined);
 
-  const durationShift = update.durationShift ?? existing.durationShift;
+/** Player-report flags (weekly job) and duration-shift flags (local script) live under separate keys, so their
+ * writers never overwrite each other. Merged per song here, the report flag's metadata wins. */
+export const getSongQualityFlags = async (kvNamespace: KVNamespace): Promise<SongQualityFlagsDocument> => {
+  const [reports, durationShifts] = await Promise.all([
+    getReportFlags(kvNamespace),
+    getDurationShiftFlags(kvNamespace),
+  ]);
+  const merged = new Map(reports.songs.map((flag) => [flag.songId, flag]));
 
-  return {
-    ...existing,
-    ...update,
-    issues: [...new Set([...existing.issues, ...update.issues])],
-    reportCounts: { ...existing.reportCounts, ...update.reportCounts },
-    // Duration-shift flags don't know the player count
-    players: update.players || existing.players,
-    ...(durationShift ? { durationShift } : {}),
-  };
-};
-
-/** Replaces the player-report flags (weekly job). Duration shifts come from a separate script, so they are kept. */
-export const replaceSongQualityFlags = async (kvNamespace: KVNamespace, songs: SongQualityFlag[]) => {
-  const current = await getSongQualityFlags(kvNamespace);
-  const merged = new Map(songs.map((flag) => [flag.songId, flag]));
-
-  for (const flag of current.songs) {
-    if (!flag.issues.includes('duration-shift')) continue;
-
-    const durationShiftOnly: SongQualityFlag = { ...flag, issues: ['duration-shift'], reportCounts: {}, players: 0 };
+  for (const flag of durationShifts) {
     const reportFlag = merged.get(flag.songId);
-    merged.set(flag.songId, reportFlag ? mergeFlags(durationShiftOnly, reportFlag) : durationShiftOnly);
+    merged.set(
+      flag.songId,
+      reportFlag
+        ? {
+            ...reportFlag,
+            issues: [...new Set([...reportFlag.issues, 'duration-shift' as const])],
+            ...(flag.durationShift ? { durationShift: flag.durationShift } : {}),
+          }
+        : flag,
+    );
   }
 
-  const document: SongQualityFlagsDocument = { generatedAt: Date.now(), songs: [...merged.values()] };
+  return { generatedAt: reports.generatedAt, songs: [...merged.values()] };
+};
+
+/** Replaces the player-report flags (weekly job). Duration-shift flags are stored apart and stay. */
+export const replaceSongQualityFlags = async (kvNamespace: KVNamespace, songs: SongQualityFlag[]) => {
+  const reportFlags = songs.flatMap((flag) => {
+    const issues = flag.issues.filter((issue) => issue !== 'duration-shift');
+    return issues.length ? [{ ...flag, issues, durationShift: undefined }] : [];
+  });
+  const document: SongQualityFlagsDocument = { generatedAt: Date.now(), songs: reportFlags };
   await kvNamespace.put(SONG_QUALITY_FLAGS_KEY, JSON.stringify(document));
 };
 
-/** Adds the given flags' issues to the stored ones, keeping everything else */
-export const addSongQualityFlags = async (kvNamespace: KVNamespace, songs: SongQualityFlag[]) => {
-  const current = await getSongQualityFlags(kvNamespace);
-  const merged = new Map(current.songs.map((flag) => [flag.songId, flag]));
+/** Adds or replaces duration-shift flags (local script, run by hand - nothing else writes this key) */
+export const addDurationShiftFlags = async (kvNamespace: KVNamespace, songs: SongQualityFlag[]) => {
+  const merged = new Map((await getDurationShiftFlags(kvNamespace)).map((flag) => [flag.songId, flag]));
 
   for (const flag of songs) {
-    merged.set(flag.songId, mergeFlags(merged.get(flag.songId), flag));
+    if (!flag.issues.includes('duration-shift')) continue;
+    merged.set(flag.songId, { ...flag, issues: ['duration-shift'], reportCounts: {}, players: 0 });
   }
 
-  await kvNamespace.put(SONG_QUALITY_FLAGS_KEY, JSON.stringify({ ...current, songs: [...merged.values()] }));
+  await kvNamespace.put(DURATION_SHIFT_FLAGS_KEY, JSON.stringify([...merged.values()]));
 };
 
 export const getSongQualityDismissals = async (kvNamespace: KVNamespace): Promise<SongQualityDismissals> => {
@@ -165,12 +172,23 @@ const recordSongQualityDismissal = async (kvNamespace: KVNamespace, songId: stri
 };
 
 export const removeSongQualityFlag = async (kvNamespace: KVNamespace, songId: string) => {
-  const current = await getSongQualityFlags(kvNamespace);
-  const songs = current.songs.filter((flag) => flag.songId !== songId);
+  const [reports, durationShifts] = await Promise.all([
+    getReportFlags(kvNamespace),
+    getDurationShiftFlags(kvNamespace),
+  ]);
+  const reportSongs = reports.songs.filter((flag) => flag.songId !== songId);
+  const durationShiftSongs = durationShifts.filter((flag) => flag.songId !== songId);
+  const removedReport = reportSongs.length !== reports.songs.length;
+  const removedDurationShift = durationShiftSongs.length !== durationShifts.length;
 
-  if (songs.length === current.songs.length) return false;
+  if (!removedReport && !removedDurationShift) return false;
 
   await recordSongQualityDismissal(kvNamespace, songId, Date.now());
-  await kvNamespace.put(SONG_QUALITY_FLAGS_KEY, JSON.stringify({ ...current, songs }));
+  if (removedReport) {
+    await kvNamespace.put(SONG_QUALITY_FLAGS_KEY, JSON.stringify({ ...reports, songs: reportSongs }));
+  }
+  if (removedDurationShift) {
+    await kvNamespace.put(DURATION_SHIFT_FLAGS_KEY, JSON.stringify(durationShiftSongs));
+  }
   return true;
 };
