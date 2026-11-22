@@ -179,15 +179,15 @@ export default function ConvertView({ song, adminUnverifiedSongId, adminReported
     isEdit,
   ]);
 
-  // When editing, the song being edited is in the index too - don't flag it as its own duplicate.
-  // Unverified songs aren't in the index, so a same-named indexed song is a real duplicate, not the song itself
-  const otherSongs = useMemo(
-    () =>
-      isEdit && !adminUnverifiedSongId
-        ? songs?.filter((addedSong) => SongDao.generateSongFile(addedSong) !== SongDao.generateSongFile(song))
-        : songs,
-    [songs, song, isEdit, adminUnverifiedSongId],
-  );
+  // Only built-in songs count as duplicates - local songs are the user's own copies, not part of the game.
+  // When editing, skip the edited song itself; unverified songs aren't in the index, so a match is a real duplicate
+  const otherSongs = useMemo(() => {
+    const builtInSongs = songs?.filter((addedSong) => addedSong.isBuiltIn);
+
+    return isEdit && !adminUnverifiedSongId
+      ? builtInSongs?.filter((addedSong) => SongDao.generateSongFile(addedSong) !== SongDao.generateSongFile(song))
+      : builtInSongs;
+  }, [songs, song, isEdit, adminUnverifiedSongId]);
 
   const duplicateByName = useMemo(
     () =>
