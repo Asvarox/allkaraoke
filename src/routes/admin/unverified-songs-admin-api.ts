@@ -88,7 +88,15 @@ export const updateAdminUnverifiedSong = async (sharedSongId: string, song: Song
   await assertOk(response);
 };
 
-export type SongQualityIssue = 'not-in-sync' | 'too-loud' | 'too-quiet';
+export type SongQualityIssue = 'not-in-sync' | 'too-loud' | 'too-quiet' | 'duration-shift';
+
+export interface DurationShiftDetails {
+  previousDuration: number;
+  currentDuration: number;
+  offset: number | null;
+  detectedAt: number;
+  note?: string;
+}
 
 export interface AdminSongQualityFlag {
   songId: string;
@@ -99,7 +107,19 @@ export interface AdminSongQualityFlag {
   issues: SongQualityIssue[];
   reportCounts: Partial<Record<SongQualityIssue, number>>;
   players: number;
+  durationShift?: DurationShiftDetails;
 }
+
+const formatSeconds = (value: number) => `${Math.round(value * 100) / 100}s`;
+
+export const describeDurationShift = ({ previousDuration, currentDuration, offset, note }: DurationShiftDetails) =>
+  [
+    `Video length changed ${formatSeconds(previousDuration)} -> ${formatSeconds(currentDuration)}`,
+    offset === null ? 'no consistent offset found' : `detected offset ${offset > 0 ? '+' : ''}${formatSeconds(offset)}`,
+    note,
+  ]
+    .filter(Boolean)
+    .join(', ');
 
 export const listAdminSongQualityFlags = async (password: string) => {
   const response = await fetch('/admin/song-quality-flags', {
@@ -140,6 +160,7 @@ export interface AdminReviewSong {
   updated?: number;
   reportCounts?: AdminSongQualityFlag['reportCounts'];
   players?: number;
+  durationShift?: DurationShiftDetails;
 }
 
 export const toAdminReviewSongs = (
@@ -157,6 +178,7 @@ export const toAdminReviewSongs = (
       unverifiedSong.reasons.push(...flag.issues);
       unverifiedSong.reportCounts = flag.reportCounts;
       unverifiedSong.players = flag.players;
+      unverifiedSong.durationShift = flag.durationShift;
       return [];
     }
 
@@ -171,6 +193,7 @@ export const toAdminReviewSongs = (
         reasons: flag.issues,
         reportCounts: flag.reportCounts,
         players: flag.players,
+        durationShift: flag.durationShift,
       },
     ];
   });

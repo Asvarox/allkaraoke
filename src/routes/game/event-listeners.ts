@@ -1,6 +1,7 @@
 import posthog from 'posthog-js';
 
 import { SingSetup, Song, SongPreview } from '~/interfaces';
+import GameState from '~/modules/game-engine/game-state/game-state';
 import events from '~/modules/game-events/game-events';
 import OnlineClient from '~/modules/online/client/online-client';
 import PlayersManager from '~/modules/players/players-manager';
@@ -43,6 +44,7 @@ const trackSongData =
       players: setup.players.length,
       tracks: setup.players.map((player) => player.track),
       progress: progress ?? null,
+      ...(event === 'songEnded' ? { videoDuration: GameState.getDuration() || null } : {}),
       singId: setup.id,
       sameScores,
       mobilePhoneMode: !!MobilePhoneModeSetting.get(),

@@ -12,7 +12,10 @@ export type AdminReviewQueue = 'unverified' | 'reports';
 // Each queue drains its pools in order - a pool is only drawn from once all the previous ones are empty
 const REVIEW_POOLS: Record<AdminReviewQueue, AdminReviewReason[][]> = {
   unverified: [['unverified']],
-  reports: [['not-in-sync'], ['too-loud', 'too-quiet']],
+  reports: [
+    ['not-in-sync', 'duration-shift'],
+    ['too-loud', 'too-quiet'],
+  ],
 };
 
 export const parseAdminReviewQueue = (value: string | null): AdminReviewQueue | null =>

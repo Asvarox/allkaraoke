@@ -1,4 +1,5 @@
 import {
+  addDurationShiftFlags,
   getSongQualityDismissals,
   normalizeSongQualityFlag,
   replaceSongQualityFlags,
@@ -18,7 +19,7 @@ const responseHeaders = {
 const jsonResponse = (body: unknown, status = 200) =>
   new Response(JSON.stringify(body), { status, headers: responseHeaders });
 
-// Called by the weekly CI job: GET reads dismissals, PUT replaces the whole set of flagged songs.
+// Weekly CI job: GET reads dismissals, PUT replaces the player-report flags. Duration-shift script: POST adds flags.
 export const onRequest: PagesFunction<UnverifiedSongsEnv> = async ({ request, env }) => {
   const expectedToken = getUnverifiedSongsAdminToken(env);
   if (!expectedToken || getUnverifiedSongsRequestToken(request) !== expectedToken) {
@@ -34,7 +35,7 @@ export const onRequest: PagesFunction<UnverifiedSongsEnv> = async ({ request, en
     return jsonResponse({ dismissals: await getSongQualityDismissals(kv) });
   }
 
-  if (request.method !== 'PUT') {
+  if (request.method !== 'PUT' && request.method !== 'POST') {
     return jsonResponse({ error: 'Method not allowed' }, 405);
   }
 
@@ -49,7 +50,12 @@ export const onRequest: PagesFunction<UnverifiedSongsEnv> = async ({ request, en
       return jsonResponse({ error: 'Invalid song flag in payload' }, 400);
     }
 
-    await replaceSongQualityFlags(kv, songs as SongQualityFlag[]);
+    // POST (local duration-shift script) adds flags, PUT (weekly job) replaces the player-report ones
+    if (request.method === 'POST') {
+      await addDurationShiftFlags(kv, songs as SongQualityFlag[]);
+    } else {
+      await replaceSongQualityFlags(kv, songs as SongQualityFlag[]);
+    }
 
     return jsonResponse({ ok: true, count: songs.length });
   } catch (error) {
