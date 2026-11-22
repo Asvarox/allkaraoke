@@ -23200,6 +23200,36 @@
     "local": false
   },
   {
+    "id": "belinda-carlisle-heaven-is-a-place-on-earth",
+    "title": "Heaven Is A Place On Earth",
+    "artist": "Belinda Carlisle",
+    "video": "j2F4INQFjEI",
+    "language": [
+      "English"
+    ],
+    "bpm": 245.45,
+    "gap": 386.65308616826235,
+    "year": "1987",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-22T04:24:12.632Z",
+    "edition": "SingStar '80s [ ITPLlUK]",
+    "genre": "Power Pop, Pop Rock, Synth-Rock",
+    "realBpm": 200,
+    "volume": 1,
+    "author": "Canni",
+    "sourceUrl": "Belinda Carlisle",
+    "duration": 245,
+    "tracks": [
+      {
+        "start": 12
+      }
+    ],
+    "shortId": 7736,
+    "tracksCount": 1,
+    "search": "belindacarlisleheavenisaplaceonearth",
+    "local": false
+  },
+  {
     "id": "belinda-lo-siento",
     "title": "Lo siento",
     "artist": "Belinda",
@@ -66619,10 +66649,10 @@
       "English"
     ],
     "bpm": 341.85,
-    "gap": 33400.78543220711,
+    "gap": 33500.78543220711,
     "year": "2002",
     "artistOrigin": "US",
-    "lastUpdate": "2025-09-23T04:15:15.106Z",
+    "lastUpdate": "2026-11-20T17:31:19.551Z",
     "genre": "Rap",
     "realBpm": 171,
     "volume": 1,
@@ -87374,10 +87404,10 @@
       "English"
     ],
     "bpm": 240.69,
-    "gap": 16001.866758070548,
+    "gap": 15951.866758070548,
     "year": "2017",
     "artistOrigin": "GB",
-    "lastUpdate": "2024-06-09T00:11:42.383Z",
+    "lastUpdate": "2026-11-20T17:30:31.930Z",
     "genre": "Pop",
     "realBpm": 120,
     "volume": 0.5,
@@ -92005,10 +92035,10 @@
       "Korean"
     ],
     "bpm": 263.29,
-    "gap": 363.5147935736261,
+    "gap": 263.5147935736261,
     "year": "2024",
     "artistOrigin": "KR",
-    "lastUpdate": "2024-06-05T00:10:11.871Z",
+    "lastUpdate": "2026-11-20T17:25:23.528Z",
     "realBpm": 131,
     "previewStart": 98,
     "previewEnd": 114,
@@ -103647,10 +103677,10 @@
       "English"
     ],
     "bpm": 447.8,
-    "gap": 195.08709245198747,
+    "gap": 345.0870924519875,
     "year": "2018",
     "artistOrigin": "US",
-    "lastUpdate": "2025-01-23T00:11:22.131Z",
+    "lastUpdate": "2026-11-20T17:31:47.054Z",
     "realBpm": 84,
     "volume": 0.68,
     "manualVolume": 0.75,
@@ -104651,10 +104681,10 @@
       "English"
     ],
     "bpm": 260,
-    "gap": 2084.230769230769,
+    "gap": 2284.230769230769,
     "year": "2010",
     "artistOrigin": "CA",
-    "lastUpdate": "2023-10-15T11:26:31.285Z",
+    "lastUpdate": "2026-11-20T17:29:41.949Z",
     "genre": "R&B",
     "realBpm": 65,
     "volume": 0.55,
@@ -118901,10 +118931,10 @@
       "English"
     ],
     "bpm": 381.72,
-    "gap": 4125.60452687834,
+    "gap": 4225.60452687834,
     "year": "2025",
     "artistOrigin": "IS",
-    "lastUpdate": "2026-05-31T20:33:25.337Z",
+    "lastUpdate": "2026-11-20T17:30:08.377Z",
     "realBpm": 88,
     "volume": 1,
     "author": "Djirtou",
@@ -122118,10 +122148,10 @@
       "English"
     ],
     "bpm": 210.1,
-    "gap": 17570.47596382675,
+    "gap": 17620.47596382675,
     "year": "2000",
     "artistOrigin": "US",
-    "lastUpdate": "2024-05-08T09:07:51.824Z",
+    "lastUpdate": "2026-11-20T17:27:07.286Z",
     "edition": "[DUET]-Songs",
     "genre": "Nu Metal",
     "realBpm": 105,
@@ -138852,10 +138882,10 @@
       "English"
     ],
     "bpm": 239.7,
-    "gap": 19268.748435544432,
+    "gap": 17768.748435544432,
     "year": "1979",
     "artistOrigin": "US",
-    "lastUpdate": "2025-10-12T18:59:50.201Z",
+    "lastUpdate": "2026-11-20T16:36:16.587Z",
     "genre": "Funk",
     "realBpm": 114,
     "volume": 0.69,
@@ -139177,6 +139207,34 @@
     "shortId": 2971,
     "tracksCount": 1,
     "search": "michaelschulteyouletmewalkalone",
+    "local": false
+  },
+  {
+    "id": "michael-wong-tong-hua",
+    "title": "Tong Hua",
+    "artist": "Michael Wong",
+    "video": "IBTmypxD2mU",
+    "language": [
+      "Chinese"
+    ],
+    "bpm": 265.65,
+    "gap": 13223.625070581593,
+    "year": "2005",
+    "artistOrigin": "HK",
+    "lastUpdate": "2026-11-22T04:24:12.189Z",
+    "genre": "C-Pop",
+    "realBpm": 72,
+    "volume": 1,
+    "author": "prom361",
+    "duration": 246,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 7735,
+    "tracksCount": 1,
+    "search": "michaelwongtonghua",
     "local": false
   },
   {
@@ -139932,10 +139990,10 @@
       "English"
     ],
     "bpm": 216.89,
-    "gap": -6.6379270597998925,
+    "gap": 12.521554705150095,
     "year": "1980",
     "artistOrigin": "JP",
-    "lastUpdate": "2024-12-03T00:13:14.452Z",
+    "lastUpdate": "2026-11-20T17:28:03.672Z",
     "genre": "City Pop",
     "realBpm": 108,
     "volume": 0.93,
@@ -139944,7 +140002,7 @@
     "duration": 343,
     "tracks": [
       {
-        "start": 4
+        "start": 3
       }
     ],
     "shortId": 2990,
@@ -153555,10 +153613,10 @@
       "English"
     ],
     "bpm": 240.4,
-    "gap": 10540,
+    "gap": 10639.663893510815,
     "year": "2021",
     "artistOrigin": "US",
-    "lastUpdate": "2024-12-11T00:12:20.701Z",
+    "lastUpdate": "2026-11-20T17:26:20.767Z",
     "realBpm": 180,
     "volume": 0.97,
     "manualVolume": 0.76,
@@ -160104,6 +160162,35 @@
     "local": false
   },
   {
+    "id": "peter-gabriel-mercy-street",
+    "title": "Mercy Street",
+    "artist": "Peter Gabriel",
+    "video": "zs35CBGOxbc",
+    "language": [
+      "English"
+    ],
+    "bpm": 261.4,
+    "gap": 59334.48355011477,
+    "year": "1986",
+    "artistOrigin": "GB",
+    "lastUpdate": "2026-11-22T04:24:12.187Z",
+    "genre": "Alternative Rock",
+    "realBpm": 200,
+    "volume": 1,
+    "author": "Fepo",
+    "sourceUrl": "Peter Gabriel",
+    "duration": 385,
+    "tracks": [
+      {
+        "start": 17
+      }
+    ],
+    "shortId": 7734,
+    "tracksCount": 1,
+    "search": "petergabrielmercystreet",
+    "local": false
+  },
+  {
     "id": "peter-gabriel-sledgehammer",
     "title": "Sledgehammer",
     "artist": "Peter Gabriel",
@@ -160258,10 +160345,10 @@
       "English"
     ],
     "bpm": 296,
-    "gap": 18886.486486486487,
+    "gap": 18986.486486486487,
     "year": "1962",
     "artistOrigin": "US",
-    "lastUpdate": "2026-08-29T22:27:45.188Z",
+    "lastUpdate": "2026-11-20T17:28:40.781Z",
     "realBpm": 94,
     "volume": 1,
     "author": "Canni",
@@ -169029,6 +169116,34 @@
     "shortId": 7720,
     "tracksCount": 1,
     "search": "renaudboucandenfer",
+    "local": false
+  },
+  {
+    "id": "renaud-la-peche-a-la-ligne",
+    "title": "La Pêche à La Ligne",
+    "artist": "Renaud",
+    "video": "f15FPspIII4",
+    "language": [
+      "French"
+    ],
+    "bpm": 360,
+    "gap": 25901,
+    "year": "1985",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-11-22T04:24:10.803Z",
+    "genre": "Chanson",
+    "realBpm": 120.45,
+    "volume": 1,
+    "author": "Alinus57",
+    "duration": 219,
+    "tracks": [
+      {
+        "start": 24
+      }
+    ],
+    "shortId": 7732,
+    "tracksCount": 1,
+    "search": "renaudlapechealaligne",
     "local": false
   },
   {
@@ -186136,6 +186251,32 @@
     "local": false
   },
   {
+    "id": "soolking-ft-gazo-casanova",
+    "title": "Casanova",
+    "artist": "Soolking ft. Gazo",
+    "video": "6WrVXWgn094",
+    "language": [
+      "French"
+    ],
+    "bpm": 265.6,
+    "gap": 4885.433734939759,
+    "year": "2023",
+    "lastUpdate": "2026-11-22T04:24:07.284Z",
+    "realBpm": 132,
+    "volume": 1,
+    "author": "Alinus57",
+    "duration": 185,
+    "tracks": [
+      {
+        "start": 18
+      }
+    ],
+    "shortId": 7728,
+    "tracksCount": 1,
+    "search": "soolkingftgazocasanova",
+    "local": false
+  },
+  {
     "id": "sophie-and-the-giants-x-purple-disco-machine-paradise",
     "title": "Paradise",
     "artist": "Sophie and the Giants x Purple Disco Machine",
@@ -188609,6 +188750,34 @@
     "local": false
   },
   {
+    "id": "stone-et-charden-lavventura",
+    "title": "L'avventura",
+    "artist": "Stone et Charden",
+    "video": "jJccs8ZbsMQ",
+    "language": [
+      "French"
+    ],
+    "bpm": 376.1,
+    "gap": 6179.924754054773,
+    "year": "1971",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-11-22T04:24:10.613Z",
+    "genre": "Variété Française",
+    "realBpm": 117.12,
+    "volume": 1,
+    "author": "Alinus57",
+    "duration": 207,
+    "tracks": [
+      {
+        "start": 25
+      }
+    ],
+    "shortId": 7730,
+    "tracksCount": 1,
+    "search": "stoneetchardenlavventura",
+    "local": false
+  },
+  {
     "id": "stone-sour-bother",
     "title": "Bother",
     "artist": "Stone Sour",
@@ -189861,6 +190030,34 @@
     "local": false
   },
   {
+    "id": "summer-walker-summer-walker-girls-need-love-remix-with-drake",
+    "title": "Summer Walker - Girls Need Love Remix (with Drake)",
+    "artist": "Summer Walker",
+    "video": "TP3moIiyZFI",
+    "language": [
+      "English"
+    ],
+    "bpm": 386,
+    "gap": 10499.637305699482,
+    "year": "2018",
+    "artistOrigin": "US",
+    "lastUpdate": "2026-11-22T04:24:10.805Z",
+    "genre": "R&B",
+    "realBpm": 97,
+    "volume": 1,
+    "author": "Summer Walker",
+    "duration": 222,
+    "tracks": [
+      {
+        "start": 26
+      }
+    ],
+    "shortId": 7733,
+    "tracksCount": 1,
+    "search": "summerwalkersummerwalkergirlsneedloveremixwithdrake",
+    "local": false
+  },
+  {
     "id": "sun-stroke-project-olia-tira-run-away",
     "title": "Run away",
     "artist": "Sun Stroke Project & Olia Tira",
@@ -190708,6 +190905,35 @@
     "shortId": 7721,
     "tracksCount": 1,
     "search": "sylvievartanlamaritza",
+    "local": false
+  },
+  {
+    "id": "sylvie-vartan-la-plus-belle-pour-aller-danser",
+    "title": "La plus belle pour aller danser",
+    "artist": "Sylvie Vartan",
+    "video": "sfiuaOWjEkI",
+    "language": [
+      "French"
+    ],
+    "bpm": 301.17000000000013,
+    "gap": 16391.228356670104,
+    "year": "1964",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-11-22T04:24:10.800Z",
+    "genre": "Variété Française",
+    "videoGap": 2,
+    "realBpm": 188.83,
+    "volume": 1,
+    "author": "Alinus57 et Mlef",
+    "duration": 169,
+    "tracks": [
+      {
+        "start": 20
+      }
+    ],
+    "shortId": 7731,
+    "tracksCount": 1,
+    "search": "sylvievartanlaplusbellepourallerdanser",
     "local": false
   },
   {
@@ -223082,6 +223308,33 @@
     "shortId": 7497,
     "tracksCount": 1,
     "search": "zaztoutlahaut",
+    "local": false
+  },
+  {
+    "id": "zazie-chanson-dami",
+    "title": "Chanson d'ami",
+    "artist": "Zazie",
+    "video": "mShVHdf4BP0",
+    "language": [
+      "French"
+    ],
+    "bpm": 290.0200000000001,
+    "gap": 14248.951937020924,
+    "year": "1998",
+    "artistOrigin": "FR",
+    "lastUpdate": "2026-11-22T04:24:10.420Z",
+    "genre": "Variété Française",
+    "realBpm": 107.84,
+    "volume": 1,
+    "author": "Alinus57",
+    "tracks": [
+      {
+        "start": 19
+      }
+    ],
+    "shortId": 7729,
+    "tracksCount": 1,
+    "search": "zaziechansondami",
     "local": false
   },
   {
