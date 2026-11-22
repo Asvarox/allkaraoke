@@ -3,12 +3,27 @@ import { DurableObject } from "cloudflare:workers";
 var SONG_QUALITY_ISSUES = [
 	"not-in-sync",
 	"too-loud",
-	"too-quiet"
+	"too-quiet",
+	"duration-shift"
 ];
 var SONG_QUALITY_FLAGS_KEY = "song-quality-flags";
+var DURATION_SHIFT_FLAGS_KEY = "song-duration-shift-flags";
 var SONG_QUALITY_DISMISSALS_KEY = "song-quality-dismissals";
 var DISMISSAL_RETENTION_MS = 1728e7;
 var isSongQualityIssue = (value) => SONG_QUALITY_ISSUES.includes(value);
+var isFiniteNumber = (value) => typeof value === "number" && Number.isFinite(value);
+var normalizeDurationShift = (payload) => {
+	if (!payload || typeof payload !== "object") return void 0;
+	const details = payload;
+	if (!isFiniteNumber(details.previousDuration) || !isFiniteNumber(details.currentDuration)) return void 0;
+	return {
+		previousDuration: details.previousDuration,
+		currentDuration: details.currentDuration,
+		offset: isFiniteNumber(details.offset) ? details.offset : null,
+		detectedAt: isFiniteNumber(details.detectedAt) ? details.detectedAt : 0,
+		...typeof details.note === "string" && details.note ? { note: details.note } : {}
+	};
+};
 var normalizeSongQualityFlag = (payload) => {
 	if (!payload || typeof payload !== "object") return null;
 	const flag = payload;
@@ -21,6 +36,7 @@ var normalizeSongQualityFlag = (payload) => {
 		const count = flag.reportCounts?.[issue];
 		if (typeof count === "number" && Number.isFinite(count)) reportCounts[issue] = count;
 	}
+	const durationShift = issues.includes("duration-shift") ? normalizeDurationShift(flag.durationShift) : void 0;
 	return {
 		songId: flag.songId,
 		artist: flag.artist,
@@ -29,25 +45,69 @@ var normalizeSongQualityFlag = (payload) => {
 		videoId: typeof flag.videoId === "string" ? flag.videoId : "",
 		issues,
 		reportCounts,
-		players: typeof flag.players === "number" && Number.isFinite(flag.players) ? flag.players : 0
+		players: typeof flag.players === "number" && Number.isFinite(flag.players) ? flag.players : 0,
+		...durationShift ? { durationShift } : {}
 	};
 };
-var getSongQualityFlags = async (kvNamespace) => {
+var normalizeFlags = (songs) => (songs ?? []).flatMap((flag) => {
+	const normalized = normalizeSongQualityFlag(flag);
+	return normalized ? [normalized] : [];
+});
+var getReportFlags = async (kvNamespace) => {
 	const stored = await kvNamespace.get(SONG_QUALITY_FLAGS_KEY, "json");
 	return {
 		generatedAt: stored?.generatedAt ?? 0,
-		songs: (stored?.songs ?? []).flatMap((flag) => {
-			const normalized = normalizeSongQualityFlag(flag);
-			return normalized ? [normalized] : [];
-		})
+		songs: normalizeFlags(stored?.songs)
 	};
 };
+var getDurationShiftFlags = async (kvNamespace) => normalizeFlags(await kvNamespace.get(DURATION_SHIFT_FLAGS_KEY, "json") ?? void 0);
+/** Player-report flags (weekly job) and duration-shift flags (local script) live under separate keys, so their
+* writers never overwrite each other. Merged per song here, the report flag's metadata wins. */
+var getSongQualityFlags = async (kvNamespace) => {
+	const [reports, durationShifts] = await Promise.all([getReportFlags(kvNamespace), getDurationShiftFlags(kvNamespace)]);
+	const merged = new Map(reports.songs.map((flag) => [flag.songId, flag]));
+	for (const flag of durationShifts) {
+		const reportFlag = merged.get(flag.songId);
+		merged.set(flag.songId, reportFlag ? {
+			...reportFlag,
+			issues: [.../* @__PURE__ */ new Set([...reportFlag.issues, "duration-shift"])],
+			...flag.durationShift ? { durationShift: flag.durationShift } : {}
+		} : flag);
+	}
+	return {
+		generatedAt: reports.generatedAt,
+		songs: [...merged.values()]
+	};
+};
+/** Replaces the player-report flags (weekly job). Duration-shift flags are stored apart and stay. */
 var replaceSongQualityFlags = async (kvNamespace, songs) => {
+	const reportFlags = songs.flatMap((flag) => {
+		const issues = flag.issues.filter((issue) => issue !== "duration-shift");
+		return issues.length ? [{
+			...flag,
+			issues,
+			durationShift: void 0
+		}] : [];
+	});
 	const document = {
 		generatedAt: Date.now(),
-		songs
+		songs: reportFlags
 	};
 	await kvNamespace.put(SONG_QUALITY_FLAGS_KEY, JSON.stringify(document));
+};
+/** Adds or replaces duration-shift flags (local script, run by hand - nothing else writes this key) */
+var addDurationShiftFlags = async (kvNamespace, songs) => {
+	const merged = new Map((await getDurationShiftFlags(kvNamespace)).map((flag) => [flag.songId, flag]));
+	for (const flag of songs) {
+		if (!flag.issues.includes("duration-shift")) continue;
+		merged.set(flag.songId, {
+			...flag,
+			issues: ["duration-shift"],
+			reportCounts: {},
+			players: 0
+		});
+	}
+	await kvNamespace.put(DURATION_SHIFT_FLAGS_KEY, JSON.stringify([...merged.values()]));
 };
 var getSongQualityDismissals = async (kvNamespace) => {
 	const stored = await kvNamespace.get(SONG_QUALITY_DISMISSALS_KEY, "json");
@@ -62,14 +122,18 @@ var recordSongQualityDismissal = async (kvNamespace, songId, dismissedAt) => {
 	await kvNamespace.put(SONG_QUALITY_DISMISSALS_KEY, JSON.stringify(dismissals));
 };
 var removeSongQualityFlag = async (kvNamespace, songId) => {
-	const current = await getSongQualityFlags(kvNamespace);
-	const songs = current.songs.filter((flag) => flag.songId !== songId);
-	if (songs.length === current.songs.length) return false;
+	const [reports, durationShifts] = await Promise.all([getReportFlags(kvNamespace), getDurationShiftFlags(kvNamespace)]);
+	const reportSongs = reports.songs.filter((flag) => flag.songId !== songId);
+	const durationShiftSongs = durationShifts.filter((flag) => flag.songId !== songId);
+	const removedReport = reportSongs.length !== reports.songs.length;
+	const removedDurationShift = durationShiftSongs.length !== durationShifts.length;
+	if (!removedReport && !removedDurationShift) return false;
 	await recordSongQualityDismissal(kvNamespace, songId, Date.now());
-	await kvNamespace.put(SONG_QUALITY_FLAGS_KEY, JSON.stringify({
-		...current,
-		songs
+	if (removedReport) await kvNamespace.put(SONG_QUALITY_FLAGS_KEY, JSON.stringify({
+		...reports,
+		songs: reportSongs
 	}));
+	if (removedDurationShift) await kvNamespace.put(DURATION_SHIFT_FLAGS_KEY, JSON.stringify(durationShiftSongs));
 	return true;
 };
 //#endregion
@@ -352,13 +416,14 @@ var onRequest$3 = async ({ request, env }) => {
 	const kv = getUnverifiedSongsKv(env);
 	if (!kv) return jsonResponse({ error: "Unverified songs storage is not configured" }, 500);
 	if (request.method === "GET") return jsonResponse({ dismissals: await getSongQualityDismissals(kv) });
-	if (request.method !== "PUT") return jsonResponse({ error: "Method not allowed" }, 405);
+	if (request.method !== "PUT" && request.method !== "POST") return jsonResponse({ error: "Method not allowed" }, 405);
 	try {
 		const payload = await request.json();
 		if (!payload || !Array.isArray(payload.songs)) return jsonResponse({ error: "Invalid payload" }, 400);
 		const songs = payload.songs.map(normalizeSongQualityFlag);
 		if (songs.some((song) => song === null)) return jsonResponse({ error: "Invalid song flag in payload" }, 400);
-		await replaceSongQualityFlags(kv, songs);
+		if (request.method === "POST") await addDurationShiftFlags(kv, songs);
+		else await replaceSongQualityFlags(kv, songs);
 		return jsonResponse({
 			ok: true,
 			count: songs.length
