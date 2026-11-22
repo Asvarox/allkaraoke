@@ -22,7 +22,12 @@ import App from '~/app';
 import '~/index.css';
 import NoPrerender from '~/modules/elements/no-prerender';
 import { fixStoredMergedTrackScores } from '~/modules/songs/stats/merged-track-score-fix';
-import { type ExceptionListItem, hasIgnoredException } from '~/modules/utils/ignored-exceptions';
+import {
+  type ExceptionListItem,
+  hasIgnoredException,
+  hasSampledException,
+  SAMPLED_EXCEPTION_RATE,
+} from '~/modules/utils/ignored-exceptions';
 import isE2E from '~/modules/utils/is-e2-e';
 import isPreRendering from '~/modules/utils/is-pre-rendering';
 import storage from '~/modules/utils/storage';
@@ -38,6 +43,10 @@ if (!isE2E() && import.meta.env.VITE_APP_POSTHOG_KEY) {
           const exceptionList = (event.properties?.['$exception_list'] ?? []) as ExceptionListItem[];
           if (hasIgnoredException(exceptionList)) {
             return null;
+          }
+          if (hasSampledException(exceptionList)) {
+            if (Math.random() >= SAMPLED_EXCEPTION_RATE) return null;
+            event.properties = { ...event.properties, $sample_rate: SAMPLED_EXCEPTION_RATE };
           }
         }
         return event;
