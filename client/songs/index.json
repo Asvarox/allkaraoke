@@ -100307,10 +100307,10 @@
       "English"
     ],
     "bpm": 340.92,
-    "gap": -99.97888067581823,
+    "gap": -67.98310454065461,
     "year": "1986",
     "artistOrigin": "AU",
-    "lastUpdate": "2024-12-29T00:12:39.941Z",
+    "lastUpdate": "2026-11-22T10:26:12.007Z",
     "genre": "Pop",
     "realBpm": 85,
     "volume": 0.82,
@@ -100319,7 +100319,7 @@
     "duration": 306,
     "tracks": [
       {
-        "start": 15
+        "start": 12
       }
     ],
     "shortId": 2136,
