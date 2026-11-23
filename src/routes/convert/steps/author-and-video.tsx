@@ -1,4 +1,5 @@
 import { Box, IconButton, TextField, Tooltip } from '@mui/material';
+import { Dispatch, SetStateAction } from 'react';
 import YouTube, { YouTubeProps } from 'react-youtube';
 
 import { Icon } from '~/modules/elements/akui/icon';
@@ -15,7 +16,7 @@ export interface AuthorAndVidEntity {
 const playerOpts: YouTubeProps['opts'] = { width: '100%', height: '100%' };
 
 interface Props {
-  onChange: (data: AuthorAndVidEntity) => void;
+  onChange: Dispatch<SetStateAction<AuthorAndVidEntity>>;
   data: AuthorAndVidEntity;
   songTitle?: string;
   songArtist?: string;
@@ -36,7 +37,8 @@ export default function AuthorAndVideo(props: Props) {
   const pasteFromClipboard = async () => {
     try {
       const text = (await navigator.clipboard.readText()).trim();
-      if (text) props.onChange({ ...props.data, video: text });
+      // Updater form, so edits made while the clipboard was being read aren't overwritten
+      if (text) props.onChange((current) => ({ ...current, video: text }));
     } catch (e) {
       console.warn('Could not read the clipboard', e);
     }
