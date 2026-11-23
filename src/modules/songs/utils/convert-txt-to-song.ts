@@ -103,12 +103,22 @@ function getEmbeddedYoutubeVideoId(txt: string) {
 
 const LINE_BREAK_RELATIVE_REGEXP = /- -?\d+ -?\d+/;
 
+const YOUTUBE_HOSTS = ['youtube.com', 'm.youtube.com', 'music.youtube.com', 'youtube-nocookie.com'];
+// Paths that carry the video ID as their second segment, eg /shorts/<id>
+const YOUTUBE_ID_PATHS = ['shorts', 'embed', 'live', 'v'];
+
 export function getVideoId(url: string) {
   try {
-    const linkUrl = new URL(url);
-    if (linkUrl.host === 'youtu.be') return linkUrl.pathname.substring(1);
-    if (linkUrl.host === 'www.youtube.com' || linkUrl.host === 'youtube.com') return linkUrl.searchParams.get('v');
-    return null;
+    const trimmed = url.trim();
+    // Links copied from the share sheet on mobile often come without the protocol
+    const linkUrl = new URL(/^https?:\/\//i.test(trimmed) ? trimmed : `https://${trimmed}`);
+    const host = linkUrl.hostname.toLowerCase().replace(/^www\./, '');
+    const [first, second] = linkUrl.pathname.split('/').filter(Boolean);
+
+    if (host === 'youtu.be') return first || null;
+    if (!YOUTUBE_HOSTS.includes(host)) return null;
+    if (first && YOUTUBE_ID_PATHS.includes(first)) return second || null;
+    return linkUrl.searchParams.get('v');
   } catch (_e) {
     return null;
   }

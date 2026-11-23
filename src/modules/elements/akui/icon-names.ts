@@ -22,6 +22,7 @@ export const ICON_NAMES = [
   'ic:baseline-check-box-outline-blank',
   'ic:baseline-close',
   'ic:baseline-content-copy',
+  'ic:baseline-content-paste',
   'ic:baseline-delete',
   'ic:baseline-download',
   'ic:baseline-edit',
