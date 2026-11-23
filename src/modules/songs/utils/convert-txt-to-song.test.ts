@@ -2,7 +2,7 @@ import { readdirSync, readFileSync } from 'fs';
 
 import { Note, Section, Song } from '~/interfaces';
 import convertSongToTxt from '~/modules/songs/utils/convert-song-to-txt';
-import convertTxtToSong, { txtTypesMap } from '~/modules/songs/utils/convert-txt-to-song';
+import convertTxtToSong, { getVideoId, txtTypesMap } from '~/modules/songs/utils/convert-txt-to-song';
 import isNotesSection from '~/modules/songs/utils/is-notes-section';
 import { generateNote } from '~/modules/utils/test-utils';
 
@@ -310,4 +310,32 @@ E`;
     const parsed = convertTxtToSong(text);
     expect(parsed.tracks[0].sections).toHaveLength(1);
   });
+});
+
+describe('getVideoId', () => {
+  it.each([
+    'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    'https://youtube.com/watch?v=dQw4w9WgXcQ&t=42s',
+    'https://m.youtube.com/watch?v=dQw4w9WgXcQ',
+    'https://music.youtube.com/watch?v=dQw4w9WgXcQ&si=abc',
+    'https://youtu.be/dQw4w9WgXcQ',
+    'https://youtu.be/dQw4w9WgXcQ?si=abc123',
+    'https://www.youtube.com/shorts/dQw4w9WgXcQ',
+    'https://youtube.com/shorts/dQw4w9WgXcQ?feature=share',
+    'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    'https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ',
+    'https://www.youtube.com/live/dQw4w9WgXcQ',
+    'youtu.be/dQw4w9WgXcQ',
+    'm.youtube.com/watch?v=dQw4w9WgXcQ',
+    '  https://youtu.be/dQw4w9WgXcQ  ',
+  ])('extracts the ID from %s', (url) => {
+    expect(getVideoId(url)).toEqual('dQw4w9WgXcQ');
+  });
+
+  it.each(['', 'not a url', 'https://not.youtube.com/watch?v=dQw4w9WgXcQ', 'https://www.youtube.com/'])(
+    'returns null for %s',
+    (url) => {
+      expect(getVideoId(url)).toBeNull();
+    },
+  );
 });

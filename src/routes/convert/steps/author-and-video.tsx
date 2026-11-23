@@ -1,6 +1,7 @@
-import { Box, TextField } from '@mui/material';
-import YouTube from 'react-youtube';
+import { Box, IconButton, TextField, Tooltip } from '@mui/material';
+import YouTube, { YouTubeProps } from 'react-youtube';
 
+import { Icon } from '~/modules/elements/akui/icon';
 import { getVideoId } from '~/modules/songs/utils/convert-txt-to-song';
 import { inputAction } from '~/routes/convert/elements';
 
@@ -9,6 +10,9 @@ export interface AuthorAndVidEntity {
   authorUrl: string;
   video: string;
 }
+
+// Without it the iframe gets fixed 640x390 size and overflows narrow screens
+const playerOpts: YouTubeProps['opts'] = { width: '100%', height: '100%' };
 
 interface Props {
   onChange: (data: AuthorAndVidEntity) => void;
@@ -27,6 +31,27 @@ export default function AuthorAndVideo(props: Props) {
   const isSearchableForVideo = !!props.songTitle && !!props.songArtist;
 
   const videoId = getVideoId(props.data.video);
+
+  const canPaste = typeof navigator !== 'undefined' && !!navigator.clipboard?.readText;
+  const pasteFromClipboard = async () => {
+    try {
+      const text = (await navigator.clipboard.readText()).trim();
+      if (text) props.onChange({ ...props.data, video: text });
+    } catch (e) {
+      console.warn('Could not read the clipboard', e);
+    }
+  };
+  const pasteButton = canPaste && (
+    <Tooltip title="Replace with the link from the clipboard">
+      <IconButton
+        data-test="video-url-paste"
+        aria-label="Paste from clipboard"
+        color="secondary"
+        onClick={pasteFromClipboard}>
+        <Icon icon="ic:baseline-content-paste" />
+      </IconButton>
+    </Tooltip>
+  );
 
   return (
     <Box sx={{ display: 'flex', flexWrap: 'wrap' }} data-test="author-and-vid">
@@ -60,15 +85,15 @@ export default function AuthorAndVideo(props: Props) {
           placeholder="https://www.youtube.com/watch?v="
           fullWidth
           size="small"
-          helperText="Link to YouTube video, eg https://www.youtube.com/watch?v=xxxxxxxxx. Click the 'Lookup' button to look for it on YouTube"
+          helperText="Link to YouTube video, eg https://www.youtube.com/watch?v=xxxxxxxxx or https://youtu.be/xxxxxxxxx. Use the search button to look for it on YouTube"
           name="videoUrl"
-          {...inputAction(searchForVideo, isSearchableForVideo)}
+          {...inputAction(searchForVideo, isSearchableForVideo, 'Lookup', pasteButton)}
         />
       </Box>
       {videoId && (
-        <Box>
-          <YouTube videoId={videoId} />
-        </Box>
+        <div className="mt-2 aspect-video w-full min-w-0">
+          <YouTube videoId={videoId} opts={playerOpts} className="size-full" iframeClassName="size-full" />
+        </div>
       )}
     </Box>
   );

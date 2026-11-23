@@ -52,6 +52,6 @@ export class SongEditAuthorAndVideoPagePO {
   }
 
   public get videoLookupButton() {
-    return this.page.locator('[data-test="video-url"] button');
+    return this.page.locator('[data-test="video-url"] [data-test="input-lookup"]');
   }
 }
