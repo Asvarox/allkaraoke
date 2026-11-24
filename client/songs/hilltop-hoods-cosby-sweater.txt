@@ -1,0 +1,938 @@
+#ARTIST:Hilltop Hoods
+#TITLE:Cosby Sweater
+#CREATOR:DoubleDee
+#BPM:250,5
+#YEAR:2014
+#VIDEO:v=aB16fJpoj-I
+#GENRE:Hip Hop
+#LANGUAGE:English
+#GAP:6952,035928143712
+#ALLKARAOKE_ID:hilltop-hoods-cosby-sweater
+#ALLKARAOKE_SID:7764
+#ALLKARAOKE_LASTUPDATE:2026-11-24T07:50:00.903Z
+#ALLKARAOKE_ARTISTORIGIN:AU
+#ALLKARAOKE_REALBPM:200
+#ALLKARAOKE_SOURCEURL:Hilltop Hoods
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:221
+#MP3:Hilltop Hoods - Cosby Sweater.mp3
+#COVER:Hilltop Hoods - Cosby Sweater [CO].jpg
+#BACKGROUND:Hilltop Hoods - Cosby Sweater [BG].jpg
+: 17 4 7 Watch 
+: 24 3 4 me 
+: 29 1 7 do 
+: 31 3 4 my 
+: 36 3 7 thing, 
+: 42 2 4 get
+- 44
+: 49 4 7 Lost 
+: 56 3 4 in
+: 61 1 7 to 
+: 63 3 4 my 
+: 68 3 7 scene, 
+: 74 2 4 get
+- 76
+: 81 4 7 Hot 
+: 88 2 4 like 
+: 93 2 7 New 
+: 96 2 4 Or
+: 99 5 7 leans 
+: 106 2 4 in
+- 108
+: 113 5 7 Cros
+: 121 3 4 by 
+: 125 2 7 crew 
+: 128 2 4 and 
+: 132 4 7 jeans, 
+: 138 2 4 yeah
+- 140
+R 143 1 10 They’re 
+R 145 1 11 not 
+R 147 1 11 a
+R 149 3 11 wa
+R 153 1 4 kened
+- 154
+R 157 1 11 Stare 
+R 159 1 11 a 
+R 161 1 11 lot 
+R 163 1 11 and 
+R 165 2 11 va
+R 169 1 4 cant
+- 170
+G 173 1 11 Liv
+G 175 1 11 ing 
+G 177 1 11 in 
+G 179 1 11 con
+G 181 1 11 di
+G 183 1 11 tions 
+G 185 1 11 of 
+G 187 1 11 the 
+G 189 1 11 mod
+G 191 1 11 ern 
+G 193 2 11 ma
+G 197 1 4 trix
+- 198
+R 201 1 10 On
+R 203 1 11 ly 
+R 205 2 11 bare 
+R 209 3 11 arms 
+R 213 1 11 when 
+R 215 1 11 I’m 
+R 217 1 11 pro
+R 219 1 11 per 
+R 221 2 11 na
+R 225 1 9 ked
+- 226
+R 229 1 11 On
+R 231 1 11 ly 
+R 233 1 11 point 
+R 235 1 11 I 
+R 237 2 11 made 
+R 241 1 11 with 
+R 243 1 11 a 
+R 245 1 11 bul
+R 247 1 11 let 
+R 249 1 11 was 
+R 251 1 11 on 
+R 253 2 11 pa
+R 257 1 9 per
+- 258
+G 261 2 11 Ain’t 
+G 265 1 9 here 
+G 267 1 9 to 
+G 269 2 11 fight 
+G 273 2 11 some 
+G 277 1 11 dude 
+G 279 1 9 or 
+G 281 1 11 fuck 
+G 283 1 11 a
+G 285 1 11 round 
+G 287 1 11 with 
+G 289 1 11 his 
+G 291 2 11 spouse
+- 293
+R 297 1 11 Ra
+R 299 1 9 ther 
+R 301 2 11 light 
+R 305 2 11 your 
+R 309 1 11 mood 
+R 311 1 9 and 
+R 313 1 11 burn 
+R 315 1 9 it 
+R 317 1 11 down 
+R 319 1 11 with 
+R 321 1 11 the 
+R 323 3 11 house
+- 326
+R 329 1 11 Till 
+R 331 1 9 your 
+R 333 2 11 hype 
+R 337 1 11 from 
+R 339 1 11 the 
+R 341 3 11 groove 
+R 345 1 11 on 
+R 347 1 11 ac
+R 349 1 11 count 
+R 351 1 11 of 
+R 353 1 11 the 
+R 355 2 11 bounce
+- 357
+R 359 1 11 I’m 
+R 361 1 11 loo
+R 363 1 9 kin’ 
+R 365 2 11 like 
+R 369 2 11 Tom 
+R 373 3 11 Cruise 
+R 377 1 11 up 
+R 379 1 9 and 
+R 381 1 11 down 
+R 383 1 11 on 
+R 385 1 11 the 
+R 387 2 11 couch
+- 389
+R 397 1 11 Sta
+R 399 1 11 tus 
+R 401 1 9 nev
+R 403 1 9 er 
+R 405 1 11 mat
+R 407 1 11 tered 
+R 409 1 9 e
+R 411 1 9 ver 
+R 413 1 11 act 
+R 415 1 11 how
+R 417 1 9 e
+R 419 1 9 ver
+- 420
+R 421 2 11 Like 
+R 425 3 9 Chris
+R 429 3 11 tine 
+R 433 1 11 A
+R 435 1 11 gui
+R 437 1 11 le
+R 439 1 11 ra 
+R 441 1 9 just 
+R 443 2 11 let 
+R 447 1 9 your
+R 449 2 11 self 
+R 453 4 11 go
+- 457
+R 461 1 11 Mad 
+R 463 1 11 at 
+R 465 1 9 pres
+R 467 1 9 sure 
+R 469 1 11 an 
+R 471 1 11 en
+R 473 1 9 dea
+R 475 1 9 vor 
+R 477 1 11 that 
+R 479 1 11 is 
+R 481 1 9 bet
+R 483 1 9 ter 
+R 485 1 11 left
+- 486
+R 489 2 9 Pris
+R 493 2 11 tine 
+R 497 1 11 track 
+R 499 1 11 and 
+R 501 1 11 re
+R 503 1 11 cord 
+R 505 1 9 to 
+R 507 1 11 let 
+R 509 2 11 you 
+R 513 3 11 all 
+R 517 3 11 know, 
+R 521 4 14 oh
+- 525
+R 531 1 4 That 
+R 533 2 9 would 
+R 537 1 9 be 
+R 539 3 9 kings 
+R 543 2 9 e
+R 547 1 9 ven 
+R 549 3 9 home
+R 553 3 4 less
+- 556
+R 565 1 11 Buil
+R 567 1 11 ding 
+R 569 1 11 these 
+R 571 2 11 king
+R 575 3 11 doms 
+R 579 1 9 our 
+R 581 2 11 own 
+R 585 3 11 just
+- 588
+R 593 1 11 Slap 
+R 595 1 10 a 
+R 597 1 11 rap
+R 599 1 10 per 
+R 601 1 11 like 
+R 603 1 9 So
+R 605 3 11 lange 
+R 609 4 11 Knowles
+- 613
+R 617 1 11 Till 
+R 619 1 11 they’re 
+R 621 1 11 ga
+R 623 1 9 the
+R 625 1 11 ring 
+R 627 1 9 they 
+R 629 3 11 no 
+R 633 1 11 lon
+R 635 1 9 ger 
+R 637 1 11 mat
+R 639 1 11 ter 
+R 641 1 11 like 
+R 643 1 9 a 
+R 645 3 11 black 
+R 649 3 9 hole
+- 652 676
+- 676
+: 693 3 6 And 
+: 697 2 7 it’s 
+: 701 4 7 all 
+: 713 5 7 good
+: 721 3 4 ~
+- 724 740
+- 740
+: 757 3 9 And 
+: 761 2 9 it’s 
+: 765 4 9 all 
+: 777 3 14 good
+: 783 3 12 ~
+: 789 4 11 ~
+- 793 804
+- 804
+: 821 3 6 And 
+: 825 2 6 it’s 
+: 829 6 6 all 
+: 841 7 7 good
+: 849 3 4 ~
+- 852 860
+- 860
+R 877 3 23 One 
+R 885 3 23 two 
+R 893 3 23 three 
+R 901 3 23 four!
+- 904
+: 913 2 11 I 
+: 917 2 11 feel 
+: 921 2 11 like 
+: 925 2 11 Bob
+: 929 2 9 by 
+: 933 2 9 Fi
+: 937 2 9 scher
+- 939
+: 945 2 9 Al
+: 949 2 9 ways 
+: 953 3 9 four 
+: 957 3 9 moves 
+: 961 3 14 a
+: 965 3 14 head 
+: 969 2 13 of
+- 971
+* 977 2 11 My 
+* 981 3 11 com
+* 985 2 9 pe
+* 989 3 11 ti
+* 993 3 9 tion 
+: 997 3 9 lis
+: 1001 2 9 ten
+- 1003
+: 1005 2 6 They 
+: 1009 3 6 ain’t 
+: 1013 2 6 gon
+: 1017 2 6 na 
+: 1021 2 6 stop 
+: 1025 3 6 me 
+: 1029 2 6 e
+: 1033 2 7 ver
+- 1035
+: 1041 2 11 I 
+: 1045 3 11 feel 
+: 1049 2 11 as 
+: 1053 3 9 large 
+: 1057 1 9 as 
+: 1061 2 9 Big
+: 1065 2 9 gie
+- 1067
+: 1073 3 9 Swear 
+: 1077 2 9 it 
+: 1081 2 9 could 
+: 1085 2 9 not 
+: 1089 2 14 get 
+: 1093 2 14 bet
+: 1097 2 14 ter
+- 1099
+: 1105 3 11 I 
+: 1109 3 11 feel 
+: 1113 2 11 in 
+: 1117 3 9 charge 
+: 1121 3 9 like 
+: 1125 3 9 Big
+: 1129 2 9 gie
+- 1131
+: 1137 3 6 Wea
+: 1141 3 6 ring 
+: 1145 2 6 that 
+: 1149 2 6 Cos
+: 1153 2 6 by 
+: 1157 2 6 swea
+: 1161 2 7 ter
+- 1163
+: 1169 3 7 Wea
+: 1173 3 7 ring 
+: 1177 2 7 that 
+: 1181 2 6 Cos
+: 1185 2 7 by 
+: 1189 2 6 swea
+: 1193 2 4 ter
+- 1195
+: 1201 3 7 Wea
+: 1205 3 7 ring 
+: 1209 2 7 that 
+: 1213 3 6 Cos
+: 1217 3 6 by 
+: 1221 3 6 swea
+: 1225 4 7 ter
+- 1229
+: 1233 3 7 Wea
+: 1237 3 7 ring 
+: 1241 2 7 that 
+: 1245 2 6 Cos
+: 1249 2 6 by 
+: 1253 3 6 swea
+: 1257 3 4 ter
+- 1260
+: 1265 2 7 Wea
+: 1269 2 7 ring 
+: 1273 2 6 that 
+: 1277 2 6 Cos
+: 1281 2 6 by 
+: 1285 3 6 swea
+: 1289 2 7 ter
+- 1291
+* 1293 1 4 I
+* 1295 1 7 ’ma 
+* 1297 2 4 step 
+* 1301 2 7 up 
+: 1305 1 4 ev
+: 1307 1 4 ery 
+: 1309 3 7 chance 
+: 1313 1 4 when 
+: 1315 1 4 I 
+: 1317 2 4 rum
+: 1321 1 4 ble
+- 1322
+: 1323 1 4 They’ll 
+: 1325 2 4 all 
+: 1329 1 4 call 
+: 1331 1 4 me 
+: 1333 3 7 champ 
+: 1337 1 4 but 
+: 1339 1 4 the 
+: 1341 2 4 jun
+: 1345 1 4 gle, 
+: 1347 1 4 it’s 
+: 1349 1 7 fit
+: 1351 1 4 ting
+- 1352
+: 1357 1 9 I
+: 1359 1 9 ’ma 
+: 1361 2 7 get 
+: 1365 2 9 drunk 
+: 1369 2 7 and 
+: 1373 2 9 dance 
+: 1377 1 7 like 
+: 1379 1 7 your 
+: 1381 2 9 un
+: 1385 1 7 cle
+- 1386
+: 1389 1 9 Till 
+: 1391 1 9 I’m 
+: 1393 2 9 all 
+: 1397 2 11 hands 
+: 1401 1 9 like 
+: 1403 1 9 your 
+: 1405 2 7 un
+: 1408 1 7 cle 
+: 1411 1 7 I’m 
+: 1413 1 11 kid
+: 1415 1 9 ding
+- 1416
+G 1419 1 11 The 
+G 1421 1 14 ve
+G 1423 1 11 no
+G 1425 1 9 mous 
+G 1427 1 9 in 
+G 1429 1 11 ven
+G 1431 1 9 tor 
+G 1433 1 9 when 
+G 1435 1 9 I 
+G 1437 1 9 en
+G 1439 1 9 ter 
+G 1441 1 9 then 
+G 1443 1 9 it’s 
+G 1445 2 9 o
+G 1449 1 7 ver
+- 1450
+R 1453 1 9 When 
+R 1455 1 9 I’m 
+R 1457 1 9 spit
+R 1459 1 9 ting 
+R 1461 1 9 ve
+R 1463 1 9 nom 
+R 1465 1 9 I’m 
+R 1467 1 9 as 
+R 1469 1 9 ge
+R 1471 1 9 ne
+R 1473 1 9 rous 
+R 1475 1 9 as 
+R 1477 2 11 O
+R 1481 1 9 prah
+- 1482
+R 1485 2 14 You 
+R 1489 1 10 get 
+R 1491 1 7 a 
+R 1493 2 7 scar, 
+R 1497 2 15 you 
+R 1501 1 11 get 
+R 1503 1 6 a 
+R 1505 2 9 scar, 
+R 1509 2 16 you 
+R 1513 1 10 get 
+R 1515 1 7 a 
+R 1517 1 10 scar
+- 1518
+R 1521 2 9 Me? 
+R 1525 3 7 Drunk 
+R 1529 1 7 in 
+R 1531 1 7 the 
+R 1533 3 7 back 
+R 1537 1 7 of 
+R 1539 1 7 a 
+R 1541 1 6 ren
+R 1543 1 4 tal 
+R 1545 2 4 car
+- 1547
+R 1553 2 7 Pat 
+R 1557 1 7 Be
+R 1559 1 4 na
+R 1561 2 4 tar, 
+R 1565 2 4 brah 
+R 1569 1 4 loves 
+R 1571 1 4 a 
+R 1573 1 7 bat
+R 1575 1 4 tle
+R 1577 2 4 field
+- 1579
+R 1585 1 9 Here 
+R 1587 1 7 to 
+R 1589 1 9 get 
+R 1591 1 7 you 
+R 1593 1 6 where 
+R 1595 1 7 you 
+R 1597 2 7 see 
+R 1601 1 7 like 
+R 1603 1 7 a 
+R 1605 1 6 bat
+R 1607 1 4 tle 
+R 1609 2 4 drill
+- 1611
+R 1615 1 4 I’m 
+R 1617 1 6 in 
+R 1619 1 7 the 
+R 1621 1 9 sad
+R 1623 1 7 dle 
+R 1625 2 4 still 
+R 1631 1 4 a 
+R 1633 1 6 lit
+R 1635 1 7 tle 
+R 1637 1 7 sad
+R 1639 1 6 dle
+R 1641 1 4 sore
+- 1642
+R 1645 1 4 Smash 
+R 1647 1 4 you 
+R 1649 1 4 out 
+R 1651 1 6 the 
+R 1653 1 7 stra
+R 1655 1 6 to
+R 1657 1 4 sphere
+- 1658
+R 1661 1 4 Fla
+R 1663 1 4 shy 
+R 1665 1 4 as 
+R 1667 1 6 a 
+R 1669 1 7 ma
+R 1671 1 6 ta
+R 1673 2 4 dor
+- 1675
+R 1681 1 8 When 
+R 1683 1 8 I’m 
+R 1685 2 8 dressed 
+R 1689 1 5 like 
+R 1693 1 8 The
+R 1695 2 5 o’s 
+R 1699 3 8 dad
+- 1702
+R 1705 1 7 In 
+R 1707 1 7 a 
+R 1709 2 6 Coo
+R 1713 3 6 gi 
+R 1717 1 7 lis
+R 1719 1 7 ten
+R 1721 1 7 ing 
+R 1723 1 7 to 
+R 1725 2 7 Kool 
+R 1729 1 4 G 
+R 1731 2 6 rap
+- 1733
+G 1735 1 11 I 
+G 1737 2 11 won’t 
+G 1741 1 11 beat 
+G 1743 1 9 a
+G 1745 1 9 round 
+G 1747 1 7 the 
+G 1749 2 9 bush 
+G 1753 1 9 like 
+G 1755 1 7 a 
+G 1757 1 9 se
+G 1759 1 7 ven
+G 1761 1 7 ties 
+G 1763 2 4 porn
+- 1765
+R 1767 1 4 I’ll 
+R 1769 1 9 make 
+R 1771 1 7 you 
+R 1773 2 9 wish 
+R 1777 1 9 that 
+R 1779 1 9 you’d 
+R 1781 1 9 ne
+R 1783 1 6 ver 
+R 1785 2 4 been 
+R 1789 1 4 born
+- 1790
+: 1793 1 7 And 
+: 1795 1 7 it’s 
+: 1797 3 7 all 
+: 1805 3 7 good
+- 1808 1828
+- 1828
+: 1845 3 6 And 
+: 1849 2 6 it’s 
+: 1853 3 6 all 
+: 1865 6 7 good
+: 1873 4 4 ~
+- 1877 1892
+- 1892
+: 1909 2 6 And 
+: 1913 2 6 it’s 
+: 1921 5 6 all 
+: 1929 5 14 good
+: 1935 4 12 ~
+: 1941 3 11 ~
+- 1944 1956
+- 1956
+: 1973 3 6 And 
+: 1977 2 6 it’s 
+: 1981 3 6 all 
+: 1993 6 7 good
+: 2001 3 4 ~
+- 2004 2012
+- 2012
+R 2029 3 11 One 
+R 2037 3 11 two 
+R 2045 3 11 three 
+R 2053 3 11 four!
+- 2056
+: 2065 2 11 I 
+: 2069 2 11 feel 
+: 2073 2 11 like 
+: 2077 2 11 Bob
+: 2081 2 9 by 
+: 2085 2 9 Fi
+: 2089 2 9 scher
+- 2091
+: 2097 2 9 Al
+: 2101 2 9 ways 
+: 2105 3 9 four 
+: 2109 3 9 moves 
+: 2113 3 14 a
+: 2117 3 14 head 
+: 2121 2 13 of
+- 2123
+: 2129 2 11 My 
+: 2133 3 11 com
+: 2137 2 9 pe
+: 2141 3 11 ti
+: 2145 3 9 tion 
+: 2149 3 9 lis
+: 2153 2 9 ten
+- 2155
+: 2157 2 6 They 
+: 2161 3 6 ain’t 
+: 2165 2 6 gon
+: 2169 2 6 na 
+: 2173 2 6 stop 
+: 2177 3 6 me 
+: 2181 2 6 e
+: 2185 2 7 ver
+- 2187
+: 2193 2 11 I 
+: 2197 3 11 feel 
+: 2201 2 11 as 
+: 2205 3 9 large 
+: 2209 1 9 as 
+: 2213 2 9 Big
+: 2217 2 7 gie
+- 2219
+: 2225 3 9 Swear 
+: 2229 2 9 it 
+: 2233 2 9 could 
+: 2237 2 9 not 
+: 2241 2 14 get 
+: 2245 2 14 bet
+: 2249 2 14 ter
+- 2251
+: 2257 3 11 I 
+: 2261 3 11 feel 
+: 2265 2 11 in 
+: 2269 3 9 charge 
+: 2273 3 9 like 
+: 2277 3 9 Big
+: 2281 2 9 gie
+- 2283
+: 2289 3 6 Wea
+: 2293 3 6 ring 
+: 2297 2 6 that 
+: 2301 2 6 Cos
+: 2305 2 6 by 
+: 2309 2 6 swea
+: 2313 2 7 ter
+- 2315
+: 2321 3 7 Wea
+: 2325 3 7 ring 
+: 2329 2 6 that 
+: 2333 2 6 Cos
+: 2337 2 7 by 
+: 2341 2 6 swea
+: 2345 2 4 ter
+- 2347
+: 2353 3 6 Wea
+: 2357 3 7 ring 
+: 2361 2 7 that 
+: 2365 3 7 Cos
+: 2369 3 4 by 
+: 2373 3 6 swea
+: 2377 4 7 ter
+- 2381
+: 2385 3 7 Wea
+: 2389 3 7 ring 
+: 2393 2 7 that 
+: 2397 2 6 Cos
+: 2401 2 6 by 
+: 2405 3 6 swea
+: 2409 3 4 ter
+- 2412
+: 2417 2 6 Wea
+: 2421 2 7 ring 
+: 2425 2 7 that 
+: 2429 2 6 Cos
+: 2433 2 4 by 
+: 2437 3 6 swea
+: 2441 3 7 ter
+- 2444
+: 2449 1 4 Take 
+: 2451 1 4 a 
+: 2453 2 7 ride 
+: 2457 1 4 on 
+: 2459 1 4 the 
+: 2461 2 7 wild 
+: 2465 1 4 side 
+: 2467 1 4 of 
+: 2469 2 7 this 
+: 2473 1 4 al
+: 2475 1 4 ley
+- 2476
+: 2481 1 7 We 
+: 2483 1 7 can 
+: 2485 3 9 fire 
+: 2489 1 7 up 
+: 2491 1 7 the 
+: 2493 3 9 night 
+: 2497 2 7 like 
+: 2501 2 9 Prince 
+: 2505 2 9 Har
+: 2509 1 7 ry
+- 2510
+: 2513 1 9 Fuck 
+: 2515 1 7 the 
+: 2517 2 9 high 
+: 2521 2 7 life 
+: 2525 1 9 fuck 
+: 2527 1 7 your 
+: 2529 2 9 vibe 
+: 2533 2 7 like
+- 2535
+* 2537 1 7 We 
+* 2539 1 7 got 
+* 2541 2 9 white 
+* 2545 2 7 lines 
+* 2549 1 9 han
+* 2551 1 9 ging 
+* 2553 1 7 from 
+* 2555 1 7 be
+* 2557 2 9 hind 
+* 2561 1 7 like 
+* 2563 1 7 we’re 
+* 2565 2 9 just 
+* 2569 2 9 mar
+* 2573 1 7 ried
+- 2574
+: 2575 1 4 I’ll 
+: 2577 1 7 turn 
+: 2579 1 7 the 
+: 2581 2 7 art 
+: 2585 2 6 form 
+: 2589 2 6 in
+: 2593 1 6 to 
+: 2595 1 6 a 
+: 2597 3 7 blood 
+: 2601 2 6 sport
+- 2603
+: 2607 1 4 I 
+: 2609 3 6 make 
+: 2613 2 6 pea 
+: 2617 2 7 soup 
+: 2621 3 7 out 
+: 2625 1 6 of 
+: 2627 1 6 a 
+: 2629 2 6 pea 
+: 2633 3 7 brain
+- 2636
+: 2641 2 7 They 
+: 2645 1 7 wan
+: 2647 1 6 na 
+: 2649 1 7 run 
+: 2651 1 6 the 
+: 2653 2 7 streets 
+: 2657 2 7 like 
+: 2661 2 7 par
+: 2665 1 4 kour?
+- 2666
+: 2671 1 6 I’d 
+: 2673 1 6 ra
+: 2675 1 6 ther 
+: 2677 2 6 run 
+: 2681 2 7 these 
+: 2685 2 7 tracks 
+: 2689 1 4 like 
+: 2691 1 4 a 
+: 2693 2 7 steam 
+: 2697 3 7 train
+- 2700 2704
+- 2704
+: 2721 1 6 Like 
+: 2723 1 6 a 
+: 2725 2 6 steam 
+: 2729 3 7 train
+- 2732 2736
+- 2736
+: 2753 1 6 Like 
+: 2755 1 6 a 
+: 2757 2 6 steam 
+: 2761 2 7 train
+- 2763 2768
+- 2768
+: 2785 1 4 Like 
+: 2787 1 4 a 
+: 2789 2 6 steam 
+: 2793 2 7 train
+- 2795 2800
+- 2800
+: 2817 1 6 Like 
+: 2819 1 6 a 
+: 2821 2 6 steam 
+: 2825 2 7 train
+- 2827 2908
+- 2908
+R 2925 3 23 One 
+R 2933 3 23 two 
+R 2941 3 23 three 
+R 2949 3 23 four!
+- 2952
+: 2961 2 11 I 
+: 2965 2 11 feel 
+: 2969 2 11 like 
+: 2973 2 11 Bob
+: 2977 2 9 by 
+: 2981 2 9 Fi
+: 2985 2 9 scher
+- 2987
+: 2993 2 9 Al
+: 2997 2 9 ways 
+: 3001 3 9 four 
+: 3005 3 9 moves 
+: 3009 3 14 a
+: 3013 3 14 head 
+: 3017 2 13 of
+- 3019
+: 3025 2 11 My 
+: 3029 3 11 com
+: 3033 2 9 pe
+: 3037 3 11 ti
+: 3041 3 9 tion 
+: 3045 3 9 lis
+: 3049 2 9 ten
+- 3051
+: 3053 2 6 They 
+: 3057 3 6 ain’t 
+: 3061 2 6 gon
+: 3065 2 6 na 
+: 3069 2 6 stop 
+: 3073 3 6 me 
+: 3077 2 6 e
+: 3081 2 7 ver
+- 3083
+: 3089 2 11 I 
+: 3093 3 11 feel 
+: 3097 2 11 as 
+: 3101 3 9 large 
+: 3105 1 9 as 
+: 3109 2 9 Big
+: 3113 2 7 gie
+- 3115
+: 3121 3 9 Swear 
+: 3125 2 9 it 
+: 3129 2 9 could 
+: 3133 2 9 not 
+: 3137 2 14 get 
+: 3141 2 14 bet
+: 3145 2 14 ter
+- 3147
+: 3153 3 11 I 
+: 3157 3 11 feel 
+: 3161 2 11 in 
+: 3165 3 9 charge 
+: 3169 3 9 like 
+: 3173 3 9 Big
+: 3177 2 9 gie
+- 3179
+: 3185 3 6 Wea
+: 3189 3 6 ring 
+: 3193 2 6 that 
+: 3197 2 6 Cos
+: 3201 2 6 by 
+: 3205 2 6 swea
+: 3209 2 7 ter
+- 3211
+: 3217 3 7 Wea
+: 3221 3 7 ring 
+: 3225 2 7 that 
+: 3229 2 6 Cos
+: 3233 2 7 by 
+: 3237 2 6 swea
+: 3241 2 4 ter
+- 3243
+: 3249 3 7 Wea
+: 3253 3 7 ring 
+: 3257 2 7 that 
+: 3261 3 7 Cos
+: 3265 3 4 by 
+: 3269 3 6 swea
+: 3273 4 7 ter
+- 3277
+: 3281 3 7 Wea
+: 3285 3 7 ring 
+: 3289 2 6 that 
+: 3293 2 6 Cos
+: 3297 2 6 by 
+: 3301 3 6 swea
+: 3305 3 4 ter
+- 3308
+: 3313 2 7 Wea
+: 3317 2 7 ring 
+: 3321 2 7 that 
+: 3325 2 6 Cos
+: 3329 2 4 by 
+: 3333 3 6 swea
+: 3337 3 7 ter
+- 3340 3360
+- 3360
+: 3377 2 7 Wea
+: 3381 2 7 ring 
+: 3385 2 7 that 
+: 3389 2 6 Cos
+: 3393 2 4 by 
+: 3397 3 6 swea
+: 3401 3 7 ter
+- 3404 3424
+- 3424
+: 3441 2 7 Wea
+: 3445 2 7 ring 
+: 3449 2 7 that 
+: 3453 2 6 Cos
+: 3457 2 4 by 
+: 3461 3 6 swea
+: 3465 3 7 ter
+E
