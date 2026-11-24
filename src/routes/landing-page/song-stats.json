@@ -28,23 +28,23 @@
     "Paramore",
     "Bee Gees",
     "Elton John",
+    "Radiohead",
     "Disturbed",
     "Ed Sheeran",
     "Florence + the Machine",
     "Panic! at the Disco",
-    "Radiohead",
     "Red Hot Chili Peppers",
     "Beyoncé",
     "Foo Fighters",
+    "Metallica",
     "Miley Cyrus",
     "Billy Talent",
     "Katy Perry",
-    "Metallica",
-    "Bruno Mars",
     "Lana Del Rey",
+    "Avril Lavigne",
+    "Bruno Mars",
     "Westlife",
     "Adele",
-    "Avril Lavigne",
     "Demi Lovato",
     "The Weeknd",
     "Backstreet Boys",
@@ -71,6 +71,7 @@
     "Bring Me The Horizon",
     "Coldplay",
     "Glee Cast",
+    "Gwen Stefani",
     "Jennifer Lopez",
     "No Doubt",
     "Rise Against",
@@ -78,9 +79,9 @@
     "Volbeat",
     "Weezer",
     "5 Seconds of Summer",
+    "Christina Aguilera",
     "Deftones",
     "Dua Lipa",
-    "Gwen Stefani",
     "High School Musical",
     "Justin Bieber",
     "Kool & The Gang",
@@ -92,7 +93,6 @@
     "Sabrina Carpenter",
     "Thirty Seconds to Mars",
     "Céline Dion",
-    "Christina Aguilera",
     "Destiny’s Child",
     "Electric Light Orchestra",
     "Elvis Presley",
@@ -104,6 +104,7 @@
     "Melanie Martinez",
     "Nickelback",
     "Pink Floyd",
+    "Robbie Williams",
     "Selena Gomez",
     "Serj Tankian",
     "Skillet",
@@ -111,9 +112,12 @@
     "The Pussycat Dolls",
     "Twenty One Pilots",
     "Whitney Houston",
+    "Blind Guardian",
     "Bon Jovi",
     "Calvin Harris",
     "Depeche Mode",
+    "Duran Duran",
+    "Faith No More",
     "Fleetwood Mac",
     "Groove Coverage",
     "Hamilton",
@@ -137,19 +141,15 @@
     "Chris Brown",
     "Creed",
     "Crowded House",
+    "Daft Punk",
     "Delta Goodrem",
     "Earth, Wind & Fire",
     "Ellie Goulding",
     "Eminem",
-    "Faith No More",
     "Genesis",
     "Goo Goo Dolls",
     "Johnny Cash",
-    "Jonathan Coulton",
-    "Nicki Minaj",
-    "P!nk",
-    "Robbie Williams",
-    "Shania Twain"
+    "Jonathan Coulton"
   ],
   "languages": [
     "Armenian",
@@ -189,9 +189,10 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 7681,
-  "generatedAt": "2026-11-23T05:00:42.710Z",
+  "songs": 7766,
+  "generatedAt": "2026-11-24T07:51:43.730Z",
   "additionsPerDay": {
+    "2026-11-24": 85,
     "2026-11-22": 9,
     "2026-11-20": 18,
     "2026-11-19": 20,
@@ -233,345 +234,344 @@
     "2026-10-04": 13,
     "2026-10-02": 12,
     "2026-10-01": 13,
-    "2026-09-29": 2,
-    "2026-09-24": 16
+    "2026-09-29": 2
   },
   "recentlyAdded": [
     {
-      "id": "belinda-carlisle-heaven-is-a-place-on-earth",
-      "artist": "Belinda Carlisle",
-      "title": "Heaven Is A Place On Earth",
-      "video": "j2F4INQFjEI",
-      "addedAt": "2026-11-22T04:24:12.632Z"
+      "id": "olly-murs-feat-rizzle-kicks-heart-skips-a-beat",
+      "artist": "Olly Murs feat. Rizzle Kicks",
+      "title": "Heart Skips A Beat",
+      "video": "j5dFe-WKuPs",
+      "addedAt": "2026-11-24T07:50:18.946Z"
     },
     {
-      "id": "michael-wong-tong-hua",
-      "artist": "Michael Wong",
-      "title": "Tong Hua",
-      "video": "IBTmypxD2mU",
-      "addedAt": "2026-11-22T04:24:12.189Z"
+      "id": "bob-dylan-like-a-rolling-stone",
+      "artist": "Bob Dylan",
+      "title": "Like A Rolling Stone",
+      "video": "IwOfCgkyEj0",
+      "addedAt": "2026-11-24T07:50:18.943Z"
     },
     {
-      "id": "peter-gabriel-mercy-street",
+      "id": "christina-aguilera-you-lost-me",
+      "artist": "Christina Aguilera",
+      "title": "You Lost Me",
+      "video": "WOKI_tIBWVI",
+      "addedAt": "2026-11-24T07:50:18.940Z"
+    },
+    {
+      "id": "savage-garden-i-knew-i-loved-you",
+      "artist": "Savage Garden",
+      "title": "I Knew I Loved You",
+      "video": "jjnmICxvoVY",
+      "addedAt": "2026-11-24T07:50:18.939Z"
+    },
+    {
+      "id": "europe-carrie",
+      "artist": "Europe",
+      "title": "Carrie",
+      "video": "LGh4dbMdfc8",
+      "addedAt": "2026-11-24T07:50:18.938Z"
+    },
+    {
+      "id": "kelis-acapella",
+      "artist": "Kelis",
+      "title": "Acapella",
+      "video": "U8D9xCBcfzw",
+      "addedAt": "2026-11-24T07:50:18.936Z"
+    },
+    {
+      "id": "panda-procedimientos-para-llegar-a-un-comun-acuerdo",
+      "artist": "Panda",
+      "title": "Procedimientos para llegar a un comun acuerdo",
+      "video": "tTZ18m4W3gY",
+      "addedAt": "2026-11-24T07:50:11.400Z"
+    },
+    {
+      "id": "sombr-undressed",
+      "artist": "Sombr",
+      "title": "Undressed",
+      "video": "z0wT6CrEGYg",
+      "addedAt": "2026-11-24T07:50:11.259Z"
+    },
+    {
+      "id": "ferry-aid-kate-bush-feat-peter-gabriel-steve-harley-let-it-be",
+      "artist": "Ferry Aid (Kate Bush feat. Peter Gabriel & Steve Harley)",
+      "title": "Let It Be",
+      "video": "IeD0YwEQ_iU",
+      "addedAt": "2026-11-24T07:50:11.123Z"
+    },
+    {
+      "id": "adam-cohen-lana-del-rey-chelsea-hotel-no-2",
+      "artist": "Adam Cohen & Lana Del Rey",
+      "title": "Chelsea Hotel No. 2",
+      "video": "R3VU71YO9VE",
+      "addedAt": "2026-11-24T07:50:10.961Z"
+    },
+    {
+      "id": "duran-duran-rio",
+      "artist": "Duran Duran",
+      "title": "Rio",
+      "video": "nTizYn3-QN0",
+      "addedAt": "2026-11-24T07:50:10.958Z"
+    },
+    {
+      "id": "dead-by-sunrise-let-down",
+      "artist": "Dead By Sunrise",
+      "title": "Let Down",
+      "video": "jjSNbZQZLIM",
+      "addedAt": "2026-11-24T07:50:10.795Z"
+    },
+    {
+      "id": "radiohead-just",
+      "artist": "Radiohead",
+      "title": "Just",
+      "video": "oIFLtNYI3Ls",
+      "addedAt": "2026-11-24T07:50:10.794Z"
+    },
+    {
+      "id": "keha-your-love-is-my-drug",
+      "artist": "Ke$ha",
+      "title": "Your Love Is My Drug",
+      "video": "QR_qa3Ohwls",
+      "addedAt": "2026-11-24T07:50:10.793Z"
+    },
+    {
+      "id": "deep-purple-perfect-strangers",
+      "artist": "Deep Purple",
+      "title": "Perfect Strangers",
+      "video": "gZ_kez7WVUU",
+      "addedAt": "2026-11-24T07:50:10.792Z"
+    },
+    {
+      "id": "ashlee-simpson-invisible",
+      "artist": "Ashlee Simpson",
+      "title": "Invisible",
+      "video": "GYpkwrLzDvo",
+      "addedAt": "2026-11-24T07:50:10.791Z"
+    },
+    {
+      "id": "sister-sledge-we-are-family",
+      "artist": "Sister Sledge",
+      "title": "We Are Family",
+      "video": "uyGY2NfYpeE",
+      "addedAt": "2026-11-24T07:50:10.789Z"
+    },
+    {
+      "id": "diana-ross-the-supremes-missing-you",
+      "artist": "Diana Ross & The Supremes",
+      "title": "Missing You",
+      "video": "WXTeqpcF-As",
+      "addedAt": "2026-11-24T07:50:10.787Z"
+    },
+    {
+      "id": "duran-duran-come-undone",
+      "artist": "Duran Duran",
+      "title": "Come Undone",
+      "video": "Epj84QVw2rc",
+      "addedAt": "2026-11-24T07:50:10.786Z"
+    },
+    {
+      "id": "the-temptations-get-ready",
+      "artist": "The Temptations",
+      "title": "Get Ready",
+      "video": "mhsYOzdJjI0",
+      "addedAt": "2026-11-24T07:50:10.783Z"
+    },
+    {
+      "id": "lily-allen-smile",
+      "artist": "Lily Allen",
+      "title": "Smile",
+      "video": "0WxDrVUrSvI",
+      "addedAt": "2026-11-24T07:50:10.775Z"
+    },
+    {
+      "id": "redone-feat-enrique-iglesias-r-city-serayah-shaggy-dont-you-need-somebody",
+      "artist": "RedOne feat. Enrique Iglesias, R. City, Serayah & Shaggy",
+      "title": "Don’t You Need Somebody",
+      "video": "6fBZBntjEOA",
+      "addedAt": "2026-11-24T07:50:08.441Z"
+    },
+    {
+      "id": "tom-jones-kiss",
+      "artist": "Tom Jones",
+      "title": "Kiss",
+      "video": "5uZQFOfMSfY",
+      "addedAt": "2026-11-24T07:50:08.297Z"
+    },
+    {
+      "id": "diana-ross-the-supremes-muscles",
+      "artist": "Diana Ross & The Supremes",
+      "title": "Muscles",
+      "video": "CzmOHbLC27s",
+      "addedAt": "2026-11-24T07:50:08.296Z"
+    },
+    {
+      "id": "run-dmc-vs-jason-nevins-its-like-that",
+      "artist": "Run DMC vs Jason Nevins",
+      "title": "It’s Like That",
+      "video": "TLGWQfK-6DY",
+      "addedAt": "2026-11-24T07:50:08.004Z"
+    },
+    {
+      "id": "busted-what-i-go-to-school-for",
+      "artist": "Busted",
+      "title": "What I Go To School For",
+      "video": "eAI1Onf2-Co",
+      "addedAt": "2026-11-24T07:50:08.001Z"
+    },
+    {
+      "id": "luther-vandross-never-too-much",
+      "artist": "Luther Vandross",
+      "title": "Never Too Much",
+      "video": "pNj9bXKGOiI",
+      "addedAt": "2026-11-24T07:50:07.806Z"
+    },
+    {
+      "id": "avril-lavigne-smile",
+      "artist": "Avril Lavigne",
+      "title": "Smile",
+      "video": "KagvExF-ijc",
+      "addedAt": "2026-11-24T07:50:07.803Z"
+    },
+    {
+      "id": "michael-jackson-will-you-be-there",
+      "artist": "Michael Jackson",
+      "title": "Will You Be There",
+      "video": "jQY_QL_wvQU",
+      "addedAt": "2026-11-24T07:50:07.799Z"
+    },
+    {
+      "id": "daft-punk-teachers",
+      "artist": "Daft Punk",
+      "title": "Teachers",
+      "video": "3yq-NFiEywo",
+      "addedAt": "2026-11-24T07:50:07.796Z"
+    },
+    {
+      "id": "outkast-idlewild-blue-dont-chu-worry-bout-me",
+      "artist": "OutKast",
+      "title": "Idlewild Blue (Don’t Chu Worry ’Bout Me)",
+      "video": "yjk8XHn80Zw",
+      "addedAt": "2026-11-24T07:50:07.794Z"
+    },
+    {
+      "id": "busted-sleeping-with-the-light-on",
+      "artist": "Busted",
+      "title": "Sleeping With The Light On",
+      "video": "n2YZqnIa-ic",
+      "addedAt": "2026-11-24T07:50:07.791Z"
+    },
+    {
+      "id": "the-dandy-warhols-bohemian-like-you",
+      "artist": "The Dandy Warhols",
+      "title": "Bohemian Like You",
+      "video": "CU3mc0yvRNk",
+      "addedAt": "2026-11-24T07:50:07.789Z"
+    },
+    {
+      "id": "midnight-oil-power-the-passion",
+      "artist": "Midnight Oil",
+      "title": "Power & The Passion",
+      "video": "6pKPNnk-JhE",
+      "addedAt": "2026-11-24T07:50:07.787Z"
+    },
+    {
+      "id": "robin-s-show-me-love",
+      "artist": "Robin S.",
+      "title": "Show Me Love",
+      "video": "Ps2Jc28tQrw",
+      "addedAt": "2026-11-24T07:50:07.558Z"
+    },
+    {
+      "id": "ambrosia-biggest-part-of-me",
+      "artist": "Ambrosia",
+      "title": "Biggest Part Of Me",
+      "video": "ervE9G4dUf4",
+      "addedAt": "2026-11-24T07:50:07.386Z"
+    },
+    {
+      "id": "keri-hilson-feat-kanye-west-ne-yo-knock-you-down",
+      "artist": "Keri Hilson feat. Kanye West & Ne-Yo",
+      "title": "Knock You Down",
+      "video": "p_RqWocthcc",
+      "addedAt": "2026-11-24T07:50:07.182Z"
+    },
+    {
+      "id": "blur-for-tomorrow",
+      "artist": "Blur",
+      "title": "For Tomorrow",
+      "video": "gghFPavXE7Q",
+      "addedAt": "2026-11-24T07:50:07.179Z"
+    },
+    {
+      "id": "m83-outro-hurry-up-were-dreaming",
+      "artist": "M83",
+      "title": "Outro (Hurry Up, We’re Dreaming)",
+      "video": "Eyjj8BgsBGU",
+      "addedAt": "2026-11-24T07:50:07.178Z"
+    },
+    {
+      "id": "empire-of-the-sun-concert-pitch",
+      "artist": "Empire Of The Sun",
+      "title": "Concert Pitch",
+      "video": "gHUnr3sl8GQ",
+      "addedAt": "2026-11-24T07:50:07.177Z"
+    },
+    {
+      "id": "reef-place-your-hands",
+      "artist": "Reef",
+      "title": "Place Your Hands",
+      "video": "bihoNRc8GDQ",
+      "addedAt": "2026-11-24T07:50:07.034Z"
+    },
+    {
+      "id": "metallica-whiskey-in-the-jar",
+      "artist": "Metallica",
+      "title": "Whiskey In The Jar",
+      "video": "wsrvmNtWU4E",
+      "addedAt": "2026-11-24T07:50:07.033Z"
+    },
+    {
+      "id": "alice-cooper-only-women",
+      "artist": "Alice Cooper",
+      "title": "Only Women",
+      "video": "ZfZyxu5UMCU",
+      "addedAt": "2026-11-24T07:50:07.030Z"
+    },
+    {
+      "id": "peter-gabriel-io",
       "artist": "Peter Gabriel",
-      "title": "Mercy Street",
-      "video": "zs35CBGOxbc",
-      "addedAt": "2026-11-22T04:24:12.187Z"
+      "title": "i/o",
+      "video": "TbCHjU9w5Mk",
+      "addedAt": "2026-11-24T07:50:07.028Z"
     },
     {
-      "id": "summer-walker-summer-walker-girls-need-love-remix-with-drake",
-      "artist": "Summer Walker",
-      "title": "Summer Walker - Girls Need Love Remix (with Drake)",
-      "video": "TP3moIiyZFI",
-      "addedAt": "2026-11-22T04:24:10.805Z"
+      "id": "akon-angel",
+      "artist": "Akon",
+      "title": "Angel",
+      "video": "hpbPjRVK5OE",
+      "addedAt": "2026-11-24T07:50:07.026Z"
     },
     {
-      "id": "renaud-la-peche-a-la-ligne",
-      "artist": "Renaud",
-      "title": "La Pêche à La Ligne",
-      "video": "f15FPspIII4",
-      "addedAt": "2026-11-22T04:24:10.803Z"
+      "id": "blind-guardian-when-sorrow-sang",
+      "artist": "Blind Guardian",
+      "title": "When Sorrow Sang",
+      "video": "eRuDigiA-qY",
+      "addedAt": "2026-11-24T07:50:07.025Z"
     },
     {
-      "id": "sylvie-vartan-la-plus-belle-pour-aller-danser",
-      "artist": "Sylvie Vartan",
-      "title": "La plus belle pour aller danser",
-      "video": "sfiuaOWjEkI",
-      "addedAt": "2026-11-22T04:24:10.800Z"
+      "id": "toto-holyanna",
+      "artist": "Toto",
+      "title": "Holyanna",
+      "video": "G01ClDIVhDY",
+      "addedAt": "2026-11-24T07:50:07.023Z"
     },
     {
-      "id": "stone-et-charden-lavventura",
-      "artist": "Stone et Charden",
-      "title": "L'avventura",
-      "video": "jJccs8ZbsMQ",
-      "addedAt": "2026-11-22T04:24:10.613Z"
-    },
-    {
-      "id": "zazie-chanson-dami",
-      "artist": "Zazie",
-      "title": "Chanson d'ami",
-      "video": "mShVHdf4BP0",
-      "addedAt": "2026-11-22T04:24:10.420Z"
-    },
-    {
-      "id": "soolking-ft-gazo-casanova",
-      "artist": "Soolking ft. Gazo",
-      "title": "Casanova",
-      "video": "6WrVXWgn094",
-      "addedAt": "2026-11-22T04:24:07.284Z"
-    },
-    {
-      "id": "slimane-claudio-capeo-chez-toi",
-      "artist": "Slimane & Claudio Capéo",
-      "title": "Chez Toi",
-      "video": "y8s8-7h11YA",
-      "addedAt": "2026-11-20T05:07:47.348Z"
-    },
-    {
-      "id": "vitaa-slimane-a-fleur-de-toi",
-      "artist": "Vitaa & Slimane",
-      "title": "À fleur de toi",
-      "video": "j0O13TSkxPc",
-      "addedAt": "2026-11-20T05:07:47.003Z"
-    },
-    {
-      "id": "vitaa-je-noublie-pas",
-      "artist": "Vitaa",
-      "title": "Je n'oublie pas",
-      "video": "Y_G9UWfoZns",
-      "addedAt": "2026-11-20T05:07:47.000Z"
-    },
-    {
-      "id": "vitaa-julien-dore-viens-on-essaie",
-      "artist": "Vitaa & Julien Doré",
-      "title": "Viens on essaie",
-      "video": "KwvCpirpSgI",
-      "addedAt": "2026-11-20T05:07:46.690Z"
-    },
-    {
-      "id": "stephane-ma-cherie",
-      "artist": "Stéphane",
-      "title": "Ma Chérie",
-      "video": "01bWOVQgpQI",
-      "addedAt": "2026-11-20T05:07:45.313Z"
-    },
-    {
-      "id": "clara-luciani-romance",
-      "artist": "Clara Luciani",
-      "title": "Romance",
-      "video": "jHkrVsiX7x4",
-      "addedAt": "2026-11-20T05:07:45.311Z"
-    },
-    {
-      "id": "sylvie-vartan-la-maritza",
-      "artist": "Sylvie Vartan",
-      "title": "La Maritza",
-      "video": "VBn87SA0oS8",
-      "addedAt": "2026-11-20T05:07:44.961Z"
-    },
-    {
-      "id": "renaud-boucan-denfer",
-      "artist": "Renaud",
-      "title": "Boucan d'Enfer",
-      "video": "KfhnfirorJI",
-      "addedAt": "2026-11-20T05:07:44.960Z"
-    },
-    {
-      "id": "vitaa-ton-amoureuse",
-      "artist": "Vitaa",
-      "title": "Ton amoureuse",
-      "video": "eGNQMZ3e4bg",
-      "addedAt": "2026-11-20T05:07:44.958Z"
-    },
-    {
-      "id": "renaud-marchand-de-cailloux",
-      "artist": "Renaud",
-      "title": "Marchand de cailloux",
-      "video": "OSK8E9KWoWs",
-      "addedAt": "2026-11-20T05:07:43.613Z"
-    },
-    {
-      "id": "styleto-faut-que-tu-maimes",
-      "artist": "Styleto",
-      "title": "Faut que tu m'aimes",
-      "video": "1TCYpxsaXm8",
-      "addedAt": "2026-11-20T05:07:43.182Z"
-    },
-    {
-      "id": "slimane-nous-deux",
-      "artist": "Slimane",
-      "title": "Nous deux",
-      "video": "unnn2fMOax8",
-      "addedAt": "2026-11-20T05:07:43.177Z"
-    },
-    {
-      "id": "elsa-esnoult-moi-jecrirai-ton-nom",
-      "artist": "Elsa Esnoult",
-      "title": "Moi j'écrirai ton nom",
-      "video": "Gen7lAH5ir8",
-      "addedAt": "2026-11-20T05:07:42.993Z"
-    },
-    {
-      "id": "clara-luciani-tout-pour-moi",
-      "artist": "Clara Luciani",
-      "title": "Tout pour moi",
-      "video": "A0hRkq4YT1o",
-      "addedAt": "2026-11-20T05:07:42.991Z"
-    },
-    {
-      "id": "slimane-jen-suis-la",
-      "artist": "Slimane",
-      "title": "J'en suis là",
-      "video": "TYG6SpM1zx8",
-      "addedAt": "2026-11-20T05:07:42.989Z"
-    },
-    {
-      "id": "vitaa-ca-fait-mal",
-      "artist": "Vitaa",
-      "title": "Ça fait mal",
-      "video": "3Dir-eVkRzM",
-      "addedAt": "2026-11-20T05:07:42.816Z"
-    },
-    {
-      "id": "zaz-je-pardonne",
-      "artist": "Zaz",
-      "title": "Je pardonne",
-      "video": "y39-ddBVRe4",
-      "addedAt": "2026-11-20T05:07:42.315Z"
-    },
-    {
-      "id": "slimane-mieux-que-moi",
-      "artist": "Slimane",
-      "title": "Mieux que moi",
-      "video": "ogV--_Ws3wc",
-      "addedAt": "2026-11-20T05:07:42.308Z"
-    },
-    {
-      "id": "pierre-garnier-m-pokora-chaque-seconde",
-      "artist": "Pierre Garnier & M. Pokora",
-      "title": "Chaque seconde",
-      "video": "2dJ72dtw2tU",
-      "addedAt": "2026-11-19T05:21:15.380Z"
-    },
-    {
-      "id": "gims-ciel",
-      "artist": "Gims",
-      "title": "Ciel",
-      "video": "KG6ft_YDp5k",
-      "addedAt": "2026-11-19T05:21:15.379Z"
-    },
-    {
-      "id": "camille-lellouche-ninsiste-pas",
-      "artist": "Camille Lellouche",
-      "title": "N'insiste pas",
-      "video": "ecpZpIzHD_s",
-      "addedAt": "2026-11-19T05:21:15.254Z"
-    },
-    {
-      "id": "luciano-pavarotti-la-donna-e-mobile",
-      "artist": "Luciano Pavarotti",
-      "title": "La donna è mobile",
-      "video": "8A3zetSuYRg",
-      "addedAt": "2026-11-19T05:21:15.252Z"
-    },
-    {
-      "id": "ryokuoushoku-shakai-party",
-      "artist": "Ryokuoushoku Shakai",
-      "title": "Party!!",
-      "video": "7-h8UA7fFmg",
-      "addedAt": "2026-11-19T05:21:15.251Z"
-    },
-    {
-      "id": "celine-dion-bonjour-pardon-merci",
-      "artist": "Céline Dion",
-      "title": "Bonjour, Pardon, Merci",
-      "video": "x2sFb-hrg_M",
-      "addedAt": "2026-11-19T05:21:15.249Z"
-    },
-    {
-      "id": "barbara-goettingen",
-      "artist": "Barbara",
-      "title": "Göttingen",
-      "video": "t0sNy1xOhRc",
-      "addedAt": "2026-11-19T05:21:14.020Z"
-    },
-    {
-      "id": "gims-fantaisie",
-      "artist": "Gims",
-      "title": "Fantaisie",
-      "video": "3NXKBGfZAHg",
-      "addedAt": "2026-11-19T05:21:14.019Z"
-    },
-    {
-      "id": "gims-sentimental",
-      "artist": "Gims",
-      "title": "Sentimental",
-      "video": "A0-JQ7r9l8E",
-      "addedAt": "2026-11-19T05:21:14.017Z"
-    },
-    {
-      "id": "amir-a-limparfaite",
-      "artist": "Amir",
-      "title": "À l'imparfaite",
-      "video": "jEHlP3pnC8U",
-      "addedAt": "2026-11-19T05:21:13.912Z"
-    },
-    {
-      "id": "when-in-rome-the-promise",
-      "artist": "When In Rome",
-      "title": "The Promise",
-      "video": "5HI_xFQWiYU",
-      "addedAt": "2026-11-19T05:21:13.779Z"
-    },
-    {
-      "id": "bleu-soleil-luiza-soleil-bleu",
-      "artist": "Bleu Soleil & Luiza",
-      "title": "Soleil Bleu",
-      "video": "nd8RD3tjNQE",
-      "addedAt": "2026-11-19T05:21:13.654Z"
-    },
-    {
-      "id": "the-beatles-something",
-      "artist": "The Beatles",
-      "title": "Something",
-      "video": "UelDrZ1aFeY",
-      "addedAt": "2026-11-19T05:21:13.651Z"
-    },
-    {
-      "id": "panic-at-the-disco-emperors-new-clothes",
-      "artist": "Panic! at the Disco",
-      "title": "Emperor’s New Clothes",
-      "video": "7qFF2v8VsaA",
-      "addedAt": "2026-11-19T05:21:13.649Z"
-    },
-    {
-      "id": "charlotte-cardin-tant-pis-pour-elle",
-      "artist": "Charlotte Cardin",
-      "title": "Tant pis pour elle.",
-      "video": "Eg4hjfjS0YQ",
-      "addedAt": "2026-11-19T05:21:13.521Z"
-    },
-    {
-      "id": "amir-complementaires",
-      "artist": "Amir",
-      "title": "Complémentaires",
-      "video": "_DvigtCEqpg",
-      "addedAt": "2026-11-19T05:21:13.415Z"
-    },
-    {
-      "id": "amir-nous",
-      "artist": "Amir",
-      "title": "Nous",
-      "video": "_xOKYvyi0Mc",
-      "addedAt": "2026-11-19T05:21:13.285Z"
-    },
-    {
-      "id": "jeck-carla-la-recette",
-      "artist": "Jeck & Carla",
-      "title": "La recette",
-      "video": "9kBpbQDZdbQ",
-      "addedAt": "2026-11-19T05:21:12.063Z"
-    },
-    {
-      "id": "amel-bent-lamour-ca-se-donne",
-      "artist": "Amel Bent",
-      "title": "L'amour ça se donne",
-      "video": "2p6w2i0T3oE",
-      "addedAt": "2026-11-19T05:21:11.382Z"
-    },
-    {
-      "id": "legiao-urbana-pais-e-filhos",
-      "artist": "Legião Urbana",
-      "title": "Pais E Filhos",
-      "video": "sfixHYBWaiU",
-      "addedAt": "2026-11-19T05:21:11.374Z"
-    },
-    {
-      "id": "calogero-prendre-racine",
-      "artist": "Calogero",
-      "title": "Prendre Racine",
-      "video": "Bu21Qx7N6nM",
-      "addedAt": "2026-11-18T05:27:04.562Z"
+      "id": "alice-deejay-better-off-alone",
+      "artist": "Alice Deejay",
+      "title": "Better Off Alone",
+      "video": "XJ9we6xDvWQ",
+      "addedAt": "2026-11-24T07:50:01.688Z"
     }
   ]
 }

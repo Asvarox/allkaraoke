@@ -6,18 +6,17 @@
 #VIDEO:v=HgzGwKwLmgM
 #GENRE:Rock
 #LANGUAGE:English
-#GAP:162,92227979274617
+#GAP:2212,922279792746
 #EDITION:SingStar Rocks! English
 #ALLKARAOKE_ID:queen-dont-stop-me-now
 #ALLKARAOKE_SID:3531
+#ALLKARAOKE_LASTUPDATE:2026-11-23T16:59:09.682Z
 #ALLKARAOKE_ARTISTORIGIN:GB
 #ALLKARAOKE_CREATORURL:https://ultrastar-es.org/pl/canciones?creador=telixj
 #ALLKARAOKE_REALBPM:160
 #ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=Don't%20Stop%20Me%20Now
 #ALLKARAOKE_VOLUME:1
-#ALLKARAOKE_DURATION:212
-- -20 1
-- 1
+#ALLKARAOKE_DURATION:215
 : 21 6 55 To
 : 28 5 55 night
 : 34 9 53 ~
@@ -43,7 +42,7 @@
 : 204 12 57 ~
 : 216 12 58 ~
 * 229 34 60 ~
-- 264
+- 263
 : 272 6 62 And 
 : 279 4 64 the 
 : 283 40 65 world
@@ -56,7 +55,7 @@
 : 370 9 67 ~
 : 379 23 65 out 
 : 403 12 62 yeah
-- 416
+- 415
 : 429 3 62 I'm 
 : 433 5 69 float
 : 440 6 69 ing 
@@ -73,6 +72,7 @@
 : 551 3 69 stop 
 : 563 5 67 me 
 : 575 29 58 now
+- 604 608
 - 608
 : 629 4 70 Don't 
 : 647 3 69 stop 
@@ -205,7 +205,7 @@
 : 1331 4 65 ta 
 : 1335 4 69 you
 : 1339 17 67 ~
-- 1357
+- 1356
 : 1370 4 57 Don't 
 : 1383 3 58 stop 
 : 1391 4 60 me 
@@ -396,7 +396,7 @@
 : 2426 3 65 man 
 : 2430 3 65 of 
 : 2434 5 67 you
-- 2455 2476
+- 2439 2476
 - 2476
 : 2497 3 60 Don't 
 : 2501 4 58 stop 
@@ -462,10 +462,11 @@
 : 2742 4 79 ~
 : 2746 3 80 ~
 : 2749 21 81 ~
+- 2770 2784
 - 2784
 F 2805 4 36 Al
 F 2810 6 36 right
-- 2837 3052
+- 2816 3052
 - 3052
 : 3073 21 69 Oh
 - 3094
@@ -523,7 +524,7 @@ F 2810 6 36 right
 : 3345 3 69 you
 : 3349 7 67 ~
 : 3357 6 69 hey
-- 3364
+- 3363
 : 3380 4 57 Don't 
 : 3391 3 58 stop 
 : 3399 3 60 me 
@@ -612,7 +613,7 @@ F 2810 6 36 right
 : 3951 2 57 ~
 : 3953 8 55 da 
 : 3961 21 53 ha
-- 3983
+- 3982
 : 3992 8 57 Ha
 : 4000 6 55 ~
 : 4006 3 53 da 

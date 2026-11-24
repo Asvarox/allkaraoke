@@ -1,0 +1,532 @@
+#ARTIST:Ke$ha
+#TITLE:Your Love Is My Drug
+#CREATOR:michas17j
+#BPM:240
+#YEAR:2010.
+#PREVIEWSTART:60
+#VIDEO:v=QR_qa3Ohwls
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:23915
+#ALLKARAOKE_ID:keha-your-love-is-my-drug
+#ALLKARAOKE_SID:7808
+#ALLKARAOKE_LASTUPDATE:2026-11-24T07:50:10.793Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:200
+#ALLKARAOKE_SOURCEURL:Ke$ha
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:209
+#COVER: 
+#MP3: 
+#BACKGROUND: 
+#RELATIVE: No
+#USDB:2267
+F 16 1 0 May
+F 18 1 0 be 
+F 20 2 0 I 
+F 24 2 0 need 
+F 28 2 0 some 
+F 32 2 0 re
+F 36 4 0 hab
+- 40
+F 44 2 0 Or 
+F 48 1 0 may
+F 50 1 0 be 
+F 52 2 0 just 
+F 56 2 0 need 
+F 60 2 0 some 
+F 64 4 0 sleep
+- 68
+F 76 2 0 I 
+F 80 2 0 got 
+F 84 2 0 a 
+F 88 2 0 sick 
+F 92 2 0 ob
+F 96 2 0 ses
+F 100 2 0 sion
+- 102
+F 108 2 0 I'm 
+F 112 1 0 see
+F 114 1 0 ing 
+F 116 2 0 it 
+F 120 2 0 in 
+F 124 2 0 my 
+F 128 4 0 dreams
+- 132
+F 140 2 0 I'm 
+F 144 1 0 loo
+F 146 1 0 king 
+F 148 2 0 down 
+F 152 2 0 e
+F 156 2 0 very 
+F 160 2 0 al
+F 164 2 0 ley
+- 166
+F 172 2 0 I'm 
+F 176 1 0 ma
+F 178 1 0 king 
+F 180 2 0 us 
+F 184 2 0 des
+F 188 2 0 perate 
+F 192 6 0 'cause
+- 198
+F 204 2 0 I'm 
+F 208 1 0 stay
+F 210 1 0 ing 
+F 212 3 0 up 
+F 216 2 0 all 
+F 220 2 0 night 
+F 224 2 0 ho
+F 228 2 0 ping
+- 230
+F 232 1 0 Hit
+F 234 1 0 ting 
+F 236 2 0 my 
+F 240 2 0 head 
+F 244 2 0 a
+F 248 2 0 gainst 
+F 252 2 0 the 
+F 256 4 0 wall
+- 260
+: 264 2 6 What 
+: 270 2 6 you 
+: 276 4 6 got 
+: 284 4 1 boy 
+: 292 2 1 is 
+: 296 2 5 hard 
+: 302 2 5 to 
+* 308 6 6 find
+- 314
+: 324 2 1 I 
+: 328 2 5 think 
+: 334 2 5 a
+: 340 6 6 bout 
+: 348 4 1 it 
+: 360 4 5 all 
+: 366 2 5 the 
+: 372 8 6 time
+- 380
+: 388 2 1 I'm 
+: 392 2 6 all 
+: 398 4 6 strung 
+: 404 4 6 out, 
+: 412 4 1 my 
+: 424 2 5 heart 
+: 430 2 5 is 
+: 436 8 3 fried
+- 444
+: 452 2 1 I 
+: 456 2 5 just 
+: 462 4 5 can't 
+* 468 2 6 get 
+: 476 4 1 you 
+: 488 2 5 off 
+: 494 4 5 my 
+: 500 4 6 mind
+- 504
+: 508 2 6 Be
+: 512 2 6 cause 
+: 516 2 13 your 
+: 520 4 13 love, 
+: 528 2 11 your 
+: 532 4 11 love, 
+: 540 2 10 your 
+* 544 4 10 love
+- 548
+: 556 2 8 Is 
+: 560 2 8 my 
+* 564 6 6 drug
+- 570
+: 580 2 13 Your 
+: 584 4 13 love, 
+: 592 2 11 your 
+: 596 4 11 love, 
+: 604 2 10 your 
+: 608 4 10 love
+- 612 620
+- 620
+: 636 2 6 I 
+: 640 2 6 said 
+: 644 2 13 your 
+: 648 4 13 love, 
+: 656 2 11 your 
+: 660 4 11 love, 
+: 668 2 10 your 
+: 672 4 10 love
+- 676
+: 684 2 8 Is 
+: 688 2 8 my 
+: 692 6 6 drug
+- 698
+: 708 2 13 Your 
+: 712 4 13 love, 
+: 720 2 11 your 
+: 724 4 11 love, 
+: 732 2 10 your 
+* 736 4 10 love
+- 740 764
+- 764
+F 780 2 0 Won't 
+F 784 1 0 lis
+F 786 1 0 ten 
+F 788 2 0 to 
+F 792 2 0 a
+F 796 2 0 ny 
+F 800 2 0 ad
+F 804 4 0 vice
+- 808
+F 812 1 0 Mo
+F 814 1 0 mma's 
+F 816 1 0 tel
+F 818 1 0 ling 
+F 820 2 0 me 
+F 824 2 0 I 
+F 828 2 0 should 
+F 832 2 0 think 
+F 836 4 0 twice
+- 840
+F 844 2 0 But 
+F 848 1 0 love 
+F 850 1 0 to 
+F 852 2 0 my 
+F 856 2 0 own 
+F 860 2 0 de
+F 864 2 0 vi
+F 868 2 0 ces
+- 870
+F 872 2 0 I'm 
+F 876 2 0 a
+F 880 2 0 ddic
+F 884 2 0 ted, 
+F 888 2 0 it's 
+F 892 2 0 a 
+F 896 6 0 cri
+F 904 2 0 sis
+- 906
+F 908 2 0 My 
+F 912 2 0 friends 
+F 916 2 0 think 
+F 920 2 0 I've 
+F 924 2 0 gone 
+F 928 6 0 cra
+F 936 2 0 zy
+- 938
+F 940 2 0 My 
+F 944 2 0 judg
+F 948 2 0 ments 
+F 952 1 0 ge
+F 954 1 0 tting 
+F 956 1 0 kin
+F 958 1 0 da 
+F 960 6 0 ha
+F 968 2 0 zy
+- 970
+F 972 2 0 My 
+F 976 2 0 esteem 
+F 980 1 0 is 
+F 982 1 0 gon
+F 984 1 0 na 
+F 986 1 0 be 
+F 988 2 0 af
+F 992 2 0 fec
+F 996 2 0 ted
+- 998
+F 1000 1 0 If 
+F 1002 1 0 I 
+F 1004 1 0 keep 
+F 1006 1 0 it 
+F 1008 2 0 up 
+F 1012 1 0 like 
+F 1014 1 0 a 
+F 1016 2 0 love 
+F 1020 2 0 sick 
+F 1024 2 0 crack
+F 1028 2 0 head
+- 1030
+: 1032 2 6 What 
+: 1038 2 6 you 
+: 1044 4 6 got 
+* 1052 4 1 boy 
+: 1060 2 1 is 
+: 1064 2 5 hard 
+: 1070 2 5 to 
+: 1076 6 6 find
+- 1082
+: 1092 2 1 I 
+: 1096 2 5 think 
+: 1102 2 5 a
+: 1108 6 6 bout 
+: 1116 4 1 it 
+: 1128 4 5 all 
+: 1134 2 5 the 
+: 1140 8 6 time
+- 1148
+: 1156 2 1 I'm 
+: 1160 2 6 all 
+: 1166 4 6 strung 
+: 1172 4 6 out, 
+: 1180 4 1 my 
+: 1192 2 5 heart 
+* 1198 2 5 is 
+: 1204 8 3 fried
+- 1212
+: 1220 2 1 I 
+: 1224 2 5 just 
+: 1230 4 5 can't 
+: 1236 2 6 get 
+: 1244 4 1 you 
+: 1256 2 5 off 
+: 1262 4 5 my 
+* 1268 4 6 mind
+- 1272
+: 1276 2 6 Be
+: 1280 2 6 cause 
+: 1284 2 13 your 
+: 1288 4 13 love, 
+: 1296 2 11 your 
+: 1300 4 11 love, 
+: 1308 2 10 your 
+: 1312 4 10 love
+- 1316
+: 1324 2 8 Is 
+: 1328 2 8 my 
+* 1332 6 6 drug
+- 1338
+: 1348 2 13 Your 
+: 1352 4 13 love, 
+: 1360 2 11 your 
+: 1364 4 11 love, 
+: 1372 2 10 your 
+: 1376 4 10 love
+- 1380 1388
+- 1388
+: 1404 2 6 I 
+: 1408 2 6 said 
+: 1412 2 13 your 
+: 1416 4 13 love, 
+: 1424 2 11 your 
+: 1428 4 11 love, 
+: 1436 2 10 your 
+: 1440 4 10 love
+- 1444
+: 1452 2 8 Is 
+: 1456 2 8 my 
+* 1460 6 6 drug
+- 1466
+: 1476 2 13 Your 
+: 1480 4 13 love, 
+: 1488 2 11 your 
+: 1492 4 11 love, 
+: 1500 2 10 your 
+: 1504 4 10 love
+- 1508 1528
+- 1528
+: 1544 6 10 I 
+: 1552 6 6 don't 
+: 1560 6 5 care 
+: 1568 4 6 what 
+: 1576 6 10 peo
+: 1584 6 6 ple 
+* 1592 6 5 say
+- 1598
+: 1600 6 6 The 
+: 1608 4 10 rush 
+: 1616 4 6 is 
+: 1624 6 5 worth 
+: 1632 4 6 the 
+: 1640 4 10 price 
+: 1648 4 6 I 
+: 1656 6 5 pay
+- 1662
+: 1664 6 6 I 
+: 1672 4 10 get 
+: 1680 6 6 so 
+: 1688 6 5 high 
+: 1696 4 6 when 
+: 1704 6 10 you're 
+: 1712 4 6 with 
+* 1720 6 5 me
+- 1726
+: 1728 4 6 But 
+: 1736 4 10 crash 
+: 1744 4 6 and 
+* 1752 6 5 crave 
+: 1760 6 6 you 
+* 1768 4 13 when 
+: 1776 4 11 you 
+: 1784 2 10 leave
+* 1788 6 8 ~
+: 1796 2 11 ~
+: 1800 14 10 ~
+- 1814
+F 1828 1 0 Do 
+F 1830 1 0 you 
+F 1832 1 0 wa
+F 1834 1 0 nna 
+F 1836 1 0 have 
+F 1838 1 0 a 
+F 1840 1 0 slum
+F 1842 1 0 ber 
+F 1844 1 0 par
+F 1846 1 0 ty
+- 1847
+F 1848 1 0 In 
+F 1850 1 0 my 
+F 1852 2 0 base
+F 1856 1 0 ment?
+- 1857
+F 1860 2 0 Do 
+F 1864 2 0 I 
+F 1868 1 0 make 
+F 1870 1 0 your 
+F 1872 2 0 heart 
+F 1876 2 0 beat 
+F 1880 1 0 like 
+F 1882 1 0 an 
+F 1884 1 0 8
+F 1886 1 0 0
+F 1888 2 0 8 
+F 1892 4 0 drum?
+- 1896
+F 1900 2 0 Is 
+F 1904 2 0 my 
+F 1908 2 0 love 
+F 1912 2 0 with
+- 1914
+: 1916 2 6 Your 
+: 1920 6 6 drug
+- 1926 1932
+- 1932
+: 1948 2 6 Your 
+* 1952 6 5 drug
+- 1958 1960
+- 1960
+: 1976 2 1 Ha, 
+: 1980 2 6 your 
+: 1984 6 5 drug
+- 1990 1992
+- 1992
+: 2008 2 1 Ha, 
+: 2012 2 6 your 
+: 2016 6 5 drug
+- 2022
+F 2024 2 5 Is 
+F 2028 2 6 my 
+F 2032 6 4 love, 
+F 2044 2 6 your 
+F 2048 6 5 drug
+- 2054 2060
+- 2060
+: 2076 2 6 Be
+: 2080 2 6 cause 
+: 2084 2 13 your 
+: 2088 4 13 love 
+: 2096 2 11 your 
+: 2100 4 11 love 
+: 2108 2 10 your 
+: 2112 4 10 love
+- 2116
+: 2124 2 8 Is 
+: 2128 2 8 my 
+: 2132 6 6 drug
+- 2138
+: 2148 2 13 Your 
+: 2152 4 13 love 
+: 2160 2 11 your 
+: 2164 4 11 love 
+: 2172 2 10 your 
+: 2176 4 10 love
+- 2180 2188
+- 2188
+: 2204 2 6 I 
+: 2208 2 6 said 
+: 2212 2 13 your 
+: 2216 4 13 love 
+: 2224 2 11 your 
+: 2228 4 11 love 
+: 2236 2 10 your 
+: 2240 4 10 love
+- 2244
+: 2252 2 8 Is 
+: 2256 2 8 my 
+: 2260 6 6 drug
+- 2266
+: 2276 2 13 Your 
+: 2280 4 13 love 
+: 2288 2 11 your 
+: 2292 4 11 love 
+: 2300 2 10 your 
+* 2304 4 10 love
+- 2308 2316
+- 2316
+: 2332 2 6 Be
+: 2336 2 6 cause 
+: 2340 2 13 your 
+: 2344 4 13 love 
+: 2352 2 11 your 
+: 2356 4 11 love 
+: 2364 2 10 your 
+: 2368 4 10 love
+- 2372
+: 2380 2 8 Is 
+: 2384 2 8 my 
+* 2388 8 6 drug
+- 2396
+: 2404 2 13 Your 
+: 2408 4 13 love 
+: 2416 2 11 your 
+: 2420 4 11 love 
+: 2428 2 10 your 
+: 2432 4 10 love
+- 2436 2444
+- 2444
+: 2460 2 6 I 
+: 2464 2 6 said 
+: 2468 2 13 your 
+: 2472 4 13 love 
+: 2480 2 11 your 
+: 2484 4 11 love 
+: 2492 2 10 your 
+: 2496 4 10 love
+- 2500
+: 2508 2 8 Is 
+: 2512 2 8 my 
+: 2516 8 6 drug
+- 2524
+: 2532 2 13 Your 
+: 2536 4 13 love 
+: 2544 2 11 your 
+* 2548 4 11 love 
+: 2556 2 10 your 
+* 2560 4 10 love
+- 2564 2584
+- 2584
+: 2600 4 6 Hey
+- 2604 2608
+- 2608
+: 2624 2 -4 Hey
+: 2628 2 -4 ~!
+- 2630 2648
+- 2648
+: 2664 6 -4 So
+- 2670 2708
+- 2708
+: 2724 2 -4 Your 
+: 2728 4 -4 love, 
+: 2744 2 -1 your 
+: 2748 4 1 love, 
+: 2760 2 6 your 
+: 2764 4 5 love, 
+: 2776 2 1 your 
+: 2780 4 1 love
+- 2784 2792
+- 2792
+F 2808 2 0 Is 
+F 2812 2 0 my 
+F 2816 4 0 drug
+- 2820
+F 2832 1 0 I 
+F 2834 1 0 like 
+F 2836 1 0 your 
+F 2838 4 0 beard
+E

@@ -1,0 +1,69 @@
+#ARTIST:M83
+#TITLE:Outro (Hurry Up, We’re Dreaming)
+#CREATOR:Wannseesprinter
+#BPM:218
+#YEAR:2011
+#VIDEO:v=Eyjj8BgsBGU
+#GENRE:Electronic
+#LANGUAGE:English
+#GAP:100376,69724770643
+#ALLKARAOKE_ID:m83-outro-hurry-up-were-dreaming
+#ALLKARAOKE_SID:7783
+#ALLKARAOKE_LASTUPDATE:2026-11-24T07:50:07.178Z
+#ALLKARAOKE_ARTISTORIGIN:FR
+#ALLKARAOKE_REALBPM:200
+#ALLKARAOKE_SOURCEURL:M83
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:248
+#MP3:M83 - Outro (Hurry Up, We’re Dreaming).mp3
+: 14 8 6 I’m 
+: 24 2 6 the 
+: 28 12 6 king 
+: 42 4 4 of 
+: 48 8 4 my 
+: 58 4 2 own 
+: 64 16 -3 land
+- 80 143
+- 143
+: 158 4 6 Fa
+: 166 3 4 cing
+* 170 2 2 ~ 
+: 174 3 6 tem
+: 178 4 4 pest 
+: 184 4 2 of 
+: 190 12 6 dust
+- 202
+: 206 8 6 I’ll 
+: 220 12 6 fight 
+: 234 4 4 un
+: 240 8 4 til 
+: 250 4 2 the 
+* 256 16 -3 end
+- 272 319
+- 319
+: 334 3 6 Crea
+: 338 4 4 tures 
+: 344 2 2 of 
+: 348 4 6 my 
+: 356 6 4 dreams
+- 362
+: 364 4 6 Raise 
+: 370 5 4 up 
+: 376 2 2 and 
+: 380 10 6 dance 
+: 392 4 4 with 
+* 398 14 4 me
+- 412 525
+- 525
+: 540 7 6 Now 
+: 548 2 4 and 
+: 554 2 2 for
+* 558 4 6 e
+: 564 14 4 ver
+- 578
+: 592 4 6 I’m 
+: 598 6 6 your
+- 604
+: 608 64 7 King
+* 674 106 9 ~
+E

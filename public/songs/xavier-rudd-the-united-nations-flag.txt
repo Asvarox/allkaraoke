@@ -1,0 +1,464 @@
+#ARTIST:Xavier Rudd & the United Nations
+#TITLE:Flag
+#CREATOR:felixhelix
+#BPM:300
+#YEAR:2015
+#VIDEO:v=CnNfwKnAzF0
+#LANGUAGE:English
+#GAP:3900
+#ALLKARAOKE_ID:xavier-rudd-the-united-nations-flag
+#ALLKARAOKE_SID:7765
+#ALLKARAOKE_LASTUPDATE:2026-11-24T07:50:01.048Z
+#ALLKARAOKE_ARTISTORIGIN:AU
+#ALLKARAOKE_REALBPM:200
+#ALLKARAOKE_SOURCEURL:Xavier Rudd & the United Nations
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:235
+#MP3:Xavier Rudd & the United Nations - Flag.mp3
+: 20 8 12 Coming 
+: 29 3 12 with 
+: 33 2 12 his 
+: 37 5 12 own 
+: 45 2 12 de
+: 48 13 17 signs
+- 61
+: 68 2 12 His 
+: 73 5 12 own 
+: 81 12 12 style 
+: 96 2 12 his 
+: 101 7 12 own 
+: 112 5 12 awa
+: 118 11 10 kening
+- 129
+: 143 3 13 He 
+: 147 3 13 told 
+: 151 3 13 me 
+: 155 3 13 yes 
+: 159 2 13 he 
+: 162 4 13 can 
+: 170 6 12 for
+: 177 12 17 give
+- 189
+: 192 3 12 But 
+: 196 4 12 he 
+: 202 5 12 can 
+: 209 23 12 never 
+: 233 15 12 forget 
+: 250 7 10 it
+- 257
+: 273 7 12 Weapons 
+: 282 5 12 always 
+: 289 5 10 close 
+: 297 3 8 to 
+: 301 8 8 hand
+- 309
+: 313 4 5 For 
+: 320 4 5 he 
+: 328 4 8 has 
+: 336 13 12 seen 
+: 351 5 5 too 
+: 360 5 5 much 
+: 367 5 5 hat
+: 373 10 3 red
+- 383
+: 391 6 3 Only 
+: 400 6 10 weapon 
+: 408 2 10 that 
+: 412 2 10 he 
+: 415 7 10 chooses 
+: 424 5 8 is 
+: 431 5 8 love
+- 436
+: 439 12 5 Univer
+: 452 7 8 sal 
+: 461 12 12 call 
+: 476 10 5 now 
+: 489 4 5 for 
+: 494 6 5 jus
+: 501 9 3 tice
+- 510
+: 523 1 12 And 
+: 525 1 12 I’ll 
+: 527 3 12 keep 
+: 533 3 12 keep 
+: 538 1 12 on 
+: 542 5 12 waving 
+: 550 4 12 this 
+* 557 8 17 flag
+- 565
+: 573 5 12 Cover 
+: 581 4 12 my 
+: 588 9 12 head 
+: 605 4 12 cover 
+: 612 5 12 my 
+: 619 5 12 back 
+: 627 8 10 now
+- 635
+: 648 1 12 And 
+: 650 1 12 I’ll 
+: 652 3 12 keep 
+: 660 2 12 keep 
+: 664 2 12 on 
+: 668 6 12 waving 
+: 676 4 12 this 
+* 683 7 17 flag
+- 690
+: 700 4 12 Cover 
+: 707 3 12 my 
+: 714 9 12 head 
+: 731 5 12 cover 
+: 739 5 12 my 
+: 747 5 12 back 
+: 755 6 10 now
+- 761
+: 775 1 12 And 
+: 777 1 12 I’ll 
+: 779 4 12 keep 
+: 787 2 12 keep 
+: 791 2 12 on 
+: 795 6 12 waving 
+: 803 5 12 this 
+* 810 6 17 flag
+- 816
+: 826 6 12 Cover 
+: 836 4 12 your 
+: 844 5 12 head 
+: 858 5 12 cover 
+: 866 5 12 your 
+: 874 5 12 back 
+: 881 6 10 now
+- 887
+: 905 6 12 People 
+: 913 3 12 keep 
+: 917 2 12 on 
+: 921 6 12 waving 
+: 929 4 12 this 
+* 936 8 17 flag
+- 944
+: 953 5 12 Cover 
+: 961 4 12 my 
+: 968 7 12 head 
+: 984 6 12 cover 
+: 993 4 12 my 
+: 999 5 12 back 
+: 1007 5 10 now
+- 1012
+: 1024 2 17 You 
+: 1027 3 17 know 
+: 1039 2 17 you 
+: 1043 4 17 know 
+: 1050 2 17 I 
+: 1054 3 17 said
+- 1057
+: 1063 5 5 Praise 
+: 1071 13 5 Jandamarra 
+: 1086 3 5 and 
+: 1090 2 7 the 
+* 1094 6 8 Bunu
+: 1102 5 5 ba 
+: 1110 7 5 tribe
+- 1117
+: 1126 3 3 Buil
+: 1130 3 0 ding 
+: 1134 2 0 the 
+: 1139 9 0 resistance 
+: 1150 4 0 with 
+: 1157 6 0 strength 
+: 1166 3 1 and 
+: 1173 7 0 pride
+- 1180
+: 1182 4 0 Said 
+: 1190 3 5 no 
+: 1194 3 5 to 
+: 1198 13 5 domination 
+: 1213 3 5 of 
+: 1217 3 7 the 
+: 1221 6 8 an
+: 1228 5 5 cient 
+: 1236 9 5 clans
+- 1245
+: 1249 2 3 Pro
+: 1252 3 3 tec
+: 1256 4 0 tion 
+: 1261 2 0 of 
+: 1264 2 0 his 
+: 1269 6 0 people 
+: 1277 2 0 and 
+: 1280 2 0 his 
+: 1284 6 0 tri
+: 1291 6 1 bal 
+: 1300 8 0 lands
+- 1308
+: 1316 6 5 Healing 
+: 1324 2 5 in 
+: 1328 2 5 the 
+: 1332 7 5 tunnel 
+: 1340 2 5 at 
+: 1344 2 7 his 
+* 1348 6 8 mothers 
+: 1356 4 5 right 
+: 1364 7 5 hand
+- 1371
+: 1379 3 3 Hea
+: 1383 3 0 ling 
+: 1387 1 0 in 
+: 1391 1 0 the 
+: 1395 5 0 tunnel 
+: 1402 3 0 with 
+: 1407 2 0 the 
+: 1410 6 0 spirit 
+: 1418 2 0 of 
+: 1422 2 1 the 
+: 1426 7 0 land
+- 1433
+: 1442 13 5 Precedent 
+: 1457 6 5 set 
+: 1465 3 5 for 
+: 1469 2 7 the 
+: 1473 7 8 pre
+: 1481 5 5 sent 
+: 1489 7 5 day
+- 1496
+: 1505 5 3 Time 
+: 1513 3 0 to 
+: 1519 9 0 stand 
+: 1537 2 0 time 
+: 1540 2 0 to 
+: 1545 4 0 keep 
+: 1552 7 0 waving 
+: 1560 3 0 that 
+* 1567 9 5 flag
+- 1576
+: 1584 5 12 Cover 
+: 1592 4 12 my 
+: 1599 9 12 head 
+: 1616 4 12 cover 
+: 1623 5 12 my 
+: 1630 5 12 back 
+: 1638 8 10 now
+- 1646
+: 1659 1 12 And 
+: 1661 1 12 I’ll 
+: 1663 3 12 keep 
+: 1671 2 12 keep 
+: 1675 2 12 on 
+: 1679 6 12 waving 
+: 1687 4 12 this 
+* 1694 7 17 flag
+- 1701
+: 1712 5 12 Cover 
+: 1719 4 12 my 
+: 1726 9 12 head 
+: 1743 5 12 cover 
+: 1750 5 12 my 
+: 1757 5 12 back 
+: 1765 8 10 now
+- 1773
+: 1789 7 12 People 
+: 1797 3 12 keep 
+: 1801 2 12 on 
+: 1805 6 12 waving 
+: 1813 4 12 this 
+: 1820 8 17 flag
+- 1828
+: 1834 1 0 And 
+: 1836 1 0 I’ll 
+: 1838 5 0 cover 
+: 1845 4 0 your 
+: 1852 8 0 head
+- 1860
+: 1865 1 0 And 
+: 1867 1 0 I’ll 
+: 1869 6 0 cover 
+: 1877 4 0 your 
+: 1884 4 0 back 
+: 1892 8 -2 now
+- 1900
+: 1916 6 12 People 
+: 1924 3 12 keep 
+: 1928 2 12 on 
+: 1932 6 12 waving 
+: 1940 4 12 this 
+: 1947 8 17 flag
+- 1955
+: 1963 5 12 Cover 
+: 1971 4 12 my 
+: 1978 9 12 head 
+: 1995 4 12 cover 
+: 2002 5 12 my 
+: 2009 5 12 back 
+: 2017 8 10 now
+- 2025
+: 2038 3 5 Said 
+: 2042 7 5 people 
+: 2050 5 5 keep 
+: 2056 2 5 on 
+: 2059 6 5 waving 
+: 2067 4 3 this 
+: 2074 8 8 flag
+- 2082 2100
+- 2100
+* 2120 5 10 Yea 
+* 2126 8 8 yea 
+* 2136 3 7 yea 
+* 2141 11 3 yo
+- 2152
+: 2169 7 5 People 
+: 2177 3 5 keep 
+: 2181 3 5 on 
+: 2185 6 5 waving 
+: 2193 5 3 this 
+: 2200 15 8 flag
+- 2215 2228
+- 2228
+: 2248 6 10 Cover 
+: 2256 5 8 my 
+: 2264 4 7 back 
+: 2272 12 3 now
+- 2284 2781
+- 2781
+: 2801 7 12 Coming 
+: 2809 3 12 with 
+: 2813 2 12 my 
+: 2816 5 12 own 
+: 2824 4 12 de
+* 2829 13 17 sign 
+: 2847 12 12 feeling 
+: 2861 12 12 strong 
+: 2877 16 12 feeling 
+: 2896 5 12 a
+: 2902 7 10 ble
+- 2909
+: 2923 13 12 Community 
+: 2937 3 12 is 
+: 2941 7 12 coming 
+: 2950 3 12 a
+* 2954 12 17 live 
+: 2973 13 12 loaded 
+: 2988 13 12 weapons 
+: 3004 9 12 on 
+: 3015 4 12 the 
+: 3020 7 12 ta
+: 3028 8 11 ble
+- 3036
+: 3049 1 12 And 
+: 3051 1 12 I’ll 
+: 3053 3 12 keep 
+: 3061 2 12 keep 
+: 3065 2 12 on 
+: 3069 6 12 waving 
+: 3077 4 12 this 
+* 3084 7 17 flag
+- 3091
+: 3100 6 12 Cover 
+: 3109 4 12 my 
+: 3116 8 12 head 
+: 3131 6 12 cover 
+: 3140 5 12 my 
+: 3147 6 12 back 
+: 3155 7 10 now
+- 3162
+: 3179 6 12 People 
+: 3187 3 12 keep 
+: 3191 2 12 on 
+: 3195 6 12 waving 
+: 3203 4 12 this 
+* 3210 8 17 flag
+- 3218
+: 3226 5 12 Cover 
+: 3234 4 12 my 
+: 3241 9 12 head 
+: 3258 4 12 cover 
+: 3265 5 12 my 
+: 3272 5 12 back 
+: 3280 8 10 now
+- 3288
+: 3305 6 12 People 
+: 3313 3 12 keep 
+: 3317 2 12 on 
+: 3321 6 12 waving 
+: 3329 4 12 this 
+* 3336 8 17 flag
+- 3344
+: 3350 1 0 And 
+: 3352 1 0 I’ll 
+: 3354 5 0 cover 
+: 3361 4 0 your 
+: 3368 8 0 head
+- 3376
+: 3381 1 0 And 
+: 3383 1 0 I’ll 
+: 3385 6 0 cover 
+: 3393 4 0 your 
+: 3400 4 0 back 
+: 3408 8 -2 now
+- 3416
+: 3431 6 0 People 
+: 3440 2 0 keep 
+: 3443 1 0 on 
+: 3447 7 0 waving 
+: 3456 2 0 this 
+* 3463 9 5 flag
+- 3472
+: 3479 5 12 Cover 
+: 3487 4 12 my 
+: 3494 9 12 head 
+: 3511 4 12 cover 
+: 3518 5 12 my 
+: 3525 5 12 back 
+: 3533 8 10 now
+- 3541
+: 3551 6 17 Said 
+: 3558 6 17 people 
+: 3566 3 17 keep 
+: 3570 3 17 on 
+: 3574 6 17 waving 
+: 3582 4 15 this 
+* 3590 9 20 flag
+- 3599 3615
+- 3615
+* 3635 4 10 Oh 
+* 3641 8 8 yo 
+* 3652 4 7 yo 
+* 3659 12 3 yo
+- 3671
+: 3685 4 17 People 
+: 3692 3 17 keep 
+: 3697 2 17 on 
+: 3701 7 17 waving 
+: 3710 3 15 this 
+: 3715 10 20 flag
+- 3725 3742
+- 3742
+: 3762 7 10 Cover 
+: 3771 5 8 my 
+: 3780 6 7 back 
+: 3788 10 3 now
+- 3798 3833
+- 3833
+F 3853 5 12 Keep 
+F 3866 5 12 keep 
+F 3882 4 12 keep 
+F 3889 8 12 wa
+F 3898 8 10 ving 
+F 3912 4 10 keep 
+F 3922 5 10 wa
+F 3928 5 8 ving 
+F 3936 10 12 wa
+F 3947 10 10 ving 
+F 3960 4 8 that 
+F 3967 6 12 flag
+- 3973
+F 3977 7 12 Keep 
+F 3992 7 12 keep 
+F 4008 3 12 keep 
+F 4016 6 12 wa
+F 4023 8 10 ving 
+F 4038 4 10 keep 
+F 4046 6 10 wa
+F 4053 7 8 ving 
+F 4062 11 12 wa
+F 4074 9 10 ving 
+F 4086 4 8 that 
+F 4093 10 12 flag
+E
