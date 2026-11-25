@@ -1,0 +1,321 @@
+#ARTIST:Sea Shanty
+#TITLE:Leave Her Johnny
+#CREATOR:aweber
+#BPM:235,82
+#YEAR:1860s
+#VIDEO:v=nCtn6igpgP4
+#GENRE:Shanty
+#LANGUAGE:English
+#GAP:-48,86269188364008
+#ALLKARAOKE_ID:sea-shanty-leave-her-johnny
+#ALLKARAOKE_SID:7832
+#ALLKARAOKE_LASTUPDATE:2026-11-25T06:23:49.200Z
+#ALLKARAOKE_REALBPM:129
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:131
+#MP3:Sea Shanty - Leave Her Johnny.mp3
+: 8 3 3 I
+: 12 3 5 ~ 
+: 16 4 7 thought 
+: 24 4 7 I 
+: 32 4 7 heard 
+: 40 3 3 the
+: 44 3 5 ~ 
+: 48 4 7 Old 
+: 56 4 5 Man 
+: 62 6 3 say:
+- 68
+: 76 9 5 “Leave 
+: 86 6 5 her, 
+: 94 11 5 Joh
+: 106 4 3 nny, 
+: 112 3 7 leave
+: 116 3 10 ~ 
+: 120 6 10 her.”
+- 126
+: 132 1 15 To
+: 134 5 14 ~
+: 140 5 12 mo
+: 146 6 12 rrow 
+: 154 6 10 you 
+: 162 6 7 will 
+: 170 6 8 get 
+: 178 5 8 your 
+: 184 8 7 pay
+- 192
+: 196 3 3 And 
+: 200 3 5 it’s 
+: 204 10 7 time 
+: 216 3 8 for 
+: 220 8 7 us 
+: 230 3 5 to 
+: 234 8 5 leave 
+: 244 6 3 her
+- 250
+: 264 7 5 Leave 
+: 272 6 5 her, 
+: 280 11 5 Joh
+: 292 4 3 nny, 
+: 298 3 7 leave
+: 302 3 10 ~ 
+: 306 8 10 her!
+- 314
+: 320 3 15 Oh,
+: 324 3 14 ~ 
+: 328 6 12 leave 
+: 336 6 12 her, 
+: 344 11 12 Joh
+: 356 3 10 nny, 
+: 360 6 10 leave 
+: 368 6 7 her!
+- 374
+: 384 3 7 For 
+: 388 3 10 the 
+: 392 3 12 voy
+: 396 3 12 age 
+: 400 6 12 is 
+: 408 6 10 long 
+: 416 3 7 and 
+: 420 3 7 the 
+: 424 6 8 winds 
+: 432 6 8 don’t 
+: 440 6 7 blow
+- 446
+: 448 3 3 And 
+: 452 3 5 it’s 
+: 456 8 7 time 
+: 466 4 8 for 
+: 472 6 7 us 
+: 482 3 5 to 
+: 486 8 5 leave 
+: 496 6 3 her
+- 502
+: 508 3 3 Oh, 
+: 512 3 5 the 
+: 516 8 7 wind 
+: 526 4 7 was 
+: 532 7 7 foul 
+: 540 3 3 and 
+: 544 3 5 the 
+: 548 6 7 sea 
+: 556 4 5 ran 
+: 562 8 3 high
+- 570
+: 580 7 5 “Leave 
+: 588 6 5 her, 
+: 596 11 5 Joh
+: 608 3 3 nny, 
+: 612 3 7 leave
+: 616 3 10 ~ 
+: 620 8 10 her!”
+- 628
+: 634 3 15 She
+: 638 3 14 ~ 
+: 642 6 12 shipped 
+: 650 4 12 it 
+: 656 6 10 green 
+: 664 6 7 and 
+: 672 6 8 none 
+: 680 6 8 went 
+: 688 6 7 by
+- 694
+: 700 3 3 And 
+: 704 1 5 it’s 
+: 706 8 7 time 
+: 718 3 8 for 
+: 722 8 7 us 
+: 734 3 5 to 
+: 738 8 5 leave 
+: 748 6 3 her
+- 754
+: 768 7 5 Leave 
+: 776 6 5 her, 
+: 784 11 5 Joh
+: 796 3 3 nny, 
+: 800 3 7 leave
+: 804 3 10 ~ 
+: 808 8 10 her!
+- 816
+: 824 1 15 Oh,
+: 826 4 14 ~ 
+: 832 7 12 leave 
+: 840 7 12 her, 
+: 848 11 12 Joh
+: 860 3 10 nny, 
+: 864 8 10 leave 
+: 874 8 7 her!
+- 882
+: 886 3 7 For 
+: 890 3 10 the 
+: 894 5 12 voy
+: 900 3 12 age 
+: 904 4 12 is 
+: 910 6 10 long 
+: 918 3 7 and 
+: 922 3 7 the 
+: 926 6 8 winds 
+: 934 4 8 don’t 
+: 940 6 7 blow
+- 946
+: 950 3 3 And 
+: 954 3 5 it’s 
+: 958 8 7 time 
+: 970 3 8 for 
+: 974 8 7 us 
+: 986 3 5 to 
+: 990 7 5 leave 
+: 998 8 3 her
+- 1006
+: 1014 1 3 I
+: 1016 3 5 ~ 
+: 1020 6 7 hate 
+: 1028 4 7 to 
+: 1034 8 7 sail 
+: 1044 3 3 on 
+: 1048 3 5 this 
+: 1052 3 7 rot
+: 1056 6 5 ten 
+: 1064 8 3 tub
+- 1072
+: 1082 9 5 “Leave 
+: 1092 6 5 her, 
+: 1100 9 5 Joh
+: 1110 3 3 nny, 
+: 1114 3 7 leave
+: 1118 3 10 ~ 
+: 1122 8 10 her!”
+- 1130
+: 1136 3 15 No
+: 1140 3 14 ~ 
+: 1144 9 12 grog 
+: 1154 7 12 all
+: 1162 8 10 owed 
+: 1172 3 7 and 
+: 1176 3 8 rot
+: 1180 4 8 ten 
+: 1186 8 7 grub
+- 1194
+: 1200 3 3 And 
+: 1204 3 5 it’s 
+: 1208 8 7 time 
+: 1220 4 8 for 
+: 1226 8 7 us 
+: 1236 2 5 to 
+: 1240 7 5 leave 
+: 1248 8 3 her
+- 1256
+: 1272 7 5 Leave 
+: 1280 4 5 her, 
+: 1288 11 5 Joh
+: 1300 3 3 nny, 
+: 1304 3 7 leave
+: 1308 3 10 ~ 
+: 1312 10 10 her!
+- 1322
+: 1328 1 15 Oh,
+: 1330 4 14 ~ 
+: 1336 5 12 leave 
+: 1342 6 12 her, 
+: 1350 11 12 Joh
+: 1362 4 10 nny, 
+: 1368 7 10 leave 
+: 1376 4 7 her!
+- 1380
+: 1390 3 7 For 
+: 1394 3 10 the 
+: 1398 3 12 voy
+: 1402 4 12 age 
+: 1408 4 12 is 
+: 1414 6 10 long 
+: 1422 3 7 and 
+: 1426 3 7 the 
+: 1430 6 8 winds 
+: 1438 6 8 don’t 
+: 1446 5 7 blow
+- 1451
+: 1452 3 3 And 
+: 1456 3 5 it’s 
+: 1460 11 7 time 
+: 1472 3 8 for 
+: 1476 10 7 us 
+: 1488 3 5 to 
+: 1492 8 5 leave 
+: 1502 6 3 her
+- 1508
+: 1516 1 3 We
+: 1518 3 5 ~ 
+: 1522 6 7 swear 
+: 1530 4 7 by 
+: 1536 6 7 rote 
+: 1548 1 3 for
+: 1550 4 5 ~ 
+: 1556 4 7 want 
+: 1564 4 5 of 
+: 1570 8 3 more
+- 1578
+: 1584 9 5 “Leave 
+: 1594 6 5 her, 
+: 1602 11 5 Joh
+: 1614 3 3 nny, 
+: 1618 3 7 leave
+: 1622 3 10 ~ 
+: 1626 8 10 her!”
+- 1634
+: 1640 3 15 But
+: 1644 5 14 ~ 
+: 1650 7 12 now 
+: 1658 5 12 we’re 
+: 1664 6 10 through 
+: 1672 3 7 so 
+: 1676 3 7 we’ll 
+: 1680 6 8 go 
+: 1688 6 8 on 
+: 1696 7 7 shore
+- 1703
+: 1704 3 3 And 
+: 1708 3 5 it’s 
+: 1712 10 7 time 
+: 1724 3 8 for 
+: 1728 10 7 us 
+: 1740 3 5 to 
+: 1744 6 5 leave 
+: 1752 8 3 her
+- 1760
+: 1774 9 5 Leave 
+: 1784 6 5 her, 
+: 1792 9 5 Joh
+: 1802 4 3 nny, 
+: 1808 3 7 leave
+: 1812 3 10 ~ 
+: 1816 8 10 her!
+- 1824
+: 1828 3 15 Oh,
+: 1832 5 14 ~ 
+: 1838 7 12 leave 
+: 1846 6 12 her, 
+: 1854 11 12 John
+: 1866 3 10 ny, 
+: 1870 7 10 leave 
+: 1878 8 7 her!
+- 1886
+: 1892 3 7 For 
+: 1896 3 10 the 
+: 1900 5 12 voy
+: 1906 4 12 age 
+: 1912 3 12 is 
+: 1916 7 10 long 
+: 1924 3 7 and 
+: 1928 3 7 the 
+: 1932 6 8 winds 
+: 1940 3 8 don’t 
+: 1944 8 7 blow
+- 1952
+: 1956 3 3 And 
+: 1960 3 5 it’s 
+: 1964 11 7 time 
+: 1976 3 8 for 
+: 1980 8 7 us 
+: 1990 3 5 to 
+: 1994 8 5 leave 
+: 2004 6 3 her
+E

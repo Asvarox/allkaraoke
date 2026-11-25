@@ -1,0 +1,544 @@
+#ARTIST:DJ BoBo
+#TITLE:Chihuahua
+#CREATOR:jockel1974
+#BPM:340,3
+#YEAR:2002
+#VIDEO:v=y654TxcRuL0
+#LANGUAGE:English
+#GAP:6626,188657067293
+#EDITION:SingStar AprèS-Ski Party
+#ALLKARAOKE_ID:dj-bobo-chihuahua
+#ALLKARAOKE_SID:7898
+#ALLKARAOKE_LASTUPDATE:2026-11-25T06:24:03.719Z
+#ALLKARAOKE_ARTISTORIGIN:CH
+#ALLKARAOKE_REALBPM:200
+#ALLKARAOKE_SOURCEURL:DJ BoBo
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:183
+#MP3:DJ BoBo - Chihuahua.mp3
+F 23 3 20 Chi
+F 27 6 20 hua
+F 34 5 20 hua
+- 39 59
+- 59
+F 82 4 20 Chi
+F 87 5 20 hua
+F 93 5 20 hua
+- 98 121
+- 121
+F 144 4 20 Chi
+F 149 5 20 hua
+F 155 5 20 hua
+- 160 177
+- 177
+F 200 4 20 Chi
+F 205 7 20 hua
+F 213 6 20 hua
+- 219 242
+- 242
+F 265 4 20 Chi
+F 270 5 20 hua
+F 276 5 20 hua
+- 281 302
+- 302
+F 325 4 20 Chi
+F 330 6 20 hua
+F 337 4 20 hua
+- 341 362
+- 362
+F 385 2 20 Chi
+F 388 6 20 hua
+F 395 6 20 hua
+- 401
+: 404 19 15 Oh 
+: 426 3 13 Chi
+: 430 6 13 hua
+* 438 6 11 hua
+- 444
+F 461 2 20 I’m 
+F 464 3 20 wal
+F 468 2 20 king 
+F 471 2 20 in 
+F 476 2 20 the 
+F 479 4 20 street
+- 483
+F 486 2 20 And 
+F 491 2 20 the 
+F 494 4 20 moon 
+F 501 6 20 shines 
+F 509 3 20 bright
+- 512
+F 513 2 20 A 
+F 516 3 20 lit
+F 520 2 20 tle 
+F 524 4 20 me
+F 529 2 20 lo
+F 532 2 20 dy 
+F 536 2 20 keeps 
+F 539 3 20 spin
+F 543 2 20 ning
+- 545
+F 547 3 20 On 
+F 551 2 20 my 
+F 555 4 20 mind 
+F 562 4 20 to
+F 567 6 20 night
+- 573
+F 581 2 20 I 
+F 585 4 20 got
+F 590 5 20 cha
+- 595
+F 608 2 20 It’s 
+F 612 2 20 the 
+F 616 2 20 song 
+F 619 2 20 a
+F 622 3 20 bout 
+F 627 3 20 Chi
+F 631 6 20 hua
+F 638 4 20 hua
+- 642
+F 645 3 20 Yeah 
+F 650 4 20 that’s 
+F 657 4 20 cool 
+F 664 7 20 al
+F 672 19 20 right
+- 691
+F 695 2 20 It 
+F 699 4 20 means 
+F 706 8 20 fun
+- 714
+F 728 2 20 And 
+F 733 2 20 a 
+F 736 3 20 life 
+F 741 1 20 with
+F 743 5 20 out 
+F 751 2 20 sor
+F 754 4 20 row
+- 758
+F 759 3 20 Feels 
+F 766 6 20 young
+- 772
+F 789 2 20 When 
+F 793 2 20 you 
+F 796 4 20 think 
+F 801 1 20 a
+F 803 4 20 bout 
+F 809 1 20 to
+F 811 3 20 mor
+F 815 2 20 row
+- 817
+F 819 3 20 Say 
+F 826 6 20 yo
+- 832
+F 847 2 20 When 
+F 850 3 20 you’re 
+F 854 1 20 a
+F 856 4 20 bout 
+F 861 2 20 to 
+F 865 6 20 freak 
+F 872 6 20 out
+- 878
+F 880 6 20 Just 
+F 888 3 20 go 
+F 892 2 20 and 
+F 895 4 20 then
+- 899
+F 902 2 20 Shout 
+F 906 2 20 it 
+F 910 3 20 out 
+F 916 16 20 loud
+- 932
+: 945 2 6 Chi
+: 948 5 11 hua
+: 955 5 11 hua 
+: 963 8 11 here
+- 971
+: 975 2 6 Chi
+: 978 3 11 hua
+: 982 4 11 hua 
+* 990 11 13 there
+- 1001
+: 1008 3 11 Eve
+: 1012 2 11 ry
+: 1015 4 11 bo
+: 1020 2 11 dy 
+: 1023 4 11 wants 
+: 1031 3 11 it
+- 1034
+: 1039 3 11 Eve
+: 1043 5 11 ry
+: 1050 10 13 where
+- 1060
+: 1068 3 11 Sing 
+: 1073 4 11 it 
+: 1080 7 11 loud
+- 1087
+: 1096 2 11 And 
+: 1099 5 11 life 
+: 1106 6 11 can 
+: 1114 4 13 be 
+: 1122 6 15 so 
+: 1129 7 13 ea
+: 1137 5 11 ~
+* 1144 13 11 sy
+- 1157
+F 1171 16 20 Chihuahua
+- 1187
+: 1189 5 16 What 
+: 1197 3 16 can 
+: 1201 4 11 make 
+: 1209 5 11 you 
+: 1216 7 18 move?
+- 1223
+F 1232 14 20 Chihuahua
+- 1246
+: 1249 5 18 Can 
+: 1257 4 18 you 
+: 1262 4 11 feel 
+: 1270 5 11 the 
+: 1277 7 16 groove?
+- 1284
+F 1292 14 20 Chihuahua
+- 1306
+: 1311 5 16 What 
+: 1318 3 16 can 
+: 1322 4 11 make 
+: 1330 4 11 you 
+: 1337 8 18 dance?
+- 1345
+F 1352 14 20 Chihuahua
+- 1366
+: 1370 20 15 Oh 
+: 1393 4 13 Chi
+: 1398 4 13 hua
+: 1405 7 11 hua
+- 1412
+F 1413 16 20 Chihuahua
+- 1429
+: 1431 4 16 What 
+: 1439 3 16 can 
+: 1443 5 11 make 
+: 1451 5 11 you 
+: 1459 6 18 sing?
+- 1465
+F 1473 14 20 Chihuahua
+- 1487
+: 1491 4 18 Take 
+: 1499 3 18 it 
+: 1503 4 11 and 
+: 1511 5 11 you 
+* 1518 6 16 win
+- 1524
+F 1533 14 20 Chihuahua
+- 1547
+: 1552 4 16 What 
+: 1560 3 16 can 
+: 1564 4 11 bring 
+: 1572 4 11 you 
+: 1579 6 18 joy?
+- 1585
+F 1595 14 20 Chihuahua
+- 1609
+: 1613 17 15 Oh 
+: 1635 4 13 Chi
+: 1640 5 13 hua
+: 1647 11 11 hua
+- 1658
+F 1670 2 20 I’m 
+F 1673 3 20 dri
+F 1677 2 20 ving 
+F 1680 3 20 in 
+F 1684 2 20 my 
+F 1688 5 20 car
+- 1693
+F 1695 3 20 Loo
+F 1699 2 20 king 
+F 1702 3 20 for 
+F 1706 2 20 a 
+F 1710 3 20 par
+F 1714 2 20 king 
+F 1717 6 20 space
+- 1723
+F 1725 3 20 There 
+F 1730 2 20 it 
+F 1734 2 20 is 
+F 1738 4 20 my 
+F 1745 4 20 place
+- 1749
+F 1752 5 20 Some
+F 1758 4 20 one 
+F 1763 5 20 else 
+F 1769 3 20 wins 
+F 1776 2 20 the 
+F 1779 5 20 race
+- 1784
+F 1786 9 20 No, 
+F 1799 2 20 I 
+F 1802 2 20 give 
+F 1806 3 20 up
+- 1809
+F 1813 1 20 To
+F 1815 4 20 day 
+F 1821 2 20 is 
+F 1824 2 20 not 
+F 1828 3 20 my 
+F 1835 6 20 day
+- 1841
+F 1844 2 20 But 
+F 1848 2 20 then 
+F 1851 2 20 I 
+F 1855 2 20 take 
+F 1858 2 20 a 
+F 1862 5 20 deep 
+F 1870 4 20 breath 
+F 1877 5 20 and 
+F 1884 6 20 say
+- 1890
+F 1908 3 20 Calm 
+F 1915 8 20 down
+- 1923
+F 1934 2 20 When 
+F 1937 3 20 you’re 
+F 1942 1 20 a
+F 1944 4 20 bout 
+F 1949 2 20 to 
+F 1952 5 20 go 
+F 1960 3 20 cra
+F 1964 2 20 zy
+- 1966
+F 1967 4 20 Turn 
+F 1972 2 20 a
+F 1975 9 20 round
+- 1984
+F 1994 2 20 And 
+F 1998 2 20 feel 
+F 2002 2 20 as 
+F 2006 2 20 fresh 
+F 2010 2 20 as 
+F 2014 2 20 a 
+F 2018 5 20 dai
+F 2024 3 20 sy
+- 2027
+F 2029 3 20 Just 
+F 2036 6 20 run
+- 2042
+F 2055 1 20 Be
+F 2057 4 20 cause 
+F 2062 2 20 it’s 
+F 2065 4 20 time 
+F 2072 2 20 to 
+F 2077 6 20 go
+- 2083
+F 2088 3 20 Have 
+F 2095 3 20 fun 
+F 2100 2 20 and 
+F 2103 2 20 let 
+F 2108 2 20 the 
+F 2111 5 20 whole 
+F 2118 5 20 world 
+F 2126 9 20 know
+- 2135
+F 2139 2 20 Chi
+F 2142 5 20 hua
+F 2148 4 20 hua
+- 2152
+: 2154 2 6 Chi
+: 2157 5 11 hua
+: 2164 5 11 hua 
+: 2172 8 11 here
+- 2180
+: 2184 2 6 Chi
+: 2187 3 11 hua
+: 2191 4 11 hua 
+: 2199 11 13 there
+- 2210
+: 2217 3 11 Eve
+: 2221 2 11 ry
+: 2224 4 11 bo
+: 2229 2 11 dy 
+: 2232 4 11 wants 
+: 2240 3 11 it
+- 2243
+: 2248 3 11 Eve
+: 2252 5 11 ry
+: 2259 10 13 where
+- 2269
+: 2277 3 11 Sing 
+: 2282 4 11 it 
+: 2289 7 11 loud
+- 2296
+: 2305 2 11 And 
+: 2308 5 11 life 
+: 2315 6 11 can 
+: 2323 4 13 be 
+: 2331 6 15 so 
+: 2338 7 13 ea
+: 2346 5 11 ~
+: 2353 14 11 sy
+- 2367
+F 2383 16 20 Chihuahua
+- 2399
+: 2401 5 16 What 
+: 2409 3 16 can 
+: 2413 4 11 make 
+: 2421 5 11 you 
+: 2428 7 18 move?
+- 2435
+F 2444 14 20 Chihuahua
+- 2458
+: 2461 5 18 Can 
+: 2469 4 18 you 
+: 2474 4 11 feel 
+: 2482 5 11 the 
+* 2489 7 16 groove?
+- 2496
+F 2504 14 20 Chihuahua
+- 2518
+* 2523 5 16 What 
+: 2530 3 16 can 
+: 2534 4 11 make 
+: 2542 4 11 you 
+: 2549 8 18 dance?
+- 2557
+F 2564 14 20 Chihuahua
+- 2578
+: 2582 20 15 Oh 
+: 2605 4 13 Chi
+: 2610 4 13 hua
+: 2617 7 11 hua
+- 2624
+F 2625 15 20 Chihuahua
+- 2640
+: 2643 4 16 What 
+: 2651 3 16 can 
+: 2655 5 11 make 
+: 2663 5 11 you 
+: 2671 6 18 sing?
+- 2677
+F 2685 14 20 Chihuahua
+- 2699
+: 2703 4 18 Take 
+: 2711 3 18 it 
+: 2715 4 11 and 
+: 2723 5 11 you 
+: 2731 6 16 win
+- 2737
+F 2745 14 20 Chihuahua
+- 2759
+: 2764 4 16 What 
+: 2772 3 16 can 
+: 2776 4 11 bring 
+: 2784 4 11 you 
+: 2791 6 18 joy?
+- 2797
+F 2807 14 20 Chihuahua
+- 2821
+: 2825 17 15 Oh 
+: 2847 4 13 Chi
+: 2852 5 13 hua
+: 2859 7 11 hua
+- 2866
+F 2867 15 20 Chihuahua
+- 2882 3024
+- 3024
+F 3047 3 20 Chi
+F 3051 6 20 hua
+F 3058 3 20 hua
+- 3061 3084
+- 3084
+F 3107 2 20 Chi
+F 3110 6 20 hua
+F 3117 4 20 hua
+- 3121 3146
+- 3146
+F 3169 2 20 Chi
+F 3172 6 20 hua
+F 3179 4 20 hua
+- 3183 3203
+- 3203
+F 3226 4 20 Chi
+F 3231 7 20 hua
+F 3239 6 20 hua
+- 3245 3267
+- 3267
+F 3290 3 20 Chi
+F 3294 6 20 hua
+F 3301 3 20 hua
+- 3304 3328
+- 3328
+F 3351 2 20 Chi
+F 3354 7 20 hua
+F 3362 4 20 hua
+- 3366 3388
+- 3388
+F 3411 2 20 Chi
+F 3414 6 20 hua
+F 3421 4 20 hua
+- 3425
+: 3430 19 15 Ooh 
+: 3452 3 13 Chi
+: 3456 6 13 hua
+: 3464 6 11 hua
+- 3470
+F 3472 14 20 Chihuahua
+- 3486
+: 3489 4 16 What 
+: 3497 3 16 can 
+: 3501 5 11 make 
+: 3509 5 11 you 
+: 3517 6 18 move?
+- 3523
+F 3531 14 20 Chihuahua
+- 3545
+: 3550 4 18 Can 
+: 3558 3 18 you 
+* 3562 4 11 feel 
+: 3570 5 11 the 
+: 3577 6 16 groove?
+- 3583
+F 3591 14 20 Chihuahua
+- 3605
+: 3610 4 16 What 
+: 3618 3 16 can 
+: 3622 4 11 make 
+* 3630 4 11 you 
+: 3637 6 18 dance?
+- 3643
+F 3653 14 20 Chihuahua
+- 3667
+: 3671 17 15 Oh 
+: 3693 4 13 Chi
+: 3698 5 13 hua
+: 3705 8 11 hua
+- 3713
+F 3715 14 20 Chihuahua
+- 3729
+: 3731 4 16 What 
+: 3739 3 16 can 
+: 3743 5 11 make 
+: 3751 5 11 you 
+* 3759 6 18 shout?
+- 3765
+F 3773 14 20 Chihuahua
+- 3787
+: 3791 4 18 What 
+: 3799 3 18 it’s 
+: 3803 4 11 all 
+: 3811 5 11 a
+: 3819 6 16 bout
+- 3825
+F 3833 14 20 Chihuahua
+- 3847
+: 3852 4 16 What 
+: 3860 3 16 can 
+: 3864 4 11 bring 
+: 3872 4 11 you 
+: 3879 6 18 love?
+- 3885
+F 3895 14 20 Chihuahua
+- 3909
+: 3913 17 15 Oh 
+: 3935 4 13 Chi
+: 3940 5 13 hua
+: 3947 9 11 hua
+E

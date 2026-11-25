@@ -1,0 +1,226 @@
+#ARTIST:Pink Floyd
+#TITLE:Shine On You Crazy Diamond (Parts I-V)
+#CREATOR:spark
+#BPM:277,3
+#YEAR:1975
+#VIDEO:v=cWGE9Gi0bB0
+#LANGUAGE:English
+#GAP:506846,3252794807
+#ALLKARAOKE_ID:pink-floyd-shine-on-you-crazy-diamond-parts-i-v
+#ALLKARAOKE_SID:7833
+#ALLKARAOKE_LASTUPDATE:2026-11-25T06:23:51.578Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:45
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:803
+#MP3:Pink Floyd - Shine On You Crazy Diamond (Parts I-V).mp3
+: 18 2 12 Re
+: 22 3 14 mem
+: 26 3 12 ber 
+: 31 5 14 when 
+: 39 7 14 you 
+: 47 4 17 were 
+: 53 11 14 young?
+- 64 108
+- 108
+: 126 2 6 You 
+: 132 5 6 shone 
+: 138 6 8 like 
+: 146 2 8 the 
+: 152 10 10 sun.
+- 162 185
+- 185
+* 203 23 19 Shine 
+* 228 12 19 On 
+* 242 6 17 You 
+* 252 36 15 Cra
+* 291 3 14 zy 
+* 296 6 17 Dia
+* 303 3 15 ~
+* 307 3 14 ~
+* 312 5 12 mond.
+- 317 380
+- 380
+: 398 6 14 Now 
+: 406 8 14 there’s 
+: 416 1 12 a 
+: 419 6 14 look 
+: 427 6 14 in 
+: 437 5 14 your 
+: 444 10 14 eyes
+- 454 488
+- 488
+: 506 4 6 Like 
+: 514 5 6 black 
+: 521 8 6 holes 
+: 532 2 8 in 
+: 535 1 10 the 
+* 540 11 10 sky.
+- 551 577
+- 577
+: 595 22 19 Shine 
+: 619 13 19 On 
+: 634 5 17 You 
+: 643 36 15 Craz
+: 684 3 14 y 
+: 688 6 17 Dia
+: 695 3 15 ~
+: 699 3 14 ~
+: 704 6 12 mond.
+- 710 754
+- 754
+: 772 4 17 You 
+: 778 5 17 were 
+: 787 7 19 caught 
+: 796 4 19 in 
+: 802 3 17 the 
+: 807 4 19 cross
+: 815 8 22 fire
+- 823
+: 831 2 17 Of 
+: 835 6 18 child
+: 842 4 18 hood 
+: 847 3 18 and 
+: 856 6 18 star
+: 863 7 22 dom
+- 870
+: 880 9 17 Blown 
+: 890 6 17 on 
+: 897 2 17 the 
+: 905 22 17 steel 
+: 931 14 16 breeze.
+- 945 965
+- 965
+: 983 3 14 Come 
+: 987 9 14 on 
+: 998 4 14 you 
+: 1004 5 15 tar
+: 1012 5 15 get 
+: 1027 3 15 for 
+: 1031 6 16 far
+: 1038 4 16 a
+: 1043 8 16 way 
+: 1052 7 16 laugh
+: 1060 7 16 ter
+- 1067
+: 1080 3 17 Come 
+: 1084 7 17 on 
+: 1094 4 17 you 
+: 1102 8 17 stran
+: 1112 5 14 ger, 
+: 1119 4 17 you 
+: 1126 6 17 le
+: 1134 6 14 gend, 
+: 1142 4 18 you 
+: 1150 6 18 mar
+: 1158 5 14 tyr
+- 1163
+: 1167 4 18 And 
+: 1174 16 19 shine.
+- 1190 1543
+- 1543
+: 1561 3 14 You 
+: 1566 5 14 reached 
+: 1573 7 14 for 
+: 1581 2 12 the 
+: 1587 6 14 se
+: 1596 8 14 cret 
+: 1605 5 17 too 
+: 1616 8 14 soon
+- 1624 1665
+- 1665
+: 1683 3 6 You 
+: 1690 9 8 cried 
+: 1700 3 8 for 
+: 1704 3 8 the 
+: 1709 8 10 moon.
+- 1717 1743
+- 1743
+: 1761 21 19 Shine 
+: 1784 13 19 On 
+: 1799 5 17 You 
+: 1807 39 15 Cra
+: 1848 3 14 zy 
+: 1853 5 17 Dia
+: 1860 3 15 ~
+: 1864 3 14 ~
+: 1869 5 12 mond.
+- 1874 1934
+- 1934
+: 1952 5 14 Threa
+: 1958 6 14 tened 
+: 1966 9 12 by 
+: 1979 5 14 shad
+: 1985 6 14 ows 
+: 1994 3 14 at 
+: 1999 11 14 night
+- 2010 2046
+- 2046
+: 2064 2 6 And 
+: 2067 5 6 ex
+: 2074 9 6 posed 
+: 2087 2 8 in 
+: 2090 2 10 the 
+: 2093 14 10 light.
+- 2107 2129
+- 2129
+: 2147 23 19 Shine 
+: 2172 13 19 On 
+: 2187 4 17 You 
+: 2195 38 15 Cra
+: 2235 2 14 zy 
+: 2240 5 17 Dia
+: 2246 3 15 ~
+: 2250 3 14 ~
+: 2254 5 12 mond.
+- 2259 2305
+- 2305
+: 2323 4 17 Well 
+: 2329 5 17 you 
+* 2337 6 19 wore 
+* 2345 6 19 out 
+* 2353 4 17 your 
+* 2359 4 19 wel
+* 2365 7 22 come
+- 2372
+: 2380 3 17 With 
+: 2385 5 18 ran
+: 2392 5 18 dom 
+: 2399 3 18 pre
+: 2406 4 18 cis
+: 2411 6 22 ion
+- 2417
+: 2431 8 17 Rode 
+: 2440 5 17 on 
+: 2447 2 17 the 
+: 2454 23 17 steel 
+: 2479 14 16 breeze.
+- 2493 2514
+- 2514
+: 2532 3 14 Come 
+: 2536 6 14 on 
+: 2544 5 14 you 
+: 2552 5 15 ra
+: 2558 4 15 ver, 
+: 2573 2 15 you 
+: 2578 6 16 see
+: 2585 7 16 er 
+: 2593 4 16 of 
+: 2599 3 16 vis
+: 2604 9 16 ions,
+- 2613
+: 2626 3 17 Come 
+: 2630 8 17 on 
+: 2640 5 17 you 
+: 2647 6 17 pain
+: 2656 5 14 ter, 
+: 2664 5 17 you 
+: 2672 5 17 pi
+: 2679 4 14 per, 
+: 2687 6 17 you 
+: 2695 5 17 pris
+: 2703 5 14 oner
+- 2708
+* 2713 3 18 And 
+* 2720 14 19 shine.
+E
