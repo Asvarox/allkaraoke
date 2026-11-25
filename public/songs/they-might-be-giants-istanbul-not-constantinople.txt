@@ -1,0 +1,424 @@
+#ARTIST:They Might Be Giants
+#TITLE:Istanbul (Not Constantinople)
+#CREATOR:Relisch
+#BPM:300
+#YEAR:1990
+#PREVIEWSTART:35,68
+#VIDEO:v=0XlO39kCQ-8
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:34680
+#ALLKARAOKE_ID:they-might-be-giants-istanbul-not-constantinople
+#ALLKARAOKE_SID:7852
+#ALLKARAOKE_LASTUPDATE:2026-11-25T06:23:53.301Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:114
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:155
+#VERSION:1.0.0
+#MP3:They Might Be Giants - Istanbul (Not Constantinople).m4a
+#COVER:They Might Be Giants - Istanbul (Not Constantinople) [CO].jpg
+#BACKGROUND:They Might Be Giants - Istanbul (Not Constantinople) [BG].jpg
+#MEDLEYSTARTBEAT:0
+#MEDLEYENDBEAT:724
+: 20 4 5 Is
+: 26 3 8 tan
+: 31 4 12 bul 
+: 36 2 0 was 
+: 39 5 5 Con
+: 45 4 8 stan
+: 50 2 13 tin
+: 53 1 12 o
+: 55 1 10 ple
+- 56
+: 57 2 5 Now 
+: 60 1 0 it’s 
+: 62 4 5 Is
+: 68 3 8 tan
+: 73 3 12 bul, 
+: 77 2 0 not 
+: 81 4 5 Con
+: 87 3 8 stan
+: 92 1 13 tin
+: 94 1 12 o
+: 96 1 8 ple
+- 97
+: 99 2 5 Been 
+: 102 1 0 a 
+: 105 3 4 long 
+: 110 3 7 time 
+: 115 4 10 gone, 
+: 123 5 4 Con
+: 129 3 7 stan
+: 134 1 13 tin
+: 136 1 12 o
+: 138 1 10 ple
+- 139
+: 141 1 8 Now 
+: 143 2 7 it’s 
+: 146 1 5 Turk
+: 148 2 5 ish 
+: 151 1 5 de
+: 154 3 5 light 
+: 162 2 5 on 
+: 165 2 5 a 
+: 168 2 5 moon
+: 171 3 5 lit 
+: 176 5 5 night
+- 181
+: 188 4 5 Eve
+: 194 3 8 ry 
+: 199 4 12 gal 
+: 204 2 0 in 
+: 207 5 5 Con
+: 213 4 8 stan
+: 218 2 13 tin
+: 221 1 12 o
+: 223 1 10 ple
+- 224
+: 225 2 5 Lives 
+: 228 1 0 in 
+: 230 4 5 Is
+: 236 3 8 tan
+: 241 3 12 bul, 
+: 245 2 0 not 
+: 249 4 5 Con
+: 255 3 8 stan
+: 260 1 13 tin
+: 262 1 12 o
+: 264 1 8 ple
+- 265
+: 266 1 5 So 
+: 268 2 0 if 
+: 271 5 4 you’ve 
+: 277 2 7 a 
+: 280 4 10 date 
+: 287 2 0 in 
+: 290 4 4 Con
+: 295 4 7 stan
+: 301 1 13 tin
+: 303 1 12 o
+: 305 1 10 ple
+- 306
+: 308 1 8 She’ll 
+: 311 1 7 be 
+: 313 2 5 wait
+: 316 2 5 ing 
+: 319 2 5 in 
+: 324 3 0 Is
+: 330 3 4 tan
+: 335 6 5 bul
+- 341
+: 346 4 5 Ev
+: 352 4 7 en 
+: 357 9 8 old 
+: 367 8 7 New 
+: 377 10 5 York 
+: 392 4 7 was 
+: 398 4 8 once 
+: 403 4 10 New 
+: 409 3 7 Am
+: 414 4 8 ster
+: 420 11 5 dam
+- 431
+: 439 4 4 Why 
+: 445 3 4 they 
+: 450 3 4 changed 
+: 455 2 4 it 
+: 458 3 7 I 
+: 464 4 7 can’t 
+: 469 8 7 say
+- 477
+* 481 2 5 Peo
+* 484 1 5 ple 
+* 487 3 7 just 
+* 491 5 8 liked 
+: 497 4 10 it 
+: 503 1 12 bet
+: 505 2 12 ter 
+: 508 3 12 that 
+: 513 3 12 way
+- 516
+: 519 3 12 So 
+: 523 4 5 take 
+: 528 4 8 me 
+: 534 3 12 back 
+: 539 1 0 to 
+: 542 4 5 Con
+: 547 4 8 stan
+: 553 1 13 tin
+: 555 2 12 o
+: 558 1 8 ple
+- 559
+: 560 2 0 No, 
+: 563 1 0 you 
+: 565 4 5 can’t 
+: 571 3 8 go 
+: 576 2 12 back 
+: 581 2 0 to 
+: 585 4 5 Con
+: 590 1 8 stan
+: 595 1 13 tin
+: 597 1 12 o
+: 600 1 10 ple
+- 601
+: 603 1 5 Been 
+: 605 1 0 a 
+: 608 3 4 long 
+: 613 3 7 time 
+: 618 4 10 gone, 
+: 626 5 4 Con
+: 632 3 7 stan
+: 637 1 13 tin
+: 639 1 12 o
+: 641 1 10 ple
+- 642
+: 644 1 8 Why 
+: 647 1 7 did 
+: 649 4 5 Con
+: 654 2 5 stan
+: 657 1 5 tin
+: 660 1 5 o
+: 663 1 7 ple 
+: 665 1 8 get 
+: 668 1 10 the 
+: 671 6 12 works?
+- 677
+: 686 3 12 That’s 
+: 691 5 0 no
+: 697 1 0 bo
+: 699 2 0 dy’s 
+: 702 2 0 busi
+: 705 1 1 ness 
+: 707 2 1 but 
+: 710 2 4 the 
+: 713 31 5 Turks
+- 744
+: 754 28 17 Oh
+- 782
+: 785 2 17 Oh
+: 788 2 20 ~
+* 791 5 19 ~
+: 797 25 17 ~
+- 822
+: 826 5 19 Oh
+: 832 5 19 ~
+: 838 26 16 ~
+- 864
+: 868 4 19 Oh
+: 873 5 19 ~
+: 879 8 17 ~
+- 887
+: 890 2 17 Is
+: 893 2 17 tan
+: 897 22 17 bul
+- 919
+: 922 4 5 Do 
+: 927 3 8 do 
+: 932 3 12 do 
+: 941 4 5 do 
+: 946 4 8 do 
+: 951 1 13 do 
+: 953 2 12 do 
+: 956 1 10 do 
+: 958 2 5 do
+- 960
+: 964 4 5 Do 
+: 969 3 8 do 
+: 974 3 12 do 
+: 982 4 5 do 
+: 987 4 8 do 
+: 992 1 13 do 
+: 994 3 12 do 
+: 998 1 10 do 
+: 1000 2 5 do
+- 1002
+: 1007 3 4 Do 
+: 1011 3 7 do 
+: 1016 3 10 do 
+: 1024 4 4 do 
+: 1029 4 7 do 
+: 1035 1 13 do 
+: 1037 2 12 do 
+: 1040 1 10 do 
+: 1042 2 8 do 
+: 1045 2 7 do 
+: 1048 1 5 do 
+: 1050 2 5 do 
+: 1053 2 5 do
+- 1055
+: 1068 2 12 Is
+: 1071 2 12 tan
+: 1074 4 12 bul
+- 1078
+: 1080 3 5 Ev
+: 1085 4 7 en 
+: 1090 9 8 old 
+: 1100 8 7 New 
+: 1110 10 5 York 
+: 1125 4 7 was 
+: 1131 4 8 once 
+: 1136 4 10 New 
+: 1142 3 7 Am
+: 1147 4 8 ster
+: 1153 11 5 dam
+- 1164
+: 1172 4 4 Why 
+: 1178 3 4 they 
+: 1183 3 4 changed 
+: 1188 2 4 it 
+: 1192 3 7 I 
+: 1197 4 7 can’t 
+: 1202 8 7 say
+- 1210
+: 1215 1 5 Peo
+: 1217 2 5 ple 
+: 1220 3 7 just 
+: 1224 5 8 liked 
+: 1230 4 10 it 
+: 1235 2 12 bet
+: 1238 1 12 ter 
+: 1240 4 12 that 
+* 1245 59 17 way
+- 1304
+: 1314 2 0 ...Not 
+: 1317 4 5 Con
+: 1323 3 8 stan
+: 1329 1 13 tin
+: 1331 1 12 o
+: 1333 1 8 ple
+- 1334
+: 1336 2 5 Been 
+: 1339 1 0 a 
+: 1341 3 4 long 
+: 1346 3 7 time 
+: 1351 4 10 gone, 
+: 1359 5 4 Con
+: 1365 3 7 stan
+: 1370 1 13 tin
+: 1372 1 12 o
+: 1374 1 10 ple
+- 1375
+: 1377 1 8 Why 
+: 1380 1 7 did 
+: 1382 4 5 Con
+: 1387 2 5 stan
+: 1390 1 5 tin
+: 1393 1 5 o
+: 1396 1 7 ple 
+: 1398 1 8 get 
+: 1401 1 10 the 
+: 1404 6 12 works?
+- 1410
+: 1419 3 12 That’s 
+: 1424 5 0 no
+: 1430 1 0 bo
+: 1432 2 0 dy’s 
+: 1435 2 0 busi
+: 1438 1 1 ness 
+: 1440 2 1 but 
+: 1443 2 4 the 
+: 1446 31 5 Turks
+- 1477 1636
+- 1636
+: 1656 4 5 Do 
+: 1661 3 8 do 
+: 1666 3 12 do 
+: 1674 4 5 do 
+: 1679 3 8 do 
+: 1685 1 13 do 
+: 1687 2 12 do 
+: 1690 1 10 do 
+: 1692 2 5 do
+- 1694
+: 1698 4 5 Do 
+: 1703 3 8 do 
+: 1708 3 12 do 
+: 1716 4 5 do 
+: 1721 4 8 do 
+: 1726 1 13 do 
+: 1728 3 12 do 
+: 1732 1 10 do 
+: 1734 2 5 do
+- 1736
+: 1739 3 4 Do 
+: 1745 3 7 do 
+: 1750 4 10 do 
+: 1758 3 4 do 
+: 1763 3 7 do 
+: 1768 2 13 do 
+: 1771 1 12 do 
+: 1773 1 10 do 
+: 1776 1 8 do 
+: 1778 1 7 do
+- 1779
+* 1781 8 5 Do 
+* 1791 8 3 do 
+* 1800 1 0 do 
+: 1802 4 0 do 
+: 1807 4 -2 do 
+: 1812 5 -4 do 
+: 1818 4 -5 do 
+: 1823 7 -7 do
+- 1830 1965
+- 1965
+: 1985 3 12 So 
+: 1990 3 5 take 
+: 1996 3 8 me 
+: 2001 3 12 back 
+: 2006 2 0 to 
+: 2009 3 5 Con
+: 2015 4 8 stan
+: 2020 1 13 tin
+: 2022 2 12 o
+: 2025 1 8 ple
+- 2026
+: 2027 2 0 No, 
+: 2030 1 0 you 
+: 2032 3 5 can’t 
+: 2038 3 8 go 
+: 2043 3 12 back 
+: 2048 2 0 to 
+: 2052 3 5 Con
+: 2057 3 8 stan
+: 2062 2 13 tin
+: 2065 1 12 o
+: 2067 1 10 ple
+- 2068
+: 2069 1 5 Been 
+: 2072 1 0 a 
+: 2075 3 4 long 
+: 2080 3 7 time 
+: 2085 4 10 gone, 
+: 2093 5 4 Con
+: 2099 3 7 stan
+: 2104 1 13 tin
+: 2106 1 12 o
+: 2108 1 10 ple
+- 2109
+: 2111 1 8 Why 
+: 2114 1 7 did 
+: 2116 4 5 Con
+: 2122 2 5 stan
+: 2125 1 5 tin
+: 2127 1 5 o
+: 2130 1 7 ple 
+: 2132 1 8 get 
+: 2135 1 10 the 
+: 2137 6 12 works?
+- 2143
+: 2153 4 12 That’s 
+* 2159 9 0 no
+* 2169 2 0 bo
+* 2172 5 0 dy’s 
+* 2180 4 1 busi
+: 2185 4 2 ness 
+: 2191 4 4 but 
+: 2196 1 7 the 
+: 2199 2 8 Tu
+: 2202 38 5 ~rks
+- 2240
+: 2255 8 4 Is
+: 2264 7 4 stan
+: 2273 87 4 bul
+E

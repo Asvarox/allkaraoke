@@ -4,12 +4,12 @@
     "Lady Gaga",
     "Green Day",
     "Linkin Park",
+    "Kylie Minogue",
     "Britney Spears",
     "Michael Jackson",
-    "Kylie Minogue",
     "Nightwish",
-    "One Direction",
     "Queen",
+    "One Direction",
     "Ariana Grande",
     "My Chemical Romance",
     "Take That",
@@ -29,14 +29,14 @@
     "Bee Gees",
     "Elton John",
     "Radiohead",
+    "Beyoncé",
     "Disturbed",
     "Ed Sheeran",
     "Florence + the Machine",
+    "Metallica",
     "Panic! at the Disco",
     "Red Hot Chili Peppers",
-    "Beyoncé",
     "Foo Fighters",
-    "Metallica",
     "Miley Cyrus",
     "Billy Talent",
     "Katy Perry",
@@ -46,19 +46,20 @@
     "Westlife",
     "Adele",
     "Demi Lovato",
+    "Kelly Clarkson",
+    "The Black Eyed Peas",
     "The Weeknd",
     "Backstreet Boys",
+    "George Michael",
+    "INXS",
     "Jamiroquai",
-    "Kelly Clarkson",
     "Maroon 5",
-    "The Black Eyed Peas",
     "Arctic Monkeys",
     "Avenged Sevenfold",
     "Bad Religion",
     "Breaking Benjamin",
-    "George Michael",
-    "INXS",
     "Olivia Rodrigo",
+    "Robbie Williams",
     "Slipknot",
     "Ava Max",
     "Jonas Brothers",
@@ -66,6 +67,7 @@
     "Mariah Carey",
     "Marilyn Manson",
     "Marina and the Diamonds",
+    "Spice Girls",
     "Three Days Grace",
     "A★Teens",
     "Bring Me The Horizon",
@@ -75,66 +77,71 @@
     "Jennifer Lopez",
     "No Doubt",
     "Rise Against",
-    "Spice Girls",
     "Volbeat",
     "Weezer",
     "5 Seconds of Summer",
     "Christina Aguilera",
     "Deftones",
     "Dua Lipa",
+    "Duran Duran",
     "High School Musical",
     "Justin Bieber",
     "Kool & The Gang",
     "Oasis",
     "OneRepublic",
     "Owl City",
+    "Pink Floyd",
     "Rod Stewart",
     "Sabaton",
     "Sabrina Carpenter",
     "Thirty Seconds to Mars",
     "Céline Dion",
+    "Depeche Mode",
     "Destiny’s Child",
     "Electric Light Orchestra",
     "Elvis Presley",
     "Good Charlotte",
     "Guns N’ Roses",
+    "Hamilton",
     "HIM",
     "Jason Derulo",
     "Little Mix",
     "Melanie Martinez",
     "Nickelback",
-    "Pink Floyd",
-    "Robbie Williams",
     "Selena Gomez",
     "Serj Tankian",
     "Skillet",
     "Tenacious D",
     "The Pussycat Dolls",
+    "Toto",
     "Twenty One Pilots",
     "Whitney Houston",
     "Blind Guardian",
     "Bon Jovi",
     "Calvin Harris",
-    "Depeche Mode",
-    "Duran Duran",
+    "Delta Goodrem",
     "Faith No More",
     "Fleetwood Mac",
     "Groove Coverage",
-    "Hamilton",
     "Harry Styles",
     "Hilary Duff",
     "Iron Maiden",
     "Limp Bizkit",
     "Lorde",
+    "Michael Bublé",
     "★N Sync",
+    "Peter Gabriel",
     "Phil Collins",
     "Sean Paul",
     "Sia",
     "The Greatest Showman",
     "The Killers",
+    "The Offspring",
+    "U2",
     "UB40",
     "3 Doors Down",
     "a-ha",
+    "Amy Winehouse",
     "Avicii",
     "blink-182",
     "Bryan Adams",
@@ -142,14 +149,7 @@
     "Creed",
     "Crowded House",
     "Daft Punk",
-    "Delta Goodrem",
-    "Earth, Wind & Fire",
-    "Ellie Goulding",
-    "Eminem",
-    "Genesis",
-    "Goo Goo Dolls",
-    "Johnny Cash",
-    "Jonathan Coulton"
+    "Earth, Wind & Fire"
   ],
   "languages": [
     "Armenian",
@@ -189,9 +189,10 @@
     "Turkish",
     "Ukrainian"
   ],
-  "songs": 7766,
-  "generatedAt": "2026-11-24T07:51:43.730Z",
+  "songs": 7861,
+  "generatedAt": "2026-11-25T06:25:32.701Z",
   "additionsPerDay": {
+    "2026-11-25": 95,
     "2026-11-24": 85,
     "2026-11-22": 9,
     "2026-11-20": 18,
@@ -238,340 +239,340 @@
   },
   "recentlyAdded": [
     {
-      "id": "olly-murs-feat-rizzle-kicks-heart-skips-a-beat",
-      "artist": "Olly Murs feat. Rizzle Kicks",
-      "title": "Heart Skips A Beat",
-      "video": "j5dFe-WKuPs",
-      "addedAt": "2026-11-24T07:50:18.946Z"
+      "id": "modjo-chillin",
+      "artist": "Modjo",
+      "title": "Chillin’",
+      "video": "bhhqtZEIBIA",
+      "addedAt": "2026-11-25T06:24:10.246Z"
     },
     {
-      "id": "bob-dylan-like-a-rolling-stone",
-      "artist": "Bob Dylan",
-      "title": "Like A Rolling Stone",
-      "video": "IwOfCgkyEj0",
-      "addedAt": "2026-11-24T07:50:18.943Z"
+      "id": "emf-and-reeves-mortimer-im-a-believer",
+      "artist": "EMF and Reeves & Mortimer",
+      "title": "I’m A Believer",
+      "video": "9un6gdY8-Fk",
+      "addedAt": "2026-11-25T06:24:09.949Z"
     },
     {
-      "id": "christina-aguilera-you-lost-me",
-      "artist": "Christina Aguilera",
-      "title": "You Lost Me",
-      "video": "WOKI_tIBWVI",
-      "addedAt": "2026-11-24T07:50:18.940Z"
+      "id": "faithless-feat-dido-one-step-too-far",
+      "artist": "Faithless feat. Dido",
+      "title": "One Step Too Far",
+      "video": "JKeagyZeRow",
+      "addedAt": "2026-11-25T06:24:09.805Z"
     },
     {
-      "id": "savage-garden-i-knew-i-loved-you",
-      "artist": "Savage Garden",
-      "title": "I Knew I Loved You",
-      "video": "jjnmICxvoVY",
-      "addedAt": "2026-11-24T07:50:18.939Z"
+      "id": "dido-thank-you",
+      "artist": "Dido",
+      "title": "Thank You",
+      "video": "KvJ6eM2RPNg",
+      "addedAt": "2026-11-25T06:24:09.804Z"
     },
     {
-      "id": "europe-carrie",
-      "artist": "Europe",
-      "title": "Carrie",
-      "video": "LGh4dbMdfc8",
-      "addedAt": "2026-11-24T07:50:18.938Z"
+      "id": "dido-friends",
+      "artist": "Dido",
+      "title": "Friends",
+      "video": "dHT-Ghhsfbs",
+      "addedAt": "2026-11-25T06:24:09.803Z"
     },
     {
-      "id": "kelis-acapella",
-      "artist": "Kelis",
-      "title": "Acapella",
-      "video": "U8D9xCBcfzw",
-      "addedAt": "2026-11-24T07:50:18.936Z"
+      "id": "the-screaming-jets-better",
+      "artist": "The Screaming Jets",
+      "title": "Better",
+      "video": "7KbLoVKc8dE",
+      "addedAt": "2026-11-25T06:24:05.336Z"
     },
     {
-      "id": "panda-procedimientos-para-llegar-a-un-comun-acuerdo",
-      "artist": "Panda",
-      "title": "Procedimientos para llegar a un comun acuerdo",
-      "video": "tTZ18m4W3gY",
-      "addedAt": "2026-11-24T07:50:11.400Z"
+      "id": "iyaz-solo",
+      "artist": "Iyaz",
+      "title": "Solo",
+      "video": "140ImixpY7M",
+      "addedAt": "2026-11-25T06:24:05.335Z"
     },
     {
-      "id": "sombr-undressed",
-      "artist": "Sombr",
-      "title": "Undressed",
-      "video": "z0wT6CrEGYg",
-      "addedAt": "2026-11-24T07:50:11.259Z"
-    },
-    {
-      "id": "ferry-aid-kate-bush-feat-peter-gabriel-steve-harley-let-it-be",
-      "artist": "Ferry Aid (Kate Bush feat. Peter Gabriel & Steve Harley)",
-      "title": "Let It Be",
-      "video": "IeD0YwEQ_iU",
-      "addedAt": "2026-11-24T07:50:11.123Z"
-    },
-    {
-      "id": "adam-cohen-lana-del-rey-chelsea-hotel-no-2",
-      "artist": "Adam Cohen & Lana Del Rey",
-      "title": "Chelsea Hotel No. 2",
-      "video": "R3VU71YO9VE",
-      "addedAt": "2026-11-24T07:50:10.961Z"
-    },
-    {
-      "id": "duran-duran-rio",
-      "artist": "Duran Duran",
-      "title": "Rio",
-      "video": "nTizYn3-QN0",
-      "addedAt": "2026-11-24T07:50:10.958Z"
-    },
-    {
-      "id": "dead-by-sunrise-let-down",
-      "artist": "Dead By Sunrise",
-      "title": "Let Down",
-      "video": "jjSNbZQZLIM",
-      "addedAt": "2026-11-24T07:50:10.795Z"
-    },
-    {
-      "id": "radiohead-just",
-      "artist": "Radiohead",
-      "title": "Just",
-      "video": "oIFLtNYI3Ls",
-      "addedAt": "2026-11-24T07:50:10.794Z"
-    },
-    {
-      "id": "keha-your-love-is-my-drug",
-      "artist": "Ke$ha",
-      "title": "Your Love Is My Drug",
-      "video": "QR_qa3Ohwls",
-      "addedAt": "2026-11-24T07:50:10.793Z"
-    },
-    {
-      "id": "deep-purple-perfect-strangers",
+      "id": "deep-purple-woman-from-tokio",
       "artist": "Deep Purple",
-      "title": "Perfect Strangers",
-      "video": "gZ_kez7WVUU",
-      "addedAt": "2026-11-24T07:50:10.792Z"
+      "title": "Woman From Tokio",
+      "video": "T7SFjtxL_qM",
+      "addedAt": "2026-11-25T06:24:05.333Z"
     },
     {
-      "id": "ashlee-simpson-invisible",
-      "artist": "Ashlee Simpson",
-      "title": "Invisible",
-      "video": "GYpkwrLzDvo",
-      "addedAt": "2026-11-24T07:50:10.791Z"
+      "id": "raye-feat-070-shake-escapism",
+      "artist": "RAYE feat. 070 Shake",
+      "title": "Escapism.",
+      "video": "Dll6VJ2C7wo",
+      "addedAt": "2026-11-25T06:24:04.066Z"
     },
     {
-      "id": "sister-sledge-we-are-family",
-      "artist": "Sister Sledge",
-      "title": "We Are Family",
-      "video": "uyGY2NfYpeE",
-      "addedAt": "2026-11-24T07:50:10.789Z"
+      "id": "meghan-trainor-better-when-im-dancin",
+      "artist": "Meghan Trainor",
+      "title": "Better When I’m Dancin’",
+      "video": "pkCyfBibIbI",
+      "addedAt": "2026-11-25T06:24:04.064Z"
     },
     {
-      "id": "diana-ross-the-supremes-missing-you",
-      "artist": "Diana Ross & The Supremes",
-      "title": "Missing You",
-      "video": "WXTeqpcF-As",
-      "addedAt": "2026-11-24T07:50:10.787Z"
+      "id": "michael-buble-havent-met-you-yet",
+      "artist": "Michael Bublé",
+      "title": "Haven’t Met You Yet",
+      "video": "1AJmKkU5POA",
+      "addedAt": "2026-11-25T06:24:04.063Z"
     },
     {
-      "id": "duran-duran-come-undone",
+      "id": "seether-feat-amy-lee-broken",
+      "artist": "Seether feat. Amy Lee",
+      "title": "Broken",
+      "video": "hPC2Fp7IT7o",
+      "addedAt": "2026-11-25T06:24:03.914Z"
+    },
+    {
+      "id": "steps-better-best-forgotten",
+      "artist": "Steps",
+      "title": "Better Best Forgotten",
+      "video": "c_0k84qbwwk",
+      "addedAt": "2026-11-25T06:24:03.913Z"
+    },
+    {
+      "id": "lara-fabian-ta-peine",
+      "artist": "Lara Fabian",
+      "title": "Ta Peine",
+      "video": "wFYwtIL95wk",
+      "addedAt": "2026-11-25T06:24:03.912Z"
+    },
+    {
+      "id": "linh-dans-ton-telephone",
+      "artist": "Linh",
+      "title": "Dans ton téléphone",
+      "video": "SR2w9gXUAe8",
+      "addedAt": "2026-11-25T06:24:03.910Z"
+    },
+    {
+      "id": "delta-goodrem-you-will-only-break-my-heart",
+      "artist": "Delta Goodrem",
+      "title": "You Will Only Break My Heart",
+      "video": "UCIcac5CnSE",
+      "addedAt": "2026-11-25T06:24:03.910Z"
+    },
+    {
+      "id": "s-club-7-bring-it-all-back",
+      "artist": "S Club 7",
+      "title": "Bring It All Back",
+      "video": "GLQ0biK-ZgA",
+      "addedAt": "2026-11-25T06:24:03.909Z"
+    },
+    {
+      "id": "duran-duran-notorious",
       "artist": "Duran Duran",
-      "title": "Come Undone",
-      "video": "Epj84QVw2rc",
-      "addedAt": "2026-11-24T07:50:10.786Z"
+      "title": "Notorious",
+      "video": "Z9z0e1Wm64M",
+      "addedAt": "2026-11-25T06:24:03.908Z"
     },
     {
-      "id": "the-temptations-get-ready",
-      "artist": "The Temptations",
-      "title": "Get Ready",
-      "video": "mhsYOzdJjI0",
-      "addedAt": "2026-11-24T07:50:10.783Z"
+      "id": "dj-bobo-chihuahua",
+      "artist": "DJ BoBo",
+      "title": "Chihuahua",
+      "video": "y654TxcRuL0",
+      "addedAt": "2026-11-25T06:24:03.719Z"
     },
     {
-      "id": "lily-allen-smile",
-      "artist": "Lily Allen",
-      "title": "Smile",
-      "video": "0WxDrVUrSvI",
-      "addedAt": "2026-11-24T07:50:10.775Z"
+      "id": "paul-anka-the-way-you-make-me-feel",
+      "artist": "Paul Anka",
+      "title": "The Way You Make Me Feel",
+      "video": "SBsMgvS95z8",
+      "addedAt": "2026-11-25T06:24:03.553Z"
     },
     {
-      "id": "redone-feat-enrique-iglesias-r-city-serayah-shaggy-dont-you-need-somebody",
-      "artist": "RedOne feat. Enrique Iglesias, R. City, Serayah & Shaggy",
-      "title": "Don’t You Need Somebody",
-      "video": "6fBZBntjEOA",
-      "addedAt": "2026-11-24T07:50:08.441Z"
+      "id": "joseph-kamel-julien-dore-beau",
+      "artist": "Joseph Kamel & Julien Doré",
+      "title": "Beau",
+      "video": "EGWTPrypdXQ",
+      "addedAt": "2026-11-25T06:24:01.180Z"
     },
     {
-      "id": "tom-jones-kiss",
-      "artist": "Tom Jones",
-      "title": "Kiss",
-      "video": "5uZQFOfMSfY",
-      "addedAt": "2026-11-24T07:50:08.297Z"
+      "id": "james-blunt-1973",
+      "artist": "James Blunt",
+      "title": "1973",
+      "video": "uWeqeQkjLto",
+      "addedAt": "2026-11-25T06:24:01.180Z"
     },
     {
-      "id": "diana-ross-the-supremes-muscles",
-      "artist": "Diana Ross & The Supremes",
-      "title": "Muscles",
-      "video": "CzmOHbLC27s",
-      "addedAt": "2026-11-24T07:50:08.296Z"
-    },
-    {
-      "id": "run-dmc-vs-jason-nevins-its-like-that",
-      "artist": "Run DMC vs Jason Nevins",
-      "title": "It’s Like That",
-      "video": "TLGWQfK-6DY",
-      "addedAt": "2026-11-24T07:50:08.004Z"
-    },
-    {
-      "id": "busted-what-i-go-to-school-for",
-      "artist": "Busted",
-      "title": "What I Go To School For",
-      "video": "eAI1Onf2-Co",
-      "addedAt": "2026-11-24T07:50:08.001Z"
-    },
-    {
-      "id": "luther-vandross-never-too-much",
-      "artist": "Luther Vandross",
-      "title": "Never Too Much",
-      "video": "pNj9bXKGOiI",
-      "addedAt": "2026-11-24T07:50:07.806Z"
-    },
-    {
-      "id": "avril-lavigne-smile",
-      "artist": "Avril Lavigne",
-      "title": "Smile",
-      "video": "KagvExF-ijc",
-      "addedAt": "2026-11-24T07:50:07.803Z"
-    },
-    {
-      "id": "michael-jackson-will-you-be-there",
-      "artist": "Michael Jackson",
-      "title": "Will You Be There",
-      "video": "jQY_QL_wvQU",
-      "addedAt": "2026-11-24T07:50:07.799Z"
-    },
-    {
-      "id": "daft-punk-teachers",
-      "artist": "Daft Punk",
-      "title": "Teachers",
-      "video": "3yq-NFiEywo",
-      "addedAt": "2026-11-24T07:50:07.796Z"
-    },
-    {
-      "id": "outkast-idlewild-blue-dont-chu-worry-bout-me",
-      "artist": "OutKast",
-      "title": "Idlewild Blue (Don’t Chu Worry ’Bout Me)",
-      "video": "yjk8XHn80Zw",
-      "addedAt": "2026-11-24T07:50:07.794Z"
-    },
-    {
-      "id": "busted-sleeping-with-the-light-on",
-      "artist": "Busted",
-      "title": "Sleeping With The Light On",
-      "video": "n2YZqnIa-ic",
-      "addedAt": "2026-11-24T07:50:07.791Z"
-    },
-    {
-      "id": "the-dandy-warhols-bohemian-like-you",
-      "artist": "The Dandy Warhols",
-      "title": "Bohemian Like You",
-      "video": "CU3mc0yvRNk",
-      "addedAt": "2026-11-24T07:50:07.789Z"
-    },
-    {
-      "id": "midnight-oil-power-the-passion",
-      "artist": "Midnight Oil",
-      "title": "Power & The Passion",
-      "video": "6pKPNnk-JhE",
-      "addedAt": "2026-11-24T07:50:07.787Z"
-    },
-    {
-      "id": "robin-s-show-me-love",
-      "artist": "Robin S.",
-      "title": "Show Me Love",
-      "video": "Ps2Jc28tQrw",
-      "addedAt": "2026-11-24T07:50:07.558Z"
-    },
-    {
-      "id": "ambrosia-biggest-part-of-me",
-      "artist": "Ambrosia",
-      "title": "Biggest Part Of Me",
-      "video": "ervE9G4dUf4",
-      "addedAt": "2026-11-24T07:50:07.386Z"
-    },
-    {
-      "id": "keri-hilson-feat-kanye-west-ne-yo-knock-you-down",
-      "artist": "Keri Hilson feat. Kanye West & Ne-Yo",
-      "title": "Knock You Down",
-      "video": "p_RqWocthcc",
-      "addedAt": "2026-11-24T07:50:07.182Z"
-    },
-    {
-      "id": "blur-for-tomorrow",
-      "artist": "Blur",
-      "title": "For Tomorrow",
-      "video": "gghFPavXE7Q",
-      "addedAt": "2026-11-24T07:50:07.179Z"
-    },
-    {
-      "id": "m83-outro-hurry-up-were-dreaming",
-      "artist": "M83",
-      "title": "Outro (Hurry Up, We’re Dreaming)",
-      "video": "Eyjj8BgsBGU",
-      "addedAt": "2026-11-24T07:50:07.178Z"
-    },
-    {
-      "id": "empire-of-the-sun-concert-pitch",
-      "artist": "Empire Of The Sun",
-      "title": "Concert Pitch",
-      "video": "gHUnr3sl8GQ",
-      "addedAt": "2026-11-24T07:50:07.177Z"
-    },
-    {
-      "id": "reef-place-your-hands",
-      "artist": "Reef",
-      "title": "Place Your Hands",
-      "video": "bihoNRc8GDQ",
-      "addedAt": "2026-11-24T07:50:07.034Z"
-    },
-    {
-      "id": "metallica-whiskey-in-the-jar",
-      "artist": "Metallica",
-      "title": "Whiskey In The Jar",
-      "video": "wsrvmNtWU4E",
-      "addedAt": "2026-11-24T07:50:07.033Z"
-    },
-    {
-      "id": "alice-cooper-only-women",
-      "artist": "Alice Cooper",
-      "title": "Only Women",
-      "video": "ZfZyxu5UMCU",
-      "addedAt": "2026-11-24T07:50:07.030Z"
-    },
-    {
-      "id": "peter-gabriel-io",
-      "artist": "Peter Gabriel",
-      "title": "i/o",
-      "video": "TbCHjU9w5Mk",
-      "addedAt": "2026-11-24T07:50:07.028Z"
-    },
-    {
-      "id": "akon-angel",
-      "artist": "Akon",
-      "title": "Angel",
-      "video": "hpbPjRVK5OE",
-      "addedAt": "2026-11-24T07:50:07.026Z"
-    },
-    {
-      "id": "blind-guardian-when-sorrow-sang",
-      "artist": "Blind Guardian",
-      "title": "When Sorrow Sang",
-      "video": "eRuDigiA-qY",
-      "addedAt": "2026-11-24T07:50:07.025Z"
-    },
-    {
-      "id": "toto-holyanna",
+      "id": "toto-99",
       "artist": "Toto",
-      "title": "Holyanna",
-      "video": "G01ClDIVhDY",
-      "addedAt": "2026-11-24T07:50:07.023Z"
+      "title": "99",
+      "video": "qhw-XlTMB5I",
+      "addedAt": "2026-11-25T06:24:01.179Z"
     },
     {
-      "id": "alice-deejay-better-off-alone",
+      "id": "deep-purple-soldier-of-fortune",
+      "artist": "Deep Purple",
+      "title": "Soldier Of Fortune",
+      "video": "wZuW3YvHHLU",
+      "addedAt": "2026-11-25T06:24:01.178Z"
+    },
+    {
+      "id": "claudio-capeo-quest-ce-quil-me-restera",
+      "artist": "Claudio Capéo",
+      "title": "Qu'est ce qu'il me restera",
+      "video": "9Y3y7eHerFU",
+      "addedAt": "2026-11-25T06:24:00.925Z"
+    },
+    {
+      "id": "james-arthur-quite-miss-home",
+      "artist": "James Arthur",
+      "title": "Quite Miss Home",
+      "video": "DxNApvfnASM",
+      "addedAt": "2026-11-25T06:24:00.925Z"
+    },
+    {
+      "id": "steps-deeper-shade-of-blue",
+      "artist": "Steps",
+      "title": "Deeper Shade Of Blue",
+      "video": "aWQKje059T8",
+      "addedAt": "2026-11-25T06:24:00.762Z"
+    },
+    {
+      "id": "u2-one",
+      "artist": "U2",
+      "title": "One",
+      "video": "ftjEcrrf7r0",
+      "addedAt": "2026-11-25T06:24:00.761Z"
+    },
+    {
+      "id": "ben-lee-catch-my-disease",
+      "artist": "Ben Lee",
+      "title": "Catch My Disease",
+      "video": "enhQYHxoNMY",
+      "addedAt": "2026-11-25T06:24:00.603Z"
+    },
+    {
+      "id": "duran-duran-the-wild-boys",
+      "artist": "Duran Duran",
+      "title": "The Wild Boys",
+      "video": "M43wsiNBwmo",
+      "addedAt": "2026-11-25T06:24:00.602Z"
+    },
+    {
+      "id": "timbaland-feat-katy-perry-if-we-ever-meet-again",
+      "artist": "Timbaland feat. Katy Perry",
+      "title": "If We Ever Meet Again",
+      "video": "KDKva-s_khY",
+      "addedAt": "2026-11-25T06:24:00.453Z"
+    },
+    {
+      "id": "dido-dont-believe-in-love",
+      "artist": "Dido",
+      "title": "Don’t Believe In Love",
+      "video": "BJ9v4ckXyrU",
+      "addedAt": "2026-11-25T06:24:00.452Z"
+    },
+    {
+      "id": "natalie-cole-with-nat-king-cole-unforgettable",
+      "artist": "Natalie Cole with Nat King Cole",
+      "title": "Unforgettable",
+      "video": "vo6D_tp3DeE",
+      "addedAt": "2026-11-25T06:23:55.056Z"
+    },
+    {
+      "id": "the-last-goodnight-pictures-of-you",
+      "artist": "The Last Goodnight",
+      "title": "Pictures Of You",
+      "video": "f7QWZBiNTMc",
+      "addedAt": "2026-11-25T06:23:55.056Z"
+    },
+    {
+      "id": "beyonce-naughty-girl",
+      "artist": "Beyoncé",
+      "title": "Naughty Girl",
+      "video": "RZuJ_OHBN78",
+      "addedAt": "2026-11-25T06:23:55.055Z"
+    },
+    {
+      "id": "iyaz-replay",
+      "artist": "Iyaz",
+      "title": "Replay",
+      "video": "ZoG5jJ3E8rg",
+      "addedAt": "2026-11-25T06:23:55.054Z"
+    },
+    {
+      "id": "kylie-minogue-looking-for-an-angel",
+      "artist": "Kylie Minogue",
+      "title": "Looking For An Angel",
+      "video": "yqVND7i-oMM",
+      "addedAt": "2026-11-25T06:23:55.053Z"
+    },
+    {
+      "id": "robbie-williams-sin-sin-sin",
+      "artist": "Robbie Williams",
+      "title": "Sin Sin Sin",
+      "video": "WE7PJVZyBhU",
+      "addedAt": "2026-11-25T06:23:55.052Z"
+    },
+    {
+      "id": "olivia-dean-man-i-need",
+      "artist": "Olivia Dean",
+      "title": "Man I Need",
+      "video": "oIv_Y2RPQ_A",
+      "addedAt": "2026-11-25T06:23:55.051Z"
+    },
+    {
+      "id": "michael-buble-higher",
+      "artist": "Michael Bublé",
+      "title": "Higher",
+      "video": "lR_x0GH5c30",
+      "addedAt": "2026-11-25T06:23:55.050Z"
+    },
+    {
+      "id": "hamilton-burn",
+      "artist": "Hamilton",
+      "title": "Burn",
+      "video": "Hx6Ct3rP9hk",
+      "addedAt": "2026-11-25T06:23:55.049Z"
+    },
+    {
+      "id": "kylie-minogue-better-than-today",
+      "artist": "Kylie Minogue",
+      "title": "Better Than Today",
+      "video": "ReF0RNym6l4",
+      "addedAt": "2026-11-25T06:23:55.048Z"
+    },
+    {
+      "id": "alice-deejay-back-in-my-life",
       "artist": "Alice Deejay",
-      "title": "Better Off Alone",
-      "video": "XJ9we6xDvWQ",
-      "addedAt": "2026-11-24T07:50:01.688Z"
+      "title": "Back In My Life",
+      "video": "ldgwAAwj9zs",
+      "addedAt": "2026-11-25T06:23:55.048Z"
+    },
+    {
+      "id": "iggy-pop-real-wild-child-wild-one",
+      "artist": "Iggy Pop",
+      "title": "Real Wild Child (Wild One)",
+      "video": "def3ob2h-1s",
+      "addedAt": "2026-11-25T06:23:55.047Z"
+    },
+    {
+      "id": "toto-its-a-feeling",
+      "artist": "Toto",
+      "title": "It’s A Feeling",
+      "video": "cwB_t7-bqjg",
+      "addedAt": "2026-11-25T06:23:55.046Z"
+    },
+    {
+      "id": "galantis-hook-n-sling-love-on-me",
+      "artist": "Galantis & Hook N Sling",
+      "title": "Love On Me",
+      "video": "8gz9NsNH96Q",
+      "addedAt": "2026-11-25T06:23:54.897Z"
+    },
+    {
+      "id": "kylie-minogue-wow",
+      "artist": "Kylie Minogue",
+      "title": "Wow",
+      "video": "wL2HKKrY7sM",
+      "addedAt": "2026-11-25T06:23:54.894Z"
+    },
+    {
+      "id": "depeche-mode-master-and-servant",
+      "artist": "Depeche Mode",
+      "title": "Master And Servant",
+      "video": "IsvfofcIE1Q",
+      "addedAt": "2026-11-25T06:23:54.893Z"
     }
   ]
 }

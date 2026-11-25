@@ -1,0 +1,336 @@
+#ARTIST:Claudio Capéo
+#TITLE:Qu'est ce qu'il me restera
+#CREATOR:Alinus57
+#BPM:337,8
+#YEAR:2025
+#VIDEO:v=9Y3y7eHerFU
+#GENRE:Chanson Française
+#LANGUAGE:French
+#GAP:27,59502664298401
+#ALLKARAOKE_ID:claudio-capeo-quest-ce-quil-me-restera
+#ALLKARAOKE_SID:7892
+#ALLKARAOKE_LASTUPDATE:2026-11-25T06:24:00.925Z
+#ALLKARAOKE_ARTISTORIGIN:FR
+#ALLKARAOKE_REALBPM:135,15
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:143
+#MP3:Claudio Capéo - Qu'est ce qu'il me restera.mp3
+#COVER:Claudio Capéo - Qu'est ce qu'il me restera.jpg
+#BACKGROUND:Claudio Capéo - Qu'est ce qu'il me restera.jpg
+: 1 2 12 Quand 
+: 5 4 20 j'au
+: 11 1 19 rai 
+: 15 4 17 fait 
+: 21 1 15 le 
+: 26 26 12 tour 
+: 57 2 8 du 
+: 61 32 13 monde
+- 93
+: 106 5 12 Qu'est-ce 
+: 116 4 12 qu'il 
+: 121 3 12 me 
+: 126 5 12 res
+: 137 2 8 te
+: 142 15 7 ra?
+- 157
+* 166 1 5 J'sais 
+* 171 2 5 pas 
+* 177 1 7 vrai
+* 181 14 8 ment, 
+: 211 3 8 qui 
+: 216 1 8 je 
+: 221 16 10 suis, 
+: 251 3 8 c'que 
+: 257 2 7 je 
+: 262 15 8 veux
+- 277
+: 291 3 8 À 
+: 296 2 8 quel 
+: 301 13 7 point 
+: 316 2 7 les 
+: 320 14 10 gens 
+: 337 1 7 me 
+: 341 8 8 mentent
+- 349
+: 371 3 7 Si 
+: 376 1 8 je 
+: 380 9 10 choi
+: 392 6 10 sis 
+: 401 7 12 mes 
+: 411 6 10 vê
+: 423 8 8 t'ments
+- 431
+: 440 11 12 Un 
+: 456 2 8 peu 
+: 460 9 7 mieux
+- 469
+: 486 2 5 J'sais 
+: 491 3 5 pas 
+: 497 1 7 vrai
+: 501 18 8 ment, 
+: 532 2 8 si 
+: 537 1 8 je 
+: 541 8 10 suis 
+: 552 9 10 jeune 
+: 571 2 8 ou 
+: 576 2 7 trop 
+: 581 13 8 vieux
+- 594
+: 611 3 8 À 
+: 617 1 8 quel 
+: 622 11 7 point 
+: 637 1 7 mes 
+: 641 10 10 proches 
+: 657 1 7 me 
+: 661 11 8 manquent
+- 672
+: 691 4 7 Si 
+: 696 2 8 la 
+: 701 6 10 tris
+: 712 4 10 tesse 
+: 721 14 12 rend 
+: 737 2 10 les 
+: 742 9 8 gens
+- 751
+: 761 11 12 Plus 
+* 776 2 8 cu
+* 781 14 7 rieux
+- 795
+: 801 3 12 Quand 
+: 806 4 20 j'au
+: 811 2 19 rai 
+: 816 4 17 fait 
+: 822 2 15 le 
+: 827 27 12 tour 
+: 857 2 8 du 
+: 861 28 13 monde
+- 889
+* 907 4 12 Qu'est-ce 
+* 916 5 12 qu'il 
+: 922 3 12 me 
+: 927 5 12 res
+: 937 4 8 te
+: 943 11 7 ra?
+- 954
+: 961 1 12 Si 
+: 966 5 20 ce 
+: 973 2 19 monde 
+: 977 2 17 é
+: 982 2 15 phé
+: 987 25 12 mère 
+: 1017 2 8 s'ef
+: 1022 23 13 fondre
+- 1045
+: 1067 5 12 Qu'est-ce 
+: 1077 4 12 qu'il 
+: 1082 4 12 me 
+: 1087 5 12 res
+: 1097 4 8 te
+: 1103 12 7 ra?
+- 1115
+: 1123 2 12 Quand 
+: 1127 4 20 j'au
+: 1132 2 19 rai 
+: 1137 3 17 fait 
+: 1141 1 15 le 
+: 1147 28 12 tour 
+: 1179 1 8 du 
+* 1182 26 13 monde
+- 1208
+: 1227 5 12 Qu'est-ce 
+: 1237 4 12 qu'il 
+: 1243 2 12 me 
+: 1247 5 12 res
+: 1257 4 8 te
+: 1262 13 7 ra?
+- 1275
+: 1283 1 12 Quand 
+: 1287 4 20 j'au
+: 1293 1 19 rai 
+: 1297 3 17 per
+: 1303 2 15 du 
+: 1308 5 12 ces 
+: 1317 6 12 mil
+: 1327 5 12 liers 
+: 1337 4 15 d'se
+: 1343 15 13 condes
+- 1358 1364
+- 1364
+: 1387 5 12 Qu'est-ce 
+: 1397 3 12 qu'il 
+: 1403 3 12 me 
+: 1409 3 12 res
+: 1418 3 8 te
+: 1423 8 7 ra?
+- 1431
+: 1447 2 5 J'sais 
+: 1452 3 5 pas 
+: 1458 2 7 vrai
+: 1462 19 8 ment, 
+: 1491 2 8 si 
+: 1496 2 8 j'suis 
+: 1502 15 10 sage 
+: 1533 1 8 ou 
+: 1537 3 7 trop 
+: 1544 12 8 fou
+- 1556
+* 1572 4 8 Si 
+* 1578 2 8 j'ai 
+* 1583 7 7 tou
+: 1593 8 7 jours 
+: 1602 8 10 les 
+: 1612 5 7 mêmes 
+: 1621 13 8 rêves
+- 1634
+: 1653 2 7 À 
+: 1658 2 8 quel 
+: 1663 10 10 point 
+: 1674 4 10 il 
+: 1683 10 12 faut 
+: 1697 3 10 qu'j'a
+: 1704 7 8 brège
+- 1711
+: 1719 2 8 Mes 
+: 1723 12 12 ren
+: 1739 2 8 dez
+: 1744 10 7 -vous
+- 1754
+: 1768 2 5 J'sais 
+: 1773 2 5 plus 
+: 1778 2 7 vrai
+: 1783 14 8 ment, 
+: 1812 3 8 si 
+: 1818 2 8 j'sais 
+: 1824 14 10 rien 
+: 1853 1 8 ou 
+: 1858 2 7 j'sais 
+* 1864 14 8 tout
+- 1878
+: 1892 2 8 Si 
+: 1897 3 8 j'parle 
+: 1903 7 7 tou
+: 1913 7 7 jours 
+: 1922 8 10 des 
+: 1932 5 7 mêmes 
+: 1942 8 8 thèmes
+- 1950
+: 1973 2 7 À 
+: 1977 3 8 quel 
+: 1983 6 10 point 
+: 1994 6 10 quand 
+: 2003 9 12 j'dis 
+: 2017 2 10 je 
+: 2023 9 8 t'aime
+- 2032
+* 2043 10 12 Je 
+: 2058 2 8 sur
+: 2063 15 7 joue
+- 2078
+: 2082 2 12 Quand 
+: 2088 3 20 j'au
+: 2093 2 19 rai 
+: 2098 4 17 fait 
+: 2104 1 15 le 
+: 2108 27 12 tour 
+: 2139 1 8 du 
+: 2142 30 13 monde
+- 2172
+: 2187 6 12 Qu'est-ce 
+: 2197 5 12 qu'il 
+: 2203 3 12 me 
+: 2208 5 12 res
+: 2218 4 8 te
+: 2224 8 7 ra?
+- 2232
+: 2243 1 12 Si 
+: 2247 4 20 ce 
+: 2253 3 19 monde 
+: 2257 3 17 é
+: 2263 2 15 phé
+: 2267 24 12 mère 
+: 2298 2 8 s'ef
+: 2303 29 13 fondre
+- 2332
+: 2348 6 12 Qu'est-ce 
+* 2358 3 12 qu'il 
+* 2363 3 12 me 
+* 2368 5 12 res
+: 2378 4 8 te
+: 2384 9 7 ra?
+- 2393
+: 2403 2 12 Quand 
+: 2408 3 20 j'au
+: 2413 2 19 rai 
+: 2418 4 17 fait 
+: 2423 2 15 le 
+: 2428 28 12 tour 
+: 2459 2 8 du 
+: 2464 28 13 monde
+- 2492
+: 2509 5 12 Qu'est-ce 
+: 2519 4 12 qu'il 
+: 2525 3 12 me 
+: 2530 4 12 res
+: 2539 4 8 te
+: 2545 11 7 ra?
+- 2556
+: 2564 1 12 Quand 
+: 2568 4 20 j'au
+: 2573 2 19 rai 
+: 2578 3 17 per
+: 2584 2 15 du 
+: 2589 5 12 ces 
+* 2599 5 12 mil
+* 2608 6 12 liers 
+: 2619 3 15 d'se
+: 2624 14 13 condes
+- 2638 2645
+- 2645
+: 2668 6 12 Qu'est-ce 
+: 2678 4 12 qu'il 
+: 2684 3 12 me 
+: 2689 5 12 res
+: 2699 4 8 te
+: 2705 12 7 ra?
+- 2717
+: 2723 2 12 Quand 
+: 2728 4 20 j'au
+: 2733 2 19 rai 
+: 2738 5 17 fait 
+: 2745 1 15 le 
+: 2749 27 12 tour 
+: 2780 1 8 du 
+: 2783 28 13 monde
+- 2811
+: 2828 5 12 Qu'est-ce 
+: 2839 4 12 qu'il 
+: 2844 3 12 me 
+: 2849 5 12 res
+: 2859 4 8 te
+: 2864 13 7 ra?
+- 2877
+* 2883 2 12 Si 
+* 2888 4 20 ce 
+: 2894 3 19 monde 
+: 2899 1 17 é
+: 2903 3 15 phé
+: 2909 22 12 mère 
+: 2939 2 8 s'ef
+: 2944 21 13 fondre
+- 2965 2966
+- 2966
+: 2989 5 12 Qu'est-ce 
+: 2999 3 12 qu'il 
+: 3004 4 12 me 
+: 3009 5 12 res
+: 3019 4 8 te
+: 3024 14 7 ra?
+- 3038 3046
+- 3046
+: 3069 5 12 Qu'est-ce 
+: 3079 3 12 qu'il 
+: 3084 4 12 me 
+: 3089 5 12 res
+: 3099 4 8 te
+: 3104 12 7 ra?
+E

@@ -1,0 +1,289 @@
+#ARTIST:Ike & Tina Turner
+#TITLE:Nutbush City Limits
+#CREATOR:Fepo
+#BPM:297,5
+#YEAR:1973
+#VIDEO:v=6Eh47h5gcQI
+#GENRE:Rock
+#LANGUAGE:English
+#GAP:27691,59663865546
+#ALLKARAOKE_ID:ike-tina-turner-nutbush-city-limits
+#ALLKARAOKE_SID:7840
+#ALLKARAOKE_LASTUPDATE:2026-11-25T06:23:51.587Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:176
+#MP3:Ike & Tina Turner - Nutbush City Limits.mp3
+: 20 4 2 A 
+: 25 5 5 Church 
+: 31 8 4 House 
+: 40 6 5 Gin 
+: 47 10 2 House
+- 57 63
+- 63
+: 83 2 3 A 
+: 86 8 4 School 
+: 95 8 2 House 
+: 104 6 3 Out 
+: 112 7 2 House
+- 119 122
+- 122
+: 142 4 2 On 
+: 148 5 10 High
+: 154 5 6 way 
+: 160 2 2 Num
+: 163 4 2 ber 
+: 168 6 5 Nine
+: 175 9 2 teen
+- 184 188
+- 188
+: 208 5 1 The 
+: 214 2 1 Peo
+: 217 4 1 ple 
+: 222 3 3 keep 
+: 226 2 0 the 
+: 229 4 4 Ci
+: 234 3 1 ty 
+: 238 9 2 clean
+- 247
+: 263 4 5 They 
+: 268 2 5 call 
+: 271 2 5 it 
+: 276 6 10 Nut
+: 284 9 3 bush
+- 293 309
+- 309
+: 329 6 1 Oh 
+: 336 6 0 Nut
+* 345 7 -2 bush
+- 352 370
+- 370
+: 390 3 4 Call 
+: 394 3 2 it 
+: 398 4 4 Nut
+: 405 6 4 bush 
+: 413 2 6 Ci
+: 416 5 6 ty 
+: 422 2 5 li
+: 425 8 5 mits
+- 433 495
+- 495
+: 515 2 4 Twen
+: 518 4 4 ty
+: 523 7 8 five 
+: 531 3 5 was 
+: 535 3 7 the 
+: 539 5 8 Speed 
+: 545 3 4 li
+: 549 6 4 mit
+- 555
+: 572 3 0 A 
+: 576 3 0 Mo
+: 580 2 0 tor
+: 583 5 2 cy
+: 589 3 1 cle 
+: 593 4 0 not 
+: 598 2 0 al
+: 601 6 2 lowed 
+: 609 3 -1 in 
+: 613 3 0 it
+- 616
+: 634 3 0 You 
+: 638 2 0 go 
+: 641 4 0 to 
+: 646 4 3 School 
+: 651 5 0 on 
+: 660 7 2 Fri
+: 668 6 0 days
+- 674 676
+- 676
+: 696 4 0 To 
+: 701 3 0 go 
+: 705 3 0 to 
+: 709 8 2 Church 
+: 718 4 -1 on 
+: 724 6 1 Sun
+: 731 10 0 days
+- 741
+: 759 3 0 They 
+: 763 3 0 call 
+: 767 3 0 it 
+* 772 5 4 Nut
+* 778 13 3 bush
+- 791
+: 794 2 2 A 
+: 797 7 2 love 
+: 805 11 0 Town
+- 816
+: 820 9 8 Oh 
+: 830 9 2 Nut
+: 840 11 1 bush
+- 851 865
+- 865
+: 885 4 0 Call 
+: 890 3 0 it 
+: 895 4 1 Nut
+: 900 7 0 bush 
+: 909 3 2 Ci
+: 913 2 1 ty 
+: 916 4 0 li
+: 921 6 0 mits
+- 927 984
+- 984
+: 1004 5 0 You’re 
+: 1010 2 0 gon
+: 1013 3 0 na 
+: 1017 6 3 feel 
+: 1024 5 0 on 
+: 1031 7 1 Week
+: 1039 10 0 days
+- 1049
+: 1068 3 1 And 
+: 1072 3 0 have 
+: 1076 2 0 a 
+: 1079 3 2 Pic
+: 1083 3 1 nic 
+: 1087 4 0 on 
+: 1093 3 2 La
+: 1097 4 -1 bour 
+: 1102 9 0 Days
+- 1111
+: 1128 3 0 You 
+: 1132 3 0 go 
+: 1136 3 0 to 
+: 1140 6 2 Town 
+: 1148 5 0 on 
+: 1154 4 2 Sa
+: 1159 4 2 tur
+: 1164 7 0 days
+- 1171
+: 1188 5 0 But 
+: 1194 3 0 go 
+: 1198 2 0 to 
+: 1201 5 3 church 
+: 1207 8 0 ev’
+: 1216 4 0 ry 
+: 1223 7 1 Sun
+: 1231 6 0 day
+- 1237
+: 1250 3 3 They 
+: 1254 3 4 call 
+: 1258 4 2 it 
+: 1264 6 3 Nut
+* 1272 21 6 bush
+- 1293 1294
+- 1294
+: 1314 7 5 Oh 
+: 1326 6 0 Nut
+: 1334 8 -1 bush
+- 1342 1358
+- 1358
+: 1378 4 2 Call 
+: 1383 2 1 it 
+: 1386 6 0 Nut
+: 1393 7 0 bush 
+: 1402 4 2 Ci
+: 1407 2 1 ty 
+: 1410 3 0 li
+: 1414 5 0 mits
+- 1419 1974
+- 1974
+: 1994 3 2 No 
+: 1998 5 0 Whis
+: 2004 2 -1 key 
+: 2007 3 1 for 
+: 2011 8 0 sale
+- 2019 2029
+- 2029
+: 2049 3 0 You 
+: 2053 5 0 get 
+: 2059 7 3 caught 
+: 2067 4 0 no 
+: 2073 10 2 Bail
+- 2083 2093
+- 2093
+: 2113 9 0 Soft 
+: 2123 7 2 Port 
+: 2131 3 0 and 
+: 2135 3 0 Mo
+: 2139 5 1 las
+: 2145 6 0 ses
+- 2151
+: 2171 4 0 Is 
+: 2176 17 4 all 
+: 2194 5 0 you 
+: 2200 3 0 get 
+: 2204 3 -1 in 
+: 2210 14 0 Jail
+- 2224
+: 2234 3 0 They 
+: 2239 2 3 call 
+: 2242 2 1 it 
+: 2245 7 2 Nut
+: 2253 15 0 bush
+- 2268 2278
+- 2278
+: 2298 7 4 Oh 
+: 2307 7 0 Nut
+: 2315 9 2 bush
+- 2324 2333
+- 2333
+: 2353 4 2 Yeah, 
+: 2358 2 0 they 
+: 2361 3 0 call 
+: 2365 2 0 it 
+: 2369 6 2 Nut
+: 2376 7 1 bush 
+: 2384 3 3 Ci
+: 2388 3 3 ty
+- 2391 2411
+- 2411
+: 2431 6 0 Nut 
+: 2438 6 0 bush 
+: 2445 3 4 Ci
+: 2449 2 3 ty 
+: 2452 3 1 li
+: 2456 8 1 mits
+- 2464 2468
+- 2468
+: 2488 4 0 Lit
+: 2493 3 0 tle 
+: 2497 5 0 old 
+: 2503 11 2 Town 
+: 2515 3 0 in 
+: 2519 2 0 Ten
+: 2522 3 0 nes
+: 2526 8 0 see
+- 2534
+: 2540 5 2 That’s 
+: 2547 12 0 called
+- 2559 2602
+- 2602
+: 2622 20 5 Quiet 
+: 2645 1 0 lit
+: 2647 1 0 tle 
+: 2649 4 0 old 
+: 2654 2 0 Com
+: 2657 2 0 mu
+: 2660 2 2 n
+: 2663 7 1 ity
+- 2670 2712
+- 2712
+: 2732 3 0 A 
+: 2736 6 4 one 
+: 2743 6 0 Horse 
+: 2750 11 2 Town
+- 2761 2766
+- 2766
+: 2786 4 0 You 
+: 2791 3 0 have 
+: 2795 3 3 to 
+: 2799 11 0 watch
+- 2810 2816
+- 2816
+: 2836 3 2 What 
+: 2840 4 1 you’re 
+: 2845 2 2 put
+: 2848 4 1 ting 
+: 2853 7 0 down
+E
