@@ -4,6 +4,7 @@ import { GAME_MODE, Song } from '~/interfaces';
 import GameState from '~/modules/game-engine/game-state/game-state';
 import { PingStats } from '~/modules/network/rpc/ping-stats';
 import { OnlineRoomState } from '~/modules/online/protocol/types';
+import { isInstrumentalVersion } from '~/modules/songs/utils/to-instrumental-version';
 
 /** Non-reversible digest of the room code for event correlation — avoids sending the raw,
  * joinable room code to the analytics vendor while still letting events for the same room be
@@ -25,6 +26,9 @@ const songMeta = (roomState: OnlineRoomState, song: Song) => ({
   name: `${song.artist} - ${song.title}`,
   artist: song.artist,
   title: song.title,
+  // The room plays one version, chosen by the host; the instrumental is reported apart from the original
+  instrumental: isInstrumentalVersion(song),
+  videoId: song.video,
   mode: GAME_MODE.DUEL,
   tolerance: roomState.tolerance,
   players: roomState.participants.length,

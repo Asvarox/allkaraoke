@@ -51,29 +51,41 @@ async function main() {
         continue;
       }
 
-      if (song.duration !== undefined) {
+      const needsInstrumental = !!song.instrumental && song.instrumental.duration === undefined;
+      if (song.duration !== undefined && !needsInstrumental) {
         skippedSongs += 1;
         continue;
       }
 
       console.log(`Backfilling duration: ${song.artist} - ${song.title} (${fileName})`);
 
-      try {
-        const durationSeconds = await durationProbeClient.getDuration(song.video);
-        const updatedSong: Song = {
-          ...song,
-          duration: durationSeconds,
-        };
+      // Probed one by one, so a video that can't be reached doesn't throw away the other's duration
+      const probe = async (video: string, label: string) => {
+        try {
+          return await durationProbeClient.getDuration(video);
+        } catch (error) {
+          const errorMessage = error instanceof Error ? error.message : String(error);
+          console.warn(`Skipping ${label} duration for ${fileName}: ${errorMessage}`);
+          return undefined;
+        }
+      };
+      const duration = song.duration ?? (await probe(song.video, 'original'));
+      const instrumentalDuration =
+        song.instrumental && needsInstrumental ? await probe(song.instrumental.video, 'instrumental') : undefined;
+      const failed = duration === undefined || (needsInstrumental && instrumentalDuration === undefined);
+      if (failed) failedSongs += 1;
+      if (duration === song.duration && instrumentalDuration === undefined) continue;
 
-        const updatedSongText = convertSongToTxt(updatedSong);
-        writeFileSync(fullPath, updatedSongText, { encoding: 'utf-8' });
-
-        updatedSongs += 1;
-      } catch (error) {
-        failedSongs += 1;
-        const errorMessage = error instanceof Error ? error.message : String(error);
-        console.warn(`Skipping duration for ${fileName}: ${errorMessage}`);
-      }
+      const updatedSong: Song = {
+        ...song,
+        duration,
+        instrumental:
+          song.instrumental && instrumentalDuration !== undefined
+            ? { ...song.instrumental, duration: instrumentalDuration }
+            : song.instrumental,
+      };
+      writeFileSync(fullPath, convertSongToTxt(updatedSong), { encoding: 'utf-8' });
+      if (!failed) updatedSongs += 1;
     }
   } finally {
     await durationProbeClient.close();

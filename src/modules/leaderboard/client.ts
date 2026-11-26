@@ -49,15 +49,18 @@ interface SongBoardQuery {
   tolerance: number;
   /** Ranked against the board without being on it — the response says where it would land. */
   score: number | null;
+  /** The instrumental's board, which is separate from the original's */
+  instrumental?: boolean;
 }
 
 /**
  * The SWR key doubles as the request URL, so a different song, difficulty or score is a different
  * fetch on its own without a `useEffect` to invalidate anything.
  */
-export const songBoardUrl = ({ songId, tolerance, score }: SongBoardQuery) => {
+export const songBoardUrl = ({ songId, tolerance, score, instrumental }: SongBoardQuery) => {
   const params = new URLSearchParams({ songId, tolerance: String(tolerance) });
   if (score !== null) params.set('score', String(Math.round(score)));
+  if (instrumental) params.set('instrumental', 'true');
 
   return `${SONG_LEADERBOARD_URL}?${params.toString()}`;
 };

@@ -10,6 +10,8 @@ import { findCurrentIndex, getLyricSyllables, getLyricWords, LyricSyllable, Lyri
 
 interface Props {
   songPreview: SongPreview;
+  /** The instrumental video is playing, so the lyrics follow its timing */
+  instrumental: boolean;
   player: RefObject<VideoPlayerRef | null>;
   /** The preview video is visible and playing */
   active: boolean;
@@ -48,7 +50,17 @@ interface LyricsWindow {
  * Karaoke lyrics popping out under the focused song tile, right-aligned to it, one word at a time in time
  * with the preview. Each syllable fills up while it is sung, and each word sits higher or lower with its pitch.
  */
-export default function PreviewLyrics({ songPreview, player, active, playedFrom, top, left, width, height }: Props) {
+export default function PreviewLyrics({
+  songPreview,
+  instrumental,
+  player,
+  active,
+  playedFrom,
+  top,
+  left,
+  width,
+  height,
+}: Props) {
   const [words, setWords] = useState<LyricWord[]>([]);
   const [lyricsWindow, setLyricsWindow] = useState<LyricsWindow | null>(null);
   const currentTime = useRef<milliseconds>(0);
@@ -56,15 +68,17 @@ export default function PreviewLyrics({ songPreview, player, active, playedFrom,
   const { id, sourceType, sharedSongId } = songPreview;
   useEffect(() => {
     let cancelled = false;
-    loadSongById(id, { sourceType, sharedSongId })
+    loadSongById(id, { sourceType, sharedSongId, instrumental })
       .then((song) => {
-        if (!cancelled && song) setWords(getLyricWords(getLyricSyllables(song)));
+        if (!cancelled && song) {
+          setWords(getLyricWords(getLyricSyllables(song)));
+        }
       })
       .catch(() => undefined);
     return () => {
       cancelled = true;
     };
-  }, [id, sourceType, sharedSongId]);
+  }, [id, sourceType, sharedSongId, instrumental]);
 
   const maxChars = Math.max(12, Math.floor(width / CHAR_WIDTH_PX));
 

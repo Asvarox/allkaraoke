@@ -21,12 +21,20 @@ const reasonVariants: Record<AdminReviewReason, ComponentProps<typeof Chip>['var
 };
 
 interface Props {
-  song: Pick<AdminReviewSong, 'reasons' | 'reportCounts' | 'players' | 'durationShift'>;
+  song: Pick<AdminReviewSong, 'reasons' | 'reportCounts' | 'players' | 'durationShift' | 'version'>;
 }
 
 export function ReviewReasonTags({ song }: Props) {
   return (
     <span className="inline-flex flex-wrap gap-1" data-test="admin-review-reasons">
+      {song.version === 'instrumental' && (
+        <Chip
+          variant="violet"
+          data-test="admin-review-instrumental"
+          title="Reported on the instrumental video - fix it in the instrumental version">
+          Instrumental
+        </Chip>
+      )}
       {song.reasons.map((reason) => {
         const reportCount = reason === 'unverified' ? undefined : song.reportCounts?.[reason];
         const title =

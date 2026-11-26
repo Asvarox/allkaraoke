@@ -6,7 +6,11 @@ import sleep from '~/modules/utils/sleep';
 
 import Youtube, { VideoPlayerRef } from './youtube';
 
-type Props = ComponentProps<typeof Youtube> & { ref?: React.Ref<VideoPlayerRef> };
+type Props = ComponentProps<typeof Youtube> & {
+  ref?: React.Ref<VideoPlayerRef>;
+  /** The YouTube video this file stands in for, so tests can tell which one was asked for */
+  standsInFor?: string;
+};
 
 export default function DirectVideoPlayer({
   video,
@@ -18,6 +22,7 @@ export default function DirectVideoPlayer({
   onStateChange,
   onReady,
   ref,
+  standsInFor,
 }: Props) {
   const player = useRef<HTMLVideoElement | null>(null);
   const [size, setSize] = useState({ w: width, h: height });
@@ -117,7 +122,12 @@ export default function DirectVideoPlayer({
   }, [startAt, playerApi]);
 
   return (
-    <video style={{ width: size.w, height: size.h }} autoPlay={autoplay} controls={controls} ref={player}>
+    <video
+      style={{ width: size.w, height: size.h }}
+      autoPlay={autoplay}
+      controls={controls}
+      ref={player}
+      data-video-id={standsInFor}>
       <source src={video} />
     </video>
   );

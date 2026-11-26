@@ -14,7 +14,7 @@ import { twx } from '~/utils/twx';
  * The status variants say how something is *going*, and take the four shared roles so a chip
  * reporting a failure matches every other way the app reports one.
  */
-type CategoryVariant = 'blue' | 'green' | 'orange' | 'zinc' | 'slate' | 'esc';
+type CategoryVariant = 'blue' | 'green' | 'orange' | 'zinc' | 'slate' | 'esc' | 'violet';
 type Variant = CategoryVariant | StatusRole;
 
 const categoryClasses: Record<CategoryVariant, string> = {
@@ -24,6 +24,8 @@ const categoryClasses: Record<CategoryVariant, string> = {
   orange: 'bg-orange-500/20 border border-orange-500/30 text-orange-400',
   zinc: 'bg-zinc-700 text-default',
   slate: 'bg-slate-600/40 border border-white/10 text-default/80',
+  // Solid rather than tinted: the one category meant to stand out in a row of badges
+  violet: 'bg-violet-600 border border-violet-300/60 text-white',
 };
 
 // A status chip is small and its label is the whole message, so unlike a warning panel it does want

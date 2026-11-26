@@ -33,6 +33,7 @@ export default function convertSongToTxt(song: Song) {
       | 'sourceType'
       | 'sharedSongId'
       | 'isUnverifiedSong'
+      | 'instrumental'
     >,
     string | undefined
   > = {
@@ -77,9 +78,21 @@ export default function convertSongToTxt(song: Song) {
       );
     });
 
+  const instrumentalValues = song.instrumental
+    ? [
+        toTxtValue('ALLKARAOKE_INSTRUMENTALVIDEO', song.instrumental.video),
+        toTxtValue('ALLKARAOKE_INSTRUMENTALGAP', song.instrumental.gap),
+        toTxtValue('ALLKARAOKE_INSTRUMENTALVIDEOGAP', song.instrumental.videoGap),
+        toTxtValue('ALLKARAOKE_INSTRUMENTALVOLUME', song.instrumental.volume),
+        toTxtValue('ALLKARAOKE_INSTRUMENTALDURATION', song.instrumental.duration),
+        toTxtValue('ALLKARAOKE_INSTRUMENTALBPM', song.instrumental.bpm),
+      ]
+    : [];
+
   const knownMetadata = Object.values(parsedValues)
     .concat(trackNames[0] ? toTxtValue('P1', trackNames[0]) : undefined)
     .concat(trackNames[1] ? toTxtValue('P2', trackNames[1]) : undefined)
+    .concat(instrumentalValues)
     .filter(notFalsy);
 
   const knownMetadataKeys = knownMetadata.map(getMetadataKey);

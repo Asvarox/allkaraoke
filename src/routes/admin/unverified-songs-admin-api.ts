@@ -1,4 +1,5 @@
 import { Song } from '~/interfaces';
+import { getSongVersionKey, SongVersion } from '~/modules/songs/song-version';
 import convertSongToTxt from '~/modules/songs/utils/convert-song-to-txt';
 
 import { getAdminPassword } from './admin-password';
@@ -100,6 +101,8 @@ export interface DurationShiftDetails {
 
 export interface AdminSongQualityFlag {
   songId: string;
+  /** Missing means the original */
+  version?: SongVersion;
   artist: string;
   title: string;
   language: string[];
@@ -130,9 +133,10 @@ export const listAdminSongQualityFlags = async (password: string) => {
   return response.json() as Promise<{ generatedAt: number; songs: AdminSongQualityFlag[] }>;
 };
 
-export const deleteAdminSongQualityFlag = async (password: string, songId: string) => {
+export const deleteAdminSongQualityFlag = async (password: string, songId: string, version?: SongVersion) => {
   const url = new URL('/admin/song-quality-flags', window.location.origin);
   url.searchParams.set('id', songId);
+  if (version === 'instrumental') url.searchParams.set('version', version);
   const response = await fetch(url.toString(), {
     method: 'DELETE',
     headers: adminHeaders(password),
@@ -146,9 +150,11 @@ export type AdminReviewReason = 'unverified' | SongQualityIssue;
 
 /** A song waiting for admin review - either an unverified (shared) song or a library song reported by players. */
 export interface AdminReviewSong {
-  /** sharedSongId for unverified songs, songId for reported library songs */
+  /** sharedSongId for unverified songs, songId (suffixed for the instrumental) for reported library songs */
   key: string;
   songId: string;
+  /** Set for reports about the instrumental video */
+  version?: SongVersion;
   artist: string;
   title: string;
   language: string[];
@@ -173,7 +179,8 @@ export const toAdminReviewSongs = (
     reasons: ['unverified'],
   }));
   const reported = flags.flatMap((flag): AdminReviewSong[] => {
-    const unverifiedSong = unverified.find((song) => song.songId === flag.songId);
+    const isInstrumental = flag.version === 'instrumental';
+    const unverifiedSong = isInstrumental ? undefined : unverified.find((song) => song.songId === flag.songId);
     if (unverifiedSong) {
       unverifiedSong.reasons.push(...flag.issues);
       unverifiedSong.reportCounts = flag.reportCounts;
@@ -184,8 +191,9 @@ export const toAdminReviewSongs = (
 
     return [
       {
-        key: flag.songId,
+        key: getSongVersionKey(flag.songId, flag.version),
         songId: flag.songId,
+        ...(isInstrumental ? { version: flag.version } : {}),
         artist: flag.artist,
         title: flag.title,
         language: flag.language,

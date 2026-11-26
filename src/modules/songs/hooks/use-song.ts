@@ -7,12 +7,13 @@ export default function useSong(songId: string, options?: LoadSongOptions) {
   const [song, setSong] = useState<Song | null>(null);
   const sourceType = options?.sourceType;
   const sharedSongId = options?.sharedSongId;
+  const instrumental = options?.instrumental;
 
   useEffect(() => {
     let active = true;
     setSong(null);
 
-    loadSongById(songId, { sourceType, sharedSongId })
+    loadSongById(songId, { sourceType, sharedSongId, instrumental })
       .then((loaded) => {
         if (active) setSong(loaded);
       })
@@ -23,7 +24,7 @@ export default function useSong(songId: string, options?: LoadSongOptions) {
     return () => {
       active = false;
     };
-  }, [songId, sharedSongId, sourceType]);
+  }, [songId, sharedSongId, sourceType, instrumental]);
 
   return {
     data: song,

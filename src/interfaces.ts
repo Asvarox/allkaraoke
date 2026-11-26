@@ -44,6 +44,8 @@ export interface SingSetup {
   players: PlayerSetup[];
   mode: ValuesType<typeof GAME_MODE>;
   tolerance: number;
+  /** Play the song's instrumental video instead of the original */
+  instrumental?: boolean;
 }
 
 export interface Song {
@@ -82,6 +84,19 @@ export interface Song {
   isUnverifiedSong?: boolean;
   unsupportedProps: string[];
   mergedTrack: SongTrack;
+  instrumental?: SongInstrumental;
+}
+
+/** Instrumental video of the same recording. Timings are absolute, relative to the instrumental video itself */
+export interface SongInstrumental {
+  video: string;
+  gap: milliseconds;
+  videoGap: seconds | undefined;
+  volume: number | undefined;
+  /** Length of the instrumental video */
+  duration?: seconds;
+  /** Set when the instrumental plays at a slightly different speed than the original, so notes stretch with it */
+  bpm?: number;
 }
 
 export interface SongTrack {

@@ -1,6 +1,7 @@
 import { useSyncExternalStore } from 'react';
 
 import { Song } from '~/interfaces';
+import { parseSongVersionKey, SongVersion } from '~/modules/songs/song-version';
 import SongDao from '~/modules/songs/songs-service';
 import { shareSong } from '~/routes/edit/share-songs-modal';
 
@@ -50,6 +51,8 @@ const publishSaves = () => {
 export interface AdminReviewSaveTarget {
   key: string;
   sharedSongId?: string;
+  /** The reported video of a library song */
+  version?: SongVersion;
 }
 
 export const persistAdminReviewSong = async (target: AdminReviewSaveTarget, song: Song) => {
@@ -59,7 +62,8 @@ export const persistAdminReviewSong = async (target: AdminReviewSaveTarget, song
     await updateAdminUnverifiedSong(target.sharedSongId, song);
   } else {
     // The fix reaches the library with the nightly import, the next weekly run won't count older reports
-    await deleteAdminSongQualityFlag(getAdminPassword(), target.key);
+    // By the reported id, as an artist or title fix gives the saved song a new one
+    await deleteAdminSongQualityFlag(getAdminPassword(), parseSongVersionKey(target.key).songId, target.version);
   }
   markAdminSongVerified(target.key);
 };

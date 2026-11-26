@@ -142,6 +142,8 @@ export interface SongHoverPreview {
   previewStart?: number;
   previewEnd?: number;
   volume?: number;
+  /** The host picked the instrumental: `video` and the preview times are the instrumental's */
+  instrumental?: boolean;
 }
 
 /**

@@ -1,3 +1,5 @@
+import { getSongVersionKey, SongVersion } from '../src/modules/songs/song-version';
+
 export const SONG_QUALITY_ISSUES = ['not-in-sync', 'too-loud', 'too-quiet', 'duration-shift'] as const;
 
 export type SongQualityIssue = (typeof SONG_QUALITY_ISSUES)[number];
@@ -14,9 +16,12 @@ export interface DurationShiftDetails {
 
 export interface SongQualityFlag {
   songId: string;
+  /** Missing means the original */
+  version?: SongVersion;
   artist: string;
   title: string;
   language: string[];
+  /** The flagged version's video */
   videoId: string;
   issues: SongQualityIssue[];
   /** Distinct players who reported each issue */
@@ -31,7 +36,7 @@ export interface SongQualityFlagsDocument {
   songs: SongQualityFlag[];
 }
 
-/** When each song's reports were last dismissed (ms). The weekly job ignores reports made before that. */
+/** When each flag's reports were last dismissed (ms), by flag key. The weekly job ignores reports made before that. */
 export type SongQualityDismissals = Record<string, number>;
 
 const SONG_QUALITY_FLAGS_KEY = 'song-quality-flags';
@@ -39,6 +44,8 @@ const DURATION_SHIFT_FLAGS_KEY = 'song-duration-shift-flags';
 const SONG_QUALITY_DISMISSALS_KEY = 'song-quality-dismissals';
 // Older dismissals no longer matter - the weekly job only looks this far back
 const DISMISSAL_RETENTION_MS = 200 * 24 * 60 * 60 * 1000;
+
+const getFlagKey = (flag: Pick<SongQualityFlag, 'songId' | 'version'>) => getSongVersionKey(flag.songId, flag.version);
 
 const isSongQualityIssue = (value: unknown): value is SongQualityIssue =>
   SONG_QUALITY_ISSUES.includes(value as SongQualityIssue);
@@ -80,6 +87,7 @@ export const normalizeSongQualityFlag = (payload: unknown): SongQualityFlag | nu
 
   return {
     songId: flag.songId,
+    ...(flag.version === 'instrumental' ? { version: 'instrumental' as const } : {}),
     artist: flag.artist,
     title: flag.title,
     language: Array.isArray(flag.language) ? flag.language.filter((lang) => typeof lang === 'string') : [],
@@ -113,12 +121,12 @@ export const getSongQualityFlags = async (kvNamespace: KVNamespace): Promise<Son
     getReportFlags(kvNamespace),
     getDurationShiftFlags(kvNamespace),
   ]);
-  const merged = new Map(reports.songs.map((flag) => [flag.songId, flag]));
+  const merged = new Map(reports.songs.map((flag) => [getFlagKey(flag), flag]));
 
   for (const flag of durationShifts) {
-    const reportFlag = merged.get(flag.songId);
+    const reportFlag = merged.get(getFlagKey(flag));
     merged.set(
-      flag.songId,
+      getFlagKey(flag),
       reportFlag
         ? {
             ...reportFlag,
@@ -144,11 +152,11 @@ export const replaceSongQualityFlags = async (kvNamespace: KVNamespace, songs: S
 
 /** Adds or replaces duration-shift flags (local script, run by hand - nothing else writes this key) */
 export const addDurationShiftFlags = async (kvNamespace: KVNamespace, songs: SongQualityFlag[]) => {
-  const merged = new Map((await getDurationShiftFlags(kvNamespace)).map((flag) => [flag.songId, flag]));
+  const merged = new Map((await getDurationShiftFlags(kvNamespace)).map((flag) => [getFlagKey(flag), flag]));
 
   for (const flag of songs) {
     if (!flag.issues.includes('duration-shift')) continue;
-    merged.set(flag.songId, { ...flag, issues: ['duration-shift'], reportCounts: {}, players: 0 });
+    merged.set(getFlagKey(flag), { ...flag, issues: ['duration-shift'], reportCounts: {}, players: 0 });
   }
 
   await kvNamespace.put(DURATION_SHIFT_FLAGS_KEY, JSON.stringify([...merged.values()]));
@@ -160,10 +168,10 @@ export const getSongQualityDismissals = async (kvNamespace: KVNamespace): Promis
   return Object.fromEntries(Object.entries(stored ?? {}).filter(([, dismissedAt]) => typeof dismissedAt === 'number'));
 };
 
-const recordSongQualityDismissal = async (kvNamespace: KVNamespace, songId: string, dismissedAt: number) => {
+const recordSongQualityDismissal = async (kvNamespace: KVNamespace, flagKey: string, dismissedAt: number) => {
   const current = await getSongQualityDismissals(kvNamespace);
   const dismissals = Object.fromEntries(
-    Object.entries({ ...current, [songId]: dismissedAt }).filter(
+    Object.entries({ ...current, [flagKey]: dismissedAt }).filter(
       ([, time]) => time > dismissedAt - DISMISSAL_RETENTION_MS,
     ),
   );
@@ -171,19 +179,24 @@ const recordSongQualityDismissal = async (kvNamespace: KVNamespace, songId: stri
   await kvNamespace.put(SONG_QUALITY_DISMISSALS_KEY, JSON.stringify(dismissals));
 };
 
-export const removeSongQualityFlag = async (kvNamespace: KVNamespace, songId: string) => {
+export const removeSongQualityFlag = async (
+  kvNamespace: KVNamespace,
+  songId: string,
+  version: SongVersion = 'original',
+) => {
+  const flagKey = getSongVersionKey(songId, version);
   const [reports, durationShifts] = await Promise.all([
     getReportFlags(kvNamespace),
     getDurationShiftFlags(kvNamespace),
   ]);
-  const reportSongs = reports.songs.filter((flag) => flag.songId !== songId);
-  const durationShiftSongs = durationShifts.filter((flag) => flag.songId !== songId);
+  const reportSongs = reports.songs.filter((flag) => getFlagKey(flag) !== flagKey);
+  const durationShiftSongs = durationShifts.filter((flag) => getFlagKey(flag) !== flagKey);
   const removedReport = reportSongs.length !== reports.songs.length;
   const removedDurationShift = durationShiftSongs.length !== durationShifts.length;
 
   if (!removedReport && !removedDurationShift) return false;
 
-  await recordSongQualityDismissal(kvNamespace, songId, Date.now());
+  await recordSongQualityDismissal(kvNamespace, flagKey, Date.now());
   if (removedReport) {
     await kvNamespace.put(SONG_QUALITY_FLAGS_KEY, JSON.stringify({ ...reports, songs: reportSongs }));
   }

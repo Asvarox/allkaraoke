@@ -54,6 +54,9 @@ export default function RateSong({ register, onExit, onBack, song, isUnverifiedS
       songId: song?.id,
       sharedSongId: song?.sharedSongId,
       songLastUpdated: song?.lastUpdate,
+      // Reports of the instrumental are about its own video, not the original's
+      instrumental: !!GameState.getSingSetup()?.instrumental,
+      videoId: song?.video,
       inputLag: InputLagSetting.get(),
       completionPercentage: GameState.getSongCompletionProgress(),
     };

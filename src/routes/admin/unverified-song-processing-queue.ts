@@ -76,12 +76,14 @@ export const getRandomAdminReviewSong = (
 };
 
 export const buildAdminReviewSongProcessingUrl = (
-  song: Pick<AdminReviewSong, 'songId' | 'sharedSongId'>,
+  song: Pick<AdminReviewSong, 'songId' | 'sharedSongId' | 'version'>,
   queue?: AdminReviewQueue,
 ) => {
   const searchParams = new URLSearchParams(
     song.sharedSongId ? { externalSong: song.sharedSongId } : { song: song.songId },
   );
+  // Opens the sync step on the reported video
+  if (song.version === 'instrumental') searchParams.set('version', 'instrumental');
   searchParams.set('admin', 'true');
   searchParams.set('step', 'sync');
 

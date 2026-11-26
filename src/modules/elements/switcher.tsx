@@ -15,6 +15,8 @@ interface Props extends PropsWithChildren, Omit<ComponentProps<typeof Menu.Butto
   label: ReactNode;
   value: string | number | undefined | null;
   displayValue?: ReactNode;
+  /** Shown right after the label, e.g. a "New" chip */
+  badge?: ReactNode;
   info?: ReactNode;
   onClick?: () => void;
   /**
@@ -32,6 +34,7 @@ export const Switcher = ({
   label,
   value,
   displayValue,
+  badge,
   onClick,
   info,
   readOnly,
@@ -56,6 +59,7 @@ export const Switcher = ({
         the value animate in/out with `position: absolute` applied only to the exiting node, so the
         crossfade doesn't fight the flex layout while it settles into the new remaining width. */}
     <span className="shrink-0 font-normal whitespace-nowrap">{label ? <>{label}:</> : ''}</span>
+    {badge}
     <AnimatePresence mode="popLayout">
       <motion.span
         layout

@@ -149,6 +149,54 @@ describe('song quality flags admin function', () => {
     expect(await listFlags()).toEqual([]);
   });
 
+  it('keeps the instrumental flag apart from the original and dismisses each on its own', async () => {
+    const durationShift = { previousDuration: 200, currentDuration: 205, offset: null, detectedAt: 1 };
+    const listFlags = async () =>
+      (
+        await (
+          await fetchWorker('https://example.com/admin/song-quality-flags', adminRequest())
+        ).json<{ songs: SongQualityFlag[] }>()
+      ).songs.map((song) => [song.songId, song.version ?? 'original', song.videoId, song.issues]);
+
+    await replaceSongQualityFlags(workerEnv.SHARED_SONGS_KV, [
+      flag(),
+      flag({ version: 'instrumental', videoId: 'instrumental-video', issues: ['too-loud'] }),
+    ]);
+    await fetchWorker('https://example.com/song-quality-flags-admin', {
+      method: 'POST',
+      headers: { 'x-unverified-songs-admin-token': 'ci-token' },
+      body: JSON.stringify({
+        songs: [
+          flag({
+            version: 'instrumental',
+            videoId: 'instrumental-video',
+            issues: ['duration-shift'],
+            reportCounts: {},
+            durationShift,
+          }),
+        ],
+      }),
+    });
+
+    expect(await listFlags()).toEqual([
+      ['song-1', 'original', 'video-id', ['not-in-sync']],
+      ['song-1', 'instrumental', 'instrumental-video', ['too-loud', 'duration-shift']],
+    ]);
+
+    await fetchWorker(
+      'https://example.com/admin/song-quality-flags?id=song-1&version=instrumental',
+      adminRequest({ method: 'DELETE' }),
+    );
+    expect(await listFlags()).toEqual([['song-1', 'original', 'video-id', ['not-in-sync']]]);
+
+    const { dismissals } = await (
+      await fetchWorker('https://example.com/song-quality-flags-admin', {
+        headers: { 'x-unverified-songs-admin-token': 'ci-token' },
+      })
+    ).json<{ dismissals: Record<string, number> }>();
+    expect(Object.keys(dismissals)).toEqual(['song-1:instrumental']);
+  });
+
   it('rejects CI updates without the admin token', async () => {
     const response = await fetchWorker('https://example.com/song-quality-flags-admin', {
       method: 'PUT',

@@ -14,10 +14,13 @@ import { processSong } from '~/modules/songs/utils/process-song/process-song';
  * a shared song carries the same provenance here as it does when sung locally. */
 export const loadSongForUpload = async (
   preview: Pick<SongPreview, 'id'> & Partial<Pick<SongPreview, 'sourceType' | 'sharedSongId'>>,
+  instrumental = false,
 ): Promise<Song> => {
+  // The room gets the chart already swapped to the picked version, so every singer plays the same video
   const song = await loadSongById(preview.id, {
     sourceType: preview.sourceType,
     sharedSongId: preview.sharedSongId,
+    instrumental,
   });
   if (!song) {
     throw new Error(`Song not found: ${preview.id}`);

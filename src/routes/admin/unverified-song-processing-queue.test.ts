@@ -218,6 +218,12 @@ describe('buildAdminReviewSongProcessingUrl', () => {
     );
     expect(buildAdminReviewSongProcessingUrl({ songId: 'song' })).toBe('edit/song/?song=song&admin=true&step=sync');
   });
+
+  it('opens instrumental reports on the instrumental version', () => {
+    expect(buildAdminReviewSongProcessingUrl({ songId: 'song', version: 'instrumental' }, 'reports')).toBe(
+      'edit/song/?song=song&version=instrumental&admin=true&step=sync&processQueue=reports',
+    );
+  });
 });
 
 describe('toAdminReviewSongs', () => {
@@ -283,5 +289,32 @@ describe('getNextAdminReviewSongProcessingUrl', () => {
     const current = makeSong({ sharedSongId: 'current' });
 
     expect(getNextAdminReviewSongProcessingUrl([current], 'unverified', 'current')).toBe('admin/');
+  });
+
+  it('keeps instrumental reports as a separate entry from the original and from the unverified song', () => {
+    const flag = { artist: 'A', title: 'A', language: [], reportCounts: {}, players: 0 };
+    const songs = toAdminReviewSongs(
+      [
+        {
+          sharedSongId: 'a',
+          songId: 'a',
+          artist: 'A',
+          title: 'A',
+          language: [],
+          videoId: '',
+          firstSeenAt: 1,
+          updated: 1,
+        },
+      ],
+      [
+        { ...flag, songId: 'a', videoId: 'original', issues: ['too-loud'] },
+        { ...flag, songId: 'a', version: 'instrumental', videoId: 'instrumental', issues: ['not-in-sync'] },
+      ],
+    );
+
+    expect(songs.map(({ key, reasons, version, videoId }) => ({ key, reasons, version, videoId }))).toEqual([
+      { key: 'a', reasons: ['unverified', 'too-loud'], version: undefined, videoId: '' },
+      { key: 'a:instrumental', reasons: ['not-in-sync'], version: 'instrumental', videoId: 'instrumental' },
+    ]);
   });
 });

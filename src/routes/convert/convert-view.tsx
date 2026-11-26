@@ -14,11 +14,12 @@ import useBackgroundMusic from '~/modules/hooks/use-background-music';
 import useQueryParam from '~/modules/hooks/use-query-param';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import useSongIndex from '~/modules/songs/hooks/use-song-index';
+import { getSongVersionKey } from '~/modules/songs/song-version';
 import SongDao from '~/modules/songs/songs-service';
 import convertTxtToSong, { getVideoId } from '~/modules/songs/utils/convert-txt-to-song';
 import getSongId from '~/modules/songs/utils/get-song-id';
 import setQueryParam from '~/modules/utils/set-query-param';
-import { getAdminPassword } from '~/routes/admin/admin-password';
+import { getAdminPassword, isAdminUser } from '~/routes/admin/admin-password';
 import {
   AdminReviewSaveTarget,
   persistAdminReviewSong,
@@ -42,6 +43,8 @@ interface Props {
   adminUnverifiedSongId?: string;
   /** A library song opened from the admin review queue because players reported it */
   adminReportedSongId?: string;
+  /** Set when the reports are about the instrumental video */
+  adminReportedVersion?: 'instrumental';
 }
 
 function isEmptyValue<T>(v: T | T[] | undefined) {
@@ -50,6 +53,18 @@ function isEmptyValue<T>(v: T | T[] | undefined) {
 
 // Kept out of the component: React Compiler can't compile `||` inside a try block
 const getVideoIdOrFallback = (videoUrl: string, fallback: string) => getVideoId(videoUrl) || fallback;
+
+// A changed instrumental video starts from the original's timings, as the old ones belonged to the previous video
+const withInstrumentalVideo = (song: Song, instrumentalVideoUrl: string): Song => {
+  const video = instrumentalVideoUrl.length === 11 ? instrumentalVideoUrl : getVideoId(instrumentalVideoUrl);
+  if (!video) return { ...song, instrumental: undefined };
+  if (song.instrumental?.video === video) return song;
+
+  return {
+    ...song,
+    instrumental: { video, gap: song.gap, videoGap: song.videoGap, volume: song.instrumental?.volume },
+  };
+};
 
 const steps = ['basic-data', 'author-and-video', 'sync', 'metadata'] as const;
 
@@ -62,6 +77,7 @@ const getAuthorAndVideoFromSong = (song?: Song): AuthorAndVidEntity => ({
   author: song?.author ?? '',
   authorUrl: song?.authorUrl ?? '',
   video: song?.video ? `https://www.youtube.com/watch?v=${song.video}` : '',
+  instrumentalVideo: song?.instrumental ? `https://www.youtube.com/watch?v=${song.instrumental.video}` : '',
 });
 
 const getMetadataEntityFromSong = (song?: Song): SongMetadataEntity => ({
@@ -71,6 +87,7 @@ const getMetadataEntityFromSong = (song?: Song): SongMetadataEntity => ({
   year: song?.year ?? '',
   language: song?.language ?? [],
   volume: song?.volume ?? 70,
+  instrumentalVolume: song?.instrumental?.volume,
   previewStart: song?.previewStart ?? undefined,
   previewEnd: song?.previewEnd ?? undefined,
   genre: song?.genre,
@@ -91,7 +108,7 @@ const duplicateStepProps = (isDuplicate: boolean) =>
       }
     : {};
 
-export default function ConvertView({ song, adminUnverifiedSongId, adminReportedSongId }: Props) {
+export default function ConvertView({ song, adminUnverifiedSongId, adminReportedSongId, adminReportedVersion }: Props) {
   const isEdit = !!song;
   const { data: songs } = useSongIndex(true);
   useBackground(false);
@@ -107,7 +124,9 @@ export default function ConvertView({ song, adminUnverifiedSongId, adminReported
   const adminReviewTarget: AdminReviewSaveTarget | undefined = adminUnverifiedSongId
     ? { key: adminUnverifiedSongId, sharedSongId: adminUnverifiedSongId }
     : adminReportedSongId
-      ? { key: adminReportedSongId }
+      ? adminReportedVersion
+        ? { key: getSongVersionKey(adminReportedSongId, adminReportedVersion), version: adminReportedVersion }
+        : { key: adminReportedSongId }
       : undefined;
   const autoplayFirstSection = useVerificationAutoplay(!!adminReviewTarget && isAdminProcessingQueue);
 
@@ -148,13 +167,16 @@ export default function ConvertView({ song, adminUnverifiedSongId, adminReported
   const conversionResult: Song | undefined = useMemo(() => {
     try {
       if (isEdit)
-        return {
-          ...song,
-          video: getVideoIdOrFallback(authorAndVid.video, song.video),
-          author: authorAndVid.author,
-          authorUrl: authorAndVid.authorUrl,
-          sourceUrl: basicData.sourceUrl,
-        };
+        return withInstrumentalVideo(
+          {
+            ...song,
+            video: getVideoIdOrFallback(authorAndVid.video, song.video),
+            author: authorAndVid.author,
+            authorUrl: authorAndVid.authorUrl,
+            sourceUrl: basicData.sourceUrl,
+          },
+          authorAndVid.instrumentalVideo,
+        );
       if (!basicData.txtInput) return undefined;
       const result = convertTxtToSong(
         basicData.txtInput,
@@ -164,7 +186,7 @@ export default function ConvertView({ song, adminUnverifiedSongId, adminReported
         basicData.sourceUrl,
       );
 
-      return result;
+      return withInstrumentalVideo(result, authorAndVid.instrumentalVideo);
     } catch (e: unknown) {
       console.error(e);
     }
@@ -172,6 +194,7 @@ export default function ConvertView({ song, adminUnverifiedSongId, adminReported
   }, [
     basicData.txtInput,
     authorAndVid.video,
+    authorAndVid.instrumentalVideo,
     authorAndVid.author,
     authorAndVid.authorUrl,
     basicData.sourceUrl,
@@ -218,6 +241,15 @@ export default function ConvertView({ song, adminUnverifiedSongId, adminReported
           video: `https://www.youtube.com/watch?v=${conversionResult.video}`,
         }));
       }
+      // The instrumental field overrides the txt's own, so it starts from what the txt has
+      const txtInstrumental =
+        !isEdit && !authorAndVid.instrumentalVideo && convertTxtToSong(basicData.txtInput).instrumental;
+      if (txtInstrumental) {
+        setAuthorAndVid((current) => ({
+          ...current,
+          instrumentalVideo: `https://www.youtube.com/watch?v=${txtInstrumental.video}`,
+        }));
+      }
       if (!!conversionResult.author && !authorAndVid.author) {
         setAuthorAndVid((current) => ({
           ...current,
@@ -261,9 +293,14 @@ export default function ConvertView({ song, adminUnverifiedSongId, adminReported
 
   const isNextStepAvailable = steps[currentStep] === 'author-and-video' ? isAuthorAndVidCompleted : true;
 
+  const { instrumentalVolume, ...metadata } = metadataEntity;
   const finalSong: Song = {
     ...editedSong!,
-    ...metadataEntity,
+    ...metadata,
+    instrumental: editedSong?.instrumental && {
+      ...editedSong.instrumental,
+      volume: instrumentalVolume ?? editedSong.instrumental.volume,
+    },
     author: authorAndVid.author,
     authorUrl: authorAndVid.authorUrl,
     realBpm: +metadataEntity.realBpm,
@@ -382,7 +419,7 @@ export default function ConvertView({ song, adminUnverifiedSongId, adminReported
               <BasicData
                 shouldAutoImport={!isAuthorAndVidCompleted}
                 isTxtRequired={!song}
-                onAutoImport={setAuthorAndVid}
+                onAutoImport={(data) => setAuthorAndVid((current) => ({ ...current, ...data }))}
                 onChange={setBasicData}
                 data={basicData}
                 finalSong={finalSong}
@@ -414,6 +451,7 @@ export default function ConvertView({ song, adminUnverifiedSongId, adminReported
                 data={metadataEntity}
                 songArtist={conversionResult?.artist}
                 videoId={conversionResult?.video ?? ''}
+                instrumentalVideoId={isAdminUser() ? editedSong?.instrumental?.video : undefined}
                 isAdminUnverifiedSong={!!adminUnverifiedSongId}
               />
             )}

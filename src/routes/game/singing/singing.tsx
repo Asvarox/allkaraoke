@@ -35,6 +35,7 @@ function Singing({ songPreview, singSetup, returnToSongSelection, restartSong }:
   const song = useSong(songPreview.id, {
     sourceType: songPreview.sourceType,
     sharedSongId: songPreview.sharedSongId,
+    instrumental: singSetup.instrumental,
   });
   const [isCalibrated, setIsCalibrated] = useSettingValue(IsCalibratedSetting);
 
