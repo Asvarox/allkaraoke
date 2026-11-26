@@ -6,6 +6,7 @@ import { Chip } from '~/modules/elements/akui/chip';
 import { Icon } from '~/modules/elements/akui/icon';
 import VideoPlayer, { VideoPlayerRef, VideoState } from '~/modules/elements/video-player/index';
 import { SongHoverPreview } from '~/modules/online/protocol/types';
+import useInstrumentalsEnabled from '~/modules/songs/use-instrumentals-enabled';
 import SongFlag from '~/routes/sing-a-song/song-selection/components/song-card/song-flag';
 
 interface Props {
@@ -29,6 +30,7 @@ const PREVIEW_LENGTH = 30;
 /** The lobby's middle column: the song's video and details, but led by who is picking — the song
  * may not exist yet — with the song's own title as a caption under the video. */
 function LobbySongCard({ preview, invite, pickerName, picked = false, onChooseSong, footer }: Props) {
+  const instrumentalsEnabled = useInstrumentalsEnabled();
   const player = useRef<VideoPlayerRef | null>(null);
   // The player takes a fixed pixel size, so it's kept matched to the thumbnail it fills
   const [thumbnailRef, { width: thumbnailWidth, height: thumbnailHeight }] = useMeasure<HTMLDivElement>();
@@ -138,7 +140,7 @@ function LobbySongCard({ preview, invite, pickerName, picked = false, onChooseSo
                     <span>{preview.difficulty}</span>
                   </Chip>
                 )}
-                {preview.instrumental && (
+                {instrumentalsEnabled && preview.instrumental && (
                   <Chip
                     variant="violet"
                     className="[&_svg]:h-4 [&_svg]:w-4"

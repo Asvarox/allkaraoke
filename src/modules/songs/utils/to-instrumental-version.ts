@@ -11,6 +11,12 @@ export const toInstrumentalTime = (song: Pick<VersionedSong, 'gap' | 'bpm' | 'in
     ? song.instrumental.gap / 1000 + (time - song.gap / 1000) * (song.bpm / (song.instrumental.bpm ?? song.bpm))
     : time;
 
+/** The inverse of {@link toInstrumentalTime}: where a moment of the instrumental (seconds) is in the original video */
+export const fromInstrumentalTime = (song: Pick<VersionedSong, 'gap' | 'bpm' | 'instrumental'>, time: number) =>
+  song.instrumental
+    ? song.gap / 1000 + (time - song.instrumental.gap / 1000) * ((song.instrumental.bpm ?? song.bpm) / song.bpm)
+    : time;
+
 /**
  * Swaps in the instrumental's video and timings. Notes are shared, so everything downstream works unchanged.
  * The preview is set on the original video, so it moves to the same moment of the instrumental.

@@ -241,6 +241,15 @@ export default function ConvertView({ song, adminUnverifiedSongId, adminReported
           video: `https://www.youtube.com/watch?v=${conversionResult.video}`,
         }));
       }
+      // The instrumental field overrides the txt's own, so it starts from what the txt has
+      const txtInstrumental =
+        !isEdit && !authorAndVid.instrumentalVideo && convertTxtToSong(basicData.txtInput).instrumental;
+      if (txtInstrumental) {
+        setAuthorAndVid((current) => ({
+          ...current,
+          instrumentalVideo: `https://www.youtube.com/watch?v=${txtInstrumental.video}`,
+        }));
+      }
       if (!!conversionResult.author && !authorAndVid.author) {
         setAuthorAndVid((current) => ({
           ...current,

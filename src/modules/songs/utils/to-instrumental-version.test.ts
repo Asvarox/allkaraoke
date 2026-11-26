@@ -1,5 +1,6 @@
 import { mulitrack } from '~/modules/songs/utils/song-fixture';
 import toInstrumentalVersion, {
+  fromInstrumentalTime,
   isInstrumentalVersion,
   toInstrumentalTime,
 } from '~/modules/songs/utils/to-instrumental-version';
@@ -72,5 +73,14 @@ describe('toInstrumentalVersion', () => {
   it('should keep the BPM when the instrumental has none of its own', () => {
     const song = { ...mulitrack, instrumental: { video: 'instrumental', gap: 0, videoGap: 0, volume: undefined } };
     expect(toInstrumentalVersion(song).bpm).toBe(mulitrack.bpm);
+  });
+});
+
+describe('fromInstrumentalTime', () => {
+  it('maps an instrumental moment back to the original, undoing the stretch', () => {
+    const song = { gap: 1000, bpm: 120, instrumental: { video: 'i', gap: 3000, videoGap: 0, volume: 1, bpm: 60 } };
+
+    expect(toInstrumentalTime(song, 61)).toBe(123);
+    expect(fromInstrumentalTime(song, 123)).toBe(61);
   });
 });

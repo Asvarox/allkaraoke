@@ -32,7 +32,9 @@ export const toSongHoverPreview = (
   difficulty?: string,
   instrumental = false,
 ): SongHoverPreview => {
-  const song = instrumental ? toInstrumentalVersion(original) : original;
+  // The fallback preview moment is on the original video, so it's set before the swap moves it to the instrumental
+  const withPreview = { ...original, previewStart: original.previewStart ?? (original.videoGap ?? 0) + 60 };
+  const song = instrumental ? toInstrumentalVersion(withPreview) : original;
 
   return {
     songId: song.id,

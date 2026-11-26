@@ -3,7 +3,7 @@ import { RefObject, useCallback, useEffect, useLayoutEffect, useMemo, useRef, us
 import { SongPreview } from '~/interfaces';
 import { VideoPlayerRef, VideoState } from '~/modules/elements/video-player/index';
 import useDebounce from '~/modules/hooks/use-debounce';
-import { toInstrumentalTime } from '~/modules/songs/utils/to-instrumental-version';
+import { fromInstrumentalTime, toInstrumentalTime } from '~/modules/songs/utils/to-instrumental-version';
 import usePlayInstrumental from '~/routes/sing-a-song/song-selection/components/song-settings/use-play-instrumental';
 
 const PREVIEW_LENGTH = 30;
@@ -15,14 +15,15 @@ const DEBOUNCE_MS = 350;
 const getPreviewPlayback = (songPreview: SongPreview, playInstrumental: boolean) => {
   const instrumental = playInstrumental ? songPreview.instrumental : undefined;
   const originalStart = songPreview.previewStart ?? (songPreview.videoGap ?? 0) + 60;
-  const offset = instrumental ? toInstrumentalTime(songPreview, originalStart) - originalStart : 0;
+  const originalEnd = songPreview.previewEnd ?? originalStart + PREVIEW_LENGTH;
+  // Each bound is mapped on its own, as an instrumental with a different BPM stretches the preview too
+  const toVideoTime = (time: number) => (instrumental ? toInstrumentalTime(songPreview, time) : time);
 
   return {
     videoId: instrumental?.video ?? songPreview.video,
-    start: Math.max(0, originalStart + offset),
-    end: (songPreview.previewEnd ?? originalStart + PREVIEW_LENGTH) + offset,
-    // Where the original preview moment is in this video, to resume at the same point when vocals are toggled
-    offset,
+    isInstrumental: !!instrumental,
+    start: Math.max(0, toVideoTime(originalStart)),
+    end: toVideoTime(originalEnd),
     fullSongStart: (instrumental ? instrumental.videoGap : songPreview.videoGap) ?? 0,
   };
 };
@@ -62,35 +63,36 @@ export function useSongPreviewVideo(songPreview: SongPreview, thumbnailRef: RefO
     () =>
       [
         playback.videoId,
+        playback.isInstrumental,
         playback.start,
         playback.end,
-        playback.offset,
         playback.fullSongStart,
         songVolume,
-        songPreview.id,
+        songPreview,
       ] as const,
     [
       playback.videoId,
+      playback.isInstrumental,
       playback.start,
       playback.end,
-      playback.offset,
       playback.fullSongStart,
       songVolume,
-      songPreview.id,
+      songPreview,
     ],
   );
-  const [videoId, start, end, offset, fullSongStart, volume, songId] = useDebounce(undebounced, DEBOUNCE_MS);
+  const [videoId, isInstrumental, start, end, fullSongStart, volume, song] = useDebounce(undebounced, DEBOUNCE_MS);
+  const songId = song.id;
 
   // What's playing now, so toggling vocals can resume the other video at the same point of the song
-  const loaded = useRef<{ songId: string; videoId: string; offset: number } | null>(null);
+  const loaded = useRef<{ songId: string; videoId: string; isInstrumental: boolean } | null>(null);
   // Lives here, not in the player, so expanding or collapsing the preview doesn't reset it
   const previewPlays = useRef(0);
   const [playingFullSong, setPlayingFullSong] = useState(false);
 
-  // Hide as soon as the video changes; the PLAYING event reveals it once the new one has loaded
+  // Hide as soon as another song is picked; the PLAYING event reveals it once its video has loaded
   useLayoutEffect(() => {
     setShowVideo(false);
-  }, [playback.videoId]);
+  }, [songPreview.id]);
 
   useEffect(() => {
     // The YouTube API may not have been ready for the first setSize; by the end of the debounce it is
@@ -98,12 +100,17 @@ export function useSongPreviewVideo(songPreview: SongPreview, thumbnailRef: RefO
       player.current?.setSize(thumbnailSize.current.w, thumbnailSize.current.h);
     }
     const previous = loaded.current;
-    loaded.current = { songId, videoId, offset };
+    const current = { songId, videoId, isInstrumental };
+    loaded.current = current;
 
     const switchedVersion = previous?.songId === songId && previous.videoId !== videoId;
     if (switchedVersion) {
+      setShowVideo(false);
       void player.current?.getCurrentTime().then((time) => {
-        const startSeconds = Math.max(0, time - previous.offset + offset);
+        // Another song or version was picked while this one was still waiting for the player
+        if (loaded.current !== current) return;
+        const originalTime = previous.isInstrumental ? fromInstrumentalTime(song, time) : time;
+        const startSeconds = Math.max(0, isInstrumental ? toInstrumentalTime(song, originalTime) : originalTime);
         const isInPreview = previewPlays.current < PREVIEW_PLAYS_BEFORE_FULL_SONG && startSeconds < end;
         player.current?.loadVideoById({ videoId, startSeconds, endSeconds: isInPreview ? end : undefined });
         player.current?.playVideo();
@@ -115,7 +122,7 @@ export function useSongPreviewVideo(songPreview: SongPreview, thumbnailRef: RefO
     setPlayingFullSong(false);
     player.current?.loadVideoById({ videoId, startSeconds: start, endSeconds: end });
     player.current?.playVideo();
-  }, [videoId, start, end, songId, offset]);
+  }, [videoId, isInstrumental, start, end, songId, song]);
 
   const onStateChange = useCallback(
     (state: VideoState) => {

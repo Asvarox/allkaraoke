@@ -16,20 +16,22 @@ interface Props {
 
 const MIN_PREVIEW_LENGTH = 10;
 
-// Keeps the stored volume and the player's own volume control in sync, whichever one gets changed
+// Keeps the stored volume and the player's own volume control in sync, whichever one gets changed.
+// A new `volume` from props (e.g. a fallback that moved) goes to the player; only a change made on the player is stored
 function useSyncedPlayerVolume(player: RefObject<YouTube | null>, volume: number, onChange: (volume: number) => void) {
-  const [initialised, setInitialised] = useState(false);
+  const applied = useRef<number | null>(null);
 
   useEffect(() => {
     const interval = setInterval(async () => {
       const internalPlayer = player.current?.getInternalPlayer();
       if (!internalPlayer) return;
-      if (!initialised) {
+      if (applied.current !== volume) {
         await internalPlayer.setVolume(volume * 100);
-        setInitialised(true);
+        applied.current = volume;
       } else {
         const currentVolume = await internalPlayer.getVolume();
         if (currentVolume !== undefined && currentVolume !== volume * 100) {
+          applied.current = currentVolume / 100;
           onChange(currentVolume / 100);
         }
       }
@@ -38,7 +40,7 @@ function useSyncedPlayerVolume(player: RefObject<YouTube | null>, volume: number
     return () => {
       clearInterval(interval);
     };
-  }, [initialised, volume, onChange, player]);
+  }, [volume, onChange, player]);
 
   return async (value: number) => {
     await player.current?.getInternalPlayer()?.setVolume(value * 100);

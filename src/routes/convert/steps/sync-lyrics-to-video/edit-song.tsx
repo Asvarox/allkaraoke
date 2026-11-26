@@ -200,6 +200,7 @@ export default function EditSong({ song, onUpdate, visible, autoplayFirstSection
     [song],
   );
 
+  const bpmScale = newSong.bpm / editedSong.bpm;
   const beatLength = getSongBeatLength(newSong);
   const lyricsCoverage = getLyricsCoverage(newSong, videoDuration);
   const notesSections = useMemo(() => newSong.tracks[0].sections.filter(isNotesSection), [newSong]);
@@ -461,9 +462,10 @@ export default function EditSong({ song, onUpdate, visible, autoplayFirstSection
               Advanced
             </Typography>
             <ManipulateBpm
-              onChange={setOverrideBpm}
+              // Shown and estimated in the synced version's tempo; stored as the original's
+              onChange={(bpm) => setOverrideBpm(bpm / bpmScale)}
               onUseCurrentTime={async () => Math.round((await player?.getCurrentTime()) ?? 0)}
-              current={overrideBpm}
+              current={overrideBpm * bpmScale}
               song={newSong}
             />
           </div>
