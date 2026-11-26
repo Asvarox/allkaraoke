@@ -423,6 +423,12 @@
     "volume": 1,
     "author": "katana-0815, mancer",
     "duration": 271,
+    "instrumental": {
+      "video": "FjJyG96TtSE",
+      "gap": 14636.6,
+      "volume": 1,
+      "duration": 270
+    },
     "tracks": [
       {
         "start": 26
@@ -634,6 +640,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=pantero",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=3%20Doors%20Down&cancion=Here%20without%20you",
     "duration": 236,
+    "instrumental": {
+      "video": "g3SN4x8CZY4",
+      "gap": 4929.09,
+      "volume": 0.5,
+      "duration": 240
+    },
     "tracks": [
       {
         "start": 19
@@ -697,6 +709,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=3%20Doors%20Down&cancion=Kryptonite",
     "duration": 235,
+    "instrumental": {
+      "video": "J0CouB9ggGU",
+      "gap": 19023.9,
+      "volume": 0.5,
+      "duration": 236
+    },
     "tracks": [
       {
         "start": 23
@@ -1241,6 +1259,12 @@
     "manualVolume": 0.8,
     "author": "a224",
     "duration": 293,
+    "instrumental": {
+      "video": "QgHnykc5ep0",
+      "gap": 28976.2,
+      "volume": 0.83,
+      "duration": 296
+    },
     "tracks": [
       {
         "start": 18
@@ -1325,6 +1349,12 @@
     "manualVolume": 0.8,
     "author": "Sing-Girl",
     "duration": 253,
+    "instrumental": {
+      "video": "GZX4Lkcn9MM",
+      "gap": 8757.73,
+      "volume": 0.5,
+      "duration": 237
+    },
     "tracks": [
       {
         "start": 27
@@ -1503,6 +1533,12 @@
     "manualVolume": 0.72,
     "author": "Pantero",
     "duration": 219,
+    "instrumental": {
+      "video": "e8rBVJq5pYY",
+      "gap": 3948.805,
+      "volume": 0.52,
+      "duration": 206
+    },
     "tracks": [
       {
         "start": 21
@@ -1942,6 +1978,12 @@
     "manualVolume": 0.76,
     "author": "prgoenner",
     "duration": 232,
+    "instrumental": {
+      "video": "2bQp9TnIiNU",
+      "gap": 15472.3,
+      "volume": 0.85,
+      "duration": 229
+    },
     "tracks": [
       {
         "start": 27
@@ -2141,6 +2183,13 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=a-ha&cancion=Take%20on%20me",
     "duration": 244,
+    "instrumental": {
+      "video": "Z8awI5uz0Nw",
+      "gap": 33018.326,
+      "volume": 0.62,
+      "duration": 229,
+      "bpm": 339.914
+    },
     "tracks": [
       {
         "start": 22
@@ -2406,6 +2455,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=Dancing%20Queen",
     "duration": 233,
+    "instrumental": {
+      "video": "WC186ssNNWw",
+      "gap": 17683.585,
+      "volume": 0.5,
+      "duration": 232
+    },
     "tracks": [
       {
         "start": 0
@@ -2671,6 +2726,13 @@
     "manualVolume": 0.79,
     "author": "lukethedonkey",
     "duration": 281,
+    "instrumental": {
+      "video": "XE-11F4ZHTQ",
+      "gap": 36908.392,
+      "videoGap": 1,
+      "volume": 0.94,
+      "duration": 280
+    },
     "tracks": [
       {
         "start": 18
@@ -2700,6 +2762,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=Mamma%20Mia",
     "duration": 211,
+    "instrumental": {
+      "video": "ZuORBMiar9k",
+      "gap": 15405.002,
+      "volume": 0.59,
+      "duration": 214
+    },
     "tracks": [
       {
         "start": 0
@@ -2731,6 +2799,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=Money%20Money%20Money",
     "duration": 187,
+    "instrumental": {
+      "video": "jfKT9LXCnjY",
+      "gap": 11746.4,
+      "volume": 0.93,
+      "duration": 189
+    },
     "tracks": [
       {
         "start": 23
@@ -2851,6 +2925,12 @@
     "manualVolume": 0.74,
     "author": "Buberatz",
     "duration": 236,
+    "instrumental": {
+      "video": "qUddlTQZnVA",
+      "gap": -543.956,
+      "volume": 0.77,
+      "duration": 234
+    },
     "tracks": [
       {
         "start": 18
@@ -3057,6 +3137,13 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=ABBA&cancion=The%20Winner%20Takes%20It%20All",
     "duration": 298,
+    "instrumental": {
+      "video": "8YLUUNdqO7Q",
+      "gap": 32455.418,
+      "volume": 0.62,
+      "duration": 295,
+      "bpm": 339.882
+    },
     "tracks": [
       {
         "start": 0
@@ -3205,6 +3292,12 @@
     "manualVolume": 0.99,
     "author": "mouton5000",
     "duration": 138,
+    "instrumental": {
+      "video": "TfZhc31Qjjw",
+      "gap": 966.688,
+      "volume": 1,
+      "duration": 129
+    },
     "tracks": [
       {
         "start": 24
@@ -3652,6 +3745,12 @@
     "volume": 0.54,
     "author": "Leroidukitch",
     "duration": 212,
+    "instrumental": {
+      "video": "_adTP6RgQIc",
+      "gap": 11863,
+      "volume": 0.54,
+      "duration": 213
+    },
     "tracks": [
       {
         "start": 26
@@ -3938,6 +4037,12 @@
     "author": "klops_007",
     "sourceUrl": "https://www.youtube.com/watch?v=X1Fqn9du7xo&embeds_referring_euri=https%3A%2F%2Fusdb.animux.de%2F&source_ve_path=Mjg2NjY",
     "duration": 226,
+    "instrumental": {
+      "video": "vlQWZoW4u4U",
+      "gap": 9707.39,
+      "volume": 0.58,
+      "duration": 226
+    },
     "tracks": [
       {
         "start": 25
@@ -3993,6 +4098,12 @@
     "volume": 1,
     "author": "ziqiangao",
     "duration": 185,
+    "instrumental": {
+      "video": "S_rJY6FOH2g",
+      "gap": 6242.733,
+      "volume": 1,
+      "duration": 183
+    },
     "tracks": [
       {
         "start": 18
@@ -4055,6 +4166,12 @@
     "manualVolume": 0.7,
     "author": "Arkhor2",
     "duration": 272,
+    "instrumental": {
+      "video": "YJ70yk83Ta4",
+      "gap": 12804.7,
+      "volume": 0.5,
+      "duration": 275
+    },
     "tracks": [
       {
         "start": 16
@@ -4084,6 +4201,12 @@
     "manualVolume": 0.65,
     "author": "Adele",
     "duration": 221,
+    "instrumental": {
+      "video": "xjvD3RN-ZmI",
+      "gap": 4990.07,
+      "volume": 0.79,
+      "duration": 215
+    },
     "tracks": [
       {
         "start": 21
@@ -4260,6 +4383,12 @@
     "volume": 1,
     "manualVolume": 0.76,
     "duration": 234,
+    "instrumental": {
+      "video": "xcbeLnq5mBw",
+      "gap": 4165.49,
+      "volume": 1,
+      "duration": 235
+    },
     "tracks": [
       {
         "start": 14
@@ -4348,6 +4477,12 @@
     "manualVolume": 0.5,
     "author": "gaspar17",
     "duration": 243,
+    "instrumental": {
+      "video": "xSgnMMOfK20",
+      "gap": 7708.76,
+      "volume": 0.5,
+      "duration": 245
+    },
     "tracks": [
       {
         "start": 14
@@ -4377,6 +4512,12 @@
     "manualVolume": 1,
     "author": "Kekstuete",
     "duration": 290,
+    "instrumental": {
+      "video": "d-71tYNNcnY",
+      "gap": 31014,
+      "volume": 0.5,
+      "duration": 286
+    },
     "tracks": [
       {
         "name": "Skyfall",
@@ -4409,6 +4550,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=nauce",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Adele&cancion=Someone%20Like%20You%20(Studio)",
     "duration": 285,
+    "instrumental": {
+      "video": "DM78DR81Sck",
+      "gap": 13040,
+      "volume": 0.72,
+      "duration": 290
+    },
     "tracks": [
       {
         "start": 18
@@ -5373,6 +5520,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gouthamma",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Aerosmith&cancion=Dream%20on",
     "duration": 269,
+    "instrumental": {
+      "video": "6tnLGE9ZjqI",
+      "gap": 36690.9,
+      "volume": 1,
+      "duration": 268
+    },
     "tracks": [
       {
         "start": 19
@@ -5398,6 +5551,13 @@
     "realBpm": 121,
     "volume": 0.62,
     "duration": 293,
+    "instrumental": {
+      "video": "5mWvHTHhMlQ",
+      "gap": 34815.84,
+      "videoGap": 3,
+      "volume": 0.62,
+      "duration": 278
+    },
     "tracks": [
       {
         "start": 4
@@ -5806,6 +5966,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=currymalker",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Against%20The%20Current&cancion=Legends%20Never%20Die",
     "duration": 179,
+    "instrumental": {
+      "video": "PQ8LceOh_DM",
+      "gap": 11388.8,
+      "volume": 1,
+      "duration": 179
+    },
     "tracks": [
       {
         "start": 19
@@ -6950,6 +7116,12 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=3163",
     "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=5979",
     "duration": 221,
+    "instrumental": {
+      "video": "ajf3Ox8rqv4",
+      "gap": 36762.9,
+      "volume": 0.56,
+      "duration": 221
+    },
     "tracks": [
       {
         "name": "Wind",
@@ -7504,6 +7676,12 @@
     "manualVolume": 0.67,
     "author": "AnormusNerd",
     "duration": 164,
+    "instrumental": {
+      "video": "lQFIe5STi3M",
+      "gap": 1518.274,
+      "volume": 0.5,
+      "duration": 161
+    },
     "tracks": [
       {
         "start": 26
@@ -7561,6 +7739,12 @@
     "manualVolume": 0.71,
     "author": "AnormusNerd",
     "duration": 213,
+    "instrumental": {
+      "video": "Rmtx9slmodw",
+      "gap": 10200.756,
+      "volume": 0.5,
+      "duration": 214
+    },
     "tracks": [
       {
         "start": 24
@@ -8489,6 +8673,12 @@
     "volume": 1,
     "author": "lilsilly61",
     "duration": 185,
+    "instrumental": {
+      "video": "SOtKYtczJxU",
+      "gap": -166.39,
+      "volume": 1,
+      "duration": 185
+    },
     "tracks": [
       {
         "start": 19
@@ -8575,6 +8765,12 @@
     "volume": 1,
     "author": "DS",
     "duration": 205,
+    "instrumental": {
+      "video": "DAkwYAX2bHA",
+      "gap": -230.498,
+      "volume": 1,
+      "duration": 190
+    },
     "tracks": [
       {
         "start": 37
@@ -8602,6 +8798,12 @@
     "volume": 1,
     "author": "DS",
     "duration": 187,
+    "instrumental": {
+      "video": "L-vTBNp48P0",
+      "gap": 7370.75,
+      "volume": 1,
+      "duration": 187
+    },
     "tracks": [
       {
         "start": 15
@@ -8691,6 +8893,12 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=12657",
     "sourceUrl": "https://usdb.animux.de/?link=detail&id=6576",
     "duration": 182,
+    "instrumental": {
+      "video": "IfvJJ4k36EI",
+      "gap": 18248.202,
+      "volume": 1,
+      "duration": 183
+    },
     "tracks": [
       {
         "start": 22
@@ -9075,6 +9283,12 @@
     "manualVolume": 0.85,
     "author": "crimson30",
     "duration": 272,
+    "instrumental": {
+      "video": "kI2MN9cibXs",
+      "gap": 10835.1,
+      "volume": 0.84,
+      "duration": 271
+    },
     "tracks": [
       {
         "start": 26
@@ -9104,6 +9318,12 @@
     "manualVolume": 0.93,
     "author": "cjszoo",
     "duration": 260,
+    "instrumental": {
+      "video": "nXuk4jvII7Y",
+      "gap": 58790.7,
+      "volume": 0.8,
+      "duration": 259
+    },
     "tracks": [
       {
         "start": 32
@@ -9162,6 +9382,12 @@
     "volume": 1,
     "author": "FaKK",
     "duration": 154,
+    "instrumental": {
+      "video": "3KFWzKNpadk",
+      "gap": 2023.51,
+      "volume": 1,
+      "duration": 153
+    },
     "tracks": [
       {
         "start": 22
@@ -9190,6 +9416,12 @@
     "manualVolume": 0.83,
     "author": "Canni",
     "duration": 208,
+    "instrumental": {
+      "video": "lyCeDkl1StI",
+      "gap": 29873.936,
+      "volume": 0.93,
+      "duration": 207
+    },
     "tracks": [
       {
         "start": 23
@@ -9251,6 +9483,13 @@
     "manualVolume": 0.91,
     "author": "varisha",
     "duration": 207,
+    "instrumental": {
+      "video": "MzMn5rNo4Pc",
+      "gap": -745.283,
+      "volume": 1,
+      "duration": 212,
+      "bpm": 127.88
+    },
     "tracks": [
       {
         "start": 9
@@ -9279,6 +9518,12 @@
     "manualVolume": 0.71,
     "author": "yellie",
     "duration": 233,
+    "instrumental": {
+      "video": "reK4kaebwrk",
+      "gap": -458.865,
+      "volume": 0.6,
+      "duration": 230
+    },
     "tracks": [
       {
         "start": 25
@@ -9601,6 +9846,13 @@
     "manualVolume": 0.86,
     "author": "Gollum",
     "duration": 186,
+    "instrumental": {
+      "video": "k5KvHTQgTng",
+      "gap": 2050.39,
+      "videoGap": 2,
+      "volume": 1,
+      "duration": 185
+    },
     "tracks": [
       {
         "start": 14
@@ -11604,6 +11856,12 @@
     "authorUrl": "https://ultrastar-es.org/en/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Amy+Winehouse",
     "duration": 241,
+    "instrumental": {
+      "video": "8kTl1m4irgc",
+      "gap": 15228.3,
+      "volume": 0.53,
+      "duration": 242
+    },
     "tracks": [
       {
         "start": 17
@@ -11807,6 +12065,12 @@
     "manualVolume": 0.74,
     "author": "REL",
     "duration": 244,
+    "instrumental": {
+      "video": "s26DDC9f3LQ",
+      "gap": 13081.2,
+      "volume": 0.5,
+      "duration": 258
+    },
     "tracks": [
       {
         "start": 14
@@ -14133,6 +14397,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Aqua&cancion=Barbie%20Girl",
     "duration": 202,
+    "instrumental": {
+      "video": "Ita3jfVnT8g",
+      "gap": 1607.54,
+      "volume": 0.5,
+      "duration": 196
+    },
     "tracks": [
       {
         "start": 17
@@ -14344,6 +14614,13 @@
     "author": "Niikol",
     "sourceUrl": "https://www.youtube.com/watch?v=MrmPDUvKyLs",
     "duration": 255,
+    "instrumental": {
+      "video": "IW5BsR6S3ds",
+      "gap": 11536.89,
+      "volume": 0.54,
+      "duration": 250,
+      "bpm": 279.788
+    },
     "tracks": [
       {
         "name": "505",
@@ -14493,6 +14770,12 @@
     "manualVolume": 0.91,
     "author": "prgoenner",
     "duration": 266,
+    "instrumental": {
+      "video": "SJSLUTv-S5U",
+      "gap": 28393.8,
+      "volume": 0.57,
+      "duration": 271
+    },
     "tracks": [
       {
         "start": 23
@@ -14581,6 +14864,12 @@
     "manualVolume": 0.77,
     "author": "TuneoApp AutoGen",
     "duration": 184,
+    "instrumental": {
+      "video": "xtsWsebfEtw",
+      "gap": 17125.163,
+      "volume": 0.72,
+      "duration": 184
+    },
     "tracks": [
       {
         "start": 10
@@ -14961,6 +15250,12 @@
     "manualVolume": 0.66,
     "author": "asdFer",
     "duration": 236,
+    "instrumental": {
+      "video": "pvPlAx01i6c",
+      "gap": 9463.42,
+      "volume": 1,
+      "duration": 232
+    },
     "tracks": [
       {
         "start": 19
@@ -15394,6 +15689,12 @@
     "manualVolume": 1,
     "author": "asdFer",
     "duration": 255,
+    "instrumental": {
+      "video": "gN75Zg9LwuY",
+      "gap": 1135.35,
+      "volume": 0.5,
+      "duration": 245
+    },
     "tracks": [
       {
         "start": 28
@@ -15423,6 +15724,12 @@
     "author": "asdFer",
     "sourceUrl": "https://www.youtube.com/watch?v=axySrE0Kg6k",
     "duration": 241,
+    "instrumental": {
+      "video": "dp1_T4heIZA",
+      "gap": 3789.732,
+      "volume": 1,
+      "duration": 230
+    },
     "tracks": [
       {
         "name": "Ariana Grande - Beauty and the Beast",
@@ -15856,6 +16163,12 @@
     "manualVolume": 0.65,
     "author": "Nicolai (aac)*vicktoben",
     "duration": 251,
+    "instrumental": {
+      "video": "tVAFtwRfcdM",
+      "gap": 2297.002,
+      "volume": 0.6,
+      "duration": 236
+    },
     "tracks": [
       {
         "start": 13
@@ -17587,6 +17900,13 @@
     "manualVolume": 0.77,
     "author": "KirianLeon",
     "duration": 302,
+    "instrumental": {
+      "video": "z4DTxu38NvY",
+      "gap": 17057.511,
+      "volume": 0.65,
+      "duration": 296,
+      "bpm": 216.651
+    },
     "tracks": [
       {
         "start": 14
@@ -18170,6 +18490,12 @@
     "manualVolume": 0.86,
     "author": "Kirie-sama",
     "duration": 492,
+    "instrumental": {
+      "video": "xH7zsRXS9vM",
+      "gap": 26311.979,
+      "volume": 0.75,
+      "duration": 477
+    },
     "tracks": [
       {
         "start": 19
@@ -18862,6 +19188,12 @@
     "manualVolume": 0.7,
     "author": "snake84, fepo",
     "duration": 264,
+    "instrumental": {
+      "video": "LQF9tRu-hcw",
+      "gap": 4171.99,
+      "volume": 1,
+      "duration": 257
+    },
     "tracks": [
       {
         "start": 17
@@ -18920,6 +19252,12 @@
     "manualVolume": 0.67,
     "author": "snake84",
     "duration": 191,
+    "instrumental": {
+      "video": "HIF26yf_fYo",
+      "gap": 1975.274,
+      "volume": 0.5,
+      "duration": 177
+    },
     "tracks": [
       {
         "start": 17
@@ -19065,6 +19403,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Avril%20Lavigne&cancion=Complicated",
     "duration": 254,
+    "instrumental": {
+      "video": "E6PfF_IcGc8",
+      "gap": 25092.656,
+      "volume": 0.58,
+      "duration": 249
+    },
     "tracks": [
       {
         "start": 21
@@ -19180,6 +19524,12 @@
     "manualVolume": 0.75,
     "author": "Canni",
     "duration": 225,
+    "instrumental": {
+      "video": "Z1KBAskLx-o",
+      "gap": 18354.3,
+      "volume": 0.62,
+      "duration": 225
+    },
     "tracks": [
       {
         "start": 20
@@ -19368,6 +19718,12 @@
     "manualVolume": 0.75,
     "author": "REL",
     "duration": 219,
+    "instrumental": {
+      "video": "igvH7oNl-Po",
+      "gap": 15861.4,
+      "volume": 0.56,
+      "duration": 210
+    },
     "tracks": [
       {
         "start": 20
@@ -20209,6 +20565,13 @@
     "manualVolume": 0.72,
     "author": "znxineohp",
     "duration": 218,
+    "instrumental": {
+      "video": "J7PmrRm6Tec",
+      "gap": 6175.492,
+      "volume": 0.87,
+      "duration": 212,
+      "bpm": 389.226
+    },
     "tracks": [
       {
         "start": 26
@@ -20328,6 +20691,13 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=pantero",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Backstreet%20Boys&cancion=I%20Want%20It%20That%20Way",
     "duration": 220,
+    "instrumental": {
+      "video": "CTSMsWcPjNo",
+      "gap": 2534.487,
+      "volume": 0.74,
+      "duration": 213,
+      "bpm": 396.198
+    },
     "tracks": [
       {
         "start": 26
@@ -21369,6 +21739,12 @@
     "author": "Collado",
     "sourceUrl": "https://www.youtube.com/watch?v=9XaS93WMRQQ&ab_channel=BetterNoiseMusic",
     "duration": 276,
+    "instrumental": {
+      "video": "AhkJvNu9qAQ",
+      "gap": 24687.3,
+      "volume": 0.5,
+      "duration": 275
+    },
     "tracks": [
       {
         "start": 21
@@ -22397,6 +22773,12 @@
     "author": "IC",
     "sourceUrl": "https://www.youtube.com/watch?v=IgFwiCApH7E",
     "duration": 169,
+    "instrumental": {
+      "video": "5K7atHSR-MU",
+      "gap": -1672.55,
+      "volume": 1,
+      "duration": 159
+    },
     "tracks": [
       {
         "start": 20
@@ -23123,6 +23505,12 @@
     "volume": 1,
     "author": "amro98",
     "duration": 220,
+    "instrumental": {
+      "video": "sW_TOZDXUMw",
+      "gap": 7252.103,
+      "volume": 1,
+      "duration": 209
+    },
     "tracks": [
       {
         "start": 21
@@ -23272,6 +23660,12 @@
     "authorUrl": "https://usdb.animux.de/?link=profil&id=13",
     "sourceUrl": "https://usdb.animux.de/?link=detail&id=1736",
     "duration": 240,
+    "instrumental": {
+      "video": "vbw3VTgCmIU",
+      "gap": 16939.635,
+      "volume": 0.53,
+      "duration": 246
+    },
     "tracks": [
       {
         "start": 14
@@ -24347,6 +24741,12 @@
     "volume": 0.58,
     "manualVolume": 0.75,
     "duration": 193,
+    "instrumental": {
+      "video": "yKGWdveqdVA",
+      "gap": 5356.65,
+      "volume": 0.58,
+      "duration": 180
+    },
     "tracks": [
       {
         "start": 20
@@ -24375,6 +24775,12 @@
     "manualVolume": 0.63,
     "author": "Knuddel",
     "duration": 217,
+    "instrumental": {
+      "video": "Hao63RJeKVY",
+      "gap": 3132.66,
+      "volume": 0.5,
+      "duration": 215
+    },
     "tracks": [
       {
         "start": 15
@@ -24431,6 +24837,12 @@
     "author": "UltraSinger",
     "sourceUrl": "https://www.youtube.com/watch?v=f4Y3b7un4LE&t=1s",
     "duration": 184,
+    "instrumental": {
+      "video": "AOjPWYE28mY",
+      "gap": -441.167,
+      "volume": 1,
+      "duration": 168
+    },
     "tracks": [
       {
         "start": 26
@@ -25972,6 +26384,13 @@
     "manualVolume": 0.5,
     "author": "Rubn4",
     "duration": 206,
+    "instrumental": {
+      "video": "8v7yWAP_yls",
+      "gap": 13191.516,
+      "videoGap": 5,
+      "volume": 0.99,
+      "duration": 194
+    },
     "tracks": [
       {
         "start": 18
@@ -26030,6 +26449,12 @@
     "author": "DoubleDee",
     "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=29212",
     "duration": 210,
+    "instrumental": {
+      "video": "B62xRPGgi5g",
+      "gap": 2673.81,
+      "volume": 0.57,
+      "duration": 210
+    },
     "tracks": [
       {
         "start": 14
@@ -26199,6 +26624,12 @@
     "manualVolume": 0.69,
     "author": "Jiafei",
     "duration": 292,
+    "instrumental": {
+      "video": "82Lj9hpk0IY",
+      "gap": 13156.7,
+      "volume": 0.92,
+      "duration": 295
+    },
     "tracks": [
       {
         "start": 22
@@ -26227,6 +26658,12 @@
     "manualVolume": 0.59,
     "author": "RetroGirl",
     "duration": 205,
+    "instrumental": {
+      "video": "bDbSYhHutQI",
+      "gap": 17093.4,
+      "volume": 0.53,
+      "duration": 205
+    },
     "tracks": [
       {
         "start": 23
@@ -26283,6 +26720,12 @@
     "manualVolume": 0.69,
     "author": "RetroGirl",
     "duration": 201,
+    "instrumental": {
+      "video": "0al4LjErt0U",
+      "gap": 20048.3,
+      "volume": 0.9,
+      "duration": 201
+    },
     "tracks": [
       {
         "start": 27
@@ -26370,6 +26813,12 @@
     "author": "mustangfred",
     "sourceUrl": "https://www.youtube.com/watch?v=BboMpayJomw",
     "duration": 240,
+    "instrumental": {
+      "video": "CiI1Br_Wc0Y",
+      "gap": 26722.6,
+      "volume": 0.59,
+      "duration": 239
+    },
     "tracks": [
       {
         "name": "No Time To Die - Billie Eilish",
@@ -26399,6 +26848,12 @@
     "manualVolume": 0.73,
     "author": "Jiafei",
     "duration": 201,
+    "instrumental": {
+      "video": "0gJK-Qki6NA",
+      "gap": 13064.3,
+      "volume": 0.5,
+      "duration": 201
+    },
     "tracks": [
       {
         "start": 25
@@ -26483,6 +26938,12 @@
     "manualVolume": 0.65,
     "author": "asdFer",
     "duration": 194,
+    "instrumental": {
+      "video": "6viMPKfqGP0",
+      "gap": 10764.885,
+      "volume": 0.62,
+      "duration": 198
+    },
     "tracks": [
       {
         "start": 24
@@ -26627,6 +27088,12 @@
     "manualVolume": 0.85,
     "author": "Caruso",
     "duration": 295,
+    "instrumental": {
+      "video": "9XtAUU26Z4Q",
+      "gap": 21934.3,
+      "volume": 1,
+      "duration": 295
+    },
     "tracks": [
       {
         "start": 23
@@ -28248,6 +28715,12 @@
     "volume": 1,
     "author": "Blackpink",
     "duration": 194,
+    "instrumental": {
+      "video": "VA75ClzPkY8",
+      "gap": 16263.4,
+      "volume": 1,
+      "duration": 193
+    },
     "tracks": [
       {
         "name": "Jump",
@@ -28418,6 +28891,13 @@
     "manualVolume": 0.75,
     "author": "Tracks",
     "duration": 181,
+    "instrumental": {
+      "video": "hf5myUCO1W0",
+      "gap": 6463.221,
+      "videoGap": 2,
+      "volume": 0.58,
+      "duration": 182
+    },
     "tracks": [
       {
         "start": 26
@@ -28997,6 +29477,12 @@
     "author": "Caruso",
     "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=3474",
     "duration": 171,
+    "instrumental": {
+      "video": "g29zkQUn_5Y",
+      "gap": 13282.9,
+      "volume": 0.51,
+      "duration": 168
+    },
     "tracks": [
       {
         "start": 15
@@ -29115,6 +29601,12 @@
     "manualVolume": 0.7,
     "author": "SilenaM",
     "duration": 230,
+    "instrumental": {
+      "video": "BehPK5ueTmo",
+      "gap": 29709.71,
+      "volume": 1,
+      "duration": 236
+    },
     "tracks": [
       {
         "start": 23
@@ -29845,6 +30337,12 @@
     "author": "Andore",
     "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=32010",
     "duration": 281,
+    "instrumental": {
+      "video": "ZeT-9qICG9I",
+      "gap": 883.147,
+      "volume": 1,
+      "duration": 277
+    },
     "tracks": [
       {
         "start": 19
@@ -30055,6 +30553,13 @@
     "manualVolume": 0.83,
     "author": "klops_007",
     "duration": 231,
+    "instrumental": {
+      "video": "cNBLoCoVSVk",
+      "gap": 24560.5,
+      "videoGap": 24,
+      "volume": 1,
+      "duration": 236
+    },
     "tracks": [
       {
         "name": "Nothin’ On You",
@@ -30084,6 +30589,12 @@
     "manualVolume": 0.69,
     "author": "klops_007",
     "duration": 192,
+    "instrumental": {
+      "video": "JoUtYg2UGbs",
+      "gap": 8425.24,
+      "volume": 0.51,
+      "duration": 182
+    },
     "tracks": [
       {
         "start": 25
@@ -30378,6 +30889,13 @@
     "manualVolume": 0.75,
     "author": "c4_87",
     "duration": 146,
+    "instrumental": {
+      "video": "4TTeeAfqVaw",
+      "gap": 7136.89,
+      "volume": 1,
+      "duration": 132,
+      "bpm": 241.169
+    },
     "tracks": [
       {
         "start": 16
@@ -30803,6 +31321,13 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Bon%20Jovi&cancion=Livin'%20on%20a%20Prayer",
     "duration": 249,
+    "instrumental": {
+      "video": "sSj5jnmOFG8",
+      "gap": 35210.455,
+      "volume": 0.5,
+      "duration": 261,
+      "bpm": 244.984
+    },
     "tracks": [
       {
         "start": 16
@@ -30977,6 +31502,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=rubn4",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Boney%20M.&cancion=Rasputin",
     "duration": 268,
+    "instrumental": {
+      "video": "M0DZ2REFxlk",
+      "gap": 48922.2,
+      "volume": 0.69,
+      "duration": 267
+    },
     "tracks": [
       {
         "start": 17
@@ -31151,6 +31682,13 @@
     "manualVolume": 1,
     "author": "ultrastarsongs, mandark",
     "duration": 334,
+    "instrumental": {
+      "video": "avvuV8uvEfk",
+      "gap": 6566.021,
+      "volume": 0.98,
+      "duration": 335,
+      "bpm": 260.128
+    },
     "tracks": [
       {
         "start": 17
@@ -31862,6 +32400,13 @@
     "manualVolume": 0.8,
     "author": "anthem_1",
     "duration": 242,
+    "instrumental": {
+      "video": "ugiLPPq405w",
+      "gap": 28377.3,
+      "videoGap": 6,
+      "volume": 1,
+      "duration": 246
+    },
     "tracks": [
       {
         "name": "Brandy",
@@ -32603,6 +33148,12 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=168857",
     "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=25885",
     "duration": 229,
+    "instrumental": {
+      "video": "tk260d77lqw",
+      "gap": 29830.305,
+      "volume": 0.5,
+      "duration": 229
+    },
     "tracks": [
       {
         "start": 23
@@ -32664,6 +33215,12 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=170950",
     "sourceUrl": "https://usdb.animux.de/?link=detail&id=28047",
     "duration": 223,
+    "instrumental": {
+      "video": "XVVJljfOu9g",
+      "gap": 13631.6,
+      "volume": 0.5,
+      "duration": 222
+    },
     "tracks": [
       {
         "start": 19
@@ -33994,6 +34551,12 @@
     "authorUrl": "https://ultrastar-es.org/en/canciones?creador=rubn4",
     "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Britney%20Spears&cancion=Toxic",
     "duration": 212,
+    "instrumental": {
+      "video": "qveCKOA-qTE",
+      "gap": 14174.7,
+      "volume": 0.85,
+      "duration": 200
+    },
     "tracks": [
       {
         "start": 0
@@ -34423,6 +34986,12 @@
     "author": "Bruno Mars",
     "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=14265",
     "duration": 193,
+    "instrumental": {
+      "video": "O3Lt4-FPuJA",
+      "gap": 4204.7,
+      "volume": 0.51,
+      "duration": 199
+    },
     "tracks": [
       {
         "start": 26
@@ -34482,6 +35051,12 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=23692",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=11157",
     "duration": 221,
+    "instrumental": {
+      "video": "R1UbkAadP50",
+      "gap": 3453.6,
+      "volume": 0.68,
+      "duration": 222
+    },
     "tracks": [
       {
         "start": 15
@@ -34513,6 +35088,12 @@
     "manualVolume": 0.82,
     "author": "Coppolatte",
     "duration": 267,
+    "instrumental": {
+      "video": "-vmDHMqDqXg",
+      "gap": 2725.53,
+      "volume": 1,
+      "duration": 257
+    },
     "tracks": [
       {
         "name": "It will Rain (Bruna Mars)",
@@ -34544,6 +35125,13 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=23692",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=10573",
     "duration": 237,
+    "instrumental": {
+      "video": "9r8I8sQm1-A",
+      "gap": 16568.128,
+      "volume": 0.54,
+      "duration": 222,
+      "bpm": 217.996
+    },
     "tracks": [
       {
         "start": 14
@@ -34573,6 +35161,13 @@
     "author": "Shabai Liu*Coppo",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Bruno+Mars",
     "duration": 235,
+    "instrumental": {
+      "video": "o5Q0x1_nwc8",
+      "gap": 3412.476,
+      "volume": 0.5,
+      "duration": 234,
+      "bpm": 144
+    },
     "tracks": [
       {
         "start": 10
@@ -34601,6 +35196,12 @@
     "manualVolume": 0.75,
     "author": "savik1993",
     "duration": 228,
+    "instrumental": {
+      "video": "5OqpM-rLkBQ",
+      "gap": 11974.1,
+      "volume": 0.5,
+      "duration": 232
+    },
     "tracks": [
       {
         "start": 19
@@ -34634,6 +35235,13 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=58767",
     "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=32021",
     "duration": 211,
+    "instrumental": {
+      "video": "msfAKlRsx_I",
+      "gap": 21455.6,
+      "videoGap": 7,
+      "volume": 0.8,
+      "duration": 204
+    },
     "tracks": [
       {
         "start": 23
@@ -34690,6 +35298,14 @@
     "manualVolume": 0.83,
     "author": "savik1993",
     "duration": 206,
+    "instrumental": {
+      "video": "PZfwo-lwTx0",
+      "gap": 6691.306,
+      "videoGap": 6,
+      "volume": 0.5,
+      "duration": 218,
+      "bpm": 292.139
+    },
     "tracks": [
       {
         "start": 20
@@ -34718,6 +35334,12 @@
     "manualVolume": 0.72,
     "author": "Knuddel",
     "duration": 211,
+    "instrumental": {
+      "video": "1rgw0lFoMr4",
+      "gap": -262.941,
+      "volume": 0.58,
+      "duration": 210
+    },
     "tracks": [
       {
         "start": 18
@@ -34747,6 +35369,12 @@
     "manualVolume": 0.81,
     "author": "Plaro",
     "duration": 200,
+    "instrumental": {
+      "video": "mp21LUw_Uks",
+      "gap": -297.73,
+      "volume": 0.58,
+      "duration": 189
+    },
     "tracks": [
       {
         "start": 23
@@ -35478,6 +36106,12 @@
     "manualVolume": 0.68,
     "author": "RYoshi",
     "duration": 183,
+    "instrumental": {
+      "video": "9IJ4_LXgVyM",
+      "gap": 7327.454,
+      "volume": 0.5,
+      "duration": 171
+    },
     "tracks": [
       {
         "start": 15
@@ -35629,6 +36263,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=asdfer",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=BTS&cancion=Dynamite",
     "duration": 224,
+    "instrumental": {
+      "video": "RxPiU79HfMc",
+      "gap": 14475.9,
+      "volume": 0.5,
+      "duration": 215
+    },
     "tracks": [
       {
         "start": 15
@@ -37702,6 +38342,12 @@
     "author": "moerte",
     "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=24266",
     "duration": 205,
+    "instrumental": {
+      "video": "mHyUS_rfOx4",
+      "gap": 15323.434,
+      "volume": 0.62,
+      "duration": 205
+    },
     "tracks": [
       {
         "start": 27
@@ -37927,6 +38573,12 @@
     "author": "Coppolatte",
     "sourceUrl": "Calvin Harris feat. Ellie Goulding - Outside",
     "duration": 226,
+    "instrumental": {
+      "video": "MnmfiHCaGTo",
+      "gap": 9091.05,
+      "volume": 0.5,
+      "duration": 226
+    },
     "tracks": [
       {
         "start": 17
@@ -38807,6 +39459,12 @@
     "volume": 1,
     "author": "Demi Lovato, Joe Jonas (Camp Rock)",
     "duration": 197,
+    "instrumental": {
+      "video": "QKgSjV6AJNg",
+      "gap": 4060.95,
+      "volume": 1,
+      "duration": 200
+    },
     "tracks": [
       {
         "start": 20
@@ -39249,6 +39907,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=dontellme",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Carly%20Rae%20Jepsen&cancion=Call%20Me%20Maybe",
     "duration": 200,
+    "instrumental": {
+      "video": "35exLq0YgSc",
+      "gap": 3614.83,
+      "volume": 1,
+      "duration": 194
+    },
     "tracks": [
       {
         "start": 16
@@ -39501,6 +40165,12 @@
     "author": "eli",
     "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=9348",
     "duration": 180,
+    "instrumental": {
+      "video": "-czUqEcY8tw",
+      "gap": 17027.6,
+      "volume": 1,
+      "duration": 177
+    },
     "tracks": [
       {
         "start": 25
@@ -39529,6 +40199,12 @@
     "manualVolume": 0.72,
     "author": "anthem_1",
     "duration": 199,
+    "instrumental": {
+      "video": "ZIMGnEQaKeU",
+      "gap": 13998.6,
+      "volume": 0.71,
+      "duration": 200
+    },
     "tracks": [
       {
         "start": 22
@@ -40230,6 +40906,13 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=C%C3%A9line%20Dion&cancion=My%20Heart%20Will%20Go%20On",
     "duration": 276,
+    "instrumental": {
+      "video": "Nf2fVD7M070",
+      "gap": 19570,
+      "videoGap": 1,
+      "volume": 1,
+      "duration": 278
+    },
     "tracks": [
       {
         "start": 26
@@ -40726,6 +41409,12 @@
     "manualVolume": 0.79,
     "author": "piharatamo",
     "duration": 219,
+    "instrumental": {
+      "video": "mSDV5Y_1YbQ",
+      "gap": 10953.6,
+      "volume": 0.54,
+      "duration": 219
+    },
     "tracks": [
       {
         "start": 8
@@ -40841,6 +41530,12 @@
     "volume": 1,
     "author": "Adelaido",
     "duration": 272,
+    "instrumental": {
+      "video": "P5JNWTLeK3Y",
+      "gap": 14687.16,
+      "volume": 1,
+      "duration": 259
+    },
     "tracks": [
       {
         "start": 22
@@ -41232,6 +41927,12 @@
     "author": "Bad_Gamer39",
     "sourceUrl": "https://www.youtube.com/watch?v=WFsAon_TWPQ",
     "duration": 205,
+    "instrumental": {
+      "video": "-JQ3ry7GStA",
+      "gap": 11820.554,
+      "volume": 1,
+      "duration": 190
+    },
     "tracks": [
       {
         "start": 24
@@ -41291,6 +41992,12 @@
     "manualVolume": 0.7,
     "author": "amro98 y Volodi",
     "duration": 231,
+    "instrumental": {
+      "video": "uR9ZwejfuR8",
+      "gap": -1961.117,
+      "volume": 0.62,
+      "duration": 224
+    },
     "tracks": [
       {
         "start": 27
@@ -42860,6 +43567,14 @@
     "manualVolume": 0.5,
     "author": "Jesposo",
     "duration": 246,
+    "instrumental": {
+      "video": "spoItMEEEPY",
+      "gap": 24238.072,
+      "videoGap": 6,
+      "volume": 1,
+      "duration": 246,
+      "bpm": 227.181
+    },
     "tracks": [
       {
         "start": 15
@@ -42948,6 +43663,12 @@
     "volume": 1,
     "author": "Fepo",
     "duration": 294,
+    "instrumental": {
+      "video": "yuhjHyb170Y",
+      "gap": 22122.3,
+      "volume": 1,
+      "duration": 291
+    },
     "tracks": [
       {
         "start": 20
@@ -43533,6 +44254,13 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=pantero",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Christina%20Perri&cancion=A%20Thousand%20Years",
     "duration": 288,
+    "instrumental": {
+      "video": "LZQtxcc-C3c",
+      "gap": 19717.9,
+      "videoGap": 3,
+      "volume": 1,
+      "duration": 288
+    },
     "tracks": [
       {
         "start": 25
@@ -43561,6 +44289,12 @@
     "manualVolume": 0.8,
     "author": "Knuddel",
     "duration": 259,
+    "instrumental": {
+      "video": "GvdFJCBcURE",
+      "gap": 712.371,
+      "volume": 0.62,
+      "duration": 246
+    },
     "tracks": [
       {
         "start": 20
@@ -44474,6 +45208,12 @@
     "manualVolume": 0.73,
     "author": "lozboorman",
     "duration": 246,
+    "instrumental": {
+      "video": "u4nIM8rqXdE",
+      "gap": 7058.922,
+      "volume": 0.62,
+      "duration": 250
+    },
     "tracks": [
       {
         "start": 16
@@ -45309,6 +46049,12 @@
     "manualVolume": 0.68,
     "author": "BadNewsBarett",
     "duration": 261,
+    "instrumental": {
+      "video": "ILEV_049iJ4",
+      "gap": 16159.648,
+      "volume": 0.83,
+      "duration": 265
+    },
     "tracks": [
       {
         "start": 24
@@ -45340,6 +46086,12 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=9",
     "sourceUrl": "https://usdb.animux.de/?link=detail&id=249",
     "duration": 296,
+    "instrumental": {
+      "video": "ZzKMvqWK5xE",
+      "gap": 13223,
+      "volume": 0.57,
+      "duration": 296
+    },
     "tracks": [
       {
         "start": 19
@@ -45486,6 +46238,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Coldplay&cancion=Viva%20la%20vida",
     "duration": 243,
+    "instrumental": {
+      "video": "hTI71TwJ2wM",
+      "gap": 12116.29,
+      "volume": 1,
+      "duration": 254
+    },
     "tracks": [
       {
         "start": 18
@@ -45569,6 +46327,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=kodaman",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Coldplay&cancion=Yellow",
     "duration": 273,
+    "instrumental": {
+      "video": "JVRnIBSQA10",
+      "gap": 33306.1,
+      "volume": 0.52,
+      "duration": 272
+    },
     "tracks": [
       {
         "start": 37
@@ -45967,6 +46731,12 @@
     "manualVolume": 0.89,
     "author": "th3re4laft0n",
     "duration": 256,
+    "instrumental": {
+      "video": "5YWRREgi8dA",
+      "gap": 22355.206,
+      "volume": 0.68,
+      "duration": 246
+    },
     "tracks": [
       {
         "start": 21
@@ -46490,6 +47260,12 @@
     "manualVolume": 0.8,
     "author": "rafallus",
     "duration": 172,
+    "instrumental": {
+      "video": "le3pds9AXws",
+      "gap": -307.496,
+      "volume": 0.5,
+      "duration": 162
+    },
     "tracks": [
       {
         "start": 18
@@ -46607,6 +47383,12 @@
     "manualVolume": 0.75,
     "author": "Canni",
     "duration": 240,
+    "instrumental": {
+      "video": "hs6thf5WTM0",
+      "gap": 15533.8,
+      "volume": 0.97,
+      "duration": 239
+    },
     "tracks": [
       {
         "start": 17
@@ -47872,6 +48654,13 @@
     "author": "Subkei",
     "sourceUrl": "https://www.youtube.com/watch?v=znN66HhZCDI",
     "duration": 177,
+    "instrumental": {
+      "video": "IJrFLJZOc28",
+      "gap": 13727.635,
+      "videoGap": 3,
+      "volume": 0.72,
+      "duration": 180
+    },
     "tracks": [
       {
         "name": "Snake Eater - Cynthia Harrell",
@@ -48597,6 +49386,12 @@
     "manualVolume": 0.8,
     "author": "gun8",
     "duration": 340,
+    "instrumental": {
+      "video": "PPGCfWAVXKw",
+      "gap": 25648.4,
+      "volume": 0.75,
+      "duration": 338
+    },
     "tracks": [
       {
         "name": "Instant Crush",
@@ -48860,6 +49655,12 @@
     "author": "Black Gyph0n",
     "sourceUrl": "https://www.youtube.com/watch?v=qy9NX7iI6YQ&pp=ygUHZGFpc2llcw%3D%3D",
     "duration": 143,
+    "instrumental": {
+      "video": "Mme94VEsS5Q",
+      "gap": 6929.78,
+      "volume": 1,
+      "duration": 143
+    },
     "tracks": [
       {
         "start": 25
@@ -49534,6 +50335,12 @@
     "manualVolume": 0.88,
     "author": "mus31",
     "duration": 271,
+    "instrumental": {
+      "video": "SWb2Kwt1fQw",
+      "gap": 17690.986,
+      "volume": 0.72,
+      "duration": 277
+    },
     "tracks": [
       {
         "start": 20
@@ -49563,6 +50370,12 @@
     "manualVolume": 0.63,
     "author": "UltraSinger [GitHub]",
     "duration": 271,
+    "instrumental": {
+      "video": "Dlgv1CokGpA",
+      "gap": 8442.65,
+      "volume": 0.63,
+      "duration": 271
+    },
     "tracks": [
       {
         "start": 25
@@ -51343,6 +52156,12 @@
     "manualVolume": 0.6,
     "author": "vicktoben",
     "duration": 246,
+    "instrumental": {
+      "video": "nm7yUZHq8ms",
+      "gap": 15197.7,
+      "volume": 0.5,
+      "duration": 245
+    },
     "tracks": [
       {
         "start": 17
@@ -52255,6 +53074,12 @@
     "manualVolume": 0.75,
     "author": "Vittelius",
     "duration": 237,
+    "instrumental": {
+      "video": "j1c-8L4UKNE",
+      "gap": 6135.44,
+      "volume": 0.54,
+      "duration": 236
+    },
     "tracks": [
       {
         "start": 38
@@ -52923,6 +53748,12 @@
     "manualVolume": 0.9,
     "author": "boohjaa",
     "duration": 190,
+    "instrumental": {
+      "video": "zajndl0RaMI",
+      "gap": 13073.207,
+      "volume": 0.5,
+      "duration": 189
+    },
     "tracks": [
       {
         "start": 14
@@ -53593,6 +54424,12 @@
     "manualVolume": 0.81,
     "author": "Demi Lovato",
     "duration": 216,
+    "instrumental": {
+      "video": "faD9d42vfTY",
+      "gap": 94.592,
+      "volume": 0.9,
+      "duration": 213
+    },
     "tracks": [
       {
         "start": 2
@@ -54006,6 +54843,12 @@
     "realBpm": 113,
     "volume": 1,
     "duration": 280,
+    "instrumental": {
+      "video": "msKBnxpZp5s",
+      "gap": 33966.3,
+      "volume": 1,
+      "duration": 268
+    },
     "tracks": [
       {
         "start": 15
@@ -56877,6 +57720,12 @@
     "volume": 1,
     "author": "Victorin",
     "duration": 209,
+    "instrumental": {
+      "video": "WcGunR7q26Q",
+      "gap": 10528.6,
+      "volume": 1,
+      "duration": 204
+    },
     "tracks": [
       {
         "start": 23
@@ -56904,6 +57753,12 @@
     "volume": 1,
     "author": "Victorin",
     "duration": 189,
+    "instrumental": {
+      "video": "SSxsGDD7ozw",
+      "gap": 4345.974,
+      "volume": 1,
+      "duration": 187
+    },
     "tracks": [
       {
         "start": 15
@@ -57184,6 +58039,12 @@
     "author": "mathias78",
     "sourceUrl": "https://youtu.be/51A5vUrEgqg?si=R86ThBnCop4dvsHz",
     "duration": 155,
+    "instrumental": {
+      "video": "vEajwH6QXHY",
+      "gap": 5588.27,
+      "volume": 1,
+      "duration": 147
+    },
     "tracks": [
       {
         "start": 19
@@ -57240,6 +58101,13 @@
     "manualVolume": 1,
     "author": "0815_Gamer",
     "duration": 192,
+    "instrumental": {
+      "video": "Qrpo8ez47Xc",
+      "gap": 189.488,
+      "volume": 1,
+      "duration": 191,
+      "bpm": 343.645
+    },
     "tracks": [
       {
         "start": 9
@@ -57412,6 +58280,12 @@
     "manualVolume": 1,
     "author": "jmfb",
     "duration": 73,
+    "instrumental": {
+      "video": "WLgsKFifEpE",
+      "gap": 1988.89,
+      "volume": 1,
+      "duration": 57
+    },
     "tracks": [
       {
         "name": "Theme Song",
@@ -57608,6 +58482,12 @@
     "manualVolume": 1,
     "author": "Luluie1",
     "duration": 170,
+    "instrumental": {
+      "video": "GMvJUn2IuUE",
+      "gap": 9432.86,
+      "volume": 1,
+      "duration": 164
+    },
     "tracks": [
       {
         "start": 25
@@ -57636,6 +58516,12 @@
     "manualVolume": 0.98,
     "author": "Tracks",
     "duration": 222,
+    "instrumental": {
+      "video": "XnF08sLuhQA",
+      "gap": 556.489,
+      "volume": 1,
+      "duration": 219
+    },
     "tracks": [
       {
         "start": 14
@@ -57665,6 +58551,12 @@
     "manualVolume": 1,
     "author": "vicktoben (ultrastar-es.org)",
     "duration": 185,
+    "instrumental": {
+      "video": "ihj02Sd3jmw",
+      "gap": 1578.514,
+      "volume": 1,
+      "duration": 182
+    },
     "tracks": [
       {
         "start": 16
@@ -57746,6 +58638,12 @@
     "manualVolume": 0.71,
     "author": "thiencao",
     "duration": 202,
+    "instrumental": {
+      "video": "CVMDLkJWHh8",
+      "gap": 6661.037,
+      "volume": 1,
+      "duration": 199
+    },
     "tracks": [
       {
         "start": 21
@@ -57773,6 +58671,12 @@
     "manualVolume": 1,
     "author": "DandyKa",
     "duration": 210,
+    "instrumental": {
+      "video": "BieT4vpPVKI",
+      "gap": -13293.418,
+      "volume": 1,
+      "duration": 201
+    },
     "tracks": [
       {
         "start": 13
@@ -57835,6 +58739,14 @@
     "author": "mkdigital",
     "sourceUrl": "https://youtu.be/GPpwI_m598Q",
     "duration": 251,
+    "instrumental": {
+      "video": "w26AETQGcxc",
+      "gap": 10885.062,
+      "videoGap": 5,
+      "volume": 1,
+      "duration": 264,
+      "bpm": 508.03
+    },
     "tracks": [
       {
         "start": 34
@@ -57891,6 +58803,13 @@
     "manualVolume": 0.93,
     "author": "Ankhman",
     "duration": 126,
+    "instrumental": {
+      "video": "gkiKVz-4ppg",
+      "gap": 4364.329,
+      "videoGap": 2,
+      "volume": 0.79,
+      "duration": 128
+    },
     "tracks": [
       {
         "name": "Anna",
@@ -58010,6 +58929,12 @@
     "manualVolume": 1,
     "author": "Angeloffate",
     "duration": 137,
+    "instrumental": {
+      "video": "PGgCQK5EmDc",
+      "gap": 2571.895,
+      "volume": 1,
+      "duration": 141
+    },
     "tracks": [
       {
         "name": "Megara",
@@ -58368,6 +59293,12 @@
     "author": "Canni",
     "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=376",
     "duration": 125,
+    "instrumental": {
+      "video": "3MU3XrDeL9o",
+      "gap": 6825.321,
+      "volume": 1,
+      "duration": 120
+    },
     "tracks": [
       {
         "name": "What I've Been Looking For",
@@ -58869,6 +59800,13 @@
     "manualVolume": 0.99,
     "author": "askusbloodfist",
     "duration": 169,
+    "instrumental": {
+      "video": "FGpREttEkEE",
+      "gap": 6062.685,
+      "volume": 1,
+      "duration": 167,
+      "bpm": 271.714
+    },
     "tracks": [
       {
         "start": 18
@@ -58898,6 +59836,13 @@
     "manualVolume": 0.99,
     "author": "wolf359",
     "duration": 156,
+    "instrumental": {
+      "video": "UGywGcdJ17w",
+      "gap": 13095.777,
+      "videoGap": 10,
+      "volume": 1,
+      "duration": 164
+    },
     "tracks": [
       {
         "start": 22
@@ -59401,6 +60346,14 @@
     "manualVolume": 0.73,
     "author": "varisha",
     "duration": 148,
+    "instrumental": {
+      "video": "I39IfZiS_tc",
+      "gap": 16773.016,
+      "videoGap": 3,
+      "volume": 0.79,
+      "duration": 150,
+      "bpm": 435.906
+    },
     "tracks": [
       {
         "start": 29
@@ -59923,6 +60876,13 @@
     "volume": 1,
     "author": "RetroGirl",
     "duration": 194,
+    "instrumental": {
+      "video": "N9tQJt57ZIQ",
+      "gap": 13802.931,
+      "volume": 1,
+      "duration": 192,
+      "bpm": 334.57
+    },
     "tracks": [
       {
         "start": 22
@@ -60011,6 +60971,13 @@
     "author": "Kimbo",
     "sourceUrl": "Disney’s Toy Story - You Got A Friend In Me",
     "duration": 77,
+    "instrumental": {
+      "video": "zTwn0stoaRw",
+      "gap": 8292.76,
+      "videoGap": 6,
+      "volume": 1,
+      "duration": 89
+    },
     "tracks": [
       {
         "start": 15
@@ -60674,6 +61641,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=subkei",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Disturbed&cancion=The%20Sound%20Of%20Silence",
     "duration": 263,
+    "instrumental": {
+      "video": "LB9LGLWny-M",
+      "gap": 8696.83,
+      "volume": 0.77,
+      "duration": 249
+    },
     "tracks": [
       {
         "start": 14
@@ -61201,6 +62174,12 @@
     "manualVolume": 0.75,
     "author": "DoubleDee",
     "duration": 162,
+    "instrumental": {
+      "video": "aesZn6YS0hQ",
+      "gap": 3281.5,
+      "volume": 0.61,
+      "duration": 159
+    },
     "tracks": [
       {
         "start": 21
@@ -61656,6 +62635,12 @@
     "manualVolume": 0.73,
     "author": "Tracks",
     "duration": 193,
+    "instrumental": {
+      "video": "oUzjyp3Aqtk",
+      "gap": 5143.715,
+      "volume": 0.5,
+      "duration": 179
+    },
     "tracks": [
       {
         "start": 14
@@ -61685,6 +62670,12 @@
     "manualVolume": 0.73,
     "author": "masterxy",
     "duration": 182,
+    "instrumental": {
+      "video": "Il2X7WUYqF4",
+      "gap": 9217.72,
+      "volume": 1,
+      "duration": 180
+    },
     "tracks": [
       {
         "start": 14
@@ -61714,6 +62705,13 @@
     "manualVolume": 0.8,
     "author": "ultrastarsongs",
     "duration": 154,
+    "instrumental": {
+      "video": "kNWsOsmldbA",
+      "gap": 9294.336,
+      "volume": 1,
+      "duration": 163,
+      "bpm": 301.827
+    },
     "tracks": [
       {
         "start": 20
@@ -61801,6 +62799,12 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=42",
     "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=4096",
     "duration": 164,
+    "instrumental": {
+      "video": "lE0CEhAqItI",
+      "gap": 7231.778,
+      "volume": 1,
+      "duration": 166
+    },
     "tracks": [
       {
         "start": 15
@@ -62815,6 +63819,12 @@
     "manualVolume": 0.63,
     "author": "AngelosTag",
     "duration": 175,
+    "instrumental": {
+      "video": "mJzekta-ARQ",
+      "gap": 2386.28,
+      "volume": 0.6,
+      "duration": 175
+    },
     "tracks": [
       {
         "name": "One Dance",
@@ -63150,6 +64160,12 @@
     "authorUrl": "Mathieu Jomphe-Lepine, Chelcee Grimes, Dua Lipa, Marc Vincent, Teddy Park, Zacharie Raymond, Yannick Rastogi.",
     "sourceUrl": "https://www.youtube.com/watch?v=AX3Bsiq-13k",
     "duration": 190,
+    "instrumental": {
+      "video": "NVCfFE07i9A",
+      "gap": 8345.87,
+      "volume": 0.5,
+      "duration": 188
+    },
     "tracks": [
       {
         "name": "Kiss and Make Up - Dua Lipa & BLACKPINK",
@@ -63421,6 +64437,12 @@
     "author": "DoubleDee",
     "sourceUrl": "https://youtu.be/ZjBZ8MUnB0E?si=dET8K6yIuYjPekWP",
     "duration": 227,
+    "instrumental": {
+      "video": "9Z64Q7w5kqI",
+      "gap": 7328.34,
+      "volume": 0.56,
+      "duration": 215
+    },
     "tracks": [
       {
         "start": 16
@@ -63686,6 +64708,12 @@
     "manualVolume": 0.79,
     "author": "Duran Duran",
     "duration": 192,
+    "instrumental": {
+      "video": "GEAZEiGSLXk",
+      "gap": 19243.8,
+      "volume": 0.5,
+      "duration": 192
+    },
     "tracks": [
       {
         "start": 8
@@ -64540,6 +65568,12 @@
     "manualVolume": 0.6,
     "author": "Ultrastar Espana",
     "duration": 241,
+    "instrumental": {
+      "video": "JPxumr7m1uQ",
+      "gap": 3286.03,
+      "volume": 0.51,
+      "duration": 232
+    },
     "tracks": [
       {
         "start": 17
@@ -64923,6 +65957,13 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Ed%20Sheeran&cancion=Photograph",
     "duration": 275,
+    "instrumental": {
+      "video": "BQKfYbaAQKw",
+      "gap": 17879.6,
+      "videoGap": 1,
+      "volume": 0.65,
+      "duration": 259
+    },
     "tracks": [
       {
         "start": 14
@@ -65152,6 +66193,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=volodia",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Ed%20Sheeran&cancion=Thinking%20out%20loud",
     "duration": 290,
+    "instrumental": {
+      "video": "sssrRlip8LY",
+      "gap": 301.187,
+      "volume": 0.6,
+      "duration": 277
+    },
     "tracks": [
       {
         "start": 21
@@ -67065,6 +68112,12 @@
     "volume": 1,
     "author": "usdb3000",
     "duration": 232,
+    "instrumental": {
+      "video": "pjespmKkpNM",
+      "gap": 16165.6,
+      "volume": 1,
+      "duration": 232
+    },
     "tracks": [
       {
         "start": 15
@@ -67177,6 +68230,12 @@
     "volume": 1,
     "author": "RetroGirl",
     "duration": 206,
+    "instrumental": {
+      "video": "ndJxFH6vdv4",
+      "gap": -27.122,
+      "volume": 1,
+      "duration": 206
+    },
     "tracks": [
       {
         "start": 16
@@ -67234,6 +68293,12 @@
     "manualVolume": 0.72,
     "author": "Coppo",
     "duration": 250,
+    "instrumental": {
+      "video": "vgQkGHolcLg",
+      "gap": 19150,
+      "volume": 0.51,
+      "duration": 250
+    },
     "tracks": [
       {
         "start": 13
@@ -67745,6 +68810,13 @@
     "realBpm": 89,
     "volume": 0.6,
     "duration": 183,
+    "instrumental": {
+      "video": "tdL9KL3jWC8",
+      "gap": 10477.597,
+      "volume": 0.6,
+      "duration": 188,
+      "bpm": 339.537
+    },
     "tracks": [
       {
         "start": 23
@@ -68627,6 +69699,12 @@
     "author": "jforjustin",
     "sourceUrl": "https://youtu.be/3qFvCPmee8U",
     "duration": 213,
+    "instrumental": {
+      "video": "Ly_Tsvq_s7I",
+      "gap": -923.905,
+      "volume": 0.56,
+      "duration": 209
+    },
     "tracks": [
       {
         "start": 22
@@ -68655,6 +69733,12 @@
     "manualVolume": 0.92,
     "author": "Nero78",
     "duration": 267,
+    "instrumental": {
+      "video": "Nf9mKO_fBkQ",
+      "gap": -1459.975,
+      "volume": 0.72,
+      "duration": 261
+    },
     "tracks": [
       {
         "name": "Eminem",
@@ -68754,6 +69838,12 @@
     "author": "th3re4laft0n",
     "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=24968",
     "duration": 324,
+    "instrumental": {
+      "video": "BETUM7WsWjE",
+      "gap": 34249.9,
+      "volume": 1,
+      "duration": 324
+    },
     "tracks": [
       {
         "start": 23
@@ -68783,6 +69873,12 @@
     "author": "eminem",
     "sourceUrl": "https://www.youtube.com/watch?v=S9bCLPwzSC0",
     "duration": 258,
+    "instrumental": {
+      "video": "nJrBU6GnhX8",
+      "gap": 3129.66,
+      "volume": 0.54,
+      "duration": 253
+    },
     "tracks": [
       {
         "start": 30
@@ -68811,6 +69907,12 @@
     "manualVolume": 0.5,
     "author": "UnisusJr",
     "duration": 370,
+    "instrumental": {
+      "video": "Jnkcey_YwEk",
+      "gap": 176.565,
+      "volume": 0.93,
+      "duration": 366
+    },
     "tracks": [
       {
         "start": 40
@@ -68840,6 +69942,12 @@
     "manualVolume": 0.77,
     "author": "DoubleDee",
     "duration": 272,
+    "instrumental": {
+      "video": "T4Y9F2CSUS4",
+      "gap": 2139.089,
+      "volume": 1,
+      "duration": 285
+    },
     "tracks": [
       {
         "start": 28
@@ -68898,6 +70006,13 @@
     "manualVolume": 0.7,
     "author": "DoubleDee",
     "duration": 298,
+    "instrumental": {
+      "video": "GH5hUizUvnk",
+      "gap": 4638.13,
+      "videoGap": 5,
+      "volume": 0.69,
+      "duration": 288
+    },
     "tracks": [
       {
         "start": 30
@@ -69904,6 +71019,12 @@
     "volume": 1,
     "author": "b888arb",
     "duration": 185,
+    "instrumental": {
+      "video": "2A-ncEQmj2o",
+      "gap": 2327.995,
+      "volume": 1,
+      "duration": 184
+    },
     "tracks": [
       {
         "start": 27
@@ -70073,6 +71194,12 @@
     "volume": 1,
     "author": "Andore",
     "duration": 164,
+    "instrumental": {
+      "video": "FhG_ODUWxOI",
+      "gap": 22266.359,
+      "volume": 1,
+      "duration": 163
+    },
     "tracks": [
       {
         "start": 27
@@ -70127,6 +71254,12 @@
     "volume": 1,
     "author": "Andore",
     "duration": 257,
+    "instrumental": {
+      "video": "LV6GWmSVyqQ",
+      "gap": 3326.497,
+      "volume": 1,
+      "duration": 251
+    },
     "tracks": [
       {
         "start": 27
@@ -70155,6 +71288,12 @@
     "author": "Epic the musical",
     "sourceUrl": "https://www.youtube.com/watch?v=Q5i2-51LS20&list=RDQ5i2-51LS20&start_radio=1",
     "duration": 191,
+    "instrumental": {
+      "video": "Ae4899yKJF8",
+      "gap": 13140.11,
+      "volume": 1,
+      "duration": 185
+    },
     "tracks": [
       {
         "start": 26
@@ -70183,6 +71322,12 @@
     "volume": 1,
     "author": "Andore",
     "duration": 212,
+    "instrumental": {
+      "video": "DRLml8QuCTM",
+      "gap": 2102.946,
+      "volume": 1,
+      "duration": 211
+    },
     "tracks": [
       {
         "start": 27
@@ -70213,6 +71358,12 @@
     "volume": 1,
     "author": "Andore",
     "duration": 332,
+    "instrumental": {
+      "video": "xZU_Fo_J52k",
+      "gap": 1847.367,
+      "volume": 1,
+      "duration": 332
+    },
     "tracks": [
       {
         "start": 27
@@ -70322,6 +71473,12 @@
     "volume": 1,
     "author": "Andore",
     "duration": 135,
+    "instrumental": {
+      "video": "tYUhavZfk4Y",
+      "gap": 12993.328,
+      "volume": 1,
+      "duration": 134
+    },
     "tracks": [
       {
         "start": 27
@@ -70459,6 +71616,12 @@
     "volume": 1,
     "author": "Andore",
     "duration": 254,
+    "instrumental": {
+      "video": "Ij9tHhVw8Gs",
+      "gap": 27498.6,
+      "volume": 1,
+      "duration": 250
+    },
     "tracks": [
       {
         "start": 25
@@ -70489,6 +71652,13 @@
     "volume": 1,
     "author": "Andore",
     "duration": 176,
+    "instrumental": {
+      "video": "0HTB_5u_oCA",
+      "gap": 6635.285,
+      "videoGap": 2,
+      "volume": 1,
+      "duration": 166
+    },
     "tracks": [
       {
         "start": 26
@@ -70546,6 +71716,12 @@
     "volume": 1,
     "author": "Andore",
     "duration": 233,
+    "instrumental": {
+      "video": "SN3zIrqaiNs",
+      "gap": 3694.097,
+      "volume": 1,
+      "duration": 219
+    },
     "tracks": [
       {
         "start": 25
@@ -70741,6 +71917,12 @@
     "volume": 1,
     "author": "Andore",
     "duration": 200,
+    "instrumental": {
+      "video": "azim3O4uuH0",
+      "gap": 11097.582,
+      "volume": 1,
+      "duration": 199
+    },
     "tracks": [
       {
         "start": 27
@@ -70771,6 +71953,12 @@
     "volume": 1,
     "author": "Andore",
     "duration": 234,
+    "instrumental": {
+      "video": "nk2pbzJDmnE",
+      "gap": 2276.27,
+      "volume": 1,
+      "duration": 228
+    },
     "tracks": [
       {
         "start": 27
@@ -70799,6 +71987,12 @@
     "author": "b888arb",
     "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=31757",
     "duration": 216,
+    "instrumental": {
+      "video": "PA_wFhLY4DU",
+      "gap": 28.595,
+      "volume": 1,
+      "duration": 204
+    },
     "tracks": [
       {
         "name": "Dangerous",
@@ -70827,6 +72021,12 @@
     "volume": 1,
     "author": "Andore",
     "duration": 188,
+    "instrumental": {
+      "video": "2KVnpVhiV7I",
+      "gap": 10240.975,
+      "volume": 1,
+      "duration": 174
+    },
     "tracks": [
       {
         "start": 26
@@ -71740,6 +72940,12 @@
     "manualVolume": 0.5,
     "author": "snake84",
     "duration": 215,
+    "instrumental": {
+      "video": "TH_WT-V8uss",
+      "gap": 7311.675,
+      "volume": 1,
+      "duration": 218
+    },
     "tracks": [
       {
         "start": 17
@@ -71834,6 +73040,12 @@
     "author": "Spys4Darwin",
     "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=10017",
     "duration": 213,
+    "instrumental": {
+      "video": "ofBkPvqIndE",
+      "gap": 565.424,
+      "volume": 0.79,
+      "duration": 213
+    },
     "tracks": [
       {
         "start": 15
@@ -71892,6 +73104,13 @@
     "manualVolume": 0.74,
     "author": "Eazee",
     "duration": 229,
+    "instrumental": {
+      "video": "dSPdzyILVyY",
+      "gap": 1235.993,
+      "videoGap": 1,
+      "volume": 0.54,
+      "duration": 232
+    },
     "tracks": [
       {
         "start": 6
@@ -71920,6 +73139,13 @@
     "volume": 1,
     "manualVolume": 0.79,
     "duration": 271,
+    "instrumental": {
+      "video": "tHDmsRb1AlU",
+      "gap": 13049.146,
+      "volume": 1,
+      "duration": 257,
+      "bpm": 149.875
+    },
     "tracks": [
       {
         "start": 10
@@ -73585,6 +74811,12 @@
     "manualVolume": 0.76,
     "author": "kitten91303",
     "duration": 230,
+    "instrumental": {
+      "video": "-gJaZqR8Sgg",
+      "gap": 25020.5,
+      "volume": 0.5,
+      "duration": 231
+    },
     "tracks": [
       {
         "start": 17
@@ -74046,6 +75278,12 @@
     "volume": 1,
     "author": "Fenyesyes",
     "duration": 176,
+    "instrumental": {
+      "video": "8mJPrsCBYaE",
+      "gap": 11723,
+      "volume": 1,
+      "duration": 176
+    },
     "tracks": [
       {
         "start": 20
@@ -74072,6 +75310,12 @@
     "volume": 1,
     "author": "michas17j",
     "duration": 226,
+    "instrumental": {
+      "video": "tF7AMMrV1JI",
+      "gap": 3264.853,
+      "volume": 1,
+      "duration": 217
+    },
     "tracks": [
       {
         "start": 26
@@ -74985,6 +76229,12 @@
     "manualVolume": 0.76,
     "author": "FritzB",
     "duration": 177,
+    "instrumental": {
+      "video": "zfBldNrY3So",
+      "gap": 138.494,
+      "volume": 0.65,
+      "duration": 174
+    },
     "tracks": [
       {
         "start": 32
@@ -75016,6 +76266,12 @@
     "manualVolume": 0.73,
     "author": "asdFer",
     "duration": 178,
+    "instrumental": {
+      "video": "-Ji9V8u1zXI",
+      "gap": -93.87,
+      "volume": 0.73,
+      "duration": 174
+    },
     "tracks": [
       {
         "start": 16
@@ -75967,6 +77223,13 @@
     "manualVolume": 0.75,
     "author": "sentientred",
     "duration": 272,
+    "instrumental": {
+      "video": "0cIRM0M3buY",
+      "gap": 29467.173,
+      "volume": 1,
+      "duration": 270,
+      "bpm": 303.633
+    },
     "tracks": [
       {
         "start": 20
@@ -77727,6 +78990,13 @@
     "manualVolume": 0.5,
     "author": "Canni",
     "duration": 192,
+    "instrumental": {
+      "video": "SB1nfaahbMQ",
+      "gap": 12575.91,
+      "volume": 0.68,
+      "duration": 191,
+      "bpm": 286.36
+    },
     "tracks": [
       {
         "start": 19
@@ -78484,6 +79754,12 @@
     "author": "IC",
     "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=3491",
     "duration": 277,
+    "instrumental": {
+      "video": "CcJKDjVa9IQ",
+      "gap": 5066.33,
+      "volume": 0.79,
+      "duration": 276
+    },
     "tracks": [
       {
         "name": "myway",
@@ -78605,6 +79881,13 @@
     "manualVolume": 0.79,
     "author": "peter.lustig",
     "duration": 188,
+    "instrumental": {
+      "video": "GVxbdjXmj6I",
+      "gap": 12003.553,
+      "volume": 0.66,
+      "duration": 189,
+      "bpm": 298.197
+    },
     "tracks": [
       {
         "start": 20
@@ -79395,6 +80678,13 @@
     "manualVolume": 0.99,
     "author": "IC",
     "duration": 254,
+    "instrumental": {
+      "video": "WFY8czzoLwE",
+      "gap": 11.241,
+      "volume": 1,
+      "duration": 251,
+      "bpm": 277.227
+    },
     "tracks": [
       {
         "start": 15
@@ -79455,6 +80745,12 @@
     "author": "vicktoben",
     "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=13922",
     "duration": 253,
+    "instrumental": {
+      "video": "G8ugmcUb9kI",
+      "gap": 7504.02,
+      "volume": 0.9,
+      "duration": 252
+    },
     "tracks": [
       {
         "name": "we are young",
@@ -80657,6 +81953,13 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=George%20Michael&cancion=Careless%20Whisper",
     "duration": 301,
+    "instrumental": {
+      "video": "IxJx124O8zE",
+      "gap": 14181.066,
+      "volume": 1,
+      "duration": 305,
+      "bpm": 305.834
+    },
     "tracks": [
       {
         "start": 20
@@ -81511,6 +82814,12 @@
     "author": "lukmuk",
     "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=28064",
     "duration": 245,
+    "instrumental": {
+      "video": "lE47XYtK3-4",
+      "gap": 17099.007,
+      "volume": 0.5,
+      "duration": 245
+    },
     "tracks": [
       {
         "start": 35
@@ -83430,6 +84739,13 @@
     "author": "Tracks",
     "sourceUrl": "https://www.youtube.com/watch?v=mRD0-GxqHVo",
     "duration": 236,
+    "instrumental": {
+      "video": "ADRA9sAkQag",
+      "gap": 14491.2,
+      "videoGap": 11,
+      "volume": 1,
+      "duration": 235
+    },
     "tracks": [
       {
         "start": 22
@@ -83924,6 +85240,12 @@
     "manualVolume": 0.5,
     "author": "Canni",
     "duration": 195,
+    "instrumental": {
+      "video": "CrBk_xXQi_8",
+      "gap": 5149.865,
+      "volume": 1,
+      "duration": 200
+    },
     "tracks": [
       {
         "start": 22
@@ -84450,6 +85772,13 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=kodaman",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Goo%20Goo%20Dolls&cancion=Iris",
     "duration": 216,
+    "instrumental": {
+      "video": "r28NixXwJx0",
+      "gap": 12221,
+      "videoGap": 1,
+      "volume": 0.82,
+      "duration": 217
+    },
     "tracks": [
       {
         "start": 21
@@ -85231,6 +86560,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=vicktoben",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Gotye%20%26%20Kimbra&cancion=Somebody%20That%20I%20Used%20To%20Know",
     "duration": 244,
+    "instrumental": {
+      "video": "d1sVSYWcHX0",
+      "gap": 18348.4,
+      "volume": 1,
+      "duration": 245
+    },
     "tracks": [
       {
         "start": 17
@@ -85323,6 +86658,12 @@
     "manualVolume": 0.92,
     "author": "DoubleDee",
     "duration": 167,
+    "instrumental": {
+      "video": "T9JEjFPFoms",
+      "gap": 22.788,
+      "volume": 0.5,
+      "duration": 170
+    },
     "tracks": [
       {
         "start": 27
@@ -85446,6 +86787,12 @@
     "author": "IC",
     "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=7304",
     "duration": 326,
+    "instrumental": {
+      "video": "zMB4A_2NzZ8",
+      "gap": 16491.625,
+      "volume": 0.59,
+      "duration": 321
+    },
     "tracks": [
       {
         "start": 21
@@ -85535,6 +86882,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Green%20Day&cancion=American%20Idiot",
     "duration": 182,
+    "instrumental": {
+      "video": "-wKmQ53jc5g",
+      "gap": 9528.62,
+      "volume": 0.54,
+      "duration": 174
+    },
     "tracks": [
       {
         "start": 19
@@ -85623,6 +86976,13 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
     "sourceUrl": "https://usdb.animux.de/?link=detail&id=892",
     "duration": 195,
+    "instrumental": {
+      "video": "zx37PRJsCuo",
+      "gap": -440.161,
+      "volume": 0.62,
+      "duration": 182,
+      "bpm": 264.284
+    },
     "tracks": [
       {
         "start": 18
@@ -86002,6 +87362,13 @@
     "volume": 1,
     "author": "RetroGirl",
     "duration": 237,
+    "instrumental": {
+      "video": "B6YUtmJKMUY",
+      "gap": 23764.64,
+      "videoGap": 8,
+      "volume": 1,
+      "duration": 244
+    },
     "tracks": [
       {
         "start": 26
@@ -86439,6 +87806,14 @@
     "author": "Canni",
     "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=895",
     "duration": 152,
+    "instrumental": {
+      "video": "PmI1PpfyjSY",
+      "gap": 14653.294,
+      "videoGap": 3,
+      "volume": 0.78,
+      "duration": 153,
+      "bpm": 380.063
+    },
     "tracks": [
       {
         "start": 25
@@ -87131,6 +88506,12 @@
     "volume": 1,
     "author": "RetroGirl",
     "duration": 447,
+    "instrumental": {
+      "video": "DYsrXmV45ro",
+      "gap": 40201.6,
+      "volume": 1,
+      "duration": 447
+    },
     "tracks": [
       {
         "start": 27
@@ -89118,6 +90499,12 @@
     "manualVolume": 0.88,
     "author": "matthu",
     "duration": 237,
+    "instrumental": {
+      "video": "eXz60fDKTnw",
+      "gap": 2154.63,
+      "volume": 0.65,
+      "duration": 236
+    },
     "tracks": [
       {
         "start": 20
@@ -89174,6 +90561,12 @@
     "manualVolume": 0.94,
     "author": "matthu",
     "duration": 185,
+    "instrumental": {
+      "video": "mivbi56D1uA",
+      "gap": 7974.846,
+      "volume": 0.79,
+      "duration": 185
+    },
     "tracks": [
       {
         "start": 20
@@ -89205,6 +90598,12 @@
     "manualVolume": 0.85,
     "author": "matthu",
     "duration": 128,
+    "instrumental": {
+      "video": "cqyyRuXMaSc",
+      "gap": 1911.356,
+      "volume": 0.72,
+      "duration": 128
+    },
     "tracks": [
       {
         "start": 20
@@ -89265,6 +90664,13 @@
     "manualVolume": 1,
     "author": "matthu",
     "duration": 334,
+    "instrumental": {
+      "video": "JNwAR1phXq0",
+      "gap": 5221.73,
+      "videoGap": 5,
+      "volume": 0.65,
+      "duration": 339
+    },
     "tracks": [
       {
         "start": 1
@@ -89296,6 +90702,12 @@
     "manualVolume": 0.82,
     "author": "matthu",
     "duration": 330,
+    "instrumental": {
+      "video": "SUMDUSv6n_0",
+      "gap": 577.093,
+      "volume": 0.79,
+      "duration": 330
+    },
     "tracks": [
       {
         "start": 20
@@ -89325,6 +90737,12 @@
     "author": "matthu",
     "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=21337",
     "duration": 194,
+    "instrumental": {
+      "video": "V_t9iEFT9N4",
+      "gap": 9397.727,
+      "volume": 0.78,
+      "duration": 194
+    },
     "tracks": [
       {
         "start": 20
@@ -89761,6 +91179,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=sebmolder",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Harry%20Styles&cancion=As%20It%20Was",
     "duration": 166,
+    "instrumental": {
+      "video": "EXqDNzM8n-A",
+      "gap": -193.067,
+      "volume": 0.5,
+      "duration": 165
+    },
     "tracks": [
       {
         "start": 339
@@ -89850,6 +91274,12 @@
     "manualVolume": 0.5,
     "author": "mustangfred and Volodia",
     "duration": 342,
+    "instrumental": {
+      "video": "YPjaQUoQ9LU",
+      "gap": 15647.2,
+      "volume": 0.5,
+      "duration": 341
+    },
     "tracks": [
       {
         "start": 16
@@ -90240,6 +91670,12 @@
     "author": "Hazbin Hotel",
     "sourceUrl": "https://www.youtube.com/watch?v=juJkNKodgdE",
     "duration": 163,
+    "instrumental": {
+      "video": "HuC4MV1jsPE",
+      "gap": 1693.76,
+      "volume": 0.59,
+      "duration": 160
+    },
     "tracks": [
       {
         "name": "Insane",
@@ -90297,6 +91733,13 @@
     "volume": 1,
     "author": "UltraSinger, Karaokey",
     "duration": 158,
+    "instrumental": {
+      "video": "qV4mZnR7Pr8",
+      "gap": 12771.8,
+      "videoGap": 3,
+      "volume": 1,
+      "duration": 146
+    },
     "tracks": [
       {
         "start": 25
@@ -90324,6 +91767,12 @@
     "volume": 1,
     "manualVolume": 0.98,
     "duration": 183,
+    "instrumental": {
+      "video": "7G3nQJih2ME",
+      "gap": -73.773,
+      "volume": 1,
+      "duration": 175
+    },
     "tracks": [
       {
         "start": 19
@@ -90354,6 +91803,12 @@
     "volume": 1,
     "author": "Sunami",
     "duration": 87,
+    "instrumental": {
+      "video": "P044wkuz24Y",
+      "gap": 5029.96,
+      "volume": 1,
+      "duration": 87
+    },
     "tracks": [
       {
         "start": 17
@@ -90381,6 +91836,12 @@
     "volume": 0.5,
     "manualVolume": 0.83,
     "duration": 140,
+    "instrumental": {
+      "video": "3xY0OHWNXK0",
+      "gap": 6664.083,
+      "volume": 0.5,
+      "duration": 128
+    },
     "tracks": [
       {
         "start": 20
@@ -91618,6 +93079,13 @@
     "volume": 1,
     "manualVolume": 0.71,
     "duration": 207,
+    "instrumental": {
+      "video": "DVjhhj8gmA0",
+      "gap": 6742.176,
+      "volume": 1,
+      "duration": 198,
+      "bpm": 300.306
+    },
     "tracks": [
       {
         "start": 20
@@ -91675,6 +93143,13 @@
     "volume": 1,
     "manualVolume": 0.74,
     "duration": 216,
+    "instrumental": {
+      "video": "GCegFloI89Y",
+      "gap": 7887.048,
+      "volume": 1,
+      "duration": 207,
+      "bpm": 300.291
+    },
     "tracks": [
       {
         "start": 20
@@ -91759,6 +93234,13 @@
     "volume": 1,
     "manualVolume": 0.75,
     "duration": 225,
+    "instrumental": {
+      "video": "oUkhd_hl6jM",
+      "gap": 10844.397,
+      "volume": 1,
+      "duration": 222,
+      "bpm": 300.297
+    },
     "tracks": [
       {
         "start": 20
@@ -92925,6 +94407,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Hoobastank&cancion=The%20Reason",
     "duration": 251,
+    "instrumental": {
+      "video": "avlX-eFlA2c",
+      "gap": 14770.2,
+      "volume": 0.5,
+      "duration": 241
+    },
     "tracks": [
       {
         "start": 0
@@ -93280,6 +94768,12 @@
     "manualVolume": 0.73,
     "author": "Knuddel",
     "duration": 241,
+    "instrumental": {
+      "video": "ANsFBew7b7M",
+      "gap": 267.986,
+      "volume": 0.5,
+      "duration": 242
+    },
     "tracks": [
       {
         "start": 8
@@ -93308,6 +94802,12 @@
     "manualVolume": 0.79,
     "author": "DoubleDee",
     "duration": 249,
+    "instrumental": {
+      "video": "Ybrv69MffS4",
+      "gap": 18127.2,
+      "volume": 0.52,
+      "duration": 251
+    },
     "tracks": [
       {
         "start": 16
@@ -94095,6 +95595,13 @@
     "volume": 0.91,
     "manualVolume": 0.85,
     "duration": 219,
+    "instrumental": {
+      "video": "LylGEQBeSNY",
+      "gap": 13985.854,
+      "volume": 0.91,
+      "duration": 222,
+      "bpm": 275.279
+    },
     "tracks": [
       {
         "start": 0
@@ -94686,6 +96193,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=Bad%20Liar",
     "duration": 284,
+    "instrumental": {
+      "video": "h9i6i03q33I",
+      "gap": 28223.4,
+      "volume": 0.56,
+      "duration": 284
+    },
     "tracks": [
       {
         "start": 0
@@ -94776,6 +96289,12 @@
     "manualVolume": 0.73,
     "author": "Volodia",
     "duration": 166,
+    "instrumental": {
+      "video": "63L_Wr7jpcI",
+      "gap": 3483.211,
+      "volume": 0.53,
+      "duration": 165
+    },
     "tracks": [
       {
         "start": 15
@@ -94866,6 +96385,12 @@
     "author": "DoubleDee, commissioned by AnimeFan1997",
     "sourceUrl": "https://www.youtube.com/watch?v=5Duje_sZko8",
     "duration": 168,
+    "instrumental": {
+      "video": "wPpltossoR8",
+      "gap": 8372.041,
+      "volume": 1,
+      "duration": 167
+    },
     "tracks": [
       {
         "start": 21
@@ -95341,6 +96866,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=skream",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Imagine%20Dragons&cancion=Warriors",
     "duration": 171,
+    "instrumental": {
+      "video": "52LDf77XQ8g",
+      "gap": 5937.85,
+      "volume": 0.6,
+      "duration": 170
+    },
     "tracks": [
       {
         "start": 0
@@ -95456,6 +96987,12 @@
     "volume": 1,
     "author": "DoubleDee",
     "duration": 215,
+    "instrumental": {
+      "video": "mGGw9pYiDNE",
+      "gap": 15581.7,
+      "volume": 1,
+      "duration": 214
+    },
     "tracks": [
       {
         "start": 16
@@ -98059,6 +99596,12 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=98211",
     "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=15836",
     "duration": 215,
+    "instrumental": {
+      "video": "IlewaKH06Ss",
+      "gap": 11236.075,
+      "volume": 0.68,
+      "duration": 215
+    },
     "tracks": [
       {
         "start": 23
@@ -98120,6 +99663,12 @@
     "author": "musiklover91",
     "sourceUrl": "https://youtu.be/0yW7w8F2TVA",
     "duration": 211,
+    "instrumental": {
+      "video": "0Sj1V6WOhUE",
+      "gap": 10425.3,
+      "volume": 0.68,
+      "duration": 211
+    },
     "tracks": [
       {
         "start": 26
@@ -98351,6 +99900,13 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=James%20Blunt&cancion=You're%20Beautiful",
     "duration": 203,
+    "instrumental": {
+      "video": "CCMDHxEcby8",
+      "gap": 24274.4,
+      "videoGap": 9,
+      "volume": 0.65,
+      "duration": 217
+    },
     "tracks": [
       {
         "start": 0
@@ -98552,6 +100108,12 @@
     "volume": 1,
     "author": "DeinAlptraum, HansiMcKlaus",
     "duration": 256,
+    "instrumental": {
+      "video": "9IMa2Aj-6v8",
+      "gap": 1088.86,
+      "volume": 1,
+      "duration": 257
+    },
     "tracks": [
       {
         "start": 21
@@ -98926,6 +100488,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=lorchen",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Jamiroquai&cancion=Virtual%20Insanity",
     "duration": 235,
+    "instrumental": {
+      "video": "ImA5-gGUNHg",
+      "gap": 370.361,
+      "volume": 1,
+      "duration": 224
+    },
     "tracks": [
       {
         "start": 25
@@ -99689,6 +101257,12 @@
     "manualVolume": 0.98,
     "author": "leaby",
     "duration": 199,
+    "instrumental": {
+      "video": "mKiV3-ntrJA",
+      "gap": 6034.386,
+      "volume": 0.62,
+      "duration": 198
+    },
     "tracks": [
       {
         "name": "Jason Paige",
@@ -103124,6 +104698,13 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=334",
     "sourceUrl": "https://usdb.animux.de/",
     "duration": 196,
+    "instrumental": {
+      "video": "ELVMP3QyNHY",
+      "gap": 5878.589,
+      "volume": 0.83,
+      "duration": 198,
+      "bpm": 328.424
+    },
     "tracks": [
       {
         "start": 22
@@ -103414,6 +104995,12 @@
     "volume": 1,
     "author": "SirHc",
     "duration": 130,
+    "instrumental": {
+      "video": "7Ss_XSkHjzg",
+      "gap": 3283.57,
+      "volume": 1,
+      "duration": 130
+    },
     "tracks": [
       {
         "start": 20
@@ -103556,6 +105143,13 @@
     "volume": 0.72,
     "manualVolume": 1,
     "duration": 229,
+    "instrumental": {
+      "video": "OkyeJ_QrMLc",
+      "gap": 11915.261,
+      "volume": 0.72,
+      "duration": 217,
+      "bpm": 181.306
+    },
     "tracks": [
       {
         "start": 12
@@ -103944,6 +105538,12 @@
     "author": "krasserdude",
     "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=26163",
     "duration": 235,
+    "instrumental": {
+      "video": "KT4vnHPcmGY",
+      "gap": 16405.9,
+      "volume": 0.56,
+      "duration": 235
+    },
     "tracks": [
       {
         "start": 24
@@ -103972,6 +105572,12 @@
     "volume": 1,
     "author": "tyromantaYT",
     "duration": 109,
+    "instrumental": {
+      "video": "3Hn7hDHXDqc",
+      "gap": 13978,
+      "volume": 1,
+      "duration": 109
+    },
     "tracks": [
       {
         "start": 27
@@ -104001,6 +105607,12 @@
     "manualVolume": 0.74,
     "author": "krasserdude",
     "duration": 218,
+    "instrumental": {
+      "video": "CJFPgRnnVrA",
+      "gap": 21415.5,
+      "volume": 0.5,
+      "duration": 209
+    },
     "tracks": [
       {
         "start": 23
@@ -104603,6 +106215,12 @@
     "volume": 1,
     "author": "DoubleDee73",
     "duration": 200,
+    "instrumental": {
+      "video": "RkGBiWwO1lI",
+      "gap": 3365.97,
+      "volume": 1,
+      "duration": 189
+    },
     "tracks": [
       {
         "start": 18
@@ -105658,6 +107276,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=klafhor",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Journey&cancion=Don't%20Stop%20Believing",
     "duration": 251,
+    "instrumental": {
+      "video": "LtCXt_mXBQ4",
+      "gap": 16864.1,
+      "volume": 0.79,
+      "duration": 249
+    },
     "tracks": [
       {
         "start": 16
@@ -106606,6 +108230,12 @@
     "author": "Tracks",
     "sourceUrl": "https://www.youtube.com/watch?v=mzB1VGEGcSU",
     "duration": 231,
+    "instrumental": {
+      "video": "Qop4-w8gjOE",
+      "gap": -443.611,
+      "volume": 0.68,
+      "duration": 246
+    },
     "tracks": [
       {
         "start": 30
@@ -107349,6 +108979,12 @@
     "manualVolume": 0.76,
     "author": "Mamba99",
     "duration": 158,
+    "instrumental": {
+      "video": "SHEbnD5tiqo",
+      "gap": 12481.124,
+      "volume": 0.5,
+      "duration": 152
+    },
     "tracks": [
       {
         "start": 21
@@ -107465,6 +109101,12 @@
     "manualVolume": 0.68,
     "author": "gaspar17",
     "duration": 230,
+    "instrumental": {
+      "video": "8NFa1sHMTP8",
+      "gap": -3901.63,
+      "volume": 0.56,
+      "duration": 227
+    },
     "tracks": [
       {
         "start": 19
@@ -107612,6 +109254,12 @@
     "authorUrl": "https://ultrastar-es.org/pt/canciones?creador=vicktoben",
     "sourceUrl": "https://ultrastar-es.org/pt/canciones?artista=Justin%20Bieber%20&%20Ludacris&cancion=Baby",
     "duration": 220,
+    "instrumental": {
+      "video": "gEEq3ZuZX9M",
+      "gap": 1795.21,
+      "volume": 0.55,
+      "duration": 220
+    },
     "tracks": [
       {
         "start": 17
@@ -107756,6 +109404,13 @@
     "volume": 1,
     "author": "amro98",
     "duration": 206,
+    "instrumental": {
+      "video": "L9oUxs42ND8",
+      "gap": 8894.028,
+      "volume": 1,
+      "duration": 200,
+      "bpm": 399.955
+    },
     "tracks": [
       {
         "start": 27
@@ -108866,6 +110521,12 @@
     "author": "LeSpank",
     "sourceUrl": "https://www.youtube.com/watch?v=tz6u9suVNlY",
     "duration": 323,
+    "instrumental": {
+      "video": "lmO84Nv2KKw",
+      "gap": -13054.829,
+      "volume": 0.57,
+      "duration": 309
+    },
     "tracks": [
       {
         "name": "Carry on Wayward Son",
@@ -108895,6 +110556,13 @@
     "volume": 1,
     "author": "pauldiddy",
     "duration": 200,
+    "instrumental": {
+      "video": "KrURjuhsmvI",
+      "gap": 19402.163,
+      "volume": 1,
+      "duration": 210,
+      "bpm": 226.021
+    },
     "tracks": [
       {
         "start": 15
@@ -108953,6 +110621,12 @@
     "manualVolume": 0.84,
     "author": "davsp99",
     "duration": 240,
+    "instrumental": {
+      "video": "zWYlXjmekzc",
+      "gap": 21530.761,
+      "volume": 1,
+      "duration": 240
+    },
     "tracks": [
       {
         "name": "Flashing Lights [DUET]",
@@ -108985,6 +110659,13 @@
     "volume": 1,
     "author": "Sam003pa",
     "duration": 222,
+    "instrumental": {
+      "video": "Gm7Gkj7mHMA",
+      "gap": -630.791,
+      "volume": 1,
+      "duration": 212,
+      "bpm": 369.503
+    },
     "tracks": [
       {
         "start": 25
@@ -109102,6 +110783,12 @@
     "manualVolume": 0.99,
     "author": "kevin26mg",
     "duration": 221,
+    "instrumental": {
+      "video": "-j0hJsHO7T0",
+      "gap": 1865.93,
+      "volume": 1,
+      "duration": 213
+    },
     "tracks": [
       {
         "name": "Heartless",
@@ -110041,6 +111728,13 @@
     "authorUrl": "https://ultrastar-es.org/en/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/en/canciones?cancion=Running+Up+That+Hill",
     "duration": 296,
+    "instrumental": {
+      "video": "6nanZpvZdus",
+      "gap": 24415.264,
+      "volume": 0.98,
+      "duration": 299,
+      "bpm": 216.752
+    },
     "tracks": [
       {
         "start": 14
@@ -110192,6 +111886,13 @@
     "volume": 1,
     "author": "asdFer",
     "duration": 198,
+    "instrumental": {
+      "video": "A3_Uv76cJE4",
+      "gap": 11504.262,
+      "videoGap": 5,
+      "volume": 1,
+      "duration": 204
+    },
     "tracks": [
       {
         "start": 20
@@ -110220,6 +111921,12 @@
     "volume": 0.83,
     "author": "Mircosoft93",
     "duration": 142,
+    "instrumental": {
+      "video": "JcKajRvgec4",
+      "gap": -1517.197,
+      "volume": 0.83,
+      "duration": 140
+    },
     "tracks": [
       {
         "start": 17
@@ -110310,6 +112017,12 @@
     "manualVolume": 0.73,
     "author": "vicktoben",
     "duration": 225,
+    "instrumental": {
+      "video": "O-KseDiOcs8",
+      "gap": -1020.37,
+      "volume": 1,
+      "duration": 215
+    },
     "tracks": [
       {
         "name": "Dark horse",
@@ -110426,6 +112139,12 @@
     "manualVolume": 0.65,
     "author": "michas17j",
     "duration": 234,
+    "instrumental": {
+      "video": "8jBW7y4_TRw",
+      "gap": 6912.4,
+      "volume": 0.51,
+      "duration": 235
+    },
     "tracks": [
       {
         "start": 17
@@ -110456,6 +112175,12 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=14525",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=10301",
     "duration": 234,
+    "instrumental": {
+      "video": "SHQCAy-0RwM",
+      "gap": 13299.5,
+      "volume": 0.57,
+      "duration": 232
+    },
     "tracks": [
       {
         "start": 17
@@ -110546,6 +112271,12 @@
     "volume": 0.5,
     "manualVolume": 0.81,
     "duration": 185,
+    "instrumental": {
+      "video": "iy19aMCCMZY",
+      "gap": 3602.733,
+      "volume": 0.5,
+      "duration": 180
+    },
     "tracks": [
       {
         "start": 17
@@ -111189,6 +112920,12 @@
     "volume": 1,
     "author": "Currymalker",
     "duration": 214,
+    "instrumental": {
+      "video": "0HRjX0oy3JA",
+      "gap": 10952.5,
+      "volume": 1,
+      "duration": 199
+    },
     "tracks": [
       {
         "start": 21
@@ -111218,6 +112955,12 @@
     "manualVolume": 0.87,
     "author": "Subkei",
     "duration": 203,
+    "instrumental": {
+      "video": "oxHv0jCrX_k",
+      "gap": -66.534,
+      "volume": 0.5,
+      "duration": 188
+    },
     "tracks": [
       {
         "start": 18
@@ -111248,6 +112991,12 @@
     "manualVolume": 0.6,
     "author": "Currymalker",
     "duration": 231,
+    "instrumental": {
+      "video": "XVNTIaG95C0",
+      "gap": 3566.74,
+      "volume": 0.93,
+      "duration": 222
+    },
     "tracks": [
       {
         "start": 19
@@ -111398,6 +113147,12 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
     "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=545",
     "duration": 212,
+    "instrumental": {
+      "video": "ZSqhPkAuHOo",
+      "gap": 20600.906,
+      "volume": 0.54,
+      "duration": 210
+    },
     "tracks": [
       {
         "start": 25
@@ -111461,6 +113216,12 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
     "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=546",
     "duration": 237,
+    "instrumental": {
+      "video": "-N9EpXILLUI",
+      "gap": 21979.6,
+      "volume": 0.5,
+      "duration": 240
+    },
     "tracks": [
       {
         "start": 23
@@ -111675,6 +113436,12 @@
     "volume": 1,
     "author": "klops_007",
     "duration": 195,
+    "instrumental": {
+      "video": "JtKozhQEezo",
+      "gap": 2287.801,
+      "volume": 1,
+      "duration": 195
+    },
     "tracks": [
       {
         "start": 17
@@ -112703,6 +114470,12 @@
     "manualVolume": 0.73,
     "author": "Subby77",
     "duration": 274,
+    "instrumental": {
+      "video": "pL7UAzP-Dvc",
+      "gap": -26.492,
+      "volume": 0.6,
+      "duration": 274
+    },
     "tracks": [
       {
         "name": "Not Like Us",
@@ -112734,6 +114507,12 @@
     "manualVolume": 0.77,
     "author": "Subby77",
     "duration": 235,
+    "instrumental": {
+      "video": "wICZiQVf81s",
+      "gap": 18968.074,
+      "volume": 0.5,
+      "duration": 236
+    },
     "tracks": [
       {
         "name": "Kendrick Lamar",
@@ -114182,6 +115961,12 @@
     "manualVolume": 0.81,
     "author": "Canni",
     "duration": 239,
+    "instrumental": {
+      "video": "ByU4IgcnPDA",
+      "gap": 18945.2,
+      "volume": 0.72,
+      "duration": 238
+    },
     "tracks": [
       {
         "start": 35
@@ -115193,6 +116978,12 @@
     "manualVolume": 1,
     "author": "Canni",
     "duration": 267,
+    "instrumental": {
+      "video": "EG0OaEExS0Y",
+      "gap": 18949.549,
+      "volume": 0.94,
+      "duration": 267
+    },
     "tracks": [
       {
         "start": 14
@@ -115555,6 +117346,12 @@
     "volume": 0.77,
     "author": "javinava, Dragon33",
     "duration": 199,
+    "instrumental": {
+      "video": "Wbt9E3YCiWo",
+      "gap": 15235.243,
+      "volume": 0.77,
+      "duration": 193
+    },
     "tracks": [
       {
         "start": 16
@@ -115584,6 +117381,12 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=103587",
     "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=31148",
     "duration": 184,
+    "instrumental": {
+      "video": "JpkcmktkSf0",
+      "gap": 3981.655,
+      "volume": 0.81,
+      "duration": 176
+    },
     "tracks": [
       {
         "start": 21
@@ -115612,6 +117415,13 @@
     "volume": 0.79,
     "author": "ZG",
     "duration": 189,
+    "instrumental": {
+      "video": "enHjj7xmZp4",
+      "gap": 7030.74,
+      "videoGap": 2,
+      "volume": 0.79,
+      "duration": 182
+    },
     "tracks": [
       {
         "name": "Takedown",
@@ -115642,6 +117452,12 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=184581",
     "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=31090",
     "duration": 251,
+    "instrumental": {
+      "video": "7AkTWeb4UY0",
+      "gap": 564.02,
+      "volume": 1,
+      "duration": 250
+    },
     "tracks": [
       {
         "start": 16
@@ -115669,6 +117485,12 @@
     "volume": 0.84,
     "author": "MylordWaliza, Dragon33",
     "duration": 192,
+    "instrumental": {
+      "video": "43ZJhBjceb4",
+      "gap": 12939.509,
+      "volume": 0.84,
+      "duration": 188
+    },
     "tracks": [
       {
         "start": 19
@@ -118549,6 +120371,12 @@
     "manualVolume": 0.5,
     "author": "zrednaz",
     "duration": 146,
+    "instrumental": {
+      "video": "xeAUB1nRtcw",
+      "gap": 8595.531,
+      "volume": 1,
+      "duration": 150
+    },
     "tracks": [
       {
         "name": "Ryan Gosling",
@@ -119443,6 +121271,13 @@
     "manualVolume": 0.84,
     "author": "Liangqui",
     "duration": 272,
+    "instrumental": {
+      "video": "KpC_3U5JJiA",
+      "gap": 39113.792,
+      "videoGap": 2,
+      "volume": 0.5,
+      "duration": 280
+    },
     "tracks": [
       {
         "start": 14
@@ -119504,6 +121339,12 @@
     "manualVolume": 0.75,
     "author": "Lady Gaga",
     "duration": 270,
+    "instrumental": {
+      "video": "FIQzAkHizbc",
+      "gap": 19251.879,
+      "volume": 0.99,
+      "duration": 269
+    },
     "tracks": [
       {
         "start": 34
@@ -119745,6 +121586,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=coppo",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Lady%20Gaga&cancion=Bloody%20Mary",
     "duration": 245,
+    "instrumental": {
+      "video": "49yZUhneGks",
+      "gap": 18781.953,
+      "volume": 0.6,
+      "duration": 243
+    },
     "tracks": [
       {
         "start": 13
@@ -119834,6 +121681,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=asdfer",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Lady%20Gaga%2C%20Bradley%20Cooper&cancion=Shallow",
     "duration": 216,
+    "instrumental": {
+      "video": "4DUldzO96Ec",
+      "gap": 15073.649,
+      "volume": 0.91,
+      "duration": 214
+    },
     "tracks": [
       {
         "start": 25
@@ -119892,6 +121745,12 @@
     "author": "Subby77",
     "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=29564",
     "duration": 253,
+    "instrumental": {
+      "video": "pI7xR2Cf4-Y",
+      "gap": 2687.99,
+      "volume": 0.69,
+      "duration": 248
+    },
     "tracks": [
       {
         "start": 8
@@ -120154,6 +122013,13 @@
     "manualVolume": 0.5,
     "author": "petiboy20",
     "duration": 221,
+    "instrumental": {
+      "video": "EprZ4a_nmgA",
+      "gap": 9157.09,
+      "videoGap": 2,
+      "volume": 0.51,
+      "duration": 228
+    },
     "tracks": [
       {
         "name": "Lady Gaga",
@@ -121426,6 +123292,12 @@
     "authorUrl": "https://ultrastar-es.org/en/canciones?creador=vicktoben",
     "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Lana%20Del%20Rey&cancion=Born%20To%20Die",
     "duration": 286,
+    "instrumental": {
+      "video": "neVA7Rz9opo",
+      "gap": 22228,
+      "volume": 0.58,
+      "duration": 286
+    },
     "tracks": [
       {
         "start": 11
@@ -121685,6 +123557,12 @@
     "manualVolume": 0.78,
     "author": "Quetzaldo",
     "duration": 282,
+    "instrumental": {
+      "video": "FSlZoqEMgvk",
+      "gap": 41067.4,
+      "volume": 0.62,
+      "duration": 284
+    },
     "tracks": [
       {
         "start": 16
@@ -121771,6 +123649,12 @@
     "manualVolume": 0.5,
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Lana+Del+Rey",
     "duration": 266,
+    "instrumental": {
+      "video": "HLIMM10e8fo",
+      "gap": 16291.739,
+      "volume": 0.59,
+      "duration": 265
+    },
     "tracks": [
       {
         "start": 15
@@ -121800,6 +123684,13 @@
     "manualVolume": 0.75,
     "author": "mus31",
     "duration": 264,
+    "instrumental": {
+      "video": "_wG7ogLPZCs",
+      "gap": 17882.8,
+      "volume": 0.65,
+      "duration": 250,
+      "bpm": 292.587
+    },
     "tracks": [
       {
         "start": 19
@@ -121830,6 +123721,12 @@
     "manualVolume": 0.65,
     "author": "flaur",
     "duration": 287,
+    "instrumental": {
+      "video": "Tjq2eboWwac",
+      "gap": 18603,
+      "volume": 1,
+      "duration": 282
+    },
     "tracks": [
       {
         "start": 27
@@ -122317,6 +124214,12 @@
     "volume": 1,
     "author": "LuMM04",
     "duration": 170,
+    "instrumental": {
+      "video": "WsXsyIJPw90",
+      "gap": 4183.29,
+      "volume": 1,
+      "duration": 170
+    },
     "tracks": [
       {
         "name": "From The Start",
@@ -122345,6 +124248,12 @@
     "volume": 1,
     "author": "Djirtou",
     "duration": 170,
+    "instrumental": {
+      "video": "HG7gfI-rPcE",
+      "gap": 4280.686,
+      "volume": 1,
+      "duration": 164
+    },
     "tracks": [
       {
         "start": 25
@@ -122376,6 +124285,12 @@
     "author": "LuMM04",
     "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=32236",
     "duration": 240,
+    "instrumental": {
+      "video": "RPkQzow4V4U",
+      "gap": 15597.7,
+      "volume": 1,
+      "duration": 239
+    },
     "tracks": [
       {
         "start": 23
@@ -122405,6 +124320,12 @@
     "author": "LuMM04",
     "sourceUrl": "youtube.com/watch?v=s75Ak1itmLM&time_continue=0&source_ve_path=NzY3NTg&embeds_referring_euri=https%3A%2F%2Fusdb.animux.de%2F",
     "duration": 233,
+    "instrumental": {
+      "video": "nH6d9G2OLDg",
+      "gap": -1.054,
+      "volume": 1,
+      "duration": 234
+    },
     "tracks": [
       {
         "start": 0
@@ -124032,6 +125953,12 @@
     "manualVolume": 0.7,
     "author": "Achilles",
     "duration": 186,
+    "instrumental": {
+      "video": "1_AC2tbBTSw",
+      "gap": 8351.797,
+      "volume": 0.53,
+      "duration": 185
+    },
     "tracks": [
       {
         "start": 25
@@ -124292,6 +126219,12 @@
     "manualVolume": 0.74,
     "author": "Vaney",
     "duration": 158,
+    "instrumental": {
+      "video": "m1d3h7ywQdA",
+      "gap": 11747,
+      "volume": 0.51,
+      "duration": 159
+    },
     "tracks": [
       {
         "start": 18
@@ -124757,6 +126690,12 @@
     "authorUrl": "https://usdb.animux.de/?link=profil&id=411",
     "sourceUrl": "https://usdb.animux.de/?link=detail&id=3558",
     "duration": 274,
+    "instrumental": {
+      "video": "0G-V1uzmqAU",
+      "gap": 16341.618,
+      "volume": 0.5,
+      "duration": 275
+    },
     "tracks": [
       {
         "name": "Behind Blue Eyes",
@@ -125271,6 +127210,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=ijka%C7%83",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=Bleed%20It%20Out",
     "duration": 169,
+    "instrumental": {
+      "video": "7CzeUM6s2mI",
+      "gap": 6435.19,
+      "volume": 0.56,
+      "duration": 167
+    },
     "tracks": [
       {
         "start": 26
@@ -125299,6 +127244,13 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=Breaking%20the%20Habit",
     "duration": 199,
+    "instrumental": {
+      "video": "Yr8DfWjBHrQ",
+      "gap": 21477.7,
+      "videoGap": 1,
+      "volume": 0.5,
+      "duration": 199
+    },
     "tracks": [
       {
         "start": 13
@@ -125329,6 +127281,12 @@
     "volume": 0.58,
     "manualVolume": 0.8,
     "duration": 234,
+    "instrumental": {
+      "video": "PXF2vvaZ3rw",
+      "gap": 21283.1,
+      "volume": 0.58,
+      "duration": 230
+    },
     "tracks": [
       {
         "name": "Chester",
@@ -125428,6 +127386,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=kaim21",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=Crawling",
     "duration": 217,
+    "instrumental": {
+      "video": "WqlN_ir1I_0",
+      "gap": 22688.8,
+      "volume": 0.58,
+      "duration": 209
+    },
     "tracks": [
       {
         "start": 14
@@ -125459,6 +127423,13 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=ijka%C7%83",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=Faint",
     "duration": 169,
+    "instrumental": {
+      "video": "-xGxpiNzPGA",
+      "gap": 28413.489,
+      "volume": 0.5,
+      "duration": 163,
+      "bpm": 269.73
+    },
     "tracks": [
       {
         "start": 18
@@ -125548,6 +127519,12 @@
     "volume": 0.5,
     "manualVolume": 0.9,
     "duration": 178,
+    "instrumental": {
+      "video": "FWqoczmFC3Y",
+      "gap": 23678,
+      "volume": 0.5,
+      "duration": 176
+    },
     "tracks": [
       {
         "start": 13
@@ -125577,6 +127554,12 @@
     "manualVolume": 0.85,
     "author": "SweetStar",
     "duration": 192,
+    "instrumental": {
+      "video": "iClEAyDiLjI",
+      "gap": 23570,
+      "volume": 0.7,
+      "duration": 192
+    },
     "tracks": [
       {
         "start": 13
@@ -125733,6 +127716,12 @@
     "manualVolume": 0.5,
     "author": "MarioXIV",
     "duration": 219,
+    "instrumental": {
+      "video": "bMGsapR0FJY",
+      "gap": 17401.8,
+      "volume": 0.5,
+      "duration": 220
+    },
     "tracks": [
       {
         "name": "Chester",
@@ -125797,6 +127786,12 @@
     "manualVolume": 0.69,
     "author": "IC",
     "duration": 206,
+    "instrumental": {
+      "video": "thiVituksBE",
+      "gap": 22004.634,
+      "volume": 0.57,
+      "duration": 199
+    },
     "tracks": [
       {
         "start": 21
@@ -125826,6 +127821,12 @@
     "manualVolume": 0.75,
     "author": "DoubleDee",
     "duration": 199,
+    "instrumental": {
+      "video": "JeXD4k9-PT4",
+      "gap": 21021.1,
+      "volume": 0.5,
+      "duration": 198
+    },
     "tracks": [
       {
         "start": 19
@@ -125918,6 +127919,12 @@
     "author": "jdogk, IC",
     "sourceUrl": "https://usdb.animux.de",
     "duration": 269,
+    "instrumental": {
+      "video": "tBv5PIVwzvo",
+      "gap": 33772.7,
+      "volume": 0.5,
+      "duration": 270
+    },
     "tracks": [
       {
         "start": 24
@@ -125949,6 +127956,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=klafhor",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=Numb",
     "duration": 188,
+    "instrumental": {
+      "video": "bd-6xFGNOW0",
+      "gap": 20972.8,
+      "volume": 0.5,
+      "duration": 188
+    },
     "tracks": [
       {
         "start": 15
@@ -125978,6 +127991,12 @@
     "manualVolume": 0.78,
     "author": "SweetStar, aac",
     "duration": 271,
+    "instrumental": {
+      "video": "PtaDliejyYQ",
+      "gap": 26789.5,
+      "volume": 0.76,
+      "duration": 256
+    },
     "tracks": [
       {
         "start": 22
@@ -126008,6 +128027,12 @@
     "volume": 0.55,
     "manualVolume": 0.77,
     "duration": 177,
+    "instrumental": {
+      "video": "_FZ4tYu1CMk",
+      "gap": 25132.975,
+      "volume": 0.55,
+      "duration": 162
+    },
     "tracks": [
       {
         "start": 26
@@ -126126,6 +128151,12 @@
     "manualVolume": 0.99,
     "author": "IC",
     "duration": 258,
+    "instrumental": {
+      "video": "4P6bbtO5zZY",
+      "gap": 21903.1,
+      "volume": 1,
+      "duration": 260
+    },
     "tracks": [
       {
         "start": 15
@@ -126154,6 +128185,12 @@
     "volume": 0.5,
     "manualVolume": 0.79,
     "duration": 226,
+    "instrumental": {
+      "video": "HvVRlul5TEU",
+      "gap": 40116.2,
+      "volume": 0.5,
+      "duration": 214
+    },
     "tracks": [
       {
         "start": 26
@@ -126186,6 +128223,12 @@
     "author": "Xerl0x",
     "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=29370",
     "duration": 201,
+    "instrumental": {
+      "video": "Hzf2j04_bSM",
+      "gap": 4503.11,
+      "volume": 0.5,
+      "duration": 194
+    },
     "tracks": [
       {
         "start": 25
@@ -126365,6 +128408,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=paranoik",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Linkin%20Park&cancion=What%20I've%20done",
     "duration": 208,
+    "instrumental": {
+      "video": "jG7H1RMyk80",
+      "gap": 41468.9,
+      "volume": 0.65,
+      "duration": 206
+    },
     "tracks": [
       {
         "start": 16
@@ -127180,6 +129229,12 @@
     "manualVolume": 0.76,
     "author": "Sing-Time",
     "duration": 261,
+    "instrumental": {
+      "video": "vA7d0_r8ueY",
+      "gap": -1494.73,
+      "volume": 0.61,
+      "duration": 245
+    },
     "tracks": [
       {
         "start": 15
@@ -127900,6 +129955,12 @@
     "volume": 1,
     "author": "rote_rose",
     "duration": 285,
+    "instrumental": {
+      "video": "gCaHwLWS-DM",
+      "gap": 18915.1,
+      "volume": 1,
+      "duration": 288
+    },
     "tracks": [
       {
         "start": 15
@@ -128150,6 +130211,12 @@
     "author": "Lord Huron",
     "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=21842",
     "duration": 209,
+    "instrumental": {
+      "video": "E1dT2brXFqc",
+      "gap": 640.32,
+      "volume": 1,
+      "duration": 206
+    },
     "tracks": [
       {
         "start": 23
@@ -129948,6 +132015,12 @@
     "manualVolume": 0.73,
     "author": "th3re4laft0n",
     "duration": 271,
+    "instrumental": {
+      "video": "MpCqaU2-D-g",
+      "gap": 22234.3,
+      "volume": 0.54,
+      "duration": 270
+    },
     "tracks": [
       {
         "start": 23
@@ -130726,6 +132799,12 @@
     "volume": 0.61,
     "manualVolume": 0.79,
     "duration": 240,
+    "instrumental": {
+      "video": "MBlfTJvtgwA",
+      "gap": 19065.1,
+      "volume": 0.61,
+      "duration": 239
+    },
     "tracks": [
       {
         "start": 17
@@ -132378,6 +134457,12 @@
     "authorUrl": "https://ultrastar-es.org/en/canciones?creador=mustangfred",
     "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=Madonna&cancion=La%20Isla%20Bonita",
     "duration": 242,
+    "instrumental": {
+      "video": "X39NPRMER5s",
+      "gap": 22896.8,
+      "volume": 1,
+      "duration": 243
+    },
     "tracks": [
       {
         "start": 20
@@ -132407,6 +134492,13 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Madonna&cancion=Like%20A%20Prayer",
     "duration": 338,
+    "instrumental": {
+      "video": "x18AZAmFNBk",
+      "gap": 9952.954,
+      "volume": 0.93,
+      "duration": 342,
+      "bpm": 223.78
+    },
     "tracks": [
       {
         "start": 15
@@ -132928,6 +135020,12 @@
     "manualVolume": 0.76,
     "author": "Pantero",
     "duration": 226,
+    "instrumental": {
+      "video": "Z9g9d9AAtsM",
+      "gap": 815.204,
+      "volume": 0.59,
+      "duration": 225
+    },
     "tracks": [
       {
         "start": 19
@@ -134426,6 +136524,12 @@
     "manualVolume": 0.7,
     "author": "DoubleDee73",
     "duration": 211,
+    "instrumental": {
+      "video": "intEEqvmsko",
+      "gap": -214.378,
+      "volume": 0.5,
+      "duration": 215
+    },
     "tracks": [
       {
         "start": 8
@@ -134510,6 +136614,12 @@
     "manualVolume": 0.7,
     "author": "Tracks",
     "duration": 173,
+    "instrumental": {
+      "video": "pdedhy4qhEE",
+      "gap": -729.074,
+      "volume": 0.6,
+      "duration": 173
+    },
     "tracks": [
       {
         "start": 18
@@ -135470,6 +137580,14 @@
     "volume": 0.79,
     "manualVolume": 0.5,
     "duration": 235,
+    "instrumental": {
+      "video": "MvNX5X-Dxbo",
+      "gap": 6758.469,
+      "videoGap": 1,
+      "volume": 0.79,
+      "duration": 241,
+      "bpm": 299.976
+    },
     "tracks": [
       {
         "start": 20
@@ -135725,6 +137843,12 @@
     "manualVolume": 0.7,
     "author": "varisha",
     "duration": 231,
+    "instrumental": {
+      "video": "gnmEXoSIK-Y",
+      "gap": 6252.054,
+      "volume": 0.94,
+      "duration": 235
+    },
     "tracks": [
       {
         "start": 22
@@ -136807,6 +138931,12 @@
     "author": "Marino",
     "sourceUrl": "https://www.youtube.com/watch?v=DC-cqWO_GM0",
     "duration": 110,
+    "instrumental": {
+      "video": "JT9yrdA_7Kg",
+      "gap": 2849.758,
+      "volume": 1,
+      "duration": 105
+    },
     "tracks": [
       {
         "start": 15
@@ -137257,6 +139387,12 @@
     "manualVolume": 0.78,
     "author": "Babula93",
     "duration": 230,
+    "instrumental": {
+      "video": "03x2oi_yij0",
+      "gap": -494.868,
+      "volume": 0.52,
+      "duration": 230
+    },
     "tracks": [
       {
         "start": 5
@@ -137464,6 +139600,12 @@
     "manualVolume": 0.75,
     "author": "aac",
     "duration": 189,
+    "instrumental": {
+      "video": "JilVN8RYINU",
+      "gap": 44.238,
+      "volume": 1,
+      "duration": 190
+    },
     "tracks": [
       {
         "start": 9
@@ -137607,6 +139749,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=upalula",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Maroon%205&cancion=She%20Will%20Be%20Loved",
     "duration": 269,
+    "instrumental": {
+      "video": "WMD0nsc2zS4",
+      "gap": -104.571,
+      "volume": 0.73,
+      "duration": 261
+    },
     "tracks": [
       {
         "start": 27
@@ -137693,6 +139841,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Maroon%205&cancion=This%20Love",
     "duration": 206,
+    "instrumental": {
+      "video": "-9l2Brwe538",
+      "gap": 20952,
+      "volume": 0.5,
+      "duration": 209
+    },
     "tracks": [
       {
         "start": 0
@@ -139767,6 +141921,12 @@
     "manualVolume": 0.69,
     "author": "amro89, fepo",
     "duration": 223,
+    "instrumental": {
+      "video": "e8DhzAM4A5s",
+      "gap": -298.895,
+      "volume": 0.65,
+      "duration": 220
+    },
     "tracks": [
       {
         "start": 25
@@ -141173,6 +143333,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Metallica&cancion=Enter%20Sandman",
     "duration": 331,
+    "instrumental": {
+      "video": "CIhTTCXMrew",
+      "gap": 70230.8,
+      "volume": 0.51,
+      "duration": 332
+    },
     "tracks": [
       {
         "start": 27
@@ -141440,6 +143606,13 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Metallica&cancion=Nothing%20Else%20Matters",
     "duration": 386,
+    "instrumental": {
+      "video": "qYkClrLauNs",
+      "gap": 64901.159,
+      "videoGap": 4,
+      "volume": 0.99,
+      "duration": 391
+    },
     "tracks": [
       {
         "start": 0
@@ -142096,6 +144269,12 @@
     "author": "IC",
     "sourceUrl": "https://youtu.be/elaaKc2TC8s",
     "duration": 204,
+    "instrumental": {
+      "video": "Lq7VS0dIwFM",
+      "gap": 10807.3,
+      "volume": 1,
+      "duration": 190
+    },
     "tracks": [
       {
         "start": 25
@@ -142328,6 +144507,12 @@
     "volume": 1,
     "author": "REL",
     "duration": 189,
+    "instrumental": {
+      "video": "ibvWXSAipeE",
+      "gap": 13498.6,
+      "volume": 1,
+      "duration": 188
+    },
     "tracks": [
       {
         "start": 20
@@ -142419,6 +144604,13 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gilrael",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Michael%20Jackson&cancion=Beat%20It",
     "duration": 299,
+    "instrumental": {
+      "video": "JtV0rdAYSCk",
+      "gap": 3417.983,
+      "volume": 0.54,
+      "duration": 286,
+      "bpm": 276.398
+    },
     "tracks": [
       {
         "start": 19
@@ -142448,6 +144640,12 @@
     "author": "ultrastarsongs",
     "sourceUrl": "Michael Jackson - Ben",
     "duration": 168,
+    "instrumental": {
+      "video": "qDVDY30rXP8",
+      "gap": 14319.9,
+      "volume": 0.5,
+      "duration": 165
+    },
     "tracks": [
       {
         "start": 18
@@ -142478,6 +144676,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=sanicsip",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Michael%20Jackson&cancion=Billie%20Jean",
     "duration": 296,
+    "instrumental": {
+      "video": "V7qyPx6ikcY",
+      "gap": 28524,
+      "volume": 0.63,
+      "duration": 294
+    },
     "tracks": [
       {
         "start": 16
@@ -142566,6 +144770,12 @@
     "volume": 1,
     "author": "mmm123889400",
     "duration": 248,
+    "instrumental": {
+      "video": "7iHn9AagiOw",
+      "gap": 2198.9,
+      "volume": 1,
+      "duration": 245
+    },
     "tracks": [
       {
         "start": 23
@@ -142623,6 +144833,12 @@
     "manualVolume": 0.67,
     "author": "vilnico",
     "duration": 254,
+    "instrumental": {
+      "video": "YRbIgcRpB2Y",
+      "gap": 23370.5,
+      "volume": 0.79,
+      "duration": 251
+    },
     "tracks": [
       {
         "name": "Don’t Stop ’Til You Get Enough",
@@ -142653,6 +144869,13 @@
     "author": "IC",
     "sourceUrl": "Michael Jackson - Earth Song",
     "duration": 403,
+    "instrumental": {
+      "video": "1ndmYbK-1S0",
+      "gap": 46785.554,
+      "videoGap": 1,
+      "volume": 0.5,
+      "duration": 405
+    },
     "tracks": [
       {
         "start": 18
@@ -142771,6 +144994,12 @@
     "author": "jockel1974",
     "sourceUrl": "Michael Jackson - Heal The World",
     "duration": 383,
+    "instrumental": {
+      "video": "RyVxMXDnoVk",
+      "gap": 68268.2,
+      "volume": 0.5,
+      "duration": 384
+    },
     "tracks": [
       {
         "start": 22
@@ -142829,6 +145058,12 @@
     "manualVolume": 0.67,
     "author": "Coppolatte",
     "duration": 248,
+    "instrumental": {
+      "video": "apN8iYW61Vs",
+      "gap": 7062.861,
+      "volume": 1,
+      "duration": 246
+    },
     "tracks": [
       {
         "name": "Human Nature",
@@ -143219,6 +145454,14 @@
     "authorUrl": "https://ultrastar-es.org/pt/canciones?creador=chelste",
     "sourceUrl": "https://ultrastar-es.org/pt/canciones?artista=Michael%20Jackson&cancion=They%20don%27t%20care%20about%20us",
     "duration": 282,
+    "instrumental": {
+      "video": "3tSp_iZOJIU",
+      "gap": 44343.397,
+      "videoGap": 4,
+      "volume": 1,
+      "duration": 285,
+      "bpm": 320.4
+    },
     "tracks": [
       {
         "start": 21
@@ -143281,6 +145524,13 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Michael%20Jackson&cancion=Thriller",
     "duration": 358,
+    "instrumental": {
+      "video": "gWaJmAFpnX4",
+      "gap": 57292.472,
+      "volume": 0.71,
+      "duration": 345,
+      "bpm": 477.462
+    },
     "tracks": [
       {
         "start": 32
@@ -145024,6 +147274,12 @@
     "manualVolume": 0.76,
     "author": "ariel_argentina’s brother ;-)",
     "duration": 229,
+    "instrumental": {
+      "video": "VpzrGy-fpVI",
+      "gap": 6328.65,
+      "volume": 0.95,
+      "duration": 230
+    },
     "tracks": [
       {
         "start": 32
@@ -145169,6 +147425,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=coppo",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Miley%20Cyrus&cancion=Wrecking%20Ball",
     "duration": 222,
+    "instrumental": {
+      "video": "JVsr6xkQZVs",
+      "gap": 7710.7,
+      "volume": 0.65,
+      "duration": 224
+    },
     "tracks": [
       {
         "start": 0
@@ -145227,6 +147489,12 @@
     "volume": 1,
     "author": "Silverbeam",
     "duration": 314,
+    "instrumental": {
+      "video": "7HivB0ufZF0",
+      "gap": 24484.902,
+      "volume": 1,
+      "duration": 314
+    },
     "tracks": [
       {
         "start": 15
@@ -145895,6 +148163,12 @@
     "author": "daggeg",
     "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=25808",
     "duration": 152,
+    "instrumental": {
+      "video": "I-pI4ab00c8",
+      "gap": 1504.78,
+      "volume": 0.5,
+      "duration": 156
+    },
     "tracks": [
       {
         "start": 23
@@ -145952,6 +148226,12 @@
     "author": "8ecca",
     "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=24756",
     "duration": 204,
+    "instrumental": {
+      "video": "BqcEjALOtzk",
+      "gap": 2417.79,
+      "volume": 0.55,
+      "duration": 193
+    },
     "tracks": [
       {
         "start": 14
@@ -146009,6 +148289,12 @@
     "author": "daggeg",
     "sourceUrl": "https://www.youtube.com/watch?v=3vjkh-acmTE&feature=youtu.be",
     "duration": 129,
+    "instrumental": {
+      "video": "uN70g7rKpoU",
+      "gap": 6624.73,
+      "volume": 0.5,
+      "duration": 128
+    },
     "tracks": [
       {
         "start": 26
@@ -146040,6 +148326,12 @@
     "author": "lukmuk",
     "sourceUrl": "https://www.youtube.com/watch?v=u_hDHm9MD0I",
     "duration": 214,
+    "instrumental": {
+      "video": "e3hq6S1n408",
+      "gap": 14634.8,
+      "volume": 1,
+      "duration": 215
+    },
     "tracks": [
       {
         "start": 21
@@ -147322,6 +149614,12 @@
     "volume": 0.67,
     "manualVolume": 0.65,
     "duration": 166,
+    "instrumental": {
+      "video": "uP5RYLcKtXo",
+      "gap": 8589.763,
+      "volume": 0.67,
+      "duration": 164
+    },
     "tracks": [
       {
         "start": 26
@@ -148425,6 +150723,12 @@
     "volume": 1,
     "author": "bexx",
     "duration": 221,
+    "instrumental": {
+      "video": "D0xsTC-YImc",
+      "gap": 31503,
+      "volume": 1,
+      "duration": 218
+    },
     "tracks": [
       {
         "start": 18
@@ -148633,6 +150937,13 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Muse&cancion=Supermassive%20Black%20Hole",
     "duration": 211,
+    "instrumental": {
+      "video": "szol81OWmiY",
+      "gap": 33275.6,
+      "videoGap": 2,
+      "volume": 0.75,
+      "duration": 214
+    },
     "tracks": [
       {
         "start": 16
@@ -148899,6 +151210,13 @@
     "manualVolume": 0.66,
     "author": "chiio",
     "duration": 143,
+    "instrumental": {
+      "video": "j_PthwKh7gk",
+      "gap": 12915.1,
+      "videoGap": 1,
+      "volume": 0.5,
+      "duration": 144
+    },
     "tracks": [
       {
         "start": 16
@@ -149159,6 +151477,12 @@
     "manualVolume": 0.81,
     "author": "Canni",
     "duration": 210,
+    "instrumental": {
+      "video": "v-dGAJJqzoI",
+      "gap": -642.238,
+      "volume": 0.52,
+      "duration": 205
+    },
     "tracks": [
       {
         "start": 17
@@ -149220,6 +151544,12 @@
     "manualVolume": 0.75,
     "author": "Natsuharu",
     "duration": 239,
+    "instrumental": {
+      "video": "IsmC9RwcPCY",
+      "gap": 25488.7,
+      "volume": 0.5,
+      "duration": 239
+    },
     "tracks": [
       {
         "start": 17
@@ -149283,6 +151613,12 @@
     "manualVolume": 0.45,
     "author": "IC",
     "duration": 189,
+    "instrumental": {
+      "video": "pRJtTZldVSE",
+      "gap": 25687.1,
+      "volume": 0.5,
+      "duration": 190
+    },
     "tracks": [
       {
         "start": 24
@@ -149630,6 +151966,12 @@
     "manualVolume": 0.85,
     "author": "IC",
     "duration": 315,
+    "instrumental": {
+      "video": "PFtQVBt0t2E",
+      "gap": 11771.9,
+      "volume": 0.54,
+      "duration": 310
+    },
     "tracks": [
       {
         "start": 17
@@ -149715,6 +152057,13 @@
     "manualVolume": 1,
     "author": "amadas",
     "duration": 128,
+    "instrumental": {
+      "video": "CJWalX0igR0",
+      "gap": 7732.612,
+      "videoGap": 5,
+      "volume": 1,
+      "duration": 137
+    },
     "tracks": [
       {
         "start": 24
@@ -149743,6 +152092,12 @@
     "volume": 1,
     "author": "karo",
     "duration": 246,
+    "instrumental": {
+      "video": "TCH7gRuWDIA",
+      "gap": 29569.784,
+      "volume": 1,
+      "duration": 232
+    },
     "tracks": [
       {
         "start": 24
@@ -150092,6 +152447,12 @@
     "manualVolume": 0.81,
     "author": "macgyver2809",
     "duration": 239,
+    "instrumental": {
+      "video": "2-4YLUPGFI0",
+      "gap": 6332.01,
+      "volume": 0.95,
+      "duration": 226
+    },
     "tracks": [
       {
         "start": 23
@@ -150180,6 +152541,12 @@
     "manualVolume": 0.78,
     "author": "pauldiddy",
     "duration": 200,
+    "instrumental": {
+      "video": "3N1TJvE3IC4",
+      "gap": -768.417,
+      "volume": 1,
+      "duration": 202
+    },
     "tracks": [
       {
         "start": 22
@@ -150266,6 +152633,12 @@
     "manualVolume": 0.68,
     "author": "pauldiddy",
     "duration": 209,
+    "instrumental": {
+      "video": "2cSiTigqnlc",
+      "gap": -825.883,
+      "volume": 1,
+      "duration": 209
+    },
     "tracks": [
       {
         "start": 15
@@ -151053,6 +153426,13 @@
     "manualVolume": 0.79,
     "author": "DoubleDee73",
     "duration": 156,
+    "instrumental": {
+      "video": "P1dcSi18_3k",
+      "gap": 5268.273,
+      "videoGap": 3,
+      "volume": 0.57,
+      "duration": 158
+    },
     "tracks": [
       {
         "start": 26
@@ -151497,6 +153877,12 @@
     "manualVolume": 0.77,
     "author": "klops_007",
     "duration": 210,
+    "instrumental": {
+      "video": "ax_YyGK905s",
+      "gap": 2060.99,
+      "volume": 0.73,
+      "duration": 210
+    },
     "tracks": [
       {
         "name": "So Sick",
@@ -152158,6 +154544,12 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2484",
     "sourceUrl": "https://usdb.animux.de/?link=detail&id=4284",
     "duration": 473,
+    "instrumental": {
+      "video": "gsuzB80WcNs",
+      "gap": 50096.094,
+      "volume": 0.56,
+      "duration": 466
+    },
     "tracks": [
       {
         "start": 20
@@ -153042,6 +155434,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Nickelback&cancion=How%20You%20Remind%20Me",
     "duration": 229,
+    "instrumental": {
+      "video": "QGWkyG7uSBI",
+      "gap": 2169.98,
+      "volume": 0.56,
+      "duration": 226
+    },
     "tracks": [
       {
         "start": 23
@@ -154689,6 +157087,12 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=58357",
     "sourceUrl": "https://usdb.animux.de/?link=detail&id=14866",
     "duration": 249,
+    "instrumental": {
+      "video": "fxKR5P85m6I",
+      "gap": 24986.9,
+      "volume": 1,
+      "duration": 249
+    },
     "tracks": [
       {
         "start": 721
@@ -155435,6 +157839,13 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Nirvana&cancion=Come%20As%20You%20Are",
     "duration": 225,
+    "instrumental": {
+      "video": "HEciNEZqyhg",
+      "gap": 16276.814,
+      "volume": 0.52,
+      "duration": 219,
+      "bpm": 340.482
+    },
     "tracks": [
       {
         "start": 23
@@ -155497,6 +157908,13 @@
     "author": "Ampersand",
     "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=4291",
     "duration": 283,
+    "instrumental": {
+      "video": "NMuORjeh9vc",
+      "gap": 10063.121,
+      "volume": 0.75,
+      "duration": 282,
+      "bpm": 394.87
+    },
     "tracks": [
       {
         "start": 26
@@ -155590,6 +158008,13 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Nirvana&cancion=Lithium",
     "duration": 256,
+    "instrumental": {
+      "video": "oCzSMeSLcUE",
+      "gap": 7994.743,
+      "volume": 0.57,
+      "duration": 256,
+      "bpm": 246.889
+    },
     "tracks": [
       {
         "start": 16
@@ -155821,6 +158246,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Nirvana&cancion=Smells%20Like%20Teen%20Spirit",
     "duration": 279,
+    "instrumental": {
+      "video": "JbdTGpQ-e3M",
+      "gap": 24883.7,
+      "volume": 0.52,
+      "duration": 272
+    },
     "tracks": [
       {
         "start": 23
@@ -155907,6 +158338,12 @@
     "manualVolume": 0.6,
     "author": "ceasarea",
     "duration": 218,
+    "instrumental": {
+      "video": "QhebHikgnkI",
+      "gap": 13459.6,
+      "volume": 0.69,
+      "duration": 216
+    },
     "tracks": [
       {
         "start": 15
@@ -156058,6 +158495,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=No%20Doubt&cancion=Don't%20speak",
     "duration": 301,
+    "instrumental": {
+      "video": "0aRXJ0uXct8",
+      "gap": 5798.68,
+      "volume": 0.63,
+      "duration": 286
+    },
     "tracks": [
       {
         "start": 26
@@ -156495,6 +158938,12 @@
     "manualVolume": 0.8,
     "author": "DoubleDee",
     "duration": 198,
+    "instrumental": {
+      "video": "qJNzFTiQPbc",
+      "gap": 7403.67,
+      "volume": 0.57,
+      "duration": 188
+    },
     "tracks": [
       {
         "start": 16
@@ -157046,6 +159495,12 @@
     "manualVolume": 0.75,
     "sourceUrl": "https://www.youtube.com/watch?v=HBO0WlNbbHg",
     "duration": 451,
+    "instrumental": {
+      "video": "VEtf4lviriA",
+      "gap": 31922.698,
+      "volume": 1,
+      "duration": 450
+    },
     "tracks": [
       {
         "start": 27
@@ -157079,6 +159534,12 @@
     "authorUrl": "https://ultrastar-es.org/es/canciones?creador=kodaman",
     "sourceUrl": "https://ultrastar-es.org/es/canciones?artista=Oasis&cancion=Don%27t%20look%20back%20in%20anger",
     "duration": 288,
+    "instrumental": {
+      "video": "tm8wnK_W69o",
+      "gap": 10675.722,
+      "volume": 1,
+      "duration": 289
+    },
     "tracks": [
       {
         "start": 40
@@ -157261,6 +159722,12 @@
     "author": "Canni",
     "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=1237",
     "duration": 295,
+    "instrumental": {
+      "video": "N4BDzV9qUqw",
+      "gap": 11593.6,
+      "volume": 0.82,
+      "duration": 303
+    },
     "tracks": [
       {
         "name": "Stop Crying Your Heart Out",
@@ -157940,6 +160407,13 @@
     "manualVolume": 0.75,
     "author": "tracy39",
     "duration": 186,
+    "instrumental": {
+      "video": "Cp5fOu2xPGs",
+      "gap": 12015.686,
+      "volume": 1,
+      "duration": 183,
+      "bpm": 386.001
+    },
     "tracks": [
       {
         "start": 26
@@ -158057,6 +160531,12 @@
     "author": "DoubleDee",
     "sourceUrl": "https://youtu.be/GlM6lcFbLSg?si=nN9dJugAxhr_FKR0",
     "duration": 217,
+    "instrumental": {
+      "video": "KH3_f-6gMnQ",
+      "gap": 5938.46,
+      "volume": 0.58,
+      "duration": 210
+    },
     "tracks": [
       {
         "start": 19
@@ -158086,6 +160566,13 @@
     "author": "mitchdog",
     "sourceUrl": "https://youtu.be/cii6ruuycQA?si=FM9gmrFQ27kk_0PD",
     "duration": 232,
+    "instrumental": {
+      "video": "ZFUS039aTuw",
+      "gap": 10294.235,
+      "volume": 0.97,
+      "duration": 220,
+      "bpm": 240.635
+    },
     "tracks": [
       {
         "start": 16
@@ -158115,6 +160602,13 @@
     "manualVolume": 0.73,
     "author": "seanie627",
     "duration": 247,
+    "instrumental": {
+      "video": "NqvsaNhBOls",
+      "gap": 7768.651,
+      "volume": 0.61,
+      "duration": 239,
+      "bpm": 287.307
+    },
     "tracks": [
       {
         "start": 19
@@ -158171,6 +160665,12 @@
     "volume": 1,
     "author": "fredbloggs73",
     "duration": 154,
+    "instrumental": {
+      "video": "iItwrsoS0Ig",
+      "gap": 5671.09,
+      "volume": 1,
+      "duration": 154
+    },
     "tracks": [
       {
         "start": 21
@@ -158201,6 +160701,12 @@
     "manualVolume": 0.81,
     "author": "vicktoben",
     "duration": 199,
+    "instrumental": {
+      "video": "gA95P-abkTI",
+      "gap": 12737.382,
+      "volume": 1,
+      "duration": 188
+    },
     "tracks": [
       {
         "start": 22
@@ -158257,6 +160763,12 @@
     "volume": 1,
     "author": "DoubleDee",
     "duration": 227,
+    "instrumental": {
+      "video": "_h4s7UqleuY",
+      "gap": 14668,
+      "volume": 1,
+      "duration": 225
+    },
     "tracks": [
       {
         "start": 17
@@ -158286,6 +160798,12 @@
     "author": "Double",
     "sourceUrl": "https://www.youtube.com/watch?v=Rt9tW3cMLhI&list=RDRt9tW3cMLhI&start_radio=1",
     "duration": 217,
+    "instrumental": {
+      "video": "Mt-yFSa8XNk",
+      "gap": 6873.29,
+      "volume": 1,
+      "duration": 210
+    },
     "tracks": [
       {
         "start": 18
@@ -158314,6 +160832,12 @@
     "previewEnd": 109,
     "volume": 1,
     "duration": 315,
+    "instrumental": {
+      "video": "7d-TAYrYSEM",
+      "gap": 13004.9,
+      "volume": 1,
+      "duration": 300
+    },
     "tracks": [
       {
         "start": 19
@@ -158345,6 +160869,12 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=165696",
     "sourceUrl": "https://usdb.animux.de/?link=detail&id=26319",
     "duration": 238,
+    "instrumental": {
+      "video": "QXPi-Tx-9IU",
+      "gap": -54.364,
+      "volume": 0.58,
+      "duration": 234
+    },
     "tracks": [
       {
         "start": 14
@@ -159443,6 +161973,12 @@
     "manualVolume": 0.7,
     "author": "*vicktoben",
     "duration": 248,
+    "instrumental": {
+      "video": "fkAsOzscSGg",
+      "gap": 15795.2,
+      "volume": 0.52,
+      "duration": 247
+    },
     "tracks": [
       {
         "start": 16
@@ -159558,6 +162094,12 @@
     "manualVolume": 0.7,
     "author": "vicktoben",
     "duration": 207,
+    "instrumental": {
+      "video": "FuzHa-CNnHk",
+      "gap": 6598.18,
+      "volume": 0.5,
+      "duration": 200
+    },
     "tracks": [
       {
         "start": 17
@@ -159966,6 +162508,12 @@
     "author": "GaryCXJk",
     "sourceUrl": "https://www.youtube.com/watch?v=ztROkFCJSeE&t=1s",
     "duration": 154,
+    "instrumental": {
+      "video": "x7UMVsjmfZY",
+      "gap": 1119.08,
+      "volume": 1,
+      "duration": 154
+    },
     "tracks": [
       {
         "start": 19
@@ -160736,6 +163284,12 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=11618",
     "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=8168",
     "duration": 233,
+    "instrumental": {
+      "video": "LB0l7cmNqqM",
+      "gap": 21292.6,
+      "volume": 0.55,
+      "duration": 232
+    },
     "tracks": [
       {
         "name": "Fireflies",
@@ -161761,6 +164315,12 @@
     "manualVolume": 0.75,
     "author": "aac",
     "duration": 197,
+    "instrumental": {
+      "video": "SlRN2sZbnaI",
+      "gap": 10081.3,
+      "volume": 0.5,
+      "duration": 200
+    },
     "tracks": [
       {
         "start": 22
@@ -161791,6 +164351,12 @@
     "manualVolume": 0.9,
     "author": "Canni",
     "duration": 186,
+    "instrumental": {
+      "video": "i2cJvvyGn1A",
+      "gap": 10631.293,
+      "volume": 1,
+      "duration": 188
+    },
     "tracks": [
       {
         "start": 23
@@ -162508,6 +165074,12 @@
     "manualVolume": 0.83,
     "author": "bober0610",
     "duration": 226,
+    "instrumental": {
+      "video": "myWC-iTBhns",
+      "gap": 12865.634,
+      "volume": 0.5,
+      "duration": 226
+    },
     "tracks": [
       {
         "name": "All I Wanted",
@@ -162653,6 +165225,13 @@
     "manualVolume": 0.75,
     "author": "mg",
     "duration": 254,
+    "instrumental": {
+      "video": "Ke7crfwOZN8",
+      "gap": 13851.2,
+      "videoGap": 2,
+      "volume": 0.64,
+      "duration": 262
+    },
     "tracks": [
       {
         "start": 22
@@ -162776,6 +165355,13 @@
     "manualVolume": 0.76,
     "author": "IC",
     "duration": 200,
+    "instrumental": {
+      "video": "RK0dRTN4rdg",
+      "gap": 25563.948,
+      "videoGap": 14,
+      "volume": 0.68,
+      "duration": 213
+    },
     "tracks": [
       {
         "name": "Misery Business",
@@ -162950,6 +165536,12 @@
     "manualVolume": 0.82,
     "author": "ai-chan",
     "duration": 221,
+    "instrumental": {
+      "video": "UK1WPGxnrKo",
+      "gap": 10270.022,
+      "volume": 0.5,
+      "duration": 215
+    },
     "tracks": [
       {
         "start": 18
@@ -163035,6 +165627,12 @@
     "volume": 0.79,
     "manualVolume": 0.72,
     "duration": 268,
+    "instrumental": {
+      "video": "fjeB1NmO1BI",
+      "gap": 20137.456,
+      "volume": 0.79,
+      "duration": 267
+    },
     "tracks": [
       {
         "start": 18
@@ -163211,6 +165809,12 @@
     "manualVolume": 0.73,
     "author": "snake84, Silverbeam",
     "duration": 255,
+    "instrumental": {
+      "video": "jsLg-9WllRw",
+      "gap": 25397.454,
+      "volume": 0.6,
+      "duration": 253
+    },
     "tracks": [
       {
         "start": 20
@@ -166360,6 +168964,12 @@
     "manualVolume": 0.63,
     "author": "Tracks",
     "duration": 136,
+    "instrumental": {
+      "video": "Q_XtQhRsdPg",
+      "gap": -225.023,
+      "volume": 0.59,
+      "duration": 131
+    },
     "tracks": [
       {
         "start": 4
@@ -166414,6 +169024,12 @@
     "volume": 1,
     "author": "Tracks",
     "duration": 194,
+    "instrumental": {
+      "video": "vK0BfQHAg10",
+      "gap": 187.474,
+      "volume": 1,
+      "duration": 185
+    },
     "tracks": [
       {
         "start": 16
@@ -167007,6 +169623,12 @@
     "manualVolume": 0.8,
     "author": "Leki",
     "duration": 243,
+    "instrumental": {
+      "video": "eerlLe2fb6Y",
+      "gap": 9426.14,
+      "volume": 1,
+      "duration": 250
+    },
     "tracks": [
       {
         "start": 14
@@ -167184,6 +169806,12 @@
     "author": "ZomSongs",
     "authorUrl": "usdb.animux.de/?link=profil&id=94036",
     "duration": 243,
+    "instrumental": {
+      "video": "NMgTtnUCTYU",
+      "gap": 9863.08,
+      "volume": 0.77,
+      "duration": 245
+    },
     "tracks": [
       {
         "name": "P!nk",
@@ -168009,6 +170637,12 @@
     "manualVolume": 0.69,
     "author": "DoubleDee73",
     "duration": 227,
+    "instrumental": {
+      "video": "kUxblNu2Gh0",
+      "gap": 17616.2,
+      "volume": 0.5,
+      "duration": 216
+    },
     "tracks": [
       {
         "start": 16
@@ -169388,6 +172022,14 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=36923",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=10385",
     "duration": 360,
+    "instrumental": {
+      "video": "2v9BDSl5gEE",
+      "gap": 3728.358,
+      "videoGap": 2,
+      "volume": 0.77,
+      "duration": 360,
+      "bpm": 344.733
+    },
     "tracks": [
       {
         "name": "Freddie (+ Choirs)",
@@ -169544,6 +172186,13 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Queen&cancion=Don't%20Stop%20Me%20Now",
     "duration": 215,
+    "instrumental": {
+      "video": "B7k8MNBOpFE",
+      "gap": -710.022,
+      "volume": 1,
+      "duration": 214,
+      "bpm": 304.47
+    },
     "tracks": [
       {
         "start": 21
@@ -169753,6 +172402,13 @@
     "author": "Queen",
     "sourceUrl": "https://www.youtube.com/watch?v=2ZBtPf7FOoM",
     "duration": 189,
+    "instrumental": {
+      "video": "g4EdcPJpKpU",
+      "gap": 2141.93,
+      "volume": 0.85,
+      "duration": 177,
+      "bpm": 396.499
+    },
     "tracks": [
       {
         "name": "Killer queen",
@@ -170300,6 +172956,12 @@
     "manualVolume": 0.78,
     "author": "Canni",
     "duration": 192,
+    "instrumental": {
+      "video": "LdAvKQlb2jk",
+      "gap": 14677.1,
+      "volume": 0.5,
+      "duration": 187
+    },
     "tracks": [
       {
         "start": 21
@@ -170643,6 +173305,12 @@
     "volume": 1,
     "author": "Redeemer",
     "duration": 206,
+    "instrumental": {
+      "video": "TyPv6wQ7piI",
+      "gap": 4238.03,
+      "volume": 1,
+      "duration": 201
+    },
     "tracks": [
       {
         "start": 13
@@ -170763,6 +173431,12 @@
     "author": "ujanroy",
     "sourceUrl": "https://www.youtube.com/watch?v=FM7ALFsOH4g",
     "duration": 229,
+    "instrumental": {
+      "video": "2NtFMQmklv0",
+      "gap": 34215.7,
+      "volume": 1,
+      "duration": 229
+    },
     "tracks": [
       {
         "start": 26
@@ -170822,6 +173496,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Radiohead&cancion=Creep",
     "duration": 237,
+    "instrumental": {
+      "video": "bGn0ELQgz3I",
+      "gap": 17975.1,
+      "volume": 0.71,
+      "duration": 237
+    },
     "tracks": [
       {
         "start": 23
@@ -170852,6 +173532,12 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=263",
     "sourceUrl": "https://usdb.animux.de/?link=detail&id=2078",
     "duration": 268,
+    "instrumental": {
+      "video": "8EJr2ubLeVk",
+      "gap": 22740.418,
+      "volume": 0.69,
+      "duration": 265
+    },
     "tracks": [
       {
         "name": "Exit Music (For A Film)",
@@ -170882,6 +173568,12 @@
     "manualVolume": 0.92,
     "author": "Gollum",
     "duration": 293,
+    "instrumental": {
+      "video": "_fbHwcpjxIw",
+      "gap": 2494.642,
+      "volume": 1,
+      "duration": 293
+    },
     "tracks": [
       {
         "start": 16
@@ -170913,6 +173605,12 @@
     "manualVolume": 0.74,
     "author": "Gollum",
     "duration": 260,
+    "instrumental": {
+      "video": "-skTFmzLHmk",
+      "gap": 26848.6,
+      "volume": 0.85,
+      "duration": 260
+    },
     "tracks": [
       {
         "start": 27
@@ -170999,6 +173697,12 @@
     "manualVolume": 0.81,
     "author": "Diddlmaus30mg",
     "duration": 263,
+    "instrumental": {
+      "video": "_1IHRDoAT2Q",
+      "gap": 25896.7,
+      "volume": 1,
+      "duration": 262
+    },
     "tracks": [
       {
         "start": 20
@@ -171028,6 +173732,12 @@
     "manualVolume": 0.71,
     "author": "RetroGirl",
     "duration": 300,
+    "instrumental": {
+      "video": "WNwhcnSuRHE",
+      "gap": 21120.7,
+      "volume": 0.62,
+      "duration": 301
+    },
     "tracks": [
       {
         "start": 14
@@ -171114,6 +173824,12 @@
     "manualVolume": 0.65,
     "author": "NikNak",
     "duration": 228,
+    "instrumental": {
+      "video": "YbYG2j-ko5s",
+      "gap": 24680.3,
+      "volume": 1,
+      "duration": 229
+    },
     "tracks": [
       {
         "start": 20
@@ -171146,6 +173862,12 @@
     "authorUrl": "https://usdb.animux.de/index.php?link=gettxt&id=19540",
     "sourceUrl": "https://www.youtube.com/watch?v=BbWBRnDK_AE",
     "duration": 257,
+    "instrumental": {
+      "video": "ufPYaU9buvs",
+      "gap": 46348.1,
+      "volume": 0.7,
+      "duration": 255
+    },
     "tracks": [
       {
         "start": 20
@@ -171176,6 +173898,12 @@
     "author": "vm",
     "sourceUrl": "https://www.youtube.com/watch?v=fHiGbolFFGw",
     "duration": 393,
+    "instrumental": {
+      "video": "Zg5175qNawU",
+      "gap": 17844.411,
+      "volume": 1,
+      "duration": 384
+    },
     "tracks": [
       {
         "start": 22
@@ -171235,6 +173963,13 @@
     "manualVolume": 0.74,
     "author": "cody29",
     "duration": 259,
+    "instrumental": {
+      "video": "65srZYu6vAQ",
+      "gap": 13158.049,
+      "volume": 1,
+      "duration": 255,
+      "bpm": 278.284
+    },
     "tracks": [
       {
         "start": 19
@@ -171592,6 +174327,12 @@
     "manualVolume": 0.83,
     "author": "AnormusNerd",
     "duration": 198,
+    "instrumental": {
+      "video": "oYwd8lLfxTo",
+      "gap": 12574.5,
+      "volume": 0.51,
+      "duration": 200
+    },
     "tracks": [
       {
         "start": 20
@@ -172678,6 +175419,12 @@
     "volume": 1,
     "author": "DoubleDee",
     "duration": 219,
+    "instrumental": {
+      "video": "iz1bGYaH3Bc",
+      "gap": 16024.616,
+      "volume": 1,
+      "duration": 214
+    },
     "tracks": [
       {
         "start": 15
@@ -172709,6 +175456,12 @@
     "author": "IC",
     "sourceUrl": "Ray Charles - Hit The Road Jack",
     "duration": 123,
+    "instrumental": {
+      "video": "qjfW8sPGRXA",
+      "gap": 4438.35,
+      "volume": 1,
+      "duration": 121
+    },
     "tracks": [
       {
         "start": 23
@@ -172797,6 +175550,12 @@
     "volume": 1,
     "author": "DoubleDee",
     "duration": 198,
+    "instrumental": {
+      "video": "R_pobf_zQXQ",
+      "gap": 2071.59,
+      "volume": 1,
+      "duration": 197
+    },
     "tracks": [
       {
         "start": 31
@@ -173096,6 +175855,13 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Red%20Hot%20Chili%20Peppers&cancion=Californication",
     "duration": 322,
+    "instrumental": {
+      "video": "jYhL1o59prM",
+      "gap": 19758.107,
+      "volume": 0.5,
+      "duration": 323,
+      "bpm": 387.753
+    },
     "tracks": [
       {
         "start": 26
@@ -173126,6 +175892,12 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=302",
     "sourceUrl": "https://usdb.animux.de/?link=detail&id=2391",
     "duration": 278,
+    "instrumental": {
+      "video": "RTjy7mxpFSk",
+      "gap": 31770.95,
+      "volume": 0.79,
+      "duration": 269
+    },
     "tracks": [
       {
         "name": "Can't Stop",
@@ -173275,6 +176047,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=spys4darwin",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Red%20Hot%20Chili%20Peppers&cancion=Otherside",
     "duration": 258,
+    "instrumental": {
+      "video": "1PpX862k8DA",
+      "gap": 5996.45,
+      "volume": 0.52,
+      "duration": 255
+    },
     "tracks": [
       {
         "start": 17
@@ -173306,6 +176084,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=mustangfred",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Red%20Hot%20Chili%20Peppers&cancion=Scar%20Tissue",
     "duration": 221,
+    "instrumental": {
+      "video": "OFUJkBXNXPY",
+      "gap": 11096.8,
+      "volume": 0.5,
+      "duration": 222
+    },
     "tracks": [
       {
         "start": 24
@@ -173495,6 +176279,14 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Red%20Hot%20Chili%20Peppers&cancion=Under%20the%20bridge",
     "duration": 268,
+    "instrumental": {
+      "video": "m1nVH5J-knU",
+      "gap": 34370.719,
+      "videoGap": 7,
+      "volume": 1,
+      "duration": 270,
+      "bpm": 400.193
+    },
     "tracks": [
       {
         "start": 27
@@ -175186,6 +177978,13 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Rick%20Astley&cancion=Never%20gonna%20give%20you%20up",
     "duration": 214,
+    "instrumental": {
+      "video": "L-TXKuvYdTc",
+      "gap": 17962.485,
+      "volume": 0.88,
+      "duration": 213,
+      "bpm": 226.653
+    },
     "tracks": [
       {
         "start": 15
@@ -175304,6 +178103,12 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2149",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=5383",
     "duration": 223,
+    "instrumental": {
+      "video": "4m-pb8u0Bys",
+      "gap": 9962.754,
+      "volume": 0.83,
+      "duration": 221
+    },
     "tracks": [
       {
         "start": 12
@@ -175750,6 +178555,12 @@
     "manualVolume": 0.74,
     "author": "Coppolatte",
     "duration": 248,
+    "instrumental": {
+      "video": "dt-Hti6oe04",
+      "gap": 16748.3,
+      "volume": 1,
+      "duration": 238
+    },
     "tracks": [
       {
         "name": "Stay",
@@ -175870,6 +178681,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=coppo",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Rihanna&cancion=Love%20On%20The%20Brain",
     "duration": 224,
+    "instrumental": {
+      "video": "hZ1rle-ny0k",
+      "gap": 14243.155,
+      "volume": 0.5,
+      "duration": 225
+    },
     "tracks": [
       {
         "start": 11
@@ -176988,6 +179805,12 @@
     "author": "krasserdude",
     "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=29190",
     "duration": 199,
+    "instrumental": {
+      "video": "VdzQ5URVDY0",
+      "gap": 30018.753,
+      "volume": 0.79,
+      "duration": 199
+    },
     "tracks": [
       {
         "start": 25
@@ -178880,6 +181703,12 @@
     "author": "Rosa Walton and Hallie Coggins",
     "sourceUrl": "https://www.youtube.com/watch?v=KvMY1uzSC1E",
     "duration": 248,
+    "instrumental": {
+      "video": "89tta8o3DOE",
+      "gap": 269.384,
+      "volume": 0.58,
+      "duration": 247
+    },
     "tracks": [
       {
         "start": 17
@@ -179082,6 +181911,12 @@
     "manualVolume": 0.76,
     "author": "askusbloodfist",
     "duration": 174,
+    "instrumental": {
+      "video": "623CyMHTHcU",
+      "gap": -6232.917,
+      "volume": 0.5,
+      "duration": 163
+    },
     "tracks": [
       {
         "start": 7
@@ -179490,6 +182325,12 @@
     "manualVolume": 0.76,
     "author": "Volodia",
     "duration": 250,
+    "instrumental": {
+      "video": "moulY17JAyM",
+      "gap": 5638.937,
+      "volume": 1,
+      "duration": 250
+    },
     "tracks": [
       {
         "start": 14
@@ -180474,6 +183315,12 @@
     "volume": 1,
     "author": "Yodamies",
     "duration": 224,
+    "instrumental": {
+      "video": "HRuUx6irDOk",
+      "gap": 6908.32,
+      "volume": 1,
+      "duration": 223
+    },
     "tracks": [
       {
         "start": 17
@@ -180799,6 +183646,14 @@
     "author": "Coco",
     "sourceUrl": "Sade - Smooth Operator",
     "duration": 258,
+    "instrumental": {
+      "video": "XUBBM5_nSnk",
+      "gap": 23409.167,
+      "videoGap": 5,
+      "volume": 1,
+      "duration": 259,
+      "bpm": 238.318
+    },
     "tracks": [
       {
         "start": 16
@@ -185897,6 +188752,12 @@
     "author": "vicktoben",
     "sourceUrl": "https://www.youtube.com/watch?v=Kw3935PH01E",
     "duration": 198,
+    "instrumental": {
+      "video": "9CK6Lo5NMMY",
+      "gap": 41.266,
+      "volume": 0.85,
+      "duration": 195
+    },
     "tracks": [
       {
         "name": "Shakira - Zoo",
@@ -186012,6 +188873,12 @@
     "volume": 1,
     "author": "Misrouted",
     "duration": 223,
+    "instrumental": {
+      "video": "TN7X4w8XqtI",
+      "gap": 105.86,
+      "volume": 1,
+      "duration": 222
+    },
     "tracks": [
       {
         "start": 1
@@ -186134,6 +189001,12 @@
     "manualVolume": 0.5,
     "author": "superstar90",
     "duration": 206,
+    "instrumental": {
+      "video": "L5goUkSnu-U",
+      "gap": 7062.89,
+      "volume": 0.5,
+      "duration": 207
+    },
     "tracks": [
       {
         "name": "Shakira",
@@ -186198,6 +189071,13 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=klafhor",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?cancion=Waka+Waka+%28This+Time+for+Africa%29",
     "duration": 211,
+    "instrumental": {
+      "video": "Jn-bpCP8UNY",
+      "gap": 21061.8,
+      "videoGap": 7,
+      "volume": 1,
+      "duration": 203
+    },
     "tracks": [
       {
         "start": 17
@@ -186989,6 +189869,12 @@
     "manualVolume": 0.8,
     "author": "amro98, aac, Sing-Girl",
     "duration": 229,
+    "instrumental": {
+      "video": "XJvi8sLC5E8",
+      "gap": 1118.584,
+      "volume": 1,
+      "duration": 221
+    },
     "tracks": [
       {
         "name": "Shawn Mendes",
@@ -187025,6 +189911,12 @@
     "manualVolume": 0.77,
     "author": "Camila Cabello",
     "duration": 206,
+    "instrumental": {
+      "video": "Asaz4E_Z8GE",
+      "gap": 14165.8,
+      "volume": 0.53,
+      "duration": 193
+    },
     "tracks": [
       {
         "start": 24
@@ -187845,6 +190737,12 @@
     "manualVolume": 0.6,
     "author": "UltraEvans34",
     "duration": 232,
+    "instrumental": {
+      "video": "mmPg4f4qcM8",
+      "gap": 307.189,
+      "volume": 0.5,
+      "duration": 216
+    },
     "tracks": [
       {
         "start": 17
@@ -188058,6 +190956,13 @@
     "manualVolume": 0.71,
     "author": "jmfb",
     "duration": 173,
+    "instrumental": {
+      "video": "Pke8HEgu3sA",
+      "gap": 5413.059,
+      "volume": 0.6,
+      "duration": 165,
+      "bpm": 210.223
+    },
     "tracks": [
       {
         "start": 14
@@ -188516,6 +191421,12 @@
     "volume": 1,
     "author": "DoubleDee",
     "duration": 173,
+    "instrumental": {
+      "video": "hGjvGMP9k-4",
+      "gap": 12925.5,
+      "volume": 1,
+      "duration": 175
+    },
     "tracks": [
       {
         "start": 20
@@ -188776,6 +191687,12 @@
     "manualVolume": 1,
     "author": "b1991",
     "duration": 224,
+    "instrumental": {
+      "video": "lqSd-d4ahQg",
+      "gap": 72.847,
+      "volume": 0.5,
+      "duration": 225
+    },
     "tracks": [
       {
         "start": 16
@@ -189615,6 +192532,12 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=209767",
     "sourceUrl": "https://usdb.animux.de/?link=detail&id=31401",
     "duration": 352,
+    "instrumental": {
+      "video": "KgMJ7gFkEQk",
+      "gap": 5449.267,
+      "volume": 1,
+      "duration": 347
+    },
     "tracks": [
       {
         "start": 18
@@ -190034,6 +192957,12 @@
     "manualVolume": 0.9,
     "author": "slim_shadyy",
     "duration": 187,
+    "instrumental": {
+      "video": "aYH761RY4kA",
+      "gap": 13469.8,
+      "volume": 0.56,
+      "duration": 178
+    },
     "tracks": [
       {
         "start": 18
@@ -190323,6 +193252,13 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=9472",
     "sourceUrl": "https://usdb.animux.de/?link=detail&id=21564",
     "duration": 251,
+    "instrumental": {
+      "video": "Nbf7TOl8s28",
+      "gap": 30647.3,
+      "videoGap": 1,
+      "volume": 0.5,
+      "duration": 250
+    },
     "tracks": [
       {
         "start": 26
@@ -191954,6 +194890,12 @@
     "volume": 1,
     "author": "juli2109",
     "duration": 202,
+    "instrumental": {
+      "video": "2TwUGLeCy6Q",
+      "gap": 12161.11,
+      "volume": 1,
+      "duration": 199
+    },
     "tracks": [
       {
         "start": 25
@@ -192280,6 +195222,13 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Soundgarden&cancion=Black%20Hole%20Sun",
     "duration": 321,
+    "instrumental": {
+      "video": "dDW6t_FMjIs",
+      "gap": 14756.899,
+      "volume": 0.5,
+      "duration": 321,
+      "bpm": 209.116
+    },
     "tracks": [
       {
         "start": 14
@@ -192479,6 +195428,13 @@
     "manualVolume": 0.76,
     "author": "Goldi",
     "duration": 232,
+    "instrumental": {
+      "video": "kSj7W39bshU",
+      "gap": 11514.509,
+      "volume": 0.8,
+      "duration": 231,
+      "bpm": 285.964
+    },
     "tracks": [
       {
         "start": 19
@@ -193531,6 +196487,14 @@
     "author": "IC",
     "sourceUrl": "https://www.youtube.com/watch?v=mVQpfoqsY8Q&list=RDmVQpfoqsY8Q&start_radio=1",
     "duration": 296,
+    "instrumental": {
+      "video": "5NfTFnWMpTk",
+      "gap": 27930.169,
+      "videoGap": 2,
+      "volume": 1,
+      "duration": 294,
+      "bpm": 291.258
+    },
     "tracks": [
       {
         "name": "Outside",
@@ -193930,6 +196894,12 @@
     "manualVolume": 0.69,
     "author": "schere-r-ki",
     "duration": 176,
+    "instrumental": {
+      "video": "Tvpge6eYoPI",
+      "gap": 9784.91,
+      "volume": 0.5,
+      "duration": 177
+    },
     "tracks": [
       {
         "start": 13
@@ -194166,6 +197136,12 @@
     "manualVolume": 0.93,
     "author": "krasserdude",
     "duration": 243,
+    "instrumental": {
+      "video": "BkrbqlYHCtU",
+      "gap": -148.828,
+      "volume": 0.5,
+      "duration": 232
+    },
     "tracks": [
       {
         "start": 9
@@ -194254,6 +197230,13 @@
     "author": "GaryCXJk",
     "sourceUrl": "https://youtu.be/dHg50mdODFM",
     "duration": 213,
+    "instrumental": {
+      "video": "mMSlLemTagg",
+      "gap": 6712.777,
+      "videoGap": 6,
+      "volume": 1,
+      "duration": 201
+    },
     "tracks": [
       {
         "start": 21
@@ -194341,6 +197324,13 @@
     "authorUrl": "https://www.youtube.com/channel/UCGD7CfG3JgZF52QpIRivV1Q",
     "sourceUrl": "https://www.youtube.com/watch?v=oE56g61mW44",
     "duration": 200,
+    "instrumental": {
+      "video": "5oedzgjBtTw",
+      "gap": 7559.45,
+      "videoGap": 1,
+      "volume": 1,
+      "duration": 201
+    },
     "tracks": [
       {
         "name": "Isn't She Lovely",
@@ -195473,6 +198463,12 @@
     "volume": 1,
     "author": "studio killers",
     "duration": 231,
+    "instrumental": {
+      "video": "ibI4c8cxEUA",
+      "gap": 6470.67,
+      "volume": 1,
+      "duration": 216
+    },
     "tracks": [
       {
         "start": 18
@@ -196554,6 +199550,12 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=574",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=2361",
     "duration": 245,
+    "instrumental": {
+      "video": "BrGh2Wq7_Ro",
+      "gap": 48762.8,
+      "volume": 0.86,
+      "duration": 247
+    },
     "tracks": [
       {
         "start": 15
@@ -197139,6 +200141,12 @@
     "manualVolume": 0.89,
     "author": "Sabu",
     "duration": 244,
+    "instrumental": {
+      "video": "iRbnaeGYego",
+      "gap": 33310.4,
+      "volume": 0.54,
+      "duration": 235
+    },
     "tracks": [
       {
         "start": 21
@@ -197260,6 +200268,12 @@
     "manualVolume": 0.75,
     "author": "Jamin",
     "duration": 263,
+    "instrumental": {
+      "video": "-QJpOpDjlDM",
+      "gap": 20227.5,
+      "volume": 0.5,
+      "duration": 256
+    },
     "tracks": [
       {
         "start": 14
@@ -197290,6 +200304,13 @@
     "manualVolume": 0.79,
     "author": "IC",
     "duration": 209,
+    "instrumental": {
+      "video": "sI3Bb0N4Q-A",
+      "gap": 47456.234,
+      "videoGap": 3,
+      "volume": 0.72,
+      "duration": 214
+    },
     "tracks": [
       {
         "start": 34
@@ -197606,6 +200627,12 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=411",
     "sourceUrl": "https://usdb.animux.de/?link=detail&id=3447",
     "duration": 172,
+    "instrumental": {
+      "video": "VH27l9uenus",
+      "gap": 13051.6,
+      "volume": 0.5,
+      "duration": 165
+    },
     "tracks": [
       {
         "name": "Lonely Day",
@@ -197918,6 +200945,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gollum",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=System%20of%20a%20Down&cancion=Toxicity",
     "duration": 225,
+    "instrumental": {
+      "video": "S2yqwL33inw",
+      "gap": 49208.4,
+      "volume": 0.67,
+      "duration": 220
+    },
     "tracks": [
       {
         "start": 26
@@ -199696,6 +202729,12 @@
     "author": "sonamor",
     "sourceUrl": "Tame Impala - Borderline",
     "duration": 238,
+    "instrumental": {
+      "video": "xvGBI11HCjU",
+      "gap": 4307.85,
+      "volume": 0.5,
+      "duration": 238
+    },
     "tracks": [
       {
         "start": 26
@@ -200447,6 +203486,13 @@
     "authorUrl": "https://usdb.animux.de/?link=profil&id=372",
     "sourceUrl": "https://usdb.animux.de/?link=detail&id=4514",
     "duration": 227,
+    "instrumental": {
+      "video": "g_IQWjsfO7g",
+      "gap": 17040.147,
+      "videoGap": 3,
+      "volume": 0.56,
+      "duration": 214
+    },
     "tracks": [
       {
         "start": 24
@@ -200592,6 +203638,12 @@
     "volume": 0.52,
     "manualVolume": 0.72,
     "duration": 331,
+    "instrumental": {
+      "video": "bRMe7fD8Pfg",
+      "gap": 19620.203,
+      "volume": 0.52,
+      "duration": 330
+    },
     "tracks": [
       {
         "start": 25
@@ -200883,6 +203935,12 @@
     "author": "hugamuga",
     "sourceUrl": "https://www.youtube.com/watch?v=wMpqCRF7TKg",
     "duration": 248,
+    "instrumental": {
+      "video": "GwS-7N8aa84",
+      "gap": 22038.8,
+      "volume": 1,
+      "duration": 244
+    },
     "tracks": [
       {
         "start": 23
@@ -201144,6 +204202,12 @@
     "manualVolume": 0.76,
     "author": "Usdx",
     "duration": 357,
+    "instrumental": {
+      "video": "jxVSfZQFcUE",
+      "gap": 13061.8,
+      "volume": 0.5,
+      "duration": 360
+    },
     "tracks": [
       {
         "start": 15
@@ -201762,6 +204826,12 @@
     "manualVolume": 1,
     "author": "oneoftheboys",
     "duration": 237,
+    "instrumental": {
+      "video": "ms-G1FktWAM",
+      "gap": 15313.8,
+      "volume": 1,
+      "duration": 235
+    },
     "tracks": [
       {
         "start": 16
@@ -201907,6 +204977,12 @@
     "volume": 1,
     "author": "Volodia",
     "duration": 239,
+    "instrumental": {
+      "video": "bJQ_2FO-tJw",
+      "gap": 5707.151,
+      "volume": 1,
+      "duration": 235
+    },
     "tracks": [
       {
         "start": 17
@@ -202109,6 +205185,12 @@
     "manualVolume": 0.75,
     "author": "vicktoben",
     "duration": 243,
+    "instrumental": {
+      "video": "DXHTIguKwEg",
+      "gap": 19296.8,
+      "volume": 0.95,
+      "duration": 235
+    },
     "tracks": [
       {
         "start": 13
@@ -202168,6 +205250,12 @@
     "author": "kolakao",
     "sourceUrl": "https://www.youtube.com/watch?v=ko70cExuzZM",
     "duration": 239,
+    "instrumental": {
+      "video": "ycEhG3XW-Os",
+      "gap": 10123.599,
+      "volume": 0.85,
+      "duration": 226
+    },
     "tracks": [
       {
         "start": 17
@@ -202487,6 +205575,12 @@
     "manualVolume": 1,
     "author": "valelcbl",
     "duration": 229,
+    "instrumental": {
+      "video": "to2Ft3xD79Y",
+      "gap": 7948.98,
+      "volume": 1,
+      "duration": 230
+    },
     "tracks": [
       {
         "start": 17
@@ -202606,6 +205700,13 @@
     "manualVolume": 0.7,
     "author": "Peschi",
     "duration": 291,
+    "instrumental": {
+      "video": "1NYounkVwNk",
+      "gap": 62889.899,
+      "volume": 0.63,
+      "duration": 290,
+      "bpm": 223.956
+    },
     "tracks": [
       {
         "start": 15
@@ -202723,6 +205824,12 @@
     "manualVolume": 0.71,
     "author": "DoubleDee",
     "duration": 211,
+    "instrumental": {
+      "video": "U0IRMQ-SU4Q",
+      "gap": 4884.07,
+      "volume": 0.5,
+      "duration": 211
+    },
     "tracks": [
       {
         "start": 21
@@ -204229,6 +207336,12 @@
     "author": "choosie",
     "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=12547",
     "duration": 139,
+    "instrumental": {
+      "video": "1CC79hpwuQU",
+      "gap": 3726.87,
+      "volume": 1,
+      "duration": 140
+    },
     "tracks": [
       {
         "start": 25
@@ -204459,6 +207572,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=dekkard",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Beatles&cancion=Hey%20Jude",
     "duration": 426,
+    "instrumental": {
+      "video": "Wus1zguVcUw",
+      "gap": -851.119,
+      "volume": 0.69,
+      "duration": 426
+    },
     "tracks": [
       {
         "start": 20
@@ -204575,6 +207694,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=dekkard",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Beatles&cancion=Let%20It%20Be",
     "duration": 244,
+    "instrumental": {
+      "video": "nFnrorkB_3s",
+      "gap": 11799.4,
+      "volume": 0.77,
+      "duration": 243
+    },
     "tracks": [
       {
         "start": 20
@@ -204918,6 +208043,13 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=dekkard",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Beatles&cancion=Yesterday",
     "duration": 126,
+    "instrumental": {
+      "video": "BlyBhM3Xbug",
+      "gap": 4309.32,
+      "videoGap": 2,
+      "volume": 0.89,
+      "duration": 127
+    },
     "tracks": [
       {
         "start": 20
@@ -205335,6 +208467,12 @@
     "manualVolume": 0.64,
     "author": "cyangreen",
     "duration": 290,
+    "instrumental": {
+      "video": "iKcoE1en7Zk",
+      "gap": 4320.967,
+      "volume": 0.65,
+      "duration": 285
+    },
     "tracks": [
       {
         "start": 17
@@ -205837,6 +208975,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Calling&cancion=Wherever%20You%20Will%20Go",
     "duration": 207,
+    "instrumental": {
+      "video": "M9Zj767fECM",
+      "gap": 8378.74,
+      "volume": 0.58,
+      "duration": 206
+    },
     "tracks": [
       {
         "start": 15
@@ -206008,6 +209152,12 @@
     "manualVolume": 0.74,
     "author": "aac",
     "duration": 247,
+    "instrumental": {
+      "video": "lCD0UraJFmg",
+      "gap": 9415.9,
+      "volume": 0.62,
+      "duration": 246
+    },
     "tracks": [
       {
         "start": 25
@@ -206518,6 +209668,12 @@
     "authorUrl": "https://ultrastar-es.org/en/canciones?creador=mustangfred",
     "sourceUrl": "https://ultrastar-es.org/en/canciones?busqueda=linger",
     "duration": 275,
+    "instrumental": {
+      "video": "GbAsw_VMVrM",
+      "gap": 7367.15,
+      "volume": 0.7,
+      "duration": 271
+    },
     "tracks": [
       {
         "start": 25
@@ -206579,6 +209735,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=telixj",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Cranberries&cancion=Zombie",
     "duration": 308,
+    "instrumental": {
+      "video": "YKsP3gC8ahw",
+      "gap": 48656.8,
+      "volume": 0.62,
+      "duration": 307
+    },
     "tracks": [
       {
         "start": 23
@@ -206641,6 +209803,14 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=kodaman",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Cure&cancion=Boys%20Don't%20Cry",
     "duration": 175,
+    "instrumental": {
+      "video": "qHYI7Qam0Yo",
+      "gap": 23209.807,
+      "videoGap": 1,
+      "volume": 1,
+      "duration": 161,
+      "bpm": 676.462
+    },
     "tracks": [
       {
         "start": 45
@@ -207021,6 +210191,12 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=411",
     "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=3470",
     "duration": 392,
+    "instrumental": {
+      "video": "FfqdBQCd7uM",
+      "gap": 51836.7,
+      "volume": 0.83,
+      "duration": 390
+    },
     "tracks": [
       {
         "start": 19
@@ -207169,6 +210345,12 @@
     "manualVolume": 1,
     "author": "IC",
     "duration": 267,
+    "instrumental": {
+      "video": "UJW7PS7foJg",
+      "gap": 6705.69,
+      "volume": 0.63,
+      "duration": 530
+    },
     "tracks": [
       {
         "start": 16
@@ -207368,6 +210550,12 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=334",
     "sourceUrl": "https://usdb.animux.de",
     "duration": 270,
+    "instrumental": {
+      "video": "ZXoEKAN_pRE",
+      "gap": 13070.255,
+      "volume": 0.77,
+      "duration": 263
+    },
     "tracks": [
       {
         "start": 21
@@ -207484,6 +210672,12 @@
     "manualVolume": 0.79,
     "author": "Baklap4",
     "duration": 217,
+    "instrumental": {
+      "video": "Pt5f882ddjk",
+      "gap": -60.342,
+      "volume": 0.56,
+      "duration": 217
+    },
     "tracks": [
       {
         "start": 18
@@ -207870,6 +211064,14 @@
     "manualVolume": 0.79,
     "author": "NikNak",
     "duration": 180,
+    "instrumental": {
+      "video": "br-SYNyO_fA",
+      "gap": 22783.732,
+      "videoGap": 2,
+      "volume": 0.72,
+      "duration": 182,
+      "bpm": 392.841
+    },
     "tracks": [
       {
         "name": "I Want You Back",
@@ -208231,6 +211433,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=gilrael",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=The%20Killers&cancion=Mr.%20Brightside",
     "duration": 228,
+    "instrumental": {
+      "video": "B9f8CsahXOk",
+      "gap": 5956.42,
+      "volume": 0.5,
+      "duration": 223
+    },
     "tracks": [
       {
         "start": 26
@@ -208293,6 +211501,12 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=2",
     "sourceUrl": "http://usdb.animux.de/index.php?link=detail&id=296",
     "duration": 203,
+    "instrumental": {
+      "video": "C4S0DJjzh44",
+      "gap": 20118.3,
+      "volume": 0.5,
+      "duration": 205
+    },
     "tracks": [
       {
         "start": 18
@@ -208527,6 +211741,12 @@
     "manualVolume": 0.68,
     "author": "Zevac",
     "duration": 164,
+    "instrumental": {
+      "video": "i_E6Q1Vy4wg",
+      "gap": 8386.73,
+      "volume": 0.58,
+      "duration": 165
+    },
     "tracks": [
       {
         "start": 27
@@ -208981,6 +212201,12 @@
     "manualVolume": 0.72,
     "author": "EmilySavereux",
     "duration": 253,
+    "instrumental": {
+      "video": "cMxkomyrwQ8",
+      "gap": 5798.33,
+      "volume": 0.5,
+      "duration": 240
+    },
     "tracks": [
       {
         "start": 22
@@ -209356,6 +212582,13 @@
     "author": "Charis",
     "sourceUrl": "https://usdb.animux.de/?link=gettxt&id=3548",
     "duration": 267,
+    "instrumental": {
+      "video": "OFrF56Ec-SY",
+      "gap": 17487.114,
+      "volume": 1,
+      "duration": 259,
+      "bpm": 239.196
+    },
     "tracks": [
       {
         "start": 16
@@ -210328,6 +213561,12 @@
     "volume": 1,
     "author": "Subby77",
     "duration": 196,
+    "instrumental": {
+      "video": "f98etht9_Qw",
+      "gap": 9683.43,
+      "volume": 1,
+      "duration": 194
+    },
     "tracks": [
       {
         "start": 21
@@ -211061,6 +214300,13 @@
     "manualVolume": 0.77,
     "author": "Karakth",
     "duration": 240,
+    "instrumental": {
+      "video": "uAAx2sNPkvw",
+      "gap": 8583.162,
+      "volume": 0.55,
+      "duration": 242,
+      "bpm": 200.122
+    },
     "tracks": [
       {
         "start": 13
@@ -211347,6 +214593,12 @@
     "manualVolume": 0.76,
     "author": "Gollum",
     "duration": 215,
+    "instrumental": {
+      "video": "gI6mFNzsiAI",
+      "gap": 15360.9,
+      "volume": 1,
+      "duration": 215
+    },
     "tracks": [
       {
         "start": 16
@@ -211408,6 +214660,13 @@
     "manualVolume": 0.81,
     "author": "Gollum",
     "duration": 113,
+    "instrumental": {
+      "video": "YOHdewZSwY0",
+      "gap": 2020.237,
+      "videoGap": 1,
+      "volume": 1,
+      "duration": 114
+    },
     "tracks": [
       {
         "start": 18
@@ -211437,6 +214696,13 @@
     "manualVolume": 0.67,
     "author": "hamadad",
     "duration": 245,
+    "instrumental": {
+      "video": "UYkdI3BistI",
+      "gap": 3456.352,
+      "volume": 0.58,
+      "duration": 243,
+      "bpm": 270.255
+    },
     "tracks": [
       {
         "start": 18
@@ -211466,6 +214732,12 @@
     "manualVolume": 0.73,
     "author": "hamadad",
     "duration": 163,
+    "instrumental": {
+      "video": "wAzXnxqEdtw",
+      "gap": 12578.7,
+      "volume": 0.62,
+      "duration": 163
+    },
     "tracks": [
       {
         "start": 23
@@ -211757,6 +215029,12 @@
     "authorUrl": "https://ultrastar-es.org/en/canciones?creador=rsa_skala",
     "sourceUrl": "https://ultrastar-es.org/en/canciones?artista=The%20Strokes&cancion=The%20Adults%20Are%20Talking",
     "duration": 288,
+    "instrumental": {
+      "video": "6hO0rG8lUDI",
+      "gap": 21173.8,
+      "volume": 0.5,
+      "duration": 287
+    },
     "tracks": [
       {
         "start": 22
@@ -212691,6 +215969,12 @@
     "author": "mustangfred",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?cancion=Blinding+Lights",
     "duration": 204,
+    "instrumental": {
+      "video": "91WKx3tuDbs",
+      "gap": 26632.2,
+      "volume": 0.5,
+      "duration": 202
+    },
     "tracks": [
       {
         "start": 23
@@ -212719,6 +216003,13 @@
     "manualVolume": 0.69,
     "author": "Tracks",
     "duration": 239,
+    "instrumental": {
+      "video": "Pm2VGpQ3VB4",
+      "gap": 8530.266,
+      "volume": 0.5,
+      "duration": 228,
+      "bpm": 397.314
+    },
     "tracks": [
       {
         "start": 26
@@ -212808,6 +216099,13 @@
     "manualVolume": 0.67,
     "author": "varisha",
     "duration": 276,
+    "instrumental": {
+      "video": "LgMBo3CSHio",
+      "gap": 40352.1,
+      "videoGap": 4,
+      "volume": 0.54,
+      "duration": 278
+    },
     "tracks": [
       {
         "start": 16
@@ -212836,6 +216134,12 @@
     "manualVolume": 0.69,
     "author": "DoubleDee73",
     "duration": 206,
+    "instrumental": {
+      "video": "eYhno8xWOd4",
+      "gap": 16158.5,
+      "volume": 0.5,
+      "duration": 212
+    },
     "tracks": [
       {
         "start": 16
@@ -212896,6 +216200,12 @@
     "manualVolume": 0.64,
     "author": "AngelosTag",
     "duration": 274,
+    "instrumental": {
+      "video": "f2NGFS57Kyg",
+      "gap": 41767.6,
+      "volume": 0.52,
+      "duration": 272
+    },
     "tracks": [
       {
         "name": "Starboy",
@@ -213160,6 +216470,12 @@
     "volume": 1,
     "author": "funkmkb",
     "duration": 282,
+    "instrumental": {
+      "video": "TpZEba9ksEQ",
+      "gap": 8941.51,
+      "volume": 1,
+      "duration": 281
+    },
     "tracks": [
       {
         "start": 15
@@ -213190,6 +216506,12 @@
     "author": "th3re4laft0n",
     "sourceUrl": "https://usdb.animux.de/index.php?link=gettxt&id=1920",
     "duration": 239,
+    "instrumental": {
+      "video": "J_zxbkCsNQs",
+      "gap": 14177.8,
+      "volume": 0.79,
+      "duration": 234
+    },
     "tracks": [
       {
         "start": 16
@@ -214043,6 +217365,12 @@
     "authorUrl": "https://usdb.animux.de/index.php?link=profil&id=123",
     "sourceUrl": "https://www.youtube.com/watch?v=3c4_jTnsegM",
     "duration": 233,
+    "instrumental": {
+      "video": "HHqjLJHhyVE",
+      "gap": 8213.44,
+      "volume": 0.5,
+      "duration": 232
+    },
     "tracks": [
       {
         "start": 24
@@ -214129,6 +217457,13 @@
     "manualVolume": 0.73,
     "author": "jdogk",
     "duration": 231,
+    "instrumental": {
+      "video": "q1x29R61UZE",
+      "gap": 23191.184,
+      "volume": 0.68,
+      "duration": 230,
+      "bpm": 246.053
+    },
     "tracks": [
       {
         "name": "Animal I Have Become",
@@ -214216,6 +217551,14 @@
     "manualVolume": 0.77,
     "author": "jdogk",
     "duration": 220,
+    "instrumental": {
+      "video": "owb4uSvjWVQ",
+      "gap": 13476.286,
+      "videoGap": 8,
+      "volume": 0.62,
+      "duration": 230,
+      "bpm": 276.06
+    },
     "tracks": [
       {
         "start": 18
@@ -214334,6 +217677,12 @@
     "manualVolume": 0.75,
     "author": "jdogk",
     "duration": 212,
+    "instrumental": {
+      "video": "-IfDB1WoGnk",
+      "gap": 13267.767,
+      "volume": 0.56,
+      "duration": 208
+    },
     "tracks": [
       {
         "name": "Never Too Late",
@@ -215234,6 +218583,12 @@
     "manualVolume": 0.68,
     "author": "pauldidy",
     "duration": 250,
+    "instrumental": {
+      "video": "SQYyDXQ0xUU",
+      "gap": 10397.5,
+      "volume": 0.74,
+      "duration": 247
+    },
     "tracks": [
       {
         "start": 19
@@ -216097,6 +219452,12 @@
     "manualVolume": 0.77,
     "author": "prgoenner",
     "duration": 248,
+    "instrumental": {
+      "video": "y2xDbj04yEI",
+      "gap": 20416.5,
+      "volume": 0.71,
+      "duration": 246
+    },
     "tracks": [
       {
         "start": 16
@@ -216976,6 +220337,12 @@
     "volume": 1,
     "author": "choosie",
     "duration": 226,
+    "instrumental": {
+      "video": "aWL4Gqk1TtA",
+      "gap": 13914.647,
+      "volume": 1,
+      "duration": 230
+    },
     "tracks": [
       {
         "start": 16
@@ -217441,6 +220808,12 @@
     "author": "QuantenspringerXXX",
     "sourceUrl": "https://www.youtube.com/watch?v=AzRyxGBGiAE&list=RDAzRyxGBGiAE&start_radio=1",
     "duration": 237,
+    "instrumental": {
+      "video": "fwHxgVdVk-s",
+      "gap": 7612.363,
+      "volume": 1,
+      "duration": 249
+    },
     "tracks": [
       {
         "start": 27
@@ -218418,6 +221791,12 @@
     "manualVolume": 0.64,
     "author": "poopityscoop",
     "duration": 324,
+    "instrumental": {
+      "video": "bvdCMP_Ic4g",
+      "gap": 16408.2,
+      "volume": 0.77,
+      "duration": 323
+    },
     "tracks": [
       {
         "start": 6
@@ -218477,6 +221856,12 @@
     "manualVolume": 0.7,
     "author": "ga the milk",
     "duration": 218,
+    "instrumental": {
+      "video": "vGtbFxvDPzw",
+      "gap": 5605.388,
+      "volume": 0.55,
+      "duration": 205
+    },
     "tracks": [
       {
         "start": 24
@@ -218506,6 +221891,12 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=58767",
     "sourceUrl": "https://usdb.animux.de/index.php?link=detail&id=28285",
     "duration": 252,
+    "instrumental": {
+      "video": "2QjgaOnLw3I",
+      "gap": 16736.2,
+      "volume": 1,
+      "duration": 237
+    },
     "tracks": [
       {
         "start": 17
@@ -218622,6 +222013,12 @@
     "manualVolume": 0.7,
     "author": "gun8",
     "duration": 226,
+    "instrumental": {
+      "video": "2RfNyPdq-yg",
+      "gap": 12537.141,
+      "volume": 0.62,
+      "duration": 215
+    },
     "tracks": [
       {
         "start": 20
@@ -218832,6 +222229,12 @@
     "author": "Raygin",
     "sourceUrl": "https://www.youtube.com/watch?v=E2Rj2gQAyPA&list=PLJP5_qSxMbkKnjgQZUJPT6CV09yoIheUj&index=20",
     "duration": 235,
+    "instrumental": {
+      "video": "ueUJCovDIWg",
+      "gap": 24693.015,
+      "volume": 0.58,
+      "duration": 237
+    },
     "tracks": [
       {
         "start": 19
@@ -219185,6 +222588,12 @@
     "authorUrl": "Anna Timgren / Boy Matthews / Justin Reinstein / moneto",
     "sourceUrl": "https://www.youtube.com/watch?v=f5_wn8mexmM",
     "duration": 232,
+    "instrumental": {
+      "video": "lH54Vi3yhSI",
+      "gap": 3424.3,
+      "volume": 0.5,
+      "duration": 216
+    },
     "tracks": [
       {
         "name": "The Feels - TWICE",
@@ -221267,6 +224676,12 @@
     "manualVolume": 0.8,
     "author": "aac",
     "duration": 205,
+    "instrumental": {
+      "video": "nz_cJ8R95Zo",
+      "gap": 9270.05,
+      "volume": 1,
+      "duration": 200
+    },
     "tracks": [
       {
         "start": 14
@@ -223236,6 +226651,12 @@
     "authorUrl": "http://usdb.animux.de/index.php?link=profil&id=192264",
     "sourceUrl": "https://usdb.animux.de/?link=detail&id=30057",
     "duration": 211,
+    "instrumental": {
+      "video": "4m0vTFxXryI",
+      "gap": 2850.468,
+      "volume": 1,
+      "duration": 212
+    },
     "tracks": [
       {
         "start": 26
@@ -224552,6 +227973,12 @@
     "volume": 1,
     "author": "Viktor1234678",
     "duration": 158,
+    "instrumental": {
+      "video": "HJvj52Yve1Q",
+      "gap": 5002.43,
+      "volume": 1,
+      "duration": 158
+    },
     "tracks": [
       {
         "start": 17
@@ -224580,6 +228007,12 @@
     "volume": 1,
     "author": "EaterOfFromage",
     "duration": 201,
+    "instrumental": {
+      "video": "UxiCmdwSqKU",
+      "gap": 2521.37,
+      "volume": 1,
+      "duration": 199
+    },
     "tracks": [
       {
         "start": 15
@@ -224790,6 +228223,12 @@
     "manualVolume": 0.85,
     "author": "Nudelsuppe",
     "duration": 206,
+    "instrumental": {
+      "video": "2YLf-lEAwbg",
+      "gap": 11914.561,
+      "volume": 1,
+      "duration": 205
+    },
     "tracks": [
       {
         "start": 22
@@ -224818,6 +228257,13 @@
     "manualVolume": 0.84,
     "author": "macgyver2809",
     "duration": 197,
+    "instrumental": {
+      "video": "L3VsXNunDW0",
+      "gap": 67781.07,
+      "videoGap": 39,
+      "volume": 1,
+      "duration": 202
+    },
     "tracks": [
       {
         "start": 20
@@ -225779,6 +229225,13 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=asb",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Wham!&cancion=Last%20Christmas",
     "duration": 279,
+    "instrumental": {
+      "video": "HPVO4dN2KBQ",
+      "gap": 3502.804,
+      "volume": 0.72,
+      "duration": 290,
+      "bpm": 320.295
+    },
     "tracks": [
       {
         "start": 21
@@ -225868,6 +229321,12 @@
     "manualVolume": 0.85,
     "author": "cal",
     "duration": 247,
+    "instrumental": {
+      "video": "HUfRhU8ZUuQ",
+      "gap": 14011.6,
+      "volume": 1,
+      "duration": 242
+    },
     "tracks": [
       {
         "start": 25
@@ -226012,6 +229471,12 @@
     "manualVolume": 0.72,
     "author": "anthem_1",
     "duration": 291,
+    "instrumental": {
+      "video": "-8dKKvSed-0",
+      "gap": 20220.5,
+      "volume": 0.72,
+      "duration": 289
+    },
     "tracks": [
       {
         "start": 20
@@ -226071,6 +229536,12 @@
     "volume": 0.91,
     "manualVolume": 0.5,
     "duration": 274,
+    "instrumental": {
+      "video": "SJEeof74WvM",
+      "gap": -295.034,
+      "volume": 0.91,
+      "duration": 271
+    },
     "tracks": [
       {
         "start": 18
@@ -227422,6 +230893,12 @@
     "volume": 0.58,
     "manualVolume": 0.71,
     "duration": 238,
+    "instrumental": {
+      "video": "QGpKXJC33SU",
+      "gap": 10156.9,
+      "volume": 0.58,
+      "duration": 227
+    },
     "tracks": [
       {
         "start": 21
@@ -228483,6 +231960,12 @@
     "authorUrl": "https://ultrastar-es.org/pl/canciones?creador=lorchen",
     "sourceUrl": "https://ultrastar-es.org/pl/canciones?artista=Ylvis&cancion=The%20Fox",
     "duration": 225,
+    "instrumental": {
+      "video": "oBhqnJVm_Zc",
+      "gap": 7426.85,
+      "volume": 0.5,
+      "duration": 214
+    },
     "tracks": [
       {
         "start": 17
@@ -229336,6 +232819,12 @@
     "volume": 1,
     "author": "Subkei",
     "duration": 222,
+    "instrumental": {
+      "video": "21XOT_a6z84",
+      "gap": 18955.411,
+      "volume": 1,
+      "duration": 216
+    },
     "tracks": [
       {
         "start": 26
@@ -229657,6 +233146,12 @@
     "manualVolume": 0.69,
     "author": "QuantenspringerXXX",
     "duration": 202,
+    "instrumental": {
+      "video": "_VgdIdsOfpg",
+      "gap": 7840.32,
+      "volume": 0.5,
+      "duration": 207
+    },
     "tracks": [
       {
         "start": 26
@@ -229684,6 +233179,12 @@
     "volume": 1,
     "author": "Tracks",
     "duration": 188,
+    "instrumental": {
+      "video": "kyBPAfEVYCE",
+      "gap": 12537.271,
+      "volume": 1,
+      "duration": 185
+    },
     "tracks": [
       {
         "start": 20
@@ -230511,6 +234012,12 @@
     "manualVolume": 0.6,
     "author": "vicktoben",
     "duration": 276,
+    "instrumental": {
+      "video": "CalJQrvGxwU",
+      "gap": 9028.514,
+      "volume": 0.82,
+      "duration": 270
+    },
     "tracks": [
       {
         "start": 17
