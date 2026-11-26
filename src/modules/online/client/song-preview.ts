@@ -25,6 +25,8 @@ type SongHoverPreviewSource = Pick<
   | 'instrumental'
 >;
 
+const PREVIEW_LENGTH = 30;
+
 /** Describes "the song on screen" for the rest of the room — enough for every client to render the
  * header and play the same preview snippet the host is hearing. */
 export const toSongHoverPreview = (
@@ -32,8 +34,9 @@ export const toSongHoverPreview = (
   difficulty?: string,
   instrumental = false,
 ): SongHoverPreview => {
-  // The fallback preview moment is on the original video, so it's set before the swap moves it to the instrumental
-  const withPreview = { ...original, previewStart: original.previewStart ?? (original.videoGap ?? 0) + 60 };
+  // The fallback preview window is on the original video, so it's set before the swap moves (and stretches) it
+  const previewStart = original.previewStart ?? (original.videoGap ?? 0) + 60;
+  const withPreview = { ...original, previewStart, previewEnd: original.previewEnd ?? previewStart + PREVIEW_LENGTH };
   const song = instrumental ? toInstrumentalVersion(withPreview) : original;
 
   return {

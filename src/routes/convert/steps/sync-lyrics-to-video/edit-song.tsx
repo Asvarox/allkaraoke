@@ -200,7 +200,8 @@ export default function EditSong({ song, onUpdate, visible, autoplayFirstSection
     [song],
   );
 
-  const bpmScale = newSong.bpm / editedSong.bpm;
+  // The instrumental's tempo ratio to the original, which setBpm keeps; taken from the loaded song so a cleared field can't break it
+  const bpmScale = activeVersion === 'instrumental' && song.instrumental?.bpm ? song.instrumental.bpm / song.bpm : 1;
   const beatLength = getSongBeatLength(newSong);
   const lyricsCoverage = getLyricsCoverage(newSong, videoDuration);
   const notesSections = useMemo(() => newSong.tracks[0].sections.filter(isNotesSection), [newSong]);

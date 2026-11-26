@@ -13,7 +13,11 @@ describe('toSongHoverPreview', () => {
     };
 
     // A minute into the original is two minutes into the half-speed instrumental
-    expect(toSongHoverPreview(song, undefined, true)).toMatchObject({ video: 'instrumental', previewStart: 120 });
+    expect(toSongHoverPreview(song, undefined, true)).toMatchObject({
+      video: 'instrumental',
+      previewStart: 120,
+      previewEnd: 180,
+    });
     expect(toSongHoverPreview(song, undefined, false)).toMatchObject({ previewStart: 60 });
   });
 });
