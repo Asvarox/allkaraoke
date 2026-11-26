@@ -83,11 +83,30 @@ function BadgeDuet({ className, ...props }: ComponentProps<typeof Chip>) {
   return (
     <Chip
       variant="zinc"
+      title="Duet"
       data-test="multitrack-indicator"
       className={`[&_svg]:h-4 [&_svg]:w-4 ${className ?? ''}`}
       {...props}>
       <Icon icon="ic:round-people-alt" width="1rem" height="1rem" />
-      <span>Duet</span>
+      {/* Gives way to the Instrumental badge, which wouldn't fit next to it with its label */}
+      {!song.instrumental && <span>Duet</span>}
+    </Chip>
+  );
+}
+
+function BadgeInstrumental({ className, ...props }: ComponentProps<typeof Chip>) {
+  const { song } = useSongCardContext();
+  if (!song.instrumental) return null;
+  return (
+    <Chip
+      variant="violet"
+      data-test="instrumental-indicator"
+      title="Instrumental version available"
+      aria-label="Instrumental version available"
+      className={`[&_svg]:h-4 [&_svg]:w-4 ${className ?? ''}`}
+      {...props}>
+      <Icon icon="ic:round-mic-off" width="1rem" height="1rem" />
+      <span>Instrumental</span>
     </Chip>
   );
 }
@@ -142,6 +161,7 @@ export const SongCard = Object.assign(SongCardRoot, {
   Badges: Object.assign(Badges, {
     Flag: BadgeFlag,
     Duet: BadgeDuet,
+    Instrumental: BadgeInstrumental,
     Stats: BadgeStats,
   }),
 });

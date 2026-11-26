@@ -16,6 +16,8 @@ export interface SongMetadataEntity {
   language: string[];
   artistOrigin?: string;
   volume: number;
+  /** Falls back to the original's volume when not set */
+  instrumentalVolume?: number;
   previewStart: number | undefined;
   previewEnd: number | undefined;
   genre?: string;
@@ -27,6 +29,7 @@ interface Props {
   data: SongMetadataEntity;
   songArtist?: string;
   videoId: string;
+  instrumentalVideoId?: string;
   videoGap?: number;
   isAdminUnverifiedSong?: boolean;
 }

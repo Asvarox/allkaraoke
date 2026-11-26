@@ -161,6 +161,24 @@ type ImportedSongSummary = {
           }
         }
 
+        // The instrumental is a separate video with its own length
+        if (song.instrumental) {
+          try {
+            if (!durationProbeClient) {
+              durationProbeClient = await createYoutubeDurationProbeClient(8000);
+            }
+
+            song.instrumental.duration = await durationProbeClient.getDuration(song.instrumental.video);
+            console.log(`Fetched instrumental duration for ${song.id}: ${song.instrumental.duration}s`);
+          } catch (error) {
+            const errorMessage = error instanceof Error ? error.message : String(error);
+            console.warn(`Could not fetch instrumental duration for ${song.id}: ${errorMessage}`);
+            const sameVideo = oldSong?.instrumental?.video === song.instrumental.video;
+            song.instrumental.duration =
+              song.instrumental.duration ?? (sameVideo ? oldSong?.instrumental?.duration : undefined);
+          }
+        }
+
         if (oldSong) {
           // Leave the file untouched if the only change would be the last update date
           const oldSongTxt = convertSongToTxt(oldSong);

@@ -51,7 +51,8 @@ async function main() {
         continue;
       }
 
-      if (song.duration !== undefined) {
+      const needsInstrumental = !!song.instrumental && song.instrumental.duration === undefined;
+      if (song.duration !== undefined && !needsInstrumental) {
         skippedSongs += 1;
         continue;
       }
@@ -59,10 +60,13 @@ async function main() {
       console.log(`Backfilling duration: ${song.artist} - ${song.title} (${fileName})`);
 
       try {
-        const durationSeconds = await durationProbeClient.getDuration(song.video);
         const updatedSong: Song = {
           ...song,
-          duration: durationSeconds,
+          duration: song.duration ?? (await durationProbeClient.getDuration(song.video)),
+          instrumental:
+            song.instrumental && needsInstrumental
+              ? { ...song.instrumental, duration: await durationProbeClient.getDuration(song.instrumental.video) }
+              : song.instrumental,
         };
 
         const updatedSongText = convertSongToTxt(updatedSong);

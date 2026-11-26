@@ -138,6 +138,16 @@ function LobbySongCard({ preview, invite, pickerName, picked = false, onChooseSo
                     <span>{preview.difficulty}</span>
                   </Chip>
                 )}
+                {preview.instrumental && (
+                  <Chip
+                    variant="violet"
+                    className="[&_svg]:h-4 [&_svg]:w-4"
+                    data-test="online-host-browsing-instrumental"
+                    title="The room sings to the instrumental version">
+                    <Icon icon="ic:round-mic-off" width="1rem" height="1rem" />
+                    <span>Instrumental</span>
+                  </Chip>
+                )}
               </div>
             )}
           </div>

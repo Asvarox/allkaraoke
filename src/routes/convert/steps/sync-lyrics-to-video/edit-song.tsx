@@ -1,6 +1,6 @@
-import { Button, Typography } from '@mui/material';
+import { Button, ButtonGroup, Typography } from '@mui/material';
 import { cloneDeep } from 'es-toolkit';
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { SetStateAction, useEffect, useMemo, useRef, useState } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import { useWindowSize } from 'react-use';
 import createPersistedState from 'use-persisted-state';
@@ -9,13 +9,18 @@ import { GAME_MODE, Note, seconds, SingSetup, Song } from '~/interfaces';
 import { Icon } from '~/modules/elements/akui/icon';
 import { VideoState } from '~/modules/elements/video-player/index';
 import getCurrentBeat from '~/modules/game-engine/game-state/helpers/get-current-beat';
+import useQueryParam from '~/modules/hooks/use-query-param';
+import { SongVersion, toSongVersion } from '~/modules/songs/song-version';
 import getSongBeatLength from '~/modules/songs/utils/get-song-beat-length';
 import isNotesSection from '~/modules/songs/utils/is-notes-section';
 import { getFirstNoteStartFromSections } from '~/modules/songs/utils/notes-selectors';
 import addHeadstart from '~/modules/songs/utils/process-song/add-headstart';
+import keepInstrumentalInSync from '~/modules/songs/utils/process-song/keep-instrumental-in-sync';
 import normaliseGap from '~/modules/songs/utils/process-song/normalise-gap';
 import normaliseLyricSpaces from '~/modules/songs/utils/process-song/normalise-lyric-spaces';
 import normaliseSectionPaddings from '~/modules/songs/utils/process-song/normalise-section-paddings';
+import toInstrumentalVersion from '~/modules/songs/utils/to-instrumental-version';
+import { isAdminUser } from '~/routes/admin/admin-password';
 import AdjustPlayback from '~/routes/convert/steps/sync-lyrics-to-video/components/adjust-playback';
 import EditSection, { ChangeRecord } from '~/routes/convert/steps/sync-lyrics-to-video/components/edit-section';
 import ManipulateBpm from '~/routes/convert/steps/sync-lyrics-to-video/components/manipulate-bpm';
@@ -38,7 +43,28 @@ interface Props {
 
 const shiftGap = (song: Song, gapShift: number): Song => ({ ...song, gap: song.gap + gapShift });
 const shiftVideoGap = (song: Song, gapShift: number): Song => ({ ...song, videoGap: (song.videoGap ?? 0) + gapShift });
-const setBpm = (song: Song, bpm: number): Song => ({ ...song, bpm });
+const shiftInstrumental = (song: Song, gapShift: number, videoGapShift: number): Song =>
+  song.instrumental
+    ? {
+        ...song,
+        instrumental: {
+          ...song.instrumental,
+          gap: song.instrumental.gap + gapShift,
+          videoGap: (song.instrumental.videoGap ?? 0) + videoGapShift,
+        },
+      }
+    : song;
+// A separate instrumental BPM keeps its speed ratio to the original
+const setBpm = (song: Song, bpm: number): Song => ({
+  ...song,
+  bpm,
+  instrumental: song.instrumental?.bpm
+    ? { ...song.instrumental, bpm: (song.instrumental.bpm * bpm) / song.bpm }
+    : song.instrumental,
+});
+
+const resolveUpdate = <T,>(update: SetStateAction<T>, current: T) =>
+  typeof update === 'function' ? (update as (value: T) => T)(current) : update;
 
 const applyChanges = (song: Song, changes: ChangeRecord[]) => ({
   ...song,
@@ -112,21 +138,38 @@ export default function EditSong({ song, onUpdate, visible, autoplayFirstSection
   const playerWidth = Math.min(width - 16, 824);
   const playerHeight = (playerWidth / 16) * 9;
 
-  const [gapShift, setGapShift] = useState<string>('0');
-  const [videoGapShift, setVideoGapShift] = useState<number>(0);
+  // Timings are per video; notes, tempo and lyrics are shared by both versions
+  // The admin review queue opens reports about the instrumental straight on its video
+  const initialVersion = toSongVersion(useQueryParam('version'));
+  const [version, setVersion] = useState<SongVersion>(initialVersion);
+  const [gapShifts, setGapShifts] = useState<Record<SongVersion, string>>({ original: '0', instrumental: '0' });
+  const [videoGapShifts, setVideoGapShifts] = useState<Record<SongVersion, number>>({ original: 0, instrumental: 0 });
+  const canEditInstrumental = !!song.instrumental && isAdminUser();
+  const activeVersion: SongVersion = canEditInstrumental ? version : 'original';
+  const gapShift = gapShifts[activeVersion];
+  const videoGapShift = videoGapShifts[activeVersion];
+  const setGapShift = (update: SetStateAction<string>) =>
+    setGapShifts((current) => ({ ...current, [activeVersion]: resolveUpdate(update, current[activeVersion]) }));
+  const setVideoGapShift = (update: SetStateAction<number>) =>
+    setVideoGapShifts((current) => ({ ...current, [activeVersion]: resolveUpdate(update, current[activeVersion]) }));
   const [overrideBpm, setOverrideBpm] = useState<number>(song.bpm);
   const [changeRecords, setChangeRecords] = useState<ChangeRecord[]>([]);
   const [trackNames, setTrackNames] = useState(song.tracks.map((track) => track.name ?? undefined));
   const [lyricChanges, setLyricChanges] = useState<Record<number, Record<number, Record<number, string>>>>({});
 
-  const newSong = useMemo(() => {
+  const editedSong = useMemo(() => {
     let processed = cloneDeep(song);
 
-    processed = normaliseGap(processed);
-    processed = addHeadstart(processed);
+    processed = keepInstrumentalInSync(processed, (original) => addHeadstart(normaliseGap(original)));
     processed = normaliseSectionPaddings(processed);
-    if (!isNaN(Number(gapShift))) processed = shiftGap(processed, Number(gapShift));
-    processed = shiftVideoGap(processed, videoGapShift);
+    if (!isNaN(Number(gapShifts.original))) processed = shiftGap(processed, Number(gapShifts.original));
+    processed = shiftVideoGap(processed, videoGapShifts.original);
+    const instrumentalGapShift = Number(gapShifts.instrumental);
+    processed = shiftInstrumental(
+      processed,
+      isNaN(instrumentalGapShift) ? 0 : instrumentalGapShift,
+      videoGapShifts.instrumental,
+    );
     processed = setBpm(processed, overrideBpm);
     processed = applyChanges(processed, changeRecords);
     processed = applyTrackNames(processed, trackNames);
@@ -135,11 +178,14 @@ export default function EditSong({ song, onUpdate, visible, autoplayFirstSection
     processed = normaliseLyricSpaces(processed);
 
     return processed;
-  }, [gapShift, videoGapShift, song, overrideBpm, changeRecords, trackNames, lyricChanges]);
+  }, [gapShifts, videoGapShifts, song, overrideBpm, changeRecords, trackNames, lyricChanges]);
 
   useEffect(() => {
-    onUpdate?.(newSong);
-  }, [onUpdate, newSong]);
+    onUpdate?.(editedSong);
+  }, [onUpdate, editedSong]);
+
+  // The version being synced; everything below works on it as if it was the only one
+  const newSong = activeVersion === 'instrumental' ? toInstrumentalVersion(editedSong) : editedSong;
 
   const singSetup = useMemo<SingSetup>(
     () => ({
@@ -278,12 +324,20 @@ export default function EditSong({ song, onUpdate, visible, autoplayFirstSection
     },
     [newSong],
   );
-  useHotkeys('a', () => {
-    setGapShift((current) => String(Number(current) - 50));
-  });
-  useHotkeys('s', () => {
-    setGapShift((current) => String(Number(current) + 50));
-  });
+  useHotkeys(
+    'a',
+    () => {
+      setGapShift((current) => String(Number(current) - 50));
+    },
+    [activeVersion],
+  );
+  useHotkeys(
+    's',
+    () => {
+      setGapShift((current) => String(Number(current) + 50));
+    },
+    [activeVersion],
+  );
 
   useHotkeys('z', () => {
     setOverrideBpm((current) => current - 0.1);
@@ -295,12 +349,29 @@ export default function EditSong({ song, onUpdate, visible, autoplayFirstSection
   return (
     <div className={visible ? 'grid grid-cols-12 gap-4' : 'hidden'}>
       <div className="col-span-12 sm:col-span-8" data-test="player-container">
+        {canEditInstrumental && (
+          <div className="mb-2 flex items-center gap-3">
+            <span className="text-sm">Syncing version:</span>
+            <ButtonGroup size="small" data-test="song-version">
+              {(['original', 'instrumental'] as const).map((value) => (
+                <Button
+                  key={value}
+                  data-test={`song-version-${value}`}
+                  variant={activeVersion === value ? 'contained' : 'outlined'}
+                  onClick={() => setVersion(value)}>
+                  {value === 'original' ? 'Original' : 'Instrumental'}
+                </Button>
+              ))}
+            </ButtonGroup>
+            <span className="text-xs">Gaps are separate for each video; lyrics, tempo and verses are shared.</span>
+          </div>
+        )}
         <div style={{ width: playerWidth, height: playerHeight }}>
           <Player
             onStatusChange={setPlayerState}
             onVideoDurationLoad={setVideoDuration}
             onReady={() => setIsPlayerReady(true)}
-            key={0}
+            key={newSong.video}
             song={newSong}
             showControls
             autoplay={false}

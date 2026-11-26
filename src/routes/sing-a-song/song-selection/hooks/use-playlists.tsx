@@ -29,6 +29,8 @@ export interface PlaylistEntry {
   isLanguagePicker?: boolean;
   Wrapper?: (props: { children: ReactElement; focused: boolean; active: boolean }) => ReactNode;
   filters: AppliedFilters;
+  /** Plays instrumentals in this playlist, unless the player set the vocals switch themselves */
+  preferInstrumental?: boolean;
   groupData?: (song: SongPreview) => Pick<SongGroup, 'name' | 'displayShort' | 'displayLong' | 'remoteLabel'>;
   postGrouping?: (groups: SongGroup[]) => SongGroup[];
   sortingFn?: (a: SongPreview, b: SongPreview) => number;
@@ -46,6 +48,7 @@ export const usePlaylists = (
   const remoteSongList = useRemoteMicSongList();
   const { connected } = useRemoteMicServerStatus();
   const sungSongs = useSungSongs();
+  const hasInstrumentals = songs.some((song) => song.instrumental);
 
   return useMemo<PlaylistEntry[]>(() => {
     if (isLoading) return [];
@@ -114,6 +117,15 @@ export const usePlaylists = (
             filters: { language: songLanguages[1].name },
           }
         : null,
+      hasInstrumentals
+        ? {
+            name: 'no-vocals',
+            display: 'No vocals',
+            remoteLabel: 'No vocals',
+            filters: { instrumental: true },
+            preferInstrumental: true,
+          }
+        : null,
       { name: 'Duets', filters: { duet: true } },
       !isSetlistInPlace
         ? {
@@ -162,6 +174,7 @@ export const usePlaylists = (
 
     return playlists.filter((playlist): playlist is PlaylistEntry => playlist !== null);
   }, [
+    hasInstrumentals,
     songLanguages,
     isLoading,
     recommended,

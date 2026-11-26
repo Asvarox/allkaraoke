@@ -118,7 +118,7 @@ export function UnverifiedSongManagement({ password }: Props) {
     ([, adminPassword], { arg: song }: { arg: AdminReviewSong }) =>
       song.sharedSongId
         ? deleteAdminUnverifiedSong(adminPassword, song.sharedSongId)
-        : deleteAdminSongQualityFlag(adminPassword, song.songId),
+        : deleteAdminSongQualityFlag(adminPassword, song.songId, song.version),
     {
       onSuccess: () => {
         void mutate();
@@ -210,7 +210,7 @@ export function UnverifiedSongManagement({ password }: Props) {
   const handleDelete = async (song: AdminReviewSong) => {
     const message = song.sharedSongId
       ? 'Remove this unverified song from Cloudflare KV?'
-      : 'Dismiss the player reports for this song?';
+      : `Dismiss the player reports for this song${song.version === 'instrumental' ? "'s instrumental" : ''}?`;
     if (!global.confirm(message)) return;
 
     resetRegenerateError();

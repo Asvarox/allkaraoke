@@ -18,6 +18,7 @@ import OnlineClient from '~/modules/online/client/online-client';
 import { ONLINE_DRIFT_THRESHOLD_MS } from '~/modules/online/protocol/consts';
 import { OnlinePlaybackStatus, OnlineRoomState, WireDetailedScore } from '~/modules/online/protocol/types';
 import { getOwnScoreTimeline } from '~/modules/online/score-timeline';
+import { isInstrumentalVersion } from '~/modules/songs/utils/to-instrumental-version';
 import Player, { PlayerRef } from '~/routes/game/singing/player';
 import LayoutGame from '~/routes/layout-game';
 import { useSeekSettle } from '~/routes/online/hooks/use-seek-settle';
@@ -80,8 +81,10 @@ function OnlineSinging({ roomState, song }: Props) {
       players: [{ number: selfNumber, track: 0 }],
       mode: GAME_MODE.DUEL,
       tolerance: roomState.tolerance,
+      // The host uploaded the chart already swapped to the picked version
+      instrumental: isInstrumentalVersion(song),
     }),
-    [roomState.roomCode, roomState.chart?.hash, roomState.tolerance, selfNumber],
+    [roomState.roomCode, roomState.chart?.hash, roomState.tolerance, selfNumber, song],
   );
 
   // The room leaves the readiness phase the instant the last singer confirms, but playback is

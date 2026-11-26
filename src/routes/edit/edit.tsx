@@ -12,6 +12,7 @@ import useQueryParam from '~/modules/hooks/use-query-param';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import useSong from '~/modules/songs/hooks/use-song';
 import useSongIndex from '~/modules/songs/hooks/use-song-index';
+import { getSongVersionKey } from '~/modules/songs/song-version';
 import SongDao from '~/modules/songs/songs-service';
 import { getAdminPassword } from '~/routes/admin/admin-password';
 import { BackgroundSavesIndicator } from '~/routes/admin/background-saves-indicator';
@@ -38,6 +39,8 @@ export default function Edit() {
   const songId = useQueryParam('song');
   const sharedSongId = useQueryParam('externalSong');
   const isAdminEdit = useQueryParam('admin') === 'true';
+  // Reports of the instrumental video are a separate review entry
+  const adminReportedVersion = useQueryParam('version') === 'instrumental' ? 'instrumental' : undefined;
   const adminProcessingQueue = parseAdminReviewQueue(useQueryParam('processQueue'));
   const isAdminProcessingQueue = !!adminProcessingQueue;
   const navigate = useSmoothNavigate();
@@ -49,7 +52,8 @@ export default function Edit() {
 
   const adminUnverifiedSongId = isAdminEdit && sharedSongId ? sharedSongId : undefined;
   const adminReportedSongId = isAdminEdit && !sharedSongId && songId ? songId : undefined;
-  const adminReviewKey = adminUnverifiedSongId ?? adminReportedSongId;
+  const adminReviewKey =
+    adminUnverifiedSongId ?? (adminReportedSongId && getSongVersionKey(adminReportedSongId, adminReportedVersion));
   const { data: adminReviewSongs } = useSWR(
     adminReviewKey ? ([ADMIN_REVIEW_SONGS_SWR_KEY, getAdminPassword()] as const) : null,
     ([, password]) => listAdminReviewSongs(password),
@@ -70,11 +74,12 @@ export default function Edit() {
 
   const dismissAdminReports = async () => {
     if (!adminReportedSongId) return;
-    if (!global.confirm('Dismiss the player reports for this song without changing it?')) return;
+    const target = adminReportedVersion ? "this song's instrumental" : 'this song';
+    if (!global.confirm(`Dismiss the player reports for ${target} without changing it?`)) return;
 
     try {
       const password = getAdminPassword();
-      await deleteAdminSongQualityFlag(password, adminReportedSongId);
+      await deleteAdminSongQualityFlag(password, adminReportedSongId, adminReportedVersion);
       navigate(isAdminProcessingQueue ? await getAdminProcessingQueueRedirect(password) : 'admin/');
     } catch (error) {
       global.alert(error instanceof Error ? error.message : 'Failed to dismiss the reports');
@@ -173,6 +178,7 @@ export default function Edit() {
         song={song.data}
         adminUnverifiedSongId={adminUnverifiedSongId}
         adminReportedSongId={adminReportedSongId}
+        adminReportedVersion={adminReportedVersion}
       />
     </Paper>
   );

@@ -1,6 +1,6 @@
 import { ValuesType } from 'utility-types';
 
-import { ExtractOptional, NotesSection, Section, Song } from '~/interfaces';
+import { ExtractOptional, NotesSection, Section, Song, SongInstrumental } from '~/interfaces';
 
 import notFalsy from '../../utils/not-falsy';
 import { generatePlayerChangesForTrack } from './generate-player-changes';
@@ -57,6 +57,12 @@ export const songTXTKeys = [
   'ALLKARAOKE_ARTISTORIGIN',
   'ALLKARAOKE_VIDEOID',
   'ALLKARAOKE_DURATION',
+  'ALLKARAOKE_INSTRUMENTALVIDEO',
+  'ALLKARAOKE_INSTRUMENTALGAP',
+  'ALLKARAOKE_INSTRUMENTALVIDEOGAP',
+  'ALLKARAOKE_INSTRUMENTALVOLUME',
+  'ALLKARAOKE_INSTRUMENTALDURATION',
+  'ALLKARAOKE_INSTRUMENTALBPM',
 ] as const;
 
 export type knownSongTxtKeys = ValuesType<typeof songTXTKeys> | 'VIDEO' | 'P1' | 'P2' | 'AUDIOURL' | 'VIDEOURL';
@@ -93,6 +99,21 @@ function getPropertyValueFromTxt(
   };
 
   return keys.map(getValue).filter(notFalsy).at(0);
+}
+
+function getInstrumental(txt: string): SongInstrumental | undefined {
+  const video = getPropertyValueFromTxt(txt, ['ALLKARAOKE_INSTRUMENTALVIDEO']);
+  if (!video) return undefined;
+  const videoGap = getPropertyValueFromTxt(txt, ['ALLKARAOKE_INSTRUMENTALVIDEOGAP'], 'number');
+
+  return {
+    video,
+    gap: getPropertyValueFromTxt(txt, ['ALLKARAOKE_INSTRUMENTALGAP'], 'number') || 0,
+    videoGap: videoGap ? Math.floor(videoGap) : videoGap,
+    volume: getPropertyValueFromTxt(txt, ['ALLKARAOKE_INSTRUMENTALVOLUME'], 'number'),
+    duration: getPropertyValueFromTxt(txt, ['ALLKARAOKE_INSTRUMENTALDURATION'], 'number'),
+    bpm: getPropertyValueFromTxt(txt, ['ALLKARAOKE_INSTRUMENTALBPM'], 'number'),
+  };
 }
 
 function getEmbeddedYoutubeVideoId(txt: string) {
@@ -165,6 +186,7 @@ export default function convertTxtToSong(
     authorUrl: getPropertyValueFromTxt(text, ['ALLKARAOKE_CREATORURL', 'CREATORURL']) ?? authorUrl,
     sourceUrl: getPropertyValueFromTxt(text, ['ALLKARAOKE_SOURCEURL', 'SOURCEURL']) ?? sourceUrl,
     duration: getPropertyValueFromTxt(text, ['ALLKARAOKE_DURATION'], 'number'),
+    instrumental: getInstrumental(text),
   } satisfies ExtractOptional<Song>;
 
   if (additionalData.videoGap) additionalData.videoGap = Math.floor(additionalData.videoGap);

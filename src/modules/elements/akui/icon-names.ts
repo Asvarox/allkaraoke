@@ -76,6 +76,7 @@ export const ICON_NAMES = [
   'ic:outline-fiber-new',
   'ic:outline-help',
   'ic:outline-lock',
+  'ic:round-mic-off',
   'ic:round-people-alt',
   'mdi:arrow-left',
   'mdi:circle',

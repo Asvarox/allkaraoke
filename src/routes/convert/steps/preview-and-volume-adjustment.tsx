@@ -1,5 +1,5 @@
 import { Slider } from '@mui/material';
-import { useEffect, useRef, useState } from 'react';
+import { RefObject, useEffect, useRef, useState } from 'react';
 import YouTube from 'react-youtube';
 
 import backgroundMusic from '~/assets/funk-cool-groove-(no-copyright-music)-by-anwar-amr.ogg';
@@ -10,31 +10,27 @@ interface Props {
   onChange: (data: SongMetadataEntity) => void;
   data: SongMetadataEntity;
   videoId: string;
+  instrumentalVideoId?: string;
   videoGap?: number;
 }
 
 const MIN_PREVIEW_LENGTH = 10;
 
-export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, videoGap = 0 }: Props) {
-  const player = useRef<YouTube | null>(null);
-  const reference = useRef<HTMLAudioElement | null>(null);
-
+// Keeps the stored volume and the player's own volume control in sync, whichever one gets changed
+function useSyncedPlayerVolume(player: RefObject<YouTube | null>, volume: number, onChange: (volume: number) => void) {
   const [initialised, setInitialised] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(async () => {
+      const internalPlayer = player.current?.getInternalPlayer();
+      if (!internalPlayer) return;
       if (!initialised) {
-        if (data.volume === 0) {
-          onChange({ ...data, volume: 0.7 });
-          await player.current?.getInternalPlayer()?.setVolume(70);
-        } else {
-          await player.current?.getInternalPlayer()?.setVolume(data.volume * 100);
-        }
+        await internalPlayer.setVolume(volume * 100);
         setInitialised(true);
       } else {
-        const currentVolume = await player.current?.getInternalPlayer()?.getVolume();
-        if (currentVolume !== undefined && currentVolume !== data.volume * 100) {
-          onChange({ ...data, volume: currentVolume / 100 });
+        const currentVolume = await internalPlayer.getVolume();
+        if (currentVolume !== undefined && currentVolume !== volume * 100) {
+          onChange(currentVolume / 100);
         }
       }
     }, 500);
@@ -42,15 +38,41 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
     return () => {
       clearInterval(interval);
     };
-  }, [initialised, data, onChange]);
+  }, [initialised, volume, onChange, player]);
+
+  return async (value: number) => {
+    await player.current?.getInternalPlayer()?.setVolume(value * 100);
+    onChange(value);
+  };
+}
+
+export default function PreviewAndVolumeAdjustment({
+  data,
+  onChange,
+  videoId,
+  instrumentalVideoId,
+  videoGap = 0,
+}: Props) {
+  const player = useRef<YouTube | null>(null);
+  const instrumentalPlayer = useRef<YouTube | null>(null);
+  const reference = useRef<HTMLAudioElement | null>(null);
+  // The video the reference sound pauses and resumes
+  const lastPlayedVideo = useRef<YouTube | null>(null);
+
+  useEffect(() => {
+    if (data.volume === 0) onChange({ ...data, volume: 0.7 });
+  }, [data, onChange]);
+
+  // 0 means unset; the effect above stores the default
+  const songVolume = data.volume || 0.7;
+  const setVolume = useSyncedPlayerVolume(player, songVolume, (volume) => onChange({ ...data, volume }));
+  const instrumentalVolume = data.instrumentalVolume ?? songVolume;
+  const setInstrumentalVolume = useSyncedPlayerVolume(instrumentalPlayer, instrumentalVolume, (value) =>
+    onChange({ ...data, instrumentalVolume: value }),
+  );
 
   const [isPlayerPlaying, setIsPlayerPlaying] = useState(false);
   const [isReferencePlaying, setIsReferencePlaying] = useState(false);
-
-  const handleSliderChange = async (_e: unknown, value: number | number[]) => {
-    await player.current?.getInternalPlayer()?.setVolume(+value * 100);
-    onChange({ ...data, volume: +value });
-  };
 
   const previewStart = data.previewStart ?? videoGap + 60;
   const previewEnd = data.previewEnd ?? previewStart + 30;
@@ -77,6 +99,18 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
   }, [duration, data, previewEnd, onChange, videoGap]);
 
   const internalPlayer = player.current?.getInternalPlayer();
+
+  const onVideoPlay = (video: YouTube | null) => {
+    lastPlayedVideo.current = video;
+    setIsPlayerPlaying(true);
+    if (isReferencePlaying) {
+      reference.current?.pause();
+      setTimeout(() => setIsReferencePlaying(true), 200);
+    }
+  };
+  const onVideoPause = () => {
+    setIsReferencePlaying(false);
+  };
 
   return (
     <div className="flex w-full flex-col gap-2">
@@ -105,32 +139,32 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
       </div>
 
       <h4 className="text-lg">Adjust volume</h4>
-      <div className="flex flex-col gap-10 lg:flex-row">
-        <div className="flex flex-1 flex-col gap-2">
-          <h5 className="text-md">Song</h5>
-          <YouTube
-            opts={{
-              width: '100%',
-            }}
-            videoId={videoId}
-            ref={player}
-            onPlay={() => {
-              setIsPlayerPlaying(true);
-
-              if (isReferencePlaying) {
-                reference.current?.pause();
-                setTimeout(() => setIsReferencePlaying(true), 200);
-              }
-            }}
-            onPause={() => {
-              setIsReferencePlaying(false);
-            }}
+      <p>Use the sliders below to make each video roughly as loud as the reference sound.</p>
+      <div className="grid grid-cols-1 gap-10 lg:grid-cols-3">
+        <VolumeVideo
+          title="Song"
+          videoId={videoId}
+          playerRef={player}
+          volume={songVolume}
+          onVolumeChange={setVolume}
+          sliderTestId="volume"
+          onPlay={() => onVideoPlay(player.current)}
+          onPause={onVideoPause}
+        />
+        {instrumentalVideoId && (
+          <VolumeVideo
+            title="Instrumental"
+            videoId={instrumentalVideoId}
+            playerRef={instrumentalPlayer}
+            volume={instrumentalVolume}
+            onVolumeChange={setInstrumentalVolume}
+            sliderTestId="instrumental-volume"
+            onPlay={() => onVideoPlay(instrumentalPlayer.current)}
+            onPause={onVideoPause}
           />
-        </div>
-        <div className="flex flex-1 flex-col gap-2">
+        )}
+        <div className="flex flex-col gap-2">
           <h5 className="text-md">Reference sound</h5>
-          <p>Use the slider below to make the video volume roughly the same as this music.</p>
-          <br />
           <audio
             ref={reference}
             controls
@@ -141,29 +175,59 @@ export default function PreviewAndVolumeAdjustment({ data, onChange, videoId, vi
               e.currentTarget.volume = 0.5;
               setIsReferencePlaying(true);
               if (isPlayerPlaying) {
-                player.current?.getInternalPlayer()?.pauseVideo();
+                lastPlayedVideo.current?.getInternalPlayer()?.pauseVideo();
                 setTimeout(() => setIsPlayerPlaying(true), 200);
               }
             }}
             onPause={() => {
               setIsReferencePlaying(false);
               if (isPlayerPlaying) {
-                player.current?.getInternalPlayer()?.playVideo();
+                lastPlayedVideo.current?.getInternalPlayer()?.playVideo();
               }
             }}
           />
         </div>
       </div>
-      <h5 className="text-md">Final Song Volume ({data.volume * 100})</h5>
+    </div>
+  );
+}
+
+interface VolumeVideoProps {
+  title: string;
+  videoId: string;
+  playerRef: RefObject<YouTube | null>;
+  volume: number;
+  onVolumeChange: (volume: number) => void;
+  sliderTestId: string;
+  onPlay: () => void;
+  onPause: () => void;
+}
+
+function VolumeVideo({
+  title,
+  videoId,
+  playerRef,
+  volume,
+  onVolumeChange,
+  sliderTestId,
+  onPlay,
+  onPause,
+}: VolumeVideoProps) {
+  return (
+    <div className="flex min-w-0 flex-col gap-2">
+      <h5 className="text-md">
+        {title} volume ({Math.round(volume * 100)})
+      </h5>
+      <YouTube opts={{ width: '100%' }} videoId={videoId} ref={playerRef} onPlay={onPlay} onPause={onPause} />
       <div className="px-5">
         <Slider
-          data-test="volume"
+          data-test={sliderTestId}
           min={0.1}
           max={1}
           step={0.01}
-          aria-label="Volume"
-          value={data.volume}
-          onChange={handleSliderChange}
+          aria-label={`${title} volume`}
+          value={volume}
+          onChange={(_e, value) => onVolumeChange(+value)}
         />
       </div>
     </div>

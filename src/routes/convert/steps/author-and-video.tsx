@@ -4,16 +4,22 @@ import YouTube, { YouTubeProps } from 'react-youtube';
 
 import { Icon } from '~/modules/elements/akui/icon';
 import { getVideoId } from '~/modules/songs/utils/convert-txt-to-song';
+import { isAdminUser } from '~/routes/admin/admin-password';
 import { inputAction } from '~/routes/convert/elements';
 
 export interface AuthorAndVidEntity {
   author: string;
   authorUrl: string;
   video: string;
+  /** Optional instrumental version, in sync with the original recording */
+  instrumentalVideo: string;
 }
 
 // Without it the iframe gets fixed 640x390 size and overflows narrow screens
 const playerOpts: YouTubeProps['opts'] = { width: '100%', height: '100%' };
+
+/** What song sites can provide when importing; they never have an instrumental */
+export type ImportedAuthorAndVid = Omit<AuthorAndVidEntity, 'instrumentalVideo'>;
 
 interface Props {
   onChange: Dispatch<SetStateAction<AuthorAndVidEntity>>;
@@ -29,9 +35,18 @@ export default function AuthorAndVideo(props: Props) {
       '_blank',
     );
   };
+  const searchForInstrumental = () => {
+    global.open(
+      `https://www.youtube.com/results?search_query=${encodeURIComponent(props?.songArtist + ' ' + props?.songTitle + ' instrumental')}`,
+      '_blank',
+    );
+  };
   const isSearchableForVideo = !!props.songTitle && !!props.songArtist;
 
   const videoId = getVideoId(props.data.video);
+  const instrumentalVideoId = getVideoId(props.data.instrumentalVideo);
+  // Other users edit only the main version; the instrumental stays as it is
+  const canEditInstrumental = isAdminUser();
 
   const canPaste = typeof navigator !== 'undefined' && !!navigator.clipboard?.readText;
   const pasteFromClipboard = async () => {
@@ -96,6 +111,34 @@ export default function AuthorAndVideo(props: Props) {
         <div className="mt-2 aspect-video w-full min-w-0">
           <YouTube videoId={videoId} opts={playerOpts} className="size-full" iframeClassName="size-full" />
         </div>
+      )}
+      {canEditInstrumental && (
+        <>
+          <Box sx={{ display: 'flex', flexDirection: 'row', mt: 2, alignItems: 'center', width: '100%' }}>
+            <TextField
+              data-test="instrumental-video-url"
+              value={props.data.instrumentalVideo}
+              onChange={(e) => props.onChange({ ...props.data, instrumentalVideo: e.target.value })}
+              label="Instrumental YouTube Video URL (optional)"
+              placeholder="https://www.youtube.com/watch?v="
+              fullWidth
+              size="small"
+              helperText="Version without vocals of the same recording, so it stays in sync with the lyrics. Players can pick it in the song settings"
+              name="instrumentalVideoUrl"
+              {...inputAction(searchForInstrumental, isSearchableForVideo)}
+            />
+          </Box>
+          {instrumentalVideoId && (
+            <div className="mt-2 aspect-video w-full min-w-0">
+              <YouTube
+                videoId={instrumentalVideoId}
+                opts={playerOpts}
+                className="size-full"
+                iframeClassName="size-full"
+              />
+            </div>
+          )}
+        </>
       )}
     </Box>
   );

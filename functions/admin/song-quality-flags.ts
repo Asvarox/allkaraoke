@@ -1,3 +1,4 @@
+import { toSongVersion } from '../../src/modules/songs/song-version';
 import { getSongQualityFlags, removeSongQualityFlag } from '../song-quality-flags-store';
 import {
   isAuthorizedUnverifiedSongsAdmin,
@@ -34,7 +35,8 @@ export const onRequest: PagesFunction<Env> = async ({ request, env }) => {
         return jsonResponse({ error: 'Missing query parameter: id' }, 400);
       }
 
-      const removed = await removeSongQualityFlag(kv, songId);
+      const version = toSongVersion(new URL(request.url).searchParams.get('version'));
+      const removed = await removeSongQualityFlag(kv, songId, version);
 
       return removed ? jsonResponse({ ok: true }) : jsonResponse({ error: 'Song not found' }, 404);
     }

@@ -146,9 +146,9 @@ function OnlineRoom({ roomCode }: Props) {
   // The chart is transferred once the host picks it, which happens as the browser is closing —
   // so it's the lobby that reports the transfer, and this has to live above both
   const upload = useSongUpload();
-  const onSongPicked = (picked: SongPreview, tolerance: number, difficulty?: string) => {
+  const onSongPicked = (picked: SongPreview, tolerance: number, difficulty?: string, instrumental?: boolean) => {
     closeSongBrowser();
-    void upload.upload(picked, tolerance, difficulty);
+    void upload.upload(picked, tolerance, difficulty, instrumental);
   };
 
   const { register } = useKeyboardNav();

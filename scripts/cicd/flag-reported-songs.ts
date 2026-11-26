@@ -3,6 +3,7 @@ import { writeFile } from 'node:fs/promises';
 import dotenv from 'dotenv';
 
 import currentSongs from '../../public/songs/index.json';
+import { getSongVersionKey, SongVersion } from '../../src/modules/songs/song-version';
 import {
   IssueBaselines,
   ISSUE_RATE_MULTIPLIER,
@@ -32,13 +33,20 @@ type PostHogEventRow = [
   issues: string[],
   timestamp: string,
   songLastUpdated: string | null,
+  instrumental: boolean,
+  videoId: string | null,
 ];
+
+// The instrumental is a separate video, so its reports and players are counted apart from the original's
+const flagKeySql = `if(toString(properties.instrumental) = 'true',
+  concat(toString(properties.songId), ':instrumental'), toString(properties.songId))`;
 
 // PostHog rejects OFFSET for API-key queries, so page by timestamp (inclusive) and dedupe events by uuid
 const buildReportsQuery = (fromTimestamp: string | null) => `
   select uuid, properties.songId as songId, toString(person_id) as personId,
     JSONExtract(ifNull(properties.issues, '[]'), 'Array(String)') as issues,
-    timestamp, properties.songLastUpdated as songLastUpdated
+    timestamp, properties.songLastUpdated as songLastUpdated,
+    toString(properties.instrumental) = 'true' as instrumental, properties.videoId as videoId
   from events
   where event = 'rate-song'
     and timestamp > now() - interval ${LOOKBACK_MONTHS} month
@@ -86,23 +94,24 @@ interface PlayersCutoff {
 // PostHog returns 100 rows unless the query sets a LIMIT, so query in batches well under the limit
 const PLAYERS_BATCH_SIZE = 200;
 
-// Distinct players of each song since its cutoff and of its current version, so both sides of the share match
-const buildPlayersQuery = (cutoffs: [songId: string, cutoff: PlayersCutoff][]) => {
+// Distinct players of each flag key (song + video) since its cutoff and of its current version, so both sides of the
+// share match
+const buildPlayersQuery = (cutoffs: [flagKey: string, cutoff: PlayersCutoff][]) => {
   const ids = `[${cutoffs.map(([id]) => `'${id.replaceAll("'", "\\'")}'`).join(', ')}]`;
   const since = `[${cutoffs.map(([, cutoff]) => cutoff.since).join(', ')}]`;
   const versions = `[${cutoffs.map(([, cutoff]) => Math.floor(cutoff.version / 1000)).join(', ')}]`;
 
   return `
-    select properties.songId as songId, uniq(person_id) as players
+    select ${flagKeySql} as flagKey, uniq(person_id) as players
     from events
     where event = 'songStarted'
       and timestamp > now() - interval ${LOOKBACK_MONTHS} month
-      and properties.songId in ${ids}
-      and timestamp > fromUnixTimestamp64Milli(toInt64(transform(properties.songId, ${ids}, ${since}, 0)))
+      and flagKey in ${ids}
+      and timestamp > fromUnixTimestamp64Milli(toInt64(transform(flagKey, ${ids}, ${since}, 0)))
       and (not match(ifNull(toString(properties.songLastUpdated), ''), '${VERSION_DATE_PATTERN.source.replaceAll('\\', '\\\\')}')
         or toUnixTimestamp(parseDateTimeBestEffort(toString(properties.songLastUpdated)))
-          >= toInt64(transform(properties.songId, ${ids}, ${versions}, 0)))
-    group by songId
+          >= toInt64(transform(flagKey, ${ids}, ${versions}, 0)))
+    group by flagKey
     limit ${PLAYERS_BATCH_SIZE * 2}
   `;
 };
@@ -143,20 +152,29 @@ const buildPlayersQuery = (cutoffs: [songId: string, cutoff: PlayersCutoff][]) =
 
   const dismissals = await getSongQualityDismissals();
   const songsById = new Map(currentSongs.map((song) => [song.id, song]));
-  // songId -> issue -> distinct reporters
+  // flag key -> issue -> distinct reporters
   const reporters = new Map<string, Map<SongQualityIssue, Set<string>>>();
+  const flagTargets = new Map<string, { songId: string; version: SongVersion }>();
   let skippedOutdated = 0;
   let skippedUnknownSong = 0;
   let skippedDismissed = 0;
 
-  for (const [, songId, personId, issues, timestamp, songLastUpdated] of events) {
+  for (const [, songId, personId, issues, timestamp, songLastUpdated, instrumental, videoId] of events) {
     const song = songsById.get(songId);
-    if (!song) {
+    const version: SongVersion = instrumental ? 'instrumental' : 'original';
+    const currentVideo = instrumental ? song?.instrumental?.video : song?.video;
+    if (!song || !currentVideo) {
       skippedUnknownSong += 1;
       continue;
     }
+    // Reported on a video the song no longer uses
+    if (videoId && videoId !== currentVideo) {
+      skippedOutdated += 1;
+      continue;
+    }
+    const flagKey = getSongVersionKey(songId, version);
     // An admin already reviewed these reports
-    const dismissedAt = dismissals[songId];
+    const dismissedAt = dismissals[flagKey];
     if (dismissedAt && toTime(timestamp) <= dismissedAt) {
       skippedDismissed += 1;
       continue;
@@ -171,11 +189,12 @@ const buildPlayersQuery = (cutoffs: [songId: string, cutoff: PlayersCutoff][]) =
       continue;
     }
 
-    const songReporters = reporters.get(songId) ?? new Map<SongQualityIssue, Set<string>>();
+    const songReporters = reporters.get(flagKey) ?? new Map<SongQualityIssue, Set<string>>();
     for (const issue of SONG_QUALITY_ISSUES.filter((issue) => issues.includes(issue))) {
       songReporters.set(issue, (songReporters.get(issue) ?? new Set()).add(personId));
     }
-    reporters.set(songId, songReporters);
+    reporters.set(flagKey, songReporters);
+    flagTargets.set(flagKey, { songId, version });
   }
 
   const baselineRows = await runQuery<[players: number, issue: SongQualityIssue, reporters: number]>(baselinesQuery);
@@ -188,24 +207,25 @@ const buildPlayersQuery = (cutoffs: [songId: string, cutoff: PlayersCutoff][]) =
   const candidates = [...reporters.entries()].filter(([, issues]) =>
     [...issues.values()].some((people) => people.size >= MIN_REPORTERS),
   );
-  const cutoffs = candidates.map(([songId]): [string, PlayersCutoff] => {
-    const version = toTime(songsById.get(songId)?.lastUpdate) || 0;
-    return [songId, { version, since: Math.max(version, dismissals[songId] ?? 0) }];
+  const cutoffs = candidates.map(([flagKey]): [string, PlayersCutoff] => {
+    const version = toTime(songsById.get(flagTargets.get(flagKey)!.songId)?.lastUpdate) || 0;
+    return [flagKey, { version, since: Math.max(version, dismissals[flagKey] ?? 0) }];
   });
   // Songs missing from a batch had no matching starts - the LIMIT is above the batch size, so nothing is cut off
   const players = new Map<string, number>();
   for (let index = 0; index < cutoffs.length; index += PLAYERS_BATCH_SIZE) {
     const batch = cutoffs.slice(index, index + PLAYERS_BATCH_SIZE);
-    for (const [songId, count] of await runQuery<[songId: string, players: number]>(buildPlayersQuery(batch))) {
-      players.set(songId, count);
+    for (const [flagKey, count] of await runQuery<[flagKey: string, players: number]>(buildPlayersQuery(batch))) {
+      players.set(flagKey, count);
     }
   }
 
-  const flags: SongQualityFlag[] = candidates.flatMap(([songId, issueReporters]) => {
+  const flags: SongQualityFlag[] = candidates.flatMap(([flagKey, issueReporters]) => {
+    const { songId, version } = flagTargets.get(flagKey)!;
     const song = songsById.get(songId)!;
     // Every reporter played the song, so one denominator covering all of them is used for every issue
     const songPlayers = Math.max(
-      players.get(songId) ?? 0,
+      players.get(flagKey) ?? 0,
       ...[...issueReporters.values()].map((people) => people.size),
     );
     const reportCounts: SongQualityFlag['reportCounts'] = {};
@@ -221,10 +241,11 @@ const buildPlayersQuery = (cutoffs: [songId: string, cutoff: PlayersCutoff][]) =
     return [
       {
         songId,
+        ...(version === 'instrumental' ? { version } : {}),
         artist: song.artist,
         title: song.title,
         language: song.language,
-        videoId: song.video ?? '',
+        videoId: (version === 'instrumental' ? song.instrumental?.video : song.video) ?? '',
         issues,
         reportCounts,
         players: songPlayers,
