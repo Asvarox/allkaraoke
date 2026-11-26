@@ -1,4 +1,10 @@
 import { DurableObject } from "cloudflare:workers";
+//#region src/modules/songs/song-version.ts
+/** Reads a version from a query param, PostHog property or key suffix - anything unknown is the original */
+var toSongVersion = (value) => value === "instrumental" ? "instrumental" : "original";
+/** Flag, review and baseline key: the song id, suffixed for the instrumental */
+var getSongVersionKey = (songId, version = "original") => version === "instrumental" ? `${songId}:instrumental` : songId;
+//#endregion
 //#region functions/song-quality-flags-store.ts
 var SONG_QUALITY_ISSUES = [
 	"not-in-sync",
@@ -10,6 +16,7 @@ var SONG_QUALITY_FLAGS_KEY = "song-quality-flags";
 var DURATION_SHIFT_FLAGS_KEY = "song-duration-shift-flags";
 var SONG_QUALITY_DISMISSALS_KEY = "song-quality-dismissals";
 var DISMISSAL_RETENTION_MS = 1728e7;
+var getFlagKey = (flag) => getSongVersionKey(flag.songId, flag.version);
 var isSongQualityIssue = (value) => SONG_QUALITY_ISSUES.includes(value);
 var isFiniteNumber = (value) => typeof value === "number" && Number.isFinite(value);
 var normalizeDurationShift = (payload) => {
@@ -39,6 +46,7 @@ var normalizeSongQualityFlag = (payload) => {
 	const durationShift = issues.includes("duration-shift") ? normalizeDurationShift(flag.durationShift) : void 0;
 	return {
 		songId: flag.songId,
+		...flag.version === "instrumental" ? { version: "instrumental" } : {},
 		artist: flag.artist,
 		title: flag.title,
 		language: Array.isArray(flag.language) ? flag.language.filter((lang) => typeof lang === "string") : [],
@@ -65,10 +73,10 @@ var getDurationShiftFlags = async (kvNamespace) => normalizeFlags(await kvNamesp
 * writers never overwrite each other. Merged per song here, the report flag's metadata wins. */
 var getSongQualityFlags = async (kvNamespace) => {
 	const [reports, durationShifts] = await Promise.all([getReportFlags(kvNamespace), getDurationShiftFlags(kvNamespace)]);
-	const merged = new Map(reports.songs.map((flag) => [flag.songId, flag]));
+	const merged = new Map(reports.songs.map((flag) => [getFlagKey(flag), flag]));
 	for (const flag of durationShifts) {
-		const reportFlag = merged.get(flag.songId);
-		merged.set(flag.songId, reportFlag ? {
+		const reportFlag = merged.get(getFlagKey(flag));
+		merged.set(getFlagKey(flag), reportFlag ? {
 			...reportFlag,
 			issues: [.../* @__PURE__ */ new Set([...reportFlag.issues, "duration-shift"])],
 			...flag.durationShift ? { durationShift: flag.durationShift } : {}
@@ -97,10 +105,10 @@ var replaceSongQualityFlags = async (kvNamespace, songs) => {
 };
 /** Adds or replaces duration-shift flags (local script, run by hand - nothing else writes this key) */
 var addDurationShiftFlags = async (kvNamespace, songs) => {
-	const merged = new Map((await getDurationShiftFlags(kvNamespace)).map((flag) => [flag.songId, flag]));
+	const merged = new Map((await getDurationShiftFlags(kvNamespace)).map((flag) => [getFlagKey(flag), flag]));
 	for (const flag of songs) {
 		if (!flag.issues.includes("duration-shift")) continue;
-		merged.set(flag.songId, {
+		merged.set(getFlagKey(flag), {
 			...flag,
 			issues: ["duration-shift"],
 			reportCounts: {},
@@ -113,22 +121,23 @@ var getSongQualityDismissals = async (kvNamespace) => {
 	const stored = await kvNamespace.get(SONG_QUALITY_DISMISSALS_KEY, "json");
 	return Object.fromEntries(Object.entries(stored ?? {}).filter(([, dismissedAt]) => typeof dismissedAt === "number"));
 };
-var recordSongQualityDismissal = async (kvNamespace, songId, dismissedAt) => {
+var recordSongQualityDismissal = async (kvNamespace, flagKey, dismissedAt) => {
 	const current = await getSongQualityDismissals(kvNamespace);
 	const dismissals = Object.fromEntries(Object.entries({
 		...current,
-		[songId]: dismissedAt
+		[flagKey]: dismissedAt
 	}).filter(([, time]) => time > dismissedAt - DISMISSAL_RETENTION_MS));
 	await kvNamespace.put(SONG_QUALITY_DISMISSALS_KEY, JSON.stringify(dismissals));
 };
-var removeSongQualityFlag = async (kvNamespace, songId) => {
+var removeSongQualityFlag = async (kvNamespace, songId, version = "original") => {
+	const flagKey = getSongVersionKey(songId, version);
 	const [reports, durationShifts] = await Promise.all([getReportFlags(kvNamespace), getDurationShiftFlags(kvNamespace)]);
-	const reportSongs = reports.songs.filter((flag) => flag.songId !== songId);
-	const durationShiftSongs = durationShifts.filter((flag) => flag.songId !== songId);
+	const reportSongs = reports.songs.filter((flag) => getFlagKey(flag) !== flagKey);
+	const durationShiftSongs = durationShifts.filter((flag) => getFlagKey(flag) !== flagKey);
 	const removedReport = reportSongs.length !== reports.songs.length;
 	const removedDurationShift = durationShiftSongs.length !== durationShifts.length;
 	if (!removedReport && !removedDurationShift) return false;
-	await recordSongQualityDismissal(kvNamespace, songId, Date.now());
+	await recordSongQualityDismissal(kvNamespace, flagKey, Date.now());
 	if (removedReport) await kvNamespace.put(SONG_QUALITY_FLAGS_KEY, JSON.stringify({
 		...reports,
 		songs: reportSongs
@@ -168,7 +177,7 @@ var onRequest$7 = async ({ request, env }) => {
 		if (request.method === "DELETE") {
 			const songId = new URL(request.url).searchParams.get("id")?.trim();
 			if (!songId) return jsonResponse$1({ error: "Missing query parameter: id" }, 400);
-			return await removeSongQualityFlag(kv, songId) ? jsonResponse$1({ ok: true }) : jsonResponse$1({ error: "Song not found" }, 404);
+			return await removeSongQualityFlag(kv, songId, toSongVersion(new URL(request.url).searchParams.get("version"))) ? jsonResponse$1({ ok: true }) : jsonResponse$1({ error: "Song not found" }, 404);
 		}
 		return jsonResponse$1({ error: "Method not allowed" }, 405);
 	} catch (error) {
@@ -2514,7 +2523,7 @@ var isCountryCode = (value) => typeof value === "string" && /^[a-z]{2}$/.test(va
 var validateSubmission = (payload) => {
 	if (!payload || typeof payload !== "object") return { message: "Invalid payload" };
 	const submission = payload;
-	if (!isBoundedString(submission.clientId, 128) || !isBoundedString(submission.songId, 128) || !isBoundedString(submission.name, 40) || !isBoundedString(submission.artist, 200) || !isBoundedString(submission.title, 200) || !isBoundedString(submission.mode, 128) || !isBoundedString(submission.notesHash, 128) || !Number.isFinite(submission.tolerance) || !Number.isFinite(submission.trackIndex) || !Number.isFinite(submission.inputLag)) return { message: "Invalid payload" };
+	if (!isBoundedString(submission.clientId, 128) || !isBoundedString(submission.songId, 128) || !isBoundedString(submission.name, 40) || !isBoundedString(submission.artist, 200) || !isBoundedString(submission.title, 200) || !isBoundedString(submission.mode, 128) || !isBoundedString(submission.notesHash, 128) || !Number.isFinite(submission.tolerance) || !Number.isFinite(submission.trackIndex) || !Number.isFinite(submission.inputLag) || submission.instrumental !== void 0 && typeof submission.instrumental !== "boolean") return { message: "Invalid payload" };
 	if (submission.country !== null && !isCountryCode(submission.country)) return { message: "Invalid country" };
 	if (submission.songLastUpdate !== null && submission.songLastUpdate !== void 0 && !isBoundedString(submission.songLastUpdate, 200)) return { message: "Invalid songLastUpdate" };
 	if (!Number.isInteger(submission.score)) return { message: "Invalid score" };
@@ -2595,7 +2604,7 @@ var handleSongLeaderboardRead = async (request, env) => {
 	const rawScore = params.get("score");
 	const score = rawScore === null ? null : Math.round(Number(rawScore));
 	if (score !== null && (!Number.isFinite(score) || score < 0 || score > 3999999)) return error(400, "Invalid score");
-	const result = await board.songBoard(songId, tolerance, score);
+	const result = await board.songBoard(songId, tolerance, score, params.get("instrumental") === "true");
 	return new Response(JSON.stringify(result), { headers: {
 		...jsonHeaders,
 		"Cache-Control": "private, max-age=30"
@@ -2723,6 +2732,7 @@ var toBoardEntry = (row) => ({
 	title: row.title,
 	songId: row.song_id,
 	tolerance: row.tolerance,
+	...row.instrumental ? { instrumental: true } : {},
 	createdAt: row.created_at
 });
 var LeaderboardBoard = class extends DurableObject {
@@ -2758,11 +2768,15 @@ var LeaderboardBoard = class extends DurableObject {
       );
     `);
 		this.sql.exec(`DROP INDEX IF EXISTS records_dedupe;`);
-		this.sql.exec(`CREATE UNIQUE INDEX IF NOT EXISTS records_dedupe_by_tolerance ON records (client_id, song_id, name_normalized, tolerance);`);
-		if (!this.sql.exec(`PRAGMA table_info(records)`).toArray().some(({ name }) => name === "original_score")) this.sql.exec(`ALTER TABLE records ADD COLUMN original_score INTEGER;`);
+		const columns = this.sql.exec(`PRAGMA table_info(records)`).toArray();
+		if (!columns.some(({ name }) => name === "original_score")) this.sql.exec(`ALTER TABLE records ADD COLUMN original_score INTEGER;`);
+		if (!columns.some(({ name }) => name === "instrumental")) this.sql.exec(`ALTER TABLE records ADD COLUMN instrumental INTEGER NOT NULL DEFAULT 0;`);
+		this.sql.exec(`DROP INDEX IF EXISTS records_dedupe_by_tolerance;`);
+		this.sql.exec(`CREATE UNIQUE INDEX IF NOT EXISTS records_dedupe_by_version ON records (client_id, song_id, instrumental, name_normalized, tolerance);`);
 		this.sql.exec(`CREATE INDEX IF NOT EXISTS records_score ON records (score DESC);`);
 		this.sql.exec(`CREATE INDEX IF NOT EXISTS records_created_at ON records (created_at);`);
-		this.sql.exec(`CREATE INDEX IF NOT EXISTS records_song_board ON records (song_id, tolerance, score DESC, created_at ASC);`);
+		this.sql.exec(`DROP INDEX IF EXISTS records_song_board;`);
+		this.sql.exec(`CREATE INDEX IF NOT EXISTS records_song_version_board ON records (song_id, instrumental, tolerance, score DESC, created_at ASC);`);
 		this.sql.exec(`
       CREATE TABLE IF NOT EXISTS notes (
         record_id TEXT PRIMARY KEY REFERENCES records (id),
@@ -2771,7 +2785,7 @@ var LeaderboardBoard = class extends DurableObject {
     `);
 	}
 	/**
-	* Stores one submission, keeping the higher score for a repeated (client, song, name, difficulty), and
+	* Stores one submission, keeping the higher score for a repeated (client, song, version, name, difficulty), and
 	* rebuilds the KV projection. Rate limiting is not handled here — it lives entirely in the
 	* binding at the Worker edge.
 	*/
@@ -2782,7 +2796,9 @@ var LeaderboardBoard = class extends DurableObject {
 			accepted: false,
 			reason: "invalid"
 		};
-		const existing = this.sql.exec(`SELECT id, score FROM records WHERE client_id = ? AND song_id = ? AND name_normalized = ? AND tolerance = ?`, submission.clientId, submission.songId, nameNormalized, submission.tolerance).toArray()[0];
+		const instrumental = submission.instrumental === true ? 1 : 0;
+		const existing = this.sql.exec(`SELECT id, score FROM records
+         WHERE client_id = ? AND song_id = ? AND instrumental = ? AND name_normalized = ? AND tolerance = ?`, submission.clientId, submission.songId, instrumental, nameNormalized, submission.tolerance).toArray()[0];
 		if (existing && existing.score >= submission.score) return {
 			accepted: false,
 			reason: "lower-score"
@@ -2795,9 +2811,9 @@ var LeaderboardBoard = class extends DurableObject {
            original_score = NULL
          WHERE id = ?`, submission.artist, submission.title, submission.songLastUpdate, name, submission.country, submission.score, submission.tolerance, submission.mode, submission.trackIndex, submission.inputLag, submission.notesHash, createdAt, id);
 			this.sql.exec(`DELETE FROM notes WHERE record_id = ?`, id);
-		} else this.sql.exec(`INSERT INTO records (id, client_id, song_id, artist, title, song_last_update, name, name_normalized,
-           country, score, tolerance, mode, track_index, input_lag, notes_hash, created_at)
-         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`, id, submission.clientId, submission.songId, submission.artist, submission.title, submission.songLastUpdate, name, nameNormalized, submission.country, submission.score, submission.tolerance, submission.mode, submission.trackIndex, submission.inputLag, submission.notesHash, createdAt);
+		} else this.sql.exec(`INSERT INTO records (id, client_id, song_id, instrumental, artist, title, song_last_update, name,
+           name_normalized, country, score, tolerance, mode, track_index, input_lag, notes_hash, created_at)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`, id, submission.clientId, submission.songId, instrumental, submission.artist, submission.title, submission.songLastUpdate, name, nameNormalized, submission.country, submission.score, submission.tolerance, submission.mode, submission.trackIndex, submission.inputLag, submission.notesHash, createdAt);
 		if (notesBlob.byteLength > 0) this.sql.exec(`INSERT INTO notes (record_id, blob) VALUES (?, ?)`, id, notesBlob);
 		await this.rebuildProjection();
 		return { accepted: true };
@@ -2809,13 +2825,14 @@ var LeaderboardBoard = class extends DurableObject {
 	* listing still shows everything, so the board is where "Medium or harder" has to hold.
 	*
 	* Rows are kept per difficulty, but the global board ranks a player once per song — their best run
-	* on Hard or Medium — so a song sung on both does not take two places.
+	* on Hard or Medium — so a song sung on both does not take two places. The instrumental counts as a
+	* song of its own, so it can take a second one.
 	*/
 	projection() {
-		const rows = this.sql.exec(`SELECT id, name, country, score, artist, title, song_id, tolerance, created_at
+		const rows = this.sql.exec(`SELECT id, name, country, score, artist, title, song_id, tolerance, instrumental, created_at
          FROM (
            SELECT *, ROW_NUMBER() OVER (
-             PARTITION BY client_id, song_id, name_normalized ORDER BY score DESC, created_at ASC
+             PARTITION BY client_id, song_id, instrumental, name_normalized ORDER BY score DESC, created_at ASC
            ) AS song_rank
            FROM records WHERE created_at >= ? AND tolerance <= ?
          )
@@ -2837,16 +2854,18 @@ var LeaderboardBoard = class extends DurableObject {
 	* cutting it to a fortnight would empty it for every song nobody happened to sing lately.
 	*
 	* Difficulty is an exact match, not `<=`: a wider pitch window is a different game, so Medium
-	* rows would flatter a Hard singer and vice versa. The vocal track is deliberately ignored.
+	* rows would flatter a Hard singer and vice versa. The vocal track is deliberately ignored. The
+	* instrumental is a board of its own, as singing without the vocals to follow is a different game too.
 	*/
-	songBoard(songId, tolerance, score) {
-		const total = this.sql.exec(`SELECT COUNT(*) AS count FROM records WHERE song_id = ? AND tolerance = ?`, songId, tolerance).toArray()[0]?.count ?? 0;
-		const position = score === null ? null : (this.sql.exec(`SELECT COUNT(*) AS count FROM records WHERE song_id = ? AND tolerance = ? AND score >= ?`, songId, tolerance, score).toArray()[0]?.count ?? 0) + 1;
+	songBoard(songId, tolerance, score, instrumental = false) {
+		const version = instrumental ? 1 : 0;
+		const total = this.sql.exec(`SELECT COUNT(*) AS count FROM records WHERE song_id = ? AND instrumental = ? AND tolerance = ?`, songId, version, tolerance).toArray()[0]?.count ?? 0;
+		const position = score === null ? null : (this.sql.exec(`SELECT COUNT(*) AS count FROM records WHERE song_id = ? AND instrumental = ? AND tolerance = ? AND score >= ?`, songId, version, tolerance, score).toArray()[0]?.count ?? 0) + 1;
 		const [offset, limit] = position === null ? [0, 20] : [Math.max(0, position - 1 - 25), 50];
 		return {
-			entries: this.sql.exec(`SELECT id, name, country, score, artist, title, song_id, tolerance, created_at
-         FROM records WHERE song_id = ? AND tolerance = ?
-         ORDER BY score DESC, created_at ASC LIMIT ? OFFSET ?`, songId, tolerance, limit, offset).toArray().map(toBoardEntry),
+			entries: this.sql.exec(`SELECT id, name, country, score, artist, title, song_id, tolerance, instrumental, created_at
+         FROM records WHERE song_id = ? AND instrumental = ? AND tolerance = ?
+         ORDER BY score DESC, created_at ASC LIMIT ? OFFSET ?`, songId, version, tolerance, limit, offset).toArray().map(toBoardEntry),
 			total,
 			startPosition: offset + 1,
 			position
@@ -2854,7 +2873,7 @@ var LeaderboardBoard = class extends DurableObject {
 	}
 	/** Every stored row, newest first, including ids. Authenticated admin use only. */
 	listForAdmin() {
-		return this.sql.exec(`SELECT id, name, country, score, artist, title, song_id, tolerance, created_at, mode, track_index,
+		return this.sql.exec(`SELECT id, name, country, score, artist, title, song_id, tolerance, instrumental, created_at, mode, track_index,
            song_last_update, original_score
          FROM records ORDER BY created_at DESC`).toArray().map((row) => ({
 			id: row.id,
@@ -2877,7 +2896,7 @@ var LeaderboardBoard = class extends DurableObject {
 	}
 	/**
 	* Moves every row of a dropped duplicate song onto the song it was merged into. A player with rows on
-	* both songs (same client, name and difficulty) keeps only their higher score. Idempotent.
+	* both songs (same client, version, name and difficulty) keeps only their higher score. Idempotent.
 	*/
 	async mergeSongs(merges) {
 		let moved = 0;
@@ -2898,9 +2917,10 @@ var LeaderboardBoard = class extends DurableObject {
 			if (!target || merge.from === target.to) continue;
 			const { from } = merge;
 			const { to, artist, title } = target;
-			const rows = this.sql.exec(`SELECT id, client_id, name_normalized, tolerance, score FROM records WHERE song_id = ?`, from).toArray();
+			const rows = this.sql.exec(`SELECT id, client_id, instrumental, name_normalized, tolerance, score FROM records WHERE song_id = ?`, from).toArray();
 			for (const row of rows) {
-				const existing = this.sql.exec(`SELECT id, score FROM records WHERE client_id = ? AND song_id = ? AND name_normalized = ? AND tolerance = ?`, row.client_id, to, row.name_normalized, row.tolerance).toArray()[0];
+				const existing = this.sql.exec(`SELECT id, score FROM records
+             WHERE client_id = ? AND song_id = ? AND instrumental = ? AND name_normalized = ? AND tolerance = ?`, row.client_id, to, row.instrumental, row.name_normalized, row.tolerance).toArray()[0];
 				const loser = existing && (existing.score >= row.score ? row.id : existing.id);
 				if (loser) {
 					this.sql.exec(`DELETE FROM notes WHERE record_id = ?`, loser);
