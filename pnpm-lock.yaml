@@ -461,8 +461,8 @@ importers:
         specifier: ^3.4.0
         version: 3.4.0
       eslint-plugin-react-refresh:
-        specifier: ^0.5.7
-        version: 0.5.7(eslint@10.11.0(jiti@2.7.0)(supports-color@10.2.2))
+        specifier: ^0.5.8
+        version: 0.5.8(eslint@10.11.0(jiti@2.7.0)(supports-color@10.2.2))
       eslint-plugin-storybook:
         specifier: 10.6.9
         version: 10.6.9(eslint@10.11.0(jiti@2.7.0)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@7.0.2)
@@ -3873,8 +3873,8 @@ packages:
     resolution: {integrity: sha512-4S3/9Nb7A2tiMcpzEQE9bQSlpeOz6WJkgryBuou/SA8W2x2c8Zf4j0NvTKBjv6qNhF9T79tmkecm/0CHqV0UGg==}
     engines: {node: '>=5.0.0'}
 
-  eslint-plugin-react-refresh@0.5.7:
-    resolution: {integrity: sha512-XhJSzLljuYD4UjNuFGJu2v7aD3sqNVK12w5/DCUfrNfHWegZo2+TsavNx8MuxMwEquuFAzNbNfXKU0WoZ+YUIg==}
+  eslint-plugin-react-refresh@0.5.8:
+    resolution: {integrity: sha512-VYgz1iCC5LxeAd6YRz5ATfg8WKrNb1ulHMpCe4pQpn3CS9DiYpZi5wcag73O8iChLhrl/CmlGMmzA6eXZ2cX4Q==}
     peerDependencies:
       eslint: ^9 || ^10
 
@@ -8558,7 +8558,7 @@ snapshots:
 
   eslint-plugin-no-only-tests@3.4.0: {}
 
-  eslint-plugin-react-refresh@0.5.7(eslint@10.11.0(jiti@2.7.0)(supports-color@10.2.2)):
+  eslint-plugin-react-refresh@0.5.8(eslint@10.11.0(jiti@2.7.0)(supports-color@10.2.2)):
     dependencies:
       eslint: 10.11.0(jiti@2.7.0)(supports-color@10.2.2)
 
