@@ -15,6 +15,10 @@
 #ALLKARAOKE_SOURCEURL:https://usdb.animux.de/index.php?link=detail&id=31090
 #ALLKARAOKE_VOLUME:1
 #ALLKARAOKE_DURATION:251
+#ALLKARAOKE_INSTRUMENTALVIDEO:7AkTWeb4UY0
+#ALLKARAOKE_INSTRUMENTALGAP:564,02
+#ALLKARAOKE_INSTRUMENTALVOLUME:1
+#ALLKARAOKE_INSTRUMENTALDURATION:250
 #MP3:KPop Demon Hunters (Huntr/x) - What It Sounds Like.mp3
 #COVER:KPop Demon Hunters (Huntr/x) - What It Sounds Like [CO].jpg
 #BACKGROUND:KPop Demon Hunters (Huntr/x) - What It Sounds Like [BG].jpg
