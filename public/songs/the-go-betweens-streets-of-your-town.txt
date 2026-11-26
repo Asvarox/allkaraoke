@@ -1,0 +1,324 @@
+#ARTIST:The Go-Betweens
+#TITLE:Streets Of Your Town
+#CREATOR:daggeg
+#BPM:262,38
+#YEAR:1988
+#VIDEO:v=8M_P_xX9Cmw
+#LANGUAGE:English
+#GAP:25178,127143837184
+#ALLKARAOKE_ID:the-go-betweens-streets-of-your-town
+#ALLKARAOKE_SID:7963
+#ALLKARAOKE_LASTUPDATE:2026-11-26T06:16:19.508Z
+#ALLKARAOKE_ARTISTORIGIN:AU
+#ALLKARAOKE_REALBPM:200
+#ALLKARAOKE_SOURCEURL:The Go -Betweens
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:219
+#MP3:The Go-Betweens - Streets Of Your Town.mp3
+: 17 3 5 Round 
+: 21 3 3 and 
+: 25 10 3 round
+- 35
+: 48 3 5 Up 
+: 52 3 3 and 
+: 56 10 3 down
+- 66
+: 80 3 5 Through 
+: 84 3 3 the 
+: 88 5 3 streets 
+: 96 5 0 of 
+: 104 6 -2 your 
+: 112 8 -2 town
+: 121 10 0 ~
+- 131
+: 144 3 5 E
+: 148 3 3 very
+: 152 6 3 day 
+: 160 6 3 I 
+: 176 5 5 make 
+: 184 6 3 my 
+: 192 6 3 way
+- 198
+: 207 3 5 Through 
+: 211 3 3 the 
+* 215 5 3 streets 
+: 223 5 0 of 
+: 231 6 -2 your 
+: 239 8 -2 town
+: 248 10 0 ~
+- 258 286
+- 286
+: 303 3 7 And 
+: 307 3 7 don’t 
+: 311 3 7 the 
+: 316 4 7 sun 
+: 322 4 5 look 
+: 328 4 5 good 
+: 335 6 5 to
+: 344 3 5 day?
+: 348 8 3 ~
+- 356 414
+- 414
+: 431 3 7 But 
+: 435 3 7 the 
+: 439 6 7 rain 
+: 447 5 5 is 
+: 455 5 5 on 
+: 463 5 5 its’ 
+: 471 3 5 way
+: 475 8 3 ~
+- 483 541
+- 541
+: 558 3 7 Watch 
+: 562 3 7 the 
+: 566 5 7 butch
+: 574 5 5 er 
+: 582 5 5 shine 
+: 590 5 5 his 
+: 599 3 5 knives
+: 603 8 3 ~
+- 611 668
+- 668
+: 685 3 7 And 
+: 689 3 7 this 
+: 693 6 7 town 
+: 702 4 5 is 
+: 709 6 5 full 
+: 717 5 5 of 
+: 726 6 5 batt
+: 733 5 3 ered 
+: 741 12 3 wives
+- 753 779
+- 779
+: 796 3 5 Round 
+: 800 3 3 and 
+* 804 10 3 round
+- 814
+: 829 3 5 Up 
+: 833 3 3 and 
+: 837 10 3 down
+- 847
+: 860 3 5 Through 
+: 864 3 3 the 
+: 868 5 3 streets 
+: 876 5 0 of 
+: 884 6 -2 your 
+: 892 7 -2 town
+: 900 10 0 ~
+- 910
+* 924 3 5 E
+* 928 3 3 very
+: 932 6 3 day 
+: 940 6 3 I 
+: 956 5 5 make 
+: 963 6 3 my 
+: 971 6 3 way
+- 977
+: 987 3 5 Through 
+: 991 3 3 the 
+: 995 5 3 streets 
+: 1003 5 0 of 
+: 1011 6 -2 your 
+: 1019 7 -2 town
+: 1027 10 0 ~
+- 1037 1066
+- 1066
+: 1083 3 7 And 
+: 1087 3 7 I 
+: 1091 6 7 ride 
+: 1099 6 5 your 
+: 1107 6 5 ri
+: 1115 5 5 ver 
+: 1123 7 5 un
+: 1131 3 3 der 
+: 1135 3 3 the 
+: 1139 10 3 bridge
+- 1149 1193
+- 1193
+: 1210 3 7 And 
+: 1214 3 7 I 
+: 1218 5 7 take 
+: 1226 5 5 your 
+: 1234 5 5 boat 
+: 1242 5 5 out 
+: 1251 5 5 to
+: 1257 4 3 ~ 
+: 1262 3 3 the 
+: 1266 7 3 reach
+- 1273 1321
+- 1321
+: 1338 3 7 ’Cause 
+: 1342 3 7 I 
+* 1346 5 7 love 
+: 1354 5 5 that 
+: 1362 7 5 en
+: 1370 5 5 gine 
+: 1378 3 5 roar
+: 1382 10 3 ~
+- 1392 1448
+- 1448
+: 1465 3 7 But 
+: 1469 3 7 I 
+: 1473 5 7 still 
+: 1482 6 5 don’t 
+: 1490 6 5 know 
+: 1497 3 5 what 
+: 1501 6 5 I’m 
+: 1509 3 5 here
+: 1513 4 3 ~ 
+: 1521 16 3 for
+- 1537 1559
+- 1559
+: 1576 3 5 Round 
+: 1580 3 3 and 
+: 1584 10 3 round
+- 1594
+: 1608 3 5 Up 
+: 1612 3 3 and 
+: 1616 10 3 down
+- 1626
+: 1640 3 5 Through 
+: 1644 3 3 the 
+: 1648 5 3 streets 
+: 1656 5 0 of 
+: 1664 6 -2 your 
+: 1672 7 -2 town
+: 1680 10 0 ~
+- 1690
+* 1705 3 5 E
+* 1709 3 3 very
+* 1713 6 3 day 
+: 1721 6 3 I 
+: 1736 5 5 make 
+: 1744 6 3 my 
+: 1752 6 3 way
+- 1758
+: 1767 3 5 Through 
+: 1771 3 3 the 
+: 1775 5 3 streets 
+: 1784 5 0 of 
+: 1792 6 -2 your 
+: 1800 7 -2 town
+: 1808 10 0 ~
+- 1818 1832
+- 1832
+: 1849 6 3 They 
+: 1860 2 3 shut 
+: 1863 3 2 it 
+: 1872 7 3 down
+- 1879 1895
+- 1895
+: 1912 5 3 They 
+: 1919 6 3 closed 
+: 1928 4 2 it 
+: 1935 10 3 down
+- 1945 1958
+- 1958
+: 1975 6 3 They 
+* 1986 2 3 shut 
+* 1989 3 2 it 
+: 1999 10 3 down
+- 2009 2021
+- 2021
+: 2038 6 3 They 
+: 2050 4 3 pulled 
+: 2055 4 2 it 
+: 2063 7 3 down
+- 2070 2578
+- 2578
+: 2595 3 5 Round 
+: 2599 3 3 and 
+: 2603 10 3 round
+- 2613
+: 2627 3 5 Up 
+: 2631 3 3 and 
+: 2635 10 3 down
+- 2645
+: 2659 3 5 Through 
+: 2663 3 3 the 
+: 2667 5 3 streets 
+: 2675 5 0 of 
+: 2683 6 -2 your 
+: 2691 7 -2 town
+: 2699 10 0 ~
+- 2709
+: 2723 3 5 E
+: 2727 3 3 very
+: 2731 6 3 day 
+: 2739 6 3 I 
+* 2755 5 5 make 
+: 2763 6 3 my 
+: 2771 6 3 way
+- 2777
+: 2786 3 5 Through 
+: 2790 3 3 the 
+: 2794 5 3 streets 
+: 2802 5 0 of 
+: 2810 6 -2 your 
+: 2818 7 -2 town
+: 2826 10 0 ~
+- 2836
+: 2850 3 5 Round 
+: 2854 3 3 and 
+: 2858 10 3 round
+- 2868
+* 2882 3 5 Up 
+: 2886 3 3 and 
+: 2890 10 3 down
+- 2900
+: 2913 3 5 Through 
+: 2917 3 3 the 
+: 2921 5 3 streets 
+: 2930 5 0 of 
+: 2938 6 -2 your 
+: 2946 7 -2 town
+: 2954 10 0 ~
+- 2964
+: 2977 3 5 E
+: 2981 3 3 very
+: 2985 6 3 day 
+: 2993 6 3 I 
+: 3009 5 5 make 
+: 3017 6 3 my 
+: 3025 6 3 way
+- 3031
+: 3041 3 5 Through 
+: 3045 3 3 the 
+: 3049 5 3 streets 
+: 3057 5 0 of 
+: 3065 6 -2 your 
+: 3073 7 -2 town
+: 3081 10 0 ~
+- 3091
+: 3105 3 5 Round 
+: 3109 3 3 and 
+: 3113 10 3 round
+- 3123
+: 3137 3 5 Up 
+: 3141 3 3 and 
+: 3145 10 3 down
+- 3155
+: 3168 3 5 Through 
+: 3172 3 3 the 
+* 3176 5 3 streets 
+* 3184 5 0 of 
+* 3192 6 -2 your 
+* 3200 8 -2 town
+* 3209 10 0 ~
+- 3219
+: 3232 3 5 E
+: 3236 3 3 very
+: 3240 6 3 day 
+: 3248 6 3 I 
+: 3264 5 5 make 
+: 3272 6 3 my 
+: 3280 6 3 way
+- 3286
+F 3296 3 5 Through 
+F 3300 3 3 the 
+F 3304 5 3 streets 
+F 3312 5 0 of 
+F 3320 6 -2 your 
+F 3328 7 -2 town
+F 3336 10 0 ~
+E

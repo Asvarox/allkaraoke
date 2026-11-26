@@ -1,0 +1,631 @@
+#ARTIST:DJ BoBo
+#TITLE:Somebody Dance With Me
+#CREATOR:snake84
+#BPM:247,97
+#YEAR:1992
+#VIDEO:v=rAnmLLRphqo
+#LANGUAGE:English
+#GAP:29981,649796346333
+#ALLKARAOKE_ID:dj-bobo-somebody-dance-with-me
+#ALLKARAOKE_SID:7971
+#ALLKARAOKE_LASTUPDATE:2026-11-26T06:16:21.372Z
+#ALLKARAOKE_ARTISTORIGIN:CH
+#ALLKARAOKE_REALBPM:200
+#ALLKARAOKE_SOURCEURL:DJ BoBo
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:213
+#MP3:DJ BoBo - Somebody Dance With Me.mp3
+F 17 2 5 I’m 
+F 21 2 5 back 
+F 25 1 5 a
+F 27 3 5 gain 
+F 33 1 5 on 
+F 35 1 5 a 
+F 37 1 5 high
+F 39 2 5 er 
+F 43 3 5 stage
+- 46
+F 49 1 5 Lis
+F 51 1 5 ten 
+F 53 1 5 to 
+F 55 1 5 my 
+F 57 1 5 par
+F 59 1 5 ty 
+F 61 2 5 beat 
+F 65 1 5 and 
+F 67 2 5 get 
+F 71 2 5 in 
+F 75 3 5 rage
+- 78
+F 79 1 5 ’Cause 
+F 81 2 5 you 
+F 85 3 5 know 
+F 91 1 5 when 
+F 93 2 5 I 
+F 97 3 5 flow
+- 100
+F 103 1 5 And 
+F 105 2 5 I 
+F 109 2 5 show 
+F 113 2 5 you 
+F 117 3 5 so
+- 120
+F 121 2 5 Which 
+F 125 2 5 way 
+F 129 2 5 is 
+F 133 1 5 bet
+F 135 1 5 ter
+- 136
+F 137 2 5 Which 
+F 141 1 5 way 
+F 143 1 5 you 
+F 145 1 5 got 
+F 147 1 5 to 
+F 149 1 5 go 
+F 151 1 5 to
+- 152
+F 153 1 5 Make 
+F 155 1 5 a 
+F 157 1 5 fun 
+F 159 2 5 house 
+F 163 2 5 par
+F 167 1 5 ty 
+F 169 1 5 all 
+F 171 4 5 night?
+- 175
+F 179 1 5 You 
+F 181 1 5 got
+F 183 1 5 ta 
+F 185 1 5 check 
+F 187 2 5 this 
+F 191 2 5 out, 
+F 195 3 5 yo 
+F 201 1 5 da 
+F 203 1 5 ya 
+F 205 2 5 di
+- 207
+F 209 1 5 There’s 
+F 211 1 5 a 
+F 213 1 5 par
+F 215 1 5 ty 
+F 217 1 5 o
+F 219 1 5 ver 
+F 221 3 5 there
+- 224
+F 225 1 5 With 
+F 227 1 5 gla
+F 229 1 5 mour 
+F 231 2 5 and 
+F 235 4 5 glairs
+- 239
+F 241 2 5 So 
+F 245 4 5 dance, 
+F 253 2 5 move 
+F 257 2 5 you, 
+F 261 2 5 pump 
+F 265 2 5 that 
+F 269 2 5 bo
+F 273 2 5 dy!
+- 275
+F 279 2 5 Move 
+F 283 1 5 your 
+F 285 2 5 bo
+F 289 2 5 dy 
+F 295 2 5 up 
+F 299 1 5 and 
+F 301 4 5 down
+- 305
+F 309 2 5 Side 
+F 313 1 5 to 
+F 315 4 5 side, 
+F 321 2 5 it’s 
+F 325 2 5 par
+F 329 2 5 ty 
+F 333 3 5 time
+- 336
+F 343 1 5 Yeah, 
+F 345 2 5 that’s 
+F 349 2 5 right 
+F 353 1 5 we’re 
+F 355 2 5 dan
+F 359 1 5 cing 
+F 361 1 5 to
+F 363 3 5 night
+- 366
+F 367 1 5 ’Til 
+F 369 2 5 the 
+F 373 2 5 sun 
+F 377 2 5 is 
+F 381 1 5 co
+F 383 1 5 ming 
+F 385 1 5 and 
+F 387 1 5 the 
+F 389 1 5 sky 
+F 391 1 5 is 
+F 393 2 5 all 
+F 397 2 5 bright
+- 399
+F 401 2 5 We’re 
+F 405 1 5 co
+F 407 1 5 ming 
+F 409 1 5 to 
+F 411 1 5 an 
+F 413 2 5 end
+- 415
+F 417 1 5 Like 
+F 419 1 5 you 
+F 421 1 5 un
+F 423 2 5 der
+F 427 2 5 stand 
+F 431 1 5 that 
+F 433 1 5 I’m 
+F 435 1 5 a 
+F 437 2 5 par
+F 441 1 5 ty
+F 443 2 5 man
+- 445
+F 447 2 5 Do 
+F 451 1 5 the 
+F 453 2 5 best 
+F 457 1 5 I 
+F 459 2 5 can 
+F 463 1 5 to 
+F 465 1 5 make 
+F 467 1 5 you 
+F 469 2 5 laugh 
+F 473 2 5 a
+F 477 2 5 gain
+- 479
+F 481 1 5 Now 
+F 483 1 5 I’m 
+F 485 2 5 out 
+F 489 1 5 of 
+F 491 1 5 the 
+F 493 3 5 scene
+- 496
+F 501 30 8 Oh!
+- 531
+: 537 2 6 I 
+: 541 2 9 got 
+: 545 2 9 this 
+: 549 4 11 fee
+: 555 4 6 ling
+- 559
+: 569 2 6 Some
+: 573 2 9 bo
+: 577 2 9 dy 
+: 581 6 16 dance 
+* 589 2 14 with 
+: 593 3 14 me
+: 597 8 13 ~
+- 605
+: 617 2 13 Some
+: 621 2 11 bo
+: 625 2 9 dy 
+: 629 2 11 dance 
+: 633 2 6 with 
+: 637 6 9 me
+- 643 648
+- 648
+: 665 2 6 I 
+: 669 2 9 got 
+: 673 2 9 this 
+* 677 4 11 fee
+: 683 4 6 ling
+- 687
+: 697 2 6 Some
+: 701 2 9 bo
+: 705 2 9 dy 
+: 709 6 16 dance 
+: 717 2 14 with 
+: 721 3 14 me
+: 725 8 13 ~
+- 733
+: 745 2 13 Some
+: 749 2 11 bo
+: 753 2 9 dy 
+* 757 2 11 dance 
+: 761 2 6 with 
+: 765 6 9 me
+- 771 898
+- 898
+F 915 1 5 A
+F 917 1 5 no
+F 919 2 5 ther 
+F 923 4 5 time, 
+F 931 1 5 a
+F 933 1 5 no
+F 935 2 5 ther 
+F 939 4 5 place
+- 943
+F 947 1 5 A
+F 949 1 5 no
+F 951 2 5 ther 
+F 955 2 5 rhyme 
+F 959 2 5 done 
+F 963 1 5 for 
+F 965 2 5 e
+F 969 1 5 very 
+F 971 3 5 race
+- 974
+F 975 1 5 In 
+F 977 2 5 your 
+F 981 4 5 case
+- 985
+F 995 1 5 We’re 
+F 997 2 5 get
+F 1001 1 5 ting 
+F 1003 4 5 rough
+- 1007
+F 1011 1 5 I’m 
+F 1013 2 5 not 
+F 1017 1 5 gon
+F 1019 1 5 na 
+F 1021 2 5 stop 
+F 1025 1 5 un
+F 1027 2 5 til 
+F 1031 1 5 you 
+F 1033 1 5 get 
+F 1035 1 5 e
+F 1037 2 5 nough
+- 1039
+F 1041 1 5 ’Cause 
+F 1043 1 5 you 
+F 1045 4 5 groove 
+F 1053 2 5 back
+- 1055
+F 1057 1 5 And 
+F 1059 2 5 Bo
+F 1063 2 5 bo 
+F 1067 1 5 is 
+F 1069 2 5 back 
+F 1073 1 5 and 
+F 1075 1 5 you 
+F 1077 1 5 see 
+F 1079 1 5 it 
+F 1081 1 5 your
+F 1083 3 5 self
+- 1086
+F 1087 1 5 It’s 
+F 1089 1 5 like 
+F 1091 1 5 a 
+F 1093 2 5 heart
+F 1097 1 5 at
+F 1099 3 5 tack
+- 1102
+F 1107 1 5 My 
+F 1109 4 5 rhymes, 
+F 1117 2 5 com
+F 1121 1 5 bi
+F 1123 2 5 na
+F 1127 1 5 tion, 
+F 1129 2 5 in
+F 1133 1 5 fil
+F 1135 2 5 tra
+F 1139 1 5 tion, 
+F 1141 2 5 si
+F 1145 1 5 tu
+F 1147 2 5 a
+F 1151 1 5 tion
+- 1152
+F 1153 1 5 All 
+F 1155 1 5 o
+F 1157 1 5 ver 
+F 1159 1 5 the 
+F 1161 2 5 na
+F 1165 2 5 tion
+- 1167
+F 1169 2 5 Like 
+F 1173 2 5 round 
+F 1177 1 5 and 
+F 1179 4 5 round
+- 1183
+F 1189 2 5 Up
+F 1193 2 5 side 
+F 1197 4 5 down
+- 1201
+F 1205 1 5 Li
+F 1207 1 5 ving 
+F 1209 2 5 my 
+F 1213 2 5 life 
+F 1217 1 5 ’til 
+F 1219 1 5 it 
+F 1221 2 5 fits 
+F 1225 1 5 on 
+F 1227 1 5 the 
+F 1229 2 5 ground
+- 1231
+F 1233 2 5 Then 
+F 1237 2 5 put 
+F 1241 1 5 your 
+F 1243 2 5 hands 
+F 1247 2 5 up 
+F 1251 2 5 in 
+F 1255 1 5 the 
+F 1257 4 5 air
+- 1261
+F 1267 1 5 And 
+F 1269 1 5 wa
+F 1271 1 5 ving 
+F 1273 1 5 like 
+F 1275 1 5 you 
+F 1277 2 5 just 
+F 1281 2 5 don’t 
+F 1285 4 5 care
+- 1289
+F 1295 1 5 And 
+F 1297 1 5 if 
+F 1299 1 5 you’re 
+F 1301 1 5 rea
+F 1303 1 5 dy 
+F 1305 1 5 to 
+F 1307 2 5 rap, 
+F 1311 2 5 then 
+F 1315 2 5 rap 
+F 1319 2 5 with 
+F 1323 2 5 me
+- 1325
+F 1329 2 5 Some
+F 1333 1 5 bo
+F 1335 2 5 dy 
+F 1339 3 5 say: 
+F 1345 2 5 “Oh 
+F 1349 6 5 yeah!”
+- 1355
+F 1361 2 5 (Oh 
+F 1365 6 5 yeah!)
+- 1371
+F 1377 2 5 Oh 
+F 1381 6 5 yeah!
+- 1387
+F 1393 2 5 (Oh 
+F 1397 6 5 yeah!)
+- 1403
+F 1413 6 5 Aow!
+- 1419
+: 1433 2 6 I 
+* 1437 2 9 got 
+: 1441 2 9 this 
+: 1445 4 11 fee
+: 1451 4 6 ling
+- 1455
+: 1465 2 6 Some
+: 1469 2 9 bo
+: 1473 2 9 dy 
+: 1477 6 16 dance 
+: 1485 2 14 with 
+: 1489 3 14 me
+: 1493 8 13 ~
+- 1501
+: 1513 2 13 Some
+: 1517 2 11 bo
+: 1521 2 9 dy 
+* 1525 2 11 dance 
+: 1529 2 6 with 
+: 1533 6 9 me
+- 1539 1544
+- 1544
+: 1561 2 6 I 
+: 1565 2 9 got 
+: 1569 2 9 this 
+: 1573 4 11 fee
+: 1579 4 6 ling
+- 1583
+: 1593 2 6 Some
+: 1597 2 9 bo
+: 1601 2 9 dy 
+: 1605 6 16 dance 
+: 1613 2 14 with 
+: 1617 3 14 me
+* 1621 8 13 ~
+- 1629
+* 1641 2 13 Some
+: 1645 2 11 bo
+: 1649 2 9 dy 
+: 1653 2 11 dance 
+: 1657 2 6 with 
+: 1661 6 9 me
+- 1667 2048
+- 2048
+F 2065 1 5 Now 
+F 2067 1 5 it’s 
+F 2069 2 5 just 
+F 2073 1 5 the 
+F 2075 4 5 time
+- 2079
+F 2083 1 5 I 
+F 2085 1 5 think 
+F 2087 1 5 you 
+F 2089 2 5 are 
+F 2093 1 5 rea
+F 2095 2 5 dy
+- 2097
+F 2099 1 5 So 
+F 2101 2 5 make 
+F 2105 1 5 some 
+F 2107 2 5 room 
+F 2111 2 5 and 
+F 2115 2 5 space 
+F 2119 2 5 just 
+F 2123 1 5 to 
+F 2125 1 5 hit 
+F 2127 4 5 it
+- 2131
+F 2133 8 5 Move, 
+F 2145 6 5 move 
+F 2153 2 5 that 
+F 2157 2 5 bo
+F 2161 1 5 dy
+- 2162
+F 2163 1 5 A 
+F 2165 1 5 did
+F 2167 1 5 ley, 
+F 2169 1 5 did
+F 2171 1 5 ley 
+F 2173 4 5 dee
+- 2177
+F 2179 2 5 Yeah, 
+F 2183 1 5 we 
+F 2185 1 5 make 
+F 2187 1 5 a 
+F 2189 1 5 par
+F 2191 1 5 ty
+- 2192
+F 2193 1 5 To 
+F 2195 1 5 the 
+F 2197 2 5 B, 
+F 2201 1 5 to 
+F 2203 1 5 the 
+F 2205 3 5 O
+- 2208
+F 2209 1 5 To 
+F 2211 1 5 the 
+F 2213 2 5 B, 
+F 2217 1 5 to 
+F 2219 1 5 the 
+F 2221 3 5 O
+- 2224
+F 2225 1 5 Wan
+F 2227 1 5 na 
+F 2229 2 5 rock 
+F 2233 1 5 your 
+F 2235 2 5 bo
+F 2239 1 5 dy
+- 2240
+F 2241 1 5 Wan
+F 2243 1 5 na 
+F 2245 2 5 rock 
+F 2249 1 5 your 
+F 2251 3 5 soul
+- 2254
+F 2257 1 5 When 
+F 2259 1 5 I 
+F 2261 1 5 ne
+F 2263 2 5 ver, 
+F 2267 1 5 e
+F 2269 2 5 ver 
+F 2273 3 5 said
+- 2276
+F 2279 1 5 I 
+F 2281 1 5 do 
+F 2283 1 5 it 
+F 2285 1 5 bet
+F 2287 2 5 ter
+- 2289
+F 2293 1 5 I 
+F 2295 1 5 just 
+F 2297 1 5 know 
+F 2299 1 5 the 
+F 2301 3 5 time
+- 2304
+F 2311 1 5 It 
+F 2313 2 5 sounds 
+F 2317 1 5 cle
+F 2319 2 5 ver
+- 2321
+: 2329 2 6 I 
+: 2333 2 9 got 
+: 2337 2 9 this 
+: 2341 4 11 fee
+: 2347 4 6 ling
+- 2351
+: 2361 2 6 Some
+: 2365 2 9 bo
+: 2369 2 9 dy 
+: 2373 6 16 dance 
+: 2381 2 14 with 
+: 2385 3 14 me
+: 2389 8 13 ~
+- 2397
+* 2409 2 13 Some
+: 2413 2 11 bo
+: 2417 2 9 dy 
+: 2421 2 11 dance 
+: 2425 2 6 with 
+: 2429 6 9 me
+- 2435 2440
+- 2440
+: 2457 2 6 I 
+: 2461 2 9 got 
+: 2465 2 9 this 
+: 2469 4 11 fee
+: 2475 4 6 ling
+- 2479
+: 2489 2 6 Some
+: 2493 2 9 bo
+: 2497 2 9 dy 
+: 2501 6 16 dance 
+* 2509 2 14 with 
+: 2513 3 14 me
+: 2517 8 13 ~
+- 2525
+: 2537 2 13 Some
+: 2541 2 11 bo
+: 2545 2 9 dy 
+: 2549 2 11 dance 
+: 2553 2 6 with 
+: 2557 6 9 me
+- 2563 2568
+- 2568
+: 2585 2 13 Some
+: 2589 2 11 bo
+: 2593 2 9 dy 
+: 2597 2 11 dance 
+: 2601 2 6 with 
+: 2605 6 9 me
+- 2611 2632
+- 2632
+: 2649 2 13 Some
+: 2653 2 11 bo
+: 2657 2 9 dy 
+: 2661 2 11 dance 
+: 2665 2 6 with 
+: 2669 6 9 me
+- 2675 2696
+- 2696
+: 2713 2 6 I 
+: 2717 2 9 got 
+* 2721 2 9 this 
+: 2725 4 11 fee
+: 2731 4 6 ling
+- 2735
+: 2745 2 6 Some
+: 2749 2 9 bo
+: 2753 2 9 dy 
+: 2757 6 16 dance 
+: 2765 2 14 with 
+: 2769 3 14 me
+: 2773 8 13 ~
+- 2781
+: 2793 2 13 Some
+: 2797 2 11 bo
+: 2801 2 9 dy 
+: 2805 2 11 dance 
+: 2809 2 6 with 
+: 2813 6 9 me
+- 2819 2824
+- 2824
+: 2841 2 6 I 
+: 2845 2 9 got 
+: 2849 2 9 this 
+* 2853 4 11 fee
+: 2859 4 6 ling
+- 2863
+: 2873 2 6 Some
+: 2877 2 9 bo
+: 2881 2 9 dy 
+* 2885 6 16 dance 
+: 2893 2 14 with 
+: 2897 3 14 me
+: 2901 8 13 ~
+- 2909
+: 2921 2 13 Some
+: 2925 2 11 bo
+: 2929 2 9 dy 
+: 2933 2 11 dance 
+: 2937 2 6 with 
+: 2941 6 9 me
+- 2947 2948
+- 2948
+F 2965 6 5 Aow!
+E

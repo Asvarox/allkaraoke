@@ -1,0 +1,569 @@
+#ARTIST:"Candy Store"
+#TITLE:Heathers the musical - color coded
+#CREATOR:CeoOfMid
+#BPM:287,11
+#YEAR:July 9, 2020
+#PREVIEWSTART:50,33
+#VIDEO:v=i3uc70BLyGg
+#GENRE:Ballad
+#LANGUAGE:English
+#GAP:1417,3490996482185
+#ALLKARAOKE_ID:candy-store-heathers-the-musical-color-coded
+#ALLKARAOKE_SID:7918
+#ALLKARAOKE_LASTUPDATE:2026-11-26T06:16:08.474Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:2
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=i3uc70BLyGg
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:173
+#P1:P1
+#VERSION:1.0.0
+#P2:P2
+#MP3:Candy Store - Heathers the musical - color coded [DUET].ogg
+#AUDIO:Candy Store - Heathers the musical - color coded [DUET].ogg
+#AUDIOURL:https://www.youtube.com/watch?v=i3uc70BLyGg
+#VIDEOURL:https://www.youtube.com/watch?v=i3uc70BLyGg
+#TAGS:key: C# minor
+: 19 2 5 Are 
+: 22 3 8 we 
+: 25 3 14 gon
+: 28 2 13 na 
+: 30 4 6 have 
+: 34 1 6 a 
+: 36 5 3 prob
+: 41 5 4 lem?
+- 46
+: 57 4 7 You 
+: 62 3 5 got 
+: 66 1 5 a 
+: 68 5 1 bone 
+: 74 2 7 to 
+: 77 6 7 pick?
+- 83
+: 93 3 8 You've 
+: 97 4 9 come 
+: 102 3 11 so 
+: 107 5 3 far,
+- 112
+: 113 3 9 Why 
+: 117 6 9 now 
+: 125 2 4 are 
+: 127 2 4 you 
+: 130 7 7 pulling 
+: 140 1 0 on 
+: 142 2 -2 my 
+: 147 5 2 dick?
+- 152
+: 163 2 3 I'd 
+: 167 2 5 nor
+: 169 2 7 mal
+: 171 2 -4 ly 
+: 175 5 -2 slap 
+: 180 3 -7 your 
+: 183 5 -5 face 
+: 190 3 -9 off,
+- 193
+: 201 3 4 And 
+: 206 2 5 ev
+: 208 2 6 ery
+: 210 2 8 one 
+: 213 3 2 here 
+: 216 3 7 could 
+: 220 7 9 watch.
+- 227
+: 236 3 8 But 
+: 240 2 11 I�m 
+: 243 2 4 feel
+: 245 3 2 ing 
+: 249 5 1 nice.
+- 254
+: 255 3 4 Here�s 
+: 259 2 0 some 
+: 262 5 1 ad
+: 267 3 1 vice.
+- 270
+: 271 3 3 Lis
+: 274 3 2 ten 
+: 280 2 0 up, 
+* 284 10 0 biotch!
+- 294 417
+- 417
+: 436 2 -2 I 
+: 439 7 1 like!
+- 446
+: 447 8 -2 Lookin� 
+: 456 5 1 hot 
+: 462 4 -2 Buy
+: 466 4 -2 ing 
+: 471 7 4 stuff 
+: 480 4 3 they 
+: 485 5 2 can
+: 490 5 1 not
+- 495
+: 501 2 -2 I 
+: 504 7 1 like!
+- 511
+: 513 7 -2 Drinkin� 
+: 521 6 1 hard 
+: 529 3 -2 Max
+: 532 4 -2 in� 
+: 537 7 4 Dad�s 
+: 545 3 3 cred
+: 548 4 3 it 
+: 553 8 1 card
+- 561
+: 565 3 10 I 
+: 569 7 2 like!
+- 576
+: 576 4 -2 Skip
+: 580 5 -2 pin� 
+: 586 5 1 gym 
+: 592 4 -2 Scar
+: 596 5 -2 ing 
+: 602 6 4 her
+- 608
+: 608 5 3 Screw
+: 613 5 4 ing 
+: 619 5 1 him
+- 624
+: 630 2 10 I 
+: 634 6 13 like!
+- 640
+: 642 8 -2 Killer 
+: 650 7 1 clothes
+- 657
+: 658 7 5 Kickin� 
+: 666 8 10 nerds 
+: 676 3 7 in 
+: 680 1 9 the 
+: 683 9 10 nose!
+- 692
+: 699 2 -1 If 
+: 703 3 -1 you 
+: 707 3 1 lack 
+: 712 7 5 the 
+* 720 10 4 balls
+- 730
+: 731 3 1 You 
+: 735 3 1 can 
+: 738 4 -2 go 
+: 743 7 3 play 
+* 751 11 4 dolls
+- 762
+: 763 4 1 Let 
+: 768 3 1 your 
+: 772 3 -2 mom
+: 775 3 -2 my 
+: 779 7 5 fix 
+: 787 6 3 you 
+: 793 1 3 a 
+: 799 7 1 snack
+- 806
+: 808 2 11 Woah!
+: 812 5 8 ~
+: 819 7 10 ~
+- 826
+: 831 1 1 Or 
+: 832 3 1 you 
+: 835 4 -2 could 
+: 841 5 3 come 
+: 848 7 3 smoke
+- 855
+: 860 4 1 Pound 
+: 865 3 2 some 
+: 869 4 -2 rum 
+: 876 4 5 and 
+: 881 5 3 coke
+- 886
+: 894 3 9 In 
+: 898 3 10 my 
+: 902 3 8 Por
+: 905 4 8 sha 
+: 910 3 5 with 
+: 914 2 6 the 
+: 917 6 8 quar
+: 923 7 9 ter
+: 930 3 5 back
+- 933
+* 937 14 9 Woah! 
+: 954 13 8 Woah! 
+* 970 14 8 Woah!
+- 984
+: 997 4 1 Hon
+: 1001 4 1 ey, 
+: 1006 4 4 whatchu 
+: 1014 7 8 wait
+: 1021 6 1 in� 
+: 1029 9 7 for?
+: 1039 4 5 ~
+: 1044 9 6 ~
+- 1053
+: 1061 5 4 Wel
+: 1066 3 4 come 
+: 1070 4 8 to 
+: 1075 2 9 my 
+: 1078 8 11 can
+: 1086 6 4 dy 
+: 1093 4 10 store
+: 1098 4 11 ~
+* 1103 14 9 ~
+- 1117
+F 1121 4 0 It�s 
+: 1126 5 8 time 
+: 1132 2 8 for 
+: 1135 4 7 you 
+: 1140 2 9 to 
+: 1142 8 8 prove
+- 1150
+: 1151 7 4 You�re 
+: 1159 8 11 not 
+: 1169 2 9 a 
+: 1172 7 8 los
+: 1179 7 4 er 
+* 1186 10 11 any
+: 1197 1 10 ~
+: 1200 7 8 ~
+* 1207 22 6 more
+- 1229
+: 1236 3 10 Then 
+: 1239 6 9 step 
+: 1246 3 6 in
+: 1249 3 6 to 
+: 1253 3 9 my 
+: 1257 5 8 can
+: 1262 6 8 dy 
+* 1269 30 1 store
+- 1299
+F 1307 4 0 Guys 
+: 1312 7 1 fall 
+: 1319 4 -1 
+: 1323 1 -1 
+- 1324
+: 1324 2 -2 At 
+: 1326 2 -2 your 
+: 1329 6 1 feet 
+: 1336 6 -2 Pay 
+: 1342 2 -2 the 
+: 1345 7 6 check
+- 1352
+: 1353 5 4 Help 
+: 1358 3 6 you 
+: 1362 6 1 cheat 
+F 1371 3 0 
+- 1374
+: 1374 2 -2 All 
+: 1379 6 1 you 
+F 1388 1 0 
+F 1389 1 0 
+- 1390
+: 1386 5 -2 Have 
+: 1391 2 -1 to 
+: 1394 7 1 do
+- 1401 1417
+- 1417
+: 1436 5 9 That 
+: 1441 8 9 freak�s
+- 1449
+: 1450 5 -2 Not 
+: 1455 3 1 your 
+: 1458 7 1 friend 
+: 1468 2 -2 I 
+: 1471 3 2 can 
+: 1475 6 5 tell 
+: 1484 3 3 in 
+: 1488 2 6 the 
+: 1493 4 1 end
+- 1497
+: 1502 3 1 If 
+: 1506 8 1 she 
+F 1515 1 0 
+F 1516 1 0 
+F 1517 1 0 
+F 1518 1 0 
+F 1519 1 0 
+- 1520
+: 1515 5 -2 Had 
+: 1520 3 -2 your 
+: 1524 5 1 shot 
+F 1529 1 0 
+- 1530
+: 1531 5 5 She 
+: 1537 2 5 would 
+: 1540 8 10 leave 
+: 1549 3 8 you 
+: 1552 3 8 to 
+: 1555 8 10 rot
+- 1563
+: 1574 5 4 �Course 
+: 1579 1 4 if 
+: 1581 3 1 you 
+: 1586 5 5 don�t 
+: 1592 7 3 care
+- 1599
+: 1600 8 11 Fine! 
+: 1609 2 1 Go 
+: 1612 5 1 braid 
+: 1618 5 3 her 
+: 1625 7 3 hair
+- 1632
+: 1636 7 2 Maybe 
+* 1644 14 5 Sesame 
+: 1659 11 3 Street 
+: 1672 2 3 is 
+: 1681 2 1 on
+: 1686 5 8 ~
+: 1692 7 10 ~
+- 1699
+F 1700 1 0 Woah!
+- 1701
+: 1702 2 1 Or 
+: 1706 3 4 for
+: 1709 4 -2 get 
+: 1714 3 3 the 
+: 1721 7 3 creep
+- 1728
+: 1736 2 1 And 
+: 1738 4 1 get 
+: 1744 2 -2 in 
+: 1747 7 5 my 
+: 1755 4 3 jeep 
+: 1759 5 3 H. 
+: 1764 1 3 CHAN
+F 1765 1 0 DLER:
+- 1766
+: 1766 5 7 Let�s 
+: 1771 2 10 go 
+: 1774 6 8 tear 
+: 1782 2 8 up 
+* 1786 16 9 someone�s 
+: 1804 9 10 lawn
+: 1815 7 8 ~
+- 1822 1825
+- 1825
+: 1844 9 8 Woah! 
+: 1856 3 10 Woah! 
+: 1859 2 10 Woah!
+- 1861
+: 1871 2 1 Hon
+: 1873 6 1 ey, 
+: 1880 4 5 whatchu 
+: 1888 7 7 wait
+: 1895 6 1 in� 
+: 1903 4 7 for?
+: 1910 1 8 ~
+* 1912 15 6 ~
+- 1927
+: 1936 4 4 Wel
+: 1940 3 0 come 
+: 1944 4 8 to 
+: 1949 2 9 my 
+: 1951 8 11 can
+: 1959 7 4 dy 
+: 1966 5 10 store
+: 1979 8 9 ~
+: 1988 3 10 ~
+- 1991
+: 1999 5 9 You 
+: 2005 3 6 just 
+: 2008 4 6 got
+: 2012 3 7 ta 
+: 2016 8 7 prove
+- 2024
+: 2025 6 4 You�re 
+: 2033 8 11 not 
+: 2042 1 11 a 
+: 2045 8 9 bitch 
+* 2069 22 9 any
+: 2091 11 7 more
+- 2102
+: 2110 3 9 Then 
+: 2113 6 9 step 
+: 2120 3 6 in
+: 2123 3 6 to 
+: 2127 3 9 my 
+: 2130 8 8 can
+: 2138 4 4 dy 
+* 2143 19 1 store
+: 2163 15 8 ~
+: 2180 1 11 ~
+- 2181 2183
+- 2183
+: 2202 4 8 You 
+: 2207 3 8 can 
+: 2211 8 9 join 
+: 2219 3 9 the 
+: 2223 8 9 team 
+F 2231 1 0 
+F 2232 1 0 
+F 2234 1 0 
+F 2235 1 0 
+F 2236 1 0 
+F 2237 1 0 
+F 2238 1 0 :
+- 2239
+: 2233 1 11 Or 
+: 2235 3 11 you 
+: 2239 3 11 can 
+: 2243 5 9 bitch 
+: 2252 3 8 and 
+* 2256 10 4 moan
+- 2266
+: 2267 3 9 You 
+: 2271 3 9 can 
+: 2275 8 11 live 
+: 2284 2 9 the 
+: 2287 8 11 dream
+- 2295
+: 2298 1 14 Or 
+: 2300 7 14 you 
+: 2308 7 11 can 
+: 2316 3 9 die 
+: 2319 5 7 a
+: 2324 7 6 lone 
+F 2333 1 0 
+F 2334 1 0 
+F 2335 1 0 :
+- 2336
+: 2332 3 8 You 
+: 2336 3 8 can 
+: 2340 8 9 fly 
+: 2349 3 8 with 
+: 2355 4 9 ea
+: 2359 5 9 gles
+- 2364
+: 2367 3 11 Or 
+: 2370 1 11 if 
+: 2372 7 9 you 
+: 2380 7 5 pre
+: 2387 4 4 fer 
+: 2391 5 4 
+: 2396 1 4 
+F 2397 1 0 
+- 2398
+: 2398 5 9 Keep 
+: 2403 1 9 on 
+: 2404 7 11 test
+: 2411 7 11 ing 
+: 2418 7 11 me
+- 2425
+: 2427 2 11 And 
+: 2434 2 13 end 
+: 2441 2 15 up 
+: 2445 7 15 like 
+* 2453 10 15 her!
+- 2463
+: 2470 2 6 Veron
+: 2472 3 8 i
+: 2475 3 9 ca, 
+: 2478 5 11 look!
+- 2483
+: 2492 4 7 Ram 
+: 2496 3 5 in
+: 2499 1 6 vit
+: 2500 3 7 ed 
+: 2503 3 8 me 
+: 2506 2 8 to 
+: 2509 2 9 his 
+: 2511 4 9 home
+: 2515 2 9 com
+: 2517 5 6 ing 
+: 2522 4 5 par
+: 2526 3 -1 ty.
+- 2529
+: 2537 3 7 This 
+: 2542 6 9 proves 
+: 2549 3 4 he�s 
+: 2552 3 3 been 
+: 2557 3 10 think
+: 2560 3 6 ing 
+: 2565 2 3 a
+: 2567 3 2 bout 
+: 2571 3 1 me.
+- 2574 2575
+- 2575
+: 2594 2 3 Col
+: 2596 3 3 or 
+: 2599 3 5 me 
+* 2603 10 5 stoked.
+- 2613
+: 2625 3 11 I�m 
+: 2630 5 9 so 
+: 2637 5 9 hap
+: 2642 4 5 py!
+- 2646 2648
+- 2648
+: 2667 5 -4 Woah!
+- 2672 2697
+- 2697
+: 2716 2 2 Hon
+: 2718 2 5 ey, 
+: 2720 8 4 whachu 
+: 2728 8 8 wait
+: 2736 8 2 ing 
+: 2745 2 12 fo�
+- 2747
+: 2754 4 15 SHUT 
+: 2758 3 13 UP 
+: 2761 7 7 HEATHER 
+: 2775 6 6 step 
+: 2783 3 9 in
+: 2786 3 9 to 
+: 2789 3 10 my 
+* 2793 11 11 can-dy-- 
+: 2805 7 17 store 
+* 2824 12 12 Oooh 
+: 2836 4 13 woah!
+- 2840
+: 2846 5 13 Woah 
+: 2852 2 7 oh 
+: 2855 9 9 oh!prove 
+: 2866 7 5 your 
+: 2873 6 15 not 
+: 2884 2 9 a 
+: 2887 8 9 lame 
+: 2897 2 9 ass 
+: 2909 5 7 any-more
+- 2914 2938
+- 2938
+: 2957 5 10 Step 
+: 2962 2 10 in
+: 2964 3 7 to 
+: 2968 3 10 my 
+: 2971 9 9 can
+: 2980 4 13 dy 
+: 2985 8 14 store!
+- 2993
+: 3005 4 0 It�s 
+: 3011 1 -1 my 
+: 3012 1 -1 can
+: 3013 1 -1 dy 
+* 3015 14 -3 store
+- 3029
+: 3038 5 4 It�s 
+: 3045 4 5 my 
+: 3050 5 6 can
+F 3055 5 0 dy 
+F 3063 5 0 It�s 
+: 3068 3 4 my 
+: 3072 4 4 can
+: 3076 4 9 dy 
+* 3081 10 2 store
+- 3091
+F 3095 5 0 It�s 
+F 3100 1 0 my 
+F 3102 4 0 can
+F 3106 3 0 dy
+- 3109 3110
+- 3110
+F 3129 4 0 It�s 
+F 3133 2 0 my 
+F 3135 5 0 can
+: 3140 5 7 dy 
+: 3145 8 2 store
+- 3153
+F 3159 5 0 It�s 
+: 3167 3 11 my 
+: 3174 4 12 can
+: 3178 2 12 dy 
+: 3181 3 12 store
+E
