@@ -2,6 +2,7 @@ import { useSyncExternalStore } from 'react';
 import createPersistedState from 'use-persisted-state';
 
 import { SongPreview } from '~/interfaces';
+import useInstrumentalsEnabled from '~/modules/songs/use-instrumentals-enabled';
 
 /** The vocals switch as the player set it, remembered across songs; null until they touch it */
 const useExplicitInstrumentalPreference = createPersistedState<boolean | null>('song_settings-instrumental');
@@ -25,6 +26,7 @@ export const setPlaylistInstrumentalDefault = (value: boolean) => {
 /** Whether to play instrumentals: the player's own choice, else the selected playlist's default.
  * Online, the picker's choice is what the whole room plays */
 export function useInstrumentalPreference() {
+  const enabled = useInstrumentalsEnabled();
   const [explicit, setExplicit] = useExplicitInstrumentalPreference(null);
   const fromPlaylist = useSyncExternalStore(
     subscribe,
@@ -32,13 +34,14 @@ export function useInstrumentalPreference() {
     () => false,
   );
 
-  return [explicit ?? fromPlaylist, setExplicit] as const;
+  return [enabled && (explicit ?? fromPlaylist), setExplicit] as const;
 }
 
 /** Whether the song should play its instrumental version, shared by the song settings and the preview video */
 export default function usePlayInstrumental(songPreview: Pick<SongPreview, 'instrumental'>) {
+  const enabled = useInstrumentalsEnabled();
   const [preferInstrumental, setPreferInstrumental] = useInstrumentalPreference();
-  const isAvailable = !!songPreview.instrumental;
+  const isAvailable = enabled && !!songPreview.instrumental;
   const playInstrumental = isAvailable && preferInstrumental;
 
   return { isAvailable, playInstrumental, setPlayInstrumental: setPreferInstrumental };

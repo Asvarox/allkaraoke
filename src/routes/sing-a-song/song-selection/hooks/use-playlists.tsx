@@ -11,6 +11,7 @@ import { useLanguageList } from '~/modules/songs/hooks/use-language-list';
 import useRemoteMicSongList from '~/modules/songs/hooks/use-remote-mic-song-list';
 import { useSetlist } from '~/modules/songs/hooks/use-setlist';
 import { useSungSongs } from '~/modules/songs/stats/hooks';
+import useInstrumentalsEnabled from '~/modules/songs/use-instrumentals-enabled';
 import { SongGroup } from '~/routes/sing-a-song/song-selection/hooks/use-song-list';
 import { AppliedFilters } from '~/routes/sing-a-song/song-selection/hooks/use-song-list-filter';
 
@@ -48,7 +49,8 @@ export const usePlaylists = (
   const remoteSongList = useRemoteMicSongList();
   const { connected } = useRemoteMicServerStatus();
   const sungSongs = useSungSongs();
-  const hasInstrumentals = songs.some((song) => song.instrumental);
+  const instrumentalsEnabled = useInstrumentalsEnabled();
+  const hasInstrumentals = instrumentalsEnabled && songs.some((song) => song.instrumental);
 
   return useMemo<PlaylistEntry[]>(() => {
     if (isLoading) return [];

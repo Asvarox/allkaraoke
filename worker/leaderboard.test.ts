@@ -128,6 +128,25 @@ describe('POST /leaderboard', () => {
     expect(song.entries).toEqual([expect.objectContaining({ name: 'Easy singer', tolerance: 3 })]);
   });
 
+  it('serves the instrumental board apart from the original one', async () => {
+    const response = await submit(await generateSubmission({ instrumental: true, name: 'No vocals' }));
+    expect(response.status).toBe(200);
+
+    const songBoard = async (query: string) =>
+      (await (
+        await SELF.fetch(`https://example.com/leaderboard-song?songId=song-1&tolerance=2${query}`)
+      ).json()) as SongBoardResponse;
+    expect((await songBoard('')).entries).toEqual([]);
+    expect((await songBoard('&instrumental=true')).entries).toEqual([
+      expect.objectContaining({ name: 'No vocals', instrumental: true }),
+    ]);
+  });
+
+  it('rejects an instrumental flag that is not a boolean', async () => {
+    const response = await submit(await generateSubmission({ instrumental: 'yes' as never }));
+    expect(response.status).toBe(400);
+  });
+
   it('rejects a score sung on a debug pitch width', async () => {
     const response = await submit(await generateSubmission({ tolerance: 4 }));
 

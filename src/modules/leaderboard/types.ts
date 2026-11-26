@@ -18,6 +18,8 @@ export interface LeaderboardSubmission {
   name: string;
   /** ISO-3166 alpha-2, `null` when the player preferred not to say. */
   country: string | null;
+  /** Sung to the instrumental video, which is ranked as a song of its own. Missing means the original */
+  instrumental?: boolean;
   /** sha-256 hex over the packed notes bytes concatenated with the score. */
   notesHash: string;
   notes: Uint8Array;
@@ -37,6 +39,8 @@ export interface BoardEntry {
   title: string;
   songId: string;
   tolerance: number;
+  /** Only present (and `true`) for a run sung to the instrumental video */
+  instrumental?: true;
   /** epoch ms; the client renders the relative date so a cached response cannot go stale */
   createdAt: number;
 }

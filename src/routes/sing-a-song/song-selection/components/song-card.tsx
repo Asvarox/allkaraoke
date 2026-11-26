@@ -5,6 +5,7 @@ import { SongPreview } from '~/interfaces';
 import { Chip } from '~/modules/elements/akui/chip';
 import { Icon } from '~/modules/elements/akui/icon';
 import Box from '~/modules/elements/akui/primitives/box';
+import useInstrumentalsEnabled from '~/modules/songs/use-instrumentals-enabled';
 import SongFlag from '~/routes/sing-a-song/song-selection/components/song-card/song-flag';
 import { SongCardStatsIndicator } from '~/routes/sing-a-song/song-selection/components/song-card/top-container';
 import { cn } from '~/utils/cn';
@@ -79,6 +80,7 @@ function BadgeFlag({ className, ...props }: Omit<ComponentProps<typeof SongFlag>
 
 function BadgeDuet({ className, ...props }: ComponentProps<typeof Chip>) {
   const { song } = useSongCardContext();
+  const instrumentalsEnabled = useInstrumentalsEnabled();
   if (song.tracksCount <= 1) return null;
   return (
     <Chip
@@ -89,14 +91,15 @@ function BadgeDuet({ className, ...props }: ComponentProps<typeof Chip>) {
       {...props}>
       <Icon icon="ic:round-people-alt" width="1rem" height="1rem" />
       {/* Gives way to the Instrumental badge, which wouldn't fit next to it with its label */}
-      {!song.instrumental && <span>Duet</span>}
+      {!(instrumentalsEnabled && song.instrumental) && <span>Duet</span>}
     </Chip>
   );
 }
 
 function BadgeInstrumental({ className, ...props }: ComponentProps<typeof Chip>) {
   const { song } = useSongCardContext();
-  if (!song.instrumental) return null;
+  const instrumentalsEnabled = useInstrumentalsEnabled();
+  if (!instrumentalsEnabled || !song.instrumental) return null;
   return (
     <Chip
       variant="violet"

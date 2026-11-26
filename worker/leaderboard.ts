@@ -77,7 +77,8 @@ const validateSubmission = (payload: unknown): { submission: LeaderboardSubmissi
     !isBoundedString(submission.notesHash, MAX_SUBMITTED_ID_LENGTH) ||
     !Number.isFinite(submission.tolerance) ||
     !Number.isFinite(submission.trackIndex) ||
-    !Number.isFinite(submission.inputLag)
+    !Number.isFinite(submission.inputLag) ||
+    (submission.instrumental !== undefined && typeof submission.instrumental !== 'boolean')
   ) {
     return { message: 'Invalid payload' };
   }
@@ -231,7 +232,7 @@ export const handleSongLeaderboardRead = async (request: Request, env: Leaderboa
     return error(400, 'Invalid score');
   }
 
-  const result = await board.songBoard(songId, tolerance, score);
+  const result = await board.songBoard(songId, tolerance, score, params.get('instrumental') === 'true');
 
   return new Response(JSON.stringify(result), {
     // Private and short: the response is keyed on a score that belongs to one player, so it is only

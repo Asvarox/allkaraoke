@@ -177,3 +177,32 @@ test.describe('Global leaderboard', () => {
     });
   });
 });
+
+test('marks runs sung to the instrumental on the main menu board', async ({ page }) => {
+  const entry = {
+    country: 'pl',
+    artist: 'Artist',
+    title: 'Title',
+    songId: 'song',
+    tolerance: 2,
+    createdAt: Date.now(),
+  };
+  await page.route('/leaderboard', (route) =>
+    route.fulfill({
+      status: 200,
+      body: JSON.stringify({
+        generatedAt: Date.now(),
+        entries: [
+          { ...entry, name: 'Original singer', score: 1_200_000 },
+          { ...entry, name: 'Instrumental singer', score: 1_100_000, instrumental: true },
+        ],
+      }),
+    }),
+  );
+
+  await page.goto('/menu/?e2e-test');
+  const rows = page.getByTestId('leaderboard-row').and(page.locator(':visible'));
+  await expect(rows).toHaveCount(2);
+  await expect(rows.nth(0).getByTestId('leaderboard-row-instrumental')).toHaveCount(0);
+  await expect(rows.nth(1).getByTestId('leaderboard-row-instrumental')).toBeVisible();
+});
