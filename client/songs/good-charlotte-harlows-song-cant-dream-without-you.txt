@@ -1,0 +1,394 @@
+#ARTIST:Good Charlotte
+#TITLE:Harlow’s Song (Can’t Dream Without You)
+#CREATOR:servok
+#BPM:384,1
+#YEAR:2010
+#VIDEO:v=bTCW1rfJ2ac
+#GENRE:Pop Punk
+#LANGUAGE:English
+#GAP:18034,639416818536
+#ALLKARAOKE_ID:good-charlotte-harlows-song-cant-dream-without-you
+#ALLKARAOKE_SID:7966
+#ALLKARAOKE_LASTUPDATE:2026-11-26T06:16:19.718Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:200
+#ALLKARAOKE_SOURCEURL:Good Charlotte
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:215
+#MP3:Good Charlotte - Harlow’s Song (Can’t Dream Without You).mp3
+#COVER:Good Charlotte - Harlow’s Song (Can’t Dream Without You) [CO].jpg
+#BACKGROUND:Good Charlotte - Harlow’s Song (Can’t Dream Without You) [BG].jpg
+: 26 3 -2 When 
+: 31 4 -2 you 
+: 36 10 7 close 
+: 48 4 5 your 
+: 54 14 5 eyes 
+: 70 2 3 and 
+: 74 16 5 go 
+: 92 2 3 to 
+: 96 16 5 sleep 
+: 114 5 3 to
+: 120 20 3 night
+- 140 192
+- 192
+: 218 2 7 I’ll 
+: 222 8 7 be 
+* 234 6 8 right 
+: 242 7 7 out
+: 250 8 5 side 
+: 260 10 3 your 
+: 272 26 3 door
+- 298 360
+- 360
+: 386 12 7 Dreams 
+: 400 2 5 will 
+: 404 12 5 come 
+: 418 2 5 and 
+: 422 2 3 they’ll 
+: 426 8 5 take 
+: 439 4 5 you 
+: 444 3 3 a
+: 448 3 5 way
+: 452 14 3 ~
+- 466 538
+- 538
+: 564 8 7 Let 
+: 574 8 7 them 
+: 584 10 8 bring 
+: 596 6 7 you 
+: 606 8 5 back 
+: 616 2 3 to 
+: 624 49 3 me
+: 675 23 5 ~
+- 698 703
+- 703
+: 729 2 -2 And 
+: 732 3 -2 to
+: 738 4 7 mor
+: 744 4 5 row 
+: 750 3 5 when 
+: 756 2 3 you 
+: 760 10 5 wake 
+: 784 8 5 I’ll 
+: 794 8 3 be 
+: 804 8 5 next 
+: 814 6 3 to 
+: 822 16 3 you
+- 838 886
+- 886
+: 912 10 7 The 
+: 924 9 7 pro
+: 934 9 5 tec
+: 944 10 3 tion 
+: 958 8 5 from 
+: 970 2 7 the 
+: 974 16 7 day
+- 990 1053
+- 1053
+: 1079 3 -2 When 
+: 1084 2 -2 the 
+: 1088 10 7 tears 
+: 1100 10 5 fall 
+: 1112 8 5 down 
+: 1122 6 3 your 
+: 1132 10 5 face 
+: 1144 6 3 like 
+: 1154 6 5 morn
+: 1162 6 7 ing 
+* 1170 18 -2 dew
+- 1188 1232
+- 1232
+: 1258 2 7 I’ll 
+: 1262 2 7 be 
+: 1266 4 7 there 
+: 1272 2 7 to 
+: 1276 4 7 put 
+: 1282 2 5 a 
+: 1286 7 7 smi
+: 1295 7 5 ~le 
+: 1304 8 5 on 
+: 1315 7 3 your 
+: 1324 18 3 face
+- 1342
+: 1360 4 0 And 
+: 1366 4 3 I’ll 
+: 1374 20 2 say
+: 1396 16 0 ~
+- 1412 1416
+- 1416
+* 1442 4 -2 I 
+* 1448 4 7 don’t 
+* 1456 3 7 wan
+* 1460 2 7 na 
+* 1464 8 5 live 
+* 1474 8 3 this 
+* 1484 4 7 li
+* 1489 5 5 ~fe 
+* 1497 4 5 with
+* 1502 8 5 out 
+* 1512 16 3 you
+- 1528
+: 1531 2 3 I 
+: 1534 2 7 don’t 
+: 1539 3 7 wan
+: 1543 2 7 na 
+: 1549 11 5 spend 
+: 1561 2 3 the 
+: 1566 4 5 ni
+: 1571 11 5 ~ght 
+: 1584 5 5 with
+: 1590 7 5 out 
+: 1600 10 3 you
+- 1610
+: 1616 2 3 I 
+: 1620 6 7 don’t 
+: 1628 3 7 wan
+: 1632 4 7 na 
+: 1638 4 5 know 
+: 1644 4 5 what 
+: 1650 4 5 it’s 
+: 1656 8 3 like
+- 1664
+* 1667 2 3 I 
+* 1670 8 7 can’t 
+* 1682 18 5 dream 
+: 1716 4 7 with
+: 1721 5 5 out 
+: 1729 15 3 you
+- 1744 1810
+- 1810
+: 1836 2 3 I 
+: 1840 14 7 can’t 
+: 1856 30 5 dream 
+: 1890 5 7 with
+: 1896 8 5 out 
+: 1906 20 3 you
+- 1926 1930
+- 1930
+: 1956 4 3 Let 
+: 1962 4 7 your 
+: 1968 3 7 fi
+: 1972 4 5 re 
+: 1978 8 5 burn 
+: 1990 12 5 bright 
+: 2006 14 5 for 
+* 2022 3 3 the 
+* 2026 15 5 world 
+* 2043 3 7 to 
+* 2048 18 -2 see
+- 2066 2126
+- 2126
+: 2152 2 19 You 
+: 2156 2 19 are 
+: 2160 2 19 the 
+: 2164 6 20 bet
+: 2172 6 19 ter 
+: 2180 12 17 part 
+: 2194 6 15 of 
+: 2202 30 15 me
+- 2232 2282
+- 2282
+: 2308 2 10 When 
+: 2312 4 10 you 
+: 2320 8 19 hold 
+: 2330 8 17 my 
+: 2340 10 17 hand 
+: 2352 6 15 I 
+: 2360 12 17 swear 
+: 2374 6 15 that 
+: 2382 11 17 I 
+: 2396 3 19 be
+: 2400 22 19 lieve
+- 2422 2464
+- 2464
+: 2490 2 19 I’m 
+: 2494 4 19 liv
+: 2499 11 19 ing 
+: 2512 8 20 in 
+: 2522 8 19 my 
+: 2532 9 17 wild
+: 2542 10 15 est 
+: 2554 24 15 dreams
+- 2578
+: 2588 4 10 And 
+: 2594 6 19 I 
+: 2602 40 17 say
+- 2642
+: 2668 4 5 I 
+: 2674 4 7 don’t 
+: 2682 3 7 wan
+: 2686 2 7 na 
+: 2690 8 5 live 
+: 2700 8 3 this 
+: 2710 4 7 li
+: 2715 5 5 ~fe 
+* 2723 4 5 with
+* 2728 8 5 out 
+* 2738 16 3 you
+- 2754
+: 2758 2 3 I 
+: 2761 2 7 don’t 
+: 2766 3 7 wan
+: 2770 2 7 na 
+: 2776 11 5 spend 
+: 2788 2 3 the 
+: 2793 4 5 ni
+: 2798 11 5 ~ght 
+: 2811 5 5 with
+: 2817 7 5 out 
+: 2827 10 3 you
+- 2837
+: 2846 2 3 I 
+: 2850 6 7 don’t 
+: 2858 3 7 wan
+: 2862 4 7 na 
+* 2868 4 8 know 
+* 2874 4 7 what 
+* 2879 3 5 it’s 
+* 2885 8 3 like
+- 2893
+: 2896 2 3 I 
+: 2899 8 7 can’t 
+: 2911 18 5 dream 
+: 2945 4 7 with
+: 2950 5 5 out 
+: 2958 15 3 you
+- 2973
+: 2998 7 0 Flo
+: 3007 5 0 wers 
+: 3016 8 2 for 
+: 3026 10 3 your 
+: 3038 18 2 hair
+- 3056 3060
+- 3060
+* 3086 9 10 Rain
+* 3096 10 8 bows 
+: 3108 10 7 for 
+: 3120 6 8 your 
+: 3128 12 7 eyes 
+: 3142 2 3 to 
+: 3146 10 3 see
+- 3156
+: 3168 4 -2 Your 
+: 3174 10 0 dreams 
+: 3188 2 0 are 
+: 3192 6 2 ev
+: 3199 10 3 ’ry
+: 3210 14 2 where
+- 3224 3228
+- 3228
+: 3254 5 -2 They’ll 
+: 3262 5 8 car
+: 3268 4 8 ry
+: 3273 6 7 ~ 
+: 3281 12 7 you 
+: 3297 3 8 a
+: 3301 11 7 way 
+: 3316 4 3 from 
+: 3324 8 3 me
+- 3332
+: 3338 4 20 A
+: 3343 39 19 way 
+: 3384 5 19 fro
+: 3390 2 17 ~m 
+: 3394 22 17 me 
+: 3426 7 15 some 
+* 3436 17 22 da
+* 3454 14 20 ~
+* 3469 10 19 ~
+* 3480 25 17 ~y
+- 3505
+: 3514 4 20 A
+: 3519 39 19 way 
+: 3560 5 19 fro
+: 3566 2 17 ~m 
+: 3570 22 17 me 
+: 3602 7 15 some 
+* 3612 17 22 da
+* 3630 14 20 ~
+* 3645 10 19 ~
+* 3656 25 17 ~y
+- 3681 3700
+- 3700
+: 3726 2 5 I 
+: 3730 3 7 don’t 
+: 3735 2 7 wan
+: 3738 4 7 na 
+: 3744 10 5 live 
+: 3756 8 3 this 
+: 3766 4 7 li
+: 3771 5 5 ~fe 
+: 3777 5 5 with
+: 3783 8 5 out 
+: 3794 16 3 you
+- 3810
+: 3811 2 3 I 
+: 3814 2 7 don’t 
+: 3819 3 7 wan
+: 3823 2 7 na 
+: 3829 11 5 spend 
+: 3841 2 3 the 
+: 3846 4 5 ni
+: 3851 11 5 ~ght 
+: 3864 5 5 with
+: 3870 7 5 out 
+: 3880 10 3 you
+- 3890
+: 3899 2 3 I 
+: 3903 6 7 don’t 
+: 3911 3 7 wan
+: 3915 4 7 na 
+: 3921 4 8 know 
+: 3927 4 7 what 
+: 3932 3 5 it’s 
+: 3938 8 3 like
+- 3946
+: 3949 2 3 I 
+: 3952 8 7 can’t 
+* 3964 18 5 dream 
+: 3998 4 7 with
+: 4003 5 5 out 
+: 4011 15 3 you
+- 4026 4048
+- 4048
+: 4074 2 5 I 
+: 4078 3 7 don’t 
+: 4083 2 7 wan
+: 4086 4 7 na 
+: 4092 10 5 live 
+: 4104 8 3 this 
+: 4114 4 7 li
+: 4119 5 5 ~fe 
+: 4125 5 5 with
+: 4131 8 5 out 
+: 4142 16 3 you
+- 4158
+: 4162 2 10 I 
+: 4165 2 10 don’t 
+: 4170 3 10 wan
+: 4174 2 10 na 
+: 4180 11 10 spend 
+: 4192 2 7 the 
+: 4196 2 7 ni
+: 4199 6 10 ~
+: 4206 7 7 ~ght 
+: 4215 5 7 with
+: 4221 7 7 out 
+: 4231 10 7 you
+- 4241
+: 4250 2 3 I 
+: 4254 6 7 don’t 
+: 4262 3 7 wan
+: 4266 4 7 na 
+: 4272 4 8 know 
+: 4278 4 7 what 
+: 4283 3 5 it’s 
+: 4289 8 3 like
+- 4297
+: 4300 2 3 I 
+: 4303 8 7 can’t 
+: 4315 18 5 dream 
+* 4348 4 7 with
+* 4354 7 5 out 
+* 4363 15 3 you
+E

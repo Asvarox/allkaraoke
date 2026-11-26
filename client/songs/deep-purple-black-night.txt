@@ -1,0 +1,194 @@
+#ARTIST:Deep Purple
+#TITLE:Black Night
+#CREATOR:Leroidukitch
+#BPM:274
+#YEAR:1970
+#VIDEO:v=rZXhZ6Wejqc
+#LANGUAGE:English
+#GAP:21964,598540145984
+#ALLKARAOKE_ID:deep-purple-black-night
+#ALLKARAOKE_SID:7917
+#ALLKARAOKE_LASTUPDATE:2026-11-26T06:16:08.462Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:200
+#ALLKARAOKE_SOURCEURL:Deep Purple
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:198
+#MP3:Deep Purple - Black Night.mp3
+: 18 6 16 Black 
+: 26 6 14 night
+- 32
+: 49 2 16 Is 
+: 52 2 19 not 
+: 58 5 19 ri
+: 65 3 16 ~ght
+- 68
+: 82 2 16 I 
+: 85 2 20 do
+: 88 2 21 ~n’t 
+: 92 8 19 feel
+- 100
+: 115 6 16 So 
+: 123 6 14 bright,
+- 129
+: 146 2 11 I 
+: 150 4 16 don’t 
+: 158 6 14 care
+- 164
+: 178 2 11 To 
+: 182 4 19 sit 
+: 188 5 19 ti
+: 195 3 16 ~ght
+- 198
+: 206 6 16 May
+: 214 3 14 be 
+: 219 2 11 I’ll 
+* 223 4 14 find 
+* 230 3 11 on 
+* 235 2 14 the 
+: 239 4 18 way 
+: 246 3 16 down 
+: 251 2 14 the 
+: 255 3 16 line 
+: 261 3 14 that 
+: 266 2 11 I’m 
+: 270 19 9 free,
+- 289 296
+- 296
+: 314 14 19 Free 
+: 330 2 16 to 
+: 334 2 14 be 
+: 338 13 16 me
+- 351 387
+- 387
+: 405 6 16 Black 
+: 413 6 16 night 
+: 421 4 14 is 
+: 427 4 11 a 
+: 438 6 16 long 
+: 446 6 14 way 
+: 455 3 16 from 
+: 461 31 11 home 
+: 494 7 11 oh 
+: 503 5 11 oh 
+: 510 7 11 oh 
+: 519 7 11 oh
+- 526 767
+- 767
+: 785 2 11 I 
+: 789 4 16 don’t 
+: 796 5 14 need
+- 801
+: 817 2 14 A 
+: 821 4 19 dark 
+: 827 4 18 tree
+: 833 4 16 ~
+- 837
+: 849 2 11 I 
+: 852 5 21 don’t 
+: 861 4 19 want
+- 865
+: 881 2 14 A 
+: 885 4 16 rough 
+: 892 7 14 sea,
+- 899
+: 914 2 11 I 
+: 918 4 16 can’t 
+: 926 2 14 fee
+: 930 2 11 ~l
+- 932
+: 947 2 16 I 
+: 951 4 19 can’t 
+: 957 5 18 see
+: 964 3 16 ~
+- 967
+: 973 6 16 May
+: 981 3 14 be 
+: 986 2 11 I’ll 
+* 990 4 14 find 
+* 997 3 11 on 
+* 1002 2 14 the 
+: 1006 4 18 way 
+: 1013 3 16 down 
+: 1018 2 14 the 
+: 1022 3 16 line 
+: 1028 3 14 that 
+: 1033 2 11 I’m 
+: 1037 19 9 free,
+- 1056 1065
+- 1065
+: 1083 14 19 Free 
+: 1099 2 16 to 
+: 1103 2 14 be 
+: 1107 13 16 me
+- 1120 1157
+- 1157
+: 1175 6 16 Black 
+: 1183 6 16 night 
+: 1191 4 14 is 
+: 1197 4 11 a 
+: 1208 6 16 long 
+: 1216 6 14 way 
+: 1225 3 16 from 
+: 1231 39 11 home 
+: 1272 8 11 oh 
+: 1283 3 9 oh 
+: 1288 4 7 oh
+- 1292 2384
+- 2384
+: 2402 6 16 Black 
+: 2410 6 14 night,
+- 2416
+: 2434 6 19 Black 
+: 2442 5 18 ni
+: 2448 3 16 ~ght
+- 2451
+: 2465 2 11 I 
+: 2468 4 21 don’t 
+: 2475 13 19 need
+- 2488
+: 2499 5 16 Black 
+: 2507 6 14 night,
+- 2513
+: 2529 2 11 I can’t
+: 2532 6 16 ~ 
+: 2541 8 14 see
+- 2549
+: 2565 6 19 Dark 
+: 2574 4 18 ni
+: 2579 3 16 ~ght
+- 2582
+: 2588 6 16 May
+: 2596 3 14 be 
+: 2601 2 11 I’ll 
+* 2605 6 14 find 
+* 2614 3 11 on 
+* 2619 2 14 the 
+: 2623 4 18 way 
+: 2630 3 16 down 
+: 2635 2 14 the 
+: 2639 3 16 line 
+: 2645 3 14 that 
+: 2650 2 11 I’m 
+: 2654 19 9 free,
+- 2673 2680
+- 2680
+: 2698 14 19 Free 
+: 2714 2 16 to 
+: 2718 2 14 be 
+: 2722 13 16 me
+- 2735 2771
+- 2771
+: 2789 6 16 Black 
+: 2797 6 16 night 
+: 2805 4 14 is 
+: 2811 4 11 a 
+: 2822 6 16 long 
+: 2830 6 14 way 
+: 2839 3 16 from 
+: 2845 31 11 home 
+: 2878 7 11 oh 
+: 2887 5 11 oh 
+: 2894 7 11 oh 
+: 2903 7 11 oh
+E

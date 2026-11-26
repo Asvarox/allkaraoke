@@ -1,0 +1,275 @@
+#ARTIST:Lost Frequencies feat. James Blunt
+#TITLE:Melody
+#CREATOR:Mamba99
+#BPM:240
+#YEAR:2018
+#VIDEO:v=4t6rQDxJwno
+#LANGUAGE:English
+#GAP:8950
+#ALLKARAOKE_ID:lost-frequencies-feat-james-blunt-melody
+#ALLKARAOKE_SID:7975
+#ALLKARAOKE_LASTUPDATE:2026-11-26T06:16:21.808Z
+#ALLKARAOKE_REALBPM:200
+#ALLKARAOKE_SOURCEURL:Lost Frequencies feat. James Blunt
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:146
+#MP3:Lost Frequencies feat. James Blunt - Melody.mp3
+* 16 2 16 Hey 
+* 20 2 14 me
+* 24 1 12 lo
+* 26 8 12 dy
+- 34 44
+- 44
+: 60 1 17 Ev
+: 62 2 17 ery 
+: 66 4 17 night 
+: 72 1 17 you 
+: 74 2 17 play 
+: 78 4 19 me 
+: 84 2 17 some
+: 88 2 16 thing 
+: 92 8 16 sweet
+- 100 106
+- 106
+: 122 1 12 And 
+: 124 1 14 when 
+: 126 2 14 I’m 
+: 130 4 14 down, 
+: 136 1 14 you 
+: 138 4 17 al
+: 144 2 17 ways 
+: 148 4 17 change 
+: 154 1 16 the 
+: 156 8 16 key
+- 164 170
+- 170
+: 186 1 12 I 
+: 188 1 17 need 
+: 190 2 17 you 
+: 194 4 17 now, 
+: 200 1 17 my 
+: 202 4 17 heart 
+: 208 2 19 has 
+: 212 4 17 lost 
+: 218 1 16 the 
+: 220 8 16 beat
+- 228
+* 244 2 14 And 
+* 248 2 12 I’m 
+* 252 2 14 count
+* 256 1 16 ing 
+* 258 4 14 on 
+* 264 2 12 your 
+* 268 2 14 love, 
+: 272 2 16 hey 
+: 276 2 14 me
+: 280 1 12 lo
+: 282 8 12 dy
+- 290 298
+- 298
+: 314 1 12 We 
+: 316 2 17 both 
+: 320 1 17 could 
+: 322 4 17 use 
+: 328 1 17 a 
+: 330 2 17 rea
+: 334 4 19 son 
+: 340 2 17 just 
+: 344 2 16 to 
+: 350 8 16 smile
+- 358 362
+- 362
+: 378 1 12 So 
+: 380 1 14 let 
+: 382 2 14 me 
+: 386 4 14 be 
+: 392 2 14 your 
+: 396 2 17 har
+: 400 1 17 mo
+: 402 4 17 ny 
+: 410 1 16 to
+: 412 8 16 night
+- 420 428
+- 428
+: 444 1 17 Ev
+: 446 2 17 ery 
+: 450 4 17 note 
+: 456 2 17 you 
+: 460 2 17 hit 
+: 464 2 19 cuts 
+: 468 4 17 in
+: 474 1 16 to 
+: 476 8 16 me
+- 484 488
+- 488
+: 504 2 12 So 
+: 508 1 14 let 
+: 510 2 16 me 
+: 514 4 14 hear 
+: 520 2 12 your 
+: 524 2 14 love, 
+: 532 2 12 sing
+- 534 616
+- 616
+: 632 2 12 So 
+: 636 2 14 let 
+: 640 1 16 me 
+: 642 4 14 hear 
+: 648 2 12 your 
+: 652 2 14 love, 
+: 660 2 12 sing
+- 662 748
+- 748
+* 764 2 17 Let 
+* 768 1 19 me 
+* 770 4 17 hear 
+* 776 2 16 your 
+* 780 2 17 love, 
+* 788 2 16 sing
+- 790 872
+- 872
+: 888 2 12 So 
+: 892 2 14 let 
+: 896 1 16 me 
+: 898 4 14 hear 
+: 904 2 12 your 
+: 908 2 14 love, 
+: 916 2 12 sing
+- 918 1004
+- 1004
+: 1020 2 17 Let 
+: 1024 1 19 me 
+: 1026 4 17 hear 
+: 1032 2 16 your 
+: 1036 2 17 love...
+- 1038
+: 1040 2 16 Hey 
+: 1044 2 14 me
+: 1048 1 12 lo
+: 1050 8 12 dy
+- 1058 1068
+- 1068
+: 1084 1 17 Ev
+: 1086 2 17 ery 
+: 1090 4 17 night 
+* 1096 1 17 you 
+* 1098 2 17 play 
+* 1102 4 19 me 
+* 1108 2 17 some
+* 1112 2 16 thing 
+* 1116 8 16 sweet
+- 1124 1130
+- 1130
+: 1146 1 12 And 
+: 1148 1 14 when 
+: 1150 2 14 I’m 
+: 1154 4 14 down, 
+: 1160 1 14 you 
+: 1162 4 17 al
+: 1168 2 17 ways 
+: 1172 4 17 change 
+: 1178 1 16 the 
+: 1180 8 16 key
+- 1188 1194
+- 1194
+: 1210 1 12 I 
+: 1212 1 17 need 
+: 1214 2 17 you 
+: 1218 4 17 now, 
+: 1224 1 17 my 
+: 1226 4 17 heart 
+: 1232 2 19 has 
+: 1236 4 17 lost 
+: 1242 1 16 the 
+: 1244 8 16 beat
+- 1252
+: 1268 2 14 And 
+: 1272 2 12 I’m 
+: 1276 2 14 count
+: 1280 1 16 ing 
+: 1282 4 14 on 
+: 1288 2 12 your 
+: 1292 2 14 love, 
+: 1296 2 16 hey 
+: 1300 2 14 me
+: 1304 1 12 lo
+: 1306 8 12 dy
+- 1314 1322
+- 1322
+: 1338 1 12 We 
+: 1340 2 17 both 
+: 1344 1 17 could 
+: 1346 4 17 use 
+: 1352 1 17 a 
+* 1354 2 17 rea
+* 1358 4 19 son 
+* 1364 2 17 just 
+* 1368 2 16 to 
+* 1374 8 16 smile
+- 1382 1386
+- 1386
+: 1402 1 12 So 
+: 1404 1 14 let 
+: 1406 2 14 me 
+: 1410 4 14 be 
+: 1416 2 14 your 
+: 1420 2 17 har
+: 1424 1 17 mo
+: 1426 4 17 ny 
+: 1434 1 16 to
+: 1436 8 16 night
+- 1444 1452
+- 1452
+: 1468 1 17 Ev
+: 1470 2 17 ery 
+: 1474 4 17 note 
+: 1480 2 17 you 
+: 1484 2 17 hit 
+: 1488 2 19 cuts 
+: 1492 4 17 in
+: 1498 1 16 to 
+: 1500 8 16 me
+- 1508 1512
+- 1512
+: 1528 2 12 So 
+: 1532 1 14 let 
+: 1534 2 16 me 
+: 1538 4 14 hear 
+: 1544 2 12 your 
+: 1548 2 14 love, 
+: 1556 2 12 sing
+- 1558 1640
+- 1640
+: 1656 2 12 So 
+: 1660 2 14 let 
+: 1664 1 16 me 
+: 1666 4 14 hear 
+: 1672 2 12 your 
+: 1676 2 14 love, 
+: 1684 2 12 sing
+- 1686 1772
+- 1772
+: 1788 2 17 Let 
+: 1792 1 19 me 
+: 1794 4 17 hear 
+: 1800 2 16 your 
+: 1804 2 17 love, 
+: 1812 2 16 sing
+- 1814 1896
+- 1896
+* 1912 2 12 So 
+* 1916 2 14 let 
+* 1920 1 16 me 
+* 1922 4 14 hear 
+* 1928 2 12 your 
+* 1932 2 14 love, 
+* 1940 2 12 sing
+- 1942 2028
+- 2028
+: 2044 2 17 Let 
+: 2048 1 19 me 
+: 2050 4 17 hear 
+: 2056 2 16 your 
+: 2060 2 17 love, 
+: 2068 4 16 sing
+E
