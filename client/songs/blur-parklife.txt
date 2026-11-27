@@ -1,0 +1,440 @@
+#ARTIST:Blur
+#TITLE:Parklife
+#CREATOR:Blur
+#BPM:276,92
+#YEAR:1994
+#PREVIEWSTART:80
+#VIDEO:v=YSuHrTfcikU
+#GENRE:Rock
+#LANGUAGE:English
+#GAP:15170,989166546295
+#ALLKARAOKE_ID:blur-parklife
+#ALLKARAOKE_SID:8031
+#ALLKARAOKE_LASTUPDATE:2026-11-27T06:06:29.735Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_CREATORURL:https://ultrastar-es.org/en/canciones?creador=kodaman
+#ALLKARAOKE_REALBPM:176
+#ALLKARAOKE_SOURCEURL:https://ultrastar-es.org/en/canciones?busqueda=blur
+#ALLKARAOKE_PREVIEWEND:120
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:194
+#MP3:Blur - Parklife.mp3
+#COVER:Blur - Parklife [CO].jpg
+F 18 6 64 Oi
+- 24 269
+- 269
+F 287 2 64 Con
+F 291 2 64 fi
+F 293 4 64 dence 
+F 299 2 64 is 
+F 301 2 64 a 
+F 303 3 64 pre
+F 307 2 64 fe
+F 309 2 64 rence
+- 311
+F 312 1 52 For 
+F 313 2 52 the 
+F 315 4 52 ha
+F 320 2 52 bi
+F 323 2 52 tu
+F 325 2 52 al 
+F 328 2 52 vo
+F 331 6 52 yeur
+- 337
+F 339 3 52 Of 
+F 343 3 52 what 
+F 347 3 52 is 
+F 351 3 52 known 
+F 356 4 52 as
+- 360 377
+- 377
+: 395 5 64 Park
+: 403 5 62 life
+- 408
+F 413 2 64 And 
+F 415 3 64 mor
+F 419 3 64 ning 
+F 423 3 64 soup 
+F 429 2 64 can 
+F 431 2 64 be 
+F 433 2 64 a
+F 436 6 64 void
+F 443 1 64 ed
+- 444
+F 445 2 52 If 
+F 447 2 52 you 
+F 449 2 52 take 
+F 453 2 52 a 
+F 455 5 52 route 
+F 461 6 52 straight 
+F 471 6 52 through
+- 477
+F 480 2 52 What 
+F 483 4 52 is 
+F 489 4 52 known 
+F 495 4 52 as
+- 499 505
+- 505
+: 523 5 64 Park
+: 531 5 62 life
+- 536
+F 540 3 64 John's 
+F 545 3 64 got 
+F 551 3 64 brew
+F 555 3 64 er's 
+F 559 3 64 droop
+- 562
+F 563 2 52 He 
+F 565 3 52 gets 
+F 570 3 52 in
+F 575 2 52 ti
+F 577 2 52 mi
+F 580 3 52 da
+F 584 2 52 ted
+- 586
+F 587 3 52 By 
+F 590 3 52 the 
+F 595 3 52 dir
+F 599 3 52 ty 
+F 603 3 52 pi
+F 607 3 52 geons
+- 610
+F 618 6 64 They 
+F 625 3 64 love 
+F 629 2 64 a 
+F 631 2 64 bit 
+F 633 2 64 of 
+F 636 2 64 it
+- 638
+* 651 5 64 Park
+: 659 5 62 life
+- 664
+F 668 4 64 Who's 
+F 674 4 64 that 
+F 682 4 64 gut 
+F 686 4 64 lord 
+F 692 4 64 march
+F 698 4 64 ing?
+- 702
+F 708 5 52 You 
+F 714 2 52 should 
+F 717 2 52 cut 
+F 721 3 52 down
+- 724
+F 725 2 52 On 
+F 727 2 52 your 
+F 730 4 52 pork
+F 737 4 52 life 
+F 743 2 52 mate
+- 745
+F 748 4 64 Get 
+F 754 4 64 some 
+F 759 2 64 ex
+F 762 2 64 er
+F 766 5 64 cise
+- 771 777
+- 777
+: 795 20 64 All 
+: 819 3 62 the 
+: 823 6 57 peo
+: 831 12 59 ple
+- 843 849
+- 849
+: 867 5 64 So 
+: 875 4 64 ma
+: 879 5 62 ny 
+: 887 6 57 peo
+: 895 12 59 ple
+- 907
+: 911 2 59 And 
+: 915 5 59 they 
+* 923 10 67 all 
+: 939 12 66 go 
+: 955 5 64 hand 
+: 963 3 64 in 
+: 967 8 59 hand
+- 975
+: 987 6 60 Hand 
+: 995 6 60 in 
+: 1003 6 59 hand 
+: 1011 6 62 through 
+: 1019 12 57 their 
+: 1043 4 58 park
+: 1051 10 59 life
+- 1061 1084
+- 1084
+F 1102 4 64 Know 
+F 1107 2 64 what 
+F 1109 2 64 I 
+F 1111 3 64 mean
+- 1114 1228
+- 1228
+F 1246 2 52 I 
+F 1250 2 52 get 
+F 1253 2 52 up 
+F 1256 2 52 when 
+F 1258 2 52 I 
+F 1261 4 52 want
+- 1265
+F 1270 2 52 Ex
+F 1273 3 52 cept 
+F 1277 4 52 on 
+F 1283 4 52 Wednes
+F 1290 2 52 days
+- 1292
+F 1294 2 64 When 
+F 1296 4 64 I 
+F 1301 3 64 get 
+F 1307 4 64 rude
+F 1313 2 64 ly
+- 1315
+F 1316 2 64 A
+F 1319 4 64 wa
+F 1324 4 64 kened 
+F 1330 2 64 by 
+F 1333 2 64 the 
+F 1336 4 64 dust
+F 1341 3 64 men
+- 1344
+: 1355 5 64 Park
+: 1363 5 62 life
+- 1368
+F 1372 2 64 I 
+F 1375 4 64 put 
+F 1380 4 64 my 
+F 1385 4 64 trou
+F 1390 2 64 sers 
+F 1392 4 64 on
+- 1396
+F 1402 2 64 Have 
+F 1404 3 64 a 
+F 1408 2 64 cup 
+F 1411 2 64 of 
+F 1414 4 64 tea
+- 1418
+F 1425 2 52 And 
+F 1427 3 52 I 
+F 1435 3 52 think 
+F 1439 2 52 a
+F 1441 4 52 bout 
+F 1450 4 52 leav
+F 1454 4 52 ing 
+F 1459 3 52 the 
+F 1462 3 52 house
+- 1465
+: 1483 5 64 Park
+* 1491 5 62 life
+- 1496
+F 1500 4 64 I 
+F 1505 4 64 feed 
+F 1510 2 64 the 
+F 1513 2 64 pi
+F 1516 4 64 geons
+- 1520
+F 1525 2 52 I 
+F 1528 4 52 some
+F 1533 4 52 times 
+F 1539 4 52 feed 
+F 1544 2 52 the 
+F 1546 4 52 spar
+F 1550 4 52 rows 
+F 1555 4 52 too
+- 1559
+F 1566 2 64 It 
+F 1568 2 64 gives 
+F 1571 2 64 me 
+F 1573 5 64 a 
+F 1579 4 64 sense 
+F 1584 2 64 of
+- 1586
+F 1587 2 64 E
+F 1589 5 64 nor
+F 1595 4 64 mous 
+F 1601 4 64 well 
+F 1605 2 64 be
+F 1608 2 64 ing
+- 1610
+: 1611 5 64 Park
+: 1619 5 62 life
+- 1624
+F 1629 2 64 And 
+F 1632 2 64 then 
+F 1634 2 64 I'm 
+F 1637 4 64 hap
+F 1641 3 64 py
+- 1644
+F 1645 2 64 For 
+F 1647 2 64 the 
+F 1650 2 64 rest 
+F 1655 2 64 of 
+F 1657 2 64 the 
+F 1660 4 64 day
+- 1664
+F 1669 5 52 Safe 
+F 1675 2 52 in 
+F 1677 2 52 the 
+F 1680 3 52 know
+F 1684 3 52 ledge
+- 1687
+F 1688 3 52 There 
+F 1691 3 52 will 
+F 1695 3 52 al
+F 1699 3 52 ways 
+F 1704 1 52 be
+- 1705
+F 1706 3 64 A 
+F 1709 3 64 bit 
+F 1712 3 64 of 
+F 1715 4 64 my 
+F 1720 4 64 heart 
+F 1725 3 64 de
+F 1728 4 64 vo
+F 1733 3 64 ted 
+F 1736 3 64 to 
+F 1739 3 64 it
+- 1742
+* 1755 20 64 All 
+: 1779 3 62 the 
+: 1783 6 57 peo
+: 1791 12 59 ple
+- 1803 1809
+- 1809
+: 1827 5 64 So 
+: 1835 4 64 ma
+: 1839 5 62 ny 
+: 1847 6 57 peo
+: 1855 12 59 ple
+- 1867
+: 1871 2 59 And 
+: 1875 5 59 they 
+: 1883 10 67 all 
+: 1899 12 66 go 
+: 1915 5 64 hand 
+: 1923 3 64 in 
+: 1927 8 59 hand
+- 1935
+: 1947 6 60 Hand 
+: 1955 6 60 in 
+: 1963 6 59 hand 
+: 1971 6 62 through 
+: 1979 12 57 their 
+: 2003 4 58 park
+: 2011 10 59 life
+- 2021 2129
+- 2129
+: 2147 5 56 Park
+: 2155 5 56 life
+- 2160 2169
+- 2169
+: 2187 5 64 Park
+: 2195 5 62 life
+- 2200 2257
+- 2257
+: 2275 5 56 Park
+: 2283 5 56 life
+- 2288 2297
+- 2297
+: 2315 5 64 Park
+: 2323 5 62 life
+- 2328
+F 2334 2 64 It's 
+F 2337 3 64 got 
+F 2341 3 64 no
+F 2344 3 64 thing 
+F 2347 3 64 to 
+F 2350 3 64 do 
+F 2354 2 64 with 
+F 2356 2 64 your
+- 2358
+F 2360 7 52 Vor
+F 2369 7 52 sprung 
+F 2378 7 52 durch 
+F 2387 3 52 Tech
+F 2391 3 52 nik 
+F 2398 3 52 you 
+F 2401 3 52 know
+- 2404 2425
+- 2425
+: 2443 5 64 Park
+: 2451 4 62 life
+- 2455
+F 2456 3 64 And 
+F 2459 3 64 it's 
+F 2463 3 64 not 
+F 2467 3 64 a
+F 2470 3 64 bout 
+F 2475 3 64 you 
+F 2481 3 64 jog
+F 2485 3 64 gers
+- 2488
+F 2494 3 52 Who 
+F 2498 5 52 go 
+F 2505 7 52 round 
+F 2515 5 52 and 
+F 2520 7 52 round
+- 2527
+F 2531 5 52 And 
+F 2536 7 52 round 
+F 2547 5 52 and 
+F 2552 7 52 round
+- 2559
+: 2571 5 64 Park
+: 2579 5 62 life
+- 2584
+: 2587 20 64 All 
+: 2611 3 62 the 
+: 2615 6 57 peo
+: 2623 12 59 ple
+- 2635 2641
+- 2641
+: 2659 5 64 So 
+: 2667 4 64 ma
+: 2671 5 62 ny 
+: 2679 6 57 peo
+: 2687 12 59 ple
+- 2699
+: 2703 2 59 And 
+: 2707 5 59 they 
+: 2715 10 67 all 
+: 2731 12 66 go 
+: 2747 5 64 hand 
+: 2755 3 64 in 
+: 2759 8 59 hand
+- 2767
+: 2779 6 60 Hand 
+: 2787 6 60 in 
+: 2795 6 59 hand 
+: 2803 6 62 through 
+: 2811 12 57 their 
+: 2835 4 58 park
+: 2843 10 59 life
+- 2853 2889
+- 2889
+: 2907 20 64 All 
+: 2931 3 62 the 
+: 2935 6 57 peo
+: 2943 12 59 ple
+- 2955 2961
+- 2961
+: 2979 5 64 So 
+: 2987 4 64 ma
+: 2991 5 62 ny 
+* 2999 6 57 peo
+: 3007 12 59 ple
+- 3019
+: 3023 2 59 And 
+: 3027 5 59 they 
+: 3035 10 67 all 
+: 3051 12 66 go 
+: 3067 5 64 hand 
+: 3075 3 64 in 
+: 3079 8 59 hand
+- 3087
+: 3099 6 60 Hand 
+: 3107 6 60 in 
+: 3115 6 59 hand 
+: 3123 6 62 through 
+: 3131 12 57 their 
+: 3155 4 58 park
+: 3163 10 59 life
+E
