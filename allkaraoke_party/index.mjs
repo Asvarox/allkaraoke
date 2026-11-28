@@ -1,11 +1,10 @@
 import { DurableObject } from "cloudflare:workers";
-//#region src/modules/songs/song-version.ts
+// src/modules/songs/song-version.ts
 /** Reads a version from a query param, PostHog property or key suffix - anything unknown is the original */
 var toSongVersion = (value) => value === "instrumental" ? "instrumental" : "original";
 /** Flag, review and baseline key: the song id, suffixed for the instrumental */
 var getSongVersionKey = (songId, version = "original") => version === "instrumental" ? `${songId}:instrumental` : songId;
-//#endregion
-//#region functions/song-quality-flags-store.ts
+// functions/song-quality-flags-store.ts
 var SONG_QUALITY_ISSUES = [
 	"not-in-sync",
 	"too-loud",
@@ -145,8 +144,7 @@ var removeSongQualityFlag = async (kvNamespace, songId, version = "original") =>
 	if (removedDurationShift) await kvNamespace.put(DURATION_SHIFT_FLAGS_KEY, JSON.stringify(durationShiftSongs));
 	return true;
 };
-//#endregion
-//#region functions/unverified-songs-browser-admin-auth.ts
+// functions/unverified-songs-browser-admin-auth.ts
 var responseHeaders$4 = { "Content-Type": "application/json" };
 var isAuthorizedUnverifiedSongsAdmin = (request, env) => {
 	const expectedPassword = env.ADMIN_PANEL_PASSWORD;
@@ -157,13 +155,11 @@ var unauthorizedResponse = () => new Response(JSON.stringify({ error: "Unauthori
 	status: 401,
 	headers: responseHeaders$4
 });
-//#endregion
-//#region functions/unverified-songs-env.ts
+// functions/unverified-songs-env.ts
 var getUnverifiedSongsKv = (env) => env.UNVERIFIED_SONGS_KV ?? env.SHARED_SONGS_KV;
 var getUnverifiedSongsAdminToken = (env) => env.UNVERIFIED_SONGS_ADMIN_TOKEN ?? env.SHARED_SONGS_ADMIN_TOKEN;
 var getUnverifiedSongsRequestToken = (request) => request.headers.get("x-unverified-songs-admin-token") ?? request.headers.get("x-shared-songs-admin-token");
-//#endregion
-//#region functions/admin/song-quality-flags.ts
+// functions/admin/song-quality-flags.ts
 var jsonResponse$1 = (body, status = 200) => new Response(JSON.stringify(body), {
 	status,
 	headers: responseHeaders$4
@@ -185,8 +181,7 @@ var onRequest$7 = async ({ request, env }) => {
 		return jsonResponse$1({ error: "Internal server error" }, 500);
 	}
 };
-//#endregion
-//#region functions/unverified-songs-store.ts
+// functions/unverified-songs-store.ts
 var LEGACY_SHARED_SONG_KEY_PREFIX = "shared-song:";
 var LEGACY_SHARED_SONGS_INDEX_KEY = "shared-songs-index";
 var getStorageKey = (sharedSongId) => `${LEGACY_SHARED_SONG_KEY_PREFIX}${sharedSongId}`;
@@ -303,8 +298,7 @@ var regenerateIndex = async (kvNamespace) => {
 	}));
 	await kvNamespace.put(LEGACY_SHARED_SONGS_INDEX_KEY, JSON.stringify(indexEntries));
 };
-//#endregion
-//#region functions/admin/unverified-song.ts
+// functions/admin/unverified-song.ts
 var isUnverifiedSongUpdate = (payload) => {
 	if (!payload || typeof payload !== "object") return false;
 	const update = payload;
@@ -345,8 +339,7 @@ var onRequest$6 = async ({ request, env }) => {
 		});
 	}
 };
-//#endregion
-//#region functions/admin/unverified-songs.ts
+// functions/admin/unverified-songs.ts
 var onRequest$5 = async ({ request, env }) => {
 	if (!isAuthorizedUnverifiedSongsAdmin(request, env)) return unauthorizedResponse();
 	const unverifiedSongsKv = getUnverifiedSongsKv(env);
@@ -387,8 +380,7 @@ var onRequest$5 = async ({ request, env }) => {
 		});
 	}
 };
-//#endregion
-//#region functions/proxy.ts
+// functions/proxy.ts
 var onRequest$4 = async (context) => {
 	const hostAllowList = ["ultrastar-es.org", "usdb.animux.de"];
 	try {
@@ -412,8 +404,7 @@ var onRequest$4 = async (context) => {
 		return new Response();
 	}
 };
-//#endregion
-//#region functions/song-quality-flags-admin.ts
+// functions/song-quality-flags-admin.ts
 var responseHeaders$3 = { "Content-Type": "application/json" };
 var jsonResponse = (body, status = 200) => new Response(JSON.stringify(body), {
 	status,
@@ -442,8 +433,7 @@ var onRequest$3 = async ({ request, env }) => {
 		return jsonResponse({ error: "Internal server error" }, 500);
 	}
 };
-//#endregion
-//#region functions/unverified-song.ts
+// functions/unverified-song.ts
 var responseHeaders$2 = { "Content-Type": "application/json" };
 var onRequest$2 = async ({ request, env }) => {
 	try {
@@ -480,8 +470,7 @@ var onRequest$2 = async ({ request, env }) => {
 		});
 	}
 };
-//#endregion
-//#region functions/unverified-songs.ts
+// functions/unverified-songs.ts
 var responseHeaders$1 = { "Content-Type": "application/json" };
 var onRequest$1 = async ({ request, env }) => {
 	try {
@@ -517,8 +506,7 @@ var onRequest$1 = async ({ request, env }) => {
 		});
 	}
 };
-//#endregion
-//#region functions/unverified-songs-admin.ts
+// functions/unverified-songs-admin.ts
 var responseHeaders = { "Content-Type": "application/json" };
 var normalizeUnverifiedSongRecord = (payload) => {
 	if (!payload || typeof payload !== "object") return null;
@@ -582,8 +570,7 @@ var onRequest = async ({ request, env }) => {
 		});
 	}
 };
-//#endregion
-//#region node_modules/.pnpm/msgpackr@2.1.0/node_modules/msgpackr/unpack.js
+// node_modules/.pnpm/msgpackr@2.1.0/node_modules/msgpackr/unpack.js
 var decoder;
 try {
 	decoder = new TextDecoder();
@@ -1537,8 +1524,7 @@ var FLOAT32_OPTIONS = {
 };
 new Uint8Array((/* @__PURE__ */ new Float32Array(1)).buffer, 0, 4);
 Unpackr.SUPPORTS_STRUCT_HOOKS = true;
-//#endregion
-//#region node_modules/.pnpm/msgpackr@2.1.0/node_modules/msgpackr/pack.js
+// node_modules/.pnpm/msgpackr@2.1.0/node_modules/msgpackr/pack.js
 var textEncoder;
 try {
 	textEncoder = new TextEncoder();
@@ -2446,8 +2432,7 @@ defaultPackr.pack;
 var { NEVER, ALWAYS, DECIMAL_ROUND, DECIMAL_FIT } = FLOAT32_OPTIONS;
 var QUALIFYING_SCORE = 1e6;
 var BACKFILL_ACCEPTED_UNTIL = Date.UTC(2026, 11, 1);
-//#endregion
-//#region src/modules/leaderboard/notes-hash.ts
+// src/modules/leaderboard/notes-hash.ts
 /**
 * sha-256 over the packed notes bytes concatenated with the score.
 *
@@ -2466,8 +2451,7 @@ async function computeNotesHash(notes, score) {
 	const digest = await crypto.subtle.digest("SHA-256", payload);
 	return Array.from(new Uint8Array(digest)).map((byte) => byte.toString(16).padStart(2, "0")).join("");
 }
-//#endregion
-//#region src/modules/leaderboard/notes-payload.ts
+// src/modules/leaderboard/notes-payload.ts
 var PRECISION_SCALE = 100;
 function decodeNotesPayload(payload) {
 	const records = unpack(payload);
@@ -2485,11 +2469,9 @@ function decodeNotesPayload(payload) {
 	}
 	return decoded;
 }
-//#endregion
-//#region src/modules/leaderboard/types.ts
+// src/modules/leaderboard/types.ts
 var BOARD_KV_KEY = "board:v1";
-//#endregion
-//#region worker/leaderboard.ts
+// worker/leaderboard.ts
 /** Single global board — every submission and every read goes through one Durable Object. */
 var BOARD_INSTANCE_NAME = "board";
 var EMPTY_BOARD = {
@@ -2624,8 +2606,7 @@ var handleLeaderboardRead = async (request, env) => {
 	await cache.put(cacheKey, new Response(stored, { headers }));
 	return new Response(stored, { headers });
 };
-//#endregion
-//#region worker/leaderboard-admin.ts
+// worker/leaderboard-admin.ts
 var parseScoreUpdates = (body) => {
 	const scores = body?.scores;
 	if (!Array.isArray(scores)) return null;
@@ -2704,8 +2685,7 @@ var handleLeaderboardAdmin = async (request, env) => {
 		headers: responseHeaders$4
 	});
 };
-//#endregion
-//#region worker/leaderboard-do.ts
+// worker/leaderboard-do.ts
 /**
 * How far back the global board on the main menu looks. Rows older than this stop being ranked
 * there; they are not deleted, and the per-song boards keep them.
@@ -2988,8 +2968,7 @@ var slotChannelName = (slot) => `slot-${slot}`;
 /** A room's directory row is wiped this long after the last call touching it. The host's keepalive
 * is what holds a live room open, so this only has to outlast the gap between keepalives. */
 var DIRECTORY_TTL_MS = 18e5;
-//#endregion
-//#region worker/realtime/room-directory.ts
+// worker/realtime/room-directory.ts
 /**
 * The one piece of server state a Realtime room keeps: who is in a room, which slot channel each of
 * them owns, and who is currently hosting.
@@ -3226,16 +3205,14 @@ var RoomDirectory = class extends DurableObject {
 		this.state = emptyState(Date.now());
 	}
 };
-//#endregion
-//#region worker/online-directory-do.ts
+// worker/online-directory-do.ts
 /** Online mode's rooms. The authority runs in a singer's browser, so when that singer goes quiet the
 * next one in line takes over (see docs/online-mode.md). */
 var OnlineDirectory = class extends RoomDirectory {
 	slotCount = 6;
 	hasSuccession = true;
 };
-//#endregion
-//#region worker/realtime/signaling.ts
+// worker/realtime/signaling.ts
 var DEFAULT_REALTIME_API_URL = "https://rtc.live.cloudflare.com/v1";
 var REALTIME_TURN_API_BASE = "https://rtc.live.cloudflare.com/v1/turn/keys";
 /** Cloudflare's public STUN, which takes no credentials — the reason Realtime connects at all
@@ -3566,8 +3543,7 @@ var createRealtimeSignaling = (service, getDirectoryNamespace) => async (request
 		return json(request, { error: "Signaling failed" }, 502);
 	}
 };
-//#endregion
-//#region worker/online-signaling.ts
+// worker/online-signaling.ts
 /** Online mode's signaling under `/online/`. */
 var handleOnlineSignaling = createRealtimeSignaling(ONLINE_REALTIME, (env) => env.ONLINE_DIRECTORY);
 var REMOTE_MIC_REALTIME = {
@@ -3576,20 +3552,17 @@ var REMOTE_MIC_REALTIME = {
 	roomCodePattern: /^[a-z]{5}$/,
 	storageKey: "REMOTE_MIC"
 };
-//#endregion
-//#region worker/remote-mic-directory-do.ts
+// worker/remote-mic-directory-do.ts
 /** Remote mics' rooms, one per Realtime game code. The game is the room: a phone holding the host
 * role would leave every other phone subscribed to a game that is not there, so it never moves. */
 var RemoteMicDirectory = class extends RoomDirectory {
 	slotCount = 16;
 	hasSuccession = false;
 };
-//#endregion
-//#region worker/remote-mic-signaling.ts
+// worker/remote-mic-signaling.ts
 /** Remote mics' signaling for Realtime game codes, on the same Realtime app as online mode. */
 var handleRemoteMicSignaling = createRealtimeSignaling(REMOTE_MIC_REALTIME, (env) => env.REMOTE_MIC_DIRECTORY);
-//#endregion
-//#region worker/index.ts
+// worker/index.ts
 var createContext = (request, env, executionContext, params) => {
 	return {
 		request,
@@ -3604,8 +3577,7 @@ var createContext = (request, env, executionContext, params) => {
 var callPagesHandler = (handler, request, env, executionContext, params = {}) => {
 	return handler(createContext(request, env, executionContext, params));
 };
-//#endregion
-//#region \0virtual:cloudflare/worker-entry
+// \0virtual:cloudflare/worker-entry
 var worker_entry_default = { async fetch(request, env, executionContext) {
 	const { pathname } = new URL(request.url);
 	const onlineResponse = await handleOnlineSignaling(request, env, pathname);
@@ -3625,7 +3597,6 @@ var worker_entry_default = { async fetch(request, env, executionContext) {
 	if (pathname === "/proxy") return callPagesHandler(onRequest$4, request, env, executionContext);
 	return new Response("Not found", { status: 404 });
 } };
-//#endregion
 export { LeaderboardBoard, OnlineDirectory, RemoteMicDirectory, worker_entry_default as default };
 
 //# sourceMappingURL=index.mjs.map
