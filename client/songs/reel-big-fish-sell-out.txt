@@ -1,0 +1,408 @@
+#ARTIST:Reel Big Fish
+#TITLE:Sell Out
+#CREATOR:KnutH
+#BPM:216
+#YEAR:1996
+#VIDEO:v=AEKbFMvkLIc
+#LANGUAGE:English
+#GAP:55687,77777777778
+#ALLKARAOKE_ID:reel-big-fish-sell-out
+#ALLKARAOKE_SID:8150
+#ALLKARAOKE_LASTUPDATE:2026-11-28T09:04:29.486Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:104
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=AEKbFMvkLIc
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:268
+#MP3:Reel Big Fish - Sell Out.mp3
+#START:30.5
+: 14 4 16 Well 
+: 20 3 13 I 
+: 24 4 13 know 
+: 30 3 12 you 
+: 34 4 12 can’t 
+: 40 5 13 work 
+: 46 3 11 in 
+: 50 3 14 fast 
+: 54 6 13 food
+- 60
+: 62 3 16 All 
+: 66 5 11 your 
+: 72 5 18 life 
+: 78 4 13 but 
+: 84 3 10 don’t 
+: 88 7 10 sign 
+: 96 6 13 that 
+: 106 5 13 paper 
+: 112 3 10 to
+: 116 4 12 night,
+- 120
+: 134 3 17 She 
+: 138 3 17 said, 
+: 142 1 14 but 
+: 144 5 12 it’s 
+: 150 3 14 too 
+: 154 6 16 late.
+- 160 198
+- 198
+: 212 3 16 Well, 
+: 216 3 17 I 
+: 220 3 16 don’t 
+: 224 8 18 remember 
+: 234 4 23 what 
+: 240 1 24 I 
+: 242 6 20 read,
+- 248
+: 250 1 22 I 
+: 252 3 22 don’t 
+: 256 7 16 remember 
+: 264 5 9 what 
+: 270 3 16 they 
+: 274 6 18 say
+- 280
+: 282 1 18 I 
+: 284 3 18 guess 
+: 288 3 13 it 
+: 292 7 17 doesn’t 
+: 300 10 13 matter,
+- 310
+: 316 1 13 I 
+: 318 3 15 guess 
+: 322 1 13 it 
+: 324 7 12 doesn’t 
+: 332 11 16 matter 
+: 344 7 16 anym
+: 352 24 18 ore
+- 376
+: 382 7 12 You’re 
+: 390 3 13 gonna 
+: 394 1 12 go 
+: 396 1 13 to 
+: 398 1 14 the 
+: 400 5 12 record 
+: 406 6 13 store
+- 412
+: 418 3 12 You’re 
+: 422 3 13 gonna 
+: 426 5 15 give’em 
+: 432 3 13 all 
+: 436 3 15 your 
+: 440 8 18 money
+- 448
+: 452 7 13 Radio 
+: 460 3 14 plays 
+: 464 1 13 what 
+: 466 1 13 they 
+: 468 3 13 want 
+: 472 1 14 you 
+: 474 1 13 to 
+: 476 6 16 hear
+- 482
+: 484 1 13 They 
+: 486 1 15 tell 
+: 488 1 13 me 
+: 490 3 11 it’s 
+: 494 5 13 cool 
+: 500 5 9 but I 
+: 506 1 12 just 
+: 508 3 13 don’t 
+: 512 7 15 believe 
+: 520 6 17 it
+- 526
+: 528 5 21 Sell 
+: 534 6 16 out, 
+: 546 3 16 with 
+: 550 3 16 me 
+: 554 4 16 oh 
+: 560 3 16 yeah,
+- 563
+: 564 5 18 Sell 
+: 570 8 16 out, 
+: 582 3 14 with 
+: 586 3 16 me 
+: 590 8 18 tonight
+- 598
+: 602 5 14 Record 
+: 608 5 13 company’s 
+: 614 3 17 gonna 
+: 618 3 20 give 
+: 622 1 17 me
+- 623
+: 624 3 16 Lots 
+: 628 1 18 of 
+: 630 3 21 money 
+: 634 1 25 and
+- 635
+: 636 11 16 Everything’s 
+: 648 5 18 gonna 
+: 654 5 23 be 
+: 660 7 14 al
+: 668 5 19 ri
+: 674 8 17 ght
+- 682 914
+- 914
+: 928 1 19 No 
+: 930 3 14 more 
+: 934 7 19 flippin’ 
+: 942 7 21 burgers
+- 949
+: 950 7 14 Puttin’ 
+: 958 3 20 on 
+: 962 3 11 my 
+: 966 7 18 silly 
+: 974 5 11 hat 
+: 980 3 15 you 
+: 984 3 18 know 
+: 988 3 14 I
+- 991
+: 992 5 24 Don’t 
+: 998 7 16 want 
+: 1006 4 22 that 
+: 1016 5 16 no 
+: 1022 8 19 more,
+- 1030 1038
+- 1038
+: 1052 7 16 I 
+: 1060 5 17 didin’t 
+: 1066 3 16 ask 
+: 1070 3 21 when 
+: 1074 3 18 we’d 
+: 1078 3 21 get 
+: 1082 6 14 paid,
+- 1088
+: 1092 1 19 Quit 
+: 1094 3 21 my 
+: 1098 8 19 day job 
+: 1108 15 22 anyway,
+- 1123
+: 1124 1 19 I 
+: 1126 3 21 guess 
+: 1130 3 20 it 
+: 1134 5 22 doesn’t 
+: 1140 10 18 matter,
+- 1150
+: 1156 1 18 I 
+: 1158 3 19 guess 
+: 1162 1 18 it 
+: 1164 7 17 doesn’t 
+: 1172 7 23 matter 
+: 1180 28 28 anymore
+- 1208
+: 1222 5 13 You’re 
+: 1228 3 18 gonna 
+: 1232 3 13 go 
+: 1236 1 9 to 
+: 1238 1 16 the 
+: 1240 5 17 record 
+: 1246 6 15 store,
+- 1252
+: 1258 3 21 You’re 
+: 1262 3 18 gonna 
+: 1266 5 13 give’em 
+: 1272 3 24 all 
+: 1276 3 24 your 
+: 1280 8 18 money,
+- 1288
+: 1292 5 16 Radio 
+: 1298 5 23 plays 
+: 1304 1 18 what 
+: 1306 1 15 they 
+: 1308 1 14 want 
+: 1310 1 15 you 
+: 1312 1 16 to 
+: 1314 6 15 hear,
+- 1320
+: 1324 1 16 They 
+: 1326 1 19 tell 
+: 1328 1 18 me 
+: 1330 3 16 it’s 
+: 1334 4 16 cool, 
+: 1340 1 19 but 
+: 1342 3 19 I 
+: 1346 1 16 just 
+: 1348 3 18 don’t 
+: 1352 7 23 believe 
+: 1360 4 24 it
+- 1364
+: 1368 5 17 Sell 
+: 1374 8 23 out, 
+: 1388 1 17 with 
+: 1390 4 16 me 
+: 1396 3 21 oh 
+: 1400 3 20 yeah, 
+: 1404 4 18 sell 
+: 1410 8 23 out
+- 1418
+: 1422 3 20 With 
+: 1426 3 24 me 
+: 1430 11 26 tonight, 
+: 1442 1 18 the 
+: 1444 3 22 record 
+: 1448 7 17 company’s 
+: 1456 3 21 gonna
+- 1459
+: 1460 3 16 Give 
+: 1464 1 22 me 
+: 1466 3 18 lots of 
+: 1470 3 24 money
+- 1473
+: 1474 3 19 And 
+: 1478 11 15 everything’s 
+: 1490 3 19 gonna 
+: 1494 6 25 be.
+- 1500 1620
+- 1620
+: 1634 1 22 And 
+: 1636 3 16 I 
+: 1640 5 18 don’t 
+: 1646 3 16 think 
+: 1650 5 13 it’ll 
+: 1656 4 18 be 
+: 1662 3 23 so 
+: 1666 6 16 bad
+- 1672 1684
+- 1684
+: 1698 1 18 And 
+: 1700 3 16 I 
+: 1704 5 15 know 
+: 1710 3 17 it 
+: 1714 5 15 won’t 
+: 1720 3 21 be 
+: 1724 5 16 so 
+: 1730 4 13 bad
+- 1734 1748
+- 1748
+: 1762 3 16 Cause 
+: 1766 1 19 the 
+: 1768 3 16 man 
+: 1772 8 19 said
+- 1780
+: 1784 3 16 “That’s 
+: 1788 1 22 the 
+: 1790 5 17 way 
+: 1796 1 15 it 
+: 1798 4 13 is”
+- 1802 1810
+- 1810
+: 1824 3 18 And 
+: 1828 1 16 the 
+: 1830 6 21 man 
+: 1838 9 19 said
+- 1847
+: 1848 5 21 “It 
+: 1854 3 19 don’t 
+: 1858 3 21 get 
+: 1862 11 18 better 
+: 1874 5 20 than 
+: 1880 5 24 this”
+- 1885
+: 1886 3 24 No, 
+: 1890 3 25 no, 
+: 1894 20 26 no!
+- 1914
+: 1928 1 15 So 
+: 1930 3 18 I 
+: 1934 3 15 signed 
+: 1938 3 18 on 
+: 1942 1 15 to 
+: 1944 1 18 the 
+: 1946 7 16 record 
+: 1954 6 22 company,
+- 1960
+: 1962 3 17 They 
+: 1966 1 21 say 
+: 1968 1 17 they’re 
+: 1970 1 21 gonna 
+: 1972 1 17 give 
+: 1974 3 21 me 
+: 1978 3 17 lot’s 
+: 1982 3 21 of 
+: 1986 8 26 money,
+- 1994
+: 1998 1 19 If 
+: 2000 3 13 I 
+: 2004 3 18 play 
+: 2008 1 16 what 
+: 2010 1 21 they 
+: 2012 3 13 want 
+: 2016 3 18 you 
+: 2020 1 19 to 
+: 2022 6 22 hear
+- 2028
+: 2030 1 21 They 
+: 2032 1 16 tell 
+: 2034 1 18 me 
+: 2036 2 18 it’s 
+: 2040 5 16 cool,
+- 2045
+: 2046 3 18 And 
+: 2050 1 17 I 
+: 2052 5 16 sure 
+: 2058 7 15 believe 
+: 2066 4 12 it ...
+- 2070
+: 2078 3 18 Sell 
+: 2082 4 20 out, 
+: 2096 1 18 with 
+: 2098 3 17 me 
+: 2102 2 16 oh 
+: 2106 4 18 yeah,
+- 2110
+: 2112 3 17 Sell 
+: 2116 6 16 out 
+: 2128 3 19 with 
+: 2132 3 21 me 
+: 2136 8 22 tonight,
+- 2144
+: 2146 1 16 The 
+: 2148 5 18 record 
+: 2154 7 16 company’s 
+: 2162 3 17 gonna 
+: 2166 3 16 give 
+: 2170 1 15 me 
+: 2172 3 17 lot’s
+- 2175
+: 2176 1 19 Of 
+: 2178 3 20 money 
+: 2182 1 19 and 
+: 2184 11 19 everything’s 
+: 2196 3 18 gonna 
+: 2200 6 23 be 
+: 2208 26 20 alright
+- 2234 2456
+- 2456
+: 2470 31 19 YEAH, 
+: 2502 3 22 YEA-
+: 2506 3 21 YEAH 
+: 2510 4 19 YEAH 
+: 2518 3 21 YEA-
+: 2522 8 23 YEAH
+- 2530
+: 2534 23 20 THE RECORD COMPANY IS
+- 2557
+: 2558 9 23 GONNA 
+: 2568 15 22 MAKE EVERY
+: 2584 36 18 THING ALL RIGHT!
+- 2620 2780
+- 2780
+: 2794 3 17 Baby, 
+: 2798 3 15 don’t 
+: 2802 3 16 you 
+: 2806 3 15 sign 
+: 2810 1 16 that 
+: 2812 3 18 paper 
+: 2816 5 17 tonight,
+- 2821
+: 2822 3 16 She 
+: 2826 4 14 said
+- 2830
+: 2834 3 16 “But 
+: 2838 1 18 I 
+: 2840 1 16 can’t 
+: 2842 3 14 work 
+: 2846 3 15 in 
+: 2850 7 14 fast food 
+: 2858 3 16 all 
+: 2862 3 17 my 
+: 2866 8 20 life!”
+E

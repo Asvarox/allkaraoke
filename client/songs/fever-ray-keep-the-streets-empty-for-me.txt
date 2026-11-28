@@ -1,0 +1,323 @@
+#ARTIST:Fever Ray
+#TITLE:Keep The Streets Empty For Me
+#CREATOR:Crowbardoctor
+#BPM:299,79999999999995
+#YEAR:2009
+#VIDEO:v=jWFb5z3kUSQ
+#GENRE:Indie Pop
+#LANGUAGE:English
+#GAP:32657
+#ALLKARAOKE_ID:fever-ray-keep-the-streets-empty-for-me
+#ALLKARAOKE_SID:8062
+#ALLKARAOKE_LASTUPDATE:2026-11-28T09:04:09.056Z
+#ALLKARAOKE_ARTISTORIGIN:SE
+#ALLKARAOKE_CREATORURL:https://sites.google.com/view/nils-ax/language
+#ALLKARAOKE_REALBPM:158
+#ALLKARAOKE_VOLUME:0,55
+#ALLKARAOKE_DURATION:337
+#VERSION:1.0.0
+#MP3:Fever Ray - Keep The Streets Empty For Me.ogg
+#VOCALS:vocals.ogg
+#COVER:Fever Ray - Keep The Streets Empty For Me [CO].jpg
+#MEDLEYSTARTBEAT:483
+#MEDLEYENDBEAT:1471
+: 20 8 6 Memory 
+: 33 4 10 comes 
+: 40 3 1 when 
+: 48 15 3 memory's 
+: 64 16 -1 old
+- 80 118
+- 118
+: 138 2 9 I 
+: 143 7 1 am 
+: 153 8 4 never 
+: 162 3 -4 the 
+: 167 9 -2 first 
+: 177 4 -3 to 
+: 185 20 1 know
+- 205 241
+- 241
+: 261 6 7 Fo
+: 269 6 6 llow
+: 277 6 10 ing 
+: 284 5 2 the 
+: 291 6 3 stream 
+: 299 2 2 up 
+: 307 22 -1 North
+- 329 360
+- 360
+: 380 8 2 Where 
+: 390 3 1 do 
+: 396 4 5 pe
+: 402 4 4 ople 
+: 407 6 -5 like 
+: 415 10 -4 us 
+: 429 27 1 float
+- 456 483
+- 483
+: 503 8 6 There 
+: 512 3 7 is 
+: 519 11 9 room 
+: 534 3 2 in 
+: 541 6 2 my 
+: 550 20 -1 la~p
+- 570 598
+- 598
+: 618 4 9 For 
+: 625 10 0 bruis
+: 636 3 0 es, 
+: 641 9 4 ass
+: 652 3 9 es, 
+: 656 8 -3 hand 
+: 669 28 1 cla~ps
+- 697 727
+- 727
+: 747 2 9 I 
+: 752 7 6 will 
+: 762 7 10 ne
+: 770 5 0 ver 
+: 777 11 1 disa
+: 795 18 -1 ppear
+- 813 848
+- 848
+: 868 5 1 For 
+: 876 7 1 for
+: 884 6 4 ever, 
+: 899 4 9 I'll 
+: 907 5 -2 be 
+: 914 35 1 here
+- 949 968
+- 968
+: 988 10 2 Whis
+: 1003 31 -1 pering
+- 1034 1061
+- 1061
+: 1081 7 2 Morn
+: 1089 5 -1 ing, 
+: 1095 6 2 keep 
+: 1105 5 9 the 
+: 1115 26 1 streets 
+: 1142 5 1 em
+: 1150 71 4 pty~ 
+: 1226 2 10 for 
+: 1230 18 2 me
+- 1248 1304
+- 1304
+: 1324 7 2 Morn
+: 1332 4 -1 ing, 
+: 1337 6 2 keep 
+: 1347 5 -3 the 
+: 1355 24 1 streets 
+: 1385 5 1 em
+: 1392 56 4 pty~
+- 1448
+: 1467 6 -1 for 
+: 1475 16 2 me
+- 1491 1572
+- 1572
+: 1592 3 -4 I'm 
+: 1597 6 6 lay
+: 1603 5 6 ing 
+: 1611 12 9 down, 
+: 1627 5 3 ea
+: 1635 4 2 ting 
+: 1642 18 -1 snow
+- 1660 1696
+- 1696
+: 1716 2 9 My 
+: 1719 9 1 fur 
+: 1729 2 9 is 
+: 1734 4 4 hot, 
+: 1742 3 -3 my 
+: 1747 11 -3 tongue 
+: 1760 2 9 is 
+: 1766 30 1 co~ld
+- 1796 1820
+- 1820
+: 1840 4 6 On 
+: 1845 3 6 a 
+: 1851 10 9 bed 
+: 1862 1 1 of 
+: 1865 3 9 s
+: 1870 7 2 pi
+: 1878 5 4 der 
+: 1885 23 -1 we~b
+- 1908 1938
+- 1938
+: 1958 1 1 I 
+: 1962 5 1 think 
+: 1968 4 1 of 
+: 1977 5 5 how 
+: 1984 2 -2 to 
+: 1988 10 -3 change 
+: 1999 3 -5 my
+: 2003 28 1 self
+- 2031 2059
+- 2059
+: 2079 2 9 A 
+: 2084 4 5 lot 
+: 2089 3 6 of 
+: 2095 7 9 hope 
+: 2105 3 -5 in 
+: 2109 1 -5 a 
+: 2113 6 2 one 
+: 2121 5 4 man 
+: 2127 19 -1 tent
+- 2146 2185
+- 2185
+: 2205 6 1 There's 
+: 2212 7 1 no 
+: 2220 7 4 room 
+: 2230 4 -3 for 
+: 2236 5 -4 inno
+: 2247 28 1 cence
+- 2275 2300
+- 2300
+: 2320 3 9 So 
+: 2325 6 6 take 
+: 2335 3 6 me 
+: 2341 7 9 home 
+: 2353 10 2 before 
+: 2365 5 4 the 
+: 2371 32 -1 storm
+- 2403 2427
+- 2427
+: 2447 5 0 Vel
+: 2453 3 1 vet 
+: 2458 8 4 moth
+: 2467 2 9 s 
+: 2470 4 -4 will 
+: 2475 6 -3 keep 
+: 2484 14 -6 us 
+: 2501 40 1 warm
+- 2541 2546
+- 2546
+: 2566 15 2 Whis
+: 2584 28 -1 pering
+- 2612 2637
+- 2637
+: 2657 8 2 Morn
+: 2667 4 6 ing, 
+: 2673 7 2 keep 
+: 2683 5 7 the 
+: 2690 30 4 streets 
+: 2721 6 4 em
+: 2728 34 4 pty~
+- 2762 2778
+- 2778
+: 2798 6 9 for 
+: 2813 5 2 me
+- 2818 2881
+- 2881
+: 2901 8 6 Mor
+: 2910 4 6 ning, 
+: 2916 6 7 keep 
+: 2927 5 9 the 
+: 2934 30 4 streets 
+: 2965 6 4 em
+: 2972 24 4 pty
+- 2996 3025
+- 3025
+: 3045 9 9 for 
+: 3056 12 3 me
+- 3068 4127
+- 4127
+: 4147 15 4 Whis
+: 4164 33 2 pering
+- 4197 4217
+- 4217
+: 4237 15 6 Morning, 
+: 4254 5 6 keep 
+: 4263 5 6 the 
+: 4270 25 4 streets 
+: 4301 5 4 em
+: 4308 2 9 pt
+: 4311 69 4 y~ 
+: 4383 7 -1 for 
+: 4392 12 2 me
+- 4404 4460
+- 4460
+: 4480 15 6 Morning, 
+: 4497 7 6 keep 
+: 4506 6 6 the 
+: 4514 26 4 streets 
+: 4544 6 4 em
+: 4551 51 4 pty~
+- 4602 4606
+- 4606
+: 4626 7 9 for 
+: 4635 14 2 me
+- 4649 4728
+- 4728
+F 4748 13 1 Uncover 
+F 4764 6 -3 our 
+F 4772 9 -3 heads 
+F 4782 3 -6 and 
+F 4787 8 -3 reveal 
+F 4796 3 -3 our 
+F 4800 45 1 sou~ls
+- 4845 4856
+- 4856
+F 4876 9 2 We 
+F 4887 7 -1 were 
+F 4896 11 -1 hungry 
+F 4910 11 -1 before 
+F 4924 3 -3 we 
+F 4930 7 -1 were 
+F 4940 9 -1 born
+- 4949 4970
+- 4970
+F 4990 13 1 Uncover 
+F 5006 5 -3 our 
+F 5014 9 -2 heads 
+F 5026 5 -6 and 
+F 5034 11 -3 reveal 
+F 5048 5 1 our 
+F 5056 11 1 souls
+- 5067 5099
+- 5099
+F 5119 3 1 We 
+F 5125 7 -1 were 
+F 5135 11 -1 hungry 
+F 5149 11 -1 before 
+F 5163 3 -1 we 
+F 5168 7 -3 were 
+F 5177 35 -1 bo~rn
+- 5212 5213
+- 5213
+F 5233 13 1 Uncover 
+F 5249 5 -3 our 
+F 5257 9 -3 heads 
+F 5269 1 9 and 
+F 5272 2 9 reveal 
+F 5277 4 9 our 
+F 5286 36 1 soul
+F 5324 7 1 s
+- 5331 5343
+- 5343
+F 5363 3 2 We 
+F 5369 7 2 were 
+F 5379 11 -1 hungry 
+F 5392 9 -1 before 
+F 5404 4 -1 we 
+F 5410 5 -3 were 
+F 5417 9 -3 born
+- 5426 5457
+- 5457
+F 5477 13 9 Uncover 
+F 5493 5 9 our 
+F 5501 9 -13 heads 
+F 5513 5 9 and 
+F 5521 11 -3 reveal 
+F 5535 5 13 our 
+F 5543 11 13 souls
+- 5554 5609
+- 5609
+F 5629 2 9 We 
+F 5634 6 9 were 
+F 5643 9 9 hungry 
+F 5655 10 9 before 
+F 5668 2 9 we 
+F 5673 6 -2 were 
+F 5682 8 -2 born
+E

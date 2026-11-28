@@ -1,0 +1,544 @@
+#ARTIST:Rudimental feat. Jess Glynne, Macklemore & Dan Caplen
+#TITLE:These Days
+#CREATOR:snake84, Silverbeam
+#BPM:368,16
+#YEAR:2018
+#VIDEO:v=pjTj-_55WZ8
+#LANGUAGE:English
+#GAP:16801,42112125163
+#ALLKARAOKE_ID:rudimental-feat-jess-glynne-macklemore-dan-caplen-these-days
+#ALLKARAOKE_SID:8087
+#ALLKARAOKE_LASTUPDATE:2026-11-28T09:04:17.240Z
+#ALLKARAOKE_REALBPM:200
+#ALLKARAOKE_SOURCEURL:Rudimental feat. Jess Glynne, Macklemore & Dan Caplen
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:232
+#MP3:Rudimental feat. Jess Glynne, Macklemore & Dan Caplen - These Days.mp3
+: 25 2 4 Lea
+: 29 4 2 ving 
+: 37 2 0 to 
+: 41 4 0 find 
+* 49 12 0 my 
+: 65 12 0 soul
+- 77
+: 89 2 4 Told 
+: 93 4 2 her 
+: 101 2 0 I 
+: 105 4 2 had 
+: 113 12 2 to 
+: 129 12 4 go
+- 141
+: 161 2 4 And 
+: 165 2 7 I 
+: 169 4 9 know 
+: 177 4 9 it 
+: 185 4 7 ain’t 
+: 193 2 7 pret
+: 197 12 4 ty
+- 209
+: 225 2 2 When 
+: 229 2 0 our 
+: 233 4 2 hearts 
+: 241 12 0 get 
+: 257 10 0 broke
+- 267
+: 281 2 4 Too 
+: 285 4 2 young 
+: 293 2 0 to 
+: 297 4 0 feel 
+* 305 12 0 this 
+: 321 12 0 old
+- 333
+: 345 2 4 Wat
+: 349 4 2 ching 
+* 357 2 0 us 
+: 361 4 2 both 
+: 369 6 2 tu
+: 377 4 0 ~rn 
+: 385 12 4 cold
+- 397
+: 417 2 4 Oh, 
+: 421 2 7 I 
+: 425 4 9 know 
+: 433 4 9 it 
+: 441 4 7 ain’t 
+: 449 2 7 pret
+: 453 12 4 ty
+- 465
+: 481 2 2 When 
+: 485 2 0 two 
+: 489 4 2 hearts 
+: 497 12 0 get 
+* 513 12 0 broke
+- 525
+: 545 2 4 Yeah, 
+: 549 2 7 I 
+: 553 4 9 know 
+: 561 4 9 it 
+: 569 4 7 ain’t 
+: 577 2 7 pret
+: 581 12 4 ty
+- 593
+: 609 2 2 When 
+: 613 2 0 two 
+: 617 4 2 hearts 
+: 625 12 0 get 
+: 641 12 0 broke
+- 653 664
+- 664
+: 689 4 -3 I 
+: 697 4 -3 hope 
+* 705 4 0 some
+* 713 12 0 day 
+: 729 6 -5 we’ll
+- 735
+: 753 4 2 Sit 
+: 761 4 2 down 
+: 769 4 0 to
+: 777 12 4 ge
+: 793 2 2 the
+: 797 4 0 ~r
+- 801
+: 817 2 5 And 
+* 821 4 5 laugh 
+: 829 2 5 with 
+: 833 4 7 each 
+: 841 12 7 o
+: 857 4 2 ther
+- 861
+: 865 4 0 ’Bout 
+: 873 4 2 these 
+: 881 10 0 days, 
+: 897 4 2 these 
+* 905 10 0 days
+: 917 2 -3 ~
+: 921 8 -5 ~
+- 929
+: 953 4 -3 All 
+: 961 4 0 our 
+: 969 12 0 trou
+: 985 4 -5 bles
+- 989
+: 1009 4 0 We’ll 
+: 1017 4 2 lay 
+: 1025 4 0 to 
+: 1033 12 4 rest 
+: 1049 2 2 a
+: 1053 6 0 ~nd
+- 1059
+: 1073 2 5 We’ll 
+: 1077 4 5 wish 
+* 1085 2 5 we 
+* 1089 4 7 could 
+: 1097 12 7 come 
+: 1113 4 2 back
+- 1117
+: 1121 4 0 To 
+: 1129 4 2 these 
+: 1137 10 0 days, 
+: 1153 4 2 these 
+: 1161 10 0 days
+- 1171 1358
+- 1358
+* 1383 4 2 These 
+: 1391 10 0 days, 
+: 1407 4 2 these 
+: 1415 10 0 days
+- 1425 1612
+- 1612
+: 1637 4 2 These 
+: 1645 10 0 days, 
+: 1661 4 2 these 
+: 1669 6 4 days
+: 1677 2 2 ~
+: 1681 3 0 ~
+- 1684
+: 1685 2 4 Three 
+: 1689 4 2 years 
+: 1697 2 0 of 
+* 1701 4 0 ups 
+: 1709 12 0 and 
+* 1725 12 0 downs
+- 1737
+: 1749 2 4 No
+: 1753 4 2 thing 
+: 1761 2 0 to 
+: 1765 4 2 show 
+: 1773 6 2 fo
+: 1781 4 0 ~r 
+: 1789 12 4 now
+- 1801
+: 1821 2 4 And 
+: 1825 2 7 I 
+: 1829 4 9 know 
+: 1837 4 9 it 
+: 1845 4 7 ain’t 
+: 1853 2 7 pret
+: 1857 12 4 ty
+- 1869
+: 1885 2 2 When 
+: 1889 2 0 the 
+: 1893 4 2 fire 
+* 1901 12 0 burns 
+: 1917 10 0 out
+- 1927
+* 1941 2 4 Cal
+* 1945 4 2 ling 
+: 1953 2 0 me 
+: 1957 4 0 when 
+: 1965 12 0 I’m 
+: 1981 10 0 drunk
+- 1991
+: 2001 2 0 Re
+: 2005 4 4 mind 
+: 2013 2 2 me 
+: 2017 2 0 of 
+: 2021 4 2 what 
+: 2029 12 2 I’ve 
+: 2045 12 4 done
+- 2057
+: 2077 2 4 And, 
+: 2081 2 7 I 
+: 2085 4 9 know 
+: 2093 4 9 it 
+: 2101 4 7 ain’t 
+: 2109 2 7 pret
+: 2113 12 12 ty
+- 2125
+: 2141 2 4 When 
+: 2145 2 2 you 
+: 2149 4 4 try 
+: 2157 2 7 to 
+* 2161 8 4 move 
+: 2173 20 2 on, 
+: 2197 12 0 yeah
+- 2209
+: 2221 4 -3 I 
+: 2229 4 -3 hope 
+: 2237 4 0 some
+: 2245 12 0 day 
+: 2261 6 -5 we’ll
+- 2267
+: 2285 4 2 Sit 
+: 2293 4 2 down 
+: 2301 4 0 to
+: 2309 12 4 ge
+: 2325 2 2 the
+: 2329 4 0 ~r
+- 2333
+: 2349 2 5 And 
+: 2353 4 5 laugh 
+: 2361 2 7 with 
+: 2365 4 7 each 
+: 2373 12 7 o
+: 2389 4 2 ther
+- 2393
+: 2397 4 0 ’Bout 
+: 2405 4 2 these 
+: 2413 10 0 days, 
+* 2429 4 2 these 
+* 2437 10 0 days
+* 2449 2 -3 ~
+* 2453 12 -5 ~
+- 2465
+: 2485 4 -3 All 
+: 2493 4 0 our 
+: 2501 12 0 trou
+: 2517 4 -5 bles
+- 2521
+: 2541 4 2 We’ll 
+: 2549 4 2 lay 
+: 2557 4 0 to 
+: 2565 12 4 rest 
+: 2581 2 2 a
+: 2585 6 0 ~nd
+- 2591
+: 2605 2 5 We’ll 
+: 2609 4 5 wish 
+: 2617 2 5 we 
+: 2621 4 7 could 
+: 2629 12 7 come 
+* 2645 4 2 back
+- 2649
+: 2653 4 0 To 
+: 2661 4 2 these 
+: 2669 10 0 days, 
+: 2685 4 2 these 
+: 2693 10 0 days
+- 2703 2890
+- 2890
+: 2915 4 2 These 
+: 2923 10 0 days, 
+: 2939 4 2 these 
+: 2947 10 0 days
+- 2957 3136
+- 3136
+* 3161 4 12 To 
+: 3169 4 12 these 
+: 3177 10 7 days, 
+: 3193 4 12 these 
+: 3201 10 12 days
+: 3213 2 14 ~
+: 3217 4 12 ~
+- 3221
+F 3241 2 4 Ci
+F 3245 2 4 ga
+F 3249 4 4 rettes 
+F 3255 2 4 in 
+F 3259 2 4 the 
+F 3263 4 4 ash 
+F 3271 4 4 tray
+- 3275 3282
+- 3282
+F 3307 2 4 Re
+F 3311 2 4 mi
+F 3315 1 4 nis
+F 3317 1 4 cing 
+F 3319 2 4 on 
+F 3323 2 4 those 
+F 3327 4 4 past 
+F 3335 6 4 days
+- 3341
+F 3365 2 4 I 
+F 3369 2 4 thought 
+F 3373 2 4 you’d 
+F 3377 1 4 end 
+F 3379 2 4 up 
+F 3383 2 4 with 
+F 3387 2 4 my 
+F 3391 4 4 last 
+F 3399 4 4 name
+- 3403
+F 3417 4 4 But 
+F 3441 4 4 that 
+F 3449 8 4 changed
+- 3457
+F 3479 2 4 And 
+F 3483 1 4 I 
+F 3485 2 4 tra
+F 3489 2 4 velled 
+F 3493 2 4 a
+F 3497 2 4 round 
+F 3501 2 4 the 
+F 3505 4 4 world
+- 3509
+F 3513 2 4 Think, 
+F 3517 2 4 where 
+F 3521 1 4 you 
+F 3523 2 4 li
+F 3527 1 4 ving 
+F 3529 2 4 at 
+F 3533 4 4 now?
+- 3537
+F 3545 2 4 I 
+F 3549 2 4 heard 
+F 3553 2 4 you 
+F 3557 2 4 moved 
+F 3561 1 4 to 
+F 3563 4 4 Ox
+F 3569 2 4 ford
+- 3571
+F 3573 2 4 Got 
+F 3577 2 4 an 
+F 3581 1 4 a
+F 3583 2 4 part
+F 3587 2 4 ment 
+F 3591 2 4 and 
+F 3595 4 4 settled 
+F 3601 4 4 down
+- 3605
+F 3627 1 4 And 
+F 3629 2 4 e
+F 3633 2 4 very 
+F 3637 1 4 once 
+F 3639 2 4 in 
+F 3643 1 4 a 
+F 3645 4 4 while
+- 3649
+F 3655 2 4 I 
+F 3659 4 4 start 
+F 3665 4 4 tex
+F 3673 4 4 ting, 
+F 3683 2 4 write 
+F 3687 1 4 a 
+F 3689 2 4 pa
+F 3693 2 4 ra
+F 3697 4 4 graph
+- 3701
+F 3707 1 4 But 
+F 3709 2 4 then 
+F 3713 2 4 I 
+F 3717 2 4 de
+F 3721 2 4 lete 
+F 3725 2 4 the 
+F 3729 4 4 mes
+F 3737 4 4 sage
+- 3741
+F 3755 2 4 Think 
+F 3759 1 4 a
+F 3761 2 4 bout 
+F 3765 2 4 you 
+F 3769 2 4 like 
+F 3773 2 4 a 
+F 3777 4 4 past 
+F 3785 8 4 time
+- 3793
+F 3801 2 4 I 
+F 3805 2 4 could 
+F 3813 2 4 cry 
+F 3817 2 4 you 
+F 3821 2 4 a 
+F 3825 2 4 ri
+F 3829 2 4 ver
+- 3831
+F 3833 2 4 Get 
+F 3837 2 4 you 
+F 3841 4 4 bap
+F 3849 12 4 tised 
+F 3865 4 4 or
+- 3869
+F 3883 2 4 I 
+F 3887 1 4 was
+F 3889 2 4 n’t 
+F 3893 2 4 rea
+F 3897 2 4 dy 
+F 3901 2 4 to 
+F 3905 4 4 act 
+F 3913 8 4 right
+- 3921
+F 3929 2 4 Used 
+F 3933 2 4 to 
+F 3945 2 4 al
+F 3949 2 4 ways 
+F 3953 2 4 think 
+F 3957 2 4 I’d 
+F 3961 2 4 get 
+F 3965 2 4 you 
+F 3969 4 4 back, 
+F 3977 10 4 right
+- 3987 3990
+- 3990
+F 4015 2 4 They 
+F 4019 2 4 say 
+F 4023 2 4 that 
+F 4027 4 4 things 
+F 4035 4 4 fall 
+F 4043 2 4 a
+F 4047 4 4 part
+- 4051
+F 4061 1 4 We 
+F 4063 2 4 were 
+F 4067 1 4 gon
+F 4069 2 4 na 
+F 4073 4 4 move 
+F 4079 1 4 to 
+F 4081 4 4 Brook
+F 4087 4 4 lyn
+- 4091
+F 4095 1 4 You 
+F 4097 2 4 were 
+F 4101 1 4 gon
+F 4103 2 4 na 
+F 4107 2 4 stu
+F 4111 2 4 dy 
+F 4115 4 4 art
+- 4119
+F 4133 1 4 Love 
+F 4135 2 4 is 
+F 4139 2 4 just 
+F 4143 1 4 a 
+F 4145 4 4 tool
+- 4149
+F 4157 2 4 To 
+F 4161 1 4 re
+F 4163 2 4 mind 
+F 4167 2 4 us 
+F 4171 2 4 who 
+F 4175 1 4 we 
+F 4177 6 4 are
+- 4183
+F 4189 2 4 And 
+F 4193 2 4 that 
+F 4197 1 4 we 
+F 4199 2 4 are 
+F 4203 2 4 not 
+F 4207 1 4 a
+F 4209 6 4 lone
+- 4215
+F 4219 2 4 When 
+F 4223 1 4 we’re 
+F 4225 4 4 wal
+F 4231 2 4 king 
+F 4235 2 4 in 
+F 4239 1 4 the 
+F 4241 6 4 dark
+- 4247
+: 4265 4 -3 I 
+: 4273 4 -3 hope 
+: 4281 4 0 some
+: 4289 12 0 day 
+: 4305 2 -3 we
+: 4309 2 -5 ~’ll
+- 4311
+: 4329 4 2 Sit 
+: 4337 4 2 down 
+: 4345 4 0 to
+* 4353 12 4 ge
+: 4369 2 2 the
+: 4373 4 0 ~r
+- 4377
+: 4391 2 5 And 
+: 4395 4 5 laugh 
+: 4403 2 5 with 
+: 4407 4 7 each 
+: 4415 12 7 o
+: 4431 4 2 ther
+- 4435
+: 4439 4 0 ’Bout 
+: 4447 4 2 these 
+: 4455 10 0 days, 
+: 4471 4 2 these 
+: 4479 6 4 days
+: 4487 2 5 ~
+: 4491 6 4 ~
+: 4499 2 2 ~
+: 4503 10 0 ~
+- 4513
+* 4527 4 -3 All 
+: 4535 4 0 our 
+: 4543 12 0 trou
+: 4559 4 -5 bles
+- 4563
+: 4581 4 0 We’ll 
+: 4589 4 2 lay 
+: 4597 4 0 to 
+: 4605 12 4 rest 
+: 4621 10 0 and
+- 4631
+: 4645 2 5 We’ll 
+: 4649 4 5 wish 
+: 4657 2 5 we 
+: 4661 4 7 could 
+* 4669 12 7 come 
+: 4685 4 2 back
+- 4689
+: 4693 4 0 To 
+: 4701 4 2 these 
+: 4709 10 0 days, 
+: 4725 4 2 these 
+: 4733 10 0 days
+- 4743 4748
+- 4748
+: 4773 2 5 We’ll 
+: 4777 4 5 wish 
+: 4785 2 5 we 
+: 4789 4 7 could 
+: 4797 12 7 come 
+: 4813 4 2 back
+- 4817
+: 4821 4 0 To 
+: 4829 4 2 these 
+* 4837 10 0 days, 
+: 4853 4 2 these 
+: 4861 10 0 days
+E
