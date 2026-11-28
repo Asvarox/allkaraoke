@@ -3,27 +3,28 @@
     "Taylor Swift",
     "Lady Gaga",
     "Green Day",
-    "Linkin Park",
     "Kylie Minogue",
-    "Britney Spears",
+    "Linkin Park",
     "Michael Jackson",
-    "Nightwish",
+    "Britney Spears",
     "Queen",
+    "Nightwish",
+    "Take That",
+    "ABBA",
     "One Direction",
     "Ariana Grande",
     "My Chemical Romance",
-    "Take That",
     "The Beatles",
-    "ABBA",
     "System of a Down",
     "Girls Aloud",
     "Imagine Dragons",
     "Nirvana",
     "Rihanna",
+    "Madonna",
     "Billie Eilish",
+    "Ed Sheeran",
     "Fall Out Boy",
     "Ghost",
-    "Madonna",
     "Muse",
     "Paramore",
     "Bee Gees",
@@ -31,18 +32,18 @@
     "Radiohead",
     "Beyoncé",
     "Disturbed",
-    "Ed Sheeran",
     "Florence + the Machine",
     "Metallica",
     "Panic! at the Disco",
     "Red Hot Chili Peppers",
     "Foo Fighters",
     "Miley Cyrus",
+    "Robbie Williams",
     "Billy Talent",
+    "Bruno Mars",
     "Katy Perry",
     "Lana Del Rey",
     "Avril Lavigne",
-    "Bruno Mars",
     "Westlife",
     "Adele",
     "Demi Lovato",
@@ -50,11 +51,11 @@
     "The Black Eyed Peas",
     "The Weeknd",
     "Backstreet Boys",
+    "Dido",
     "George Michael",
     "INXS",
     "Jamiroquai",
     "Maroon 5",
-    "Robbie Williams",
     "Arctic Monkeys",
     "Avenged Sevenfold",
     "Bad Religion",
@@ -67,6 +68,7 @@
     "Mariah Carey",
     "Marilyn Manson",
     "Marina and the Diamonds",
+    "Pink Floyd",
     "Spice Girls",
     "Three Days Grace",
     "A★Teens",
@@ -75,31 +77,33 @@
     "Glee Cast",
     "Gwen Stefani",
     "Jennifer Lopez",
+    "Kool & The Gang",
     "No Doubt",
-    "Pink Floyd",
+    "Oasis",
     "Rise Against",
     "Sabrina Carpenter",
+    "Toto",
+    "U2",
     "Volbeat",
     "Weezer",
+    "Whitney Houston",
     "5 Seconds of Summer",
     "Christina Aguilera",
     "Deftones",
+    "Depeche Mode",
     "Dua Lipa",
     "Duran Duran",
     "Good Charlotte",
     "High School Musical",
     "Justin Bieber",
-    "Kool & The Gang",
-    "Oasis",
+    "Little Mix",
     "OneRepublic",
     "Owl City",
     "Rod Stewart",
     "Sabaton",
     "Thirty Seconds to Mars",
-    "Whitney Houston",
     "Céline Dion",
     "Deep Purple",
-    "Depeche Mode",
     "Destiny’s Child",
     "Electric Light Orchestra",
     "Elvis Presley",
@@ -107,8 +111,8 @@
     "Hamilton",
     "HIM",
     "Jason Derulo",
-    "Little Mix",
     "Melanie Martinez",
+    "Michael Bublé",
     "Nickelback",
     "Selena Gomez",
     "Serj Tankian",
@@ -116,13 +120,12 @@
     "Tenacious D",
     "The Offspring",
     "The Pussycat Dolls",
-    "Toto",
     "Twenty One Pilots",
+    "Avicii",
     "Blind Guardian",
     "Bon Jovi",
     "Calvin Harris",
     "Delta Goodrem",
-    "Dido",
     "Faith No More",
     "Fleetwood Mac",
     "Groove Coverage",
@@ -131,28 +134,26 @@
     "Iron Maiden",
     "Limp Bizkit",
     "Lorde",
-    "Michael Bublé",
     "★N Sync",
     "Peter Gabriel",
     "Phil Collins",
+    "P!nk",
     "Sean Paul",
     "Sia",
+    "Texas",
     "The Greatest Showman",
     "The Killers",
-    "U2",
     "UB40",
+    "ZZ Top",
     "3 Doors Down",
     "a-ha",
+    "AC/DC",
     "Amy Winehouse",
-    "Avicii",
-    "blink-182",
-    "Bryan Adams",
-    "Chris Brown",
-    "Creed",
-    "Crowded House"
+    "Billy Idol"
   ],
   "languages": [
     "Armenian",
+    "Austrian",
     "Catalan",
     "Chinese",
     "Croatian",
@@ -190,9 +191,11 @@
     "Ukrainian",
     "Zulu"
   ],
-  "songs": 7921,
-  "generatedAt": "2026-11-26T06:19:08.957Z",
+  "songs": 8137,
+  "generatedAt": "2026-11-28T09:06:17.659Z",
   "additionsPerDay": {
+    "2026-11-28": 160,
+    "2026-11-27": 56,
     "2026-11-26": 60,
     "2026-11-25": 95,
     "2026-11-24": 85,
@@ -241,340 +244,340 @@
   },
   "recentlyAdded": [
     {
-      "id": "abba-when-all-is-said-and-done",
-      "artist": "ABBA",
-      "title": "When All Is Said And Done",
-      "video": "tUh4u-lYEhM",
-      "addedAt": "2026-11-26T06:16:22.007Z"
+      "id": "bersuit-vergarabat-sencillamente",
+      "artist": "Bersuit Vergarabat",
+      "title": "Sencillamente",
+      "video": "e1ZdXN8oqO8",
+      "addedAt": "2026-11-28T09:04:48.860Z"
     },
     {
-      "id": "lost-frequencies-feat-james-blunt-melody",
-      "artist": "Lost Frequencies feat. James Blunt",
-      "title": "Melody",
-      "video": "4t6rQDxJwno",
-      "addedAt": "2026-11-26T06:16:21.808Z"
-    },
-    {
-      "id": "abba-chiquitita",
-      "artist": "ABBA",
-      "title": "Chiquitita",
-      "video": "p4QqMKe3rwY",
-      "addedAt": "2026-11-26T06:16:21.804Z"
-    },
-    {
-      "id": "deep-purple-fireball",
-      "artist": "Deep Purple",
-      "title": "Fireball",
-      "video": "NwMRYOONsOA",
-      "addedAt": "2026-11-26T06:16:21.797Z"
-    },
-    {
-      "id": "ash-girl-from-mars",
-      "artist": "Ash",
-      "title": "Girl From Mars",
-      "video": "FkSl9GGOFHM",
-      "addedAt": "2026-11-26T06:16:21.375Z"
-    },
-    {
-      "id": "dj-bobo-somebody-dance-with-me",
-      "artist": "DJ BoBo",
-      "title": "Somebody Dance With Me",
-      "video": "rAnmLLRphqo",
-      "addedAt": "2026-11-26T06:16:21.372Z"
-    },
-    {
-      "id": "deep-purple-knocking-at-your-back-door",
-      "artist": "Deep Purple",
-      "title": "Knocking At Your Back Door",
-      "video": "G7GERh0sQzY",
-      "addedAt": "2026-11-26T06:16:21.369Z"
-    },
-    {
-      "id": "patrick-swayze-feat-wendy-fraser-shes-like-the-wind",
-      "artist": "Patrick Swayze feat. Wendy Fraser",
-      "title": "She’s Like The Wind",
-      "video": "lU9p1WRfA9w",
-      "addedAt": "2026-11-26T06:16:19.914Z"
-    },
-    {
-      "id": "die-draufgaenger-cordula-gruen",
-      "artist": "Die Draufgänger",
-      "title": "Cordula Grün",
-      "video": "Xw-g6X8qob0",
-      "addedAt": "2026-11-26T06:16:19.722Z"
-    },
-    {
-      "id": "keha-blow",
-      "artist": "Ke$ha",
-      "title": "Blow",
-      "video": "CFWX0hWCbng",
-      "addedAt": "2026-11-26T06:16:19.721Z"
-    },
-    {
-      "id": "good-charlotte-harlows-song-cant-dream-without-you",
-      "artist": "Good Charlotte",
-      "title": "Harlow’s Song (Can’t Dream Without You)",
-      "video": "bTCW1rfJ2ac",
-      "addedAt": "2026-11-26T06:16:19.718Z"
-    },
-    {
-      "id": "talking-heads-burning-down-the-house",
-      "artist": "Talking Heads",
-      "title": "Burning Down The House",
-      "video": "_3eC35LoF4U",
-      "addedAt": "2026-11-26T06:16:19.716Z"
-    },
-    {
-      "id": "rihanna-we-ride",
-      "artist": "Rihanna",
-      "title": "We Ride",
-      "video": "jlvY1o6XKwA",
-      "addedAt": "2026-11-26T06:16:19.715Z"
-    },
-    {
-      "id": "the-go-betweens-streets-of-your-town",
-      "artist": "The Go-Betweens",
-      "title": "Streets Of Your Town",
-      "video": "8M_P_xX9Cmw",
-      "addedAt": "2026-11-26T06:16:19.508Z"
-    },
-    {
-      "id": "keha-die-young",
-      "artist": "Ke$ha",
-      "title": "Die Young",
-      "video": "NOubzHCUt48",
-      "addedAt": "2026-11-26T06:16:19.507Z"
-    },
-    {
-      "id": "robbie-williams-let-love-be-your-energy",
-      "artist": "Robbie Williams",
-      "title": "Let Love Be Your Energy",
-      "video": "oiBr33_FCAA",
-      "addedAt": "2026-11-26T06:16:19.505Z"
-    },
-    {
-      "id": "bob-marley-the-wailers-jamming",
-      "artist": "Bob Marley & The Wailers",
-      "title": "Jamming",
-      "video": "oqVy6eRXc7Q",
-      "addedAt": "2026-11-26T06:16:19.504Z"
-    },
-    {
-      "id": "the-offspring-have-you-ever",
-      "artist": "The Offspring",
-      "title": "Have You Ever",
-      "video": "FJMwMCOH90w",
-      "addedAt": "2026-11-26T06:16:19.502Z"
-    },
-    {
-      "id": "shannon-noll-what-about-me",
-      "artist": "Shannon Noll",
-      "title": "What About Me",
-      "video": "DYjl1GFrWD8",
-      "addedAt": "2026-11-26T06:16:19.500Z"
-    },
-    {
-      "id": "pink-floyd-see-emily-play",
-      "artist": "Pink Floyd",
-      "title": "See Emily Play",
-      "video": "7c0EDM-Yu9o",
-      "addedAt": "2026-11-26T06:16:19.499Z"
-    },
-    {
-      "id": "pet-shop-boys-go-west",
-      "artist": "Pet Shop Boys",
-      "title": "Go West",
-      "video": "LNBjMRvOB5M",
-      "addedAt": "2026-11-26T06:16:19.498Z"
-    },
-    {
-      "id": "flow-go",
-      "artist": "Flow",
-      "title": "Go!!!",
-      "video": "AE4b9jO1uB4",
-      "addedAt": "2026-11-26T06:16:19.496Z"
-    },
-    {
-      "id": "louane-maman",
-      "artist": "Louane",
-      "title": "Maman",
-      "video": "rxuuG3WmXVE",
-      "addedAt": "2026-11-26T06:16:19.493Z"
-    },
-    {
-      "id": "aimer-last-stardust-2",
-      "artist": "Aimer",
-      "title": "Last Stardust -2",
-      "video": "_c8kpplUkfs",
-      "addedAt": "2026-11-26T06:16:19.491Z"
-    },
-    {
-      "id": "martha-reeves-the-vandellas-dancing-in-the-street",
-      "artist": "Martha Reeves & The Vandellas",
-      "title": "Dancing In The Street",
-      "video": "M4p9qXIWN2Q",
-      "addedAt": "2026-11-26T06:16:19.489Z"
-    },
-    {
-      "id": "christina-aguilera-feat-alicia-keys-impossible",
-      "artist": "Christina Aguilera feat. Alicia Keys",
-      "title": "Impossible",
-      "video": "GPlL5aApCKM",
-      "addedAt": "2026-11-26T06:16:15.128Z"
-    },
-    {
-      "id": "ultravox-hymn",
-      "artist": "Ultravox",
-      "title": "Hymn",
-      "video": "RXLkpwFs8Fs",
-      "addedAt": "2026-11-26T06:16:15.126Z"
-    },
-    {
-      "id": "level-42-lessons-in-love",
-      "artist": "Level 42",
-      "title": "Lessons In Love",
-      "video": "9x1RcVrGjGM",
-      "addedAt": "2026-11-26T06:16:13.766Z"
-    },
-    {
-      "id": "lily-allen-the-fear",
-      "artist": "Lily Allen",
-      "title": "The Fear",
-      "video": "q-wGMlSuX_c",
-      "addedAt": "2026-11-26T06:16:13.765Z"
-    },
-    {
-      "id": "trolls-anna-kendrick-justin-timberlake-true-colors",
-      "artist": "Trolls (Anna Kendrick & Justin Timberlake)",
-      "title": "True Colors",
-      "video": "la0-5QFLr14",
-      "addedAt": "2026-11-26T06:16:13.554Z"
-    },
-    {
-      "id": "omi-hula-hoop",
-      "artist": "OMI",
-      "title": "Hula Hoop",
-      "video": "RYzQvj3icjs",
-      "addedAt": "2026-11-26T06:16:13.552Z"
-    },
-    {
-      "id": "pixie-lott-boys-and-girls",
-      "artist": "Pixie Lott",
-      "title": "Boys And Girls",
-      "video": "T7y1MdlXclM",
-      "addedAt": "2026-11-26T06:16:13.550Z"
-    },
-    {
-      "id": "calvin-harris-disciples-how-deep-is-your-love",
-      "artist": "Calvin Harris + Disciples",
-      "title": "How Deep Is Your Love",
-      "video": "EgqUJOudrcM",
-      "addedAt": "2026-11-26T06:16:13.359Z"
-    },
-    {
-      "id": "dido-sand-in-my-shoes",
+      "id": "dido-hurricanes",
       "artist": "Dido",
-      "title": "Sand In My Shoes",
-      "video": "5iNpICiP7uw",
-      "addedAt": "2026-11-26T06:16:13.354Z"
+      "title": "Hurricanes",
+      "video": "-mfladpK0AA",
+      "addedAt": "2026-11-28T09:04:48.858Z"
     },
     {
-      "id": "jeremy-frerot-frerot",
-      "artist": "Jérémy Frérot",
-      "title": "Frérot",
-      "video": "RTrZtuLe5zI",
-      "addedAt": "2026-11-26T06:16:11.991Z"
+      "id": "james-morrison-you-give-me-something",
+      "artist": "James Morrison",
+      "title": "You Give Me Something",
+      "video": "UZp6dhheriM",
+      "addedAt": "2026-11-28T09:04:48.731Z"
     },
     {
-      "id": "master-kg-feat-nomcebo-zikode-jerusalema",
-      "artist": "Master KG feat. Nomcebo Zikode",
-      "title": "Jerusalema",
-      "video": "fCZVL_8D048",
-      "addedAt": "2026-11-26T06:16:11.689Z"
-    },
-    {
-      "id": "air-supply-lost-in-love",
-      "artist": "Air Supply",
-      "title": "Lost In Love",
-      "video": "fKTQVBnXrZs",
-      "addedAt": "2026-11-26T06:16:11.687Z"
-    },
-    {
-      "id": "mika-we-are-golden",
+      "id": "mika-rain",
       "artist": "Mika",
-      "title": "We Are Golden",
-      "video": "hEhutIEUq8k",
-      "addedAt": "2026-11-26T06:16:11.685Z"
+      "title": "Rain",
+      "video": "5WK-vRhz9xs",
+      "addedAt": "2026-11-28T09:04:48.730Z"
     },
     {
-      "id": "sabrina-carpenter-tornado-warnings",
-      "artist": "Sabrina Carpenter",
-      "title": "Tornado Warnings",
-      "video": "wP4JsTRPSsA",
-      "addedAt": "2026-11-26T06:16:11.682Z"
+      "id": "aqua-cartoon-heroes",
+      "artist": "Aqua",
+      "title": "Cartoon Heroes",
+      "video": "Q_LPJllaogU",
+      "addedAt": "2026-11-28T09:04:48.728Z"
     },
     {
-      "id": "the-easybeats-friday-on-my-mind",
-      "artist": "The Easybeats",
-      "title": "Friday On My Mind",
-      "video": "LDdMSY4bnKQ",
-      "addedAt": "2026-11-26T06:16:11.679Z"
+      "id": "jupiter-jones-still",
+      "artist": "Jupiter Jones",
+      "title": "Still",
+      "video": "Ug0kqKRbLpw",
+      "addedAt": "2026-11-28T09:04:44.503Z"
     },
     {
-      "id": "lionel-richie-dancing-on-the-ceiling",
-      "artist": "Lionel Richie",
-      "title": "Dancing On The Ceiling",
-      "video": "ovo6zwv6DX4",
-      "addedAt": "2026-11-26T06:16:11.677Z"
+      "id": "made-in-abyss-feat-takeshi-saito-hanezeve-caradhina",
+      "artist": "Made in Abyss feat. Takeshi Saito",
+      "title": "Hanezeve Caradhina",
+      "video": "mnRoh0lGxwM",
+      "addedAt": "2026-11-28T09:04:43.286Z"
     },
     {
-      "id": "bill-withers-lovely-day",
-      "artist": "Bill Withers",
-      "title": "Lovely Day",
-      "video": "bEeaS6fuUoA",
-      "addedAt": "2026-11-26T06:16:11.478Z"
+      "id": "fifth-harmony-feat-meghan-trainor-brave-honest-beautiful",
+      "artist": "Fifth Harmony feat. Meghan Trainor",
+      "title": "Brave, Honest, Beautiful",
+      "video": "WXQ-kaJHvUw",
+      "addedAt": "2026-11-28T09:04:40.992Z"
     },
     {
-      "id": "jet-look-what-youve-done",
-      "artist": "Jet",
-      "title": "Look What You’ve Done",
-      "video": "4q7M5baHzM8",
-      "addedAt": "2026-11-26T06:16:11.477Z"
+      "id": "kylie-minogue-hand-on-your-heart",
+      "artist": "Kylie Minogue",
+      "title": "Hand On Your Heart",
+      "video": "ASeXesFm3MI",
+      "addedAt": "2026-11-28T09:04:40.990Z"
     },
     {
-      "id": "billy-idol-catch-my-fall",
+      "id": "m83-wait",
+      "artist": "M83",
+      "title": "Wait",
+      "video": "lAwYodrBr2Q",
+      "addedAt": "2026-11-28T09:04:40.986Z"
+    },
+    {
+      "id": "louane-chiens",
+      "artist": "Louane",
+      "title": "Chiens",
+      "video": "EOmpMFcJFDA",
+      "addedAt": "2026-11-28T09:04:40.985Z"
+    },
+    {
+      "id": "morat-como-te-atreves",
+      "artist": "Morat",
+      "title": "Cómo te atreves",
+      "video": "_gm5piKnrS4",
+      "addedAt": "2026-11-28T09:04:40.983Z"
+    },
+    {
+      "id": "robbie-williams-beyond-the-sea",
+      "artist": "Robbie Williams",
+      "title": "Beyond The Sea",
+      "video": "FzKpTdQeQ34",
+      "addedAt": "2026-11-28T09:04:40.980Z"
+    },
+    {
+      "id": "blur-country-house",
+      "artist": "Blur",
+      "title": "Country House",
+      "video": "gpuh1WE-RVw",
+      "addedAt": "2026-11-28T09:04:40.978Z"
+    },
+    {
+      "id": "shaboozey-a-bar-song-tipsy",
+      "artist": "Shaboozey",
+      "title": "A Bar Song (Tipsy)",
+      "video": "t7bQwwqW-Hc",
+      "addedAt": "2026-11-28T09:04:40.839Z"
+    },
+    {
+      "id": "u2-all-i-want-is-you",
+      "artist": "U2",
+      "title": "All I Want Is You",
+      "video": "k0W_ybghFzg",
+      "addedAt": "2026-11-28T09:04:40.837Z"
+    },
+    {
+      "id": "madonna-papa-dont-preach",
+      "artist": "Madonna",
+      "title": "Papa Don’t Preach",
+      "video": "G333Is7VPOg",
+      "addedAt": "2026-11-28T09:04:40.836Z"
+    },
+    {
+      "id": "cody-johnson-take-me-back-leave-me-there",
+      "artist": "Cody Johnson",
+      "title": "Take Me Back (Leave Me There)",
+      "video": "d1pTY6TUarQ",
+      "addedAt": "2026-11-28T09:04:40.693Z"
+    },
+    {
+      "id": "mark-morrison-return-of-the-mack",
+      "artist": "Mark Morrison",
+      "title": "Return Of The Mack",
+      "video": "uB1D9wWxd2w",
+      "addedAt": "2026-11-28T09:04:40.692Z"
+    },
+    {
+      "id": "kylie-minogue-what-do-i-have-to-do",
+      "artist": "Kylie Minogue",
+      "title": "What Do I Have To Do?",
+      "video": "aGxJm_Sy2aw",
+      "addedAt": "2026-11-28T09:04:40.689Z"
+    },
+    {
+      "id": "jeremy-frerot-adieu",
+      "artist": "Jérémy Frérot",
+      "title": "Adieu",
+      "video": "LH30ijWr1Ho",
+      "addedAt": "2026-11-28T09:04:40.687Z"
+    },
+    {
+      "id": "leann-rimes-how-do-i-live",
+      "artist": "LeAnn Rimes",
+      "title": "How Do I Live",
+      "video": "5gtHHpgMbZ4",
+      "addedAt": "2026-11-28T09:04:40.685Z"
+    },
+    {
+      "id": "james-laid",
+      "artist": "James",
+      "title": "Laid",
+      "video": "0trh9Y598fM",
+      "addedAt": "2026-11-28T09:04:39.431Z"
+    },
+    {
+      "id": "timbaland-feat-nelly-furtado-soshy-morning-after-dark",
+      "artist": "Timbaland feat. Nelly Furtado & SoShy",
+      "title": "Morning After Dark",
+      "video": "25LBTSUEU0A",
+      "addedAt": "2026-11-28T09:04:39.295Z"
+    },
+    {
+      "id": "calvin-harris-ragnbone-man-giant",
+      "artist": "Calvin Harris & Rag’n’Bone Man",
+      "title": "Giant",
+      "video": "ir6nk2zrMG0",
+      "addedAt": "2026-11-28T09:04:39.166Z"
+    },
+    {
+      "id": "the-stranglers-golden-brown",
+      "artist": "The Stranglers",
+      "title": "Golden Brown",
+      "video": "HjmAPAoxCb0",
+      "addedAt": "2026-11-28T09:04:39.013Z"
+    },
+    {
+      "id": "billy-idol-dancing-with-myself",
       "artist": "Billy Idol",
-      "title": "Catch My Fall",
-      "video": "EiMFvx43vpw",
-      "addedAt": "2026-11-26T06:16:11.475Z"
+      "title": "Dancing With Myself",
+      "video": "FG1NrQYXjLU",
+      "addedAt": "2026-11-28T09:04:39.012Z"
     },
     {
-      "id": "the-wanted-we-own-the-night",
-      "artist": "The Wanted",
-      "title": "We Own The Night",
-      "video": "8piAL5rD6wI",
-      "addedAt": "2026-11-26T06:16:11.473Z"
+      "id": "leo-ferre-cest-extra",
+      "artist": "Léo Ferré",
+      "title": "C'est extra",
+      "video": "bVrulTsu2S8",
+      "addedAt": "2026-11-28T09:04:39.009Z"
     },
     {
-      "id": "labrinth-jealous",
-      "artist": "Labrinth",
-      "title": "Jealous",
-      "video": "50VWOBi0VFs",
-      "addedAt": "2026-11-26T06:16:11.282Z"
+      "id": "squeezie-feat-maxenss-placements-de-produits",
+      "artist": "Squeezie feat. Maxenss",
+      "title": "Placements de produits",
+      "video": "oFMh23ez5gw",
+      "addedAt": "2026-11-28T09:04:38.833Z"
     },
     {
-      "id": "tankcsapda-oeroekke-tart",
-      "artist": "Tankcsapda",
-      "title": "Örökké tart",
-      "video": "RZyXlGYzqL8",
-      "addedAt": "2026-11-26T06:16:09.921Z"
+      "id": "c-c-music-factory-feat-freedom-williams-gonna-make-you-sweat-everybody-dance-now",
+      "artist": "C & C Music Factory feat. Freedom Williams",
+      "title": "Gonna Make You Sweat (Everybody Dance Now)",
+      "video": "LaTGrV58wec",
+      "addedAt": "2026-11-28T09:04:31.316Z"
     },
     {
-      "id": "ninja-sex-party-danny-dont-you-know",
-      "artist": "Ninja Sex Party",
-      "title": "Danny Don’t You Know",
-      "video": "kT8cX2-_7pQ",
-      "addedAt": "2026-11-26T06:16:09.713Z"
+      "id": "mark-ronson-feat-daniel-merriweather-stop-me",
+      "artist": "Mark Ronson feat. Daniel Merriweather",
+      "title": "Stop Me",
+      "video": "878ixmkVWcE",
+      "addedAt": "2026-11-28T09:04:31.101Z"
+    },
+    {
+      "id": "robbie-williams-nicole-kidman-somethin-stupid",
+      "artist": "Robbie Williams Nicole Kidman",
+      "title": "Somethin’ Stupid",
+      "video": "f43nR8Wu_1Y",
+      "addedAt": "2026-11-28T09:04:30.979Z"
+    },
+    {
+      "id": "dire-straits-brothers-in-arms",
+      "artist": "Dire Straits",
+      "title": "Brothers In Arms",
+      "video": "jhdFe3evXpk",
+      "addedAt": "2026-11-28T09:04:30.976Z"
+    },
+    {
+      "id": "joseph-kamel-daysy-par-coeur",
+      "artist": "Joseph Kamel & Daysy",
+      "title": "Par coeur",
+      "video": "zdFhQuc9bI4",
+      "addedAt": "2026-11-28T09:04:30.853Z"
+    },
+    {
+      "id": "texas-guitar-song",
+      "artist": "Texas",
+      "title": "Guitar Song",
+      "video": "g7sBayNDysE",
+      "addedAt": "2026-11-28T09:04:30.852Z"
+    },
+    {
+      "id": "leo-ferre-jolie-mome",
+      "artist": "Léo Ferré",
+      "title": "Jolie Môme",
+      "video": "7kgSQOTrkKE",
+      "addedAt": "2026-11-28T09:04:30.719Z"
+    },
+    {
+      "id": "taylor-swift-sparks-fly",
+      "artist": "Taylor Swift",
+      "title": "Sparks Fly",
+      "video": "oKar-tF__ac",
+      "addedAt": "2026-11-28T09:04:30.718Z"
+    },
+    {
+      "id": "ashlee-simpson-boyfriend",
+      "artist": "Ashlee Simpson",
+      "title": "Boyfriend",
+      "video": "xKyGyXlHS9Y",
+      "addedAt": "2026-11-28T09:04:30.716Z"
+    },
+    {
+      "id": "the-all-american-rejects-gives-you-hell",
+      "artist": "The All-American Rejects",
+      "title": "Gives You Hell",
+      "video": "uxUATkpMQ8A",
+      "addedAt": "2026-11-28T09:04:30.715Z"
+    },
+    {
+      "id": "mandy-moore-i-wanna-be-with-you",
+      "artist": "Mandy Moore",
+      "title": "I Wanna Be With You",
+      "video": "ErntJrtQGBg",
+      "addedAt": "2026-11-28T09:04:30.713Z"
+    },
+    {
+      "id": "dido-hunter",
+      "artist": "Dido",
+      "title": "Hunter",
+      "video": "1qmKk7fj9Ug",
+      "addedAt": "2026-11-28T09:04:30.712Z"
+    },
+    {
+      "id": "michael-jackson-my-girl",
+      "artist": "Michael Jackson",
+      "title": "My Girl",
+      "video": "C3sjkfVNgPc",
+      "addedAt": "2026-11-28T09:04:30.710Z"
+    },
+    {
+      "id": "reel-big-fish-sell-out",
+      "artist": "Reel Big Fish",
+      "title": "Sell Out",
+      "video": "AEKbFMvkLIc",
+      "addedAt": "2026-11-28T09:04:29.486Z"
+    },
+    {
+      "id": "everything-but-the-girl-missing",
+      "artist": "Everything But The Girl",
+      "title": "Missing",
+      "video": "U56Ns66Qrb8",
+      "addedAt": "2026-11-28T09:04:29.342Z"
+    },
+    {
+      "id": "the-commodores-nightshift",
+      "artist": "The Commodores",
+      "title": "Nightshift",
+      "video": "FrkEDe6Ljqs",
+      "addedAt": "2026-11-28T09:04:29.340Z"
+    },
+    {
+      "id": "david-bisbal-y-aitana-si-tu-la-quieres",
+      "artist": "David Bisbal y Aitana",
+      "title": "Si tú la quieres",
+      "video": "qjWmbq9AcK4",
+      "addedAt": "2026-11-28T09:04:29.216Z"
+    },
+    {
+      "id": "abba-under-attack",
+      "artist": "ABBA",
+      "title": "Under Attack",
+      "video": "rAYB46Z_osM",
+      "addedAt": "2026-11-28T09:04:29.211Z"
+    },
+    {
+      "id": "culture-club-do-you-really-want-to-hurt-me",
+      "artist": "Culture Club",
+      "title": "Do You Really Want To Hurt Me",
+      "video": "EHtu0uG4Fug",
+      "addedAt": "2026-11-28T09:04:29.210Z"
     }
   ]
 }

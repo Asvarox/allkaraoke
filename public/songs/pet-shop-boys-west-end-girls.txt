@@ -1,0 +1,448 @@
+#ARTIST:Pet Shop Boys
+#TITLE:West End Girls
+#CREATOR:Gollum
+#BPM:393,3
+#YEAR:1985
+#VIDEO:v=p3j2NYZ8FKs
+#GENRE:Synth-Pop
+#LANGUAGE:English
+#GAP:42238,390541571316
+#ALLKARAOKE_ID:pet-shop-boys-west-end-girls
+#ALLKARAOKE_SID:8130
+#ALLKARAOKE_LASTUPDATE:2026-11-28T09:04:27.212Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:113
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:235
+#MP3:Pet Shop Boys - West End Girls.mp3
+R 26 4 6 Some
+R 33 6 6 times 
+R 44 2 6 you’re 
+R 48 2 6 bet
+R 51 2 6 ter 
+R 54 3 6 off 
+R 61 5 6 dead
+- 66
+R 70 4 6 There’s 
+R 77 3 6 gun 
+R 81 3 6 in 
+R 85 3 6 your 
+R 89 3 6 hand
+- 92
+R 96 2 6 And 
+R 100 2 6 it’s 
+R 104 3 6 poin
+R 108 2 6 ting 
+R 111 2 6 at 
+R 114 3 6 your 
+R 119 4 6 head
+- 123
+R 127 2 6 You 
+R 131 3 7 think 
+R 138 2 7 you’re 
+R 142 6 7 mad,
+- 148
+R 159 2 7 Too 
+R 162 5 7 un
+R 170 3 7 sta
+R 177 2 7 ble
+- 179
+R 186 3 7 Kic
+R 190 2 7 king 
+R 194 3 7 in 
+R 200 6 7 chairs 
+R 209 2 7 and 
+R 214 2 7 knoc
+R 217 2 7 king 
+R 221 3 7 down
+- 224
+R 228 3 7 Ta
+R 233 2 7 bles 
+R 237 1 7 in 
+R 239 2 9 a 
+R 243 3 6 res
+R 249 1 6 tau
+R 251 3 6 rant
+- 254
+R 264 1 6 In 
+R 266 2 2 a 
+R 269 4 6 West 
+R 276 2 6 End 
+R 283 8 6 town
+- 291
+R 296 5 6 Call 
+R 305 2 6 the 
+R 308 2 6 po
+R 312 3 6 lice, 
+R 318 1 6 there’s 
+R 320 2 6 a 
+R 325 4 6 mad
+R 333 2 6 man 
+R 336 3 6 a
+R 340 4 6 round
+- 344
+R 354 2 7 Run
+R 357 3 7 ning 
+R 364 3 7 down
+- 367
+R 380 3 7 Un
+R 385 2 7 der
+R 388 6 7 ground 
+R 402 2 7 to 
+R 405 2 7 a 
+R 409 4 7 dive 
+R 416 5 7 bar
+- 421
+R 430 2 7 In 
+R 434 2 7 a 
+R 438 3 7 West 
+R 444 3 7 End 
+R 451 2 7 town
+- 453
+: 457 4 16 In 
+: 463 2 16 a 
+: 466 3 16 West 
+: 472 4 14 End 
+: 480 5 14 town, 
+: 486 3 11 a 
+: 492 3 14 dead 
+: 496 4 14 end 
+: 503 15 16 world
+- 518
+: 539 3 9 The 
+: 544 3 14 East 
+: 552 6 14 End 
+: 560 7 16 boys 
+: 570 3 16 and 
+: 576 4 11 West 
+: 585 2 9 E
+: 588 5 7 ~nd 
+: 597 24 9 girls
+- 621 653
+- 653
+: 679 4 16 In 
+: 685 2 16 a 
+: 688 3 16 West 
+: 694 4 14 End 
+: 702 7 14 town, 
+: 710 3 11 a 
+: 714 3 14 dead 
+: 718 4 14 end 
+: 728 13 16 world
+- 741
+: 764 3 14 The 
+: 768 3 19 East 
+: 776 4 19 End 
+: 783 8 16 boys 
+: 795 2 16 and 
+: 799 5 11 West 
+: 809 2 9 E
+: 812 3 7 ~nd 
+: 821 23 9 girls
+- 844 857
+- 857
+: 883 6 2 West 
+: 896 7 3 End 
+: 910 27 4 girls
+- 937 1107
+- 1107
+R 1133 3 6 Too 
+R 1139 2 6 ma
+R 1142 2 6 ny 
+R 1146 3 6 sha
+R 1152 5 6 dows, 
+R 1161 3 6 whis
+R 1168 2 6 pe
+R 1171 3 6 ring 
+R 1175 3 6 voi
+R 1181 3 6 ces
+- 1184
+R 1189 2 6 Fa
+R 1192 3 6 ces 
+R 1196 3 6 on 
+R 1201 4 6 pos
+R 1209 5 6 ters, 
+R 1216 3 6 too 
+R 1222 2 6 ma
+R 1225 2 6 ny 
+R 1229 4 6 choi
+R 1236 4 6 ces
+- 1240
+R 1244 4 7 If? 
+R 1258 6 7 When? 
+R 1272 6 7 Why? 
+R 1284 5 7 What?
+- 1289
+R 1299 5 7 How 
+R 1307 6 7 much 
+R 1318 5 7 have 
+R 1326 4 7 you 
+R 1334 6 7 got?
+- 1340
+R 1348 3 7 Have 
+R 1352 2 7 you 
+R 1355 3 6 got 
+R 1359 2 6 it? 
+R 1362 3 6 Do 
+R 1366 2 6 you 
+R 1369 2 6 get 
+R 1372 2 6 it?
+- 1374
+R 1376 2 6 If 
+R 1383 4 6 so, 
+R 1389 4 6 how 
+R 1396 3 6 of
+R 1401 2 6 ten? 
+R 1406 2 6 And 
+R 1409 4 6 which 
+R 1417 2 6 do 
+R 1420 2 6 you 
+R 1423 4 6 choose?
+- 1427
+R 1431 3 6 A 
+R 1435 5 6 hard 
+R 1442 2 6 or 
+R 1445 4 6 soft 
+R 1453 4 6 op
+R 1459 4 6 tion?
+- 1463
+: 1474 11 7 How 
+: 1488 10 9 much 
+: 1502 4 7 do 
+: 1509 4 4 you 
+: 1516 27 16 need?
+- 1543
+: 1569 4 16 In 
+: 1575 2 16 a 
+: 1578 3 16 West 
+: 1585 4 14 End 
+: 1592 7 14 town, 
+: 1601 2 11 a 
+: 1604 3 14 dead 
+: 1608 5 14 end 
+: 1617 14 16 world
+- 1631
+: 1654 2 9 The 
+: 1657 3 14 East 
+: 1666 5 14 End 
+: 1674 7 16 boys 
+: 1684 3 16 and 
+: 1690 3 11 West 
+: 1698 2 9 E
+: 1701 3 7 ~nd 
+: 1711 25 9 girls
+- 1736 1765
+- 1765
+: 1791 4 16 In 
+: 1796 2 16 a 
+: 1800 3 16 West 
+: 1807 4 14 End 
+: 1815 6 14 town, 
+: 1822 2 11 a 
+: 1827 3 14 dead 
+: 1831 4 14 end 
+: 1840 15 16 world
+- 1855
+: 1877 2 14 The 
+: 1881 3 19 East 
+: 1889 4 19 End 
+: 1897 7 16 boys 
+: 1907 2 16 and 
+: 1912 5 11 West 
+: 1922 2 9 E
+: 1925 3 7 ~nd 
+: 1933 24 9 girls
+- 1957 1970
+- 1970
+: 1996 6 2 West 
+: 2009 7 3 End 
+: 2023 27 4 girls
+- 2050 2081
+- 2081
+: 2107 6 2 West 
+: 2120 7 3 End 
+: 2135 27 4 girls
+- 2162 2728
+- 2728
+: 2754 11 7 How 
+: 2768 9 9 much 
+: 2781 3 7 do 
+: 2788 4 4 you 
+: 2796 27 16 need?
+- 2823 2824
+- 2824
+: 2850 3 16 In 
+: 2854 2 16 a 
+: 2857 3 16 West 
+: 2865 4 14 End 
+: 2872 7 14 town, 
+* 2881 2 11 a 
+* 2884 3 14 dead 
+* 2888 5 14 end 
+* 2897 15 16 world
+- 2912
+: 2934 2 9 The 
+: 2937 3 14 East 
+: 2945 5 14 End 
+: 2954 9 16 boys 
+: 2966 3 16 and 
+: 2970 4 11 West 
+: 2979 2 9 E
+: 2982 3 7 ~nd 
+: 2992 23 9 girls
+- 3015 3034
+- 3034
+: 3060 18 16 Oh, 
+: 3080 3 16 West 
+: 3087 4 14 End 
+: 3094 6 14 town, 
+: 3102 2 11 a 
+: 3107 3 14 dead 
+: 3111 4 14 end 
+: 3120 15 16 world
+- 3135
+: 3157 6 19 East 
+* 3166 6 19 End 
+* 3175 12 16 boys, 
+: 3192 5 11 West 
+: 3201 3 9 E
+: 3205 4 7 ~nd 
+: 3213 27 9 girls
+- 3240 3249
+- 3249
+: 3275 6 2 West 
+: 3290 7 3 End 
+: 3303 27 4 girls
+- 3330 3435
+- 3435
+R 3461 2 6 You 
+R 3464 2 6 got 
+R 3467 2 6 a 
+R 3471 4 6 heart 
+R 3477 2 6 of 
+R 3480 7 6 glass 
+R 3491 3 6 or 
+R 3495 2 6 a 
+R 3498 4 6 heart 
+R 3505 2 6 of 
+R 3509 4 6 stone?
+- 3513
+R 3524 4 6 Just 
+R 3532 4 6 you 
+R 3538 4 6 wait 
+R 3545 2 6 till 
+R 3548 3 6 I 
+R 3553 3 6 get 
+R 3560 4 6 you 
+R 3567 4 6 home
+- 3571
+R 3577 2 6 We’ve 
+R 3581 4 7 got 
+R 3590 2 7 no 
+R 3595 3 7 fu
+R 3601 3 7 ture, 
+R 3605 2 7 we’ve 
+R 3609 2 7 got 
+R 3616 3 7 no 
+R 3623 6 7 past
+- 3629
+R 3637 4 7 Here 
+R 3644 2 7 to
+R 3648 5 7 day,
+- 3653
+R 3664 4 7 Built 
+R 3671 3 7 to 
+R 3675 4 7 last 
+R 3685 4 9 in 
+R 3690 3 6 eve
+R 3696 3 6 ry 
+R 3703 3 6 ci
+R 3707 4 6 ty, 
+R 3712 4 6 in 
+R 3718 3 6 eve
+R 3722 3 6 ry 
+R 3727 3 6 na
+R 3733 4 6 tion
+- 3737
+R 3742 3 6 From 
+R 3747 3 6 Lake 
+R 3753 3 6 Ge
+R 3758 3 6 ne
+R 3764 3 6 va 
+R 3768 2 6 to 
+R 3771 2 6 the 
+R 3775 2 6 Fin
+R 3779 5 6 land 
+R 3789 3 6 sta
+R 3797 4 6 tion
+- 3801
+: 3810 6 7 Ho
+: 3817 4 6 ~w 
+: 3825 13 9 far 
+: 3842 3 7 ha
+: 3846 2 6 ~
+: 3849 2 7 ~ve 
+: 3853 4 6 you 
+: 3859 6 6 bee
+: 3866 12 4 ~n?
+- 3878 3879
+- 3879
+: 3905 4 16 In 
+: 3910 2 16 a 
+: 3913 4 16 West 
+: 3919 5 14 End 
+: 3928 7 14 town, 
+: 3937 2 11 a 
+: 3940 3 14 dead 
+: 3944 5 14 end 
+: 3952 16 16 world
+- 3968
+: 3989 3 9 The 
+: 3993 5 14 East 
+: 4001 6 14 End 
+: 4009 8 16 boys 
+: 4020 4 16 and 
+* 4026 5 11 West 
+* 4034 2 9 E
+* 4037 3 7 ~nd 
+: 4047 30 9 girls
+- 4077 4102
+- 4102
+: 4128 4 16 A 
+: 4133 4 16 West 
+: 4141 5 14 End 
+: 4150 7 14 town, 
+: 4160 2 11 a 
+: 4163 3 14 dead 
+: 4167 4 14 end 
+: 4176 14 16 world
+- 4190
+: 4213 4 19 East 
+: 4221 5 19 End 
+: 4230 11 16 boys, 
+: 4247 6 11 West 
+: 4258 2 9 E
+: 4261 3 7 ~nd 
+* 4271 24 9 girls
+- 4295 4306
+- 4306
+* 4332 8 2 West 
+* 4345 10 3 End 
+* 4360 25 4 girls
+- 4385 4528
+- 4528
+: 4554 10 2 West 
+: 4567 7 3 End 
+: 4582 28 4 gi
+: 4611 7 2 ~rls
+- 4618 4751
+- 4751
+: 4777 9 2 West 
+: 4791 6 3 End 
+: 4804 28 4 gi
+: 4833 5 2 ~rls
+- 4838 4890
+- 4890
+: 4916 27 4 Gi
+: 4944 5 2 ~rls
+E

@@ -1,7 +1,8 @@
 const API_URL = 'https://eu.posthog.com';
 const PROJECT_ID = '281';
-const POSTHOG_RETRY_DELAY_MS = 30_000;
-const POSTHOG_RETRY_COUNT = 8;
+// PostHog blocks a query for ~3 min after it times out 4 times in a row, so wait it out
+const POSTHOG_RETRY_DELAY_MS = 4 * 60_000;
+const POSTHOG_RETRY_COUNT = 5;
 
 const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 

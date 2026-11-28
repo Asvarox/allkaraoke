@@ -1,0 +1,280 @@
+#ARTIST:Michael Bublé
+#TITLE:The Way You Look Tonight
+#CREATOR:DoubleDee
+#BPM:220
+#YEAR:2003
+#VIDEO:v=IKpNL2Nm9SM
+#GENRE:Jazz, Pop
+#LANGUAGE:English
+#GAP:17387,272727272728
+#ALLKARAOKE_ID:michael-buble-the-way-you-look-tonight
+#ALLKARAOKE_SID:8096
+#ALLKARAOKE_LASTUPDATE:2026-11-28T09:04:17.640Z
+#ALLKARAOKE_ARTISTORIGIN:CA
+#ALLKARAOKE_REALBPM:200
+#ALLKARAOKE_SOURCEURL:Michael Buble
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:280
+#MP3:Michael Bublé - The Way You Look Tonight.mp3
+#COVER:Michael Bublé - The Way You Look Tonight [CO].jpg
+#BACKGROUND:Michael Bublé - The Way You Look Tonight [BG].jpg
+: 15 14 10 Some
+: 31 20 3 day
+- 51 56
+- 56
+: 71 3 5 When 
+: 75 3 7 I’m 
+: 79 5 8 aw
+: 87 3 7 f’lly
+: 91 2 5 ~ 
+: 95 2 7 low
+: 98 13 5 ~
+- 111 120
+- 120
+: 135 7 7 When 
+: 143 3 8 the 
+: 147 9 10 world 
+: 157 3 8 is 
+: 163 26 7 cold
+- 189
+: 200 5 8 I 
+: 206 3 10 will 
+: 212 6 12 feel 
+: 219 1 10 a 
+: 223 10 8 glow
+- 233
+: 239 5 10 Just 
+: 247 3 12 thin
+: 251 4 14 king 
+: 256 2 14 of
+: 259 25 15 ~ 
+: 287 18 3 you
+- 305 309
+- 309
+: 324 6 5 And 
+: 331 3 7 the 
+: 335 7 10 way 
+: 344 7 8 you 
+: 352 3 7 look 
+: 368 15 5 to
+: 385 45 3 night
+- 430 492
+- 492
+: 507 3 10 You
+: 511 3 8 ~’re 
+: 515 3 9 love
+: 519 21 10 ~
+: 543 24 3 ly,
+- 567 568
+- 568
+: 583 3 5 With 
+: 588 3 7 your 
+: 595 8 8 smile 
+: 605 5 7 so 
+: 611 2 7 war
+: 614 16 5 ~m
+- 630 632
+- 632
+: 647 6 7 And 
+: 654 3 8 your 
+: 660 3 10 cheeks, 
+: 667 3 8 so 
+: 675 17 7 soft
+- 692 697
+- 697
+: 712 5 8 There 
+: 718 3 10 is 
+: 723 3 12 no
+: 729 3 10 thing 
+: 735 7 8 for 
+: 743 11 10 me
+- 754
+: 759 3 12 But 
+: 766 8 14 to 
+* 775 2 14 love
+* 778 25 15 ~ 
+* 807 18 3 you
+- 825
+: 832 4 5 And 
+: 840 3 7 the 
+: 847 7 10 way 
+: 855 7 8 you 
+: 863 3 7 look 
+: 879 15 5 to
+: 895 3 5 nigh
+: 899 21 3 ~t
+- 920 1024
+- 1024
+: 1039 5 10 With 
+: 1047 4 10 each 
+: 1055 24 10 word,
+- 1079
+: 1082 6 10 Your 
+: 1091 7 10 ten
+: 1099 11 13 der
+: 1111 4 11 ness 
+: 1119 28 8 grows
+- 1147 1153
+- 1153
+: 1168 5 8 Tea
+: 1174 5 10 rin
+: 1180 2 6 ~g 
+: 1183 6 6 my 
+: 1193 15 5 fears 
+: 1216 4 7 a
+: 1223 61 15 part
+- 1284
+: 1295 7 13 And 
+: 1303 3 13 tha
+: 1307 3 10 ~t 
+: 1311 3 11 lau
+: 1315 15 13 ~gh
+- 1330
+: 1343 6 10 That 
+: 1351 5 13 wrin
+: 1359 7 15 kles 
+: 1367 3 11 you
+: 1371 3 8 ~r 
+: 1375 3 11 nose
+: 1379 16 10 ~
+- 1395 1400
+- 1400
+: 1415 4 8 It 
+: 1423 4 8 tou
+: 1431 6 10 ches 
+: 1439 13 6 my 
+: 1455 19 10 foo
+: 1475 3 11 lish 
+: 1481 27 10 heart,
+- 1508
+* 1511 10 11 Hmm
+* 1522 4 10 ~
+* 1527 7 8 ~
+* 1535 3 10 ~
+* 1539 16 7 ~
+- 1555
+: 1559 13 10 Love
+: 1575 14 3 ly,
+- 1589 1592
+- 1592
+: 1607 5 5 Ne
+: 1613 6 7 ver 
+: 1620 3 8 e
+: 1624 4 7 ver 
+: 1631 3 7 change
+: 1635 16 5 ~
+- 1651 1657
+- 1657
+: 1672 3 7 Keep 
+: 1677 3 8 that 
+: 1683 4 10 breath
+: 1689 4 8 less 
+: 1696 27 7 charm
+- 1723
+: 1736 5 8 Won’t 
+: 1742 3 10 you 
+: 1747 7 12 please 
+: 1755 3 10 ar
+: 1759 7 8 range 
+: 1767 4 10 it?
+- 1771
+: 1783 3 12 ’Cause 
+: 1787 7 14 I 
+: 1795 25 15 love 
+: 1823 24 3 you
+- 1847 1848
+- 1848
+: 1863 5 5 Just 
+: 1870 4 7 the 
+: 1875 5 10 way 
+: 1881 6 8 you 
+: 1888 3 7 look 
+: 1903 16 5 to
+: 1920 39 3 night
+- 1959 2560
+- 2560
+: 2575 5 10 With 
+: 2583 6 10 each 
+: 2592 25 10 word, 
+: 2619 4 10 your 
+: 2627 7 10 ten
+: 2635 11 13 der
+: 2647 3 11 ness 
+: 2655 3 10 grow
+: 2659 26 8 ~s
+- 2685 2689
+- 2689
+: 2704 5 8 Tea
+: 2710 9 10 ring 
+: 2721 5 6 my 
+: 2730 17 5 fears 
+: 2751 4 6 a
+: 2759 68 15 part
+- 2827
+: 2831 14 13 And 
+: 2847 3 13 tha
+: 2851 3 10 ~t 
+: 2855 3 11 lau
+: 2859 15 13 ~gh
+- 2874
+: 2887 6 10 That 
+: 2895 4 13 wrin
+: 2900 9 15 kles 
+: 2911 3 11 you
+: 2915 3 10 ~r 
+: 2919 3 11 nose
+: 2923 21 10 ~
+- 2944
+: 2951 4 8 It 
+: 2959 5 8 tou
+: 2967 6 10 ches 
+: 2975 13 6 my 
+: 2995 11 10 foo
+: 3008 5 11 lish 
+: 3015 55 10 hear
+: 3071 19 11 ~t,
+- 3090
+* 3095 7 11 Love
+* 3103 18 4 ly,
+- 3121 3128
+- 3128
+: 3143 7 9 Don’t 
+: 3151 6 11 you 
+: 3158 4 9 e
+: 3163 2 8 ver 
+: 3167 3 8 change
+: 3171 16 6 ~
+- 3187
+: 3199 4 11 Keep 
+: 3207 5 13 that 
+: 3216 4 14 breath
+: 3223 4 13 less 
+: 3232 3 13 char
+: 3236 22 11 ~m
+- 3258
+: 3272 5 16 Won’t 
+: 3278 3 13 you 
+: 3286 4 13 please 
+: 3291 3 9 ar
+: 3295 7 8 range 
+: 3303 4 6 it?
+- 3307
+: 3319 6 13 ’Cause 
+: 3327 7 15 I 
+: 3335 29 16 love 
+: 3368 15 4 you
+- 3383 3386
+- 3386
+: 3401 4 6 Just 
+: 3408 3 8 the 
+: 3412 9 11 way 
+: 3423 7 9 you 
+: 3431 5 8 look 
+* 3443 11 6 to
+* 3456 44 4 night
+- 3500 3545
+- 3545
+: 3560 26 11 Ooh, 
+: 3588 3 8 to
+: 3592 124 11 night
+E

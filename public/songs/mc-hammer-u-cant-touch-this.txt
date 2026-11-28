@@ -1,0 +1,751 @@
+#ARTIST:MC Hammer
+#TITLE:U Can’t Touch This
+#CREATOR:Canni
+#BPM:266
+#YEAR:1990
+#VIDEO:v=otCpCn0l4Wo
+#GENRE:Rap
+#LANGUAGE:English
+#GAP:13994,962406015038
+#EDITION:SingStar '90s
+#ALLKARAOKE_ID:mc-hammer-u-cant-touch-this
+#ALLKARAOKE_SID:7978
+#ALLKARAOKE_LASTUPDATE:2026-11-27T06:06:11.566Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:200
+#ALLKARAOKE_SOURCEURL:MC Hammer
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:274
+#MP3:MC Hammer - U Can’t Touch This.mp3
+R 18 1 0 You 
+R 20 2 0 can’t 
+R 24 2 0 touch 
+R 28 2 0 this
+- 30 64
+- 64
+R 82 1 0 You 
+R 84 2 0 can’t 
+R 88 2 0 touch 
+R 92 3 0 this
+- 95 128
+- 128
+R 146 1 0 You 
+R 148 2 0 can’t 
+R 152 2 0 touch 
+R 156 2 0 this
+- 158 192
+- 192
+R 210 1 0 You 
+R 212 2 0 can’t 
+R 216 2 0 touch 
+R 220 2 0 this
+- 222 238
+- 238
+: 256 3 -3 My 
+: 264 4 -3 my 
+: 272 4 -3 my
+- 276
+: 280 4 0 My 
+: 288 2 2 mu
+: 292 2 -3 sic 
+: 296 2 0 hits 
+: 300 2 -3 me
+- 302
+R 308 2 0 So 
+R 312 2 0 hard
+- 314
+R 320 2 0 Makes 
+R 324 2 0 me 
+R 328 2 0 say
+- 330
+R 336 2 0 Oh 
+R 340 2 1 my 
+R 344 2 0 Lord
+- 346
+* 352 2 2 Thank 
+: 356 2 -3 you 
+R 364 2 -3 for 
+R 368 2 0 bles
+R 372 2 -3 sing 
+R 376 2 0 me
+- 378
+R 380 1 -1 With 
+R 382 1 -3 a 
+R 384 2 0 mind 
+R 388 2 0 to 
+R 392 2 0 rhyme
+- 394
+R 396 2 -3 And 
+R 400 2 0 two 
+R 404 2 0 hyped 
+R 408 1 0 feet
+- 409
+R 410 1 1 It 
+R 412 2 1 feels 
+R 416 2 1 good
+- 418
+R 428 1 1 When 
+R 430 1 1 you 
+R 432 2 1 know 
+R 436 2 1 you’re 
+R 440 2 1 down
+- 442
+G 446 1 1 A 
+R 448 1 1 su
+R 450 1 1 per 
+R 452 2 1 dope 
+R 456 2 1 home
+R 460 2 1 boy
+- 462
+R 464 1 1 From 
+R 466 1 1 the 
+R 468 2 1 Oak
+R 472 1 1 town
+- 473
+R 474 1 1 And 
+R 476 2 1 I’m 
+: 480 3 0 known 
+: 500 2 -3 as 
+: 504 2 0 such
+- 506
+R 510 1 1 And 
+R 512 1 1 this 
+R 516 1 1 is 
+R 518 1 1 a 
+R 520 2 1 beat 
+R 524 2 1 uh
+- 526
+R 530 1 1 You 
+R 532 3 1 can’t 
+R 536 2 1 touch
+- 538 544
+- 544
+R 562 2 2 I 
+R 565 5 2 told 
+R 571 2 2 you 
+R 574 3 2 home 
+R 579 3 2 boy
+- 582
+R 594 1 -3 You 
+R 596 2 -1 can’t 
+R 600 2 -1 touch 
+R 604 2 -3 this
+- 606 608
+- 608
+R 626 3 2 Yeah, 
+R 630 1 2 that’s 
+R 632 2 2 how 
+R 636 2 2 we’re 
+R 640 1 2 li
+R 642 1 2 ving
+- 643
+: 644 1 -3 And 
+: 646 2 -5 you 
+: 652 4 2 know
+- 656
+R 658 1 -1 You 
+R 660 2 -3 can’t 
+R 664 2 2 touch 
+R 668 3 -3 this
+- 671 674
+- 674
+G 692 1 2 Look 
+R 694 1 2 in 
+R 696 2 2 my 
+R 699 4 2 eyes, 
+R 707 10 2 man
+- 717
+R 722 1 2 You 
+R 724 2 2 can’t 
+R 728 2 2 touch 
+R 732 3 2 this
+- 735 745
+- 745
+R 763 2 2 Yo, 
+R 766 2 2 let 
+R 769 1 2 me 
+R 772 2 2 bust 
+R 776 2 2 the 
+R 780 2 2 fun
+R 783 1 2 ky 
+R 785 3 2 ly
+R 789 1 2 rics
+- 790
+R 800 2 3 Fresh 
+R 804 2 3 new 
+R 808 2 3 kicks, 
+R 820 2 3 and 
+R 824 2 3 pants
+- 826
+R 830 1 3 You 
+R 832 1 3 got 
+R 834 1 3 it 
+R 836 2 3 like 
+R 840 2 3 that
+- 842
+R 844 1 3 Now 
+R 846 1 3 you 
+R 848 1 3 know 
+R 850 1 3 you 
+R 852 1 3 wan
+R 854 1 3 na 
+R 856 2 3 dance
+- 858
+R 860 2 3 So 
+R 864 2 3 move
+- 866
+R 880 1 3 Out
+R 882 1 3 ta 
+R 884 1 3 your 
+R 888 2 3 seat
+- 890
+R 894 1 3 And 
+R 896 1 3 get 
+R 898 1 3 a 
+R 900 1 3 fly 
+R 904 2 3 girl
+- 906
+R 908 2 3 And 
+R 912 2 3 catch 
+R 916 2 3 this 
+R 920 2 3 beat
+- 922
+R 924 1 3 While 
+R 926 1 3 it’s 
+R 928 2 3 rol
+R 932 2 3 lin’
+- 934
+R 948 2 3 Hold 
+R 952 2 3 on
+- 954
+R 960 1 3 Pump 
+R 962 1 3 a 
+R 964 1 3 lit
+R 966 1 3 tle 
+R 968 1 3 bit
+- 969
+R 970 1 3 And 
+R 972 1 3 let 
+R 974 1 3 them 
+R 976 1 3 know 
+R 978 1 3 it’s 
+R 980 1 3 go
+R 982 1 3 ing 
+R 984 3 3 on
+- 987
+R 988 2 4 Like 
+R 992 4 4 that
+- 996
+R 1012 2 4 Like 
+R 1016 3 4 that
+- 1019
+R 1024 2 4 Cold 
+R 1028 1 4 on 
+R 1030 1 4 a 
+R 1032 1 4 mis
+R 1034 1 4 sion
+- 1035
+R 1036 2 4 So 
+R 1040 2 4 fall 
+R 1044 2 4 them 
+R 1048 2 4 back
+- 1050
+G 1052 1 4 Let 
+R 1054 1 4 ’em 
+R 1056 3 4 know
+- 1059
+R 1070 1 4 That 
+R 1072 2 4 you’re 
+R 1076 2 4 too 
+R 1080 2 4 much
+- 1082
+R 1086 1 4 And 
+R 1088 1 4 this 
+R 1092 1 4 is 
+R 1094 1 4 a 
+R 1096 2 4 beat, 
+R 1100 2 4 uh
+- 1102
+R 1105 1 4 They 
+R 1107 3 4 can’t 
+R 1112 3 4 touch
+- 1115 1134
+- 1134
+R 1152 3 5 Yo! 
+R 1156 2 5 I 
+R 1160 2 5 told 
+R 1164 3 5 you
+- 1167
+R 1170 1 5 You 
+R 1172 2 5 can’t 
+R 1176 2 5 touch 
+R 1180 2 5 this
+- 1182 1193
+- 1193
+R 1211 1 5 Why 
+R 1213 1 5 you 
+R 1216 2 5 stan
+R 1219 2 5 ding 
+R 1223 2 5 there, 
+R 1227 3 5 man?
+- 1230
+R 1234 1 5 You 
+R 1236 2 5 can’t 
+R 1240 2 5 touch 
+R 1244 2 5 this
+- 1246
+R 1258 2 5 Yo, 
+R 1262 2 5 sound 
+R 1266 1 5 the 
+R 1268 4 5 bells
+- 1272
+R 1276 4 5 School 
+R 1281 2 5 is 
+R 1284 3 5 in, 
+R 1289 1 5 su
+R 1291 2 5 cker
+- 1293
+R 1298 1 5 You 
+R 1300 2 5 can’t 
+R 1304 2 5 touch 
+R 1308 2 5 this
+- 1310
+R 1312 2 6 Give 
+R 1316 1 6 me 
+R 1318 1 6 a 
+R 1320 4 6 song
+- 1324
+R 1332 1 6 Or 
+R 1334 1 6 a 
+R 1336 2 6 rhy
+R 1340 2 6 thm
+- 1342
+R 1344 1 6 Ma
+R 1346 1 6 king 
+R 1348 1 6 ’em 
+R 1352 2 6 sweat
+- 1354
+R 1356 2 6 That’s 
+R 1360 2 6 what 
+R 1364 2 6 I’m 
+R 1368 1 6 gi
+R 1370 1 6 ving 
+R 1372 1 6 ’em
+- 1373
+R 1376 3 6 Now, 
+R 1396 2 6 they 
+R 1400 2 6 know
+- 1402
+G 1406 1 6 You 
+R 1408 1 6 tal
+R 1410 1 6 king 
+R 1412 1 6 ’bout 
+R 1414 1 6 the 
+R 1416 3 6 Ham
+R 1420 1 6 mer
+- 1421
+R 1422 1 6 You’re 
+R 1424 1 6 tal
+R 1426 1 6 king 
+R 1428 1 6 ’bout 
+R 1430 1 6 a 
+R 1432 2 6 show
+- 1434
+R 1436 2 6 That’s 
+R 1440 2 6 hyped
+- 1442
+R 1460 2 6 And 
+R 1464 1 6 tight
+- 1465
+R 1472 1 6 Sing
+R 1474 1 6 ers 
+R 1476 2 6 are 
+R 1480 1 6 swea
+R 1482 1 6 ting
+- 1483
+R 1484 1 6 So 
+R 1488 2 6 pass 
+R 1492 1 6 them 
+R 1494 1 6 a
+R 1496 2 6 wipe
+- 1498
+R 1500 1 6 Or 
+R 1502 1 6 a 
+R 1504 1 6 tape
+- 1505 1506
+- 1506
+R 1524 2 6 To 
+R 1528 2 6 learn
+- 1530
+R 1536 1 6 What’s 
+R 1538 1 6 it 
+R 1540 1 6 gon
+R 1542 1 6 na 
+R 1544 2 6 take
+- 1546
+R 1548 1 6 In 
+R 1550 1 6 the 
+R 1552 1 6 nine
+R 1554 1 6 ties 
+R 1556 2 6 to 
+R 1560 2 6 burn
+- 1562
+R 1564 2 6 The 
+R 1568 3 6 charts
+- 1571
+R 1588 2 6 Le
+R 1592 1 6 git
+- 1593
+R 1600 1 6 Ei
+R 1602 1 6 ther 
+R 1604 1 6 work 
+R 1608 1 6 hard
+- 1609
+R 1612 1 6 Or 
+R 1614 1 6 you 
+R 1616 1 6 might 
+R 1618 1 6 as 
+R 1620 2 6 well 
+R 1624 1 6 quit
+- 1625
+R 1640 2 7 That’s 
+R 1645 4 7 word 
+R 1652 2 7 be
+R 1655 2 7 cause 
+R 1659 2 7 you 
+R 1664 5 7 know
+- 1669
+R 1682 1 7 You 
+R 1684 1 7 can’t 
+R 1688 2 7 touch 
+R 1692 2 7 this
+- 1694 1728
+- 1728
+R 1746 1 7 You 
+R 1748 1 7 can’t 
+R 1752 2 7 touch 
+R 1756 2 7 this
+- 1758 1794
+- 1794
+R 1812 1 7 Break 
+R 1814 1 7 it 
+R 1816 5 7 down
+- 1821 2038
+- 2038
+R 2056 3 7 Stop, 
+R 2068 1 7 Ham
+R 2070 1 7 mer
+R 2072 2 7 time
+- 2074
+R 2079 3 8 Go 
+R 2083 1 8 with 
+R 2085 1 8 the 
+R 2088 2 8 funk
+- 2090
+R 2100 1 8 It 
+R 2102 1 8 is 
+R 2104 2 8 said
+- 2106
+R 2108 1 8 If 
+R 2110 1 8 you 
+R 2112 3 8 can’t 
+R 2116 1 8 groove 
+R 2118 1 8 to 
+R 2120 2 8 this
+- 2122
+R 2124 1 8 Then 
+R 2126 1 8 you 
+R 2128 1 8 pro
+R 2130 1 8 bably 
+R 2132 2 8 are 
+R 2136 2 8 dead
+- 2138
+R 2140 2 8 So 
+R 2144 5 8 wave
+- 2149
+R 2156 2 8 Your 
+R 2160 2 8 hands 
+R 2164 1 8 in 
+R 2166 1 8 the 
+R 2168 5 8 air
+- 2173
+G 2176 1 8 Bust 
+R 2178 1 8 a 
+R 2180 2 8 few 
+R 2184 2 8 moves
+- 2186
+R 2188 1 8 Run 
+R 2190 1 8 your 
+R 2192 1 8 fin
+R 2194 1 8 gers 
+R 2196 1 8 through 
+R 2198 1 8 your 
+R 2200 2 8 hair
+- 2202
+R 2204 1 8 This 
+R 2206 1 8 is 
+R 2208 3 8 it
+- 2211
+R 2228 1 8 For 
+R 2230 1 8 a 
+R 2232 2 8 win
+R 2236 2 8 ner
+- 2238
+R 2240 2 8 Dance 
+R 2244 2 8 to 
+R 2248 2 8 this
+- 2250
+R 2252 1 8 And 
+R 2254 1 8 you’re 
+R 2256 1 8 gon
+R 2258 1 8 na 
+R 2260 1 8 get 
+R 2264 3 8 thin
+R 2268 3 8 ner
+- 2271
+G 2272 7 9 Move, 
+R 2284 4 9 slide 
+R 2291 2 9 your 
+R 2296 2 9 rump
+- 2298
+R 2304 2 9 Just 
+R 2308 1 9 for 
+R 2310 1 9 a 
+R 2312 1 9 mi
+R 2314 1 9 nute
+- 2315
+R 2316 2 9 Let’s 
+R 2320 2 9 all 
+R 2324 1 9 do 
+R 2326 1 9 the 
+R 2328 2 9 bump
+- 2330
+R 2336 2 9 Bump, 
+R 2344 2 9 bump, 
+R 2352 2 9 bump
+- 2354
+R 2365 9 9 Yeah
+- 2374
+R 2386 1 9 You 
+R 2388 2 9 can’t 
+R 2392 2 9 touch 
+R 2396 2 9 this
+- 2398 2416
+- 2416
+R 2434 2 9 Look, 
+R 2439 4 9 man
+- 2443
+R 2450 1 9 You 
+R 2452 2 9 can’t 
+R 2456 2 9 touch 
+R 2460 2 9 this
+- 2462 2464
+- 2464
+R 2482 2 9 You 
+R 2485 1 9 bet
+R 2487 1 9 ter 
+R 2489 1 9 get 
+R 2492 2 9 hype, 
+R 2496 2 9 boy
+- 2498
+R 2500 1 9 ’Cause 
+R 2502 1 9 you 
+R 2504 2 9 know
+- 2506
+R 2514 1 9 You 
+R 2516 2 9 can’t 
+R 2520 2 9 touch 
+R 2524 2 9 this
+- 2526
+G 2540 2 9 Ring 
+R 2544 2 9 the 
+R 2547 3 9 bell, 
+R 2554 2 9 school’s 
+R 2559 2 9 back 
+R 2563 3 9 in
+- 2566
+R 2580 1 10 Break 
+R 2582 1 10 it 
+R 2584 6 10 down
+- 2590 2806
+- 2806
+R 2824 4 10 Stop, 
+R 2836 1 10 Ham
+R 2838 1 10 mer
+R 2840 2 10 time
+- 2842 3135
+- 3135
+R 3153 1 10 You 
+R 3155 2 10 can’t 
+R 3159 2 10 touch 
+R 3163 2 10 this
+- 3165 3199
+- 3199
+R 3217 1 10 You 
+R 3219 1 10 can’t 
+R 3223 2 10 touch 
+R 3227 3 10 this
+- 3230 3263
+- 3263
+R 3281 1 10 You 
+R 3283 1 10 can’t 
+R 3287 2 10 touch 
+R 3291 2 10 this
+- 3293 3329
+- 3329
+G 3347 1 10 Break 
+R 3349 1 10 it 
+R 3351 3 10 down
+- 3354 3573
+- 3573
+R 3591 4 10 Stop, 
+R 3603 1 10 Ham
+R 3605 1 10 mer
+R 3607 1 10 time
+- 3608
+R 3615 2 11 Eve
+R 3619 2 11 ry
+R 3623 2 11 time 
+R 3627 2 11 you 
+R 3631 2 11 see 
+R 3635 2 11 me
+- 3637
+R 3643 2 11 The 
+R 3647 2 11 Ham
+R 3651 2 11 mer’s 
+R 3655 2 11 just 
+R 3659 2 11 so 
+R 3663 2 11 hyped
+- 3665
+G 3675 2 11 I’m 
+R 3679 2 11 dope 
+R 3687 2 11 on 
+R 3691 2 11 the 
+R 3695 3 11 floor
+- 3698
+R 3703 2 11 And 
+R 3707 2 11 I’m 
+R 3711 2 11 ma
+R 3715 2 11 gic 
+R 3719 2 11 on 
+R 3723 2 11 the 
+R 3727 3 11 mic
+- 3730
+: 3739 2 -3 Now 
+: 3743 4 2 why 
+: 3751 2 0 would 
+: 3755 2 -3 I 
+: 3759 2 0 e
+: 3763 2 -3 ver
+- 3765
+: 3775 2 0 Stop 
+: 3783 2 0 do
+: 3787 2 -3 ing 
+: 3791 2 0 this?
+- 3793
+R 3803 2 11 When 
+R 3807 2 11 o
+R 3811 2 11 thers 
+R 3815 2 11 ma
+R 3819 2 11 king 
+R 3823 2 11 re
+R 3827 2 11 cords
+- 3829
+R 3835 2 11 That 
+R 3839 2 11 just 
+R 3847 2 11 don’t 
+R 3855 2 11 hit
+- 3857
+R 3867 2 11 I’ve 
+R 3871 2 11 toured 
+R 3875 2 11 a
+R 3879 2 11 round 
+R 3883 2 11 the 
+R 3887 3 11 world
+- 3890
+R 3899 2 11 From 
+R 3903 2 11 Lon
+R 3907 2 11 don 
+R 3911 2 11 to 
+R 3915 1 11 the 
+R 3919 2 11 Bay
+- 3921
+R 3931 2 11 It’s 
+R 3935 1 11 Ham
+R 3937 1 11 mer, 
+R 3939 2 11 go 
+R 3943 1 11 Ham
+R 3945 1 11 mer
+- 3946
+R 3947 1 11 M.
+R 3949 1 11 C. 
+R 3951 1 11 Ham
+R 3953 1 11 mer, 
+R 3955 2 11 yo 
+R 3959 1 11 Ham
+R 3961 1 11 mer
+- 3962
+R 3963 1 11 And 
+R 3965 1 11 the 
+R 3967 2 11 rest 
+R 3971 2 11 can 
+R 3975 2 11 go 
+R 3979 3 11 and 
+R 3983 2 11 play
+- 3985
+R 3986 1 12 You 
+R 3988 1 12 can’t 
+R 3991 2 12 touch 
+R 3995 2 12 this
+- 3997 4031
+- 4031
+R 4049 1 12 You 
+R 4051 1 12 can’t 
+R 4055 2 12 touch 
+R 4059 2 12 this
+- 4061 4095
+- 4095
+R 4113 1 12 You 
+R 4115 2 12 can’t 
+R 4119 2 12 touch 
+R 4123 3 12 this
+- 4126 4137
+- 4137
+R 4155 6 12 Yeah
+- 4161
+R 4177 1 12 You 
+R 4179 2 12 can’t 
+R 4183 2 12 touch 
+R 4187 2 12 this
+- 4189 4201
+- 4201
+R 4219 2 12 I 
+R 4223 3 12 told 
+R 4227 3 12 you
+- 4230
+R 4241 1 12 You 
+R 4243 2 12 can’t 
+R 4247 2 12 touch 
+R 4251 2 12 this
+- 4253 4280
+- 4280
+R 4298 2 12 Too 
+R 4302 2 12 hype
+- 4304
+R 4305 1 12 You 
+R 4307 1 12 can’t 
+R 4311 2 12 touch 
+R 4315 2 12 this
+- 4317 4329
+- 4329
+R 4347 3 12 Yeah, 
+R 4352 2 12 we 
+R 4356 2 12 out
+R 4359 2 12 ta 
+R 4362 2 12 here
+- 4364
+R 4370 1 12 You 
+R 4372 2 12 can’t 
+R 4375 2 12 touch 
+R 4379 2 12 this
+E
