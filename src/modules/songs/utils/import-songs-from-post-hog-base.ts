@@ -36,6 +36,9 @@ export const importSongsFromPostHogBase = async (
   onSongRemoved: (songId: string) => Promise<void>,
   from?: string,
 ) => {
+  const createdAfter = from ?? AFTER_DATE;
+  // events is partitioned and sorted by `timestamp`, so bound it (with a day of slack) to avoid a full scan
+  const timestampFrom = new Date(new Date(createdAfter).getTime() - 24 * 3600 * 1000).toISOString();
   const sharedSongs = await mkRequest(`${API_URL}/api/projects/${PROJECT_ID}/query`, {
     method: 'post',
     headers: {
@@ -47,7 +50,8 @@ export const importSongsFromPostHogBase = async (
         query: `
             select events.properties.song, events.properties.songId, events.created_at
             from events
-            where events.created_at > toDateTime('${from ?? AFTER_DATE}')
+            where events.timestamp > toDateTime('${timestampFrom}')
+              and events.created_at > toDateTime('${createdAfter}')
               and event IN ('share-song', 'unshare-song') and events.properties.$user_id !='3ab0feed-e1d2-4ff0-8780-5db00698eb60'
             ORDER BY events.created_at ASC
             LIMIT 300

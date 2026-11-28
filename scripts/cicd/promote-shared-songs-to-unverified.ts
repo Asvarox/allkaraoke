@@ -96,7 +96,10 @@ const buildQuery = (opts: { userIds: string[]; hoursFrom: number; hoursTo: numbe
   const userFilter = opts.userIds.length
     ? `and events.properties.$user_id IN(${opts.userIds.map((id) => `'${id.trim()}'`).join(',')})`
     : '';
-  const cursorFilter = `and events.created_at > toDateTime('${getHoursAgoDateLimit(opts.hoursFrom)}')
+  // events is partitioned and sorted by `timestamp`, so bound it (with a day of slack) to avoid a full scan
+  const cursorFilter = `and events.timestamp > toDateTime('${getHoursAgoDateLimit(opts.hoursFrom + 24)}')
+              and events.timestamp < toDateTime('${getHoursAgoDateLimit(opts.hoursTo - 24)}')
+              and events.created_at > toDateTime('${getHoursAgoDateLimit(opts.hoursFrom)}')
               and events.created_at < toDateTime('${getHoursAgoDateLimit(opts.hoursTo)}')`;
 
   return `

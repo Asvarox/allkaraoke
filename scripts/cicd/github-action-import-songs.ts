@@ -53,6 +53,11 @@ type ImportedSongSummary = {
   const dateTo = new Date();
   dateTo.setDate(dateTo.getDate() - daysTo);
 
+  // events table is partitioned and sorted by `timestamp`, not `created_at`, so bound it to avoid
+  // a full-history scan. A day of slack covers client clock skew and late-ingested events.
+  const timestampFrom = new Date(dateFrom.getTime() - 24 * 3600 * 1000);
+  const timestampTo = new Date(dateTo.getTime() + 24 * 3600 * 1000);
+
   const userIds = userId.split(',').map((s) => s.trim());
   const invalidUserId = userIds.find((id) => !/^[a-zA-Z0-9@._:-]+$/.test(id));
   if (invalidUserId) {
@@ -67,7 +72,9 @@ type ImportedSongSummary = {
         query: `
             select events.properties.song, events.properties.songId, events.created_at
             from events
-            where events.created_at > toDateTime('${dateFrom.toISOString()}')
+            where events.timestamp > toDateTime('${timestampFrom.toISOString()}')
+              and events.timestamp < toDateTime('${timestampTo.toISOString()}')
+              and events.created_at > toDateTime('${dateFrom.toISOString()}')
               and events.created_at < toDateTime('${dateTo.toISOString()}')
               and events.properties.$user_id IN(${userIds.map((id) => `'${id}'`).join(',')})
               and event IN ('share-song', 'unshare-song')
