@@ -1,0 +1,537 @@
+#ARTIST:Butthole Surfers
+#TITLE:Pepper
+#CREATOR:Gazza
+#BPM:319,4799999999999
+#YEAR:1996
+#VIDEO:v=KRXty8lDUW0
+#LANGUAGE:English
+#GAP:11295,255720895335
+#ALLKARAOKE_ID:butthole-surfers-pepper
+#ALLKARAOKE_SID:8069
+#ALLKARAOKE_LASTUPDATE:2026-11-28T09:04:09.344Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_CREATORURL:http://usdb.animux.de/index.php?link=profil&id=147347
+#ALLKARAOKE_REALBPM:160
+#ALLKARAOKE_SOURCEURL:https://usdb.animux.de/?link=detail&id=22269
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:250
+#MP3:Butthole Surfers - Pepper.mp3
+F 21 2 4 Mar
+F 25 2 4 key 
+F 29 2 4 got 
+F 33 2 4 with 
+F 37 2 4 Sha
+F 41 2 4 ron,
+- 43
+F 49 2 4 Sha
+F 53 1 4 ron 
+F 57 3 4 got 
+F 63 2 4 She
+F 69 2 4 riee
+- 71
+F 73 2 4 She 
+F 77 2 4 was 
+F 81 2 4 shar
+F 85 1 4 in’
+- 86
+F 89 2 4 Sha
+F 93 2 4 ron’s 
+F 97 2 4 out
+F 101 7 4 look
+- 108
+F 110 2 4 On 
+F 113 1 4 the 
+F 117 2 4 to
+F 121 2 4 pic 
+F 125 2 4 of 
+F 129 2 4 dis
+F 133 5 4 ease
+- 138
+F 147 1 4 Mi
+F 149 1 4 key 
+F 153 1 4 had 
+F 157 1 4 a 
+F 161 1 4 fa
+F 165 1 4 cial 
+F 171 5 4 scar
+- 176
+F 177 1 4 And 
+F 181 2 4 Bob
+F 185 2 4 by 
+F 189 2 4 was 
+F 193 2 4 a 
+F 197 2 4 ra
+F 201 3 4 cist
+- 204
+F 205 2 4 They 
+F 209 2 4 were 
+F 213 2 4 all 
+F 217 2 4 in 
+F 221 2 4 love 
+F 225 2 4 with 
+F 228 1 4 dy
+F 231 3 4 ing
+- 234
+F 235 1 4 They 
+F 237 2 4 were 
+F 241 2 4 do
+F 245 2 4 in’ 
+F 249 2 4 it 
+F 253 2 4 in 
+F 257 2 4 Tex
+F 264 5 4 as
+- 269
+F 277 2 4 Tom
+F 281 2 4 my 
+F 285 2 4 played 
+F 289 2 4 pi
+F 292 2 4 an
+F 295 5 4 o
+- 300
+F 302 1 4 Like 
+F 305 1 4 a 
+F 309 2 4 kid 
+F 313 2 4 out 
+F 317 2 4 in 
+F 321 2 4 the 
+F 325 3 4 rain
+- 328
+F 329 1 4 And 
+F 331 1 4 then 
+F 333 2 4 he 
+F 337 2 4 lost 
+F 341 2 4 his 
+F 345 2 4 leg 
+F 349 2 4 in 
+F 353 2 4 Dal
+F 358 4 4 las
+- 362
+F 363 2 4 He 
+F 367 2 4 was 
+F 371 1 4 dan
+F 375 2 4 cin’ 
+F 379 1 4 with 
+F 381 1 4 the 
+F 389 7 4 train
+- 396
+F 398 1 4 They 
+F 401 1 4 were 
+F 406 1 4 all 
+F 410 2 4 in 
+F 414 2 4 love 
+F 418 1 4 with 
+F 423 2 4 dy
+F 427 2 4 ing
+- 429
+F 431 2 4 They 
+F 435 1 4 were 
+F 439 2 4 drink
+F 443 2 4 in’ 
+F 447 2 4 from 
+F 451 1 4 a 
+F 455 2 4 foun
+F 459 2 4 tian
+- 461
+F 463 2 4 That 
+F 467 1 4 was 
+F 471 2 4 pour
+F 475 2 4 ing 
+F 479 2 4 like 
+F 483 1 4 an 
+F 487 2 4 av
+F 491 2 4 a
+F 495 1 4 lanche
+- 496
+F 502 1 4 Com
+F 507 1 4 ing 
+F 511 1 4 down 
+F 515 1 4 the 
+F 519 2 4 moun
+F 524 1 4 tian
+- 525
+: 534 1 14 I 
+: 538 1 14 don’t 
+: 547 1 14 mind
+- 548
+: 559 2 12 The 
+: 563 2 12 sun 
+: 571 2 11 some
+: 581 2 7 times
+- 583
+: 594 2 7 The 
+: 599 2 7 im
+: 603 1 7 a
+: 613 2 7 ges 
+: 618 1 5 it 
+* 627 13 7 shows
+- 640
+: 661 2 7 I 
+: 665 2 7 can 
+: 677 3 7 taste 
+: 685 2 11 you 
+: 689 2 12 on 
+: 697 2 11 my 
+: 709 7 12 lips
+- 716
+: 717 2 9 And 
+: 725 3 7 smell 
+: 731 2 7 you 
+: 739 2 7 in 
+: 746 2 5 my 
+* 753 24 7 clothes
+- 777
+: 786 3 14 Cinn
+: 791 2 14 a
+: 801 3 14 mon 
+: 811 2 11 and 
+: 819 2 11 sug
+: 823 2 9 ar
+: 835 9 7 y
+- 844
+: 845 2 7 And 
+: 851 2 7 soft
+: 858 2 7 ly 
+: 865 3 5 spok
+: 871 2 9 en 
+* 881 20 7 lies
+- 901
+: 914 2 7 You 
+: 917 2 7 ne
+: 921 2 7 ver 
+: 929 3 7 know 
+: 937 2 9 just 
+: 945 2 12 how 
+: 953 2 11 to 
+: 961 5 12 look
+- 966
+: 969 4 7 Through 
+: 977 2 7 o
+: 981 3 7 ther 
+: 993 2 7 peo
+: 997 3 5 ple’s 
+* 1009 16 7 eyes
+- 1025 1407
+- 1407
+F 1428 2 4 Some 
+F 1434 2 4 will 
+F 1438 2 4 die 
+F 1442 2 4 in 
+F 1446 2 4 hot 
+F 1450 2 4 pur
+F 1453 3 4 suit
+- 1456
+F 1457 2 4 And 
+F 1461 2 4 fir
+F 1465 2 4 ey 
+F 1469 2 4 au
+F 1473 2 4 to 
+F 1477 2 4 crash
+F 1481 4 4 es
+- 1485
+F 1493 2 4 Some 
+F 1497 1 4 will 
+F 1500 1 4 die 
+F 1504 1 4 in 
+F 1508 2 4 hot 
+F 1511 2 4 pur
+F 1515 4 4 suit
+- 1519
+F 1521 2 4 While 
+F 1525 2 4 sif
+F 1529 2 4 ting 
+F 1533 2 4 through 
+F 1537 2 4 my 
+F 1541 2 4 ash
+F 1545 4 4 es
+- 1549
+F 1557 2 4 Some 
+F 1560 2 4 will 
+F 1565 1 4 fall 
+F 1568 1 4 in 
+F 1571 2 4 love 
+F 1576 1 4 with 
+F 1580 4 4 life
+- 1584
+F 1585 2 4 And 
+F 1589 2 4 drink 
+F 1593 2 4 it 
+F 1597 2 4 from 
+F 1601 2 4 a 
+F 1605 2 4 foun
+F 1609 3 4 tian
+- 1612
+F 1613 2 4 That 
+F 1617 2 4 is 
+F 1621 2 4 pour
+F 1625 2 4 ing 
+F 1629 2 4 like 
+F 1633 1 4 an 
+F 1637 2 4 av
+F 1641 1 4 a
+F 1645 4 4 lanche
+- 1649
+F 1651 2 4 Coming 
+F 1655 2 4 down 
+F 1661 2 4 the 
+F 1665 2 4 moun
+F 1673 6 4 tian
+- 1679
+: 1685 2 14 I 
+: 1690 3 14 don’t 
+: 1697 3 14 mind 
+: 1707 2 12 the 
+: 1715 2 12 sun 
+: 1722 3 10 some
+: 1733 9 7 times
+- 1742
+: 1745 2 7 The 
+: 1749 2 7 im
+: 1753 2 7 a
+: 1761 2 7 ges 
+: 1769 2 5 it 
+: 1777 10 7 shows
+- 1787 1792
+- 1792
+: 1813 2 7 I 
+: 1817 2 7 can 
+: 1825 3 7 taste 
+: 1833 2 11 you 
+: 1837 2 12 on 
+: 1847 2 11 my 
+: 1857 11 12 lips
+- 1868
+: 1869 2 9 And 
+: 1874 3 7 smell 
+: 1881 2 7 you 
+: 1888 2 7 in 
+: 1893 2 5 my 
+* 1905 18 7 clothes
+- 1923
+: 1937 3 14 Cinn
+: 1945 2 14 a
+: 1953 3 14 mon 
+: 1961 2 11 and 
+: 1969 2 11 sug
+: 1975 2 9 ar
+: 1985 11 7 y
+- 1996
+: 1997 2 7 And 
+: 2005 2 7 soft
+: 2012 1 7 ly 
+: 2017 3 5 spok
+: 2023 2 9 en 
+* 2029 20 5 lies
+- 2049
+: 2065 2 7 You 
+: 2069 2 7 ne
+: 2072 2 7 ver 
+: 2083 6 7 know
+- 2089
+: 2091 2 11 Just 
+: 2099 2 12 how 
+: 2107 2 11 you 
+: 2113 5 12 look
+- 2118
+: 2120 4 7 Through 
+: 2129 2 7 o
+: 2133 2 7 ther 
+: 2145 2 7 peo
+: 2149 2 5 ple’s 
+* 2161 12 7 eyes
+- 2173 2556
+- 2556
+F 2577 1 4 An
+F 2579 1 4 o
+F 2581 1 4 ther 
+F 2585 2 4 Mi
+F 2589 2 4 key 
+F 2593 2 4 took 
+F 2597 1 4 a 
+F 2601 6 4 knife
+- 2607
+F 2609 2 4 For 
+F 2613 2 4 ar
+F 2617 1 4 gu
+F 2621 2 4 ing 
+F 2625 2 4 in 
+F 2629 2 4 traf
+F 2633 7 4 fic
+- 2640
+F 2646 2 4 Flip
+F 2649 2 4 per 
+F 2653 2 4 died 
+F 2656 1 4 a 
+F 2659 2 4 nat
+F 2662 1 4 u
+F 2665 2 4 ral 
+F 2669 3 4 death
+- 2672
+F 2673 2 4 He 
+F 2677 3 4 caught 
+F 2681 2 4 a 
+F 2685 1 4 nas
+F 2687 2 4 ty 
+F 2693 1 4 vir
+F 2695 5 4 us
+- 2700
+F 2705 2 4 Then 
+F 2709 2 4 there 
+F 2713 2 4 was 
+F 2717 1 4 the 
+F 2721 2 4 ev
+F 2725 2 4 er 
+F 2729 2 4 pres
+F 2733 1 4 ent
+- 2734
+F 2741 2 4 Foot
+F 2745 2 4 ball 
+F 2750 2 4 play
+F 2754 2 4 er 
+F 2758 2 4 rap
+F 2762 2 4 ist
+- 2764
+F 2766 1 4 They 
+F 2770 1 4 were 
+F 2774 2 4 all 
+F 2779 1 4 in 
+F 2783 1 4 love 
+F 2787 1 4 with 
+F 2790 2 4 dy
+F 2794 1 4 ing
+- 2795
+F 2798 1 4 They 
+F 2802 2 4 were 
+F 2806 2 4 do
+F 2810 2 4 in’ 
+F 2814 2 4 it 
+F 2818 1 4 in 
+F 2822 2 4 Tex
+F 2826 2 4 as
+- 2828
+F 2837 2 4 Hol
+F 2841 1 4 ly 
+F 2846 1 4 caught 
+F 2849 2 4 a 
+F 2855 2 4 bul
+F 2859 2 4 let
+- 2861
+F 2863 2 4 But 
+F 2867 2 4 it 
+F 2871 2 4 only 
+F 2875 2 4 hit 
+F 2879 2 4 his 
+F 2883 2 4 leg
+- 2885
+F 2888 2 4 While 
+F 2907 1 4 it 
+F 2905 2 4 should 
+F 2910 1 4 have 
+F 2913 1 4 been 
+F 2915 1 4 a 
+F 2917 2 4 bet
+F 2922 2 4 ter 
+F 2925 2 4 shot
+- 2927
+F 2933 1 4 Got 
+F 2935 2 4 him 
+F 2939 2 4 in 
+F 2943 2 4 the 
+F 2950 6 4 head
+- 2956
+F 2957 2 4 They 
+F 2961 2 4 were 
+F 2965 1 4 all 
+F 2969 1 4 in 
+F 2973 2 4 love 
+F 2977 2 4 with 
+F 2981 2 4 dy
+F 2985 3 4 ing
+- 2988
+F 2989 2 4 They 
+F 2993 2 4 were 
+F 2997 2 4 drink
+F 3000 1 4 in’ 
+F 3005 2 4 from 
+F 3009 1 4 a 
+F 3013 2 4 foun
+F 3017 3 4 tian
+- 3020
+F 3021 2 4 That 
+F 3025 2 4 was 
+F 3029 1 4 pour
+F 3031 2 4 ing 
+F 3037 2 4 like 
+F 3041 2 4 an 
+F 3045 1 4 av
+F 3047 1 4 a
+F 3049 9 4 lanche
+- 3058
+F 3062 1 4 Com
+F 3064 1 4 ing 
+F 3069 2 4 down 
+F 3073 1 4 the 
+F 3077 1 4 moun
+F 3080 6 4 tian
+- 3086
+: 3097 2 14 I 
+: 3101 3 14 don’t 
+: 3109 3 14 mind 
+: 3121 2 12 the 
+: 3125 2 12 sun 
+: 3133 3 11 some
+: 3141 10 7 times
+- 3151
+: 3153 2 7 The 
+: 3157 2 7 im
+: 3161 2 7 a
+: 3171 2 7 ges 
+: 3177 1 5 it 
+* 3185 10 7 shows
+- 3195 3200
+- 3200
+: 3221 2 7 I 
+: 3227 2 7 can 
+: 3237 3 7 taste 
+: 3245 2 11 you 
+: 3250 2 12 on 
+: 3257 2 11 my 
+: 3269 7 12 lips
+- 3276
+: 3277 2 9 And 
+: 3285 3 7 smell 
+: 3293 2 7 you 
+: 3301 2 7 in 
+: 3305 2 5 my 
+* 3313 20 7 clothes
+- 3333
+: 3345 3 14 Cinn
+: 3349 4 14 a
+: 3361 3 14 mon 
+: 3369 2 11 and 
+: 3377 2 11 sug
+: 3381 2 9 ar
+: 3393 9 7 y
+- 3402
+: 3405 2 7 And 
+: 3414 2 7 soft
+: 3419 2 7 ly 
+: 3425 2 7 spok
+: 3429 2 5 en 
+* 3441 15 7 lies
+- 3456
+: 3473 2 7 You 
+: 3477 2 7 ne
+: 3481 2 7 ver 
+: 3489 3 7 know 
+: 3497 2 11 just 
+: 3505 2 12 how 
+: 3513 2 11 you 
+: 3521 7 12 look
+- 3528
+: 3529 4 7 Through 
+: 3537 2 7 o
+: 3541 2 7 ther 
+: 3553 2 7 peo
+: 3557 3 5 ple’s 
+* 3569 24 7 eyes
+E

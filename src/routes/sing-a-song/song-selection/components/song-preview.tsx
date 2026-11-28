@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
+import { useRef } from 'react';
 
 import { SingSetup, SongPreview } from '~/interfaces';
 import { Backdrop } from '~/modules/elements/akui/backdrop';
@@ -6,10 +6,13 @@ import { Icon } from '~/modules/elements/akui/icon';
 import { dialogSurface } from '~/modules/elements/akui/surfaces';
 import { useBackground } from '~/modules/elements/background-context';
 import SongPreviewLayout from '~/modules/elements/song-preview-layout';
-import VideoPlayer, { VideoPlayerRef, VideoState } from '~/modules/elements/video-player/index';
 import useDebounce from '~/modules/hooks/use-debounce';
+import isE2E from '~/modules/utils/is-e2-e';
+import PreviewLyrics from '~/routes/sing-a-song/song-selection/components/preview-lyrics/preview-lyrics';
 import { SongCard } from '~/routes/sing-a-song/song-selection/components/song-card';
+import SongPreviewVideo from '~/routes/sing-a-song/song-selection/components/song-preview-video';
 import SongSettings from '~/routes/sing-a-song/song-selection/components/song-settings/index';
+import { useSongPreviewVideo } from '~/routes/sing-a-song/song-selection/components/use-song-preview-video';
 import { cn } from '~/utils/cn';
 
 interface Props {
@@ -25,10 +28,6 @@ interface Props {
   onExpand: () => void;
 }
 
-const PREVIEW_LENGTH = 30;
-// After the preview loops this many times, the whole song plays (still looped)
-const PREVIEW_PLAYS_BEFORE_FULL_SONG = 2;
-
 export default function SongPreviewComponent({
   songPreview,
   top,
@@ -41,87 +40,13 @@ export default function SongPreviewComponent({
   isPopular,
   onExpand,
 }: Props) {
-  const [showVideo, setShowVideo] = useState(false);
-  const player = useRef<VideoPlayerRef | null>(null);
   const thumbnailRef = useRef<HTMLDivElement | null>(null);
-  const thumbnailSize = useRef<{ w: number; h: number } | null>(null);
+  const video = useSongPreviewVideo(songPreview, thumbnailRef);
+  const { player, showVideo } = video;
+  const debouncedSong = useDebounce(songPreview, 350);
   useBackground(true, 'regular');
 
   const expanded = keyboardControl;
-
-  // Keep the YouTube iframe sized to the thumbnail element at all times.
-  // The Thumbnail is now always the same DOM element so this only needs to run once.
-  // The ResizeObserver fires whenever the thumbnail resizes (e.g. on expand/collapse).
-  useEffect(() => {
-    const el = thumbnailRef.current;
-    if (!el) return;
-    const applySize = (w: number, h: number) => {
-      thumbnailSize.current = { w, h };
-      player.current?.setSize(w, h);
-    };
-    const observer = new ResizeObserver(([entry]) => {
-      const { width: w, height: h } = entry.contentRect;
-      applySize(Math.round(w), Math.round(h));
-    });
-    observer.observe(el);
-    const { width: w, height: h } = el.getBoundingClientRect();
-    applySize(Math.round(w), Math.round(h));
-    return () => observer.disconnect();
-  }, []);
-
-  const start = songPreview.previewStart ?? (songPreview.videoGap ?? 0) + 60;
-  const end = songPreview.previewEnd ?? start + PREVIEW_LENGTH;
-  const songPreviewVolume = songPreview.manualVolume;
-  const undebounced = useMemo(
-    () => [songPreview.video, start, end, songPreviewVolume] as const,
-    [songPreview.video, start, end, songPreviewVolume],
-  );
-  const [videoId, previewStart, previewEnd, volume] = useDebounce(undebounced, 350);
-  const fullSongStart = songPreview.videoGap ?? 0;
-  // Lives here, not in the player, so expanding or collapsing the preview doesn't reset it
-  const previewPlays = useRef(0);
-
-  // Hide immediately whenever the selected song changes; the PLAYING event in
-  // onVideoStateChange will reveal the video once the new one has actually loaded.
-  useLayoutEffect(() => {
-    setShowVideo(false);
-  }, [songPreview.video]);
-
-  useEffect(() => {
-    // Re-apply size here because the YouTube IFrame API may not have been ready
-    // when setSize was first called via ResizeObserver (getInternalPlayer() returns
-    // null until the player script finishes loading). This effect fires after the
-    // 350 ms debounce by which time the API is reliably initialised.
-    if (thumbnailSize.current) {
-      player.current?.setSize(thumbnailSize.current.w, thumbnailSize.current.h);
-    }
-    previewPlays.current = 0;
-    player.current?.loadVideoById({
-      videoId: videoId,
-      startSeconds: previewStart,
-      endSeconds: previewEnd,
-    });
-    player.current?.playVideo();
-  }, [videoId, player, previewStart, previewEnd]);
-
-  const onVideoStateChange = useCallback(
-    (state: VideoState) => {
-      if (state === VideoState.ENDED) {
-        // Reload (rather than seekTo) so the endSeconds bound is re-established — a bare seek
-        // doesn't reliably re-arm it, and the preview would play past `previewEnd` on the next loop.
-        previewPlays.current++;
-        if (previewPlays.current >= PREVIEW_PLAYS_BEFORE_FULL_SONG) {
-          player.current?.loadVideoById({ videoId, startSeconds: fullSongStart });
-        } else {
-          player.current?.loadVideoById({ videoId, startSeconds: previewStart, endSeconds: previewEnd });
-        }
-        player.current?.playVideo();
-      } else if (state === VideoState.PLAYING) {
-        setShowVideo(true);
-      }
-    },
-    [videoId, previewStart, previewEnd, fullSongStart],
-  );
 
   const animationDurationSec =
     60 /
@@ -149,6 +74,22 @@ export default function SongPreviewComponent({
             animationIterationCount: 'infinite',
             animationTimingFunction: 'ease-out',
           }}
+        />
+      )}
+
+      {/* Off in E2E runs, so focusing songs there doesn't also load each one for its lyrics */}
+      {!expanded && !isE2E() && (
+        <PreviewLyrics
+          key={debouncedSong.id}
+          songPreview={debouncedSong}
+          instrumental={!!debouncedSong.instrumental && video.videoId === debouncedSong.instrumental.video}
+          player={player}
+          active={showVideo}
+          playedFrom={video.playingFullSong ? -Infinity : video.previewStart * 1000}
+          top={top}
+          left={left}
+          width={width}
+          height={height}
         />
       )}
 
@@ -213,17 +154,7 @@ export default function SongPreviewComponent({
                 // Opened on the widest layout, as tall as its row, which gives way when the settings need the room
                 expanded && 'lg:landscape:h-full lg:landscape:w-auto lg:landscape:max-w-full',
               )}>
-              <div className={showVideo ? 'opacity-100 transition-opacity duration-500' : 'opacity-0'}>
-                <VideoPlayer
-                  width={0}
-                  height={0}
-                  disablekb
-                  ref={player}
-                  video={''}
-                  volume={volume}
-                  onStateChange={onVideoStateChange}
-                />
-              </div>
+              <SongPreviewVideo video={video} />
             </SongCard.Thumbnail>
           }
           collapsedFooter={
@@ -233,6 +164,7 @@ export default function SongPreviewComponent({
               <SongCard.Badges>
                 <SongCard.Badges.Flag />
                 <SongCard.Badges.Duet />
+                <SongCard.Badges.Instrumental />
                 <SongCard.Badges.Stats focused compact />
               </SongCard.Badges>
             </SongCard.Footer>

@@ -1,0 +1,449 @@
+#ARTIST:Luxtorpeda
+#TITLE:Autystyczny
+#CREATOR:PrzemuH
+#BPM:308,28
+#YEAR:2011
+#VIDEO:v=-hqbkY1-iLQ
+#GENRE:Rock
+#LANGUAGE:Polish
+#GAP:38728,20163487738
+#ALLKARAOKE_ID:luxtorpeda-autystyczny
+#ALLKARAOKE_SID:7476
+#ALLKARAOKE_LASTUPDATE:2026-11-14T21:48:09.937Z
+#ALLKARAOKE_ARTISTORIGIN:PL
+#ALLKARAOKE_VOLUME:70
+#ALLKARAOKE_DURATION:231
+#MP3:Luxtorpeda - Autystyczny.mp3
+#COVER:Luxtorpeda - Autystyczny [CO].jpg
+#BACKGROUND:Luxtorpeda - Autystyczny [BG].jpg
+: 21 5 2 Je
+: 28 2 2 dzie
+: 32 6 0 my 
+: 40 6 2 w~gó
+: 48 5 0 rę 
+: 56 5 2 ma
+: 64 14 2 py, 
+: 84 4 0 mo
+: 92 2 2 rze 
+: 96 5 0 jest 
+: 104 6 2 na 
+: 112 5 0 pół
+: 120 5 2 no
+: 128 14 2 cy
+- 142
+: 150 4 2 A 
+: 156 3 2 z~na
+: 160 6 0 mi 
+: 168 5 2 le
+: 176 4 0 ci 
+: 184 6 2 zie
+: 192 12 2 mia 
+: 212 3 5 jak 
+: 220 2 5 wy
+: 224 4 5 strze
+: 232 5 5 lo
+: 240 5 5 na 
+: 248 4 5 z~pro
+: 256 12 5 cy
+- 268
+: 277 3 2 Wiem, 
+: 284 10 2 że 
+: 297 3 2 do 
+: 305 3 0 mnie 
+: 312 5 2 mó
+: 320 12 2 wisz, 
+: 340 3 2 wiem 
+: 348 10 2 i 
+: 360 4 2 wszy
+: 368 3 0 stko 
+: 376 5 2 sły
+: 384 12 2 szę
+- 396
+: 408 4 0 Nie 
+: 415 3 2 mo
+: 419 4 0 gę 
+: 426 4 2 o
+: 434 5 0 dpo
+: 443 5 2 wie
+: 450 13 2 dzieć, 
+: 471 3 5 przy 
+: 477 3 5 dro
+: 482 3 5 dze 
+: 491 4 5 drze
+: 499 4 5 wa 
+: 507 4 5 li
+: 515 14 5 czę
+- 529
+F 536 8 0 Hej! 
+F 550 9 0 hej! 
+: 563 2 5 na 
+: 567 2 5 pie
+: 571 2 5 rwszy 
+: 575 5 5 rzut 
+: 582 2 4 o
+: 586 8 5 ka
+- 594
+F 598 12 0 Hej! 
+F 614 10 0 hej! 
+: 627 2 5 nie 
+: 631 2 5 wi
+: 635 2 5 dać, 
+: 639 7 5 że 
+: 647 2 4 ko
+: 651 8 5 cham
+- 659
+F 663 11 0 Hej! 
+F 679 11 0 hej! 
+: 692 2 5 na 
+: 696 1 5 pier
+: 700 1 5 wszy 
+: 704 4 5 rzut 
+: 711 2 4 o
+: 715 7 5 ka
+- 722
+: 728 5 5 Nie 
+: 735 2 5 wi
+: 739 4 5 dać, 
+: 747 4 4 że 
+: 755 4 4 cię 
+: 763 4 5 ko
+: 771 17 4 cham
+- 788
+F 792 8 0 Hej! 
+F 808 8 0 hej! 
+: 820 2 5 na 
+: 824 1 5 pie
+: 828 1 5 rwszy 
+: 832 6 5 rzut 
+: 840 2 4 o
+: 844 7 5 ka
+- 851
+F 856 11 0 Hej! 
+F 872 10 0 hej! 
+: 884 2 5 nie 
+: 888 2 5 wi
+: 892 2 5 dać, 
+: 896 7 5 że 
+: 904 2 4 ko
+: 908 8 5 cham
+- 916
+F 920 11 0 Hej! 
+F 936 9 0 hej! 
+: 948 2 5 na 
+: 952 2 5 pier
+: 956 2 5 wszy 
+: 960 6 5 rzut 
+: 968 2 4 o
+: 972 8 5 ka
+- 980
+: 984 5 5 Nie 
+: 992 3 5 wi
+: 996 5 5 dać, 
+: 1004 5 4 że 
+: 1012 4 4 cię 
+: 1020 4 5 ko
+: 1028 16 4 cham
+- 1044
+: 1048 4 2 Śle
+: 1056 3 2 dzę 
+: 1060 4 0 jak 
+: 1068 4 2 ka
+: 1076 4 0 bli 
+: 1084 7 2 li
+: 1092 13 2 nie 
+: 1112 4 0 zbli
+: 1120 3 2 ża
+: 1124 4 0 ją 
+: 1133 4 2 się 
+: 1141 4 0 do 
+: 1149 4 2 sie
+: 1157 15 2 bie
+- 1172
+: 1180 4 0 A 
+: 1187 3 2 po
+: 1191 4 0 tem 
+: 1199 4 2 od
+: 1207 4 0 da
+: 1215 4 2 la
+: 1223 12 2 ją 
+: 1244 3 5 na 
+: 1250 3 5 za
+: 1255 3 5 chmu
+: 1263 4 5 rzo
+: 1271 4 5 nym 
+: 1279 4 5 nie
+: 1287 16 5 bie
+- 1303
+: 1308 4 0 Za
+: 1315 3 2 pa
+: 1320 3 0 ro
+: 1328 3 2 wa
+: 1336 3 0 ne 
+: 1344 3 2 szy
+: 1352 13 2 by, 
+: 1372 3 0 pal
+: 1380 2 2 ca
+: 1383 4 0 mi 
+: 1392 4 2 po 
+: 1401 3 0 nich 
+: 1409 3 2 pi
+: 1416 16 2 szę
+- 1432
+: 1436 4 2 A 
+: 1444 3 2 ty 
+: 1448 4 0 coś 
+: 1456 4 2 do 
+: 1464 4 0 mnie 
+: 1473 3 2 mó
+: 1480 15 2 wisz, 
+: 1502 4 5 wiem 
+: 1509 9 5 i 
+: 1522 5 5 wszy
+: 1530 4 5 stko 
+: 1538 4 5 sły
+: 1546 14 5 szę
+- 1560
+F 1565 9 0 Hej! 
+F 1581 10 0 hej! 
+: 1594 2 5 na 
+: 1598 2 5 pie
+: 1602 2 5 rwszy 
+: 1606 5 5 rzut 
+: 1614 2 4 o
+: 1618 7 5 ka
+- 1625
+F 1629 13 0 Hej! 
+F 1646 10 0 hej! 
+: 1659 2 5 nie 
+: 1663 2 5 wi
+: 1667 2 5 dać, 
+: 1671 5 5 że 
+: 1679 3 4 ko
+: 1683 9 5 cham
+- 1692
+F 1695 12 0 Hej! 
+F 1711 10 0 hej! 
+: 1723 2 5 na 
+: 1727 2 5 pier
+: 1731 2 5 wszy 
+: 1735 4 5 rzut 
+: 1742 3 4 o
+: 1746 6 5 ka
+- 1752
+: 1760 3 5 Nie 
+: 1767 3 5 wi
+: 1772 5 5 dać, 
+: 1778 6 4 że 
+: 1788 5 4 cię 
+: 1795 5 5 ko
+: 1803 21 4 cham
+- 1824 2571
+- 2571
+F 2592 2 0 W~kra
+F 2596 1 0 i
+F 2600 1 0 nie 
+F 2603 2 0 ni
+F 2606 3 0 gdzie 
+F 2610 3 0 ni
+F 2614 4 0 gdzie 
+F 2622 2 0 za
+F 2626 2 0 plą
+F 2630 2 0 ta
+F 2634 2 0 ny 
+F 2638 2 0 sam 
+F 2642 2 0 w~so
+F 2646 4 0 bie
+- 2650
+F 2660 1 0 Tro
+F 2662 2 0 chę 
+F 2665 1 0 e
+F 2667 2 0 go
+F 2670 1 0 i
+F 2672 4 0 sty
+F 2677 5 0 cznie 
+F 2689 2 0 sie
+F 2693 4 0 dzę 
+F 2698 4 0 i nic 
+F 2703 2 0 nie 
+F 2707 3 0 ro
+F 2711 4 0 bie
+- 2715
+F 2723 2 0 Cia
+F 2727 2 0 ło 
+F 2731 3 0 jest 
+F 2735 2 0 o
+F 2739 2 0 be
+F 2744 3 0 cne, 
+F 2750 3 0 grze
+F 2755 2 0 czne 
+F 2758 2 0 i 
+F 2762 2 0 na 
+F 2766 2 0 ka
+F 2770 2 0 na
+F 2774 4 0 pie
+- 2778
+F 2783 2 0 Duch 
+F 2787 2 0 wo
+F 2791 2 0 lny 
+F 2795 2 0 się 
+F 2799 2 0 wy
+F 2803 2 0 ry
+F 2807 2 0 wa 
+F 2816 2 0 i 
+F 2820 1 0 hu
+F 2824 1 0 la 
+F 2827 1 0 ra
+F 2831 1 0 zem 
+F 2835 1 0 z wia
+F 2840 7 0 trem
+- 2847
+F 2851 2 0 Krzy
+F 2855 2 0 czysz, 
+F 2859 2 0 że 
+F 2863 2 0 cho
+F 2867 2 0 wam 
+F 2871 2 0 się 
+F 2875 2 0 przed 
+F 2879 2 0 to
+F 2882 3 0 bą 
+F 2887 2 0 i 
+F 2891 2 0 je
+F 2895 2 0 stem 
+F 2899 2 0 skry
+F 2904 3 0 ty
+- 2907
+F 2912 2 0 Lub 
+F 2916 2 0 chcąc 
+F 2920 2 0 być 
+F 2924 2 0 bli
+F 2928 2 0 sko 
+F 2932 2 0 ze 
+F 2936 2 0 mną 
+F 2947 2 0 so
+F 2951 2 0 li
+F 2955 2 0 da
+F 2959 2 0 rnie 
+F 2963 2 0 mil
+F 2968 6 0 czysz
+- 2974
+F 2976 2 0 Ko
+F 2980 2 0 cha
+F 2984 2 0 jąc 
+F 2988 2 0 i 
+F 2992 2 0 się 
+F 2996 2 0 zło
+F 3000 2 0 szcząc 
+F 3012 2 0 zno
+F 3016 2 0 sisz 
+F 3020 2 0 to 
+F 3024 2 0 cier
+F 3028 2 0 pli
+F 3032 3 0 wie
+- 3035
+F 3040 2 0 Ja 
+F 3044 2 0 też 
+F 3048 2 0 cię 
+F 3052 2 0 ba
+F 3056 2 0 rdzo 
+F 3060 2 0 ko
+F 3064 2 0 cham, 
+F 3068 2 0 tyl
+F 3072 2 0 ko 
+F 3076 2 0 tro
+F 3080 2 0 chę 
+F 3084 2 0 au
+F 3088 2 0 ty
+F 3092 2 0 sty
+F 3096 10 0 cznie
+- 3106
+F 3108 4 0 Wiem 
+F 3116 2 0 o 
+F 3120 2 0 tym 
+F 3124 2 0 wszy
+F 3132 2 0 stkim, 
+F 3144 2 0 ty 
+F 3148 2 0 chy
+F 3152 2 0 ba 
+F 3156 3 0 też 
+F 3162 5 0 wiesz
+- 3167
+F 3168 2 0 I 
+F 3172 2 0 choć 
+F 3176 2 0 nie 
+F 3180 2 0 pła
+F 3184 2 0 czę 
+F 3188 2 0 przy 
+F 3192 2 0 to
+F 3196 2 0 bie, 
+F 3200 2 0 coś 
+F 3204 2 0 mię
+F 3208 2 0 dzy 
+F 3212 2 0 na
+F 3216 1 0 mi 
+F 3218 8 0 jest
+- 3226
+F 3232 2 0 U
+F 3236 2 0 śmie
+F 3240 2 0 cham 
+F 3244 2 0 się 
+F 3248 2 0 do 
+F 3252 2 0 sie
+F 3256 2 0 bie 
+F 3268 2 0 tro
+F 3272 2 0 chę 
+F 3276 2 0 ta
+F 3280 2 0 je
+F 3284 2 0 mni
+F 3288 4 0 czy
+- 3292
+F 3296 2 0 Znów 
+F 3300 2 0 py
+F 3304 2 0 tasz 
+F 3308 2 0 o 
+F 3312 2 0 czym 
+F 3316 2 0 my
+F 3320 3 0 ślę, 
+F 3324 2 0 od
+F 3328 2 0 po
+F 3332 2 0 wia
+F 3336 2 0 dam 
+F 3340 2 0 że 
+F 3344 2 0 o 
+F 3348 2 0 ni
+F 3352 12 0 czym
+- 3364
+F 3374 13 0 Hej! 
+F 3389 10 0 hej! 
+: 3403 2 5 na 
+: 3407 2 5 pie
+: 3411 2 5 rwszy 
+: 3415 5 5 rzut 
+: 3422 2 4 o
+: 3426 8 5 ka
+- 3434
+F 3438 12 0 Hej! 
+F 3454 10 0 hej! 
+: 3467 2 5 nie 
+: 3471 2 5 wi
+: 3475 2 5 dać, 
+: 3480 5 5 że 
+: 3488 2 4 ko
+: 3492 9 5 cham
+- 3501
+F 3504 12 0 Hej! 
+F 3519 10 0 hej! 
+: 3532 2 5 na 
+: 3536 2 5 pier
+: 3541 2 5 wszy 
+: 3544 5 5 rzut 
+: 3552 2 4 o
+: 3556 7 5 ka
+- 3563
+: 3568 5 5 Nie 
+: 3576 2 5 wi
+: 3580 5 5 dać, 
+: 3588 5 4 że 
+: 3596 4 4 cię 
+: 3604 4 5 ko
+: 3612 19 4 cham
+E

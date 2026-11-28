@@ -1,5 +1,5 @@
 #ARTIST:Aimer
-#TITLE:Escalate (TV)
+#TITLE:Escalate
 #CREATOR:Zevac
 #BPM:350
 #YEAR:2023

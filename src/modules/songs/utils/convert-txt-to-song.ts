@@ -1,6 +1,6 @@
 import { ValuesType } from 'utility-types';
 
-import { ExtractOptional, NotesSection, Section, Song } from '~/interfaces';
+import { ExtractOptional, NotesSection, Section, Song, SongInstrumental } from '~/interfaces';
 
 import notFalsy from '../../utils/not-falsy';
 import { generatePlayerChangesForTrack } from './generate-player-changes';
@@ -57,6 +57,12 @@ export const songTXTKeys = [
   'ALLKARAOKE_ARTISTORIGIN',
   'ALLKARAOKE_VIDEOID',
   'ALLKARAOKE_DURATION',
+  'ALLKARAOKE_INSTRUMENTALVIDEO',
+  'ALLKARAOKE_INSTRUMENTALGAP',
+  'ALLKARAOKE_INSTRUMENTALVIDEOGAP',
+  'ALLKARAOKE_INSTRUMENTALVOLUME',
+  'ALLKARAOKE_INSTRUMENTALDURATION',
+  'ALLKARAOKE_INSTRUMENTALBPM',
 ] as const;
 
 export type knownSongTxtKeys = ValuesType<typeof songTXTKeys> | 'VIDEO' | 'P1' | 'P2' | 'AUDIOURL' | 'VIDEOURL';
@@ -95,6 +101,21 @@ function getPropertyValueFromTxt(
   return keys.map(getValue).filter(notFalsy).at(0);
 }
 
+function getInstrumental(txt: string): SongInstrumental | undefined {
+  const video = getPropertyValueFromTxt(txt, ['ALLKARAOKE_INSTRUMENTALVIDEO']);
+  if (!video) return undefined;
+  const videoGap = getPropertyValueFromTxt(txt, ['ALLKARAOKE_INSTRUMENTALVIDEOGAP'], 'number');
+
+  return {
+    video,
+    gap: getPropertyValueFromTxt(txt, ['ALLKARAOKE_INSTRUMENTALGAP'], 'number') || 0,
+    videoGap: videoGap ? Math.floor(videoGap) : videoGap,
+    volume: getPropertyValueFromTxt(txt, ['ALLKARAOKE_INSTRUMENTALVOLUME'], 'number'),
+    duration: getPropertyValueFromTxt(txt, ['ALLKARAOKE_INSTRUMENTALDURATION'], 'number'),
+    bpm: getPropertyValueFromTxt(txt, ['ALLKARAOKE_INSTRUMENTALBPM'], 'number'),
+  };
+}
+
 function getEmbeddedYoutubeVideoId(txt: string) {
   const value = getPropertyValueFromTxt(txt, ['VIDEO']) ?? '';
   const regex = new RegExp(`v=(.*?)(,|$)`);
@@ -103,12 +124,22 @@ function getEmbeddedYoutubeVideoId(txt: string) {
 
 const LINE_BREAK_RELATIVE_REGEXP = /- -?\d+ -?\d+/;
 
+const YOUTUBE_HOSTS = ['youtube.com', 'm.youtube.com', 'music.youtube.com', 'youtube-nocookie.com'];
+// Paths that carry the video ID as their second segment, eg /shorts/<id>
+const YOUTUBE_ID_PATHS = ['shorts', 'embed', 'live', 'v'];
+
 export function getVideoId(url: string) {
   try {
-    const linkUrl = new URL(url);
-    if (linkUrl.host === 'youtu.be') return linkUrl.pathname.substring(1);
-    if (linkUrl.host === 'www.youtube.com' || linkUrl.host === 'youtube.com') return linkUrl.searchParams.get('v');
-    return null;
+    const trimmed = url.trim();
+    // Links copied from the share sheet on mobile often come without the protocol
+    const linkUrl = new URL(/^https?:\/\//i.test(trimmed) ? trimmed : `https://${trimmed}`);
+    const host = linkUrl.hostname.toLowerCase().replace(/^www\./, '');
+    const [first, second] = linkUrl.pathname.split('/').filter(Boolean);
+
+    if (host === 'youtu.be') return first || null;
+    if (!YOUTUBE_HOSTS.includes(host)) return null;
+    if (first && YOUTUBE_ID_PATHS.includes(first)) return second || null;
+    return linkUrl.searchParams.get('v');
   } catch (_e) {
     return null;
   }
@@ -155,6 +186,7 @@ export default function convertTxtToSong(
     authorUrl: getPropertyValueFromTxt(text, ['ALLKARAOKE_CREATORURL', 'CREATORURL']) ?? authorUrl,
     sourceUrl: getPropertyValueFromTxt(text, ['ALLKARAOKE_SOURCEURL', 'SOURCEURL']) ?? sourceUrl,
     duration: getPropertyValueFromTxt(text, ['ALLKARAOKE_DURATION'], 'number'),
+    instrumental: getInstrumental(text),
   } satisfies ExtractOptional<Song>;
 
   if (additionalData.videoGap) additionalData.videoGap = Math.floor(additionalData.videoGap);

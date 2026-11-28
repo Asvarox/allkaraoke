@@ -1,0 +1,786 @@
+#ARTIST:Limp Bizkit
+#TITLE:Rollin’
+#CREATOR:Paddy Wayne
+#BPM:380,61
+#YEAR:2000
+#VIDEO:v=RYnFIRc0k6E
+#GENRE:Nu-Metal
+#LANGUAGE:English
+#GAP:24914,73949712304
+#ALLKARAOKE_ID:limp-bizkit-rollin
+#ALLKARAOKE_SID:7519
+#ALLKARAOKE_LASTUPDATE:2026-11-26T21:02:17.394Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:96
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:243
+#MP3:Limp Bizkit - Rollin’ (Air Raid Vehicle).mp3
+#COVER:Limp Bizkit - Rollin’ (Air Raid Vehicle) [CO].jpg
+#BACKGROUND:Limp Bizkit - Rollin’ (Air Raid Vehicle) [BG].jpg
+F 25 5 1 Al
+F 31 22 1 right, 
+F 55 5 1 part
+F 61 18 1 ner
+- 79
+F 95 7 1 Keep 
+F 103 6 1 on 
+F 111 5 1 rol
+F 117 7 1 lin’, 
+F 125 5 1 ba
+F 131 12 1 by
+- 143
+F 152 4 1 You 
+F 157 3 1 know 
+F 161 3 1 what 
+F 165 2 1 time 
+F 168 2 1 it 
+F 171 21 1 is
+- 192 289
+- 289
+F 314 4 1 La
+F 319 11 1 dies 
+F 331 13 1 and 
+F 345 4 1 gen
+F 350 4 1 tle
+F 355 13 1 men!
+- 368 442
+- 442
+F 467 8 1 Choco
+F 476 4 1 late 
+F 481 8 1 Star
+F 490 21 1 fish!
+- 511 533
+- 533
+F 558 8 1 Wanna 
+F 567 4 1 keep 
+F 572 8 1 on 
+F 581 4 1 rol
+F 586 6 1 lin’, 
+F 593 3 1 ba
+F 597 16 1 by!
+- 613 648
+- 648
+R 673 4 1 I 
+R 678 4 1 move 
+R 683 5 1 in, 
+R 689 3 1 now 
+R 693 7 1 move 
+R 701 8 1 out! 
+R 710 6 1 Hands 
+R 717 4 1 up, 
+R 722 3 1 now 
+R 726 7 1 hands 
+R 734 7 1 down!
+- 741
+R 742 5 1 Back 
+R 748 7 1 up, 
+R 756 5 1 back 
+R 765 3 1 Tell 
+R 769 2 1 me 
+R 772 3 1 what 
+R 776 4 1 you’re 
+R 781 4 1 gon
+R 786 2 1 na 
+R 789 8 1 do 
+R 798 7 1 now!
+- 805
+R 806 5 1 Breathe 
+R 812 5 1 in, 
+R 818 3 1 now 
+R 822 7 1 breathe 
+R 830 6 1 out! 
+R 837 8 1 Hands 
+R 846 3 1 up, 
+R 850 3 1 now 
+R 854 6 1 hands 
+R 861 7 1 down!
+- 868
+R 869 5 1 Back 
+R 875 7 1 up, 
+R 883 5 1 back 
+R 889 3 1 up! 
+R 893 2 1 Tell 
+R 896 2 1 me 
+R 899 4 1 what 
+R 904 4 1 you’re 
+R 909 3 1 gon
+R 913 3 1 na 
+R 917 7 1 do 
+R 925 6 1 now!
+- 931
+: 932 7 -4 Keep 
+: 940 6 1 rol
+: 947 3 1 lin’, 
+: 951 7 1 rol
+: 959 4 1 lin’, 
+: 964 6 1 rol
+: 971 4 1 lin’, 
+: 976 6 1 rol
+: 983 6 1 lin’
+- 989
+: 996 7 -4 Keep 
+: 1004 6 1 rol
+: 1011 3 1 lin’, 
+: 1015 7 1 rol
+: 1023 4 1 lin’, 
+: 1028 6 1 rol
+: 1035 4 1 lin’, 
+: 1040 6 1 rol
+: 1047 6 1 lin’
+- 1053
+: 1058 7 -4 Keep 
+: 1066 6 1 rol
+: 1073 3 1 lin’, 
+: 1077 7 1 rol
+: 1085 4 1 lin’, 
+: 1090 6 1 rol
+: 1097 4 1 lin’, 
+: 1102 6 1 rol
+: 1109 6 1 lin’
+- 1115
+: 1121 7 -4 Keep 
+: 1129 6 1 rol
+: 1136 3 1 lin’, 
+: 1140 7 1 rol
+: 1148 4 1 lin’, 
+: 1153 6 1 rol
+: 1160 4 1 lin’, 
+: 1165 6 1 rol
+: 1172 6 1 lin’
+- 1178
+R 1186 3 1 Now 
+R 1190 4 1 I 
+R 1195 6 1 know 
+R 1202 3 1 y’all 
+R 1206 3 1 be 
+R 1210 3 1 lo
+R 1214 3 1 vin’ 
+R 1218 8 1 this 
+R 1227 7 1 shit 
+R 1235 8 1 right 
+R 1244 7 1 here
+- 1251
+R 1252 6 1 L.
+R 1259 5 1 I.
+R 1265 5 1 M.
+R 1271 9 1 P. 
+R 1283 7 1 Biz
+R 1291 3 1 kit 
+R 1295 3 1 is 
+R 1299 6 1 right 
+R 1306 12 1 here
+- 1318
+R 1322 3 1 Peo
+R 1326 3 1 ple 
+R 1330 3 1 in 
+R 1334 3 1 the 
+R 1338 6 1 house 
+R 1345 3 1 put 
+R 1349 3 1 them 
+R 1353 7 1 hands 
+R 1361 3 1 in 
+R 1365 3 1 the 
+R 1369 7 1 air
+- 1376
+: 1377 3 -11 ’Cause 
+: 1381 3 -11 if 
+: 1385 3 -11 you 
+: 1389 7 -11 don’t 
+: 1397 13 -11 care, 
+: 1412 3 -11 then 
+: 1416 3 -11 we 
+: 1420 6 -11 don’t 
+: 1427 15 -11 care
+- 1442
+R 1448 6 1 One, 
+R 1455 7 1 two, 
+R 1463 7 1 three 
+R 1471 7 1 times, 
+R 1479 7 1 two 
+R 1487 2 1 to 
+R 1490 3 1 the 
+R 1494 11 1 six
+- 1505
+R 1509 5 1 Jones
+R 1515 3 1 in’
+R 1519 2 1 for 
+R 1522 3 1 your 
+R 1526 7 1 fix 
+R 1534 3 1 of 
+R 1538 4 1 that 
+R 1543 5 1 Limp 
+R 1549 3 1 Biz
+R 1553 3 1 kit 
+R 1557 10 1 mix
+- 1567
+R 1570 2 1 So 
+R 1573 3 1 where 
+R 1577 3 1 the 
+R 1581 3 1 fuck 
+R 1585 4 1 you 
+R 1590 5 1 at, 
+R 1596 7 1 punk? 
+R 1604 4 1 Shut 
+R 1609 4 1 the 
+R 1614 6 1 fuck 
+R 1621 8 1 up!
+- 1629
+R 1632 3 1 And 
+R 1636 4 1 back 
+R 1641 4 1 the 
+R 1646 5 1 fuck 
+R 1652 6 1 up 
+R 1659 3 1 while 
+R 1663 4 1 we 
+R 1668 7 1 fuck 
+R 1676 4 1 this 
+R 1681 6 1 track 
+R 1688 12 1 up
+- 1700 1911
+- 1911
+R 1936 4 1 I 
+R 1941 4 1 move 
+R 1946 5 1 in, 
+R 1952 3 1 now 
+R 1956 7 1 move 
+R 1964 8 1 out! 
+R 1973 6 1 Hands 
+R 1980 4 1 up, 
+R 1985 3 1 now 
+R 1989 7 1 hands 
+R 1997 7 1 down!
+- 2004
+R 2005 5 1 Back 
+R 2011 7 1 up, 
+R 2019 4 1 back 
+R 2024 3 1 up, 
+R 2028 3 1 Tell 
+R 2032 3 1 me 
+R 2036 3 1 what 
+R 2040 4 1 you’re 
+R 2045 3 1 gon
+R 2049 3 1 na 
+R 2053 7 1 do 
+R 2061 7 1 now!
+- 2068
+R 2069 5 1 Breathe 
+R 2075 5 1 in, 
+R 2081 3 1 now 
+R 2085 7 1 breathe 
+R 2093 6 1 out! 
+R 2100 8 1 Hands 
+R 2109 3 1 up, 
+R 2113 3 1 now 
+R 2117 6 1 hands 
+R 2124 7 1 down!
+- 2131
+R 2132 5 1 Back 
+R 2138 7 1 up, 
+R 2146 5 1 back 
+R 2152 3 1 up! 
+R 2156 3 1 Tell 
+R 2160 2 1 me 
+R 2163 3 1 what 
+R 2167 4 1 you’re 
+R 2172 3 1 gon
+R 2176 3 1 na 
+R 2180 7 1 do 
+R 2188 7 1 now!
+- 2195
+: 2196 7 -4 Keep 
+: 2204 6 1 rol
+: 2211 3 1 lin’, 
+: 2215 7 1 rol
+: 2223 4 1 lin’, 
+: 2228 6 1 rol
+: 2235 4 1 lin’, 
+: 2240 6 1 rol
+: 2247 6 1 lin’
+- 2253
+: 2260 7 -4 Keep 
+: 2268 6 1 rol
+: 2275 3 1 lin’, 
+: 2279 7 1 rol
+: 2287 4 1 lin’, 
+: 2292 6 1 rol
+: 2299 5 1 lin’, 
+: 2305 6 1 rol
+: 2312 6 1 lin’
+- 2318
+: 2325 7 -4 Keep 
+: 2333 6 1 rol
+: 2340 3 1 lin’, 
+: 2344 7 1 rol
+: 2352 4 1 lin’, 
+: 2357 6 1 rol
+: 2364 4 1 lin’, 
+: 2369 6 1 rol
+: 2376 6 1 lin’
+- 2382
+: 2389 7 -4 Keep 
+: 2397 6 1 rol
+: 2404 3 1 lin’, 
+: 2408 7 1 rol
+: 2416 4 1 lin’, 
+: 2421 6 1 rol
+: 2428 4 1 lin’, 
+: 2433 6 1 rol
+: 2440 8 1 lin’
+- 2448
+R 2451 7 1 You 
+R 2459 4 1 wanna 
+R 2464 2 1 mess 
+R 2467 4 1 with 
+R 2472 3 1 Limp 
+R 2476 4 1 Biz
+R 2481 7 1 kit?
+- 2488
+R 2489 2 1 You 
+R 2492 3 1 can’t 
+R 2496 5 1 mess 
+R 2502 2 1 with 
+R 2505 2 1 Limp 
+R 2508 5 1 Biz
+R 2514 6 1 kit
+- 2520
+R 2523 2 1 Be
+R 2526 4 1 cause 
+R 2531 2 1 we 
+R 2534 1 1 get 
+R 2536 2 1 it 
+R 2539 6 1 on
+- 2545
+R 2551 6 1 Every
+R 2558 3 1 day 
+R 2562 2 1 and 
+R 2565 2 1 e
+R 2568 3 1 very 
+R 2572 8 1 night
+- 2580
+R 2583 2 1 And 
+R 2586 2 1 this 
+R 2589 3 1 plat
+R 2593 1 1 in
+R 2595 1 1 um 
+R 2597 2 1 thing 
+R 2600 3 1 right 
+R 2604 9 1 here
+- 2613
+R 2615 2 1 Yo, 
+R 2618 2 1 we’re 
+R 2621 3 1 do
+R 2625 2 1 in’ 
+R 2628 2 1 it 
+R 2631 2 1 all 
+R 2634 1 1 the 
+R 2636 11 1 time
+- 2647
+R 2649 1 1 So 
+R 2651 1 1 you 
+R 2653 1 1 bet
+R 2655 1 1 ter 
+R 2657 2 1 get 
+R 2660 3 1 some 
+R 2664 1 1 bet
+R 2666 1 1 ter 
+R 2668 7 1 beats 
+R 2676 4 1 and, 
+R 2681 5 1 ah
+- 2686
+R 2688 2 1 Get 
+R 2691 2 1 some 
+R 2694 2 1 bet
+R 2697 1 1 ter 
+R 2699 10 1 rhymes
+- 2709
+R 2717 2 1 We 
+R 2720 3 1 got 
+R 2724 3 1 the 
+R 2728 6 1 gang 
+R 2735 11 1 set, 
+R 2747 3 1 so 
+R 2751 3 1 don’t 
+R 2755 4 1 com
+R 2760 6 1 plain 
+R 2767 6 1 yet
+- 2773
+R 2775 3 1 Twen
+R 2779 3 1 ty-
+R 2783 7 1 four-
+R 2791 3 1 sev-
+R 2795 3 1 en, 
+R 2799 3 1 ne
+R 2803 3 1 ver 
+R 2807 3 1 beg
+R 2811 3 1 gin’ 
+R 2815 3 1 for 
+R 2819 3 1 a 
+R 2823 6 1 rain 
+R 2830 7 1 check
+- 2837
+R 2838 7 1 Old 
+R 2846 7 1 school 
+R 2854 6 1 sol
+R 2861 7 1 diers 
+R 2869 3 1 blast
+R 2873 3 1 in’ 
+R 2877 3 1 out 
+R 2881 3 1 the 
+R 2885 7 1 hot 
+R 2893 9 1 shit
+- 2902
+R 2905 3 1 That 
+R 2909 6 1 rock 
+R 2916 7 1 shit, 
+R 2924 3 1 put
+R 2928 3 1 tin’ 
+R 2932 7 1 bounce 
+R 2940 3 1 in 
+R 2944 3 1 the 
+R 2948 6 1 mosh 
+R 2955 13 1 pit
+- 2968 3178
+- 3178
+R 3203 4 1 I 
+R 3208 4 1 move 
+R 3213 5 1 in, 
+R 3219 3 1 now 
+R 3223 7 1 move 
+R 3231 8 1 out! 
+R 3240 6 1 Hands 
+R 3247 4 1 up, 
+R 3252 3 1 now 
+R 3256 7 1 hands 
+R 3264 7 1 down!
+- 3271
+R 3272 5 1 Back 
+R 3278 7 1 up, 
+R 3286 4 1 back 
+R 3291 3 1 up, 
+R 3295 3 1 Tell 
+R 3299 3 1 me 
+R 3303 3 1 what 
+R 3307 4 1 you’re 
+R 3312 3 1 gon
+R 3316 3 1 na 
+R 3320 7 1 do 
+R 3328 7 1 now!
+- 3335
+R 3336 5 1 Breathe 
+R 3342 5 1 in, 
+R 3348 3 1 now 
+R 3352 7 1 breathe 
+R 3360 6 1 out! 
+R 3367 8 1 Hands 
+R 3376 3 1 up, 
+R 3380 3 1 now 
+R 3384 6 1 hands 
+R 3391 7 1 down!
+- 3398
+R 3399 5 1 Back 
+R 3405 7 1 up, 
+R 3413 5 1 back 
+R 3419 3 1 up! 
+R 3423 3 1 Tell 
+R 3427 2 1 me 
+R 3430 3 1 what 
+R 3434 4 1 you’re 
+R 3439 3 1 gon
+R 3443 3 1 na 
+R 3447 7 1 do 
+R 3455 7 1 now!
+- 3462
+: 3463 7 -4 Keep 
+: 3471 6 1 rol
+: 3478 3 1 lin’, 
+: 3482 7 1 rol
+: 3490 4 1 lin’, 
+: 3495 6 1 rol
+: 3502 4 1 lin’, 
+: 3507 6 1 rol
+: 3514 6 1 lin’
+- 3520
+: 3527 7 -4 Keep 
+: 3535 6 1 rol
+: 3542 3 1 lin’, 
+: 3546 7 1 rol
+: 3554 4 1 lin’, 
+: 3559 6 1 rol
+: 3566 5 1 lin’, 
+: 3572 6 1 rol
+: 3579 6 1 lin’
+- 3585
+: 3592 7 -4 Keep 
+: 3600 6 1 rol
+: 3607 3 1 lin’, 
+: 3611 7 1 rol
+: 3619 4 1 lin’, 
+: 3624 6 1 rol
+: 3631 4 1 lin’, 
+: 3636 6 1 rol
+: 3643 6 1 lin’
+- 3649
+: 3656 7 -4 Keep 
+: 3664 6 1 rol
+: 3671 3 1 lin’, 
+: 3675 7 1 rol
+: 3683 4 1 lin’, 
+: 3688 6 1 rol
+: 3695 4 1 lin’, 
+: 3700 6 1 rol
+: 3707 8 1 lin’
+- 3715
+R 3718 5 1 Hey, 
+R 3724 4 1 la
+R 3729 13 1 dies!
+- 3742
+R 3747 8 1 Hey, 
+R 3756 4 1 fel
+R 3761 12 1 las!
+- 3773
+R 3779 3 1 And 
+R 3783 3 1 the 
+R 3787 3 1 peo
+R 3791 8 1 ple 
+R 3800 2 1 that 
+R 3803 6 1 don’t 
+R 3810 3 1 give 
+R 3814 4 1 a 
+R 3819 15 1 fuck!
+- 3834
+R 3842 3 1 All 
+R 3846 3 1 the 
+R 3850 4 1 lov
+R 3855 12 1 ers!
+- 3867
+R 3872 3 1 All 
+R 3876 4 1 the 
+R 3881 3 1 hat
+R 3885 12 1 ers!
+- 3897
+R 3901 3 1 And 
+R 3905 3 1 all 
+R 3909 3 1 the 
+R 3913 3 1 peo
+R 3917 7 1 ple 
+R 3925 3 1 that 
+R 3929 2 1 call 
+R 3932 3 1 them
+R 3936 7 1 selves 
+R 3944 4 1 play
+R 3949 12 1 ers
+- 3961
+R 3967 8 1 Hot 
+R 3976 3 1 ma
+R 3980 13 1 mas
+- 3993
+R 4000 7 1 Pimp 
+R 4008 5 1 dad
+R 4014 12 1 dies!
+- 4026
+R 4031 3 1 And 
+R 4035 3 1 the 
+R 4039 4 1 peo
+R 4044 9 1 ple 
+R 4055 4 1 rol
+R 4060 3 1 lin’ 
+R 4064 3 1 up 
+R 4068 2 1 in 
+R 4071 4 1 cad
+R 4076 15 1 dies!
+- 4091
+R 4096 6 1 Hey, 
+R 4103 6 1 rock
+R 4110 12 1 ers!
+- 4122
+R 4128 7 1 Hip-
+R 4136 5 1 hop-
+R 4142 10 1 pers!
+- 4152
+R 4162 5 1 And
+R 4168 7 1 every-
+R 4176 7 1 body 
+R 4184 3 1 all 
+R 4188 3 1 a
+R 4192 3 1 round 
+R 4196 3 1 the 
+R 4200 17 1 world!
+- 4217
+R 4220 4 1 I 
+R 4225 4 1 move 
+R 4230 5 1 in, 
+R 4236 3 1 now 
+R 4240 7 1 move 
+R 4248 8 1 out! 
+R 4257 6 1 Hands 
+R 4264 4 1 up, 
+R 4269 3 1 now 
+R 4273 7 1 hands 
+R 4281 7 1 down!
+- 4288
+R 4289 5 1 Back 
+R 4295 7 1 up, 
+R 4303 4 1 back 
+R 4308 3 1 up, 
+R 4312 3 1 Tell 
+R 4316 3 1 me 
+R 4320 3 1 what 
+R 4324 4 1 you’re 
+R 4329 3 1 gon
+R 4333 3 1 na 
+R 4337 7 1 do 
+R 4345 7 1 now!
+- 4352
+R 4353 5 1 Breathe 
+R 4359 5 1 in, 
+R 4365 3 1 now 
+R 4369 7 1 breathe 
+R 4377 6 1 out! 
+R 4384 8 1 Hands 
+R 4393 3 1 up, 
+R 4397 3 1 now 
+R 4401 6 1 hands 
+R 4408 7 1 down!
+- 4415
+R 4416 5 1 Back 
+R 4422 7 1 up, 
+R 4430 5 1 back 
+R 4436 3 1 up! 
+R 4440 3 1 Tell 
+R 4444 2 1 me 
+R 4447 3 1 what 
+R 4451 4 1 you’re 
+R 4456 3 1 gon
+R 4460 3 1 na 
+R 4464 7 1 do 
+R 4472 7 1 now!
+- 4479
+: 4480 7 -4 Keep 
+: 4488 6 1 rol
+: 4495 3 1 lin’, 
+: 4499 7 1 rol
+: 4507 4 1 lin’, 
+: 4512 6 1 rol
+: 4519 4 1 lin’, 
+: 4524 6 1 rol
+: 4531 6 1 lin’
+- 4537
+: 4544 7 -4 Keep 
+: 4552 6 1 rol
+: 4559 3 1 lin’, 
+: 4563 7 1 rol
+: 4571 4 1 lin’, 
+: 4576 6 1 rol
+: 4583 5 1 lin’, 
+: 4589 6 1 rol
+: 4596 6 1 lin’
+- 4602
+: 4609 7 -4 Keep 
+: 4617 6 1 rol
+: 4624 3 1 lin’, 
+: 4628 7 1 rol
+: 4636 4 1 lin’, 
+: 4641 6 1 rol
+: 4648 4 1 lin’, 
+: 4653 6 1 rol
+: 4660 6 1 lin’
+- 4666
+: 4673 7 -4 Keep 
+: 4681 6 1 rol
+: 4688 3 1 lin’, 
+: 4692 7 1 rol
+: 4700 4 1 lin’, 
+: 4705 6 1 rol
+: 4712 4 1 lin’, 
+: 4717 6 1 rol
+: 4724 7 1 lin’
+- 4731
+R 4732 4 1 I 
+R 4737 4 1 move 
+R 4742 5 1 in, 
+R 4748 3 1 now 
+R 4752 7 1 move 
+R 4760 8 1 out! 
+R 4769 6 1 Hands 
+R 4776 4 1 up, 
+R 4781 3 1 now 
+R 4785 7 1 hands 
+R 4793 7 1 down!
+- 4800
+R 4801 5 1 Back 
+R 4807 7 1 up, 
+R 4815 4 1 back 
+R 4820 3 1 up, 
+R 4824 3 1 Tell 
+R 4828 3 1 me 
+R 4832 3 1 what 
+R 4836 4 1 you’re 
+R 4841 3 1 gon
+R 4845 3 1 na 
+R 4849 7 1 do 
+R 4857 7 1 now!
+- 4864
+R 4865 5 1 Breathe 
+R 4871 5 1 in, 
+R 4877 3 1 now 
+R 4881 7 1 breathe 
+R 4889 6 1 out! 
+R 4896 8 1 Hands 
+R 4905 3 1 up, 
+R 4909 3 1 now 
+R 4913 6 1 hands 
+R 4920 7 1 down!
+- 4927
+R 4928 5 1 Back 
+R 4934 7 1 up, 
+R 4942 5 1 back 
+R 4948 3 1 up! 
+R 4952 3 1 Tell 
+R 4956 2 1 me 
+R 4959 3 1 what 
+R 4963 4 1 you’re 
+R 4968 3 1 gon
+R 4972 3 1 na 
+R 4976 7 1 do 
+R 4984 7 1 now!
+- 4991
+: 4992 7 -4 Keep 
+: 5000 6 1 rol
+: 5007 3 1 lin’, 
+: 5011 7 1 rol
+: 5019 4 1 lin’, 
+: 5024 6 1 rol
+: 5031 4 1 lin’, 
+: 5036 6 1 rol
+: 5043 6 1 lin’
+- 5049
+: 5056 7 -4 Keep 
+: 5064 6 1 rol
+: 5071 3 1 lin’, 
+: 5075 7 1 rol
+: 5083 4 1 lin’, 
+: 5088 6 1 rol
+: 5095 5 1 lin’, 
+: 5101 6 1 rol
+: 5108 6 1 lin’
+- 5114
+: 5119 7 -4 Keep 
+: 5127 6 1 rol
+: 5134 3 1 lin’, 
+: 5138 7 1 rol
+: 5146 4 1 lin’, 
+: 5151 6 1 rol
+: 5158 4 1 lin’, 
+: 5163 6 1 rol
+: 5170 6 1 lin’
+- 5176
+: 5183 7 -4 Keep 
+: 5191 6 1 rol
+: 5198 3 1 lin’, 
+: 5202 7 1 rol
+: 5210 4 1 lin’, 
+: 5215 6 1 rol
+: 5222 4 1 lin’, 
+: 5227 6 1 rol
+: 5234 8 1 lin’
+E

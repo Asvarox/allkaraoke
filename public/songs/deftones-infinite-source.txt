@@ -1,0 +1,266 @@
+#ARTIST:Deftones
+#TITLE:infinite source
+#CREATOR:boohjaa
+#BPM:300
+#YEAR:2025
+#VIDEO:v=U_uVVO7eGic
+#GENRE:Shoegaze
+#LANGUAGE:English
+#GAP:12075
+#ALLKARAOKE_ID:deftones-infinite-source
+#ALLKARAOKE_SID:7548
+#ALLKARAOKE_LASTUPDATE:2026-11-15T04:08:50.041Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:76
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:213
+#MP3:Deftones - infinite source.mp3
+#COVER:Deftones - infinite source [CO].jpg
+#BACKGROUND:Deftones - infinite source [BG].jpg
+: 20 4 -9 Just 
+: 28 6 -8 say 
+: 38 7 -8 you’re 
+: 49 26 -6 down
+- 75 89
+- 89
+: 109 3 -8 And 
+: 117 17 -3 pull 
+: 135 2 -4 me 
+: 141 20 -4 close, 
+: 176 4 -8 hold 
+: 185 11 -3 on
+: 202 2 -4 to 
+: 206 18 -4 me
+- 224 260
+- 260
+: 280 6 -8 Face 
+: 290 8 -8 the 
+: 302 25 -6 crowd
+- 327 344
+- 344
+: 364 5 -6 Take 
+: 375 13 -3 hold 
+: 391 2 -4 of 
+: 396 26 -4 me
+- 422
+: 430 4 4 Hold 
+: 437 3 5 me 
+: 444 16 6 tight, 
+: 462 3 4 hold 
+: 469 3 4 me 
+: 477 11 6 ti
+: 492 4 8 ~
+: 500 13 4 ght
+- 513
+: 517 10 -1 Last 
+: 531 12 -1 time 
+: 546 2 -1 a
+: 549 5 -1 dor
+: 556 4 -4 ning 
+: 563 5 -1 the
+: 572 29 3 stage
+- 601 614
+- 614
+: 634 3 3 A 
+: 642 10 4 fi
+: 654 8 3 nal 
+: 664 13 1 wave 
+: 681 10 -1 and 
+: 697 21 3 bow
+- 718 892
+- 892
+: 912 6 -8 Raise 
+: 922 6 -8 your 
+: 934 8 -6 glass 
+: 948 19 -4 high
+- 967 978
+- 978
+: 998 4 -4 Here’s 
+: 1006 12 1 for 
+: 1020 3 -1 the 
+: 1025 25 -1 years
+- 1050
+: 1060 3 -4 A 
+: 1068 11 1 thou
+: 1083 4 -1 sand 
+: 1090 32 -1 dreams
+- 1122 1140
+- 1140
+: 1160 12 -8 Face 
+: 1176 6 -8 the 
+: 1186 26 -6 crowd
+- 1212 1228
+- 1228
+: 1248 7 -4 Keep 
+: 1258 13 1 hol
+: 1274 5 -1 ding 
+: 1281 27 -1 me
+- 1308
+: 1313 3 4 Close 
+: 1320 2 4 and 
+: 1328 17 6 tight 
+: 1347 3 4 (close 
+: 1354 2 4 and 
+: 1361 14 6 ti
+: 1378 3 8 ~
+: 1384 13 4 ght)
+- 1397
+: 1402 10 -1 Last 
+: 1417 11 -1 time 
+: 1431 1 -1 a
+: 1434 5 -1 dor
+: 1441 5 -4 ning 
+: 1449 3 -1 the 
+: 1456 24 3 stage
+- 1480 1499
+- 1499
+: 1519 7 3 With 
+: 1528 8 4 love, 
+: 1539 9 3 we’ve 
+: 1550 11 1 chased 
+: 1565 12 -1 and 
+: 1581 25 3 found
+- 1606 1628
+- 1628
+: 1648 2 -1 The 
+: 1653 9 -1 last 
+: 1667 12 -1 ride 
+: 1684 4 -1 we’re 
+: 1692 4 -4 gon
+: 1700 4 -1 na 
+: 1709 23 3 take
+- 1732 1752
+- 1752
+* 1772 4 -1 Our 
+* 1779 9 4 fi
+* 1791 10 3 nal 
+* 1804 10 1 wave 
+* 1817 11 -1 and 
+* 1832 29 3 bow
+- 1861 1934
+- 1934
+: 1954 2 -8 All 
+: 1958 1 -7 of 
+: 1962 5 -4 those 
+: 1970 4 -4 nights, 
+: 1977 2 -8 all 
+: 1981 1 -7 of 
+: 1985 5 -4 our 
+: 1992 3 -4 dreams, 
+: 2000 3 -8 all 
+: 2005 2 -7 of 
+: 2010 2 -4 these 
+: 2016 15 -4 years
+- 2031 2053
+- 2053
+: 2073 1 -8 All 
+: 2076 2 -7 of 
+: 2080 4 -4 these 
+: 2087 4 -4 times, 
+: 2095 2 -8 all 
+: 2100 1 -6 of 
+: 2104 2 -4 our 
+: 2111 2 -4 dreams, 
+: 2119 1 -8 all 
+: 2123 1 -6 of 
+: 2127 2 -4 your 
+: 2134 9 -4 cheers
+- 2143
+: 2147 2 3 I’m 
+: 2151 2 3 re
+: 2155 7 3 leas
+: 2165 20 4 ing, 
+: 2196 7 1 we 
+* 2206 7 8 are 
+: 2215 2 4 a
+: 2219 10 3 flo
+: 2231 19 1 at
+- 2250
+: 2263 3 2 Keep 
+* 2270 7 6 hold 
+: 2279 2 3 of 
+: 2283 5 3 me 
+: 2293 19 4 here 
+: 2333 5 4 as 
+: 2340 11 3 long 
+: 2355 8 4 as 
+: 2367 12 6 you 
+* 2385 31 8 can
+- 2416 2646
+- 2646
+: 2666 1 -8 All 
+: 2668 1 -7 of 
+: 2673 2 -4 our 
+: 2680 2 -4 dreams, 
+: 2688 1 -8 all 
+: 2692 1 -7 of 
+: 2696 3 -4 these 
+: 2704 12 -4 years
+- 2716
+: 2728 8 -1 Last 
+: 2742 10 -1 time 
+: 2756 2 -1 a
+: 2760 3 -1 dorn
+: 2766 4 -3 ing 
+: 2774 5 -1 the 
+: 2782 20 3 stage
+- 2802 2825
+- 2825
+: 2845 4 0 A 
+: 2853 8 4 love 
+: 2863 7 3 we 
+: 2874 14 1 chased 
+: 2892 6 -1 and 
+* 2905 24 3 found
+- 2929 2953
+- 2953
+: 2973 2 -1 The 
+: 2980 10 -1 last 
+: 2994 13 -1 ride 
+: 3011 3 -1 we’re 
+: 3018 4 -4 gon
+: 3026 3 -1 na 
+: 3034 20 3 take
+- 3054 3081
+- 3081
+* 3101 2 0 Our 
+* 3107 6 4 fi
+* 3117 8 3 nal 
+* 3128 11 1 wave 
+* 3142 11 -1 and 
+* 3158 30 3 bow
+* 3193 21 4 ~
+- 3214
+: 3234 5 -1 Last 
+: 3247 8 -1 time 
+: 3264 1 -1 a
+: 3266 4 -1 dorn
+: 3271 5 -4 ing 
+: 3279 6 -1 the 
+: 3288 23 3 stage
+- 3311 3332
+- 3332
+: 3352 2 0 This 
+: 3359 7 4 love 
+: 3368 8 3 we 
+: 3380 13 1 chased 
+: 3396 5 -1 was 
+: 3410 23 3 found
+- 3433 3468
+- 3468
+: 3488 4 -1 Last 
+: 3499 10 -1 ride 
+: 3516 4 -1 we’ll 
+: 3523 3 -4 e
+: 3531 2 -4 ver 
+: 3539 19 3 take
+- 3558 3585
+- 3585
+: 3605 1 0 Our 
+: 3611 7 4 fi
+: 3622 6 3 nal 
+: 3632 12 1 wave 
+: 3647 11 -1 and 
+: 3666 26 3 bow
+: 3695 29 4 ~
+E

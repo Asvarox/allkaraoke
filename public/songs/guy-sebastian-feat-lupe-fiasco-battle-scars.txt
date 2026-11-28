@@ -1,0 +1,675 @@
+#ARTIST:Guy Sebastian feat. Lupe Fiasco
+#TITLE:Battle Scars
+#CREATOR:DoubleDee commissioned by Morsi
+#BPM:336
+#YEAR:2012
+#VIDEO:v=4ka1Lgd3SAI
+#GENRE:R&B, Hip Hop
+#LANGUAGE:English
+#GAP:3097,8571428571427
+#ALLKARAOKE_ID:guy-sebastian-feat-lupe-fiasco-battle-scars
+#ALLKARAOKE_SID:8041
+#ALLKARAOKE_LASTUPDATE:2026-11-28T09:04:07.274Z
+#ALLKARAOKE_ARTISTORIGIN:AU
+#ALLKARAOKE_REALBPM:168
+#ALLKARAOKE_VOLUME:0,9
+#ALLKARAOKE_DURATION:265
+#P1:Battle Scars
+#MP3:Guy Sebastian feat. Lupe Fiasco - Battle Scars.mp3
+#COVER:Guy Sebastian feat. Lupe Fiasco - Battle Scars [CO].jpg
+#BACKGROUND:Guy Sebastian feat. Lupe Fiasco - Battle Scars [BG].jpg
+: 22 2 5 The 
+: 25 4 8 wound 
+: 33 3 8 heals 
+: 41 1 7 but 
+: 43 2 5 it 
+: 47 2 5 ne
+: 50 1 5 ver 
+: 54 6 8 does
+- 60
+: 79 3 5 That’s 
+: 83 2 5 ’cause 
+: 87 2 8 you’re 
+: 90 2 5 at 
+: 95 4 5 war 
+: 102 4 5 with 
+: 118 7 5 love
+- 125 130
+- 130
+: 152 1 5 You’re 
+: 154 2 5 at 
+: 160 4 5 war 
+: 167 4 5 with 
+: 182 7 8 love,
+- 189 192
+- 192
+: 214 3 5 These 
+: 222 15 7 bat
+: 238 11 5 tle 
+: 254 20 8 scars
+- 274
+: 278 7 5 Don’t 
+: 286 3 5 look 
+: 290 3 3 like 
+: 294 5 5 they’re 
+* 302 11 8 fa
+* 314 3 5 ding
+- 317
+: 326 7 5 Don’t 
+: 334 2 5 look 
+: 338 3 3 like 
+: 342 6 5 they’re 
+: 350 2 8 e
+: 353 4 10 ~
+: 358 5 8 ver 
+: 366 7 7 going 
+: 374 3 5 a
+: 378 17 8 way
+- 395
+: 402 7 3 They 
+: 410 2 3 ain’t 
+: 414 3 8 ne
+: 418 3 10 ~
+: 422 4 8 ver 
+: 430 7 7 gon
+: 438 2 5 na 
+: 442 9 7 change
+- 451
+: 470 6 5 These 
+* 478 15 7 bat
+* 494 21 5 tle
+- 515
+R 534 3 8 Ne
+R 538 3 8 ver 
+R 542 3 8 let 
+R 546 2 8 a 
+R 550 5 8 wound 
+R 558 1 8 ru
+R 560 3 8 in 
+R 565 4 8 me
+- 569 576
+- 576
+R 598 1 6 But 
+R 600 3 6 I 
+R 605 1 6 feel 
+R 607 3 6 like 
+R 612 2 6 ru
+R 615 3 6 in’s 
+R 620 3 6 ru
+R 624 3 6 in 
+R 628 4 6 me
+- 632
+R 649 2 6 Ar
+R 652 3 6 row 
+R 656 3 6 holes 
+R 662 2 6 that 
+R 665 2 6 ne
+R 668 1 6 ver 
+R 671 4 6 close 
+R 678 3 6 from 
+R 682 2 6 Cu
+R 686 3 6 pid 
+R 690 1 6 on 
+R 692 3 6 a 
+R 697 2 6 shoo
+R 700 3 6 ting 
+R 705 3 6 spree
+- 708
+R 713 1 6 Fee
+R 715 3 6 ling 
+R 720 3 6 stu
+R 724 2 6 pid 
+R 727 3 6 ’cause 
+R 731 2 6 I 
+R 734 3 6 know 
+R 738 2 6 it 
+R 741 2 6 ain’t 
+R 745 3 6 no 
+R 749 3 6 you 
+R 753 3 6 and 
+R 757 3 6 me
+- 760 767
+- 767
+R 789 3 6 But 
+R 793 1 6 when 
+R 795 3 6 you’re 
+R 800 3 6 trying 
+R 804 1 6 to 
+R 806 3 6 beat 
+R 811 1 6 the 
+R 813 4 6 odds 
+R 822 2 6 up
+- 824
+R 826 2 6 Been 
+R 830 3 6 trying 
+R 834 2 6 to 
+R 838 3 6 keep 
+R 842 3 6 your 
+R 846 3 6 nods 
+R 854 3 6 up 
+R 858 1 6 and 
+R 860 1 6 you 
+R 862 3 6 know 
+R 866 3 6 that 
+R 870 3 6 you 
+R 874 3 6 should 
+R 878 3 6 know
+- 881
+R 902 3 6 And 
+R 906 1 6 let 
+R 908 2 6 her 
+R 912 3 6 go 
+R 919 2 6 but 
+R 922 2 6 the 
+R 928 2 6 fear 
+R 932 1 6 of 
+R 934 2 6 the 
+R 938 3 6 un
+R 942 3 6 known
+- 945
+R 949 4 6 Hol
+R 954 1 6 ding 
+R 956 1 6 on 
+R 958 1 6 a
+R 960 1 6 no
+R 962 3 6 ther 
+R 966 2 6 lo
+R 969 3 6 ver’s 
+R 974 3 6 phone
+- 977
+R 982 3 6 Sends 
+R 986 3 6 you 
+R 990 3 6 back 
+R 994 3 6 in
+R 998 3 6 to 
+R 1002 3 6 the 
+R 1006 3 6 zone
+- 1009 1012
+- 1012
+R 1034 2 6 With 
+R 1038 3 6 no 
+R 1044 3 6 Tom 
+R 1052 3 6 Hanks 
+R 1058 3 6 to 
+R 1062 3 6 bring 
+R 1066 3 6 you 
+R 1070 3 6 home
+- 1073
+R 1084 2 6 A 
+R 1088 2 6 lo
+R 1091 2 6 ver 
+R 1095 2 6 not 
+R 1098 3 6 a 
+R 1102 3 6 figh
+R 1106 3 6 ter 
+R 1110 3 6 on 
+R 1114 3 6 the 
+R 1118 3 6 front
+R 1122 3 6 line 
+R 1126 3 6 with 
+R 1130 2 6 a 
+R 1134 4 6 poem
+- 1138
+R 1160 3 6 Trying 
+R 1164 2 6 to 
+R 1167 3 6 write 
+R 1171 3 6 your
+R 1175 2 6 self 
+R 1179 3 6 a 
+R 1183 3 6 ri
+R 1187 2 6 fle, 
+R 1191 3 6 may
+R 1195 3 6 be 
+R 1199 3 6 shar
+R 1203 2 6 pen 
+R 1206 3 6 up 
+R 1210 2 6 a 
+R 1214 2 6 song
+- 1216
+R 1220 2 6 To 
+R 1224 3 6 fight 
+R 1228 2 6 the 
+R 1231 3 6 tanks 
+R 1236 3 6 and 
+R 1240 3 6 drones 
+R 1246 2 6 of 
+R 1249 2 6 you 
+R 1252 3 6 be
+R 1256 1 6 ing 
+R 1258 3 6 a
+R 1262 3 6 lone
+- 1265
+* 1270 3 12 Ne
+* 1274 2 12 ver 
+* 1278 7 5 looked, 
+: 1290 3 5 I 
+: 1294 3 12 wish 
+: 1298 3 12 I 
+: 1302 3 12 ne
+: 1306 2 12 ver 
+: 1310 6 5 touched
+- 1316
+: 1322 3 5 I 
+: 1326 3 12 wish 
+: 1330 3 12 that 
+: 1334 3 12 I 
+: 1338 2 12 could 
+: 1342 3 5 stop 
+: 1350 3 5 lo
+: 1354 3 5 ving 
+: 1358 3 12 you 
+: 1366 7 12 so 
+: 1374 6 5 much
+- 1380
+: 1386 3 8 ’Cause 
+: 1390 3 8 I’m 
+: 1394 3 8 the 
+: 1398 3 8 on
+: 1402 3 8 ly 
+: 1406 3 8 one 
+: 1410 3 8 that’s 
+: 1414 3 8 try
+: 1418 3 8 na 
+: 1422 3 8 keep 
+: 1426 3 8 us 
+: 1434 3 8 to
+: 1438 3 8 ge
+: 1442 3 8 ther
+- 1445
+: 1450 3 8 When 
+: 1454 3 8 all 
+: 1458 2 8 of 
+: 1462 3 8 the 
+: 1466 3 8 sign
+: 1470 3 10 ~s 
+: 1474 6 10 say 
+: 1482 3 8 that 
+: 1486 4 10 I 
+: 1494 2 10 should 
+: 1498 3 8 for
+: 1502 3 10 get 
+: 1506 5 10 her
+- 1511
+: 1514 3 5 I 
+: 1518 3 12 wish 
+: 1522 3 12 you 
+: 1526 3 12 weren’t 
+: 1530 2 12 the 
+: 1534 7 5 best, 
+: 1546 3 5 the 
+: 1550 3 12 best 
+: 1554 3 12 I 
+: 1558 3 12 e
+: 1562 3 12 ver 
+: 1566 3 5 had
+- 1569
+: 1578 2 5 I 
+: 1582 5 12 wish 
+: 1590 3 12 that 
+: 1594 2 12 the 
+: 1598 7 5 good 
+: 1606 5 5 out
+: 1614 6 12 weighed 
+: 1622 3 12 the 
+: 1626 4 5 bad
+- 1630
+: 1634 2 8 ’Cause 
+: 1638 3 8 i
+: 1642 3 8 t’ll 
+: 1646 3 8 ne
+: 1650 3 10 ver 
+: 1654 3 8 be 
+* 1658 3 15 o
+* 1662 3 12 ~
+* 1666 15 12 ver
+* 1682 8 10 ~,
+- 1690
+: 1698 2 8 Un
+: 1702 3 8 til 
+: 1706 2 8 you 
+: 1710 3 8 tell 
+: 1714 3 10 me 
+: 1718 3 8 it’s 
+: 1722 3 15 o
+: 1726 3 12 ~
+: 1730 7 12 ver
+: 1738 8 10 ~
+- 1746
+: 1750 5 5 These 
+: 1758 15 7 bat
+: 1774 6 5 tle 
+: 1790 19 8 scars,
+- 1809
+: 1814 7 5 Don’t 
+: 1822 3 5 look 
+: 1826 3 3 like 
+: 1830 3 5 they’re 
+: 1838 11 8 fa
+: 1850 4 5 ding
+- 1854
+: 1862 7 5 Don’t 
+: 1870 3 5 look 
+: 1874 3 3 like 
+: 1878 5 5 they’re 
+: 1886 3 8 e
+: 1890 3 10 ~
+: 1894 5 8 ver 
+: 1902 7 7 going 
+: 1910 3 5 a
+: 1914 2 5 way
+: 1917 11 8 ~
+- 1928
+: 1938 3 3 They 
+: 1942 6 3 ain’t 
+: 1950 3 8 ne
+: 1954 3 10 ~
+: 1958 5 8 ver 
+: 1966 7 7 gon
+: 1974 2 5 na 
+: 1978 18 7 change
+- 1996
+: 2006 5 5 These 
+: 2014 15 7 bat
+: 2030 6 5 tle 
+: 2046 19 8 scars,
+- 2065
+: 2070 7 5 Don’t 
+: 2078 3 5 look 
+: 2082 3 3 like 
+: 2086 3 5 they’re 
+: 2094 11 8 fa
+: 2106 4 5 ding
+- 2110
+: 2118 7 5 Don’t 
+: 2126 3 5 look 
+: 2130 3 3 like 
+: 2134 5 5 they’re 
+: 2142 3 8 e
+: 2146 3 10 ~
+: 2150 5 8 ver 
+: 2158 7 7 going 
+: 2166 3 5 a
+: 2170 2 5 way
+: 2173 5 8 ~
+- 2178
+: 2194 3 3 They 
+: 2198 6 3 ain’t 
+: 2206 3 8 ne
+: 2210 3 10 ~
+: 2214 5 8 ver 
+: 2222 7 7 gon
+: 2230 2 5 na 
+: 2234 18 7 change
+- 2252
+: 2262 5 5 These 
+: 2270 15 7 bat
+: 2286 23 5 tle
+- 2309
+R 2326 2 6 You 
+R 2330 1 6 shoul
+R 2332 1 6 dn’t 
+R 2334 3 6 have 
+R 2342 3 6 but 
+R 2346 3 6 you 
+R 2350 3 6 said 
+R 2354 3 6 it
+- 2357 2368
+- 2368
+R 2390 2 6 It 
+R 2394 1 6 shoul
+R 2396 1 6 dn’t’ve 
+R 2398 3 6 hap
+R 2402 3 6 pened 
+R 2406 3 6 but 
+R 2410 3 6 you 
+R 2414 3 6 let 
+R 2418 3 6 it
+- 2421
+R 2438 3 6 Now 
+R 2442 3 6 you’re 
+R 2446 3 6 down 
+R 2454 3 6 on 
+R 2458 3 6 the 
+R 2462 3 6 ground 
+R 2470 3 6 screa
+R 2474 3 6 ming 
+R 2478 3 6 “me
+R 2482 3 6 dic”
+- 2485
+R 2492 1 6 The 
+R 2494 3 6 on
+R 2498 3 6 ly 
+R 2502 3 6 thing 
+R 2506 3 6 that 
+R 2510 3 6 comes 
+R 2518 3 6 is 
+R 2522 3 6 the 
+R 2526 3 6 post–
+R 2530 2 6 trau
+R 2534 3 6 ma
+R 2538 3 6 tic 
+R 2542 3 6 stres
+R 2548 3 6 ses
+- 2551 2556
+- 2556
+R 2578 3 6 Shields, 
+R 2586 3 6 bo
+R 2590 3 6 dy 
+R 2594 3 6 ar
+R 2598 3 6 mors 
+R 2602 3 6 and 
+R 2606 3 6 vests
+- 2609
+R 2618 3 6 Don’t 
+R 2622 3 6 pro
+R 2626 3 6 per
+R 2630 3 6 ly 
+R 2634 3 6 work,
+- 2637
+R 2642 1 6 That’s 
+R 2645 2 6 why 
+R 2648 1 6 you’re 
+R 2650 1 6 in 
+R 2652 1 6 a 
+R 2654 3 6 lock
+R 2658 3 6 er 
+R 2662 3 6 full 
+R 2666 2 6 of 
+R 2670 3 6 hurt
+- 2673
+R 2684 2 6 The 
+R 2687 2 6 e
+R 2690 3 6 ne
+R 2694 3 6 my 
+R 2698 3 6 with
+R 2702 3 6 in 
+R 2706 3 6 and 
+R 2710 3 6 all 
+R 2714 3 6 the 
+R 2718 3 6 fi
+R 2722 3 6 res 
+R 2726 3 6 from 
+R 2730 3 6 your 
+R 2734 3 6 friends
+- 2737
+R 2749 2 6 The 
+R 2752 3 6 best 
+R 2758 3 6 me
+R 2762 3 6 di
+R 2766 3 6 cine 
+R 2770 3 6 is 
+R 2774 3 6 to 
+R 2778 3 6 pro
+R 2782 3 6 b’ly 
+R 2786 3 6 just 
+R 2790 3 6 let 
+R 2794 3 6 her 
+R 2798 2 6 win
+- 2800
+* 2802 2 12 I 
+* 2806 3 12 could
+* 2810 2 12 n’t 
+* 2814 10 5 feel, 
+: 2826 3 5 I 
+: 2830 3 12 wish 
+: 2834 3 12 I 
+: 2838 3 12 could
+: 2842 3 12 n’t 
+: 2846 8 5 love
+- 2854
+: 2858 2 5 I 
+: 2862 3 12 wish 
+: 2866 3 12 that 
+: 2870 3 12 I 
+: 2874 3 12 could 
+: 2878 3 5 stop 
+: 2886 3 5 ’cause 
+: 2890 3 5 it 
+: 2894 5 12 hurts 
+: 2902 7 12 so 
+: 2910 7 5 much
+- 2917
+: 2922 3 8 ’Cause 
+: 2926 3 8 I’m 
+: 2930 3 8 the 
+: 2934 3 8 on
+: 2938 3 8 ly 
+: 2942 3 8 one 
+: 2946 3 8 that’s 
+: 2950 3 8 try
+: 2954 3 8 na 
+: 2958 3 8 keep 
+: 2962 3 8 us 
+: 2970 3 8 to
+: 2974 3 8 ge
+: 2978 3 8 ther
+- 2981
+: 2986 3 8 When 
+: 2990 3 8 all 
+: 2994 2 8 of 
+: 2998 3 8 the 
+: 3002 3 8 sign
+: 3006 3 10 ~s 
+: 3010 6 10 say 
+: 3018 3 8 that 
+: 3022 4 10 I 
+: 3030 2 10 should 
+: 3034 3 8 for
+: 3038 3 10 get 
+: 3042 4 10 her
+- 3046
+: 3050 3 5 I 
+: 3054 3 12 wish 
+: 3058 3 12 you 
+: 3062 3 12 weren’t 
+: 3066 2 12 the 
+: 3070 7 5 best, 
+: 3082 3 5 the 
+: 3086 3 12 best 
+: 3090 3 12 I 
+: 3094 3 12 e
+: 3098 3 12 ver 
+: 3102 3 5 had
+- 3105
+: 3114 2 5 I 
+: 3118 5 12 wish 
+: 3126 3 12 that 
+: 3130 2 12 the 
+: 3134 7 5 good 
+: 3142 5 5 out
+: 3150 6 12 weighed 
+: 3158 3 12 the 
+: 3162 4 5 bad
+- 3166
+: 3170 2 8 ’Cause 
+: 3174 3 8 i
+: 3178 3 8 t’ll 
+: 3182 3 8 ne
+: 3186 3 10 ver 
+: 3190 3 8 be 
+* 3194 3 15 o
+* 3198 3 12 ~
+* 3202 15 12 ver
+* 3218 8 10 ~,
+- 3226
+* 3234 2 3 Un
+* 3238 3 3 til 
+* 3242 2 3 you 
+* 3246 3 8 tell 
+* 3250 3 8 me 
+: 3254 3 8 it’s 
+: 3258 3 8 o
+: 3262 3 7 ~
+: 3266 11 7 ver
+: 3278 4 5 ~
+- 3282
+: 3286 5 5 These 
+: 3294 15 7 bat
+: 3310 6 5 tle 
+: 3326 19 8 scars,
+- 3345
+: 3350 7 5 Don’t 
+: 3358 3 5 look 
+: 3362 3 3 like 
+: 3366 3 5 they’re 
+: 3374 11 8 fa
+: 3386 4 5 ding
+- 3390
+: 3398 7 5 Don’t 
+: 3406 3 5 look 
+: 3410 3 3 like 
+: 3414 5 5 they’re 
+: 3422 3 8 e
+: 3426 3 10 ~
+: 3430 5 8 ver 
+: 3438 7 7 going 
+: 3446 3 5 a
+: 3450 2 5 way
+: 3453 11 8 ~
+- 3464
+: 3474 3 3 They 
+: 3478 6 3 ain’t 
+: 3486 3 8 ne
+: 3490 3 10 ~
+: 3494 5 8 ver 
+: 3502 7 7 gon
+: 3510 2 5 na 
+: 3514 18 7 change
+- 3532
+: 3542 5 5 These 
+: 3550 15 7 bat
+: 3566 6 5 tle 
+: 3582 19 8 scars,
+- 3601
+: 3606 7 5 Don’t 
+: 3614 3 5 look 
+: 3618 3 3 like 
+: 3622 3 5 they’re 
+: 3630 11 8 fa
+: 3642 4 5 ding
+- 3646
+: 3654 7 5 Don’t 
+: 3662 3 5 look 
+: 3666 3 3 like 
+: 3670 5 5 they’re 
+: 3678 3 8 e
+: 3682 3 10 ~
+: 3686 5 8 ver 
+: 3694 7 7 going 
+: 3702 3 5 a
+: 3706 2 5 way
+: 3709 5 8 ~
+- 3714
+: 3730 3 3 They 
+: 3734 6 3 ain’t 
+: 3742 3 8 ne
+: 3746 3 10 ~
+: 3750 5 8 ver 
+: 3758 7 7 gon
+: 3766 2 5 na 
+: 3770 18 7 change
+- 3788
+: 3798 5 5 These 
+* 3806 15 7 bat
+* 3822 12 5 tle
+E

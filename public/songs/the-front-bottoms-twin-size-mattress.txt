@@ -1,0 +1,497 @@
+#ARTIST:The Front Bottoms
+#TITLE:Twin Size Mattress
+#CREATOR:krasserdude
+#BPM:580
+#YEAR:2013
+#PREVIEWSTART:46
+#VIDEO:v=cWJUk65EnQM
+#LANGUAGE:English
+#GAP:6931,379310344828
+#ALLKARAOKE_ID:the-front-bottoms-twin-size-mattress
+#ALLKARAOKE_SID:7644
+#ALLKARAOKE_LASTUPDATE:2026-11-18T05:26:40.589Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:145
+#ALLKARAOKE_PREVIEWEND:90
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:266
+#MP3:The Front Bottoms - Twin Size Mattress.mp3
+#COVER:The Front Bottoms - Twin Size Mattress [CO].jpg
+#BACKGROUND:The Front Bottoms - Twin Size Mattress [BG].jpg
+: 39 4 11 This 
+: 45 4 11 is 
+: 53 3 11 for 
+: 58 4 11 the 
+: 65 12 11 li
+: 82 4 8 ons 
+: 102 4 8 li
+: 108 4 8 ving 
+: 114 4 8 in 
+: 123 4 6 the 
+: 132 10 8 wi
+: 147 6 8 ry,
+- 153
+: 157 10 8 Broke-
+: 172 10 8 down 
+: 187 10 8 frames 
+: 206 3 4 of 
+: 212 4 6 my 
+: 223 10 6 friends’ 
+: 241 4 6 bo
+: 251 6 4 dies
+- 257 260
+- 260
+: 299 2 1 When 
+: 302 2 1 the 
+: 309 6 11 flood
+: 317 4 11 wa
+: 325 4 11 ter 
+: 334 12 8 comes, 
+: 353 3 8 it 
+: 359 6 8 ain’t 
+: 370 5 8 gon
+: 376 4 8 na 
+: 384 4 8 be 
+: 402 9 8 clear;
+- 411
+: 417 4 8 It’s 
+: 426 4 8 gon
+: 434 4 8 na 
+: 443 5 8 look 
+* 457 5 4 like
+: 463 19 6 ~ 
+: 494 18 4 mud
+- 512
+: 533 4 8 But 
+: 541 18 11 I 
+: 569 4 8 will 
+: 577 8 8 help 
+: 590 6 11 you 
+: 602 10 8 swim
+- 612 640
+- 640
+: 679 20 11 I 
+: 705 4 8 will 
+: 712 10 8 help 
+: 727 7 6 you 
+: 739 8 8 swim, 
+: 752 4 8 I’m 
+: 759 6 8 gon
+: 768 4 8 na 
+: 777 8 8 help 
+* 789 6 6 you 
+: 799 15 8 swim
+- 814 1061
+- 1061
+: 1100 3 11 This 
+: 1104 5 11 is 
+: 1113 3 11 for 
+: 1117 5 8 the 
+: 1127 11 11 snakes 
+: 1143 4 11 and 
+: 1150 2 11 the 
+: 1157 4 11 peo
+: 1164 5 11 ple 
+: 1174 6 11 they 
+: 1189 11 8 bite
+- 1200
+: 1207 4 6 For 
+: 1213 3 4 the 
+: 1222 11 11 friends 
+: 1238 11 11 I’ve 
+: 1255 11 8 made, 
+: 1272 3 6 for 
+: 1276 2 4 the 
+: 1284 12 11 sleep
+: 1301 10 11 less 
+: 1317 9 8 nights
+- 1326
+: 1333 4 8 For 
+: 1340 4 8 the 
+: 1349 10 8 war
+: 1364 9 11 ning 
+* 1380 4 8 signs
+* 1385 7 6 ~ 
+: 1397 12 8 I’ve 
+: 1414 3 6 com
+: 1420 5 8 ple
+: 1428 4 8 tely 
+: 1436 4 8 i
+: 1445 10 8 gnored
+- 1455
+: 1461 6 8 There’s 
+: 1469 2 8 an 
+: 1476 4 8 a
+: 1483 6 8 mount 
+: 1498 6 8 to 
+: 1507 10 9 take, 
+: 1524 8 8 rea
+: 1537 4 6 sons 
+: 1548 6 9 to 
+: 1558 9 9 take 
+: 1575 10 8 more
+- 1585
+: 1608 3 6 It’s 
+: 1613 4 11 no 
+: 1624 6 11 big 
+: 1636 3 8 sur
+: 1645 11 8 prise
+* 1657 4 6 ~ 
+: 1670 4 6 you 
+: 1676 6 11 turned 
+: 1689 6 11 out 
+: 1701 5 8 this 
+: 1709 18 8 way
+- 1727
+: 1733 5 6 When 
+: 1741 6 11 they 
+: 1752 8 11 closed 
+: 1764 4 8 their 
+: 1773 10 8 eyes
+* 1785 3 6 ~
+- 1788
+: 1797 4 6 And 
+: 1806 8 11 prayed 
+: 1817 3 11 you 
+: 1821 2 8 would 
+: 1831 6 8 change
+- 1837
+: 1860 4 6 And 
+: 1868 6 11 they 
+: 1879 8 11 cut 
+: 1891 3 8 your 
+: 1899 10 8 hair
+* 1911 4 6 ~ 
+: 1923 5 6 and 
+: 1931 6 11 sent 
+: 1939 4 11 you 
+: 1946 5 8 a
+: 1956 11 8 way
+- 1967
+: 1989 3 6 You 
+: 1996 5 11 stopped 
+: 2007 6 11 by 
+: 2017 3 8 my 
+: 2026 12 8 house
+: 2039 2 6 ~ 
+: 2051 4 6 the 
+: 2058 5 11 night 
+: 2066 4 11 you 
+: 2072 3 8 es
+: 2081 17 8 caped
+- 2098
+: 2114 4 6 With 
+: 2122 7 11 tears 
+: 2135 5 11 in 
+: 2143 4 8 my 
+: 2154 11 8 eyes
+* 2167 3 6 ~, 
+: 2177 5 6 I 
+: 2186 8 11 begged 
+: 2197 3 11 you 
+: 2202 2 8 to 
+: 2215 10 8 stay
+- 2225
+: 2232 4 8 You 
+: 2240 4 6 said, 
+: 2252 6 8 “Hey, 
+: 2263 7 8 man, 
+: 2274 5 8 I 
+: 2283 8 8 love 
+: 2294 7 8 you, 
+: 2305 4 4 but 
+F 2311 9 8 no fucking way”
+- 2320
+: 2337 4 6 I’m 
+: 2346 12 8 sure 
+: 2362 4 6 that 
+: 2370 15 8 we 
+: 2394 4 6 could 
+: 2403 18 8 find 
+: 2426 4 6 some
+: 2436 18 8 thing 
+: 2458 4 6 for 
+: 2466 19 8 you 
+: 2489 4 6 to 
+: 2495 11 8 do 
+: 2513 11 6 on 
+: 2530 20 8 stage
+- 2550
+: 2570 4 4 May
+: 2578 6 11 be 
+: 2593 21 11 shake 
+: 2618 4 8 a 
+: 2627 17 8 tam
+: 2651 6 11 bou
+: 2660 12 8 rine, 
+: 2676 4 4 or 
+: 2684 4 4 when 
+: 2692 8 11 I 
+: 2708 10 11 sing, 
+: 2725 8 11 you 
+: 2741 11 11 sing 
+: 2757 18 11 har
+: 2782 4 8 mo
+: 2789 8 8 nies
+: 2799 19 6 ~
+- 2818 3611
+- 3611
+: 3650 4 11 This 
+: 3656 4 11 is 
+: 3665 5 11 for 
+: 3672 3 8 the 
+: 3682 11 11 lake 
+: 3704 5 8 that 
+: 3712 5 11 me 
+: 3720 4 11 and 
+: 3728 7 11 my 
+: 3737 8 11 friends 
+: 3753 4 11 swim 
+: 3762 6 8 in
+- 3768
+: 3778 8 11 Na
+: 3792 6 11 ked 
+: 3800 4 8 and 
+: 3808 11 8 dumb 
+: 3824 3 6 on 
+: 3830 5 4 a 
+: 3840 7 11 drun
+: 3856 10 11 ken 
+: 3872 11 8 night
+- 3883
+: 3890 2 8 And 
+: 3894 2 6 it 
+: 3903 4 11 should’
+: 3910 5 8 ve 
+: 3919 12 11 felt 
+: 3937 12 11 good, 
+: 3951 4 11 but 
+: 3959 5 11 I 
+: 3969 4 11 can 
+: 3976 6 11 hear 
+: 3983 3 11 the 
+: 3991 9 11 Jaws 
+: 4008 9 11 theme 
+: 4023 9 8 song
+- 4032
+: 4039 8 11 On 
+: 4054 7 8 re
+: 4062 8 11 peat 
+: 4079 3 11 in 
+: 4085 5 8 the 
+: 4094 4 11 back 
+: 4102 5 11 of 
+F 4108 2 11 my mind
+- 4110
+: 4114 9 4 Make 
+: 4134 11 11 sure 
+: 4150 4 11 you 
+: 4160 8 11 kiss 
+: 4174 9 11 your 
+: 4190 6 11 knu
+: 4199 11 8 ckles
+- 4210
+: 4214 4 8 Be
+: 4222 7 11 fore 
+: 4240 6 11 you 
+: 4253 11 11 punch 
+: 4269 8 11 me 
+: 4285 8 11 in 
+: 4298 6 8 the 
+: 4308 15 11 face
+- 4323
+: 4332 7 11 There 
+: 4342 4 8 are 
+: 4350 6 11 le
+: 4359 4 11 ssons 
+: 4368 2 11 to 
+: 4373 4 8 be 
+: 4384 8 11 learned
+* 4393 3 8 ~,
+- 4396
+: 4408 3 8 And 
+: 4416 12 11 con
+: 4437 4 8 se
+: 4446 9 11 quen
+: 4459 8 8 ces 
+: 4470 5 8 for 
+: 4477 20 11 all 
+: 4500 4 11 the 
+: 4509 10 11 stu
+: 4524 10 11 pid 
+: 4540 10 11 things 
+: 4557 8 8 I 
+: 4575 10 11 say
+- 4585
+: 4590 5 11 And 
+: 4597 4 11 it 
+: 4604 4 11 is 
+: 4613 5 11 no 
+: 4621 4 11 big 
+: 4630 5 11 sur
+: 4638 9 11 prise
+: 4651 3 8 ~ 
+: 4669 5 6 you 
+: 4677 8 11 turned 
+: 4689 7 11 out 
+: 4700 5 8 this 
+: 4709 14 8 way
+- 4723
+: 4732 3 6 The 
+: 4742 6 11 spark 
+: 4752 2 8 in 
+: 4756 4 8 your 
+: 4765 22 11 eyes, 
+: 4797 4 11 the 
+: 4804 5 11 look 
+: 4812 4 11 on 
+: 4820 5 8 your 
+: 4829 8 11 face
+- 4837
+: 4860 6 13 I 
+: 4868 4 13 will 
+: 4879 5 13 not 
+F 4885 1 11 be brave
+- 4886
+: 4893 6 8 I’m 
+: 4901 12 11 sure 
+: 4916 4 8 that 
+: 4924 19 11 we 
+: 4948 5 8 could 
+: 4956 19 11 find 
+: 4980 4 11 some
+: 4989 18 11 thing 
+: 5013 3 8 for 
+: 5022 20 11 you 
+: 5046 2 11 to 
+: 5054 12 11 do 
+: 5069 9 8 on 
+: 5084 21 11 stage
+- 5105
+: 5125 5 11 May
+: 5133 15 13 be 
+: 5152 19 13 shake 
+: 5174 3 13 a 
+: 5182 20 13 tam
+: 5207 5 11 bou
+: 5215 15 11 rine, 
+: 5232 3 11 or 
+: 5238 6 8 when 
+: 5246 9 13 I 
+: 5262 11 13 sing, 
+: 5280 9 13 you 
+: 5295 8 13 sing 
+: 5310 24 13 har
+: 5336 4 11 mo
+: 5343 18 11 nies
+- 5361
+* 5376 4 18 I 
+* 5383 4 18 wan
+* 5390 5 18 na 
+* 5399 6 16 con
+* 5408 6 18 tri
+* 5417 10 16 bute 
+: 5457 4 16 to 
+* 5463 4 20 the 
+* 5471 8 18 cha
+* 5481 10 20 os
+- 5491
+* 5506 4 20 I 
+* 5512 5 20 don’t 
+* 5521 4 20 wan
+* 5528 5 16 na 
+* 5536 16 18 watch 
+: 5569 4 16 and 
+* 5577 10 20 then 
+: 5591 4 18 com
+: 5601 15 18 plain
+- 5616
+: 5631 9 16 ’Cause 
+: 5642 11 20 I 
+: 5657 6 20 am 
+* 5666 16 20 through 
+* 5700 15 20 fin
+: 5722 5 18 ding 
+: 5731 7 18 blame
+: 5740 3 16 ~
+- 5743
+* 5755 7 16 That 
+* 5764 6 18 is 
+* 5772 4 20 a 
+: 5779 6 16 de
+* 5794 9 20 ci
+: 5804 4 16 sion 
+: 5812 7 16 that 
+* 5828 19 20 I 
+: 5851 7 18 have 
+: 5861 10 18 made
+: 5872 11 16 ~
+- 5883 7405
+- 7405
+: 7444 5 6 She 
+: 7452 10 4 hopes 
+: 7467 18 6 I’m 
+: 7505 26 6 cursed 
+: 7537 5 4 fo
+: 7545 7 6 re
+: 7555 8 4 ver
+- 7563
+: 7571 3 4 To 
+: 7579 11 6 sleep 
+: 7593 7 6 on 
+: 7606 6 4 a 
+: 7633 15 6 twin-
+: 7654 15 6 size 
+: 7678 11 6 mat
+: 7694 8 4 tress
+- 7702
+: 7710 11 4 In 
+: 7726 8 6 some
+: 7741 6 9 bo
+: 7751 11 8 dy’s 
+: 7769 7 8 at
+: 7780 5 8 tic 
+: 7790 7 6 or 
+: 7803 10 8 base
+: 7818 10 6 ment 
+: 7833 7 4 my 
+: 7850 50 6 whole
+: 7902 7 8 ~
+: 7910 13 6 ~ 
+: 7926 24 4 life
+- 7950
+: 7956 6 4 Ne
+: 7965 21 6 ver 
+: 8006 25 6 gra
+: 8035 6 4 du
+: 8045 8 6 a
+: 8058 9 6 ting 
+: 8073 7 6 up 
+: 8082 4 4 in 
+: 8094 25 6 size 
+: 8128 3 6 to 
+: 8134 15 6 add 
+: 8158 4 4 a
+: 8165 7 6 no
+: 8174 9 4 ther
+- 8183
+: 8204 7 4 And 
+: 8214 10 6 my 
+: 8230 9 9 night
+: 8242 15 8 mares 
+: 8263 5 8 will 
+: 8271 12 8 have 
+: 8289 11 8 night
+: 8305 13 6 mares 
+: 8323 7 6 eve
+: 8332 6 1 ry 
+: 8346 13 4 night
+- 8359
+: 8372 5 4 Oh, 
+: 8380 9 8 eve
+: 8392 8 6 ry 
+: 8405 20 6 night, 
+: 8432 9 8 eve
+: 8447 9 4 ry 
+: 8462 17 4 night
+E

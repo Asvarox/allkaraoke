@@ -1,0 +1,568 @@
+#ARTIST:Run DMC vs Jason Nevins
+#TITLE:It’s Like That
+#CREATOR:DoubleDee
+#BPM:258
+#YEAR:1997
+#VIDEO:v=TLGWQfK-6DY
+#GENRE:Hip House
+#LANGUAGE:English
+#GAP:18721,627906976744
+#ALLKARAOKE_ID:run-dmc-vs-jason-nevins-its-like-that
+#ALLKARAOKE_SID:7797
+#ALLKARAOKE_LASTUPDATE:2026-11-24T07:50:08.004Z
+#ALLKARAOKE_REALBPM:200
+#ALLKARAOKE_SOURCEURL:Run DMC vs Jason Nevins
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:230
+#MP3:Run DMC vs Jason Nevins - It’s Like That.mp3
+#COVER:Run DMC vs Jason Nevins - It’s Like That [CO].jpg
+#BACKGROUND:Run DMC vs Jason Nevins - It’s Like That [BG].jpg
+G 17 3 8 Un
+G 21 3 7 em
+G 29 6 5 ploy
+G 37 2 5 ment 
+R 41 2 4 at 
+R 45 2 4 a 
+R 49 2 3 re
+R 53 2 3 cord 
+R 61 3 2 highs
+- 64
+R 73 2 8 Peo
+R 77 2 8 ple 
+R 81 3 7 co
+R 85 2 7 ming, 
+R 89 2 5 peo
+R 93 2 5 ple 
+R 97 2 5 go
+R 101 2 5 ing, 
+R 105 2 5 peo
+R 109 2 4 ple 
+R 113 2 3 born 
+R 118 2 3 to 
+R 125 6 0 die
+- 131
+R 145 3 8 Don’t 
+R 149 3 7 ask 
+R 157 6 4 me, 
+R 165 2 4 be
+R 169 2 2 cause 
+R 173 2 1 I 
+R 177 2 6 don’t 
+R 181 2 3 know 
+R 189 3 2 why
+- 192
+R 197 2 4 But 
+R 201 2 4 it’s 
+R 209 4 4 like 
+R 217 4 4 that, 
+R 229 2 -3 and 
+R 233 2 2 that’s 
+R 237 2 2 the 
+R 241 2 4 way 
+R 245 3 0 it 
+R 253 5 -3 is
+- 258
+R 273 2 7 Peo
+R 277 2 6 ple 
+R 281 2 6 in 
+R 285 2 6 the 
+R 289 5 6 world 
+R 297 3 5 tryin 
+R 301 2 5 to 
+R 305 2 4 make 
+R 310 4 3 ends 
+R 318 4 6 meet
+- 322
+R 329 5 5 You 
+R 337 2 5 try 
+R 341 2 5 to 
+R 345 3 5 ride 
+R 353 3 5 car, 
+R 361 4 5 train, 
+R 369 3 5 bus, 
+R 373 2 5 or 
+R 381 4 5 feet
+- 385
+R 389 2 4 I 
+R 393 2 7 said 
+R 397 2 5 you 
+R 401 3 5 got 
+R 405 2 5 to 
+R 409 3 5 work 
+R 417 4 7 hard, 
+R 425 2 5 you 
+R 429 2 5 want 
+R 437 3 5 to 
+R 445 2 5 com
+R 449 4 5 pete
+- 453
+R 457 2 3 It’s 
+R 465 3 4 like 
+R 473 3 4 that, 
+R 485 3 0 and 
+R 489 3 0 that’s 
+R 493 3 2 the 
+R 497 3 4 way 
+R 501 2 0 it 
+R 509 2 0 is
+- 511 512
+- 512
+G 529 4 4 Huh!
+- 533 640
+- 640
+G 657 2 8 Mo
+G 661 2 8 ney 
+G 665 2 7 is 
+G 669 2 5 the 
+G 673 4 5 key 
+R 681 2 4 to 
+R 685 4 4 end 
+R 693 4 4 all 
+R 701 2 2 your 
+R 705 5 4 woes
+- 710
+R 713 2 7 Your 
+R 721 2 7 ups, 
+R 729 2 7 your 
+R 733 3 6 downs, 
+R 741 3 5 your 
+R 749 4 5 highs 
+R 757 3 5 and 
+R 765 2 3 your 
+R 769 5 6 lows
+- 774
+R 777 2 7 Won’t 
+R 781 2 7 you 
+R 785 3 7 tell 
+R 789 2 5 me 
+R 793 3 4 last 
+R 801 4 3 time 
+R 809 2 3 that 
+R 813 2 2 love 
+R 821 4 2 bought 
+R 829 2 3 you 
+R 833 4 3 clothes?
+- 837
+R 841 2 3 It’s 
+R 849 3 4 like 
+R 857 3 4 that, 
+R 869 3 0 and 
+R 873 3 0 that’s 
+R 877 3 2 the 
+R 881 3 4 way 
+R 885 2 0 it 
+R 893 2 0 is
+- 895 896
+- 896
+R 913 4 7 Bills 
+R 921 4 3 rise 
+R 929 3 7 high
+R 933 2 5 er 
+R 945 3 7 eve
+R 949 3 5 ry 
+R 957 4 5 day
+- 961
+R 977 2 7 We 
+R 981 2 5 re
+R 989 5 5 ceive 
+R 1001 4 7 much 
+R 1009 3 7 low
+R 1013 3 4 er 
+R 1021 4 4 pay
+- 1025
+R 1033 4 5 I’d 
+R 1041 2 5 ra
+R 1045 2 4 ther 
+R 1049 4 5 stay 
+R 1057 4 5 young, 
+R 1065 4 4 go 
+R 1073 3 4 out 
+R 1077 4 4 and 
+R 1085 4 3 play
+- 1089
+R 1097 2 3 It’s 
+R 1105 3 4 like 
+R 1113 3 4 that, 
+R 1125 3 0 and 
+R 1129 3 0 that’s 
+R 1133 3 2 the 
+R 1137 3 4 way 
+R 1141 2 0 it 
+R 1149 2 0 is
+- 1151 1152
+- 1152
+G 1169 4 7 Huh!
+- 1173 1280
+- 1280
+G 1297 3 7 Wars 
+G 1305 3 7 go
+G 1309 2 5 ing 
+G 1313 3 5 on 
+R 1325 2 4 a
+R 1329 2 4 cross 
+R 1337 3 2 the 
+R 1341 4 4 sea
+- 1345
+R 1353 4 0 Street 
+R 1361 2 5 sol
+R 1365 3 0 diers 
+R 1377 3 5 kil
+R 1381 3 0 ling 
+R 1389 2 5 the 
+R 1393 2 6 el
+R 1401 3 2 der
+R 1405 3 1 ly
+- 1408
+R 1417 3 5 What
+R 1425 3 7 e
+R 1429 2 4 ver 
+R 1441 2 4 hap
+R 1445 2 2 pened 
+R 1449 2 2 to 
+R 1457 2 4 u
+R 1461 2 2 ni
+R 1469 2 4 ty?
+- 1471
+R 1481 2 3 It’s 
+R 1489 3 4 like 
+R 1497 3 4 that, 
+R 1509 3 0 and 
+R 1513 3 0 that’s 
+R 1517 3 2 the 
+R 1521 3 4 way 
+R 1525 2 0 it 
+R 1533 2 0 is
+- 1535 1536
+- 1536
+G 1553 4 7 Huh!
+- 1557 1656
+- 1656
+R 1673 2 7 You 
+R 1677 2 7 can 
+R 1681 2 7 see 
+R 1685 2 5 a 
+R 1692 4 7 lot 
+R 1705 2 7 in 
+R 1713 2 5 this 
+R 1717 2 4 life
+R 1725 4 4 span
+- 1729
+R 1737 2 5 Like 
+R 1741 1 5 a 
+R 1745 3 5 bum 
+R 1753 2 5 ea
+R 1757 2 4 ting 
+R 1761 3 5 out 
+R 1765 2 5 of 
+R 1773 2 4 a 
+R 1777 2 4 gar
+R 1781 2 2 bage 
+R 1789 4 2 can
+- 1793
+R 1801 3 4 You 
+R 1809 2 0 no
+R 1813 2 1 ticed 
+R 1817 2 2 one 
+R 1825 3 2 time 
+R 1833 4 2 he 
+R 1841 3 2 was 
+R 1845 4 0 your 
+R 1853 4 3 man
+- 1857
+R 1865 3 2 It’s 
+R 1873 3 2 like 
+R 1881 4 2 that 
+G 1889 3 4 (what?) 
+R 1893 2 -5 and 
+R 1897 2 -5 that’s 
+R 1901 2 -1 the 
+R 1905 2 2 way 
+R 1909 3 -2 it 
+R 1917 3 -2 is
+- 1920
+R 1925 3 5 You 
+R 1929 3 5 should 
+R 1933 3 4 have 
+R 1937 3 8 gone 
+R 1945 2 4 to 
+R 1949 3 4 school, 
+R 1957 3 4 you 
+R 1961 2 2 could
+R 1965 2 0 ’ve 
+R 1969 3 0 learned 
+R 1977 2 0 a 
+R 1981 3 0 trade
+- 1984
+R 1993 2 4 But 
+R 1997 2 4 you 
+R 2001 3 3 laid 
+R 2009 2 3 in 
+R 2013 2 2 the 
+R 2017 3 3 bed 
+R 2025 2 -1 where 
+R 2029 2 0 the 
+R 2033 3 0 bums 
+R 2041 3 0 have 
+R 2045 3 -1 laid
+- 2048
+R 2057 2 3 Now 
+R 2065 2 3 all 
+R 2069 2 1 the 
+R 2073 2 4 time 
+R 2077 2 5 you’re 
+R 2081 2 2 cry
+R 2085 2 1 ing 
+R 2089 2 1 that 
+R 2093 2 2 you’re 
+R 2097 2 2 un
+R 2101 3 0 der
+R 2109 3 0 paid
+- 2112
+R 2121 2 3 It’s 
+R 2129 3 4 like 
+R 2137 3 4 that, 
+R 2149 3 0 and 
+R 2153 3 0 that’s 
+R 2157 3 2 the 
+R 2161 3 4 way 
+R 2165 2 0 it 
+R 2173 2 0 is
+- 2175
+R 2181 2 3 You 
+R 2185 2 3 know 
+R 2189 3 4 it’s 
+R 2193 3 4 like 
+R 2201 3 0 that, 
+R 2213 3 0 and 
+R 2217 3 2 that’s 
+R 2221 3 4 the 
+R 2225 2 0 way 
+R 2229 2 0 it 
+R 2237 4 4 is
+- 2241
+R 2245 2 3 You 
+R 2249 2 3 know 
+R 2253 3 4 it’s 
+R 2257 3 4 like 
+R 2265 3 0 that, 
+R 2277 3 0 and 
+R 2281 3 2 that’s 
+R 2285 3 4 the 
+R 2289 2 0 way 
+R 2293 2 0 it 
+R 2301 4 4 is
+- 2305
+R 2309 2 3 You 
+R 2313 2 3 know 
+R 2317 3 4 it’s 
+R 2321 3 4 like 
+R 2329 3 0 that, 
+R 2341 3 0 and 
+R 2345 3 2 that’s 
+R 2349 3 4 the 
+R 2353 2 0 way 
+R 2357 2 0 it 
+R 2365 4 4 is
+- 2369
+R 2373 2 3 Be
+R 2377 2 3 cause 
+R 2381 3 4 it’s 
+R 2385 4 4 like 
+R 2393 3 0 that
+- 2396 2416
+- 2416
+R 2433 3 8 Check 
+R 2437 3 9 this 
+R 2441 3 3 out
+- 2444
+R 2449 3 10 Run 
+R 2453 1 7 D
+R 2455 1 6 M
+R 2457 2 6 C 
+R 2461 2 6 Jam 
+R 2465 2 6 Mas
+R 2469 2 3 ter 
+R 2473 3 6 Jay, 
+* 2481 6 8 Run
+- 2487 2492
+- 2492
+: 2509 2 8 It’s 
+R 2513 3 10 Run 
+R 2517 1 7 D
+R 2519 1 6 M
+R 2521 2 6 C 
+R 2525 2 6 Jam 
+R 2529 2 6 Mas
+R 2533 2 3 ter 
+R 2537 3 6 Jay, 
+* 2545 6 8 Run
+- 2551 2556
+- 2556
+: 2573 2 8 It’s 
+R 2577 3 10 Run 
+R 2581 1 7 D
+R 2583 1 6 M
+R 2585 2 6 C 
+R 2589 2 6 Jam 
+R 2593 2 6 Mas
+R 2597 2 3 ter 
+R 2601 3 6 Jay, 
+* 2609 6 8 Run
+- 2615 2620
+- 2620
+: 2637 2 8 It’s 
+R 2641 3 10 Run 
+R 2645 1 7 D
+R 2647 1 6 M
+R 2649 2 6 C 
+R 2653 2 6 Jam 
+R 2657 2 6 Mas
+R 2661 2 3 ter 
+R 2665 3 6 Jay, 
+* 2673 6 8 Run
+- 2679 2684
+- 2684
+R 2701 2 8 It’s 
+R 2705 3 10 Run 
+R 2709 1 7 D
+R 2711 1 6 M
+R 2713 2 6 C 
+R 2717 2 6 Jam 
+R 2721 2 6 Mas
+R 2725 2 3 ter 
+R 2729 3 6 Jay,
+- 2732 2736
+- 2736
+R 2753 3 8 Check 
+R 2757 3 9 this 
+R 2761 3 3 out
+- 2764
+R 2769 2 7 One 
+R 2773 2 5 thing 
+R 2777 2 2 I 
+R 2781 3 7 know 
+R 2789 2 6 is 
+R 2793 3 6 that 
+R 2801 3 6 life 
+R 2805 2 4 is 
+R 2813 3 2 short
+- 2816
+R 2821 2 5 So 
+R 2825 2 9 li
+R 2829 2 4 sten 
+R 2833 2 3 up 
+R 2841 3 3 home
+R 2849 3 3 boy, 
+R 2857 3 3 give 
+R 2865 2 3 this 
+R 2869 2 2 a 
+R 2877 4 2 thought
+- 2881
+R 2885 2 4 The 
+R 2889 2 4 next 
+R 2897 4 2 time 
+R 2905 2 4 some
+R 2909 2 4 one’s 
+R 2913 2 4 tea
+R 2917 2 4 ching 
+R 2921 3 2 why 
+R 2925 2 2 don’t 
+R 2929 2 4 you 
+R 2933 2 0 get 
+R 2941 4 2 taught?
+- 2945
+R 2953 3 2 It’s 
+R 2961 3 2 like 
+R 2969 4 2 that 
+R 2977 3 4 (what?) 
+R 2981 2 -5 and 
+R 2985 2 -5 that’s 
+R 2989 2 -1 the 
+R 2993 2 2 way 
+R 2997 3 -2 it 
+R 3005 3 -2 is
+- 3008
+R 3017 2 1 If 
+R 3021 2 5 you 
+R 3025 2 7 real
+R 3029 2 7 ly 
+R 3033 2 4 think 
+R 3037 2 0 a
+R 3041 3 0 bout 
+R 3045 2 1 it 
+R 3049 3 4 times 
+R 3057 3 4 aren’t 
+R 3061 2 2 that 
+R 3069 4 1 bad
+- 3073
+R 3077 2 5 The 
+R 3081 2 5 one 
+R 3085 2 5 that 
+R 3089 2 5 fle
+R 3093 2 5 xes 
+R 3097 2 4 with 
+R 3101 2 5 suc
+R 3105 2 5 ces
+R 3109 2 2 ses 
+R 3113 2 4 will 
+R 3121 2 6 make 
+R 3125 2 2 you 
+R 3133 4 2 glad
+- 3137
+R 3145 3 3 Stop 
+R 3153 3 4 play
+R 3157 2 4 ing 
+R 3161 3 4 start 
+R 3169 2 4 pray
+R 3173 2 4 ing, 
+R 3177 2 4 you 
+R 3185 3 4 won’t 
+R 3189 3 4 be 
+R 3197 4 4 sad
+- 3201
+R 3209 3 2 It’s 
+R 3217 3 2 like 
+R 3225 4 2 that 
+R 3233 3 4 (what?) 
+R 3237 2 -5 and 
+R 3241 2 -5 that’s 
+R 3245 2 -1 the 
+R 3249 2 2 way 
+R 3253 3 -2 it 
+R 3261 3 -2 is
+- 3264
+G 3281 8 0 Huh!
+- 3289 3316
+- 3316
+R 3333 3 8 Check 
+R 3337 3 9 this 
+R 3341 3 3 out
+- 3344 3424
+- 3424
+G 3441 3 10 Run 
+G 3445 1 7 D
+G 3447 1 6 M
+G 3449 2 6 C 
+G 3453 2 6 Jam 
+G 3457 2 6 Mas
+G 3461 2 4 ter 
+G 3465 3 5 Jay
+- 3468
+R 3473 3 10 Run 
+R 3477 1 7 D
+R 3479 1 6 M
+R 3481 2 6 C 
+R 3485 2 6 Jam 
+R 3489 2 6 Mas
+R 3493 2 4 ter 
+R 3497 3 5 Jay
+- 3500
+R 3505 3 10 Run 
+R 3509 1 7 D
+R 3511 1 6 M
+R 3513 2 6 C 
+R 3517 2 6 Jam 
+R 3521 2 6 Mas
+R 3525 2 4 ter 
+R 3529 3 5 Jay
+E

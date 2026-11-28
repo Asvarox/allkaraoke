@@ -1,5 +1,5 @@
 #ARTIST:Prince and the Revolution
-#TITLE:Purple Rain (Album Version)
+#TITLE:Purple Rain
 #BPM:231,5
 #YEAR:1984
 #VIDEO:v=347vCib_lMs

@@ -1,4 +1,4 @@
-import { Alert, AlertTitle, Button, Step, StepButton } from '@mui/material';
+import { Alert, AlertTitle, Box, Button, Step, StepButton } from '@mui/material';
 import Stepper from '@mui/material/Stepper';
 import { StyledEngineProvider } from '@mui/material/styles';
 import { useEffect, useMemo, useRef, useState } from 'react';
@@ -8,21 +8,29 @@ import { ValuesType } from 'utility-types';
 import { Link } from 'wouter';
 
 import { Song } from '~/interfaces';
+import { Icon } from '~/modules/elements/akui/icon';
 import { useBackground } from '~/modules/elements/background-context';
 import useBackgroundMusic from '~/modules/hooks/use-background-music';
 import useQueryParam from '~/modules/hooks/use-query-param';
 import useSmoothNavigate from '~/modules/hooks/use-smooth-navigate';
 import useSongIndex from '~/modules/songs/hooks/use-song-index';
+import { getSongVersionKey } from '~/modules/songs/song-version';
 import SongDao from '~/modules/songs/songs-service';
 import convertTxtToSong, { getVideoId } from '~/modules/songs/utils/convert-txt-to-song';
 import getSongId from '~/modules/songs/utils/get-song-id';
 import setQueryParam from '~/modules/utils/set-query-param';
-import { getAdminPassword } from '~/routes/admin/admin-password';
-import { saveAdminUnverifiedSongInBackground } from '~/routes/admin/background-song-save';
-import { getNextAdminUnverifiedSongProcessingUrl } from '~/routes/admin/unverified-song-processing-queue';
-import { listAdminUnverifiedSongs, updateAdminUnverifiedSong } from '~/routes/admin/unverified-songs-admin-api';
+import { getAdminPassword, isAdminUser } from '~/routes/admin/admin-password';
+import {
+  AdminReviewSaveTarget,
+  persistAdminReviewSong,
+  saveAdminReviewSongInBackground,
+} from '~/routes/admin/background-song-save';
+import {
+  getNextAdminReviewSongProcessingUrl,
+  parseAdminReviewQueue,
+} from '~/routes/admin/unverified-song-processing-queue';
+import { ADMIN_REVIEW_SONGS_SWR_KEY, listAdminReviewSongs } from '~/routes/admin/unverified-songs-admin-api';
 import { armVerificationAutoplay, useVerificationAutoplay } from '~/routes/admin/verification-autoplay';
-import { markAdminSongVerified } from '~/routes/admin/verified-songs-counter';
 import { VerifiedSongsCounter } from '~/routes/admin/verified-songs-counter-badge';
 import AuthorAndVideo, { AuthorAndVidEntity } from '~/routes/convert/steps/author-and-video';
 import BasicData, { BasicDataEntity } from '~/routes/convert/steps/basic-data';
@@ -33,6 +41,10 @@ import { shareSong } from '~/routes/edit/share-songs-modal';
 interface Props {
   song?: Song;
   adminUnverifiedSongId?: string;
+  /** A library song opened from the admin review queue because players reported it */
+  adminReportedSongId?: string;
+  /** Set when the reports are about the instrumental video */
+  adminReportedVersion?: 'instrumental';
 }
 
 function isEmptyValue<T>(v: T | T[] | undefined) {
@@ -41,6 +53,18 @@ function isEmptyValue<T>(v: T | T[] | undefined) {
 
 // Kept out of the component: React Compiler can't compile `||` inside a try block
 const getVideoIdOrFallback = (videoUrl: string, fallback: string) => getVideoId(videoUrl) || fallback;
+
+// A changed instrumental video starts from the original's timings, as the old ones belonged to the previous video
+const withInstrumentalVideo = (song: Song, instrumentalVideoUrl: string): Song => {
+  const video = instrumentalVideoUrl.length === 11 ? instrumentalVideoUrl : getVideoId(instrumentalVideoUrl);
+  if (!video) return { ...song, instrumental: undefined };
+  if (song.instrumental?.video === video) return song;
+
+  return {
+    ...song,
+    instrumental: { video, gap: song.gap, videoGap: song.videoGap, volume: song.instrumental?.volume },
+  };
+};
 
 const steps = ['basic-data', 'author-and-video', 'sync', 'metadata'] as const;
 
@@ -53,6 +77,7 @@ const getAuthorAndVideoFromSong = (song?: Song): AuthorAndVidEntity => ({
   author: song?.author ?? '',
   authorUrl: song?.authorUrl ?? '',
   video: song?.video ? `https://www.youtube.com/watch?v=${song.video}` : '',
+  instrumentalVideo: song?.instrumental ? `https://www.youtube.com/watch?v=${song.instrumental.video}` : '',
 });
 
 const getMetadataEntityFromSong = (song?: Song): SongMetadataEntity => ({
@@ -62,6 +87,7 @@ const getMetadataEntityFromSong = (song?: Song): SongMetadataEntity => ({
   year: song?.year ?? '',
   language: song?.language ?? [],
   volume: song?.volume ?? 70,
+  instrumentalVolume: song?.instrumental?.volume,
   previewStart: song?.previewStart ?? undefined,
   previewEnd: song?.previewEnd ?? undefined,
   genre: song?.genre,
@@ -69,7 +95,20 @@ const getMetadataEntityFromSong = (song?: Song): SongMetadataEntity => ({
   artistOrigin: song?.artistOrigin,
 });
 
-export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
+const duplicateStepProps = (isDuplicate: boolean) =>
+  isDuplicate
+    ? {
+        // 24px like MUI's numbered step icon; same red as the label
+        icon: (
+          <Box component="span" sx={{ display: 'flex', color: 'error.main' }} data-test="step-duplicate">
+            <Icon icon="ic:baseline-error" size={6} />
+          </Box>
+        ),
+        sx: { '& .MuiStepLabel-label': { color: 'error.main' } },
+      }
+    : {};
+
+export default function ConvertView({ song, adminUnverifiedSongId, adminReportedSongId, adminReportedVersion }: Props) {
   const isEdit = !!song;
   const { data: songs } = useSongIndex(true);
   useBackground(false);
@@ -80,13 +119,21 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
   const [isSaving, setIsSaving] = useState(false);
   const [saveError, setSaveError] = useState<string | null>(null);
   const redirect = useQueryParam('redirect');
-  const isAdminProcessingQueue = useQueryParam('processQueue') === 'true';
-  const autoplayFirstSection = useVerificationAutoplay(!!adminUnverifiedSongId && isAdminProcessingQueue);
+  const adminProcessingQueue = parseAdminReviewQueue(useQueryParam('processQueue'));
+  const isAdminProcessingQueue = !!adminProcessingQueue;
+  const adminReviewTarget: AdminReviewSaveTarget | undefined = adminUnverifiedSongId
+    ? { key: adminUnverifiedSongId, sharedSongId: adminUnverifiedSongId }
+    : adminReportedSongId
+      ? adminReportedVersion
+        ? { key: getSongVersionKey(adminReportedSongId, adminReportedVersion), version: adminReportedVersion }
+        : { key: adminReportedSongId }
+      : undefined;
+  const autoplayFirstSection = useVerificationAutoplay(!!adminReviewTarget && isAdminProcessingQueue);
 
   // Prefetch the queue so saving can redirect to the next song without waiting for a request.
-  const { data: prefetchedUnverifiedSongs } = useSWR(
-    adminUnverifiedSongId && isAdminProcessingQueue ? (['admin-unverified-songs', getAdminPassword()] as const) : null,
-    ([, password]) => listAdminUnverifiedSongs(password),
+  const { data: prefetchedReviewSongs } = useSWR(
+    adminReviewTarget && isAdminProcessingQueue ? ([ADMIN_REVIEW_SONGS_SWR_KEY, getAdminPassword()] as const) : null,
+    ([, password]) => listAdminReviewSongs(password),
     { keepPreviousData: true },
   );
 
@@ -120,13 +167,16 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
   const conversionResult: Song | undefined = useMemo(() => {
     try {
       if (isEdit)
-        return {
-          ...song,
-          video: getVideoIdOrFallback(authorAndVid.video, song.video),
-          author: authorAndVid.author,
-          authorUrl: authorAndVid.authorUrl,
-          sourceUrl: basicData.sourceUrl,
-        };
+        return withInstrumentalVideo(
+          {
+            ...song,
+            video: getVideoIdOrFallback(authorAndVid.video, song.video),
+            author: authorAndVid.author,
+            authorUrl: authorAndVid.authorUrl,
+            sourceUrl: basicData.sourceUrl,
+          },
+          authorAndVid.instrumentalVideo,
+        );
       if (!basicData.txtInput) return undefined;
       const result = convertTxtToSong(
         basicData.txtInput,
@@ -136,7 +186,7 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
         basicData.sourceUrl,
       );
 
-      return result;
+      return withInstrumentalVideo(result, authorAndVid.instrumentalVideo);
     } catch (e: unknown) {
       console.error(e);
     }
@@ -144,6 +194,7 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
   }, [
     basicData.txtInput,
     authorAndVid.video,
+    authorAndVid.instrumentalVideo,
     authorAndVid.author,
     authorAndVid.authorUrl,
     basicData.sourceUrl,
@@ -151,13 +202,32 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
     isEdit,
   ]);
 
-  const possibleDuplicate = useMemo(
+  // Only built-in songs count as duplicates - local songs are the user's own copies, not part of the game.
+  // When editing, skip the edited song itself; unverified songs aren't in the index, so a match is a real duplicate
+  const otherSongs = useMemo(() => {
+    const builtInSongs = songs?.filter((addedSong) => addedSong.isBuiltIn);
+
+    return isEdit && !adminUnverifiedSongId
+      ? builtInSongs?.filter((addedSong) => SongDao.generateSongFile(addedSong) !== SongDao.generateSongFile(song))
+      : builtInSongs;
+  }, [songs, song, isEdit, adminUnverifiedSongId]);
+
+  const duplicateByName = useMemo(
     () =>
-      !isEdit &&
-      conversionResult &&
-      songs?.find((addedSong) => SongDao.generateSongFile(addedSong) === SongDao.generateSongFile(conversionResult)),
-    [songs, conversionResult, isEdit],
+      conversionResult
+        ? otherSongs?.find(
+            (addedSong) => SongDao.generateSongFile(addedSong) === SongDao.generateSongFile(conversionResult),
+          )
+        : undefined,
+    [otherSongs, conversionResult],
   );
+
+  const currentVideoId = authorAndVid.video.length === 11 ? authorAndVid.video : getVideoId(authorAndVid.video);
+  const duplicateByVideo = useMemo(
+    () => (currentVideoId ? otherSongs?.find((addedSong) => addedSong.video === currentVideoId) : undefined),
+    [otherSongs, currentVideoId],
+  );
+  const possibleDuplicate = duplicateByName ?? duplicateByVideo;
 
   // Prefill empty fields once per source (txt or edited song), so fields the user clears stay cleared
   const prefilledFromSource = useRef<unknown>(null);
@@ -169,6 +239,15 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
         setAuthorAndVid((current) => ({
           ...current,
           video: `https://www.youtube.com/watch?v=${conversionResult.video}`,
+        }));
+      }
+      // The instrumental field overrides the txt's own, so it starts from what the txt has
+      const txtInstrumental =
+        !isEdit && !authorAndVid.instrumentalVideo && convertTxtToSong(basicData.txtInput).instrumental;
+      if (txtInstrumental) {
+        setAuthorAndVid((current) => ({
+          ...current,
+          instrumentalVideo: `https://www.youtube.com/watch?v=${txtInstrumental.video}`,
         }));
       }
       if (!!conversionResult.author && !authorAndVid.author) {
@@ -214,9 +293,14 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
 
   const isNextStepAvailable = steps[currentStep] === 'author-and-video' ? isAuthorAndVidCompleted : true;
 
+  const { instrumentalVolume, ...metadata } = metadataEntity;
   const finalSong: Song = {
     ...editedSong!,
-    ...metadataEntity,
+    ...metadata,
+    instrumental: editedSong?.instrumental && {
+      ...editedSong.instrumental,
+      volume: instrumentalVolume ?? editedSong.instrumental.volume,
+    },
     author: authorAndVid.author,
     authorUrl: authorAndVid.authorUrl,
     realBpm: +metadataEntity.realBpm,
@@ -224,27 +308,24 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
     id: getSongId(metadataEntity),
   };
 
-  const getAdminProcessingQueueRedirect = async () => {
-    const songs = prefetchedUnverifiedSongs ?? (await listAdminUnverifiedSongs(getAdminPassword()));
+  const getAdminProcessingQueueRedirect = async (currentKey: string) => {
+    const songs = prefetchedReviewSongs ?? (await listAdminReviewSongs(getAdminPassword()));
 
-    return getNextAdminUnverifiedSongProcessingUrl(songs, adminUnverifiedSongId!);
+    return getNextAdminReviewSongProcessingUrl(songs, adminProcessingQueue!, currentKey);
   };
 
   const persistSong = async () => {
-    if (adminUnverifiedSongId) {
+    if (adminReviewTarget) {
       if (isAdminProcessingQueue) {
         // Save in the background so the next song can be processed right away.
-        void saveAdminUnverifiedSongInBackground(adminUnverifiedSongId, finalSong!);
+        void saveAdminReviewSongInBackground(adminReviewTarget, finalSong!);
         armVerificationAutoplay();
-        const nextUrl = await getAdminProcessingQueueRedirect();
+        const nextUrl = await getAdminProcessingQueueRedirect(adminReviewTarget.key);
         navigate(nextUrl);
         return;
       }
 
-      await SongDao.store(finalSong!);
-      await shareSong(finalSong!.id);
-      await updateAdminUnverifiedSong(adminUnverifiedSongId, finalSong!);
-      markAdminSongVerified(adminUnverifiedSongId);
+      await persistAdminReviewSong(adminReviewTarget, finalSong!);
       navigate('admin/');
       return;
     }
@@ -307,12 +388,12 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
         <div className="col-span-12 px-2 md:px-0 md:py-4">
           <Stepper activeStep={currentStep} nonLinear={isEdit}>
             <Step key={0} completed={isBasicInfoCompleted}>
-              <StepButton color="inherit" onClick={() => setCurrentStep(0)}>
+              <StepButton color="inherit" {...duplicateStepProps(!!duplicateByName)} onClick={() => setCurrentStep(0)}>
                 <span className="hidden md:block">Basic Info</span>
               </StepButton>
             </Step>
             <Step key={1} completed={isAuthorAndVidCompleted}>
-              <StepButton color="inherit" onClick={() => setCurrentStep(1)}>
+              <StepButton color="inherit" {...duplicateStepProps(!!duplicateByVideo)} onClick={() => setCurrentStep(1)}>
                 <span className="hidden md:block">Author and video data</span>
               </StepButton>
             </Step>
@@ -338,7 +419,7 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
               <BasicData
                 shouldAutoImport={!isAuthorAndVidCompleted}
                 isTxtRequired={!song}
-                onAutoImport={setAuthorAndVid}
+                onAutoImport={(data) => setAuthorAndVid((current) => ({ ...current, ...data }))}
                 onChange={setBasicData}
                 data={basicData}
                 finalSong={finalSong}
@@ -370,6 +451,7 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
                 data={metadataEntity}
                 songArtist={conversionResult?.artist}
                 videoId={conversionResult?.video ?? ''}
+                instrumentalVideoId={isAdminUser() ? editedSong?.instrumental?.video : undefined}
                 isAdminUnverifiedSong={!!adminUnverifiedSongId}
               />
             )}
@@ -377,7 +459,7 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
             {possibleDuplicate && (
               <Alert severity="warning" data-test="possible-duplicate">
                 <AlertTitle>Possible duplicate</AlertTitle>
-                There is already a song with similar artist and/or name:{' '}
+                There is already a song with similar artist and/or name, or the same video:{' '}
                 <b>
                   {possibleDuplicate.artist} - {possibleDuplicate.title}
                 </b>
@@ -393,7 +475,7 @@ export default function ConvertView({ song, adminUnverifiedSongId }: Props) {
                   disabled={currentStep === 0}>
                   Previous
                 </Button>
-                {adminUnverifiedSongId && <VerifiedSongsCounter />}
+                {adminReviewTarget && <VerifiedSongsCounter />}
                 {isLastStep ? (
                   <Button
                     data-test="save-button"

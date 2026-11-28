@@ -1,3 +1,5 @@
+import { readFileSync } from 'fs';
+
 import { expect, test } from '@playwright/test';
 
 import convertTxtToSong from '~/modules/songs/utils/convert-txt-to-song';
@@ -14,6 +16,7 @@ test.beforeEach(async ({ page, context, browser }) => {
   await mockSongs({ page, context });
 });
 
+const BUILT_IN_SONG_TXT = readFileSync('./tests/fixtures/songs/e2e-croissant-french-1994.txt', { encoding: 'utf-8' });
 const VIDEO_ID = '8YKAHgwLEMg';
 const FINAL_LANG = ['English', 'Polish'];
 const FINAL_ARTIST_ORIGIN = 'PL';
@@ -308,10 +311,17 @@ test('Convert song', async ({ page }) => {
   expect(convertedSong.tracks[0].name).not.toBeDefined();
   expect(convertedSong.tracks[1].name).toEqual(TRACK_2_NAME);
 
-  await test.step('Duplicate song alert when adding the same song', async () => {
+  await test.step('Duplicate song alert only for built-in songs, not local ones', async () => {
+    await pages.editSongsPage.goToConvertSong();
+    await pages.songEditBasicInfoPage.enterSongTXT(BUILT_IN_SONG_TXT);
+    await expect(pages.songEditBasicInfoPage.duplicateSongAlert).toBeVisible();
+    await page.goBack();
+
+    // The converted song is stored locally only, so it isn't a duplicate of a game song
     await pages.editSongsPage.goToConvertSong();
     await pages.songEditBasicInfoPage.enterSongTXT(downloadedContent);
-    await expect(pages.songEditBasicInfoPage.duplicateSongAlert).toBeVisible();
+    await expect(pages.songEditBasicInfoPage.nextButton).toBeEnabled();
+    await expect(pages.songEditBasicInfoPage.duplicateSongAlert).not.toBeVisible();
     await page.goBack();
   });
 

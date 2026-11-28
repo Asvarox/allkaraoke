@@ -1,0 +1,546 @@
+#ARTIST:Summer Walker
+#TITLE:Summer Walker - Girls Need Love Remix (with Drake)
+#CREATOR:Summer Walker
+#BPM:386
+#YEAR:2018
+#VIDEO:v=TP3moIiyZFI
+#GENRE:R&B
+#LANGUAGE:English
+#GAP:10499,637305699482
+#ALLKARAOKE_ID:summer-walker-summer-walker-girls-need-love-remix-with-drake
+#ALLKARAOKE_SID:7733
+#ALLKARAOKE_LASTUPDATE:2026-11-22T04:24:10.805Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:97
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:222
+#MP3:Summer Walker - Girls Need Love Remix (with Drake) - (320 Kbps).mp3
+: 26 3 0 Ho
+: 31 3 0 nest
+: 37 6 0 ly
+- 43 257
+- 257
+: 283 2 0 Ho
+: 288 2 0 nest
+: 292 4 0 ly, 
+: 301 8 0 I’m 
+: 313 14 0 tryna 
+: 331 10 0 stay 
+: 343 8 0 fo
+: 355 13 0 cused
+- 368 383
+- 383
+: 409 5 0 You 
+: 415 3 0 must 
+: 420 9 0 think 
+: 432 7 0 I’ve 
+: 442 9 0 got 
+: 455 4 0 to 
+: 463 6 0 be 
+: 471 7 0 jo
+: 481 9 0 king 
+: 492 5 0 when 
+: 498 5 0 I 
+: 506 8 0 say
+- 514
+: 539 2 0 I 
+: 544 4 0 don’t 
+: 549 3 0 think 
+: 557 3 0 I 
+: 563 4 0 can 
+: 569 12 0 wait
+- 581
+: 599 3 0 I 
+: 603 3 0 just 
+: 607 8 0 need 
+: 617 6 0 it 
+: 627 8 0 now
+- 635 637
+- 637
+: 663 3 0 Bet
+: 668 3 0 ter 
+: 672 8 0 swing 
+: 684 9 0 my 
+: 695 13 0 way
+- 708
+: 726 3 0 I 
+: 731 3 0 just 
+: 737 5 0 need 
+: 747 6 0 some 
+: 758 14 0 dick
+- 772
+: 790 4 0 I 
+: 796 3 0 just 
+: 800 5 0 need 
+: 807 7 0 some 
+: 821 14 0 love
+- 835
+: 854 3 0 Tired 
+: 859 2 0 of 
+: 863 5 0 fuck
+: 869 3 0 ing 
+: 874 4 0 with 
+: 880 3 0 these 
+: 885 9 0 lame 
+: 896 6 0 niggas, 
+: 906 3 0 ba
+: 911 3 0 by
+- 914
+: 916 5 0 I 
+: 923 3 0 just 
+: 928 5 0 need 
+: 934 4 0 a 
+: 947 17 0 thug
+- 964
+: 981 3 0 Won’t 
+: 985 2 0 you 
+: 990 4 0 be 
+: 997 5 0 my 
+: 1011 12 0 plug, 
+: 1028 7 0 ayy
+- 1035
+: 1045 3 0 You 
+: 1050 2 0 could 
+: 1055 6 0 be 
+: 1066 4 0 the 
+: 1074 13 0 one, 
+: 1094 7 0 ayy
+- 1101
+: 1117 3 0 We 
+: 1122 3 0 could 
+: 1126 4 0 start 
+: 1134 3 0 with 
+: 1139 4 0 a 
+: 1145 4 0 hand
+: 1151 6 0 shake, 
+: 1161 4 0 ba
+: 1166 3 0 by
+- 1169
+: 1172 4 0 I’ma 
+: 1176 9 0 need 
+: 1188 5 0 more 
+: 1195 3 0 than 
+: 1200 3 0 a 
+: 1206 12 0 hug
+- 1218
+: 1238 3 0 Girls 
+: 1244 5 0 can’t 
+: 1251 3 0 ne
+: 1256 3 0 ver 
+: 1261 4 0 say 
+: 1267 3 0 they 
+: 1271 7 0 want 
+: 1281 5 0 it
+- 1286
+: 1302 4 0 Girls 
+: 1308 3 0 can’t 
+: 1315 4 0 ne
+: 1320 1 0 ver 
+: 1322 7 0 say 
+: 1334 12 0 how
+- 1346
+: 1363 5 0 Girls 
+: 1371 5 0 can’t 
+: 1378 4 0 ne
+: 1384 2 0 ver 
+: 1387 3 0 say 
+: 1392 4 0 they 
+: 1397 9 0 need 
+: 1409 6 0 it
+- 1415
+: 1428 4 0 Girls 
+: 1434 3 0 can’t 
+: 1440 4 0 ne
+: 1445 2 0 ver 
+: 1449 4 0 say 
+: 1456 12 0 now
+- 1468
+: 1488 7 0 Girls 
+: 1497 5 0 can’t 
+: 1505 5 0 ne
+: 1512 2 0 ver 
+: 1515 3 0 say 
+: 1521 3 0 they 
+: 1525 8 0 want 
+: 1535 3 0 it
+- 1538
+: 1555 5 0 Girls 
+: 1561 3 0 can’t 
+: 1567 4 0 ne
+: 1573 2 0 ver 
+: 1577 7 0 say 
+: 1586 14 0 how
+- 1600
+: 1618 5 0 Girls 
+: 1625 5 0 can’t 
+: 1633 4 0 ne
+: 1638 2 0 ver 
+: 1642 2 0 say 
+: 1647 3 0 they 
+: 1652 9 0 need 
+: 1663 9 0 it
+- 1672
+: 1684 4 0 Girls 
+: 1689 3 0 can’t 
+: 1696 3 0 ne
+: 1701 3 0 ver 
+: 1706 6 0 say 
+: 1714 10 0 now, 
+: 1738 4 0 oh 
+: 1748 11 0 now
+- 1759
+: 1780 3 0 Give 
+: 1784 2 0 it 
+: 1787 3 0 to 
+: 1791 3 0 me 
+: 1795 4 0 like 
+: 1802 2 0 you 
+: 1807 9 0 need 
+: 1820 2 0 it, 
+: 1825 6 0 ba
+: 1832 6 0 by
+- 1838
+: 1858 3 0 Want 
+: 1862 2 0 you 
+: 1866 3 0 to 
+: 1870 3 0 hear 
+: 1876 6 0 me 
+: 1883 3 0 screa
+: 1888 3 0 ming, 
+: 1893 6 0 hea
+: 1900 3 0 vy 
+: 1904 3 0 brea
+: 1909 3 0 thing
+- 1912
+: 1914 3 0 I 
+: 1921 3 0 don’t 
+: 1925 3 0 need 
+: 1930 3 0 a 
+: 1936 5 0 rea
+: 1947 3 0 son, 
+: 1952 6 0 ba
+: 1962 5 0 by
+- 1967
+: 1985 3 0 I 
+: 1989 3 0 want 
+: 1994 3 0 it 
+: 1999 4 0 ’til 
+: 2007 4 0 you 
+: 2012 4 0 can’t 
+: 2019 13 0 fight
+- 2032
+: 2039 2 0 I 
+: 2043 3 0 can 
+: 2048 2 0 give 
+: 2051 3 0 it 
+: 2057 4 0 to 
+: 2062 2 0 you 
+: 2066 7 0 right 
+: 2075 3 0 babe, 
+: 2087 5 0 oh
+- 2092
+: 2110 3 0 I 
+: 2115 3 0 wan
+: 2121 3 0 na 
+: 2126 5 0 be 
+: 2133 4 0 your 
+: 2139 8 0 hea
+: 2149 8 0 ling
+- 2157
+: 2175 3 0 I 
+: 2180 3 0 can 
+: 2184 4 0 be 
+: 2190 5 0 real 
+: 2203 12 0 good
+- 2215
+: 2239 4 0 Please 
+: 2244 3 0 don’t 
+: 2249 3 0 get 
+: 2254 4 0 in 
+: 2259 4 0 your 
+: 2265 10 0 fee
+: 2276 8 0 lings
+- 2284
+: 2305 7 0 Ayy, 
+: 2328 3 0 I 
+: 2332 6 0 need 
+: 2342 6 0 some 
+: 2352 4 0 lo-
+: 2362 5 0 o-
+: 2372 7 0 o-
+: 2384 8 0 o-
+: 2395 16 0 ove
+- 2411
+: 2432 8 0 Ayy, 
+: 2457 3 0 I 
+: 2462 5 0 need 
+: 2470 5 0 some 
+: 2477 7 0 lo-
+: 2488 6 0 o-
+: 2498 8 0 o-
+: 2510 7 0 o-
+: 2523 18 0 ove
+- 2541
+: 2555 9 0 Ayy, 
+: 2584 3 0 I 
+: 2589 5 0 need 
+: 2598 5 0 some 
+: 2606 7 0 lo-
+: 2617 6 0 o-
+: 2626 7 0 o-
+: 2637 7 0 o-
+: 2648 14 0 ove
+- 2662
+: 2686 14 0 Ayy, 
+: 2710 3 0 and 
+: 2715 6 0 you 
+: 2725 5 0 can’t 
+: 2734 46 0 judge
+- 2780 2802
+- 2802
+: 2828 6 0 You 
+: 2838 5 0 don’t 
+: 2846 5 0 real
+: 2853 6 0 ly 
+: 2861 9 0 call 
+: 2872 4 0 on 
+: 2878 9 0 me 
+: 2891 6 0 like 
+: 2899 7 0 you 
+: 2910 14 0 should
+- 2924 2928
+- 2928
+: 2954 6 0 Link 
+: 2963 6 0 up, 
+: 2975 4 0 I 
+: 2981 7 0 roll 
+: 2994 4 0 through 
+: 2999 2 0 the 
+: 3003 10 0 hood
+- 3013
+: 3018 6 0 Prob
+: 3026 7 0 lems 
+: 3034 5 0 but 
+: 3042 20 0 everything’s 
+: 3065 6 0 all 
+: 3074 6 0 good 
+: 3083 11 0 my 
+: 3098 11 0 love
+- 3109
+: 3116 6 0 Your 
+: 3124 4 0 nigga 
+: 3128 4 0 doesn’t 
+: 3134 11 0 want 
+: 3146 5 0 smoke 
+: 3154 6 0 with 
+: 3161 6 0 me, 
+: 3169 9 0 nah, 
+: 3179 10 0 no 
+: 3192 11 0 way
+- 3203
+: 3211 6 0 Trust 
+: 3219 6 0 me 
+: 3228 4 0 it’s 
+: 3233 10 0 all 
+: 3250 4 0 o
+: 3257 10 0 kay, 
+: 3273 7 0 trust 
+: 3283 5 0 me 
+: 3290 5 0 it’s 
+: 3296 31 0 all
+- 3327
+: 3336 4 0 You 
+: 3343 2 0 just 
+: 3347 10 0 need 
+: 3359 22 0 some
+- 3381
+: 3398 9 0 Some
+: 3409 7 0 one 
+: 3417 4 0 that’s 
+: 3422 12 0 calm 
+: 3435 4 0 and 
+: 3441 6 0 pa
+: 3448 10 0 tient
+- 3458
+: 3463 8 0 Sub
+: 3472 5 0 mis
+: 3479 6 0 sion, 
+: 3486 11 0 do
+: 3498 5 0 mi
+: 3504 6 0 na
+: 3512 7 0 tion
+- 3519
+: 3527 7 0 Arched 
+: 3535 5 0 back, 
+: 3542 5 0 deep 
+: 3548 8 0 stroke, 
+: 3558 6 0 white 
+: 3566 6 0 wine
+- 3572
+: 3574 6 0 Weed 
+: 3582 6 0 smoke, 
+: 3590 8 0 that’s 
+: 3599 5 0 my 
+: 3607 6 0 best 
+: 3614 9 0 com
+: 3625 4 0 bi
+: 3631 6 0 na
+: 3638 10 0 tion
+- 3648
+: 3655 5 0 You 
+: 3661 3 0 just 
+: 3665 6 0 need 
+: 3674 32 0 some, 
+: 3716 8 0 dick 
+: 3726 6 0 with 
+: 3734 4 0 no 
+: 3739 12 0 com
+: 3753 6 0 pli
+: 3760 8 0 ca
+: 3772 5 0 tions
+- 3777
+: 3784 5 0 You 
+: 3790 3 0 just 
+: 3795 7 0 need 
+: 3804 31 0 some, 
+: 3845 7 0 you 
+: 3853 2 0 just 
+: 3856 7 0 need 
+: 3864 24 0 some
+- 3888
+: 3908 7 0 Late 
+: 3917 11 0 night 
+: 3929 3 0 at
+: 3933 5 0 ten
+: 3939 13 0 tion, 
+: 3958 40 0 uncondition
+- 3998
+: 4004 10 0 All 
+: 4017 3 0 that 
+: 4021 5 0 you’re 
+: 4027 5 0 mis
+: 4033 5 0 sing 
+: 4039 14 0 my 
+: 4054 38 0 babe
+- 4092 4104
+- 4104
+: 4130 7 0 Fucked 
+: 4138 7 0 up, 
+: 4164 5 0 shouldn’t 
+: 4171 5 0 e
+: 4177 1 0 ven 
+: 4179 5 0 have 
+: 4185 4 0 to 
+: 4191 7 0 jus
+: 4199 5 0 ti
+: 4204 19 0 fy
+- 4223
+: 4227 5 0 I 
+: 4235 3 0 get 
+: 4239 2 0 it 
+: 4243 7 0 I’m 
+: 4251 4 0 on 
+: 4256 9 0 your 
+: 4266 20 0 side, 
+: 4291 7 0 guys 
+: 4300 6 0 get 
+: 4308 6 0 their 
+: 4315 6 0 way 
+: 4323 12 0 all 
+: 4337 9 0 the 
+: 4348 27 0 time
+- 4375
+: 4387 4 0 Be
+: 4392 21 0 sides, 
+: 4417 5 0 plea
+: 4423 1 0 sure 
+: 4426 6 0 not 
+: 4433 6 0 meant 
+: 4441 7 0 for 
+: 4449 8 0 one 
+: 4459 19 0 side
+- 4478
+: 4481 4 0 You 
+: 4486 1 0 should 
+: 4488 7 0 just 
+: 4497 4 0 do 
+: 4503 4 0 what’s 
+: 4508 6 0 best 
+: 4515 4 0 for 
+: 4520 4 0 your 
+: 4525 17 0 mind
+- 4542
+: 4546 7 0 How 
+: 4555 2 0 a
+: 4558 6 0 bout 
+: 4565 4 0 I 
+: 4571 6 0 just 
+: 4578 13 0 take 
+: 4594 7 0 my 
+: 4604 22 0 time?
+- 4626
+: 4640 3 0 You 
+: 4644 3 0 call 
+: 4647 8 0 up 
+: 4656 5 0 my 
+: 4663 23 0 line, 
+: 4700 3 0 I 
+: 4704 8 0 fall 
+: 4713 4 0 up 
+: 4719 10 0 in
+: 4730 17 0 side 
+: 4748 6 0 you
+- 4754
+: 4768 10 0 Girls 
+: 4781 6 0 need 
+: 4791 6 0 love 
+: 4800 13 0 too, 
+: 4814 5 0 I 
+: 4820 10 0 know
+- 4830
+: 4833 4 0 Girls 
+: 4842 7 0 need 
+: 4851 6 0 love 
+: 4860 12 0 too
+- 4872
+: 4881 5 0 Girls, 
+: 4892 10 0 girls 
+: 4905 6 0 need 
+: 4913 5 0 love 
+: 4923 12 0 too
+- 4935
+: 4952 10 0 Girls 
+: 4967 7 0 need 
+: 4977 6 0 love
+- 4983
+: 4985 2 0 Let 
+: 4988 1 0 me 
+: 4992 2 0 tell 
+: 4997 2 0 you 
+: 5002 5 0 some
+: 5010 9 0 thing
+- 5019
+: 5024 4 0 Girls 
+: 5031 7 0 need 
+: 5041 6 0 love
+- 5047
+: 5057 4 0 Girls 
+: 5063 5 0 need 
+: 5074 3 0 lo
+: 5082 4 0 ving 
+: 5088 7 0 too
+- 5095 5157
+- 5157
+: 5183 2 0 So 
+: 5187 5 0 what’s 
+: 5194 4 0 a 
+: 5199 6 0 girl 
+: 5208 5 0 to 
+: 5215 9 0 do 
+: 5228 4 0 when 
+: 5235 12 0 she 
+: 5253 6 0 needs 
+: 5263 7 0 lo
+: 5272 5 0 ving 
+: 5278 10 0 too
+E

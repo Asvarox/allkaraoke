@@ -1,6 +1,7 @@
 import posthog from 'posthog-js';
 
 import { SingSetup, Song, SongPreview } from '~/interfaces';
+import GameState from '~/modules/game-engine/game-state/game-state';
 import events from '~/modules/game-events/game-events';
 import OnlineClient from '~/modules/online/client/online-client';
 import PlayersManager from '~/modules/players/players-manager';
@@ -10,7 +11,7 @@ import { MobilePhoneModeSetting } from '~/routes/settings/settings-state';
 const trackSongData =
   (event: keyof typeof events) =>
   (
-    { artist, title, id, lastUpdate }: Song | SongPreview,
+    { artist, title, id, lastUpdate, video, instrumental }: Song | SongPreview,
     setup: SingSetup,
     scores: Array<{ name: string; score: number }> = [],
     progress?: number,
@@ -40,9 +41,13 @@ const trackSongData =
       title,
       mode: setup.mode,
       tolerance: setup.tolerance,
+      // The instrumental is a separate video, so its reports and lengths are told apart from the original's
+      instrumental: !!setup.instrumental,
+      videoId: setup.instrumental ? (instrumental?.video ?? video) : video,
       players: setup.players.length,
       tracks: setup.players.map((player) => player.track),
       progress: progress ?? null,
+      ...(event === 'songEnded' ? { videoDuration: GameState.getDuration() || null } : {}),
       singId: setup.id,
       sameScores,
       mobilePhoneMode: !!MobilePhoneModeSetting.get(),

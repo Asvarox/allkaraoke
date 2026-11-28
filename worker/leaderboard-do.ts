@@ -49,6 +49,7 @@ interface RecordRow {
   title: string;
   song_id: string;
   tolerance: number;
+  instrumental: number;
   created_at: number;
 }
 
@@ -67,6 +68,7 @@ const toBoardEntry = (row: RecordRow): BoardEntry => ({
   title: row.title,
   songId: row.song_id,
   tolerance: row.tolerance,
+  ...(row.instrumental ? { instrumental: true as const } : {}),
   createdAt: row.created_at,
 });
 
@@ -125,20 +127,27 @@ export class LeaderboardBoard extends DurableObject<LeaderboardDurableObjectEnv>
     // One row per difficulty, so a higher Easy run cannot replace the Medium row the global board shows.
     // Every existing row already satisfies the wider key, so swapping the index needs no data migration
     this.sql.exec(`DROP INDEX IF EXISTS records_dedupe;`);
-    this.sql.exec(
-      `CREATE UNIQUE INDEX IF NOT EXISTS records_dedupe_by_tolerance ON records (client_id, song_id, name_normalized, tolerance);`,
-    );
-    // Score before an admin correction, kept so a correction can be reverted
     const columns = this.sql.exec<{ name: string }>(`PRAGMA table_info(records)`).toArray();
+    // Score before an admin correction, kept so a correction can be reverted
     if (!columns.some(({ name }) => name === 'original_score')) {
       this.sql.exec(`ALTER TABLE records ADD COLUMN original_score INTEGER;`);
     }
+    // Runs sung to the instrumental video are ranked as a song of their own, so a player can hold one row of each.
+    // Existing rows are all originals (0), so the wider key needs no data migration either
+    if (!columns.some(({ name }) => name === 'instrumental')) {
+      this.sql.exec(`ALTER TABLE records ADD COLUMN instrumental INTEGER NOT NULL DEFAULT 0;`);
+    }
+    this.sql.exec(`DROP INDEX IF EXISTS records_dedupe_by_tolerance;`);
+    this.sql.exec(
+      `CREATE UNIQUE INDEX IF NOT EXISTS records_dedupe_by_version ON records (client_id, song_id, instrumental, name_normalized, tolerance);`,
+    );
     this.sql.exec(`CREATE INDEX IF NOT EXISTS records_score ON records (score DESC);`);
     this.sql.exec(`CREATE INDEX IF NOT EXISTS records_created_at ON records (created_at);`);
     // Covers all three per-song queries — the count, the rank, and the window — in the order they
     // read. Rows are never deleted now, so these run over a table that only grows.
+    this.sql.exec(`DROP INDEX IF EXISTS records_song_board;`);
     this.sql.exec(
-      `CREATE INDEX IF NOT EXISTS records_song_board ON records (song_id, tolerance, score DESC, created_at ASC);`,
+      `CREATE INDEX IF NOT EXISTS records_song_version_board ON records (song_id, instrumental, tolerance, score DESC, created_at ASC);`,
     );
     this.sql.exec(`
       CREATE TABLE IF NOT EXISTS notes (
@@ -149,7 +158,7 @@ export class LeaderboardBoard extends DurableObject<LeaderboardDurableObjectEnv>
   }
 
   /**
-   * Stores one submission, keeping the higher score for a repeated (client, song, name, difficulty), and
+   * Stores one submission, keeping the higher score for a repeated (client, song, version, name, difficulty), and
    * rebuilds the KV projection. Rate limiting is not handled here — it lives entirely in the
    * binding at the Worker edge.
    */
@@ -160,12 +169,15 @@ export class LeaderboardBoard extends DurableObject<LeaderboardDurableObjectEnv>
     if (!name || !nameNormalized || !submission.clientId || !submission.songId || !Number.isFinite(submission.score)) {
       return { accepted: false, reason: 'invalid' };
     }
+    const instrumental = submission.instrumental === true ? 1 : 0;
 
     const existing = this.sql
       .exec<{ id: string; score: number }>(
-        `SELECT id, score FROM records WHERE client_id = ? AND song_id = ? AND name_normalized = ? AND tolerance = ?`,
+        `SELECT id, score FROM records
+         WHERE client_id = ? AND song_id = ? AND instrumental = ? AND name_normalized = ? AND tolerance = ?`,
         submission.clientId,
         submission.songId,
+        instrumental,
         nameNormalized,
         submission.tolerance,
       )
@@ -201,12 +213,13 @@ export class LeaderboardBoard extends DurableObject<LeaderboardDurableObjectEnv>
       this.sql.exec(`DELETE FROM notes WHERE record_id = ?`, id);
     } else {
       this.sql.exec(
-        `INSERT INTO records (id, client_id, song_id, artist, title, song_last_update, name, name_normalized,
-           country, score, tolerance, mode, track_index, input_lag, notes_hash, created_at)
-         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+        `INSERT INTO records (id, client_id, song_id, instrumental, artist, title, song_last_update, name,
+           name_normalized, country, score, tolerance, mode, track_index, input_lag, notes_hash, created_at)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
         id,
         submission.clientId,
         submission.songId,
+        instrumental,
         submission.artist,
         submission.title,
         submission.songLastUpdate,
@@ -240,15 +253,16 @@ export class LeaderboardBoard extends DurableObject<LeaderboardDurableObjectEnv>
    * listing still shows everything, so the board is where "Medium or harder" has to hold.
    *
    * Rows are kept per difficulty, but the global board ranks a player once per song — their best run
-   * on Hard or Medium — so a song sung on both does not take two places.
+   * on Hard or Medium — so a song sung on both does not take two places. The instrumental counts as a
+   * song of its own, so it can take a second one.
    */
   projection(): BoardResponse {
     const rows = this.sql
       .exec<RecordRow>(
-        `SELECT id, name, country, score, artist, title, song_id, tolerance, created_at
+        `SELECT id, name, country, score, artist, title, song_id, tolerance, instrumental, created_at
          FROM (
            SELECT *, ROW_NUMBER() OVER (
-             PARTITION BY client_id, song_id, name_normalized ORDER BY score DESC, created_at ASC
+             PARTITION BY client_id, song_id, instrumental, name_normalized ORDER BY score DESC, created_at ASC
            ) AS song_rank
            FROM records WHERE created_at >= ? AND tolerance <= ?
          )
@@ -274,14 +288,17 @@ export class LeaderboardBoard extends DurableObject<LeaderboardDurableObjectEnv>
    * cutting it to a fortnight would empty it for every song nobody happened to sing lately.
    *
    * Difficulty is an exact match, not `<=`: a wider pitch window is a different game, so Medium
-   * rows would flatter a Hard singer and vice versa. The vocal track is deliberately ignored.
+   * rows would flatter a Hard singer and vice versa. The vocal track is deliberately ignored. The
+   * instrumental is a board of its own, as singing without the vocals to follow is a different game too.
    */
-  songBoard(songId: string, tolerance: number, score: number | null): SongBoardResponse {
+  songBoard(songId: string, tolerance: number, score: number | null, instrumental = false): SongBoardResponse {
+    const version = instrumental ? 1 : 0;
     const total =
       this.sql
         .exec<{ count: number }>(
-          `SELECT COUNT(*) AS count FROM records WHERE song_id = ? AND tolerance = ?`,
+          `SELECT COUNT(*) AS count FROM records WHERE song_id = ? AND instrumental = ? AND tolerance = ?`,
           songId,
+          version,
           tolerance,
         )
         .toArray()[0]?.count ?? 0;
@@ -295,8 +312,9 @@ export class LeaderboardBoard extends DurableObject<LeaderboardDurableObjectEnv>
         ? null
         : (this.sql
             .exec<{ count: number }>(
-              `SELECT COUNT(*) AS count FROM records WHERE song_id = ? AND tolerance = ? AND score >= ?`,
+              `SELECT COUNT(*) AS count FROM records WHERE song_id = ? AND instrumental = ? AND tolerance = ? AND score >= ?`,
               songId,
+              version,
               tolerance,
               score,
             )
@@ -315,10 +333,11 @@ export class LeaderboardBoard extends DurableObject<LeaderboardDurableObjectEnv>
 
     const rows = this.sql
       .exec<RecordRow>(
-        `SELECT id, name, country, score, artist, title, song_id, tolerance, created_at
-         FROM records WHERE song_id = ? AND tolerance = ?
+        `SELECT id, name, country, score, artist, title, song_id, tolerance, instrumental, created_at
+         FROM records WHERE song_id = ? AND instrumental = ? AND tolerance = ?
          ORDER BY score DESC, created_at ASC LIMIT ? OFFSET ?`,
         songId,
+        version,
         tolerance,
         limit,
         offset,
@@ -332,7 +351,7 @@ export class LeaderboardBoard extends DurableObject<LeaderboardDurableObjectEnv>
   listForAdmin(): AdminBoardEntry[] {
     return this.sql
       .exec<RecordRow & AdminRecordRow>(
-        `SELECT id, name, country, score, artist, title, song_id, tolerance, created_at, mode, track_index,
+        `SELECT id, name, country, score, artist, title, song_id, tolerance, instrumental, created_at, mode, track_index,
            song_last_update, original_score
          FROM records ORDER BY created_at DESC`,
       )
@@ -370,7 +389,7 @@ export class LeaderboardBoard extends DurableObject<LeaderboardDurableObjectEnv>
 
   /**
    * Moves every row of a dropped duplicate song onto the song it was merged into. A player with rows on
-   * both songs (same client, name and difficulty) keeps only their higher score. Idempotent.
+   * both songs (same client, version, name and difficulty) keeps only their higher score. Idempotent.
    */
   async mergeSongs(merges: SongMerge[]): Promise<{ moved: number; dropped: number }> {
     let moved = 0;
@@ -395,18 +414,24 @@ export class LeaderboardBoard extends DurableObject<LeaderboardDurableObjectEnv>
       const { to, artist, title } = target;
 
       const rows = this.sql
-        .exec<{ id: string; client_id: string; name_normalized: string; tolerance: number; score: number }>(
-          `SELECT id, client_id, name_normalized, tolerance, score FROM records WHERE song_id = ?`,
-          from,
-        )
+        .exec<{
+          id: string;
+          client_id: string;
+          instrumental: number;
+          name_normalized: string;
+          tolerance: number;
+          score: number;
+        }>(`SELECT id, client_id, instrumental, name_normalized, tolerance, score FROM records WHERE song_id = ?`, from)
         .toArray();
 
       for (const row of rows) {
         const existing = this.sql
           .exec<{ id: string; score: number }>(
-            `SELECT id, score FROM records WHERE client_id = ? AND song_id = ? AND name_normalized = ? AND tolerance = ?`,
+            `SELECT id, score FROM records
+             WHERE client_id = ? AND song_id = ? AND instrumental = ? AND name_normalized = ? AND tolerance = ?`,
             row.client_id,
             to,
+            row.instrumental,
             row.name_normalized,
             row.tolerance,
           )

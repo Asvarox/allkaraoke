@@ -1,5 +1,5 @@
 #ARTIST:Panic! at the Disco
-#TITLE:The Ballad Of Mona Lisa (Album Version)
+#TITLE:The Ballad Of Mona Lisa
 #CREATOR:FadingDream97
 #BPM:252
 #YEAR:2011

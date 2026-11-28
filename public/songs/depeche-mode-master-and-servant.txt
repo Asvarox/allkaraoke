@@ -1,0 +1,337 @@
+#ARTIST:Depeche Mode
+#TITLE:Master And Servant
+#CREATOR:Silverbeam
+#BPM:253,2
+#YEAR:1984
+#VIDEO:v=IsvfofcIE1Q
+#LANGUAGE:English
+#GAP:30092,890995260663
+#ALLKARAOKE_ID:depeche-mode-master-and-servant
+#ALLKARAOKE_SID:7869
+#ALLKARAOKE_LASTUPDATE:2026-11-25T06:23:54.893Z
+#ALLKARAOKE_ARTISTORIGIN:GB
+#ALLKARAOKE_REALBPM:104
+#ALLKARAOKE_SOURCEURL:https://youtu.be/IsvfofcIE1Q
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:230
+#MP3:Depeche Mode - Master And Servant.mp3
+: 17 2 10 There’s 
+: 21 2 10 a 
+: 25 2 8 new 
+: 29 7 10 game
+- 36
+: 37 2 -2 We 
+: 41 2 -2 like 
+: 45 2 -2 to 
+: 49 3 3 play 
+: 54 4 5 you 
+: 61 9 1 see
+- 70
+: 77 2 8 A 
+: 81 5 10 game 
+: 89 4 10 with 
+: 97 3 10 ad
+: 101 4 5 ded
+- 105
+: 109 3 5 Re
+* 113 3 8 a
+: 117 3 5 ~
+: 121 2 3 li
+: 125 10 5 ty
+- 135
+: 141 2 5 You 
+: 145 2 10 treat 
+: 149 3 10 me 
+: 153 2 10 like 
+: 157 2 8 a 
+: 161 6 10 dog
+- 167
+: 169 2 -2 Get 
+: 173 2 -2 me 
+: 177 3 3 down 
+: 181 3 3 on 
+: 185 2 5 my 
+* 189 8 6 knees
+- 197 200
+- 200
+: 217 5 10 We 
+: 225 3 8 call 
+: 229 5 10 it
+- 234
+: 241 4 3 Mas
+: 248 3 3 ter 
+: 253 2 5 and 
+: 257 3 1 ser
+: 261 4 3 vant
+- 265
+: 281 5 10 We 
+: 289 3 8 call 
+: 293 4 10 it
+- 297
+: 305 4 3 Mas
+: 312 3 3 ter 
+* 317 2 5 and 
+: 321 3 1 ser
+: 325 4 3 vant
+- 329 440
+- 440
+: 457 2 8 It’s 
+: 461 2 8 a 
+: 465 3 10 lot 
+: 469 3 10 li
+: 473 2 8 ~ke 
+: 477 9 10 life
+- 486
+: 493 2 -2 This 
+: 497 3 3 play 
+: 501 2 3 be
+: 505 3 5 tween 
+: 509 2 5 the 
+: 513 5 1 sheets
+- 518
+: 525 2 5 With 
+: 529 3 10 you 
+: 533 3 10 on 
+: 537 2 8 the 
+* 541 9 10 top
+- 550
+: 557 3 5 And 
+: 561 2 8 me 
+: 565 2 5 un
+: 569 2 3 der
+: 573 9 5 neath
+- 582
+: 589 2 5 For
+: 593 3 10 get 
+: 597 3 10 all 
+: 601 2 8 a
+: 605 8 10 bout
+- 613
+: 621 2 -2 E
+: 625 3 3 qua
+: 629 5 5 li
+* 637 10 6 ty
+- 647 648
+- 648
+: 665 4 10 Let’s 
+: 673 6 10 play
+- 679
+* 689 4 3 Mas
+: 696 3 3 ter 
+: 701 2 5 and 
+: 705 3 1 ser
+: 709 4 3 vant
+- 713
+: 729 4 10 Let’s 
+: 737 6 10 play
+- 743
+: 753 4 3 Mas
+: 760 3 3 ter 
+: 765 2 5 and 
+: 769 3 1 ser
+: 773 4 3 vant
+- 777 824
+- 824
+: 841 2 3 It’s 
+: 845 2 1 a 
+: 849 2 3 lot 
+: 853 3 3 li
+: 857 2 1 ~ke 
+* 861 8 3 life
+- 869
+: 877 2 1 And 
+: 881 4 3 that’s 
+: 889 2 3 what’s 
+: 893 2 5 ap
+: 897 3 1 pea
+: 901 3 0 ling
+- 904
+: 905 2 3 If 
+: 909 3 1 you
+: 913 2 3 ~ 
+: 917 4 3 des
+: 925 8 3 pise
+- 933
+: 941 2 1 That 
+: 945 3 3 throw
+: 949 2 3 aw
+: 953 5 5 ay 
+: 961 3 1 fee
+: 965 3 0 ling
+- 968
+: 969 2 -2 From 
+: 973 2 -4 dis
+: 977 3 -2 po
+: 981 2 -2 sa
+: 985 2 -2 ble 
+* 989 8 1 fun
+- 997 1020
+- 1020
+: 1037 2 1 Then 
+: 1041 2 0 this 
+: 1045 2 0 is 
+: 1049 2 0 the 
+: 1053 13 3 one
+- 1066 1224
+- 1224
+: 1241 3 10 Do
+: 1245 2 8 mi
+: 1249 4 10 na
+: 1256 3 -2 tion’s
+- 1259
+: 1261 2 -2 The 
+: 1265 3 3 name 
+: 1269 2 3 of 
+: 1273 2 5 the 
+: 1277 7 1 game
+- 1284
+: 1293 2 5 In 
+: 1297 3 10 bed 
+: 1301 2 10 or 
+: 1305 2 8 in 
+: 1309 9 10 life
+- 1318
+: 1325 2 5 They’re 
+: 1329 3 8 both 
+: 1333 2 5 just 
+: 1337 2 3 the 
+: 1341 7 5 same
+- 1348
+: 1349 2 5 Ex
+: 1353 2 5 cept 
+: 1357 2 5 in 
+: 1361 2 10 one 
+: 1365 2 10 you’re 
+: 1369 3 8 ful
+: 1373 6 10 filled
+- 1379
+: 1385 2 -2 At 
+: 1389 2 -2 the 
+: 1393 3 3 end 
+: 1397 2 3 of 
+: 1401 2 5 the 
+* 1405 10 6 day
+- 1415 1416
+- 1416
+: 1433 4 10 Let’s 
+: 1441 5 10 play
+- 1446
+: 1457 4 3 Mas
+: 1464 3 3 ter 
+: 1469 2 5 and 
+: 1473 3 1 ser
+: 1477 4 3 vant
+- 1481
+: 1497 4 10 Let’s 
+: 1505 5 10 play
+- 1510
+: 1521 4 3 Mas
+: 1528 3 3 ter 
+: 1533 2 5 and 
+: 1537 3 1 ser
+* 1541 4 3 vant
+- 1545 2208
+- 2208
+: 2225 3 0 Mas
+: 2232 3 0 ter 
+: 2237 2 0 and 
+: 2242 3 3 ser
+: 2247 3 0 vant
+- 2250 2360
+- 2360
+: 2377 2 5 It’s 
+: 2381 2 3 a 
+: 2385 3 5 lot 
+: 2389 3 5 li
+: 2393 2 3 ~ke 
+: 2397 8 5 life
+- 2405
+: 2413 2 3 And 
+: 2417 4 5 that’s 
+: 2425 2 5 what’s 
+: 2429 2 7 ap
+: 2433 3 3 pea
+: 2437 3 2 ling
+- 2440
+: 2441 2 0 If 
+: 2445 3 0 you
+: 2449 2 5 ~ 
+: 2453 3 5 des
+: 2461 8 5 pise
+- 2469
+: 2477 2 3 That 
+: 2481 3 5 throw
+: 2485 2 5 aw
+: 2489 4 7 ay 
+: 2497 3 3 fee
+: 2501 2 2 ling
+- 2503
+: 2505 2 0 From 
+: 2509 2 -2 dis
+: 2513 3 0 po
+: 2517 2 0 sa
+: 2521 2 0 ble 
+: 2525 10 3 fun
+- 2535 2556
+- 2556
+: 2573 2 3 Then 
+: 2577 2 2 this 
+: 2581 2 2 is 
+: 2585 2 2 the 
+* 2589 16 5 one
+- 2605 2760
+- 2760
+: 2777 4 7 Let’s 
+: 2785 6 0 play
+- 2791
+: 2801 4 7 Mas
+: 2808 3 5 ter 
+: 2813 2 3 and 
+: 2817 3 5 ser
+: 2821 4 7 vant
+- 2825
+* 2841 3 7 Come 
+: 2845 7 0 on
+- 2852
+: 2865 4 5 Mas
+: 2872 3 5 ter 
+: 2877 2 0 and 
+: 2881 3 3 ser
+: 2885 4 0 vant
+- 2889
+: 2905 4 7 Let’s 
+: 2913 5 0 play
+- 2918
+* 2929 4 7 Mas
+: 2936 3 5 ter 
+: 2941 2 3 and 
+: 2945 3 5 ser
+: 2949 4 7 vant
+- 2953
+: 2969 3 7 Come 
+: 2973 8 0 on
+- 2981
+: 2993 4 5 Mas
+: 3000 3 5 ter 
+: 3005 2 0 and 
+: 3009 3 3 ser
+: 3013 4 0 vant
+- 3017
+* 3033 4 7 Let’s 
+: 3041 6 0 play
+- 3047
+: 3057 4 7 Mas
+: 3064 3 5 ter 
+: 3069 2 3 and 
+: 3073 3 5 ser
+: 3077 4 7 vant
+- 3081
+: 3097 3 7 Come 
+* 3101 7 0 on
+- 3108
+: 3121 4 5 Mas
+: 3128 3 5 ter 
+: 3133 2 0 and 
+: 3137 3 3 ser
+: 3141 4 0 vant
+E

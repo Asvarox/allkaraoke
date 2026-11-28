@@ -21,7 +21,7 @@ interface Props {
 /**
  * The global board for the song just sung, sitting beside the local high scores.
  *
- * Split by difficulty and nothing else — the vocal track is deliberately not part of the split, so
+ * Split by difficulty and by original/instrumental video — the vocal track is deliberately not part of the split, so
  * both singers of a duet are ranked together. That split is also why Easy belongs here while it is
  * kept off the main menu's board: ranked only against other Easy runs of the same song, it is
  * comparing like with like.
@@ -35,7 +35,9 @@ function SongLeaderboardPanel({ song, singSetup, leaderboard, className, listCla
   const shouldFetch = hasLeaderboard;
 
   const { data, error, isLoading } = useSWR(
-    shouldFetch ? songBoardUrl({ songId: song.id, tolerance: singSetup.tolerance, score }) : null,
+    shouldFetch
+      ? songBoardUrl({ songId: song.id, tolerance: singSetup.tolerance, score, instrumental: singSetup.instrumental })
+      : null,
     fetchSongBoard,
     { revalidateOnFocus: false },
   );
@@ -56,13 +58,14 @@ function SongLeaderboardPanel({ song, singSetup, leaderboard, className, listCla
       title: song.title,
       songId: song.id,
       tolerance: singSetup.tolerance,
+      ...(singSetup.instrumental && { instrumental: true as const }),
       createdAt: Date.now(),
     };
 
     // Once it's being shared, a board that arrives late may already hold it; before, a row it ties
     // is an earlier submission, not this run
     return slotIntoBoard(data, player, { matchShared: hasSubmitted });
-  }, [data, name, country, score, song, singSetup.tolerance, hasSubmitted]);
+  }, [data, name, country, score, song, singSetup.tolerance, singSetup.instrumental, hasSubmitted]);
   const rows = slotted?.rows ?? [];
 
   // Away entirely for the dev-only debug widths above Easy — those are never stored, so the list

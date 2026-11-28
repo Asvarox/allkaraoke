@@ -2,6 +2,7 @@ import { readFileSync, readdirSync } from 'fs';
 
 import { BrowserContext, Page } from '@playwright/test';
 
+import { Song, SongInstrumental } from '../src/interfaces';
 import { BoardEntry } from '../src/modules/leaderboard/types';
 import { getSongPreview } from '../src/modules/songs/utils';
 import convertSongToTxt from '../src/modules/songs/utils/convert-song-to-txt';
@@ -26,6 +27,18 @@ export const mockSongs = async ({ page }: { page: Page; context: BrowserContext 
       route.fulfill({ status: 200, body: convertSongToTxt(song.song) }),
     );
   }
+};
+
+/** Gives one mocked song an instrumental video. Call after `mockSongs` - the later routes win */
+export const mockSongInstrumental = async (page: Page, songId: string, instrumental: SongInstrumental) => {
+  const withInstrumental = (song: Song) => (song.id === songId ? { ...song, instrumental } : song);
+  const index = songs.map(({ song }) => getSongPreview(withInstrumental(song)));
+  await page.route('/songs/index.json', (route) => route.fulfill({ status: 200, body: JSON.stringify(index) }));
+
+  const { song } = songs.find(({ song }) => song.id === songId)!;
+  await page.route(`/songs/${songId}.txt`, (route) =>
+    route.fulfill({ status: 200, body: convertSongToTxt(withInstrumental(song)) }),
+  );
 };
 
 export const initTestMode = async ({ context }: { page: Page; context: BrowserContext }) => {

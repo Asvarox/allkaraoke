@@ -1,0 +1,246 @@
+#ARTIST:Disney’s Fineasz i Ferb
+#TITLE:Fineasz i Ferb
+#CREATOR:mardzillo
+#BPM:374,92
+#YEAR:2011
+#VIDEO:v=7RfTWRc_M58
+#GENRE:Soundtrack
+#LANGUAGE:Polish
+#GAP:59,94878907500271
+#ALLKARAOKE_ID:disneys-fineasz-i-ferb-fineasz-i-ferb
+#ALLKARAOKE_SID:7603
+#ALLKARAOKE_LASTUPDATE:2026-11-16T04:08:37.777Z
+#ALLKARAOKE_VOLUME:70
+#ALLKARAOKE_DURATION:55
+#MP3:Disney’s Fineasz i Ferb - Fineasz i Ferb.mp3
+#COVER:Disney’s Fineasz i Ferb - Fineasz i Ferb [CO].jpg
+#BACKGROUND:Disney’s Fineasz i Ferb - Fineasz i Ferb [BG].jpg
+: 6 2 -7 Gdy 
+: 10 2 -7 za
+* 14 2 5 czy
+* 18 2 5 na 
+* 22 4 5 się 
+* 28 6 5 la
+: 36 6 2 to
+- 42
+: 44 2 2 A 
+: 50 2 3 z la
+: 54 2 3 tem 
+: 58 2 3 wa
+: 62 6 3 ka
+: 72 4 0 cje
+- 76
+: 80 2 0 I 
+: 84 2 0 cza
+: 88 2 0 su 
+: 92 2 0 wol
+: 96 6 0 ne
+: 104 6 -1 go 
+: 112 2 -3 jest 
+: 118 4 -1 ty
+* 126 8 2 le
+- 134
+: 144 2 -7 Znów 
+: 148 2 -7 po
+* 152 2 5 ja
+* 156 2 5 wia 
+* 160 2 5 się 
+* 166 4 5 prob
+: 174 6 2 lem
+- 180
+: 182 2 2 I 
+: 186 2 3 w mó
+: 190 2 3 zgu 
+: 194 2 3 wib
+: 198 4 3 rac
+: 206 6 0 je
+- 212
+: 214 2 0 Jak 
+: 218 2 -2 spę
+: 222 2 -2 dzić 
+: 226 2 -2 naj
+: 230 6 -2 le
+: 240 6 0 piej 
+: 248 2 -2 te 
+* 254 14 3 chwi
+* 270 16 -9 le
+- 286
+F 296 4 -9 NA 
+F 304 4 -7 PRZYK
+F 312 6 -5 ŁAD!
+- 318
+: 324 2 0 Zro
+: 328 2 0 bić 
+: 332 2 0 ra
+* 336 4 -9 kie
+: 342 3 0 tę
+- 345
+: 346 2 0 Czy 
+: 350 2 0 z mu
+: 354 2 -2 mią 
+: 358 2 0 się 
+* 362 6 3 po
+: 370 4 0 bić
+- 374
+: 378 2 0 Na 
+: 384 4 -2 szczyt 
+: 390 2 -2 wie
+: 394 2 -2 ży 
+: 398 2 -2 Eif
+: 402 2 -2 fla 
+: 406 2 -7 się 
+: 412 4 -2 wdra
+: 418 6 -2 pać
+- 424
+: 442 2 -2 I 
+: 446 2 -5 od
+: 450 2 -7 kryć 
+: 454 2 -5 to 
+: 458 6 -2 cze
+: 466 3 -2 go
+- 469
+: 470 2 -2 Choć 
+: 474 6 -5 nie 
+: 482 2 -7 ma 
+: 486 2 -5 to 
+: 490 6 -2 jest
+- 496
+: 506 4 -2 Szym
+: 512 4 -4 pan
+: 518 2 -4 sa 
+: 522 2 -4 szam
+: 526 2 -4 po
+: 530 2 -2 nem 
+: 534 4 -4 och
+: 540 4 0 la
+: 546 4 0 pać
+- 550 555
+- 555
+: 580 2 -2 Pły
+: 584 2 -5 wać 
+: 588 2 -2 poś
+: 592 2 -1 ród 
+* 596 8 1 fal
+- 604
+: 612 2 -2 Ro
+: 616 2 -2 bo
+: 620 2 -5 ty 
+: 624 2 -2 two
+: 628 2 -1 rzyć 
+* 632 2 1 też
+- 634
+: 636 2 1 Ge
+: 640 2 -1 niu
+: 644 6 -1 sza 
+: 652 4 -1 zna
+: 658 2 -1 leźć 
+: 662 8 1 też 
+: 672 9 -1 mózg
+- 681
+F 682 2 0 Jest 
+F 688 2 0 tu
+F 692 6 0 taj!
+- 698
+: 706 2 0 Za 
+: 710 2 0 pta
+: 714 2 0 kiem 
+: 718 2 0 Do
+: 722 2 1 do 
+: 726 2 3 gnać
+- 728
+: 734 4 0 Baz
+: 740 4 0 grać 
+: 746 2 0 na 
+: 750 2 0 ma
+: 754 2 1 pie 
+: 758 4 3 coś
+- 762
+* 766 2 4 Sios
+* 770 2 4 trze 
+* 774 4 4 wy
+* 780 4 4 myś
+* 786 2 4 lać 
+* 790 4 6 od 
+* 798 12 4 kóz
+- 810
+F 812 3 0 FI
+F 816 3 0 NE
+F 820 6 0 ASZ!
+- 826
+: 834 2 0 Sam 
+: 838 2 0 wi
+: 842 2 0 dzisz, 
+* 846 4 -9 że 
+: 854 2 0 zro
+: 858 2 0 bić 
+: 862 2 0 wie
+: 866 2 -2 le 
+: 870 2 0 się 
+: 874 4 3 da
+- 878
+: 882 2 0 Nim 
+: 886 2 0 bę
+: 890 2 0 dzie 
+: 894 6 1 się 
+: 902 6 1 do 
+: 910 2 1 szko
+: 914 8 3 ły 
+: 924 8 1 iść
+- 932
+F 934 2 0 Chodź 
+F 942 2 0 Pe
+F 946 6 0 pe!
+- 952
+* 962 2 0 Więc 
+* 966 2 0 z na
+* 970 2 0 mi 
+* 974 6 3 bądź
+- 980
+: 986 2 3 Fi
+* 990 2 6 ne
+* 994 2 6 asz 
+* 998 2 6 o
+* 1002 2 6 raz 
+: 1006 4 5 Ferb
+- 1010
+: 1016 4 0 To 
+: 1022 4 -2 wszyst
+: 1030 4 -2 ko 
+: 1038 2 3 zro
+: 1042 4 3 bią 
+* 1050 16 5 dziś
+- 1066
+: 1088 4 0 Więc 
+: 1094 2 0 z na
+: 1098 2 0 mi 
+: 1102 4 3 bądź
+- 1106
+* 1114 2 3 Fi
+* 1118 2 6 ne
+* 1122 2 6 asz 
+* 1126 2 6 o
+* 1130 2 6 raz 
+* 1134 4 5 Ferb
+- 1138
+: 1142 4 0 To 
+: 1148 4 -2 wszyst
+: 1156 6 -2 ko 
+* 1164 4 3 zro
+* 1170 6 0 bią 
+* 1180 14 -4 dziś
+- 1194
+F 1214 5 0 MA
+F 1220 6 0 ~
+F 1228 4 0 MO, 
+F 1242 2 0 FI
+F 1246 2 0 NE
+F 1250 2 0 ASZ 
+F 1254 2 0 I 
+F 1258 2 0 FERB 
+F 1268 2 0 ZNO
+F 1274 2 0 WU 
+F 1278 2 0 HA
+F 1282 2 0 ŁA
+F 1286 4 0 SU
+F 1292 2 0 JĄ!
+E

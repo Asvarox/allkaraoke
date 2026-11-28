@@ -1,0 +1,458 @@
+#ARTIST:Kleks, IGO, Kaśka Sochacka, Mrozu, Artur Rojek, Brodka, Ralph Kaminski, Bedoes & Sokół
+#TITLE:Całkiem Nowa Bajka
+#CREATOR:MylordWaliza
+#BPM:244
+#YEAR:2023
+#VIDEO:v=KsawAjwGJWw
+#GENRE:Pop
+#LANGUAGE:Polish
+#GAP:5116,393442622951
+#ALLKARAOKE_ID:kleks-igo-kaska-sochacka-mrozu-artur-rojek-brodka-ralph-kaminski-bedoes-sokol-calkiem-nowa-bajka
+#ALLKARAOKE_SID:7431
+#ALLKARAOKE_LASTUPDATE:2026-11-14T21:47:47.883Z
+#ALLKARAOKE_VOLUME:70
+#ALLKARAOKE_DURATION:222
+#MP3:Kleks, IGO, Kaśka Sochacka, Mrozu, Artur Rojek, Brodka, Ralph Kaminski, Bedoes & Sokół - Całkiem Nowa Bajka.mp3
+#COVER:Kleks, IGO, Kaśka Sochacka, Mrozu, Artur Rojek, Brodka, Ralph Kaminski, Bedoes & Sokół - Całkiem Nowa Bajka [CO].jpg
+#BACKGROUND:Kleks, IGO, Kaśka Sochacka, Mrozu, Artur Rojek, Brodka, Ralph Kaminski, Bedoes & Sokół - Całkiem Nowa Bajka [BG].jpg
+F 16 2 0 (Cze
+F 19 2 0 ka
+F 23 2 0 liś
+F 27 1 0 cie 
+F 30 2 0 na 
+F 34 2 0 to 
+F 39 2 0 czter
+F 43 2 0 dzieś
+F 47 2 0 ci 
+F 51 5 0 lat)
+- 56
+F 69 2 0 (Wi
+F 72 3 0 taj
+F 78 2 0 cie 
+F 99 3 0 w cał
+F 105 3 0 kiem 
+F 112 2 0 no
+F 117 4 0 wej 
+F 129 4 0 baj
+F 137 1 0 ce)
+- 138 456
+- 456
+: 472 2 2 Mó
+: 476 2 0 wi
+: 480 1 -2 li, 
+: 484 2 0 że 
+: 488 1 -2 nie 
+* 492 2 -5 kła
+* 496 1 -7 mie 
+: 500 1 -5 tu
+: 504 2 -5 taj 
+: 508 3 -2 nikt
+- 511
+: 520 2 -7 O
+: 524 1 -5 bie
+: 528 3 0 ca
+: 536 1 -2 li 
+: 540 2 -2 nam 
+: 548 1 -5 sny,
+- 549
+: 552 1 -7 Z wiel
+: 556 1 -5 kiej 
+* 560 3 0 pły
+* 568 1 -2 ty 
+: 572 3 -2 ma
+: 580 2 0 rze
+: 584 2 2 nia
+- 586
+: 600 2 2 Mó
+: 604 2 0 wi
+: 608 1 -2 li: 
+: 612 1 0 tak 
+: 616 1 -2 cza
+: 620 2 -5 sa
+: 624 1 -7 mi 
+: 628 1 -5 mu
+: 632 1 -5 si 
+: 636 3 -2 być
+- 639
+: 648 1 -7 Że
+: 652 1 -5 by 
+: 656 3 0 by
+: 664 2 2 ło 
+: 668 3 -2 jak 
+* 676 1 -5 jest,
+- 677
+: 680 2 -7 A 
+: 684 2 -5 jest 
+: 688 2 0 le
+: 696 2 0 piej 
+: 700 3 -2 gdy 
+: 708 2 0 nie 
+: 712 1 2 ma
+- 713
+: 716 1 -2 Wi
+: 720 3 3 taj
+: 728 1 2 cie 
+: 732 1 3 w na
+: 736 2 2 szej 
+* 740 2 3 baj
+* 744 1 -2 ce
+- 745
+: 748 2 -2 Gdzie 
+: 752 3 3 nig
+: 760 2 2 dy 
+: 764 2 3 nic 
+: 768 2 2 na 
+: 772 2 3 zaw
+: 776 1 5 sze
+- 777
+: 780 1 2 Do
+: 784 3 2 pó
+: 792 3 2 ki 
+: 800 4 2 czas, 
+: 812 1 -2 na
+: 816 4 2 dzie
+: 824 3 2 jo 
+: 832 5 2 trwaj
+- 837
+: 844 1 -2 Tu 
+: 848 3 3 wszyst
+: 856 2 2 ko 
+: 860 2 3 jest 
+: 864 2 2 moż
+: 868 2 3 li
+: 872 1 -2 we
+- 873
+: 876 2 -2 Zwie
+: 880 3 3 rzę
+: 888 1 2 ta 
+: 892 1 3 są 
+: 896 1 2 szczę
+: 900 2 3 śli
+: 904 1 5 we
+- 905
+: 908 1 2 Za
+: 912 3 2 trzy
+: 920 3 2 maj 
+: 928 5 2 świat 
+* 940 1 -2 pó
+* 944 2 -2 ki 
+: 948 2 2 jesz
+: 954 2 5 cze 
+: 960 3 2 trwa
+- 963
+: 973 3 -2 Niech 
+: 981 10 7 nikt 
+: 997 8 5 już 
+: 1013 8 3 nie 
+: 1029 8 -2 zna 
+: 1044 2 0 Gło
+: 1049 24 2 du...
+: 1074 10 0 u
+- 1084
+: 1100 3 -2 Niech 
+: 1108 10 7 nikt 
+: 1124 8 5 nie 
+: 1140 8 3 czu
+: 1156 6 -2 je 
+: 1172 2 0 chło
+: 1178 9 2 du
+- 1187
+: 1200 1 -2 Wi
+: 1204 2 2 taj
+: 1208 2 0 cie 
+: 1212 1 2 w na
+: 1216 2 0 szej 
+: 1220 3 2 baj
+: 1228 2 -5 ce
+- 1230 1312
+- 1312
+: 1328 1 -2 Wi
+: 1332 2 2 taj
+: 1336 2 0 cie 
+* 1340 1 2 w na
+* 1344 2 0 szej 
+: 1348 3 2 baj
+: 1356 2 -5 ce
+- 1358 1480
+- 1480
+: 1496 2 2 Choć 
+: 1500 2 0 na
+* 1504 1 -2 pi
+* 1508 2 0 sa
+: 1512 2 -2 li 
+: 1516 2 -5 dla 
+: 1520 1 -7 nas 
+: 1524 2 -5 do
+: 1528 1 -5 bry 
+: 1532 3 -2 plan
+- 1535
+: 1544 2 -7 I
+: 1548 2 -5 dzie 
+: 1552 3 0 wios
+: 1560 2 -2 na, 
+: 1564 1 -2 no 
+: 1568 3 -2 patrz,
+- 1571
+: 1576 2 -7 Nikt 
+: 1580 1 -5 nie 
+: 1584 3 0 skar
+: 1592 1 -2 ży 
+: 1596 3 -2 się 
+: 1604 2 0 ma
+: 1608 3 2 mie
+- 1611
+: 1624 2 2 Co 
+: 1628 2 0 je
+: 1632 1 -2 śli 
+: 1636 2 0 mo
+: 1640 1 -2 żesz 
+: 1644 2 -5 zmie
+: 1648 2 -7 nić 
+: 1652 2 -5 coś 
+: 1656 2 -5 ot 
+: 1660 3 -2 tak
+- 1663
+: 1672 2 -7 Kil
+: 1676 1 -5 ka 
+: 1680 3 0 serc, 
+: 1688 2 -2 je
+: 1692 4 -2 den 
+: 1700 1 -5 głos,
+- 1701
+* 1704 2 -7 By 
+* 1708 1 -5 od
+: 1712 3 0 ro
+* 1720 2 0 bić 
+: 1724 3 -2 za
+: 1732 2 0 da
+: 1736 1 2 nie
+- 1737
+: 1740 1 -2 Wi
+: 1744 3 3 taj
+: 1752 1 2 cie 
+: 1756 1 3 w na
+: 1760 2 2 szej 
+: 1764 2 3 baj
+: 1768 1 -2 ce
+- 1769
+: 1772 2 -2 Gdzie 
+: 1776 3 3 nig
+: 1784 2 2 dy 
+: 1788 2 3 nic 
+: 1792 2 2 na 
+* 1796 2 3 zaw
+* 1800 1 5 sze
+- 1801
+: 1804 1 2 Do
+: 1808 3 2 pó
+: 1816 3 2 ki 
+: 1824 3 2 czas, 
+: 1836 1 -2 na
+: 1840 4 2 dzie
+: 1848 3 2 jo 
+: 1856 3 2 trwaj
+- 1859
+: 1868 1 -2 Tu 
+: 1872 3 3 wszyst
+: 1880 2 2 ko 
+: 1884 2 3 jest 
+: 1888 2 2 moż
+: 1892 2 3 li
+: 1896 1 -2 we
+- 1897
+: 1900 2 -2 Zwie
+: 1904 3 3 rzę
+: 1912 1 2 ta 
+: 1916 1 3 są 
+* 1920 1 2 szczę
+: 1924 2 3 śli
+* 1928 1 5 we
+- 1929
+: 1932 1 2 Za
+: 1936 3 2 trzy
+: 1944 3 2 maj 
+: 1952 3 2 świat 
+: 1964 1 -2 pó
+: 1968 2 -2 ki 
+: 1972 2 2 jesz
+: 1978 2 5 cze 
+: 1984 3 2 trwa
+- 1987
+: 1997 3 -2 Niech 
+: 2005 8 7 nikt 
+: 2021 6 5 już 
+: 2037 6 3 nie 
+: 2053 6 -2 zna 
+: 2067 2 0 Gło
+* 2072 24 2 du...
+: 2097 10 0 u
+- 2107 2108
+- 2108
+: 2124 3 -2 Niech 
+: 2132 10 7 nikt 
+: 2148 8 5 nie 
+: 2164 8 3 czu
+: 2180 5 -2 je 
+: 2196 2 0 chło
+: 2202 14 2 du
+- 2216
+: 2224 1 -2 Wi
+: 2228 2 2 taj
+: 2232 2 0 cie 
+: 2236 1 2 w na
+: 2240 2 0 szej 
+: 2244 3 2 baj
+: 2252 2 -5 ce
+- 2254 2336
+- 2336
+: 2352 1 -2 Wi
+: 2356 2 2 taj
+: 2360 2 0 cie 
+: 2364 1 2 w na
+: 2368 2 0 szej 
+: 2372 3 2 baj
+: 2380 2 -5 ce
+- 2382 2500
+- 2500
+: 2516 2 -5 Wy
+: 2520 1 -3 o
+: 2524 2 -2 braź
+: 2528 1 0 ni 
+* 2532 3 2 toń,
+- 2535
+: 2540 2 2 W niej 
+: 2544 1 3 u
+: 2548 2 2 kry
+: 2552 1 0 ty 
+: 2556 4 -2 głos 
+: 2572 2 -2 zbudź 
+: 2576 1 2 ze 
+: 2580 12 -3 snu...
+* 2593 9 -5 u
+- 2602 2628
+- 2628
+: 2644 2 -5 Co
+: 2648 2 -3 raz 
+: 2652 2 -2 wię
+: 2656 2 0 cej 
+: 2660 3 2 w nas 
+* 2668 2 2 sił, 
+: 2672 1 3 by 
+: 2676 2 2 zbu
+* 2680 2 0 rzyć 
+: 2684 9 -2 mur
+- 2693
+: 2700 2 -2 To 
+: 2704 2 2 już 
+* 2708 6 -3 czas 
+: 2720 6 -5 na 
+: 2732 2 -2 no
+: 2736 2 2 wą 
+: 2740 6 -3 baj
+: 2752 6 -2 kę
+- 2758
+R 2773 1 0 Usły
+R 2775 1 0 sza
+R 2777 1 0 łem 
+R 2779 1 0 w ży
+R 2781 1 0 ciu 
+R 2783 1 0 ty
+R 2785 1 0 le 
+R 2787 1 0 ba
+R 2789 1 0 jek, 
+R 2791 1 0 i
+R 2793 1 0 le 
+R 2795 1 0 zna
+R 2797 1 0 łem 
+R 2799 1 0 lu
+R 2801 1 0 dzi
+- 2802
+R 2808 1 4 Je
+R 2810 1 4 śli 
+R 2812 1 4 o
+R 2814 1 4 po
+R 2816 1 4 wiem 
+R 2818 1 4 ci 
+R 2820 1 4 mo
+R 2822 1 4 ją, 
+R 2824 1 4 no 
+R 2826 1 4 to 
+R 2828 1 4 za
+R 2830 1 4 nie
+R 2832 1 4 mó
+R 2834 1 4 wisz
+- 2835
+R 2839 1 0 Wszę
+R 2841 1 0 dzie 
+R 2844 1 0 blo
+R 2846 1 0 ki, 
+R 2848 1 0 na 
+R 2850 1 0 nich 
+R 2852 1 0 smo
+R 2854 1 0 ki 
+R 2856 1 0 o
+R 2858 1 0 bok 
+R 2860 1 0 na
+R 2862 1 0 sze 
+R 2864 1 0 wrzu
+R 2866 1 0 ty
+- 2867
+R 2868 1 4 Wi
+R 2870 1 4 tam 
+R 2872 1 4 w mo
+R 2874 1 4 jej 
+R 2876 1 4 baj
+R 2878 1 4 ce, 
+R 2880 1 4 da
+R 2882 1 4 waj 
+R 2885 1 4 port
+R 2888 1 4 fel 
+R 2890 1 4 i 
+R 2892 1 4 bia
+R 2894 1 4 łe 
+R 2896 1 4 bu
+R 2899 1 4 ty
+- 2900
+R 2901 2 0 Po
+R 2904 3 0 patrz, 
+R 2916 1 0 bo 
+R 2918 1 0 masz 
+R 2922 1 0 ca
+R 2925 1 0 ły 
+R 2928 3 0 świat
+- 2931
+R 2936 1 4 By 
+R 2940 1 4 ko
+R 2944 2 4 chać, 
+R 2948 1 4 ba
+R 2950 1 4 wić 
+R 2954 1 4 się 
+R 2956 1 4 i 
+R 2960 3 4 spać
+- 2963
+R 2968 1 0 Ja 
+R 2971 2 0 la
+R 2975 2 0 tam, 
+R 2980 1 0 zmie
+R 2983 1 0 niam 
+R 2985 1 0 grę 
+R 2988 1 0 i 
+R 2990 1 0 tak
+- 2991
+: 2992 1 -2 Wi
+: 2996 2 2 taj
+: 3000 2 0 cie 
+: 3004 1 2 w na
+: 3008 2 0 szej 
+: 3012 3 2 baj
+: 3020 2 -5 ce
+- 3022 3104
+- 3104
+* 3120 1 -2 Wi
+* 3124 2 2 taj
+* 3128 2 0 cie 
+: 3132 1 2 w na
+: 3136 2 0 szej 
+: 3140 3 2 baj
+: 3148 2 -5 ce
+E

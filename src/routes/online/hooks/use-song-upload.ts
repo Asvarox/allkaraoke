@@ -9,11 +9,11 @@ export default function useSongUpload() {
   const [state, setState] = useState<'idle' | 'uploading' | 'error'>('idle');
   const [error, setError] = useState<string | null>(null);
 
-  const upload = async (song: SongPreview, tolerance: number, difficulty?: string) => {
+  const upload = async (song: SongPreview, tolerance: number, difficulty?: string, instrumental?: boolean) => {
     setState('uploading');
     setError(null);
     try {
-      const fullSong = await loadSongForUpload(song);
+      const fullSong = await loadSongForUpload(song, instrumental);
       await uploadSongToRoom(fullSong, tolerance, difficulty);
       setState('idle');
     } catch (uploadError) {

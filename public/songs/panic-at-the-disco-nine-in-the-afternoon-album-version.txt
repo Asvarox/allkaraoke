@@ -1,5 +1,5 @@
 #ARTIST:Panic! at the Disco
-#TITLE:Nine In The Afternoon (Album Version)
+#TITLE:Nine In The Afternoon
 #CREATOR:JoM
 #BPM:279,8
 #YEAR:2008

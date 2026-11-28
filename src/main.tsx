@@ -11,6 +11,7 @@ import createCache from '@emotion/cache';
 import { CacheProvider } from '@emotion/react';
 import { MotionConfig } from 'motion/react';
 import posthog from 'posthog-js';
+import { sampleByEvent } from 'posthog-js/lib/src/customizations';
 import { PostHogProvider } from 'posthog-js/react';
 import { lazy, StrictMode, Suspense } from 'react';
 import { createRoot } from 'react-dom/client';
@@ -21,28 +22,39 @@ import App from '~/app';
 import '~/index.css';
 import NoPrerender from '~/modules/elements/no-prerender';
 import { fixStoredMergedTrackScores } from '~/modules/songs/stats/merged-track-score-fix';
-import { normalizeSting } from '~/modules/songs/utils/get-song-id';
-import { type ExceptionListItem, hasIgnoredException } from '~/modules/utils/ignored-exceptions';
+import {
+  type ExceptionListItem,
+  hasIgnoredException,
+  hasSampledException,
+  SAMPLED_EXCEPTION_RATE,
+} from '~/modules/utils/ignored-exceptions';
 import isE2E from '~/modules/utils/is-e2-e';
 import isPreRendering from '~/modules/utils/is-pre-rendering';
-import { randomInt } from '~/modules/utils/random-value';
 import storage from '~/modules/utils/storage';
-import songStats from '~/routes/landing-page/song-stats.json';
 
 if (!isE2E() && import.meta.env.VITE_APP_POSTHOG_KEY) {
   posthog.init(import.meta.env.VITE_APP_POSTHOG_KEY, {
     // debug: true,
     api_host: import.meta.env.VITE_APP_POSTHOG_PROXY,
     ui_host: 'https://eu.posthog.com',
-    before_send: (event) => {
-      if (event?.event === '$exception') {
-        const exceptionList = (event.properties?.['$exception_list'] ?? []) as ExceptionListItem[];
-        if (hasIgnoredException(exceptionList)) {
-          return null;
+    before_send: [
+      (event) => {
+        if (event?.event === '$exception') {
+          const exceptionList = (event.properties?.['$exception_list'] ?? []) as ExceptionListItem[];
+          if (hasIgnoredException(exceptionList)) {
+            return null;
+          }
+          if (hasSampledException(exceptionList)) {
+            if (Math.random() >= SAMPLED_EXCEPTION_RATE) return null;
+            event.properties = { ...event.properties, $sample_rate: SAMPLED_EXCEPTION_RATE };
+          }
         }
-      }
-      return event;
-    },
+        return event;
+      },
+      // Keep 10% of web vitals events and half of the per-song ping events
+      sampleByEvent(['$web_vitals'], 0.1),
+      sampleByEvent(['onlineSongPing', 'remote_mic_song_ping'], 0.5),
+    ],
     loaded: (ph) => {
       let storedUser = storage.local.getItem('posthog-user-id');
       if (!storedUser) {
@@ -50,20 +62,6 @@ if (!isE2E() && import.meta.env.VITE_APP_POSTHOG_KEY) {
         storage.local.setItem('posthog-user-id', storedUser);
       }
       ph.identify(storedUser);
-      let storedName = storage.local.getItem('posthog-user-name');
-      if (!storedName) {
-        const words = [...new Set(songStats.artists.flatMap((artist) => normalizeSting(artist).split('-')))].filter(
-          (word) => word.length <= 10,
-        );
-
-        storedName = new Array(randomInt(3, 5))
-          .fill(0)
-          .map(() => words[randomInt(0, words.length - 1)])
-          .join('-');
-        storage.local.setItem('posthog-user-name', storedName);
-
-        ph.alias(storedName, storedUser);
-      }
     },
   });
   // posthog.featureFlags.override({ websockets_remote_mics: false });

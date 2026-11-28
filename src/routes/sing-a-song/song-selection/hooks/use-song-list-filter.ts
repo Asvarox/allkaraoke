@@ -5,6 +5,7 @@ import { SongPreview } from '~/interfaces';
 import isSongRecentlyUpdated from '~/modules/songs/utils/is-song-recently-updated';
 import clearString, { removeAccents } from '~/modules/utils/clear-string';
 import { ExcludedLanguagesSetting, useSettingValue } from '~/routes/settings/settings-state';
+import { setPlaylistInstrumentalDefault } from '~/routes/sing-a-song/song-selection/components/song-settings/use-play-instrumental';
 import { replaceSearchParam } from '~/routes/sing-a-song/song-selection/hooks/extended-preview-url';
 import { LANGUAGE_PLAYLIST_PREFIX, usePlaylists } from '~/routes/sing-a-song/song-selection/hooks/use-playlists';
 
@@ -25,6 +26,7 @@ export interface AppliedFilters {
   edition?: string;
   recentlyUpdated?: boolean | null;
   duet?: boolean | null;
+  instrumental?: boolean;
   specificSongs?: string[];
   additionalSongs?: string[];
 }
@@ -80,6 +82,8 @@ export const filteringFunctions: Record<keyof AppliedFilters, FilterFunc> = {
 
     return songList.filter((song) => (duet ? song.tracksCount > 1 : song.tracksCount === 1));
   },
+  instrumental: (songList, instrumental?: boolean) =>
+    instrumental ? songList.filter((song) => !!song.instrumental) : songList,
   yearBefore: (songList, yearBefore: number) => {
     if (!yearBefore) return songList;
 
@@ -164,6 +168,12 @@ export const useSongListFilter = (
   useEffect(() => {
     setFilters(emptyFilters);
   }, [selectedPlaylist]);
+
+  // Only while this playlist is selected; the player's own vocals choice still wins
+  useEffect(() => {
+    setPlaylistInstrumentalDefault(!!playlist?.preferInstrumental);
+  }, [playlist?.preferInstrumental]);
+  useEffect(() => () => setPlaylistInstrumentalDefault(false), []);
 
   const deferredFilters = useDeferredValue(filters);
 

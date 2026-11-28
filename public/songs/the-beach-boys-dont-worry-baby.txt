@@ -1,0 +1,261 @@
+#ARTIST:The Beach Boys
+#TITLE:Don’t Worry Baby
+#CREATOR:frinz
+#BPM:244,34000000000006
+#YEAR:1964
+#VIDEO:v=MRcLhqKyGCE
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:17552,164276401563
+#ALLKARAOKE_ID:the-beach-boys-dont-worry-baby
+#ALLKARAOKE_SID:7605
+#ALLKARAOKE_LASTUPDATE:2026-11-17T05:57:39.239Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:121
+#ALLKARAOKE_SOURCEURL:https://www.youtube.com/watch?v=MRcLhqKyGCE
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:171
+#MP3:The Beach Boys - Don’t Worry Baby.mp3
+: 16 6 0 Well 
+: 24 7 2 it’s 
+: 32 3 0 been 
+: 36 3 0 buil
+: 40 3 0 ding 
+: 44 2 0 up 
+: 48 3 0 in
+: 52 1 0 side 
+: 54 4 0 of 
+: 60 2 0 me 
+: 64 3 0 for 
+: 68 8 0 oh
+- 76
+: 80 7 5 I 
+: 88 6 5 don’t 
+: 96 3 4 know 
+* 100 5 4 ho
+* 106 1 5 ~
+* 108 3 4 ~w 
+: 112 18 2 long
+- 130
+: 144 6 0 I 
+: 152 6 2 don’t 
+: 160 3 0 know 
+: 164 8 0 why 
+: 174 1 0 but 
+: 176 2 0 I 
+: 180 4 0 keep 
+: 186 2 0 thin
+: 189 3 0 kin’
+- 192
+: 194 4 0 Some
+: 199 6 0 thing’s 
+: 208 14 5 bound 
+: 224 7 4 to 
+* 232 2 4 go
+* 236 3 2 ~ 
+: 240 20 2 wrong
+- 260
+: 268 6 0 But 
+: 276 6 7 she 
+: 284 7 5 looks 
+: 292 7 4 in 
+: 300 3 2 my 
+: 304 20 2 eyes
+- 324
+: 332 7 0 And 
+: 340 7 9 makes 
+: 348 7 7 me 
+* 356 7 6 re
+* 364 2 4 a
+* 368 7 4 lize
+- 375
+: 376 3 2 And 
+: 380 1 5 she
+: 382 5 6 ~
+: 388 5 4 ~ 
+: 394 36 2 says
+- 430
+: 436 3 6 Don’t 
+: 440 4 4 wor
+: 446 5 2 ry 
+: 452 7 1 ba
+: 460 22 2 by
+- 482
+: 488 3 1 Ev’
+: 492 3 2 ry
+: 496 7 4 thing 
+: 504 3 1 wi
+: 508 3 0 ~ll 
+: 512 7 1 turn 
+: 520 5 0 ou
+: 526 1 0 ~t 
+: 528 3 0 al
+: 532 26 0 right
+- 558
+: 560 3 6 Don’t 
+: 564 5 4 wor
+: 570 5 2 ry 
+: 576 7 1 ba
+: 584 32 2 by
+- 616 682
+- 682
+: 698 7 2 Guess 
+: 706 3 0 I 
+: 710 3 0 should 
+: 714 3 0 have 
+: 718 1 0 kept 
+: 720 4 0 my 
+: 725 3 0 mouth 
+: 729 3 0 shut 
+: 734 2 0 when 
+: 738 4 0 I 
+: 744 3 0 star
+: 748 3 0 ted
+- 751
+: 752 8 5 To 
+: 762 6 5 brag 
+: 770 2 4 a
+: 773 4 4 bout 
+: 778 9 2 my 
+: 788 16 2 car
+- 804
+: 818 6 0 But 
+: 826 6 2 I 
+: 834 3 0 can’t 
+: 838 8 0 back 
+: 848 4 0 down 
+: 854 4 0 now 
+: 860 2 0 be
+: 863 4 0 cause 
+: 868 4 0 I
+- 872
+: 878 7 5 Pushed 
+: 886 6 5 the 
+: 894 3 4 o
+: 898 7 4 ther 
+: 906 3 2 guys 
+: 910 5 2 too 
+: 916 12 2 far
+- 928
+: 944 6 0 She 
+: 952 7 7 makes 
+: 960 7 5 me 
+: 968 7 4 come 
+: 976 3 2 a
+: 980 20 2 live
+- 1000
+: 1010 7 0 And 
+: 1018 7 9 makes 
+: 1026 7 7 me 
+: 1034 7 6 wan
+: 1042 2 4 na 
+: 1046 6 4 cry
+- 1052
+: 1054 4 2 When 
+* 1060 5 6 she
+* 1066 3 4 ~’s 
+* 1070 36 2 there
+- 1106
+: 1112 3 6 Don’t 
+: 1116 4 4 wor
+: 1122 5 2 ry 
+: 1128 7 1 ba
+: 1136 22 2 by
+- 1158
+: 1170 3 1 Ev’
+: 1174 3 2 ry
+: 1178 7 4 thing 
+: 1186 3 1 will 
+: 1190 3 0 turn 
+: 1194 7 1 ou
+: 1202 5 0 ~
+: 1208 1 0 ~t 
+: 1210 3 0 al
+: 1214 26 0 right
+- 1240
+: 1242 3 6 Don’t 
+: 1246 5 4 wor
+: 1252 5 2 ry 
+: 1258 7 1 ba
+: 1266 32 2 by
+- 1298 1622
+- 1622
+: 1638 7 2 Told 
+: 1646 3 0 me 
+: 1650 2 0 ba
+: 1653 2 0 by 
+: 1656 3 0 when 
+: 1660 3 0 you 
+: 1664 5 0 race 
+: 1670 2 0 to
+: 1673 4 0 day
+- 1677
+: 1680 5 0 Just 
+: 1686 6 0 take 
+: 1694 8 5 a
+: 1704 6 5 long 
+: 1712 3 4 my 
+* 1716 7 5 love 
+* 1724 3 4 with 
+* 1728 18 2 you
+- 1746
+: 1760 6 0 And 
+: 1768 7 2 if 
+: 1776 3 0 you 
+: 1780 2 0 knew 
+: 1784 3 0 how 
+: 1788 1 0 much 
+: 1790 4 0 I 
+: 1796 1 0 loved 
+: 1798 4 0 you 
+: 1804 3 0 ba
+: 1808 4 0 by
+- 1812
+: 1816 7 0 No
+: 1824 7 5 thing 
+: 1832 7 5 could 
+: 1840 10 4 go 
+: 1852 3 2 wrong 
+: 1856 8 2 with 
+: 1865 11 2 you
+- 1876
+: 1884 6 0 Oh 
+: 1892 7 7 what 
+: 1900 7 5 she 
+: 1908 7 4 does 
+: 1916 3 2 to 
+: 1920 20 2 me
+- 1940
+: 1948 7 0 When 
+: 1956 7 9 she 
+: 1964 7 7 makes 
+: 1972 7 6 love 
+: 1980 2 4 to 
+: 1984 8 4 me 
+: 1994 3 2 and 
+* 1998 1 5 she
+* 2000 5 6 ~
+* 2006 5 4 ~’s 
+* 2012 36 2 there
+- 2048
+: 2052 3 6 Don’t 
+: 2056 4 4 wor
+: 2062 5 2 ry 
+: 2068 7 1 ba
+: 2076 22 2 by
+- 2098
+: 2110 3 1 Ev’
+: 2114 3 2 ry
+: 2118 7 4 thing 
+: 2126 3 1 will 
+: 2130 3 0 turn 
+: 2134 7 1 out 
+: 2142 9 0 al
+: 2152 26 0 right
+- 2178
+: 2182 5 6 Don’t 
+: 2188 5 4 wor
+: 2194 5 2 ry 
+: 2200 7 1 ba
+: 2208 24 2 by
+E

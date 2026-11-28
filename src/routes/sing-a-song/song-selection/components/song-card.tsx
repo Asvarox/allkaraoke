@@ -5,6 +5,7 @@ import { SongPreview } from '~/interfaces';
 import { Chip } from '~/modules/elements/akui/chip';
 import { Icon } from '~/modules/elements/akui/icon';
 import Box from '~/modules/elements/akui/primitives/box';
+import useInstrumentalsEnabled from '~/modules/songs/use-instrumentals-enabled';
 import SongFlag from '~/routes/sing-a-song/song-selection/components/song-card/song-flag';
 import { SongCardStatsIndicator } from '~/routes/sing-a-song/song-selection/components/song-card/top-container';
 import { cn } from '~/utils/cn';
@@ -79,15 +80,36 @@ function BadgeFlag({ className, ...props }: Omit<ComponentProps<typeof SongFlag>
 
 function BadgeDuet({ className, ...props }: ComponentProps<typeof Chip>) {
   const { song } = useSongCardContext();
+  const instrumentalsEnabled = useInstrumentalsEnabled();
   if (song.tracksCount <= 1) return null;
   return (
     <Chip
       variant="zinc"
+      title="Duet"
       data-test="multitrack-indicator"
       className={`[&_svg]:h-4 [&_svg]:w-4 ${className ?? ''}`}
       {...props}>
       <Icon icon="ic:round-people-alt" width="1rem" height="1rem" />
-      <span>Duet</span>
+      {/* Gives way to the Instrumental badge, which wouldn't fit next to it with its label */}
+      {!(instrumentalsEnabled && song.instrumental) && <span>Duet</span>}
+    </Chip>
+  );
+}
+
+function BadgeInstrumental({ className, ...props }: ComponentProps<typeof Chip>) {
+  const { song } = useSongCardContext();
+  const instrumentalsEnabled = useInstrumentalsEnabled();
+  if (!instrumentalsEnabled || !song.instrumental) return null;
+  return (
+    <Chip
+      variant="violet"
+      data-test="instrumental-indicator"
+      title="Instrumental version available"
+      aria-label="Instrumental version available"
+      className={`[&_svg]:h-4 [&_svg]:w-4 ${className ?? ''}`}
+      {...props}>
+      <Icon icon="ic:round-mic-off" width="1rem" height="1rem" />
+      <span>Instrumental</span>
     </Chip>
   );
 }
@@ -142,6 +164,7 @@ export const SongCard = Object.assign(SongCardRoot, {
   Badges: Object.assign(Badges, {
     Flag: BadgeFlag,
     Duet: BadgeDuet,
+    Instrumental: BadgeInstrumental,
     Stats: BadgeStats,
   }),
 });

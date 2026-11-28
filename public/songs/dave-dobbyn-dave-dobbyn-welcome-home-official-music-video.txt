@@ -1,5 +1,5 @@
 #ARTIST:Dave Dobbyn
-#TITLE:Dave Dobbyn - Welcome Home (Official Music Video)
+#TITLE:Dave Dobbyn - Welcome Home
 #BPM:346,13
 #YEAR:2005
 #VIDEO:v=Wlz2uEuxyyk

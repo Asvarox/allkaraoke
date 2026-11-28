@@ -83,6 +83,7 @@ export default function useLeaderboardPostGame({ song, singSetup }: Params) {
         inputLag: InputManager.getPlayerInputLag(topPlayer.number),
         name: trimmedName,
         country: submittedCountry,
+        ...(singSetup.instrumental && { instrumental: true }),
         notes: encodeNotesPayload(playerState?.getPlayerNotes() ?? []),
       });
     } finally {

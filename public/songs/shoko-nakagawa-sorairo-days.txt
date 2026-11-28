@@ -1,0 +1,201 @@
+#ARTIST:Shoko Nakagawa
+#TITLE:Sorairo Days
+#CREATOR:Dangereus
+#BPM:347,88
+#YEAR:2007
+#VIDEO:v=h6wPbJlFBUw
+#GENRE:Anime
+#LANGUAGE:Japanese
+#GAP:14538,278716798895
+#ALLKARAOKE_ID:shoko-nakagawa-sorairo-days
+#ALLKARAOKE_SID:8125
+#ALLKARAOKE_LASTUPDATE:2026-11-28T09:04:21.265Z
+#ALLKARAOKE_ARTISTORIGIN:JP
+#ALLKARAOKE_REALBPM:174
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:92
+#MP3:Shoko Nakagawa - Sorairo Days (TV).mp3
+#COVER:Shoko Nakagawa - Sorairo Days (TV).jpg
+: 23 10 6 Ki
+: 35 3 4 mi 
+: 39 10 4 wa 
+: 51 6 6 ki
+: 59 6 6 ko
+: 67 3 4 e
+: 71 9 4 ru
+- 80
+: 87 10 4 Bo
+: 99 3 2 ku 
+: 103 6 2 no 
+: 111 3 -3 ko
+: 115 6 1 no 
+* 123 3 2 ko
+* 127 6 4 e 
+: 135 9 2 ga
+- 144
+: 151 10 6 Ya
+: 163 3 4 mi 
+: 167 10 4 ni 
+: 179 6 6 mu
+: 187 6 6 na
+: 195 3 4 shi
+: 199 8 4 ku
+- 207
+: 211 3 2 Su
+: 215 6 4 i
+* 223 3 2 ko
+* 227 6 4 ma
+: 235 3 2 re
+: 239 32 6 ta
+- 271
+: 279 10 6 Mo
+: 291 3 4 shi
+: 295 10 4 mo 
+: 307 6 6 se
+: 315 6 6 ka
+: 323 3 4 i 
+: 327 9 4 ga
+- 336
+: 343 10 4 I
+: 355 3 2 mi 
+: 359 6 2 wo 
+: 367 3 -3 mo
+: 371 6 1 tsu 
+* 379 3 2 no 
+* 383 6 4 na
+: 391 9 2 ra
+- 400
+: 407 10 6 Ko
+: 419 3 4 n
+: 423 10 4 na 
+: 435 6 6 ki
+: 443 6 6 mo
+: 451 3 4 chi 
+: 455 8 4 wo
+- 463
+: 467 3 4 Mu
+: 471 10 4 da 
+: 483 6 4 de 
+: 491 3 3 wa 
+: 495 3 4 na
+: 499 12 6 i
+- 511
+: 519 6 2 A
+: 527 6 9 ko
+: 535 6 9 ga
+: 543 3 2 re 
+: 547 3 2 ni 
+: 551 6 2 o
+: 559 3 -1 shi
+: 563 6 2 tsu
+* 571 3 4 bu
+* 575 3 6 sa
+* 579 3 7 re
+: 583 8 6 te
+- 591
+: 595 3 9 A
+: 599 6 9 ki
+: 607 3 7 ra
+: 611 6 6 me
+: 619 6 7 te
+: 627 6 6 tan 
+: 635 16 4 da
+- 651
+* 659 3 9 Ha
+* 663 6 9 te
+: 671 3 2 shi
+: 675 3 2 na
+: 679 6 2 i 
+: 687 3 -1 so
+: 691 6 2 ra 
+: 699 3 4 no 
+: 703 3 6 i
+: 707 3 7 ro 
+: 711 3 6 mo
+- 714
+: 719 3 4 Shi
+: 723 3 2 ra
+: 727 10 6 na
+: 739 3 7 i 
+: 743 32 7 de
+- 775
+: 783 6 2 Ha
+* 791 6 9 shi
+* 799 3 7 ri
+: 803 6 6 da
+: 811 6 7 shi
+: 819 18 9 ta
+- 837
+: 843 3 7 O
+: 847 3 6 mo
+: 851 3 7 i 
+: 855 6 9 ga 
+: 863 3 6 i
+* 867 6 14 ma 
+* 875 6 13 de
+: 883 12 6 mo
+- 895
+: 903 6 6 Ko
+: 911 6 7 no 
+: 919 6 9 mu
+: 927 3 9 ne 
+: 931 6 9 wo 
+: 939 6 9 ta
+: 947 10 9 shi
+: 959 3 7 ka
+: 963 6 6 ni 
+: 971 6 4 ta
+: 979 14 4 tai
+: 995 6 4 te
+: 1003 3 2 ru 
+: 1007 3 4 ka
+: 1011 18 6 ra
+- 1029
+: 1039 6 2 Kyo
+* 1047 6 9 u 
+* 1055 3 7 no 
+: 1059 6 6 bo
+: 1067 6 7 ku 
+: 1075 16 9 ga
+- 1091
+: 1099 3 7 So
+: 1103 3 6 no 
+: 1107 3 7 sa
+: 1111 6 9 ki 
+: 1119 3 6 ni 
+* 1123 6 14 tsu
+* 1131 6 13 zu
+: 1139 12 6 ku
+- 1151
+: 1159 6 6 Bo
+: 1167 6 7 ku
+: 1175 6 9 ra 
+: 1183 3 9 na
+: 1187 6 9 ri 
+: 1195 6 9 no 
+: 1203 10 10 a
+: 1215 6 6 su 
+: 1223 6 13 wo 
+: 1231 6 14 ki
+: 1239 10 13 zui
+: 1251 6 13 te
+: 1259 6 11 yu
+: 1267 18 14 ku
+- 1285
+: 1295 6 7 Ko
+: 1303 6 6 ta
+: 1311 3 7 e 
+: 1315 6 9 wa 
+: 1323 6 2 so
+: 1331 18 2 u
+- 1349
+: 1359 6 7 It
+: 1367 6 6 su
+* 1375 3 7 mo 
+* 1379 6 9 ko
+: 1387 6 2 ko 
+: 1395 16 4 ni
+- 1411
+: 1415 14 4 A
+: 1431 56 6 ru
+E

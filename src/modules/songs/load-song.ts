@@ -3,10 +3,13 @@ import SongDao from '~/modules/songs/songs-service';
 import { getUnverifiedSongById } from '~/modules/songs/unverified-songs/api';
 import convertTxtToSong from '~/modules/songs/utils/convert-txt-to-song';
 import { processSong } from '~/modules/songs/utils/process-song/process-song';
+import toInstrumentalVersion from '~/modules/songs/utils/to-instrumental-version';
 
 export interface LoadSongOptions {
   sourceType?: Song['sourceType'];
   sharedSongId?: string;
+  /** Swap in the instrumental's video and timings before processing, so they're processed like the original */
+  instrumental?: boolean;
 }
 
 /**
@@ -22,11 +25,13 @@ export interface LoadSongOptions {
  * Resolves to `null` when the song isn't found; callers that can't continue without it throw.
  */
 export const loadSongById = async (songId: string, options?: LoadSongOptions): Promise<Song | null> => {
+  const prepare = (song: Song) => processSong(options?.instrumental ? toInstrumentalVersion(song) : song);
+
   if (options?.sourceType === 'unverified' && options.sharedSongId) {
     const unverifiedSong = await getUnverifiedSongById(options.sharedSongId);
     const parsedSong = convertTxtToSong(unverifiedSong.songTxt.replaceAll('\\n', '\n'));
 
-    return processSong({
+    return prepare({
       ...parsedSong,
       local: false,
       sourceType: 'unverified',
@@ -37,5 +42,5 @@ export const loadSongById = async (songId: string, options?: LoadSongOptions): P
   }
 
   const loadedSong = await SongDao.get(songId);
-  return loadedSong ? processSong(loadedSong) : null;
+  return loadedSong ? prepare(loadedSong) : null;
 };

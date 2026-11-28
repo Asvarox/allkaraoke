@@ -19,5 +19,5 @@ export default function OfflineVideoPlayer({
 }: Props & { ref?: React.Ref<VideoPlayerRef> }) {
   const offlineVideo = video === 'Vueyx9TBEqE' ? dummyLongVideo : dummyVideo;
 
-  return <DirectVideo ref={ref} video={offlineVideo} controls {...restProps} />;
+  return <DirectVideo ref={ref} video={offlineVideo} standsInFor={video} controls {...restProps} />;
 }

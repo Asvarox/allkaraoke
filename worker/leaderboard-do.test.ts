@@ -127,13 +127,73 @@ describe('LeaderboardBoard', () => {
     const board = getBoard();
 
     await runInDurableObject(board, (instance: LeaderboardBoard, state) => {
-      state.storage.sql.exec(`DROP INDEX records_dedupe_by_tolerance`);
+      state.storage.sql.exec(`DROP INDEX records_dedupe_by_version`);
       state.storage.sql.exec(`CREATE UNIQUE INDEX records_dedupe ON records (client_id, song_id, name_normalized)`);
       (instance as unknown as { createSchema: () => void }).createSchema();
     });
 
     await board.submit(generateSubmission({ tolerance: 2 }), notesBlob);
     expect(await board.submit(generateSubmission({ tolerance: 3 }), notesBlob)).toEqual({ accepted: true });
+  });
+
+  it('ranks the instrumental as a song of its own', async () => {
+    const board = getBoard();
+
+    await board.submit(generateSubmission({ score: 2_000_000 }), notesBlob);
+    // Lower than the original, but on another board, so it doesn't lose to it
+    expect(await board.submit(generateSubmission({ score: 1_500_000, instrumental: true }), notesBlob)).toEqual({
+      accepted: true,
+    });
+
+    expect((await board.projection()).entries).toEqual([
+      expect.not.objectContaining({ instrumental: expect.anything() }),
+      expect.objectContaining({ score: 1_500_000, instrumental: true }),
+    ]);
+    expect((await board.songBoard('song-1', 2, null)).entries).toEqual([expect.objectContaining({ score: 2_000_000 })]);
+    expect(await board.songBoard('song-1', 2, 1_000_000, true)).toEqual(
+      expect.objectContaining({ total: 1, position: 2, entries: [expect.objectContaining({ score: 1_500_000 })] }),
+    );
+  });
+
+  it('keeps the higher instrumental score per player', async () => {
+    const board = getBoard();
+
+    await board.submit(generateSubmission({ score: 1_500_000, instrumental: true }), notesBlob);
+    expect(await board.submit(generateSubmission({ score: 1_400_000, instrumental: true }), notesBlob)).toEqual({
+      accepted: false,
+      reason: 'lower-score',
+    });
+  });
+
+  it('adds the instrumental column to a board created before it', async () => {
+    const board = getBoard();
+
+    await runInDurableObject(board, (instance: LeaderboardBoard, state) => {
+      state.storage.sql.exec(`DROP INDEX records_dedupe_by_version`);
+      state.storage.sql.exec(`DROP INDEX records_song_version_board`);
+      state.storage.sql.exec(`ALTER TABLE records DROP COLUMN instrumental`);
+      state.storage.sql.exec(
+        `CREATE UNIQUE INDEX records_dedupe_by_tolerance ON records (client_id, song_id, name_normalized, tolerance)`,
+      );
+      (instance as unknown as { createSchema: () => void }).createSchema();
+    });
+
+    await board.submit(generateSubmission(), notesBlob);
+    expect(await board.submit(generateSubmission({ instrumental: true }), notesBlob)).toEqual({ accepted: true });
+  });
+
+  it('merges duplicate songs without mixing the original and instrumental rows', async () => {
+    const board = getBoard();
+
+    await board.submit(generateSubmission({ songId: 'old', score: 1_800_000 }), notesBlob);
+    await board.submit(generateSubmission({ songId: 'new', score: 1_200_000, instrumental: true }), notesBlob);
+
+    expect(await board.mergeSongs([{ from: 'old', to: 'new', artist: 'Artist', title: 'Title' }])).toEqual({
+      moved: 1,
+      dropped: 0,
+    });
+    expect((await board.songBoard('new', 2, null)).total).toBe(1);
+    expect((await board.songBoard('new', 2, null, true)).total).toBe(1);
   });
 
   it('treats names differing only by case or whitespace as the same row', async () => {

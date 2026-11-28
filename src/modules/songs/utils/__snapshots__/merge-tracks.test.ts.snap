@@ -262,84 +262,84 @@ exports[`mergeTracks > should properly merge tracks in heavy is the crown 1`] = 
 
 exports[`mergeTracks > should properly merge tracks in in the end 1`] = `
 "[0 - 32] It starts with 
-[32 - 61] One thing I don’t know why 
-[61 - 92] It doesn’t even matter how hard you try 
-[92 - 109] Keep that in mind 
-[109 - 123] I designed this rhyme 
-[123 - 141] To explain in due time 
-[141 - 164] All I know 
-[164 - 187] Time is a valuable thing 
-[187 - 220] Watch it fly by as the pendulum swings 
-[220 - 251] Watch it count down to the end of the day 
-[251 - 270] The clock ticks life away 
-[270 - 317] It’s so unreal 
-[317 - 348] Watch the time go right out the window 
-[348 - 381] Try’n to hold on, but didn’t even know 
-[381 - 401] Wasted it all just to 
-[401 - 420] Watch you go... 
-[420 - 443] I kept ev’rything inside 
-[443 - 477] And even though I tried, it all fell apart 
-[477 - 493] What it meant to me 
-[493 - 507] Will eventually be 
-[507 - 525] A memory of a time when 
-[525 - 553] I tried so hard 
-[553 - 594] And got so far 
-[594 - 618] But in the end 
-[618 - 651] It doesn’t even ma~tter 
-[651 - 680] I had to fall 
-[680 - 718] To lose it all 
-[718 - 744] But in the end 
-[744 - 764] It doesn’t even 
-[764 - 802] Matte~~~~~r 
-[802 - 830] One thing, I don’t know why 
-[830 - 860] It doesn’t even matter how hard you try, 
-[860 - 877] Keep that in mind 
-[877 - 909] I designed this rhyme, to remind myself how 
-[909 - 932] I tried so hard 
-[932 - 961] In spite of the way you were mocking me 
-[961 - 993] Acting like I was part of your property 
-[993 - 1004] Remembering 
-[1004 - 1025] All the times you fought with me 
-[1025 - 1037] I’m surprised 
-[1037 - 1070] It got so far 
-[1089 - 1122] You wouldn’t even recognize me anymore 
-[1122 - 1149] Not that you knew me back then 
-[1149 - 1169] But it all comes back to me 
-[1169 - 1188] In the end 
-[1188 - 1211] You kept ev’rything inside 
-[1211 - 1228] And even though I tried, 
-[1228 - 1246] It all fell apart 
-[1246 - 1261] What it meant to me 
-[1261 - 1273] Will eventually 
-[1273 - 1295] Be a memory of a time when 
-[1295 - 1321] I tried so hard 
-[1321 - 1360] And got so far 
-[1360 - 1384] But in the end 
-[1384 - 1419] It doesn’t even ma~tter 
-[1419 - 1449] I had to fall 
-[1449 - 1487] To lose it all 
-[1487 - 1513] But in the end 
-[1513 - 1533] It doesn’t even 
-[1533 - 1572] Matte~~~~~r 
-[1572 - 1642] I’ve put my trust in you~ 
-[1642 - 1704] Pushed as fa~r as I can go 
-[1704 - 1734] For all this 
-[1734 - 1772] There’s only one thing 
-[1772 - 1832] You should kno~~~w 
-[1832 - 1898] I’ve put my trust in you 
-[1898 - 1961] Pushed as fa~r as I can go 
-[1961 - 1990] For all this 
-[1990 - 2028] There’s only one thing 
-[2028 - 2088] You should kno~~~w 
-[2088 - 2122] I tried so hard 
-[2122 - 2161] And got so far. 
-[2161 - 2186] But in the end 
-[2186 - 2218] It doesn’t even ma~tter 
-[2218 - 2249] I had to fall 
-[2249 - 2286] To lose it all 
-[2286 - 2311] But in the end 
-[2311 - 2332] It doesn’t even 
-[2332 - 2375] Matte~~~~~r "
+[32 - 61] One thing I don’t know why
+[61 - 92] It doesn’t even matter how hard you try
+[92 - 109] Keep that in mind
+[109 - 123] I designed this rhyme
+[123 - 141] To explain in due time
+[141 - 164] All I know
+[164 - 187] Time is a valuable thing
+[187 - 220] Watch it fly by as the pendulum swings
+[220 - 251] Watch it count down to the end of the day
+[251 - 270] The clock ticks life away
+[270 - 317] It’s so unreal
+[317 - 348] Watch the time go right out the window
+[348 - 381] Try’n to hold on, but didn’t even know
+[381 - 401] Wasted it all just to
+[401 - 420] Watch you go...
+[420 - 443] I kept ev’rything inside
+[443 - 477] And even though I tried, it all fell apart
+[477 - 493] What it meant to me
+[493 - 507] Will eventually be
+[507 - 525] A memory of a time when
+[525 - 553] I tried so hard
+[553 - 594] And got so far
+[594 - 618] But in the end
+[618 - 651] It doesn’t even ma~tter
+[651 - 680] I had to fall
+[680 - 718] To lose it all
+[718 - 744] But in the end
+[744 - 764] It doesn’t even
+[764 - 802] Matte~~~~~r
+[802 - 830] One thing, I don’t know why
+[830 - 860] It doesn’t even matter how hard you try,
+[860 - 877] Keep that in mind
+[877 - 909] I designed this rhyme, to remind myself how
+[909 - 932] I tried so hard
+[932 - 961] In spite of the way you were mocking me
+[961 - 993] Acting like I was part of your property
+[993 - 1004] Remembering
+[1004 - 1025] All the times you fought with me
+[1025 - 1037] I’m surprised
+[1037 - 1070] It got so far
+[1089 - 1122] You wouldn’t even recognize me anymore
+[1122 - 1149] Not that you knew me back then
+[1149 - 1169] But it all comes back to me
+[1169 - 1188] In the end
+[1188 - 1211] You kept ev’rything inside
+[1211 - 1228] And even though I tried,
+[1228 - 1246] It all fell apart
+[1246 - 1261] What it meant to me
+[1261 - 1273] Will eventually
+[1273 - 1295] Be a memory of a time when
+[1295 - 1321] I tried so hard
+[1321 - 1360] And got so far
+[1360 - 1384] But in the end
+[1384 - 1419] It doesn’t even ma~tter
+[1419 - 1449] I had to fall
+[1449 - 1487] To lose it all
+[1487 - 1513] But in the end
+[1513 - 1533] It doesn’t even
+[1533 - 1572] Matte~~~~~r
+[1572 - 1642] I’ve put my trust in you~
+[1642 - 1704] Pushed as fa~r as I can go
+[1704 - 1734] For all this
+[1734 - 1772] There’s only one thing
+[1772 - 1832] You should kno~~~w
+[1832 - 1898] I’ve put my trust in you
+[1898 - 1961] Pushed as fa~r as I can go
+[1961 - 1990] For all this
+[1990 - 2028] There’s only one thing
+[2028 - 2088] You should kno~~~w
+[2088 - 2122] I tried so hard
+[2122 - 2161] And got so far.
+[2161 - 2186] But in the end
+[2186 - 2218] It doesn’t even ma~tter
+[2218 - 2249] I had to fall
+[2249 - 2286] To lose it all
+[2286 - 2311] But in the end
+[2311 - 2332] It doesn’t even
+[2332 - 2375] Matte~~~~~r"
 `;
 
 exports[`mergeTracks > should properly merge tracks in queens bohemian rhapsody 1`] = `

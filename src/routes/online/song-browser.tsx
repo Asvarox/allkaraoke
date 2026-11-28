@@ -9,6 +9,7 @@ import { OnlineSongSelectionContext, OnlineSongSelectionIntegration } from '~/mo
 import ChatPanel from '~/routes/online/lobby/chat-panel';
 import OnlineSongPlayersPanel, { OnlineSongVotesSummary } from '~/routes/online/lobby/song-players-panel';
 import SingASong from '~/routes/sing-a-song/sing-a-song';
+import { useInstrumentalPreference } from '~/routes/sing-a-song/song-selection/components/song-settings/use-play-instrumental';
 import { closeExtendedPreview } from '~/routes/sing-a-song/song-selection/hooks/extended-preview-url';
 
 /** Keeps the chat off the song settings' keyboard navigation, whose controls all mirror to a phone
@@ -18,7 +19,7 @@ const offKeyboardNav = (() => ({ focused: false })) as unknown as RegisterFunc;
 interface Props {
   /** The room's current pick, so re-opening the browser lands back on it. */
   preselectedSong: string | null;
-  onSongSelected: (song: SongPreview, tolerance: number, difficulty?: string) => void;
+  onSongSelected: (song: SongPreview, tolerance: number, difficulty?: string, instrumental?: boolean) => void;
 }
 
 /** The host's song browser as a screen of its own: the shared song list, wired to publish whatever
@@ -27,10 +28,15 @@ interface Props {
 function OnlineSongBrowser({ preselectedSong, onSongSelected }: Props) {
   // Share what the host hovers in the song browser (plus difficulty/mode) with the room
   const previewDraft = useRef<{ song?: SongPreview; difficulty?: string }>({});
+  // The host's vocals switch decides which video the room hears in the preview and later sings to
+  const [preferInstrumental] = useInstrumentalPreference();
+  const instrumentalDraft = useRef(preferInstrumental);
   const publisher = useMemo(() => {
     const send = throttle(() => {
       const { song, difficulty } = previewDraft.current;
-      OnlineClient.send.selection.setPreview(song ? toSongHoverPreview(song, difficulty) : null);
+      OnlineClient.send.selection.setPreview(
+        song ? toSongHoverPreview(song, difficulty, instrumentalDraft.current) : null,
+      );
     }, 300);
     return {
       onSongFocused: (song: SongPreview | undefined) => {
@@ -43,9 +49,17 @@ function OnlineSongBrowser({ preselectedSong, onSongSelected }: Props) {
         previewDraft.current = { song, difficulty };
         send();
       },
+      onInstrumentalChange: (instrumental: boolean) => {
+        instrumentalDraft.current = instrumental;
+        send();
+      },
       cancel: send.cancel,
     };
   }, []);
+
+  useEffect(() => {
+    if (instrumentalDraft.current !== preferInstrumental) publisher.onInstrumentalChange(preferInstrumental);
+  }, [preferInstrumental, publisher]);
 
   useEffect(
     () => () => {
@@ -72,7 +86,7 @@ function OnlineSongBrowser({ preselectedSong, onSongSelected }: Props) {
         onSongSelected={async (setup) => {
           // Pop the preview's history entry first, so closing the browser lands on the lobby
           await closeExtendedPreview();
-          onSongSelected(setup.song, setup.tolerance, previewDraft.current.difficulty);
+          onSongSelected(setup.song, setup.tolerance, previewDraft.current.difficulty, setup.instrumental);
         }}
         onSongFocused={publisher.onSongFocused}
         preselectedSong={preselectedSong}

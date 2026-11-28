@@ -5,6 +5,7 @@ import { ValuesType } from 'utility-types';
 import { v4 } from 'uuid';
 
 import { GAME_MODE, PlayerSetup, SingSetup, SongPreview } from '~/interfaces';
+import { Chip } from '~/modules/elements/akui/chip';
 import { Icon } from '~/modules/elements/akui/icon';
 import { ScrollableColumn } from '~/modules/elements/akui/scrollable-container';
 import { NavButton, NavRemoteControl, NavSwitcher } from '~/modules/elements/nav-controls';
@@ -22,6 +23,7 @@ import { nextIndex, nextValue } from '~/modules/utils/indexes';
 import SelectInputModal from '~/routes/select-input/select-input-modal';
 import { MicSetupPreferenceSetting, MobilePhoneModeSetting, useSettingValue } from '~/routes/settings/settings-state';
 import { difficultyNames } from '~/routes/sing-a-song/song-selection/components/song-settings/difficulty';
+import usePlayInstrumental from '~/routes/sing-a-song/song-selection/components/song-settings/use-play-instrumental';
 import { cn } from '~/utils/cn';
 
 interface Props {
@@ -57,6 +59,11 @@ export default function GameSettings({
   const [storedPreference] = useSettingValue(MicSetupPreferenceSetting);
   const [rememberedMode, setMode] = useSetGameMode(null);
   const online = useOnlineSongSelection();
+  const {
+    isAvailable: canPlayInstrumental,
+    playInstrumental: instrumental,
+    setPlayInstrumental,
+  } = usePlayInstrumental(songPreview);
   // Online play only supports Duel for now
   const mode = online
     ? GAME_MODE.DUEL
@@ -94,7 +101,14 @@ export default function GameSettings({
   const areInputsConfigured = !!storedPreference && storedPreference !== 'skip';
   const canPlay = areInputsConfigured || online !== null;
 
-  const handlePlay = () => onNextStep({ id: v4(), players: playerSetup, mode, tolerance: tolerance + 1 });
+  const handlePlay = () =>
+    onNextStep({
+      id: v4(),
+      players: playerSetup,
+      mode,
+      tolerance: tolerance + 1,
+      ...(instrumental && { instrumental }),
+    });
 
   const changeMode = () => setMode(nextValue(Object.values(GAME_MODE), mode));
   const changeTolerance = () => onToleranceChange(nextIndex(difficultyNames, tolerance, -1));
@@ -163,6 +177,21 @@ export default function GameSettings({
               data-test-value={gameModeNames[mode]}
               className={SWITCHER_CLASS}
               onClick={changeMode}
+            />
+          )}
+          {canPlayInstrumental && (
+            <NavSwitcher
+              name="vocals-setting"
+              label="Vocals"
+              value={instrumental ? 'Off' : 'On'}
+              data-test-value={instrumental ? 'instrumental' : 'original'}
+              className={SWITCHER_CLASS}
+              onClick={() => setPlayInstrumental(!instrumental)}
+              badge={
+                <Chip variant="green" className="self-center" data-test="vocals-setting-new">
+                  New
+                </Chip>
+              }
             />
           )}
           {multipleTracks &&

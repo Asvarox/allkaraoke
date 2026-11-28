@@ -1,8 +1,10 @@
 import posthog from 'posthog-js';
 
 import { GAME_MODE, Song } from '~/interfaces';
+import GameState from '~/modules/game-engine/game-state/game-state';
 import { PingStats } from '~/modules/network/rpc/ping-stats';
 import { OnlineRoomState } from '~/modules/online/protocol/types';
+import { isInstrumentalVersion } from '~/modules/songs/utils/to-instrumental-version';
 
 /** Non-reversible digest of the room code for event correlation — avoids sending the raw,
  * joinable room code to the analytics vendor while still letting events for the same room be
@@ -24,6 +26,9 @@ const songMeta = (roomState: OnlineRoomState, song: Song) => ({
   name: `${song.artist} - ${song.title}`,
   artist: song.artist,
   title: song.title,
+  // The room plays one version, chosen by the host; the instrumental is reported apart from the original
+  instrumental: isInstrumentalVersion(song),
+  videoId: song.video,
   mode: GAME_MODE.DUEL,
   tolerance: roomState.tolerance,
   players: roomState.participants.length,
@@ -31,9 +36,18 @@ const songMeta = (roomState: OnlineRoomState, song: Song) => ({
   playMode: 'online' as const,
 });
 
+// Joins songStarted with its songEnded, like local mode's singId; progress is recorded when the song ends
+let currentSing: { songId: string; singId: string; progress: number | null } | null = null;
+
 /** Host-only, fired once the room actually starts singing (not at song selection). */
 export const trackOnlineSongStarted = (roomState: OnlineRoomState, song: Song) => {
-  posthog.capture('songStarted', songMeta(roomState, song));
+  currentSing = { songId: song.id, singId: crypto.randomUUID(), progress: null };
+  posthog.capture('songStarted', { ...songMeta(roomState, song), singId: currentSing.singId });
+};
+
+/** Called by every singer when the song ends (naturally or by the host) - only the host's value is sent. */
+export const recordOnlineSongProgress = (songId: string, progress: number) => {
+  if (currentSing?.songId === songId) currentSing.progress = progress;
 };
 
 /** Host-only, fired once the room reaches the results screen. Scores come from the room's
@@ -42,8 +56,14 @@ export const trackOnlineSongEnded = (roomState: OnlineRoomState, song: Song) => 
   const scores = roomState.leaderboard.map((entry) => entry.score);
   const sameScores = scores.length > 1 && scores.every((score) => score === scores[0]);
 
+  const sing = currentSing?.songId === song.id ? currentSing : null;
+  currentSing = null;
+
   posthog.capture('songEnded', {
     ...songMeta(roomState, song),
+    singId: sing?.singId ?? null,
+    progress: sing?.progress ?? null,
+    videoDuration: GameState.getDuration() || null,
     sameScores,
     ...scores.reduce((curr, score, index) => ({ ...curr, [`score${index}`]: score }), {}),
   });

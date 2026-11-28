@@ -5,6 +5,7 @@ import { Song } from '~/interfaces';
 import {
   applyCommonSharedSongImportProcessing,
   applyEscEditionFromTitle,
+  normalizeLegacyMetadata,
   FALLBACK_VIDEO_DURATION_SECONDS,
   getLyricsEndTimeMs,
   lyricsFitWithinVideoDuration,
@@ -124,5 +125,43 @@ describe('unverifiedSongProcessing', () => {
 
     expect(song.title).toBe('Saja Boys - Your Idol');
     expect(song.id).toBe('demon-hunters-saja-boys-your-idol');
+  });
+
+  it.each([
+    'Song (Radio Mix)',
+    'Song (original mix)',
+    'Song [Movie Ver.]',
+    'Song (TV Size)',
+    'Song (TV)',
+    'Song (Lyrics)',
+    'Song [LYRICS VIDEO]',
+    'Song (Official Music Video)',
+    'Song (Lyrics) (TV)',
+  ])('removes the suffix from "%s"', (title) => {
+    const song = createSong();
+    song.title = title;
+
+    normalizeLegacyMetadata(song);
+
+    expect(song.title).toBe('Song');
+  });
+
+  it('keeps brackets that are part of the title', () => {
+    const song = createSong();
+    song.title = "(I Can't Get No) Satisfaction";
+
+    normalizeLegacyMetadata(song);
+
+    expect(song.title).toBe("(I Can't Get No) Satisfaction");
+  });
+
+  it('strips both ESC and other suffixes regardless of their order', () => {
+    const song = createSong();
+    song.title = 'Song (TV) (ESC 2025 Germany)';
+
+    applyCommonSharedSongImportProcessing(song);
+
+    expect(song.title).toBe('Song');
+    expect(song.edition).toBe('ESC 2025');
   });
 });

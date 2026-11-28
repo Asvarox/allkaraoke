@@ -3,7 +3,7 @@ import { expect, test } from '@playwright/test';
 import { ONLINE_MAX_CHAT_LENGTH } from '~/modules/online/protocol/consts';
 import { ONLINE_MAX_PLAYERS } from '~/modules/players/player-number';
 
-import { initTestMode, mockSongs } from './helpers';
+import { initTestMode, mockSongInstrumental, mockSongs } from './helpers';
 import initialise from './page-objects/initialise';
 import { createOnlineRoom } from './steps/create-online-room';
 import { fillOnlineRoom } from './steps/fill-online-room';
@@ -254,6 +254,45 @@ test('Online mode: full game flow', async ({ page, context, browser }) => {
   });
 
   await guestPage.context().close();
+});
+
+test('Online mode: the host picks the instrumental — the whole room sings to its video', async ({
+  page,
+  context,
+  browser,
+}) => {
+  test.slow();
+  const instrumentalVideo = 'roQ7tOnMWy8';
+  await mockSongInstrumental(page, song.ID, { video: instrumentalVideo, gap: 1500, videoGap: 2, volume: undefined });
+  const pages = initialise(page, context, browser);
+  const roomCode = await createOnlineRoom(page, context, browser, hostName);
+  const guestPage = await newPlayerPage(browser);
+  const guestPages = await joinOnlineRoom(guestPage, guestPage.context(), browser, roomCode, guestName);
+
+  await test.step('Turning the vocals off shows the room the instrumental', async () => {
+    await pages.onlineLobbyPage.goToSongSelection();
+    await pages.songLanguagesPage.ensureSongLanguageIsSelected(song.language);
+    await pages.songLanguagesPage.continueAndGoToSongList();
+    await pages.songListPage.openPreviewForSong(song.ID);
+    await pages.songPreviewPage.goNext();
+    await page.getByTestId('vocals-setting').click();
+    await expect(page.getByTestId('vocals-setting')).toHaveAttribute('data-test-value', 'instrumental');
+    await expect(guestPage.getByTestId('online-host-browsing-instrumental')).toBeVisible();
+  });
+
+  await test.step('The picked chart is the instrumental for everyone', async () => {
+    await page.getByTestId('play-song-button').click();
+    await expect(guestPage.getByTestId('online-host-browsing-instrumental')).toBeVisible({ timeout: 15_000 });
+    await pages.onlineLobbyPage.startSong();
+    await pages.onlineSingingPage.confirmReady();
+    await guestPages.onlineSingingPage.confirmReady();
+    await pages.onlineSingingPage.expectLeaderboardToBeVisible({ timeout: 15_000 });
+
+    for (const singerPage of [page, guestPage]) {
+      // E2E plays a stand-in file, tagged with the YouTube video it replaces
+      await expect(singerPage.locator(`video[data-video-id="${instrumentalVideo}"]`)).toHaveCount(1);
+    }
+  });
 });
 
 test('Online mode: the host ends the song from the pause menu', async ({ page, context, browser }) => {

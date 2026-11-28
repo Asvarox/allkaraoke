@@ -1,5 +1,5 @@
 #ARTIST:Hashimoto Ushio
-#TITLE:Rashiku Ikimasho (TV)
+#TITLE:Rashiku Ikimasho
 #CREATOR:Subkei
 #BPM:237,72
 #YEAR:1995

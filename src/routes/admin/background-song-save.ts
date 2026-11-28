@@ -1,10 +1,12 @@
 import { useSyncExternalStore } from 'react';
 
 import { Song } from '~/interfaces';
+import { parseSongVersionKey, SongVersion } from '~/modules/songs/song-version';
 import SongDao from '~/modules/songs/songs-service';
 import { shareSong } from '~/routes/edit/share-songs-modal';
 
-import { updateAdminUnverifiedSong } from './unverified-songs-admin-api';
+import { getAdminPassword } from './admin-password';
+import { deleteAdminSongQualityFlag, updateAdminUnverifiedSong } from './unverified-songs-admin-api';
 import { markAdminSongVerified } from './verified-songs-counter';
 
 export interface PendingAdminUnverifiedSongSave {
@@ -45,14 +47,29 @@ const publishSaves = () => {
   }
 };
 
-const storeSong = async (sharedSongId: string, song: Song) => {
+/** Which admin review entry a save resolves: an unverified song (by sharedSongId) or a reported library song. */
+export interface AdminReviewSaveTarget {
+  key: string;
+  sharedSongId?: string;
+  /** The reported video of a library song */
+  version?: SongVersion;
+}
+
+export const persistAdminReviewSong = async (target: AdminReviewSaveTarget, song: Song) => {
   await SongDao.storeAndPatchIndex(song);
-  await shareSong(song.id);
-  await updateAdminUnverifiedSong(sharedSongId, song);
-  markAdminSongVerified(sharedSongId);
+  await shareSong(song.id, { admin: true });
+  if (target.sharedSongId) {
+    await updateAdminUnverifiedSong(target.sharedSongId, song);
+  } else {
+    // The fix reaches the library with the nightly import, the next weekly run won't count older reports
+    // By the reported id, as an artist or title fix gives the saved song a new one
+    await deleteAdminSongQualityFlag(getAdminPassword(), parseSongVersionKey(target.key).songId, target.version);
+  }
+  markAdminSongVerified(target.key);
 };
 
-export const saveAdminUnverifiedSongInBackground = (sharedSongId: string, song: Song) => {
+export const saveAdminReviewSongInBackground = (target: AdminReviewSaveTarget, song: Song) => {
+  const sharedSongId = target.key;
   const label = `${song.artist} - ${song.title}`;
 
   pendingSaves.set(sharedSongId, { sharedSongId, label });
@@ -62,7 +79,7 @@ export const saveAdminUnverifiedSongInBackground = (sharedSongId: string, song: 
   // Saves of the same song must not overlap so the last edit wins in Cloudflare KV.
   const previousSave = saveChains.get(sharedSongId) ?? Promise.resolve();
   const currentSave: Promise<void> = previousSave
-    .then(() => storeSong(sharedSongId, song))
+    .then(() => persistAdminReviewSong(target, song))
     .catch((error: unknown) => {
       failedSaves.set(sharedSongId, {
         sharedSongId,

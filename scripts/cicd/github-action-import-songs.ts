@@ -53,6 +53,11 @@ type ImportedSongSummary = {
   const dateTo = new Date();
   dateTo.setDate(dateTo.getDate() - daysTo);
 
+  // events table is partitioned and sorted by `timestamp`, not `created_at`, so bound it to avoid
+  // a full-history scan. `timestamp` is capture time, so allow 7 days for events delivered late.
+  const timestampFrom = new Date(dateFrom.getTime() - 7 * 24 * 3600 * 1000);
+  const timestampTo = new Date(dateTo.getTime() + 24 * 3600 * 1000);
+
   const userIds = userId.split(',').map((s) => s.trim());
   const invalidUserId = userIds.find((id) => !/^[a-zA-Z0-9@._:-]+$/.test(id));
   if (invalidUserId) {
@@ -67,7 +72,9 @@ type ImportedSongSummary = {
         query: `
             select events.properties.song, events.properties.songId, events.created_at
             from events
-            where events.created_at > toDateTime('${dateFrom.toISOString()}')
+            where events.timestamp > toDateTime('${timestampFrom.toISOString()}')
+              and events.timestamp < toDateTime('${timestampTo.toISOString()}')
+              and events.created_at > toDateTime('${dateFrom.toISOString()}')
               and events.created_at < toDateTime('${dateTo.toISOString()}')
               and events.properties.$user_id IN(${userIds.map((id) => `'${id}'`).join(',')})
               and event IN ('share-song', 'unshare-song')
@@ -158,6 +165,24 @@ type ImportedSongSummary = {
             const errorMessage = error instanceof Error ? error.message : String(error);
             console.warn(`Could not fetch duration for ${song.id}: ${errorMessage}`);
             song.duration = song.duration ?? oldSong?.duration;
+          }
+        }
+
+        // The instrumental is a separate video with its own length
+        if (song.instrumental) {
+          try {
+            if (!durationProbeClient) {
+              durationProbeClient = await createYoutubeDurationProbeClient(8000);
+            }
+
+            song.instrumental.duration = await durationProbeClient.getDuration(song.instrumental.video);
+            console.log(`Fetched instrumental duration for ${song.id}: ${song.instrumental.duration}s`);
+          } catch (error) {
+            const errorMessage = error instanceof Error ? error.message : String(error);
+            console.warn(`Could not fetch instrumental duration for ${song.id}: ${errorMessage}`);
+            const sameVideo = oldSong?.instrumental?.video === song.instrumental.video;
+            song.instrumental.duration =
+              song.instrumental.duration ?? (sameVideo ? oldSong?.instrumental?.duration : undefined);
           }
         }
 

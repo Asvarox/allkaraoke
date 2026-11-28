@@ -1,0 +1,285 @@
+#ARTIST:Drafi Deutscher And His Magics
+#TITLE:Marmor, Stein und Eisen bricht
+#CREATOR:Caruso
+#BPM:222,9
+#YEAR:1965
+#PREVIEWSTART:56
+#VIDEO:v=LCSVR4ZfFoc
+#LANGUAGE:German
+#GAP:3740,578734858681
+#ALLKARAOKE_ID:drafi-deutscher-and-his-magics-marmor-stein-und-eisen-bricht
+#ALLKARAOKE_SID:7420
+#ALLKARAOKE_LASTUPDATE:2026-11-14T14:06:07.049Z
+#ALLKARAOKE_ARTISTORIGIN:DE
+#ALLKARAOKE_REALBPM:113
+#ALLKARAOKE_PREVIEWEND:90
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:160
+#MP3:Drafi Deutscher And His Magics - Marmor, Stein und Eisen bricht.mp3
+: 15 3 4 Wei
+: 19 5 4 ne 
+: 27 5 4 nicht, 
+: 35 3 3 wenn 
+: 39 5 4 der 
+* 47 3 8 Re
+: 52 4 4 gen 
+: 60 5 4 fällt
+- 65
+: 72 7 4 Dam 
+: 80 8 6 dam, 
+* 104 7 9 dam 
+: 112 8 8 dam
+- 120 129
+- 129
+: 144 4 4 Es 
+: 149 7 4 gibt 
+: 157 6 4 ei
+: 165 3 3 nen 
+: 169 6 4 der, 
+* 177 3 8 zu 
+: 182 5 4 dir 
+: 189 6 4 hält
+- 195
+: 201 6 4 Dam 
+: 209 7 6 dam, 
+* 233 6 9 dam 
+: 241 6 8 dam
+- 247 255
+- 255
+: 270 4 16 Mar
+: 275 5 16 mor, 
+: 283 11 16 Stein 
+: 295 7 16 und 
+: 303 3 15 Ei
+: 307 5 13 sen 
+: 314 7 13 bricht
+- 321
+: 334 3 15 A
+: 338 5 15 ber 
+: 345 7 15 un
+: 353 3 13 se
+: 357 4 15 re 
+: 364 3 16 Lie
+: 368 3 11 ~
+: 373 3 13 be 
+: 377 6 11 nicht
+- 383
+: 395 3 16 Al
+: 399 8 16 les, 
+: 411 3 16 al
+: 415 8 16 les 
+* 426 3 15 geht 
+: 430 6 13 vor
+: 439 8 13 bei
+- 447
+: 458 3 15 Doch 
+: 462 7 15 wir 
+: 473 2 13 sind 
+: 477 5 15 uns 
+: 485 12 16 treu
+- 497 537
+- 537
+: 552 4 4 Kann 
+: 557 7 4 ich 
+: 565 6 4 ein
+: 573 2 3 mal 
+: 577 4 4 nicht 
+* 584 3 8 bei 
+: 588 7 4 dir 
+: 596 5 4 sein
+- 601
+: 608 6 4 Dam 
+: 616 7 6 dam, 
+* 640 6 9 dam 
+: 648 7 8 dam
+- 655 664
+- 664
+: 679 3 4 Denk 
+: 684 5 4 da
+: 691 6 4 ran, 
+: 699 3 3 du 
+: 703 4 4 bist 
+* 710 4 8 nicht 
+: 715 6 4 al
+: 722 7 4 lein
+- 729
+: 734 6 4 Dam 
+: 742 7 6 dam, 
+* 765 6 9 dam 
+: 773 7 8 dam
+- 780 788
+- 788
+: 803 3 16 Mar
+: 808 5 16 mor, 
+: 816 10 16 Stein 
+: 827 5 16 und 
+: 835 4 15 Ei
+: 840 5 13 sen 
+: 847 6 13 bricht
+- 853
+: 867 2 15 A
+: 871 5 15 ber 
+: 878 6 15 un
+: 885 3 13 se
+: 889 4 15 re 
+: 896 3 16 Lie
+: 900 3 11 ~
+: 904 3 13 be 
+: 908 7 11 nicht
+- 915
+: 928 3 16 Al
+: 932 7 16 les, 
+: 943 3 16 al
+: 947 7 16 les 
+* 958 4 15 geht 
+: 963 5 13 vor
+: 970 8 13 bei
+- 978
+: 990 3 15 Doch 
+: 994 9 15 wir 
+: 1004 4 13 sind 
+: 1009 4 15 uns 
+: 1017 11 16 treu
+- 1028 1035
+- 1035
+: 1050 5 20 Mar
+: 1057 4 20 mor, 
+: 1065 7 20 Stein 
+: 1073 7 20 und 
+: 1084 7 18 Ei
+: 1092 3 16 sen 
+: 1096 3 13 bri
+: 1100 3 11 ~
+: 1104 5 9 ~cht
+- 1109
+: 1115 6 15 A
+: 1122 4 11 ber 
+: 1127 5 13 un
+: 1133 6 15 sere 
+: 1146 6 16 Lie
+: 1153 3 16 be 
+: 1157 3 13 ni
+: 1161 5 11 ~cht
+- 1166
+: 1175 4 20 Al
+: 1181 4 20 les, 
+: 1187 3 18 al
+: 1191 3 20 les, 
+: 1195 3 18 al
+: 1199 4 20 les 
+: 1207 6 18 geht 
+: 1214 3 16 vor
+: 1218 3 13 bei
+: 1222 3 11 ~
+: 1226 3 9 ~
+- 1229
+: 1233 3 15 Doch 
+: 1237 4 15 wi
+: 1242 5 11 ~r 
+: 1248 4 13 sind 
+: 1253 4 15 uns 
+: 1260 12 16 treu
+- 1272 1348
+- 1348
+: 1363 4 5 Nimm 
+: 1368 6 5 den 
+: 1375 7 5 gol
+: 1383 4 4 de
+: 1388 5 5 nen 
+* 1395 4 9 Ring 
+: 1400 7 5 von 
+: 1408 5 5 mir
+- 1413
+: 1420 6 5 Dam 
+: 1428 7 7 dam, 
+* 1452 6 10 dam 
+: 1460 7 9 dam
+- 1467 1477
+- 1477
+: 1492 3 5 Bist 
+: 1496 7 5 du 
+: 1504 6 5 trau
+: 1512 3 4 rig, 
+: 1517 4 5 dann 
+* 1524 4 9 sagt 
+: 1529 6 5 er 
+: 1537 5 5 dir:
+- 1542
+: 1549 6 5 Dam 
+: 1557 7 7 dam, 
+* 1580 7 10 dam 
+: 1589 7 9 dam
+- 1596 1603
+- 1603
+: 1618 3 17 Mar
+: 1622 5 17 mor, 
+: 1630 11 17 Stein 
+: 1642 5 17 und 
+: 1649 4 16 Ei
+: 1654 6 14 sen 
+: 1661 7 14 bricht
+- 1668
+: 1681 3 16 A
+: 1685 6 16 ber 
+: 1692 6 16 un
+: 1699 4 14 se
+: 1704 4 16 re 
+: 1711 3 17 Lie
+: 1715 3 12 ~
+: 1719 3 14 be 
+: 1723 7 12 nicht
+- 1730
+: 1741 3 17 Al
+: 1745 7 17 les, 
+: 1756 3 17 al
+: 1760 7 17 les 
+* 1771 4 16 geht 
+: 1776 5 14 vor
+: 1783 8 14 bei
+- 1791
+: 1803 3 16 Doch 
+: 1807 9 16 wir 
+: 1817 3 14 sind 
+: 1821 4 16 uns 
+: 1829 11 17 treu
+- 1840 1848
+- 1848
+: 1863 5 21 Mar
+: 1870 4 21 mor, 
+: 1877 8 21 Stein 
+: 1886 7 21 und 
+: 1897 6 19 Ei
+: 1904 3 17 sen 
+: 1908 3 14 bri
+: 1912 3 12 ~
+: 1916 5 10 ~cht
+- 1921
+: 1928 6 16 A
+: 1935 3 12 ber 
+: 1939 6 14 uns’
+: 1946 6 16 re, 
+: 1959 5 17 uns’
+: 1965 4 17 re 
+: 1970 3 14 Lie
+: 1974 3 12 be 
+: 1978 3 9 nicht.
+- 1981
+: 1988 4 21 Al
+: 1994 4 21 les, 
+: 2000 3 19 al
+: 2004 3 21 les, 
+: 2008 3 19 al
+: 2012 4 21 les 
+: 2020 6 19 geht 
+: 2027 3 17 vor
+: 2031 3 14 bei
+: 2035 3 12 ~
+: 2039 3 10 ~
+- 2042
+: 2046 3 16 Doch 
+: 2050 3 16 wi
+: 2054 5 12 ~r 
+: 2061 3 14 sind 
+: 2065 4 16 uns 
+: 2073 11 17 treu
+E

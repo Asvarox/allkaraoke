@@ -1,5 +1,5 @@
 #ARTIST:KanoeRana
-#TITLE:Tsuki to Hoshizora (TV Size)
+#TITLE:Tsuki to Hoshizora
 #CREATOR:Currymalker
 #BPM:390
 #YEAR:2020

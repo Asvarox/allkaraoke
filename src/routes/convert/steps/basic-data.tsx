@@ -7,7 +7,7 @@ import isNotesSection from '~/modules/songs/utils/is-notes-section';
 import { getSectionStartInMs } from '~/modules/songs/utils/notes-selectors';
 import isValidUltrastarTxtFormat from '~/modules/songs/utils/validate-ultrastar';
 import importUltrastarEsSong from '~/routes/convert/import-ultrastar-es-song';
-import { AuthorAndVidEntity } from '~/routes/convert/steps/author-and-video';
+import { ImportedAuthorAndVid } from '~/routes/convert/steps/author-and-video';
 import formatMs from '~/routes/convert/steps/sync-lyrics-to-video/helpers/format-ms';
 import { fixDiacritics } from '~/routes/convert/steps/utils/fix-diacritics';
 
@@ -20,7 +20,7 @@ export interface BasicDataEntity {
 
 interface Props {
   shouldAutoImport: boolean;
-  onAutoImport: (data: AuthorAndVidEntity) => void;
+  onAutoImport: (data: ImportedAuthorAndVid) => void;
   onChange: (data: BasicDataEntity) => void;
   data: BasicDataEntity;
   isTxtRequired: boolean;
