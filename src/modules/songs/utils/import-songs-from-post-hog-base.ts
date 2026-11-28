@@ -37,8 +37,8 @@ export const importSongsFromPostHogBase = async (
   from?: string,
 ) => {
   const createdAfter = from ?? AFTER_DATE;
-  // events is partitioned and sorted by `timestamp`, so bound it (with a day of slack) to avoid a full scan
-  const timestampFrom = new Date(new Date(createdAfter).getTime() - 24 * 3600 * 1000).toISOString();
+  // events is sorted by `timestamp` (capture time), so bound it to avoid a full scan; 7 days of slack for late delivery
+  const timestampFrom = new Date(new Date(createdAfter).getTime() - 7 * 24 * 3600 * 1000).toISOString();
   const sharedSongs = await mkRequest(`${API_URL}/api/projects/${PROJECT_ID}/query`, {
     method: 'post',
     headers: {

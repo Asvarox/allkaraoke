@@ -54,8 +54,8 @@ type ImportedSongSummary = {
   dateTo.setDate(dateTo.getDate() - daysTo);
 
   // events table is partitioned and sorted by `timestamp`, not `created_at`, so bound it to avoid
-  // a full-history scan. A day of slack covers client clock skew and late-ingested events.
-  const timestampFrom = new Date(dateFrom.getTime() - 24 * 3600 * 1000);
+  // a full-history scan. `timestamp` is capture time, so allow 7 days for events delivered late.
+  const timestampFrom = new Date(dateFrom.getTime() - 7 * 24 * 3600 * 1000);
   const timestampTo = new Date(dateTo.getTime() + 24 * 3600 * 1000);
 
   const userIds = userId.split(',').map((s) => s.trim());
