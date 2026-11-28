@@ -127,7 +127,7 @@
     "@types/use-persisted-state": "^0.3.5",
     "@vitejs/plugin-basic-ssl": "^2.3.0",
     "@vitejs/plugin-react": "^6.3.0",
-    "@vitest/browser-playwright": "5.1.0",
+    "@vitest/browser-playwright": "5.1.1",
     "@vitest/ui": "5.1.1",
     "@welldone-software/why-did-you-render": "^10.0.1",
     "babel-plugin-react-compiler": "^1.0.0",
@@ -161,7 +161,7 @@
     "vitest": "^5.1.1",
     "vitest-browser-react": "^2.3.0",
     "werift": "^0.24.4",
-    "wrangler": "4.134.0"
+    "wrangler": "4.168.0"
   },
   "homepage": "./",
   "dependenciesMeta": {
