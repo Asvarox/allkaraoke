@@ -1,0 +1,373 @@
+#ARTIST:The Midnight
+#TITLE:Sunset
+#CREATOR:mancer
+#BPM:398
+#YEAR:2014
+#VIDEO:v=dlW1w6gCWr8
+#GENRE:Pop
+#LANGUAGE:English
+#GAP:18747,412060301507
+#ALLKARAOKE_ID:the-midnight-sunset
+#ALLKARAOKE_SID:8090
+#ALLKARAOKE_LASTUPDATE:2026-11-28T09:04:17.372Z
+#ALLKARAOKE_ARTISTORIGIN:US
+#ALLKARAOKE_REALBPM:114
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:327
+#MP3:The Midnight - Sunset.mp3
+#COVER:The Midnight - Sunset [CO].jpg
+#BACKGROUND:The Midnight - Sunset [BG].jpg
+F 27 4 0 I 
+F 33 4 0 just 
+F 39 4 0 feel 
+F 45 4 0 like 
+F 62 4 0 I’ve 
+F 67 4 0 been 
+F 86 4 0 stuck 
+F 92 8 0 here 
+F 130 3 0 my 
+F 135 4 0 whole 
+F 141 9 0 life
+- 150 186
+- 186
+F 213 4 0 There 
+F 219 5 0 must 
+F 225 2 0 be 
+F 228 4 0 some
+F 233 4 0 thing 
+F 238 5 0 else 
+F 244 4 0 out 
+F 249 8 0 there, 
+F 276 4 0 wait
+F 281 4 0 ing, 
+F 298 3 0 you 
+F 302 4 0 know?
+- 306 329
+- 329
+F 356 3 0 Just 
+F 361 4 0 for 
+F 366 8 0 us
+- 374 432
+- 432
+F 459 4 0 We 
+F 464 3 0 could 
+F 468 3 0 run 
+F 472 3 0 a
+F 477 8 0 way
+- 485 516
+- 516
+F 543 4 0 Just 
+F 550 10 0 leave, 
+F 598 4 0 nev
+F 604 2 0 er 
+F 607 3 0 look 
+F 611 10 0 back
+- 621 707
+- 707
+F 734 2 0 I 
+F 737 3 0 don’t 
+F 741 1 0 e
+F 743 3 0 ven 
+F 747 6 0 care 
+F 755 4 0 where 
+F 760 2 0 we 
+F 763 8 0 go
+- 771 781
+- 781
+F 808 4 0 Just 
+F 814 5 0 far 
+F 821 1 0 a
+F 823 3 0 way 
+F 828 4 0 from 
+F 833 6 0 here
+- 839 866
+- 866
+F 893 2 0 I’ll 
+F 896 4 0 come 
+F 901 4 0 with 
+F 906 8 0 you
+- 914 1363
+- 1363
+: 1390 7 -2 Faked 
+: 1401 6 0 our 
+: 1411 10 0 deaths, 
+: 1449 4 -9 lit 
+: 1454 2 -4 a 
+: 1457 12 -3 match
+- 1469 1478
+- 1478
+: 1505 12 -5 Closed 
+: 1519 4 -5 the 
+: 1524 14 -5 door, 
+: 1561 4 -3 wait
+: 1566 2 -3 ed 
+: 1569 3 -3 for 
+: 1573 1 -12 the 
+: 1576 20 -7 flash
+- 1596
+: 1614 7 -3 Grey
+: 1622 8 0 hound 
+: 1633 6 0 Sta
+: 1641 16 -3 tion, 
+: 1668 4 -4 we 
+: 1673 8 -3 paid 
+: 1683 4 -5 in 
+: 1690 12 -5 cash
+- 1702
+: 1725 4 -5 Miss 
+: 1731 6 -3 La
+: 1739 9 -5 za
+: 1750 12 -5 rus, 
+: 1778 3 -10 we’re 
+: 1785 4 -3 com
+: 1790 6 -3 ing 
+: 1800 16 -7 back
+- 1816 1835
+- 1835
+: 1862 5 5 They 
+: 1869 8 4 say 
+: 1879 4 4 it’s 
+: 1886 7 4 dark
+: 1894 10 4 est 
+: 1906 2 2 be
+: 1910 8 2 fore 
+: 1920 4 2 the 
+: 1926 8 2 dawn
+: 1935 20 0 ~
+- 1955
+: 1973 8 5 We’ve 
+: 1983 2 5 been 
+: 1987 4 5 in 
+: 1993 6 5 this 
+: 2003 5 4 town
+: 2009 6 2 ~ 
+: 2018 4 2 for 
+: 2025 8 2 far 
+: 2035 6 2 too 
+: 2044 12 2 long
+: 2057 16 0 ~
+- 2073
+: 2086 5 5 They 
+: 2093 8 5 say 
+: 2103 4 5 it’s 
+: 2110 7 4 dark
+: 2118 10 4 est 
+: 2130 2 2 be
+: 2134 8 2 fore 
+: 2144 4 2 the 
+: 2150 8 2 dawn
+: 2159 19 0 ~
+- 2178
+: 2182 5 7 We’re 
+: 2189 8 9 mo
+: 2198 4 7 ving 
+: 2203 8 7 on, 
+: 2213 6 9 we’re 
+: 2221 6 7 mo
+: 2228 2 7 ving 
+: 2231 9 7 on, 
+: 2242 4 9 we’re 
+: 2248 6 7 mo
+: 2255 4 7 ving 
+* 2261 9 7 on
+* 2271 18 5 ~
+- 2289
+* 2306 6 5 Su
+* 2313 6 7 n
+* 2322 14 9 set, 
+* 2344 12 5 no 
+* 2359 20 7 re
+* 2380 17 9 gret
+- 2397
+: 2414 12 5 First 
+: 2427 14 7 chance, 
+: 2444 10 7 last 
+: 2456 14 7 dance, 
+: 2471 6 7 stuck 
+: 2479 6 7 in 
+: 2486 3 9 the 
+: 2492 6 7 mid
+: 2499 6 5 dle
+- 2505
+: 2508 5 5 E
+: 2514 10 5 ven 
+: 2527 18 7 bad 
+: 2547 16 9 girls 
+: 2569 12 5 know 
+* 2585 10 5 good
+* 2596 4 7 ~ 
+* 2601 10 9 love
+* 2612 11 7 ~
+- 2623
+: 2629 6 5 You 
+: 2637 14 7 taste 
+: 2653 8 7 so 
+: 2665 16 7 sweet 
+: 2683 8 5 it 
+: 2693 14 7 hurts 
+: 2711 4 9 a 
+: 2716 6 7 lit
+: 2723 20 5 tle
+- 2743 3156
+- 3156
+: 3183 4 -3 Make 
+: 3189 8 0 our 
+: 3199 16 0 home 
+: 3239 4 -5 whe
+: 3243 4 -3 re 
+: 3248 4 -5 we 
+: 3257 20 -5 stand
+- 3277
+: 3289 6 -5 One 
+: 3297 10 -5 suit
+: 3309 14 -5 case 
+: 3343 6 -5 and 
+: 3351 6 -5 half 
+: 3358 2 -7 a 
+: 3361 18 -7 plan
+- 3379
+: 3401 4 -3 Fol
+: 3406 4 -3 low 
+: 3413 2 0 the 
+: 3417 11 0 words
+: 3429 14 2 ~ 
+: 3455 4 -5 and 
+: 3460 6 -5 sing 
+: 3467 2 -5 a
+: 3470 20 -3 long
+- 3490
+: 3517 8 -3 Past 
+: 3526 3 -3 the 
+: 3531 9 -3 vo
+: 3540 4 -5 i
+: 3545 14 -5 ces 
+: 3573 4 -5 to 
+: 3578 2 -5 the 
+: 3585 26 -7 song
+- 3611 3623
+- 3623
+: 3650 5 5 They 
+: 3657 8 5 say 
+: 3667 4 5 it’s 
+: 3674 7 4 dark
+: 3682 10 4 est 
+: 3694 2 2 be
+: 3698 8 2 fore 
+: 3708 4 2 the 
+: 3714 8 2 dawn
+: 3723 20 0 ~
+- 3743
+: 3761 8 4 We’ve 
+: 3771 2 5 been 
+: 3775 4 5 in 
+: 3781 6 5 this 
+: 3791 5 4 town
+: 3797 6 2 ~ 
+: 3806 4 2 for 
+: 3813 8 2 far 
+: 3823 6 2 too 
+: 3832 12 2 long
+: 3845 16 0 ~
+- 3861
+: 3873 5 5 They 
+: 3880 8 4 say 
+: 3890 4 4 it’s 
+: 3897 7 4 dark
+: 3905 10 4 est 
+: 3917 2 2 be
+: 3921 8 2 fore 
+: 3931 4 2 the 
+: 3937 8 2 dawn
+: 3946 20 0 ~
+- 3966
+: 3970 5 7 We’re 
+: 3977 8 9 mo
+: 3986 4 7 ving 
+: 3991 8 7 on, 
+: 4001 6 9 we’re 
+: 4009 6 9 mo
+: 4016 2 7 ving 
+: 4019 8 7 on, 
+: 4029 4 9 we’re 
+: 4034 8 9 mo
+: 4043 4 7 ving 
+: 4049 9 7 on
+: 4059 18 5 ~
+- 4077
+: 4094 6 5 Su
+: 4102 6 7 n
+: 4111 14 9 set, 
+: 4133 12 5 no 
+: 4148 20 7 re
+: 4169 17 9 gret
+- 4186
+: 4202 12 5 First 
+: 4215 14 7 chance, 
+: 4232 10 7 last 
+: 4244 14 7 dance, 
+: 4259 6 7 stuck 
+: 4267 6 7 in 
+: 4274 3 9 the 
+: 4280 6 7 mid
+: 4287 6 5 dle
+- 4293
+: 4296 5 5 E
+: 4302 10 5 ven 
+: 4315 18 7 bad 
+: 4335 16 9 girls 
+: 4357 12 5 know 
+: 4373 9 5 good
+: 4383 5 7 ~ 
+: 4389 10 9 love
+: 4400 11 7 ~
+- 4411
+: 4417 6 5 You 
+: 4425 14 7 taste 
+: 4441 8 7 so 
+: 4453 14 7 sweet 
+: 4469 10 5 it 
+: 4481 14 7 hurts 
+* 4499 4 9 a 
+* 4504 6 7 lit
+* 4511 18 5 tle
+* 4531 10 2 ~
+- 4541 6300
+- 6300
+: 6327 8 5 Su
+: 6337 4 7 n
+: 6344 14 9 set, 
+: 6366 12 5 no 
+: 6381 20 7 re
+: 6402 17 9 gret
+- 6419
+: 6436 12 5 First 
+: 6449 14 7 chance, 
+: 6466 10 7 last 
+: 6478 14 7 dance, 
+: 6493 6 7 stuck 
+: 6501 6 7 in 
+: 6508 3 9 the 
+: 6514 6 7 mid
+: 6521 6 5 dle
+- 6527
+: 6530 5 5 E
+: 6536 10 5 ven 
+: 6549 18 7 bad 
+: 6569 16 9 girls 
+: 6591 12 5 know 
+: 6607 9 5 good
+: 6618 4 7 ~ 
+: 6623 10 9 love
+: 6634 11 7 ~
+- 6645
+: 6651 6 5 You 
+: 6659 14 7 taste 
+: 6675 8 7 so 
+: 6687 16 7 sweet 
+: 6704 9 5 it 
+: 6715 14 7 hurts 
+: 6733 4 9 a 
+: 6738 6 7 lit
+: 6745 18 5 tle
+: 6765 12 2 ~
+E

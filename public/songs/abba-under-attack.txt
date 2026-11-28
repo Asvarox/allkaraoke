@@ -1,0 +1,464 @@
+#ARTIST:ABBA
+#TITLE:Under Attack
+#CREATOR:Buberatz
+#BPM:115,75
+#YEAR:2014.
+#PREVIEWSTART:60
+#VIDEO:v=rAYB46Z_osM
+#GENRE:Unknown
+#LANGUAGE:English
+#GAP:17173,28293736501
+#ALLKARAOKE_ID:abba-under-attack
+#ALLKARAOKE_SID:8146
+#ALLKARAOKE_LASTUPDATE:2026-11-28T09:04:29.211Z
+#ALLKARAOKE_ARTISTORIGIN:SE
+#ALLKARAOKE_REALBPM:200
+#ALLKARAOKE_SOURCEURL:ABBA
+#ALLKARAOKE_VOLUME:1
+#ALLKARAOKE_DURATION:225
+#COVER: 
+#MP3: 
+#BACKGROUND: 
+#RELATIVE: No
+#USDB:445
+: 8 2 3 Don't 
+: 10 2 4 know 
+: 12 2 9 how 
+: 14 2 4 to 
+: 16 2 9 take 
+: 18 2 4 it
+- 20
+: 20 2 3 Don't 
+: 22 2 4 know 
+: 26 2 9 where 
+: 28 2 4 to 
+: 30 6 3 go
+- 36
+: 40 2 3 My 
+: 42 2 4 re
+: 44 2 9 sis
+: 46 2 4 tance 
+: 48 2 9 run
+: 50 2 4 ning 
+: 54 7 3 low
+- 61
+: 62 1 -1 And 
+: 64 2 1 ev
+: 66 2 3 ery 
+: 68 1 4 day 
+: 70 1 6 the 
+: 72 2 8 hold 
+: 74 1 4 is 
+: 76 2 9 get
+: 78 2 6 ting 
+: 80 2 11 tight
+: 84 5 9 er
+- 89
+: 90 2 8 And 
+: 92 1 6 it 
+: 94 3 6 trou
+: 98 1 8 bles 
+: 100 1 9 me 
+: 102 3 8 so
+- 105 113
+- 113
+: 121 2 3 I'm 
+: 123 1 4 no
+: 124 1 9 bo
+: 126 1 4 dy's 
+: 128 1 9 fool
+- 129
+: 130 1 4 And 
+: 132 1 3 yet 
+: 134 3 4 it's 
+: 138 1 9 clear 
+: 140 1 4 to 
+: 142 2 3 me
+- 144
+: 152 2 3 I 
+: 154 1 4 don't 
+: 156 2 9 have 
+: 158 1 4 a 
+: 160 2 9 strat
+: 162 2 4 e
+: 166 3 3 gy
+- 169
+: 174 2 -1 It's 
+: 176 1 1 just 
+: 178 2 3 like 
+: 180 2 4 tak
+: 182 1 6 ing 
+: 184 2 8 can
+: 186 1 4 dy
+- 187
+: 188 1 9 From 
+: 190 1 6 a 
+: 192 2 11 ba
+: 196 6 9 by 
+: 202 1 8 and 
+: 204 1 6 I 
+: 206 3 4 think 
+: 210 1 8 I 
+: 212 2 6 must 
+: 216 2 4 be
+- 218
+: 218 1 11 Un
+: 220 1 11 der 
+: 222 1 11 at
+: 224 5 11 tack 
+: 230 1 11 I'm 
+: 232 2 11 be
+: 234 3 13 ing 
+: 238 4 11 ta
+: 242 4 9 ken
+- 246
+: 250 1 8 A
+: 252 1 8 bout 
+: 254 1 8 to 
+: 256 4 8 crack 
+: 262 1 8 de
+: 264 2 8 fenc
+: 266 3 9 es 
+: 270 3 8 break
+: 274 3 6 ing
+- 277
+: 280 3 4 Won't 
+: 283 1 4 some
+: 284 1 4 bo
+: 286 3 6 dy 
+: 290 1 4 please 
+: 292 3 1 have 
+: 296 2 -1 a 
+: 298 2 8 he
+: 302 4 8 art
+- 306
+: 306 1 1 Come 
+: 308 1 3 and 
+: 310 4 4 res
+: 314 2 3 cue 
+: 316 1 1 me 
+: 318 3 1 now
+- 321
+: 322 1 6 Cause 
+: 324 2 8 I'm 
+: 326 4 9 fall
+: 330 2 8 ing 
+: 332 1 6 a
+: 334 9 6 part
+- 343
+: 346 1 11 Un
+: 348 1 11 der 
+: 350 1 11 at
+: 352 5 11 tack 
+: 358 1 11 I'm 
+: 360 2 11 tak
+: 362 3 13 ing 
+: 366 4 11 co
+: 370 1 9 ve
+: 371 3 9 e
+: 374 3 8 er
+- 377
+: 378 1 8 He's 
+: 380 1 8 on 
+: 382 1 8 my 
+: 384 5 8 track
+- 389
+: 390 1 8 My 
+: 392 2 8 chas
+: 394 3 9 ing 
+: 398 3 8 lo
+: 402 1 6 ve
+: 404 2 6 e
+: 406 3 4 er
+- 409
+: 410 1 4 Think
+: 412 1 4 ing 
+: 414 2 6 noth
+: 418 2 4 ing 
+: 420 3 1 can 
+: 424 2 -1 stop 
+: 426 3 8 him 
+: 430 3 8 now
+- 433
+: 434 1 1 Should 
+: 436 2 3 I 
+: 438 3 4 want 
+: 442 2 3 to 
+: 444 1 1 I'm 
+: 446 3 1 not 
+: 450 1 3 sure
+- 451
+: 452 2 1 I 
+: 456 2 -1 would 
+: 458 2 8 know 
+: 462 20 8 how
+- 482
+: 486 1 4 This 
+: 488 2 3 is 
+: 490 2 4 get
+: 492 2 9 ting 
+: 494 2 4 cra
+: 496 2 9 zy
+- 498
+: 498 2 4 I 
+: 500 2 3 should 
+: 502 2 4 tell 
+: 506 2 9 him 
+: 508 2 4 so
+: 510 6 3 oo
+- 516
+: 520 2 3 Real
+: 522 2 4 ly 
+: 524 2 9 let 
+: 526 2 4 my 
+: 528 2 9 ang
+: 530 2 4 er 
+: 534 7 3 show
+- 541
+: 542 1 -1 Per
+: 544 2 1 suade 
+: 546 2 3 him 
+: 548 1 4 that 
+: 550 1 6 the 
+: 552 2 8 an
+: 554 1 4 swer
+- 555
+: 556 2 9 To 
+: 558 2 6 his 
+: 560 2 11 ques
+: 564 5 9 tions 
+: 570 2 8 is 
+: 572 1 6 a 
+: 574 3 6 def
+: 578 1 8 i
+: 580 1 9 nite 
+: 582 3 8 no
+- 585 593
+- 593
+: 601 2 3 Guess 
+: 603 1 4 I'm 
+: 604 1 9 kind 
+: 606 1 4 of 
+: 608 1 9 flat
+: 610 1 4 tered
+- 611
+: 612 1 3 But 
+: 614 3 4 I'm 
+: 618 1 9 scared 
+: 620 1 4 as 
+: 622 2 3 well
+- 624
+: 632 2 3 Some
+: 634 1 4 thing 
+: 636 2 9 like 
+: 638 1 4 a 
+: 640 2 9 mag
+: 642 2 4 ic 
+: 646 3 3 spell
+- 649
+: 654 2 -1 I 
+: 656 1 1 hard
+: 658 2 3 ly 
+: 660 2 4 dare 
+: 662 1 6 to 
+: 664 2 8 think
+- 666
+: 666 1 4 Of 
+: 668 1 9 what 
+: 670 1 6 could 
+: 672 2 11 hap
+: 676 5 9 pen
+- 681
+: 682 1 8 Where 
+: 684 1 6 I'd 
+: 686 3 4 be 
+: 690 1 8 if 
+: 692 2 6 I 
+: 696 2 4 fell
+- 698
+: 698 1 11 Un
+: 700 1 11 der 
+: 702 1 11 at
+: 704 5 11 tack 
+: 710 1 11 I'm 
+: 712 2 11 be
+: 714 3 13 ing 
+: 718 4 11 ta
+: 722 4 9 ken
+- 726
+: 730 1 8 A
+: 732 1 8 bout 
+: 734 1 8 to 
+: 736 4 8 crack 
+: 742 1 8 de
+: 744 2 8 fenc
+: 746 3 9 es 
+: 750 3 8 break
+: 754 3 6 ing
+- 757
+: 760 3 4 Won't 
+: 763 1 4 some
+: 764 1 4 bo
+: 766 3 6 dy 
+: 770 1 4 please 
+: 772 3 1 have 
+: 776 2 -1 a 
+: 778 2 8 he 
+: 782 4 8 art
+- 786
+: 786 1 1 Come 
+: 788 1 3 and 
+: 790 4 4 res
+: 794 2 3 cue 
+: 796 1 1 me 
+: 798 3 1 now
+- 801
+: 802 1 6 Cause 
+: 804 2 8 I'm 
+: 806 4 9 fall
+: 810 2 8 ing 
+: 812 1 6 a
+: 814 9 6 part
+- 823
+: 826 1 11 Un
+: 828 1 11 der 
+: 830 1 11 at
+: 832 5 11 tack 
+: 838 1 11 I'm 
+: 840 2 11 tak
+: 842 3 13 ing 
+: 846 4 11 co
+: 850 1 9 ve
+: 851 3 9 e
+: 854 3 8 er
+- 857
+: 858 1 8 He's 
+: 860 1 8 on 
+: 862 1 8 my 
+: 864 5 8 track 
+: 870 1 8 my 
+: 872 2 8 chas
+: 874 3 9 ing 
+: 878 3 8 lo
+: 882 1 6 ve
+: 884 2 6 e
+: 886 3 4 er
+- 889
+: 890 1 4 Think
+: 892 1 4 ing 
+: 894 2 6 noth
+: 898 2 4 ing 
+: 900 3 1 can 
+: 904 2 -1 stop 
+: 906 3 8 him 
+: 910 3 8 now
+- 913
+: 914 1 1 Should 
+: 916 2 3 I 
+: 918 3 4 want 
+: 922 2 3 to
+- 924
+: 924 1 1 I'm 
+: 926 3 1 not 
+: 930 1 3 sure 
+: 932 2 1 I 
+: 936 2 -1 would 
+: 938 2 8 know 
+: 942 20 8 how
+- 962 1177
+- 1177
+: 1185 2 4 Un
+: 1188 1 11 der 
+: 1190 1 11 at
+: 1192 5 11 tack 
+: 1198 1 11 I'm 
+: 1200 2 11 be
+: 1202 3 13 ing 
+: 1206 4 11 ta
+: 1210 4 9 ken
+- 1214
+: 1218 1 8 A
+: 1220 1 8 bout 
+: 1222 1 8 to 
+: 1224 4 8 crack 
+: 1230 1 8 de
+: 1232 2 8 fenc
+: 1234 3 9 es 
+: 1238 3 8 break
+: 1242 3 6 ing
+- 1245
+: 1247 3 4 Won't 
+: 1250 1 4 some
+: 1252 1 4 bo
+: 1254 3 6 dy 
+: 1258 1 4 please 
+: 1260 3 1 have 
+: 1264 2 -1 a 
+: 1266 2 8 he
+: 1270 4 8 art
+- 1274
+: 1274 1 1 Come 
+: 1276 1 3 and 
+: 1278 4 4 res
+: 1282 2 3 cue 
+: 1284 1 1 me 
+: 1286 3 1 now
+- 1289
+: 1290 1 6 Cause 
+: 1292 2 8 I'm 
+: 1294 4 9 fall
+: 1298 2 8 ing 
+: 1300 1 6 a
+: 1302 9 6 part
+- 1311
+: 1314 1 11 Un
+: 1316 1 11 der 
+: 1318 1 11 at
+: 1320 5 11 tack 
+: 1326 1 11 I'm 
+: 1328 2 11 tak
+: 1330 3 13 ing 
+: 1334 4 11 co
+: 1338 1 9 ve
+: 1339 3 9 e
+: 1342 3 8 er
+- 1345
+: 1346 1 8 He's 
+: 1348 1 8 on 
+: 1350 1 8 my 
+: 1352 5 8 track 
+: 1358 1 8 my 
+: 1360 2 8 chas
+: 1362 3 9 ing 
+: 1366 3 8 lo
+: 1370 1 6 ve
+: 1372 2 6 e
+: 1374 3 4 er
+- 1377
+: 1378 1 4 Think
+: 1380 1 4 ing 
+: 1382 2 6 noth
+: 1386 2 4 ing 
+: 1388 3 1 can 
+: 1392 2 -1 stop 
+: 1394 3 8 him 
+: 1398 3 8 now
+- 1401
+: 1402 1 1 Should 
+: 1404 2 3 I 
+: 1406 3 4 want 
+: 1410 2 3 to
+- 1412
+: 1412 1 1 I'm 
+: 1414 3 1 not 
+: 1418 1 3 sure 
+: 1420 2 1 I 
+: 1424 2 -1 would 
+: 1426 2 8 know 
+: 1430 23 8 how
+- 1453
+: 1456 2 4 Un
+: 1458 1 11 der 
+: 1460 1 11 at
+: 1462 5 11 tack
+E
